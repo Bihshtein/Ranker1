@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
@@ -12,9 +13,12 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
-            List<string> files = new List<string>() { @"C:\Users\USER\Downloads\prices\prices_koop_herzelia_08_05_2016.xml" ,
-                                                      @"C:\Users\USER\Downloads\prices\prices_shufer_raanana_09_05_2017.xml",
-                                                      @"C:\Users\USER\Downloads\prices\prices_koop_ashdod_09_05_2017.xml"};
+            var path = Assembly.GetExecutingAssembly().Location + @"\..\..\..\prices\";
+            List<string> files = new List<string>() { path + "prices_koop_herzelia_08_05_2016.xml" ,
+                                                      path + "prices_shufer_raanana_09_05_2017.xml",
+                                                      path + "prices_koop_ashdod_09_05_2017.xml"};
+
+
             List<List<long>> ids = new List<List<long>>();
             files.ForEach((file) => ids.Add(GetIDS(File.ReadAllText(file))));
             List<long> equals = new List<long>();
@@ -29,6 +33,7 @@ namespace ConsoleApplication1
                 if (allEquals)
                     equals.Add(ids[0][i]);
             }
+            Console.WriteLine(string.Format("\n\nMatching id's :  {0} \n\nWe still don't know who they are yet we know they are matching!!!\n\n", equals.Count));
 
         }
 
