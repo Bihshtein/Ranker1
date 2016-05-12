@@ -17,9 +17,10 @@ namespace ConsoleApplication1 {
     class Program {
         
         public static Dictionary<CompanyEnum, CompanyData> LoginDetails = new Dictionary<CompanyEnum, CompanyData>() {
+            { CompanyEnum.Keshet, new CompanyData(7290785400000,"keshet",  string.Empty, 7290785400000 ,"2305") },
             { CompanyEnum.TivTaam, new CompanyData(7290873255550,"TivTaam", string.Empty, 7290873255550,"2005") },
             { CompanyEnum.RamiLevi, new CompanyData(7290058140886,"RamiLevi", string.Empty, 7290058140886,"2005") },
-            { CompanyEnum.FreshMarket, new CompanyData(7290876100000,"freshmarket", "f_efrd", 7290876100000 ,"0900") }
+            { CompanyEnum.FreshMarket, new CompanyData(7290876100000,"freshmarket", "f_efrd", 7290876100000 ,"0900") }            
 
         };
 
@@ -77,7 +78,8 @@ namespace ConsoleApplication1 {
         public enum CompanyEnum {
             TivTaam,
             RamiLevi, 
-            FreshMarket
+            FreshMarket,
+            Keshet
         }
 
     public static void DownloadFullPriceFile(CompanyEnum company, long storeNum) {
@@ -119,7 +121,10 @@ namespace ConsoleApplication1 {
             var loginData = LoginDetails[company];
             var client = new CookieAwareWebClient();
             client.Connect(company);
+            
             var date = DateTime.Today.ToString("yyyyMMdd");
+            if (company == CompanyEnum.Keshet)
+                date = "20150614";
             var fileUrl = string.Format("https://url.publishedprices.co.il/file/d/Stores{0}-{1}{2}.xml", loginData.StoreFileID, date, loginData.StoreFileSuffix);
             return GetIDS(client.DownloadString(fileUrl), "StoreId");
           
@@ -137,7 +142,7 @@ namespace ConsoleApplication1 {
         }
 
         static void Main(string[] args) {
-            //DownloadAll();
+          //  DownloadAll();
             List<Dictionary<long, ItemData>> storesData = new List<Dictionary<long, ItemData>>();
 
          /*   foreach (var company in LoginDetails.Keys) {
