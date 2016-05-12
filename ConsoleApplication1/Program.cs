@@ -60,14 +60,14 @@ namespace ConsoleApplication1 {
             var loginData = LoginDetails[company];
             string loginData1 = string.Format("username={0}&password={1}", loginData.Usermame, loginData.Password);
             
-            var shopNumStr = 2.ToString().PadLeft(3, '0');
+            var shopNumStr = shopNum.ToString().PadLeft(3, '0');
             var date = DateTime.Today.ToString("yyyyMMdd");
             
-            var fileUrl = string.Format("https://url.publishedprices.co.il/file/d/PriceFull{0}-{1}-{2}0010.gz", loginData.FileID, shopNum, date);
+            var fileUrl = string.Format("https://url.publishedprices.co.il/file/d/PriceFull{0}-{1}-{2}0010.gz", loginData.FileID, shopNumStr, date);
             var client = new CookieAwareWebClient();
             System.Net.ServicePointManager.ServerCertificateValidationCallback = ((sender, certificate, chain, sslPolicyErrors) => true);
             client.UploadString("https://url.publishedprices.co.il/login/user", "POST", loginData1);            
-            var writeStream = new FileStream(path + string.Format("{0}_shopnum_{1}_date_,", company, shopNumStr, date), FileMode.Create);
+            var writeStream = new FileStream(path + string.Format("{0}_shopnum_{1}_date_{2}.xml", company, shopNumStr, date), FileMode.Create);
             var readStream = new MemoryStream(client.DownloadData(fileUrl));
             GZipStream uncompressed = new GZipStream(readStream, CompressionMode.Decompress);
             byte[] buffer = new byte[1024];
@@ -88,6 +88,8 @@ namespace ConsoleApplication1 {
 
 
             GetFile(CompanyEnum.TivTaam, 2);
+            GetFile(CompanyEnum.RamiLevi, 2);
+           // GetFile(CompanyEnum.FreshMarket, 2);
             Console.OutputEncoding = new UTF8Encoding();
             List<string> files = new List<string>() { path + "prices_koop_herzelia_08_05_2016.xml" ,
                                                       path + "prices_shufer_raanana_09_05_2017.xml",
