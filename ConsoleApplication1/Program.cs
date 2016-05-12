@@ -13,8 +13,25 @@ using System.IO.Compression;
 
 
 namespace ConsoleApplication1 {
+    
     class Program {
+        
+        public static Dictionary<CompanyEnum, CompanyData> LoginDetails = new Dictionary<CompanyEnum, CompanyData>() {
+            { CompanyEnum.TivTaam, new CompanyData(7290873255550,"TivTaam", string.Empty) },
+            { CompanyEnum.RamiLevi, new CompanyData(7290058140886,"RamiLevi", string.Empty) },
+            { CompanyEnum.FreshMarket, new CompanyData(7290873255550,"freshmarket", "f_efrd") }
 
+        };
+        public class CompanyData {
+            public long FileID { get; set; }
+            public string Usermame { get; set; }
+            public string Password { get; set; }
+            public CompanyData(long fileID, string usermame, string password) {
+                this.FileID = fileID;
+                this.Usermame = usermame;
+                this.Password = password;
+            }
+        }
         public class CookieAwareWebClient : WebClient {        
 
             public CookieAwareWebClient(CookieContainer container) {
@@ -33,28 +50,44 @@ namespace ConsoleApplication1 {
             }
         }
 
-    public static void GetFile(string fileUrl, string username,string password) {
-            string loginData1 = string.Format("username={0}", username);
+        public enum CompanyEnum {
+            TivTaam,
+            RamiLevi,
+            FreshMarket
+        }
+
+    public static void GetFile(CompanyEnum company, int shopNum) {
+            var loginData = LoginDetails[company];
+            string loginData1 = string.Format("username={0}&password={1}", loginData.Usermame, loginData.Password);
+            
+            var shopNumStr = 2.ToString().PadLeft(3, '0');
+            var date = DateTime.Today.ToString("yyyyMMdd");
+            
+            var fileUrl = string.Format("https://url.publishedprices.co.il/file/d/PriceFull{0}-{1}-{2}0010.gz", loginData.FileID, shopNum, date);
             var client = new CookieAwareWebClient();
             System.Net.ServicePointManager.ServerCertificateValidationCallback = ((sender, certificate, chain, sslPolicyErrors) => true);
             client.UploadString("https://url.publishedprices.co.il/login/user", "POST", loginData1);            
-            FileStream stream = new FileStream(path + "alex.xml", FileMode.Create); // this is the output
-            GZipStream uncompressed = new GZipStream(new MemoryStream(client.DownloadData(fileUrl)), CompressionMode.Decompress);
+            var writeStream = new FileStream(path + string.Format("{0}_shopnum_{1}_date_,", company, shopNumStr, date), FileMode.Create);
+            var readStream = new MemoryStream(client.DownloadData(fileUrl));
+            GZipStream uncompressed = new GZipStream(readStream, CompressionMode.Decompress);
             byte[] buffer = new byte[1024];
             int nRead;
             while ((nRead = uncompressed.Read(buffer, 0, buffer.Length)) > 0) {
-                stream.Write(buffer, 0, nRead);
+                writeStream.Write(buffer, 0, nRead);
             }
             uncompressed.Flush();
             uncompressed.Close();
 
-            stream.Dispose();
-            
+            writeStream.Dispose();
+            readStream.Dispose();
+
         }
 
         static string path = Assembly.GetExecutingAssembly().Location + @"\..\..\..\prices\";
         static void Main(string[] args) {
-            GetFile("https://url.publishedprices.co.il/file/d/PriceFull7290873255550-010-201605120010.gz", "TivTaam", "password");
+
+
+            GetFile(CompanyEnum.TivTaam, 2);
             Console.OutputEncoding = new UTF8Encoding();
             List<string> files = new List<string>() { path + "prices_koop_herzelia_08_05_2016.xml" ,
                                                       path + "prices_shufer_raanana_09_05_2017.xml",
