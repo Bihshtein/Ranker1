@@ -120,33 +120,31 @@ namespace ConsoleApplication1 {
         }
 
         public static void DownloadAll() {
-            foreach (var item in LoginDetails.Keys) {
-                DownloadCompanyFullPrices(item);
+            foreach (var company in LoginDetails.Keys) {
+                DownloadCompanyFullPrices(company);
             }
         }
 
         static void Main(string[] args) {
-            DownloadAll();
-
-            Console.OutputEncoding = new UTF8Encoding();
-            
-            List<string> files = Directory.EnumerateFiles(FolderPath).ToList<string>();
-
-            List<List<long>> ids = new List<List<long>>();
-            files.ForEach((file) => ids.Add(GetIDS(File.ReadAllText(file),"ItemCode")));
-            List<long> equals = new List<long>();
-            for (int i = 0; i < ids[0].Count; i++) {
-                var allEquals = true;
-                for (int j = 1; j < files.Count; j++) {
-                    if (!ids[j].Contains(ids[0][i]))
-                        allEquals = false;
+            //DownloadAll();
+            foreach (var company in LoginDetails.Keys) {
+                List<string> files = Directory.EnumerateFiles(FolderPath, company.ToString() + "*.xml").ToList<string>();
+                List<List<long>> ids = new List<List<long>>();
+                files.ForEach((file) => ids.Add(GetIDS(File.ReadAllText(file), "ItemCode")));
+                List<long> equals = new List<long>();
+                for (int i = 0; i < ids[0].Count; i++) {
+                    var allEquals = true;
+                    for (int j = 1; j < files.Count; j++) {
+                        if (!ids[j].Contains(ids[0][i]))
+                            allEquals = false;
+                    }
+                    if (allEquals)
+                        equals.Add(ids[0][i]);
                 }
-                if (allEquals)
-                    equals.Add(ids[0][i]);
+                string str = string.Format("Matching id's : {0}, company {1}", equals.Count.ToString(), company.ToString());
+                Console.WriteLine(str);
+                PrintNames(equals, File.ReadAllText(files[0]),company);
             }
-            Console.WriteLine(string.Format("\n\nMatching id's :  {0} \n\nWe still don't know who they are yet we know they are matching!!!\n\n", equals.Count));
-
-            PrintNames(equals, File.ReadAllText(files[1]));
 
         }
 
@@ -160,7 +158,7 @@ namespace ConsoleApplication1 {
             return ids;
         }
 
-        public static void PrintNames(List<long> ids, string str) {
+        public static void PrintNames(List<long> ids, string str, CompanyEnum company) {
             File.WriteAllText(FolderPath + "matching_names.txt", ids.Count + "matching");
             var reader = XmlReader.Create(new StringReader(str));
             while (reader.ReadToFollowing("ItemCode")) {
@@ -169,7 +167,7 @@ namespace ConsoleApplication1 {
                 if (ids.Contains(id)) {
                     reader.ReadToFollowing("ItemName");
                     reader.Read();
-                    File.AppendAllText(FolderPath + "matching_names.txt ", reader.ReadContentAsString() + "\r\n");
+                    File.AppendAllText(FolderPath + company.ToString()  + ".txt ", reader.ReadContentAsString() + "\r\n");
                 }
             }
 
