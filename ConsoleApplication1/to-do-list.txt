@@ -1,0 +1,16 @@
+use log4 net
+split program.cs to files and classes
+download the other "cerberus" based stores
+download the rest of the stores with custom sites 
+improve matching id's algorithm
+enrich the PrintNames function with other fields - ItemCode, ItemName,Quantity, ItemPrice
+rank the stores with prices based algorithms for matching id's
+figure out why some of the stores have so few matching id's(rami levi - 8)  
+understand how Quantity works (drops down on a daily basis? at lest must be greater than 1)
+divide products into groups based on item codes patterns
+consider creating a proper database for the files
+rank the stores based on prices of product groups
+rank on the stores for variety of products (groups)
+ask for one million dollars each
+
+
