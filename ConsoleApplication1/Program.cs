@@ -22,14 +22,25 @@ namespace ConsoleApplication1 {
             { CompanyEnum.FreshMarket, new CompanyData(7290876100000,"freshmarket", "f_efrd", 7290876100000 ,"0900") }
 
         };
+
+        public class ItemData {
+            public string Name { get; private set; }
+            public double Quantity { get; private set; }
+            public double Price { get; private set; }
+            public ItemData(string name, double quantity, double price) {
+                this.Name = name;
+                this.Quantity = quantity;
+                this.Price = price;
+            }
+        }
         static string FolderPath = Assembly.GetExecutingAssembly().Location + @"\..\..\..\prices\";
         public static string LoginUrl = "https://url.publishedprices.co.il/login/user";
         public class CompanyData {
-            public long PriceFileID { get; set; }
-            public long StoreFileID { get; set; }
-            public string StoreFileSuffix { get; set; }
-            public string Usermame { get; set; }
-            public string Password { get; set; }
+            public long PriceFileID { get; private set; }
+            public long StoreFileID { get; private set; }
+            public string StoreFileSuffix { get; private  set; }
+            public string Usermame { get; private set; }
+            public string Password { get; private set; }
             public CompanyData(long priceFileID, string usermame, string password, long storeFileID, string storeFileSuffix) {
                 this.PriceFileID = priceFileID;
                 this.Usermame = usermame;
@@ -127,24 +138,37 @@ namespace ConsoleApplication1 {
 
         static void Main(string[] args) {
             //DownloadAll();
-            foreach (var company in LoginDetails.Keys) {
-                List<string> files = Directory.EnumerateFiles(FolderPath, company.ToString() + "*.xml").ToList<string>();
-                List<List<long>> ids = new List<List<long>>();
-                files.ForEach((file) => ids.Add(GetIDS(File.ReadAllText(file), "ItemCode")));
-                List<long> equals = new List<long>();
-                for (int i = 0; i < ids[0].Count; i++) {
-                    var allEquals = true;
-                    for (int j = 1; j < files.Count; j++) {
-                        if (!ids[j].Contains(ids[0][i]))
-                            allEquals = false;
+            List<Dictionary<long, ItemData>> storesData = new List<Dictionary<long, ItemData>>();
+
+         /*   foreach (var company in LoginDetails.Keys) {
+                if (company != CompanyEnum.RamiLevi) {*/
+                    List<string> files = Directory.EnumerateFiles(FolderPath, /*company.ToString() + */"*.xml").ToList<string>();
+                    List<List<long>> ids = new List<List<long>>();
+                    files.ForEach((file) => ids.Add(GetIDS(File.ReadAllText(file), "ItemCode")));
+                    List<long> equals = new List<long>();
+                    for (int i = 0; i < ids[0].Count; i++) {
+                        var allEquals = true;
+                        for (int j = 1; j < files.Count; j++) {
+                            if (!ids[j].Contains(ids[0][i]))
+                                allEquals = false;
+                        }
+                        if (allEquals)
+                            equals.Add(ids[0][i]);
                     }
-                    if (allEquals)
-                        equals.Add(ids[0][i]);
-                }
-                string str = string.Format("Matching id's : {0}, company {1}", equals.Count.ToString(), company.ToString());
-                Console.WriteLine(str);
-                PrintNames(equals, File.ReadAllText(files[0]),company);
-            }
+                    Console.WriteLine(string.Format("Matching id's : {0}", equals.Count.ToString()));
+                    foreach (var file  in files) {
+                        var data = GetData(equals, File.ReadAllText(file));
+                        storesData.Add(data);
+                        double total = 0;
+                        foreach (var value in data.Values) {
+                            total += value.Price;
+                        }
+                        Console.WriteLine(Path.GetFileName(file) +"  :  " + total);
+                    }
+       //         }
+        //    }
+
+            
 
         }
 
@@ -158,8 +182,9 @@ namespace ConsoleApplication1 {
             return ids;
         }
 
-        public static void PrintNames(List<long> ids, string str, CompanyEnum company) {
+        public static Dictionary<long,ItemData>  GetData(List<long> ids, string str) {
             File.WriteAllText(FolderPath + "matching_names.txt", ids.Count + "matching");
+            var dataDict = new Dictionary<long, ItemData>();
             var reader = XmlReader.Create(new StringReader(str));
             while (reader.ReadToFollowing("ItemCode")) {
                 reader.Read();
@@ -167,9 +192,23 @@ namespace ConsoleApplication1 {
                 if (ids.Contains(id)) {
                     reader.ReadToFollowing("ItemName");
                     reader.Read();
-                    File.AppendAllText(FolderPath + company.ToString()  + ".txt ", reader.ReadContentAsString() + "\r\n");
+                    var name = reader.ReadContentAsString();
+
+                    reader.ReadToFollowing("Quantity");
+                    reader.Read();
+                    var quantity = reader.ReadContentAsDouble();
+
+
+                    reader.ReadToFollowing("ItemPrice");
+                    reader.Read();
+                    var price = reader.ReadContentAsDouble();
+                    if (dataDict.ContainsKey(id))
+                        File.AppendAllText(FolderPath + "debug.txt", string.Format("hmm already has ::  {0}, is  :: {1} the same?", dataDict[id].Name, name));
+                    else
+                        dataDict.Add(id, new ItemData(name, quantity, price));
                 }
             }
+            return dataDict;
 
         }
     }
