@@ -9,6 +9,8 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
+using System.IO.Compression;
+
 
 namespace ConsoleApplication1 {
     class Program {
@@ -31,17 +33,28 @@ namespace ConsoleApplication1 {
             }
         }
 
-    public static void GetFileTivTaam() {
-            string loginData1 = "username=TivTaam";
+    public static void GetFile(string fileUrl, string username,string password) {
+            string loginData1 = string.Format("username={0}", username);
             var client = new CookieAwareWebClient();
             System.Net.ServicePointManager.ServerCertificateValidationCallback = ((sender, certificate, chain, sslPolicyErrors) => true);
             client.UploadString("https://url.publishedprices.co.il/login/user", "POST", loginData1);            
-            client.DownloadFile("https://url.publishedprices.co.il/file/d/PriceFull7290873255550-010-201605120010.gz", path + "alex.gz");
-    }
+            FileStream stream = new FileStream(path + "alex.xml", FileMode.Create); // this is the output
+            GZipStream uncompressed = new GZipStream(new MemoryStream(client.DownloadData(fileUrl)), CompressionMode.Decompress);
+            byte[] buffer = new byte[1024];
+            int nRead;
+            while ((nRead = uncompressed.Read(buffer, 0, buffer.Length)) > 0) {
+                stream.Write(buffer, 0, nRead);
+            }
+            uncompressed.Flush();
+            uncompressed.Close();
+
+            stream.Dispose();
+            
+        }
 
         static string path = Assembly.GetExecutingAssembly().Location + @"\..\..\..\prices\";
         static void Main(string[] args) {
-            GetFileTivTaam();
+            GetFile("https://url.publishedprices.co.il/file/d/PriceFull7290873255550-010-201605120010.gz", "TivTaam", "password");
             Console.OutputEncoding = new UTF8Encoding();
             List<string> files = new List<string>() { path + "prices_koop_herzelia_08_05_2016.xml" ,
                                                       path + "prices_shufer_raanana_09_05_2017.xml",
