@@ -17,19 +17,25 @@ namespace ConsoleApplication1 {
     class Program {
         
         public static Dictionary<CompanyEnum, CompanyData> LoginDetails = new Dictionary<CompanyEnum, CompanyData>() {
-            { CompanyEnum.TivTaam, new CompanyData(7290873255550,"TivTaam", string.Empty) },
-            { CompanyEnum.RamiLevi, new CompanyData(7290058140886,"RamiLevi", string.Empty) },
-            { CompanyEnum.FreshMarket, new CompanyData(7290873255550,"freshmarket", "f_efrd") }
+            { CompanyEnum.TivTaam, new CompanyData(7290873255550,"TivTaam", string.Empty, 7290873255550,"2005") },
+            { CompanyEnum.RamiLevi, new CompanyData(7290058140886,"RamiLevi", string.Empty, 7290873255550,"2005") },
+            { CompanyEnum.FreshMarket, new CompanyData(7290876100000,"freshmarket", "f_efrd", 7290876100000 ,"0900") }
 
         };
+
+        public static string LoginUrl = "https://url.publishedprices.co.il/login/user";
         public class CompanyData {
-            public long FileID { get; set; }
+            public long PriceFileID { get; set; }
+            public long StoreFileID { get; set; }
+            public string StoreFileSuffix { get; set; }
             public string Usermame { get; set; }
             public string Password { get; set; }
-            public CompanyData(long fileID, string usermame, string password) {
-                this.FileID = fileID;
+            public CompanyData(long priceFileID, string usermame, string password, long storeFileID, string storeFileSuffix) {
+                this.PriceFileID = priceFileID;
                 this.Usermame = usermame;
                 this.Password = password;
+                this.StoreFileID = storeFileID;
+                this.StoreFileSuffix = storeFileSuffix;
             }
         }
         public class CookieAwareWebClient : WebClient {        
@@ -38,6 +44,13 @@ namespace ConsoleApplication1 {
                 CookieContainer = container;
             }
 
+
+            public void Connect(CompanyEnum company) {
+                var loginData = LoginDetails[company];
+                string loginStr = string.Format("&username={0}&password={1}&", loginData.Usermame, loginData.Password);
+                System.Net.ServicePointManager.ServerCertificateValidationCallback = ((sender, certificate, chain, sslPolicyErrors) => true);
+                UploadString(LoginUrl, "POST", loginStr);
+            }
             public CookieAwareWebClient()
               : this(new CookieContainer()) { }
 
@@ -52,21 +65,22 @@ namespace ConsoleApplication1 {
 
         public enum CompanyEnum {
             TivTaam,
-            RamiLevi,
+            RamiLevi, 
             FreshMarket
         }
 
-    public static void GetFile(CompanyEnum company, int shopNum) {
+    public static void DownloadFullPriceFile(CompanyEnum company, int storeNum) {
+            var client = new CookieAwareWebClient();
+            client.Connect(company);
+
             var loginData = LoginDetails[company];
-            string loginData1 = string.Format("username={0}&password={1}", loginData.Usermame, loginData.Password);
+            string loginStr = string.Format("&username={0}&password={1}&", loginData.Usermame, loginData.Password);
             
-            var shopNumStr = shopNum.ToString().PadLeft(3, '0');
+            var shopNumStr = storeNum.ToString().PadLeft(3, '0');
             var date = DateTime.Today.ToString("yyyyMMdd");
             
-            var fileUrl = string.Format("https://url.publishedprices.co.il/file/d/PriceFull{0}-{1}-{2}0010.gz", loginData.FileID, shopNumStr, date);
-            var client = new CookieAwareWebClient();
-            System.Net.ServicePointManager.ServerCertificateValidationCallback = ((sender, certificate, chain, sslPolicyErrors) => true);
-            client.UploadString("https://url.publishedprices.co.il/login/user", "POST", loginData1);            
+            var fileUrl = string.Format("https://url.publishedprices.co.il/file/d/PriceFull{0}-{1}-{2}0010.gz", loginData.PriceFileID, shopNumStr, date);
+            
             var writeStream = new FileStream(path + string.Format("{0}_shopnum_{1}_date_{2}.xml", company, shopNumStr, date), FileMode.Create);
             var readStream = new MemoryStream(client.DownloadData(fileUrl));
             GZipStream uncompressed = new GZipStream(readStream, CompressionMode.Decompress);
@@ -81,15 +95,27 @@ namespace ConsoleApplication1 {
             writeStream.Dispose();
             readStream.Dispose();
 
+    }
+
+
+        public static List<long> GetShopNumbers(CompanyEnum company) {
+            var loginData = LoginDetails[company];
+            var client = new CookieAwareWebClient();
+            client.Connect(company);
+            var date = DateTime.Today.ToString("yyyyMMdd");
+            var fileUrl = string.Format("https://url.publishedprices.co.il/file/d/Stores{0}-{1}{2}.xml", loginData.StoreFileID, date, loginData.StoreFileSuffix);
+            return GetIDS(client.DownloadString(fileUrl), "StoreId");
+          
+
         }
 
         static string path = Assembly.GetExecutingAssembly().Location + @"\..\..\..\prices\";
         static void Main(string[] args) {
 
-
-            GetFile(CompanyEnum.TivTaam, 2);
-            GetFile(CompanyEnum.RamiLevi, 2);
-           // GetFile(CompanyEnum.FreshMarket, 2);
+            var list = GetShopNumbers(CompanyEnum.FreshMarket);
+            DownloadFullPriceFile(CompanyEnum.TivTaam, 2);
+            DownloadFullPriceFile(CompanyEnum.RamiLevi, 2);
+            DownloadFullPriceFile(CompanyEnum.FreshMarket,5);
             Console.OutputEncoding = new UTF8Encoding();
             List<string> files = new List<string>() { path + "prices_koop_herzelia_08_05_2016.xml" ,
                                                       path + "prices_shufer_raanana_09_05_2017.xml",
@@ -97,7 +123,7 @@ namespace ConsoleApplication1 {
 
 
             List<List<long>> ids = new List<List<long>>();
-            files.ForEach((file) => ids.Add(GetIDS(File.ReadAllText(file))));
+            files.ForEach((file) => ids.Add(GetIDS(File.ReadAllText(file),"ItemCode")));
             List<long> equals = new List<long>();
             for (int i = 0; i < ids[0].Count; i++) {
                 var allEquals = true;
@@ -114,10 +140,10 @@ namespace ConsoleApplication1 {
 
         }
 
-        public static List<long> GetIDS(string str) {
+        public static List<long> GetIDS(string str, string idFieldName) {
             var reader = XmlReader.Create(new StringReader(str));
             List<long> ids = new List<long>();
-            while (reader.ReadToFollowing("ItemCode")) {
+            while (reader.ReadToFollowing(idFieldName)) {
                 reader.Read();
                 ids.Add(reader.ReadContentAsLong());
             }
