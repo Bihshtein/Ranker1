@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
@@ -12,10 +13,15 @@ using System.Xml;
 namespace ConsoleApplication1 {
     class Program {
 
-        public class CookieAwareWebClient : WebClient {
-            public CookieAwareWebClient() {
-                CookieContainer = new CookieContainer();
+        public class CookieAwareWebClient : WebClient {        
+
+            public CookieAwareWebClient(CookieContainer container) {
+                CookieContainer = container;
             }
+
+            public CookieAwareWebClient()
+              : this(new CookieContainer()) { }
+
             public CookieContainer CookieContainer { get; private set; }
 
             protected override WebRequest GetWebRequest(Uri address) {
@@ -25,21 +31,17 @@ namespace ConsoleApplication1 {
             }
         }
 
-        void tryConnectTivTaamNotWorking() {
-            var a = new CookieAwareWebClient();
-            a.BaseAddress = "https://url.publishedprices.co.il/login";
-            var col = new System.Collections.Specialized.NameValueCollection();
-            col.Add("username", "tivtaam");
-            col.Add("passwrod", "tivtaam");
-            a.UploadValues("https://url.publishedprices.co.il/login", col);
-            a.UploadString("https://url.publishedprices.co.il/login", "username=tivtaam");
-            a.Credentials = new NetworkCredential("Username", "tivtaam");
-            a.DownloadFile("https://url.publishedprices.co.il/file/d/PriceFull7290873255550-002-201605110010.gz", path + "test.gz");
-            string arr = a.DownloadString("https://url.publishedprices.co.il/file/d/PriceFull7290873255550-002-201605110010.gz");
-        }
+    public static void GetFileTivTaam() {
+            string loginData1 = "username=TivTaam";
+            var client = new CookieAwareWebClient();
+            System.Net.ServicePointManager.ServerCertificateValidationCallback = ((sender, certificate, chain, sslPolicyErrors) => true);
+            client.UploadString("https://url.publishedprices.co.il/login/user", "POST", loginData1);            
+            client.DownloadFile("https://url.publishedprices.co.il/file/d/PriceFull7290873255550-010-201605120010.gz", path + "alex.gz");
+    }
 
         static string path = Assembly.GetExecutingAssembly().Location + @"\..\..\..\prices\";
         static void Main(string[] args) {
+            GetFileTivTaam();
             Console.OutputEncoding = new UTF8Encoding();
             List<string> files = new List<string>() { path + "prices_koop_herzelia_08_05_2016.xml" ,
                                                       path + "prices_shufer_raanana_09_05_2017.xml",
