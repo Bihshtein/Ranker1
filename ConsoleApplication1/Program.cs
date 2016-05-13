@@ -29,6 +29,12 @@ namespace ConsoleApplication1 {
             files.ForEach((file) => ids.Add(Download.GetIDS(File.ReadAllText(file.FullName), "ItemCode")));
             var equals = Logic.GetEquals(ids, files.Count);
             var storesData = Logic.GetData(files, equals);
+            File.WriteAllText(Download.FolderPath + "last_matching.txt", string.Format("matching :: {0}", storesData[0].Values.Count));
+
+            foreach (var item in storesData[0].Values) {
+                File.AppendAllText(Download.FolderPath + "last_matching.txt", string.Format("{0} :: {1} :: {2} \n", item.Name, item.Price, item.Quantity));
+
+            }
         }
 
         public static void DownloadCompanyFullPrices(CompanyEnum company) {
