@@ -56,7 +56,28 @@ namespace ConsoleApplication1 {
             }
         }
 
+        public static List<long> GetShopIds(CompanyEnum company) {
+            var loginData = DataStructures.LoginDetails[company];
+            var client = new CookieAwareWebClient();
+            client.Connect(company);
 
+            var date = DateTime.Today.ToString("yyyyMMdd");
+            if (company == CompanyEnum.Keshet)
+                date = "20150614";
+
+            var fileUrl = string.Format("https://url.publishedprices.co.il/file/d/Stores{0}-{1}{2}.xml", loginData.StoreFileID, date, loginData.StoreFileSuffix);
+            string data;
+            try {
+                data = client.DownloadString(fileUrl);
+            }
+            catch (WebException) {// stupid retry logic look at -1 day better to have some retry
+                date = DateTime.Today.AddDays(-1).ToString("yyyyMMdd");
+                fileUrl = string.Format("https://url.publishedprices.co.il/file/d/Stores{0}-{1}{2}.xml", loginData.StoreFileID, date, loginData.StoreFileSuffix);
+                data = client.DownloadString(fileUrl);
+            }
+            return Download.GetIDS(data, "StoreId");
+        }
+        
         public static Dictionary<long, ItemData> GetData(List<long> ids, string str) {
             File.WriteAllText(Download.FolderPath + "matching_names.txt", ids.Count + "matching");
             var dataDict = new Dictionary<long, ItemData>();
@@ -85,9 +106,9 @@ namespace ConsoleApplication1 {
             }
             return dataDict;
         }
-
-
     }
+
+
 
     public class CookieAwareWebClient : WebClient {
 

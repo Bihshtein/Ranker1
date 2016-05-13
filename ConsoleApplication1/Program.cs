@@ -17,11 +17,11 @@ namespace ConsoleApplication1 {
     class Program {
      
         public enum ArgsOptions {
-            Download
+            download
         }
       
         public static void DownloadCompanyFullPrices(CompanyEnum company) {
-           DataStructures.GetShopIds(company).ForEach((id) => Download.DownloadFullPriceFile(company, id));
+           Download.GetShopIds(company).ForEach((id) => Download.DownloadFullPriceFile(company, id));
         }
 
         public static void DownloadAll() {
@@ -32,7 +32,7 @@ namespace ConsoleApplication1 {
 
         static void Main(string[] args) {
             if (args.Length > 0)
-                if (args[0] == ArgsOptions.Download.ToString())
+                if (args[0] == ArgsOptions.download.ToString())
                     DownloadAll();
             List<Dictionary<long, ItemData>> storesData = new List<Dictionary<long, ItemData>>();
 

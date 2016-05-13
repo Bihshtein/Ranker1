@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -29,9 +30,7 @@ namespace ConsoleApplication1 {
             this.StoreFileID = storeFileID;
             this.StoreFileSuffix = storeFileSuffix;
         }
-    }
-
-  
+    }  
 
     public enum CompanyEnum {
         TivTaam,
@@ -48,18 +47,6 @@ namespace ConsoleApplication1 {
 
         };
 
-        public static List<long> GetShopIds(CompanyEnum company) {
-            var loginData = DataStructures.LoginDetails[company];
-            var client = new CookieAwareWebClient();
-            client.Connect(company);
-
-            var date = DateTime.Today.ToString("yyyyMMdd");
-            if (company == CompanyEnum.Keshet)
-                date = "20150614";
-            var fileUrl = string.Format("https://url.publishedprices.co.il/file/d/Stores{0}-{1}{2}.xml", loginData.StoreFileID, date, loginData.StoreFileSuffix);
-            return Download.GetIDS(client.DownloadString(fileUrl), "StoreId");
-
-
-        }
+    
     }
 }
