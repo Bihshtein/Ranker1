@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.IO.Compression;
 using System.Linq;
@@ -15,12 +16,16 @@ namespace ConsoleApplication1 {
         public static string FolderPath = Assembly.GetExecutingAssembly().Location + @"\..\..\..\prices\";
 
         public static List<long> GetIDS(string str, string idFieldName) {
+            var aleg = new Stopwatch();
+            aleg.Start();
             var reader = XmlReader.Create(new StringReader(str));
             List<long> ids = new List<long>();
             while (reader.ReadToFollowing(idFieldName)) {
                 reader.Read();
                 ids.Add(reader.ReadContentAsLong());
             }
+            aleg.Stop();
+            Console.WriteLine(string.Format("Generating  id's for : {0}, calcualtion time {1} seconds ", idFieldName, aleg.Elapsed.TotalSeconds));
             return ids;
         }
 

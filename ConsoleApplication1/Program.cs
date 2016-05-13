@@ -24,7 +24,7 @@ namespace ConsoleApplication1 {
             if (args.Length > 0)
                 if (args[0] == ArgsOptions.download.ToString())
                     DownloadAll();
-            var files = new DirectoryInfo(Download.FolderPath).GetFiles().OrderByDescending(x => x.Length).Take(6).ToList<FileInfo>();
+            var files = new DirectoryInfo(Download.FolderPath).GetFiles().OrderByDescending(x => x.Length).Take(50).ToList<FileInfo>();
             List<List<long>> ids = new List<List<long>>();
             files.ForEach((file) => ids.Add(Download.GetIDS(File.ReadAllText(file.FullName), "ItemCode")));
             var equals = Logic.GetEquals(ids, files.Count);

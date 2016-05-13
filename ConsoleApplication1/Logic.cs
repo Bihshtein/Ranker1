@@ -11,16 +11,13 @@ namespace ConsoleApplication1 {
         public static List<long> GetEquals(List<List<long>> ids,int numOfFiles) {
             var aleg = new Stopwatch();
             aleg.Start();
-           // ids.ForEach((list) => list.Sort());
+            ids.ForEach((list) => list.Sort());
             var equals = new List<long>();
             for (int i = 0; i < ids[0].Count; i++) {
                 var allEquals = true;
-                for (int j = 1; j < numOfFiles/* && allEquals*/; j++) {
-             /*       while
-                    if (!ids[j][i] > ids[0][i])
-                        allEquals = false;*/
-                     if (!ids[j].Contains(ids[0][i]))                     
-                         allEquals = false;
+                for (int j = 1; j < numOfFiles && allEquals; j++) {
+                    if (!ids[j].Contains(ids[0][i]))
+                        allEquals = false;
                 }
                 if (allEquals)
                     equals.Add(ids[0][i]);
