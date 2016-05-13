@@ -25,12 +25,13 @@ namespace ConsoleApplication1 {
                 ids.Add(reader.ReadContentAsLong());
             }
             aleg.Stop();
-            Console.WriteLine(string.Format("Generating  id's for : {0}, calcualtion time {1} seconds ", idFieldName, aleg.Elapsed.TotalSeconds));
+            Console.WriteLine(string.Format("Generating  id's for : {0}, calcualtion time {1} Milliseconds ", idFieldName, aleg.Elapsed.TotalMilliseconds));
             return ids;
         }
 
         public static void DownloadFullPriceFile(CompanyEnum company, long storeNum) {
-            Console.WriteLine(string.Format("Downloading for company {0} store num {1}", company, storeNum));
+            var aleg = new Stopwatch();
+            aleg.Start();
             var client = new CookieAwareWebClient();
             client.Connect(company);
 
@@ -58,7 +59,11 @@ namespace ConsoleApplication1 {
             }
             catch (WebException) {
                 Console.WriteLine((string.Format("Skipping for company {0} store num {1}", company, storeNum)));
+                return;
             }
+            aleg.Stop();
+            Console.WriteLine(string.Format("Downloading for company {0} store num {1}, download time {2} Milliseconds", company, storeNum, aleg.Elapsed.TotalMilliseconds));
+
         }
 
         public static List<long> GetShopIds(CompanyEnum company) {

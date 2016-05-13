@@ -23,11 +23,12 @@ namespace ConsoleApplication1 {
                     equals.Add(ids[0][i]);
             }
             aleg.Stop();
-            Console.WriteLine(string.Format("Matching id's : {0}, calcualtion time {1} seconds ", equals.Count.ToString(), aleg.Elapsed.TotalSeconds));
+            Console.WriteLine(string.Format("Matching id's : {0}, calcualtion time {1} Milliseconds ", equals.Count.ToString(), aleg.Elapsed.TotalMilliseconds));
             return equals;
         }
 
         public static List<Dictionary<long, ItemData>> GetData(List<FileInfo> files, List<long> equals) {
+            var prices = new List<Tuple<double, string>>();
             var storesData = new List<Dictionary<long, ItemData>>();
             foreach (var file in files) {
                 var data = Download.GetData(equals, File.ReadAllText(file.FullName));
@@ -36,8 +37,13 @@ namespace ConsoleApplication1 {
                 foreach (var value in data.Values) {
                     total += value.Price;
                 }
-                Console.WriteLine(Path.GetFileName(file.FullName) + "  :  " + total);
+                prices.Add( new Tuple<double, string>(total, Path.GetFileName(file.FullName)));
             }
+            prices.Sort();
+            foreach (var item in prices) {
+                Console.WriteLine(item.Item2 + "  : \t\t " + item.Item1);
+
+        }
             return storesData;
         }
     }
