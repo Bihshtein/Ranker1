@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using System.Xml;
 using System.IO.Compression;
 using System.Threading;
+using System.Globalization;
 
 namespace ConsoleApplication1 {
     
@@ -24,16 +25,16 @@ namespace ConsoleApplication1 {
             if (args.Length > 0)
                 if (args[0] == ArgsOptions.download.ToString())
                     DownloadAll();
-            var files = new DirectoryInfo(Download.FolderPath).GetFiles().OrderByDescending(x => x.Length).Take(50).ToList<FileInfo>();
-            List<List<long>> ids = new List<List<long>>();
-            files.ForEach((file) => ids.Add(Download.GetIDS(File.ReadAllText(file.FullName), "ItemCode")));
-            var equals = Logic.GetEquals(ids, files.Count);
-            var storesData = Logic.GetData(files, equals);
-            File.WriteAllText(Download.FolderPath + "last_matching.txt", string.Format("matching :: {0}", storesData[0].Values.Count));
-
-            foreach (var item in storesData[0].Values) {
-                File.AppendAllText(Download.FolderPath + "last_matching.txt", string.Format("{0} :: {1} :: {2} \n", item.Name, item.Price, item.Quantity));
-
+            var files = new DirectoryInfo(Download.FolderPath).GetFiles().OrderByDescending(x => x.Length).Take(2).ToList<FileInfo>();
+            var storesData = Logic.GetData(files);
+            var equals = Logic.GetEquals<long>(storesData);
+            var list = new List<List<string>>();
+            for (int i = 0; i < equals.Count; i++) {
+                list.Add(new List<string>());
+                equals[i].ForEach(item => list[i].Add(item.Name));
+                list[i].Sort();
+                for (int j = 0; j < list[i].Count; j++) 
+                    File.WriteAllLines(Download.FolderPath + i + "_last_matching.txt",  list[i] );
             }
         }
 
