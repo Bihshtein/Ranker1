@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication1 {
     public class ItemData {
+        public long ID { get; private set; }
         public string Name { get; private set; }
-        public double Quantity { get; private set; }
         public double Price { get; private set; }
-        public ItemData(string name, double quantity, double price) {
+        public ItemData(long id, string name, double price) {
             this.Name = name;
-            this.Quantity = quantity;
             this.Price = price;
+            this.ID = id;
         }
     }
 

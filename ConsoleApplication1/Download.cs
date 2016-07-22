@@ -15,14 +15,14 @@ namespace ConsoleApplication1 {
         public static string LoginUrl = "https://url.publishedprices.co.il/login/user";
         public static string FolderPath = Assembly.GetExecutingAssembly().Location + @"\..\..\..\prices\";
 
-        public static List<long> GetIDS(string str, string idFieldName) {
+        public static List<T> GetIDS<T>(string str, string idFieldName) {
             var aleg = new Stopwatch();
             aleg.Start();
             var reader = XmlReader.Create(new StringReader(str));
-            List<long> ids = new List<long>();
+            var ids = new List<T>();
             while (reader.ReadToFollowing(idFieldName)) {
                 reader.Read();
-                ids.Add(reader.ReadContentAsLong());
+                ids.Add((T)reader.ReadContentAs(typeof(T),null));
             }
             aleg.Stop();
             Console.WriteLine(string.Format("Generating  id's for : {0}, calcualtion time {1} Milliseconds ", idFieldName, aleg.Elapsed.TotalMilliseconds));
@@ -85,36 +85,24 @@ namespace ConsoleApplication1 {
                 fileUrl = string.Format("https://url.publishedprices.co.il/file/d/Stores{0}-{1}{2}.xml", loginData.StoreFileID, date, loginData.StoreFileSuffix);
                 data = client.DownloadString(fileUrl);
             }
-            return Download.GetIDS(data, "StoreId");
+            return Download.GetIDS<long>(data, "StoreId");
         }
         
-        public static Dictionary<long, ItemData> GetData(List<long> ids, string str) {
-            File.WriteAllText(Download.FolderPath + "matching_names.txt", ids.Count + "matching");
-            var dataDict = new Dictionary<long, ItemData>();
+        public static List<ItemData> GetData( string str) {
+            var data = new List<ItemData>();
             var reader = XmlReader.Create(new StringReader(str));
             while (reader.ReadToFollowing("ItemCode")) {
-                reader.Read();
-                var id = reader.ReadContentAsLong();
-                if (ids.Contains(id)) {
+                    reader.Read();
+                     var id = reader.ReadContentAsLong();
                     reader.ReadToFollowing("ItemName");
                     reader.Read();
                     var name = reader.ReadContentAsString();
-
-                    reader.ReadToFollowing("Quantity");
-                    reader.Read();
-                    var quantity = reader.ReadContentAsDouble();
-
-
                     reader.ReadToFollowing("ItemPrice");
                     reader.Read();
                     var price = reader.ReadContentAsDouble();
-                    if (dataDict.ContainsKey(id))
-                        File.AppendAllText(Download.FolderPath + "debug.txt", string.Format("hmm already has ::  {0}, is  :: {1} the same? /n/r", dataDict[id].Name, name));
-                    else
-                        dataDict.Add(id, new ItemData(name, quantity, price));
-                }
+                    data.Add(new ItemData(id, name,  price));
             }
-            return dataDict;
+            return data.Distinct().ToList();
         }
     }
 
