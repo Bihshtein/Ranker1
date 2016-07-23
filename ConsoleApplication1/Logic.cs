@@ -32,8 +32,7 @@ namespace ConsoleApplication1 {
         public static List<List<ItemData>> GetEquals<T>(List<List<ItemData>> data) {
             var aleg = new Stopwatch();
             aleg.Start();
-
-
+            int count = Math.Min(data[0].Count, data[1].Count);
             var mutualIDS1 = data[0].Intersect(data[1], new IDComparer()).ToList();
             var mutualIDS2 = data[1].Intersect(data[0], new IDComparer()).ToList();
             data[0].RemoveAll((i)=> mutualIDS1.Contains(i));
@@ -41,7 +40,8 @@ namespace ConsoleApplication1 {
             var mutualNames1 = data[0].Intersect(data[1], new NameComparer()).ToList();
             var mutualNames2 = data[1].Intersect(data[0], new NameComparer()).ToList();            
             aleg.Stop();
-            Console.WriteLine(string.Format("Matching id's : {0}, calcualtion time {1} Milliseconds ", mutualNames1.Count+ mutualIDS1.Count, aleg.Elapsed.TotalMilliseconds));
+            double percent =  ((double)(mutualIDS1.Count + mutualNames1.Count)) / count;
+            Console.WriteLine(string.Format("Total : {0} \t Id's \t {1}\t  Names {2}\t  percent {3}\t calcualtion time {4} Milliseconds ",count, mutualIDS1.Count, mutualNames1.Count, percent, aleg.Elapsed.TotalMilliseconds));
             return new List<List<ItemData>>() { mutualNames1/*.Concat(mutualIDS1).ToList()*/, mutualNames2/*.Concat(mutualIDS2).ToList()*/ };
         }
 

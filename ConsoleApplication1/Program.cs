@@ -20,21 +20,26 @@ namespace ConsoleApplication1 {
         public enum ArgsOptions {
             download
         }
-           
+
         static void Main(string[] args) {
             if (args.Length > 0)
                 if (args[0] == ArgsOptions.download.ToString())
                     DownloadAll();
-            var files = new DirectoryInfo(Download.FolderPath).GetFiles().OrderByDescending(x => x.Length).Take(2).ToList<FileInfo>();
+            var files = new DirectoryInfo(Download.FolderPath).GetFiles().OrderByDescending(x => x.Length).Take(38).ToList<FileInfo>();
+            var fileCount = 0;
             var storesData = Logic.GetData(files);
-            var equals = Logic.GetEquals<long>(storesData);
-            var list = new List<List<string>>();
-            for (int i = 0; i < equals.Count; i++) {
-                list.Add(new List<string>());
-                equals[i].ForEach(item => list[i].Add(item.Name));
-                list[i].Sort();
-                for (int j = 0; j < list[i].Count; j++) 
-                    File.WriteAllLines(Download.FolderPath + i + "_last_matching.txt",  list[i] );
+            while (storesData.Count > 1) { 
+                var equals = Logic.GetEquals<long>(storesData);
+                var list = new List<List<string>>();
+                for (int i = 0; i < equals.Count; i++) {
+                    list.Add(new List<string>());
+                    equals[i].ForEach(item => list[i].Add(item.Name));
+                    list[i].Sort();
+                    for (int j = 0; j < list[i].Count; j++)
+                        File.WriteAllLines(Download.FolderPath + fileCount + "_last_matching.txt", list[i]);
+                    fileCount++;
+                }
+                storesData.RemoveRange(0, 2);
             }
         }
 
