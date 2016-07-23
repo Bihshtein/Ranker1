@@ -1,19 +1,22 @@
 ﻿using MongoDB.Driver;
 using System.Configuration;
 namespace RestModel {
-    public class StudentsUnitOfWork {
+    public class RestUnitOfWork {
         private MongoDatabase _database;
-        protected RestRepository<Rest> _students;
-        public StudentsUnitOfWork() {
+        protected RestRepository<Product> products;
+        public RestUnitOfWork() {
             var client = new MongoClient();
             var server = client.GetServer();
             _database = server.GetDatabase("test");
+            _database.GetCollection("products").Drop();
         }
-        public RestRepository<Rest> Students {
+        public RestRepository<Product> Products {
             get {
-                if (_students == null) _students = new RestRepository<Rest>(_database, "students");
-                return _students;
+                if (products == null) products = new RestRepository<Product>(_database, "products");
+                return products;
             }
         }
+
+
     }
 }

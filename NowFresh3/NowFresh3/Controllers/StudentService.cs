@@ -3,24 +3,24 @@ using System.Linq;
 
 namespace Students.Services {
     public class StudentService : IStudentService {
-        private readonly StudentsUnitOfWork _sUnitOfwork;
+        private readonly RestUnitOfWork _sUnitOfwork;
         public StudentService() {
-            _sUnitOfwork = new StudentsUnitOfWork();
+            _sUnitOfwork = new RestUnitOfWork();
         }
-        public Rest Get(int i) {
-            return _sUnitOfwork.Students.Get(i);
+        public Product Get(int i) {
+            return _sUnitOfwork.Products.Get(i);
         }
-        public IQueryable<Rest> GetAll() {
-            return _sUnitOfwork.Students.GetAll();
+        public IQueryable<Product> GetAll() {
+            return _sUnitOfwork.Products.GetAll();
         }
         public void Delete(int id) {
-            _sUnitOfwork.Students.Delete(s => s.StudentID, id);
+            _sUnitOfwork.Products.Delete(s => s.ID, id);
         }
-        public void Insert(Rest student) {
-            _sUnitOfwork.Students.Add(student);
+        public void Insert(Product student) {
+            _sUnitOfwork.Products.Add(student);
         }
-        public void Update(Rest student) {
-            _sUnitOfwork.Students.Update(s => s.StudentID, student.StudentID, student);
+        public void Update(Product student) {
+            _sUnitOfwork.Products.Update(s => s.ID, student.ID, student);
         }
     }
 }

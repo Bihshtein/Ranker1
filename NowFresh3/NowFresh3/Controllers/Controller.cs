@@ -20,13 +20,13 @@ namespace Students.Services {
             if (students.Any()) return Request.CreateResponse(HttpStatusCode.OK, students);
             return Request.CreateErrorResponse(HttpStatusCode.NotFound, "No students found.");
         }
-        public void Post([FromBody] Rest student) {
+        public void Post([FromBody] Product student) {
             _studentService.Insert(student);
         }
         public void Delete(int id) {
             _studentService.Delete(id);
         }
-        public void Put([FromBody] Rest student) {
+        public void Put([FromBody] Product student) {
             _studentService.Update(student);
         }
     }

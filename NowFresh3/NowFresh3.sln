@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NowFresh3", "NowFresh3\NowF
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestModel", "RestNodel\RestModel.csproj", "{5DF54FEA-0E92-4F32-AE85-80A7B484E427}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestTheMongo", "TestTheMongo\TestTheMongo.csproj", "{0901AC43-69FD-4B46-9B2C-AA5FBCD850ED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{5DF54FEA-0E92-4F32-AE85-80A7B484E427}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5DF54FEA-0E92-4F32-AE85-80A7B484E427}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5DF54FEA-0E92-4F32-AE85-80A7B484E427}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0901AC43-69FD-4B46-9B2C-AA5FBCD850ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0901AC43-69FD-4B46-9B2C-AA5FBCD850ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0901AC43-69FD-4B46-9B2C-AA5FBCD850ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0901AC43-69FD-4B46-9B2C-AA5FBCD850ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
