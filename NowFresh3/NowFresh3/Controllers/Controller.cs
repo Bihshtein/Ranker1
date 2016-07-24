@@ -10,7 +10,7 @@ namespace Students.Services {
             _studentService = new StudentService();
         }
         // GET api/student/id  
-        public HttpResponseMessage Get(int id) {
+        public HttpResponseMessage Get(string id) {
             var student = _studentService.Get(id);
             if (student != null) return Request.CreateResponse(HttpStatusCode.OK, student);
             return Request.CreateErrorResponse(HttpStatusCode.NotFound, "Student not found for provided id.");
@@ -23,7 +23,7 @@ namespace Students.Services {
         public void Post([FromBody] Product student) {
             _studentService.Insert(student);
         }
-        public void Delete(int id) {
+        public void Delete(string id) {
             _studentService.Delete(id);
         }
         public void Put([FromBody] Product student) {

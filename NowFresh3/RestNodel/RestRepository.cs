@@ -22,7 +22,7 @@ namespace RestModel {
         ///</summary>  
         ///<param name="i"></param>  
         ///<returns></returns>  
-        public T Get(int i) {
+        public T Get(string i) {
             return _collection.FindOneById(i);
         }
         ///<summary>  
@@ -47,7 +47,7 @@ namespace RestModel {
         ///</summary>  
         ///<param name="queryExpression"></param>  
         ///<param name="id"></param>  
-        public void Delete(Expression<Func<T, int>> queryExpression, int id)
+        public void Delete(Expression<Func<T, string>> queryExpression, string id)
         {
             var query = Query<T>.EQ(queryExpression, id);
             _collection.Remove(query);
@@ -58,7 +58,7 @@ namespace RestModel {
         ///<param name="queryExpression"></param>  
         ///<param name="id"></param>  
         ///<param name="entity"></param>  
-        public void Update(Expression < Func < T, int >> queryExpression, int id, T entity)
+        public void Update(Expression < Func < T, string>> queryExpression, string id, T entity)
         {
             var query = Query<T>.EQ(queryExpression, id);
             _collection.Update(query, Update<T>.Replace(entity));

@@ -8,11 +8,14 @@ namespace TestTheMongo {
         [TestMethod]
         public void AddSomeProducts() {
             var a = new RestUnitOfWork();
-            a.Products.Add(new Product(1, "Apple", 2.5));
+            /*a.Products.Add(new Product(1, "Apple", 2.5));
             a.Products.Add(new Product(3, "Onion", 3.5));
             Assert.AreEqual(a.Products.Get(3).Name , "Onion");
 
-            Assert.AreEqual(a.Products.Get(1).Name , "Apple");
+            Assert.AreEqual(a.Products.Get(1).Name , "Apple");*/
+            for (int i = 0; i < 6500; i++) {
+                a.Products.Add(new Product("Onion"+i, 3.5));
+            }
         }
     }
 }
