@@ -14,13 +14,13 @@ namespace Students.Services {
             return _sUnitOfwork.Products.GetAll();
         }
         public void Delete(string id) {
-            _sUnitOfwork.Products.Delete(s => s.Name, id);
+            _sUnitOfwork.Products.Delete(s => s.SpeciesName, id);
         }
         public void Insert(Product student) {
             _sUnitOfwork.Products.Add(student);
         }
         public void Update(Product student) {
-            _sUnitOfwork.Products.Update(s => s.Name ,student.Name, student);
+            _sUnitOfwork.Products.Update(s => s.SpeciesName, student.SpeciesName, student);
         }
     }
 }

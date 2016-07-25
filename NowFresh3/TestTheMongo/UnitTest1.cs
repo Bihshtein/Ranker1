@@ -1,21 +1,26 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using RestModel;
+using System.IO;
+using System.Linq;
+using System.Reflection;
 
 namespace TestTheMongo {
     [TestClass]
     public class UnitTest1 {
         [TestMethod]
         public void AddSomeProducts() {
-            var a = new RestUnitOfWork();
-            /*a.Products.Add(new Product(1, "Apple", 2.5));
-            a.Products.Add(new Product(3, "Onion", 3.5));
-            Assert.AreEqual(a.Products.Get(3).Name , "Onion");
+            var unit = new RestUnitOfWork();
+            var path =Assembly.GetExecutingAssembly().Location + @"\..\..\..\..\" + "Products_Table.csv";
+            var lines = File.ReadAllLines(path).ToList();
+            lines.ForEach((line) => unit.Products.Add(GetProduct(line)));
+        }
 
-            Assert.AreEqual(a.Products.Get(1).Name , "Apple");*/
-            for (int i = 0; i < 6500; i++) {
-                a.Products.Add(new Product("Onion"+i, 3.5));
-            }
+        public static Product GetProduct(string dataLine) {
+            var parts = dataLine.Split(',');
+            var main = (MainCategoryTypes)Enum.Parse(typeof(MainCategoryTypes), parts[0]);
+            var second = (SecondaryCategoryTypes)Enum.Parse(typeof(SecondaryCategoryTypes), parts[1]);
+            return new Product() { MainCategory = main, SecondaryCategory = second, SpeciesName = parts[2] };
         }
     }
 }
