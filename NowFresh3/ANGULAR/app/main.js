@@ -3,11 +3,16 @@
 
     angular
         .module('app')
-        .controller('Main', main);
+        .controller('Main', Main);
 
-    function main() {
-        var vm = this;
-        vm.food = 'pizza';
+    function Main($scope,$http) {
+        $scope.event = {
+            img: 'MMMMYeeeeees',
+            img2: '/img/Red_Apple.png'
+           
+        }
+
     }
+
 
 })();

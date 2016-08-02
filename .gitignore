@@ -7,10 +7,11 @@
 *.o
 *.so
 *.pdb
+
 *.user
 *.cache
 *.txt
-*.config
+
 *.resources
 *.manifest
 .vs

@@ -2,17 +2,31 @@
 
 <html ng-app="app">
 <head>
+    <link href="Content/ui-bootstrap-csp.css" rel="stylesheet" />
     <title></title>
 </head>
-<body ng-controller="Main as vm">
+<body>
+    <div class="Container">
+        <div ng-controller="Main">
+            <img ng-src="{{event.img2}}" />
+            <div class="row">
+                <div class="span3">
+                    <div><strong>About:</strong><h2>{{event.img}}</h2></div>
+                </div>
 
-    <input type="text" ng-model="vm.food" placeholder="Enter food" />
-
-    <p>Sriracha sauce is great with {{vm.food}}!</p>
+            </div>
+           
+        </div>
+        <div ng-controller="Hello">
+            <p>The content is {{greeting.data}}</p>
+        </div>
+    </div>
+    
 
     <script src="Scripts/angular.min.js"></script>
     <script src="app/app.module.js"></script>
-    <script src="app/main.js"></script>
+    <script src="app/Main.js"></script>
+    <script src="app/aleg.js"></script>
 
 </body>
 </html>
