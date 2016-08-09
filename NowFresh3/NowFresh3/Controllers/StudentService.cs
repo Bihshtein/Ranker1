@@ -1,4 +1,5 @@
 ﻿using RestModel;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Students.Services {
@@ -9,6 +10,10 @@ namespace Students.Services {
         }
         public Product Get(string i) {
             return _sUnitOfwork.Products.Get(i);
+        }
+
+        public List<Product> GetMain(MainCategoryTypes type) {
+            return _sUnitOfwork.Products.GetByMainCategory(type);
         }
         public IQueryable<Product> GetAll() {
             return _sUnitOfwork.Products.GetAll();

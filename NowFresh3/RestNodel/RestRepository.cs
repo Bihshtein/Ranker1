@@ -1,4 +1,5 @@
-﻿using MongoDB.Driver;
+﻿using MongoDB.Bson;
+using MongoDB.Driver;
 using MongoDB.Driver.Builders;
 using System;
 using System.Collections.Generic;
@@ -19,6 +20,12 @@ namespace RestModel {
         public T Get(string i) {
             return _collection.FindOneById(i);
         }
+
+        public List<T> GetByMainCategory(MainCategoryTypes type) {
+            var filter = Builders<BsonDocument>.Filter.Eq("_main", type);
+            return _collection.Find(Query<Product>.Where(x => x.MainCategory == type)).ToList();
+        }
+
         public IQueryable<T> GetAll()
         {
             MongoCursor<T> cursor = _collection.FindAll();

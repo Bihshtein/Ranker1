@@ -1,4 +1,5 @@
 ﻿using RestModel;
+using System.Collections.Generic;
 using System.Linq;
 namespace Students.Services {  
     public interface IStudentService  
@@ -8,5 +9,6 @@ namespace Students.Services {
     IQueryable<Product> GetAll();
     void Delete(string id);
     void Update(Product student);
-}  
+        List<Product> GetMain(MainCategoryTypes type);
+    }  
 }  

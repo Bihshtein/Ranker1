@@ -29,7 +29,10 @@ namespace OldDays {
 
         private void TextBox1_TextChanged(object sender, EventArgs e) {
             var collection = _database.GetCollection<BsonDocument>("products");
-            var filter = Builders<BsonDocument>.Filter.Eq("_id", ((TextBox)sender).Text);
+            MainCategoryTypes res;
+            if (!Enum.TryParse(((TextBox)sender).Text, out res))
+                return;
+            var filter = Builders<BsonDocument>.Filter.Eq("_main", res);
             var result = collection.Find(filter).ToList();
             if (result.Count > 0) {
                 pictureBox1.Image = Image.FromStream(new MemoryStream((BsonSerializer.Deserialize<Product>(result[0]).Image)));
@@ -76,7 +79,7 @@ namespace OldDays {
             byte[] imgBytes = null;
             if (File.Exists(imgPath))
                 imgBytes = File.ReadAllBytes(imgPath);
-            return new Product() { MainCategory = main, SecondaryCategory = second, SpeciesName = parts[2], Image = imgBytes };
+            return new Product() { MainCategory = main, SecondaryCategory = second, SpeciesName = parts[2], Image = imgBytes};
         }
     }
 }

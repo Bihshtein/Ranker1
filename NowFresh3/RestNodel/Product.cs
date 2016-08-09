@@ -17,7 +17,9 @@ namespace RestModel {
     {
         [BsonElement("_id")]
         public string SpeciesName { get; set; }
+        [BsonElement("_main")]
         public MainCategoryTypes MainCategory { get; set; }
+        [BsonElement("_second")]
         public SecondaryCategoryTypes SecondaryCategory { get; set; }
         public byte[] Image { get; set; }
         

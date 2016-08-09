@@ -12,8 +12,6 @@ namespace TestTheMongo {
         public static string FolderPath = Assembly.GetExecutingAssembly().Location + @"\..\..\..\..\FruitsDB\";
         [TestMethod]
         public void TestRest() {
-            var aleg = new WebClient();
-            var data = aleg.("http://localhost:51612/");
         }
         [TestMethod]
         public void AddSomeProducts() {
