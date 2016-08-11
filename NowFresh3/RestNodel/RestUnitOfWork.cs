@@ -8,7 +8,7 @@ namespace RestModel {
             var client = new MongoClient();
             var server = client.GetServer();
             _database = server.GetDatabase("test");
-            _database.GetCollection("products").Drop();
+            //_database.GetCollection("products").Drop();
         }
         public RestRepository<Product> Products {
             get {

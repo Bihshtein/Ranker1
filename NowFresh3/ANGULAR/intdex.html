@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html ng-app="app">
+<head>
+    <link href="Content/ui-bootstrap-csp.css" rel="stylesheet" />
+    <link href="Content/angular-material/angular-material.css" rel="stylesheet" />
+    <title></title>
+</head>
+<body>
+    <div class="Container">
+            <div ng-controller="Hello">
+                <div layout="row" class="Container">
+
+                    <div flex="50" flex-order="-1" flex-offset="500" >
+                        <div ng-repeat="aleg in fruit.data" style="float:left">
+                            <div><h2>{{aleg.SpeciesName}}</h2></div>
+                            <img data-ng-src=data:image/png;base64,{{aleg.Image}} />
+                        </div>
+                    </div>
+
+                   
+                    <div flex="50" flex-order="2" flex-offset="500">
+                        <div ng-repeat="aleg in veg.data" style="float:right">
+                            <div><h2>{{aleg.SpeciesName}}</h2></div>
+                            <img data-ng-src=data:image/png;base64,{{aleg.Image}} />
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+
+    
+
+    <script src="Scripts/angular.min.js"></script>
+    <script src="app/app.module.js"></script>
+    <script src="app/Main.js"></script>
+    <script src="app/aleg.js"></script>
+
+</body>
+</html>

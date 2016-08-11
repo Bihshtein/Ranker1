@@ -3,16 +3,22 @@ using System.Web.Http;
 using RestModel;
 using System.Net.Http;
 using System.Net;
+using System.Collections.Generic;
+using System;
+
 namespace Students.Services {
     public class StudentsController : ApiController {
         private readonly IStudentService _studentService;
         public StudentsController() {
             _studentService = new StudentService();
         }
-        // GET api/student/id  
-        public HttpResponseMessage Get(int id) {
-            var student = _studentService.Get(id);
-            if (student != null) return Request.CreateResponse(HttpStatusCode.OK, student);
+        public HttpResponseMessage Get(string id) {
+            /*var allItems = id.Split(',').ToList();
+            List<Product> productsList = new List<Product>();
+            allItems.ForEach((item) => productsList.Add(_studentService.Get(item)));*/
+
+            var productsList = _studentService.GetMain((MainCategoryTypes)Enum.Parse(typeof(MainCategoryTypes), id));
+           /* if (allItems != null)*/ return Request.CreateResponse(HttpStatusCode.OK, productsList);
             return Request.CreateErrorResponse(HttpStatusCode.NotFound, "Student not found for provided id.");
         }
         public HttpResponseMessage GetAll() {
@@ -23,7 +29,7 @@ namespace Students.Services {
         public void Post([FromBody] Product student) {
             _studentService.Insert(student);
         }
-        public void Delete(int id) {
+        public void Delete(string id) {
             _studentService.Delete(id);
         }
         public void Put([FromBody] Product student) {

@@ -1,12 +1,14 @@
 ﻿using RestModel;
+using System.Collections.Generic;
 using System.Linq;
 namespace Students.Services {  
     public interface IStudentService  
     {  
         void Insert(Product student);
-        Product Get(int i);
+        Product Get(string i);
     IQueryable<Product> GetAll();
-    void Delete(int id);
+    void Delete(string id);
     void Update(Product student);
-}  
+        List<Product> GetMain(MainCategoryTypes type);
+    }  
 }  
