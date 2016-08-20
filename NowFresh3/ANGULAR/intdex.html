@@ -11,16 +11,31 @@
             <div ng-controller="Hello">
                 <div layout="row" class="Container">
 
-                    <div flex="50" flex-order="-1" flex-offset="500" >
-                        <div ng-repeat="aleg in fruit.data" style="float:left">
+                    <div flex="25" flex-order="-1" flex-offset="500" >
+                        <div ng-repeat="aleg in Citrus.data" style="float:left">
                             <div><h2>{{aleg.SpeciesName}}</h2></div>
                             <img data-ng-src=data:image/png;base64,{{aleg.Image}} />
                         </div>
                     </div>
 
                    
-                    <div flex="50" flex-order="2" flex-offset="500">
-                        <div ng-repeat="aleg in veg.data" style="float:right">
+                    <div flex="25" flex-order="0" flex-offset="500">
+                        <div ng-repeat="aleg in Tropic.data" style="float:right">
+                            <div><h2>{{aleg.SpeciesName}}</h2></div>
+                            <img data-ng-src=data:image/png;base64,{{aleg.Image}} />
+                        </div>
+                    </div>
+
+                    <div flex="25" flex-order="1" flex-offset="500">
+                        <div ng-repeat="aleg in Tree.Data" style="float:left">
+                            <div><h2>{{aleg.SpeciesName}}</h2></div>
+                            <img data-ng-src=data:image/png;base64,{{aleg.Image}} />
+                        </div>
+                    </div>
+
+
+                    <div flex="25" flex-order="2" flex-offset="500">
+                        <div ng-repeat="aleg in Bush.data" style="float:right">
                             <div><h2>{{aleg.SpeciesName}}</h2></div>
                             <img data-ng-src=data:image/png;base64,{{aleg.Image}} />
                         </div>

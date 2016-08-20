@@ -15,6 +15,9 @@ namespace Students.Services {
         public List<Product> GetMain(MainCategoryTypes type) {
             return _sUnitOfwork.Products.GetByMainCategory(type);
         }
+        public List<Product> GetSecond(SecondaryCategoryTypes type) {
+            return _sUnitOfwork.Products.GetBySecondCategory(type);
+        }
         public IQueryable<Product> GetAll() {
             return _sUnitOfwork.Products.GetAll();
         }

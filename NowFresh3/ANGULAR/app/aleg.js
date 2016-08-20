@@ -6,14 +6,25 @@
         .controller('Hello', Hello);
 
 function Hello($scope, $http) {
-    $http.get('http://localhost:51612/Api/Students/Fruit').
+    $http.get('http://localhost:51612/Api/Students/Citrus').
         then(function (data) {
-            $scope.fruit =  angular.fromJson(data);
+            $scope.Citrus =  angular.fromJson(data);
         });
 
-    $http.get('http://localhost:51612/Api/Students/Veg').
+    $http.get('http://localhost:51612/Api/Students/Tropic').
       then(function (data) {
-          $scope.veg = angular.fromJson(data);
+          $scope.Tropic = angular.fromJson(data);
+      });
+
+
+    $http.get('http://localhost:51612/Api/Students/Tree').
+      then(function (data) {
+          $scope.Tree = angular.fromJson(data);
+      });
+
+    $http.get('http://localhost:51612/Api/Students/Bush').
+      then(function (data) {
+          $scope.Bush = angular.fromJson(data);
       });
 }
 

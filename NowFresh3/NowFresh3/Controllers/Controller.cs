@@ -17,8 +17,10 @@ namespace Students.Services {
             List<Product> productsList = new List<Product>();
             allItems.ForEach((item) => productsList.Add(_studentService.Get(item)));*/
 
-            var productsList = _studentService.GetMain((MainCategoryTypes)Enum.Parse(typeof(MainCategoryTypes), id));
-           /* if (allItems != null)*/ return Request.CreateResponse(HttpStatusCode.OK, productsList);
+            //var productsList = _studentService.GetMain((MainCategoryTypes)Enum.Parse(typeof(MainCategoryTypes), id));
+            var productsList = _studentService.GetSecond((SecondaryCategoryTypes)Enum.Parse(typeof(SecondaryCategoryTypes), id));
+            /* if (allItems != null)*/
+            return Request.CreateResponse(HttpStatusCode.OK, productsList);
             return Request.CreateErrorResponse(HttpStatusCode.NotFound, "Student not found for provided id.");
         }
         public HttpResponseMessage GetAll() {
