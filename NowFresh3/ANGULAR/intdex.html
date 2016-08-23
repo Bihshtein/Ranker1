@@ -6,126 +6,31 @@
     <link href="Content/angular-material/angular-material.css" rel="stylesheet" />
     <title></title>
     <style>        
-       div1 {  background-color : lightblue      }
-        div2 {  background-color : orangered      }
-
-          div3 {  background-color : forestgreen      }
-        div4 {  background-color : lightyellow      }
-
-          div5 {  background-color : lightpink      }
-        div6 {  background-color : lightsalmon}
-
-          div7 {  background-color : lightslategrey      }
-        div8 {  background-color : teal      }
-
-          div9 {  background-color : olive      }
-        div10 {  background-color : Highlight      }
-             div11 {  background-color : burlywood      }
-        div12 {  background-color : bisque      }
-
-           div13 {  background-color : black      }
-        div14 {  background-color : yellow      }
+      input[type='text'] { font-size: 50px; }
+      div7 {  background-color : lightpink      }
     </style>
 </head>
 <body>
-    <h2>"hem hem "</h2>
+   
     <div class="Container">
         <div ng-controller="Hello">
-            <div layout="row" class="Container">
-                <div1 flex="16.66" flex-order="5">
-                    <div ng-repeat="aleg in Flower.data" style="float:left">
-                        <div><h2>{{aleg.SpeciesName}}</h2></div>
-                        <img data-ng-src=data:image/png;base64,{{aleg.Image}} />
-                    </div>
-                </div1>
-                <div2 flex="16.66" flex-order="6">
-                    <div ng-repeat="aleg in SecFruit.data" style="float:left">
-                        <div><h2>{{aleg.SpeciesName}}</h2></div>
-                        <img data-ng-src=data:image/png;base64,{{aleg.Image}} />
-                    </div>
-                </div2>
-                <div3 flex="16.66" flex-order="7">
-                    <div ng-repeat="aleg in Seed.data" style="float:left">
-                        <div><h2>{{aleg.SpeciesName}}</h2></div>
-                        <img data-ng-src=data:image/png;base64,{{aleg.Image}} />
-                    </div>
-                </div3>
-                <div4 flex="16.66" flex-order="8">
-                    <div ng-repeat="aleg in Leaf.data" style="float:left">
-                        <div><h2>{{aleg.SpeciesName}}</h2></div>
-                        <img data-ng-src=data:image/png;base64,{{aleg.Image}} />
-                    </div>
-                </div4>
-                <div5 flex="16.66" flex-order="9">
-                    <div ng-repeat="aleg in Tubur.data" style="float:left">
-                        <div><h2>{{aleg.SpeciesName}}</h2></div>
-                        <img data-ng-src=data:image/png;base64,{{aleg.Image}} />
-                    </div>
-                </div5>
-                <div6 flex="16.66" flex-order="10">
-                    <div ng-repeat="aleg in Fungus.data" style="float:left">
-                        <div><h2>{{aleg.SpeciesName}}</h2></div>
-                        <img data-ng-src=data:image/png;base64,{{aleg.Image}} />
-                    </div>
-                </div6>
-
-            </div>
+            <label>
+                Single word:
+                <input type="text" name="input" ng-model="example.text"
+                       ng-pattern="example.word" required ng-trim="false">
+            </label>
             <div layout="row" class="Container">
 
                 <div7 flex="16.66" flex-order="-1">
-                    <div ng-repeat="aleg in Citrus.data" style="float:left">
+                    <div ng-repeat="aleg in dict [example.text] .data" style="float:left">
                         <div><h2>{{aleg.SpeciesName}}</h2></div>
                         <img data-ng-src=data:image/png;base64,{{aleg.Image}} />
                     </div>
                 </div7>
-                <div8 flex="16.66" flex-order="0">
-                    <div ng-repeat="aleg in Tropic.data" style="float:left">
-                        <div><h2>{{aleg.SpeciesName}}</h2></div>
-                        <img data-ng-src=data:image/png;base64,{{aleg.Image}} />
-                    </div>
-                </div8>
-                <div9 flex="16.66" flex-order="1">
-                    <div ng-repeat="aleg in Tree.data" style="float:left">
-                        <div><h2>{{aleg.SpeciesName}}</h2></div>
-                        <img data-ng-src=data:image/png;base64,{{aleg.Image}} />
-                    </div>
-                </div9>
-                <div10 flex="16.66" flex-order="2">
-                    <div ng-repeat="aleg in Bush.data" style="float:left">
-                        <div><h2>{{aleg.SpeciesName}}</h2></div>
-                        <img data-ng-src=data:image/png;base64,{{aleg.Image}} />
-                    </div>
-                </div10>
-                <div11 flex="16.66" flex-order="3">
-                    <div ng-repeat="aleg in Nut.data" style="float:left">
-                        <div><h2>{{aleg.SpeciesName}}</h2></div>
-                        <img data-ng-src=data:image/png;base64,{{aleg.Image}} />
-                    </div>
-                </div11>
-                <div12 flex="16.66" flex-order="4">
-                    <div ng-repeat="aleg in Root.data" style="float:left">
-                        <div><h2>{{aleg.SpeciesName}}</h2></div>
-                        <img data-ng-src=data:image/png;base64,{{aleg.Image}} />
-                    </div>
-                </div12>
+              
             </div>
 
 
-            <div layout="row" class="Container">
-
-                <div13 flex="50" flex-order="-1">
-                    <div ng-repeat="aleg in MainFruit.data" style="float:left">
-                        <div><h2>{{aleg.SpeciesName}}</h2></div>
-                        <img data-ng-src=data:image/png;base64,{{aleg.Image}} />
-                    </div>
-                </div13>
-                <div14 flex="50" flex-order="0">
-                    <div ng-repeat="aleg in Veg.data" style="float:right">
-                        <div><h2>{{aleg.SpeciesName}}</h2></div>
-                        <img data-ng-src=data:image/png;base64,{{aleg.Image}} />
-                    </div>
-                </div14>
-            </div>
 
         </div>
     </div>

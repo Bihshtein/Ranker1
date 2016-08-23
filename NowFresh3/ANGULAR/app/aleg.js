@@ -5,10 +5,12 @@
         .module('app')
         .controller('Hello', Hello);
 
-function Hello($scope, $http) {
+    function Hello($scope, $http) {
     $http.get('http://localhost:51612/Api/Students/Sec=Citrus').
         then(function (data) {
-            $scope.Citrus =  angular.fromJson(data);
+            $scope.dict = {
+                "Citrus": angular.fromJson(data)
+            };
         });
     $http.get('http://localhost:51612/Api/Students/Sec=Tropic').
       then(function (data) {
