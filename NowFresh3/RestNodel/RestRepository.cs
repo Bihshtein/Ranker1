@@ -22,8 +22,11 @@ namespace RestModel {
         }
 
         public List<T> GetByMainCategory(MainCategoryTypes type) {
-            var filter = Builders<BsonDocument>.Filter.Eq("_main", type);
             return _collection.Find(Query<Product>.Where(x => x.MainCategory == type)).ToList();
+        }
+
+        public List<T> GetBySecondCategory(SecondaryCategoryTypes type) {
+            return _collection.Find(Query<Product>.Where(x => x.SecondaryCategory == type)).ToList();
         }
 
         public IQueryable<T> GetAll()
