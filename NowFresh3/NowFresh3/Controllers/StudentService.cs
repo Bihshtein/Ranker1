@@ -13,13 +13,17 @@ namespace Students.Services {
         }
 
         public List<Product> GetMain(MainCategoryTypes type) {
-            return dbLayer.Products.GetByMainCategory(type);
+            return dbLayer.Products.GetByMainCategory(type).Where(IsEmpty).ToList();
+        }
+        public static bool IsEmpty(Product p) {
+            return p.Image != null;
+
         }
         public List<Product> GetSecond(SecondaryCategoryTypes type) {
-            return dbLayer.Products.GetBySecondCategory(type);
+            return dbLayer.Products.GetBySecondCategory(type).Where(IsEmpty).ToList(); 
         }
         public IQueryable<Product> GetAll() {
-            return dbLayer.Products.GetAll();
+            return dbLayer.Products.GetAll().ToList().Where(IsEmpty).AsQueryable();
         }
         public void Delete(string id) {
             dbLayer.Products.Delete(s => s.SpeciesName, id);
