@@ -8,11 +8,15 @@
     function Hello($scope, $http) {
     $http.get('http://localhost:51612/Api/Students/Sec=Citrus').
         then(function (data) {
-            $scope.list = ["MainFruit", "Veg","Citrus", "Tropic"]
             $scope.dict = {
                 "Citrus": angular.fromJson(data)
             };
         });
+    $http.get('http://localhost:51612/Api/Students/').
+then(function (data) {
+    $scope.dict["All"] = angular.fromJson(data);
+});
+
     $http.get('http://localhost:51612/Api/Students/Sec=Tropic').
       then(function (data) {
           $scope.dict["Tropic"] = angular.fromJson(data);

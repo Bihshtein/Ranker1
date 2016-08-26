@@ -15,7 +15,7 @@ namespace TestTheMongo {
         }
         [TestMethod]
         public void AddSomeProducts() {
-            var unit = new RestUnitOfWork();            
+            var unit = new RestDBInterface();            
             
             var lines = File.ReadAllLines(FolderPath + "Products_Table.csv").ToList();
             lines.ForEach((line) => unit.Products.Add(GetProduct(line)));

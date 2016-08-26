@@ -1,14 +1,13 @@
 ﻿using MongoDB.Driver;
 using System.Configuration;
 namespace RestModel {
-    public class RestUnitOfWork {
+    public class RestDBInterface {
         private MongoDatabase _database;
         protected RestRepository<Product> products;
-        public RestUnitOfWork() {
+        public RestDBInterface() {
             var client = new MongoClient();
             var server = client.GetServer();
             _database = server.GetDatabase("test");
-            //_database.GetCollection("products").Drop();
         }
         public RestRepository<Product> Products {
             get {

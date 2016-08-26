@@ -59,14 +59,14 @@ namespace OldDays {
 
         public static string FolderPath = Assembly.GetExecutingAssembly().Location + @"\..\..\..\..\FruitsDB\";
         public static void AddSomeProducts() {
-                var unit = new RestUnitOfWork();
+                var unit = new RestDBInterface();
                 var lines = File.ReadAllLines(FolderPath + "Products_Table.csv").ToList();
                _database.DropCollection("products");
 
                 lines.ForEach((line) => AddProduct(unit,line));
         }
 
-        public static void AddProduct(RestUnitOfWork unit, string line) {
+        public static void AddProduct(RestDBInterface unit, string line) {
             var parts = line.Split(',');
             var collection = _database.GetCollection<BsonDocument>("products");
             unit.Products.Add(GetProduct(parts));
