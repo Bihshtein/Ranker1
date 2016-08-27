@@ -155,3 +155,4 @@ $RECYCLE.BIN/
 #*.csproj
 .DS_Store
 /NowFresh3/.vs/
+/NowFresh3/packages
