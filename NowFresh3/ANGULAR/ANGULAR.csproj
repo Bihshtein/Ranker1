@@ -102,7 +102,6 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="img\Red_Apple.png" />
     <Content Include="scripts\angular-animate.js" />
     <Content Include="scripts\angular-animate.min.js" />
     <Content Include="scripts\angular-aria.js" />
@@ -124,8 +123,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="app\app.module.js" />
-    <Content Include="app\Main.js" />
     <Content Include="intdex.html" />
     <Content Include="scripts\ai.0.15.0-build58334.js" />
     <Content Include="scripts\ai.0.15.0-build58334.min.js" />

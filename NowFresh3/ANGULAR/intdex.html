@@ -21,9 +21,9 @@
     <div class="Container">
         <div ng-controller="Hello">
             <label>
-               r Value one:
+                Input:
                 <input type="text" name="input" ng-model="example.text"
-                       ng-pattern="example.word" ng-list required capitalize-first>
+                       ng-pattern="example.word" ng-list>
             </label>
            
             <div layout="row" class="Container2">
@@ -31,6 +31,8 @@
                     <div flex="20"  flex-order="-1">
                         <div ng-repeat="aleg in dict [val] .data"  style="float:left">
                             <div><h2>{{aleg.Name}}</h2></div>
+                            <div><h2>{{aleg.Protein}}</h2></div>
+                            <div><h2>{{aleg.Fat}}</h2></div>
                             <img data-ng-src=data:image/png;base64,{{aleg.Image}} />
                         </div>
                     </div>
@@ -42,8 +44,6 @@
     
 
     <script src="Scripts/angular.min.js"></script>
-    <script src="app/app.module.js"></script>
-    <script src="app/Main.js"></script>
     <script src="app/aleg.js"></script>
 
 </body>

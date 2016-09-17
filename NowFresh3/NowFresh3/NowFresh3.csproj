@@ -208,7 +208,6 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\Controller.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\IStudentService.cs" />
     <Compile Include="Controllers\StudentService.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">

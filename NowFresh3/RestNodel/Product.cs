@@ -16,6 +16,8 @@ namespace RestModel {
         public string Name { get; set; }
         [BsonElement("_protein")]
         public double Protein { get; set; }
+        [BsonElement("_fat")]
+        public double Fat { get; set; }
         public byte[] Image { get; set; }
         
     }

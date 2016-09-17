@@ -12,7 +12,7 @@ namespace Students.Services {
             return dbLayer.Products.Get(i);
         }
 
-        public List<Product> GeProtein(double min) {
+        public List<Product> GetProtein(double min) {
             return dbLayer.Products.GetByProtein(min).Where(IsEmpty).ToList();
         }
         public static bool IsEmpty(Product p) {

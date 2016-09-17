@@ -16,7 +16,7 @@ namespace Students.Services {
             List<Product> productsList = null;
             var parts = id.Split('=');
             if (parts[0] == "Protein") 
-                productsList = productsService.GeProtein(double.Parse(parts[1]));
+                productsList = productsService.GetProtein(double.Parse(parts[1]));
             return Request.CreateResponse(HttpStatusCode.OK, productsList);
         }
         public HttpResponseMessage GetAll() {
