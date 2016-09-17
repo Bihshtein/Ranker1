@@ -21,13 +21,10 @@ namespace RestModel {
             return _collection.FindOneById(i);
         }
 
-        public List<T> GetByMainCategory(MainCategoryTypes type) {
-            return _collection.Find(Query<Product>.Where(x => x.MainCategory == type)).ToList();
+        public List<T> GetByProtein(double min) {
+            return _collection.Find(Query<Product>.Where(x => x.Protein > min)).ToList();
         }
 
-        public List<T> GetBySecondCategory(SecondaryCategoryTypes type) {
-            return _collection.Find(Query<Product>.Where(x => x.SecondaryCategory == type)).ToList();
-        }
 
         public IQueryable<T> GetAll()
         {

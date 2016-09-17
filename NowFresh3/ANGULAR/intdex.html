@@ -28,7 +28,7 @@
                 <div7 ng-repeat="val in example.text" class="Container3" style="float:left">
                     <div flex="50"  flex-order="-1">
                         <div ng-repeat="aleg in dict [val] .data"  style="float:left">
-                            <div><h2>{{aleg.SpeciesName}}</h2></div>
+                            <div><h2>{{aleg.Name}}</h2></div>
                             <img data-ng-src=data:image/png;base64,{{aleg.Image}} />
                         </div>
                     </div>

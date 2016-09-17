@@ -8,17 +8,15 @@ using System;
 
 namespace Students.Services {
     public class ProductsController : ApiController {
-        private readonly IProductsService productsService;
+        private readonly ProductsService productsService;
         public ProductsController() {
             productsService = new ProductsService();
         }
         public HttpResponseMessage Get(string id) {
             List<Product> productsList = null;
             var parts = id.Split('=');
-            if (parts[0] == "Main") 
-                productsList = productsService.GetMain((MainCategoryTypes)Enum.Parse(typeof(MainCategoryTypes), parts[1]));
-            else if (parts[0] == "Sec") 
-                productsList = productsService.GetSecond((SecondaryCategoryTypes)Enum.Parse(typeof(SecondaryCategoryTypes), parts[1]));
+            if (parts[0] == "Protein") 
+                productsList = productsService.GeProtein(double.Parse(parts[1]));
             return Request.CreateResponse(HttpStatusCode.OK, productsList);
         }
         public HttpResponseMessage GetAll() {

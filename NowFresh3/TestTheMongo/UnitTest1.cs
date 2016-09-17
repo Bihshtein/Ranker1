@@ -29,7 +29,7 @@ namespace TestTheMongo {
             byte[] imgBytes = null;
             if (File.Exists(imgPath))
                 imgBytes = File.ReadAllBytes(imgPath);
-            return new Product() { MainCategory = main, SecondaryCategory = second, SpeciesName = parts[2], Image = imgBytes};
+            return new Product() { MainCategory = main, SecondaryCategory = second, Name = parts[2], Image = imgBytes};
         }
     }
 }

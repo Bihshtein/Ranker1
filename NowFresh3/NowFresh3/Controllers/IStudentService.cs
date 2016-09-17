@@ -9,7 +9,5 @@ namespace Students.Services {
         IQueryable<Product> GetAll();
         void Delete(string id);
         void Update(Product student);
-        List<Product> GetMain(MainCategoryTypes type);
-        List<Product> GetSecond(SecondaryCategoryTypes type);
     }  
 }  
