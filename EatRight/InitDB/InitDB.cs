@@ -44,11 +44,16 @@ namespace InitDB {
         public static Product GetProduct(string name, dynamic jsonReponse) {
             var protein = double.Parse(jsonReponse.report.food.nutrients[3].value.ToString());
             var fat = double.Parse(jsonReponse.report.food.nutrients[4].value.ToString());
+            var fiber = double.Parse(jsonReponse.report.food.nutrients[7].value.ToString());
             var imgPath = FolderPath + name + ".png";
             byte[] imgBytes = null;
             if (File.Exists(imgPath))
                 imgBytes = File.ReadAllBytes(imgPath);
-            return new Product() { Name = name, Image = imgBytes, Protein = protein, Fat = fat };
+            else if (name.Length > 5)
+                imgBytes = File.ReadAllBytes(FolderPath + "Morty.png");
+            else
+                imgBytes = File.ReadAllBytes(FolderPath + "Rick.png");
+            return new Product() { Name = name, Image = imgBytes, Protein = protein, Fat = fat , Fiber = fiber};
         }
     }
 
