@@ -1,6 +1,7 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Driver;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using RestModel;
 using System;
 using System.Collections.Generic;
@@ -30,21 +31,17 @@ namespace InitDB {
 
 
         public static void AddProduct(RestDBInterface unit, string line) {
-
             var parts = line.Split(',');
             Console.WriteLine("Adding : " + parts[0]);
             var str = string.Format(Url, parts[1], Format, ApiKey);
             var data = new WebClient().DownloadString(str);
             var res = JsonConvert.DeserializeObject<dynamic>(data);
-            
             var collection = _database.GetCollection<BsonDocument>("products");
             unit.Products.Add(GetProduct(parts[0], res));
         }
 
         public static Product GetProduct(string name, dynamic jsonReponse) {
-            var protein = double.Parse(jsonReponse.report.food.nutrients[3].value.ToString());
-            var fat = double.Parse(jsonReponse.report.food.nutrients[4].value.ToString());
-            var fiber = double.Parse(jsonReponse.report.food.nutrients[7].value.ToString());
+            JArray nutrients = jsonReponse.report.food.nutrients;
             var imgPath = FolderPath + name + ".png";
             byte[] imgBytes = null;
             if (File.Exists(imgPath))
@@ -53,9 +50,27 @@ namespace InitDB {
                 imgBytes = File.ReadAllBytes(FolderPath + "Morty.png");
             else
                 imgBytes = File.ReadAllBytes(FolderPath + "Rick.png");
-            return new Product() { Name = name, Image = imgBytes, Protein = protein, Fat = fat , Fiber = fiber};
+            var p = new Product() { Name = name, Image = imgBytes };
+            p.Protein = GetMeasure(nutrients, "Protein");
+            p.Fat = GetMeasure(nutrients, "Total lipid (fat)");
+            p.Fiber = GetMeasure(nutrients, "Fiber, total dietary");
+            p.Serving = GetServing(jsonReponse, "NLEA serving");
+            return p;
+        }
+
+        public static double GetMeasure(JArray array, string item ) {
+            var obj = ((dynamic)array.FirstOrDefault((i) => ((dynamic)i).name == item));
+            if (obj == null)
+                return 0;
+            return double.Parse(obj.value.ToString());
+        }
+
+        public static double GetServing(dynamic json, string item) {
+            JArray firstMeasures = json.report.food.nutrients[0].measures;
+            var obj = ((dynamic)firstMeasures.FirstOrDefault((i) => ((dynamic)i).label == item));
+            if (obj == null)
+                return 0;
+            return double.Parse(obj.eqv.ToString());
         }
     }
-
-   
 }

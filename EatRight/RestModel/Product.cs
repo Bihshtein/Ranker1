@@ -14,12 +14,19 @@ namespace RestModel {
     {
         [BsonElement("_id")]
         public string Name { get; set; }
+
         [BsonElement("_protein")]
         public double Protein { get; set; }
+
         [BsonElement("_fat")]
         public double Fat { get; set; }
+
         [BsonElement("_fiber")]
         public double Fiber { get; set; }
+
+        [BsonElement("_serving")]
+        public double Serving { get; set; }
+
         public byte[] Image { get; set; }
         
     }
