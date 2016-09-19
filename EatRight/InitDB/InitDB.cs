@@ -54,7 +54,12 @@ namespace InitDB {
             p.Protein = GetMeasure(nutrients, "Protein");
             p.Fat = GetMeasure(nutrients, "Total lipid (fat)");
             p.Fiber = GetMeasure(nutrients, "Fiber, total dietary");
-            p.Serving = GetServing(jsonReponse, "NLEA serving");
+            p.Serving = GetSize(jsonReponse, "NLEA serving");
+            p.UnitSize = GetSize(jsonReponse, name.ToLower());
+            if (p.UnitSize == 0)
+                p.UnitSize = GetSize(jsonReponse, "medium");
+            if (p.UnitSize == 0)
+                p.UnitSize = GetSize(jsonReponse, "large");
             return p;
         }
 
@@ -65,9 +70,9 @@ namespace InitDB {
             return double.Parse(obj.value.ToString());
         }
 
-        public static double GetServing(dynamic json, string item) {
+        public static double GetSize(dynamic json, string item) {
             JArray firstMeasures = json.report.food.nutrients[0].measures;
-            var obj = ((dynamic)firstMeasures.FirstOrDefault((i) => ((dynamic)i).label == item));
+            var obj = ((dynamic)firstMeasures.FirstOrDefault((i) => ((string)((dynamic)i).label).StartsWith(item)));
             if (obj == null)
                 return 0;
             return double.Parse(obj.eqv.ToString());

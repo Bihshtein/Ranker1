@@ -27,6 +27,9 @@ namespace RestModel {
         [BsonElement("_serving")]
         public double Serving { get; set; }
 
+        [BsonElement("_size")]
+        public double UnitSize { get; set; }
+
         public byte[] Image { get; set; }
         
     }
