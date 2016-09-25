@@ -25,7 +25,7 @@ namespace InitDB {
         public static void Init() {
             var unit = new RestDBInterface();
             var lines = File.ReadAllLines(FolderPath + "Products_IDS.csv").ToList();
-            //_database.DropCollection("products");
+            _database.DropCollection("products");
             lines.ForEach((line) => AddProduct(unit, line));
         }
 
@@ -45,6 +45,10 @@ namespace InitDB {
             }
         }
 
+        public static List<string> PotentialSizeNames = new List<string>() {
+            "medium", "large", "cup", "steak", "fillet", "slice", "breast", "piece whole"
+        };
+
         public static Product GetProduct(string name, dynamic jsonReponse) {
             JArray nutrients = jsonReponse.report.food.nutrients;
             var imgPath = FolderPath + name + ".png";
@@ -61,10 +65,9 @@ namespace InitDB {
             p.Fiber = GetMeasure(nutrients, "Fiber, total dietary");
             p.Serving = GetSize(jsonReponse, "NLEA serving");
             p.UnitSize = GetSize(jsonReponse, name.ToLower());
-            if (p.UnitSize == 0)
-                p.UnitSize = GetSize(jsonReponse, "medium");
-            if (p.UnitSize == 0)
-                p.UnitSize = GetSize(jsonReponse, "large");
+
+            for (int i = 0; i < PotentialSizeNames.Count && p.UnitSize == 0; i++) 
+                p.UnitSize = GetSize(jsonReponse, PotentialSizeNames[i]);
             return p;
         }
 
