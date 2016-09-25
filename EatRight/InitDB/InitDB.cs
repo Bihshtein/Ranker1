@@ -25,19 +25,24 @@ namespace InitDB {
         public static void Init() {
             var unit = new RestDBInterface();
             var lines = File.ReadAllLines(FolderPath + "Products_IDS.csv").ToList();
-            _database.DropCollection("products");
+            //_database.DropCollection("products");
             lines.ForEach((line) => AddProduct(unit, line));
         }
 
 
         public static void AddProduct(RestDBInterface unit, string line) {
             var parts = line.Split(',');
-            Console.WriteLine("Adding : " + parts[0]);
-            var str = string.Format(Url, parts[1], Format, ApiKey);
-            var data = new WebClient().DownloadString(str);
-            var res = JsonConvert.DeserializeObject<dynamic>(data);
-            var collection = _database.GetCollection<BsonDocument>("products");
-            unit.Products.Add(GetProduct(parts[0], res));
+            var name = parts[0];
+            if (unit.Products.Get(name) != null)
+                Console.WriteLine("Skipping : " + name);
+            else {
+                Console.WriteLine("Adding : " + name);
+                var str = string.Format(Url, parts[1], Format, ApiKey);
+                var data = new WebClient().DownloadString(str);
+                var res = JsonConvert.DeserializeObject<dynamic>(data);
+                var collection = _database.GetCollection<BsonDocument>("products");
+                unit.Products.Add(GetProduct(name, res));
+            }
         }
 
         public static Product GetProduct(string name, dynamic jsonReponse) {
