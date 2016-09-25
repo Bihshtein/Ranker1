@@ -25,7 +25,7 @@ namespace InitDB {
         public static void Init() {
             var unit = new RestDBInterface();
             var lines = File.ReadAllLines(FolderPath + "Products_IDS.csv").ToList();
-            _database.DropCollection("products");
+       //     _database.DropCollection("products");
             lines.ForEach((line) => AddProduct(unit, line));
         }
 
