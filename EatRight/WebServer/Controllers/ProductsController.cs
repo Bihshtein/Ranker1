@@ -15,8 +15,10 @@ namespace Students.Services {
         public HttpResponseMessage Get(string id) {
             List<Product> productsList = null;
             var parts = id.Split('=');
-            if (parts[0] == "Protein") 
-                productsList = productsService.GetProtein(double.Parse(parts[1]));
+            if (parts[0] == "Protein") { 
+                var innerParts = parts[1].Split(',');
+                productsList = productsService.GetProtein(double.Parse(innerParts[0]), double.Parse(innerParts[1]), double.Parse(innerParts[2]));
+            }
             return Request.CreateResponse(HttpStatusCode.OK, productsList);
         }
         public HttpResponseMessage GetAll() {

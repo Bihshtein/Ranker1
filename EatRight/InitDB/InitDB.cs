@@ -25,7 +25,7 @@ namespace InitDB {
         public static void Init() {
             var unit = new RestDBInterface();
             var lines = File.ReadAllLines(FolderPath + "Products_IDS.csv").ToList();
-       //     _database.DropCollection("products");
+            _database.DropCollection("products");
             lines.ForEach((line) => AddProduct(unit, line));
         }
 
@@ -46,7 +46,11 @@ namespace InitDB {
         }
 
         public static List<string> PotentialSizeNames = new List<string>() {
-            "medium", "large", "cup", "steak", "fillet", "slice", "breast", "piece whole"
+            "medium", "large", "slice", "breast", "piece whole"
+        };
+
+        public static List<string> PotentialServingNames = new List<string>() {
+             "NLEA serving", "cup", "steak", "fillet",
         };
 
         public static Product GetProduct(string name, dynamic jsonReponse) {
@@ -63,14 +67,22 @@ namespace InitDB {
             p.Protein = GetMeasure(nutrients, "Protein");
             p.Fat = GetMeasure(nutrients, "Total lipid (fat)");
             p.Fiber = GetMeasure(nutrients, "Fiber, total dietary");
-            p.Serving = GetSize(jsonReponse, "NLEA serving");
-            p.UnitSize = GetSize(jsonReponse, name.ToLower());
 
-            for (int i = 0; i < PotentialSizeNames.Count && p.UnitSize == 0; i++) 
-                p.UnitSize = GetSize(jsonReponse, PotentialSizeNames[i]);
+            p.Serving= GetSize(jsonReponse, PotentialServingNames);
+
+            p.UnitSize = GetSize(jsonReponse, name.ToLower());
+            if (p.UnitSize == 0)
+                p.UnitSize = GetSize(jsonReponse, PotentialSizeNames);
+
             return p;
         }
 
+        public static double GetSize(dynamic json, List<string> PotentialSizeNames) {
+            double size =0;
+            for (int i = 0; i < PotentialSizeNames.Count && size == 0; i++)
+                size = GetSize(json, PotentialSizeNames[i]);
+            return size;
+        }
         public static double GetMeasure(JArray array, string item ) {
             var obj = ((dynamic)array.FirstOrDefault((i) => ((dynamic)i).name == item));
             if (obj == null)

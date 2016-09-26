@@ -13,7 +13,7 @@
         .controller('Query', Hello);
 
     function Hello($scope, $http) {
-        $http.get('http://localhost:51612/Api/Products/Protein=2').
+        $http.get('http://localhost:51612/Api/Products/Protein=10,80,4000').
         then(function (data) {
             $scope.dict = {
                 "Protein": angular.fromJson(data),

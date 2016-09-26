@@ -21,6 +21,9 @@ namespace RestModel {
         [BsonElement("_fat")]
         public double Fat { get; set; }
 
+        [BsonElement("_carbs")]
+        public double Carbs { get; set; }
+
         [BsonElement("_fiber")]
         public double Fiber { get; set; }
 

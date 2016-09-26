@@ -12,8 +12,18 @@ namespace Students.Services {
             return dbLayer.Products.Get(i);
         }
 
-        public List<Product> GetProtein(double min) {
-            return dbLayer.Products.GetByProtein(min).Where(IsEmpty).ToList();
+        public List<Product> GetProtein(double min, double minProteinForDay, double maxCaloriesForDay) {
+            var numOfProcuts = 5;
+            var products = dbLayer.Products.GetByProtein(min).Where(IsEmpty).ToList();
+            var filteredProducts = new List<Product>();
+            foreach (var product in products) {
+                var ratio = product.Serving / 100;
+                var totalProtein = (product.Protein * 7) * ratio;
+                var totalCalories = ((product.Fat*7 + product.Carbs*7) * ratio) + totalProtein;
+                if ((totalProtein > minProteinForDay / numOfProcuts) && (totalCalories < maxCaloriesForDay / 5))
+                    filteredProducts.Add(product);
+            }
+            return filteredProducts;
         }
         public static bool IsEmpty(Product p) {
             return p.Image != null;
