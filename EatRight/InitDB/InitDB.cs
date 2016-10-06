@@ -26,19 +26,30 @@ namespace InitDB {
             var unit = new RestDBInterface();
             var lines = File.ReadAllLines(FolderPath + "Products_IDS.csv").ToList();
             _database.DropCollection("products");
-            lines.ForEach((line) => AddProduct(unit, line));
+            lines.ForEach((line) => AddProduct(unit, line,true));
         }
 
 
-        public static void AddProduct(RestDBInterface unit, string line) {
+        public static void AddProduct(RestDBInterface unit, string line, bool online) {
             var parts = line.Split(',');
             var name = parts[0];
             if (unit.Products.Get(name) != null)
                 Console.WriteLine("Skipping : " + name);
             else {
                 Console.WriteLine("Adding : " + name);
-                var str = string.Format(Url, parts[1], Format, ApiKey);
-                var data = new WebClient().DownloadString(str);
+                string data;
+                var path = Path.Combine(FolderPath, "JSONS", name + ".txt");
+
+                if (online)
+                {
+                    var str = string.Format(Url, parts[1], Format, ApiKey);
+                    data = new WebClient().DownloadString(str);
+                    File.WriteAllText(path, data);
+                }
+                else
+                {
+                    data = File.ReadAllText(path);
+                }
                 var res = JsonConvert.DeserializeObject<dynamic>(data);
                 var collection = _database.GetCollection<BsonDocument>("products");
                 unit.Products.Add(GetProduct(name, res));
@@ -64,12 +75,12 @@ namespace InitDB {
             else
                 imgBytes = File.ReadAllBytes(FolderPath + "Rick.png");
             var p = new Product() { Name = name, Image = imgBytes };
-            p.Protein = GetMeasure(nutrients, "Protein");
+           /* p.Protein = GetMeasure(nutrients, "Protein");
             p.Fat = GetMeasure(nutrients, "Total lipid (fat)");
             p.Fiber = GetMeasure(nutrients, "Fiber, total dietary");
 
             p.Serving= GetSize(jsonReponse, PotentialServingNames);
-
+            */
             p.UnitSize = GetSize(jsonReponse, name.ToLower());
             if (p.UnitSize == 0)
                 p.UnitSize = GetSize(jsonReponse, PotentialSizeNames);

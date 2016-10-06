@@ -7,14 +7,10 @@ using System.Web;
 
 using MongoDB.Bson.Serialization.Attributes;
 namespace RestModel {  
-    public enum StateTypes { Fresh,Dried, Pickled, Fried }
+    public enum ServingStateName { Raw,Dried, Pickled, Fried , Smo}
 
-
-    public class Product
+    public class ServingStateInfo
     {
-        [BsonElement("_id")]
-        public string Name { get; set; }
-
         [BsonElement("_protein")]
         public double Protein { get; set; }
 
@@ -24,8 +20,25 @@ namespace RestModel {
         [BsonElement("_carbs")]
         public double Carbs { get; set; }
 
+
+
         [BsonElement("_fiber")]
         public double Fiber { get; set; }
+
+        public byte[] Image { get; set; }
+    }
+
+
+    public class Product
+    {
+        public Product()
+        {
+            ServingOptions = new Dictionary<ServingStateName, ServingStateInfo>();
+        }
+        [BsonElement("_id")]
+        public string Name { get; set; }
+
+        public Dictionary<ServingStateName, ServingStateInfo> ServingOptions { get; set; }
 
         [BsonElement("_serving")]
         public double Serving { get; set; }
@@ -34,7 +47,16 @@ namespace RestModel {
         public double UnitSize { get; set; }
 
         public byte[] Image { get; set; }
-        
-    }
 
+    }
+    public class CompexProduct
+    {
+        public CompexProduct()
+        {
+            Products = new List<Product>();
+        }
+        List<Product> Products { get; set; }
+
+    }
 }  
+

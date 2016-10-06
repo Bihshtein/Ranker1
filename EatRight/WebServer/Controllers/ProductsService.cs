@@ -17,9 +17,10 @@ namespace Students.Services {
             var products = dbLayer.Products.GetByProtein(min).Where(IsEmpty).ToList();
             var filteredProducts = new List<Product>();
             foreach (var product in products) {
+                var serving = product.ServingOptions[ServingStateName.Raw];
                 var ratio = product.Serving / 100;
-                var totalProtein = (product.Protein * 7) * ratio;
-                var totalCalories = ((product.Fat*7 + product.Carbs*7) * ratio) + totalProtein;
+                var totalProtein = (serving.Protein * 7) * ratio;
+                var totalCalories = ((serving.Fat*7 + serving.Carbs*7) * ratio) + totalProtein;
                 if ((totalProtein > minProteinForDay / numOfProcuts) && (totalCalories < maxCaloriesForDay / 5))
                     filteredProducts.Add(product);
             }

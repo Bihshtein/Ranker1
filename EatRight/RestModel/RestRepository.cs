@@ -37,7 +37,7 @@ namespace RestModel {
         }
 
         public List<T> GetByProtein(double min) {
-            return _collection.Find(Query<Product>.Where(x => x.Protein > min)).ToList();
+            return _collection.Find(Query<Product>.Where(x => x.ServingOptions.Values.FirstOrDefault((x2) => x2.Protein > min) != null)).ToList();
         }
 
 
