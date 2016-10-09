@@ -15,9 +15,14 @@ namespace Students.Services {
         public HttpResponseMessage Get(string id) {
             List<Product> productsList = null;
             var parts = id.Split('=');
-            if (parts[0] == "Protein") { 
+            if (parts[0] == "Protein")
+            {
                 var innerParts = parts[1].Split(',');
                 productsList = productsService.GetProtein(double.Parse(innerParts[0]), double.Parse(innerParts[1]), double.Parse(innerParts[2]));
+            }
+            else if (parts[0] == "Animal")
+            {
+                productsList = productsService.GetAnimal(parts[1]);
             }
             return Request.CreateResponse(HttpStatusCode.OK, productsList);
         }
