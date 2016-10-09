@@ -32,7 +32,7 @@ namespace RestModel {
             _tableName = tblName;
             _collection = _database.GetCollection<T>(tblName);
         }
-        public T Get(string i) {
+        public T Get(int i) {
             return _collection.FindOneById(i);
         }
 

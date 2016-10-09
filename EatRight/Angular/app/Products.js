@@ -29,6 +29,11 @@
        $scope.dict["Chicken"] = angular.fromJson(data);
 
    });
+    $http.get('http://localhost:51612/Api/Products/Animal=Chicken').
+   then(function (data) {
+       $scope.dict["Aleg"] = angular.fromJson(data);
+
+   });
 
 }
 

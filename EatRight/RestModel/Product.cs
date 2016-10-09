@@ -20,6 +20,9 @@ namespace RestModel {
         [BsonElement("_serving")]
         public double Serving { get; set; }
 
+        [BsonElement("_hasSkin")]
+        public bool HasSkin { get; set; }
+
         [BsonElement("_size")]
         public double UnitSize { get; set; }
 
@@ -35,11 +38,14 @@ namespace RestModel {
         [BsonElement("_fiber")]
         public double Fiber { get; set; }
 
-        public byte[] Image { get; set; }
         [BsonElement("_animal")]
         public string Animal { get; set; }
+
         [BsonElement("_servingState")]
         public string ServingState{ get; set; }
+
+        public byte[] Image { get; set; }
+
     }
 }  
 

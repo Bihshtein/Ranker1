@@ -37,7 +37,8 @@ Sirloin,23241
 Chicken_Breast,05000
 Chicken_Wing_Raw,05100
 Chicken_Wing_Fried,05106
-Chicken_Wing_Roasted,05107
+Chicken_Wing_Roasted,05103
+Chicken_Wing_Roasted_NoSkin,05107
 Chicken_Wing_Stewed,05104
 Chicken_Thigh_Braised,05681
 Chicken_Thigh_Roasted,05683

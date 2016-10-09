@@ -25,7 +25,7 @@ namespace InitDB {
         public static void Init() {
             var unit = new RestDBInterface();
             var lines = File.ReadAllLines(FolderPath + "Products_IDS.csv").ToList();
-            _database.DropCollection("products");
+            //_database.DropCollection("products");
             lines.ForEach((line) => AddProduct(unit, line,false));
         }
 
@@ -34,7 +34,7 @@ namespace InitDB {
             var parts = line.Split(',');
             var name = parts[0];
             var id = parts[1];
-            if (unit.Products.Get(name) != null)
+            if (unit.Products.Get(int.Parse(id)) != null)
                 Console.WriteLine("Skipping : " + name);
             else {
                 Console.WriteLine("Adding : " + name);
@@ -58,7 +58,7 @@ namespace InitDB {
         }
 
         public static List<string> PotentialSizeNames = new List<string>() {
-            "medium", "large", "slice", "breast", "piece whole"
+            "medium", "large", "slice", "breast", "piece whole","piece"
         };
 
         public static List<string> PotentialServingNames = new List<string>() {
@@ -67,6 +67,7 @@ namespace InitDB {
 
         public static Product GetProduct(int id, string name, dynamic jsonReponse) {
             var parts = name.Split('_');
+            bool hasSkin = true;
             string animal = string.Empty;
             string servingState = "Raw";
             if (parts.Length == 2)
@@ -74,11 +75,15 @@ namespace InitDB {
                 name = parts[0];
                 servingState = parts[1];
             }
-            else if (parts.Length == 3)
+            else if (parts.Length > 2)
             {
                 animal = parts[0];
                 name = parts[1];
                 servingState = parts[2];
+                if (parts.Length == 4)
+                {
+                    hasSkin = !(parts[3] == "NoSkin");
+                }
             }
 
             JArray nutrients = jsonReponse.report.food.nutrients;
@@ -90,7 +95,7 @@ namespace InitDB {
                 imgBytes = File.ReadAllBytes(FolderPath + "Morty.png");
             else
                 imgBytes = File.ReadAllBytes(FolderPath + "Rick.png");
-            var p = new Product() {ID=id, Name = name, Image = imgBytes, Animal = animal, ServingState = servingState };
+            var p = new Product() {ID=id, Name = name, Image = imgBytes, Animal = animal, ServingState = servingState, HasSkin = hasSkin };
 
             p.Protein = GetMeasure(nutrients, "Protein");
             p.Fat = GetMeasure(nutrients, "Total lipid (fat)");
