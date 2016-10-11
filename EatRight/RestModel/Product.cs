@@ -17,9 +17,6 @@ namespace RestModel {
         [BsonElement("_name")]
         public string Name { get; set; }
 
-        [BsonElement("_serving")]
-        public double Serving { get; set; }
-
         [BsonElement("_hasSkin")]
         public bool HasSkin { get; set; }
 

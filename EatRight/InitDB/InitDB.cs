@@ -25,7 +25,7 @@ namespace InitDB {
         public static void Init() {
             var unit = new RestDBInterface();
             var lines = File.ReadAllLines(FolderPath + "Products_IDS.csv").ToList();
-            //_database.DropCollection("products");
+            _database.DropCollection("products");
             lines.ForEach((line) => AddProduct(unit, line,false));
         }
 
@@ -61,9 +61,6 @@ namespace InitDB {
             "medium", "large", "slice", "breast", "piece whole","piece"
         };
 
-        public static List<string> PotentialServingNames = new List<string>() {
-             "NLEA serving", "cup", "steak", "fillet",
-        };
 
         public static Product GetProduct(int id, string name, dynamic jsonReponse) {
             var parts = name.Split('_');
@@ -100,9 +97,8 @@ namespace InitDB {
             p.Protein = GetMeasure(nutrients, "Protein");
             p.Fat = GetMeasure(nutrients, "Total lipid (fat)");
             p.Fiber = GetMeasure(nutrients, "Fiber, total dietary");
+            p.Carbs = GetMeasure(nutrients, "Carbohydrate, by difference");
 
-            p.Serving= GetSize(jsonReponse, PotentialServingNames);
-            
             p.UnitSize = GetSize(jsonReponse, name.ToLower());
             if (p.UnitSize == 0)
                 p.UnitSize = GetSize(jsonReponse, PotentialSizeNames);
