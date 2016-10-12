@@ -32,6 +32,9 @@ namespace RestModel {
         [BsonElement("_carbs")]
         public double Carbs { get; set; }
 
+        [BsonElement("_vitaminC")]
+        public double VitaminC { get; set; }
+
         [BsonElement("_fiber")]
         public double Fiber { get; set; }
 

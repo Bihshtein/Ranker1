@@ -30,6 +30,11 @@ namespace Students.Services {
             return dbLayer.Products.GetByAnimal(name);
         }
 
+        public List<Product> GetMeasure(string name)
+        {
+            return dbLayer.Products.GetByMeasure(name);
+        }
+
         public static bool IsEmpty(Product p) {
             return p.Image != null;
         }

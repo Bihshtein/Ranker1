@@ -24,6 +24,10 @@ namespace Students.Services {
             {
                 productsList = productsService.GetAnimal(parts[1]);
             }
+            else if (parts[0] == "Measure")
+            {
+                productsList = productsService.GetMeasure(parts[1]);
+            }
             return Request.CreateResponse(HttpStatusCode.OK, productsList);
         }
         public HttpResponseMessage GetAll() {

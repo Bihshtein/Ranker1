@@ -46,6 +46,12 @@ namespace RestModel {
         }
 
 
+        public List<T> GetByMeasure(string name)
+        {
+            var query = Query.GT(name, 30);
+            return _collection.Find(query).ToList();
+        }
+
         public IQueryable<T> GetAll() {
             MongoCursor<T> cursor = _collection.FindAll();
             return cursor.AsQueryable<T>();
