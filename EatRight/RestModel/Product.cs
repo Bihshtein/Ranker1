@@ -14,34 +14,34 @@ namespace RestModel {
         [BsonElement("_id")]
         public int ID { get; set; }
 
-        [BsonElement("_name")]
+        [BsonElement("Name")]
         public string Name { get; set; }
 
-        [BsonElement("_hasSkin")]
+        [BsonElement("HasSkin")]
         public bool HasSkin { get; set; }
 
         [BsonElement("_size")]
         public double UnitSize { get; set; }
 
-        [BsonElement("_protein")]
+        [BsonElement("Protein")]
         public double Protein { get; set; }
 
-        [BsonElement("_fat")]
+        [BsonElement("Fat")]
         public double Fat { get; set; }
 
-        [BsonElement("_carbs")]
+        [BsonElement("Carbs")]
         public double Carbs { get; set; }
 
-        [BsonElement("_vitaminC")]
+        [BsonElement("VitaminC")]
         public double VitaminC { get; set; }
 
-        [BsonElement("_fiber")]
+        [BsonElement("Fiber")]
         public double Fiber { get; set; }
 
-        [BsonElement("_animal")]
+        [BsonElement("Animal")]
         public string Animal { get; set; }
 
-        [BsonElement("_servingState")]
+        [BsonElement("ServingState")]
         public string ServingState{ get; set; }
 
         public byte[] Image { get; set; }

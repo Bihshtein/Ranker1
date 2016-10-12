@@ -45,10 +45,15 @@ namespace RestModel {
             return _collection.Find(Query<Product>.Where(x => x.Animal == name)).ToList();
         }
 
+        public static Dictionary<string, double> DailyValues = new Dictionary<string, double>() {
+            {"Protein",100},
+            {"Fiber",25},
+            {"VitaminC",90}
+        };
 
         public List<T> GetByMeasure(string name)
         {
-            var query = Query.GT(name, 30);
+            var query = Query.GT(name, DailyValues[name] /4);
             return _collection.Find(query).ToList();
         }
 

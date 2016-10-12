@@ -11,16 +11,17 @@
     angular
         .module('app')
         .controller('Query', Hello);
-
+    function Hello2($scope) {
+        $scope.aleg = "aleg";
+    }
     function Hello($scope, $http) {
         $scope.init = function (query) {
-
             $http.get('http://localhost:51612/Api/Products/' + query).
-         then(function (data) {
-             $scope.dict[query] = angular.fromJson(data);
-
-         });
+                then(function (data) {
+                     $scope.dict[query] = angular.fromJson(data);
+            });
         };
+
         $http.get('http://localhost:51612/Api/Products/Protein=1,100,2000').
         then(function (data) {
             $scope.dict = {
