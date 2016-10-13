@@ -35,6 +35,27 @@ namespace RestModel {
         [BsonElement("VitaminC")]
         public double VitaminC { get; set; }
 
+        [BsonElement("Thiamin")]
+        public double Thiamin { get; set; }
+
+        [BsonElement("Riboflavin")]
+        public double Riboflavin { get; set; }
+
+        [BsonElement("Niacin")]
+        public double Niacin { get; set; }
+
+        [BsonElement("PantothenicAcid")]
+        public double PantothenicAcid { get; set; }
+
+        [BsonElement("VitaminB6")]
+        public double VitaminB6 { get; set; }
+
+        [BsonElement("Choline")]
+        public double Choline { get; set; }
+
+        [BsonElement("Betaine")]
+        public double Betaine { get; set; }
+
         [BsonElement("Fiber")]
         public double Fiber { get; set; }
 

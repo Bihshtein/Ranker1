@@ -46,14 +46,23 @@ namespace RestModel {
         }
 
         public static Dictionary<string, double> DailyValues = new Dictionary<string, double>() {
-            {"Protein",100},
+            {"Protein",56},
             {"Fiber",25},
-            {"VitaminC",90}
+            {"VitaminC",90},
+            {"Fat",65 },
+            {"Thiamin",1.2 },
+            {"Riboflavin",1.3 },
+            {"Niacin",18 },
+            {"PantothenicAcid",5 },
+            {"VitaminB6",1.3 },
+            {"Choline", 550 },
+            {"Betaine", 550 }
+
         };
 
         public List<T> GetByMeasure(string name)
         {
-            var query = Query.GT(name, DailyValues[name] /4);
+            var query = Query.GT(name, DailyValues[name] /5);
             return _collection.Find(query).ToList();
         }
 

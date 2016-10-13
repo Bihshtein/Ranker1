@@ -99,8 +99,14 @@ namespace InitDB {
             p.Fiber = GetMeasure(nutrients, "Fiber, total dietary");
             p.Carbs = GetMeasure(nutrients, "Carbohydrate, by difference");
             p.VitaminC = GetMeasure(nutrients, "Vitamin C, total ascorbic acid");
+            p.Thiamin = GetMeasure(nutrients, "Thiamin");
+            p.Riboflavin = GetMeasure(nutrients, "Riboflavin");
+            p.Niacin = GetMeasure(nutrients, "Niacin");
+            p.PantothenicAcid = GetMeasure(nutrients, "Pantothenic acid");
+            p.VitaminB6 = GetMeasure(nutrients, "Vitamin B-6");
+            p.Betaine = GetMeasure(nutrients, "Betaine");
 
-            
+
 
             p.UnitSize = GetSize(jsonReponse, name.ToLower());
             if (p.UnitSize == 0)
