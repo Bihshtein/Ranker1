@@ -56,13 +56,19 @@ namespace RestModel {
             {"PantothenicAcid",5 },
             {"VitaminB6",1.3 },
             {"Choline", 550 },
-            {"Betaine", 550 }
+            {"Betaine", 550 },
+            {"VitaminB12",2.4 },
+            {"VitaminD",600 },
+            {"VitaminA",5000 },
+            {"Folate",400 },
+            {"VitaminE",15 },
+            {"VitaminK",80 }
 
         };
 
         public List<T> GetByMeasure(string name)
         {
-            var query = Query.GT(name, DailyValues[name] /5);
+            var query = Query.GT(name, DailyValues[name] /10);
             return _collection.Find(query).ToList();
         }
 

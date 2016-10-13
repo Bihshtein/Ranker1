@@ -105,6 +105,11 @@ namespace InitDB {
             p.PantothenicAcid = GetMeasure(nutrients, "Pantothenic acid");
             p.VitaminB6 = GetMeasure(nutrients, "Vitamin B-6");
             p.Betaine = GetMeasure(nutrients, "Betaine");
+            p.VitaminB12 = GetMeasure(nutrients, "Vitamin B-12");
+            p.Folate = GetMeasure(nutrients, "Folate, total");
+            p.VitaminA = GetMeasure(nutrients, "Vitamin A, IU");
+            p.VitaminE = GetMeasure(nutrients, "Vitamin E (alpha-tocopherol)");
+            p.VitaminK = GetMeasure(nutrients, "Vitamin K (phylloquinone)");
 
 
 

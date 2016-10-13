@@ -56,6 +56,24 @@ namespace RestModel {
         [BsonElement("Betaine")]
         public double Betaine { get; set; }
 
+        [BsonElement("VitaminB12")]
+        public double VitaminB12 { get; set; }
+
+        [BsonElement("Folate")]
+        public double Folate { get; set; }
+
+        [BsonElement("VitaminD")]
+        public double VitaminD { get; set; }
+
+        [BsonElement("VitaminA")]
+        public double VitaminA { get; set; }
+
+        [BsonElement("VitaminE")]
+        public double VitaminE { get; set; }
+
+        [BsonElement("VitaminK")]
+        public double VitaminK { get; set; }
+
         [BsonElement("Fiber")]
         public double Fiber { get; set; }
 
