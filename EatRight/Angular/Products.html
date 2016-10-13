@@ -7,33 +7,32 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <title></title>
     <style>        
-      input[type='text'] { font-size: 30px; }
+      input[type='text'] { font-size: 40px; }
+      div1{ font-size: 30px; }
      .Container3:last-child    {  background-color : yellowgreen }
      .Container3:nth-child(1)    {  background-color : orange}
      .Container3:nth-child(2)    {  background-color : lightcoral }
      .Container3:nth-child(3)    {  background-color : lightgreen}
      .Container3:nth-child(4)    {  background-color : lightskyblue}
-     
+     .Container3:nth-child(5)    {  background-color : orange}
+     .Container3:nth-child(6)    {  background-color : lightcoral }
+     .Container3:nth-child(7)    {  background-color : lightgreen}
+     .Container3:nth-child(8)    {  background-color : lightskyblue}
     </style>
 </head>
 <body>
    
     <div class="Container">
         <label>
-            Input:
-            <input type="text" name="input" ng-model="input.text"
-                   ng-pattern="input.word" ng-list>
+            <input type="text" name="input" size="200" ng-model="input.text" ng-pattern="input.word" ng-list>
         </label>
-
-
-        <div ng-controller="Query">esa
-           
-           
+        <div ng-controller="Query">
             <div layout="row" class="Container2">
                 <div7 ng-repeat="val in input.text" class="Container3" style="float:left">
                     <div flex="20"  flex-order="-1"  ng-init="init(val)">
-                        <div ng-repeat="P in dict [val] .data"  style="float:left">
-                            <div  ng-init="init2(P)"><h2>Name       : {{P.Name}}</h2></div>
+                        <div1><h2>{{val}}</h2></div1>
+                        <div ng-repeat="P in dict [val] .data"  style="float:left" ng-init="init2(P)">
+                            <div><h2>Name       : {{P.Name}}</h2></div>
                             <div><h2>State      : {{P.ServingState}}</h2></div>
                             <div><h2>Size       : {{P.UnitSize}}</h2></div>
                             <div><h2>{{P[val]}}</h2></div>
@@ -44,8 +43,6 @@
             </div>
         </div>
     </div>
-    
-
     <script src="Scripts/angular.min.js"></script>
     <script src="app/Products.js"></script>
 </body>
