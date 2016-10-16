@@ -110,7 +110,13 @@ namespace InitDB {
             p.VitaminA = GetMeasure(nutrients, "Vitamin A, IU");
             p.VitaminE = GetMeasure(nutrients, "Vitamin E (alpha-tocopherol)");
             p.VitaminK = GetMeasure(nutrients, "Vitamin K (phylloquinone)");
-
+            p.Calcium = GetMeasure(nutrients, "Calcium, Ca");
+            p.Iron = GetMeasure(nutrients, "Iron, Fe");
+            p.Magnesium = GetMeasure(nutrients, "Magnesium, Mg");
+            p.Phosphorus = GetMeasure(nutrients, "Phosphorus, P");
+            p.Potassium = GetMeasure(nutrients, "Potassium, K");
+            p.Sodium = GetMeasure(nutrients, "Sodium, Na");
+            p.Zinc = GetMeasure(nutrients, "Zinc, Zn");
 
 
             p.UnitSize = GetSize(jsonReponse, name.ToLower());

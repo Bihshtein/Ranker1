@@ -3,10 +3,10 @@
         "sr": "28",
         "type": "Full",
         "food": {
-            "ndbno": "05103",
-            "name": "Chicken, broilers or fryers, wing, meat and skin, cooked, roasted",
-            "sd": "CHICKEN,BROILERS OR FRYERS,WING,MEAT&SKN,CKD,RSTD",
-            "fg": "Poultry Products",
+            "ndbno": "10860",
+            "name": "Pork, cured, bacon, cooked, baked",
+            "sd": "PORK,CURED,BACON,CKD,BKD",
+            "fg": "Pork Products",
             "sn": "",
             "cn": "",
             "manu": "",
@@ -14,8 +14,8 @@
             "cf": 3.87,
             "ff": 9.02,
             "pf": 4.27,
-            "r": "40%",
-            "rd": "Bone and connective tissue 40%",
+            "r": "0%",
+            "rd": "",
             "ds": "Standard Reference",
             "nutrients": [
                 {
@@ -23,18 +23,18 @@
                     "name": "Water",
                     "group": "Proximates",
                     "unit": "g",
-                    "value": 59.4,
+                    "value": 12.52,
                     "sourcecode": [
                         1
                     ],
-                    "dp": 6,
-                    "se": "0.490",
+                    "dp": 4,
+                    "se": "0.696",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 50.49
+                            "value": 1.01
                         }
                     ]
                 },
@@ -43,16 +43,16 @@
                     "name": "Energy",
                     "group": "Proximates",
                     "unit": "kcal",
-                    "value": 254.0,
+                    "value": 548.0,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 216.0
+                            "value": 44.0
                         }
                     ]
                 },
@@ -61,16 +61,16 @@
                     "name": "Energy",
                     "group": "Proximates",
                     "unit": "kJ",
-                    "value": 1062.0,
+                    "value": 2293.0,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 903.0
+                            "value": 186.0
                         }
                     ]
                 },
@@ -79,18 +79,18 @@
                     "name": "Protein",
                     "group": "Proximates",
                     "unit": "g",
-                    "value": 23.79,
+                    "value": 35.73,
                     "sourcecode": [
                         1
                     ],
-                    "dp": 6,
-                    "se": "0.382",
+                    "dp": 4,
+                    "se": "1.597",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 20.22
+                            "value": 2.89
                         }
                     ]
                 },
@@ -99,18 +99,18 @@
                     "name": "Total lipid (fat)",
                     "group": "Proximates",
                     "unit": "g",
-                    "value": 16.87,
+                    "value": 43.27,
                     "sourcecode": [
                         1
                     ],
-                    "dp": 6,
-                    "se": "0.565",
+                    "dp": 4,
+                    "se": "1.276",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 14.34
+                            "value": 3.5
                         }
                     ]
                 },
@@ -119,18 +119,18 @@
                     "name": "Ash",
                     "group": "Proximates",
                     "unit": "g",
-                    "value": 0.88,
+                    "value": 7.12,
                     "sourcecode": [
                         1
                     ],
-                    "dp": 6,
-                    "se": "0.029",
+                    "dp": 4,
+                    "se": "0.224",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 0.75
+                            "value": 0.58
                         }
                     ]
                 },
@@ -139,16 +139,16 @@
                     "name": "Carbohydrate, by difference",
                     "group": "Proximates",
                     "unit": "g",
-                    "value": 0.0,
+                    "value": 1.35,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 0.0
+                            "value": 0.11
                         }
                     ]
                 },
@@ -163,8 +163,8 @@
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
                             "value": 0.0
                         }
@@ -181,8 +181,8 @@
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
                             "value": 0.0
                         }
@@ -193,18 +193,18 @@
                     "name": "Calcium, Ca",
                     "group": "Minerals",
                     "unit": "mg",
-                    "value": 18.0,
+                    "value": 10.0,
                     "sourcecode": [
                         1
                     ],
-                    "dp": 6,
-                    "se": "1.055",
+                    "dp": 4,
+                    "se": "0.398",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 15.0
+                            "value": 1.0
                         }
                     ]
                 },
@@ -213,18 +213,18 @@
                     "name": "Iron, Fe",
                     "group": "Minerals",
                     "unit": "mg",
-                    "value": 0.84,
+                    "value": 1.49,
                     "sourcecode": [
                         1
                     ],
-                    "dp": 6,
-                    "se": "0.042",
+                    "dp": 4,
+                    "se": "0.159",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 0.71
+                            "value": 0.12
                         }
                     ]
                 },
@@ -233,18 +233,18 @@
                     "name": "Magnesium, Mg",
                     "group": "Minerals",
                     "unit": "mg",
-                    "value": 19.0,
+                    "value": 30.0,
                     "sourcecode": [
                         1
                     ],
-                    "dp": 6,
-                    "se": "0.309",
+                    "dp": 4,
+                    "se": "1.382",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 16.0
+                            "value": 2.0
                         }
                     ]
                 },
@@ -253,18 +253,18 @@
                     "name": "Phosphorus, P",
                     "group": "Minerals",
                     "unit": "mg",
-                    "value": 147.0,
+                    "value": 506.0,
                     "sourcecode": [
                         1
                     ],
-                    "dp": 6,
-                    "se": "1.862",
+                    "dp": 4,
+                    "se": "10.897",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 125.0
+                            "value": 41.0
                         }
                     ]
                 },
@@ -273,18 +273,18 @@
                     "name": "Potassium, K",
                     "group": "Minerals",
                     "unit": "mg",
-                    "value": 212.0,
+                    "value": 539.0,
                     "sourcecode": [
                         1
                     ],
-                    "dp": 6,
-                    "se": "5.170",
+                    "dp": 4,
+                    "se": "20.807",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 180.0
+                            "value": 44.0
                         }
                     ]
                 },
@@ -293,18 +293,18 @@
                     "name": "Sodium, Na",
                     "group": "Minerals",
                     "unit": "mg",
-                    "value": 98.0,
+                    "value": 2193.0,
                     "sourcecode": [
                         1
                     ],
-                    "dp": 6,
-                    "se": "6.976",
+                    "dp": 4,
+                    "se": "73.300",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 83.0
+                            "value": 178.0
                         }
                     ]
                 },
@@ -313,18 +313,18 @@
                     "name": "Zinc, Zn",
                     "group": "Minerals",
                     "unit": "mg",
-                    "value": 1.64,
+                    "value": 3.36,
                     "sourcecode": [
                         1
                     ],
-                    "dp": 6,
-                    "se": "0.037",
+                    "dp": 4,
+                    "se": "0.107",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 1.39
+                            "value": 0.27
                         }
                     ]
                 },
@@ -333,18 +333,18 @@
                     "name": "Copper, Cu",
                     "group": "Minerals",
                     "unit": "mg",
-                    "value": 0.041,
+                    "value": 0.182,
                     "sourcecode": [
                         1
                     ],
-                    "dp": 6,
-                    "se": "0.002",
+                    "dp": 4,
+                    "se": "0.017",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 0.035
+                            "value": 0.015
                         }
                     ]
                 },
@@ -353,18 +353,18 @@
                     "name": "Manganese, Mn",
                     "group": "Minerals",
                     "unit": "mg",
-                    "value": 0.011,
+                    "value": 0.022,
                     "sourcecode": [
                         1
                     ],
-                    "dp": 6,
+                    "dp": 4,
                     "se": "0.000",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 0.009
+                            "value": 0.002
                         }
                     ]
                 },
@@ -373,18 +373,18 @@
                     "name": "Selenium, Se",
                     "group": "Minerals",
                     "unit": "\u00b5g",
-                    "value": 25.5,
+                    "value": 59.0,
                     "sourcecode": [
                         1
                     ],
-                    "dp": 3,
-                    "se": "2.421",
+                    "dp": 4,
+                    "se": "6.114",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 21.7
+                            "value": 4.8
                         }
                     ]
                 },
@@ -399,8 +399,8 @@
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
                             "value": 0.0
                         }
@@ -411,18 +411,18 @@
                     "name": "Thiamin",
                     "group": "Vitamins",
                     "unit": "mg",
-                    "value": 0.065,
+                    "value": 0.348,
                     "sourcecode": [
                         1
                     ],
-                    "dp": 3,
-                    "se": "0.004",
+                    "dp": 4,
+                    "se": "0.020",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 0.055
+                            "value": 0.028
                         }
                     ]
                 },
@@ -431,18 +431,18 @@
                     "name": "Riboflavin",
                     "group": "Vitamins",
                     "unit": "mg",
-                    "value": 0.153,
+                    "value": 0.251,
                     "sourcecode": [
                         1
                     ],
-                    "dp": 3,
-                    "se": "0.028",
+                    "dp": 4,
+                    "se": "0.010",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 0.13
+                            "value": 0.02
                         }
                     ]
                 },
@@ -451,18 +451,18 @@
                     "name": "Niacin",
                     "group": "Vitamins",
                     "unit": "mg",
-                    "value": 6.32,
+                    "value": 10.623,
                     "sourcecode": [
                         1
                     ],
-                    "dp": 3,
-                    "se": "0.404",
+                    "dp": 4,
+                    "se": "0.661",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 5.372
+                            "value": 0.86
                         }
                     ]
                 },
@@ -471,18 +471,18 @@
                     "name": "Pantothenic acid",
                     "group": "Vitamins",
                     "unit": "mg",
-                    "value": 0.86,
+                    "value": 1.033,
                     "sourcecode": [
                         1
                     ],
-                    "dp": 2,
-                    "se": "",
+                    "dp": 4,
+                    "se": "0.042",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 0.731
+                            "value": 0.084
                         }
                     ]
                 },
@@ -491,18 +491,18 @@
                     "name": "Vitamin B-6",
                     "group": "Vitamins",
                     "unit": "mg",
-                    "value": 0.558,
+                    "value": 0.309,
                     "sourcecode": [
                         1
                     ],
-                    "dp": 3,
-                    "se": "0.013",
+                    "dp": 4,
+                    "se": "0.010",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 0.474
+                            "value": 0.025
                         }
                     ]
                 },
@@ -511,16 +511,18 @@
                     "name": "Folate, total",
                     "group": "Vitamins",
                     "unit": "\u00b5g",
-                    "value": 9.0,
-                    "sourcecode": "",
-                    "dp": "",
+                    "value": 2.0,
+                    "sourcecode": [
+                        2
+                    ],
+                    "dp": 2,
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 8.0
+                            "value": 0.0
                         }
                     ]
                 },
@@ -535,8 +537,8 @@
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
                             "value": 0.0
                         }
@@ -547,16 +549,16 @@
                     "name": "Folate, food",
                     "group": "Vitamins",
                     "unit": "\u00b5g",
-                    "value": 9.0,
+                    "value": 2.0,
                     "sourcecode": "",
-                    "dp": "",
+                    "dp": 2,
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 8.0
+                            "value": 0.0
                         }
                     ]
                 },
@@ -565,16 +567,16 @@
                     "name": "Folate, DFE",
                     "group": "Vitamins",
                     "unit": "\u00b5g",
-                    "value": 9.0,
+                    "value": 2.0,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 8.0
+                            "value": 0.0
                         }
                     ]
                 },
@@ -583,16 +585,18 @@
                     "name": "Choline, total",
                     "group": "Vitamins",
                     "unit": "mg",
-                    "value": 111.3,
-                    "sourcecode": "",
+                    "value": 119.3,
+                    "sourcecode": [
+                        1
+                    ],
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 94.6
+                            "value": 9.7
                         }
                     ]
                 },
@@ -601,16 +605,18 @@
                     "name": "Betaine",
                     "group": "Vitamins",
                     "unit": "mg",
-                    "value": 12.2,
-                    "sourcecode": "",
-                    "dp": "",
-                    "se": "",
+                    "value": 3.4,
+                    "sourcecode": [
+                        1
+                    ],
+                    "dp": 4,
+                    "se": "0.223",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 10.4
+                            "value": 0.3
                         }
                     ]
                 },
@@ -619,18 +625,18 @@
                     "name": "Vitamin B-12",
                     "group": "Vitamins",
                     "unit": "\u00b5g",
-                    "value": 0.35,
+                    "value": 1.16,
                     "sourcecode": [
                         1
                     ],
-                    "dp": 3,
-                    "se": "0.031",
+                    "dp": 4,
+                    "se": "0.047",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 0.3
+                            "value": 0.09
                         }
                     ]
                 },
@@ -645,8 +651,8 @@
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
                             "value": 0.0
                         }
@@ -657,16 +663,16 @@
                     "name": "Vitamin A, RAE",
                     "group": "Vitamins",
                     "unit": "\u00b5g",
-                    "value": 12.0,
+                    "value": 11.0,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 10.0
+                            "value": 1.0
                         }
                     ]
                 },
@@ -675,16 +681,18 @@
                     "name": "Retinol",
                     "group": "Vitamins",
                     "unit": "\u00b5g",
-                    "value": 12.0,
-                    "sourcecode": "",
-                    "dp": "",
-                    "se": "",
+                    "value": 11.0,
+                    "sourcecode": [
+                        1
+                    ],
+                    "dp": 4,
+                    "se": "0.000",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 10.0
+                            "value": 1.0
                         }
                     ]
                 },
@@ -699,8 +707,8 @@
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
                             "value": 0.0
                         }
@@ -717,8 +725,8 @@
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
                             "value": 0.0
                         }
@@ -735,8 +743,8 @@
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
                             "value": 0.0
                         }
@@ -747,16 +755,16 @@
                     "name": "Vitamin A, IU",
                     "group": "Vitamins",
                     "unit": "IU",
-                    "value": 39.0,
+                    "value": 37.0,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 33.0
+                            "value": 3.0
                         }
                     ]
                 },
@@ -771,8 +779,8 @@
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
                             "value": 0.0
                         }
@@ -789,8 +797,8 @@
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
                             "value": 0.0
                         }
@@ -801,18 +809,18 @@
                     "name": "Vitamin E (alpha-tocopherol)",
                     "group": "Vitamins",
                     "unit": "mg",
-                    "value": 0.69,
+                    "value": 0.32,
                     "sourcecode": [
-                        1
+                        2
                     ],
-                    "dp": 2,
+                    "dp": 8,
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 0.59
+                            "value": 0.03
                         }
                     ]
                 },
@@ -827,8 +835,8 @@
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
                             "value": 0.0
                         }
@@ -841,14 +849,14 @@
                     "unit": "mg",
                     "value": 0.0,
                     "sourcecode": [
-                        1
+                        2
                     ],
                     "dp": 2,
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
                             "value": 0.0
                         }
@@ -859,18 +867,18 @@
                     "name": "Tocopherol, gamma",
                     "group": "Vitamins",
                     "unit": "mg",
-                    "value": 0.2,
+                    "value": 0.07,
                     "sourcecode": [
-                        1
+                        2
                     ],
-                    "dp": 2,
+                    "dp": 4,
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 0.17
+                            "value": 0.01
                         }
                     ]
                 },
@@ -879,72 +887,18 @@
                     "name": "Tocopherol, delta",
                     "group": "Vitamins",
                     "unit": "mg",
-                    "value": 0.04,
+                    "value": 0.0,
                     "sourcecode": [
-                        1
+                        2
                     ],
                     "dp": 2,
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 0.03
-                        }
-                    ]
-                },
-                {
-                    "nutrient_id": 328,
-                    "name": "Vitamin D (D2 + D3)",
-                    "group": "Vitamins",
-                    "unit": "\u00b5g",
-                    "value": 0.2,
-                    "sourcecode": "",
-                    "dp": "",
-                    "se": "",
-                    "measures": [
-                        {
-                            "label": "piece",
-                            "eqv": 85.0,
-                            "qty": 1.0,
-                            "value": 0.2
-                        }
-                    ]
-                },
-                {
-                    "nutrient_id": 326,
-                    "name": "Vitamin D3 (cholecalciferol)",
-                    "group": "Vitamins",
-                    "unit": "\u00b5g",
-                    "value": 0.2,
-                    "sourcecode": "",
-                    "dp": "",
-                    "se": "",
-                    "measures": [
-                        {
-                            "label": "piece",
-                            "eqv": 85.0,
-                            "qty": 1.0,
-                            "value": 0.2
-                        }
-                    ]
-                },
-                {
-                    "nutrient_id": 324,
-                    "name": "Vitamin D",
-                    "group": "Vitamins",
-                    "unit": "IU",
-                    "value": 7.0,
-                    "sourcecode": "",
-                    "dp": "",
-                    "se": "",
-                    "measures": [
-                        {
-                            "label": "piece",
-                            "eqv": 85.0,
-                            "qty": 1.0,
-                            "value": 6.0
+                            "value": 0.0
                         }
                     ]
                 },
@@ -953,16 +907,18 @@
                     "name": "Vitamin K (phylloquinone)",
                     "group": "Vitamins",
                     "unit": "\u00b5g",
-                    "value": 0.3,
-                    "sourcecode": "",
-                    "dp": "",
-                    "se": "",
+                    "value": 0.1,
+                    "sourcecode": [
+                        2
+                    ],
+                    "dp": 4,
+                    "se": "0.048",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 0.3
+                            "value": 0.0
                         }
                     ]
                 },
@@ -971,16 +927,16 @@
                     "name": "Fatty acids, total saturated",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 4.976,
+                    "value": 14.187,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 4.23
+                            "value": 1.149
                         }
                     ]
                 },
@@ -991,12 +947,12 @@
                     "unit": "g",
                     "value": 0.0,
                     "sourcecode": "",
-                    "dp": "",
-                    "se": "",
+                    "dp": 4,
+                    "se": "0.000",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
                             "value": 0.0
                         }
@@ -1013,8 +969,8 @@
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
                             "value": 0.0
                         }
@@ -1026,13 +982,15 @@
                     "group": "Lipids",
                     "unit": "g",
                     "value": 0.0,
-                    "sourcecode": "",
-                    "dp": "",
-                    "se": "",
+                    "sourcecode": [
+                        1
+                    ],
+                    "dp": 4,
+                    "se": "0.000",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
                             "value": 0.0
                         }
@@ -1043,18 +1001,18 @@
                     "name": "10:0",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 0.007,
+                    "value": 0.01,
                     "sourcecode": [
                         1
                     ],
-                    "dp": 6,
-                    "se": "0.000",
+                    "dp": 4,
+                    "se": "0.010",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 0.006
+                            "value": 0.001
                         }
                     ]
                 },
@@ -1063,18 +1021,18 @@
                     "name": "12:0",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 0.008,
+                    "value": 0.0,
                     "sourcecode": [
                         1
                     ],
-                    "dp": 6,
-                    "se": "0.001",
+                    "dp": 4,
+                    "se": "0.000",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 0.007
+                            "value": 0.0
                         }
                     ]
                 },
@@ -1083,18 +1041,18 @@
                     "name": "14:0",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 0.098,
+                    "value": 0.551,
                     "sourcecode": [
                         1
                     ],
-                    "dp": 6,
-                    "se": "0.004",
+                    "dp": 4,
+                    "se": "0.023",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 0.083
+                            "value": 0.045
                         }
                     ]
                 },
@@ -1103,18 +1061,18 @@
                     "name": "15:0",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 0.01,
+                    "value": 0.0,
                     "sourcecode": [
                         1
                     ],
-                    "dp": 6,
-                    "se": "0.002",
+                    "dp": 4,
+                    "se": "0.000",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 0.008
+                            "value": 0.0
                         }
                     ]
                 },
@@ -1123,18 +1081,18 @@
                     "name": "16:0",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 3.883,
+                    "value": 9.028,
                     "sourcecode": [
                         1
                     ],
-                    "dp": 6,
-                    "se": "0.105",
+                    "dp": 4,
+                    "se": "0.480",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 3.301
+                            "value": 0.731
                         }
                     ]
                 },
@@ -1143,18 +1101,18 @@
                     "name": "17:0",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 0.018,
+                    "value": 0.107,
                     "sourcecode": [
                         1
                     ],
-                    "dp": 6,
-                    "se": "0.001",
+                    "dp": 4,
+                    "se": "0.006",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 0.015
+                            "value": 0.009
                         }
                     ]
                 },
@@ -1163,18 +1121,18 @@
                     "name": "18:0",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 0.927,
+                    "value": 4.411,
                     "sourcecode": [
                         1
                     ],
-                    "dp": 6,
-                    "se": "0.030",
+                    "dp": 4,
+                    "se": "0.227",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 0.788
+                            "value": 0.357
                         }
                     ]
                 },
@@ -1183,18 +1141,18 @@
                     "name": "20:0",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 0.011,
+                    "value": 0.081,
                     "sourcecode": [
                         1
                     ],
-                    "dp": 6,
-                    "se": "0.001",
+                    "dp": 4,
+                    "se": "0.005",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 0.009
+                            "value": 0.007
                         }
                     ]
                 },
@@ -1203,38 +1161,18 @@
                     "name": "22:0",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 0.011,
+                    "value": 0.0,
                     "sourcecode": [
                         1
                     ],
-                    "dp": 6,
+                    "dp": 4,
                     "se": "0.000",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 0.009
-                        }
-                    ]
-                },
-                {
-                    "nutrient_id": 654,
-                    "name": "24:0",
-                    "group": "Lipids",
-                    "unit": "g",
-                    "value": 0.001,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.000",
-                    "measures": [
-                        {
-                            "label": "piece",
-                            "eqv": 85.0,
-                            "qty": 1.0,
-                            "value": 0.001
+                            "value": 0.0
                         }
                     ]
                 },
@@ -1243,16 +1181,16 @@
                     "name": "Fatty acids, total monounsaturated",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 7.706,
+                    "value": 19.065,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 6.55
+                            "value": 1.544
                         }
                     ]
                 },
@@ -1261,18 +1199,18 @@
                     "name": "14:1",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 0.037,
+                    "value": 0.0,
                     "sourcecode": [
                         1
                     ],
-                    "dp": 6,
-                    "se": "0.001",
+                    "dp": 4,
+                    "se": "0.000",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 0.031
+                            "value": 0.0
                         }
                     ]
                 },
@@ -1285,12 +1223,12 @@
                     "sourcecode": [
                         1
                     ],
-                    "dp": 6,
+                    "dp": 4,
                     "se": "0.000",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
                             "value": 0.0
                         }
@@ -1301,58 +1239,18 @@
                     "name": "16:1 undifferentiated",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 1.115,
+                    "value": 1.236,
                     "sourcecode": [
                         1
                     ],
-                    "dp": 6,
-                    "se": "0.023",
+                    "dp": 4,
+                    "se": "0.031",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 0.948
-                        }
-                    ]
-                },
-                {
-                    "nutrient_id": 673,
-                    "name": "16:1 c",
-                    "group": "Lipids",
-                    "unit": "g",
-                    "value": 1.108,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.023",
-                    "measures": [
-                        {
-                            "label": "piece",
-                            "eqv": 85.0,
-                            "qty": 1.0,
-                            "value": 0.942
-                        }
-                    ]
-                },
-                {
-                    "nutrient_id": 662,
-                    "name": "16:1 t",
-                    "group": "Lipids",
-                    "unit": "g",
-                    "value": 0.007,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.001",
-                    "measures": [
-                        {
-                            "label": "piece",
-                            "eqv": 85.0,
-                            "qty": 1.0,
-                            "value": 0.006
+                            "value": 0.1
                         }
                     ]
                 },
@@ -1361,18 +1259,18 @@
                     "name": "17:1",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 0.014,
+                    "value": 0.061,
                     "sourcecode": [
                         1
                     ],
-                    "dp": 6,
-                    "se": "0.001",
+                    "dp": 4,
+                    "se": "0.035",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 0.012
+                            "value": 0.005
                         }
                     ]
                 },
@@ -1381,58 +1279,18 @@
                     "name": "18:1 undifferentiated",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 6.436,
+                    "value": 17.439,
                     "sourcecode": [
                         1
                     ],
-                    "dp": 6,
-                    "se": "0.173",
+                    "dp": 4,
+                    "se": "0.772",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 5.471
-                        }
-                    ]
-                },
-                {
-                    "nutrient_id": 674,
-                    "name": "18:1 c",
-                    "group": "Lipids",
-                    "unit": "g",
-                    "value": 6.381,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.170",
-                    "measures": [
-                        {
-                            "label": "piece",
-                            "eqv": 85.0,
-                            "qty": 1.0,
-                            "value": 5.424
-                        }
-                    ]
-                },
-                {
-                    "nutrient_id": 663,
-                    "name": "18:1 t",
-                    "group": "Lipids",
-                    "unit": "g",
-                    "value": 0.055,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.004",
-                    "measures": [
-                        {
-                            "label": "piece",
-                            "eqv": 85.0,
-                            "qty": 1.0,
-                            "value": 0.047
+                            "value": 1.413
                         }
                     ]
                 },
@@ -1441,18 +1299,18 @@
                     "name": "20:1",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 0.101,
+                    "value": 0.329,
                     "sourcecode": [
                         1
                     ],
-                    "dp": 6,
-                    "se": "0.001",
+                    "dp": 4,
+                    "se": "0.018",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 0.086
+                            "value": 0.027
                         }
                     ]
                 },
@@ -1461,76 +1319,14 @@
                     "name": "22:1 undifferentiated",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 0.002,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.000",
-                    "measures": [
-                        {
-                            "label": "piece",
-                            "eqv": 85.0,
-                            "qty": 1.0,
-                            "value": 0.002
-                        }
-                    ]
-                },
-                {
-                    "nutrient_id": 676,
-                    "name": "22:1 c",
-                    "group": "Lipids",
-                    "unit": "g",
-                    "value": 0.002,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.000",
-                    "measures": [
-                        {
-                            "label": "piece",
-                            "eqv": 85.0,
-                            "qty": 1.0,
-                            "value": 0.002
-                        }
-                    ]
-                },
-                {
-                    "nutrient_id": 664,
-                    "name": "22:1 t",
-                    "group": "Lipids",
-                    "unit": "g",
                     "value": 0.0,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.000",
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
-                            "qty": 1.0,
-                            "value": 0.0
-                        }
-                    ]
-                },
-                {
-                    "nutrient_id": 671,
-                    "name": "24:1 c",
-                    "group": "Lipids",
-                    "unit": "g",
-                    "value": 0.0,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.000",
-                    "measures": [
-                        {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
                             "value": 0.0
                         }
@@ -1541,16 +1337,16 @@
                     "name": "Fatty acids, total polyunsaturated",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 3.59,
+                    "value": 4.859,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 3.052
+                            "value": 0.394
                         }
                     ]
                 },
@@ -1559,18 +1355,16 @@
                     "name": "18:2 undifferentiated",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 3.216,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.120",
+                    "value": 4.088,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 2.734
+                            "value": 0.331
                         }
                     ]
                 },
@@ -1579,58 +1373,18 @@
                     "name": "18:2 n-6 c,c",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 3.177,
+                    "value": 4.088,
                     "sourcecode": [
                         1
                     ],
-                    "dp": 6,
-                    "se": "0.120",
+                    "dp": 4,
+                    "se": "0.094",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 2.7
-                        }
-                    ]
-                },
-                {
-                    "nutrient_id": 670,
-                    "name": "18:2 CLAs",
-                    "group": "Lipids",
-                    "unit": "g",
-                    "value": 0.018,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.002",
-                    "measures": [
-                        {
-                            "label": "piece",
-                            "eqv": 85.0,
-                            "qty": 1.0,
-                            "value": 0.015
-                        }
-                    ]
-                },
-                {
-                    "nutrient_id": 665,
-                    "name": "18:2 t not further defined",
-                    "group": "Lipids",
-                    "unit": "g",
-                    "value": 0.021,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.001",
-                    "measures": [
-                        {
-                            "label": "piece",
-                            "eqv": 85.0,
-                            "qty": 1.0,
-                            "value": 0.018
+                            "value": 0.331
                         }
                     ]
                 },
@@ -1639,18 +1393,16 @@
                     "name": "18:3 undifferentiated",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 0.165,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.009",
+                    "value": 0.21,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 0.14
+                            "value": 0.017
                         }
                     ]
                 },
@@ -1659,18 +1411,18 @@
                     "name": "18:3 n-3 c,c,c (ALA)",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 0.163,
+                    "value": 0.21,
                     "sourcecode": [
                         1
                     ],
-                    "dp": 6,
-                    "se": "0.009",
+                    "dp": 4,
+                    "se": "0.005",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 0.139
+                            "value": 0.017
                         }
                     ]
                 },
@@ -1679,36 +1431,16 @@
                     "name": "18:3 n-6 c,c,c",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 0.002,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.001",
-                    "measures": [
-                        {
-                            "label": "piece",
-                            "eqv": 85.0,
-                            "qty": 1.0,
-                            "value": 0.002
-                        }
-                    ]
-                },
-                {
-                    "nutrient_id": 856,
-                    "name": "18:3i",
-                    "group": "Lipids",
-                    "unit": "g",
                     "value": 0.0,
                     "sourcecode": [
                         1
                     ],
-                    "dp": 6,
+                    "dp": 4,
                     "se": "0.000",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
                             "value": 0.0
                         }
@@ -1719,18 +1451,16 @@
                     "name": "18:4",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 0.004,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.000",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 0.003
+                            "value": 0.0
                         }
                     ]
                 },
@@ -1739,18 +1469,18 @@
                     "name": "20:2 n-6 c,c",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 0.022,
+                    "value": 0.199,
                     "sourcecode": [
                         1
                     ],
-                    "dp": 6,
-                    "se": "0.001",
+                    "dp": 4,
+                    "se": "0.009",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 0.019
+                            "value": 0.016
                         }
                     ]
                 },
@@ -1759,38 +1489,18 @@
                     "name": "20:3 undifferentiated",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 0.036,
+                    "value": 0.0,
                     "sourcecode": [
                         1
                     ],
-                    "dp": 6,
-                    "se": "0.001",
+                    "dp": 4,
+                    "se": "0.000",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 0.031
-                        }
-                    ]
-                },
-                {
-                    "nutrient_id": 853,
-                    "name": "20:3 n-6",
-                    "group": "Lipids",
-                    "unit": "g",
-                    "value": 0.035,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.001",
-                    "measures": [
-                        {
-                            "label": "piece",
-                            "eqv": 85.0,
-                            "qty": 1.0,
-                            "value": 0.03
+                            "value": 0.0
                         }
                     ]
                 },
@@ -1799,18 +1509,18 @@
                     "name": "20:4 undifferentiated",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 0.098,
+                    "value": 0.152,
                     "sourcecode": [
                         1
                     ],
-                    "dp": 6,
+                    "dp": 4,
                     "se": "0.003",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 0.083
+                            "value": 0.012
                         }
                     ]
                 },
@@ -1819,38 +1529,16 @@
                     "name": "20:5 n-3 (EPA)",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 0.004,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.000",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 0.003
-                        }
-                    ]
-                },
-                {
-                    "nutrient_id": 858,
-                    "name": "22:4",
-                    "group": "Lipids",
-                    "unit": "g",
-                    "value": 0.025,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.001",
-                    "measures": [
-                        {
-                            "label": "piece",
-                            "eqv": 85.0,
-                            "qty": 1.0,
-                            "value": 0.021
+                            "value": 0.0
                         }
                     ]
                 },
@@ -1859,18 +1547,16 @@
                     "name": "22:5 n-3 (DPA)",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 0.012,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.000",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 0.01
+                            "value": 0.0
                         }
                     ]
                 },
@@ -1879,18 +1565,16 @@
                     "name": "22:6 n-3 (DHA)",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 0.006,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.001",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 0.005
+                            "value": 0.0
                         }
                     ]
                 },
@@ -1899,34 +1583,18 @@
                     "name": "Fatty acids, total trans",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 0.084,
-                    "sourcecode": "",
-                    "dp": "",
-                    "se": "",
+                    "value": 0.0,
+                    "sourcecode": [
+                        1
+                    ],
+                    "dp": 4,
+                    "se": "0.000",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 0.071
-                        }
-                    ]
-                },
-                {
-                    "nutrient_id": 693,
-                    "name": "Fatty acids, total trans-monoenoic",
-                    "group": "Lipids",
-                    "unit": "g",
-                    "value": 0.063,
-                    "sourcecode": "",
-                    "dp": "",
-                    "se": "",
-                    "measures": [
-                        {
-                            "label": "piece",
-                            "eqv": 85.0,
-                            "qty": 1.0,
-                            "value": 0.054
+                            "value": 0.0
                         }
                     ]
                 },
@@ -1935,18 +1603,18 @@
                     "name": "Cholesterol",
                     "group": "Lipids",
                     "unit": "mg",
-                    "value": 141.0,
+                    "value": 107.0,
                     "sourcecode": [
                         1
                     ],
-                    "dp": 3,
-                    "se": "6.028",
+                    "dp": 4,
+                    "se": "1.931",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 120.0
+                            "value": 9.0
                         }
                     ]
                 },
@@ -1955,18 +1623,18 @@
                     "name": "Tryptophan",
                     "group": "Amino Acids",
                     "unit": "g",
-                    "value": 0.3,
+                    "value": 0.299,
                     "sourcecode": [
-                        2
+                        1
                     ],
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 0.255
+                            "value": 0.024
                         }
                     ]
                 },
@@ -1975,18 +1643,18 @@
                     "name": "Threonine",
                     "group": "Amino Acids",
                     "unit": "g",
-                    "value": 1.067,
+                    "value": 1.399,
                     "sourcecode": [
-                        2
+                        1
                     ],
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 0.907
+                            "value": 0.113
                         }
                     ]
                 },
@@ -1995,18 +1663,18 @@
                     "name": "Isoleucine",
                     "group": "Amino Acids",
                     "unit": "g",
-                    "value": 1.167,
+                    "value": 1.676,
                     "sourcecode": [
-                        2
+                        1
                     ],
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 0.992
+                            "value": 0.136
                         }
                     ]
                 },
@@ -2015,18 +1683,18 @@
                     "name": "Leucine",
                     "group": "Amino Acids",
                     "unit": "g",
-                    "value": 1.968,
+                    "value": 2.782,
                     "sourcecode": [
-                        2
+                        1
                     ],
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 1.673
+                            "value": 0.225
                         }
                     ]
                 },
@@ -2035,18 +1703,18 @@
                     "name": "Lysine",
                     "group": "Amino Acids",
                     "unit": "g",
-                    "value": 2.287,
+                    "value": 2.964,
                     "sourcecode": [
-                        2
+                        1
                     ],
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 1.944
+                            "value": 0.24
                         }
                     ]
                 },
@@ -2055,18 +1723,18 @@
                     "name": "Methionine",
                     "group": "Amino Acids",
                     "unit": "g",
-                    "value": 0.619,
+                    "value": 0.795,
                     "sourcecode": [
-                        2
+                        1
                     ],
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 0.526
+                            "value": 0.064
                         }
                     ]
                 },
@@ -2075,18 +1743,18 @@
                     "name": "Cystine",
                     "group": "Amino Acids",
                     "unit": "g",
-                    "value": 0.249,
+                    "value": 0.397,
                     "sourcecode": [
-                        2
+                        1
                     ],
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 0.212
+                            "value": 0.032
                         }
                     ]
                 },
@@ -2095,18 +1763,18 @@
                     "name": "Phenylalanine",
                     "group": "Amino Acids",
                     "unit": "g",
-                    "value": 0.96,
+                    "value": 1.417,
                     "sourcecode": [
-                        2
+                        1
                     ],
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 0.816
+                            "value": 0.115
                         }
                     ]
                 },
@@ -2115,18 +1783,18 @@
                     "name": "Tyrosine",
                     "group": "Amino Acids",
                     "unit": "g",
-                    "value": 0.857,
+                    "value": 1.119,
                     "sourcecode": [
-                        2
+                        1
                     ],
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 0.728
+                            "value": 0.091
                         }
                     ]
                 },
@@ -2135,18 +1803,18 @@
                     "name": "Valine",
                     "group": "Amino Acids",
                     "unit": "g",
-                    "value": 1.231,
+                    "value": 1.901,
                     "sourcecode": [
-                        2
+                        1
                     ],
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 1.046
+                            "value": 0.154
                         }
                     ]
                 },
@@ -2155,18 +1823,18 @@
                     "name": "Arginine",
                     "group": "Amino Acids",
                     "unit": "g",
-                    "value": 1.609,
+                    "value": 2.314,
                     "sourcecode": [
-                        2
+                        1
                     ],
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 1.368
+                            "value": 0.187
                         }
                     ]
                 },
@@ -2175,18 +1843,18 @@
                     "name": "Histidine",
                     "group": "Amino Acids",
                     "unit": "g",
-                    "value": 0.887,
+                    "value": 1.343,
                     "sourcecode": [
-                        2
+                        1
                     ],
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 0.754
+                            "value": 0.109
                         }
                     ]
                 },
@@ -2195,18 +1863,18 @@
                     "name": "Alanine",
                     "group": "Amino Acids",
                     "unit": "g",
-                    "value": 1.389,
+                    "value": 2.286,
                     "sourcecode": [
-                        2
+                        1
                     ],
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 1.181
+                            "value": 0.185
                         }
                     ]
                 },
@@ -2215,18 +1883,18 @@
                     "name": "Aspartic acid",
                     "group": "Amino Acids",
                     "unit": "g",
-                    "value": 2.238,
+                    "value": 3.362,
                     "sourcecode": [
-                        2
+                        1
                     ],
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 1.902
+                            "value": 0.272
                         }
                     ]
                 },
@@ -2235,18 +1903,18 @@
                     "name": "Glutamic acid",
                     "group": "Amino Acids",
                     "unit": "g",
-                    "value": 3.524,
+                    "value": 5.26,
                     "sourcecode": [
-                        2
+                        1
                     ],
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 2.995
+                            "value": 0.426
                         }
                     ]
                 },
@@ -2255,18 +1923,18 @@
                     "name": "Glycine",
                     "group": "Amino Acids",
                     "unit": "g",
-                    "value": 1.053,
+                    "value": 2.508,
                     "sourcecode": [
-                        2
+                        1
                     ],
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 0.895
+                            "value": 0.203
                         }
                     ]
                 },
@@ -2275,18 +1943,18 @@
                     "name": "Proline",
                     "group": "Amino Acids",
                     "unit": "g",
-                    "value": 0.756,
+                    "value": 1.96,
                     "sourcecode": [
-                        2
+                        1
                     ],
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 0.643
+                            "value": 0.159
                         }
                     ]
                 },
@@ -2295,18 +1963,36 @@
                     "name": "Serine",
                     "group": "Amino Acids",
                     "unit": "g",
-                    "value": 0.907,
+                    "value": 1.359,
                     "sourcecode": [
-                        2
+                        1
                     ],
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
-                            "value": 0.771
+                            "value": 0.11
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 521,
+                    "name": "Hydroxyproline",
+                    "group": "Amino Acids",
+                    "unit": "g",
+                    "value": 0.628,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "slice cooked",
+                            "eqv": 8.1,
+                            "qty": 1.0,
+                            "value": 0.051
                         }
                     ]
                 },
@@ -2321,8 +2007,8 @@
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
                             "value": 0.0
                         }
@@ -2339,8 +2025,8 @@
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
                             "value": 0.0
                         }
@@ -2357,8 +2043,8 @@
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "slice cooked",
+                            "eqv": 8.1,
                             "qty": 1.0,
                             "value": 0.0
                         }
@@ -2369,85 +2055,26 @@
         "sources": [
             {
                 "id": 1,
-                "title": "National Food and Nutrient Analysis Program Wave 17a",
+                "title": "National Food and Nutrient Analysis Program Wave 6i",
                 "authors": "Nutrient Data Laboratory, ARS, USDA",
                 "vol": "Beltsville",
                 "iss": "MD",
-                "year": "2013"
+                "year": "2002"
             },
             {
                 "id": 2,
-                "title": "National Food and Nutrient Anlaysis Program Wave 12h",
+                "title": "National Food and Nutrient Analysis Program Wave 6j",
                 "authors": "Nutrient Data Laboratory, ARS, USDA",
                 "vol": "Beltsville",
                 "iss": "MD",
-                "year": "2008"
+                "year": "2002"
             }
         ],
         "footnotes": [
             
         ],
         "langual": [
-            {
-                "id": "A0273",
-                "desc": "POULTRY OR POULTRY PRODUCT (US CFR)"
-            },
-            {
-                "id": "Z0004",
-                "desc": "LIGHT MEAT"
-            },
-            {
-                "id": "E0150",
-                "desc": "WHOLE, NATURAL SHAPE"
-            },
-            {
-                "id": "J0001",
-                "desc": "PRESERVATION METHOD NOT KNOWN"
-            },
-            {
-                "id": "M0001",
-                "desc": "CONTAINER OR WRAPPING NOT KNOWN"
-            },
-            {
-                "id": "N0001",
-                "desc": "FOOD CONTACT SURFACE NOT KNOWN"
-            },
-            {
-                "id": "C0267",
-                "desc": "SKELETAL MEAT PART, WITHOUT BONE, WITH SKIN"
-            },
-            {
-                "id": "G0005",
-                "desc": "BAKED OR ROASTED"
-            },
-            {
-                "id": "Z0157",
-                "desc": "WING (POULTRY MEAT CUT)"
-            },
-            {
-                "id": "K0003",
-                "desc": "NO PACKING MEDIUM USED"
-            },
-            {
-                "id": "A1275",
-                "desc": "0500 POULTRY PRODUCTS (USDA SR)"
-            },
-            {
-                "id": "B1198",
-                "desc": "BROILER OR FRYER CHICKEN"
-            },
-            {
-                "id": "H0003",
-                "desc": "NO TREATMENT APPLIED"
-            },
-            {
-                "id": "F0014",
-                "desc": "FULLY HEAT-TREATED"
-            },
-            {
-                "id": "P0024",
-                "desc": "HUMAN FOOD, NO AGE SPECIFICATION"
-            }
+            
         ]
     }
 }

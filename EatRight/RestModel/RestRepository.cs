@@ -44,7 +44,7 @@ namespace RestModel {
         {
             return _collection.Find(Query<Product>.Where(x => x.Animal == name)).ToList();
         }
-
+        public static List<string> Animals = new List<string>() { "Chicken", "Cow", "Pork" };
         public static Dictionary<string, double> DailyValues = new Dictionary<string, double>() {
             {"Protein",56},
             {"Fiber",25},
@@ -62,14 +62,46 @@ namespace RestModel {
             {"VitaminA",5000 },
             {"Folate",400 },
             {"VitaminE",15 },
-            {"VitaminK",80 }
+            {"VitaminK",80 },
+            { "Calcium",1000},
+            {"Iron",11 },
+            {"Magnesium",400 },
+            {"Phosphorus",1000 },
+            {"Potassium",3500 },
+            {"Sodium",2400 },
+            {"Zinc",15 }
 
         };
 
         public List<T> GetByMeasure(string name)
         {
-            var query = Query.GT(name, DailyValues[name] /10);
+            var query = Query.GT(name, DailyValues[name] /5);
             return _collection.Find(query).ToList();
+        }
+        public T GetKey(KeyValuePair<T, int> pair)
+        {
+            return pair.Key;
+        }
+        public List<T> GetTopFoods() 
+        {
+            Dictionary<T, int> productsCount = new Dictionary<T, int>();
+            foreach (var item in DailyValues)
+            {
+                var query = Query.GT(item.Key, item.Value / 5);
+                var results =  _collection.Find(query).ToList();
+                foreach (var product in results)
+                {   
+                    if (!productsCount.ContainsKey(product))
+                        productsCount.Add(product, 1);
+                    else
+                        productsCount[product]++;
+                }
+            }
+            var superFoods = productsCount.Where((pair) => pair.Value > 9);
+
+
+            var res = superFoods.ToDictionary(GetKey).Keys.ToList();
+            return res;
         }
 
         public IQueryable<T> GetAll() {

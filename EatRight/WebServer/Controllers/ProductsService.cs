@@ -35,6 +35,11 @@ namespace Students.Services {
             return dbLayer.Products.GetByMeasure(name);
         }
 
+        public List<Product> GetTopFoods()
+        {
+            return dbLayer.Products.GetTopFoods();
+        }
+
         public static bool IsEmpty(Product p) {
             return p.Image != null;
         }

@@ -14,16 +14,14 @@ namespace Students.Services {
         }
         public HttpResponseMessage Get(string id) {
             List<Product> productsList = null;
-            var parts = id.Split('=');
             if (RestRepository<Product>.DailyValues.Keys.ToList().Contains(id))
-            {
                 productsList = productsService.GetMeasure(id);
-            }
-            else if (parts[0] == "A")
-            {
-                productsList = productsService.GetAnimal(parts[1]);
-            }
-            return Request.CreateResponse(HttpStatusCode.OK, productsList);
+            else if (RestRepository<Product>.Animals.Contains(id))
+                productsList = productsService.GetAnimal(id);
+            else if (id == "TopFoods")
+                productsList = productsService.GetTopFoods();
+
+                return Request.CreateResponse(HttpStatusCode.OK, productsList);
         }
         public HttpResponseMessage GetAll() {
             var products = productsService.GetAll();

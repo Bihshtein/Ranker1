@@ -3127,32 +3127,20 @@
         ],
         "langual": [
             {
-                "id": "E0150",
-                "desc": "WHOLE, NATURAL SHAPE"
-            },
-            {
-                "id": "A1275",
-                "desc": "0500 POULTRY PRODUCTS (USDA SR)"
-            },
-            {
                 "id": "F0003",
                 "desc": "NOT HEAT-TREATED"
-            },
-            {
-                "id": "B1198",
-                "desc": "BROILER OR FRYER CHICKEN"
-            },
-            {
-                "id": "Z0004",
-                "desc": "LIGHT MEAT"
             },
             {
                 "id": "N0001",
                 "desc": "FOOD CONTACT SURFACE NOT KNOWN"
             },
             {
-                "id": "H0003",
-                "desc": "NO TREATMENT APPLIED"
+                "id": "Z0157",
+                "desc": "WING (POULTRY MEAT CUT)"
+            },
+            {
+                "id": "A0273",
+                "desc": "POULTRY OR POULTRY PRODUCT (US CFR)"
             },
             {
                 "id": "J0001",
@@ -3163,28 +3151,40 @@
                 "desc": "SKELETAL MEAT PART, WITHOUT BONE, WITH SKIN"
             },
             {
-                "id": "P0024",
-                "desc": "HUMAN FOOD, NO AGE SPECIFICATION"
+                "id": "Z0004",
+                "desc": "LIGHT MEAT"
             },
             {
-                "id": "G0003",
-                "desc": "COOKING METHOD NOT APPLICABLE"
+                "id": "B1198",
+                "desc": "BROILER OR FRYER CHICKEN"
             },
             {
-                "id": "A0273",
-                "desc": "POULTRY OR POULTRY PRODUCT (US CFR)"
+                "id": "A1275",
+                "desc": "0500 POULTRY PRODUCTS (USDA SR)"
             },
             {
-                "id": "Z0157",
-                "desc": "WING (POULTRY MEAT CUT)"
+                "id": "H0003",
+                "desc": "NO TREATMENT APPLIED"
             },
             {
                 "id": "M0001",
                 "desc": "CONTAINER OR WRAPPING NOT KNOWN"
             },
             {
+                "id": "P0024",
+                "desc": "HUMAN FOOD, NO AGE SPECIFICATION"
+            },
+            {
+                "id": "E0150",
+                "desc": "WHOLE, NATURAL SHAPE"
+            },
+            {
                 "id": "K0003",
                 "desc": "NO PACKING MEDIUM USED"
+            },
+            {
+                "id": "G0003",
+                "desc": "COOKING METHOD NOT APPLICABLE"
             }
         ]
     }

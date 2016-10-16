@@ -3,9 +3,9 @@
         "sr": "28",
         "type": "Full",
         "food": {
-            "ndbno": "05104",
-            "name": "Chicken, broilers or fryers, wing, meat and skin, cooked, stewed",
-            "sd": "CHICKEN,BROILERS OR FRYERS,WING,MEAT&SKN,CKD,STWD",
+            "ndbno": "05061",
+            "name": "Chicken, broilers or fryers, breast, meat and skin, cooked, stewed",
+            "sd": "CHICKEN,BROILERS OR FRYERS,BREAST,MEAT&SKN,CKD,STWD",
             "fg": "Poultry Products",
             "sn": "",
             "cn": "",
@@ -14,7 +14,7 @@
             "cf": 3.87,
             "ff": 9.02,
             "pf": 4.27,
-            "r": "48%",
+            "r": "18%",
             "rd": "Bone",
             "ds": "Standard Reference",
             "nutrients": [
@@ -23,28 +23,28 @@
                     "name": "Water",
                     "group": "Proximates",
                     "unit": "g",
-                    "value": 62.18,
+                    "value": 66.21,
                     "sourcecode": "",
                     "dp": 16,
-                    "se": "0.761",
+                    "se": "0.406",
                     "measures": [
                         {
                             "label": "cup, chopped or diced",
                             "eqv": 140.0,
                             "qty": 1.0,
-                            "value": 87.05
+                            "value": 92.69
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 14.92
+                            "value": 43.7
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 24.87
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 72.83
                         }
                     ]
                 },
@@ -53,7 +53,7 @@
                     "name": "Energy",
                     "group": "Proximates",
                     "unit": "kcal",
-                    "value": 249.0,
+                    "value": 184.0,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
@@ -62,19 +62,19 @@
                             "label": "cup, chopped or diced",
                             "eqv": 140.0,
                             "qty": 1.0,
-                            "value": 349.0
+                            "value": 258.0
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 60.0
+                            "value": 121.0
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 100.0
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 202.0
                         }
                     ]
                 },
@@ -83,7 +83,7 @@
                     "name": "Energy",
                     "group": "Proximates",
                     "unit": "kJ",
-                    "value": 1042.0,
+                    "value": 770.0,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
@@ -92,19 +92,19 @@
                             "label": "cup, chopped or diced",
                             "eqv": 140.0,
                             "qty": 1.0,
-                            "value": 1459.0
+                            "value": 1078.0
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 250.0
+                            "value": 508.0
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 417.0
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 847.0
                         }
                     ]
                 },
@@ -113,28 +113,28 @@
                     "name": "Protein",
                     "group": "Proximates",
                     "unit": "g",
-                    "value": 22.78,
+                    "value": 27.39,
                     "sourcecode": "",
                     "dp": 16,
-                    "se": "0.357",
+                    "se": "0.277",
                     "measures": [
                         {
                             "label": "cup, chopped or diced",
                             "eqv": 140.0,
                             "qty": 1.0,
-                            "value": 31.89
+                            "value": 38.35
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 5.47
+                            "value": 18.08
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 9.11
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 30.13
                         }
                     ]
                 },
@@ -143,28 +143,28 @@
                     "name": "Total lipid (fat)",
                     "group": "Proximates",
                     "unit": "g",
-                    "value": 16.82,
+                    "value": 7.42,
                     "sourcecode": "",
                     "dp": 16,
-                    "se": "0.302",
+                    "se": "0.222",
                     "measures": [
                         {
                             "label": "cup, chopped or diced",
                             "eqv": 140.0,
                             "qty": 1.0,
-                            "value": 23.55
+                            "value": 10.39
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 4.04
+                            "value": 4.9
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 6.73
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 8.16
                         }
                     ]
                 },
@@ -173,28 +173,28 @@
                     "name": "Ash",
                     "group": "Proximates",
                     "unit": "g",
-                    "value": 0.62,
+                    "value": 0.84,
                     "sourcecode": "",
                     "dp": 16,
-                    "se": "0.021",
+                    "se": "0.036",
                     "measures": [
                         {
                             "label": "cup, chopped or diced",
                             "eqv": 140.0,
                             "qty": 1.0,
-                            "value": 0.87
+                            "value": 1.18
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 0.15
+                            "value": 0.55
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 0.25
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 0.92
                         }
                     ]
                 },
@@ -216,14 +216,14 @@
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
                             "value": 0.0
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
                             "value": 0.0
                         }
                     ]
@@ -246,14 +246,14 @@
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
                             "value": 0.0
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
                             "value": 0.0
                         }
                     ]
@@ -276,14 +276,14 @@
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
                             "value": 0.0
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
                             "value": 0.0
                         }
                     ]
@@ -293,28 +293,28 @@
                     "name": "Calcium, Ca",
                     "group": "Minerals",
                     "unit": "mg",
-                    "value": 12.0,
+                    "value": 13.0,
                     "sourcecode": "",
                     "dp": 16,
-                    "se": "0.394",
+                    "se": "0.497",
                     "measures": [
                         {
                             "label": "cup, chopped or diced",
                             "eqv": 140.0,
                             "qty": 1.0,
-                            "value": 17.0
+                            "value": 18.0
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 3.0
+                            "value": 9.0
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 5.0
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 14.0
                         }
                     ]
                 },
@@ -323,28 +323,28 @@
                     "name": "Iron, Fe",
                     "group": "Minerals",
                     "unit": "mg",
-                    "value": 1.13,
+                    "value": 0.92,
                     "sourcecode": "",
                     "dp": 16,
-                    "se": "0.036",
+                    "se": "0.056",
                     "measures": [
                         {
                             "label": "cup, chopped or diced",
                             "eqv": 140.0,
                             "qty": 1.0,
-                            "value": 1.58
+                            "value": 1.29
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 0.27
+                            "value": 0.61
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 0.45
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 1.01
                         }
                     ]
                 },
@@ -353,28 +353,28 @@
                     "name": "Magnesium, Mg",
                     "group": "Minerals",
                     "unit": "mg",
-                    "value": 16.0,
+                    "value": 22.0,
                     "sourcecode": "",
                     "dp": 16,
-                    "se": "0.300",
+                    "se": "0.445",
                     "measures": [
                         {
                             "label": "cup, chopped or diced",
                             "eqv": 140.0,
                             "qty": 1.0,
-                            "value": 22.0
+                            "value": 31.0
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 4.0
+                            "value": 15.0
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 6.0
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 24.0
                         }
                     ]
                 },
@@ -383,28 +383,28 @@
                     "name": "Phosphorus, P",
                     "group": "Minerals",
                     "unit": "mg",
-                    "value": 121.0,
+                    "value": 156.0,
                     "sourcecode": "",
                     "dp": 16,
-                    "se": "2.607",
+                    "se": "3.554",
                     "measures": [
                         {
                             "label": "cup, chopped or diced",
                             "eqv": 140.0,
                             "qty": 1.0,
-                            "value": 169.0
+                            "value": 218.0
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 29.0
+                            "value": 103.0
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 48.0
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 172.0
                         }
                     ]
                 },
@@ -413,28 +413,28 @@
                     "name": "Potassium, K",
                     "group": "Minerals",
                     "unit": "mg",
-                    "value": 139.0,
+                    "value": 178.0,
                     "sourcecode": "",
                     "dp": 16,
-                    "se": "5.511",
+                    "se": "7.772",
                     "measures": [
                         {
                             "label": "cup, chopped or diced",
                             "eqv": 140.0,
                             "qty": 1.0,
-                            "value": 195.0
+                            "value": 249.0
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 33.0
+                            "value": 117.0
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 56.0
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 196.0
                         }
                     ]
                 },
@@ -443,28 +443,28 @@
                     "name": "Sodium, Na",
                     "group": "Minerals",
                     "unit": "mg",
-                    "value": 67.0,
+                    "value": 62.0,
                     "sourcecode": "",
                     "dp": 16,
-                    "se": "2.211",
+                    "se": "2.645",
                     "measures": [
                         {
                             "label": "cup, chopped or diced",
                             "eqv": 140.0,
                             "qty": 1.0,
-                            "value": 94.0
+                            "value": 87.0
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 16.0
+                            "value": 41.0
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 27.0
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 68.0
                         }
                     ]
                 },
@@ -473,28 +473,28 @@
                     "name": "Zinc, Zn",
                     "group": "Minerals",
                     "unit": "mg",
-                    "value": 1.63,
+                    "value": 0.97,
                     "sourcecode": "",
                     "dp": 16,
-                    "se": "0.029",
+                    "se": "0.018",
                     "measures": [
                         {
                             "label": "cup, chopped or diced",
                             "eqv": 140.0,
                             "qty": 1.0,
-                            "value": 2.28
+                            "value": 1.36
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 0.39
+                            "value": 0.64
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 0.65
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 1.07
                         }
                     ]
                 },
@@ -503,7 +503,7 @@
                     "name": "Copper, Cu",
                     "group": "Minerals",
                     "unit": "mg",
-                    "value": 0.046,
+                    "value": 0.044,
                     "sourcecode": "",
                     "dp": 16,
                     "se": "0.002",
@@ -512,19 +512,19 @@
                             "label": "cup, chopped or diced",
                             "eqv": 140.0,
                             "qty": 1.0,
-                            "value": 0.064
+                            "value": 0.062
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 0.011
+                            "value": 0.029
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 0.018
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 0.048
                         }
                     ]
                 },
@@ -546,15 +546,15 @@
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 0.004
+                            "value": 0.012
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 0.007
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 0.02
                         }
                     ]
                 },
@@ -563,7 +563,7 @@
                     "name": "Selenium, Se",
                     "group": "Minerals",
                     "unit": "\u00b5g",
-                    "value": 18.5,
+                    "value": 21.8,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
@@ -572,19 +572,19 @@
                             "label": "cup, chopped or diced",
                             "eqv": 140.0,
                             "qty": 1.0,
-                            "value": 25.9
+                            "value": 30.5
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 4.4
+                            "value": 14.4
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 7.4
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 24.0
                         }
                     ]
                 },
@@ -606,14 +606,14 @@
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
                             "value": 0.0
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
                             "value": 0.0
                         }
                     ]
@@ -623,28 +623,28 @@
                     "name": "Thiamin",
                     "group": "Vitamins",
                     "unit": "mg",
-                    "value": 0.04,
+                    "value": 0.041,
                     "sourcecode": "",
                     "dp": 8,
-                    "se": "0.004",
+                    "se": "0.005",
                     "measures": [
                         {
                             "label": "cup, chopped or diced",
                             "eqv": 140.0,
                             "qty": 1.0,
-                            "value": 0.056
+                            "value": 0.057
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 0.01
+                            "value": 0.027
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 0.016
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 0.045
                         }
                     ]
                 },
@@ -653,28 +653,28 @@
                     "name": "Riboflavin",
                     "group": "Vitamins",
                     "unit": "mg",
-                    "value": 0.103,
+                    "value": 0.115,
                     "sourcecode": "",
                     "dp": 8,
-                    "se": "0.004",
+                    "se": "0.003",
                     "measures": [
                         {
                             "label": "cup, chopped or diced",
                             "eqv": 140.0,
                             "qty": 1.0,
-                            "value": 0.144
+                            "value": 0.161
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 0.025
+                            "value": 0.076
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 0.041
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 0.126
                         }
                     ]
                 },
@@ -683,28 +683,28 @@
                     "name": "Niacin",
                     "group": "Vitamins",
                     "unit": "mg",
-                    "value": 4.621,
+                    "value": 7.807,
                     "sourcecode": "",
                     "dp": 8,
-                    "se": "0.268",
+                    "se": "0.308",
                     "measures": [
                         {
                             "label": "cup, chopped or diced",
                             "eqv": 140.0,
                             "qty": 1.0,
-                            "value": 6.469
+                            "value": 10.93
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 1.109
+                            "value": 5.153
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 1.848
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 8.588
                         }
                     ]
                 },
@@ -713,7 +713,7 @@
                     "name": "Pantothenic acid",
                     "group": "Vitamins",
                     "unit": "mg",
-                    "value": 0.504,
+                    "value": 0.547,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
@@ -722,19 +722,19 @@
                             "label": "cup, chopped or diced",
                             "eqv": 140.0,
                             "qty": 1.0,
-                            "value": 0.706
+                            "value": 0.766
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 0.121
+                            "value": 0.361
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 0.202
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 0.602
                         }
                     ]
                 },
@@ -743,7 +743,7 @@
                     "name": "Vitamin B-6",
                     "group": "Vitamins",
                     "unit": "mg",
-                    "value": 0.22,
+                    "value": 0.29,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
@@ -752,19 +752,19 @@
                             "label": "cup, chopped or diced",
                             "eqv": 140.0,
                             "qty": 1.0,
-                            "value": 0.308
+                            "value": 0.406
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 0.053
+                            "value": 0.191
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 0.088
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 0.319
                         }
                     ]
                 },
@@ -786,15 +786,15 @@
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 1.0
+                            "value": 2.0
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 1.0
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 3.0
                         }
                     ]
                 },
@@ -816,14 +816,14 @@
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
                             "value": 0.0
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
                             "value": 0.0
                         }
                     ]
@@ -846,15 +846,15 @@
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 1.0
+                            "value": 2.0
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 1.0
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 3.0
                         }
                     ]
                 },
@@ -876,15 +876,15 @@
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 1.0
+                            "value": 2.0
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 1.0
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 3.0
                         }
                     ]
                 },
@@ -893,7 +893,7 @@
                     "name": "Choline, total",
                     "group": "Vitamins",
                     "unit": "mg",
-                    "value": 51.3,
+                    "value": 64.4,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
@@ -902,19 +902,19 @@
                             "label": "cup, chopped or diced",
                             "eqv": 140.0,
                             "qty": 1.0,
-                            "value": 71.8
+                            "value": 90.2
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 12.3
+                            "value": 42.5
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 20.5
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 70.8
                         }
                     ]
                 },
@@ -923,7 +923,7 @@
                     "name": "Betaine",
                     "group": "Vitamins",
                     "unit": "mg",
-                    "value": 4.3,
+                    "value": 5.5,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
@@ -932,19 +932,19 @@
                             "label": "cup, chopped or diced",
                             "eqv": 140.0,
                             "qty": 1.0,
-                            "value": 6.0
+                            "value": 7.7
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 1.0
+                            "value": 3.6
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 1.7
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 6.0
                         }
                     ]
                 },
@@ -953,7 +953,7 @@
                     "name": "Vitamin B-12",
                     "group": "Vitamins",
                     "unit": "\u00b5g",
-                    "value": 0.18,
+                    "value": 0.21,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
@@ -962,19 +962,19 @@
                             "label": "cup, chopped or diced",
                             "eqv": 140.0,
                             "qty": 1.0,
-                            "value": 0.25
+                            "value": 0.29
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 0.04
+                            "value": 0.14
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 0.07
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 0.23
                         }
                     ]
                 },
@@ -996,14 +996,14 @@
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
                             "value": 0.0
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
                             "value": 0.0
                         }
                     ]
@@ -1013,7 +1013,7 @@
                     "name": "Vitamin A, RAE",
                     "group": "Vitamins",
                     "unit": "\u00b5g",
-                    "value": 40.0,
+                    "value": 25.0,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
@@ -1022,19 +1022,19 @@
                             "label": "cup, chopped or diced",
                             "eqv": 140.0,
                             "qty": 1.0,
-                            "value": 56.0
+                            "value": 35.0
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
-                            "qty": 1.0,
-                            "value": 10.0
-                        },
-                        {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
                             "value": 16.0
+                        },
+                        {
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 28.0
                         }
                     ]
                 },
@@ -1043,7 +1043,7 @@
                     "name": "Retinol",
                     "group": "Vitamins",
                     "unit": "\u00b5g",
-                    "value": 40.0,
+                    "value": 25.0,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
@@ -1052,19 +1052,19 @@
                             "label": "cup, chopped or diced",
                             "eqv": 140.0,
                             "qty": 1.0,
-                            "value": 56.0
+                            "value": 35.0
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
-                            "qty": 1.0,
-                            "value": 10.0
-                        },
-                        {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
                             "value": 16.0
+                        },
+                        {
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 28.0
                         }
                     ]
                 },
@@ -1086,14 +1086,14 @@
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
                             "value": 0.0
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
                             "value": 0.0
                         }
                     ]
@@ -1116,14 +1116,14 @@
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
                             "value": 0.0
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
                             "value": 0.0
                         }
                     ]
@@ -1146,14 +1146,14 @@
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
                             "value": 0.0
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
                             "value": 0.0
                         }
                     ]
@@ -1163,7 +1163,7 @@
                     "name": "Vitamin A, IU",
                     "group": "Vitamins",
                     "unit": "IU",
-                    "value": 133.0,
+                    "value": 82.0,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
@@ -1172,19 +1172,19 @@
                             "label": "cup, chopped or diced",
                             "eqv": 140.0,
                             "qty": 1.0,
-                            "value": 186.0
+                            "value": 115.0
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 32.0
+                            "value": 54.0
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 53.0
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 90.0
                         }
                     ]
                 },
@@ -1206,14 +1206,14 @@
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
                             "value": 0.0
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
                             "value": 0.0
                         }
                     ]
@@ -1236,14 +1236,14 @@
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
                             "value": 0.0
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
                             "value": 0.0
                         }
                     ]
@@ -1266,15 +1266,15 @@
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 0.06
+                            "value": 0.18
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 0.11
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 0.3
                         }
                     ]
                 },
@@ -1296,14 +1296,14 @@
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
                             "value": 0.0
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
                             "value": 0.0
                         }
                     ]
@@ -1326,15 +1326,15 @@
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 0.0
+                            "value": 0.1
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 0.0
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 0.1
                         }
                     ]
                 },
@@ -1356,15 +1356,15 @@
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 0.0
+                            "value": 0.1
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 0.0
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 0.1
                         }
                     ]
                 },
@@ -1386,15 +1386,15 @@
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 1.0
+                            "value": 3.0
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 2.0
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 6.0
                         }
                     ]
                 },
@@ -1416,15 +1416,15 @@
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
-                            "qty": 1.0,
-                            "value": 0.0
-                        },
-                        {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
                             "value": 0.1
+                        },
+                        {
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 0.2
                         }
                     ]
                 },
@@ -1433,7 +1433,7 @@
                     "name": "Fatty acids, total saturated",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 4.71,
+                    "value": 2.08,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
@@ -1442,19 +1442,19 @@
                             "label": "cup, chopped or diced",
                             "eqv": 140.0,
                             "qty": 1.0,
-                            "value": 6.594
+                            "value": 2.912
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 1.13
+                            "value": 1.373
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 1.884
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 2.288
                         }
                     ]
                 },
@@ -1476,14 +1476,14 @@
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
                             "value": 0.0
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
                             "value": 0.0
                         }
                     ]
@@ -1506,14 +1506,14 @@
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
                             "value": 0.0
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
                             "value": 0.0
                         }
                     ]
@@ -1536,14 +1536,14 @@
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
                             "value": 0.0
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
                             "value": 0.0
                         }
                     ]
@@ -1566,14 +1566,14 @@
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
                             "value": 0.0
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
                             "value": 0.0
                         }
                     ]
@@ -1583,7 +1583,7 @@
                     "name": "12:0",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 0.02,
+                    "value": 0.01,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
@@ -1592,19 +1592,19 @@
                             "label": "cup, chopped or diced",
                             "eqv": 140.0,
                             "qty": 1.0,
-                            "value": 0.028
+                            "value": 0.014
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 0.005
+                            "value": 0.007
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 0.008
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 0.011
                         }
                     ]
                 },
@@ -1613,7 +1613,7 @@
                     "name": "14:0",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 0.14,
+                    "value": 0.06,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
@@ -1622,19 +1622,19 @@
                             "label": "cup, chopped or diced",
                             "eqv": 140.0,
                             "qty": 1.0,
-                            "value": 0.196
+                            "value": 0.084
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 0.034
+                            "value": 0.04
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 0.056
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 0.066
                         }
                     ]
                 },
@@ -1643,7 +1643,7 @@
                     "name": "16:0",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 3.5,
+                    "value": 1.54,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
@@ -1652,19 +1652,19 @@
                             "label": "cup, chopped or diced",
                             "eqv": 140.0,
                             "qty": 1.0,
-                            "value": 4.9
+                            "value": 2.156
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 0.84
+                            "value": 1.016
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 1.4
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 1.694
                         }
                     ]
                 },
@@ -1673,7 +1673,7 @@
                     "name": "18:0",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 0.94,
+                    "value": 0.42,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
@@ -1682,19 +1682,19 @@
                             "label": "cup, chopped or diced",
                             "eqv": 140.0,
                             "qty": 1.0,
-                            "value": 1.316
+                            "value": 0.588
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 0.226
+                            "value": 0.277
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 0.376
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 0.462
                         }
                     ]
                 },
@@ -1703,7 +1703,7 @@
                     "name": "Fatty acids, total monounsaturated",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 6.6,
+                    "value": 2.9,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
@@ -1712,19 +1712,19 @@
                             "label": "cup, chopped or diced",
                             "eqv": 140.0,
                             "qty": 1.0,
-                            "value": 9.24
+                            "value": 4.06
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 1.584
+                            "value": 1.914
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 2.64
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 3.19
                         }
                     ]
                 },
@@ -1733,7 +1733,7 @@
                     "name": "16:1 undifferentiated",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 0.89,
+                    "value": 0.39,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
@@ -1742,19 +1742,19 @@
                             "label": "cup, chopped or diced",
                             "eqv": 140.0,
                             "qty": 1.0,
-                            "value": 1.246
+                            "value": 0.546
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 0.214
+                            "value": 0.257
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 0.356
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 0.429
                         }
                     ]
                 },
@@ -1763,7 +1763,7 @@
                     "name": "18:1 undifferentiated",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 5.44,
+                    "value": 2.39,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
@@ -1772,19 +1772,19 @@
                             "label": "cup, chopped or diced",
                             "eqv": 140.0,
                             "qty": 1.0,
-                            "value": 7.616
+                            "value": 3.346
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 1.306
+                            "value": 1.577
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 2.176
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 2.629
                         }
                     ]
                 },
@@ -1793,7 +1793,7 @@
                     "name": "20:1",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 0.19,
+                    "value": 0.08,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
@@ -1802,19 +1802,19 @@
                             "label": "cup, chopped or diced",
                             "eqv": 140.0,
                             "qty": 1.0,
-                            "value": 0.266
+                            "value": 0.112
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 0.046
+                            "value": 0.053
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 0.076
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 0.088
                         }
                     ]
                 },
@@ -1836,14 +1836,14 @@
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
                             "value": 0.0
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
                             "value": 0.0
                         }
                     ]
@@ -1853,7 +1853,7 @@
                     "name": "Fatty acids, total polyunsaturated",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 3.58,
+                    "value": 1.58,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
@@ -1862,19 +1862,19 @@
                             "label": "cup, chopped or diced",
                             "eqv": 140.0,
                             "qty": 1.0,
-                            "value": 5.012
+                            "value": 2.212
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 0.859
+                            "value": 1.043
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 1.432
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 1.738
                         }
                     ]
                 },
@@ -1883,7 +1883,7 @@
                     "name": "18:2 undifferentiated",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 3.08,
+                    "value": 1.35,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
@@ -1892,19 +1892,19 @@
                             "label": "cup, chopped or diced",
                             "eqv": 140.0,
                             "qty": 1.0,
-                            "value": 4.312
+                            "value": 1.89
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 0.739
+                            "value": 0.891
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 1.232
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 1.485
                         }
                     ]
                 },
@@ -1913,7 +1913,7 @@
                     "name": "18:3 undifferentiated",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 0.13,
+                    "value": 0.06,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
@@ -1922,19 +1922,19 @@
                             "label": "cup, chopped or diced",
                             "eqv": 140.0,
                             "qty": 1.0,
-                            "value": 0.182
+                            "value": 0.084
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 0.031
+                            "value": 0.04
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 0.052
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 0.066
                         }
                     ]
                 },
@@ -1956,14 +1956,14 @@
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
                             "value": 0.0
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
                             "value": 0.0
                         }
                     ]
@@ -1973,7 +1973,7 @@
                     "name": "20:4 undifferentiated",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 0.13,
+                    "value": 0.06,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
@@ -1982,25 +1982,85 @@
                             "label": "cup, chopped or diced",
                             "eqv": 140.0,
                             "qty": 1.0,
-                            "value": 0.182
+                            "value": 0.084
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 0.031
+                            "value": 0.04
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 0.052
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 0.066
                         }
                     ]
                 },
                 {
                     "nutrient_id": 629,
                     "name": "20:5 n-3 (EPA)",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.01,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup, chopped or diced",
+                            "eqv": 140.0,
+                            "qty": 1.0,
+                            "value": 0.014
+                        },
+                        {
+                            "label": "unit (yield from 1 lb ready-to-cook chicken)",
+                            "eqv": 66.0,
+                            "qty": 1.0,
+                            "value": 0.007
+                        },
+                        {
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 0.011
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 631,
+                    "name": "22:5 n-3 (DPA)",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.01,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup, chopped or diced",
+                            "eqv": 140.0,
+                            "qty": 1.0,
+                            "value": 0.014
+                        },
+                        {
+                            "label": "unit (yield from 1 lb ready-to-cook chicken)",
+                            "eqv": 66.0,
+                            "qty": 1.0,
+                            "value": 0.007
+                        },
+                        {
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 0.011
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 621,
+                    "name": "22:6 n-3 (DHA)",
                     "group": "Lipids",
                     "unit": "g",
                     "value": 0.02,
@@ -2016,75 +2076,15 @@
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 0.005
+                            "value": 0.013
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 0.008
-                        }
-                    ]
-                },
-                {
-                    "nutrient_id": 631,
-                    "name": "22:5 n-3 (DPA)",
-                    "group": "Lipids",
-                    "unit": "g",
-                    "value": 0.03,
-                    "sourcecode": "",
-                    "dp": "",
-                    "se": "",
-                    "measures": [
-                        {
-                            "label": "cup, chopped or diced",
-                            "eqv": 140.0,
-                            "qty": 1.0,
-                            "value": 0.042
-                        },
-                        {
-                            "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
-                            "qty": 1.0,
-                            "value": 0.007
-                        },
-                        {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 0.012
-                        }
-                    ]
-                },
-                {
-                    "nutrient_id": 621,
-                    "name": "22:6 n-3 (DHA)",
-                    "group": "Lipids",
-                    "unit": "g",
-                    "value": 0.05,
-                    "sourcecode": "",
-                    "dp": "",
-                    "se": "",
-                    "measures": [
-                        {
-                            "label": "cup, chopped or diced",
-                            "eqv": 140.0,
-                            "qty": 1.0,
-                            "value": 0.07
-                        },
-                        {
-                            "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
-                            "qty": 1.0,
-                            "value": 0.012
-                        },
-                        {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 0.02
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 0.022
                         }
                     ]
                 },
@@ -2093,7 +2093,7 @@
                     "name": "Cholesterol",
                     "group": "Lipids",
                     "unit": "mg",
-                    "value": 70.0,
+                    "value": 75.0,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
@@ -2102,19 +2102,19 @@
                             "label": "cup, chopped or diced",
                             "eqv": 140.0,
                             "qty": 1.0,
-                            "value": 98.0
+                            "value": 105.0
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 17.0
+                            "value": 50.0
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 28.0
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 82.0
                         }
                     ]
                 },
@@ -2123,7 +2123,7 @@
                     "name": "Tryptophan",
                     "group": "Amino Acids",
                     "unit": "g",
-                    "value": 0.245,
+                    "value": 0.312,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
@@ -2132,19 +2132,19 @@
                             "label": "cup, chopped or diced",
                             "eqv": 140.0,
                             "qty": 1.0,
-                            "value": 0.343
+                            "value": 0.437
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 0.059
+                            "value": 0.206
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 0.098
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 0.343
                         }
                     ]
                 },
@@ -2153,7 +2153,7 @@
                     "name": "Threonine",
                     "group": "Amino Acids",
                     "unit": "g",
-                    "value": 0.925,
+                    "value": 1.143,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
@@ -2162,19 +2162,19 @@
                             "label": "cup, chopped or diced",
                             "eqv": 140.0,
                             "qty": 1.0,
-                            "value": 1.295
+                            "value": 1.6
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 0.222
+                            "value": 0.754
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 0.37
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 1.257
                         }
                     ]
                 },
@@ -2183,7 +2183,7 @@
                     "name": "Isoleucine",
                     "group": "Amino Acids",
                     "unit": "g",
-                    "value": 1.085,
+                    "value": 1.401,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
@@ -2192,19 +2192,19 @@
                             "label": "cup, chopped or diced",
                             "eqv": 140.0,
                             "qty": 1.0,
-                            "value": 1.519
+                            "value": 1.961
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 0.26
+                            "value": 0.925
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 0.434
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 1.541
                         }
                     ]
                 },
@@ -2213,7 +2213,7 @@
                     "name": "Leucine",
                     "group": "Amino Acids",
                     "unit": "g",
-                    "value": 1.616,
+                    "value": 2.019,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
@@ -2222,19 +2222,19 @@
                             "label": "cup, chopped or diced",
                             "eqv": 140.0,
                             "qty": 1.0,
-                            "value": 2.262
+                            "value": 2.827
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 0.388
+                            "value": 1.333
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 0.646
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 2.221
                         }
                     ]
                 },
@@ -2243,7 +2243,7 @@
                     "name": "Lysine",
                     "group": "Amino Acids",
                     "unit": "g",
-                    "value": 1.791,
+                    "value": 2.272,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
@@ -2252,19 +2252,19 @@
                             "label": "cup, chopped or diced",
                             "eqv": 140.0,
                             "qty": 1.0,
-                            "value": 2.507
+                            "value": 3.181
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 0.43
+                            "value": 1.5
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 0.716
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 2.499
                         }
                     ]
                 },
@@ -2273,7 +2273,7 @@
                     "name": "Methionine",
                     "group": "Amino Acids",
                     "unit": "g",
-                    "value": 0.587,
+                    "value": 0.741,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
@@ -2282,19 +2282,19 @@
                             "label": "cup, chopped or diced",
                             "eqv": 140.0,
                             "qty": 1.0,
-                            "value": 0.822
+                            "value": 1.037
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 0.141
+                            "value": 0.489
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 0.235
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 0.815
                         }
                     ]
                 },
@@ -2303,7 +2303,7 @@
                     "name": "Cystine",
                     "group": "Amino Acids",
                     "unit": "g",
-                    "value": 0.313,
+                    "value": 0.359,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
@@ -2312,19 +2312,19 @@
                             "label": "cup, chopped or diced",
                             "eqv": 140.0,
                             "qty": 1.0,
-                            "value": 0.438
+                            "value": 0.503
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 0.075
+                            "value": 0.237
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 0.125
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 0.395
                         }
                     ]
                 },
@@ -2333,7 +2333,7 @@
                     "name": "Phenylalanine",
                     "group": "Amino Acids",
                     "unit": "g",
-                    "value": 0.87,
+                    "value": 1.074,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
@@ -2342,19 +2342,19 @@
                             "label": "cup, chopped or diced",
                             "eqv": 140.0,
                             "qty": 1.0,
-                            "value": 1.218
+                            "value": 1.504
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 0.209
+                            "value": 0.709
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 0.348
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 1.181
                         }
                     ]
                 },
@@ -2363,7 +2363,7 @@
                     "name": "Tyrosine",
                     "group": "Amino Acids",
                     "unit": "g",
-                    "value": 0.706,
+                    "value": 0.9,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
@@ -2372,19 +2372,19 @@
                             "label": "cup, chopped or diced",
                             "eqv": 140.0,
                             "qty": 1.0,
-                            "value": 0.988
+                            "value": 1.26
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 0.169
+                            "value": 0.594
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 0.282
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 0.99
                         }
                     ]
                 },
@@ -2393,7 +2393,7 @@
                     "name": "Valine",
                     "group": "Amino Acids",
                     "unit": "g",
-                    "value": 1.087,
+                    "value": 1.342,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
@@ -2402,19 +2402,19 @@
                             "label": "cup, chopped or diced",
                             "eqv": 140.0,
                             "qty": 1.0,
-                            "value": 1.522
+                            "value": 1.879
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 0.261
+                            "value": 0.886
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 0.435
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 1.476
                         }
                     ]
                 },
@@ -2423,7 +2423,7 @@
                     "name": "Arginine",
                     "group": "Amino Acids",
                     "unit": "g",
-                    "value": 1.469,
+                    "value": 1.689,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
@@ -2432,19 +2432,19 @@
                             "label": "cup, chopped or diced",
                             "eqv": 140.0,
                             "qty": 1.0,
-                            "value": 2.057
+                            "value": 2.365
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 0.353
+                            "value": 1.115
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 0.588
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 1.858
                         }
                     ]
                 },
@@ -2453,7 +2453,7 @@
                     "name": "Histidine",
                     "group": "Amino Acids",
                     "unit": "g",
-                    "value": 0.64,
+                    "value": 0.824,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
@@ -2462,19 +2462,19 @@
                             "label": "cup, chopped or diced",
                             "eqv": 140.0,
                             "qty": 1.0,
-                            "value": 0.896
+                            "value": 1.154
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 0.154
+                            "value": 0.544
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 0.256
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 0.906
                         }
                     ]
                 },
@@ -2483,7 +2483,7 @@
                     "name": "Alanine",
                     "group": "Amino Acids",
                     "unit": "g",
-                    "value": 1.394,
+                    "value": 1.552,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
@@ -2492,19 +2492,19 @@
                             "label": "cup, chopped or diced",
                             "eqv": 140.0,
                             "qty": 1.0,
-                            "value": 1.952
+                            "value": 2.173
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 0.335
+                            "value": 1.024
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 0.558
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 1.707
                         }
                     ]
                 },
@@ -2513,7 +2513,7 @@
                     "name": "Aspartic acid",
                     "group": "Amino Acids",
                     "unit": "g",
-                    "value": 2.032,
+                    "value": 2.441,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
@@ -2522,19 +2522,19 @@
                             "label": "cup, chopped or diced",
                             "eqv": 140.0,
                             "qty": 1.0,
-                            "value": 2.845
+                            "value": 3.417
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 0.488
+                            "value": 1.611
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 0.813
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 2.685
                         }
                     ]
                 },
@@ -2543,7 +2543,7 @@
                     "name": "Glutamic acid",
                     "group": "Amino Acids",
                     "unit": "g",
-                    "value": 3.266,
+                    "value": 4.046,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
@@ -2552,19 +2552,19 @@
                             "label": "cup, chopped or diced",
                             "eqv": 140.0,
                             "qty": 1.0,
-                            "value": 4.572
+                            "value": 5.664
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 0.784
+                            "value": 2.67
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 1.306
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 4.451
                         }
                     ]
                 },
@@ -2573,7 +2573,7 @@
                     "name": "Glycine",
                     "group": "Amino Acids",
                     "unit": "g",
-                    "value": 1.746,
+                    "value": 1.586,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
@@ -2582,19 +2582,19 @@
                             "label": "cup, chopped or diced",
                             "eqv": 140.0,
                             "qty": 1.0,
-                            "value": 2.444
+                            "value": 2.22
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 0.419
+                            "value": 1.047
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 0.698
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 1.745
                         }
                     ]
                 },
@@ -2603,7 +2603,7 @@
                     "name": "Proline",
                     "group": "Amino Acids",
                     "unit": "g",
-                    "value": 1.233,
+                    "value": 1.24,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
@@ -2612,19 +2612,19 @@
                             "label": "cup, chopped or diced",
                             "eqv": 140.0,
                             "qty": 1.0,
-                            "value": 1.726
+                            "value": 1.736
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 0.296
+                            "value": 0.818
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 0.493
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 1.364
                         }
                     ]
                 },
@@ -2633,7 +2633,7 @@
                     "name": "Serine",
                     "group": "Amino Acids",
                     "unit": "g",
-                    "value": 0.819,
+                    "value": 0.956,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
@@ -2642,19 +2642,19 @@
                             "label": "cup, chopped or diced",
                             "eqv": 140.0,
                             "qty": 1.0,
-                            "value": 1.147
+                            "value": 1.338
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
-                            "value": 0.197
+                            "value": 0.631
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
-                            "value": 0.328
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
+                            "value": 1.052
                         }
                     ]
                 },
@@ -2676,14 +2676,14 @@
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
                             "value": 0.0
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
                             "value": 0.0
                         }
                     ]
@@ -2706,14 +2706,14 @@
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
                             "value": 0.0
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
                             "value": 0.0
                         }
                     ]
@@ -2736,14 +2736,14 @@
                         },
                         {
                             "label": "unit (yield from 1 lb ready-to-cook chicken)",
-                            "eqv": 24.0,
+                            "eqv": 66.0,
                             "qty": 1.0,
                             "value": 0.0
                         },
                         {
-                            "label": "wing, bone removed",
-                            "eqv": 40.0,
-                            "qty": 1.0,
+                            "label": "breast, bone removed",
+                            "eqv": 110.0,
+                            "qty": 0.5,
                             "value": 0.0
                         }
                     ]
@@ -2758,56 +2758,36 @@
         ],
         "langual": [
             {
-                "id": "J0001",
-                "desc": "PRESERVATION METHOD NOT KNOWN"
-            },
-            {
                 "id": "Z0004",
                 "desc": "LIGHT MEAT"
-            },
-            {
-                "id": "F0014",
-                "desc": "FULLY HEAT-TREATED"
-            },
-            {
-                "id": "C0267",
-                "desc": "SKELETAL MEAT PART, WITHOUT BONE, WITH SKIN"
-            },
-            {
-                "id": "E0150",
-                "desc": "WHOLE, NATURAL SHAPE"
             },
             {
                 "id": "G0020",
                 "desc": "SIMMERED, POACHED OR STEWED"
             },
             {
-                "id": "N0001",
-                "desc": "FOOD CONTACT SURFACE NOT KNOWN"
-            },
-            {
-                "id": "M0001",
-                "desc": "CONTAINER OR WRAPPING NOT KNOWN"
-            },
-            {
-                "id": "A1275",
-                "desc": "0500 POULTRY PRODUCTS (USDA SR)"
-            },
-            {
-                "id": "Z0157",
-                "desc": "WING (POULTRY MEAT CUT)"
-            },
-            {
-                "id": "H0003",
-                "desc": "NO TREATMENT APPLIED"
+                "id": "F0014",
+                "desc": "FULLY HEAT-TREATED"
             },
             {
                 "id": "A0273",
                 "desc": "POULTRY OR POULTRY PRODUCT (US CFR)"
             },
             {
+                "id": "E0150",
+                "desc": "WHOLE, NATURAL SHAPE"
+            },
+            {
+                "id": "H0003",
+                "desc": "NO TREATMENT APPLIED"
+            },
+            {
                 "id": "P0024",
                 "desc": "HUMAN FOOD, NO AGE SPECIFICATION"
+            },
+            {
+                "id": "Z0158",
+                "desc": "BREAST (POULTRY MEAT CUT)"
             },
             {
                 "id": "K0003",
@@ -2816,6 +2796,26 @@
             {
                 "id": "B1198",
                 "desc": "BROILER OR FRYER CHICKEN"
+            },
+            {
+                "id": "J0001",
+                "desc": "PRESERVATION METHOD NOT KNOWN"
+            },
+            {
+                "id": "C0267",
+                "desc": "SKELETAL MEAT PART, WITHOUT BONE, WITH SKIN"
+            },
+            {
+                "id": "M0001",
+                "desc": "CONTAINER OR WRAPPING NOT KNOWN"
+            },
+            {
+                "id": "N0001",
+                "desc": "FOOD CONTACT SURFACE NOT KNOWN"
+            },
+            {
+                "id": "A1275",
+                "desc": "0500 POULTRY PRODUCTS (USDA SR)"
             }
         ]
     }

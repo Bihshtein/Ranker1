@@ -3,10 +3,10 @@
         "sr": "28",
         "type": "Full",
         "food": {
-            "ndbno": "05103",
-            "name": "Chicken, broilers or fryers, wing, meat and skin, cooked, roasted",
-            "sd": "CHICKEN,BROILERS OR FRYERS,WING,MEAT&SKN,CKD,RSTD",
-            "fg": "Poultry Products",
+            "ndbno": "10039",
+            "name": "Pork, fresh, loin, center loin (roasts), bone-in, separable lean and fat, cooked, roasted",
+            "sd": "PORK,FRSH,LOIN,CNTR LOIN (ROASTS),BONE-IN,LN&FAT,CKD,RSTD",
+            "fg": "Pork Products",
             "sn": "",
             "cn": "",
             "manu": "",
@@ -14,8 +14,8 @@
             "cf": 3.87,
             "ff": 9.02,
             "pf": 4.27,
-            "r": "40%",
-            "rd": "Bone and connective tissue 40%",
+            "r": "18%",
+            "rd": "Bone 14%, Connective tissue 4%",
             "ds": "Standard Reference",
             "nutrients": [
                 {
@@ -23,18 +23,22 @@
                     "name": "Water",
                     "group": "Proximates",
                     "unit": "g",
-                    "value": 59.4,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.490",
+                    "value": 60.26,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 51.22
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 50.49
+                            "value": 542.34
                         }
                     ]
                 },
@@ -43,16 +47,22 @@
                     "name": "Energy",
                     "group": "Proximates",
                     "unit": "kcal",
-                    "value": 254.0,
+                    "value": 231.0,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 196.0
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 216.0
+                            "value": 2079.0
                         }
                     ]
                 },
@@ -61,16 +71,22 @@
                     "name": "Energy",
                     "group": "Proximates",
                     "unit": "kJ",
-                    "value": 1062.0,
+                    "value": 966.0,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 821.0
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 903.0
+                            "value": 8694.0
                         }
                     ]
                 },
@@ -79,18 +95,22 @@
                     "name": "Protein",
                     "group": "Proximates",
                     "unit": "g",
-                    "value": 23.79,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.382",
+                    "value": 27.01,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 22.96
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 20.22
+                            "value": 243.09
                         }
                     ]
                 },
@@ -99,18 +119,22 @@
                     "name": "Total lipid (fat)",
                     "group": "Proximates",
                     "unit": "g",
-                    "value": 16.87,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.565",
+                    "value": 12.8,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 10.88
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 14.34
+                            "value": 115.2
                         }
                     ]
                 },
@@ -119,18 +143,22 @@
                     "name": "Ash",
                     "group": "Proximates",
                     "unit": "g",
-                    "value": 0.88,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.029",
+                    "value": 1.14,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.97
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 0.75
+                            "value": 10.26
                         }
                     ]
                 },
@@ -145,8 +173,14 @@
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
                             "value": 0.0
                         }
@@ -163,8 +197,14 @@
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
                             "value": 0.0
                         }
@@ -181,8 +221,14 @@
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
                             "value": 0.0
                         }
@@ -193,18 +239,22 @@
                     "name": "Calcium, Ca",
                     "group": "Minerals",
                     "unit": "mg",
-                    "value": 18.0,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "1.055",
+                    "value": 33.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 28.0
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 15.0
+                            "value": 297.0
                         }
                     ]
                 },
@@ -213,18 +263,22 @@
                     "name": "Iron, Fe",
                     "group": "Minerals",
                     "unit": "mg",
-                    "value": 0.84,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.042",
+                    "value": 0.89,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.76
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 0.71
+                            "value": 8.01
                         }
                     ]
                 },
@@ -233,18 +287,22 @@
                     "name": "Magnesium, Mg",
                     "group": "Minerals",
                     "unit": "mg",
-                    "value": 19.0,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.309",
+                    "value": 20.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 17.0
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 16.0
+                            "value": 180.0
                         }
                     ]
                 },
@@ -253,18 +311,22 @@
                     "name": "Phosphorus, P",
                     "group": "Minerals",
                     "unit": "mg",
-                    "value": 147.0,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "1.862",
+                    "value": 213.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 181.0
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 125.0
+                            "value": 1917.0
                         }
                     ]
                 },
@@ -273,18 +335,22 @@
                     "name": "Potassium, K",
                     "group": "Minerals",
                     "unit": "mg",
-                    "value": 212.0,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "5.170",
+                    "value": 350.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 298.0
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 180.0
+                            "value": 3150.0
                         }
                     ]
                 },
@@ -293,18 +359,22 @@
                     "name": "Sodium, Na",
                     "group": "Minerals",
                     "unit": "mg",
-                    "value": 98.0,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "6.976",
+                    "value": 83.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 71.0
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 83.0
+                            "value": 747.0
                         }
                     ]
                 },
@@ -313,18 +383,22 @@
                     "name": "Zinc, Zn",
                     "group": "Minerals",
                     "unit": "mg",
-                    "value": 1.64,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.037",
+                    "value": 3.53,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 3.0
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 1.39
+                            "value": 31.77
                         }
                     ]
                 },
@@ -333,18 +407,22 @@
                     "name": "Copper, Cu",
                     "group": "Minerals",
                     "unit": "mg",
-                    "value": 0.041,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.002",
+                    "value": 0.103,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.088
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 0.035
+                            "value": 0.927
                         }
                     ]
                 },
@@ -353,18 +431,22 @@
                     "name": "Manganese, Mn",
                     "group": "Minerals",
                     "unit": "mg",
-                    "value": 0.011,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.000",
+                    "value": 0.018,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.015
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 0.009
+                            "value": 0.162
                         }
                     ]
                 },
@@ -373,18 +455,22 @@
                     "name": "Selenium, Se",
                     "group": "Minerals",
                     "unit": "\u00b5g",
-                    "value": 25.5,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 3,
-                    "se": "2.421",
+                    "value": 42.6,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 36.2
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 21.7
+                            "value": 383.4
                         }
                     ]
                 },
@@ -399,8 +485,14 @@
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
                             "value": 0.0
                         }
@@ -411,18 +503,22 @@
                     "name": "Thiamin",
                     "group": "Vitamins",
                     "unit": "mg",
-                    "value": 0.065,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 3,
-                    "se": "0.004",
+                    "value": 0.536,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.456
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 0.055
+                            "value": 4.824
                         }
                     ]
                 },
@@ -431,18 +527,22 @@
                     "name": "Riboflavin",
                     "group": "Vitamins",
                     "unit": "mg",
-                    "value": 0.153,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 3,
-                    "se": "0.028",
+                    "value": 0.422,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.359
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 0.13
+                            "value": 3.798
                         }
                     ]
                 },
@@ -451,18 +551,22 @@
                     "name": "Niacin",
                     "group": "Vitamins",
                     "unit": "mg",
-                    "value": 6.32,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 3,
-                    "se": "0.404",
+                    "value": 7.42,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 6.307
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 5.372
+                            "value": 66.78
                         }
                     ]
                 },
@@ -471,18 +575,22 @@
                     "name": "Pantothenic acid",
                     "group": "Vitamins",
                     "unit": "mg",
-                    "value": 0.86,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 2,
+                    "value": 1.478,
+                    "sourcecode": "",
+                    "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 1.256
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 0.731
+                            "value": 13.302
                         }
                     ]
                 },
@@ -491,18 +599,22 @@
                     "name": "Vitamin B-6",
                     "group": "Vitamins",
                     "unit": "mg",
-                    "value": 0.558,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 3,
-                    "se": "0.013",
+                    "value": 0.485,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.412
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 0.474
+                            "value": 4.365
                         }
                     ]
                 },
@@ -511,16 +623,22 @@
                     "name": "Folate, total",
                     "group": "Vitamins",
                     "unit": "\u00b5g",
-                    "value": 9.0,
+                    "value": 0.0,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 8.0
+                            "value": 0.0
                         }
                     ]
                 },
@@ -535,8 +653,14 @@
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
                             "value": 0.0
                         }
@@ -547,16 +671,22 @@
                     "name": "Folate, food",
                     "group": "Vitamins",
                     "unit": "\u00b5g",
-                    "value": 9.0,
+                    "value": 0.0,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 8.0
+                            "value": 0.0
                         }
                     ]
                 },
@@ -565,16 +695,22 @@
                     "name": "Folate, DFE",
                     "group": "Vitamins",
                     "unit": "\u00b5g",
-                    "value": 9.0,
+                    "value": 0.0,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 8.0
+                            "value": 0.0
                         }
                     ]
                 },
@@ -583,16 +719,22 @@
                     "name": "Choline, total",
                     "group": "Vitamins",
                     "unit": "mg",
-                    "value": 111.3,
+                    "value": 92.4,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 78.5
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 94.6
+                            "value": 831.6
                         }
                     ]
                 },
@@ -601,16 +743,22 @@
                     "name": "Betaine",
                     "group": "Vitamins",
                     "unit": "mg",
-                    "value": 12.2,
+                    "value": 3.6,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 3.1
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 10.4
+                            "value": 32.4
                         }
                     ]
                 },
@@ -619,18 +767,22 @@
                     "name": "Vitamin B-12",
                     "group": "Vitamins",
                     "unit": "\u00b5g",
-                    "value": 0.35,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 3,
-                    "se": "0.031",
+                    "value": 0.87,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.74
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 0.3
+                            "value": 7.83
                         }
                     ]
                 },
@@ -645,8 +797,14 @@
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
                             "value": 0.0
                         }
@@ -657,16 +815,22 @@
                     "name": "Vitamin A, RAE",
                     "group": "Vitamins",
                     "unit": "\u00b5g",
-                    "value": 12.0,
+                    "value": 4.0,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 3.0
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 10.0
+                            "value": 36.0
                         }
                     ]
                 },
@@ -675,16 +839,22 @@
                     "name": "Retinol",
                     "group": "Vitamins",
                     "unit": "\u00b5g",
-                    "value": 12.0,
+                    "value": 4.0,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 3.0
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 10.0
+                            "value": 36.0
                         }
                     ]
                 },
@@ -699,8 +869,14 @@
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
                             "value": 0.0
                         }
@@ -717,8 +893,14 @@
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
                             "value": 0.0
                         }
@@ -735,8 +917,14 @@
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
                             "value": 0.0
                         }
@@ -747,16 +935,22 @@
                     "name": "Vitamin A, IU",
                     "group": "Vitamins",
                     "unit": "IU",
-                    "value": 39.0,
+                    "value": 15.0,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 13.0
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 33.0
+                            "value": 135.0
                         }
                     ]
                 },
@@ -771,8 +965,14 @@
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
                             "value": 0.0
                         }
@@ -789,8 +989,14 @@
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
                             "value": 0.0
                         }
@@ -801,18 +1007,22 @@
                     "name": "Vitamin E (alpha-tocopherol)",
                     "group": "Vitamins",
                     "unit": "mg",
-                    "value": 0.69,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 2,
+                    "value": 0.21,
+                    "sourcecode": "",
+                    "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.18
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 0.59
+                            "value": 1.89
                         }
                     ]
                 },
@@ -827,70 +1037,16 @@
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
                             "value": 0.0
-                        }
-                    ]
-                },
-                {
-                    "nutrient_id": 341,
-                    "name": "Tocopherol, beta",
-                    "group": "Vitamins",
-                    "unit": "mg",
-                    "value": 0.0,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 2,
-                    "se": "",
-                    "measures": [
-                        {
-                            "label": "piece",
-                            "eqv": 85.0,
-                            "qty": 1.0,
-                            "value": 0.0
-                        }
-                    ]
-                },
-                {
-                    "nutrient_id": 342,
-                    "name": "Tocopherol, gamma",
-                    "group": "Vitamins",
-                    "unit": "mg",
-                    "value": 0.2,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 2,
-                    "se": "",
-                    "measures": [
-                        {
-                            "label": "piece",
-                            "eqv": 85.0,
-                            "qty": 1.0,
-                            "value": 0.17
-                        }
-                    ]
-                },
-                {
-                    "nutrient_id": 343,
-                    "name": "Tocopherol, delta",
-                    "group": "Vitamins",
-                    "unit": "mg",
-                    "value": 0.04,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 2,
-                    "se": "",
-                    "measures": [
-                        {
-                            "label": "piece",
-                            "eqv": 85.0,
-                            "qty": 1.0,
-                            "value": 0.03
                         }
                     ]
                 },
@@ -899,16 +1055,22 @@
                     "name": "Vitamin D (D2 + D3)",
                     "group": "Vitamins",
                     "unit": "\u00b5g",
-                    "value": 0.2,
+                    "value": 0.6,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.5
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 0.2
+                            "value": 5.4
                         }
                     ]
                 },
@@ -917,16 +1079,22 @@
                     "name": "Vitamin D3 (cholecalciferol)",
                     "group": "Vitamins",
                     "unit": "\u00b5g",
-                    "value": 0.2,
+                    "value": 0.6,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.5
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 0.2
+                            "value": 5.4
                         }
                     ]
                 },
@@ -935,16 +1103,22 @@
                     "name": "Vitamin D",
                     "group": "Vitamins",
                     "unit": "IU",
-                    "value": 7.0,
+                    "value": 25.0,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 21.0
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 6.0
+                            "value": 225.0
                         }
                     ]
                 },
@@ -953,16 +1127,22 @@
                     "name": "Vitamin K (phylloquinone)",
                     "group": "Vitamins",
                     "unit": "\u00b5g",
-                    "value": 0.3,
+                    "value": 0.0,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 0.3
+                            "value": 0.0
                         }
                     ]
                 },
@@ -971,16 +1151,22 @@
                     "name": "Fatty acids, total saturated",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 4.976,
+                    "value": 4.859,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 4.13
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 4.23
+                            "value": 43.731
                         }
                     ]
                 },
@@ -995,8 +1181,14 @@
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
                             "value": 0.0
                         }
@@ -1013,8 +1205,14 @@
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
                             "value": 0.0
                         }
@@ -1031,8 +1229,14 @@
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
                             "value": 0.0
                         }
@@ -1043,18 +1247,22 @@
                     "name": "10:0",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 0.007,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.000",
+                    "value": 0.014,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.012
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 0.006
+                            "value": 0.126
                         }
                     ]
                 },
@@ -1063,18 +1271,22 @@
                     "name": "12:0",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 0.008,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.001",
+                    "value": 0.011,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.009
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 0.007
+                            "value": 0.099
                         }
                     ]
                 },
@@ -1083,18 +1295,22 @@
                     "name": "14:0",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 0.098,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.004",
+                    "value": 0.173,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.147
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 0.083
+                            "value": 1.557
                         }
                     ]
                 },
@@ -1103,18 +1319,22 @@
                     "name": "15:0",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 0.01,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.002",
+                    "value": 0.003,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.003
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 0.008
+                            "value": 0.027
                         }
                     ]
                 },
@@ -1123,18 +1343,22 @@
                     "name": "16:0",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 3.883,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.105",
+                    "value": 2.975,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 2.529
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 3.301
+                            "value": 26.775
                         }
                     ]
                 },
@@ -1143,18 +1367,22 @@
                     "name": "17:0",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 0.018,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.001",
+                    "value": 0.045,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.038
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 0.015
+                            "value": 0.405
                         }
                     ]
                 },
@@ -1163,18 +1391,22 @@
                     "name": "18:0",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 0.927,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.030",
+                    "value": 1.614,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 1.372
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 0.788
+                            "value": 14.526
                         }
                     ]
                 },
@@ -1183,18 +1415,22 @@
                     "name": "20:0",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 0.011,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.001",
+                    "value": 0.022,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.019
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 0.009
+                            "value": 0.198
                         }
                     ]
                 },
@@ -1203,18 +1439,22 @@
                     "name": "22:0",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 0.011,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.000",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 0.009
+                            "value": 0.0
                         }
                     ]
                 },
@@ -1224,17 +1464,21 @@
                     "group": "Lipids",
                     "unit": "g",
                     "value": 0.001,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.000",
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
-                            "qty": 1.0,
+                            "qty": 3.0,
                             "value": 0.001
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
+                            "qty": 1.0,
+                            "value": 0.009
                         }
                     ]
                 },
@@ -1243,16 +1487,22 @@
                     "name": "Fatty acids, total monounsaturated",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 7.706,
+                    "value": 5.478,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 4.656
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 6.55
+                            "value": 49.302
                         }
                     ]
                 },
@@ -1261,18 +1511,22 @@
                     "name": "14:1",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 0.037,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.001",
+                    "value": 0.001,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.001
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 0.031
+                            "value": 0.009
                         }
                     ]
                 },
@@ -1282,15 +1536,19 @@
                     "group": "Lipids",
                     "unit": "g",
                     "value": 0.0,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.000",
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
                             "value": 0.0
                         }
@@ -1301,58 +1559,22 @@
                     "name": "16:1 undifferentiated",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 1.115,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.023",
+                    "value": 0.27,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
-                            "qty": 1.0,
-                            "value": 0.948
-                        }
-                    ]
-                },
-                {
-                    "nutrient_id": 673,
-                    "name": "16:1 c",
-                    "group": "Lipids",
-                    "unit": "g",
-                    "value": 1.108,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.023",
-                    "measures": [
+                            "qty": 3.0,
+                            "value": 0.23
+                        },
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 0.942
-                        }
-                    ]
-                },
-                {
-                    "nutrient_id": 662,
-                    "name": "16:1 t",
-                    "group": "Lipids",
-                    "unit": "g",
-                    "value": 0.007,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.001",
-                    "measures": [
-                        {
-                            "label": "piece",
-                            "eqv": 85.0,
-                            "qty": 1.0,
-                            "value": 0.006
+                            "value": 2.43
                         }
                     ]
                 },
@@ -1361,18 +1583,22 @@
                     "name": "17:1",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 0.014,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.001",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 0.012
+                            "value": 0.0
                         }
                     ]
                 },
@@ -1381,18 +1607,22 @@
                     "name": "18:1 undifferentiated",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 6.436,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.173",
+                    "value": 5.12,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 4.352
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 5.471
+                            "value": 46.08
                         }
                     ]
                 },
@@ -1401,18 +1631,22 @@
                     "name": "18:1 c",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 6.381,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.170",
+                    "value": 5.053,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 4.295
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 5.424
+                            "value": 45.477
                         }
                     ]
                 },
@@ -1421,18 +1655,22 @@
                     "name": "18:1 t",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 0.055,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.004",
+                    "value": 0.067,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.057
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 0.047
+                            "value": 0.603
                         }
                     ]
                 },
@@ -1441,18 +1679,22 @@
                     "name": "20:1",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 0.101,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.001",
+                    "value": 0.086,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.073
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 0.086
+                            "value": 0.774
                         }
                     ]
                 },
@@ -1461,18 +1703,22 @@
                     "name": "22:1 undifferentiated",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 0.002,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.000",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 0.002
+                            "value": 0.0
                         }
                     ]
                 },
@@ -1481,56 +1727,20 @@
                     "name": "22:1 c",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 0.002,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.000",
-                    "measures": [
-                        {
-                            "label": "piece",
-                            "eqv": 85.0,
-                            "qty": 1.0,
-                            "value": 0.002
-                        }
-                    ]
-                },
-                {
-                    "nutrient_id": 664,
-                    "name": "22:1 t",
-                    "group": "Lipids",
-                    "unit": "g",
                     "value": 0.0,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.000",
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
-                            "qty": 1.0,
+                            "qty": 3.0,
                             "value": 0.0
-                        }
-                    ]
-                },
-                {
-                    "nutrient_id": 671,
-                    "name": "24:1 c",
-                    "group": "Lipids",
-                    "unit": "g",
-                    "value": 0.0,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.000",
-                    "measures": [
+                        },
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
                             "value": 0.0
                         }
@@ -1541,16 +1751,22 @@
                     "name": "Fatty acids, total polyunsaturated",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 3.59,
+                    "value": 2.073,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 1.762
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 3.052
+                            "value": 18.657
                         }
                     ]
                 },
@@ -1559,18 +1775,22 @@
                     "name": "18:2 undifferentiated",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 3.216,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.120",
+                    "value": 1.848,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 1.571
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 2.734
+                            "value": 16.632
                         }
                     ]
                 },
@@ -1579,38 +1799,22 @@
                     "name": "18:2 n-6 c,c",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 3.177,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.120",
+                    "value": 1.828,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
-                            "qty": 1.0,
-                            "value": 2.7
-                        }
-                    ]
-                },
-                {
-                    "nutrient_id": 670,
-                    "name": "18:2 CLAs",
-                    "group": "Lipids",
-                    "unit": "g",
-                    "value": 0.018,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.002",
-                    "measures": [
+                            "qty": 3.0,
+                            "value": 1.554
+                        },
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 0.015
+                            "value": 16.452
                         }
                     ]
                 },
@@ -1619,18 +1823,22 @@
                     "name": "18:2 t not further defined",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 0.021,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.001",
+                    "value": 0.02,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.017
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 0.018
+                            "value": 0.18
                         }
                     ]
                 },
@@ -1639,18 +1847,22 @@
                     "name": "18:3 undifferentiated",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 0.165,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.009",
+                    "value": 0.076,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.065
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 0.14
+                            "value": 0.684
                         }
                     ]
                 },
@@ -1659,18 +1871,22 @@
                     "name": "18:3 n-3 c,c,c (ALA)",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 0.163,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.009",
+                    "value": 0.071,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.06
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 0.139
+                            "value": 0.639
                         }
                     ]
                 },
@@ -1679,18 +1895,22 @@
                     "name": "18:3 n-6 c,c,c",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 0.002,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.001",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 0.002
+                            "value": 0.0
                         }
                     ]
                 },
@@ -1699,18 +1919,22 @@
                     "name": "18:3i",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 0.0,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.000",
+                    "value": 0.005,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.004
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 0.0
+                            "value": 0.045
                         }
                     ]
                 },
@@ -1719,18 +1943,22 @@
                     "name": "18:4",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 0.004,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.000",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 0.003
+                            "value": 0.0
                         }
                     ]
                 },
@@ -1739,18 +1967,22 @@
                     "name": "20:2 n-6 c,c",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 0.022,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.001",
+                    "value": 0.072,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.061
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 0.019
+                            "value": 0.648
                         }
                     ]
                 },
@@ -1759,38 +1991,22 @@
                     "name": "20:3 undifferentiated",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 0.036,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.001",
+                    "value": 0.004,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
-                            "qty": 1.0,
-                            "value": 0.031
-                        }
-                    ]
-                },
-                {
-                    "nutrient_id": 853,
-                    "name": "20:3 n-6",
-                    "group": "Lipids",
-                    "unit": "g",
-                    "value": 0.035,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.001",
-                    "measures": [
+                            "qty": 3.0,
+                            "value": 0.003
+                        },
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 0.03
+                            "value": 0.036
                         }
                     ]
                 },
@@ -1799,18 +2015,22 @@
                     "name": "20:4 undifferentiated",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 0.098,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.003",
+                    "value": 0.062,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.053
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 0.083
+                            "value": 0.558
                         }
                     ]
                 },
@@ -1819,38 +2039,22 @@
                     "name": "20:5 n-3 (EPA)",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 0.004,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.000",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
-                            "qty": 1.0,
-                            "value": 0.003
-                        }
-                    ]
-                },
-                {
-                    "nutrient_id": 858,
-                    "name": "22:4",
-                    "group": "Lipids",
-                    "unit": "g",
-                    "value": 0.025,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.001",
-                    "measures": [
+                            "qty": 3.0,
+                            "value": 0.0
+                        },
                         {
-                            "label": "piece",
-                            "eqv": 85.0,
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 0.021
+                            "value": 0.0
                         }
                     ]
                 },
@@ -1859,18 +2063,22 @@
                     "name": "22:5 n-3 (DPA)",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 0.012,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.000",
+                    "value": 0.01,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.008
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 0.01
+                            "value": 0.09
                         }
                     ]
                 },
@@ -1879,18 +2087,22 @@
                     "name": "22:6 n-3 (DHA)",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 0.006,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 6,
-                    "se": "0.001",
+                    "value": 0.001,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.001
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 0.005
+                            "value": 0.009
                         }
                     ]
                 },
@@ -1899,16 +2111,22 @@
                     "name": "Fatty acids, total trans",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 0.084,
+                    "value": 0.093,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.079
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 0.071
+                            "value": 0.837
                         }
                     ]
                 },
@@ -1917,16 +2135,22 @@
                     "name": "Fatty acids, total trans-monoenoic",
                     "group": "Lipids",
                     "unit": "g",
-                    "value": 0.063,
+                    "value": 0.067,
                     "sourcecode": "",
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.057
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 0.054
+                            "value": 0.603
                         }
                     ]
                 },
@@ -1935,18 +2159,22 @@
                     "name": "Cholesterol",
                     "group": "Lipids",
                     "unit": "mg",
-                    "value": 141.0,
-                    "sourcecode": [
-                        1
-                    ],
-                    "dp": 3,
-                    "se": "6.028",
+                    "value": 76.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 65.0
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 120.0
+                            "value": 684.0
                         }
                     ]
                 },
@@ -1955,18 +2183,22 @@
                     "name": "Tryptophan",
                     "group": "Amino Acids",
                     "unit": "g",
-                    "value": 0.3,
-                    "sourcecode": [
-                        2
-                    ],
+                    "value": 0.321,
+                    "sourcecode": "",
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.273
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 0.255
+                            "value": 2.889
                         }
                     ]
                 },
@@ -1975,18 +2207,22 @@
                     "name": "Threonine",
                     "group": "Amino Acids",
                     "unit": "g",
-                    "value": 1.067,
-                    "sourcecode": [
-                        2
-                    ],
+                    "value": 1.188,
+                    "sourcecode": "",
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 1.01
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 0.907
+                            "value": 10.692
                         }
                     ]
                 },
@@ -1995,18 +2231,22 @@
                     "name": "Isoleucine",
                     "group": "Amino Acids",
                     "unit": "g",
-                    "value": 1.167,
-                    "sourcecode": [
-                        2
-                    ],
+                    "value": 1.279,
+                    "sourcecode": "",
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 1.087
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 0.992
+                            "value": 11.511
                         }
                     ]
                 },
@@ -2015,18 +2255,22 @@
                     "name": "Leucine",
                     "group": "Amino Acids",
                     "unit": "g",
-                    "value": 1.968,
-                    "sourcecode": [
-                        2
-                    ],
+                    "value": 2.223,
+                    "sourcecode": "",
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 1.89
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 1.673
+                            "value": 20.007
                         }
                     ]
                 },
@@ -2035,18 +2279,22 @@
                     "name": "Lysine",
                     "group": "Amino Acids",
                     "unit": "g",
-                    "value": 2.287,
-                    "sourcecode": [
-                        2
-                    ],
+                    "value": 2.402,
+                    "sourcecode": "",
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 2.042
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 1.944
+                            "value": 21.618
                         }
                     ]
                 },
@@ -2055,18 +2303,22 @@
                     "name": "Methionine",
                     "group": "Amino Acids",
                     "unit": "g",
-                    "value": 0.619,
-                    "sourcecode": [
-                        2
-                    ],
+                    "value": 0.74,
+                    "sourcecode": "",
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.629
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 0.526
+                            "value": 6.66
                         }
                     ]
                 },
@@ -2075,18 +2327,22 @@
                     "name": "Cystine",
                     "group": "Amino Acids",
                     "unit": "g",
-                    "value": 0.249,
-                    "sourcecode": [
-                        2
-                    ],
+                    "value": 0.305,
+                    "sourcecode": "",
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.259
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 0.212
+                            "value": 2.745
                         }
                     ]
                 },
@@ -2095,18 +2351,22 @@
                     "name": "Phenylalanine",
                     "group": "Amino Acids",
                     "unit": "g",
-                    "value": 0.96,
-                    "sourcecode": [
-                        2
-                    ],
+                    "value": 1.122,
+                    "sourcecode": "",
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.954
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 0.816
+                            "value": 10.098
                         }
                     ]
                 },
@@ -2115,18 +2375,22 @@
                     "name": "Tyrosine",
                     "group": "Amino Acids",
                     "unit": "g",
-                    "value": 0.857,
-                    "sourcecode": [
-                        2
-                    ],
+                    "value": 1.07,
+                    "sourcecode": "",
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.91
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 0.728
+                            "value": 9.63
                         }
                     ]
                 },
@@ -2135,18 +2399,22 @@
                     "name": "Valine",
                     "group": "Amino Acids",
                     "unit": "g",
-                    "value": 1.231,
-                    "sourcecode": [
-                        2
-                    ],
+                    "value": 1.366,
+                    "sourcecode": "",
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 1.161
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 1.046
+                            "value": 12.294
                         }
                     ]
                 },
@@ -2155,18 +2423,22 @@
                     "name": "Arginine",
                     "group": "Amino Acids",
                     "unit": "g",
-                    "value": 1.609,
-                    "sourcecode": [
-                        2
-                    ],
+                    "value": 1.74,
+                    "sourcecode": "",
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 1.479
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 1.368
+                            "value": 15.66
                         }
                     ]
                 },
@@ -2175,18 +2447,22 @@
                     "name": "Histidine",
                     "group": "Amino Acids",
                     "unit": "g",
-                    "value": 0.887,
-                    "sourcecode": [
-                        2
-                    ],
+                    "value": 1.099,
+                    "sourcecode": "",
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.934
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 0.754
+                            "value": 9.891
                         }
                     ]
                 },
@@ -2195,18 +2471,22 @@
                     "name": "Alanine",
                     "group": "Amino Acids",
                     "unit": "g",
-                    "value": 1.389,
-                    "sourcecode": [
-                        2
-                    ],
+                    "value": 1.547,
+                    "sourcecode": "",
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 1.315
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 1.181
+                            "value": 13.923
                         }
                     ]
                 },
@@ -2215,18 +2495,22 @@
                     "name": "Aspartic acid",
                     "group": "Amino Acids",
                     "unit": "g",
-                    "value": 2.238,
-                    "sourcecode": [
-                        2
-                    ],
+                    "value": 2.527,
+                    "sourcecode": "",
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 2.148
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 1.902
+                            "value": 22.743
                         }
                     ]
                 },
@@ -2235,18 +2519,22 @@
                     "name": "Glutamic acid",
                     "group": "Amino Acids",
                     "unit": "g",
-                    "value": 3.524,
-                    "sourcecode": [
-                        2
-                    ],
+                    "value": 4.126,
+                    "sourcecode": "",
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 3.507
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 2.995
+                            "value": 37.134
                         }
                     ]
                 },
@@ -2255,18 +2543,22 @@
                     "name": "Glycine",
                     "group": "Amino Acids",
                     "unit": "g",
-                    "value": 1.053,
-                    "sourcecode": [
-                        2
-                    ],
+                    "value": 1.221,
+                    "sourcecode": "",
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 1.038
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 0.895
+                            "value": 10.989
                         }
                     ]
                 },
@@ -2275,18 +2567,22 @@
                     "name": "Proline",
                     "group": "Amino Acids",
                     "unit": "g",
-                    "value": 0.756,
-                    "sourcecode": [
-                        2
-                    ],
+                    "value": 1.092,
+                    "sourcecode": "",
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.928
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 0.643
+                            "value": 9.828
                         }
                     ]
                 },
@@ -2295,18 +2591,46 @@
                     "name": "Serine",
                     "group": "Amino Acids",
                     "unit": "g",
-                    "value": 0.907,
-                    "sourcecode": [
-                        2
-                    ],
+                    "value": 1.128,
+                    "sourcecode": "",
                     "dp": "",
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.959
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
-                            "value": 0.771
+                            "value": 10.152
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 521,
+                    "name": "Hydroxyproline",
+                    "group": "Amino Acids",
+                    "unit": "g",
+                    "value": 0.094,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "oz",
+                            "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.08
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
+                            "qty": 1.0,
+                            "value": 0.846
                         }
                     ]
                 },
@@ -2321,8 +2645,14 @@
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
                             "value": 0.0
                         }
@@ -2339,8 +2669,14 @@
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
                             "value": 0.0
                         }
@@ -2357,8 +2693,14 @@
                     "se": "",
                     "measures": [
                         {
-                            "label": "piece",
+                            "label": "oz",
                             "eqv": 85.0,
+                            "qty": 3.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "roast",
+                            "eqv": 900.0,
                             "qty": 1.0,
                             "value": 0.0
                         }
@@ -2367,87 +2709,13 @@
             ]
         },
         "sources": [
-            {
-                "id": 1,
-                "title": "National Food and Nutrient Analysis Program Wave 17a",
-                "authors": "Nutrient Data Laboratory, ARS, USDA",
-                "vol": "Beltsville",
-                "iss": "MD",
-                "year": "2013"
-            },
-            {
-                "id": 2,
-                "title": "National Food and Nutrient Anlaysis Program Wave 12h",
-                "authors": "Nutrient Data Laboratory, ARS, USDA",
-                "vol": "Beltsville",
-                "iss": "MD",
-                "year": "2008"
-            }
+            
         ],
         "footnotes": [
             
         ],
         "langual": [
-            {
-                "id": "A0273",
-                "desc": "POULTRY OR POULTRY PRODUCT (US CFR)"
-            },
-            {
-                "id": "Z0004",
-                "desc": "LIGHT MEAT"
-            },
-            {
-                "id": "E0150",
-                "desc": "WHOLE, NATURAL SHAPE"
-            },
-            {
-                "id": "J0001",
-                "desc": "PRESERVATION METHOD NOT KNOWN"
-            },
-            {
-                "id": "M0001",
-                "desc": "CONTAINER OR WRAPPING NOT KNOWN"
-            },
-            {
-                "id": "N0001",
-                "desc": "FOOD CONTACT SURFACE NOT KNOWN"
-            },
-            {
-                "id": "C0267",
-                "desc": "SKELETAL MEAT PART, WITHOUT BONE, WITH SKIN"
-            },
-            {
-                "id": "G0005",
-                "desc": "BAKED OR ROASTED"
-            },
-            {
-                "id": "Z0157",
-                "desc": "WING (POULTRY MEAT CUT)"
-            },
-            {
-                "id": "K0003",
-                "desc": "NO PACKING MEDIUM USED"
-            },
-            {
-                "id": "A1275",
-                "desc": "0500 POULTRY PRODUCTS (USDA SR)"
-            },
-            {
-                "id": "B1198",
-                "desc": "BROILER OR FRYER CHICKEN"
-            },
-            {
-                "id": "H0003",
-                "desc": "NO TREATMENT APPLIED"
-            },
-            {
-                "id": "F0014",
-                "desc": "FULLY HEAT-TREATED"
-            },
-            {
-                "id": "P0024",
-                "desc": "HUMAN FOOD, NO AGE SPECIFICATION"
-            }
+            
         ]
     }
 }

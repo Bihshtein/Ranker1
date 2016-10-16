@@ -34,7 +34,12 @@ Potato,11365
 Pineapple,09266
 Watermelon,09326
 Sirloin,23241
-Chicken_Breast,05000
+Chicken_Breast_Fried_NoSkin,05063
+Chicken_Breast_Roasted_NoSkin,05064
+Chicken_Breast_Stewed_NoSkin,05065
+Chicken_Breast_Stewed,05061
+Chicken_Breast_Roasted,05060
+Chicken_Breast_Raw,05057
 Chicken_Wing_Raw,05100
 Chicken_Wing_Fried,05106
 Chicken_Wing_Roasted,05103
@@ -42,6 +47,12 @@ Chicken_Wing_Roasted_NoSkin,05107
 Chicken_Wing_Stewed,05104
 Chicken_Thigh_Braised,05681
 Chicken_Thigh_Roasted,05683
+Pork_Toploin_Roasted,10065
+Pork_Sirloin_Roasted,10055
+Pork_Sirloin_Roasted,10039
+Pork_Bacon_Cooked,10864
+Pork_Bacon_Baked,10860
+Pork_Bacon_Fried,10862
 Egg,01129
 Cottage,45027755
 Tuna,15121

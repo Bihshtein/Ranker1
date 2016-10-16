@@ -11,6 +11,15 @@ namespace RestModel {
 
     public class Product
     {
+        public override int GetHashCode()
+        {
+            return ID;
+        }
+
+        public override bool Equals(object obj)
+        {
+            return ID.Equals(((Product)obj).ID);
+        }
         [BsonElement("_id")]
         public int ID { get; set; }
 
@@ -73,6 +82,27 @@ namespace RestModel {
 
         [BsonElement("VitaminK")]
         public double VitaminK { get; set; }
+
+        [BsonElement("Calcium")]
+        public double Calcium { get; set; }
+
+        [BsonElement("Iron")]
+        public double Iron { get; set; }
+
+        [BsonElement("Phosphorus")]
+        public double Phosphorus { get; set; }
+
+        [BsonElement("Zinc")]
+        public double Zinc { get; set; }
+
+        [BsonElement("Potassium")]
+        public double Potassium { get; set; }
+
+        [BsonElement("Sodium")]
+        public double Sodium { get; set; }
+
+        [BsonElement("Magnesium")]
+        public double Magnesium { get; set; }
 
         [BsonElement("Fiber")]
         public double Fiber { get; set; }
