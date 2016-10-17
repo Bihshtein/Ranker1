@@ -2236,60 +2236,60 @@
         ],
         "langual": [
             {
-                "id": "K0003",
-                "desc": "NO PACKING MEDIUM USED"
-            },
-            {
-                "id": "J0001",
-                "desc": "PRESERVATION METHOD NOT KNOWN"
-            },
-            {
-                "id": "P0024",
-                "desc": "HUMAN FOOD, NO AGE SPECIFICATION"
-            },
-            {
                 "id": "A0273",
                 "desc": "POULTRY OR POULTRY PRODUCT (US CFR)"
-            },
-            {
-                "id": "B1198",
-                "desc": "BROILER OR FRYER CHICKEN"
-            },
-            {
-                "id": "Z0004",
-                "desc": "LIGHT MEAT"
             },
             {
                 "id": "A1275",
                 "desc": "0500 POULTRY PRODUCTS (USDA SR)"
             },
             {
-                "id": "E0150",
-                "desc": "WHOLE, NATURAL SHAPE"
-            },
-            {
-                "id": "N0001",
-                "desc": "FOOD CONTACT SURFACE NOT KNOWN"
-            },
-            {
                 "id": "Z0158",
                 "desc": "BREAST (POULTRY MEAT CUT)"
             },
             {
-                "id": "C0267",
-                "desc": "SKELETAL MEAT PART, WITHOUT BONE, WITH SKIN"
+                "id": "E0150",
+                "desc": "WHOLE, NATURAL SHAPE"
             },
             {
-                "id": "F0003",
-                "desc": "NOT HEAT-TREATED"
+                "id": "J0001",
+                "desc": "PRESERVATION METHOD NOT KNOWN"
             },
             {
                 "id": "H0003",
                 "desc": "NO TREATMENT APPLIED"
             },
             {
+                "id": "K0003",
+                "desc": "NO PACKING MEDIUM USED"
+            },
+            {
+                "id": "P0024",
+                "desc": "HUMAN FOOD, NO AGE SPECIFICATION"
+            },
+            {
+                "id": "C0267",
+                "desc": "SKELETAL MEAT PART, WITHOUT BONE, WITH SKIN"
+            },
+            {
+                "id": "Z0004",
+                "desc": "LIGHT MEAT"
+            },
+            {
+                "id": "B1198",
+                "desc": "BROILER OR FRYER CHICKEN"
+            },
+            {
                 "id": "G0003",
                 "desc": "COOKING METHOD NOT APPLICABLE"
+            },
+            {
+                "id": "N0001",
+                "desc": "FOOD CONTACT SURFACE NOT KNOWN"
+            },
+            {
+                "id": "F0003",
+                "desc": "NOT HEAT-TREATED"
             },
             {
                 "id": "M0001",

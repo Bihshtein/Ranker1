@@ -44,7 +44,7 @@ namespace RestModel {
         {
             return _collection.Find(Query<Product>.Where(x => x.Animal == name)).ToList();
         }
-        public static List<string> Animals = new List<string>() { "Chicken", "Cow", "Pork" };
+        public static List<string> Animals = new List<string>() { "Chicken", "Beef", "Pork" };
         public static Dictionary<string, double> DailyValues = new Dictionary<string, double>() {
             {"Protein",56},
             {"Fiber",25},

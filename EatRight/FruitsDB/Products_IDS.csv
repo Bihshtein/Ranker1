@@ -33,7 +33,15 @@ Plum,09279
 Potato,11365
 Pineapple,09266
 Watermelon,09326
-Sirloin,23241
+Beef_TopSirloin_Raw,13931
+Beef_TopSirloin_Broiled,13932
+Beef_TopSirloin_PanFried,13933
+Beef_Sirloin_Raw,23646
+Beef_Sirloin_Broiled,23545
+Beef_Sirloin_Roasted,13985
+Beef_Tenderloin_Raw,13917
+Beef_Tenderloin_Grilled,13439
+Beef_Tenderloin_Broiled,13917
 Chicken_Breast_Fried_NoSkin,05063
 Chicken_Breast_Roasted_NoSkin,05064
 Chicken_Breast_Stewed_NoSkin,05065

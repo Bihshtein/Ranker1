@@ -1743,6 +1743,50 @@
         ],
         "langual": [
             {
+                "id": "P0024",
+                "desc": "HUMAN FOOD, NO AGE SPECIFICATION"
+            },
+            {
+                "id": "G0025",
+                "desc": "COOKED WITH ADDED FAT OR OIL"
+            },
+            {
+                "id": "H0334",
+                "desc": "VEGETABLE FAT OR OIL COATED"
+            },
+            {
+                "id": "Z0004",
+                "desc": "LIGHT MEAT"
+            },
+            {
+                "id": "K0003",
+                "desc": "NO PACKING MEDIUM USED"
+            },
+            {
+                "id": "A1275",
+                "desc": "0500 POULTRY PRODUCTS (USDA SR)"
+            },
+            {
+                "id": "F0014",
+                "desc": "FULLY HEAT-TREATED"
+            },
+            {
+                "id": "B1198",
+                "desc": "BROILER OR FRYER CHICKEN"
+            },
+            {
+                "id": "M0001",
+                "desc": "CONTAINER OR WRAPPING NOT KNOWN"
+            },
+            {
+                "id": "N0001",
+                "desc": "FOOD CONTACT SURFACE NOT KNOWN"
+            },
+            {
+                "id": "E0150",
+                "desc": "WHOLE, NATURAL SHAPE"
+            },
+            {
                 "id": "J0001",
                 "desc": "PRESERVATION METHOD NOT KNOWN"
             },
@@ -1751,56 +1795,12 @@
                 "desc": "WING (POULTRY MEAT CUT)"
             },
             {
-                "id": "A1275",
-                "desc": "0500 POULTRY PRODUCTS (USDA SR)"
-            },
-            {
-                "id": "M0001",
-                "desc": "CONTAINER OR WRAPPING NOT KNOWN"
-            },
-            {
-                "id": "F0014",
-                "desc": "FULLY HEAT-TREATED"
-            },
-            {
-                "id": "P0024",
-                "desc": "HUMAN FOOD, NO AGE SPECIFICATION"
-            },
-            {
-                "id": "Z0004",
-                "desc": "LIGHT MEAT"
-            },
-            {
                 "id": "A0273",
                 "desc": "POULTRY OR POULTRY PRODUCT (US CFR)"
             },
             {
                 "id": "C0268",
                 "desc": "SKELETAL MEAT PART, WITHOUT BONE, WITHOUT SKIN"
-            },
-            {
-                "id": "H0334",
-                "desc": "VEGETABLE FAT OR OIL COATED"
-            },
-            {
-                "id": "G0025",
-                "desc": "COOKED WITH ADDED FAT OR OIL"
-            },
-            {
-                "id": "K0003",
-                "desc": "NO PACKING MEDIUM USED"
-            },
-            {
-                "id": "N0001",
-                "desc": "FOOD CONTACT SURFACE NOT KNOWN"
-            },
-            {
-                "id": "B1198",
-                "desc": "BROILER OR FRYER CHICKEN"
-            },
-            {
-                "id": "E0150",
-                "desc": "WHOLE, NATURAL SHAPE"
             }
         ]
     }

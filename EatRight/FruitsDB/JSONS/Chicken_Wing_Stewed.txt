@@ -2758,44 +2758,48 @@
         ],
         "langual": [
             {
-                "id": "J0001",
-                "desc": "PRESERVATION METHOD NOT KNOWN"
-            },
-            {
                 "id": "Z0004",
                 "desc": "LIGHT MEAT"
             },
             {
-                "id": "F0014",
-                "desc": "FULLY HEAT-TREATED"
-            },
-            {
-                "id": "C0267",
-                "desc": "SKELETAL MEAT PART, WITHOUT BONE, WITH SKIN"
-            },
-            {
-                "id": "E0150",
-                "desc": "WHOLE, NATURAL SHAPE"
-            },
-            {
-                "id": "G0020",
-                "desc": "SIMMERED, POACHED OR STEWED"
+                "id": "J0001",
+                "desc": "PRESERVATION METHOD NOT KNOWN"
             },
             {
                 "id": "N0001",
                 "desc": "FOOD CONTACT SURFACE NOT KNOWN"
             },
             {
-                "id": "M0001",
-                "desc": "CONTAINER OR WRAPPING NOT KNOWN"
+                "id": "E0150",
+                "desc": "WHOLE, NATURAL SHAPE"
+            },
+            {
+                "id": "K0003",
+                "desc": "NO PACKING MEDIUM USED"
             },
             {
                 "id": "A1275",
                 "desc": "0500 POULTRY PRODUCTS (USDA SR)"
             },
             {
+                "id": "M0001",
+                "desc": "CONTAINER OR WRAPPING NOT KNOWN"
+            },
+            {
                 "id": "Z0157",
                 "desc": "WING (POULTRY MEAT CUT)"
+            },
+            {
+                "id": "P0024",
+                "desc": "HUMAN FOOD, NO AGE SPECIFICATION"
+            },
+            {
+                "id": "C0267",
+                "desc": "SKELETAL MEAT PART, WITHOUT BONE, WITH SKIN"
+            },
+            {
+                "id": "G0020",
+                "desc": "SIMMERED, POACHED OR STEWED"
             },
             {
                 "id": "H0003",
@@ -2806,12 +2810,8 @@
                 "desc": "POULTRY OR POULTRY PRODUCT (US CFR)"
             },
             {
-                "id": "P0024",
-                "desc": "HUMAN FOOD, NO AGE SPECIFICATION"
-            },
-            {
-                "id": "K0003",
-                "desc": "NO PACKING MEDIUM USED"
+                "id": "F0014",
+                "desc": "FULLY HEAT-TREATED"
             },
             {
                 "id": "B1198",

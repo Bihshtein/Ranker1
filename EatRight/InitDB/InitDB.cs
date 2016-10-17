@@ -26,7 +26,7 @@ namespace InitDB {
             var unit = new RestDBInterface();
             var lines = File.ReadAllLines(FolderPath + "Products_IDS.csv").ToList();
             _database.DropCollection("products");
-            lines.ForEach((line) => AddProduct(unit, line,false));
+            lines.ForEach((line) => AddProduct(unit, line,true));
         }
 
 
@@ -88,6 +88,8 @@ namespace InitDB {
             byte[] imgBytes = null;
             if (File.Exists(imgPath))
                 imgBytes = File.ReadAllBytes(imgPath);
+            else if (RestRepository<Product>.Animals.Contains(animal))
+                imgBytes = File.ReadAllBytes(FolderPath +animal +".png");
             else if (name.Length > 5)
                 imgBytes = File.ReadAllBytes(FolderPath + "Morty.png");
             else

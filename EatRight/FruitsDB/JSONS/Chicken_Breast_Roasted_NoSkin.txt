@@ -2758,24 +2758,20 @@
         ],
         "langual": [
             {
-                "id": "P0024",
-                "desc": "HUMAN FOOD, NO AGE SPECIFICATION"
+                "id": "C0268",
+                "desc": "SKELETAL MEAT PART, WITHOUT BONE, WITHOUT SKIN"
             },
             {
                 "id": "E0150",
                 "desc": "WHOLE, NATURAL SHAPE"
             },
             {
-                "id": "A0273",
-                "desc": "POULTRY OR POULTRY PRODUCT (US CFR)"
+                "id": "M0001",
+                "desc": "CONTAINER OR WRAPPING NOT KNOWN"
             },
             {
                 "id": "G0005",
                 "desc": "BAKED OR ROASTED"
-            },
-            {
-                "id": "N0001",
-                "desc": "FOOD CONTACT SURFACE NOT KNOWN"
             },
             {
                 "id": "B1198",
@@ -2786,36 +2782,40 @@
                 "desc": "LIGHT MEAT"
             },
             {
-                "id": "M0001",
-                "desc": "CONTAINER OR WRAPPING NOT KNOWN"
-            },
-            {
-                "id": "A1275",
-                "desc": "0500 POULTRY PRODUCTS (USDA SR)"
-            },
-            {
-                "id": "J0001",
-                "desc": "PRESERVATION METHOD NOT KNOWN"
-            },
-            {
-                "id": "H0003",
-                "desc": "NO TREATMENT APPLIED"
-            },
-            {
                 "id": "F0014",
                 "desc": "FULLY HEAT-TREATED"
-            },
-            {
-                "id": "Z0158",
-                "desc": "BREAST (POULTRY MEAT CUT)"
             },
             {
                 "id": "K0003",
                 "desc": "NO PACKING MEDIUM USED"
             },
             {
-                "id": "C0268",
-                "desc": "SKELETAL MEAT PART, WITHOUT BONE, WITHOUT SKIN"
+                "id": "A0273",
+                "desc": "POULTRY OR POULTRY PRODUCT (US CFR)"
+            },
+            {
+                "id": "A1275",
+                "desc": "0500 POULTRY PRODUCTS (USDA SR)"
+            },
+            {
+                "id": "N0001",
+                "desc": "FOOD CONTACT SURFACE NOT KNOWN"
+            },
+            {
+                "id": "J0001",
+                "desc": "PRESERVATION METHOD NOT KNOWN"
+            },
+            {
+                "id": "P0024",
+                "desc": "HUMAN FOOD, NO AGE SPECIFICATION"
+            },
+            {
+                "id": "Z0158",
+                "desc": "BREAST (POULTRY MEAT CUT)"
+            },
+            {
+                "id": "H0003",
+                "desc": "NO TREATMENT APPLIED"
             }
         ]
     }
