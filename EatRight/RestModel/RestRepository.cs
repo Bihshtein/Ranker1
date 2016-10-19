@@ -73,21 +73,21 @@ namespace RestModel {
 
         };
 
-        public List<T> GetByMeasure(string name)
+        public List<T> GetByMeasure(string name, int min)
         {
-            var query = Query.GT(name, DailyValues[name] /5);
+            var query = Query.GT(name, DailyValues[name] /min);
             return _collection.Find(query).ToList();
         }
         public T GetKey(KeyValuePair<T, int> pair)
         {
             return pair.Key;
         }
-        public List<T> GetTopFoods() 
+        public List<T> GetTopFoods(int min, int products) 
         {
             Dictionary<T, int> productsCount = new Dictionary<T, int>();
             foreach (var item in DailyValues)
             {
-                var query = Query.GT(item.Key, item.Value / 5);
+                var query = Query.GT(item.Key, item.Value / min);
                 var results =  _collection.Find(query).ToList();
                 foreach (var product in results)
                 {   
@@ -97,7 +97,7 @@ namespace RestModel {
                         productsCount[product]++;
                 }
             }
-            var superFoods = productsCount.Where((pair) => pair.Value > 9);
+            var superFoods = productsCount.Where((pair) => pair.Value > products);
 
 
             var res = superFoods.ToDictionary(GetKey).Keys.ToList();

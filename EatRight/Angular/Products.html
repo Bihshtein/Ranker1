@@ -24,14 +24,21 @@
    
     <div class="Container">
         <label>
-            <input type="text" name="input" size="200" ng-model="input.text" ng-pattern="input.word" ng-list>
+            Query   <input type="text" name="input" size="200" ng-model="input.text" ng-pattern="input.word" ng-list>
         </label>
+        <label>
+            Min <input type="text" name="input2" size="10" ng-model="input2.text">
+        </label>
+        <label>
+            Min <input type="text" name="input3" size="10" ng-model="input3.text">
+        </label>
+
         <div ng-controller="Query">
             <div layout="row" class="Container2">
                 <div7 ng-repeat="val in input.text" class="Container3" style="float:left">
-                    <div flex="20"  flex-order="-1"  ng-init="init(val)">
+                    <div flex="20"  flex-order="-1"  ng-init="init(val,input2.text, input3.text)">
                         <div1><h2>{{val}}</h2></div1>
-                        <div ng-repeat="P in dict [val] .data"  style="float:left" ng-init="init2(P)">
+                        <div ng-repeat="P in dict [val] .data"  style="float:left" ng-init="init2(P)">>
                             <div><h2>Name       : {{P.Name}}</h2></div>
                             <div><h2>State      : {{P.ServingState}}</h2></div>
                             <div><h2>Size       : {{P.UnitSize}}</h2></div>
