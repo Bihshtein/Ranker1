@@ -19,14 +19,16 @@ namespace Students.Services {
             if (parts.Length > 1)
             {
                 id = parts[0];
-                var _params = parts[1].Split(',');
-                if (_params.Length > 1)
-                {
-                    min = int.Parse(_params[0]);
-                    products = int.Parse(_params[1]);
+                if ( parts[1] != "undefined,undefined") {
+                    var _params = parts[1].Split(',');
+                    if (_params.Length > 1 && _params[1] != "undefined")
+                    {
+                        min = int.Parse(_params[0]);
+                        products = int.Parse(_params[1]);
+                    }
+                    else
+                        min = int.Parse(parts[1]);
                 }
-                else
-                    min = int.Parse(parts[1]);
             }
             List<Product> productsList = null;
             if (RestRepository<Product>.DailyValues.Keys.ToList().Contains(id))

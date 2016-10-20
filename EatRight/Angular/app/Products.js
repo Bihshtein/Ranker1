@@ -15,11 +15,11 @@
         $scope.aleg = "aleg";
     }
     function Hello($scope, $http) {
-        $scope.init = function (query,min,products) {
-            $http.get('http://localhost:51612/Api/Products/' + query + '=' + min +',' +products ).
+        $scope.init = function (query, min, products) {
+            $http.get('http://localhost:51612/Api/Products/' + query + '=' + min + ',' + products).
                 then(function (data) {
-                     $scope.dict[query] = angular.fromJson(data);
-            });
+                    $scope.dict[query] = angular.fromJson(data);
+                });
         };
 
         $http.get('http://localhost:51612/Api/Products/').

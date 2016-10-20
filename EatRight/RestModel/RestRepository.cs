@@ -75,7 +75,7 @@ namespace RestModel {
 
         public List<T> GetByMeasure(string name, int min)
         {
-            var query = Query.GT(name, DailyValues[name] /min);
+            var query = Query.GT(name, DailyValues[name] * (min / 100.0));
             return _collection.Find(query).ToList();
         }
         public T GetKey(KeyValuePair<T, int> pair)
@@ -85,10 +85,9 @@ namespace RestModel {
         public List<T> GetTopFoods(int min, int products) 
         {
             Dictionary<T, int> productsCount = new Dictionary<T, int>();
-            foreach (var item in DailyValues)
+            foreach (var item in DailyValues.Keys)
             {
-                var query = Query.GT(item.Key, item.Value / min);
-                var results =  _collection.Find(query).ToList();
+                var results = GetByMeasure(item, min);
                 foreach (var product in results)
                 {   
                     if (!productsCount.ContainsKey(product))

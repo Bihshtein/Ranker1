@@ -7,8 +7,9 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <title></title>
     <style>        
-      input[type='text'] { font-size: 40px; }
+      input[type='text'] { font-size: 50px; }
       div1{ font-size: 30px; }
+      label{ font-size: 60px; }
      .Container3:last-child    {  background-color : yellowgreen }
      .Container3:nth-child(1)    {  background-color : orange}
      .Container3:nth-child(2)    {  background-color : lightcoral }
@@ -18,19 +19,27 @@
      .Container3:nth-child(6)    {  background-color : lightcoral }
      .Container3:nth-child(7)    {  background-color : lightgreen}
      .Container3:nth-child(8)    {  background-color : lightskyblue}
+     .Container3:nth-child(9)    {  background-color : orange}
+     .Container3:nth-child(10)    {  background-color : lightcoral }
+     .Container3:nth-child(11)    {  background-color : lightgreen}
+     .Container3:nth-child(12)    {  background-color : lightskyblue}
+      .Container3:nth-child(13)    {  background-color : orange}
+     .Container3:nth-child(14)    {  background-color : lightcoral }
+     .Container3:nth-child(15)    {  background-color : lightgreen}
+     .Container3:nth-child(16)    {  background-color : lightskyblue}
     </style>
 </head>
 <body>
    
     <div class="Container">
         <label>
-            Query   <input type="text" name="input" size="200" ng-model="input.text" ng-pattern="input.word" ng-list>
+            Query   <input type="text" name="input" size="150" ng-model="input.text" ng-pattern="input.word" ng-list>
         </label>
         <label>
-            Min <input type="text" name="input2" size="10" ng-model="input2.text">
+            Min % <input type="text" name="input2" size="3" ng-model="input2.text">
         </label>
         <label>
-            Min <input type="text" name="input3" size="10" ng-model="input3.text">
+            Min Matches : <input type="text" name="input3" size="2" ng-model="input3.text">
         </label>
 
         <div ng-controller="Query">
