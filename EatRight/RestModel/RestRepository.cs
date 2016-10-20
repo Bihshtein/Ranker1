@@ -73,16 +73,20 @@ namespace RestModel {
 
         };
 
-        public List<T> GetByMeasure(string name, int min)
+        public List<T> GetByMeasure(string name, int min,bool isVegetarian=false)
         {
-            var query = Query.GT(name, DailyValues[name] * (min / 100.0));
+            IMongoQuery query;
+            if (isVegetarian)
+                query = Query.And(Query.GT(name, DailyValues[name] * (min / 100.0)), Query.EQ("Animal", string.Empty));
+            else
+                query = Query.GT(name, DailyValues[name] * (min / 100.0));
             return _collection.Find(query).ToList();
         }
         public T GetKey(KeyValuePair<T, int> pair)
         {
             return pair.Key;
         }
-        public List<T> GetTopFoods(int min, int products) 
+        public List<T> GetTopFoods(int min) 
         {
             Dictionary<T, int> productsCount = new Dictionary<T, int>();
             foreach (var item in DailyValues.Keys)
@@ -96,7 +100,7 @@ namespace RestModel {
                         productsCount[product]++;
                 }
             }
-            var superFoods = productsCount.Where((pair) => pair.Value > products);
+            var superFoods = productsCount.Where((pair) => pair.Value > 3);
 
 
             var res = superFoods.ToDictionary(GetKey).Keys.ToList();

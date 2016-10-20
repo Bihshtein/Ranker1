@@ -30,14 +30,14 @@ namespace Students.Services {
             return dbLayer.Products.GetByAnimal(name);
         }
 
-        public List<Product> GetMeasure(string name, int min)
+        public List<Product> GetMeasure(string name, int min, bool vegetarian)
         {
-            return dbLayer.Products.GetByMeasure(name, min);
+            return dbLayer.Products.GetByMeasure(name, min, vegetarian);
         }
 
-        public List<Product> GetTopFoods(int min, int products)
+        public List<Product> GetTopFoods(int min)
         {
-            return dbLayer.Products.GetTopFoods(min,products);
+            return dbLayer.Products.GetTopFoods(min);
         }
 
         public static bool IsEmpty(Product p) {

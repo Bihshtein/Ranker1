@@ -15,16 +15,16 @@ namespace Students.Services {
         public HttpResponseMessage Get(string id) {
             var parts = id.Split('=');
             int min = 10;
-            int products =1;
+            bool vegetarian = false;
             if (parts.Length > 1)
             {
                 id = parts[0];
                 if ( parts[1] != "undefined,undefined") {
                     var _params = parts[1].Split(',');
-                    if (_params.Length > 1 && _params[1] != "undefined")
+                    if (_params.Length > 1 && !_params.Contains("undefined"))
                     {
                         min = int.Parse(_params[0]);
-                        products = int.Parse(_params[1]);
+                        vegetarian = _params.Contains("Vegetarian");
                     }
                     else
                         min = int.Parse(parts[1]);
@@ -32,11 +32,11 @@ namespace Students.Services {
             }
             List<Product> productsList = null;
             if (RestRepository<Product>.DailyValues.Keys.ToList().Contains(id))
-                productsList = productsService.GetMeasure(id,min);
+                productsList = productsService.GetMeasure(id,min,vegetarian);
             else if (RestRepository<Product>.Animals.Contains(id))
                 productsList = productsService.GetAnimal(id);
             else if (id == "TopFoods")
-                productsList = productsService.GetTopFoods(min,products);
+                productsList = productsService.GetTopFoods(min);
 
                 return Request.CreateResponse(HttpStatusCode.OK, productsList);
         }
