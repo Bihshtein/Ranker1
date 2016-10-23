@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace InitDB {
     class Program {
         static void Main(string[] args) {
-            InitDB.Init();
+            InitDB.InitProductsCollection();
         }
     }
 }
