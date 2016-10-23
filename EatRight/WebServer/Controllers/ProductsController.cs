@@ -21,13 +21,10 @@ namespace Students.Services {
                 id = parts[0];
                 if ( parts[1] != "undefined,undefined") {
                     var _params = parts[1].Split(',');
+                    min = int.Parse(_params[0]);
+
                     if (_params.Length > 1 && !_params.Contains("undefined"))
-                    {
-                        min = int.Parse(_params[0]);
                         vegetarian = _params.Contains("Vegetarian");
-                    }
-                    else
-                        min = int.Parse(parts[1]);
                 }
             }
             List<Product> productsList = null;
