@@ -2758,36 +2758,24 @@
         ],
         "langual": [
             {
+                "id": "H0003",
+                "desc": "NO TREATMENT APPLIED"
+            },
+            {
+                "id": "J0001",
+                "desc": "PRESERVATION METHOD NOT KNOWN"
+            },
+            {
                 "id": "C0268",
                 "desc": "SKELETAL MEAT PART, WITHOUT BONE, WITHOUT SKIN"
-            },
-            {
-                "id": "E0150",
-                "desc": "WHOLE, NATURAL SHAPE"
-            },
-            {
-                "id": "M0001",
-                "desc": "CONTAINER OR WRAPPING NOT KNOWN"
-            },
-            {
-                "id": "G0005",
-                "desc": "BAKED OR ROASTED"
-            },
-            {
-                "id": "B1198",
-                "desc": "BROILER OR FRYER CHICKEN"
-            },
-            {
-                "id": "Z0004",
-                "desc": "LIGHT MEAT"
             },
             {
                 "id": "F0014",
                 "desc": "FULLY HEAT-TREATED"
             },
             {
-                "id": "K0003",
-                "desc": "NO PACKING MEDIUM USED"
+                "id": "N0001",
+                "desc": "FOOD CONTACT SURFACE NOT KNOWN"
             },
             {
                 "id": "A0273",
@@ -2798,24 +2786,36 @@
                 "desc": "0500 POULTRY PRODUCTS (USDA SR)"
             },
             {
-                "id": "N0001",
-                "desc": "FOOD CONTACT SURFACE NOT KNOWN"
-            },
-            {
-                "id": "J0001",
-                "desc": "PRESERVATION METHOD NOT KNOWN"
-            },
-            {
-                "id": "P0024",
-                "desc": "HUMAN FOOD, NO AGE SPECIFICATION"
+                "id": "M0001",
+                "desc": "CONTAINER OR WRAPPING NOT KNOWN"
             },
             {
                 "id": "Z0158",
                 "desc": "BREAST (POULTRY MEAT CUT)"
             },
             {
-                "id": "H0003",
-                "desc": "NO TREATMENT APPLIED"
+                "id": "P0024",
+                "desc": "HUMAN FOOD, NO AGE SPECIFICATION"
+            },
+            {
+                "id": "E0150",
+                "desc": "WHOLE, NATURAL SHAPE"
+            },
+            {
+                "id": "G0005",
+                "desc": "BAKED OR ROASTED"
+            },
+            {
+                "id": "B1198",
+                "desc": "BROILER OR FRYER CHICKEN"
+            },
+            {
+                "id": "K0003",
+                "desc": "NO PACKING MEDIUM USED"
+            },
+            {
+                "id": "Z0004",
+                "desc": "LIGHT MEAT"
             }
         ]
     }

@@ -3127,16 +3127,32 @@
         ],
         "langual": [
             {
+                "id": "Z0004",
+                "desc": "LIGHT MEAT"
+            },
+            {
                 "id": "E0150",
                 "desc": "WHOLE, NATURAL SHAPE"
             },
             {
-                "id": "A1275",
-                "desc": "0500 POULTRY PRODUCTS (USDA SR)"
+                "id": "A0273",
+                "desc": "POULTRY OR POULTRY PRODUCT (US CFR)"
+            },
+            {
+                "id": "C0267",
+                "desc": "SKELETAL MEAT PART, WITHOUT BONE, WITH SKIN"
             },
             {
                 "id": "F0003",
                 "desc": "NOT HEAT-TREATED"
+            },
+            {
+                "id": "P0024",
+                "desc": "HUMAN FOOD, NO AGE SPECIFICATION"
+            },
+            {
+                "id": "H0003",
+                "desc": "NO TREATMENT APPLIED"
             },
             {
                 "id": "N0001",
@@ -3147,44 +3163,28 @@
                 "desc": "BROILER OR FRYER CHICKEN"
             },
             {
-                "id": "Z0004",
-                "desc": "LIGHT MEAT"
-            },
-            {
-                "id": "K0003",
-                "desc": "NO PACKING MEDIUM USED"
-            },
-            {
                 "id": "J0001",
                 "desc": "PRESERVATION METHOD NOT KNOWN"
-            },
-            {
-                "id": "H0003",
-                "desc": "NO TREATMENT APPLIED"
-            },
-            {
-                "id": "M0001",
-                "desc": "CONTAINER OR WRAPPING NOT KNOWN"
-            },
-            {
-                "id": "C0267",
-                "desc": "SKELETAL MEAT PART, WITHOUT BONE, WITH SKIN"
             },
             {
                 "id": "G0003",
                 "desc": "COOKING METHOD NOT APPLICABLE"
             },
             {
+                "id": "M0001",
+                "desc": "CONTAINER OR WRAPPING NOT KNOWN"
+            },
+            {
+                "id": "K0003",
+                "desc": "NO PACKING MEDIUM USED"
+            },
+            {
+                "id": "A1275",
+                "desc": "0500 POULTRY PRODUCTS (USDA SR)"
+            },
+            {
                 "id": "Z0157",
                 "desc": "WING (POULTRY MEAT CUT)"
-            },
-            {
-                "id": "A0273",
-                "desc": "POULTRY OR POULTRY PRODUCT (US CFR)"
-            },
-            {
-                "id": "P0024",
-                "desc": "HUMAN FOOD, NO AGE SPECIFICATION"
             }
         ]
     }

@@ -5,12 +5,15 @@
 
 })();
 
+
 (function () {
     'use strict';
 
     angular
         .module('app')
         .controller('Query', Hello);
+
+
     function Hello2($scope) {
         $scope.aleg = "aleg";
     }
@@ -21,6 +24,18 @@
                     $scope.dict[query] = angular.fromJson(data);
                 });
         };
+
+        $scope.data = {
+            
+            availableOptions: [
+              { id: 'Vegeterian', name: 'Vegeterian' },
+              { id: 'Normal', name: 'Normal' },
+              { id: 'BodyBuilder', name: 'Body Builder' },
+              { id: 'VitaminFreak', name: 'Vitamin Freak' }
+            ],
+            selectedOption: { id: 'Normal', name: 'Normal' }
+        };
+     
 
         $http.get('http://localhost:51612/Api/Products/').
         then(function (data) {

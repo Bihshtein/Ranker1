@@ -2212,56 +2212,16 @@
         ],
         "langual": [
             {
-                "id": "G0025",
-                "desc": "COOKED WITH ADDED FAT OR OIL"
-            },
-            {
-                "id": "P0024",
-                "desc": "HUMAN FOOD, NO AGE SPECIFICATION"
-            },
-            {
-                "id": "N0001",
-                "desc": "FOOD CONTACT SURFACE NOT KNOWN"
-            },
-            {
                 "id": "J0001",
                 "desc": "PRESERVATION METHOD NOT KNOWN"
-            },
-            {
-                "id": "F0014",
-                "desc": "FULLY HEAT-TREATED"
-            },
-            {
-                "id": "A1275",
-                "desc": "0500 POULTRY PRODUCTS (USDA SR)"
-            },
-            {
-                "id": "Z0158",
-                "desc": "BREAST (POULTRY MEAT CUT)"
-            },
-            {
-                "id": "C0268",
-                "desc": "SKELETAL MEAT PART, WITHOUT BONE, WITHOUT SKIN"
-            },
-            {
-                "id": "M0001",
-                "desc": "CONTAINER OR WRAPPING NOT KNOWN"
             },
             {
                 "id": "H0334",
                 "desc": "VEGETABLE FAT OR OIL COATED"
             },
             {
-                "id": "K0003",
-                "desc": "NO PACKING MEDIUM USED"
-            },
-            {
                 "id": "Z0004",
                 "desc": "LIGHT MEAT"
-            },
-            {
-                "id": "E0150",
-                "desc": "WHOLE, NATURAL SHAPE"
             },
             {
                 "id": "A0273",
@@ -2270,6 +2230,46 @@
             {
                 "id": "B1198",
                 "desc": "BROILER OR FRYER CHICKEN"
+            },
+            {
+                "id": "E0150",
+                "desc": "WHOLE, NATURAL SHAPE"
+            },
+            {
+                "id": "P0024",
+                "desc": "HUMAN FOOD, NO AGE SPECIFICATION"
+            },
+            {
+                "id": "F0014",
+                "desc": "FULLY HEAT-TREATED"
+            },
+            {
+                "id": "K0003",
+                "desc": "NO PACKING MEDIUM USED"
+            },
+            {
+                "id": "G0025",
+                "desc": "COOKED WITH ADDED FAT OR OIL"
+            },
+            {
+                "id": "Z0158",
+                "desc": "BREAST (POULTRY MEAT CUT)"
+            },
+            {
+                "id": "A1275",
+                "desc": "0500 POULTRY PRODUCTS (USDA SR)"
+            },
+            {
+                "id": "C0268",
+                "desc": "SKELETAL MEAT PART, WITHOUT BONE, WITHOUT SKIN"
+            },
+            {
+                "id": "N0001",
+                "desc": "FOOD CONTACT SURFACE NOT KNOWN"
+            },
+            {
+                "id": "M0001",
+                "desc": "CONTAINER OR WRAPPING NOT KNOWN"
             }
         ]
     }

@@ -2212,8 +2212,8 @@
         ],
         "langual": [
             {
-                "id": "E0150",
-                "desc": "WHOLE, NATURAL SHAPE"
+                "id": "Z0157",
+                "desc": "WING (POULTRY MEAT CUT)"
             },
             {
                 "id": "A1275",
@@ -2224,24 +2224,32 @@
                 "desc": "CONTAINER OR WRAPPING NOT KNOWN"
             },
             {
-                "id": "N0001",
-                "desc": "FOOD CONTACT SURFACE NOT KNOWN"
+                "id": "E0150",
+                "desc": "WHOLE, NATURAL SHAPE"
             },
             {
                 "id": "C0268",
                 "desc": "SKELETAL MEAT PART, WITHOUT BONE, WITHOUT SKIN"
             },
             {
-                "id": "Z0004",
-                "desc": "LIGHT MEAT"
+                "id": "B1198",
+                "desc": "BROILER OR FRYER CHICKEN"
             },
             {
-                "id": "J0001",
-                "desc": "PRESERVATION METHOD NOT KNOWN"
+                "id": "F0014",
+                "desc": "FULLY HEAT-TREATED"
             },
             {
                 "id": "H0003",
                 "desc": "NO TREATMENT APPLIED"
+            },
+            {
+                "id": "K0003",
+                "desc": "NO PACKING MEDIUM USED"
+            },
+            {
+                "id": "A0273",
+                "desc": "POULTRY OR POULTRY PRODUCT (US CFR)"
             },
             {
                 "id": "G0005",
@@ -2252,24 +2260,16 @@
                 "desc": "HUMAN FOOD, NO AGE SPECIFICATION"
             },
             {
-                "id": "K0003",
-                "desc": "NO PACKING MEDIUM USED"
+                "id": "N0001",
+                "desc": "FOOD CONTACT SURFACE NOT KNOWN"
             },
             {
-                "id": "Z0157",
-                "desc": "WING (POULTRY MEAT CUT)"
+                "id": "Z0004",
+                "desc": "LIGHT MEAT"
             },
             {
-                "id": "A0273",
-                "desc": "POULTRY OR POULTRY PRODUCT (US CFR)"
-            },
-            {
-                "id": "F0014",
-                "desc": "FULLY HEAT-TREATED"
-            },
-            {
-                "id": "B1198",
-                "desc": "BROILER OR FRYER CHICKEN"
+                "id": "J0001",
+                "desc": "PRESERVATION METHOD NOT KNOWN"
             }
         ]
     }

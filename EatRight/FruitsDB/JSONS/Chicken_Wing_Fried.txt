@@ -1743,24 +1743,12 @@
         ],
         "langual": [
             {
-                "id": "P0024",
-                "desc": "HUMAN FOOD, NO AGE SPECIFICATION"
+                "id": "M0001",
+                "desc": "CONTAINER OR WRAPPING NOT KNOWN"
             },
             {
-                "id": "G0025",
-                "desc": "COOKED WITH ADDED FAT OR OIL"
-            },
-            {
-                "id": "H0334",
-                "desc": "VEGETABLE FAT OR OIL COATED"
-            },
-            {
-                "id": "Z0004",
-                "desc": "LIGHT MEAT"
-            },
-            {
-                "id": "K0003",
-                "desc": "NO PACKING MEDIUM USED"
+                "id": "J0001",
+                "desc": "PRESERVATION METHOD NOT KNOWN"
             },
             {
                 "id": "A1275",
@@ -1771,28 +1759,24 @@
                 "desc": "FULLY HEAT-TREATED"
             },
             {
-                "id": "B1198",
-                "desc": "BROILER OR FRYER CHICKEN"
+                "id": "K0003",
+                "desc": "NO PACKING MEDIUM USED"
             },
             {
-                "id": "M0001",
-                "desc": "CONTAINER OR WRAPPING NOT KNOWN"
-            },
-            {
-                "id": "N0001",
-                "desc": "FOOD CONTACT SURFACE NOT KNOWN"
+                "id": "G0025",
+                "desc": "COOKED WITH ADDED FAT OR OIL"
             },
             {
                 "id": "E0150",
                 "desc": "WHOLE, NATURAL SHAPE"
             },
             {
-                "id": "J0001",
-                "desc": "PRESERVATION METHOD NOT KNOWN"
+                "id": "H0334",
+                "desc": "VEGETABLE FAT OR OIL COATED"
             },
             {
-                "id": "Z0157",
-                "desc": "WING (POULTRY MEAT CUT)"
+                "id": "N0001",
+                "desc": "FOOD CONTACT SURFACE NOT KNOWN"
             },
             {
                 "id": "A0273",
@@ -1801,6 +1785,22 @@
             {
                 "id": "C0268",
                 "desc": "SKELETAL MEAT PART, WITHOUT BONE, WITHOUT SKIN"
+            },
+            {
+                "id": "Z0157",
+                "desc": "WING (POULTRY MEAT CUT)"
+            },
+            {
+                "id": "P0024",
+                "desc": "HUMAN FOOD, NO AGE SPECIFICATION"
+            },
+            {
+                "id": "B1198",
+                "desc": "BROILER OR FRYER CHICKEN"
+            },
+            {
+                "id": "Z0004",
+                "desc": "LIGHT MEAT"
             }
         ]
     }

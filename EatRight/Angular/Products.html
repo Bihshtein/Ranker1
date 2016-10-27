@@ -10,6 +10,7 @@
       input[type='text'] { font-size: 50px; }
       div1{ font-size: 30px; }
       label{ font-size: 60px; }
+      select{ font-size: 50px; }
      .Container3:last-child    {  background-color : yellowgreen }
      .Container3:nth-child(1)    {  background-color : orange}
      .Container3:nth-child(2)    {  background-color : lightcoral }
@@ -31,21 +32,24 @@
 </head>
 <body>
    
-    <div class="Container">
+    <div ng-controller="Query" class="Container">
         <label>
             Query   <input type="text" name="input" size="150" ng-model="input.text" ng-pattern="input.word" ng-list>
         </label>
+        <br />
         <label>
             Min % <input type="text" name="input2" size="3" ng-model="input2.text">
         </label>
+        <br />
         <label>
-            Limit : <input type="text" name="input3" size="10" ng-model="input3.text">
+            Profile
+            <select ng-model="profile" ng-options="option.name for option in data.availableOptions track by option.id">
+            </select>
         </label>
-
         <div ng-controller="Query">
             <div layout="row" class="Container2">
                 <div7 ng-repeat="val in input.text" class="Container3" style="float:left">
-                    <div flex="20"  flex-order="-1"  ng-init="init(val,input2.text, input3.text)">
+                    <div flex="20"  flex-order="-1"  ng-init="init(val,input2.text, profile.id)">
                         <div1><h2>{{val}}</h2></div1>
                         <div ng-repeat="P in dict [val] .data"  style="float:left" ng-init="init2(P)">>
                             <div><h2>Name       : {{P.Name}}</h2></div>
