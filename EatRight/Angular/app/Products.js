@@ -25,24 +25,19 @@
                 });
         };
 
-        $scope.data = {
-            
-            availableOptions: [
-              { id: 'Vegeterian', name: 'Vegeterian' },
-              { id: 'Normal', name: 'Normal' },
-              { id: 'BodyBuilder', name: 'Body Builder' },
-              { id: 'VitaminFreak', name: 'Vitamin Freak' }
-            ],
-            selectedOption: { id: 'Normal', name: 'Normal' }
-        };
-     
-
         $http.get('http://localhost:51612/Api/Products/').
         then(function (data) {
             $scope.dict = {
                 "All": angular.fromJson(data),
             };
         });
+
+        $http.get('http://localhost:51612/Api/Values').
+      then(function (data) {
+          $scope.availableOptions = angular.fromJson(data);
+      });
+
+        
 
 }
 

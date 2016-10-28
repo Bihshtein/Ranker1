@@ -43,13 +43,13 @@
         <br />
         <label>
             Profile
-            <select ng-model="profile" ng-options="option.name for option in data.availableOptions track by option.id">
+            <select ng-model="profile" ng-options="item.id as item.name for item in availableOptions.data">
             </select>
         </label>
         <div ng-controller="Query">
             <div layout="row" class="Container2">
                 <div7 ng-repeat="val in input.text" class="Container3" style="float:left">
-                    <div flex="20"  flex-order="-1"  ng-init="init(val,input2.text, profile.id)">
+                    <div flex="20"  flex-order="-1"  ng-init="init(val,input2.text, profile)">
                         <div1><h2>{{val}}</h2></div1>
                         <div ng-repeat="P in dict [val] .data"  style="float:left" ng-init="init2(P)">>
                             <div><h2>Name       : {{P.Name}}</h2></div>

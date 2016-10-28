@@ -4,37 +4,54 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Mvc;
+using RestModel;
 
-namespace NowFresh3.Controllers
+namespace Students.Services
 {
-    [Authorize]
     public class ValuesController : ApiController
     {
-        // GET api/values
-        public IEnumerable<string> Get()
+
+        protected List<Option> options;
+
+        public class Option
         {
-            return new string[] { "value1", "value2" };
+            public string id;
+            public string name;
+
+            public Option()
+            {
+                this.id = "unset";
+                this.name = "unset";
+            }
+            public Option(string name)
+            {
+                this.id = name;
+                this.name = name;
+            }
+        }
+        public ValuesController()
+        {
+            populateOptions();
         }
 
-        // GET api/values/5
-        public string Get(int id)
+        protected void populateOptions()
         {
-            return "value";
+            this.options = new List<Option>();
+
+            foreach (var opt in Enum.GetValues(typeof(ProfileType)))
+            {
+                options.Add(new Option(opt.ToString()));
+            }
         }
 
-        // POST api/values
-        public void Post([FromBody]string value)
+        public HttpResponseMessage Get(string id)
         {
+            return Request.CreateResponse(HttpStatusCode.OK, options);
         }
-
-        // PUT api/values/5
-        public void Put(int id, [FromBody]string value)
+        public HttpResponseMessage GetAll()
         {
-        }
-
-        // DELETE api/values/5
-        public void Delete(int id)
-        {
+            return Get(null);
         }
     }
 }
