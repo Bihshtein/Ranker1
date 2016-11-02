@@ -51,10 +51,10 @@
                 <div7 ng-repeat="val in input.text" class="Container3" style="float:left">
                     <div flex="20"  flex-order="-1"  ng-init="init(val,input2.text, profile)">
                         <div1><h2>{{val}}</h2></div1>
-                        <div ng-repeat="P in dict [val] .data"  style="float:left" ng-init="init2(P)">>
+                        <div ng-repeat="P in dict [val] .data"  style="float:left" ng-init="init2(P)">
                             <div><h2>Name       : {{P.Name}}</h2></div>
                             <div><h2>State      : {{P.ServingState}}</h2></div>
-                            <div><h2>Size       : {{P.UnitSize}}</h2></div>
+                            <div><h2>Weight       : {{P.Weight}}</h2></div>
                             <div><h2>{{P[val]}}</h2></div>
                             <img data-ng-src=data:image/png;base64,{{P.Image}} />
                         </div>

@@ -83,7 +83,7 @@ namespace Students.Services
         public List<Product> ProductListCreator(SearchQueryParser sqParser)
         {
             if (RestRepository<Product>.DailyValues.ContainsKey(sqParser.SearchQuery))
-                return productsService.GetMeasure(sqParser.SearchQuery,
+                return productsService.GetNutrient(sqParser.SearchQuery,
                                                          sqParser.MinMeasure,
                                                          sqParser.IsVegeterian);
 

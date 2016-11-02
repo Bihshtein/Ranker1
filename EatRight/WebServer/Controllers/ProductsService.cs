@@ -30,7 +30,7 @@ namespace Students.Services {
             return dbLayer.Products.GetByAnimal(name);
         }
 
-        public List<Product> GetMeasure(string name, int min, bool vegetarian)
+        public List<Product> GetNutrient(string name, int min, bool vegetarian)
         {
             return dbLayer.Products.GetByMeasure(name, min, vegetarian);
         }

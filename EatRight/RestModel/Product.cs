@@ -30,7 +30,7 @@ namespace RestModel {
         public bool HasSkin { get; set; }
 
         [BsonElement("_size")]
-        public double UnitSize { get; set; }
+        public double Weight { get; set; }
 
         [BsonElement("Protein")]
         public double Protein { get; set; }
