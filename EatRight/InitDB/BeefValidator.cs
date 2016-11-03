@@ -8,7 +8,8 @@ namespace InitDB {
     public class BeefValidator {
         public static List<string> BeefMainParts = new List<string>() { "liver", "heart", "kidney", "tongue", "loin", "flank", "chuck", "rib", "round", "brisket", "plate", "short loin" };
         public static List<string> BeefSecondParts = new List<string>()
-        {"small end rib","striploin","strip loin","rump centre","ribs prepared","oyster blade","flat","hind shin", "eye round","cube roll","chuck eye roll","bolar blade","chuck eye Country-Style ribs","clod","ribeye","top loin petite", "ribeye petite" ,"ribeye  petite", "top loin petite", "top round","tri - tip","tri-tip", "arm pot", "mock tender","blade","top blade",
+        {"small end rib","striploin","strip loin","rump centre","ribs prepared","oyster blade","flat","hind shin", "eye round","cube roll","chuck eye roll",
+            "bolar blade","chuck eye Country-Style ribs","clod","ribeye","top loin petite", "ribeye petite" ,"ribeye  petite", "top loin petite", "top round","tri - tip","tri-tip", "arm pot", "mock tender","blade","top blade",
             "chuck eye", "short ribs","bottom round","point half","whole", "flat half","knuckle","eye of round","outside round",
             "tip round","top round","tenderloin","shoulder top blade","eye","small end (ribs 10-12)","whole (ribs 6-12)", "shoulder pot","large end (ribs 6-9)",
             "shortribs","back ribs","rib eye","back ribs", "porterhouse",  "t-bone","retail cuts","bottom sirloin butt","top sirloin petite",
@@ -26,11 +27,15 @@ namespace InitDB {
         public static List<string> BeefTrimmedDetails = new List<string>() { "trimmed to 1/4\" fat", "trimmed to 1 / 4\" fat", "trimmed to 1/8\" fat", "trimmed to 1 / 8\" fat", "trimmed to 0\" fat", "trimmed to 1/8\"fat", };
 
         public static List<string> GroundBeefTypes = new List<string>() { "loaf", "patty cooked", "patty", "crumbles" };
-        public static bool CheckWithoutCut(string _param) {
+        public static bool CheckAllWithoutCut(string _param) {
             return
-            BeefCuts.Any((cut) => BeefMainParts.Contains(_param.Replace(cut, string.Empty).Trim())) ||
-            BeefCuts.Any((cut) => BeefSecondParts.Contains(_param.Replace(cut, string.Empty).Trim())) ||
-            BeefCuts.Any((cut) => BeefCutDetails.Contains(_param.Replace(cut, string.Empty).Trim()));
+            CheckWithoutCut(_param, BeefMainParts) ||
+            CheckWithoutCut(_param, BeefSecondParts) ||
+            CheckWithoutCut(_param, BeefCutDetails);
+        }
+
+        public static bool CheckWithoutCut(string _param, List<string> list) {
+           return BeefCuts.Any((cut) => list.Contains(_param.Replace(cut, string.Empty).Trim()));
         }
         public static bool IsBeefParameter(string _param) {
             _param = _param.Trim();
@@ -39,7 +44,7 @@ namespace InitDB {
                     BeefSecondParts.Contains(_param) ||
                     BeefMainParts.Contains(_param) ||
                     BeefImportDescription.Contains(_param) ||
-                    CheckWithoutCut(_param) ||
+                    CheckAllWithoutCut(_param) ||
                     BeefDescription.Contains(_param) ||
                     BeefCuts.Contains(_param) ||
                     BeefCutDetails.Contains(_param) ||

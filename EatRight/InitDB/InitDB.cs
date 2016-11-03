@@ -66,10 +66,9 @@ namespace InitDB {
                 var name = parts[0];
                 var id = parts[1];
                 if (unit.Products.Get(int.Parse(id)) != null) {
-                    Console.WriteLine("Skipping : " + name);
+                    SkipDebug(name, "already in DB");
                 }
                 else {
-                    Console.WriteLine("Adding : " + name);
                     var singleStr = string.Format(QueryData.SingleUrl, nutrientsQuery, id, QueryData.Format, QueryData.ApiKey);
                     var singleData = new WebClient().DownloadString(singleStr);
                     var singleRes = JsonConvert.DeserializeObject<dynamic>(singleData);
@@ -95,7 +94,7 @@ namespace InitDB {
 
         private static void AddDebug(string name) {
             totalAdded++;
-            Console.WriteLine("Adding: " + name + ", reason : ");
+            Console.WriteLine("Adding: " + name );
         }
 
 

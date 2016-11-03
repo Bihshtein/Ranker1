@@ -26,7 +26,11 @@ namespace InitDB
                     servingState = item;
                 if (PorkValidator.PorkMainParts.Contains(newItem))
                     newName = newItem;
-                if (BeefValidator.BeefMainParts.Contains(newItem))
+                if (BeefValidator.CheckWithoutCut(newItem, BeefValidator.BeefMainParts))
+                    newName = newItem;
+                if (BeefValidator.CheckWithoutCut(newItem, BeefValidator.BeefSecondParts) && newName == name)
+                    newName = newItem;
+                if (BeefValidator.CheckWithoutCut(newItem, BeefValidator.BeefCutDetails) && newName == name)
                     newName = newItem;
             }
 
