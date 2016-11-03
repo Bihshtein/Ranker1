@@ -40,6 +40,11 @@ namespace RestModel {
             return _collection.Find(Query<Product>.Where(x => x.Protein > min)).ToList();
         }
 
+        public List<T> GetByName(string name)
+        {
+            return _collection.Find(Query<Product>.Where(x => x.Name.Equals(name))).ToList();
+        }
+
         public List<T> GetByAnimal(string name)
         {
             return _collection.Find(Query<Product>.Where(x => x.Animal == name)).ToList();
