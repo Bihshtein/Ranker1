@@ -7,11 +7,11 @@ using RestModel;
 
 namespace MenuBuilder
 {
-    static class Program
+    class Program
     {
         static RestDBInterface unit;
 
-        static void Main()
+        static void Main(string[] args)
         {
             unit = new RestDBInterface();
 
