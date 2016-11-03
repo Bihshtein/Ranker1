@@ -90,12 +90,12 @@ namespace InitDB {
        
         private static void SkipDebug(string name, string reason) {
             totalSkipped++;
-            Console.WriteLine("Skipping: " + name + ", reason" + reason);
+            Console.WriteLine("Skipping: " + name + ", reason : " + reason);
         }
 
         private static void AddDebug(string name) {
             totalAdded++;
-            Console.WriteLine("Adding: " + name + ", reason");
+            Console.WriteLine("Adding: " + name + ", reason : ");
         }
 
 
