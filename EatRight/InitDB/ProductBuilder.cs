@@ -22,11 +22,11 @@ namespace InitDB
                 var newItem = item.Trim();
                 if (InitDB.FoodGroups.ContainsKey(newItem))
                     animal = newItem;
-                if (InitDB.CookingOptions.Contains(newItem))
+                if (CommonValidator.CookingOptions.Contains(newItem))
                     servingState = item;
-                if (InitDB.PorkMainParts.Contains(newItem))
+                if (PorkValidator.PorkMainParts.Contains(newItem))
                     newName = newItem;
-                if (InitDB.BeefMainParts.Contains(newItem))
+                if (BeefValidator.BeefMainParts.Contains(newItem))
                     newName = newItem;
             }
 
