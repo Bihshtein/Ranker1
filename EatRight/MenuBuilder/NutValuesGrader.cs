@@ -7,7 +7,7 @@ using RestModel;
 
 namespace MenuBuilder
 {
-    class NutValuesGrader : Grader
+    class NutValuesGrader : PerDayGrader
     {
         private Dictionary<string, double> dailyValues;
 
@@ -16,26 +16,7 @@ namespace MenuBuilder
             this.dailyValues = dailyValues;
         }
 
-        public override double Grade(Menu menu)
-        {
-            int daysNumber = menu.GetDaysNumber();
-            if (daysNumber == 0)
-            {
-                return 0;
-            }
-
-            int dayInd = 0;
-            double gradeSum = 0;
-
-            for (; dayInd < daysNumber; dayInd++)
-            {
-                gradeSum += GradeDay(menu.GetDay(dayInd));
-            }
-
-            return gradeSum / daysNumber;
-        }
-
-        private double GradeDay(DailyMenu day)
+        protected override double GradeDay(DailyMenu day)
         {
             double grade = 0;
 
@@ -109,9 +90,14 @@ namespace MenuBuilder
                 return ratio;
             }
 
-            if (ratio <= 3)
+            // UriB change Grader: if ratio is higher than 1 this is considered as perfect (but the final grade will be lower because of the CaloriesCountGrader)
+            //if (ratio <= 3)
+            //{
+            //    return (3 - ratio) * 0.5;
+            //}
+            if (ratio > 1)
             {
-                return (3 - ratio) * 0.5;
+                return 1;
             }
 
             return 0;

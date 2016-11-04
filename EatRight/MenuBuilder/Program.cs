@@ -16,7 +16,7 @@ namespace MenuBuilder
             unit = new RestDBInterface();
 
             var testMenu1 = GenerateTestMenu1();
-            var eval = MenuGenerator.EvaluateMenu(testMenu1, RestRepository<Product>.DailyValues);
+            var eval = MenuGenerator.EvaluateMenu(testMenu1, RestRepository<Product>.DailyValues, 3000);
             System.Console.WriteLine("Menu eavluated to " + eval);
         }
 
