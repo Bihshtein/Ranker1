@@ -19,11 +19,11 @@ namespace MenuBuilder
             double graderWeightSum = 0;
             double grade = 0;
 
-            foreach (KeyValuePair<Grader, double> entry in graderList)
+            foreach (var entry in graderList)
             {
                 graderWeightSum += entry.Value;
 
-                Grader grader = entry.Key;
+                var grader = entry.Key;
                 grade += grader.Grade(menu);
             }
 
