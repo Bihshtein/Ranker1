@@ -16,10 +16,6 @@ namespace MenuBuilder
             this.productsWeight = productsWeight;
         }
 
-        public virtual Boolean IsBreakfast() { return false; }
-        public virtual Boolean IsLunch() { return false; }
-        public virtual Boolean IsDinner() { return false; }
-
         public int GetProductsNumber() { return productsWeight.Count; }
         public KeyValuePair<Product, double> GetProductWeight(int prodInx) { return productsWeight[prodInx]; }
     }

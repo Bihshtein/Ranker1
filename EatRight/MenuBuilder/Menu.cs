@@ -8,14 +8,14 @@ namespace MenuBuilder
 {
     class Menu
     {
-        public Menu(List<Day> days)
+        public Menu(List<DailyMenu> days)
         {
             this.days = days;
         }
 
-        private List<Day> days;
+        private List<DailyMenu> days;
 
         public int GetDaysNumber() { return days.Count; }
-        public Day GetDay(int dayInx) { return days[dayInx]; }
+        public DailyMenu GetDay(int dayInx) { return days[dayInx]; }
     }
 }

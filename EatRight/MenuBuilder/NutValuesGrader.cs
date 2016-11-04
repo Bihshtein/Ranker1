@@ -35,7 +35,7 @@ namespace MenuBuilder
             return gradeSum / daysNumber;
         }
 
-        private double GradeDay(Day day)
+        private double GradeDay(DailyMenu day)
         {
             double grade = 0;
 
@@ -44,8 +44,7 @@ namespace MenuBuilder
             Dictionary<string, double> dinnerValues = GetMealNutritionValues(day.Dinner);
 
             // Compare to daily needed values
-            List<KeyValuePair<string, double>> nutValDaily = dailyValues.ToList();
-            foreach (KeyValuePair<string, double> entry in nutValDaily)
+            foreach (KeyValuePair<string, double> entry in dailyValues)
             {
                 string nutriate = entry.Key;
                 double actualValue = 0;

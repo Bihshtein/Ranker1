@@ -44,7 +44,7 @@ namespace MenuBuilder
                 new KeyValuePair<Product, double>(apple, 100),
                 new KeyValuePair<Product, double>(almond, 10)
             };
-            Breakfast breakfast = new Breakfast(bProdList);
+            Meal breakfast = new Meal(bProdList);
 
             // Lunch
             Product salmon = unit.Products.GetByName("Salmon")[0];
@@ -56,7 +56,7 @@ namespace MenuBuilder
                 new KeyValuePair<Product, double>(rice, 100),
                 new KeyValuePair<Product, double>(pasta, 100)
             };
-            Lunch lunch = new Lunch(lProdList);
+            Meal lunch = new Meal(lProdList);
 
             // Dinner
             Product cucumber2 = unit.Products.GetByName("Cucumber")[0];
@@ -72,11 +72,11 @@ namespace MenuBuilder
                 new KeyValuePair<Product, double>(cottage2, 15),
                 new KeyValuePair<Product, double>(egg, 20)
             };
-            Dinner dinner = new Dinner(dProdList);
+            Meal dinner = new Meal(dProdList);
 
-            Day day1 = new Day(breakfast, lunch, dinner);
+            DailyMenu day1 = new DailyMenu(breakfast, lunch, dinner);
 
-            List<Day> dayList = new List<Day>() { day1 };
+            List<DailyMenu> dayList = new List<DailyMenu>() { day1 };
             return new Menu(dayList);
         }
     }
