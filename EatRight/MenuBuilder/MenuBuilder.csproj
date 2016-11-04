@@ -48,12 +48,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Day.cs" />
-    <Compile Include="Dinner.cs" />
+    <Compile Include="DailyMenu.cs" />
     <Compile Include="Globals.cs" />
     <Compile Include="Grader.cs" />
-    <Compile Include="Lunch.cs" />
-    <Compile Include="Breakfast.cs" />
     <Compile Include="Meal.cs" />
     <Compile Include="Menu.cs" />
     <Compile Include="MenuGenerator.cs" />
