@@ -22,9 +22,15 @@ namespace InitDB
                 var newItem = item.Trim();
                 if (InitDB.FoodGroups.ContainsKey(newItem))
                     animal = newItem;
-                if (InitDB.CookingOptions.Contains(newItem))
+                if (CommonValidator.CookingOptions.Contains(newItem))
                     servingState = item;
-                if (InitDB.MainPartOptions.Contains(newItem))
+                if (PorkValidator.PorkMainParts.Contains(newItem))
+                    newName = newItem;
+                if (BeefValidator.CheckWithoutCut(newItem, BeefValidator.BeefMainParts))
+                    newName = newItem;
+                if (BeefValidator.CheckWithoutCut(newItem, BeefValidator.BeefSecondParts) && newName == name)
+                    newName = newItem;
+                if (BeefValidator.CheckWithoutCut(newItem, BeefValidator.BeefCutDetails) && newName == name)
                     newName = newItem;
             }
 
@@ -38,7 +44,7 @@ namespace InitDB
                 imgBytes = File.ReadAllBytes(InitDB.FolderPath + "Morty.png");
             else
                 imgBytes = File.ReadAllBytes(InitDB.FolderPath + "Rick.png");
-            var p = new Product() { ID = id, Name = newName, Image = imgBytes, Animal = animal, ServingState = servingState, HasSkin = hasSkin,Weight = weight };
+            var p = new Product() { ID = id, Name = newName, /*Image = imgBytes,*/ Animal = animal, ServingState = servingState, HasSkin = hasSkin,Weight = weight };
             AddNutrients(nutrients, p, weight);
 
             return p;

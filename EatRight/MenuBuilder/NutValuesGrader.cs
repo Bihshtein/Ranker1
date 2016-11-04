@@ -39,14 +39,14 @@ namespace MenuBuilder
         {
             double grade = 0;
 
-            Dictionary<string, double> breakfastValues = GetMealNutritionValues(day.Breakfast);
-            Dictionary<string, double> lunchValues = GetMealNutritionValues(day.Lunch);
-            Dictionary<string, double> dinnerValues = GetMealNutritionValues(day.Dinner);
+            var breakfastValues = GetMealNutritionValues(day.Breakfast);
+            var lunchValues = GetMealNutritionValues(day.Lunch);
+            var dinnerValues = GetMealNutritionValues(day.Dinner);
 
             // Compare to daily needed values
-            foreach (KeyValuePair<string, double> entry in dailyValues)
+            foreach (var entry in dailyValues)
             {
-                string nutriate = entry.Key;
+                var nutriate = entry.Key;
                 double actualValue = 0;
                 if (breakfastValues.ContainsKey(nutriate))
                 {
@@ -61,7 +61,7 @@ namespace MenuBuilder
                     actualValue += dinnerValues[nutriate];
                 }
 
-                double idealValue = entry.Value;
+                var idealValue = entry.Value;
                 grade += GradeRatio(actualValue / idealValue);
             }
 
@@ -70,7 +70,7 @@ namespace MenuBuilder
 
         private Dictionary<string, double> GetMealNutritionValues(Meal meal)
         {
-            Dictionary<string, double> totalValues = new Dictionary<string, double>();
+            var totalValues = new Dictionary<string, double>();
 
             int prodNumber = meal.GetProductsNumber();
             if (prodNumber == 0)
@@ -82,12 +82,12 @@ namespace MenuBuilder
             int prodInd = 0;
             for (; prodInd < prodNumber; prodInd++)
             {
-                KeyValuePair<Product, double> productWeight = meal.GetProductWeight(prodInd);
-                Product product = productWeight.Key;
-                double weight = productWeight.Value;
+                var productWeight = meal.GetProductWeight(prodInd);
+                var product = productWeight.Key;
+                var weight = productWeight.Value;
 
-                List<KeyValuePair<string, double>> nutValues = product.GetNutritionValues().ToList();
-                foreach (KeyValuePair<string, double> entry in nutValues)
+                var nutValues = product.GetNutritionValues().ToList();
+                foreach (var entry in nutValues)
                 {
                     if (!totalValues.ContainsKey(entry.Key))
                     {
