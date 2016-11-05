@@ -43,7 +43,10 @@ namespace MenuBuilder
                 }
 
                 var idealValue = entry.Value;
-                var gradeRatio = GradeRatio(actualValue / idealValue);
+                var basicRatio = actualValue / idealValue;
+                if (basicRatio > 1)
+                    Console.WriteLine("Too High Grade  : " + String.Format("{0:0.00}", basicRatio) + " nutrient : " + nutrient);
+                var gradeRatio = GradeRatio(basicRatio);
                 if (gradeRatio < 1)
                     Console.WriteLine("Missing Grade : " + String.Format("{0:0.00}", gradeRatio) + " nutrient : " + nutrient);
 

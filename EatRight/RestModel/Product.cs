@@ -59,12 +59,6 @@ namespace RestModel {
         [BsonElement("VitaminB6")]
         public double VitaminB6 { get; set; }
 
-        [BsonElement("Choline")]
-        public double Choline { get; set; }
-
-        [BsonElement("Betaine")]
-        public double Betaine { get; set; }
-
         [BsonElement("VitaminB12")]
         public double VitaminB12 { get; set; }
 
@@ -128,8 +122,6 @@ namespace RestModel {
             res["Niacin"]           = Niacin;
             res["PantothenicAcid"]  = PantothenicAcid;
             res["VitaminB6"]        = VitaminB6;
-            res["Choline"]          = Choline;
-            res["Betaine"]          = Betaine;
             res["VitaminB12"]       = VitaminB12;
             res["Folate"]           = Folate;
             res["VitaminD"]         = VitaminD;

@@ -27,7 +27,7 @@ namespace InitDB {
             var customCulture = (CultureInfo)Thread.CurrentThread.CurrentCulture.Clone(); customCulture.NumberFormat.NumberDecimalSeparator = ".";
             System.Threading.Thread.CurrentThread.CurrentCulture = customCulture;
             var unit = new RestDBInterface();
-          //  MongoData._database.DropCollection("products");// Remove in case you want to override the existing products 
+            MongoData._database.DropCollection("products");// Remove in case you want to override the existing products 
             var nutrientsQuery1 = string.Empty;
             var nutrientsQuery2 = string.Empty;
             foreach (var item in QueryData.Nutrients1) {
@@ -36,18 +36,18 @@ namespace InitDB {
             foreach (var item in QueryData.Nutrients2) {
                 nutrientsQuery2 += "nutrients=" + item + "&";
             }
-            AddManual(unit, nutrientsQuery1, nutrientsQuery2);
             AddFoodGroups(unit, nutrientsQuery1, nutrientsQuery2);
-            
+            AddManual(unit, nutrientsQuery1, nutrientsQuery2);
+
             Console.WriteLine("Total Added : " + totalAdded);
             Console.WriteLine("Total Skipped : " + totalSkipped);
         }
         private static JArray GetFoods(string url,string foodGroup, string nutrientQuery) {
             var fullUrl = string.Format(QueryData.GroupUrl, foodGroup, QueryData.Format, QueryData.ApiKey, nutrientQuery);
-            return GetFoods(fullUrl, nutrientQuery);
+            return GetFoods(fullUrl);
         }
 
-        private static JArray GetFoods(string fullUrl, string nutrientQuery) {
+        private static JArray GetFoods(string fullUrl) {
             var data = new WebClient().DownloadString(fullUrl);
             var res = JsonConvert.DeserializeObject<dynamic>(data);
             return res.report.foods;
@@ -98,9 +98,10 @@ namespace InitDB {
                 else {
                     
                     var url1 = string.Format(QueryData.SingleUrl, nutrientsQuery1, id, QueryData.Format, QueryData.ApiKey);
-                    var url2= string.Format(QueryData.SingleUrl, nutrientsQuery1, id, QueryData.Format, QueryData.ApiKey);
-                    var food1 = (dynamic)GetFoods(url1, nutrientsQuery1)[0];
-                    var food2 = (dynamic)GetFoods(url2, nutrientsQuery2)[0];
+                    var url2= string.Format(QueryData.SingleUrl, nutrientsQuery2, id, QueryData.Format, QueryData.ApiKey);
+                    var food1 = (dynamic)GetFoods(url1)[0];
+                    
+                    var food2 = (dynamic)GetFoods(url2)[0];
                     JArray nutrients1 = (food1).nutrients;
                     JArray nutrients2 = (food2).nutrients;
                     AddProduct(unit, id, name, new JArray(nutrients1.Concat(nutrients2)), double.Parse(((object)food1.weight).ToString()));
