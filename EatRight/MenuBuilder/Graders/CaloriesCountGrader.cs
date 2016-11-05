@@ -41,7 +41,7 @@ namespace MenuBuilder
                     + Globals.CALORIES_PER_FAT_GRAM * fat
                     + Globals.CALORIES_PER_PROTEIN_GRAM * protein);
             }
-
+            Console.WriteLine("Total Calories : " + caloriesNum);
             return caloriesNum;
         }
 

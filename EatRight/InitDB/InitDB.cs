@@ -27,42 +27,65 @@ namespace InitDB {
             var customCulture = (CultureInfo)Thread.CurrentThread.CurrentCulture.Clone(); customCulture.NumberFormat.NumberDecimalSeparator = ".";
             System.Threading.Thread.CurrentThread.CurrentCulture = customCulture;
             var unit = new RestDBInterface();
-            MongoData._database.DropCollection("products");// Remove in case you want to override the existing products 
-            var nutrientsQuery = string.Empty;
-            foreach (var item in QueryData.Nutrients) {
-                nutrientsQuery += "nutrients=" + item+"&";
+          //  MongoData._database.DropCollection("products");// Remove in case you want to override the existing products 
+            var nutrientsQuery1 = string.Empty;
+            var nutrientsQuery2 = string.Empty;
+            foreach (var item in QueryData.Nutrients1) {
+                nutrientsQuery1 += "nutrients=" + item+"&";
             }
-            AddFoodGroups(unit, nutrientsQuery);
-            AddManual(unit, nutrientsQuery);
+            foreach (var item in QueryData.Nutrients2) {
+                nutrientsQuery2 += "nutrients=" + item + "&";
+            }
+            AddManual(unit, nutrientsQuery1, nutrientsQuery2);
+            AddFoodGroups(unit, nutrientsQuery1, nutrientsQuery2);
+            
             Console.WriteLine("Total Added : " + totalAdded);
             Console.WriteLine("Total Skipped : " + totalSkipped);
         }
-     
-        private static void AddFoodGroups(RestDBInterface unit, string nutrientsQuery) {
-            foreach (var item in FoodGroups.Keys) {
+        private static JArray GetFoods(string url,string foodGroup, string nutrientQuery) {
+            var fullUrl = string.Format(QueryData.GroupUrl, foodGroup, QueryData.Format, QueryData.ApiKey, nutrientQuery);
+            return GetFoods(fullUrl, nutrientQuery);
+        }
 
-                var str = string.Format(QueryData.GroupUrl, FoodGroups[item], QueryData.Format, QueryData.ApiKey, nutrientsQuery);
-                var data = new WebClient().DownloadString(str);
-                var res = JsonConvert.DeserializeObject<dynamic>(data);
-                JArray foods = res.report.foods;
-                foreach (dynamic food in foods) {
-                    var id = ((object)food.ndbno).ToString();
-                    var name = ((object)food.name).ToString();
-                    var _params = name.Split(',').ToList();
-                    var allParamsAreKnown = _params.All(ProductGropusValidation[item] );
-                    if (allParamsAreKnown) {
-                        var idAlreadyInDB = unit.Products.Get(int.Parse(id)) != null;
-                        if (idAlreadyInDB)
-                            SkipDebug(name, "already in DB");
+        private static JArray GetFoods(string fullUrl, string nutrientQuery) {
+            var data = new WebClient().DownloadString(fullUrl);
+            var res = JsonConvert.DeserializeObject<dynamic>(data);
+            return res.report.foods;
+        }
+        private static void AddFoodGroups(RestDBInterface unit, string nutrientsQuery1, string nutrientsQuery2) {
+            foreach (var item in FoodGroups.Keys) {
+                var foods1 = GetFoods(QueryData.GroupUrl, FoodGroups[item], nutrientsQuery1);
+                var foods2 = GetFoods(QueryData.GroupUrl, FoodGroups[item], nutrientsQuery2);
+
+                for (int i = 0; i < foods1.Count; i++) {
+                    var food1 = (dynamic)foods1[i];
+                    var food2 = (dynamic)foods1[i];
+                    var id1 = ((object)food1.ndbno).ToString();
+                    var name1 = ((object)food1.name).ToString();
+                    var id2 = ((object)food1.ndbno).ToString();
+                    var name2 = ((object)food1.name).ToString();
+                    if (id1 == id2 && name1 == name2) {
+                        var _params = name1.Split(',').ToList();
+                        var allParamsAreKnown = _params.All(ProductGropusValidation[item]);
+                        if (allParamsAreKnown) {
+                            var idAlreadyInDB = unit.Products.Get(int.Parse(id1)) != null;
+                            if (idAlreadyInDB)
+                                SkipDebug(name1, "already in DB");
+                            else {
+                                JArray nutrients1 = food1.nutrients;
+                                JArray nutrients2 = food2.nutrients;
+                                AddProduct(unit, id1, name1, new JArray(nutrients1.Concat(nutrients2)), double.Parse(((object)food1.weight).ToString()));
+                            }
+                        }
                         else
-                            AddProduct(unit, id, name, food.nutrients, double.Parse(((object)food.weight).ToString()));
+                            SkipDebug(name1, "unknow parameters");
                     }
-                    else
-                        SkipDebug(name, "unknow parameters");
                 }
+
+
             }
         }
-        private static void AddManual(RestDBInterface unit, string nutrientsQuery) {
+        private static void AddManual(RestDBInterface unit, string nutrientsQuery1, string nutrientsQuery2) {
             var lines = File.ReadAllLines(Path.Combine(FolderPath, "Products_IDS.csv"));
 
             foreach (var line in lines) {
@@ -73,12 +96,14 @@ namespace InitDB {
                     SkipDebug(name, "already in DB");
                 }
                 else {
-                    var singleStr = string.Format(QueryData.SingleUrl, nutrientsQuery, id, QueryData.Format, QueryData.ApiKey);
-                    var singleData = new WebClient().DownloadString(singleStr);
-                    var singleRes = JsonConvert.DeserializeObject<dynamic>(singleData);
-                    JArray _foods = singleRes.report.foods;
-                    dynamic _food = _foods[0];
-                    AddProduct(unit, id, name, _food.nutrients, double.Parse(((object)_food.weight).ToString()));
+                    
+                    var url1 = string.Format(QueryData.SingleUrl, nutrientsQuery1, id, QueryData.Format, QueryData.ApiKey);
+                    var url2= string.Format(QueryData.SingleUrl, nutrientsQuery1, id, QueryData.Format, QueryData.ApiKey);
+                    var food1 = (dynamic)GetFoods(url1, nutrientsQuery1)[0];
+                    var food2 = (dynamic)GetFoods(url2, nutrientsQuery2)[0];
+                    JArray nutrients1 = (food1).nutrients;
+                    JArray nutrients2 = (food2).nutrients;
+                    AddProduct(unit, id, name, new JArray(nutrients1.Concat(nutrients2)), double.Parse(((object)food1.weight).ToString()));
                 }
             }
         }
@@ -86,7 +111,7 @@ namespace InitDB {
         public static void AddProduct(RestDBInterface unit, string id, string name, JArray nutrients, double weight) {
             AddDebug(name);
             var collection = MongoData._database.GetCollection<BsonDocument>(MongoData.CollectionName);
-            var newProduct = ProductBuilder.GetProduct(int.Parse(id), name, nutrients, weight);
+            var newProduct = ProductBuilder.GetProduct(int.Parse(id), name,  nutrients, weight);
             unit.Products.Add(newProduct);
         }
 

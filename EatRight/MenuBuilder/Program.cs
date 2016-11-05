@@ -23,8 +23,8 @@ namespace MenuBuilder
 
         private static Menu GenerateTestMenu1()
         {
-            var list = unit.Products.GetTopFoods(15,4);
-            list.RemoveAll((p) => p.Animal != string.Empty);
+            var list = unit.Products.GetTopFoods(150,1);
+            //list.RemoveAll((p) => p.Animal != string.Empty);
             foreach (Product prod in list)
             {
                 System.Console.WriteLine(prod.Name);
@@ -41,30 +41,35 @@ namespace MenuBuilder
 
             Meal breakfast = new Meal(1, new Dictionary<string, double>()
             {
-                { "Bread", 25},
-                { "Cottage", 150},
+               // { "Bread", 25},
+             //   { "Cottage", 150},
                 { "Carrot", 200},
                 { "Tomato", 123},
                 { "Avocado", 50},
-                { "bacon", 200}
+                { "bacon", 50},
+                { "Tuna", 200},
+                { "Almond", 25}
             });
             
             var lunch = new Meal(2, new Dictionary<string, double>()
             {
-                {"Salmon", 300 },
-                {"Rice", 200},
-                {"Orange", 200},
+                {"Salmon", 150 },
+                {"Pepper", 100},
+                {"Walnut", 20},
+                { "bacon", 50},
+                { "Almond", 25},
                 {"Broccoli", 100}
             });
 
             var dinner = new Meal(3, new Dictionary<string, double>()
             {
-                {"tenderloin", 200 },
-                { "Tomato", 123},
-                { "Corn", 200},
+                {"tenderloin", 100 },
+                { "Cabbage", 100},
+                { "Tomato", 100},
+                { "Lettuce", 100},
                 { "Garlic", 50},
                 { "Egg", 200},
-                { "Almond", 100}
+                { "Almond", 50}
             });
             unit.Meals.Empty();
             if (unit.Meals.Get(1) == null)

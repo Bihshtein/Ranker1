@@ -27,25 +27,28 @@ namespace MenuBuilder
             // Compare to daily needed values
             foreach (var entry in dailyValues)
             {
-                var nutriate = entry.Key;
+                var nutrient = entry.Key;
                 double actualValue = 0;
-                if (breakfastValues.ContainsKey(nutriate))
+                if (breakfastValues.ContainsKey(nutrient))
                 {
-                    actualValue += breakfastValues[nutriate];
+                    actualValue += breakfastValues[nutrient];
                 }
-                if (lunchValues.ContainsKey(nutriate))
+                if (lunchValues.ContainsKey(nutrient))
                 {
-                    actualValue += lunchValues[nutriate];
+                    actualValue += lunchValues[nutrient];
                 }
-                if (dinnerValues.ContainsKey(nutriate))
+                if (dinnerValues.ContainsKey(nutrient))
                 {
-                    actualValue += dinnerValues[nutriate];
+                    actualValue += dinnerValues[nutrient];
                 }
 
                 var idealValue = entry.Value;
-                grade += GradeRatio(actualValue / idealValue);
-            }
+                var gradeRatio = GradeRatio(actualValue / idealValue);
+                if (gradeRatio < 1)
+                    Console.WriteLine("Missing Grade : " + String.Format("{0:0.00}", gradeRatio) + " nutrient : " + nutrient);
 
+                grade += gradeRatio;
+            }
             return grade / dailyValues.Count;
         }
 
