@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CaloriesCountGrader.cs" />
     <Compile Include="DailyMenu.cs" />
     <Compile Include="Globals.cs" />
     <Compile Include="Grader.cs" />
@@ -55,6 +56,7 @@
     <Compile Include="Menu.cs" />
     <Compile Include="MenuGenerator.cs" />
     <Compile Include="NutValuesGrader.cs" />
+    <Compile Include="PerDayGrader.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
