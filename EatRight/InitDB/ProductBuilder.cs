@@ -61,7 +61,7 @@ namespace InitDB
             p.Niacin = GetNutrient(nutrients, "Niacin", weight);//406
             p.PantothenicAcid = GetNutrient(nutrients, "Pantothenic acid", weight);//410
             p.VitaminB6 = GetNutrient(nutrients, "Vitamin B-6", weight);//415
-            p.Betaine = GetNutrient(nutrients, "Betaine", weight);//454
+            p.VitaminD = GetNutrient(nutrients, "Vitamin D", weight);//328
             p.VitaminB12 = GetNutrient(nutrients, "Vitamin B-12", weight);//418
             p.Folate = GetNutrient(nutrients, "Folate, total", weight);//417
             p.VitaminA = GetNutrient(nutrients, "Vitamin A, IU", weight);//318
