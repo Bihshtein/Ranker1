@@ -34,28 +34,31 @@
    
     <div ng-controller="Query" class="Container">
         <label>
-            Query   <input type="text" name="input" size="150" ng-model="input.text" ng-pattern="input.word" ng-list>
+            Query   <input type="text" name="input" size="150" ng-model="input.text" ng-pattern="input.word" ng-list
+                            ng-model-options='{ debounce: 800 }'
+        ng-change='init(input.text,input2.text, availableOptions.selected)'>
         </label>
         <br />
         <label>
-            Min % <input type="text" name="input2" size="3" ng-model="input2.text">
+            Min % <input type="text" name="input2" size="3" ng-model="input2.text" g-model-options='{ debounce: 800 }'
+        ng-change='init(input.text,input2.text, availableOptions.selected)'>
         </label>
         <br />
         <label>
             Profile
-            <select ng-model="profile" ng-options="item.id as item.name for item in availableOptions.data">
+            <select ng-model="availableOptions.selected" ng-options="item.id as item.name for item in availableOptions.data"
+        ng-change='init(input.text,input2.text, availableOptions.selected)'>
             </select>
         </label>
+   
         <div ng-controller="Query">
             <div layout="row" class="Container2">
-                <div7 ng-repeat="val in input.text" class="Container3" style="float:left">
-                    <div flex="20"  flex-order="-1"  ng-init="init(val,input2.text, profile)">
-                        <div1><h2>{{val}}</h2></div1>
-                        <div ng-repeat="P in dict [val] .data"  style="float:left" ng-init="init2(P)">
+                <div7 ng-repeat="val in dict['last'].data" class="Container3" style="float:left">
+                    <div flex="20" flex-order="-1">
+                        <div ng-repeat="P in val" style="float:left">
                             <div><h2>Name       : {{P.Name}}</h2></div>
                             <div><h2>State      : {{P.ServingState}}</h2></div>
                             <div><h2>Weight       : {{P.Weight}}</h2></div>
-                            <div><h2>{{P[val]}}</h2></div>
                             <img data-ng-src=data:image/png;base64,{{P.Image}} />
                         </div>
                     </div>

@@ -33,7 +33,7 @@ namespace Students.Services
         protected const int DEFAULT_MIN_MEASURE = 10;
         protected const bool DEFAULT_IS_VEGETERIAN = false;
 
-        public string SearchQuery { get; protected set; }
+        public List<string> SearchQuery { get; protected set; }
         public bool IsVegeterian { get; protected set; }
         public int MinMeasure { get; protected set; }
         public ProfileType ProfileType { get; protected set; }
@@ -43,7 +43,7 @@ namespace Students.Services
             MinMeasure = DEFAULT_MIN_MEASURE;
             IsVegeterian = DEFAULT_IS_VEGETERIAN;
             ProfileType = ProfileType.Normal;
-            SearchQuery = "";
+            SearchQuery = new List<string>();
 
             if (String.IsNullOrEmpty(searchQuery)) return;
 
@@ -51,7 +51,7 @@ namespace Students.Services
             var spltQuery = searchQuery.Split(QUERY_PARAMS_DELIMITER);
             if (spltQuery.Length > LEGAL_SEARCH_PARAMS_LENGTH) return;
 
-            SearchQuery = spltQuery[SEARCH_WORDS_INDEX];
+            SearchQuery = spltQuery[SEARCH_WORDS_INDEX].Split(',').ToList();
             if ((spltQuery.Length != LEGAL_SEARCH_PARAMS_LENGTH) ||
                 (string.IsNullOrEmpty(spltQuery[OTHER_PARAMS_INDEX]))) return;
 
@@ -80,33 +80,50 @@ namespace Students.Services
         {
             productsService = new ProductsService();
         }
-        public List<Product> ProductListCreator(SearchQueryParser sqParser)
+        public List<List<Product>> ProductListCreator(SearchQueryParser sqParser)
         {
-            if (RestRepository<Product>.DailyValues.ContainsKey(sqParser.SearchQuery))
-                return productsService.GetNutrient(sqParser.SearchQuery,
-                                                         sqParser.MinMeasure,
-                                                         sqParser.IsVegeterian);
+            var productLists = new List<List<Product>>();
 
-            else if (RestRepository<Product>.Animals.Contains(sqParser.SearchQuery))
-                return productsService.GetAnimal(sqParser.SearchQuery);
 
-            else if (sqParser.SearchQuery == "TopFoods")
-                return productsService.GetTopFoods(sqParser.MinMeasure);
+            foreach (var searchKeyword in sqParser.SearchQuery)
+            {
+                if (RestRepository<Product>.DailyValues.ContainsKey(searchKeyword))
+                {
+                    productLists.Add(productsService.GetNutrient(searchKeyword,
+                                                                 sqParser.MinMeasure,
+                                                                 sqParser.IsVegeterian));
+                }
+                else if (RestRepository<Product>.Animals.Contains(searchKeyword))
+                {
+                    productLists.Add( productsService.GetAnimal(searchKeyword));
+                }
+                else if (searchKeyword == "TopFoods")
+                {
+                    productLists.Add( productsService.GetTopFoods(sqParser.MinMeasure));
+                }
 
-            else if (sqParser.SearchQuery == "All")
-                return productsService.GetAll().ToList();
-            return null;
+                else if (searchKeyword == "All")
+                {
+                    productLists.Add( productsService.GetAll().ToList());
+                }
+            }
+            
+            return productLists;
         }
         public HttpResponseMessage Get(string id)
         {
             var sqParser = new SearchQueryParser(id);
-            List<Product> productsList = ProductListCreator(sqParser);
+            List<List<Product>> productsList = ProductListCreator(sqParser);
+           
+
             return Request.CreateResponse(HttpStatusCode.OK, productsList);
         }
         public HttpResponseMessage GetAll()
         {
             var products = productsService.GetAll();
-            if (products.Any()) return Request.CreateResponse(HttpStatusCode.OK, products);
+            var x = new List<List<Product>>();
+            x.Add(products.ToList());
+            if (products.Any()) return Request.CreateResponse(HttpStatusCode.OK, x);
             return Request.CreateErrorResponse(HttpStatusCode.NotFound, "No products found.");
         }
         public void Post([FromBody] Product student)
