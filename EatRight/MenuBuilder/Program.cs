@@ -29,9 +29,17 @@ namespace MenuBuilder
             {
                 System.Console.WriteLine(prod.Name);
             }
+            InitSampleMeal(unit);// currently resets the db and add the meal every time
+            var day1 = new DailyMenu(unit.Meals.Get(1), unit.Meals.Get(2), unit.Meals.Get(3));
 
-            // Breakfast
-            var bProdList = new Dictionary<string, double>()
+            var dayList = new List<DailyMenu>() { day1 };
+            return new Menu(dayList);
+        }
+
+        private static void InitSampleMeal(RestDBInterface unit) {
+
+
+            Meal breakfast = new Meal(1, new Dictionary<string, double>()
             {
                 { "Bread", 25},
                 { "Cottage", 150},
@@ -39,21 +47,17 @@ namespace MenuBuilder
                 { "Tomato", 123},
                 { "Avocado", 50},
                 { "bacon", 200}
-            };
-            Meal breakfast = new Meal(bProdList, unit);
-
-            // Lunch
-            var lProdList = new Dictionary<string, double>()
+            });
+            
+            var lunch = new Meal(2, new Dictionary<string, double>()
             {
                 {"Salmon", 300 },
                 {"Rice", 200},
                 {"Orange", 200},
                 {"Broccoli", 100}
-            };
-            var lunch = new Meal(lProdList, unit);
+            });
 
-            // Dinner
-            var  dProdList = new Dictionary<string, double>()
+            var dinner = new Meal(3, new Dictionary<string, double>()
             {
                 {"tenderloin", 200 },
                 { "Tomato", 123},
@@ -61,13 +65,14 @@ namespace MenuBuilder
                 { "Garlic", 50},
                 { "Egg", 200},
                 { "Almond", 100}
-            };
-            var dinner = new Meal(dProdList,unit);
-
-            var day1 = new DailyMenu(breakfast, lunch, dinner);
-
-            var dayList = new List<DailyMenu>() { day1 };
-            return new Menu(dayList);
+            });
+            unit.Meals.Empty();
+            if (unit.Meals.Get(1) == null)
+                unit.Meals.Add(breakfast);
+            if (unit.Meals.Get(2) == null)
+                unit.Meals.Add(lunch);
+            if (unit.Meals.Get(3) == null)
+                unit.Meals.Add(dinner);
         }
     }
 }

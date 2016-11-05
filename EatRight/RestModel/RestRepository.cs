@@ -10,6 +10,7 @@ namespace RestModel {
     public class RestDBInterface {
         private MongoDatabase _database;
         protected RestRepository<Product> products;
+        protected RestRepository<Meal> meals;
         public RestDBInterface() {
             var client = new MongoClient();
             var server = client.GetServer();
@@ -19,6 +20,13 @@ namespace RestModel {
             get {
                 if (products == null) products = new RestRepository<Product>(_database, "products");
                 return products;
+            }
+        }
+
+        public RestRepository<Meal> Meals {
+            get {
+                if (meals == null) meals = new RestRepository<Meal>(_database, "meals");
+                return meals;
             }
         }
     }
@@ -125,6 +133,10 @@ namespace RestModel {
         public void Delete(Expression<Func<T, string>> queryExpression, string id) {
             var query = Query<T>.EQ(queryExpression, id);
             _collection.Remove(query);
+        }
+
+        public void Empty() {
+            _collection.RemoveAll();
         }
         public void Update(Expression<Func<T, string>> queryExpression, string id, T entity) {
             var query = Query<T>.EQ(queryExpression, id);

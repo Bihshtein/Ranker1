@@ -53,12 +53,6 @@ namespace MenuBuilder
         {
             var totalValues = new Dictionary<string, double>();
 
-            int prodNumber = meal.GetProductsNumber();
-            if (prodNumber == 0)
-            {
-                return totalValues;
-            }
-
             // Get nutrition values of all products
             foreach (var prodName in meal.Products) {
                 var productWeight = meal.GetProductWeight(prodName);

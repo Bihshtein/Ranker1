@@ -52,7 +52,6 @@
     <Compile Include="DailyMenu.cs" />
     <Compile Include="Globals.cs" />
     <Compile Include="Grader.cs" />
-    <Compile Include="Meal.cs" />
     <Compile Include="Menu.cs" />
     <Compile Include="MenuGenerator.cs" />
     <Compile Include="NutValuesGrader.cs" />
