@@ -91,12 +91,12 @@ namespace RestModel {
         {
             return pair.Key;
         }
-        public List<T> GetTopFoods(int min) 
+        public List<T> GetTopFoods(int minOfDailyValue, int minMeasures) 
         {
             Dictionary<T, int> productsCount = new Dictionary<T, int>();
             foreach (var item in DailyValues.Keys)
             {
-                var results = GetByMeasure(item, min);
+                var results = GetByMeasure(item, minOfDailyValue);
                 foreach (var product in results)
                 {   
                     if (!productsCount.ContainsKey(product))
@@ -105,7 +105,7 @@ namespace RestModel {
                         productsCount[product]++;
                 }
             }
-            var superFoods = productsCount.Where((pair) => pair.Value > 3);
+            var superFoods = productsCount.Where((pair) => pair.Value > minMeasures);
 
 
             var res = superFoods.ToDictionary(GetKey).Keys.ToList();

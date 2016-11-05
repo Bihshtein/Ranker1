@@ -5,11 +5,13 @@ using Newtonsoft.Json.Linq;
 using RestModel;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Net;
 using System.Reflection;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace InitDB {
@@ -22,6 +24,8 @@ namespace InitDB {
         public static Dictionary<string, Func<string, bool>> ProductGropusValidation = new Dictionary<string, Func<string, bool>>() {{ "Beef", BeefValidator.IsBeefParameter},{ "Pork", PorkValidator.IsPorkParameter}};
 
         public static void InitProductsCollection() {
+            var customCulture = (CultureInfo)Thread.CurrentThread.CurrentCulture.Clone(); customCulture.NumberFormat.NumberDecimalSeparator = ".";
+            System.Threading.Thread.CurrentThread.CurrentCulture = customCulture;
             var unit = new RestDBInterface();
             MongoData._database.DropCollection("products");// Remove in case you want to override the existing products 
             var nutrientsQuery = string.Empty;

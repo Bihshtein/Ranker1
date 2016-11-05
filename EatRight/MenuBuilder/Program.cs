@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using RestModel;
 
+
 namespace MenuBuilder
 {
     class Program
@@ -22,7 +23,8 @@ namespace MenuBuilder
 
         private static Menu GenerateTestMenu1()
         {
-            var list = unit.Products.GetByProtein(0);
+            var list = unit.Products.GetTopFoods(15,4);
+            list.RemoveAll((p) => p.Animal != string.Empty);
             foreach (Product prod in list)
             {
                 System.Console.WriteLine(prod.Name);
@@ -31,46 +33,50 @@ namespace MenuBuilder
             // Breakfast
             var bread = unit.Products.GetByName("Bread")[0];
             var cottage = unit.Products.GetByName("Cottage")[0];
-            var cucumber = unit.Products.GetByName("Cucumber")[0];
+            var carrot = unit.Products.GetByName("Carrot")[0];
             var tomato = unit.Products.GetByName("Tomato")[0];
-            var apple = unit.Products.GetByName("Apple")[0];
-            var almond = unit.Products.GetByName("Almond")[0];
+            var avocado = unit.Products.GetByName("Avocado")[0];
+            var bacon = unit.Products.GetByName("bacon")[0];
             var bProdList = new List<KeyValuePair<Product, double>>()
             {
                 new KeyValuePair<Product, double>(bread, 25),
-                new KeyValuePair<Product, double>(cottage, 15),
-                new KeyValuePair<Product, double>(cucumber, 130),
+                new KeyValuePair<Product, double>(cottage, 150),
+                new KeyValuePair<Product, double>(carrot, 200),
                 new KeyValuePair<Product, double>(tomato, 123),
-                new KeyValuePair<Product, double>(apple, 100),
-                new KeyValuePair<Product, double>(almond, 200)
+                new KeyValuePair<Product, double>(avocado, 50),
+                new KeyValuePair<Product, double>(bacon, 200)
             };
             Meal breakfast = new Meal(bProdList);
 
             // Lunch
             var salmon = unit.Products.GetByName("Salmon")[0];
             var rice = unit.Products.GetByName("Rice")[0];
-            var pasta = unit.Products.GetByName("Pasta")[0];
+            var orange = unit.Products.GetByName("Orange")[0];
+            var Broccoli = unit.Products.GetByName("Broccoli")[0];
             var lProdList = new List<KeyValuePair<Product, double>>()
             {
-                new KeyValuePair<Product, double>(salmon, 200),
-                new KeyValuePair<Product, double>(rice, 100),
-                new KeyValuePair<Product, double>(pasta, 100)
+                new KeyValuePair<Product, double>(salmon, 300),
+                new KeyValuePair<Product, double>(rice, 200),
+                new KeyValuePair<Product, double>(orange, 200),
+                new KeyValuePair<Product, double>(Broccoli, 100)
             };
             var lunch = new Meal(lProdList);
 
             // Dinner
-            var cucumber2 = unit.Products.GetByName("Cucumber")[0];
+            var tenderloin = unit.Products.GetByName("tenderloin")[0];
             var tomato2 = unit.Products.GetByName("Tomato")[0];
             var corn = unit.Products.GetByName("Corn")[0];
-            var cottage2 = unit.Products.GetByName("Cottage")[0];
+            var Garlic = unit.Products.GetByName("Garlic")[0];
             var egg = unit.Products.GetByName("Egg")[0];
+            var almond = unit.Products.GetByName("Almond")[0];
             var  dProdList = new List<KeyValuePair<Product, double>>()
             {
-                new KeyValuePair<Product, double>(cucumber2, 200),
+                new KeyValuePair<Product, double>(tenderloin, 200),
                 new KeyValuePair<Product, double>(tomato2, 123),
-                new KeyValuePair<Product, double>(corn, 50),
-                new KeyValuePair<Product, double>(cottage2, 15),
-                new KeyValuePair<Product, double>(egg, 20)
+                new KeyValuePair<Product, double>(corn, 200),
+                new KeyValuePair<Product, double>(Garlic, 50),
+                new KeyValuePair<Product, double>(egg, 200),
+                new KeyValuePair<Product, double>(almond, 100)
             };
             var dinner = new Meal(dProdList);
 

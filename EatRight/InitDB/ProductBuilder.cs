@@ -82,6 +82,7 @@ namespace InitDB
             if (obj == null)
                 return 0;
             double result = 0;
+          
             double.TryParse(obj.value.ToString(), out result);
             return result * (100.0/weight);
         }
