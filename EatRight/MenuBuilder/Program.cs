@@ -31,54 +31,38 @@ namespace MenuBuilder
             }
 
             // Breakfast
-            var bread = unit.Products.GetByName("Bread")[0];
-            var cottage = unit.Products.GetByName("Cottage")[0];
-            var carrot = unit.Products.GetByName("Carrot")[0];
-            var tomato = unit.Products.GetByName("Tomato")[0];
-            var avocado = unit.Products.GetByName("Avocado")[0];
-            var bacon = unit.Products.GetByName("bacon")[0];
-            var bProdList = new List<KeyValuePair<Product, double>>()
+            var bProdList = new Dictionary<string, double>()
             {
-                new KeyValuePair<Product, double>(bread, 25),
-                new KeyValuePair<Product, double>(cottage, 150),
-                new KeyValuePair<Product, double>(carrot, 200),
-                new KeyValuePair<Product, double>(tomato, 123),
-                new KeyValuePair<Product, double>(avocado, 50),
-                new KeyValuePair<Product, double>(bacon, 200)
+                { "Bread", 25},
+                { "Cottage", 150},
+                { "Carrot", 200},
+                { "Tomato", 123},
+                { "Avocado", 50},
+                { "bacon", 200}
             };
-            Meal breakfast = new Meal(bProdList);
+            Meal breakfast = new Meal(bProdList, unit);
 
             // Lunch
-            var salmon = unit.Products.GetByName("Salmon")[0];
-            var rice = unit.Products.GetByName("Rice")[0];
-            var orange = unit.Products.GetByName("Orange")[0];
-            var Broccoli = unit.Products.GetByName("Broccoli")[0];
-            var lProdList = new List<KeyValuePair<Product, double>>()
+            var lProdList = new Dictionary<string, double>()
             {
-                new KeyValuePair<Product, double>(salmon, 300),
-                new KeyValuePair<Product, double>(rice, 200),
-                new KeyValuePair<Product, double>(orange, 200),
-                new KeyValuePair<Product, double>(Broccoli, 100)
+                {"Salmon", 300 },
+                {"Rice", 200},
+                {"Orange", 200},
+                {"Broccoli", 100}
             };
-            var lunch = new Meal(lProdList);
+            var lunch = new Meal(lProdList, unit);
 
             // Dinner
-            var tenderloin = unit.Products.GetByName("tenderloin")[0];
-            var tomato2 = unit.Products.GetByName("Tomato")[0];
-            var corn = unit.Products.GetByName("Corn")[0];
-            var Garlic = unit.Products.GetByName("Garlic")[0];
-            var egg = unit.Products.GetByName("Egg")[0];
-            var almond = unit.Products.GetByName("Almond")[0];
-            var  dProdList = new List<KeyValuePair<Product, double>>()
+            var  dProdList = new Dictionary<string, double>()
             {
-                new KeyValuePair<Product, double>(tenderloin, 200),
-                new KeyValuePair<Product, double>(tomato2, 123),
-                new KeyValuePair<Product, double>(corn, 200),
-                new KeyValuePair<Product, double>(Garlic, 50),
-                new KeyValuePair<Product, double>(egg, 200),
-                new KeyValuePair<Product, double>(almond, 100)
+                {"tenderloin", 200 },
+                { "Tomato", 123},
+                { "Corn", 200},
+                { "Garlic", 50},
+                { "Egg", 200},
+                { "Almond", 100}
             };
-            var dinner = new Meal(dProdList);
+            var dinner = new Meal(dProdList,unit);
 
             var day1 = new DailyMenu(breakfast, lunch, dinner);
 

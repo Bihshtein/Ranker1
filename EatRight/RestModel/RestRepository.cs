@@ -91,6 +91,9 @@ namespace RestModel {
         {
             return pair.Key;
         }
+        public List<T> GetTopFoods(int minOfDailyValue) {
+            return GetTopFoods(minOfDailyValue, 3);
+        }
         public List<T> GetTopFoods(int minOfDailyValue, int minMeasures) 
         {
             Dictionary<T, int> productsCount = new Dictionary<T, int>();

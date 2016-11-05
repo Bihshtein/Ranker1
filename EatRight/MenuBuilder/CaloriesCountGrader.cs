@@ -25,13 +25,10 @@ namespace MenuBuilder
         private double MealCaloriesNum(Meal meal)
         {
             double caloriesNum = 0;
-            int prodNumber = meal.GetProductsNumber();
-
             // Get nutrition values of all products
-            int prodInd = 0;
-            for (; prodInd < prodNumber; prodInd++)
-            {
-                var productWeight = meal.GetProductWeight(prodInd);
+            foreach (var prodName in meal.Products) {
+
+                var productWeight = meal.GetProductWeight(prodName);
                 var product = productWeight.Key;
                 var weight = productWeight.Value;
 
