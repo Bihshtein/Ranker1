@@ -59,10 +59,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BeefValidator.cs" />
-    <Compile Include="CommonValidator.cs" />
+    <Compile Include="Validators\BeefValidator.cs" />
+    <Compile Include="Validators\CommonValidator.cs" />
     <Compile Include="InitDB.cs" />
-    <Compile Include="PorkValidator.cs" />
+    <Compile Include="Validators\PorkValidator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ProductBuilder.cs" />
