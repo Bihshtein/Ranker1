@@ -37,7 +37,7 @@ namespace InitDB {
                 nutrientsQuery2 += "nutrients=" + item + "&";
             }
             AddFoodGroups(unit, nutrientsQuery1, nutrientsQuery2);
-            AddManual(unit, nutrientsQuery1, nutrientsQuery2);
+          //  AddManual(unit, nutrientsQuery1, nutrientsQuery2);
 
             Console.WriteLine("Total Added : " + totalAdded);
             Console.WriteLine("Total Skipped : " + totalSkipped);
@@ -53,6 +53,26 @@ namespace InitDB {
             return res.report.foods;
         }
         private static void AddFoodGroups(RestDBInterface unit, string nutrientsQuery1, string nutrientsQuery2) {
+            var groupsData = new List<GroupData>();
+          /*  groupsData.Add(new GroupData() {     Currently uselles - the logic differs for pork and beef
+                Name = "Beef",
+                IDNum = "1300",
+                ValidationFunction = BeefValidator.IsBeefParameter,
+                MainTypeOptions = BeefValidator.BeefMainParts,
+                SecondTypeOptions = BeefValidator.BeefSecondParts,
+                CutTypeOptions = BeefValidator.BeefCuts
+
+            });
+
+            groupsData.Add(new GroupData() {
+                Name = "Pork",
+                IDNum = "1000",
+                ValidationFunction = PorkValidator.IsPorkParameter,
+                MainTypeOptions = PorkValidator.PorkMainParts,
+                SecondTypeOptions = PorkValidator.PorkSecondParts,
+                CutTypeOptions = PorkValidator.PorkCuts
+
+            });*/
             foreach (var item in FoodGroups.Keys) {
                 var foods1 = GetFoods(QueryData.GroupUrl, FoodGroups[item], nutrientsQuery1);
                 var foods2 = GetFoods(QueryData.GroupUrl, FoodGroups[item], nutrientsQuery2);

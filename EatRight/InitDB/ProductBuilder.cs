@@ -17,34 +17,75 @@ namespace InitDB
             string animal = string.Empty;
             string servingState = "Raw";
             var parts = name.Split(',');
-            string newName = name;
+            string majorName = string.Empty;
+            string minorName = string.Empty;
+            string meatCut = string.Empty;
             foreach (var item in parts) {
                 var newItem = item.Trim();
-                if (InitDB.FoodGroups.ContainsKey(newItem))
-                    animal = newItem;
+            
                 if (CommonValidator.CookingOptions.Contains(newItem))
                     servingState = item;
-                if (PorkValidator.PorkMainParts.Contains(newItem))
-                    newName = newItem;
-                if (BeefValidator.CheckWithoutCut(newItem, BeefValidator.BeefMainParts))
-                    newName = newItem;
-                if (BeefValidator.CheckWithoutCut(newItem, BeefValidator.BeefSecondParts) && newName == name)
-                    newName = newItem;
-                if (BeefValidator.CheckWithoutCut(newItem, BeefValidator.BeefCutDetails) && newName == name)
-                    newName = newItem;
-            }
+                if (InitDB.FoodGroups.ContainsKey(newItem)) {
+                    animal = newItem;
+                    if (animal == "Pork") {
+                        if (PorkValidator.PorkMainParts.Contains(newItem)) {
+                            majorName = newItem;
+                            if (majorName.Contains("ham"))
+                                majorName = "ham";
+                        }
+                        if (PorkValidator.PorkSecondParts.Contains(newItem)) {
+                            minorName = majorName;
+                            var split = newItem.Split('(', ')');
+                            majorName = split[0];
+                            if (split.Length > 1)
+                                meatCut = split[1];
+                        }
+                        if (PorkValidator.PorkCuts.Contains(newItem)) {
+                            meatCut = newItem;
+                        }
+                    }
 
-            var imgPath = InitDB.FolderPath + newName + ".png";
+                    if (animal == "Beef") {
+                        var hiddenCut = BeefValidator.BeefCuts.FirstOrDefault((cut) => newItem.Contains(cut));
+                        if (hiddenCut != null) {
+                            if (BeefValidator.CheckWithoutCut(newItem, BeefValidator.BeefCutDetails))
+                                meatCut = item;
+                            else
+                                meatCut = hiddenCut;
+                            if (BeefValidator.CheckWithoutCut(newItem, BeefValidator.BeefMainParts) || BeefValidator.CheckWithoutCut(newItem, BeefValidator.BeefSecondParts))
+                                majorName = item.Replace(hiddenCut, string.Empty);
+                        }
+                        else {
+                            if (BeefValidator.BeefMainParts.Contains(newItem))
+                                minorName = item;
+                            if (BeefValidator.BeefSecondParts.Contains(newItem))
+                                majorName = item;
+                            if (BeefValidator.BeefCuts.Contains(newItem))
+                                meatCut = item;
+                        }
+                    }
+                }
+                else
+                    majorName = name;
+                
+               
+            }
+            if (majorName == string.Empty && animal == string.Empty)
+                majorName = name;
+            Console.WriteLine("Name : " + majorName);
+            Console.WriteLine("Sec : " + minorName);
+
+            var imgPath = InitDB.FolderPath + majorName + ".png";
             byte[] imgBytes = null;
             if (File.Exists(imgPath))
                 imgBytes = File.ReadAllBytes(imgPath);
             else if (RestRepository<Product>.Animals.Contains(animal))
                 imgBytes = File.ReadAllBytes(InitDB.FolderPath + animal + ".png");
-            else if (newName.Length > 5)
+            else if (majorName.Length > 5)
                 imgBytes = File.ReadAllBytes(InitDB.FolderPath + "Morty.png");
             else
                 imgBytes = File.ReadAllBytes(InitDB.FolderPath + "Rick.png");
-            var p = new Product() { ID = id, Name = newName, /*Image = imgBytes,*/ Animal = animal, ServingState = servingState, HasSkin = hasSkin,Weight = weight };
+            var p = new Product() { ID = id, Name = majorName, MinorName = minorName,MeatCut = meatCut,/*Image = imgBytes,*/ Animal = animal, ServingState = servingState, HasSkin = hasSkin,Weight = weight };
             AddNutrients(nutrients, p, weight);
 
             return p;

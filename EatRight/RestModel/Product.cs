@@ -26,6 +26,10 @@ namespace RestModel {
         [BsonElement("Name")]
         public string Name { get; set; }
 
+        [BsonElement("MinorName")]
+        public string MinorName { get; set; }
+
+        public string MeatCut { get; set; }
         [BsonElement("HasSkin")]
         public bool HasSkin { get; set; }
 
