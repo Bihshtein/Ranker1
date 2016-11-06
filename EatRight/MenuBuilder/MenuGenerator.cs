@@ -8,15 +8,16 @@ namespace MenuBuilder
 {
     class MenuGenerator
     {
-        public static double EvaluateMenu(Menu menu, Dictionary<string, double> dailyValues, int dailyCaloriesNum)
+        private class MenuComparer : IComparer<KeyValuePair<Menu, double>>
         {
-            // Initialize graders map
-            var graderMap = new Dictionary<Grader,double> ()
+            public int Compare(KeyValuePair<Menu, double> x, KeyValuePair<Menu, double> y)
             {
-                {new NutValuesGrader(dailyValues), 0.5},
-                {new CaloriesCountGrader(dailyCaloriesNum), 0.5}
-            };
+                return (-1) * x.Value.CompareTo(y.Value); // Sort in descending order
+            }
+        }
 
+        public static double EvaluateMenu(Menu menu, Dictionary<Grader, double> graderMap)
+        {
             double graderWeightSum = 0;
             double grade = 0;
 
@@ -30,6 +31,40 @@ namespace MenuBuilder
 
             // Return the scaled grade
             return (grade / graderWeightSum) * 100;
+        }
+
+        public static List<KeyValuePair<Menu, double>> GenerateMenuList(GraderDB graderDB)
+        {
+            Grader.graderDB = graderDB; // For the initialization of graders map
+
+            // Initialize graders map
+            var graderMap = new Dictionary<Grader, double>()
+            {
+                {new NutValuesGrader(), 0.5},
+                {new CaloriesCountGrader(), 0.5}
+            };
+
+            Grader.graderDB = null;
+
+            var menuList = GetMenuList();
+            var menuGradeList = new List<KeyValuePair<Menu, double>>();
+
+            foreach (var menu in menuList)
+            {
+                menuGradeList.Add(new KeyValuePair<Menu, double>(menu, EvaluateMenu(menu, graderMap)));
+            }
+
+            var comparer = new MenuComparer();
+            menuGradeList.Sort(comparer);
+            return menuGradeList;
+        }
+
+        private static List<Menu> GetMenuList()
+        {
+            return new List<Menu>()
+            {
+                Program.GenerateTestMenu1()
+            };
         }
     }
 }

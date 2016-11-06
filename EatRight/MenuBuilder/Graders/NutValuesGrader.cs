@@ -11,9 +11,9 @@ namespace MenuBuilder
     {
         private Dictionary<string, double> dailyValues;
 
-        public NutValuesGrader(Dictionary<string, double> dailyValues)
+        public NutValuesGrader()
         {
-            this.dailyValues = dailyValues;
+            this.dailyValues = Grader.graderDB.dailyValues;
         }
 
         protected override double GradeDay(DailyMenu day)

@@ -11,9 +11,9 @@ namespace MenuBuilder
     {
         private int dailyCaloriesNum;
 
-        public CaloriesCountGrader(int dailyCaloriesNum)
+        public CaloriesCountGrader()
         {
-            this.dailyCaloriesNum = dailyCaloriesNum;
+            this.dailyCaloriesNum = Grader.graderDB.dailyCaloriesNum;
         }
 
         protected override double GradeDay(DailyMenu day)

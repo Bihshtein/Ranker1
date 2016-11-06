@@ -13,5 +13,13 @@ namespace MenuBuilder
          * Returns a double between 0 and 1.
          */
         public abstract double Grade(Menu menu);
+
+        public static GraderDB graderDB = null;
+    }
+
+    public class GraderDB
+    {
+        public Dictionary<string, double> dailyValues;
+        public int dailyCaloriesNum;
     }
 }

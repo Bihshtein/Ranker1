@@ -16,12 +16,18 @@ namespace MenuBuilder
         {
             unit = new RestDBInterface();
 
-            var testMenu1 = GenerateTestMenu1();
-            var eval = MenuGenerator.EvaluateMenu(testMenu1, RestRepository<Product>.DailyValues, 3000);
+            //var testMenu1 = GenerateTestMenu1();
+            //var eval = MenuGenerator.EvaluateMenu(testMenu1, RestRepository<Product>.DailyValues, 3000);
+            var graderDB = new GraderDB();
+            graderDB.dailyValues = RestRepository<Product>.DailyValues;
+            graderDB.dailyCaloriesNum = 3000;
+
+            var menuList = MenuGenerator.GenerateMenuList(graderDB);
+            var eval = menuList[0].Value;
             System.Console.WriteLine("Menu eavluated to " + eval);
         }
 
-        private static Menu GenerateTestMenu1()
+        public static Menu GenerateTestMenu1()
         {
             var list = unit.Products.GetTopFoods(150,1);
             //list.RemoveAll((p) => p.Animal != string.Empty);
