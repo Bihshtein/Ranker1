@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MenuBuilder
 {
-    class DailyMenu
+    class DailyMenu : MenuBuilderObject
     {
         public DailyMenu(Meal b, Meal l, Meal d)
         {

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MenuBuilder
 {
-    class Menu
+    class Menu : MenuBuilderObject
     {
         public Menu(List<DailyMenu> days)
         {

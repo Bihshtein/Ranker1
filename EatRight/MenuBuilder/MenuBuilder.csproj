@@ -48,14 +48,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Graders\CaloriesCountGrader.cs" />
+    <Compile Include="Graders\DailyMenuGraders\CaloriesCountDailyGrader.cs" />
     <Compile Include="DailyMenu.cs" />
     <Compile Include="Globals.cs" />
+    <Compile Include="Graders\DailyMenuGraders\DailyMenuGrader.cs" />
+    <Compile Include="Graders\DailyMenuGraders\VarietyDailyGrader.cs" />
     <Compile Include="Graders\Grader.cs" />
+    <Compile Include="Graders\MenuGraders\NutValuesGrader.cs" />
+    <Compile Include="Graders\MenuGraders\CaloriesCountGrader.cs" />
+    <Compile Include="Graders\MenuGraders\MenuGrader.cs" />
+    <Compile Include="Graders\MenuGraders\VarietyGrader.cs" />
     <Compile Include="Menu.cs" />
+    <Compile Include="MenuBuilderObject.cs" />
     <Compile Include="MenuGenerator.cs" />
-    <Compile Include="Graders\NutValuesGrader.cs" />
-    <Compile Include="Graders\PerDayGrader.cs" />
+    <Compile Include="Graders\DailyMenuGraders\NutValuesDailyGrader.cs" />
+    <Compile Include="Graders\MenuGraders\PerDayGrader.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">

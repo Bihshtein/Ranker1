@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using RestModel;
-
+using MenuBuilder.Graders;
 
 namespace MenuBuilder
 {
@@ -21,8 +21,9 @@ namespace MenuBuilder
             var graderDB = new GraderDB();
             graderDB.dailyValues = RestRepository<Product>.DailyValues;
             graderDB.dailyCaloriesNum = 3000;
+            graderDB.menuDaysNum = 1;
 
-            var menuList = MenuGenerator.GenerateMenuList(graderDB);
+            var menuList = MenuGenerator.GenerateMenuList(unit, graderDB);
             var eval = menuList[0].Value;
             System.Console.WriteLine("Menu eavluated to " + eval);
         }
