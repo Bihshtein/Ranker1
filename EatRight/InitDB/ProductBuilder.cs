@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json.Linq;
+﻿using InitDB.Validators;
+using Newtonsoft.Json.Linq;
 using RestModel;
 using System;
 using System.Collections.Generic;
@@ -7,12 +8,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace InitDB
-{
-    class ProductBuilder
-    {
-        public static Product GetProduct(int id, string name, JArray nutrients, double weight)
-        {
+namespace InitDB {
+    class ProductBuilder {
+        public static Product GetProduct(int id, string name, JArray nutrients, double weight) {
             bool hasSkin = true;
             string animal = string.Empty;
             string servingState = "Raw";
@@ -20,68 +18,52 @@ namespace InitDB
             string majorName = string.Empty;
             string minorName = string.Empty;
             string meatCut = string.Empty;
+           
+            BasicValidator validator;
             foreach (var item in parts) {
                 var newItem = item.Trim();
-            
-                if (CommonValidator.CookingOptions.Contains(newItem))
-                    servingState = item;
-                if (InitDB.FoodGroups.ContainsKey(newItem)) 
+                if (InitDB.FoodGroups.ContainsKey(newItem))
                     animal = newItem;
-             
-                if (animal == "Pork") {
-                    if (PorkValidator.PorkMainParts.Contains(newItem)) {
-                        majorName = newItem;
-                        majorName = PorkValidator.GetPrettyName(majorName);
-                    }
-                    if (PorkValidator.IsSecondPart(newItem)) {
-                        minorName = majorName;
-                        var nameAndCut = PorkValidator.GetNameAndCut(newItem);
-                        majorName = nameAndCut.Item1;
-                            if (nameAndCut.Item2 != string.Empty)
-                            meatCut = nameAndCut.Item2;
-                    }
-                    if (PorkValidator.PorkCuts.Contains(newItem)) {
-                        meatCut = newItem;
-                    }
-                }
-
-                if (animal == "Beef") {
-                    
-                    if (BeefValidator.BeefMainParts.Contains(newItem)) {
+                if (animal != string.Empty) {
+                    validator = InitDB.Validators[animal];
+                    if (CommonValidator.CookingOptions.Contains(newItem))
+                        servingState = item;
+                 
+                    if (validator.MainParts.Contains(newItem)) {
                         majorName = item;
-                    majorName = BeefValidator.GetPrettyName(majorName);
-                }
-                    if (BeefValidator.IsSecondPart(newItem)) {
+                        majorName = validator.GetPrettyName(majorName);
+                    }
+                    if (validator.IsSecondPart(newItem)) {
                         minorName = majorName;
-                        var nameAndCut = BeefValidator.GetNameAndCut(newItem);
+                        var nameAndCut = validator.GetNameAndCut(newItem);
                         majorName = nameAndCut.Item1;
                         if (nameAndCut.Item2 != string.Empty)
                             meatCut = nameAndCut.Item2;
                     }
-                    if (BeefValidator.BeefCuts.Contains(newItem))
+                    if (validator.Cuts.Contains(newItem))
                         meatCut = item;
-                    }
                 }
-                if (majorName == string.Empty && animal == string.Empty)
-                    majorName = name;
+            }
+            if (majorName == string.Empty && animal == string.Empty)
+                majorName = name;
 
-                var imgPath = InitDB.FolderPath + majorName + ".png";
-                byte[] imgBytes = null;
-                if (File.Exists(imgPath))
-                    imgBytes = File.ReadAllBytes(imgPath);
-                else if (RestRepository<Product>.Animals.Contains(animal))
-                    imgBytes = File.ReadAllBytes(InitDB.FolderPath + animal + ".png");
-                else if (majorName.Length > 5)
-                    imgBytes = File.ReadAllBytes(InitDB.FolderPath + "Morty.png");
-                else
-                    imgBytes = File.ReadAllBytes(InitDB.FolderPath + "Rick.png");
-                var p = new Product() { ID = id, Name = majorName, MinorName = minorName,MeatCut = meatCut,/*Image = imgBytes,*/ Animal = animal, ServingState = servingState, HasSkin = hasSkin,Weight = weight };
-                AddNutrients(nutrients, p, weight);
+            var imgPath = InitDB.FolderPath + majorName + ".png";
+            byte[] imgBytes = null;
+            if (File.Exists(imgPath))
+                imgBytes = File.ReadAllBytes(imgPath);
+            else if (RestRepository<Product>.Animals.Contains(animal))
+                imgBytes = File.ReadAllBytes(InitDB.FolderPath + animal + ".png");
+            else if (majorName.Length > 5)
+                imgBytes = File.ReadAllBytes(InitDB.FolderPath + "Morty.png");
+            else
+                imgBytes = File.ReadAllBytes(InitDB.FolderPath + "Rick.png");
+            var p = new Product() { ID = id, Name = majorName, MinorName = minorName, MeatCut = meatCut,/*Image = imgBytes,*/ Animal = animal, ServingState = servingState, HasSkin = hasSkin, Weight = weight };
+            AddNutrients(nutrients, p, weight);
 
-                return p;
+            return p;
         }
 
-        private static void AddNutrients(JArray nutrients, Product p, double weight ) {
+        private static void AddNutrients(JArray nutrients, Product p, double weight) {
             p.Protein = GetNutrient(nutrients, "Protein", weight);   //203
             p.Fat = GetNutrient(nutrients, "Total lipid (fat)", weight);//204
             p.Fiber = GetNutrient(nutrients, "Fiber, total dietary", weight);//291
@@ -107,15 +89,14 @@ namespace InitDB
             p.Zinc = GetNutrient(nutrients, "Zinc, Zn", weight);//309
         }
 
-        private static double GetNutrient(JArray array, string item, double weight)
-        {
+        private static double GetNutrient(JArray array, string item, double weight) {
             var obj = ((dynamic)array.FirstOrDefault((i) => ((dynamic)i).nutrient == item));
             if (obj == null)
                 return 0;
             double result = 0;
-          
+
             double.TryParse(obj.value.ToString(), out result);
-            return result * (100.0/weight);
+            return result * (100.0 / weight);
         }
     }
 }

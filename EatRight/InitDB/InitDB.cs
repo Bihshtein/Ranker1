@@ -1,4 +1,5 @@
-﻿using MongoDB.Bson;
+﻿using InitDB.Validators;
+using MongoDB.Bson;
 using MongoDB.Driver;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
@@ -21,7 +22,10 @@ namespace InitDB {
         private static int totalAdded = 0;
         private static int totalSkipped = 0;
         public static Dictionary<string, string> FoodGroups = new Dictionary<string, string>() {{ "Pork","1000"},{ "Beef","1300"}};   
-        public static Dictionary<string, Func<string, bool>> ProductGropusValidation = new Dictionary<string, Func<string, bool>>() {{ "Beef", BeefValidator.IsBeefParameter},{ "Pork", PorkValidator.IsPorkParameter}};
+        public static Dictionary<string, BasicValidator> Validators = new Dictionary<string, BasicValidator>() {
+                { "Pork", new PorkValidator()},
+                { "Beef", new BeefValidator()}
+            };
 
         public static void InitProductsCollection() {
             var customCulture = (CultureInfo)Thread.CurrentThread.CurrentCulture.Clone(); customCulture.NumberFormat.NumberDecimalSeparator = ".";
@@ -66,7 +70,7 @@ namespace InitDB {
                     var name2 = ((object)food1.name).ToString();
                     if (id1 == id2 && name1 == name2) {
                         var _params = name1.Split(',').ToList();
-                        var allParamsAreKnown = _params.All(ProductGropusValidation[item]);
+                        var allParamsAreKnown = _params.All(Validators[item].IsValidPart);
                         if (allParamsAreKnown) {
                             var idAlreadyInDB = unit.Products.Get(int.Parse(id1)) != null;
                             if (idAlreadyInDB)
