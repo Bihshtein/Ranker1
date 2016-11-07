@@ -17,37 +17,68 @@ namespace InitDB
             string animal = string.Empty;
             string servingState = "Raw";
             var parts = name.Split(',');
-            string newName = name;
+            string majorName = string.Empty;
+            string minorName = string.Empty;
+            string meatCut = string.Empty;
             foreach (var item in parts) {
                 var newItem = item.Trim();
-                if (InitDB.FoodGroups.ContainsKey(newItem))
-                    animal = newItem;
+            
                 if (CommonValidator.CookingOptions.Contains(newItem))
                     servingState = item;
-                if (PorkValidator.PorkMainParts.Contains(newItem))
-                    newName = newItem;
-                if (BeefValidator.CheckWithoutCut(newItem, BeefValidator.BeefMainParts))
-                    newName = newItem;
-                if (BeefValidator.CheckWithoutCut(newItem, BeefValidator.BeefSecondParts) && newName == name)
-                    newName = newItem;
-                if (BeefValidator.CheckWithoutCut(newItem, BeefValidator.BeefCutDetails) && newName == name)
-                    newName = newItem;
-            }
+                if (InitDB.FoodGroups.ContainsKey(newItem)) 
+                    animal = newItem;
+             
+                if (animal == "Pork") {
+                    if (PorkValidator.PorkMainParts.Contains(newItem)) {
+                        majorName = newItem;
+                        majorName = PorkValidator.GetPrettyName(majorName);
+                    }
+                    if (PorkValidator.IsSecondPart(newItem)) {
+                        minorName = majorName;
+                        var nameAndCut = PorkValidator.GetNameAndCut(newItem);
+                        majorName = nameAndCut.Item1;
+                            if (nameAndCut.Item2 != string.Empty)
+                            meatCut = nameAndCut.Item2;
+                    }
+                    if (PorkValidator.PorkCuts.Contains(newItem)) {
+                        meatCut = newItem;
+                    }
+                }
 
-            var imgPath = InitDB.FolderPath + newName + ".png";
-            byte[] imgBytes = null;
-            if (File.Exists(imgPath))
-                imgBytes = File.ReadAllBytes(imgPath);
-            else if (RestRepository<Product>.Animals.Contains(animal))
-                imgBytes = File.ReadAllBytes(InitDB.FolderPath + animal + ".png");
-            else if (newName.Length > 5)
-                imgBytes = File.ReadAllBytes(InitDB.FolderPath + "Morty.png");
-            else
-                imgBytes = File.ReadAllBytes(InitDB.FolderPath + "Rick.png");
-            var p = new Product() { ID = id, Name = newName, /*Image = imgBytes,*/ Animal = animal, ServingState = servingState, HasSkin = hasSkin,Weight = weight };
-            AddNutrients(nutrients, p, weight);
+                if (animal == "Beef") {
+                    
+                    if (BeefValidator.BeefMainParts.Contains(newItem)) {
+                        majorName = item;
+                    majorName = BeefValidator.GetPrettyName(majorName);
+                }
+                    if (BeefValidator.IsSecondPart(newItem)) {
+                        minorName = majorName;
+                        var nameAndCut = BeefValidator.GetNameAndCut(newItem);
+                        majorName = nameAndCut.Item1;
+                        if (nameAndCut.Item2 != string.Empty)
+                            meatCut = nameAndCut.Item2;
+                    }
+                    if (BeefValidator.BeefCuts.Contains(newItem))
+                        meatCut = item;
+                    }
+                }
+                if (majorName == string.Empty && animal == string.Empty)
+                    majorName = name;
 
-            return p;
+                var imgPath = InitDB.FolderPath + majorName + ".png";
+                byte[] imgBytes = null;
+                if (File.Exists(imgPath))
+                    imgBytes = File.ReadAllBytes(imgPath);
+                else if (RestRepository<Product>.Animals.Contains(animal))
+                    imgBytes = File.ReadAllBytes(InitDB.FolderPath + animal + ".png");
+                else if (majorName.Length > 5)
+                    imgBytes = File.ReadAllBytes(InitDB.FolderPath + "Morty.png");
+                else
+                    imgBytes = File.ReadAllBytes(InitDB.FolderPath + "Rick.png");
+                var p = new Product() { ID = id, Name = majorName, MinorName = minorName,MeatCut = meatCut,/*Image = imgBytes,*/ Animal = animal, ServingState = servingState, HasSkin = hasSkin,Weight = weight };
+                AddNutrients(nutrients, p, weight);
+
+                return p;
         }
 
         private static void AddNutrients(JArray nutrients, Product p, double weight ) {

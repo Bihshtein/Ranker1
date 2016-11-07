@@ -16,14 +16,6 @@ namespace InitDB {
         public static List<int> Nutrients2 = new List<int> { 305, 306, 307};
     }
 
-    public class GroupData {
-        public string Name { get; set; }
-        public Func<string, bool> ValidationFunction { get; set; }
-        public string IDNum { get; set; }
-        public List<string> MainTypeOptions { get; set; }
-        public List<string> SecondTypeOptions { get; set; }
-        public List<string> CutTypeOptions { get; set; }
-    }
 
     public class MongoData {
         public static string CollectionName = "products";
