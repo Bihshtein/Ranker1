@@ -119,9 +119,8 @@ namespace MenuBuilder
                 foreach (Meal lunch in mealsList)
                 {
                     // Iterate over dinner meals
-                    foreach (Meal dinner in mealsList)
-                    {
-                        daysList.Add(new DailyMenu(breakfast, lunch, dinner));
+                    foreach (Meal dinner in mealsList) {
+                        daysList.Add(new DailyMenu() { Breakfast = breakfast, Lunch = lunch, Dinner = dinner });
                     }
                 }
             }

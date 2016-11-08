@@ -9,20 +9,8 @@ namespace MenuBuilder
 {
     class DailyMenu : MenuBuilderObject
     {
-        public DailyMenu(Meal b, Meal l, Meal d)
-        {
-            breakfast = b;
-            lunch = l;
-            dinner = d;
-        }
-
-        private Meal breakfast;
-        public Meal Breakfast { get { return breakfast; } }
-
-        private Meal lunch;
-        public Meal Lunch { get { return lunch; } }
-
-        private Meal dinner;
-        public Meal Dinner { get { return dinner; } }
+        public Meal Breakfast { get; set; }
+        public Meal Lunch { get; set; }
+        public Meal Dinner { get; set; }
     }
 }
