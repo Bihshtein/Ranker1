@@ -28,49 +28,15 @@ namespace InitDB.Validators {
         public static List<string> BeefGrades = new List<string>() { "Aust. marble score 4/5", "Aust. marble score 9", "prime", "all grades", "choice", "select", };
         public static List<string> BeefTrimmedDetails = new List<string>() { "trimmed to 1/4\" fat", "trimmed to 1 / 4\" fat", "trimmed to 1/8\" fat", "trimmed to 1 / 8\" fat", "trimmed to 0\" fat", "trimmed to 1/8\"fat", };
 
-        public static List<string> GroundBeefTypes = new List<string>() { "loaf", "patty cooked", "patty", "crumbles" };
+        public static List<string> GroundBeefTypes = new List<string>() { "loaf", "patty cooked", "patty", "crumbles" };        
+      
 
-        public List<string> MainParts { get; }
-
-        public List<string> SecondParts { get; }
-
-        public List<string> Cuts { get; }
-
-        public bool CheckAllWithoutCut(string _param) {
-            return
-            CheckWithoutCut(_param, MainParts) ||
-            CheckWithoutCut(_param, SecondParts);
-        }
-        public string GetPrettyName(string name) {
-
-            return name;
-        }
-        public Tuple<string, string> GetNameAndCut(string item) {
-            var hiddenCut = Cuts.FirstOrDefault((cut) => item.Contains(cut));
-            if (hiddenCut == null)
-                hiddenCut = string.Empty;
-            else
-                item = item.Replace(hiddenCut, string.Empty);
-            return new Tuple<string, string>(item, hiddenCut);
-        }
-
-        public bool CheckWithoutCut(string _param, List<string> list) {
-            return Cuts.Any((cut) => list.Contains(_param.Replace(cut, string.Empty).Trim()));
-        }
-
-        public bool IsSecondPart(string item) {
-            return CheckWithoutCut(item, SecondParts);
-        }
-        public bool IsValidPart(string part) {
+        public override bool IsValidPart(string part) {
             part = part.Trim();
             return (
-                    CommonValidator.IsCommonParameter(part) ||
-                    SecondParts.Contains(part) ||
-                    MainParts.Contains(part) ||
+                    base.IsValidPart(part) || 
                     BeefImportDescription.Contains(part) ||
-                    CheckAllWithoutCut(part) ||
                     BeefDescription.Contains(part) ||
-                    Cuts.Contains(part) ||
                     BeefGrades.Contains(part) ||
                     BeefTrimmedDetails.Contains(part) ||
                     GroundBeefTypes.Contains(part)

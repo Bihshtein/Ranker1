@@ -7,11 +7,6 @@ using System.Threading.Tasks;
 namespace InitDB.Validators {
     class PorkValidator : BasicValidator {
 
-        public List<string> Cuts { get; }
-        public List<string> SecondParts { get; }
-        public List<string> MainParts { get; }
-
-
         public PorkValidator() {
             MainParts = new List<string>() { "carcass", "belly", "salt pork", "backfat", "backribs", "leg (ham)", "ham", "feet", "bacon", "loin", "shoulder", "spareribs", "ham -- water added", "ham and water product", "ham with natural juices" };
 
@@ -23,17 +18,7 @@ namespace InitDB.Validators {
             "blade (roasts)","top loin (roasts)", "sirloin (roasts)", "center rib (roasts)", "center loin (roasts)"};
         }
 
-        public bool IsValidPart(string part) {
-            part = part.Trim();
-            return (CommonValidator.IsCommonParameter(part) ||
-                    SecondParts.Contains(part) ||
-                    MainParts.Contains(part) ||
-                    Cuts.Contains(part)
-                    );
-        }
-     
-
-        public  Tuple<string, string> GetNameAndCut(string item) {
+        public override Tuple<string, string> GetNameAndCut(string item) {
             var split = item.Split('(', ')');
             var name = split[0];
             var cut = string.Empty;
@@ -42,10 +27,7 @@ namespace InitDB.Validators {
             return new Tuple<string, string>(name, cut);
         }
 
-        public bool IsSecondPart(string item) {
-            return SecondParts.Contains(item);
-        } 
-        public string GetPrettyName(string name) {
+        public override string GetPrettyName(string name) {
             if (name.Contains("ham"))
                 name = "ham";
             return name;

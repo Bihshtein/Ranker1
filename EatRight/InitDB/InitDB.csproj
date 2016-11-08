@@ -59,6 +59,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Validators\ChickenValidator.cs" />
     <Compile Include="Validators\BasicValidator.cs" />
     <Compile Include="Validators\BeefValidator.cs" />
     <Compile Include="Validators\CommonValidator.cs" />

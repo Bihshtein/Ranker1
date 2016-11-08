@@ -21,10 +21,11 @@ namespace InitDB {
         public static string FolderPath = Assembly.GetExecutingAssembly().Location + @"\..\..\..\..\FruitsDB\";
         private static int totalAdded = 0;
         private static int totalSkipped = 0;
-        public static Dictionary<string, string> FoodGroups = new Dictionary<string, string>() {{ "Pork","1000"},{ "Beef","1300"}};   
+        public static Dictionary<string, string> FoodGroups = new Dictionary<string, string>() {{ "Chicken", "0500"  }, { "Pork", "1000" }, { "Beef", "1300" } };   
         public static Dictionary<string, BasicValidator> Validators = new Dictionary<string, BasicValidator>() {
                 { "Pork", new PorkValidator()},
-                { "Beef", new BeefValidator()}
+                { "Beef", new BeefValidator()},
+                { "Chicken", new ChickenValidator()}
             };
 
         public static void InitProductsCollection(bool loadGroups, bool loadManual, bool overrideDB) {
@@ -64,6 +65,7 @@ namespace InitDB {
                     var name2 = ((object)food1.name).ToString();
                     if (id1 == id2 && name1 == name2) {
                         var _params = name1.Split(',').ToList();
+
                         var allParamsAreKnown = _params.All(Validators[item].IsValidPart);
                         if (allParamsAreKnown) {
                             var idAlreadyInDB = unit.Products.Get(int.Parse(id1)) != null;

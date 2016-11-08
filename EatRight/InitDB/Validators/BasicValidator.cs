@@ -5,13 +5,35 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace InitDB.Validators {
-    public interface BasicValidator {
-        List<string> MainParts { get; }
-        List<string> SecondParts { get; }
-        List<string> Cuts { get; }
-        bool IsSecondPart(string part);
-        string GetPrettyName(string part);
-        Tuple<string, string> GetNameAndCut(string part);
-        bool IsValidPart(string part);
+    public abstract class BasicValidator {
+        public List<string> MainParts { get; protected set; }
+        public List<string> SecondParts { get; protected set; }
+        public List<string> Cuts { get; protected set; }
+
+        public bool IsSecondPart(string part) {
+            return Cuts.Any((cut) => SecondParts.Contains(part.Replace(cut, string.Empty).Trim()));
+        }
+
+        public virtual string GetPrettyName(string part){ return part; } 
+        public virtual bool IsValidPart(string part) {
+            part = part.Trim();
+            var aleg = (CommonValidator.IsCommonParameter(part) ||
+                    SecondParts.Contains(part) ||
+                    MainParts.Contains(part) ||
+                    IsSecondPart(part)||
+                    Cuts.Contains(part)
+                    );
+            return aleg;
+        }
+
+        public virtual Tuple<string, string> GetNameAndCut(string item) {
+            var hiddenCut = Cuts.FirstOrDefault((cut) => item.Contains(cut));
+            if (hiddenCut == null)
+                hiddenCut = string.Empty;
+            else
+                item = item.Replace(hiddenCut, string.Empty);
+            return new Tuple<string, string>(item, hiddenCut);
+        }
     }
+
 }
