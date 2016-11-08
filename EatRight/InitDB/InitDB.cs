@@ -27,11 +27,12 @@ namespace InitDB {
                 { "Beef", new BeefValidator()}
             };
 
-        public static void InitProductsCollection() {
+        public static void InitProductsCollection(bool loadGroups, bool loadManual, bool overrideDB) {
             var customCulture = (CultureInfo)Thread.CurrentThread.CurrentCulture.Clone(); customCulture.NumberFormat.NumberDecimalSeparator = ".";
-            System.Threading.Thread.CurrentThread.CurrentCulture = customCulture;
+            Thread.CurrentThread.CurrentCulture = customCulture;
             var unit = new RestDBInterface();
-            MongoData._database.DropCollection("products");// Remove in case you want to override the existing products 
+            if (overrideDB)
+                MongoData._database.DropCollection("products");
             var nutrientsQuery1 = string.Empty;
             var nutrientsQuery2 = string.Empty;
             foreach (var item in QueryData.Nutrients1) {
@@ -40,22 +41,15 @@ namespace InitDB {
             foreach (var item in QueryData.Nutrients2) {
                 nutrientsQuery2 += "nutrients=" + item + "&";
             }
-            AddFoodGroups(unit, nutrientsQuery1, nutrientsQuery2);
-            AddManual(unit, nutrientsQuery1, nutrientsQuery2);
+            if (loadGroups)
+                AddFoodGroups(unit, nutrientsQuery1, nutrientsQuery2);
+            if (loadManual)
+                AddManual(unit, nutrientsQuery1, nutrientsQuery2);
 
             Console.WriteLine("Total Added : " + totalAdded);
             Console.WriteLine("Total Skipped : " + totalSkipped);
         }
-        private static JArray GetFoods(string url,string foodGroup, string nutrientQuery) {
-            var fullUrl = string.Format(QueryData.GroupUrl, foodGroup, QueryData.Format, QueryData.ApiKey, nutrientQuery);
-            return GetFoods(fullUrl);
-        }
-
-        private static JArray GetFoods(string fullUrl) {
-            var data = new WebClient().DownloadString(fullUrl);
-            var res = JsonConvert.DeserializeObject<dynamic>(data);
-            return res.report.foods;
-        }
+      
         private static void AddFoodGroups(RestDBInterface unit, string nutrientsQuery1, string nutrientsQuery2) {
             foreach (var item in FoodGroups.Keys) {
                 var foods1 = GetFoods(QueryData.GroupUrl, FoodGroups[item], nutrientsQuery1);
@@ -85,8 +79,6 @@ namespace InitDB {
                             SkipDebug(name1, "unknow parameters");
                     }
                 }
-
-
             }
         }
         private static void AddManual(RestDBInterface unit, string nutrientsQuery1, string nutrientsQuery2) {
@@ -111,6 +103,17 @@ namespace InitDB {
                     AddProduct(unit, id, name, new JArray(nutrients1.Concat(nutrients2)), double.Parse(((object)food1.weight).ToString()));
                 }
             }
+        }
+
+        private static JArray GetFoods(string url, string foodGroup, string nutrientQuery) {
+            var fullUrl = string.Format(QueryData.GroupUrl, foodGroup, QueryData.Format, QueryData.ApiKey, nutrientQuery);
+            return GetFoods(fullUrl);
+        }
+
+        private static JArray GetFoods(string fullUrl) {
+            var data = new WebClient().DownloadString(fullUrl);
+            var res = JsonConvert.DeserializeObject<dynamic>(data);
+            return res.report.foods;
         }
 
         public static void AddProduct(RestDBInterface unit, string id, string name, JArray nutrients, double weight) {

@@ -26,6 +26,21 @@ namespace RestModel {
         [BsonElement("Name")]
         public string Name { get; set; }
 
+        [BsonElement("CookMethod")]
+        public string CookingMethod { get; set; }
+
+        [BsonElement("StorageMethod")]
+        public string StorageMethod { get; set; }
+
+        [BsonElement("PreservationMethod")]
+        public string PreservationMethod { get; set; }
+
+        [BsonElement("FatDetails")]
+        public string FatDetails { get; set; }
+
+        [BsonElement("BoneDetails")]
+        public string BoneDetails { get; set; }
+
         [BsonElement("MinorName")]
         public string MinorName { get; set; }
 
@@ -107,9 +122,6 @@ namespace RestModel {
 
         [BsonElement("Animal")]
         public string Animal { get; set; }
-
-        [BsonElement("ServingState")]
-        public string ServingState{ get; set; }
 
         public byte[] Image { get; set; }
 

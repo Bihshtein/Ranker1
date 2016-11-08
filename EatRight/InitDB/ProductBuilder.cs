@@ -11,59 +11,62 @@ using System.Threading.Tasks;
 namespace InitDB {
     class ProductBuilder {
         public static Product GetProduct(int id, string name, JArray nutrients, double weight) {
-            bool hasSkin = true;
-            string animal = string.Empty;
-            string servingState = "Raw";
-            var parts = name.Split(',');
-            string majorName = string.Empty;
-            string minorName = string.Empty;
-            string meatCut = string.Empty;
-           
-            BasicValidator validator;
-            foreach (var item in parts) {
-                var newItem = item.Trim();
-                if (InitDB.FoodGroups.ContainsKey(newItem))
-                    animal = newItem;
-                if (animal != string.Empty) {
-                    validator = InitDB.Validators[animal];
-                    if (CommonValidator.CookingOptions.Contains(newItem))
-                        servingState = item;
-                 
-                    if (validator.MainParts.Contains(newItem)) {
-                        majorName = item;
-                        majorName = validator.GetPrettyName(majorName);
-                    }
-                    if (validator.IsSecondPart(newItem)) {
-                        minorName = majorName;
-                        var nameAndCut = validator.GetNameAndCut(newItem);
-                        majorName = nameAndCut.Item1;
-                        if (nameAndCut.Item2 != string.Empty)
-                            meatCut = nameAndCut.Item2;
-                    }
-                    if (validator.Cuts.Contains(newItem))
-                        meatCut = item;
-                }
-            }
-            if (majorName == string.Empty && animal == string.Empty)
-                majorName = name;
-
-            var imgPath = InitDB.FolderPath + majorName + ".png";
-            byte[] imgBytes = null;
-            if (File.Exists(imgPath))
-                imgBytes = File.ReadAllBytes(imgPath);
-            else if (RestRepository<Product>.Animals.Contains(animal))
-                imgBytes = File.ReadAllBytes(InitDB.FolderPath + animal + ".png");
-            else if (majorName.Length > 5)
-                imgBytes = File.ReadAllBytes(InitDB.FolderPath + "Morty.png");
-            else
-                imgBytes = File.ReadAllBytes(InitDB.FolderPath + "Rick.png");
-            var p = new Product() { ID = id, Name = majorName, MinorName = minorName, MeatCut = meatCut,/*Image = imgBytes,*/ Animal = animal, ServingState = servingState, HasSkin = hasSkin, Weight = weight };
-            AddNutrients(nutrients, p, weight);
-
+            var p = new Product() { ID = id};
+            var parts = name.Split(',').ToList();
+            parts.ForEach((item) => TryMatchPartToProperty(p, item));
+            SetNameForManuallyAddedProduct(p, name);
+            SetNutrientProperties(nutrients, p, weight);
             return p;
         }
 
-        private static void AddNutrients(JArray nutrients, Product p, double weight) {
+        public static void SetNameForManuallyAddedProduct(Product p, string name) {
+            if(p.Name == null && p.Animal == null)
+                p.Name = name;
+        }
+
+        public static void TryMatchPartToProperty(Product p, string item) {
+            var part = item.Trim();
+            TrySetCommonProperty(p, part);
+            TryAnimalCommonProperty(p, part);
+        }
+
+        public static void TrySetCommonProperty(Product p, string item) {
+            if (CommonValidator.CookingOptions.Contains(item))
+                p.CookingMethod = item;
+            if (CommonValidator.PreservationOptions.Contains(item))
+                p.PreservationMethod = item;
+            if (CommonValidator.StorageOptions.Contains(item))
+                p.StorageMethod = item;
+            if (CommonValidator.FatOptions.Contains(item))
+                p.FatDetails = item;
+            if (CommonValidator.BoneOptions.Contains(item))
+                p.BoneDetails = item;
+        }
+
+        public static void TryAnimalCommonProperty(Product p, string item) {
+            BasicValidator validator;
+            if (InitDB.FoodGroups.ContainsKey(item))
+                p.Animal = item;
+            if (p.Animal != null) {
+                validator = InitDB.Validators[p.Animal];
+
+                if (validator.MainParts.Contains(item)) {
+                    p.Name = item;
+                    p.Name = validator.GetPrettyName(p.Name);
+                }
+                if (validator.IsSecondPart(item)) {
+                    p.MinorName = p.Name;
+                    var nameAndCut = validator.GetNameAndCut(item);
+                    p.Name = nameAndCut.Item1;
+                    if (nameAndCut.Item2 != string.Empty)
+                        p.MeatCut = nameAndCut.Item2;
+                }
+                if (validator.Cuts.Contains(item))
+                    p.MeatCut = item;
+            }
+        }
+
+        private static void SetNutrientProperties(JArray nutrients, Product p, double weight) {
             p.Protein = GetNutrient(nutrients, "Protein", weight);   //203
             p.Fat = GetNutrient(nutrients, "Total lipid (fat)", weight);//204
             p.Fiber = GetNutrient(nutrients, "Fiber, total dietary", weight);//291
@@ -94,9 +97,24 @@ namespace InitDB {
             if (obj == null)
                 return 0;
             double result = 0;
-
             double.TryParse(obj.value.ToString(), out result);
             return result * (100.0 / weight);
+        }
+
+
+        // Curently out of use for eficiency issues
+        public static byte[] GetPNG(string majorName, string animal) {
+            var imgPath = InitDB.FolderPath + majorName + ".png";
+            byte[] imgBytes = null;
+            if (File.Exists(imgPath))
+                imgBytes = File.ReadAllBytes(imgPath);
+            else if (RestRepository<Product>.Animals.Contains(animal))
+                imgBytes = File.ReadAllBytes(InitDB.FolderPath + animal + ".png");
+            else if (majorName.Length > 5)
+                imgBytes = File.ReadAllBytes(InitDB.FolderPath + "Morty.png");
+            else
+                imgBytes = File.ReadAllBytes(InitDB.FolderPath + "Rick.png");
+            return imgBytes;
         }
     }
 }
