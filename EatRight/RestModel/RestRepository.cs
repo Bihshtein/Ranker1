@@ -53,11 +53,12 @@ namespace RestModel {
             return _collection.Find(Query<Product>.Where(x => x.Name.Equals(name))).ToList();
         }
 
-        public List<T> GetByAnimal(string name)
-        {
-            return _collection.Find(Query<Product>.Where(x => x.Animal == name)).ToList();
+
+        public List<T> GetByGroupName(string name) {
+            return _collection.Find(Query<Product>.Where(x => x.FoodGroup == name)).ToList();
         }
         public static List<string> Animals = new List<string>() { "Chicken", "Beef", "Pork" };
+        public static List<string> FoodGroups = new List<string>() { "Chicken", "Beef", "Pork" ,"Vegs","Fruits","Dairy"};
         public static Dictionary<string, double> DailyValues = new Dictionary<string, double>() {
             {"Protein",56},
             {"Fiber",25},

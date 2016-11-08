@@ -18,10 +18,10 @@ namespace InitDB.Validators {
         public virtual bool IsValidPart(string part) {
             part = part.Trim();
             var aleg = (CommonValidator.IsCommonParameter(part) ||
-                    SecondParts.Contains(part) ||
-                    MainParts.Contains(part) ||
-                    IsSecondPart(part)||
-                    Cuts.Contains(part)
+                    SecondParts!=null && SecondParts.Contains(part) ||
+                    MainParts != null && MainParts.Contains(part) ||
+                    SecondParts != null && IsSecondPart(part)||
+                    Cuts != null &&  Cuts.Contains(part)
                     );
             return aleg;
         }

@@ -21,11 +21,13 @@ namespace InitDB {
         public static string FolderPath = Assembly.GetExecutingAssembly().Location + @"\..\..\..\..\FruitsDB\";
         private static int totalAdded = 0;
         private static int totalSkipped = 0;
-        public static Dictionary<string, string> FoodGroups = new Dictionary<string, string>() {{ "Chicken", "0500"  }, { "Pork", "1000" }, { "Beef", "1300" } };   
+        public static Dictionary<string, string> FoodGroups = new Dictionary<string, string>() {  {"Vegs","1100" }, { "Chicken", "0500"  }, { "Pork", "1000" }, { "Beef", "1300" } };   
         public static Dictionary<string, BasicValidator> Validators = new Dictionary<string, BasicValidator>() {
                 { "Pork", new PorkValidator()},
                 { "Beef", new BeefValidator()},
-                { "Chicken", new ChickenValidator()}
+                { "Vegs", new VegsValidator()},
+                { "Chicken", new ChickenValidator()},
+                { "manual", null}
             };
 
         public static void InitProductsCollection(bool loadGroups, bool loadManual, bool overrideDB) {
@@ -74,7 +76,7 @@ namespace InitDB {
                             else {
                                 JArray nutrients1 = food1.nutrients;
                                 JArray nutrients2 = food2.nutrients;
-                                AddProduct(unit, id1, name1, new JArray(nutrients1.Concat(nutrients2)), double.Parse(((object)food1.weight).ToString()));
+                                AddProduct(item, unit, id1, name1, new JArray(nutrients1.Concat(nutrients2)), double.Parse(((object)food1.weight).ToString()));
                             }
                         }
                         else
@@ -102,7 +104,7 @@ namespace InitDB {
                     var food2 = (dynamic)GetFoods(url2)[0];
                     JArray nutrients1 = (food1).nutrients;
                     JArray nutrients2 = (food2).nutrients;
-                    AddProduct(unit, id, name, new JArray(nutrients1.Concat(nutrients2)), double.Parse(((object)food1.weight).ToString()));
+                    AddProduct("manual",unit, id, name, new JArray(nutrients1.Concat(nutrients2)), double.Parse(((object)food1.weight).ToString()));
                 }
             }
         }
@@ -118,10 +120,10 @@ namespace InitDB {
             return res.report.foods;
         }
 
-        public static void AddProduct(RestDBInterface unit, string id, string name, JArray nutrients, double weight) {
+        public static void AddProduct(string groupName,RestDBInterface unit, string id, string name, JArray nutrients, double weight) {
             AddDebug(name);
             var collection = MongoData._database.GetCollection<BsonDocument>(MongoData.CollectionName);
-            var newProduct = ProductBuilder.GetProduct(int.Parse(id), name,  nutrients, weight);
+            var newProduct = ProductBuilder.GetProduct(groupName,int.Parse(id), name,  nutrients, weight);
             unit.Products.Add(newProduct);
         }
 

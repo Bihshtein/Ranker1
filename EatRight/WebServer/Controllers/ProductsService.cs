@@ -25,10 +25,6 @@ namespace Students.Services {
             }
             return filteredProducts;
         }
-        public List<Product> GetAnimal(string name)
-        {
-            return dbLayer.Products.GetByAnimal(name);
-        }
 
         public List<Product> GetNutrient(string name, int min, bool vegetarian)
         {
@@ -38,6 +34,10 @@ namespace Students.Services {
         public List<Product> GetTopFoods(int min)
         {
             return dbLayer.Products.GetTopFoods(min);
+        }
+
+        public List<Product> GetFoodGroup(string group) {
+            return dbLayer.Products.GetByGroupName(group);
         }
 
         public static bool IsEmpty(Product p) {

@@ -26,6 +26,9 @@ namespace RestModel {
         [BsonElement("Name")]
         public string Name { get; set; }
 
+        [BsonElement("FoodGroup")]
+        public string FoodGroup { get; set; }
+
         [BsonElement("CookMethod")]
         public string CookingMethod { get; set; }
 

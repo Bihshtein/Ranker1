@@ -12,7 +12,7 @@ namespace InitDB {
         public static string Format = "json";
         public static string SingleUrl = "http://api.nal.usda.gov/ndb/nutrients/?{0}ndbno={1}&type=f&format={2}&api_key={3}";
         public static string GroupUrl = "http://api.nal.usda.gov/ndb/nutrients/?fg={0}&format={1}&api_key={2}&{3}&max=1500";
-        public static List<int> Nutrients1 = new List<int> { 203, 204, 291, 205, 401, 404, 405, 406, 410, 415, 324, 418, 417, 318, 323, 430, 301, 303, 304,/* 305, 306, 307,*/ 309 };
+        public static List<int> Nutrients1 = new List<int> { 203, 204, 291, 205, 401, 404, 405, 406, 410, 415, 324, 418, 417, 318, 323, 430, 301, 303, 304, 309 };
         public static List<int> Nutrients2 = new List<int> { 305, 306, 307};
     }
 

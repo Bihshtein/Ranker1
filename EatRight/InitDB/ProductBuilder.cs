@@ -10,10 +10,12 @@ using System.Threading.Tasks;
 
 namespace InitDB {
     class ProductBuilder {
-        public static Product GetProduct(int id, string name, JArray nutrients, double weight) {
+        public static Product GetProduct(string groupName, int id, string name, JArray nutrients, double weight) {
+            var validator = InitDB.Validators[groupName];
             var p = new Product() { ID = id};
+            p.FoodGroup = groupName;
             var parts = name.Split(',').ToList();
-            parts.ForEach((item) => TryMatchPartToProperty(p, item));
+            parts.ForEach((item) => TryMatchPartToProperty(p, item, validator));
             SetNameForManuallyAddedProduct(p, name);
             SetNutrientProperties(nutrients, p, weight);
             return p;
@@ -24,10 +26,13 @@ namespace InitDB {
                 p.Name = name;
         }
 
-        public static void TryMatchPartToProperty(Product p, string item) {
+        public static void TryMatchPartToProperty(Product p, string item,BasicValidator validator) {
             var part = item.Trim();
             TrySetCommonProperty(p, part);
-            TryAnimalCommonProperty(p, part);
+            TryAnimalCommonProperty(p, part,validator);
+            if (item != item.ToLower())
+                p.Name = item;
+
         }
 
         public static void TrySetCommonProperty(Product p, string item) {
@@ -43,12 +48,12 @@ namespace InitDB {
                 p.BoneDetails = item;
         }
 
-        public static void TryAnimalCommonProperty(Product p, string item) {
-            BasicValidator validator;
-            if (InitDB.FoodGroups.ContainsKey(item))
+        public static void TryAnimalCommonProperty(Product p, string item, BasicValidator validator) {
+          
+            if (InitDB.FoodGroups.ContainsKey(item)) {
                 p.Animal = item;
+            }
             if (p.Animal != null) {
-                validator = InitDB.Validators[p.Animal];
 
                 if (validator.MainParts.Contains(item)) {
                     p.Name = item;
