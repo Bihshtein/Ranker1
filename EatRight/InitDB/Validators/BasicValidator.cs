@@ -11,7 +11,11 @@ namespace InitDB.Validators {
         public List<string> Cuts { get; protected set; }
 
         public bool IsSecondPart(string part) {
-            return Cuts.Any((cut) => SecondParts.Contains(part.Replace(cut, string.Empty).Trim()));
+            if (Cuts != null)
+                return Cuts.Any((cut) => SecondParts.Contains(part.Replace(cut, string.Empty).Trim()));
+            else
+                return
+                    SecondParts.Contains(part);
         }
 
         public virtual string GetPrettyName(string part){ return part; } 
