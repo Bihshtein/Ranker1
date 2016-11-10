@@ -21,7 +21,7 @@ namespace InitDB {
         public static string FolderPath = Assembly.GetExecutingAssembly().Location + @"\..\..\..\..\FruitsDB\";
         private static int totalAdded = 0;
         private static int totalSkipped = 0;
-        public static Dictionary<string, string> FoodGroups = new Dictionary<string, string>() {  {"Vegs","1100" }/*, { "Chicken", "0500"  }, { "Pork", "1000" }, { "Beef", "1300" }*/ };   
+        public static Dictionary<string, string> FoodGroups = new Dictionary<string, string>() {  {"Vegs","0900" }/*, { "Chicken", "0500"  }, { "Pork", "1000" }, { "Beef", "1300" }*/ };   
         public static Dictionary<string, BasicValidator> Validators = new Dictionary<string, BasicValidator>() {
                 { "Pork", new PorkValidator()},
                 { "Beef", new BeefValidator()},
