@@ -29,15 +29,18 @@ namespace InitDB.Validators {
 
         public virtual bool IsValidPart(string part) {
             part = part.Trim();
-            return (CommonValidator.IsCommonParameter(part) ||
+            var aleg =  (CommonValidator.IsCommonParameter(part) ||
                     IsMainPart(part) || IsSecondPart(part)|| IsCut(part));
+            if (aleg == false)
+                Console.WriteLine(part); 
+            return aleg;
         }
 
         public virtual Tuple<string, string> GetNameAndCut(string item) {
-            var hiddenCut = Cuts.FirstOrDefault((cut) => item.Contains(cut));
-            if (hiddenCut == null)
-                hiddenCut = string.Empty;
-            else
+            string hiddenCut = string.Empty;
+            if (Cuts!=null)
+                hiddenCut = Cuts.FirstOrDefault((cut) => item.Contains(cut));
+            if (hiddenCut != null && hiddenCut != string.Empty)
                 item = item.Replace(hiddenCut, string.Empty);
             return new Tuple<string, string>(item, hiddenCut);
         }

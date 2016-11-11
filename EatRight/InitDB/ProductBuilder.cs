@@ -55,7 +55,7 @@ namespace InitDB {
                 if (nameAndCut.Item2 != string.Empty)
                     p.Cut = nameAndCut.Item2;
             }
-            if (validator.Cuts.Contains(item))
+            if (validator.IsCut(item))
                 p.Cut = item;
         }
 
