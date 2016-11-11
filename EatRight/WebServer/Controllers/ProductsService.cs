@@ -44,7 +44,7 @@ namespace Students.Services {
             return p.Image != null;
         }
         public IQueryable<Product> GetAll() {
-            return dbLayer.Products.GetAll().ToList().Where(IsEmpty).AsQueryable();
+            return dbLayer.Products.GetAll();
         }
         public void Delete(string id) {
             dbLayer.Products.Delete(s => s.Name1, id);

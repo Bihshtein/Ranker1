@@ -16,14 +16,10 @@ namespace InitDB {
             p.FoodGroup = groupName;
             var parts = name.Split(',').ToList();
             parts.ForEach((item) => TryMatchPartToProperty(p, item, validator));
-            SetNameForManuallyAddedProduct(p, name);
+            if (p.Name1 == null)
+                p.Name1 = name;
             SetNutrientProperties(nutrients, p, weight);
             return p;
-        }
-
-        public static void SetNameForManuallyAddedProduct(Product p, string name) {
-            if(p.Name1 == null && p.Animal == null)
-                p.Name1 = name;
         }
 
         public static void TryMatchPartToProperty(Product p, string item,BasicValidator validator) {
