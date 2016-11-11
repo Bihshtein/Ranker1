@@ -50,7 +50,7 @@ namespace RestModel {
 
         public List<T> GetByName(string name)
         {
-            return _collection.Find(Query<Product>.Where(x => x.Name.Equals(name))).ToList();
+            return _collection.Find(Query<Product>.Where(x => x.Name1.Equals(name))).ToList();
         }
 
 

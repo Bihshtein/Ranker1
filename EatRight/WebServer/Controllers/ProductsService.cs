@@ -47,13 +47,13 @@ namespace Students.Services {
             return dbLayer.Products.GetAll().ToList().Where(IsEmpty).AsQueryable();
         }
         public void Delete(string id) {
-            dbLayer.Products.Delete(s => s.Name, id);
+            dbLayer.Products.Delete(s => s.Name1, id);
         }
         public void Insert(Product student) {
             dbLayer.Products.Add(student);
         }
         public void Update(Product student) {
-            dbLayer.Products.Update(s => s.Name, student.Name, student);
+            dbLayer.Products.Update(s => s.Name1, student.Name1, student);
         }
     }
 }

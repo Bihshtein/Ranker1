@@ -13,21 +13,24 @@ namespace InitDB.Validators {
         public bool IsSecondPart(string part) {
             if (Cuts != null)
                 return Cuts.Any((cut) => SecondParts.Contains(part.Replace(cut, string.Empty).Trim()));
-            else
-                return
-                    SecondParts.Contains(part);
+            return ((SecondParts != null) && SecondParts.Contains(part));
+
+        }
+
+        public virtual bool IsMainPart(string part) {
+            return ((MainParts != null) && MainParts.Contains(part));
+        }
+
+        public virtual bool IsCut(string part) {
+            return Cuts != null && Cuts.Contains(part);
         }
 
         public virtual string GetPrettyName(string part){ return part; } 
+
         public virtual bool IsValidPart(string part) {
             part = part.Trim();
-            var aleg = (CommonValidator.IsCommonParameter(part) ||
-                    SecondParts!=null && SecondParts.Contains(part) ||
-                    MainParts != null && MainParts.Contains(part) ||
-                    SecondParts != null && IsSecondPart(part)||
-                    Cuts != null &&  Cuts.Contains(part)
-                    );
-            return aleg;
+            return (CommonValidator.IsCommonParameter(part) ||
+                    IsMainPart(part) || IsSecondPart(part)|| IsCut(part));
         }
 
         public virtual Tuple<string, string> GetNameAndCut(string item) {

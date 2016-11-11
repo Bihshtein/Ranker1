@@ -34,7 +34,7 @@ namespace MenuBuilder
             //list.RemoveAll((p) => p.Animal != string.Empty);
             foreach (Product prod in list)
             {
-                System.Console.WriteLine(prod.Name);
+                System.Console.WriteLine(prod.Name1);
             }
             InitSampleMeal(unit);// currently resets the db and add the meal every time
             var day1 = new DailyMenu() { Breakfast = unit.Meals.Get(1), Lunch = unit.Meals.Get(2), Dinner = unit.Meals.Get(3) };

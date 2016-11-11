@@ -24,7 +24,7 @@ namespace RestModel {
         public int ID { get; set; }
 
         [BsonElement("Name")]
-        public string Name { get; set; }
+        public string Name1 { get; set; }
 
         [BsonElement("FoodGroup")]
         public string FoodGroup { get; set; }
@@ -45,9 +45,9 @@ namespace RestModel {
         public string BoneDetails { get; set; }
 
         [BsonElement("MinorName")]
-        public string MinorName { get; set; }
+        public string Name2 { get; set; }
 
-        public string MeatCut { get; set; }
+        public string Cut { get; set; }
         [BsonElement("HasSkin")]
         public bool HasSkin { get; set; }
 

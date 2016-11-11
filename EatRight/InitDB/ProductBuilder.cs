@@ -22,20 +22,20 @@ namespace InitDB {
         }
 
         public static void SetNameForManuallyAddedProduct(Product p, string name) {
-            if(p.Name == null && p.Animal == null)
-                p.Name = name;
+            if(p.Name1 == null && p.Animal == null)
+                p.Name1 = name;
         }
 
         public static void TryMatchPartToProperty(Product p, string item,BasicValidator validator) {
             var part = item.Trim();
-            TrySetCommonProperty(p, part);
-            TryAnimalCommonProperty(p, part,validator);
+            TrySetCommonProperties(p, part);
+            TrySetCustomProperties(p, part,validator);
             if (item != item.ToLower())
-                p.Name = item;
+                p.Name1 = item;
 
         }
 
-        public static void TrySetCommonProperty(Product p, string item) {
+        public static void TrySetCommonProperties(Product p, string item) {
             if (CommonValidator.CookingOptions.Contains(item))
                 p.CookingMethod = item;
             if (CommonValidator.PreservationOptions.Contains(item))
@@ -48,27 +48,19 @@ namespace InitDB {
                 p.BoneDetails = item;
         }
 
-        public static void TryAnimalCommonProperty(Product p, string item, BasicValidator validator) {
-          
-            if (InitDB.FoodGroups.ContainsKey(item)) {
-                p.Animal = item;
-            }
-            if (p.Animal != null) {
+        public static void TrySetCustomProperties(Product p, string item, BasicValidator validator) {
 
-                if (validator.MainParts.Contains(item)) {
-                    p.Name = item;
-                    p.Name = validator.GetPrettyName(p.Name);
-                }
-                if (validator.IsSecondPart(item)) {
-                    p.MinorName = p.Name;
-                    var nameAndCut = validator.GetNameAndCut(item);
-                    p.Name = nameAndCut.Item1;
-                    if (nameAndCut.Item2 != string.Empty)
-                        p.MeatCut = nameAndCut.Item2;
-                }
-                if (validator.Cuts.Contains(item))
-                    p.MeatCut = item;
+            if (validator.IsMainPart(item)) {
+                p.Name1 = validator.GetPrettyName(item);
             }
+            if (validator.IsSecondPart(item)) {
+                var nameAndCut = validator.GetNameAndCut(item);
+                p.Name2 = nameAndCut.Item1;
+                if (nameAndCut.Item2 != string.Empty)
+                    p.Cut = nameAndCut.Item2;
+            }
+            if (validator.Cuts.Contains(item))
+                p.Cut = item;
         }
 
         private static void SetNutrientProperties(JArray nutrients, Product p, double weight) {
