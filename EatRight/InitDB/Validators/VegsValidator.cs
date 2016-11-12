@@ -5,11 +5,6 @@ using System.Linq;
 namespace InitDB.Validators {
     public class VegsValidator : BasicValidator {
 
-        public override bool IsMainPart(string part) {
-            return part != part.ToLower();
-        }
-
-
 
         public VegsValidator() {
             SecondParts = new List<string>() {

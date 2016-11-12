@@ -28,9 +28,6 @@ namespace InitDB.Validators {
             };
         }
 
-        public override bool IsMainPart(string part) {
-            return part != part.ToLower();
-        }
 
         public override bool IsSecondPart(string part) {
             return SecondParts.Any((item) => part.Contains(item));

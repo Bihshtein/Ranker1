@@ -3,9 +3,6 @@ using System.Collections.Generic;
 
 namespace InitDB.Validators {
     public class FruitsValidator : BasicValidator {
-        public override bool IsMainPart(string part) {
-            return part != part.ToLower();
-        }
         public FruitsValidator() {
             SecondParts = new List<string> {
    "tropical" ,"(west indian cherry)","(pineapple and papaya and banana and guava)",

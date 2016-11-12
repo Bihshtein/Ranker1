@@ -15,9 +15,10 @@ namespace InitDB {
             var p = new Product() { ID = id};
             p.FoodGroup = groupName;
             var parts = name.Split(',').ToList();
-            parts.ForEach((item) => TryMatchPartToProperty(p, item, validator));
-            if (p.Name1 == null)
+            if (groupName == "manual")
                 p.Name1 = name;
+            else 
+                parts.ForEach((item) => TryMatchPartToProperty(p, item, validator));
             SetNutrientProperties(nutrients, p, weight);
             return p;
         }
@@ -26,9 +27,6 @@ namespace InitDB {
             var part = item.Trim();
             TrySetCommonProperties(p, part);
             TrySetCustomProperties(p, part,validator);
-            if (item != item.ToLower())
-                p.Name1 = item;
-
         }
 
         public static void TrySetCommonProperties(Product p, string item) {
@@ -46,7 +44,7 @@ namespace InitDB {
 
         public static void TrySetCustomProperties(Product p, string item, BasicValidator validator) {
 
-            if (validator.IsMainPart(item)) {
+            if (validator.IsMainPart(item) && p.Name1== null) {
                 p.Name1 = validator.GetPrettyName(item);
             }
             if (validator.IsSecondPart(item)) {

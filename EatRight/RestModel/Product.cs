@@ -23,7 +23,7 @@ namespace RestModel {
         [BsonElement("_id")]
         public int ID { get; set; }
 
-        [BsonElement("Name")]
+        [BsonElement("Name1")]
         public string Name1 { get; set; }
 
         [BsonElement("FoodGroup")]
@@ -44,13 +44,13 @@ namespace RestModel {
         [BsonElement("BoneDetails")]
         public string BoneDetails { get; set; }
 
-        [BsonElement("MinorName")]
+        [BsonElement("Name2")]
         public string Name2 { get; set; }
 
         [BsonElement("Cut")]
         public string Cut { get; set; }
 
-        [BsonElement("_size")]
+        [BsonElement("Weight")]
         public double Weight { get; set; }
 
         [BsonElement("Protein")]

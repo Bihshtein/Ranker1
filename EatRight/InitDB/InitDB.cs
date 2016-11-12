@@ -138,6 +138,7 @@ namespace InitDB {
 
         private static void AddDebug(string name) {
             totalAdded++;
+            Console.WriteLine("Adding: " + name + "");
         }
 
 
