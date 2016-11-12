@@ -47,9 +47,8 @@ namespace RestModel {
         [BsonElement("MinorName")]
         public string Name2 { get; set; }
 
+        [BsonElement("Cut")]
         public string Cut { get; set; }
-        [BsonElement("HasSkin")]
-        public bool HasSkin { get; set; }
 
         [BsonElement("_size")]
         public double Weight { get; set; }

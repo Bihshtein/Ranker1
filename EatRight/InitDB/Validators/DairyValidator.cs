@@ -5,12 +5,7 @@ using System.Linq;
 namespace InitDB.Validators {
     public class DairyValidator : BasicValidator {
         public DairyValidator() {
-            MainParts = new List<string> {
-            "Cheese substitute","Protein supplement","Dulce de Leche", "Egg mix", "Egg substitute","Eggs",
-                "Eggnog","Milk substitutes", "Imitation cheese","Butter oil","Milk dessert bar", "Milk shakes",
-                "Cheese food","Cheese product","Cheese sauce","Cheese spread",
-                "Cream substitute", "Butter", "Beverage", "Cheese", "Egg", "Milk",
-                "Yogurt", "Whey", "Sour Cream", "Ice cream", "Cream", "Dessert topping", };
+        
             SecondParts = new List<string> {
                "human","producer","indian buffalo", "imitation","sheep","Mexican blend",
                 "milkshake mix","instant breakfast powder", "acid","light","sour", "sweet","cottage",
@@ -31,6 +26,10 @@ namespace InitDB.Validators {
                 "semisoft type", "hard type","whole", "yolk","white",
                 "shredded","sliced","creamed","uncreamed","omelet","hard boiled","scrambled"
             };
+        }
+
+        public override bool IsMainPart(string part) {
+            return part != part.ToLower();
         }
 
         public override bool IsSecondPart(string part) {
