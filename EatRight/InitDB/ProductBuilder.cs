@@ -36,8 +36,12 @@ namespace InitDB {
                 p.PreservationMethod = item;
             if (CommonValidator.StorageOptions.Contains(item))
                 p.StorageMethod = item;
-            if (CommonValidator.FatOptions.Contains(item))
-                p.FatDetails = item;
+            if (CommonValidator.FatOptions.Any((i) => item.Contains(i))) {
+                if (p.FatDetails == null)
+                    p.FatDetails = item;
+                else
+                    p.FatDetails += '|' + item;
+            }
             if (CommonValidator.BoneOptions.Contains(item))
                 p.BoneDetails = item;
         }

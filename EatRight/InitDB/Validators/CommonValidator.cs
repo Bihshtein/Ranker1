@@ -10,7 +10,7 @@ namespace InitDB {
 
         private static List<string> PeelingOptions = new List<string>() { "skin", "peel" };
         private static List<string> AdditionalProductsOptions = new List<string>() {
-        "egg","unenriched","gluten", "enriched","glucose","vitamin A", "lactose", "salted","sugared","nuts","fruit", "vegetables", "protein","lowfat milk","nonfat milk","skim milk","whole milk", "vitamin D","concentrate","sucralose","sugar", "undiluted","calcium", "sulfured", "ascorbic acid","sodium", "milk","salt","water","butter","margarine","green chilies","onions","mushrooms","herbs and cheese","dill","artificial sweetener","sweetened","unsweetened"
+        "dietetic","egg","unenriched","gluten", "enriched","glucose","vitamin A", "lactose", "salted","sugared","nuts","fruit", "vegetables", "protein","lowfat milk","nonfat milk","skim milk","whole milk", "vitamin D","concentrate","sucralose","sugar", "undiluted","calcium", "sulfured", "ascorbic acid","sodium", "milk","salt","water","butter","margarine","green chilies","onions","mushrooms","herbs and cheese","dill","artificial sweetener","sweetened","unsweetened"
         };
 
         private static List<string> ConnectWordOptions = new List<string>() {
@@ -30,7 +30,7 @@ namespace InitDB {
         {"fresh-refrigerated","low moisture","chilled","riped","ripe", "bottled","dehydrated (low-moisture)","dehydrated (low moisture)","canned or bottled","frozen concentrate","rehydrated","dry","sprouted","dehydrated","seasoned","freshly harvest", "stored" ,"dry mix","dry form"
         ,"refrigerated","exposed to ultraviolet light","sun-dried", "dried","frozen as packaged","freeze-dried","unprepared","prepared", "ground", "pre-sliced", "frozen", "cooked", "canned", "heated", "unheated" };
         public static List<string> FatOptions = new List<string>() {
-        "fat-free","fat free","3.7% milkfat","3.25% milkfat","dietetic,","1% fat","2% fat","nonfat or fat free","fat free","1% milkfat","2% milkfat" ,  "reduced fat", "low fat","non-fat", "lowfat","nonfat", "97% lean meat / 3% fat", "70% lean meat / 30% fat", "85% lean meat / 15% fat", "93% lean meat /7% fat", "93% lean meat / 7% fat", "97% lean meat /3% fat", "95% lean meat / 5% fat", "93% lean meat / 7% fat", "90% lean meat / 10% fat", "80% lean meat / 20% fat", "75% lean meat / 25% fat", "72% lean / 28% fat", "84% lean / 16% fat", "96% lean / 4% fat", "extra lean", "separable fat", "extra lean (approximately 5% fat)", "regular (approximately 13% fat)", "regular (approximately 11% fat)", "extra lean (approximately 4% fat)", "extra lean and regular", "rendered fat", "separable lean and fat", "separable lean only" };
+        "milkfat","nonfat","lowfat","nonfat", "lean","fat"};
         public static List<string> BoneOptions = new List<string>() { "bone removed", "bone-in", "boneless" };
         public static List<string> PreservationOptions = new List<string>() { "fresh", "cured" };
         public static List<string> FryingOptions = new List<string>() { "barbecue flavored", "batter", "flour" };
@@ -38,7 +38,7 @@ namespace InitDB {
             part = part.Trim();
             return (CookingOptions.Contains(part) ||
                     StorageOptions.Contains(part) ||
-                    FatOptions.Contains(part) ||
+                    FatOptions.Any((item) =>part.Contains(item)) ||
                     PreservationOptions.Contains(part) ||
                     BoneOptions.Contains(part) ||
                     FryingOptions.Contains(part) ||
