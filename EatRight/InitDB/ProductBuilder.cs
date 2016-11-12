@@ -101,8 +101,6 @@ namespace InitDB {
             byte[] imgBytes = null;
             if (File.Exists(imgPath))
                 imgBytes = File.ReadAllBytes(imgPath);
-            else if (RestRepository<Product>.Animals.Contains(animal))
-                imgBytes = File.ReadAllBytes(InitDB.FolderPath + animal + ".png");
             else if (majorName.Length > 5)
                 imgBytes = File.ReadAllBytes(InitDB.FolderPath + "Morty.png");
             else

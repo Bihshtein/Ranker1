@@ -10,7 +10,7 @@ namespace InitDB.Validators {
         public List<string> SecondParts { get; protected set; }
         public List<string> Cuts { get; protected set; }
 
-        public bool IsSecondPart(string part) {
+        public virtual bool IsSecondPart(string part) {
             if (Cuts != null)
                 return Cuts.Any((cut) => SecondParts.Contains(part.Replace(cut, string.Empty).Trim()));
             return ((SecondParts != null) && SecondParts.Contains(part));
@@ -29,11 +29,8 @@ namespace InitDB.Validators {
 
         public virtual bool IsValidPart(string part) {
             part = part.Trim();
-            var aleg =  (CommonValidator.IsCommonParameter(part) ||
+            return (CommonValidator.IsCommonParameter(part) ||
                     IsMainPart(part) || IsSecondPart(part)|| IsCut(part));
-            if (aleg == false)
-                Console.WriteLine(part); 
-            return aleg;
         }
 
         public virtual Tuple<string, string> GetNameAndCut(string item) {
