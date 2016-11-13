@@ -46,7 +46,7 @@ namespace MenuBuilder
         private static void InitSampleMeal(RestDBInterface unit) {
 
 
-            Meal breakfast = new Meal(1, new Dictionary<string, double>()
+            Meal breakfast = new Meal("Sample breakfast 1", new Dictionary<string, double>()
             {
                // { "Bread", 25},
              //   { "Cottage", 150},
@@ -58,7 +58,7 @@ namespace MenuBuilder
                 { "Almond", 25}
             });
             
-            var lunch = new Meal(2, new Dictionary<string, double>()
+            var lunch = new Meal("Sample lunch 1", new Dictionary<string, double>()
             {
                 {"Salmon", 150 },
                 {"Pepper", 100},
@@ -68,7 +68,7 @@ namespace MenuBuilder
                 {"Broccoli", 100}
             });
 
-            var dinner = new Meal(3, new Dictionary<string, double>()
+            var dinner = new Meal("Sample dinner 1", new Dictionary<string, double>()
             {
                 {"tenderloin", 100 },
                 { "Cabbage", 100},
