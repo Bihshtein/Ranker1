@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace MenuBuilder
 {
-    class DailyMenu : MenuBuilderObject
+    class DailyMenu : GradableObject
     {
-        public Meal Breakfast { get; set; }
-        public Meal Lunch { get; set; }
-        public Meal Dinner { get; set; }
+        public MenuMeal Breakfast { get; set; }
+        public MenuMeal Lunch { get; set; }
+        public MenuMeal Dinner { get; set; }
     }
 }

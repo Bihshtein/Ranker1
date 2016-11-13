@@ -12,7 +12,7 @@ namespace MenuBuilder.Graders
         /**
          * Returns a double between 0 and 1.
          */
-        public abstract double Grade(MenuBuilderObject obj);
+        public abstract double Grade(GradableObject obj);
 
         public static GraderDB graderDB = null;
     }

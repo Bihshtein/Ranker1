@@ -8,7 +8,7 @@ namespace MenuBuilder.Graders.MenuGraders
 {
     abstract class MenuGrader : Grader
     {
-        public override double Grade(MenuBuilderObject obj)
+        public override double Grade(GradableObject obj)
         {
             if (!(obj is Menu))
             {

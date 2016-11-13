@@ -16,7 +16,7 @@ namespace MenuBuilder
         {
             unit = new RestDBInterface();
 
-            //var testMenu1 = GenerateTestMenu1();
+            var testMenu1 = GenerateTestMenu1();
             //var eval = MenuGenerator.EvaluateMenu(testMenu1, RestRepository<Product>.DailyValues, 3000);
             var graderDB = new GraderDB();
             graderDB.dailyValues = RestRepository<Product>.DailyValues;
@@ -37,7 +37,12 @@ namespace MenuBuilder
                 System.Console.WriteLine(prod.Name1);
             }
             InitSampleMeal(unit);// currently resets the db and add the meal every time
-            var day1 = new DailyMenu() { Breakfast = unit.Meals.Get(1), Lunch = unit.Meals.Get(2), Dinner = unit.Meals.Get(3) };
+            var day1 = new DailyMenu()
+            {
+                Breakfast = new MenuMeal() { Meal = unit.Meals.Get(0) },
+                Lunch = new MenuMeal() { Meal = unit.Meals.Get(1) },
+                Dinner = new MenuMeal() { Meal = unit.Meals.Get(2) }
+            };
 
             var dayList = new List<DailyMenu>() { day1 };
             return new Menu(dayList);
@@ -48,11 +53,9 @@ namespace MenuBuilder
 
             Meal breakfast = new Meal("Sample breakfast 1", new Dictionary<string, double>()
             {
-               // { "Bread", 25},
-             //   { "Cottage", 150},
                 { "Carrot", 200},
-                { "Tomato", 123},
-                { "Avocado", 50},
+                //{ "Tomato", 123},
+                //{ "Avocado", 50},
                 { "bacon", 50},
                 { "Tuna", 200},
                 { "Almond", 25}
@@ -70,9 +73,9 @@ namespace MenuBuilder
 
             var dinner = new Meal("Sample dinner 1", new Dictionary<string, double>()
             {
-                {"tenderloin", 100 },
+                //{"tenderloin", 100 },
                 { "Cabbage", 100},
-                { "Tomato", 100},
+                //{ "Tomato", 100},
                 { "Lettuce", 100},
                 { "Garlic", 50},
                 { "Egg", 200},

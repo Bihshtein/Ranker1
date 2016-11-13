@@ -55,8 +55,9 @@ namespace MenuBuilder.Graders.DailyMenuGraders
             return grade / dailyValues.Count;
         }
 
-        private Dictionary<string, double> GetMealNutritionValues(Meal meal)
+        private Dictionary<string, double> GetMealNutritionValues(MenuMeal menuMeal)
         {
+            Meal meal = menuMeal.Meal;
             var totalValues = new Dictionary<string, double>();
 
             // Get nutrition values of all products

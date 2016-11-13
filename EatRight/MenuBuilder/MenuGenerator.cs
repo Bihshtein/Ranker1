@@ -12,7 +12,7 @@ namespace MenuBuilder
 {
     class MenuGenerator
     {
-        private class MenuObjectComparer<T> : IComparer<KeyValuePair<T, double>> where T : MenuBuilderObject
+        private class MenuObjectComparer<T> : IComparer<KeyValuePair<T, double>> where T : GradableObject
         {
             public int Compare(KeyValuePair<T, double> x, KeyValuePair<T, double> y)
             {
@@ -20,7 +20,7 @@ namespace MenuBuilder
             }
         }
 
-        private static double EvaluateObject<T>(MenuBuilderObject obj, Dictionary<T, double> graderMap)
+        private static double EvaluateObject<T>(GradableObject obj, Dictionary<T, double> graderMap)
             where T : Grader
         {
             double graderWeightSum = 0;
@@ -120,7 +120,12 @@ namespace MenuBuilder
                 {
                     // Iterate over dinner meals
                     foreach (Meal dinner in mealsList) {
-                        daysList.Add(new DailyMenu() { Breakfast = breakfast, Lunch = lunch, Dinner = dinner });
+                        daysList.Add(new DailyMenu()
+                        {
+                            Breakfast = new MenuMeal() { Meal = breakfast },
+                            Lunch = new MenuMeal() { Meal = lunch },
+                            Dinner = new MenuMeal() { Meal = dinner }
+                        });
                     }
                 }
             }

@@ -23,8 +23,9 @@ namespace MenuBuilder.Graders.DailyMenuGraders
             return GradeRatio(caloriesNum / dailyCaloriesNum);
         }
 
-        private double MealCaloriesNum(Meal meal)
+        private double MealCaloriesNum(MenuMeal menuMeal)
         {
+            Meal meal = menuMeal.Meal;
             double caloriesNum = 0;
             // Get nutrition values of all products
             foreach (var prodName in meal.Products)

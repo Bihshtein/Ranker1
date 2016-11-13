@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using RestModel;
 
 namespace MenuBuilder
 {
-    abstract class MenuBuilderObject
+    class MenuMeal : GradableObject
     {
+        public Meal Meal { get; set; }
     }
 }
