@@ -8,11 +8,11 @@ namespace InitDB.Validators {
     public abstract class BasicValidator {
         public List<string> MainParts { get; protected set; }
         public List<string> SecondParts { get; protected set; }
-        public List<string> Cuts { get; protected set; }
+        public List<string> ThirdParts { get; protected set; }
 
         public virtual bool IsSecondPart(string part) {
-            if (Cuts != null)
-                return Cuts.Any((cut) => SecondParts.Contains(part.Replace(cut, string.Empty).Trim()));
+            if (ThirdParts != null)
+                return ThirdParts.Any((cut) => SecondParts.Contains(part.Replace(cut, string.Empty).Trim()));
             return ((SecondParts != null) && SecondParts.Contains(part));
 
         }
@@ -25,7 +25,7 @@ namespace InitDB.Validators {
         }
 
         public virtual bool IsCut(string part) {
-            return Cuts != null && Cuts.Contains(part);
+            return ThirdParts != null && ThirdParts.Contains(part);
         }
 
         public virtual string GetPrettyName(string part){ return part; } 
@@ -36,10 +36,10 @@ namespace InitDB.Validators {
                     IsMainPart(part) || IsSecondPart(part)|| IsCut(part));
         }
 
-        public virtual Tuple<string, string> GetNameAndCut(string item) {
+        public virtual Tuple<string, string> GetNameAndDescription(string item) {
             string hiddenCut = string.Empty;
-            if (Cuts!=null)
-                hiddenCut = Cuts.FirstOrDefault((cut) => item.Contains(cut));
+            if (ThirdParts!=null)
+                hiddenCut = ThirdParts.FirstOrDefault((cut) => item.Contains(cut));
             if (hiddenCut != null && hiddenCut != string.Empty)
                 item = item.Replace(hiddenCut, string.Empty);
             return new Tuple<string, string>(item, hiddenCut);

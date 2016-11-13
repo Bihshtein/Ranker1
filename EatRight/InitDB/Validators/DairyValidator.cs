@@ -17,7 +17,7 @@ namespace InitDB.Validators {
                 "muenster","neufchatel","parmesan","ricotta", "romano","roquefort","swiss","tilsit","white",
                 "provolone", "fruit","strawberry","Greek","plain","vanilla","chocolate"
             };
-            Cuts = new List<string> {
+            ThirdParts = new List<string> {
                "hard","queso blanco","soft serve","flakes", "queso fresco","queso seco","hard-boiled"
                ,"stabilized","stick or nugget","evaporated", "bar or stick","semi solid",
                 "instant","flavored", "part skim milk",
