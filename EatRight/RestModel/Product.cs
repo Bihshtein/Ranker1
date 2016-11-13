@@ -35,8 +35,6 @@ namespace RestModel {
         [BsonElement("StorageMethod")]
         public string StorageMethod { get; set; }
 
-        [BsonElement("PreservationMethod")]
-        public string PreservationMethod { get; set; }
 
         [BsonElement("FatDetails")]
         public string FatDetails { get; set; }
@@ -47,8 +45,20 @@ namespace RestModel {
         [BsonElement("Name2")]
         public string Name2 { get; set; }
 
-        [BsonElement("Cut")]
-        public string Cut { get; set; }
+        [BsonElement("Name3")]
+        public string Name3 { get; set; }
+
+        [BsonElement("FoodsData")]
+        public string FoodsData { get; set; }
+
+        [BsonElement("HealthData")]
+        public string HealthData { get; set; }
+
+        [BsonElement("PeelDetails")]
+        public string PeelDetails { get; set; }
+
+        [BsonElement("PackDetails")]
+        public string PackDetails { get; set; }
 
         [BsonElement("Weight")]
         public double Weight { get; set; }
@@ -58,6 +68,9 @@ namespace RestModel {
 
         [BsonElement("Fat")]
         public double Fat { get; set; }
+
+        [BsonElement("Sugar")]
+        public double Sugar { get; set; }
 
         [BsonElement("Carbs")]
         public double Carbs { get; set; }

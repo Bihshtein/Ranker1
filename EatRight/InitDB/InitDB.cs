@@ -60,10 +60,10 @@ namespace InitDB {
             foreach (var item in FoodGroups.Keys) {
                 var foods1 = GetFoods(QueryData.GroupUrl, FoodGroups[item], nutrientsQuery1);
                 var foods2 = GetFoods(QueryData.GroupUrl, FoodGroups[item], nutrientsQuery2);
-
-                for (int i = 0; i < foods1.Count; i++) {
+              
+                for (int i = 0; i < Math.Min(foods1.Count,foods2.Count); i++) {
                     var food1 = (dynamic)foods1[i];
-                    var food2 = (dynamic)foods1[i];
+                    var food2 = (dynamic)foods2[i];
                     var id1 = ((object)food1.ndbno).ToString();
                     var name1 = ((object)food1.name).ToString();
                     var id2 = ((object)food1.ndbno).ToString();

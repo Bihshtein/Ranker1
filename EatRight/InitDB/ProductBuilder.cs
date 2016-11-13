@@ -29,18 +29,33 @@ namespace InitDB {
             TrySetCustomProperties(p, part,validator);
         }
 
+        private static string GetUpdatedStringParam(List<string> containerList, string item, string param) {
+            if (containerList.Any((i) => item.Contains(i))) {
+                if (param == null)
+                    return item;
+                else if (!param.Contains(item))
+                    return param + '|' + item;
+            }
+            return param;
+        }
+
         public static void TrySetCommonProperties(Product p, string item) {
-            if (CommonValidator.CookingOptions.Contains(item))
-                p.CookingMethod = item;
-            if (CommonValidator.PreservationOptions.Contains(item))
-                p.PreservationMethod = item;
-            if (CommonValidator.StorageOptions.Contains(item))
-                p.StorageMethod = item;
-            if (CommonValidator.FatOptions.Any((i) => item.Contains(i))) {
-                if (p.FatDetails == null)
-                    p.FatDetails = item;
+            p.CookingMethod = GetUpdatedStringParam(CommonValidator.CookingOptions, item,  p.CookingMethod);
+            p.StorageMethod = GetUpdatedStringParam(CommonValidator.StorageOptions, item, p.StorageMethod);
+            p.FatDetails = GetUpdatedStringParam(CommonValidator.FatOptions, item, p.FatDetails);
+            p.PackDetails = GetUpdatedStringParam(CommonValidator.PackOptions, item, p.PackDetails);
+            p.PeelDetails = GetUpdatedStringParam(CommonValidator.PeelingOptions, item, p.PeelDetails);
+            if (CommonValidator.CheckWithWord(CommonValidator.AdditionalFoodsData, item)) {
+                if (p.FoodsData == null)
+                    p.FoodsData = item;
                 else
-                    p.FatDetails += '|' + item;
+                    p.FoodsData += '|' + item;
+            }
+            if (CommonValidator.CheckWithWord(CommonValidator.AdditionalHealthData, item)) {
+                if (p.HealthData == null)
+                    p.HealthData = item;
+                else
+                    p.HealthData += '|' + item;
             }
             if (CommonValidator.BoneOptions.Contains(item))
                 p.BoneDetails = item;
@@ -52,17 +67,18 @@ namespace InitDB {
                 p.Name1 = validator.GetPrettyName(item);
             }
             if (validator.IsSecondPart(item)) {
-                var nameAndCut = validator.GetNameAndCut(item);
+                var nameAndCut = validator.GetNameAndDescription(item);
                 p.Name2 = nameAndCut.Item1;
                 if (nameAndCut.Item2 != string.Empty)
-                    p.Cut = nameAndCut.Item2;
+                    p.Name3 = nameAndCut.Item2;
             }
             if (validator.IsCut(item))
-                p.Cut = item;
+                p.Name3 = item;
         }
 
         private static void SetNutrientProperties(JArray nutrients, Product p, double weight) {
             p.Protein = GetNutrient(nutrients, "Protein", weight);   //203
+            p.Sugar = GetNutrient(nutrients, "Sugars, total", weight);//269
             p.Fat = GetNutrient(nutrients, "Total lipid (fat)", weight);//204
             p.Fiber = GetNutrient(nutrients, "Fiber, total dietary", weight);//291
             p.Carbs = GetNutrient(nutrients, "Carbohydrate, by difference", weight);//205

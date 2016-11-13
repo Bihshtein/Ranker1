@@ -54,8 +54,8 @@ namespace MenuBuilder
             Meal breakfast = new Meal("Sample breakfast 1", new Dictionary<string, double>()
             {
                 { "Carrot", 200},
-                //{ "Tomato", 123},
-                //{ "Avocado", 50},
+                { "Tomatoes", 123},
+                { "Avocados", 50},
                 { "bacon", 50},
                 { "Tuna", 200},
                 { "Almond", 25}
@@ -73,9 +73,9 @@ namespace MenuBuilder
 
             var dinner = new Meal("Sample dinner 1", new Dictionary<string, double>()
             {
-                //{"tenderloin", 100 },
+                {"loin", 100 },
                 { "Cabbage", 100},
-                //{ "Tomato", 100},
+                { "Tomatoes", 100},
                 { "Lettuce", 100},
                 { "Garlic", 50},
                 { "Egg", 200},
