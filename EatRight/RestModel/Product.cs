@@ -69,6 +69,9 @@ namespace RestModel {
         [BsonElement("Fat")]
         public double Fat { get; set; }
 
+        [BsonElement("Sugar")]
+        public double Sugar { get; set; }
+
         [BsonElement("Carbs")]
         public double Carbs { get; set; }
 

@@ -78,6 +78,7 @@ namespace InitDB {
 
         private static void SetNutrientProperties(JArray nutrients, Product p, double weight) {
             p.Protein = GetNutrient(nutrients, "Protein", weight);   //203
+            p.Sugar = GetNutrient(nutrients, "Sugars, total", weight);//269
             p.Fat = GetNutrient(nutrients, "Total lipid (fat)", weight);//204
             p.Fiber = GetNutrient(nutrients, "Fiber, total dietary", weight);//291
             p.Carbs = GetNutrient(nutrients, "Carbohydrate, by difference", weight);//205
