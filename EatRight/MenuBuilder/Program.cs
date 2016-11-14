@@ -59,7 +59,7 @@ namespace MenuBuilder
                 { "bacon", 50},
                 { "Tuna", 200},
                 { "Almond", 25}
-            });
+            }, new HashSet<MealType>() { MealType.Breakfast });
             
             var lunch = new Meal("Sample lunch 1", new Dictionary<string, double>()
             {
@@ -69,7 +69,7 @@ namespace MenuBuilder
                 { "bacon", 50},
                 { "Almond", 25},
                 {"Broccoli", 100}
-            });
+            }, new HashSet<MealType>() { MealType.Lunch });
 
             var dinner = new Meal("Sample dinner 1", new Dictionary<string, double>()
             {
@@ -80,13 +80,13 @@ namespace MenuBuilder
                 { "Garlic", 50},
                 { "Egg", 200},
                 { "Almond", 50}
-            });
+            }, new HashSet<MealType>() { MealType.Dinner });
             unit.Meals.Empty();
-            if (unit.Meals.Get(1) == null)
+            if (unit.Meals.Get(0) == null)
                 unit.Meals.Add(breakfast);
-            if (unit.Meals.Get(2) == null)
+            if (unit.Meals.Get(1) == null)
                 unit.Meals.Add(lunch);
-            if (unit.Meals.Get(3) == null)
+            if (unit.Meals.Get(2) == null)
                 unit.Meals.Add(dinner);
         }
     }

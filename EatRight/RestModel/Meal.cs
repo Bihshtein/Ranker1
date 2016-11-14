@@ -25,8 +25,11 @@ namespace RestModel  {
     {
         [BsonElement("_id")]
         public int ID { get; set; }
+        [BsonElement("_types")]
         private HashSet<MealType> types;
+        [BsonElement("_categories")]
         private HashSet<MealCategory> categories;
+        [BsonElement("_name")]
         public string Name { get; private set; }
         public Dictionary<string, double> productsWeight;
         public List<string> Products { get; private set; }
@@ -69,12 +72,12 @@ namespace RestModel  {
 
         public Boolean HasType(MealType type)
         {
-            return types.Contains(type);
+            return types != null && types.Contains(type);
         }
 
         public Boolean HasCategory(MealCategory category)
         {
-            return categories.Contains(category);
+            return categories != null && categories.Contains(category);
         }
     }
 }

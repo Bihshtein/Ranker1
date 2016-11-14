@@ -14,5 +14,6 @@ namespace MenuBuilder
         public static int CALORIES_PER_CARB_GRAM    = 4;
         public static int CALORIES_PER_PROTEIN_GRAM = 4;
         public static int MAX_DAYS_IN_LIST_NUM      = 10;
+        public static int MAX_MEALS_IN_LIST_NUM     = 10;
     }
 }

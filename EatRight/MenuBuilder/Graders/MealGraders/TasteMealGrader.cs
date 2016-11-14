@@ -10,6 +10,7 @@ namespace MenuBuilder.Graders.MealGraders
     {
         protected override double InternalGrade(MenuMeal meal)
         {
+            // TODO: implement
             return 1;
         }
     }

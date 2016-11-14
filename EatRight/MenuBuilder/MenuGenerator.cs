@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using RestModel;
 using MenuBuilder.Graders;
+using MenuBuilder.Graders.MealGraders;
 using MenuBuilder.Graders.DailyMenuGraders;
 using MenuBuilder.Graders.MenuGraders;
 
@@ -47,16 +48,11 @@ namespace MenuBuilder
             {
                 {new NutValuesGrader(), 0.35},
                 {new CaloriesCountGrader(), 0.35},
-                {new VarietyGrader(), 0.3}
+                {new VarietyGrader(), 0.3},
+                {new TasteGrader(), 0} // Currently 0 as this is not implemented
             };
             var menuList = GetMenuList(unit);
-
-            var menuGradeList = new List<KeyValuePair<Menu, double>>();
-
-            foreach (var menu in menuList)
-            {
-                menuGradeList.Add(new KeyValuePair<Menu, double>(menu, EvaluateObject(menu, graderMap)));
-            }
+            var menuGradeList = menuList.Select(x => new KeyValuePair<Menu, double>(x, EvaluateObject(x, graderMap))).ToList();
 
             menuGradeList.Sort(new MenuObjectComparer<Menu>());
 
@@ -67,8 +63,6 @@ namespace MenuBuilder
 
         private static List<Menu> GetMenuList(RestDBInterface unit)
         {
-            var menuList = new List<Menu>();
-
             var dailyMenusList = GetDaysList(unit);
 
             // Take only the best MAX_DAYS_IN_LIST_NUM days
@@ -76,56 +70,61 @@ namespace MenuBuilder
             {
                 {new NutValuesDailyGrader(), 0.35},
                 {new CaloriesCountDailyGrader(), 0.35},
-                {new VarietyDailyGrader(), 0.3}
+                {new VarietyDailyGrader(), 0.3},
+                {new TasteDailyGrader(), 0} // Currently 0 as this is not implemented
             };
-            var ratedDailyMenusList = new List<KeyValuePair<DailyMenu, double>>();
-            foreach (DailyMenu dailyMenu in dailyMenusList)
-            {
-                ratedDailyMenusList.Add(new KeyValuePair<DailyMenu, double>(dailyMenu, EvaluateObject(dailyMenu, graderMap)));
-            }
-            ratedDailyMenusList.Sort(new MenuObjectComparer<DailyMenu>());
-            var sortedDailyMenuList = new List<DailyMenu>();
-            foreach (var entry in ratedDailyMenusList)
-            {
-                sortedDailyMenuList.Add(entry.Key);
-            }
-            sortedDailyMenuList.RemoveRange(Globals.MAX_DAYS_IN_LIST_NUM, sortedDailyMenuList.Count - Globals.MAX_DAYS_IN_LIST_NUM);
+            var sortedDailyMenuList = GetTopGradableObject<DailyMenu, DailyMenuGrader>(dailyMenusList, graderMap, Globals.MAX_DAYS_IN_LIST_NUM);
 
             // Create all possible combinations
             var daysLists = GetSubsetsOfSize(sortedDailyMenuList, Grader.graderDB.menuDaysNum);
-            foreach (var list in daysLists)
+
+            return daysLists.Select(x => new Menu(x)).ToList();
+        }
+
+        private static List<T> GetTopGradableObject<T, S>(List<T> origList, Dictionary<S, double> graderMap, int maxNumInList)
+            where T : GradableObject
+            where S : Grader
+        {
+            var ratedList = origList.Select(x => new KeyValuePair<T, double>(x, EvaluateObject(x, graderMap))).ToList();
+            ratedList.Sort(new MenuObjectComparer<T>());
+
+            var sortedList = ratedList.Select(x => x.Key).ToList();
+            if (sortedList.Count > maxNumInList)
             {
-                menuList.Add(new Menu(list));
+                sortedList.RemoveRange(maxNumInList, sortedList.Count - maxNumInList);
             }
 
-            return menuList;
+            return sortedList;
         }
 
         private static List<DailyMenu> GetDaysList(RestDBInterface unit)
         {
             var daysList = new List<DailyMenu>();
 
-            /* We go over all possible combinations for all of the DB meals.
-             * This may be too much and we may filter it in the future (for example by classifying the meals as breakfast/lunch/dinner.
-             */
-            var mealsList = unit.Meals.GetAll();
+            var mealsList = unit.Meals.GetAll().ToList();
+            var menuMealsList = mealsList.Select(x => new MenuMeal() { Meal = x });
 
-            int cou = 0;
-            // Iterate over breaskfast meals
-            foreach (Meal breakfast in mealsList)
+            var breakfastList = menuMealsList.Where(x => x.Meal.HasType(MealType.Breakfast)).ToList();
+            var lunchList = menuMealsList.Where(x => x.Meal.HasType(MealType.Lunch)).ToList();
+            var dinnerList = menuMealsList.Where(x => x.Meal.HasType(MealType.Dinner)).ToList();
+
+            // Take only the best MAX_MEALS_IN_LIST_NUM days
+            var graderMap = new Dictionary<MealGrader, double>()
             {
-                cou++;
-                // Iterate over lunch meals
-                foreach (Meal lunch in mealsList)
+                {new TasteMealGrader(), 1},
+            };
+            var sortedBreakfastList = GetTopGradableObject<MenuMeal, MealGrader>(breakfastList, graderMap, Globals.MAX_MEALS_IN_LIST_NUM);
+            var sortedLunchList = GetTopGradableObject<MenuMeal, MealGrader>(lunchList, graderMap, Globals.MAX_MEALS_IN_LIST_NUM);
+            var sortedDinnerList = GetTopGradableObject<MenuMeal, MealGrader>(dinnerList, graderMap, Globals.MAX_MEALS_IN_LIST_NUM);
+
+            // Create all possible combinations
+            foreach (var breakfast in sortedBreakfastList)
+            {
+                foreach (var lunch in sortedLunchList)
                 {
-                    // Iterate over dinner meals
-                    foreach (Meal dinner in mealsList) {
-                        daysList.Add(new DailyMenu()
-                        {
-                            Breakfast = new MenuMeal() { Meal = breakfast },
-                            Lunch = new MenuMeal() { Meal = lunch },
-                            Dinner = new MenuMeal() { Meal = dinner }
-                        });
+                    foreach (var dinner in sortedDinnerList)
+                    {
+                        daysList.Add(new DailyMenu() { Breakfast = breakfast, Lunch = lunch, Dinner = dinner });
                     }
                 }
             }
