@@ -11,13 +11,10 @@ namespace MenuBuilder.Graders.DailyMenuGraders
     {
         protected override double InternalGrade(DailyMenu day)
         {
-            var products = new HashSet<string>();
-            int totalProductsNum = 0;
-            int repeatedProductsNum = 0;
+            var allProducts = day.GetAllProducts();
+            int totalProductsNum = allProducts.Count;
+            int repeatedProductsNum = totalProductsNum- allProducts.Distinct().Count() ;
 
-            RepeatedProductsInMeal(day.Breakfast, ref products, ref totalProductsNum, ref repeatedProductsNum);
-            RepeatedProductsInMeal(day.Lunch, ref products, ref totalProductsNum, ref repeatedProductsNum);
-            RepeatedProductsInMeal(day.Dinner, ref products, ref totalProductsNum, ref repeatedProductsNum);
 
             return GradeRatio((double)repeatedProductsNum / totalProductsNum);
         }
