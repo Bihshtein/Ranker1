@@ -32,7 +32,16 @@ namespace MenuBuilder
                 graderWeightSum += entry.Value;
 
                 var grader = entry.Key;
-                grade += (grader.Grade(obj) * entry.Value);
+                try
+                {
+                    grade += (grader.Grade(obj) * entry.Value);
+                }
+                catch (ArgumentException)
+                {
+                    // TODO: better handle this
+                    System.Console.WriteLine("***ERROR*** Gradable object type {0} not matching grader type {1}!", obj.GetType().ToString(), grader.ToString());
+                    Environment.Exit(1);
+                }
             }
 
             // Return the scaled grade

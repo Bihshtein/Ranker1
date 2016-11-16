@@ -15,12 +15,20 @@ namespace MenuBuilder.Graders.DailyMenuGraders
             double gradeSum = 0;
 
             // Go over all the meals in the day and grade them
-            gradeSum += mealGrader.Grade(dailyMenu.Breakfast);
-            mealsNumber++;
-            gradeSum += mealGrader.Grade(dailyMenu.Lunch);
-            mealsNumber++;
-            gradeSum += mealGrader.Grade(dailyMenu.Dinner);
-            mealsNumber++;
+            // TODO: make this more dynamic
+            try
+            {
+                gradeSum += mealGrader.Grade(dailyMenu.Breakfast);
+                mealsNumber++;
+                gradeSum += mealGrader.Grade(dailyMenu.Lunch);
+                mealsNumber++;
+                gradeSum += mealGrader.Grade(dailyMenu.Dinner);
+                mealsNumber++;
+            }
+            catch
+            {
+                throw;
+            }
 
             return gradeSum / mealsNumber;
         }

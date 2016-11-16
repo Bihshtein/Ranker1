@@ -22,7 +22,14 @@ namespace MenuBuilder.Graders.MenuGraders
 
             for (; dayInd < daysNumber; dayInd++)
             {
-                gradeSum += dailyGrader.Grade(menu.GetDay(dayInd));
+                try
+                {
+                    gradeSum += dailyGrader.Grade(menu.GetDay(dayInd));
+                }
+                catch
+                {
+                    throw;
+                }
             }
 
             return gradeSum / daysNumber;
