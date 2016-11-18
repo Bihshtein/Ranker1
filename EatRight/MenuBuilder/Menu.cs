@@ -10,12 +10,12 @@ namespace MenuBuilder
     {
         public Menu(List<DailyMenu> days)
         {
-            this.days = days;
+            this.Days = days;
         }
 
-        private List<DailyMenu> days;
+        public List<DailyMenu> Days { get; private set; }
 
-        public int GetDaysNumber() { return days.Count; }
-        public DailyMenu GetDay(int dayInx) { return days[dayInx]; }
+        public int GetDaysNumber() { return Days.Count; }
+        public DailyMenu GetDay(int dayInx) { return Days[dayInx]; }
     }
 }

@@ -17,6 +17,18 @@ namespace MenuBuilder.Graders
         public static GraderDB graderDB = null;
     }
 
+    public enum SuggestionRangeType
+    {
+        Days,
+        Meals
+    }
+
+    public class SuggestionRange
+    {
+        public SuggestionRangeType Type { get; set; }
+        public int Length { get; set; }
+    }
+
     public class GraderDB
     {
         // Information unique for user (by age, weight etc.)
@@ -24,6 +36,6 @@ namespace MenuBuilder.Graders
         public int dailyCaloriesNum;
 
         // Information chosen by the user
-        public int menuDaysNum; // How many days will the menu contain
+        public SuggestionRange range; // How many days/meals will the menu contain
     }
 }

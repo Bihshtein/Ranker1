@@ -13,15 +13,193 @@ namespace MenuBuilder
 {
     class MenuGenerator
     {
-        private class MenuObjectComparer<T> : IComparer<KeyValuePair<T, double>> where T : GradableObject
+        // Input
+        RestDBInterface unit;
+        GraderDB graderDB;
+
+        // Output
+        // Menus
+        private List<Menu> menusList = null;
+        private int currentMenuIdx = -1;
+        // Daily menus
+        private List<DailyMenu> dailyMenusList = null;
+        private HashSet<int> usedDailyMenus = null;
+        // Meals
+        private List<MenuMeal> mealsList = null;
+        private HashSet<int> usedMeals = null;
+
+        public MenuGenerator(RestDBInterface unit, GraderDB graderDB)
         {
-            public int Compare(KeyValuePair<T, double> x, KeyValuePair<T, double> y)
+            this.unit = unit;
+            this.graderDB = graderDB;
+
+            mealsList = new List<MenuMeal>();
+            if (graderDB.range.Type == SuggestionRangeType.Days)
             {
-                return (-1) * x.Value.CompareTo(y.Value); // Sort in descending order
+                menusList = new List<Menu>();
+                dailyMenusList = new List<DailyMenu>();
+                GenerateMenusList();
+            }
+            else if (graderDB.range.Type == SuggestionRangeType.Meals)
+            {
+                GenerateMealsList();
+            }
+
+            usedDailyMenus = new HashSet<int>();
+            usedMeals = new HashSet<int>();
+        }
+
+        private bool InMenuMode()
+        {
+            return graderDB.range.Type == SuggestionRangeType.Days;
+        }
+
+        private bool InMealMode()
+        {
+            return graderDB.range.Type == SuggestionRangeType.Meals;
+        }
+
+        public Menu GetMenu()
+        {
+            if (!InMenuMode())
+            {
+                // TODO: better handle errors
+                System.Console.WriteLine("***ERROR*** MenuGenerator object created for generating menus, not meals!");
+                System.Environment.Exit(1);
+            }
+
+            Menu newMenu = menusList[++currentMenuIdx];
+
+            SetMenuAsUsed(newMenu);
+
+            return newMenu;
+        }
+
+        public void ReplaceDayByInd(Menu menu, int index)
+        {
+            if (index >= menu.GetDaysNumber())
+            {
+                // TODO: better handle warnings
+                System.Console.WriteLine("***WARNING*** day in index {0} doesn't exist in relevant menu!", index);
+                return;
+            }
+
+            DailyMenu newDailyMenu = GetBestUnusedDailyMenu();
+            SetDailyMenuAsUnused(menu.GetDay(index));
+            SetDailyMenuAsUsed(newDailyMenu);
+            menu.Days[index] = newDailyMenu;
+        }
+
+        public Meal ReplaceMeal(Meal oldMeal)
+        {
+            if (!InMealMode())
+            {
+                // TODO: better handle errors
+                System.Console.WriteLine("***ERROR*** MenuGenerator object created for generating meals, not menus!");
+                System.Environment.Exit(1);
+            }
+
+            MenuMeal newMenuMeal = GetBestUnusedMeal();
+            if (newMenuMeal == null)
+            {
+                return null;
+            }
+            SetMealAsUnused(oldMeal.ID);
+            SetMealAsUsed(newMenuMeal);
+            return newMenuMeal.Meal;
+        }
+
+        private void SetMenuAsUsed(Menu menu)
+        {
+            // Update the used daily menus
+            usedDailyMenus.Clear(); // Remove the old used days- we only have one menu relevant at each point at time
+            menu.Days.ForEach(x => SetDailyMenuAsUsed(x));
+        }
+
+        private DailyMenu GetBestUnusedDailyMenu()
+        {
+            foreach (var dailyMenu in dailyMenusList)
+            {
+                if (!IsUsed(dailyMenu))
+                {
+                    return dailyMenu;
+                }
+            }
+
+            // TODO: better handle warnings
+            System.Console.WriteLine("***WARNING*** No unused daily menus!");
+            return null;
+        }
+
+        private MenuMeal GetBestUnusedMeal()
+        {
+            foreach (var meal in mealsList)
+            {
+                if (!IsUsed(meal))
+                {
+                    return meal;
+                }
+            }
+
+            // TODO: better handle warnings
+            System.Console.WriteLine("***WARNING*** No unused meals!");
+            return null;
+        }
+
+        private bool IsUsed(DailyMenu dailyMenu)
+        {
+            return usedDailyMenus.Contains(dailyMenu.ID);
+        }
+
+        private bool IsUsed(MenuMeal meal)
+        {
+            return usedDailyMenus.Contains(meal.Meal.ID);
+        }
+
+        private void SetDailyMenuAsUsed(DailyMenu dailyMenu)
+        {
+            usedDailyMenus.Add(dailyMenu.ID);
+
+            // Update the used meals, TODO: make more dynamic
+            SetMealAsUsed(dailyMenu.Breakfast);
+            SetMealAsUsed(dailyMenu.Breakfast);
+            SetMealAsUsed(dailyMenu.Breakfast);
+        }
+
+        private void SetDailyMenuAsUnused(DailyMenu dailyMenu)
+        {
+            usedDailyMenus.Remove(dailyMenu.ID);
+
+            // Update the used meals, TODO: make more dynamic
+            SetMealAsUnused(dailyMenu.Breakfast);
+            SetMealAsUnused(dailyMenu.Breakfast);
+            SetMealAsUnused(dailyMenu.Breakfast);
+        }
+
+        private void SetMealAsUsed(MenuMeal meal)
+        {
+            usedMeals.Add(meal.Meal.ID);
+        }
+
+        private void SetMealAsUnused(MenuMeal meal)
+        {
+            usedMeals.Remove(meal.Meal.ID);
+        }
+
+        private void SetMealAsUnused(int mealIdx)
+        {
+            usedMeals.Remove(mealIdx);
+        }
+
+        private class GradableObjectComparer<T> : IComparer<T> where T : GradableObject
+        {
+            public int Compare(T x, T y)
+            {
+                return (-1) * x.Grade.CompareTo(y.Grade); // Sort in descending order
             }
         }
 
-        private static double EvaluateObject<T>(GradableObject obj, Dictionary<T, double> graderMap)
+        private static void EvaluateObject<T>(GradableObject obj, Dictionary<T, double> graderMap)
             where T : Grader
         {
             double graderWeightSum = 0;
@@ -45,12 +223,20 @@ namespace MenuBuilder
             }
 
             // Return the scaled grade
-            return (grade / graderWeightSum) * 100;
+            obj.Grade = (grade / graderWeightSum) * 100;
         }
 
-        public static List<KeyValuePair<Menu, double>> GenerateMenuList(RestDBInterface unit, GraderDB graderDB)
+        private void GenerateMenusList()
         {
             Grader.graderDB = graderDB; // For the initialization of graders map
+
+            GenerateDailyMenuList();
+
+            // Take only the best MAX_DAYS_IN_LIST_NUM days
+            var filteredDailyMenuList = GetTopGradableObject<DailyMenu>(dailyMenusList, Globals.MAX_DAYS_IN_LIST_NUM);
+
+            // Create all possible combinations
+            var daysLists = GetSubsetsOfSize(filteredDailyMenuList, Grader.graderDB.range.Length);
 
             // Initialize graders map
             var graderMap = new Dictionary<MenuGrader, double>()
@@ -60,21 +246,41 @@ namespace MenuBuilder
                 {new VarietyGrader(), 0.3},
                 {new TasteGrader(), 0} // Currently 0 as this is not implemented
             };
-            var menuList = GetMenuList(unit);
-            var menuGradeList = menuList.Select(x => new KeyValuePair<Menu, double>(x, EvaluateObject(x, graderMap))).ToList();
 
-            menuGradeList.Sort(new MenuObjectComparer<Menu>());
+            menusList = daysLists.Select(x => new Menu(x)).ToList();
+
+            menusList.ForEach(x => EvaluateObject(x, graderMap));
+            menusList.Sort(new GradableObjectComparer<Menu>());
 
             Grader.graderDB = null;
-
-            return menuGradeList;
         }
 
-        private static List<Menu> GetMenuList(RestDBInterface unit)
+        private void GenerateDailyMenuList()
         {
-            var dailyMenusList = GetDaysList(unit);
+            GenerateMealsList();
 
-            // Take only the best MAX_DAYS_IN_LIST_NUM days
+            // TODO: make this more dynamic
+            var breakfastList = mealsList.Where(x => x.Meal.HasType(MealType.Breakfast)).ToList();
+            var lunchList = mealsList.Where(x => x.Meal.HasType(MealType.Lunch)).ToList();
+            var dinnerList = mealsList.Where(x => x.Meal.HasType(MealType.Dinner)).ToList();
+
+            // Take only the best MAX_MEALS_IN_LIST_NUM days
+            var filteredBreakfastList = GetTopGradableObject<MenuMeal>(breakfastList, Globals.MAX_MEALS_IN_LIST_NUM);
+            var filteredLunchList = GetTopGradableObject<MenuMeal>(lunchList, Globals.MAX_MEALS_IN_LIST_NUM);
+            var filteredDinnerList = GetTopGradableObject<MenuMeal>(dinnerList, Globals.MAX_MEALS_IN_LIST_NUM);
+
+            // Create all possible combinations
+            foreach (var breakfast in filteredBreakfastList)
+            {
+                foreach (var lunch in filteredLunchList)
+                {
+                    foreach (var dinner in filteredDinnerList)
+                    {
+                        dailyMenusList.Add(new DailyMenu() { Breakfast = breakfast, Lunch = lunch, Dinner = dinner });
+                    }
+                }
+            }
+
             var graderMap = new Dictionary<DailyMenuGrader, double>()
             {
                 {new NutValuesDailyGrader(), 0.35},
@@ -82,63 +288,35 @@ namespace MenuBuilder
                 {new VarietyDailyGrader(), 0.3},
                 {new TasteDailyGrader(), 0} // Currently 0 as this is not implemented
             };
-            var sortedDailyMenuList = GetTopGradableObject<DailyMenu, DailyMenuGrader>(dailyMenusList, graderMap, Globals.MAX_DAYS_IN_LIST_NUM);
 
-            // Create all possible combinations
-            var daysLists = GetSubsetsOfSize(sortedDailyMenuList, Grader.graderDB.menuDaysNum);
-
-            return daysLists.Select(x => new Menu(x)).ToList();
+            dailyMenusList.ForEach(x => EvaluateObject(x, graderMap));
+            dailyMenusList.Sort(new GradableObjectComparer<DailyMenu>());
         }
 
-        private static List<T> GetTopGradableObject<T, S>(List<T> origList, Dictionary<S, double> graderMap, int maxNumInList)
-            where T : GradableObject
-            where S : Grader
+        private void GenerateMealsList()
         {
-            var ratedList = origList.Select(x => new KeyValuePair<T, double>(x, EvaluateObject(x, graderMap))).ToList();
-            ratedList.Sort(new MenuObjectComparer<T>());
+            var dbMealsList = unit.Meals.GetAll();
+            mealsList = dbMealsList.Select(x => new MenuMeal() { Meal = x }).ToList();
 
-            var sortedList = ratedList.Select(x => x.Key).ToList();
-            if (sortedList.Count > maxNumInList)
-            {
-                sortedList.RemoveRange(maxNumInList, sortedList.Count - maxNumInList);
-            }
-
-            return sortedList;
-        }
-
-        private static List<DailyMenu> GetDaysList(RestDBInterface unit)
-        {
-            var daysList = new List<DailyMenu>();
-
-            var mealsList = unit.Meals.GetAll().ToList();
-            var menuMealsList = mealsList.Select(x => new MenuMeal() { Meal = x });
-
-            var breakfastList = menuMealsList.Where(x => x.Meal.HasType(MealType.Breakfast)).ToList();
-            var lunchList = menuMealsList.Where(x => x.Meal.HasType(MealType.Lunch)).ToList();
-            var dinnerList = menuMealsList.Where(x => x.Meal.HasType(MealType.Dinner)).ToList();
-
-            // Take only the best MAX_MEALS_IN_LIST_NUM days
             var graderMap = new Dictionary<MealGrader, double>()
             {
                 {new TasteMealGrader(), 1},
             };
-            var sortedBreakfastList = GetTopGradableObject<MenuMeal, MealGrader>(breakfastList, graderMap, Globals.MAX_MEALS_IN_LIST_NUM);
-            var sortedLunchList = GetTopGradableObject<MenuMeal, MealGrader>(lunchList, graderMap, Globals.MAX_MEALS_IN_LIST_NUM);
-            var sortedDinnerList = GetTopGradableObject<MenuMeal, MealGrader>(dinnerList, graderMap, Globals.MAX_MEALS_IN_LIST_NUM);
 
-            // Create all possible combinations
-            foreach (var breakfast in sortedBreakfastList)
+            mealsList.ForEach(x => EvaluateObject(x, graderMap));
+            mealsList.Sort(new GradableObjectComparer<MenuMeal>());
+        }
+
+        private static List<T> GetTopGradableObject<T>(List<T> origList, int maxNumInList)
+            where T : GradableObject
+        {
+            var filteredList = new List<T>(origList);
+            if (filteredList.Count > maxNumInList)
             {
-                foreach (var lunch in sortedLunchList)
-                {
-                    foreach (var dinner in sortedDinnerList)
-                    {
-                        daysList.Add(new DailyMenu() { Breakfast = breakfast, Lunch = lunch, Dinner = dinner });
-                    }
-                }
+                filteredList.RemoveRange(maxNumInList, filteredList.Count - maxNumInList);
             }
 
-            return daysList;
+            return filteredList;
         }
 
         /**

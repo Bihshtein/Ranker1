@@ -8,5 +8,6 @@ namespace MenuBuilder
 {
     abstract class GradableObject
     {
+        public double Grade { set; get; }
     }
 }
