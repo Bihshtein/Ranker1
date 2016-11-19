@@ -35,9 +35,9 @@ namespace MenuBuilder.Graders.DailyMenuGraders
                 var product = productWeight.Key;
                 var weight = productWeight.Value;
 
-                double protein = (weight / Globals.DEFAULT_GRAMֹ_NUM) * product.Protein;
-                double fat = (weight / Globals.DEFAULT_GRAMֹ_NUM) * product.Fat;
-                double carbs = (weight / Globals.DEFAULT_GRAMֹ_NUM) * product.Carbs;
+                double protein = (weight / Globals.DEFAULT_GRAM_NUM) * product.Protein;
+                double fat = (weight / Globals.DEFAULT_GRAM_NUM) * product.Fat;
+                double carbs = (weight / Globals.DEFAULT_GRAM_NUM) * product.Carbs;
 
                 caloriesNum += (Globals.CALORIES_PER_CARB_GRAM * carbs
                     + Globals.CALORIES_PER_FAT_GRAM * fat

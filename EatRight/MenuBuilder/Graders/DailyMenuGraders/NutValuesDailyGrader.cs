@@ -76,7 +76,7 @@ namespace MenuBuilder.Graders.DailyMenuGraders
                     }
 
                     double curValue = totalValues[entry.Key];
-                    totalValues[entry.Key] = curValue + (entry.Value * (weight / Globals.DEFAULT_GRAMֹ_NUM));
+                    totalValues[entry.Key] = curValue + (entry.Value * (weight / Globals.DEFAULT_GRAM_NUM));
                 }
             }
 
