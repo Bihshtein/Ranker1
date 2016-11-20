@@ -33,12 +33,16 @@ namespace RestModel {
 
     public class RestRepository<T> where T : class {
         private MongoDatabase _database;
+        public Queries<T> Queries { get; private set; }
+
         private string _tableName;
         private MongoCollection<T> _collection;
         public RestRepository(MongoDatabase db, string tblName) {
             _database = db;
             _tableName = tblName;
             _collection = _database.GetCollection<T>(tblName);
+            Queries = new Queries<T>(_collection);
+
         }
         public T Get(int i) {
             return _collection.FindOneById(i);
@@ -48,9 +52,11 @@ namespace RestModel {
             return _collection.Find(Query<Product>.Where(x => x.Protein > min)).ToList();
         }
 
+
+
         public List<T> GetByName(string name)
         {
-            return _collection.Find(Query<Product>.Where(x => x.Name1.Equals(name))).ToList();
+            return _collection.Find(Query<Product>.Where(x => x.Name2.Equals(name))).ToList();
         }
 
 
@@ -84,6 +90,8 @@ namespace RestModel {
 
         };
 
+        
+
         public List<T> GetByMeasure(string name, int min,bool isVegetarian=false)
         {
             IMongoQuery query;
@@ -100,6 +108,8 @@ namespace RestModel {
         public List<T> GetTopFoods(int minOfDailyValue) {
             return GetTopFoods(minOfDailyValue, 3);
         }
+
+       
         public List<T> GetTopFoods(int minOfDailyValue, int minMeasures) 
         {
             Dictionary<T, int> productsCount = new Dictionary<T, int>();
@@ -124,6 +134,9 @@ namespace RestModel {
         public IQueryable<T> GetAll() {
             MongoCursor<T> cursor = _collection.FindAll();
             return cursor.AsQueryable<T>();
+        }
+        public List<T> GetAllList() {
+            return  _collection.FindAll().ToList();
         }
         public void Add(T entity) {
             _collection.Insert(entity);
