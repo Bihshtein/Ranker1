@@ -61,6 +61,7 @@
     <Compile Include="Product.cs" />
     <Compile Include="Queries.cs" />
     <Compile Include="RestRepository.cs" />
+    <Compile Include="UserProfile.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
