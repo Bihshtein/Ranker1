@@ -30,7 +30,7 @@ namespace InitDB {
         public static List<string> CookingOptions = new List<string>(){
             "cultured","poached","whipped","pasteurized","candied","sauteed", "breaded","steamed","fried","heated",
              "boiled", "grilled", "pan-browned", "crumbles", "pickled", "microwave", "baked", "pickled", "roasted",
-             "oven","broil","scalloped", "raw", "braised","stewed","rotisserie","BBQ","simmered","glazed","cooked",
+             "oven","broiled","scalloped", "raw", "braised","stewed","rotisserie","BBQ","simmered","glazed","cooked",
             "prepared","batter", "flour"
         };
 

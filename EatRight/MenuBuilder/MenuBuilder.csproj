@@ -56,6 +56,7 @@
     <Compile Include="Graders\DailyMenuGraders\PerMealGrader.cs" />
     <Compile Include="Graders\DailyMenuGraders\VarietyDailyGrader.cs" />
     <Compile Include="Graders\Grader.cs" />
+    <Compile Include="Graders\GraderDBFactory.cs" />
     <Compile Include="Graders\MealGraders\MealGrader.cs" />
     <Compile Include="Graders\MealGraders\TasteMealGrader.cs" />
     <Compile Include="Graders\MenuGraders\NutValuesGrader.cs" />
