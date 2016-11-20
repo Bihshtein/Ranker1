@@ -11,26 +11,19 @@ namespace MenuBuilder.Graders.DailyMenuGraders
     {
         protected override double InternalGrade(DailyMenu dailyMenu)
         {
-            int mealsNumber = 0;
             double gradeSum = 0;
 
             // Go over all the meals in the day and grade them
-            // TODO: make this more dynamic
             try
             {
-                gradeSum += mealGrader.Grade(dailyMenu.Breakfast);
-                mealsNumber++;
-                gradeSum += mealGrader.Grade(dailyMenu.Lunch);
-                mealsNumber++;
-                gradeSum += mealGrader.Grade(dailyMenu.Dinner);
-                mealsNumber++;
+                dailyMenu.Meals.ForEach(x => gradeSum += mealGrader.Grade(x));
             }
             catch
             {
                 throw;
             }
 
-            return gradeSum / mealsNumber;
+            return gradeSum / dailyMenu.Meals.Count;
         }
 
         protected MealGrader mealGrader;

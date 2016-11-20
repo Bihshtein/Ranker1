@@ -12,19 +12,23 @@ namespace MenuBuilder
         public DailyMenu()
         {
             ID = IDCounter++;
+            Meals = new List<MenuMeal>();
         }
 
-        public MenuMeal Breakfast { get; set; }
-        public MenuMeal Lunch { get; set; }
-        public MenuMeal Dinner { get; set; }
+        public DailyMenu(List<MenuMeal> meals)
+        {
+            ID = IDCounter++;
+            Meals = meals;
+        }
+
+        public List<MenuMeal> Meals { get; private set; }
         public int ID { get; private set; }
 
         public List<string> GetAllProducts()
         {
-            var bp = Breakfast.Meal.Products.ToList();
-            var lp = Lunch.Meal.Products.ToList();
-            var dp = Dinner.Meal.Products.ToList();
-            return bp.Concat(lp).Concat(dp).ToList();
+            var resList = new List<string>();
+            Meals.ForEach(x => resList.AddRange(x.Meal.Products.ToList()));
+            return resList;
         }
 
         private static int IDCounter = 0;

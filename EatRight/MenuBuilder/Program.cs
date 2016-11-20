@@ -37,12 +37,12 @@ namespace MenuBuilder
                 System.Console.WriteLine(prod.Name1);
             }
             InitSampleMeal(unit);// currently resets the db and add the meal every time
-            var day1 = new DailyMenu()
+            var day1 = new DailyMenu(new List<MenuMeal>()
             {
-                Breakfast = new MenuMeal() { Meal = unit.Meals.Get(0) },
-                Lunch = new MenuMeal() { Meal = unit.Meals.Get(1) },
-                Dinner = new MenuMeal() { Meal = unit.Meals.Get(2) }
-            };
+                new MenuMeal() { Meal = unit.Meals.Get(0) },
+                new MenuMeal() { Meal = unit.Meals.Get(1) },
+                new MenuMeal() { Meal = unit.Meals.Get(2) }
+            });
 
             var dayList = new List<DailyMenu>() { day1 };
             return new Menu(dayList);
@@ -59,7 +59,7 @@ namespace MenuBuilder
                 { "bacon", 50},
                 { "Tuna", 200},
                 { "Almond", 25}
-            }, new HashSet<MealType>() { MealType.Breakfast });
+            }, new HashSet<MealType>() { MealType.Breakfast, MealType.Dinner });
             
             var lunch = new Meal("Sample lunch 1", new Dictionary<string, double>()
             {
@@ -80,7 +80,7 @@ namespace MenuBuilder
                 { "Garlic", 50},
                 { "Egg", 200},
                 { "Almond", 50}
-            }, new HashSet<MealType>() { MealType.Dinner });
+            }, new HashSet<MealType>() { MealType.Dinner, MealType.Breakfast });
             unit.Meals.Empty();
             if (unit.Meals.Get(0) == null)
                 unit.Meals.Add(breakfast);

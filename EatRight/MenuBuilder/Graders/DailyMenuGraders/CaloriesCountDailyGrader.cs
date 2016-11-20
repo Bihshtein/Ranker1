@@ -18,7 +18,8 @@ namespace MenuBuilder.Graders.DailyMenuGraders
 
         protected override double InternalGrade(DailyMenu day)
         {
-            var caloriesNum = MealCaloriesNum(day.Breakfast) + MealCaloriesNum(day.Lunch) + MealCaloriesNum(day.Dinner);
+            double caloriesNum = 0;
+            day.Meals.ForEach(x => caloriesNum += MealCaloriesNum(x));
 
             return GradeRatio(caloriesNum / dailyCaloriesNum);
         }

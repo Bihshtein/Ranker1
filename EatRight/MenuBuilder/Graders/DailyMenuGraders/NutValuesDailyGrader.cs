@@ -16,30 +16,20 @@ namespace MenuBuilder.Graders.DailyMenuGraders
             this.dailyValues = Grader.graderDB.dailyValues;
         }
 
-        protected override double InternalGrade(DailyMenu day)
+        protected override double InternalGrade(DailyMenu dailyMenu)
         {
             double grade = 0;
 
-            var breakfastValues = GetMealNutritionValues(day.Breakfast);
-            var lunchValues = GetMealNutritionValues(day.Lunch);
-            var dinnerValues = GetMealNutritionValues(day.Dinner);
+            var nutValues = GetNutritionValues(dailyMenu);
 
             // Compare to daily needed values
             foreach (var entry in dailyValues)
             {
                 var nutrient = entry.Key;
                 double actualValue = 0;
-                if (breakfastValues.ContainsKey(nutrient))
+                if (dailyValues.ContainsKey(nutrient))
                 {
-                    actualValue += breakfastValues[nutrient];
-                }
-                if (lunchValues.ContainsKey(nutrient))
-                {
-                    actualValue += lunchValues[nutrient];
-                }
-                if (dinnerValues.ContainsKey(nutrient))
-                {
-                    actualValue += dinnerValues[nutrient];
+                    actualValue = dailyValues[nutrient];
                 }
 
                 var idealValue = entry.Value;
@@ -55,31 +45,34 @@ namespace MenuBuilder.Graders.DailyMenuGraders
             return grade / dailyValues.Count;
         }
 
-        private Dictionary<string, double> GetMealNutritionValues(MenuMeal menuMeal)
+        private Dictionary<string, double> GetNutritionValues(DailyMenu dailyMenu)
         {
-            Meal meal = menuMeal.Meal;
             var totalValues = new Dictionary<string, double>();
 
-            // Get nutrition values of all products
-            foreach (var prodName in meal.Products)
+            foreach(var menuMeal in dailyMenu.Meals)
             {
-                var productWeight = meal.GetProductWeight(prodName);
-                var product = productWeight.Key;
-                var weight = productWeight.Value;
+                Meal meal = menuMeal.Meal;
 
-                var nutValues = product.GetNutritionValues().ToList();
-                foreach (var entry in nutValues)
+                // Get nutrition values of all products
+                foreach (var prodName in meal.Products)
                 {
-                    if (!totalValues.ContainsKey(entry.Key))
-                    {
-                        totalValues[entry.Key] = 0;
-                    }
+                    var productWeight = meal.GetProductWeight(prodName);
+                    var product = productWeight.Key;
+                    var weight = productWeight.Value;
 
-                    double curValue = totalValues[entry.Key];
-                    totalValues[entry.Key] = curValue + (entry.Value * (weight / Globals.DEFAULT_GRAMֹ_NUM));
+                    var nutValues = product.GetNutritionValues().ToList();
+                    foreach (var entry in nutValues)
+                    {
+                        if (!totalValues.ContainsKey(entry.Key))
+                        {
+                            totalValues[entry.Key] = 0;
+                        }
+
+                        double curValue = totalValues[entry.Key];
+                        totalValues[entry.Key] = curValue + (entry.Value * (weight / Globals.DEFAULT_GRAMֹ_NUM));
+                    }
                 }
             }
-
             return totalValues;
         }
 

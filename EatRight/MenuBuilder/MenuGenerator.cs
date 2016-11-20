@@ -36,8 +36,6 @@ namespace MenuBuilder
             mealsList = new List<MenuMeal>();
             if (graderDB.range.Type == SuggestionRangeType.Days)
             {
-                menusList = new List<Menu>();
-                dailyMenusList = new List<DailyMenu>();
                 GenerateMenusList();
             }
             else if (graderDB.range.Type == SuggestionRangeType.Meals)
@@ -160,20 +158,16 @@ namespace MenuBuilder
         {
             usedDailyMenus.Add(dailyMenu.ID);
 
-            // Update the used meals, TODO: make more dynamic
-            SetMealAsUsed(dailyMenu.Breakfast);
-            SetMealAsUsed(dailyMenu.Breakfast);
-            SetMealAsUsed(dailyMenu.Breakfast);
+            // Update the used meals
+            dailyMenu.Meals.ForEach(x => SetMealAsUsed(x));
         }
 
         private void SetDailyMenuAsUnused(DailyMenu dailyMenu)
         {
             usedDailyMenus.Remove(dailyMenu.ID);
 
-            // Update the used meals, TODO: make more dynamic
-            SetMealAsUnused(dailyMenu.Breakfast);
-            SetMealAsUnused(dailyMenu.Breakfast);
-            SetMealAsUnused(dailyMenu.Breakfast);
+            // Update the used meals
+            dailyMenu.Meals.ForEach(x => SetMealAsUnused(x));
         }
 
         private void SetMealAsUsed(MenuMeal meal)
@@ -259,27 +253,11 @@ namespace MenuBuilder
         {
             GenerateMealsList();
 
-            // TODO: make this more dynamic
-            var breakfastList = mealsList.Where(x => x.Meal.HasType(MealType.Breakfast)).ToList();
-            var lunchList = mealsList.Where(x => x.Meal.HasType(MealType.Lunch)).ToList();
-            var dinnerList = mealsList.Where(x => x.Meal.HasType(MealType.Dinner)).ToList();
-
             // Take only the best MAX_MEALS_IN_LIST_NUM days
-            var filteredBreakfastList = GetTopGradableObject<MenuMeal>(breakfastList, Globals.MAX_MEALS_IN_LIST_NUM);
-            var filteredLunchList = GetTopGradableObject<MenuMeal>(lunchList, Globals.MAX_MEALS_IN_LIST_NUM);
-            var filteredDinnerList = GetTopGradableObject<MenuMeal>(dinnerList, Globals.MAX_MEALS_IN_LIST_NUM);
-
-            // Create all possible combinations
-            foreach (var breakfast in filteredBreakfastList)
-            {
-                foreach (var lunch in filteredLunchList)
-                {
-                    foreach (var dinner in filteredDinnerList)
-                    {
-                        dailyMenusList.Add(new DailyMenu() { Breakfast = breakfast, Lunch = lunch, Dinner = dinner });
-                    }
-                }
-            }
+            var mealsLists = new List<List<MenuMeal>>();
+            Enum.GetValues(typeof(MealType)).Cast<MealType>().ToList().ForEach
+                (x => mealsLists.Add(mealsList.Where(y => y.Meal.HasType(x)).Take(Globals.MAX_MEALS_IN_LIST_NUM).ToList()));
+            dailyMenusList = GetAllCombinations<MenuMeal>(mealsLists).Select(x => new DailyMenu(x)).ToList();
 
             var graderMap = new Dictionary<DailyMenuGrader, double>()
             {
@@ -353,6 +331,38 @@ namespace MenuBuilder
             {
                 comb.Add(first);
                 resList.Add(comb);
+            }
+
+            return resList;
+        }
+
+        /**
+         * Get all combinations of list of lists.
+         */
+        private static List<List<T>> GetAllCombinations<T>(List<List<T>> listOfLists)
+        {
+            var resList = new List<List<T>>();
+
+            if (listOfLists.Count == 0)
+            {
+                resList.Add(new List<T>());
+                return resList;
+            }
+
+            // Get all the lists without elements from the first list
+            var firstList = listOfLists[0];
+            var restOfLists = listOfLists.Skip(1).Take(listOfLists.Count - 1).ToList();
+            var combWithoutFirstList = GetAllCombinations(restOfLists);
+
+            // Add elements from first list to all the combinations
+            foreach (var elem in firstList)
+            {
+                foreach (var comb in combWithoutFirstList)
+                {
+                    var finalComb = new List<T>(comb);
+                    finalComb.Insert(0, elem);
+                    resList.Add(finalComb);
+                }
             }
 
             return resList;
