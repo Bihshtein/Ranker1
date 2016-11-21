@@ -38,10 +38,12 @@ namespace InitDB.Validators {
 
         public virtual Tuple<string, string> GetNameAndDescription(string item) {
             string hiddenCut = string.Empty;
-            if (ThirdParts!=null)
+            if (ThirdParts != null) { }
                 hiddenCut = ThirdParts.FirstOrDefault((cut) => item.Contains(cut));
-            if (hiddenCut != null && hiddenCut != string.Empty)
-                item = item.Replace(hiddenCut, string.Empty);
+            if (hiddenCut != null && hiddenCut != string.Empty) {
+                item = item.Replace(hiddenCut, string.Empty).Trim();
+                hiddenCut = hiddenCut.Trim();
+            }
             return new Tuple<string, string>(item, hiddenCut);
         }
     }

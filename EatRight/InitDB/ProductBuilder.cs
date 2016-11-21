@@ -19,6 +19,7 @@ namespace InitDB {
                 p.Name1 = name;
             else 
                 parts.ForEach((item) => TryMatchPartToProperty(p, item, validator));
+            p.Weight = weight;
             SetNutrientProperties(nutrients, p, weight);
             return p;
         }
