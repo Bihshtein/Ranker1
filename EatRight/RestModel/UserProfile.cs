@@ -13,6 +13,7 @@ namespace RestModel
     public enum NutritionDietType
     {
         None = 0,
+        Pregnant, // (no raw meat, no sushi, etc)
         Vegeterian, // (no animal products, including no fish or seafood)
         Vegan, // (no animal, fish, dairy, or other foods derived from or made by animals incl. insects)
         RawFood, // (definitions may vary but often uncooked vegan)
@@ -75,12 +76,21 @@ namespace RestModel
         // Social credentials
         // Social link
     }
-
+    
     public class UserProfile
     {
+        public UserProfile()
+        {
+
+        }
         public string Name { get; protected set; }
         public double Age { get; protected set; }
-        
+
+        // todo: those two going to be removed
+        public int Sex { get; protected set; }
+        public int Pregnant { get; protected set; }
+
+
         public UserDietProfile DietProfile { get; protected set; }
         public UserSocialProfile SocialProfile { get; protected set; }
 
