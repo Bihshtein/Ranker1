@@ -60,7 +60,7 @@ namespace MenuBuilder.Graders.DailyMenuGraders
                     var product = productWeight.Key;
                     var weight = productWeight.Value;
 
-                    var nutValues = product.GetNutritionValues().ToList();
+                    var nutValues = product.Nutrients().ToList();
                     foreach (var entry in nutValues)
                     {
                         if (!totalValues.ContainsKey(entry.Key))
