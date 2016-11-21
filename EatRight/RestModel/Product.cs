@@ -137,37 +137,35 @@ namespace RestModel {
 
         public byte[] Image { get; set; }
 
-        public Dictionary<string, double> GetNutritionValues()
-        {
-            Dictionary<string, double> res = new Dictionary<string, double>();
+        public Dictionary<string, double> Nutrients() {
+                var res = new Dictionary<string, double>();
 
-            res["Protein"]          = Protein;
-            res["Fat"]              = Fat;
-            res["Carbs"]            = Carbs;
-            res["VitaminC"]         = VitaminC;
-            res["Thiamin"]          = Thiamin;
-            res["Riboflavin"]       = Riboflavin;
-            res["Niacin"]           = Niacin;
-            res["PantothenicAcid"]  = PantothenicAcid;
-            res["VitaminB6"]        = VitaminB6;
-            res["VitaminB12"]       = VitaminB12;
-            res["Folate"]           = Folate;
-            res["VitaminD"]         = VitaminD;
-            res["VitaminA"]         = VitaminA;
-            res["VitaminE"]         = VitaminE;
-            res["VitaminK"]         = VitaminK;
-            res["Calcium"]          = Calcium;
-            res["Iron"]             = Iron;
-            res["Phosphorus"]       = Phosphorus; 
-            res["Zinc"]             = Zinc;
-            res["Potassium"]        = Potassium;
-            res["Sodium"]           = Sodium;
-            res["Magnesium"]        = Magnesium;
-            res["Fiber"]            = Fiber;
+                res["Protein"] = Protein;
+                res["Fat"] = Fat;
+                res["Carbs"] = Carbs;
+                res["VitaminC"] = VitaminC;
+                res["Thiamin"] = Thiamin;
+                res["Riboflavin"] = Riboflavin;
+                res["Niacin"] = Niacin;
+                res["PantothenicAcid"] = PantothenicAcid;
+                res["VitaminB6"] = VitaminB6;
+                res["VitaminB12"] = VitaminB12;
+                res["Folate"] = Folate;
+                res["VitaminD"] = VitaminD;
+                res["VitaminA"] = VitaminA;
+                res["VitaminE"] = VitaminE;
+                res["VitaminK"] = VitaminK;
+                res["Calcium"] = Calcium;
+                res["Iron"] = Iron;
+                res["Phosphorus"] = Phosphorus;
+                res["Zinc"] = Zinc;
+                res["Potassium"] = Potassium;
+                res["Sodium"] = Sodium;
+                res["Magnesium"] = Magnesium;
+                res["Fiber"] = Fiber;
 
-            return res;
+                return res;
         }
-
     }
 }  
 

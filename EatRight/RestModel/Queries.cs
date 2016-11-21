@@ -14,19 +14,19 @@ namespace RestModel {
         }
 
 
-        public List<Product> QueryForVitaminB12(string name, string group) {
+        public List<Product> QueryByNameAndValue(string name, string group, string value) {
             IMongoQuery query;
-            if (group == "Pork")
-
-                query = Query<Product>.Where(x => x.Name1.Equals(name) && x.FoodGroup.Equals(group));
-            else
+            if (new List<string>{"Beef","Chicken"}.Contains(group) )
                 query = Query<Product>.Where(x => x.Name2.Equals(name) && x.FoodGroup.Equals(group));
+            else
+                query = Query<Product>.Where(x => x.Name1.Equals(name) && x.FoodGroup.Equals(group));
+
 
             var res = collection.Find(query).ToList();
 
             var newRes = res.Cast<Product>().ToList();
-            newRes.Sort((a, b) => a.VitaminB12 > b.VitaminB12 ? 1 : -1);
-            newRes.RemoveAll(p => p.VitaminB12 == 0);
+            newRes.Sort((a, b) => a.Nutrients()[value] > b.Nutrients()[value] ? 1 : -1);
+            newRes.RemoveAll(p => p.Nutrients()[value] == 0);
             return newRes;
         }
 
