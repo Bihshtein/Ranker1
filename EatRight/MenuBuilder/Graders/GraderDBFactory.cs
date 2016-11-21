@@ -134,7 +134,10 @@ namespace MenuBuilder.Graders
         public static SuggestionRange FromUserProfile(UserProfile userProfile)
         {
             if (userProfile == null) return null;
-            return new SuggestionRange() { Type = SuggestionRangeType.Days, Length = 1 };
+            
+            // TODO: get suggetion range from user profile
+
+            return SuggestionRange.OneMeal();
         }
     }
 
