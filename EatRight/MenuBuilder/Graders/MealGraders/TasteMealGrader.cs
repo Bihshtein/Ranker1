@@ -6,29 +6,40 @@ using System.Threading.Tasks;
 
 namespace MenuBuilder.Graders.MealGraders
 {
-    class TasteMealGrader : MealGrader
+    abstract class TasteMealGrader<T> : MealGrader
     {
-        public TasteMealGrader()
-        {
-            Description = "Compatibility to the user flavor";
-        }
+        abstract protected void InitDataStructures(MenuMeal meal);
 
         protected override double InternalGrade(MenuMeal meal)
         {
-            double totalFlavorGrade = 0;
-            foreach (var product in meal.Meal.Products)
+            InitDataStructures(meal);
+            if (flavorDict == null)
             {
-                if (graderDB.productFlavorGrade.ContainsKey(product))
+                return 0.5;
+            }
+            if (objectList == null)
+            {
+                return 1;
+            }
+
+            double totalFlavorGrade = 0;
+            
+            foreach (var obj in objectList)
+            {
+                if (flavorDict.ContainsKey(obj))
                 {
-                    totalFlavorGrade += graderDB.productFlavorGrade[product];
+                    totalFlavorGrade += flavorDict[obj];
                 }
             }
 
-            int productsNum = meal.Meal.Products.Count;
-            double scaledTotalFlavorGrade = totalFlavorGrade + productsNum;
-            double maxFlavorGrade = 2 * productsNum;
+            int objNum = objectList.Count;
+            double scaledTotalFlavorGrade = totalFlavorGrade + objNum;
+            double maxFlavorGrade = 2 * objNum;
 
             return scaledTotalFlavorGrade / maxFlavorGrade;
         }
+
+        protected Dictionary<T, double> flavorDict;
+        protected List<T> objectList;
     }
 }

@@ -26,9 +26,9 @@ namespace RestModel  {
         [BsonElement("_id")]
         public int ID { get; set; }
         [BsonElement("_types")]
-        private HashSet<MealType> types;
+        public HashSet<MealType> Types { get; private set;  }
         [BsonElement("_categories")]
-        private HashSet<MealCategory> categories;
+        public HashSet<MealCategory> Categories { get; private set; }
         [BsonElement("_name")]
         public string Name { get; private set; }
         public Dictionary<string, double> productsWeight;
@@ -48,20 +48,20 @@ namespace RestModel  {
         public Meal(string name, Dictionary<string, double> productsWeight, HashSet<MealType> types) :
             this(name, productsWeight)
         {
-            this.types = types;
+            this.Types = types;
         }
 
         public Meal(string name, Dictionary<string, double> productsWeight, HashSet<MealCategory> categories) :
             this(name, productsWeight)
         {
-            this.categories = categories;
+            this.Categories = categories;
         }
 
         public Meal(string name, Dictionary<string, double> productsWeight, HashSet<MealType> types, HashSet<MealCategory> categories) :
             this(name, productsWeight)
         {
-            this.types = types;
-            this.categories = categories;
+            this.Types = types;
+            this.Categories = categories;
         }
 
         public KeyValuePair<Product, double> GetProductWeight(string prodName)
@@ -72,12 +72,12 @@ namespace RestModel  {
 
         public Boolean HasType(MealType type)
         {
-            return types != null && types.Contains(type);
+            return Types != null && Types.Contains(type);
         }
 
         public Boolean HasCategory(MealCategory category)
         {
-            return categories != null && categories.Contains(category);
+            return Categories != null && Categories.Contains(category);
         }
     }
 }

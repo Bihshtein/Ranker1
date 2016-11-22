@@ -52,6 +52,7 @@ namespace MenuBuilder.Graders
         public Dictionary<string, double> dailyValues;
         public int dailyCaloriesNum;
         public Dictionary<string, double> productFlavorGrade; // Maps a product to a double in the range [-1,1] where -1 means dislike and 1 means like
+        public Dictionary<MealCategory, double> mealCategoryGrade; // Maps a meal category to a double in the range [-1,1] where -1 means dislike and 1 means like
 
         // Information chosen by the user
         public SuggestionRange range; // How many days/meals will the menu contain

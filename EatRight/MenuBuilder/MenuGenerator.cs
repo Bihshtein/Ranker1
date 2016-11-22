@@ -245,11 +245,13 @@ namespace MenuBuilder
             // Initialize graders map
             var graderMap = new Dictionary<MenuGrader, double>()
             {
-                {new NutValuesGrader(), 0.32},
-                {new CaloriesCountGrader(), 0.33},
+                {new NutValuesGrader(), 0.3},
+                {new CaloriesCountGrader(), 0.3},
                 {new VarietyGrader(), 0.25},
-                {new TasteGrader(), 0.1},
-                {new CostGrader(), 0} // Currently zero as this is not fully implemented- need to add cost per product
+                {new ProductsTasteGrader(), 0.1},
+                {new FoodCategoryGrader(), 0.05},
+                {new CostGrader(), 0}, // Currently zero as this is not fully implemented- need to add cost per product
+                {new TypeFitnessGrader(), 0} // Currently zero as this is not fully implemented
             };
 
             menusList = daysLists.Select(x => new Menu(x)).ToList();
@@ -272,10 +274,12 @@ namespace MenuBuilder
 
             var graderMap = new Dictionary<DailyMenuGrader, double>()
             {
-                {new NutValuesDailyGrader(), 0.32},
-                {new CaloriesCountDailyGrader(), 0.33},
+                {new NutValuesDailyGrader(), 0.3},
+                {new CaloriesCountDailyGrader(), 0.3},
                 {new VarietyDailyGrader(), 0.25},
-                {new TasteDailyGrader(), 0.1}
+                {new ProductsTasteDailyGrader(), 0.1},
+                {new FoodCategoryDailyGrader(), 0.05},
+                {new TypeFitnessDailyGrader(), 0} // Currently zero as this is not fully implemented
             };
 
             dailyMenusList.ForEach(x => EvaluateObject(x, graderMap));
@@ -289,7 +293,9 @@ namespace MenuBuilder
 
             var graderMap = new Dictionary<MealGrader, double>()
             {
-                {new TasteMealGrader(), 1},
+                {new ProductsTasteMealGrader(), 0.66},
+                {new FoodCategoryMealGrader(), 0.34},
+                {new TypeFitnessMealGrader(), 0} // Currently zero as this is not fully implemented
             };
 
             mealsList.ForEach(x => EvaluateObject(x, graderMap));
