@@ -56,7 +56,10 @@ namespace RestModel {
 
         public List<T> GetByName(string name)
         {
-            return _collection.Find(Query<Product>.Where(x => x.Name2.Equals(name))).ToList();
+            return _collection.Find(Query<Product>.Where(x =>
+                (Product.Name2FoodGroups.Contains(x.FoodGroup) && x.Name2.Equals(name)) ||
+                (!Product.Name2FoodGroups.Contains(x.FoodGroup) && x.Name1.Equals(name))))
+                .ToList();
         }
 
 

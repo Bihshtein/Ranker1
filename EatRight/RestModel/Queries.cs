@@ -16,7 +16,7 @@ namespace RestModel {
 
         public List<Product> QueryByNameAndValue(string name, string group, string value) {
             IMongoQuery query;
-            if (new List<string>{"Beef","Chicken"}.Contains(group) )
+            if (Product.Name2FoodGroups.Contains(group) )
                 query = Query<Product>.Where(x => x.Name2.Equals(name) && x.FoodGroup.Equals(group));
             else
                 query = Query<Product>.Where(x => x.Name1.Equals(name) && x.FoodGroup.Equals(group));

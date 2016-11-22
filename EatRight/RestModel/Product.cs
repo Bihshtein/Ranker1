@@ -166,6 +166,8 @@ namespace RestModel {
 
                 return res;
         }
+
+        public static List<string> Name2FoodGroups = new List<string>{ "Beef", "Chicken" };
     }
 }  
 
