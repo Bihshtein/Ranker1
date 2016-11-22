@@ -11,7 +11,7 @@ namespace MenuBuilder.Graders.DailyMenuGraders
     {
         public TasteDailyGrader()
         {
-            Description = "Compatibility to the user flavour";
+            Description = "Compatibility to the user flavor";
 
             mealGrader = new TasteMealGrader();
         }

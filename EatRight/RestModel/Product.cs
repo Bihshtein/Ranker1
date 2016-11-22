@@ -167,6 +167,18 @@ namespace RestModel {
                 return res;
         }
 
+        public string GetName()
+        {
+            if (Name2FoodGroups.Contains(FoodGroup))
+            {
+                return Name2;
+            }
+            else
+            {
+                return Name1;
+            }
+        }
+
         public static List<string> Name2FoodGroups = new List<string>{ "Beef", "Chicken" };
     }
 }  

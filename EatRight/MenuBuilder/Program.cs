@@ -22,6 +22,7 @@ namespace MenuBuilder
             graderDB.dailyValues = RestRepository<Product>.DailyValues;
             graderDB.dailyCaloriesNum = 3000;
             graderDB.range = new SuggestionRange() { Type = SuggestionRangeType.Days, Length = 1 };
+            graderDB.productFlavorGrade = new Dictionary<string, double>();
 
             MenuGenerator generator = new MenuGenerator(unit, graderDB);
             var menu = generator.GetMenu();

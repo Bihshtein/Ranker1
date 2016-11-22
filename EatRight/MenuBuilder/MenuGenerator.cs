@@ -245,10 +245,11 @@ namespace MenuBuilder
             // Initialize graders map
             var graderMap = new Dictionary<MenuGrader, double>()
             {
-                {new NutValuesGrader(), 0.35},
-                {new CaloriesCountGrader(), 0.35},
-                {new VarietyGrader(), 0.3},
-                {new TasteGrader(), 0} // Currently 0 as this is not implemented
+                {new NutValuesGrader(), 0.32},
+                {new CaloriesCountGrader(), 0.33},
+                {new VarietyGrader(), 0.25},
+                {new TasteGrader(), 0.1},
+                {new CostGrader(), 0} // Currently zero as this is not fully implemented- need to add cost per product
             };
 
             menusList = daysLists.Select(x => new Menu(x)).ToList();
@@ -271,10 +272,10 @@ namespace MenuBuilder
 
             var graderMap = new Dictionary<DailyMenuGrader, double>()
             {
-                {new NutValuesDailyGrader(), 0.35},
-                {new CaloriesCountDailyGrader(), 0.35},
-                {new VarietyDailyGrader(), 0.3},
-                {new TasteDailyGrader(), 0} // Currently 0 as this is not implemented
+                {new NutValuesDailyGrader(), 0.32},
+                {new CaloriesCountDailyGrader(), 0.33},
+                {new VarietyDailyGrader(), 0.25},
+                {new TasteDailyGrader(), 0.1}
             };
 
             dailyMenusList.ForEach(x => EvaluateObject(x, graderMap));

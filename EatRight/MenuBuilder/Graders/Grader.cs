@@ -51,8 +51,10 @@ namespace MenuBuilder.Graders
         // Information unique for user (by age, weight etc.)
         public Dictionary<string, double> dailyValues;
         public int dailyCaloriesNum;
+        public Dictionary<string, double> productFlavorGrade; // Maps a product to a double in the range [-1,1] where -1 means dislike and 1 means like
 
         // Information chosen by the user
         public SuggestionRange range; // How many days/meals will the menu contain
+        public double budget = Double.PositiveInfinity; // Specific user's budget, default is infinity (no budget)
     }
 }

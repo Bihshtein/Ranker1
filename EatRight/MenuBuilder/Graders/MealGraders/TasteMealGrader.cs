@@ -10,13 +10,25 @@ namespace MenuBuilder.Graders.MealGraders
     {
         public TasteMealGrader()
         {
-            Description = "Compatibility to the user flavour";
+            Description = "Compatibility to the user flavor";
         }
 
         protected override double InternalGrade(MenuMeal meal)
         {
-            // TODO: implement
-            return 1;
+            double totalFlavorGrade = 0;
+            foreach (var product in meal.Meal.Products)
+            {
+                if (graderDB.productFlavorGrade.ContainsKey(product))
+                {
+                    totalFlavorGrade += graderDB.productFlavorGrade[product];
+                }
+            }
+
+            int productsNum = meal.Meal.Products.Count;
+            double scaledTotalFlavorGrade = totalFlavorGrade + productsNum;
+            double maxFlavorGrade = 2 * productsNum;
+
+            return scaledTotalFlavorGrade / maxFlavorGrade;
         }
     }
 }

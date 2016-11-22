@@ -60,6 +60,7 @@
     <Compile Include="Graders\GraderDBFactory.cs" />
     <Compile Include="Graders\MealGraders\MealGrader.cs" />
     <Compile Include="Graders\MealGraders\TasteMealGrader.cs" />
+    <Compile Include="Graders\MenuGraders\CostGrader.cs" />
     <Compile Include="Graders\MenuGraders\NutValuesGrader.cs" />
     <Compile Include="Graders\MenuGraders\CaloriesCountGrader.cs" />
     <Compile Include="Graders\MenuGraders\MenuGrader.cs" />
