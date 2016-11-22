@@ -29,6 +29,21 @@ namespace MenuBuilder.Graders
     {
         public SuggestionRangeType Type { get; set; }
         public int Length { get; set; }
+
+        public static SuggestionRange SingleDay()
+        {
+            return new SuggestionRange() { Type = SuggestionRangeType.Days, Length = 1 };
+        }
+
+        public static SuggestionRange WholeWeek()
+        {
+            return new SuggestionRange() { Type = SuggestionRangeType.Days, Length = 7 };
+        }
+
+        public static SuggestionRange OneMeal()
+        {
+            return new SuggestionRange() { Type = SuggestionRangeType.Meals, Length = 1 };
+        }
     }
 
     public class GraderDB

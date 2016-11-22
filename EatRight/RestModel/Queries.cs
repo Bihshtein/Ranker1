@@ -14,9 +14,22 @@ namespace RestModel {
         }
 
 
-        public List<T> GetChickenBreast() {
-            return collection.Find(Query<Product>.Where(x => x.Name2.Equals("breast") && x.FoodGroup.Equals("Chicken"))).ToList();
+        public List<Product> QueryByNameAndValue(string name, string group, string value) {
+            IMongoQuery query;
+            if (new List<string>{"Beef","Chicken"}.Contains(group) )
+                query = Query<Product>.Where(x => x.Name2.Equals(name) && x.FoodGroup.Equals(group));
+            else
+                query = Query<Product>.Where(x => x.Name1.Equals(name) && x.FoodGroup.Equals(group));
 
+
+            var res = collection.Find(query).ToList();
+
+            var newRes = res.Cast<Product>().ToList();
+            newRes.Sort((a, b) => a.Nutrients()[value] > b.Nutrients()[value] ? 1 : -1);
+            newRes.RemoveAll(p => p.Nutrients()[value] == 0);
+            return newRes;
         }
+
+        
     }
 }
