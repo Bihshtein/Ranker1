@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace MenuBuilder
 {
-    abstract class GradableObject
+    class GradeInfo
     {
-        public double Grade { set; get; }
-        public GradeInfo GradeInfo { set; get; }
+        public List<string> BestGraders { get; set; }
+        public List<string> WorstGraders { get; set; }
     }
 }

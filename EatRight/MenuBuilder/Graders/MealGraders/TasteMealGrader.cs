@@ -8,6 +8,11 @@ namespace MenuBuilder.Graders.MealGraders
 {
     class TasteMealGrader : MealGrader
     {
+        public TasteMealGrader()
+        {
+            Description = "Compatibility to the user flavour";
+        }
+
         protected override double InternalGrade(MenuMeal meal)
         {
             // TODO: implement

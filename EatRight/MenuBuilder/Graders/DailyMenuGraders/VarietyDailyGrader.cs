@@ -9,6 +9,11 @@ namespace MenuBuilder.Graders.DailyMenuGraders
 {
     class VarietyDailyGrader : DailyMenuGrader
     {
+        public VarietyDailyGrader()
+        {
+            Description = "Variety in products";
+        }
+
         protected override double InternalGrade(DailyMenu day)
         {
             var allProducts = day.GetAllProducts();

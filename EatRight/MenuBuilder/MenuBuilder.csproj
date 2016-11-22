@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GradeInfo.cs" />
     <Compile Include="Graders\DailyMenuGraders\CaloriesCountDailyGrader.cs" />
     <Compile Include="DailyMenu.cs" />
     <Compile Include="Globals.cs" />

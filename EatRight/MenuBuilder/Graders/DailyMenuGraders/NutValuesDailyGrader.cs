@@ -13,6 +13,8 @@ namespace MenuBuilder.Graders.DailyMenuGraders
 
         public NutValuesDailyGrader()
         {
+            Description = "Nutrition values compared to the ideal nutrition values";
+
             this.dailyValues = Grader.graderDB.dailyValues;
         }
 

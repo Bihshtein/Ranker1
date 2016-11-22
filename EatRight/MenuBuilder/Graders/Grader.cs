@@ -15,6 +15,8 @@ namespace MenuBuilder.Graders
         public abstract double Grade(GradableObject obj);
 
         public static GraderDB graderDB = null;
+
+        public string Description { protected set; get; }
     }
 
     public enum SuggestionRangeType

@@ -11,6 +11,8 @@ namespace MenuBuilder.Graders.MenuGraders
     {
         public VarietyGrader()
         {
+            Description = "Variety in products";
+
             dailyGrader = new VarietyDailyGrader();
         }
     }

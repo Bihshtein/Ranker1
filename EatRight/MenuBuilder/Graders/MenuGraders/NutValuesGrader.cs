@@ -11,6 +11,8 @@ namespace MenuBuilder.Graders.MenuGraders
     {
         public NutValuesGrader()
         {
+            Description = "Nutrition values compared to the ideal nutrition values";
+
             dailyGrader = new NutValuesDailyGrader();
         }
     }
