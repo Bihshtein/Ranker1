@@ -21,7 +21,7 @@ namespace InitDB {
         public static string FolderPath = Assembly.GetExecutingAssembly().Location + @"\..\..\..\..\FruitsDB\";
         private static int totalAdded = 0;
         private static int totalSkipped = 0;
-        public static Dictionary<string, string> FoodGroups = new Dictionary<string, string>() { { "Carbs", "2000" }, { "Dairy","0100" },{ "Fruits", "0900" },{ "Vegs","1100" }, { "Chicken", "0500"  }, { "Pork", "1000" }, { "Beef", "1300" } };   
+        public static Dictionary<string, string> FoodGroups = new Dictionary<string, string>() { {  "Beverages", "1400" } ,{ "Carbs", "2000" }, { "Dairy", "0100" }, { "Fruits", "0900" }, { "Vegs", "1100" }, { "Chicken", "0500" }, { "Pork", "1000" }, { "Beef", "1300" } };
         public static Dictionary<string, BasicValidator> Validators = new Dictionary<string, BasicValidator>() {
                 { "Pork", new PorkValidator()},
                 { "Beef", new BeefValidator()},
@@ -30,6 +30,7 @@ namespace InitDB {
                 { "Chicken", new ChickenValidator()},
                 { "Dairy", new DairyValidator()},
                 { "Carbs", new CarbsValidator()},
+                { "Beverages", new BeveragesValidator()},
                 { "manual", null}
             };
 
@@ -42,7 +43,7 @@ namespace InitDB {
             var nutrientsQuery1 = string.Empty;
             var nutrientsQuery2 = string.Empty;
             foreach (var item in QueryData.Nutrients1) {
-                nutrientsQuery1 += "nutrients=" + item+"&";
+                nutrientsQuery1 += "nutrients=" + item + "&";
             }
             foreach (var item in QueryData.Nutrients2) {
                 nutrientsQuery2 += "nutrients=" + item + "&";
@@ -55,13 +56,13 @@ namespace InitDB {
             Console.WriteLine("Total Added : " + totalAdded);
             Console.WriteLine("Total Skipped : " + totalSkipped);
         }
-      
+
         private static void AddFoodGroups(RestDBInterface unit, string nutrientsQuery1, string nutrientsQuery2) {
             foreach (var item in FoodGroups.Keys) {
-                var foods1 = GetFoods(QueryData.GroupUrl, FoodGroups[item], nutrientsQuery1);
-                var foods2 = GetFoods(QueryData.GroupUrl, FoodGroups[item], nutrientsQuery2);
-              
-                for (int i = 0; i < Math.Min(foods1.Count,foods2.Count); i++) {
+                var foods1 = GetFoods(QueryData.GroupUrl, FoodGroups[item], nutrientsQuery1, "1");
+                var foods2 = GetFoods(QueryData.GroupUrl, FoodGroups[item], nutrientsQuery2, "2");
+
+                for (int i = 0; i < Math.Min(foods1.Count, foods2.Count); i++) {
                     var food1 = (dynamic)foods1[i];
                     var food2 = (dynamic)foods2[i];
                     var id1 = ((object)food1.ndbno).ToString();
@@ -99,46 +100,53 @@ namespace InitDB {
                     SkipDebug(name, "already in DB");
                 }
                 else {
-                    
+
                     var url1 = string.Format(QueryData.SingleUrl, nutrientsQuery1, id, QueryData.Format, QueryData.ApiKey);
-                    var url2= string.Format(QueryData.SingleUrl, nutrientsQuery2, id, QueryData.Format, QueryData.ApiKey);
+                    var url2 = string.Format(QueryData.SingleUrl, nutrientsQuery2, id, QueryData.Format, QueryData.ApiKey);
                     var food1 = (dynamic)GetFoods(url1)[0];
-                    
+
                     var food2 = (dynamic)GetFoods(url2)[0];
                     JArray nutrients1 = (food1).nutrients;
                     JArray nutrients2 = (food2).nutrients;
-                    AddProduct("manual",unit, id, name, new JArray(nutrients1.Concat(nutrients2)), double.Parse(((object)food1.weight).ToString()));
+                    AddProduct("manual", unit, id, name, new JArray(nutrients1.Concat(nutrients2)), double.Parse(((object)food1.weight).ToString()));
                 }
             }
         }
 
-        private static JArray GetFoods(string url, string foodGroup, string nutrientQuery) {
+        private static JArray GetFoods(string url, string foodGroup, string nutrientQuery, string num = "") {
             var fullUrl = string.Format(QueryData.GroupUrl, foodGroup, QueryData.Format, QueryData.ApiKey, nutrientQuery);
-            return GetFoods(fullUrl);
+            return GetFoods(fullUrl, foodGroup, num);
         }
 
-        private static JArray GetFoods(string fullUrl) {
-            var data = new WebClient().DownloadString(fullUrl);
+        private static JArray GetFoods(string fullUrl, string foodGroup = "", string num = "") {
+            string data;
+            var path = Path.Combine(FolderPath, foodGroup + num + ".txt");
+            if (!File.Exists(path)) {
+                data = new WebClient().DownloadString(fullUrl);
+                File.WriteAllText(Path.Combine(FolderPath, path), data);
+            }
+            else
+                data = File.ReadAllText(path);
             var res = JsonConvert.DeserializeObject<dynamic>(data);
             return res.report.foods;
         }
 
-        public static void AddProduct(string groupName,RestDBInterface unit, string id, string name, JArray nutrients, double weight) {
+        public static void AddProduct(string groupName, RestDBInterface unit, string id, string name, JArray nutrients, double weight) {
             AddDebug(name);
             var collection = MongoData._database.GetCollection<BsonDocument>(MongoData.CollectionName);
-            var newProduct = ProductBuilder.GetProduct(groupName,int.Parse(id), name,  nutrients, weight);
+            var newProduct = ProductBuilder.GetProduct(groupName, int.Parse(id), name, nutrients, weight);
             unit.Products.Add(newProduct);
         }
 
-       
+
         private static void SkipDebug(string name, string reason) {
             totalSkipped++;
-            Console.WriteLine("Skipping: " + name + ", reason : " + reason);
+            // Console.WriteLine("Skipping: " + name + ", reason : " + reason);
         }
 
         private static void AddDebug(string name) {
             totalAdded++;
-            Console.WriteLine("Adding: " + name + "");
+            //Console.WriteLine("Adding: " + name + "");
         }
 
 

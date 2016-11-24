@@ -18,7 +18,9 @@ namespace InitDB.Validators {
         }
 
         public virtual bool IsMainPart(string part) {
-            if (MainParts != null) 
+            if (part == string.Empty)
+                return true;
+            else if (MainParts != null) 
                 return MainParts.Contains(part);
             else 
                 return Char.IsUpper(part[0]);

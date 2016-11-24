@@ -14,10 +14,14 @@ namespace InitDB {
             "green chilies","onions","mushrooms","herbs and cheese","dill"
         };
 
+        public static List<string> NoiseWords = new List<string>() {
+            "Strawberry"
+        };
+
         public static List<string> AdditionalHealthData = new List<string>{
             "dietetic","unenriched","gluten","enriched","glucose","vitamin A","lactose", "salted",
-            "sugared","protein","vitamin D","concentrate","sucralose","sugar","undiluted","calcium",
-            "sulfured","ascorbic acid","sodium","salt","water","sweeten","original seasoning"
+            "sugared","vitamin D","concentrate","sucralose","sugar","undiluted","calcium",
+            "sulfured","ascorbic acid","sodium","salt","sweeten","original seasoning"
         };
 
         private static List<string> ConnectWordOptions = new List<string>{
@@ -27,7 +31,7 @@ namespace InitDB {
            "condensed","pressurized","syrup pack","drained solids","all styles", "regular pack", "brine pack", "vacuum pack",
            "drained", "jellied","juice pack","water","cream style" ,"in oil", "solids and liquids" };
 
-        public static List<string> CookingOptions = new List<string>(){
+        private static List<string> CookingOptions = new List<string>(){
             "cultured","poached","whipped","pasteurized","candied","sauteed", "breaded","steamed","fried","heated",
              "boiled", "grilled", "pan-browned", "crumbles", "pickled", "microwave", "baked", "pickled", "roasted",
              "oven","broiled","scalloped", "raw", "braised","stewed","rotisserie","BBQ","simmered","glazed","cooked",
@@ -44,10 +48,16 @@ namespace InitDB {
             "milkfat","nonfat","lowfat","nonfat", "lean","fat"
         };
 
+        public static bool IsCookingOption(string part) {
+            return CookingOptions.Any((item) => part.Contains(item)) &&
+                     !NoiseWords.Any((item) => part.Contains(item));
+        }
+
+
         public static List<string> BoneOptions = new List<string>{ "bone removed", "bone-in", "boneless" };
         public static bool IsCommonParameter(string part) {
             part = part.Trim();
-            return (CookingOptions.Any((item) => part.Contains(item)) ||
+            return ((IsCookingOption(part)) ||
                     StorageOptions.Any((item) => part.Contains(item)) ||
                     FatOptions.Any((item) =>part.Contains(item)) ||
                     PackOptions.Any((item) => part.Contains(item)) ||

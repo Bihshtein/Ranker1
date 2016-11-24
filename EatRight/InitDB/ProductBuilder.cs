@@ -32,16 +32,22 @@ namespace InitDB {
 
         private static string GetUpdatedStringParam(List<string> containerList, string item, string param) {
             if (containerList.Any((i) => item.Contains(i))) {
-                if (param == null)
-                    return item;
-                else if (!param.Contains(item))
-                    return param + '|' + item;
+                GetUpdatedStringParam(item, param);
             }
             return param;
         }
 
+        private static string GetUpdatedStringParam(string item, string param) {
+                if (param == null)
+                    return item;
+                else if (!param.Contains(item))
+                    return param + '|' + item;
+            return param;
+        }
+
         public static void TrySetCommonProperties(Product p, string item) {
-            p.CookingMethod = GetUpdatedStringParam(CommonValidator.CookingOptions, item,  p.CookingMethod);
+            if (CommonValidator.IsCookingOption(item))
+                p.CookingMethod = GetUpdatedStringParam(item,  p.CookingMethod);
             p.StorageMethod = GetUpdatedStringParam(CommonValidator.StorageOptions, item, p.StorageMethod);
             p.FatDetails = GetUpdatedStringParam(CommonValidator.FatOptions, item, p.FatDetails);
             p.PackDetails = GetUpdatedStringParam(CommonValidator.PackOptions, item, p.PackDetails);

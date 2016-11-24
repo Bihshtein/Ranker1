@@ -8,7 +8,7 @@ namespace Tests {
         [TestMethod]
         public void TestAllProductCounts() {
             var unit = new RestDBInterface();
-            Assert.IsTrue(unit.Products.GetAllList().Count == 2670);
+            Assert.IsTrue(unit.Products.GetAllList().Count == 2725);
         }
 
         [TestMethod]
