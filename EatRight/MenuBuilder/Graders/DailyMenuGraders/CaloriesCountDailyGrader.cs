@@ -21,33 +21,9 @@ namespace MenuBuilder.Graders.DailyMenuGraders
         protected override double InternalGrade(DailyMenu day)
         {
             double caloriesNum = 0;
-            day.Meals.ForEach(x => caloriesNum += MealCaloriesNum(x));
+            day.Meals.ForEach(x => caloriesNum += x.CaloriesNum);
 
             return GradeRatio(caloriesNum / dailyCaloriesNum);
-        }
-
-        private double MealCaloriesNum(MenuMeal menuMeal)
-        {
-            Meal meal = menuMeal.Meal;
-            double caloriesNum = 0;
-            // Get nutrition values of all products
-            foreach (var prodName in meal.Products)
-            {
-
-                var productWeight = meal.GetProductWeight(prodName);
-                var product = productWeight.Key;
-                var weight = productWeight.Value;
-
-                double protein = (weight / Globals.DEFAULT_GRAM_NUM) * product.Protein;
-                double fat = (weight / Globals.DEFAULT_GRAM_NUM) * product.Fat;
-                double carbs = (weight / Globals.DEFAULT_GRAM_NUM) * product.Carbs;
-
-                caloriesNum += (Globals.CALORIES_PER_CARB_GRAM * carbs
-                    + Globals.CALORIES_PER_FAT_GRAM * fat
-                    + Globals.CALORIES_PER_PROTEIN_GRAM * protein);
-            }
-            //Console.WriteLine("Total Calories : " + caloriesNum);
-            return caloriesNum;
         }
 
         static private double GradeRatio(double ratio)

@@ -53,26 +53,14 @@ namespace MenuBuilder.Graders.DailyMenuGraders
 
             foreach(var menuMeal in dailyMenu.Meals)
             {
-                Meal meal = menuMeal.Meal;
-
-                // Get nutrition values of all products
-                foreach (var prodName in meal.Products)
+                foreach (var entry in menuMeal.NutValues)
                 {
-                    var productWeight = meal.GetProductWeight(prodName);
-                    var product = productWeight.Key;
-                    var weight = productWeight.Value;
-
-                    var nutValues = product.Nutrients().ToList();
-                    foreach (var entry in nutValues)
+                    var nutName = entry.Key;
+                    if (!totalValues.ContainsKey(nutName))
                     {
-                        if (!totalValues.ContainsKey(entry.Key))
-                        {
-                            totalValues[entry.Key] = 0;
-                        }
-
-                        double curValue = totalValues[entry.Key];
-                        totalValues[entry.Key] = curValue + (entry.Value * (weight / Globals.DEFAULT_GRAM_NUM));
+                        totalValues[nutName] = 0;
                     }
+                    totalValues[nutName] = totalValues[nutName] + entry.Value;
                 }
             }
             return totalValues;

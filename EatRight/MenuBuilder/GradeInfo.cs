@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MenuBuilder
 {
-    class GradeInfo
+    public class GradeInfo
     {
         public List<string> BestGraders { get; set; }
         public List<string> WorstGraders { get; set; }

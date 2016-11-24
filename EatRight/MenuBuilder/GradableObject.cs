@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MenuBuilder
 {
-    abstract class GradableObject
+    public abstract class GradableObject
     {
         public double Grade { set; get; }
         public GradeInfo GradeInfo { set; get; }

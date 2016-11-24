@@ -11,7 +11,7 @@ using MenuBuilder.Graders.MenuGraders;
 
 namespace MenuBuilder
 {
-    class MenuGenerator
+    public class MenuGenerator
     {
         // Input
         RestDBInterface unit;
@@ -289,7 +289,7 @@ namespace MenuBuilder
         private void GenerateMealsList()
         {
             var dbMealsList = unit.Meals.GetAll();
-            mealsList = dbMealsList.Select(x => new MenuMeal() { Meal = x }).ToList();
+            mealsList = dbMealsList.Select(x => new MenuMeal(x)).ToList();
 
             var graderMap = new Dictionary<MealGrader, double>()
             {

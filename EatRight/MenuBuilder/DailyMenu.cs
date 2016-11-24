@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MenuBuilder
 {
-    class DailyMenu : GradableObject
+    public class DailyMenu : GradableObject
     {
         public DailyMenu()
         {

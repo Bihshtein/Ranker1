@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MenuBuilder
 {
-    class Globals
+    public class Globals
     {
         // TODO: move this to another project
         public static int DEFAULT_GRAM_NUM          = 100;

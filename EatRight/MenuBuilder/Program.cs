@@ -41,9 +41,9 @@ namespace MenuBuilder
             InitSampleMeal(unit);// currently resets the db and add the meal every time
             var day1 = new DailyMenu(new List<MenuMeal>()
             {
-                new MenuMeal() { Meal = unit.Meals.Get(0) },
-                new MenuMeal() { Meal = unit.Meals.Get(1) },
-                new MenuMeal() { Meal = unit.Meals.Get(2) }
+                new MenuMeal(unit.Meals.Get(0)),
+                new MenuMeal(unit.Meals.Get(1)),
+                new MenuMeal(unit.Meals.Get(2))
             });
 
             var dayList = new List<DailyMenu>() { day1 };
