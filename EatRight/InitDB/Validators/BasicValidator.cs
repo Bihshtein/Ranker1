@@ -26,7 +26,7 @@ namespace InitDB.Validators {
                 return Char.IsUpper(part[0]);
         }
 
-        public virtual bool IsCut(string part) {
+        public virtual bool IsThirdPart(string part) {
             return ThirdParts != null && ThirdParts.Contains(part);
         }
 
@@ -35,7 +35,7 @@ namespace InitDB.Validators {
         public virtual bool IsValidPart(string part) {
             part = part.Trim();
             return (CommonValidator.IsCommonParameter(part) ||
-                    IsMainPart(part) || IsSecondPart(part)|| IsCut(part));
+                    IsMainPart(part) || IsSecondPart(part)|| IsThirdPart(part));
         }
 
         public virtual Tuple<string, string> GetNameAndDescription(string item) {

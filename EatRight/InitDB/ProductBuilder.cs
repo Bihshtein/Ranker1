@@ -46,7 +46,7 @@ namespace InitDB {
         }
 
         public static void TrySetCommonProperties(Product p, string item) {
-            if (CommonValidator.IsCookingOption(item))
+            if (CommonValidator.IsPreparationOption(item))
                 p.CookingMethod = GetUpdatedStringParam(item,  p.CookingMethod);
             p.StorageMethod = GetUpdatedStringParam(CommonValidator.StorageOptions, item, p.StorageMethod);
             p.FatDetails = GetUpdatedStringParam(CommonValidator.FatOptions, item, p.FatDetails);
@@ -70,16 +70,21 @@ namespace InitDB {
 
         public static void TrySetCustomProperties(Product p, string item, BasicValidator validator) {
 
-            if (validator.IsMainPart(item) && p.Name1== null) {
-                p.Name1 = validator.GetPrettyName(item);
+            if (validator.IsMainPart(item)) {
+                if (p.Name1 == null)
+                    p.Name1 = validator.GetPrettyName(item);
+                else 
+                    p.Name1 = item+ '|' +p.Name1;
+
             }
+
             if (validator.IsSecondPart(item)) {
                 var nameAndCut = validator.GetNameAndDescription(item);
                 p.Name2 = nameAndCut.Item1;
                 if (nameAndCut.Item2 != string.Empty)
                     p.Name3 = nameAndCut.Item2;
             }
-            if (validator.IsCut(item))
+            if (validator.IsThirdPart(item))
                 p.Name3 = item;
         }
 

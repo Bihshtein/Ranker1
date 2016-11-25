@@ -19,9 +19,9 @@ namespace InitDB {
         };
 
         public static List<string> AdditionalHealthData = new List<string>{
-            "dietetic","unenriched","gluten","enriched","glucose","vitamin A","lactose", "salted",
-            "sugared","vitamin D","concentrate","sucralose","sugar","undiluted","calcium",
-            "sulfured","ascorbic acid","sodium","salt","sweeten","original seasoning"
+            "sweetened","diet","caffeine","decaffeinated","dietetic","unenriched","gluten","enriched","glucose","lactose", "salted",
+            "sugared","concentrate","sucralose","sugar","undiluted","calcium","low calorie","vitamin",
+            "sulfured","ascorbic acid","sodium","salt","sweeten","original seasoning","aspartame"
         };
 
         private static List<string> ConnectWordOptions = new List<string>{
@@ -31,15 +31,15 @@ namespace InitDB {
            "condensed","pressurized","syrup pack","drained solids","all styles", "regular pack", "brine pack", "vacuum pack",
            "drained", "jellied","juice pack","water","cream style" ,"in oil", "solids and liquids" };
 
-        private static List<string> CookingOptions = new List<string>(){
-            "cultured","poached","whipped","pasteurized","candied","sauteed", "breaded","steamed","fried","heated",
+        private static List<string> PreparationOptions = new List<string>(){
+            "carbonated","cultured","poached","whipped","pasteurized","candied","sauteed", "breaded","steamed","fried","heated",
              "boiled", "grilled", "pan-browned", "crumbles", "pickled", "microwave", "baked", "pickled", "roasted",
              "oven","broiled","scalloped", "raw", "braised","stewed","rotisserie","BBQ","simmered","glazed","cooked",
             "prepared","batter", "flour"
         };
 
         public static List<string> StorageOptions = new List<string>{
-            "fresh", "cured","moisture","chilled","ripe", "bottled", "hydrated","dry","sprouted","hydrated",
+            "powder","fresh", "cured","moisture","chilled","ripe", "bottled", "hydrated","dry","sprouted","hydrated",
             "seasoned","freshly harvest", "stored","refrigerated","exposed to ultraviolet light",
             "dried", "ground", "pre-sliced", "frozen", "canned", "as purchased"
         };
@@ -48,8 +48,8 @@ namespace InitDB {
             "milkfat","nonfat","lowfat","nonfat", "lean","fat"
         };
 
-        public static bool IsCookingOption(string part) {
-            return CookingOptions.Any((item) => part.Contains(item)) &&
+        public static bool IsPreparationOption(string part) {
+            return PreparationOptions.Any((item) => part.Contains(item)) &&
                      !NoiseWords.Any((item) => part.Contains(item));
         }
 
@@ -57,7 +57,7 @@ namespace InitDB {
         public static List<string> BoneOptions = new List<string>{ "bone removed", "bone-in", "boneless" };
         public static bool IsCommonParameter(string part) {
             part = part.Trim();
-            return ((IsCookingOption(part)) ||
+            return ((IsPreparationOption(part)) ||
                     StorageOptions.Any((item) => part.Contains(item)) ||
                     FatOptions.Any((item) =>part.Contains(item)) ||
                     PackOptions.Any((item) => part.Contains(item)) ||

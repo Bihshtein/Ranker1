@@ -30,7 +30,7 @@ namespace InitDB {
                 { "Chicken", new ChickenValidator()},
                 { "Dairy", new DairyValidator()},
                 { "Carbs", new CarbsValidator()},
-                { "Beverages", new BeveragesValidator()},
+                { "Beverages", new BeveragesValidator()},               
                 { "manual", null}
             };
 
@@ -59,6 +59,9 @@ namespace InitDB {
 
         private static void AddFoodGroups(RestDBInterface unit, string nutrientsQuery1, string nutrientsQuery2) {
             foreach (var item in FoodGroups.Keys) {
+                Console.WriteLine("Adding group :\t\t" + item);
+                var added = totalAdded;
+                var skipped = totalSkipped;
                 var foods1 = GetFoods(QueryData.GroupUrl, FoodGroups[item], nutrientsQuery1, "1");
                 var foods2 = GetFoods(QueryData.GroupUrl, FoodGroups[item], nutrientsQuery2, "2");
 
@@ -87,6 +90,9 @@ namespace InitDB {
                             SkipDebug(name1, "unknow parameters");
                     }
                 }
+                Console.WriteLine("Group Added :\t\t " + (totalAdded-added));
+                Console.WriteLine("Group Skipped :\t\t " + (totalSkipped-skipped));
+                Console.WriteLine();
             }
         }
         private static void AddManual(RestDBInterface unit, string nutrientsQuery1, string nutrientsQuery2) {
@@ -141,7 +147,7 @@ namespace InitDB {
 
         private static void SkipDebug(string name, string reason) {
             totalSkipped++;
-            // Console.WriteLine("Skipping: " + name + ", reason : " + reason);
+           //  Console.WriteLine("Skipping: " + name + ", reason : " + reason);
         }
 
         private static void AddDebug(string name) {
