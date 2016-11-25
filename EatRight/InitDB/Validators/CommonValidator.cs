@@ -32,7 +32,7 @@ namespace InitDB {
            "drained", "jellied","juice pack","water","cream style" ,"in oil", "solids and liquids" };
 
         private static List<string> PreparationOptions = new List<string>(){
-            "carbonated","cultured","poached","whipped","pasteurized","candied","sauteed", "breaded","steamed","fried","heated",
+         "moist heat", "dry heat", "smoked", "carbonated","cultured","poached","whipped","pasteurized","candied","sauteed", "breaded","steamed","fried","heated",
              "boiled", "grilled", "pan-browned", "crumbles", "pickled", "microwave", "baked", "pickled", "roasted",
              "oven","broiled","scalloped", "raw", "braised","stewed","rotisserie","BBQ","simmered","glazed","cooked",
             "prepared","batter", "flour"
