@@ -21,7 +21,18 @@ namespace InitDB {
         public static string FolderPath = Assembly.GetExecutingAssembly().Location + @"\..\..\..\..\FruitsDB\";
         private static int totalAdded = 0;
         private static int totalSkipped = 0;
-        public static Dictionary<string, string> FoodGroups = new Dictionary<string, string>() { {"Fish","1500"}, { "Beverages", "1400" } ,{ "Carbs", "2000" }, { "Dairy", "0100" }, { "Fruits", "0900" }, { "Vegs", "1100" }, { "Chicken", "0500" }, { "Pork", "1000" }, { "Beef", "1300" } };
+        public static Dictionary<string, string> FoodGroups = new Dictionary<string, string>() {
+            {"Fish","1500"},
+            {"Baked","1800"},
+            {"Beverages", "1400"},
+            {"Carbs", "2000"},
+            {"Dairy", "0100"},
+            {"Fruits", "0900"},
+            {"Vegs", "1100"},
+            {"Chicken", "0500"},
+            {"Pork", "1000"},
+            {"Beef", "1300"}
+        };
         public static Dictionary<string, BasicValidator> Validators = new Dictionary<string, BasicValidator>() {
                 { "Pork", new PorkValidator()},
                 { "Beef", new BeefValidator()},
@@ -32,6 +43,7 @@ namespace InitDB {
                 { "Carbs", new CarbsValidator()},
                 { "Beverages", new BeveragesValidator()},
                 { "Fish", new FishValidator()},
+                { "Baked", new BakedValidator()},
                 { "manual", null}
             };
 
@@ -148,7 +160,7 @@ namespace InitDB {
 
         private static void SkipDebug(string name, string reason) {
             totalSkipped++;
-             //Console.WriteLine("Skipping: " + name + ", reason : " + reason);
+          //   Console.WriteLine("Skipping: " + name + ", reason : " + reason);
         }
 
         private static void AddDebug(string name) {
