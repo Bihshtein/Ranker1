@@ -27,8 +27,8 @@ namespace RestModel {
             var res = collection.Find(query).ToList();
 
             var newRes = res.Cast<Product>().ToList();
-            newRes.Sort((a, b) => a.Nutrients()[value] > b.Nutrients()[value] ? 1 : -1);
             newRes.RemoveAll(p => p.Nutrients()[value] == 0);
+            newRes.Sort((a, b) => a.Nutrients()[value] > b.Nutrients()[value] ? 1 : -1);
             return newRes;
         }
 

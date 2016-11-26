@@ -77,5 +77,15 @@ namespace Tests {
             Assert.IsTrue((res[res.Count - 1].Sugar / res[0].Sugar) > 150);
             Assert.IsTrue(res.Count == 26);
         }
+
+
+        [TestMethod]
+        public void Salmon() {
+            var unit = new RestDBInterface();
+            var res = unit.Products.Queries.QueryByNameAndValue("salmon", "Fish", "VitaminD");
+            Assert.IsTrue((res[res.Count - 1].VitaminD / res[0].VitaminD) > 2);
+            Assert.IsTrue((res[res.Count - 1].VitaminD / res[0].VitaminD) < 3);
+            Assert.IsTrue(res.Count == 12);
+        }
     }
 }
