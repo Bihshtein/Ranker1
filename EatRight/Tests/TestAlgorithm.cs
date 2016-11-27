@@ -30,14 +30,12 @@ namespace Tests
             Assert.IsNotNull(otherMenu);
             Assert.IsTrue(otherMenu.Grade <= 100);
             Assert.IsTrue(otherMenu.Grade >= 0);
+            Assert.IsFalse(menu.Equals(otherMenu));
 
-            // Replacing days and meals
+            // Replacing a day
             DailyMenu oldDailyMenu = otherMenu.GetDay(0);
             generator.ReplaceDayByInd(otherMenu, 0);
             Assert.IsFalse(oldDailyMenu.Equals(otherMenu.GetDay(0)));
-            MenuMeal oldMeal = otherMenu.GetDay(0).Meals[MealType.Breakfast];
-            MenuMeal newMeal = new MenuMeal(generator.ReplaceMeal(oldMeal.Meal));
-            Assert.IsFalse(oldMeal.Equals(newMeal));
 
             // Printing some infromation
             System.Console.WriteLine("Menu eavluated to " + menu.Grade);
