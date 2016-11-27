@@ -256,8 +256,7 @@ namespace MenuBuilder
                 {new VarietyGrader(), 0.25},
                 {new ProductsTasteGrader(), 0.1},
                 {new FoodCategoryGrader(), 0.05},
-                {new CostGrader(), 0}, // Currently zero as this is not fully implemented- need to add cost per product
-                {new TypeFitnessGrader(), 0} // Currently zero as this is not fully implemented
+                {new CostGrader(), 0} // Currently zero as this is not fully implemented- need to add cost per product
             };
 
             menusList = daysLists.Select(x => new Menu(x)).ToList();
@@ -284,8 +283,7 @@ namespace MenuBuilder
                 {new CaloriesCountDailyGrader(), 0.3},
                 {new VarietyDailyGrader(), 0.25},
                 {new ProductsTasteDailyGrader(), 0.1},
-                {new FoodCategoryDailyGrader(), 0.05},
-                {new TypeFitnessDailyGrader(), 0} // Currently zero as this is not fully implemented
+                {new FoodCategoryDailyGrader(), 0.05}
             };
 
             dailyMenusList.ForEach(x => EvaluateObject(x, graderMap));
@@ -300,8 +298,7 @@ namespace MenuBuilder
             var graderMap = new Dictionary<MealGrader, double>()
             {
                 {new ProductsTasteMealGrader(), 0.66},
-                {new FoodCategoryMealGrader(), 0.34},
-                {new TypeFitnessMealGrader(), 0} // Currently zero as this is not fully implemented
+                {new FoodCategoryMealGrader(), 0.34}
             };
 
             mealsList.ForEach(x => EvaluateObject(x, graderMap));
