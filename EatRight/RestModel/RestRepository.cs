@@ -56,9 +56,10 @@ namespace RestModel {
 
         public List<T> GetByName(string name)
         {
+            string lowerCasedName = name.ToLower();
             return _collection.Find(Query<Product>.Where(x =>
-                (Product.Name2FoodGroups.Contains(x.FoodGroup) && x.Name2.Equals(name)) ||
-                (!Product.Name2FoodGroups.Contains(x.FoodGroup) && x.Name1.Equals(name))))
+                (Product.Name2FoodGroups.Contains(x.FoodGroup) && (x.Name2.Equals(name) || x.Name2.Equals(lowerCasedName))) ||
+                (!Product.Name2FoodGroups.Contains(x.FoodGroup) && (x.Name1.Equals(name) || x.Name1.Equals(lowerCasedName)))))
                 .ToList();
         }
 
@@ -66,7 +67,7 @@ namespace RestModel {
         public List<T> GetByGroupName(string name) {
             return _collection.Find(Query<Product>.Where(x => x.FoodGroup == name)).ToList();
         }
-        public static List<string> FoodGroups = new List<string>() {"Carbs", "Chicken", "Beef", "Pork" ,"Vegs","Fruits","Dairy"};
+        public static List<string> FoodGroups = new List<string>() {"Beverages","Baked","Fish","Carbs", "Chicken", "Beef", "Pork" ,"Vegs","Fruits","Dairy"};
         public static Dictionary<string, double> DailyValues = new Dictionary<string, double>() {
             {"Protein",56},
             {"Fiber",25},

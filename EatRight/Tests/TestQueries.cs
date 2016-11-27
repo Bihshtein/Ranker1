@@ -8,7 +8,7 @@ namespace Tests {
         [TestMethod]
         public void TestAllProductCounts() {
             var unit = new RestDBInterface();
-            Assert.IsTrue(unit.Products.GetAllList().Count == 2670);
+            Assert.IsTrue(unit.Products.GetAllList().Count == 3412);
         }
 
         [TestMethod]
@@ -57,7 +57,7 @@ namespace Tests {
             var res = unit.Products.Queries.QueryByNameAndValue("Apples", "Fruits", "Carbs");
             Assert.IsTrue((res[res.Count - 1].Carbs / res[0].Carbs) > 7);
             Assert.IsTrue((res[res.Count - 1].Carbs / res[0].Carbs) < 8);
-            Assert.IsTrue(res.Count == 14);
+            Assert.IsTrue(res.Count == 16);
         }
 
         [TestMethod]
@@ -67,6 +67,35 @@ namespace Tests {
             Assert.IsTrue((res[res.Count - 1].Protein / res[0].Protein) > 8);
             Assert.IsTrue((res[res.Count - 1].Protein / res[0].Protein) < 9);
             Assert.IsTrue(res.Count == 25);
+        }
+
+
+        [TestMethod]
+        public void Wine() {
+            var unit = new RestDBInterface();
+            var res = unit.Products.Queries.QueryByNameAndValue("wine", "Beverages", "Sugar", true);
+            Assert.IsTrue((res[res.Count - 1].Sugar / res[0].Sugar) > 150);
+            Assert.IsTrue(res.Count == 26);
+        }
+
+
+        [TestMethod]
+        public void Salmon() {
+            var unit = new RestDBInterface();
+            var res = unit.Products.Queries.QueryByNameAndValue("salmon", "Fish", "VitaminD");
+            Assert.IsTrue((res[res.Count - 1].VitaminD / res[0].VitaminD) > 2);
+            Assert.IsTrue((res[res.Count - 1].VitaminD / res[0].VitaminD) < 3);
+            Assert.IsTrue(res.Count == 12);
+        }
+
+
+        [TestMethod]
+        public void Bread() {
+            var unit = new RestDBInterface();
+            var res = unit.Products.Queries.QueryByNameAndValue("Bread", "Baked", "Fiber");
+            Assert.IsTrue((res[res.Count - 1].Fiber / res[0].Fiber) > 19);
+            Assert.IsTrue((res[res.Count - 1].Fiber / res[0].Fiber) < 20);
+            Assert.IsTrue(res.Count == 64);
         }
     }
 }

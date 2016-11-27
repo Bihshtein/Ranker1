@@ -51,8 +51,9 @@ namespace MenuBuilder.Graders.DailyMenuGraders
         {
             var totalValues = new Dictionary<string, double>();
 
-            foreach(var menuMeal in dailyMenu.Meals)
+            foreach(var outerEntry in dailyMenu.Meals)
             {
+                MenuMeal menuMeal = outerEntry.Value;
                 foreach (var entry in menuMeal.NutValues)
                 {
                     var nutName = entry.Key;

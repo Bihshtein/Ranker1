@@ -16,8 +16,7 @@ namespace MenuBuilder
         {
             unit = new RestDBInterface();
 
-            var testMenu1 = GenerateTestMenu1();
-            //var eval = MenuGenerator.EvaluateMenu(testMenu1, RestRepository<Product>.DailyValues, 3000);
+            GenerateTestMenu1();
             var graderDB = new GraderDB();
             graderDB.dailyValues = RestRepository<Product>.DailyValues;
             graderDB.dailyCaloriesNum = 3000;
@@ -30,7 +29,7 @@ namespace MenuBuilder
             System.Console.WriteLine("The grader in which the highest number of points was lost is: " + menu.GradeInfo.WorstGraders[0]);
         }
 
-        public static Menu GenerateTestMenu1()
+        public static void GenerateTestMenu1()
         {
             var list = unit.Products.GetTopFoods(150,1);
             //list.RemoveAll((p) => p.Animal != string.Empty);
@@ -39,15 +38,6 @@ namespace MenuBuilder
                 System.Console.WriteLine(prod.Name1);
             }
             InitSampleMeal(unit);// currently resets the db and add the meal every time
-            var day1 = new DailyMenu(new List<MenuMeal>()
-            {
-                new MenuMeal(unit.Meals.Get(0)),
-                new MenuMeal(unit.Meals.Get(1)),
-                new MenuMeal(unit.Meals.Get(2))
-            });
-
-            var dayList = new List<DailyMenu>() { day1 };
-            return new Menu(dayList);
         }
 
         private static void InitSampleMeal(RestDBInterface unit) {

@@ -16,7 +16,10 @@ namespace MenuBuilder.Graders.DailyMenuGraders
             // Go over all the meals in the day and grade them
             try
             {
-                dailyMenu.Meals.ForEach(x => gradeSum += mealGrader.Grade(x));
+                foreach (var entry in dailyMenu.Meals)
+                {
+                    gradeSum += mealGrader.Grade(entry.Value);
+                }
             }
             catch
             {
