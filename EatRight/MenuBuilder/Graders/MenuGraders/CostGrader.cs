@@ -17,7 +17,7 @@ namespace MenuBuilder.Graders.MenuGraders
         {
             double cost = 0;
 
-            menu.Days.ForEach(dm => dm.Meals.ForEach(m => m.Meal.Products.ForEach(p => /* TODO: add cost per product */cost += 0)));
+            menu.Days.ForEach(dm => dm.Meals.ToList().ForEach(m => m.Value.Meal.Products.ForEach(p => /* TODO: add cost per product */cost += 0)));
 
             return GradeRatio(cost / graderDB.budget);
         }

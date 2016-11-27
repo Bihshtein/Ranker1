@@ -159,7 +159,10 @@ namespace MenuBuilder
             usedDailyMenus.Add(dailyMenu.ID);
 
             // Update the used meals
-            dailyMenu.Meals.ForEach(x => SetMealAsUsed(x));
+            foreach (var entry in dailyMenu.Meals)
+            {
+                SetMealAsUsed(entry.Value);
+            }
         }
 
         private void SetDailyMenuAsUnused(DailyMenu dailyMenu)
@@ -167,7 +170,10 @@ namespace MenuBuilder
             usedDailyMenus.Remove(dailyMenu.ID);
 
             // Update the used meals
-            dailyMenu.Meals.ForEach(x => SetMealAsUnused(x));
+            foreach (var entry in dailyMenu.Meals)
+            {
+                SetMealAsUnused(entry.Value);
+            }
         }
 
         private void SetMealAsUsed(MenuMeal meal)
@@ -267,10 +273,10 @@ namespace MenuBuilder
             GenerateMealsList();
 
             // Take only the best MAX_MEALS_IN_LIST_NUM days
-            var mealsLists = new List<List<MenuMeal>>();
+            var mealsLists = new Dictionary<MealType, List<MenuMeal>>();
             Enum.GetValues(typeof(MealType)).Cast<MealType>().ToList().ForEach
-                (x => mealsLists.Add(mealsList.Where(y => y.Meal.HasType(x)).Take(Globals.MAX_MEALS_IN_LIST_NUM).ToList()));
-            dailyMenusList = GetAllCombinations<MenuMeal>(mealsLists).Select(x => new DailyMenu(x)).ToList();
+                (x => mealsLists[x] = mealsList.Where(y => y.Meal.HasType(x)).Take(Globals.MAX_MEALS_IN_LIST_NUM).ToList());
+            dailyMenusList = GetAllCombinations(mealsLists).Select(x => new DailyMenu(x)).ToList();
 
             var graderMap = new Dictionary<DailyMenuGrader, double>()
             {
@@ -354,30 +360,32 @@ namespace MenuBuilder
         }
 
         /**
-         * Get all combinations of list of lists.
+         * Get all combinations of possible mapping from meal types to meals.
          */
-        private static List<List<T>> GetAllCombinations<T>(List<List<T>> listOfLists)
+        private static List<Dictionary<MealType, MenuMeal>> GetAllCombinations(Dictionary<MealType, List<MenuMeal>> listsMapping)
         {
-            var resList = new List<List<T>>();
+            var resList = new List<Dictionary<MealType, MenuMeal>>();
 
-            if (listOfLists.Count == 0)
+            if (listsMapping.Count == 0)
             {
-                resList.Add(new List<T>());
+                resList.Add(new Dictionary<MealType, MenuMeal>());
                 return resList;
             }
 
             // Get all the lists without elements from the first list
-            var firstList = listOfLists[0];
-            var restOfLists = listOfLists.Skip(1).Take(listOfLists.Count - 1).ToList();
+            var firstEntry = listsMapping.First();
+            var restOfLists = listsMapping;
+            var firstType = firstEntry.Key;
+            restOfLists.Remove(firstType);
             var combWithoutFirstList = GetAllCombinations(restOfLists);
 
             // Add elements from first list to all the combinations
-            foreach (var elem in firstList)
+            foreach (var elem in firstEntry.Value)
             {
                 foreach (var comb in combWithoutFirstList)
                 {
-                    var finalComb = new List<T>(comb);
-                    finalComb.Insert(0, elem);
+                    var finalComb = new Dictionary<MealType, MenuMeal>(comb);
+                    finalComb[firstType] = elem;
                     resList.Add(finalComb);
                 }
             }
