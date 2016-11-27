@@ -29,12 +29,11 @@ namespace RestModel {
         [BsonElement("FoodGroup")]
         public string FoodGroup { get; set; }
 
-        [BsonElement("CookMethod")]
-        public string CookingMethod { get; set; }
+        [BsonElement("PreparationMethod")]
+        public string PreparationMethod { get; set; }
 
         [BsonElement("StorageMethod")]
         public string StorageMethod { get; set; }
-
 
         [BsonElement("FatDetails")]
         public string FatDetails { get; set; }
@@ -163,8 +162,9 @@ namespace RestModel {
                 res["Sodium"] = Sodium;
                 res["Magnesium"] = Magnesium;
                 res["Fiber"] = Fiber;
+                res["Sugar"] = Sugar;
 
-                return res;
+            return res;
         }
 
         public string GetName()

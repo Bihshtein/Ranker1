@@ -32,16 +32,22 @@ namespace InitDB {
 
         private static string GetUpdatedStringParam(List<string> containerList, string item, string param) {
             if (containerList.Any((i) => item.Contains(i))) {
-                if (param == null)
-                    return item;
-                else if (!param.Contains(item))
-                    return param + '|' + item;
+                GetUpdatedStringParam(item, param);
             }
             return param;
         }
 
+        private static string GetUpdatedStringParam(string item, string param) {
+                if (param == null)
+                    return item;
+                else if (!param.Contains(item))
+                    return param + '|' + item;
+            return param;
+        }
+
         public static void TrySetCommonProperties(Product p, string item) {
-            p.CookingMethod = GetUpdatedStringParam(CommonValidator.CookingOptions, item,  p.CookingMethod);
+            if (CommonValidator.IsPreparationOption(item))
+                p.PreparationMethod = GetUpdatedStringParam(item,  p.PreparationMethod);
             p.StorageMethod = GetUpdatedStringParam(CommonValidator.StorageOptions, item, p.StorageMethod);
             p.FatDetails = GetUpdatedStringParam(CommonValidator.FatOptions, item, p.FatDetails);
             p.PackDetails = GetUpdatedStringParam(CommonValidator.PackOptions, item, p.PackDetails);
@@ -64,16 +70,21 @@ namespace InitDB {
 
         public static void TrySetCustomProperties(Product p, string item, BasicValidator validator) {
 
-            if (validator.IsMainPart(item) && p.Name1== null) {
-                p.Name1 = validator.GetPrettyName(item);
+            if (validator.IsMainPart(item)) {
+                if (p.Name1 == null)
+                    p.Name1 = validator.GetPrettyName(item);
+                else 
+                    p.Name1 = item+ '|' +p.Name1;
+
             }
+
             if (validator.IsSecondPart(item)) {
                 var nameAndCut = validator.GetNameAndDescription(item);
                 p.Name2 = nameAndCut.Item1;
                 if (nameAndCut.Item2 != string.Empty)
                     p.Name3 = nameAndCut.Item2;
             }
-            if (validator.IsCut(item))
+            if (validator.IsThirdPart(item))
                 p.Name3 = item;
         }
 
