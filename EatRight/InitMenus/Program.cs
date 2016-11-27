@@ -10,19 +10,32 @@ using System.Xml;
 namespace InitMenus {
     class Program {
         static void Main(string[] args) {
-            var setting = new XmlReaderSettings();
-            setting.DtdProcessing = DtdProcessing.Parse;
-            var page = new WebClient().DownloadString("http://allrecipes.com/recipe/240744/");
-            var parts = page.Split(new string[1] { "itemprop=\"ingredients\">"}, StringSplitOptions.None);
-            var ingredients = new List<string>();
-            for (int i = 1; i < parts.Length-1; i++) {
-                var chars = parts[i].TakeWhile(a => a != '<');
-                ingredients.Add(new String(chars.ToArray()));
+
+            for (int i = 220000; i < 300000; ++i) {
+                ParseRecipe(i.ToString());
             }
-            ingredients.ForEach(a => Console.WriteLine(a));
-
-
 
         }
+
+        public static void ParseRecipe(string id) {
+            string page = string.Empty;
+            try {
+                page = new WebClient().DownloadString("http://allrecipes.com/recipe/" + id);
+            }
+            catch { return; }
+            var nameParts = page.Split(new string[2] { "<title>", "</title>" }, StringSplitOptions.None);
+            Console.WriteLine("Num : " + id);
+            Console.WriteLine("Title : " + nameParts[1]);            var ingredientParts = page.Split(new string[1] { "itemprop=\"ingredients\">" }, StringSplitOptions.None);
+            var ingredients = new List<string>();
+            for (int i = 1; i < ingredientParts.Length; i++) { 
+                if (ingredientParts[i].Contains("<")) {
+                    var chars = ingredientParts[i].TakeWhile(a => a != '<');
+                    ingredients.Add(new String(chars.ToArray()));
+                }
+            }
+            ingredients.ForEach(a => Console.WriteLine(a));
+            Console.WriteLine();
+        }
+        
     }
 }
