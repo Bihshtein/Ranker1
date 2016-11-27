@@ -50,10 +50,15 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="TestAlgorithm.cs" />
     <Compile Include="TestQueries.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\MenuBuilder\MenuBuilder.csproj">
+      <Project>{9426ff15-9b65-4f16-918e-ed7a8e21d3f8}</Project>
+      <Name>MenuBuilder</Name>
+    </ProjectReference>
     <ProjectReference Include="..\RestModel\RestModel.csproj">
       <Project>{5df54fea-0e92-4f32-ae85-80a7b484e427}</Project>
       <Name>RestModel</Name>

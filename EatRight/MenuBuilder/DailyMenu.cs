@@ -21,6 +21,18 @@ namespace MenuBuilder
             Meals = meals;
         }
 
+        public override bool Equals(object obj)
+        {
+            // Check for null values and compare run-time types.
+            if (obj == null || GetType() != obj.GetType())
+            {
+                return false;
+            }
+
+            DailyMenu dm = (DailyMenu)obj;
+            return ID.Equals(dm.ID);
+        }
+
         public Dictionary<MealType, MenuMeal> Meals { get; private set; }
         public int ID { get; private set; }
 
