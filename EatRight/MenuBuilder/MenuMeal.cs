@@ -55,6 +55,18 @@ namespace MenuBuilder
             }
         }
 
+        public override bool Equals(object obj)
+        {
+            // Check for null values and compare run-time types.
+            if (obj == null || GetType() != obj.GetType())
+            {
+                return false;
+            }
+
+            MenuMeal mm = (MenuMeal)obj;
+            return Meal.ID.Equals(mm.Meal.ID);
+        }
+
         public Meal Meal { get; private set; }
         public Dictionary<string, double> NutValues { get; private set; }
         public double CaloriesNum { get; private set; }
