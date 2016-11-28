@@ -47,6 +47,13 @@ namespace InitDB {
                 { "manual", null}
             };
 
+        public static void InitDailyValuesCollection(bool overrideDB)
+        {
+            if (overrideDB)
+                MongoData._database.DropCollection("dailyvalues");
+            var unit = new RestDBInterface();
+            AddDailyValuesFromCSV(unit);
+        }
         public static void InitProductsCollection(bool loadGroups, bool loadManual, bool overrideDB) {
             var customCulture = (CultureInfo)Thread.CurrentThread.CurrentCulture.Clone(); customCulture.NumberFormat.NumberDecimalSeparator = ".";
             Thread.CurrentThread.CurrentCulture = customCulture;
@@ -108,6 +115,25 @@ namespace InitDB {
                 Console.WriteLine();
             }
         }
+
+        private static void AddDailyValuesFromCSV(RestDBInterface unit)
+        {
+            var lines = File.ReadAllLines(Path.Combine(FolderPath, "DailyValues.csv"));
+            int id = 0;
+
+            unit.DailyValues.Empty();
+
+            var dvList = DailyValueBuilder.FromCSVLine(lines);
+
+            foreach (var dv in dvList)
+            {
+
+                dv.ID = id;
+                unit.DailyValues.Add(dv);
+                id++;
+            }
+        }
+
         private static void AddManual(RestDBInterface unit, string nutrientsQuery1, string nutrientsQuery2) {
             var lines = File.ReadAllLines(Path.Combine(FolderPath, "Products_IDS.csv"));
 

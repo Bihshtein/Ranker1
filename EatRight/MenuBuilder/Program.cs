@@ -17,16 +17,24 @@ namespace MenuBuilder
             unit = new RestDBInterface();
 
             GenerateTestMenu1();
-            var graderDB = new GraderDB();
-            graderDB.dailyValues = RestRepository<Product>.DailyValues;
-            graderDB.dailyCaloriesNum = 3000;
-            graderDB.range = new SuggestionRange() { Type = SuggestionRangeType.Days, Length = 1 };
+
+            var uProfile = new UserProfile()
+            {
+                Id = 777,
+                Age = 27,
+                Gender = GenderType.Male,
+                Pregnant = 0,
+                Name = "Hen"
+            };
+
+            var graderDB = GraderDBGenerator.FromUserProfile(uProfile, unit);
 
             MenuGenerator generator = new MenuGenerator(unit, graderDB);
             var menu = generator.GetMenu();
             System.Console.WriteLine("Menu eavluated to " + menu.Grade);
             System.Console.WriteLine("The grader that contributed the highest value to the grade is: " + menu.GradeInfo.BestGraders[0]);
             System.Console.WriteLine("The grader in which the highest number of points was lost is: " + menu.GradeInfo.WorstGraders[0]);
+            Console.ReadKey();
         }
 
         public static void GenerateTestMenu1()

@@ -11,6 +11,7 @@ namespace RestModel {
         private MongoDatabase _database;
         protected RestRepository<Product> products;
         protected RestRepository<Meal> meals;
+        protected RestRepository<DailyValue> dailyvalues;
         public RestDBInterface() {
             var client = new MongoClient();
             var server = client.GetServer();
@@ -27,6 +28,15 @@ namespace RestModel {
             get {
                 if (meals == null) meals = new RestRepository<Meal>(_database, "meals");
                 return meals;
+            }
+        }
+
+        public RestRepository<DailyValue> DailyValues
+        {
+            get
+            {
+                if (dailyvalues == null) dailyvalues = new RestRepository<DailyValue>(_database, "dailyvalues");
+                return dailyvalues;
             }
         }
     }
@@ -66,6 +76,14 @@ namespace RestModel {
 
         public List<T> GetByGroupName(string name) {
             return _collection.Find(Query<Product>.Where(x => x.FoodGroup == name)).ToList();
+        }
+
+        public List<T> GetByAgeAndGender(int age, GenderType gender)
+        {
+            //This is such a bad code- will fix on next commit- till then- ALEX DONT HURT ME.
+            List<DailyValue> x = _collection.FindAll().ToList() as List<DailyValue>;
+            x = x.Where(y => y.Age.Within(age) && y.Gender.Within(gender)).ToList();
+            return x as List<T>;
         }
         public static List<string> FoodGroups = new List<string>() {"Beverages","Baked","Fish","Carbs", "Chicken", "Beef", "Pork" ,"Vegs","Fruits","Dairy"};
         public static Dictionary<string, double> DailyValues = new Dictionary<string, double>() {

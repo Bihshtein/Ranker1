@@ -9,9 +9,9 @@ namespace InitDB {
         static void Main(string[] args) {
             var loadGroups = !args.Contains("skip_groups");
             var loadManual = !args.Contains("skip_manual");
-            var overrideDB = !args.Contains("dont_erase_db"); 
-            InitDB.InitProductsCollection(loadGroups, loadManual, overrideDB);
-            
+            var overrideDB = !args.Contains("dont_erase_db");
+            //     InitDB.InitProductsCollection(loadGroups, loadManual, overrideDB);
+            InitDB.InitDailyValuesCollection(overrideDB);   
         }
     }
 }

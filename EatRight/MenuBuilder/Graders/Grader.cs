@@ -44,6 +44,11 @@ namespace MenuBuilder.Graders
         {
             return new SuggestionRange() { Type = SuggestionRangeType.Meals, Length = 1 };
         }
+
+        public override string ToString()
+        {
+            return Length + " " + Type;
+        }
     }
 
     public class GraderDB
@@ -57,5 +62,17 @@ namespace MenuBuilder.Graders
         // Information chosen by the user
         public SuggestionRange range; // How many days/meals will the menu contain
         public double budget = Double.PositiveInfinity; // Specific user's budget, default is infinity (no budget)
+
+        public override string ToString()
+        {
+            var retStr = "GraderDB: \n";
+
+            var dLines = dailyValues.Select(x => x.Key + ": " + x.Value.ToString());
+            retStr += "DailyValues: \n" + string.Join(Environment.NewLine, dLines) + "\n\n";
+            retStr += "Daily Calories: " + dailyCaloriesNum + "\n";
+            retStr += "Suggestion: " + range + "\n";
+
+            return retStr;
+        }
     }
 }
