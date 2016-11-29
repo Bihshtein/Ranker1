@@ -19,35 +19,72 @@ namespace MenuBuilder.Graders
         public string Description { protected set; get; }
     }
 
-    public enum SuggestionRangeType
+    public abstract class SuggestionRange
     {
-        Days,
-        Meals
-    }
-
-    public class SuggestionRange
-    {
-        public SuggestionRangeType Type { get; set; }
         public int Length { get; set; }
+
+        public virtual bool IsMenuSuggestionRange() { return false; }
+        public virtual bool IsMealSuggestionRange() { return false; }
 
         public static SuggestionRange SingleDay()
         {
-            return new SuggestionRange() { Type = SuggestionRangeType.Days, Length = 1 };
+            return new MenuSuggestionRange() { Length = 1 };
         }
 
         public static SuggestionRange WholeWeek()
         {
-            return new SuggestionRange() { Type = SuggestionRangeType.Days, Length = 7 };
+            return new MenuSuggestionRange() { Length = 7 };
         }
 
         public static SuggestionRange OneMeal()
         {
-            return new SuggestionRange() { Type = SuggestionRangeType.Meals, Length = 1 };
+            return new MealSuggestionRange() { Length = 1 };
+        }
+    }
+
+    public class MenuSuggestionRange : SuggestionRange
+    {
+        public List<MealType> MealsInDailyMenu { get; set; }
+
+        public override bool IsMenuSuggestionRange() { return true; }
+
+        public MenuSuggestionRange()
+        {
+            MealsInDailyMenu = null;
         }
 
         public override string ToString()
         {
-            return Length + " " + Type;
+            string res = "Menu suggestion: " + Length + " Days";
+            if (MealsInDailyMenu != null)
+            {
+                res += ", {";
+                bool first = true;
+                foreach (var mealType in MealsInDailyMenu)
+                {
+                    if (first)
+                    {
+                        first = false;
+                    }
+                    else
+                    {
+                        res += ", ";
+                    }
+                    res += mealType.ToString();
+                }
+                res += "} in each day";
+            }
+            return res;
+        }
+    }
+
+    public class MealSuggestionRange : SuggestionRange
+    {
+        public override bool IsMealSuggestionRange() { return true; }
+
+        public override string ToString()
+        {
+            return "Meal suggestion: " + Length + " Meals";
         }
     }
 

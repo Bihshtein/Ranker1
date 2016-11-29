@@ -54,7 +54,7 @@ namespace MenuBuilder.Graders
 
     public class DailyValuesDB
     {
-        List<DailyValuesRecord> dailyValuesRecords { get;}
+        List<DailyValuesRecord> dailyValuesRecords { get; set; }
 
         public DailyValuesDB()
         {
