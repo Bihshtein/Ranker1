@@ -51,7 +51,7 @@ namespace Tests
             var graderDB = new GraderDB();
             graderDB.dailyValues = RestRepository<Product>.DailyValues;
             graderDB.dailyCaloriesNum = 3000;
-            graderDB.range = new SuggestionRange() { Type = SuggestionRangeType.Days, Length = rand.Next(1, 7) };
+            graderDB.range = new MenuSuggestionRange() { Length = rand.Next(1, 7) };
             graderDB.productFlavorGrade = new Dictionary<string,double>() {
                 {"Mushroom", -1},
                 {"Mushrooms", -1},
