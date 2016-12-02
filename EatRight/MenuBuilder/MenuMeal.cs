@@ -64,7 +64,7 @@ namespace MenuBuilder
             }
 
             MenuMeal mm = (MenuMeal)obj;
-            return Meal.ID.Equals(mm.Meal.ID);
+            return Meal.Equals(mm.Meal);
         }
 
         public Meal Meal { get; private set; }

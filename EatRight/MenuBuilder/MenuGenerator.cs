@@ -295,7 +295,8 @@ namespace MenuBuilder
 
         private void GenerateMealsList()
         {
-            var dbMealsList = unit.Meals.GetAll();
+            var dbMealsList = unit.Meals.GetAll().ToList();
+            dbMealsList = FilterDBMealsList(dbMealsList);
             mealsList = dbMealsList.Select(x => new MenuMeal(x)).ToList();
 
             var graderMap = new Dictionary<MealGrader, double>()
@@ -306,6 +307,39 @@ namespace MenuBuilder
 
             mealsList.ForEach(x => EvaluateObject(x, graderMap));
             mealsList.Sort(new GradableObjectComparer<MenuMeal>());
+        }
+
+        /**
+         * Filter meals that contains products that cannot be eaten by the user.
+         */
+        private List<Meal> FilterDBMealsList(List<Meal> dbMealsList)
+        {
+            if (Grader.graderDB.forbiddenProducts == null || Grader.graderDB.forbiddenProducts.Count == 0)
+            {
+                return dbMealsList;
+            }
+
+            var resList = new List<Meal>();
+            foreach (var meal in dbMealsList)
+            {
+                bool forbiddenMeal = false;
+
+                foreach (var prodName in meal.Products)
+                {
+                    if (Grader.graderDB.forbiddenProducts.Contains(prodName))
+                    {
+                        forbiddenMeal = true;
+                        break;
+                    }
+                }
+
+                if (!forbiddenMeal)
+                {
+                    resList.Add(meal);
+                }
+            }
+
+            return resList;
         }
 
         private static List<T> GetTopGradableObject<T>(List<T> origList, int maxNumInList)

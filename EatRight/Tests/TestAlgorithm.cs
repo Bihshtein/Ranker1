@@ -14,6 +14,67 @@ namespace Tests
     public class TestAlgorithm
     {
         [TestMethod]
+        public void TestForbiddenProducts()
+        {
+            var unit = new RestDBInterface();
+
+            Meal goodBreakfast = new Meal("Good breakfast", new Dictionary<string, double>()
+            {
+                { "Carrot", 200},
+                { "Tomatoes", 123},
+                { "Avocados", 50},
+                { "bacon", 50},
+                { "Tuna", 200},
+                { "Almond", 25}
+            }, new HashSet<MealType>() { MealType.Breakfast });
+
+            Meal badBreakfast = new Meal("Bad breakfast", new Dictionary<string, double>()
+            {
+                { "Carrot", 20}
+            }, new HashSet<MealType>() { MealType.Breakfast });
+
+            unit.Meals.Empty();
+            unit.Meals.Add(goodBreakfast);
+            unit.Meals.Add(badBreakfast);
+
+            var userProfile = new UserProfile() { Age = 30, Gender = GenderType.Male };
+            var range = new MenuSuggestionRange()
+                { Length = 1, MealsInDailyMenu = new List<MealType>() { MealType.Breakfast } };
+
+            /* We create 2 graderDB's: one that allows tomatoes, and the other one forbids it.
+             * It's obvious that without any restriction, the good breakfast is better than the bad breakfast.
+             * We'll make sure that the good breakfast is winning, but when not allowing tomatoes-
+             * the bad one wins.
+             */
+            var graderDBWithoutTomatoes = GraderDBGenerator.FromUserProfile(userProfile, unit);
+            graderDBWithoutTomatoes.range = range;
+            var graderDBWithTomatoes = GraderDBGenerator.FromUserProfile(userProfile, unit);
+            graderDBWithTomatoes.range = range;
+
+            graderDBWithoutTomatoes.forbiddenProducts = new HashSet<string>() { "Tomatoes" };
+
+            var menuGeneratorWOT = new MenuGenerator(unit, graderDBWithoutTomatoes);
+            var menuGeneratorWT = new MenuGenerator(unit, graderDBWithTomatoes);
+            var menuWOT = menuGeneratorWOT.GetMenu();
+            var menuWT = menuGeneratorWT.GetMenu();
+            
+            // Assertions
+            // 1. Assert the menu isn't null
+            Assert.IsNotNull(menuWOT);
+            Assert.IsNotNull(menuWT);
+            // 2. Assert that the menu contains 1 day
+            Assert.IsTrue(menuWOT.GetDaysNumber() == 1);
+            Assert.IsTrue(menuWT.GetDaysNumber() == 1);
+            // 3. Assert that this day contains breakfast
+            Assert.IsTrue(menuWOT.GetDay(0).Meals.ContainsKey(MealType.Breakfast));
+            Assert.IsTrue(menuWT.GetDay(0).Meals.ContainsKey(MealType.Breakfast));
+            // 4. Main assertion: assert that we got the bad meal (because the good one contains forbidden products)
+            Assert.IsTrue(menuWOT.GetDay(0).Meals[MealType.Breakfast].Meal.Equals(badBreakfast));
+            // And we get the good meal with not restrictions
+            Assert.IsTrue(menuWT.GetDay(0).Meals[MealType.Breakfast].Meal.Equals(goodBreakfast));
+        }
+
+        [TestMethod]
         public void TestMenuGeneration()
         {
             var unit = new RestDBInterface();
