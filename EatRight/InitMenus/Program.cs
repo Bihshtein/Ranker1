@@ -14,7 +14,6 @@ namespace InitMenus {
             for (int i = 220000; i < 300000; ++i) {
                 ParseRecipe(i.ToString());
             }
-
         }
 
         public static void ParseRecipe(string id) {
