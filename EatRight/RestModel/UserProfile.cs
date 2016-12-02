@@ -83,19 +83,19 @@ namespace RestModel
         {
 
         }
-        public string Name { get; protected set; }
-        public double Age { get; protected set; }
+        public string Name { get; set; }
+        public int Age { get; set; }
 
         // todo: those two going to be removed
-        public int Sex { get; protected set; }
-        public int Pregnant { get; protected set; }
+        public GenderType Gender { get; set; }
+        public int Pregnant { get; set; }
 
 
         public UserDietProfile DietProfile { get; protected set; }
         public UserSocialProfile SocialProfile { get; protected set; }
 
         // TODO: Add user credentials / Hash keys
-        public int Id { get; protected set; }
+        public int Id { get; set; }
     }
         
 }

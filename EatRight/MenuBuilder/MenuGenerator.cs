@@ -15,7 +15,6 @@ namespace MenuBuilder
     {
         // Input
         RestDBInterface unit;
-        GraderDB graderDB;
 
         // Output
         // Menus
@@ -30,15 +29,16 @@ namespace MenuBuilder
 
         public MenuGenerator(RestDBInterface unit, GraderDB graderDB)
         {
+            Grader.graderDB = graderDB; // For the initialization of graders map
+
             this.unit = unit;
-            this.graderDB = graderDB;
 
             mealsList = new List<MenuMeal>();
-            if (graderDB.range.Type == SuggestionRangeType.Days)
+            if (InMenuMode())
             {
                 GenerateMenusList();
             }
-            else if (graderDB.range.Type == SuggestionRangeType.Meals)
+            else if (InMealMode())
             {
                 GenerateMealsList();
             }
@@ -49,12 +49,12 @@ namespace MenuBuilder
 
         private bool InMenuMode()
         {
-            return graderDB.range.Type == SuggestionRangeType.Days;
+            return Grader.graderDB.range.IsMenuSuggestionRange();
         }
 
         private bool InMealMode()
         {
-            return graderDB.range.Type == SuggestionRangeType.Meals;
+            return Grader.graderDB.range.IsMealSuggestionRange();
         }
 
         public Menu GetMenu()
@@ -238,7 +238,12 @@ namespace MenuBuilder
 
         private void GenerateMenusList()
         {
-            Grader.graderDB = graderDB; // For the initialization of graders map
+            // If the meals type in each day weren't specifiec by the user, set it to the default type
+            if (((MenuSuggestionRange)Grader.graderDB.range).MealsInDailyMenu == null)
+            {
+                ((MenuSuggestionRange)Grader.graderDB.range).MealsInDailyMenu = new List<MealType>()
+                    { MealType.Breakfast, MealType.Lunch, MealType.Dinner };
+            }
 
             GenerateDailyMenuList();
 
@@ -263,8 +268,6 @@ namespace MenuBuilder
 
             menusList.ForEach(x => EvaluateObject(x, graderMap));
             menusList.Sort(new GradableObjectComparer<Menu>());
-
-            Grader.graderDB = null;
         }
 
         private void GenerateDailyMenuList()
@@ -273,7 +276,7 @@ namespace MenuBuilder
 
             // Take only the best MAX_MEALS_IN_LIST_NUM days
             var mealsLists = new Dictionary<MealType, List<MenuMeal>>();
-            Enum.GetValues(typeof(MealType)).Cast<MealType>().ToList().ForEach
+            ((MenuSuggestionRange)Grader.graderDB.range).MealsInDailyMenu.ForEach
                 (x => mealsLists[x] = mealsList.Where(y => y.Meal.HasType(x)).Take(Globals.MAX_MEALS_IN_LIST_NUM).ToList());
             dailyMenusList = GetAllCombinations(mealsLists).Select(x => new DailyMenu(x)).ToList();
 
@@ -292,7 +295,8 @@ namespace MenuBuilder
 
         private void GenerateMealsList()
         {
-            var dbMealsList = unit.Meals.GetAll();
+            var dbMealsList = unit.Meals.GetAll().ToList();
+            dbMealsList = FilterDBMealsList(dbMealsList);
             mealsList = dbMealsList.Select(x => new MenuMeal(x)).ToList();
 
             var graderMap = new Dictionary<MealGrader, double>()
@@ -303,6 +307,39 @@ namespace MenuBuilder
 
             mealsList.ForEach(x => EvaluateObject(x, graderMap));
             mealsList.Sort(new GradableObjectComparer<MenuMeal>());
+        }
+
+        /**
+         * Filter meals that contains products that cannot be eaten by the user.
+         */
+        private List<Meal> FilterDBMealsList(List<Meal> dbMealsList)
+        {
+            if (Grader.graderDB.forbiddenProducts == null || Grader.graderDB.forbiddenProducts.Count == 0)
+            {
+                return dbMealsList;
+            }
+
+            var resList = new List<Meal>();
+            foreach (var meal in dbMealsList)
+            {
+                bool forbiddenMeal = false;
+
+                foreach (var prodName in meal.Products)
+                {
+                    if (Grader.graderDB.forbiddenProducts.Contains(prodName))
+                    {
+                        forbiddenMeal = true;
+                        break;
+                    }
+                }
+
+                if (!forbiddenMeal)
+                {
+                    resList.Add(meal);
+                }
+            }
+
+            return resList;
         }
 
         private static List<T> GetTopGradableObject<T>(List<T> origList, int maxNumInList)

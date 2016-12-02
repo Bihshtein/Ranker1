@@ -64,6 +64,18 @@ namespace RestModel  {
             this.Categories = categories;
         }
 
+        public override bool Equals(object obj)
+        {
+            // Check for null values and compare run-time types.
+            if (obj == null || GetType() != obj.GetType())
+            {
+                return false;
+            }
+
+            Meal m = (Meal)obj;
+            return ID.Equals(m.ID);
+        }
+
         public KeyValuePair<Product, double> GetProductWeight(string prodName)
         {
             var product = Unit.Products.GetByName(prodName)[0];

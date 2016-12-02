@@ -4,115 +4,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using RestModel;
 
 namespace MenuBuilder.Graders
 {
-    public class DailyValues
-    {
-        protected Dictionary<string, double> resetDailyValues;
-        protected Dictionary<string, double> dailyValues;
-
-        public DailyValues()
-        {
-            dailyValues = new Dictionary<string, double>();
-            resetDailyValues = new Dictionary<string, double>(dailyValues);
-        }
-
-        public DailyValues(Dictionary<string, double> dValues)
-        {
-            dailyValues = new Dictionary<string, double>(dValues);
-            resetDailyValues = new Dictionary<string, double>(dailyValues);
-        }
-
-        public static DailyValues Default()
-        {
-            return new DailyValues(
-                new Dictionary<string, double>()
-                {
-            { "Protein", 56 },
-            { "Fiber",25},
-            { "VitaminC",90},
-            { "Fat",65 },
-            { "Thiamin",1.2 },
-            { "Riboflavin",1.3 },
-            { "Niacin",18 },
-            { "PantothenicAcid",5 },
-            { "VitaminB6",1.3 },
-            { "VitaminB12",2.4 },
-            { "VitaminD",600 },
-            { "VitaminA",5000 },
-            { "Folate",400 },
-            { "VitaminE",15 },
-            { "VitaminK",80 },
-            { "Calcium",1000},
-            { "Iron",11 },
-            { "Magnesium",400 },
-            { "Phosphorus",1000 },
-            { "Potassium",3500 },
-            { "Sodium",2400 },
-            { "Zinc",15 }
-
-                });
-        }
-        
-        public Dictionary<string, double> DuplicateDictionary()
-        {
-            return new Dictionary<string, double>(dailyValues);
-        }
-
-        public static DailyValues DefaultByDryParams(double age, int sex)
-        {
-            return Default();
-        }
-
-        public bool Increase(string dValue, double precentage)
-        {
-            if (!(dailyValues.ContainsKey(dValue))) return false;
-            dailyValues[dValue] += (dailyValues[dValue] * precentage / 100);
-            return true;
-        }
-        
-        public bool Decrease(string dValue, double precentage)
-        {
-            if (!(dailyValues.ContainsKey(dValue))) return false;
-            dailyValues[dValue] -= (dailyValues[dValue] * precentage / 100);
-            return true;
-        }
-
-        public bool Set(string dValue, double value)
-        {
-            if (!(dailyValues.ContainsKey(dValue))) return false;
-            dailyValues[dValue] = value;
-            return true;
-        }
-
-        public bool Reset(string dValue, double value)
-        {
-            if (!(resetDailyValues.ContainsKey(dValue) &&
-                (dailyValues.ContainsKey(dValue)))) return false;
-            dailyValues[dValue] = resetDailyValues[dValue];
-            return true;
-        }
-
-        public void Save()
-        {
-            resetDailyValues = new Dictionary<string, double>(dailyValues);
-        }
-    }
     /// <summary>
     /// Calculates daily values according to user profile
     /// </summary>
     public class DailyValuesGenerator
     {
-        public static DailyValues FromUserProfile(UserProfile userProfile)
+        public static DailyValue FromUserProfile(UserProfile userProfile, RestDBInterface unit)
         {
             if (userProfile == null) return null;
-            var startingDV = 
-                DailyValues.DefaultByDryParams(userProfile.Age, userProfile.Sex);
-
+            var dValues = unit.DailyValues.GetByAgeAndGender(userProfile.Age, userProfile.Gender);
+            if ((dValues == null) || (dValues.Count <= 0)) return null;
             // TODO: logic modifications according to user profile
 
-            return startingDV;
+            return dValues[0];
         }
     }
 
@@ -128,6 +36,36 @@ namespace MenuBuilder.Graders
             return 3000;
         }
     }
+    
+
+    public class DailyValuesRecord
+    {
+        public GenderType SexType { get; set; }
+        public AgeParam AgeRange { get; set; }
+        public DailyValue DailyValues { get; set; }
+
+        public DailyValuesRecord(GenderType sexType, AgeParam ageRange, DailyValue dailyValues)
+        {
+            SexType = sexType;
+            AgeRange = ageRange.Clone();
+            DailyValues = dailyValues.Clone();
+        }
+    }
+
+    public class DailyValuesDB
+    {
+        List<DailyValuesRecord> dailyValuesRecords { get; set; }
+
+        public DailyValuesDB()
+        {
+
+        }
+
+        public bool LoadFromCsv(string path)
+        {
+            return false;
+        }
+    }
 
     public class SuggestionRangeGenerator
     {
@@ -137,7 +75,7 @@ namespace MenuBuilder.Graders
             
             // TODO: get suggetion range from user profile
 
-            return SuggestionRange.OneMeal();
+            return SuggestionRange.SingleDay();
         }
     }
 
@@ -146,18 +84,22 @@ namespace MenuBuilder.Graders
     /// </summary>
     public class GraderDBGenerator
     {
-        public static GraderDB FromUserProfile(UserProfile userProfile)
+        public static GraderDB FromUserProfile(UserProfile userProfile, RestDBInterface unit)
         {
+            // Looking up db for relevant daily values
+            var dValues = DailyValuesGenerator.FromUserProfile(userProfile, unit);
+            if (dValues == null) return null;
+
             var graderDB = new GraderDB();
 
-            graderDB.dailyValues = 
-                DailyValuesGenerator.FromUserProfile(userProfile).DuplicateDictionary();
+            graderDB.dailyValues =
+                dValues.DuplicateDictionary();
             graderDB.dailyCaloriesNum = 
                 DailyCaloriesGenerator.FromUserProfile(userProfile);
             graderDB.range =
                SuggestionRangeGenerator.FromUserProfile(userProfile);
             
-            return null;
+            return graderDB;
         }
     }
 }
