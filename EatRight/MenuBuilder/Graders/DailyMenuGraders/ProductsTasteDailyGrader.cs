@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MenuBuilder.Graders.MealGraders;
+using RestModel;
 
 namespace MenuBuilder.Graders.DailyMenuGraders
 {
@@ -12,6 +13,7 @@ namespace MenuBuilder.Graders.DailyMenuGraders
         public ProductsTasteDailyGrader()
         {
             Description = "Compatibility of products to the user flavor";
+            Type = GraderType.ProductsTasteDailyGrader;
 
             mealGrader = new ProductsTasteMealGrader();
         }

@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using RestModel;
+using MenuBuilder.Graders.MenuGraders;
+using MenuBuilder.Graders.DailyMenuGraders;
+using MenuBuilder.Graders.MealGraders;
 
 namespace MenuBuilder.Graders
 {
@@ -17,6 +20,52 @@ namespace MenuBuilder.Graders
         public static GraderDB graderDB = null;
 
         public string Description { protected set; get; }
+
+        public GraderType Type { protected set; get; }
+
+        public static Grader GetGraderByType(GraderType type)
+        {
+            switch (type)
+            {
+                // Menu graders
+                case GraderType.CaloriesCountGrader:
+                    return new CaloriesCountGrader();
+                case GraderType.CostGrader:
+                    return new CostGrader();
+                case GraderType.FoodCategoryGrader:
+                    return new FoodCategoryGrader();
+                case GraderType.NutValuesGrader:
+                    return new NutValuesGrader();
+                case GraderType.ProductsTasteGrader:
+                    return new ProductsTasteGrader();
+                case GraderType.VarietyGrader:
+                    return new VarietyGrader();
+
+                // DailyMenu graders
+                case GraderType.CaloriesCountDailyGrader:
+                    return new CaloriesCountDailyGrader();
+                case GraderType.FoodCategoryDailyGrader:
+                    return new FoodCategoryDailyGrader();
+                case GraderType.NutValuesDailyGrader:
+                    return new NutValuesDailyGrader();
+                case GraderType.ProductsTasteDailyGrader:
+                    return new ProductsTasteDailyGrader();
+                case GraderType.VarietyDailyGrader:
+                    return new VarietyDailyGrader();
+
+                // Meal graders
+                case GraderType.FoodCategoryMealGrader:
+                    return new FoodCategoryMealGrader();
+                case GraderType.ProductsTasteMealGrader:
+                    return new ProductsTasteMealGrader();
+
+                default:
+                    // TODO: better handle errors
+                    System.Console.WriteLine("***ERROR*** Grader type " + type.ToString() + " is an unknown type!");
+                    System.Environment.Exit(1);
+                    return null;
+            }
+        }
     }
 
     public abstract class SuggestionRange
@@ -96,6 +145,7 @@ namespace MenuBuilder.Graders
         public Dictionary<string, double> productFlavorGrade; // Maps a product to a double in the range [-1,1] where -1 means dislike and 1 means like
         public Dictionary<MealCategory, double> mealCategoryGrade; // Maps a meal category to a double in the range [-1,1] where -1 means dislike and 1 means like
         public HashSet<string> forbiddenProducts; // All products that the user will never eat
+        public Dictionary<GraderType, double> gradersWeight; // Maps grader type to the weight that this grader will have
 
         // Information chosen by the user
         public SuggestionRange range; // How many days/meals will the menu contain

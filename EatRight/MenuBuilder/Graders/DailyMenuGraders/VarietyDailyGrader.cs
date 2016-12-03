@@ -12,6 +12,7 @@ namespace MenuBuilder.Graders.DailyMenuGraders
         public VarietyDailyGrader()
         {
             Description = "Variety in products";
+            Type = GraderType.VarietyDailyGrader;
         }
 
         protected override double InternalGrade(DailyMenu day)

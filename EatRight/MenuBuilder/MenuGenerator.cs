@@ -30,6 +30,10 @@ namespace MenuBuilder
         public MenuGenerator(RestDBInterface unit, GraderDB graderDB)
         {
             Grader.graderDB = graderDB; // For the initialization of graders map
+            if (Grader.graderDB.gradersWeight == null)
+            {
+                SetDefaultGraderWeights();
+            }
 
             this.unit = unit;
 
@@ -254,15 +258,7 @@ namespace MenuBuilder
             var daysLists = GetSubsetsOfSize(filteredDailyMenuList, Grader.graderDB.range.Length);
 
             // Initialize graders map
-            var graderMap = new Dictionary<MenuGrader, double>()
-            {
-                {new NutValuesGrader(), 0.3},
-                {new CaloriesCountGrader(), 0.3},
-                {new VarietyGrader(), 0.25},
-                {new ProductsTasteGrader(), 0.1},
-                {new FoodCategoryGrader(), 0.05},
-                {new CostGrader(), 0} // Currently zero as this is not fully implemented- need to add cost per product
-            };
+            var graderMap = InitGraderMap(GraderType.GraderMenuStart, GraderType.GraderMenuEnd);
 
             menusList = daysLists.Select(x => new Menu(x)).ToList();
 
@@ -280,14 +276,7 @@ namespace MenuBuilder
                 (x => mealsLists[x] = mealsList.Where(y => y.Meal.HasType(x)).Take(Globals.MAX_MEALS_IN_LIST_NUM).ToList());
             dailyMenusList = GetAllCombinations(mealsLists).Select(x => new DailyMenu(x)).ToList();
 
-            var graderMap = new Dictionary<DailyMenuGrader, double>()
-            {
-                {new NutValuesDailyGrader(), 0.3},
-                {new CaloriesCountDailyGrader(), 0.3},
-                {new VarietyDailyGrader(), 0.25},
-                {new ProductsTasteDailyGrader(), 0.1},
-                {new FoodCategoryDailyGrader(), 0.05}
-            };
+            var graderMap = InitGraderMap(GraderType.DailyMenuGraderStart, GraderType.DailyMenuGraderEnd);
 
             dailyMenusList.ForEach(x => EvaluateObject(x, graderMap));
             dailyMenusList.Sort(new GradableObjectComparer<DailyMenu>());
@@ -299,11 +288,7 @@ namespace MenuBuilder
             dbMealsList = FilterDBMealsList(dbMealsList);
             mealsList = dbMealsList.Select(x => new MenuMeal(x)).ToList();
 
-            var graderMap = new Dictionary<MealGrader, double>()
-            {
-                {new ProductsTasteMealGrader(), 0.66},
-                {new FoodCategoryMealGrader(), 0.34}
-            };
+            var graderMap = InitGraderMap(GraderType.MealGraderStart, GraderType.MealGraderEnd);
 
             mealsList.ForEach(x => EvaluateObject(x, graderMap));
             mealsList.Sort(new GradableObjectComparer<MenuMeal>());
@@ -425,6 +410,47 @@ namespace MenuBuilder
             }
 
             return resList;
+        }
+
+        private Dictionary<Grader, double> InitGraderMap(GraderType rangeBegin, GraderType rangeEnd)
+        {
+            var res = new Dictionary<Grader, double>();
+
+            foreach (var entry in Grader.graderDB.gradersWeight)
+            {
+                var curType = entry.Key;
+                if (curType > rangeBegin && curType < rangeEnd)
+                {
+                    res[Grader.GetGraderByType(curType)] = entry.Value;
+                }
+            }
+
+            return res;
+        }
+
+        private void SetDefaultGraderWeights()
+        {
+            Grader.graderDB.gradersWeight = new Dictionary<GraderType, double>()
+            {
+                // Menu graders
+                {GraderType.NutValuesGrader, 0.3},
+                {GraderType.CaloriesCountGrader, 0.3},
+                {GraderType.VarietyGrader, 0.25},
+                {GraderType.ProductsTasteGrader, 0.1},
+                {GraderType.FoodCategoryGrader, 0.05},
+                {GraderType.CostGrader, 0}, // Currently zero as this is not fully implemented- need to add cost per product
+
+                // DailyMenu graders
+                {GraderType.NutValuesDailyGrader, 0.3},
+                {GraderType.CaloriesCountDailyGrader, 0.3},
+                {GraderType.VarietyDailyGrader, 0.25},
+                {GraderType.ProductsTasteDailyGrader, 0.1},
+                {GraderType.FoodCategoryDailyGrader, 0.05},
+
+                // Meal graders
+                {GraderType.ProductsTasteMealGrader, 0.66},
+                {GraderType.FoodCategoryMealGrader, 0.34}
+            };
         }
     }
 }

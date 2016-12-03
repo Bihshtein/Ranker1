@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MenuBuilder.Graders.DailyMenuGraders;
+using RestModel;
 
 namespace MenuBuilder.Graders.MenuGraders
 {
@@ -12,6 +13,7 @@ namespace MenuBuilder.Graders.MenuGraders
         public VarietyGrader()
         {
             Description = "Variety in products";
+            Type = GraderType.VarietyGrader;
 
             dailyGrader = new VarietyDailyGrader();
         }

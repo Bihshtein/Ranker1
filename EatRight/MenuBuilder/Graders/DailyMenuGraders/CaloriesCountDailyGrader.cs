@@ -14,6 +14,7 @@ namespace MenuBuilder.Graders.DailyMenuGraders
         public CaloriesCountDailyGrader()
         {
             Description = "Calories count compared to the ideal calories count value";
+            Type = GraderType.CaloriesCountDailyGrader;
 
             this.dailyCaloriesNum = Grader.graderDB.dailyCaloriesNum;
         }

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MenuBuilder.Graders.DailyMenuGraders;
+using RestModel;
 
 namespace MenuBuilder.Graders.MenuGraders
 {
@@ -12,6 +13,7 @@ namespace MenuBuilder.Graders.MenuGraders
         public CaloriesCountGrader()
         {
             Description = "Calories count compared to the ideal calories count value";
+            Type = GraderType.CaloriesCountGrader;
 
             dailyGrader = new CaloriesCountDailyGrader();
         }

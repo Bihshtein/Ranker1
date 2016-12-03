@@ -12,6 +12,7 @@ namespace MenuBuilder.Graders.MealGraders
         public FoodCategoryMealGrader()
         {
             Description = "Compatibility of meal category to the user flavor";
+            Type = GraderType.FoodCategoryMealGrader;
         }
 
         protected override void InitDataStructures(MenuMeal meal)

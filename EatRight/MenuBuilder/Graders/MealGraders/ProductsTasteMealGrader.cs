@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using RestModel;
 
 namespace MenuBuilder.Graders.MealGraders
 {
@@ -11,6 +12,7 @@ namespace MenuBuilder.Graders.MealGraders
         public ProductsTasteMealGrader()
         {
             Description = "Compatibility of products to the user flavor";
+            Type = GraderType.ProductsTasteMealGrader;
         }
 
         protected override void InitDataStructures(MenuMeal meal)

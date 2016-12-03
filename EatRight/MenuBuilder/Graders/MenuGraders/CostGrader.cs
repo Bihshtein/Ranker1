@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using RestModel;
 
 namespace MenuBuilder.Graders.MenuGraders
 {
@@ -11,6 +12,7 @@ namespace MenuBuilder.Graders.MenuGraders
         public CostGrader()
         {
             Description = "Compatibility of cost to user's budget";
+            Type = GraderType.CostGrader;
         }
 
         protected override double InternalGrade(Menu menu)

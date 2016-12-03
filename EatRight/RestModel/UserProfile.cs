@@ -7,6 +7,40 @@ using System.Threading.Tasks;
 namespace RestModel
 {
     /// <summary>
+    /// Different types of graders for Menu, DailyMenu and MenuMeal objects.
+    /// </summary>
+    public enum GraderType
+    {
+        GraderMenuStart = 0,
+
+        CaloriesCountGrader,
+        CostGrader,
+        FoodCategoryGrader,
+        NutValuesGrader,
+        ProductsTasteGrader,
+        VarietyGrader,
+
+        GraderMenuEnd,
+
+        DailyMenuGraderStart,
+
+        CaloriesCountDailyGrader,
+        FoodCategoryDailyGrader,
+        NutValuesDailyGrader,
+        ProductsTasteDailyGrader,
+        VarietyDailyGrader,
+
+        DailyMenuGraderEnd,
+
+        MealGraderStart,
+
+        FoodCategoryMealGrader,
+        ProductsTasteMealGrader,
+
+        MealGraderEnd
+    }
+
+    /// <summary>
     /// Different types of nutrition diets
     /// TODO: Need to come up with exception system - for example, what about a 'vegan' that eats fish   
     /// </summary>

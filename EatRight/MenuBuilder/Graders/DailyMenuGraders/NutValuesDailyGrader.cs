@@ -14,6 +14,7 @@ namespace MenuBuilder.Graders.DailyMenuGraders
         public NutValuesDailyGrader()
         {
             Description = "Nutrition values compared to the ideal nutrition values";
+            Type = GraderType.NutValuesDailyGrader;
 
             this.dailyValues = Grader.graderDB.dailyValues;
         }
@@ -31,7 +32,7 @@ namespace MenuBuilder.Graders.DailyMenuGraders
                 double actualValue = 0;
                 if (dailyValues.ContainsKey(nutrient))
                 {
-                    actualValue = dailyValues[nutrient];
+                    actualValue = nutValues[nutrient];
                 }
 
                 var idealValue = entry.Value;
