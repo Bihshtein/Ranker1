@@ -54,7 +54,54 @@ namespace Tests
         [TestMethod]
         public void TestVarietyGrader()
         {
+            var unit = new RestDBInterface();
 
+            var smallBreakfast = new Meal("Small breakfast", new Dictionary<string, double>() { { "Carrot", 1 } },
+                new HashSet<MealType>() { MealType.Breakfast });
+            var bigBreakfast = new Meal("Big breakfast", new Dictionary<string, double>() { { "Carrot", 40} },
+                new HashSet<MealType>() { MealType.Breakfast });
+            var smallLunch = new Meal("Small lunch", new Dictionary<string, double>() { { "Tomatoes", 1 } },
+                new HashSet<MealType>() { MealType.Lunch });
+            var bigLunch = new Meal("Big Lunch", new Dictionary<string, double>() { { "Carrot", 400 } },
+                new HashSet<MealType>() { MealType.Lunch });
+
+            unit.Meals.Empty();
+            unit.Meals.Add(smallBreakfast);
+            unit.Meals.Add(bigBreakfast);
+            unit.Meals.Add(smallLunch);
+            unit.Meals.Add(bigLunch);
+
+            var userProfile = new UserProfile() { Age = 30, Gender = GenderType.Male };
+            var range = new MenuSuggestionRange()
+                { Length = 1, MealsInDailyMenu = new List<MealType>() { MealType.Breakfast, MealType.Lunch } };
+
+            var varietyGraderDB = GraderDBGenerator.FromUserProfile(userProfile, unit);
+            varietyGraderDB.range = range;
+            varietyGraderDB.gradersWeight = new Dictionary<GraderType, double>()
+            {
+                {GraderType.VarietyGrader, 1},
+                {GraderType.VarietyDailyGrader, 1}
+            };
+
+            var normalGraderDB = GraderDBGenerator.FromUserProfile(userProfile, unit);
+            normalGraderDB.range = range;
+
+            var varietyMenuGen = new MenuGenerator(unit, varietyGraderDB);
+            var normalMenuGen = new MenuGenerator(unit, normalGraderDB);
+
+            var varietyMenu = varietyMenuGen.GetMenu();
+            var normalMenu = normalMenuGen.GetMenu();
+
+            // Assertions
+
+            /* Clearly, the big meals are better. But, since it contains a product repetition, we expect it to be given
+             * a lower grade when we only use the variety grader.
+             */
+
+            // 1. Assert that the variety menu generator didn't generate the big lunch.
+            Assert.IsTrue(varietyMenu.GetDay(0).Meals[MealType.Lunch].Meal.Equals(smallLunch));
+            // 2. Assert that the normal menu generator generated the big lunch.
+            Assert.IsTrue(normalMenu.GetDay(0).Meals[MealType.Lunch].Meal.Equals(bigLunch));
         }
 
         private void TestUserProfileDependentGrader(Dictionary<GraderType, double> graderWeights)
