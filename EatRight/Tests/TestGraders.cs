@@ -33,62 +33,7 @@ namespace Tests
         [TestMethod]
         public void TestFoodCategoryGrader()
         {
-            // Make sure that grader is grading different user profiles in a different manner
-
-            var unit = new RestDBInterface();
-
-            var indianBreakfast = new Meal("Indian breakfast", new Dictionary<string, double>() { {"Carrot", 20} },
-                new HashSet<MealType>() { MealType.Breakfast }, new HashSet<MealCategory>() {MealCategory.Indian} );
-            var chineseBreakfast = new Meal("Chinese breakfast", new Dictionary<string, double>()
-                {
-                    { "Carrot", 200},
-                    { "Tomatoes", 123},
-                    { "Avocados", 50},
-                    { "bacon", 50},
-                    { "Tuna", 200},
-                    { "Almond", 25}
-                }, new HashSet<MealType>() { MealType.Breakfast }, new HashSet<MealCategory>() { MealCategory.Chinese });
-
-            unit.Meals.Empty();
-            unit.Meals.Add(indianBreakfast);
-            unit.Meals.Add(chineseBreakfast);
-
-            var userProfile = new UserProfile() { Age = 30, Gender = GenderType.Male };
-            var range = new MenuSuggestionRange()
-                { Length = 1, MealsInDailyMenu = new List<MealType>() { MealType.Breakfast } };
-
-            var indianGraderDB = GraderDBGenerator.FromUserProfile(userProfile, unit);
-            indianGraderDB.mealCategoryGrade = new Dictionary<MealCategory, double>()
-            {
-                { MealCategory.Indian, 1 },
-                { MealCategory.Chinese, -1 }
-            };
-            indianGraderDB.range = range;
-
-            var chineseGraderDB = GraderDBGenerator.FromUserProfile(userProfile, unit);
-            chineseGraderDB.mealCategoryGrade = new Dictionary<MealCategory, double>()
-            {
-                { MealCategory.Indian, -1 },
-                { MealCategory.Chinese, 1 }
-            };
-            chineseGraderDB.range = range;
-
-            var indianMenuGen = new MenuGenerator(unit, indianGraderDB);
-            var chineseMenuGen = new MenuGenerator(unit, chineseGraderDB);
-
-            var indianMenu = indianMenuGen.GetMenu();
-            var chineseMenu = chineseMenuGen.GetMenu();
-
-            // Assertions
-
-            /* Clearly, the chinese meal is better. Because both users has the same profile, except for their category
-             * preferences, they should get a different grade for the menu (the chinese user should get a higher grade).
-             */
-
-            // 1. Assert that this menu's grade isn't 100 (otherwise, there's no point in this test)
-            Assert.IsTrue(indianMenu.Grade < 100);
-            // 2. Assert that the chinese menu was graded better than the indian menu
-            Assert.IsTrue(chineseMenu.Grade > indianMenu.Grade);
+            TestTasteGrader(true);
         }
 
         [TestMethod]
@@ -103,7 +48,7 @@ namespace Tests
         [TestMethod]
         public void TestProductsTasteGrader()
         {
-
+            TestTasteGrader(false);
         }
 
         [TestMethod]
@@ -158,6 +103,82 @@ namespace Tests
             Assert.IsTrue(babyMenu.Grade < 100 || oldWomanMenu.Grade < 100);
             // 2. Assert that the 2 menus got different grades
             Assert.IsTrue(babyMenu.Grade != oldWomanMenu.Grade);
+        }
+
+        private void TestTasteGrader(Boolean categoryTest)
+        {
+            // Make sure that grader is grading different user profiles in a different manner
+
+            var unit = new RestDBInterface();
+
+            var indianBreakfast = new Meal("Indian breakfast", new Dictionary<string, double>() { { "Carrot", 20 } },
+                new HashSet<MealType>() { MealType.Breakfast }, new HashSet<MealCategory>() { MealCategory.Indian });
+            var chineseBreakfast = new Meal("Chinese breakfast", new Dictionary<string, double>()
+                {
+                    { "Carrot", 200},
+                    { "Tomatoes", 123},
+                    { "Avocados", 50},
+                    { "bacon", 50},
+                    { "Tuna", 200},
+                    { "Almond", 25}
+                }, new HashSet<MealType>() { MealType.Breakfast }, new HashSet<MealCategory>() { MealCategory.Chinese });
+
+            unit.Meals.Empty();
+            unit.Meals.Add(indianBreakfast);
+            unit.Meals.Add(chineseBreakfast);
+
+            var userProfile = new UserProfile() { Age = 30, Gender = GenderType.Male };
+            var range = new MenuSuggestionRange() { Length = 1, MealsInDailyMenu = new List<MealType>() { MealType.Breakfast } };
+
+            var indianGraderDB = GraderDBGenerator.FromUserProfile(userProfile, unit);
+            if (categoryTest)
+            {
+                indianGraderDB.mealCategoryGrade = new Dictionary<MealCategory, double>()
+                {
+                    { MealCategory.Indian, 1 },
+                    { MealCategory.Chinese, -1 }
+                };
+            }
+            else
+            {
+                indianGraderDB.productFlavorGrade = new Dictionary<string, double>()
+                {
+                    { "Tomatoes", -1},
+                    { "Avocados", -1},
+                    { "bacon", -1},
+                    { "Tuna", -1},
+                    { "Almond", -1}
+                };
+            }
+            indianGraderDB.range = range;
+
+            var chineseGraderDB = GraderDBGenerator.FromUserProfile(userProfile, unit);
+            if (categoryTest)
+            {
+                chineseGraderDB.mealCategoryGrade = new Dictionary<MealCategory, double>()
+                {
+                    { MealCategory.Indian, -1 },
+                    { MealCategory.Chinese, 1 }
+                };
+            }
+            chineseGraderDB.range = range;
+
+            var indianMenuGen = new MenuGenerator(unit, indianGraderDB);
+            var chineseMenuGen = new MenuGenerator(unit, chineseGraderDB);
+
+            var indianMenu = indianMenuGen.GetMenu();
+            var chineseMenu = chineseMenuGen.GetMenu();
+
+            // Assertions
+
+            /* Clearly, the chinese meal is better. Because both users has the same profile, except for their taste
+             * preferences, they should get a different grade for the menu (the chinese user should get a higher grade).
+             */
+
+            // 1. Assert that this menu's grade isn't 100 (otherwise, there's no point in this test)
+            Assert.IsTrue(indianMenu.Grade < 100);
+            // 2. Assert that the chinese menu was graded better than the indian menu
+            Assert.IsTrue(chineseMenu.Grade > indianMenu.Grade);
         }
     }
 }
