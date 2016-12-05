@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using RestModel;
+using Logic;
 
 namespace MenuBuilder
 {
@@ -32,7 +33,7 @@ namespace MenuBuilder
                     }
 
                     double curValue = NutValues[entry.Key];
-                    NutValues[entry.Key] = curValue + (entry.Value * (weight / Globals.DEFAULT_GRAM_NUM));
+                    NutValues[entry.Key] = curValue + (entry.Value * (weight / Formulas.DefaultGrams));
                 }
             }
 
@@ -45,13 +46,8 @@ namespace MenuBuilder
                 var product = productWeight.Key;
                 var weight = productWeight.Value;
 
-                double protein = (weight / Globals.DEFAULT_GRAM_NUM) * product.Protein;
-                double fat = (weight / Globals.DEFAULT_GRAM_NUM) * product.Fat;
-                double carbs = (weight / Globals.DEFAULT_GRAM_NUM) * product.Carbs;
 
-                CaloriesNum += (Globals.CALORIES_PER_CARB_GRAM * carbs
-                    + Globals.CALORIES_PER_FAT_GRAM * fat
-                    + Globals.CALORIES_PER_PROTEIN_GRAM * protein);
+                CaloriesNum += Formulas.GetTotalCalories();
             }
         }
 
