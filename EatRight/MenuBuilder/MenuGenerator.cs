@@ -30,7 +30,7 @@ namespace MenuBuilder
         public MenuGenerator(RestDBInterface unit, GraderDB graderDB)
         {
             Grader.graderDB = graderDB; // For the initialization of graders map
-            if (Grader.graderDB.gradersWeight == null)
+            if (Grader.graderDB.GradersWeight == null)
             {
                 SetDefaultGraderWeights();
             }
@@ -416,7 +416,7 @@ namespace MenuBuilder
         {
             var res = new Dictionary<Grader, double>();
 
-            foreach (var entry in Grader.graderDB.gradersWeight)
+            foreach (var entry in Grader.graderDB.GradersWeight)
             {
                 var curType = entry.Key;
                 if (curType > rangeBegin && curType < rangeEnd)
@@ -430,7 +430,7 @@ namespace MenuBuilder
 
         private void SetDefaultGraderWeights()
         {
-            Grader.graderDB.gradersWeight = new Dictionary<GraderType, double>()
+            Grader.graderDB.GradersWeight = new Dictionary<GraderType, double>()
             {
                 // Menu graders
                 {GraderType.NutValuesGrader, 0.3},

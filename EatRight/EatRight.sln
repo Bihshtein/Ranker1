@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MenuBuilder", "MenuBuilder\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{23D73F85-E1D1-4D21-88BF-CC9370D3B936}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InitMenus", "InitMenus\InitMenus.csproj", "{52F8C30C-D623-4B42-9AB8-DA649A1892B9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InitRecipes", "InitMenus\InitRecipes.csproj", "{52F8C30C-D623-4B42-9AB8-DA649A1892B9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

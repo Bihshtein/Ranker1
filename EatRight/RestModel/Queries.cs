@@ -32,6 +32,15 @@ namespace RestModel {
             return newRes;
         }
 
+        public List<DailyValue> GetByGender(GenderType gender) {
+            IMongoQuery query;
+            query = Query<DailyValue>.Where(x => x.Gender.Type.Equals(gender));
+            var res = collection.Find(query).ToList();
+            var newRes = res.Cast<DailyValue>().ToList();
+            newRes.Sort((a, b) => a.Age.MinAge > b.Age.MinAge ? 1 : -1);
+            return newRes;
+        }
+
         
     }
 }

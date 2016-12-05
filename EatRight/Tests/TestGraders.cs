@@ -77,7 +77,7 @@ namespace Tests
 
             var varietyGraderDB = GraderDBGenerator.FromUserProfile(userProfile, unit);
             varietyGraderDB.range = range;
-            varietyGraderDB.gradersWeight = new Dictionary<GraderType, double>()
+            varietyGraderDB.GradersWeight = new Dictionary<GraderType, double>()
             {
                 {GraderType.VarietyGrader, 1},
                 {GraderType.VarietyDailyGrader, 1}
@@ -130,27 +130,52 @@ namespace Tests
             unit.Meals.Add(breakfast);
             unit.Meals.Add(lunch);
             unit.Meals.Add(dinner);
+          
+            var females = unit.DailyValues.Queries.GetByGender(GenderType.Female);
+            var males = unit.DailyValues.Queries.GetByGender(GenderType.Male);
 
-            var babyProfile = new UserProfile() { Age = 3, Gender = GenderType.Male };
-            var oldWomanProfile = new UserProfile() { Age = 75, Gender = GenderType.Female };
+            var babyMenu = GetMenu(2, GenderType.Both, graderWeights, unit);
+            var girlMenu = GetMenu(5, GenderType.Female, graderWeights, unit);
+            Assert.IsTrue(babyMenu.Grade > girlMenu.Grade);// babies don't need much
 
-            var babyGraderDB = GraderDBGenerator.FromUserProfile(babyProfile, unit);
-            babyGraderDB.gradersWeight = graderWeights;
-            var oldWomanGraderDB = GraderDBGenerator.FromUserProfile(oldWomanProfile, unit);
-            oldWomanGraderDB.gradersWeight = graderWeights;
+            for (int i = 0; i < males.Count - 1; i++) {
+                var maleItem1 = males[i];
+                var maleItem2 = males[i + 1];
+                var maleMenu1 = GetMenu(maleItem1.Age.MinAge, GenderType.Male, graderWeights, unit);
+                var maleMenu2 = GetMenu(maleItem2.Age.MinAge, GenderType.Male, graderWeights, unit);
+                var femaleItem1 = females[i];
+                var femaleItem2 = females[i + 1];
+                var femaleMenu1 = GetMenu(femaleItem1.Age.MinAge, GenderType.Female, graderWeights, unit);
+                var femaleMenu2 = GetMenu(femaleItem2.Age.MinAge, GenderType.Female, graderWeights, unit);
 
-            var babyMenuGen = new MenuGenerator(unit, babyGraderDB);
-            var oldWomanMenuGen = new MenuGenerator(unit, oldWomanGraderDB);
+                Assert.IsTrue(maleMenu1.Grade < 100 && maleMenu2.Grade < 100 &&
+                              femaleMenu1.Grade < 100 && femaleMenu1.Grade < 100);
 
-            var babyMenu = babyMenuGen.GetMenu();
-            var oldWomanMenu = oldWomanMenuGen.GetMenu();
-
-            // Assertions
-            // 1. Assert that this menu's grade isn't 100 (otherwise, there's no point in this test)
-            Assert.IsTrue(babyMenu.Grade < 100 || oldWomanMenu.Grade < 100);
-            // 2. Assert that the 2 menus got different grades
-            Assert.IsTrue(babyMenu.Grade != oldWomanMenu.Grade);
+                if (i < 2) { // During the growing years the need for vitamins increases with age overall
+                    Assert.IsTrue(maleMenu1.Grade > maleMenu2.Grade);
+                    Assert.IsTrue(femaleMenu1.Grade > femaleMenu2.Grade);
+                }
+                else {// As we grow order for some nutrients we need more for some less
+                    Assert.IsTrue(maleMenu1.Grade != maleMenu2.Grade);
+                    Assert.IsTrue(femaleMenu1.Grade != femaleMenu2.Grade);
+                }
+                // Overall men need more the woman
+                Assert.IsTrue(maleMenu1.Grade < femaleMenu1.Grade);
+                Assert.IsTrue(maleMenu2.Grade < femaleMenu2.Grade);
+            }
+        
         }
+
+        private Menu GetMenu(int age, GenderType gender, Dictionary<GraderType, double> graderWeights, RestDBInterface unit ) {
+            var profile = new UserProfile() { Age = age, Gender = gender };
+            var graderDB = GraderDBGenerator.FromUserProfile(profile, unit);
+            graderDB.GradersWeight = graderWeights;
+
+            var menuGen = new MenuGenerator(unit, graderDB);
+
+            return menuGen.GetMenu();
+        }
+
 
         private void TestTasteGrader(Boolean categoryTest)
         {

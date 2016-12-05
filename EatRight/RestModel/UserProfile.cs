@@ -113,10 +113,6 @@ namespace RestModel
     
     public class UserProfile
     {
-        public UserProfile()
-        {
-
-        }
         public string Name { get; set; }
         public int Age { get; set; }
 

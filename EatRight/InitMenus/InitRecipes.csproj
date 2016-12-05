@@ -7,7 +7,7 @@
     <ProjectGuid>{52F8C30C-D623-4B42-9AB8-DA649A1892B9}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>InitRecipesInitRecipes</RootNamespace>
+    <RootNamespace>InitRecipes</RootNamespace>
     <AssemblyName>InitRecipes</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

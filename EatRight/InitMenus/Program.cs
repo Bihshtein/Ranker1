@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
 
-namespace InitMenus {
+namespace InitRecipes {
     class Program {
         static void Main(string[] args) {
 
@@ -24,7 +24,8 @@ namespace InitMenus {
             catch { return; }
             var nameParts = page.Split(new string[2] { "<title>", "</title>" }, StringSplitOptions.None);
             Console.WriteLine("Num : " + id);
-            Console.WriteLine("Title : " + nameParts[1]);            var ingredientParts = page.Split(new string[1] { "itemprop=\"ingredients\">" }, StringSplitOptions.None);
+            Console.WriteLine("Title : " + nameParts[1]);
+            var ingredientParts = page.Split(new string[1] { "itemprop=\"ingredients\">" }, StringSplitOptions.None);
             var ingredients = new List<string>();
             for (int i = 1; i < ingredientParts.Length; i++) { 
                 if (ingredientParts[i].Contains("<")) {
