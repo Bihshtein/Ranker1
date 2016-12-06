@@ -56,6 +56,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Logic\Logic.csproj">
+      <Project>{B797E613-7D9C-4A1C-99F8-97D296EDBAD0}</Project>
+      <Name>Logic</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MenuBuilder\MenuBuilder.csproj">
       <Project>{9426ff15-9b65-4f16-918e-ed7a8e21d3f8}</Project>
       <Name>MenuBuilder</Name>

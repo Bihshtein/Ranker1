@@ -7,6 +7,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using RestModel;
 using MenuBuilder;
 using MenuBuilder.Graders;
+using Logic;
 
 namespace Tests
 {
@@ -174,13 +175,8 @@ namespace Tests
                     products[prodName] = prodWeight;
 
                     var product = allProducts[prodInd];
-                    double protein = (prodWeight / Globals.DEFAULT_GRAM_NUM) * product.Protein;
-                    double fat = (prodWeight / Globals.DEFAULT_GRAM_NUM) * product.Fat;
-                    double carbs = (prodWeight / Globals.DEFAULT_GRAM_NUM) * product.Carbs;
 
-                    caloriesInCurMeal += (Globals.CALORIES_PER_CARB_GRAM * carbs
-                        + Globals.CALORIES_PER_FAT_GRAM * fat
-                        + Globals.CALORIES_PER_PROTEIN_GRAM * protein);
+                    caloriesInCurMeal += Formulas.GetTotalCalories();
                 }
 
                 // Generate random type
