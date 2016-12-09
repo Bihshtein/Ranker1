@@ -51,7 +51,10 @@ namespace MenuBuilder
         private static void InitSampleMeal(RestDBInterface unit) {
 
 
-            Meal breakfast = new Meal("Sample breakfast 1", new Dictionary<string, double>()
+            Meal breakfast = new Meal() {
+                ID = 0,
+                Name = "Sample breakfast 1",
+                ProductsWeight = new Dictionary<string, double>()
             {
                 { "Carrot", 200},
                 { "Tomatoes", 123},
@@ -59,9 +62,14 @@ namespace MenuBuilder
                 { "bacon", 50},
                 { "Tuna", 200},
                 { "Almond", 25}
-            }, new HashSet<MealType>() { MealType.Breakfast, MealType.Dinner });
+            },
+                Types = new HashSet<MealType>() { MealType.Breakfast, MealType.Dinner }
+            };
             
-            var lunch = new Meal("Sample lunch 1", new Dictionary<string, double>()
+            var lunch = new Meal() {
+                ID = 1,
+                Name = "Sample lunch 1",
+                ProductsWeight = new Dictionary<string, double>()
             {
                 {"Salmon", 150 },
                 {"Pepper", 100},
@@ -69,9 +77,14 @@ namespace MenuBuilder
                 { "bacon", 50},
                 { "Almond", 25},
                 {"Broccoli", 100}
-            }, new HashSet<MealType>() { MealType.Lunch });
+            },
+                Types = new HashSet<MealType>() { MealType.Lunch }
+            };
 
-            var dinner = new Meal("Sample dinner 1", new Dictionary<string, double>()
+            var dinner = new Meal() {
+                ID = 2,
+                Name = "Sample dinner 1",
+                ProductsWeight = new Dictionary<string, double>()
             {
                 {"loin", 100 },
                 { "Cabbage", 100},
@@ -80,7 +93,9 @@ namespace MenuBuilder
                 { "Garlic", 50},
                 { "Egg", 200},
                 { "Almond", 50}
-            }, new HashSet<MealType>() { MealType.Dinner, MealType.Breakfast });
+            },
+                Types = new HashSet<MealType>() { MealType.Dinner, MealType.Breakfast }
+            };
             unit.Meals.Empty();
             if (unit.Meals.Get(0) == null)
                 unit.Meals.Add(breakfast);

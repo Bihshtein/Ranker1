@@ -28,7 +28,7 @@ namespace MenuBuilder.Graders.DailyMenuGraders
         private void RepeatedProductsInMeal(MenuMeal menuMeal, ref HashSet<string> products, ref int totalProductsNum, ref int repeatedProductsNum)
         {
             Meal meal = menuMeal.Meal;
-            foreach (var prodName in meal.Products)
+            foreach (var prodName in meal.ProductsWeight.Keys)
             {
                 totalProductsNum++;
 

@@ -309,7 +309,7 @@ namespace MenuBuilder
             {
                 bool forbiddenMeal = false;
 
-                foreach (var prodName in meal.Products)
+                foreach (var prodName in meal.ProductsWeight.Keys)
                 {
                     if (Grader.graderDB.forbiddenProducts.Contains(prodName))
                     {

@@ -69,9 +69,11 @@ namespace InitRecipes {
                 mealsType.Add(MealType.Dinner);
             lock (Locker) {
                 try {
-                    unit.Meals.Add(new Meal(name, ingredients, mealsType));
-                    Console.WriteLine(string.Format("Local num : {0}, Source num {1} ", CurrIndex, Indexes[CurrIndex]));
-
+                    unit.Meals.Add(new Meal() {
+                        ID = CurrIndex, Name =name,ProductsWeight = ingredients, MealType =mealType
+                    });
+                    Console.WriteLine(
+                        string.Format("Local num : {0}, Source num {1} ", CurrIndex, Indexes[CurrIndex]));
                 }
                 catch { }
             }

@@ -20,7 +20,7 @@ namespace RestModel  {
         Indian,
         Chinese
     }
-    [Serializable]
+    
     public class Meal
     {
         public override int GetHashCode() {
@@ -29,45 +29,18 @@ namespace RestModel  {
         [BsonElement("_id")]
         public int ID { get; set; }
         [BsonElement("_types")]
-        public HashSet<MealType> Types { get; private set;  }
+        public HashSet<MealType> Types { get; set;  }
         [BsonElement("_categories")]
-        public HashSet<MealCategory> Categories { get; private set; }
+        public HashSet<MealCategory> Categories { get; set; }
         [BsonElement("_name")]
-        public string Name { get; private set; }
-        //[BsonExtraElements]
-        public Dictionary<string, double> productsWeight;
+        public string Name { get; set; }
+        [BsonElement("MealType")]
+        public string MealType { get; set; }
+        public Dictionary<string, double> ProductsWeight;
       
-        public List<string> Products { get; private set; }
 
         private static RestDBInterface Unit = new RestDBInterface();
-        private static int idCounter = 0;
 
-        public Meal(string name, Dictionary<string, double> productsWeight)
-        {
-            this.Name = name;
-            this.productsWeight = productsWeight;
-            Products = productsWeight.Keys.ToList();
-            ID = idCounter++;
-        }
-
-        public Meal(string name, Dictionary<string, double> productsWeight, HashSet<MealType> types) :
-            this(name, productsWeight)
-        {
-            this.Types = types;
-        }
-
-        public Meal(string name, Dictionary<string, double> productsWeight, HashSet<MealCategory> categories) :
-            this(name, productsWeight)
-        {
-            this.Categories = categories;
-        }
-
-        public Meal(string name, Dictionary<string, double> productsWeight, HashSet<MealType> types, HashSet<MealCategory> categories) :
-            this(name, productsWeight)
-        {
-            this.Types = types;
-            this.Categories = categories;
-        }
 
         public override bool Equals(object obj)
         {
@@ -84,7 +57,7 @@ namespace RestModel  {
         public KeyValuePair<Product, double> GetProductWeight(string prodName)
         {
             var product = Unit.Products.Queries.GetByName(prodName)[0];
-            return new KeyValuePair<Product, double>(product, productsWeight[prodName]);
+            return new KeyValuePair<Product, double>(product, ProductsWeight[prodName]);
         }
 
         public Boolean HasType(MealType type)
