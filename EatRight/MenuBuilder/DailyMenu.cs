@@ -39,7 +39,7 @@ namespace MenuBuilder
         public List<string> GetAllProducts()
         {
             var resList = new List<string>();
-            Meals.Values.ToList().ForEach(x => resList.AddRange(x.Meal.Products.ToList()));
+            Meals.Values.ToList().ForEach(x => resList.AddRange(x.Meal.ProductsWeight.Keys.ToList()));
             return resList;
         }
 

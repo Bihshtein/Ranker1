@@ -56,14 +56,27 @@ namespace Tests
         {
             var unit = new RestDBInterface();
 
-            var smallBreakfast = new Meal("Small breakfast", new Dictionary<string, double>() { { "Carrot", 1 } },
-                new HashSet<MealType>() { MealType.Breakfast });
-            var bigBreakfast = new Meal("Big breakfast", new Dictionary<string, double>() { { "Carrot", 40} },
-                new HashSet<MealType>() { MealType.Breakfast });
-            var smallLunch = new Meal("Small lunch", new Dictionary<string, double>() { { "Tomatoes", 1 } },
-                new HashSet<MealType>() { MealType.Lunch });
-            var bigLunch = new Meal("Big Lunch", new Dictionary<string, double>() { { "Carrot", 400 } },
-                new HashSet<MealType>() { MealType.Lunch });
+            var smallBreakfast = new Meal() {
+                ID = 0,
+                Name = "Small breakfast",
+                ProductsWeight = new Dictionary<string, double>() { { "Carrot", 1 } },
+                Types =new HashSet<MealType>() { MealType.Breakfast }
+            };
+            var bigBreakfast = new Meal() {
+                ID = 1,
+                Name = "Big breakfast",
+                ProductsWeight = new Dictionary<string, double>() { { "Carrot", 40} },
+                Types = new HashSet<MealType>() { MealType.Breakfast } };
+            var smallLunch = new Meal() {
+                ID = 2,
+                Name = "Small lunch",
+                ProductsWeight = new Dictionary<string, double>() { { "Tomatoes", 1 } },
+                Types = new HashSet<MealType>() { MealType.Lunch } };
+            var bigLunch = new Meal() {
+                ID = 3,
+                Name = "Big Lunch",
+                ProductsWeight = new Dictionary<string, double>() { { "Carrot", 400 } },
+                Types = new HashSet<MealType>() { MealType.Lunch } };
 
             unit.Meals.Empty();
             unit.Meals.Add(smallBreakfast);
@@ -109,23 +122,37 @@ namespace Tests
             // Make sure that grader is grading different user profiles in a different manner
 
             var unit = new RestDBInterface();
-
-            var breakfast = new Meal("Sample breakfast 1", new Dictionary<string, double>()
+            unit.Meals.Empty();
+            var breakfast = new Meal() {
+                ID = 0,
+                Name = "Sample breakfast 1",
+                ProductsWeight = new Dictionary<string, double>()
             {
                 { "Carrot", 20},
                 { "Tomatoes", 23}
-            }, new HashSet<MealType>() { MealType.Breakfast, MealType.Dinner });
+            },
+                Types = new HashSet<MealType>() { MealType.Breakfast, MealType.Dinner } };
 
-            var lunch = new Meal("Sample lunch 1", new Dictionary<string, double>()
+            var lunch = new Meal() {
+                ID = 1,
+                Name = "Sample lunch 1",
+                ProductsWeight = new Dictionary<string, double>()
             {
                 {"Walnut", 20}
-            }, new HashSet<MealType>() { MealType.Lunch });
+            },
+                Types = new HashSet<MealType>() { MealType.Lunch }
+            };
 
-            var dinner = new Meal("Sample dinner 1", new Dictionary<string, double>()
+            var dinner = new Meal() {
+                ID = 2,
+                Name = "Sample dinner 1",
+                ProductsWeight = new Dictionary<string, double>()
             {
                 { "Tomatoes", 10},
                 { "Lettuce", 10}
-            }, new HashSet<MealType>() { MealType.Dinner, MealType.Breakfast });
+            },
+                Types = new HashSet<MealType>() { MealType.Dinner, MealType.Breakfast }
+            };
             unit.Meals.Empty();
             unit.Meals.Add(breakfast);
             unit.Meals.Add(lunch);
@@ -182,18 +209,29 @@ namespace Tests
             // Make sure that grader is grading different user profiles in a different manner
 
             var unit = new RestDBInterface();
-
-            var indianBreakfast = new Meal("Indian breakfast", new Dictionary<string, double>() { { "Carrot", 20 } },
-                new HashSet<MealType>() { MealType.Breakfast }, new HashSet<MealCategory>() { MealCategory.Indian });
-            var chineseBreakfast = new Meal("Chinese breakfast", new Dictionary<string, double>()
-                {
+            unit.Meals.Empty();
+            var indianBreakfast = new Meal() {
+                ID = 0,
+                Name = "Indian breakfast",
+                ProductsWeight = new Dictionary<string, double>() { { "Carrot", 20 } },
+                Types = new HashSet<MealType>() { MealType.Breakfast },
+                Categories= new HashSet<MealCategory>() { MealCategory.Indian }
+            };
+            var chineseBreakfast = new Meal() {
+                 ID = 1,
+                Name = "Chinese breakfast",
+                ProductsWeight = new Dictionary<string, double>()
+                {                   
                     { "Carrot", 200},
                     { "Tomatoes", 123},
                     { "Avocados", 50},
                     { "bacon", 50},
                     { "Tuna", 200},
                     { "Almond", 25}
-                }, new HashSet<MealType>() { MealType.Breakfast }, new HashSet<MealCategory>() { MealCategory.Chinese });
+                },
+                Types = new HashSet<MealType>() { MealType.Breakfast },
+                Categories = new HashSet<MealCategory>() { MealCategory.Chinese }
+            };
 
             unit.Meals.Empty();
             unit.Meals.Add(indianBreakfast);

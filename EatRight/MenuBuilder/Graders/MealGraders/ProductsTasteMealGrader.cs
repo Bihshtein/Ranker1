@@ -18,7 +18,7 @@ namespace MenuBuilder.Graders.MealGraders
         protected override void InitDataStructures(MenuMeal meal)
         {
             flavorDict = graderDB.productFlavorGrade;
-            objectList = meal.Meal.Products;
+            objectList = meal.Meal.ProductsWeight.Keys.ToList();
         }
     }
 }

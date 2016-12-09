@@ -19,20 +19,26 @@ namespace Tests
         {
             var unit = new RestDBInterface();
 
-            Meal goodBreakfast = new Meal("Good breakfast", new Dictionary<string, double>()
-            {
-                { "Carrot", 200},
-                { "Tomatoes", 123},
-                { "Avocados", 50},
-                { "bacon", 50},
-                { "Tuna", 200},
-                { "Almond", 25}
-            }, new HashSet<MealType>() { MealType.Breakfast });
+            Meal goodBreakfast = new Meal() {
+                ID = 0,
+                Name = "Good breakfast",
+                ProductsWeight = new Dictionary<string, double>(){
+                    { "Carrot", 200},
+                    { "Tomatoes", 123},
+                    { "Avocados", 50},
+                    { "bacon", 50},
+                    { "Tuna", 200},
+                    { "Almond", 25}
+                },
+                Types = new HashSet<MealType>() { MealType.Breakfast }
+            };
 
-            Meal badBreakfast = new Meal("Bad breakfast", new Dictionary<string, double>()
-            {
-                { "Carrot", 20}
-            }, new HashSet<MealType>() { MealType.Breakfast });
+            Meal badBreakfast = new Meal() {
+                ID = 1,
+                Name = "Bad breakfast",
+                ProductsWeight =new Dictionary<string, double>(){{ "Carrot", 20}},
+                Types =new HashSet<MealType>() { MealType.Breakfast }
+            };
 
             unit.Meals.Empty();
             unit.Meals.Add(goodBreakfast);
@@ -79,6 +85,7 @@ namespace Tests
         public void TestMenuGeneration()
         {
             var unit = new RestDBInterface();
+            unit.Meals.Empty();
             GraderDB graderDB = GenerateRandomGraderDB();
             GenerateRandomMeals(unit, graderDB);
             MenuGenerator generator = new MenuGenerator(unit, graderDB);
@@ -187,7 +194,13 @@ namespace Tests
                 Array categoryValues = Enum.GetValues(typeof(MealCategory));
                 MealCategory category = (MealCategory)categoryValues.GetValue(rand.Next(categoryValues.Length));
 
-                Meal randMeal = new Meal("Random meal " + i, products, new HashSet<MealType>{type}, new HashSet<MealCategory>{category});
+                Meal randMeal = new Meal() {
+                    ID =i,
+                    Name = "Random meal " + i,
+                    ProductsWeight = products,
+                    Types = new HashSet<MealType> { type },
+                    Categories = new HashSet<MealCategory> { category }
+                };
                 unit.Meals.Add(randMeal);
             }
         }

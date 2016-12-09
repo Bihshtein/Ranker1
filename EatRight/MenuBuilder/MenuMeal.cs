@@ -18,7 +18,7 @@ namespace MenuBuilder
             NutValues = new Dictionary<string, double>();
 
             // Get nutrition values of all products
-            foreach (var prodName in Meal.Products)
+            foreach (var prodName in Meal.ProductsWeight.Keys)
             {
                 var productWeight = Meal.GetProductWeight(prodName);
                 var product = productWeight.Key;
@@ -40,7 +40,7 @@ namespace MenuBuilder
             // Calculate calories number
             CaloriesNum = 0;
             // Get nutrition values of all products
-            foreach (var prodName in Meal.Products)
+            foreach (var prodName in Meal.ProductsWeight.Keys)
             {
                 var productWeight = Meal.GetProductWeight(prodName);
                 var product = productWeight.Key;
