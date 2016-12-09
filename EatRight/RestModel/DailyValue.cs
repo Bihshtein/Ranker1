@@ -13,6 +13,7 @@ namespace RestModel
     {
         public abstract bool Within(T param);
     }
+
     /// <summary>
     /// Age range
     /// </summary>
@@ -80,6 +81,33 @@ namespace RestModel
         {
             return this.MinAge + "," + this.MaxAge;
         }
+
+        /// <summary>
+        /// Creating age param using given range delimiter and a range top char
+        /// </summary>
+        /// <param name="ageRange"></param>
+        /// <param name="rangeDelim"></param>
+        /// <param name="rangeTop"></param>
+        /// <returns></returns>
+        public static AgeParam FromString(string ageRange, char rangeDelim, char rangeTop)
+        {
+            if ( (ageRange == null) || (!ageRange.Contains(rangeDelim) && !ageRange.Contains(rangeTop)) )   return null;
+
+            int minAge, maxAge;
+            minAge = maxAge = -1;
+
+            var top = ageRange.Contains(rangeTop);
+            if (top) maxAge = 130;
+           
+            var range = ageRange.Split(top ? rangeTop : rangeDelim);
+            if ((range == null) || (range.Length != 2)) return null;
+
+            int.TryParse(range[0], out minAge);
+            if (!top) int.TryParse(range[1], out maxAge);
+
+            if ((minAge == -1) || (maxAge == -1) || (minAge > maxAge)) return null;
+            return new AgeParam(minAge, maxAge);
+        }
     }
 
     public enum GenderType
@@ -108,6 +136,19 @@ namespace RestModel
         {
             if ((Type == GenderType.Undefined) || (param == GenderType.Undefined)) return false;
             return ((param == Type) || (Type == GenderType.Both));
+        }
+
+        /// <summary>
+        /// Extracting gender param using string<->gender map
+        /// </summary>
+        /// <param name="gender"></param>
+        /// <param name="csvMap"></param>
+        /// <returns></returns>
+        public static GenderParam FromString(string gender, Dictionary<string, GenderType> strMap)
+        {
+            if ((strMap == null) || (!strMap.ContainsKey(gender))) return null;
+
+            return new GenderParam(strMap[gender]);
         }
     }
 

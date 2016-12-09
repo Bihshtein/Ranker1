@@ -8,8 +8,41 @@ using System.Text.RegularExpressions;
 
 namespace InitDB
 {
+    /// <summary>
+    /// You know how its like when you make shitty design decision just to make things work?
+    /// Well here's a taste below:
+    /// 
+    /// nutrient (units),source of goala,child 1?3,female 4?8,Male 4?8,female 9?13,Male 9?13,female 14?18,Male 14?18,female 19?30,Male 19?30,female 31?50,Male 31?50,female 51+,Male 51+
+    /// TODO [hen]: turn the way we read this data using a Nutrition Tables Sources Factory 
+    ///             one of the instaces will be a NUTRITION_GOALS_CSV with Author and Date
+    /// </summary>
+    public class NUTRITION_GOALS_CSV
+    {
+        public const char DELIMITER             = ',';
+
+        public const int AGE_GENDER_INDEX       = 2;
+        public const string AGE_GENDER_PREFIX   = "nutrient (units)";
+        public const int AGE_GENDER_FIRST_COL   = 2;
+        public const int AGE_GENDER_COL_LENGTH  = 13;
+        public const char AGE_GENDER_ALL_DELIM  = ' ';
+        public const char AGE_GENDER_AGE_DELIM  = '?';
+        public const char AGE_GENDER_AGE_TOP    = '+';
+
+        public static Dictionary<string, GenderType> AGE_GENDER_CSV_MAP = new Dictionary<string, GenderType>
+        {
+            { "child", GenderType.Both },
+            { "female", GenderType.Female },
+            { "male", GenderType.Male }
+        };
+    }
+
     public class DailyValueBuilder
     {
+        /// <summary>
+        /// TODO: Move to data structures
+        /// </summary>
+        /// <typeparam name="T1"></typeparam>
+        /// <typeparam name="T2"></typeparam>
         public class TupleList<T1, T2> : List<Tuple<T1, T2>>
         {
             public void Add(T1 item, T2 item2)
@@ -17,30 +50,41 @@ namespace InitDB
                 Add(new Tuple<T1, T2>(item, item2));
             }
         }
-        private static TupleList<GenderParam,AgeParam> GetCSVGenderAgeTupleList()
+
+        private static Tuple<GenderParam, AgeParam> ExtractCSVGenderAgeTuple(string data)
         {
-            return new TupleList<GenderParam, AgeParam>()
-            {
-                { new GenderParam(GenderType.Both), new AgeParam(1, 3) },
+            if ((data == null) || (!data.Contains(NUTRITION_GOALS_CSV.AGE_GENDER_ALL_DELIM))) return null;
 
-                { new GenderParam(GenderType.Female), new AgeParam(4, 8) },
-                { new GenderParam(GenderType.Male), new AgeParam(4, 8) },
+            var agegender = data.Split(NUTRITION_GOALS_CSV.AGE_GENDER_ALL_DELIM);
+            if ((agegender == null) || (agegender.Length != 2)) return null;
 
-                { new GenderParam(GenderType.Female), new AgeParam(9, 13) },
-                { new GenderParam(GenderType.Male), new AgeParam(9, 13) },
+            var gender = agegender[0].ToLower();
+            var ageRange = agegender[1];
+            var ageParam = AgeParam.FromString(ageRange,
+                                               NUTRITION_GOALS_CSV.AGE_GENDER_AGE_DELIM,
+                                               NUTRITION_GOALS_CSV.AGE_GENDER_AGE_TOP);
+            if (ageParam == null) return null;
 
-                { new GenderParam(GenderType.Female), new AgeParam(14, 18) },
-                { new GenderParam(GenderType.Male), new AgeParam(14, 18) },
+            var genderParam = GenderParam.FromString(gender, NUTRITION_GOALS_CSV.AGE_GENDER_CSV_MAP);
+            if (genderParam == null) return null;
 
-                { new GenderParam(GenderType.Female), new AgeParam(19, 30) },
-                { new GenderParam(GenderType.Male), new AgeParam(19, 30) },
+            return new Tuple<GenderParam, AgeParam>(genderParam, ageParam);
+        }
 
-                { new GenderParam(GenderType.Female), new AgeParam(31, 50) },
-                { new GenderParam(GenderType.Male), new AgeParam(31, 50) },
+        private static TupleList<GenderParam,AgeParam> GetCSVGenderAgeTupleList(string[] lines)
+        {
+            if ((lines == null) || (lines.Length <= NUTRITION_GOALS_CSV.AGE_GENDER_INDEX)) return null;
 
-                { new GenderParam(GenderType.Female), new AgeParam(51, 140) },
-                { new GenderParam(GenderType.Male), new AgeParam(51, 140) },
-            };
+            var genderAgeColumns = 
+                ExtractCSVLine(lines[NUTRITION_GOALS_CSV.AGE_GENDER_INDEX]).Skip(NUTRITION_GOALS_CSV.AGE_GENDER_FIRST_COL).ToList();
+
+            if (genderAgeColumns.Count != NUTRITION_GOALS_CSV.AGE_GENDER_COL_LENGTH) return null;
+
+            TupleList<GenderParam, AgeParam> genderAgeList = new TupleList<GenderParam, AgeParam>();
+
+            genderAgeColumns.ForEach(x => genderAgeList.Add(ExtractCSVGenderAgeTuple(x)));
+
+            return genderAgeList;
         }
 
         private static Dictionary<string, Tuple<string, int>> GetCSVDVTable()
@@ -90,9 +134,15 @@ namespace InitDB
                 //       need to calc it to whatever fat is considered in the code
             };
         }
+
+        private static string[] ExtractCSVLine(string line)
+        {
+            return Regex.Split(line, ",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)");
+        }
+
         public static List<DailyValue> FromCSVLine(string[] lines)
         {
-            var dvAgeGenderList = GetCSVGenderAgeTupleList();
+            var dvAgeGenderList = GetCSVGenderAgeTupleList(lines);
             var dvsTable = GetCSVDVTable();
             bool thrown = false;
 
@@ -109,7 +159,7 @@ namespace InitDB
             }
             foreach (var line in lines)
             {
-                string[] result = Regex.Split(line, ",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)");
+                string[] result = ExtractCSVLine(line);
 
                 if (dvsTable.ContainsKey(result[0]))
                 {
