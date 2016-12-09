@@ -20,9 +20,12 @@ namespace RestModel  {
         Indian,
         Chinese
     }
-
+    [Serializable]
     public class Meal
     {
+        public override int GetHashCode() {
+            return ID;
+        }
         [BsonElement("_id")]
         public int ID { get; set; }
         [BsonElement("_types")]
@@ -31,7 +34,9 @@ namespace RestModel  {
         public HashSet<MealCategory> Categories { get; private set; }
         [BsonElement("_name")]
         public string Name { get; private set; }
+        //[BsonExtraElements]
         public Dictionary<string, double> productsWeight;
+      
         public List<string> Products { get; private set; }
 
         private static RestDBInterface Unit = new RestDBInterface();
@@ -78,7 +83,7 @@ namespace RestModel  {
 
         public KeyValuePair<Product, double> GetProductWeight(string prodName)
         {
-            var product = Unit.Products.GetByName(prodName)[0];
+            var product = Unit.Products.Queries.GetByName(prodName)[0];
             return new KeyValuePair<Product, double>(product, productsWeight[prodName]);
         }
 
