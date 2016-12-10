@@ -118,12 +118,13 @@ namespace InitDB {
 
         private static void AddDailyValuesFromCSV(RestDBInterface unit)
         {
-            var lines = File.ReadAllLines(Path.Combine(FolderPath, "DailyValues.csv"));
+            var filePath = Path.Combine(FolderPath, "DailyValues.csv");
+            
             int id = 0;
 
             unit.DailyValues.Empty();
 
-            var dvList = DailyValueBuilder.FromCSVLine(lines);
+            var dvList = DailyValueBuilder.FromFile(filePath, new NutritionGoalsCSV());
 
             foreach (var dv in dvList)
             {

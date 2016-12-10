@@ -5,9 +5,23 @@ using System.Text;
 using System.Threading.Tasks;
 using RestModel;
 using System.Text.RegularExpressions;
+using System.IO;
 
 namespace InitDB
 {
+    public class TupleList<T1, T2> : List<Tuple<T1, T2>>
+    {
+        public void Add(T1 item, T2 item2)
+        {
+            Add(new Tuple<T1, T2>(item, item2));
+        }
+    }
+
+    public interface IDailyValuesProvider
+    {
+        List<DailyValue> FromFile(string filePath);
+    }
+
     /// <summary>
     /// You know how its like when you make shitty design decision just to make things work?
     /// Well here's a taste below:
@@ -16,80 +30,94 @@ namespace InitDB
     /// TODO [hen]: turn the way we read this data using a Nutrition Tables Sources Factory 
     ///             one of the instaces will be a NUTRITION_GOALS_CSV with Author and Date
     /// </summary>
-    public class NUTRITION_GOALS_CSV
+    public class NutritionGoalsCSV : IDailyValuesProvider
     {
-        public const char DELIMITER             = ',';
-
-        public const int AGE_GENDER_INDEX       = 2;
-        public const string AGE_GENDER_PREFIX   = "nutrient (units)";
-        public const int AGE_GENDER_FIRST_COL   = 2;
-        public const int AGE_GENDER_COL_LENGTH  = 13;
-        public const char AGE_GENDER_ALL_DELIM  = ' ';
-        public const char AGE_GENDER_AGE_DELIM  = '?';
-        public const char AGE_GENDER_AGE_TOP    = '+';
-
-        public static Dictionary<string, GenderType> AGE_GENDER_CSV_MAP = new Dictionary<string, GenderType>
+        private static string[] Split(string line)
         {
-            { "child", GenderType.Both },
-            { "female", GenderType.Female },
-            { "male", GenderType.Male }
-        };
-    }
-
-    public class DailyValueBuilder
-    {
-        /// <summary>
-        /// TODO: Move to data structures
-        /// </summary>
-        /// <typeparam name="T1"></typeparam>
-        /// <typeparam name="T2"></typeparam>
-        public class TupleList<T1, T2> : List<Tuple<T1, T2>>
+            return Regex.Split(line, ",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)");
+        }
+        
+        public List<DailyValue> FromFile(string filePath)
         {
-            public void Add(T1 item, T2 item2)
+            var lines = File.ReadAllLines(filePath);
+            var ageGenderList = AgeGenderRow.GetGenderAgeList(lines);
+            var nameToProductDVMap = NutrientRow.NameToProductDV();
+
+            var dailyValuesList = GetDefaultDailyValuesList(ageGenderList);
+            if (!PopulateDailyValuesListFromLines(dailyValuesList, lines, 
+                                                  ageGenderList, nameToProductDVMap)) return null;
+            if (!ValidateDailyValuesList(dailyValuesList)) return null;
+
+            return dailyValuesList;
+        }
+
+        private bool ValidateDailyValuesList(List<DailyValue> dailyValuesList)
+        {
+            for (var pIndex = 0; pIndex < dailyValuesList.Count; pIndex++)
             {
-                Add(new Tuple<T1, T2>(item, item2));
+                dailyValuesList[pIndex].Set("Fat", 65);
+                dailyValuesList[pIndex].Set("PantothenicAcid", 15);
+
+                if (!dailyValuesList[pIndex].IsValid()) { return false; }
             }
+
+            return true;
         }
 
-        private static Tuple<GenderParam, AgeParam> ExtractCSVGenderAgeTuple(string data)
+        private bool PopulateDailyValuesListFromLines(List<DailyValue> dailyValuesList, string[] lines, 
+                                                      TupleList<GenderParam, AgeParam> ageGenderList, 
+                                                      Dictionary<string, Tuple<string, int>> nameToProductDVMap)
         {
-            if ((data == null) || (!data.Contains(NUTRITION_GOALS_CSV.AGE_GENDER_ALL_DELIM))) return null;
+            foreach (var line in lines)
+            {
+                string[] result = Split(line);
 
-            var agegender = data.Split(NUTRITION_GOALS_CSV.AGE_GENDER_ALL_DELIM);
-            if ((agegender == null) || (agegender.Length != 2)) return null;
+                if (nameToProductDVMap.ContainsKey(result[0]))
+                {
+                    if (nameToProductDVMap[result[0]].Item2 != 0) return false; 
+                    nameToProductDVMap[result[0]] = new Tuple<string, int>(nameToProductDVMap[result[0]].Item1, 1);
 
-            var gender = agegender[0].ToLower();
-            var ageRange = agegender[1];
-            var ageParam = AgeParam.FromString(ageRange,
-                                               NUTRITION_GOALS_CSV.AGE_GENDER_AGE_DELIM,
-                                               NUTRITION_GOALS_CSV.AGE_GENDER_AGE_TOP);
-            if (ageParam == null) return null;
+                    for (var pIndex = 0; pIndex < ageGenderList.Count; pIndex++)
+                    {
+                        var tempStr = result[pIndex + 2];
+                        tempStr = tempStr.Replace("<", "");
+                        tempStr = tempStr.Replace(",", "");
+                        tempStr = tempStr.Replace("\"", "");
 
-            var genderParam = GenderParam.FromString(gender, NUTRITION_GOALS_CSV.AGE_GENDER_CSV_MAP);
-            if (genderParam == null) return null;
+                        double val = -1;
 
-            return new Tuple<GenderParam, AgeParam>(genderParam, ageParam);
+                        if (!double.TryParse(tempStr, out val)) return false;
+
+                        if (!dailyValuesList[pIndex].Set(nameToProductDVMap[result[0]].Item1, val)) return false;
+                    }
+                }
+            }
+
+            return true;
         }
 
-        private static TupleList<GenderParam,AgeParam> GetCSVGenderAgeTupleList(string[] lines)
+        private List<DailyValue> GetDefaultDailyValuesList(TupleList<GenderParam, AgeParam> ageGenderList)
         {
-            if ((lines == null) || (lines.Length <= NUTRITION_GOALS_CSV.AGE_GENDER_INDEX)) return null;
+            var dvList  =new List<DailyValue>(ageGenderList.Count);
 
-            var genderAgeColumns = 
-                ExtractCSVLine(lines[NUTRITION_GOALS_CSV.AGE_GENDER_INDEX]).Skip(NUTRITION_GOALS_CSV.AGE_GENDER_FIRST_COL).ToList();
+            for (int i = 0; i < ageGenderList.Count; i++)
+            {
+                var curr_dv = DailyValue.NullDefault();
+                curr_dv.ID = i;
+                curr_dv.Gender = ageGenderList[i].Item1;
+                curr_dv.Age = ageGenderList[i].Item2;
 
-            if (genderAgeColumns.Count != NUTRITION_GOALS_CSV.AGE_GENDER_COL_LENGTH) return null;
+                dvList.Add(curr_dv);
+            }
 
-            TupleList<GenderParam, AgeParam> genderAgeList = new TupleList<GenderParam, AgeParam>();
-
-            genderAgeColumns.ForEach(x => genderAgeList.Add(ExtractCSVGenderAgeTuple(x)));
-
-            return genderAgeList;
+            return dvList;
         }
 
-        private static Dictionary<string, Tuple<string, int>> GetCSVDVTable()
+        public class NutrientRow
         {
-            return new Dictionary<string, Tuple<string, int>>()
+            public static Dictionary<string, Tuple<string, int>> NameToProductDV()
+            {
+                return new Dictionary<string, Tuple<string, int>>()
             {
                 //Macronutrients
                 { "Protein (g)" , new Tuple<string, int>("Protein", 0) },
@@ -133,72 +161,71 @@ namespace InitDB
                 // Fat - total fat and total saturated fat is in precetnage,
                 //       need to calc it to whatever fat is considered in the code
             };
+            }
         }
 
-        private static string[] ExtractCSVLine(string line)
+        public class AgeGenderRow
         {
-            return Regex.Split(line, ",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)");
+            public const char Delimiter = ',';
+            public const int Index = 2;
+            public const string Prefix = "nutrient (units)";
+            public const int FirstCol = 2;
+            public const int ColLength = 13;
+            public const char AllDelim = ' ';
+            public const char AgeRangeDelim = '?';
+            public const char AgeTopChar = '+';
+
+            public static Dictionary<string, GenderType> StringToGenderType =
+                new Dictionary<string, GenderType> {
+                    { "child", GenderType.Any },
+                    { "female", GenderType.Female },
+                    { "male", GenderType.Male }
+                };
+
+
+            private static Tuple<GenderParam, AgeParam> GetGenderAge(string data)
+            {
+                if ((data == null) || (!data.Contains(AllDelim))) return null;
+
+                var agegender = data.Split(AllDelim);
+                if ((agegender == null) || (agegender.Length != 2)) return null;
+
+                var gender = agegender[0].ToLower();
+                var ageRange = agegender[1];
+                var ageParam = AgeParam.FromString(ageRange,
+                                                   AgeRangeDelim,
+                                                   AgeTopChar);
+                if (ageParam == null) return null;
+
+                var genderParam = GenderParam.FromString(gender, StringToGenderType);
+                if (genderParam == null) return null;
+
+                return new Tuple<GenderParam, AgeParam>(genderParam, ageParam);
+            }
+
+            public static TupleList<GenderParam, AgeParam> GetGenderAgeList(string[] lines)
+            {
+                if ((lines == null) || (lines.Length <= Index)) return null;
+
+                var genderAgeColumns = Split(lines[Index]).Skip(FirstCol).ToList();
+
+                if (genderAgeColumns.Count != ColLength) return null;
+
+                TupleList<GenderParam, AgeParam> genderAgeList = new TupleList<GenderParam, AgeParam>();
+
+                genderAgeColumns.ForEach(x => genderAgeList.Add(GetGenderAge(x)));
+
+                return genderAgeList;
+            }
         }
 
-        public static List<DailyValue> FromCSVLine(string[] lines)
+    }
+
+    public class DailyValueBuilder
+    {
+        public static List<DailyValue> FromFile(string filePath, IDailyValuesProvider dvProvider)
         {
-            var dvAgeGenderList = GetCSVGenderAgeTupleList(lines);
-            var dvsTable = GetCSVDVTable();
-            bool thrown = false;
-
-            var dvList = new List<DailyValue>(dvAgeGenderList.Count);
-
-            for (int i =0; i < dvAgeGenderList.Count; i++)
-            {
-                var curr_dv = DailyValue.NullDefault();
-                curr_dv.ID = i;
-                curr_dv.Gender = dvAgeGenderList[i].Item1;
-                curr_dv.Age = dvAgeGenderList[i].Item2;
-
-                dvList.Add(curr_dv);
-            }
-            foreach (var line in lines)
-            {
-                string[] result = ExtractCSVLine(line);
-
-                if (dvsTable.ContainsKey(result[0]))
-                {
-                    if (dvsTable[result[0]].Item2 != 0) { thrown = true; break; }
-                    dvsTable[result[0]] = new Tuple<string, int>(dvsTable[result[0]].Item1, 1);
-
-                    for (var pIndex = 0; pIndex < dvAgeGenderList.Count; pIndex++)
-                    {
-                        var tempStr = result[pIndex + 2];
-                        tempStr = tempStr.Replace("<", "");
-                        tempStr = tempStr.Replace(",", "");
-                        tempStr = tempStr.Replace("\"", "");
-
-                        double val = -1;
-
-                        if (!double.TryParse(tempStr, out val))
-                        {
-                            thrown = true; break;
-                        }
-
-                        if (!dvList[pIndex].Set(dvsTable[result[0]].Item1, val)) { thrown = true;  break; }
-                    }
-                }
-            }
-
-            if (!thrown)
-            {
-                for (var pIndex = 0; pIndex < dvList.Count; pIndex++)
-                {
-                    dvList[pIndex].Set("Fat", 65);
-                    dvList[pIndex].Set("PantothenicAcid", 15);
-
-                    if (!dvList[pIndex].IsValid()) { thrown = true; break; }
-                }
-            }
-            
-            if (thrown) return null;
-
-            return dvList;
+            return dvProvider.FromFile(filePath);
         }
     }
 }

@@ -161,7 +161,7 @@ namespace Tests
             var females = unit.DailyValues.Queries.GetByGender(GenderType.Female);
             var males = unit.DailyValues.Queries.GetByGender(GenderType.Male);
 
-            var babyMenu = GetMenu(2, GenderType.Both, graderWeights, unit);
+            var babyMenu = GetMenu(2, GenderType.Any, graderWeights, unit);
             var girlMenu = GetMenu(5, GenderType.Female, graderWeights, unit);
             Assert.IsTrue(babyMenu.Grade > girlMenu.Grade);// babies don't need much
 

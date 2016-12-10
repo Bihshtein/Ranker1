@@ -14,9 +14,6 @@ namespace RestModel
         public abstract bool Within(T param);
     }
 
-    /// <summary>
-    /// Age range
-    /// </summary>
     public class AgeParam : DailyValueParam<int>
     {
         public int MinAge { get; set; }
@@ -82,13 +79,6 @@ namespace RestModel
             return this.MinAge + "," + this.MaxAge;
         }
 
-        /// <summary>
-        /// Creating age param using given range delimiter and a range top char
-        /// </summary>
-        /// <param name="ageRange"></param>
-        /// <param name="rangeDelim"></param>
-        /// <param name="rangeTop"></param>
-        /// <returns></returns>
         public static AgeParam FromString(string ageRange, char rangeDelim, char rangeTop)
         {
             if ( (ageRange == null) || (!ageRange.Contains(rangeDelim) && !ageRange.Contains(rangeTop)) )   return null;
@@ -115,7 +105,7 @@ namespace RestModel
         Undefined = 0,
         Female,
         Male,
-        Both
+        Any
     }
 
     public class GenderParam : DailyValueParam<GenderType>
@@ -135,20 +125,14 @@ namespace RestModel
         public override bool Within(GenderType param)
         {
             if ((Type == GenderType.Undefined) || (param == GenderType.Undefined)) return false;
-            return ((param == Type) || (Type == GenderType.Both));
+            return ((param == Type) || (Type == GenderType.Any));
         }
 
-        /// <summary>
-        /// Extracting gender param using string<->gender map
-        /// </summary>
-        /// <param name="gender"></param>
-        /// <param name="csvMap"></param>
-        /// <returns></returns>
-        public static GenderParam FromString(string gender, Dictionary<string, GenderType> strMap)
+        public static GenderParam FromString(string gender, Dictionary<string, GenderType> StringToGenderType)
         {
-            if ((strMap == null) || (!strMap.ContainsKey(gender))) return null;
+            if ((StringToGenderType == null) || (!StringToGenderType.ContainsKey(gender))) return null;
 
-            return new GenderParam(strMap[gender]);
+            return new GenderParam(StringToGenderType[gender]);
         }
     }
 
@@ -174,11 +158,6 @@ namespace RestModel
         [BsonElement("Age")]
         public AgeParam Age { get; set; }
 
-        /// <summary>
-        /// 1; Male
-        /// 2; Female
-        /// 3; Both
-        /// </summary>
         [BsonElement("Gender")]
         public GenderParam Gender { get; set; }
 
@@ -282,7 +261,7 @@ namespace RestModel
                 });
 
             ret.Age = new AgeParam(25, 30);
-            ret.Gender = new GenderParam(GenderType.Both);
+            ret.Gender = new GenderParam(GenderType.Any);
             return ret;
         }
 
