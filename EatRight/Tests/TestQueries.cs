@@ -14,7 +14,7 @@ namespace Tests {
         [TestMethod]
         public void ChickenBreast() {
             var unit = new RestDBInterface();
-            var res = unit.Products.Queries.QueryByNameAndValue("breast", "Chicken","VitaminB12");
+            var res = unit.Products.Queries.QueryByNameAndValue("breast", "chicken","VitaminB12");
             Assert.IsTrue(res.Count == 14);
             Assert.IsTrue((res[res.Count-1].VitaminB12 / res[0].VitaminB12) >2 );
             Assert.IsTrue((res[res.Count - 1].VitaminB12 / res[0].VitaminB12) < 3);

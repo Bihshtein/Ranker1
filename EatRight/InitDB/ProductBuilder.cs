@@ -13,7 +13,7 @@ namespace InitDB {
         public static Product GetProduct(string groupName, int id, string name, JArray nutrients, double weight) {
             var validator = InitDB.Validators[groupName];
             var p = new Product() { ID = id};
-            p.FoodGroup = groupName;
+            p.FoodGroup = groupName.ToLower();
             var parts = name.Split(',').ToList();
             if (groupName == "manual")
                 p.Name1 = name;
@@ -73,8 +73,9 @@ namespace InitDB {
             if (validator.IsMainPart(item)) {
                 if (p.Name1 == null)
                     p.Name1 = validator.GetPrettyName(item);
-                else 
-                    p.Name1 = item+ '|' +p.Name1;
+                else
+                    p.Name1 = item + '|' + p.Name1;
+                p.Name1 = p.Name1.ToLower();
 
             }
 
@@ -83,9 +84,13 @@ namespace InitDB {
                 p.Name2 = nameAndCut.Item1;
                 if (nameAndCut.Item2 != string.Empty)
                     p.Name3 = nameAndCut.Item2;
+                p.Name2 = p.Name2.ToLower();
+
             }
-            if (validator.IsThirdPart(item))
+            if (validator.IsThirdPart(item)) { 
                 p.Name3 = item;
+                p.Name3 = p.Name3.ToLower();
+            }
         }
 
         private static void SetNutrientProperties(JArray nutrients, Product p, double weight) {

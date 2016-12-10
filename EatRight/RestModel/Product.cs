@@ -179,7 +179,7 @@ namespace RestModel {
             }
         }
 
-        public static List<string> Name2FoodGroups = new List<string>{ "Beef", "Chicken" };
+        public static List<string> Name2FoodGroups = new List<string>{ "beef", "chicken" };
     }
 }  
 

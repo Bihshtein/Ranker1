@@ -13,7 +13,7 @@ namespace InitDB.Validators {
             {"feet","leg","thigh","breast","neck","back", "wing", "drumstick","giblets","gizzard",
             "heart","liver","skin (drumsticks and thighs)","skin",
             "and giblets and neck","light meat"};
-            ThirdParts = new List<string>() { "all classes", "dark meat", "with added solution" };
+            ThirdParts = new List<string>() { "all classes", "dark meat", "with added solution","broth" };
 
         }
     }

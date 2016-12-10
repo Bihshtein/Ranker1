@@ -37,7 +37,8 @@ namespace RestModel  {
         [BsonElement("MealType")]
         public string MealType { get; set; }
         public Dictionary<string, double> ProductsWeight;
-      
+        public List<string> Ingredients;
+
 
         private static RestDBInterface Unit = new RestDBInterface();
 
@@ -56,7 +57,7 @@ namespace RestModel  {
 
         public KeyValuePair<Product, double> GetProductWeight(string prodName)
         {
-            var product = Unit.Products.Queries.GetByName(prodName)[0];
+            var product = Unit.Products.GetByName(prodName)[0];
             return new KeyValuePair<Product, double>(product, ProductsWeight[prodName]);
         }
 
