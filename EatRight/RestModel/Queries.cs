@@ -15,6 +15,8 @@ namespace RestModel {
 
 
         public List<Product> QueryByNameAndValue(string name, string group, string value,bool partial=false) {
+            name = name.ToLower();
+            group = group.ToLower();
             IMongoQuery query;
             if (Product.Name2FoodGroups.Contains(group) )
                 query = Query<Product>.Where(x => x.Name2.Equals(name) && x.FoodGroup.Equals(group));
@@ -40,16 +42,20 @@ namespace RestModel {
             newRes.Sort((a, b) => a.Age.MinAge > b.Age.MinAge ? 1 : -1);
             return newRes;
         }
-        public List<T> GetByName(string name) {
-            string lowerCasedName = name.ToLower();
+        public List<T> TryMatchWholeProduct(string foodGroup) {
+            string lowerCasedName = foodGroup.ToLower();
             return collection.Find(Query<Product>.Where(x =>
-                (Product.Name2FoodGroups.Contains(x.FoodGroup) && (x.Name2.Equals(name) || x.Name2.Equals(lowerCasedName))) ||
-                (!Product.Name2FoodGroups.Contains(x.FoodGroup) && (x.Name1.Equals(name) || x.Name1.Equals(lowerCasedName)))))
-                .ToList();
+                x.FoodGroup.Equals(foodGroup) 
+                )).ToList();
         }
 
-
-
+        public List<Meal> GetByMealType(string mealType) {
+            IMongoQuery query;
+            query = Query<Meal>.Where(x => x.MealType.Equals(mealType));
+            var res = collection.Find(query).ToList();
+            var newRes = res.Cast<Meal>().ToList();
+            return newRes;
+        }
 
     }
 }

@@ -28,7 +28,9 @@ namespace InitDB.Validators {
                 "under blade center steak", "lip off", "lip-on", "lip-off", "outside skirt steak",
                 "inside skirt steak", "cap-off steak/roast", "navel end", "point end", "pot roast or steak",
                 "pot roast", "center steak", "filet", "cap steak", "roast/fillet", "roast/filet", "roast or steak",
-                "steak/roast", "steak/fillet", "fillet", "cap", "roast", "full cut", "steak", "roast"
+                "steak/roast", "steak/fillet", "fillet", "cap", "roast", "full cut", "steak", "roast",
+
+                "broth","stew",
             };
         }
 

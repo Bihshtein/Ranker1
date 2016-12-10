@@ -20,7 +20,7 @@ namespace InitDB.Validators {
                 "top loin (chops)", "sirloin (chops)", "center rib (chops)", "center loin (chops)",
                 "top loin (chops)", "top loin (chops)","sirloin (chops or roasts)", "blade (roasts)",
                 "top loin (roasts)", "sirloin (roasts)", "center rib (roasts)", "center loin (roasts)"};
-            ThirdParts = new List<string>() { "slice", "whole", "spiral slice", "center slice" };
+            ThirdParts = new List<string>() { "roast","slice", "whole", "spiral slice", "center slice" };
         }
 
         public override Tuple<string, string> GetNameAndDescription(string item) {

@@ -19,6 +19,10 @@ namespace InitDB {
             "Strawberry"
         };
 
+        public static List<string> SizesWords = new List<string>() {
+            "cups", "pound", "ounce", "pounds","pieces","ounces","cubes"
+        };
+
         public static List<string> AdditionalHealthData = new List<string>{
             "reduced-calorie","sweetened","diet","caffeine","decaffeinated","dietetic","unenriched","gluten","enriched","glucose","lactose", "salted",
             "sugared","concentrate","sucralose","sugar","undiluted","calcium","low calorie","vitamin",
@@ -59,6 +63,7 @@ namespace InitDB {
         public static bool IsCommonParameter(string part) {
             part = part.Trim();
             return ((IsPreparationOption(part)) ||
+                SizesWords.Contains(part) ||
                     StorageOptions.Any((item) => part.Contains(item)) ||
                     FatOptions.Any((item) =>part.Contains(item)) ||
                     PackOptions.Any((item) => part.Contains(item)) ||

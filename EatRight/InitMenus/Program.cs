@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Xml;
+using InitDB;
 
 namespace InitRecipes {
     class Program {
@@ -17,18 +18,53 @@ namespace InitRecipes {
         public static List<int> Indexes;
         public static object Locker = new object();
         static void Main(string[] args) {
+          //  PopulateMealsDB();
+            AddActualProductsToMealsDB();
+        }
+        public static void AddActualProductsToMealsDB() {
+            var unit = new RestDBInterface();
+            Console.WriteLine("FoodGroup \t\t Original ");
+            var meals = unit.Meals.Queries.GetByMealType("everyday cooking").ToList();
+            var foundProducts = new List<Product>();
+            foreach (var meal in meals) {
+                foreach (var item in meal.Ingredients) {
+                    
+                    var parts = item.Split(' ').ToList();
+                    foreach (var validator in InitDB.InitDB.Validators) {
+                        if (parts.Any(part => validator.Key.ToLower() == part)) {
+                            var allValid = true;
+                            foreach (var part in parts) {
+                                var newPart = part.Replace(",", "");
+                                newPart = newPart.Replace(")", "");
+                                if (newPart != validator.Key.ToLower()
+                                    && newPart.Length > 3 && !InitDB.InitDB.Validators[validator.Key].IsValidPart(newPart)){ 
+                                    allValid = false;
+                                    Console.WriteLine("Not Matched {0}, {1}", newPart, item);
+                                }
+
+                            }
+                            if (allValid)
+                                Console.WriteLine("Matched {0}", item);
+
+                        }
+                    }
+             
+                }
+            }
+        }
+
+        public static void PopulateMealsDB() {
+
             Indexes = File.ReadAllLines(FolderPath + "recipes_num.txt").ToList().ConvertAll<int>((a =>  int.Parse(a)));
             var unit = new RestDBInterface();
             unit.Meals.Empty();
-                Indexes.ForEach(a=>ThreadPool.QueueUserWorkItem(delegate { ParseRecipe(); },null));
-            for (int i = 0; i < 60*60; i++) {
-                Thread.Sleep(1000);
-            }
+            Indexes.ForEach(a=>ThreadPool.QueueUserWorkItem(delegate { ParseRecipe();},null));
+            Thread.Sleep(1000*60*5);
         }
-    
+
+
         public static void ParseRecipe() {
             var unit = new RestDBInterface();
-            unit.Meals.GetAll();
             string idStr;
             string page = string.Empty;
             try {
@@ -48,15 +84,15 @@ namespace InitRecipes {
             var mealType = new String(mealParts[3].TakeWhile(a => a != '<').ToArray()).Trim().ToLower();
 
             var ingredientParts = page.Split(new string[1] { "itemprop=\"ingredients\">" }, StringSplitOptions.None);
-            var ingredients = new Dictionary<string,double>();
+            var ingredients = new List<string>();
             for (int i = 1; i < ingredientParts.Length; i++) { 
                 if (ingredientParts[i].Contains("<")) {
                     var chars = ingredientParts[i].TakeWhile(a => a != '<');
 
                     var igredient = new String(chars.ToArray());
                     var words = igredient.Split(' ').ToList();
-                    if (!ingredients.ContainsKey(igredient))
-                        ingredients.Add(igredient,0);
+                    if (!ingredients.Contains(igredient))
+                        ingredients.Add(igredient);
                 }
             }
             var mealsType = new HashSet<MealType>();
@@ -70,7 +106,7 @@ namespace InitRecipes {
             lock (Locker) {
                 try {
                     unit.Meals.Add(new Meal() {
-                        ID = CurrIndex, Name =name,ProductsWeight = ingredients, MealType =mealType
+                        ID = CurrIndex, Name =name,Ingredients = ingredients, MealType =mealType
                     });
                     Console.WriteLine(
                         string.Format("Local num : {0}, Source num {1} ", CurrIndex, Indexes[CurrIndex]));
