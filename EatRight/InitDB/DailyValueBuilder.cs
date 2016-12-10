@@ -98,17 +98,10 @@ namespace InitDB
 
         private List<DailyValue> GetDefaultDailyValuesList(TupleList<GenderParam, AgeParam> ageGenderList)
         {
-            var dvList  =new List<DailyValue>(ageGenderList.Count);
+            var dvList = new List<DailyValue>(ageGenderList.Count);
 
-            for (int i = 0; i < ageGenderList.Count; i++)
-            {
-                var curr_dv = DailyValue.NullDefault();
-                curr_dv.ID = i;
-                curr_dv.Gender = ageGenderList[i].Item1;
-                curr_dv.Age = ageGenderList[i].Item2;
-
-                dvList.Add(curr_dv);
-            }
+            var i = 0;
+            ageGenderList.ForEach(ageGender => dvList.Add(DailyValue.NullDefault(ageGender, i++)));
 
             return dvList;
         }

@@ -186,6 +186,15 @@ namespace RestModel
             return new DailyValue(this);
         }
 
+        public static DailyValue NullDefault(Tuple<GenderParam, AgeParam> ageGender, int id)
+        {
+            var nullDefault = NullDefault();
+            nullDefault.Gender = ageGender.Item1;
+            nullDefault.Age = ageGender.Item2;
+            nullDefault.ID = id;
+            return nullDefault;
+        }
+
         public static DailyValue NullDefault()
         {
             var ret = new DailyValue(
