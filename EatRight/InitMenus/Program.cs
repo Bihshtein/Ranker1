@@ -22,35 +22,28 @@ namespace InitRecipes {
             AddActualProductsToMealsDB();
         }
         public static void AddActualProductsToMealsDB() {
+            int total = 0;
+            var list = new string [] {"slice ","bunch", "cloves", "whole","pinch","slices","large","small","medium","teaspoon", "tablespoon","pound ","pound)", "pounds ", "ounce", "cup ", "cups " };
             var unit = new RestDBInterface();
             Console.WriteLine("FoodGroup \t\t Original ");
             var meals = unit.Meals.Queries.GetByMealType("everyday cooking").ToList();
             var foundProducts = new List<Product>();
             foreach (var meal in meals) {
                 foreach (var item in meal.Ingredients) {
-                    
-                    var parts = item.Split(' ').ToList();
-                    foreach (var validator in InitDB.InitDB.Validators) {
-                        if (parts.Any(part => validator.Key.ToLower() == part)) {
-                            var allValid = true;
-                            foreach (var part in parts) {
-                                var newPart = part.Replace(",", "");
-                                newPart = newPart.Replace(")", "");
-                                if (newPart != validator.Key.ToLower()
-                                    && newPart.Length > 3 && !InitDB.InitDB.Validators[validator.Key].IsValidPart(newPart)){ 
-                                    allValid = false;
-                                    Console.WriteLine("Not Matched {0}, {1}", newPart, item);
-                                }
-
-                            }
-                            if (allValid)
-                                Console.WriteLine("Matched {0}", item);
-
+                    var parts = item.Split(list, StringSplitOptions.None);
+                    if (parts.Length > 1) {
+                        var innerparts = parts[1].Split(',');
+                        if (innerparts.Length > 1) { 
+                        Console.WriteLine(innerparts[0] + " " +item);
+                            ++total;
                         }
                     }
-             
+                   
+                       
                 }
             }
+            Console.WriteLine("total meals : "  + meals.Count);
+            Console.WriteLine("total ingredients parsed : "  + total);
         }
 
         public static void PopulateMealsDB() {
