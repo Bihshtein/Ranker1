@@ -18,25 +18,32 @@ namespace InitRecipes {
         public static List<int> Indexes;
         public static object Locker = new object();
         static void Main(string[] args) {
-          //  PopulateMealsDB();
+            var initDB = !args.Contains("skip_init");
+            var enrichDB= !args.Contains("skip_enrich");
+            if (initDB)
+                PopulateMealsDB();
+            if (enrichDB)
             AddActualProductsToMealsDB();
         }
         public static void AddActualProductsToMealsDB() {
             int total = 0;
-            var list = new string [] {"slice ","bunch", "cloves", "whole","pinch","slices","large","small","medium","teaspoon", "tablespoon","pound ","pound)", "pounds ", "ounce", "cup ", "cups " };
+            var list = new string [] {"slice ","bunch", "cloves", "whole","pinch","slices","large","small","medium","teaspoon ", "teaspoons", "tablespoons", "tablespoon ","pound ","pound)", "pounds ", "ounce ","ounce)", "cup ", "cups " };
             var unit = new RestDBInterface();
             Console.WriteLine("FoodGroup \t\t Original ");
-            var meals = unit.Meals.Queries.GetByMealType("everyday cooking").ToList();
+            var meals = unit.Meals.GetAll().ToList();
             var foundProducts = new List<Product>();
             foreach (var meal in meals) {
                 foreach (var item in meal.Ingredients) {
                     var parts = item.Split(list, StringSplitOptions.None);
-                    if (parts.Length > 1) {
+                    if (parts.Length >1) {
                         var innerparts = parts[1].Split(',');
-                        if (innerparts.Length > 1) { 
-                        Console.WriteLine(innerparts[0] + " " +item);
-                            ++total;
-                        }
+                        var innerSplit = innerparts[0].Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries);
+                        if (innerSplit.Length == 2) {
+                            var res = unit.Products.Queries.TryMatchWholeProduct(innerSplit[0], innerSplit[1]);
+                            if (res.Count > 0)
+                                Console.WriteLine("Group: {0}, Name1: {1}, Name2: {2}, Name3 {3}, Count: {4}, \t Original: {5}", res[0].FoodGroup, res[0].Name1, res[0].Name2, res[0].Name3, res.Count,item);
+                        ++total;
+                    }
                     }
                    
                        

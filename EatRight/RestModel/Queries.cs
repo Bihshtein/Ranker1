@@ -42,11 +42,21 @@ namespace RestModel {
             newRes.Sort((a, b) => a.Age.MinAge > b.Age.MinAge ? 1 : -1);
             return newRes;
         }
-        public List<T> TryMatchWholeProduct(string foodGroup) {
-            string lowerCasedName = foodGroup.ToLower();
-            return collection.Find(Query<Product>.Where(x =>
-                x.FoodGroup.Equals(foodGroup) 
-                )).ToList();
+        public List<Product> TryMatchWholeProduct(string part1, string part2) {
+            var res = collection.Find(Query<Product>.Where(x =>
+                (x.Name3.Equals(part1) && x.Name1.Equals(part2)) ||
+                (x.Name3.Equals(part2) && x.Name1.Equals(part1)) ||
+
+                (x.Name2.Equals(part1) && x.Name1.Equals(part2)) ||
+                (x.Name2.Equals(part2) && x.Name1.Equals(part1)) ||
+
+                (x.FoodGroup.Equals(part1)  && x.Name1.Equals(part2))||
+                (x.FoodGroup.Equals(part2) && x.Name1.Equals(part1))||
+
+                (x.Name2.Equals(part2) && x.Name2.Equals(part1)) ||
+                (x.FoodGroup.Equals(part1) && x.Name2.Equals(part2)))).ToList();
+            var newRes = res.Cast<Product>().ToList();
+            return newRes;
         }
 
         public List<Meal> GetByMealType(string mealType) {

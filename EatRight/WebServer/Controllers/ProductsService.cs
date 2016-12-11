@@ -37,7 +37,7 @@ namespace Students.Services {
         }
 
         public List<Product> GetFoodGroup(string group) {
-            return dbLayer.Products.GetByGroupName(group);
+            return dbLayer.Products.GetByGroupName(group.ToLower());
         }
 
         public static bool IsEmpty(Product p) {
