@@ -38,16 +38,20 @@ namespace InitRecipes {
                     if (parts.Length >1) {
                         var innerparts = parts[1].Split(',');
                         var innerSplit = innerparts[0].Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries);
-                        if (innerSplit.Length == 2) {
-                            var res = unit.Products.Queries.TryMatchWholeProduct(innerSplit[0], innerSplit[1]);
-                            if (res.Count > 0)
-                                Console.WriteLine("Group: {0}, Name1: {1}, Name2: {2}, Name3 {3}, Count: {4}, \t Original: {5}", res[0].FoodGroup, res[0].Name1, res[0].Name2, res[0].Name3, res.Count,item);
-                        ++total;
+                        List<Product> res = null;
+                        if (innerSplit.Length == 2) 
+                            res = unit.Products.Queries.TryMatchWholeProduct(innerSplit[0], innerSplit[1]);
+                        else if (innerSplit.Length == 3)
+                            res = unit.Products.Queries.TryMatchWholeProduct(innerSplit[0], innerSplit[1], innerSplit[2]);
+
+                        if (res != null && res.Count > 0) {
+                            Console.WriteLine("Group: {0}, Name1: {1}, Name2: {2}, Name3 {3}, Count: {4}, \t Original: {5}", res[0].FoodGroup, res[0].Name1, res[0].Name2, res[0].Name3, res.Count, item);
+                            ++total;
+                        }
                     }
-                    }
+                }
                    
                        
-                }
             }
             Console.WriteLine("total meals : "  + meals.Count);
             Console.WriteLine("total ingredients parsed : "  + total);

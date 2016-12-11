@@ -42,6 +42,19 @@ namespace RestModel {
             newRes.Sort((a, b) => a.Age.MinAge > b.Age.MinAge ? 1 : -1);
             return newRes;
         }
+
+        public List<Product> TryMatchWholeProduct(string part1, string part2, string part3) {
+            var res = collection.Find(Query<Product>.Where(x =>
+             (x.FoodGroup.Equals(part1) && x.Name1.Equals(part2)) ||
+             (x.Name3.Equals(part1) && x.Name1.Equals(part3)) ||
+             (x.Name2.Equals(part2) && x.Name1.Equals(part3)) 
+
+            
+             )).ToList();
+            var newRes = res.Cast<Product>().ToList();
+            return newRes;
+
+        }
         public List<Product> TryMatchWholeProduct(string part1, string part2) {
             var res = collection.Find(Query<Product>.Where(x =>
                 (x.Name3.Equals(part1) && x.Name1.Equals(part2)) ||
