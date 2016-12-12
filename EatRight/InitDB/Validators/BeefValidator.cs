@@ -30,7 +30,6 @@ namespace InitDB.Validators {
                 "pot roast", "center steak", "filet", "cap steak", "roast/fillet", "roast/filet", "roast or steak",
                 "steak/roast", "steak/fillet", "fillet", "cap", "roast", "full cut", "steak", "roast",
 
-                "broth","stew",
             };
         }
 

@@ -18,39 +18,43 @@ namespace InitRecipes {
         public static List<int> Indexes;
         public static object Locker = new object();
         static void Main(string[] args) {
-          //  PopulateMealsDB();
+            var initDB = !args.Contains("skip_init");
+            var enrichDB= !args.Contains("skip_enrich");
+            if (initDB)
+                PopulateMealsDB();
+            if (enrichDB)
             AddActualProductsToMealsDB();
         }
         public static void AddActualProductsToMealsDB() {
+            int total = 0;
+            var list = new string [] {"slice ","bunch", "cloves", "whole","pinch","slices","large","small","medium","teaspoon ", "teaspoons", "tablespoons", "tablespoon ","pound ","pound)", "pounds ", "ounce ","ounce)", "cup ", "cups " };
             var unit = new RestDBInterface();
             Console.WriteLine("FoodGroup \t\t Original ");
-            var meals = unit.Meals.Queries.GetByMealType("everyday cooking").ToList();
+            var meals = unit.Meals.GetAll().ToList();
             var foundProducts = new List<Product>();
             foreach (var meal in meals) {
                 foreach (var item in meal.Ingredients) {
-                    
-                    var parts = item.Split(' ').ToList();
-                    foreach (var validator in InitDB.InitDB.Validators) {
-                        if (parts.Any(part => validator.Key.ToLower() == part)) {
-                            var allValid = true;
-                            foreach (var part in parts) {
-                                var newPart = part.Replace(",", "");
-                                newPart = newPart.Replace(")", "");
-                                if (newPart != validator.Key.ToLower()
-                                    && newPart.Length > 3 && !InitDB.InitDB.Validators[validator.Key].IsValidPart(newPart)){ 
-                                    allValid = false;
-                                    Console.WriteLine("Not Matched {0}, {1}", newPart, item);
-                                }
+                    var parts = item.Split(list, StringSplitOptions.None);
+                    if (parts.Length >1) {
+                        var innerparts = parts[1].Split(',');
+                        var innerSplit = innerparts[0].Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries);
+                        List<Product> res = null;
+                        if (innerSplit.Length == 2) 
+                            res = unit.Products.Queries.TryMatchWholeProduct(innerSplit[0], innerSplit[1]);
+                        else if (innerSplit.Length == 3)
+                            res = unit.Products.Queries.TryMatchWholeProduct(innerSplit[0], innerSplit[1], innerSplit[2]);
 
-                            }
-                            if (allValid)
-                                Console.WriteLine("Matched {0}", item);
-
+                        if (res != null && res.Count > 0) {
+                            Console.WriteLine("Group: {0}, Name1: {1}, Name2: {2}, Name3 {3}, Count: {4}, \t Original: {5}", res[0].FoodGroup, res[0].Name1, res[0].Name2, res[0].Name3, res.Count, item);
+                            ++total;
                         }
                     }
-             
                 }
+                   
+                       
             }
+            Console.WriteLine("total meals : "  + meals.Count);
+            Console.WriteLine("total ingredients parsed : "  + total);
         }
 
         public static void PopulateMealsDB() {
