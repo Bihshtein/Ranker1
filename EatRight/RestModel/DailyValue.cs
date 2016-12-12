@@ -136,7 +136,7 @@ namespace RestModel
         }
     }
 
-    public class DailyValue
+    public class DailyValue : IQueryable
     {
         protected Dictionary<string, object> resetDailyValues;
         [BsonExtraElements]

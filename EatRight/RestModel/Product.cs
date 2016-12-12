@@ -8,8 +8,12 @@ using System.Web;
 using MongoDB.Bson.Serialization.Attributes;
 namespace RestModel {  
 
+    public interface IQueryable
+    {
+        int ID { get; set; }
+    }
 
-    public class Product
+    public class Product : IQueryable
     {
         public override int GetHashCode()
         {
@@ -20,6 +24,7 @@ namespace RestModel {
         {
             return ID.Equals(((Product)obj).ID);
         }
+
         [BsonElement("_id")]
         public int ID { get; set; }
 

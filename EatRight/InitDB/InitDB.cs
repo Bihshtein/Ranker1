@@ -47,13 +47,6 @@ namespace InitDB {
                 { "manual", null}
             };
 
-        public static void InitDailyValuesCollection(bool overrideDB)
-        {
-            if (overrideDB)
-                MongoData._database.DropCollection("dailyvalues");
-            var unit = new RestDBInterface();
-            AddDailyValuesFromCSV(unit);
-        }
         public static void InitProductsCollection(bool loadGroups, bool loadManual, bool overrideDB) {
             var customCulture = (CultureInfo)Thread.CurrentThread.CurrentCulture.Clone(); customCulture.NumberFormat.NumberDecimalSeparator = ".";
             Thread.CurrentThread.CurrentCulture = customCulture;
@@ -114,16 +107,6 @@ namespace InitDB {
                 Console.WriteLine("Group Skipped :\t\t " + (totalSkipped-skipped));
                 Console.WriteLine();
             }
-        }
-
-        private static void AddDailyValuesFromCSV(RestDBInterface unit)
-        {
-            var filePath = Path.Combine(FolderPath, "DailyValues.csv");
-
-            unit.DailyValues.Empty();
-
-            var dvList = DailyValueBuilder.FromFile(filePath, new NutritionGoalsCSV());
-            dvList.ForEach(dv => unit.DailyValues.Add(dv));
         }
 
         private static void AddManual(RestDBInterface unit, string nutrientsQuery1, string nutrientsQuery2) {

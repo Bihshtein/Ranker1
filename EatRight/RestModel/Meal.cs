@@ -21,7 +21,7 @@ namespace RestModel  {
         Chinese
     }
     
-    public class Meal
+    public class Meal : IQueryable
     {
         public override int GetHashCode() {
             return ID;

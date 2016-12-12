@@ -8,14 +8,14 @@ using System.Linq.Expressions;
 namespace RestModel {
 
     public class RestDBInterface {
-        private MongoDatabase _database;
+        private IMongoDatabase _database;
         protected RestRepository<Product> products;
         protected RestRepository<Meal> meals;
         protected RestRepository<DailyValue> dailyvalues;
         public RestDBInterface() {
             var client = new MongoClient();
-            var server = client.GetServer();
-            _database = server.GetDatabase("test");
+
+            _database = client.GetDatabase("test");
         }
         public RestRepository<Product> Products {
             get {
@@ -41,13 +41,13 @@ namespace RestModel {
         }
     }
 
-    public class RestRepository<T> where T : class {
-        private MongoDatabase _database;
+    public class RestRepository<T> where T : class, IQueryable {
+        private IMongoDatabase _database;
         public Queries<T> Queries { get; private set; }
 
         private string _tableName;
-        private MongoCollection<T> _collection;
-        public RestRepository(MongoDatabase db, string tblName) {
+        private IMongoCollection<T> _collection;
+        public RestRepository(IMongoDatabase db, string tblName) {
             _database = db;
             _tableName = tblName;
             _collection = _database.GetCollection<T>(tblName);
@@ -55,11 +55,17 @@ namespace RestModel {
 
         }
         public T Get(int i) {
-            return _collection.FindOneById(i);
+            var ret = _collection.Find(x => x.ID == i).ToList();
+
+            if ( (ret == null) || (ret.Count < 1)) return null;
+
+
+            return ret[0];
         }
 
         public List<T> GetByProtein(double min) {
-            return _collection.Find(Query<Product>.Where(x => x.Protein > min)).ToList();
+            Expression<Func<Product, bool>> query = x => x.Protein > min;
+            return _collection.Find(query as Expression<Func<T, bool>>).ToList();
         }
 
 
@@ -67,21 +73,23 @@ namespace RestModel {
         public List<T> GetByName(string name)
         {
             string lowerCasedName = name.ToLower();
-            return _collection.Find(Query<Product>.Where(x =>
+            Expression<Func<Product, bool>> query = x =>
                 (Product.Name2FoodGroups.Contains(x.FoodGroup) && (x.Name2.Equals(name) || x.Name2.Equals(lowerCasedName))) ||
-                (!Product.Name2FoodGroups.Contains(x.FoodGroup) && (x.Name1.Equals(name) || x.Name1.Equals(lowerCasedName)))))
-                .ToList();
+                (!Product.Name2FoodGroups.Contains(x.FoodGroup) && (x.Name1.Equals(name) || x.Name1.Equals(lowerCasedName)));
+
+            return _collection.Find(query as Expression<Func<T, bool>>).ToList();
         }
 
 
         public List<T> GetByGroupName(string name) {
-            return _collection.Find(Query<Product>.Where(x => x.FoodGroup == name)).ToList();
+            Expression<Func<Product, bool>> query = x => x.FoodGroup == name;
+            return _collection.Find(query as Expression<Func<T, bool>>).ToList();
         }
 
         public List<T> GetByAgeAndGender(int age, GenderType gender)
         {
             //This is such a bad code- will fix on next commit- till then- ALEX DONT HURT ME.
-            List<DailyValue> x = _collection.FindAll().ToList() as List<DailyValue>;
+            List<DailyValue> x = _collection.Find(_ => true).ToList() as List<DailyValue>;
             x = x.Where(y => y.Age.Within(age) && y.Gender.Within(gender)).ToList();
             return x as List<T>;
         }
@@ -116,12 +124,14 @@ namespace RestModel {
 
         public List<T> GetByMeasure(string name, int min,bool isVegetarian=false)
         {
-            IMongoQuery query;
+            var builder = Builders<Product>.Filter;
+            FilterDefinition<Product> filter;
+
             if (isVegetarian)
-                query = Query.And(Query.GT(name, DailyValues[name] * (min / 100.0)), Query.EQ("Animal", string.Empty));
+                filter = builder.And(builder.Gt(name, DailyValues[name] * (min / 100.0)), builder.Eq("Animal", string.Empty));
             else
-                query = Query.GT(name, DailyValues[name] * (min / 100.0));
-            return _collection.Find(query).ToList();
+                filter = builder.Gt(name, DailyValues[name] * (min / 100.0));
+            return _collection.Find(filter as FilterDefinition<T>).ToList();
         }
         public T GetKey(KeyValuePair<T, int> pair)
         {
@@ -154,26 +164,28 @@ namespace RestModel {
         }
 
         public IQueryable<T> GetAll() {
-            MongoCursor<T> cursor = _collection.FindAll();
-            return cursor.AsQueryable<T>();
+            return _collection.Find(_ => true).ToEnumerable().AsQueryable();
         }
+
         public List<T> GetAllList() {
-            return  _collection.FindAll().ToList();
+            return _collection.Find(_ => true).ToList();
         }
         public void Add(T entity) {
-            _collection.Insert(entity);
+            _collection.InsertOne(entity);
         }
         public void Delete(Expression<Func<T, string>> queryExpression, string id) {
-            var query = Query<T>.EQ(queryExpression, id);
-            _collection.Remove(query);
+            var query = new FilterDefinitionBuilder<T>();
+            
+            _collection.DeleteMany(query.Eq(queryExpression, id));
         }
 
         public void Empty() {
-            _collection.RemoveAll();
+            _collection.DeleteMany(_ => true);
         }
         public void Update(Expression<Func<T, string>> queryExpression, string id, T entity) {
-            var query = Query<T>.EQ(queryExpression, id);
-            _collection.Update(query, Update<T>.Replace(entity));
+            var query = new FilterDefinitionBuilder<T>();
+
+            _collection.FindOneAndReplace(query.Eq(queryExpression, id), entity);
         }
     }
 }
