@@ -32,7 +32,7 @@ namespace InitDB {
 
         private static string GetUpdatedStringParam(List<string> containerList, string item, string param) {
             if (containerList.Any((i) => item.Contains(i))) {
-                GetUpdatedStringParam(item, param);
+                param = GetUpdatedStringParam(item, param);
             }
             return param;
         }
