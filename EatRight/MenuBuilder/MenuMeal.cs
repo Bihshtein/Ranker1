@@ -46,8 +46,7 @@ namespace MenuBuilder
                 var product = productWeight.Key;
                 var weight = productWeight.Value;
 
-
-                CaloriesNum += Formulas.GetTotalCalories();
+                CaloriesNum += Formulas.GetTotalCalories(weight, product.Protein, product.Fat, product.Carbs);
             }
         }
 

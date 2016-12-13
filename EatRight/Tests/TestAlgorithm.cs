@@ -183,7 +183,7 @@ namespace Tests
 
                     var product = allProducts[prodInd];
 
-                    caloriesInCurMeal += Formulas.GetTotalCalories();
+                    caloriesInCurMeal += Formulas.GetTotalCalories(prodWeight, product.Protein, product.Fat, product.Carbs);
                 }
 
                 // Generate random type

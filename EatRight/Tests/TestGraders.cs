@@ -16,12 +16,7 @@ namespace Tests
         [TestMethod]
         public void TestCaloriesCountGrader()
         {
-            // Currently all the users has the same calories ideal value, so there's nothing to check
-
-            //TestUserProfileDependentGrader(new Dictionary<GraderType, double>() {
-            //{GraderType.CaloriesCountGrader, 1},
-            //{GraderType.CaloriesCountDailyGrader, 1}
-            //});
+            TestUserProfileDependentGrader(false);
         }
 
         [TestMethod]
@@ -39,10 +34,7 @@ namespace Tests
         [TestMethod]
         public void TestNutValuesGrader()
         {
-            TestUserProfileDependentGrader(new Dictionary<GraderType, double>() {
-            {GraderType.NutValuesGrader, 1},
-            {GraderType.NutValuesDailyGrader, 1}
-            });
+            TestUserProfileDependentGrader(true);
         }
 
         [TestMethod]
@@ -117,7 +109,7 @@ namespace Tests
             Assert.IsTrue(normalMenu.GetDay(0).Meals[MealType.Lunch].Meal.Equals(bigLunch));
         }
 
-        private void TestUserProfileDependentGrader(Dictionary<GraderType, double> graderWeights)
+        private void TestUserProfileDependentGrader(Boolean nutValues)
         {
             // Make sure that grader is grading different user profiles in a different manner
 
@@ -131,7 +123,8 @@ namespace Tests
                 { "Carrot", 20},
                 { "Tomatoes", 23}
             },
-                Types = new HashSet<MealType>() { MealType.Breakfast, MealType.Dinner } };
+                Types = new HashSet<MealType>() { MealType.Breakfast, MealType.Dinner }
+            };
 
             var lunch = new Meal() {
                 ID = 1,
@@ -157,15 +150,33 @@ namespace Tests
             unit.Meals.Add(breakfast);
             unit.Meals.Add(lunch);
             unit.Meals.Add(dinner);
-          
+
+            if (nutValues)
+            {
+                TestNutValuesGraderInternal(unit);
+            }
+            else
+            {
+                TestCaloriesCountGraderInternal(unit);
+            }
+        }
+
+        private void TestNutValuesGraderInternal(RestDBInterface unit)
+        {
             var females = unit.DailyValues.Queries.GetByGender(GenderType.Female);
             var males = unit.DailyValues.Queries.GetByGender(GenderType.Male);
+
+            Dictionary<GraderType, double> graderWeights = new Dictionary<GraderType, double>() {
+                {GraderType.NutValuesGrader, 1},
+                {GraderType.NutValuesDailyGrader, 1}
+            };
 
             var babyMenu = GetMenu(2, GenderType.Any, graderWeights, unit);
             var girlMenu = GetMenu(5, GenderType.Female, graderWeights, unit);
             Assert.IsTrue(babyMenu.Grade > girlMenu.Grade);// babies don't need much
 
-            for (int i = 0; i < males.Count - 1; i++) {
+            for (int i = 0; i < males.Count - 1; i++)
+            {
                 var maleItem1 = males[i];
                 var maleItem2 = males[i + 1];
                 var maleMenu1 = GetMenu(maleItem1.Age.MinAge, GenderType.Male, graderWeights, unit);
@@ -178,11 +189,13 @@ namespace Tests
                 Assert.IsTrue(maleMenu1.Grade < 100 && maleMenu2.Grade < 100 &&
                               femaleMenu1.Grade < 100 && femaleMenu1.Grade < 100);
 
-                if (i < 2) { // During the growing years the need for vitamins increases with age overall
+                if (i < 2)
+                { // During the growing years the need for vitamins increases with age overall
                     Assert.IsTrue(maleMenu1.Grade > maleMenu2.Grade);
                     Assert.IsTrue(femaleMenu1.Grade > femaleMenu2.Grade);
                 }
-                else {// As we grow order for some nutrients we need more for some less
+                else
+                {// As we grow order for some nutrients we need more for some less
                     Assert.IsTrue(maleMenu1.Grade != maleMenu2.Grade);
                     Assert.IsTrue(femaleMenu1.Grade != femaleMenu2.Grade);
                 }
@@ -190,10 +203,39 @@ namespace Tests
                 Assert.IsTrue(maleMenu1.Grade < femaleMenu1.Grade);
                 Assert.IsTrue(maleMenu2.Grade < femaleMenu2.Grade);
             }
-        
+
         }
 
-        private Menu GetMenu(int age, GenderType gender, Dictionary<GraderType, double> graderWeights, RestDBInterface unit ) {
+        private void TestCaloriesCountGraderInternal(RestDBInterface unit)
+        {
+            Dictionary<GraderType, double> graderWeights = new Dictionary<GraderType, double>() {
+                {GraderType.CaloriesCountGrader, 1},
+                {GraderType.CaloriesCountDailyGrader, 1}
+            };
+
+            var babyProfile = new UserProfile() { Age = 3, Gender = GenderType.Male };
+            var girlProfile = new UserProfile() { Age = 16, Gender = GenderType.Female };
+
+            var babyGraderDB = GraderDBGenerator.FromUserProfile(babyProfile, unit);
+            var girlGraderDB = GraderDBGenerator.FromUserProfile(girlProfile, unit);
+
+            babyGraderDB.GradersWeight = graderWeights;
+            girlGraderDB.GradersWeight = graderWeights;
+
+            // Since all users currently get the same calories number, force a difference
+            babyGraderDB.dailyCaloriesNum = girlGraderDB.dailyCaloriesNum / 2;
+
+            var babyMenuGen = new MenuGenerator(unit, babyGraderDB);
+            var girlMenuGen = new MenuGenerator(unit, girlGraderDB);
+
+            var babyMenu = babyMenuGen.GetMenu();
+            var girlMenu = girlMenuGen.GetMenu();
+
+            Assert.IsTrue(babyMenu.Grade > girlMenu.Grade);// babies don't need much
+        }
+
+        private Menu GetMenu(int age, GenderType gender, Dictionary<GraderType, double> graderWeights, RestDBInterface unit )
+        {
             var profile = new UserProfile() { Age = age, Gender = gender };
             var graderDB = GraderDBGenerator.FromUserProfile(profile, unit);
             graderDB.GradersWeight = graderWeights;
