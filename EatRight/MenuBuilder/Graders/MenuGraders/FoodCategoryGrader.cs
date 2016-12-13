@@ -13,7 +13,7 @@ namespace MenuBuilder.Graders.MenuGraders
         public FoodCategoryGrader()
         {
             Description = "Compatibility of meals category to the user flavor";
-            Type = GraderType.CaloriesCountGrader;
+            Type = GraderType.FoodCategoryGrader;
 
             dailyGrader = new FoodCategoryDailyGrader();
         }

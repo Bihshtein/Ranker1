@@ -211,6 +211,7 @@ namespace MenuBuilder
             double grade = 0;
             var graderStrToGain = new Dictionary<string, double>();
             var graderStrToLoss = new Dictionary<string, double>();
+            var gradersInfo = new HashSet<GraderInfo>();
 
             foreach (var entry in graderMap)
             {
@@ -222,8 +223,10 @@ namespace MenuBuilder
                     var curGrade = grader.Grade(obj);
                     var curScaledGrade = curGrade * entry.Value;
                     grade += curScaledGrade;
+
                     graderStrToGain[grader.Description] = curScaledGrade;
                     graderStrToLoss[grader.Description] = entry.Value - curScaledGrade;
+                    gradersInfo.Add(new GraderInfo(grader.Type, entry.Value, curGrade));
                 }
                 catch (ArgumentException)
                 {
@@ -237,7 +240,9 @@ namespace MenuBuilder
             obj.Grade = (grade / graderWeightSum) * 100;
             var bestGraders = graderStrToGain.OrderByDescending(x => x.Value).Take(gradersNum).Select(y => y.Key).ToList();
             var worstGraders = graderStrToLoss.OrderByDescending(x => x.Value).Take(gradersNum).Select(y => y.Key).ToList();
-            obj.GradeInfo = new GradeInfo() { BestGraders = bestGraders, WorstGraders = worstGraders };
+
+            obj.GradeInfo = new GradeInfo()
+                { BestGraders = bestGraders, WorstGraders = worstGraders, GradersInfo = gradersInfo };
         }
 
         private void GenerateMenusList()
