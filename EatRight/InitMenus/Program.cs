@@ -26,7 +26,7 @@ namespace InitRecipes {
             if (enrichDB)
             AddActualProductsToMealsDB();
         }
-        public static List<string> CutDetails = new List<string> {"shredded","cubed","head","heads","sliced","stalk", "stalks", "diced", "minced", "chopped" };
+        public static List<string> CutDetails = new List<string> {"sprig", "sprigs","ground","shredded","cubed","head","heads","sliced","stalk", "stalks", "diced", "minced", "chopped" };
         public static List<string> CookDetails = new List<string> { "cooked","fresh"};
         public static List<string> PackDetails = new List<string> { "can" };
         public static RestDBInterface unit = new RestDBInterface();
@@ -47,21 +47,28 @@ namespace InitRecipes {
                     ++total;
                     if (parts.Length == 1) 
                         parts =  Regex.Split(item, @"\d");
-                    if (parts.Length > 1) { 
+                    if (parts.Length > 1) {
                         ++totalParsed;
                         var innerparts = parts[1].Split(',');
                         var innerSplit = innerparts[0].Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries);
                         List<Product> res = null;
-                        if (innerSplit.Length == 1)
-                            res = HandleSingleWordName(innerSplit[0]);
+                        if (innerSplit.Length == 1) {
+                            if (innerSplit[0] == "water")
+                                ++totalMatched;
+                            else
+                                res = HandleSingleWordName(innerSplit[0]);
+                        }
                         else if (innerSplit.Length == 2)
                             res = HandleDoubleWordName(innerSplit[0], innerSplit[1]);
-                        else if (innerSplit.Length == 3) 
+                        else if (innerSplit.Length == 3)
                             res = HandleTripleWordName(innerSplit[0], innerSplit[1], innerSplit[2]);
 
                         if (res != null && res.Count > 0) {
-                            Console.WriteLine(res[0].FoodGroup+"\t"+res[0].Name1+"\t" + res[0].Name2 + "\t" + res[0].Name3 + "\t" + res.Count + "\t" + item);
+                            //  Console.WriteLine(res[0].FoodGroup+"\t"+res[0].Name1+"\t" + res[0].Name2 + "\t" + res[0].Name3 + "\t" + res.Count + "\t" + item);
                             ++totalMatched;
+                        }
+                        if (innerSplit.Length == 3 && res.Count == 0) {
+                            Console.WriteLine(innerparts[0]);
                         }
                     }
                    
@@ -97,7 +104,7 @@ namespace InitRecipes {
             var unit = new RestDBInterface();
             unit.Meals.Empty();
             Indexes.ForEach(a=>ThreadPool.QueueUserWorkItem(delegate { ParseRecipe();},null));
-            Thread.Sleep(1000*60*5);
+            Thread.Sleep(1000*60*2);
         }
 
 

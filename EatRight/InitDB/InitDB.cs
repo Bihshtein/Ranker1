@@ -22,6 +22,8 @@ namespace InitDB {
         private static int totalAdded = 0;
         private static int totalSkipped = 0;
         public static Dictionary<string, string> FoodGroups = new Dictionary<string, string>() {
+            {"OilsAndFats","0400"},
+            {"SpicesAndHerbs","0200"},
             {"Fish","1500"},
             {"Baked","1800"},
             {"Beverages", "1400"},
@@ -44,6 +46,8 @@ namespace InitDB {
                 { "Beverages", new BeveragesValidator()},
                 { "Fish", new FishValidator()},
                 { "Baked", new BakedValidator()},
+                { "SpicesAndHerbs", new SpicesAndHerbsValidator()},
+                { "OilsAndFats", new OilsAndFatsValidator()},
                 { "manual", null}
             };
 
@@ -161,7 +165,7 @@ namespace InitDB {
 
         private static void SkipDebug(string name, string reason) {
             totalSkipped++;
-          //   Console.WriteLine("Skipping: " + name + ", reason : " + reason);
+            //Console.WriteLine("Skipping: " + name + ", reason : " + reason);
         }
 
         private static void AddDebug(string name) {
@@ -171,4 +175,6 @@ namespace InitDB {
 
 
     }
+
+   
 }
