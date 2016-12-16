@@ -67,7 +67,7 @@ namespace InitRecipes {
                             //  Console.WriteLine(res[0].FoodGroup+"\t"+res[0].Name1+"\t" + res[0].Name2 + "\t" + res[0].Name3 + "\t" + res.Count + "\t" + item);
                             ++totalMatched;
                         }
-                        if (innerSplit.Length == 3 && res.Count == 0) {
+                        if (innerSplit.Length == 2 && res.Count == 0) {
                             Console.WriteLine(innerparts[0]);
                         }
                     }
@@ -104,7 +104,7 @@ namespace InitRecipes {
             var unit = new RestDBInterface();
             unit.Meals.Empty();
             Indexes.ForEach(a=>ThreadPool.QueueUserWorkItem(delegate { ParseRecipe();},null));
-            Thread.Sleep(1000*60*2);
+            Thread.Sleep(1000*60*4);
         }
 
 
