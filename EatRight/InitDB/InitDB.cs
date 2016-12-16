@@ -23,7 +23,10 @@ namespace InitDB {
         private static int totalSkipped = 0;
         public static Dictionary<string, string> FoodGroups = new Dictionary<string, string>() {
             {"Sweets","1900"},
-           {"OilsAndFats","0400"},
+            {"Legumes","1600"},
+            {"SoupAndSauce","0600"},
+            {"Nuts","1200"},
+            {"OilsAndFats","0400"},
             {"SpicesAndHerbs","0200"},
             {"Fish","1500"},
             {"Baked","1800"},
@@ -38,6 +41,7 @@ namespace InitDB {
         };
         public static Dictionary<string, BasicValidator> Validators = new Dictionary<string, BasicValidator>() {
                 { "Sweets", new SweetsValidator()},
+                { "Nuts", new NutsValidator()},
                 { "Pork", new PorkValidator()},
                 { "Beef", new BeefValidator()},
                 { "Vegs", new VegsValidator()},
@@ -50,6 +54,8 @@ namespace InitDB {
                 { "Baked", new BakedValidator()},
                 { "SpicesAndHerbs", new SpicesAndHerbsValidator()},
                 { "OilsAndFats", new OilsAndFatsValidator()},
+                { "SoupAndSauce", new SoupAndSauceValidator()},
+                { "Legumes", new LegumesValidator()},
                 { "manual", null}
             };
 
@@ -81,17 +87,19 @@ namespace InitDB {
                 Console.WriteLine("Adding group :\t\t" + item);
                 var added = totalAdded;
                 var skipped = totalSkipped;
-                var foods1 = GetFoods(QueryData.GroupUrl, FoodGroups[item], nutrientsQuery1, "1");
-                var foods2 = GetFoods(QueryData.GroupUrl, FoodGroups[item], nutrientsQuery2, "2");
 
-                for (int i = 0; i < Math.Min(foods1.Count, foods2.Count); i++) {
+                var foods1 = GetFoods(QueryData.GroupUrl, FoodGroups[item], nutrientsQuery1, "1");
+                //var foods2 = GetFoods(QueryData.GroupUrl, FoodGroups[item], nutrientsQuery2, "2");
+                
+                for (int i = 0; i < /*Math.Max(*/foods1.Count/*, foods2.Count)*/; i++) {
                     var food1 = (dynamic)foods1[i];
-                    var food2 = (dynamic)foods2[i];
+                    //var food2 = (dynamic)foods2[i];
                     var id1 = ((object)food1.ndbno).ToString();
                     var name1 = ((object)food1.name).ToString();
-                    var id2 = ((object)food1.ndbno).ToString();
-                    var name2 = ((object)food1.name).ToString();
-                    if (id1 == id2 && name1 == name2) {
+                    //var id2 = ((object)food1.ndbno).ToString();
+                    //var name2 = ((object)food1.name).ToString();
+                    //if (id1 == id2 && name1 == name2) {
+                    name1= name1.Replace(".", "");// can't have this in mongo for some silly reason
                         var _params = name1.Split(',').ToList();
 
                         var allParamsAreKnown = _params.All(Validators[item].IsValidPart);
@@ -101,13 +109,13 @@ namespace InitDB {
                                 SkipDebug(name1, "already in DB");
                             else {
                                 JArray nutrients1 = food1.nutrients;
-                                JArray nutrients2 = food2.nutrients;
-                                AddProduct(item, unit, id1, name1, new JArray(nutrients1.Concat(nutrients2)), double.Parse(((object)food1.weight).ToString()));
+                                //JArray nutrients2 = food2.nutrients;
+                                AddProduct(item, unit, id1, name1, /*new JArray(*/nutrients1/*.Concat(nutrients2))*/, double.Parse(((object)food1.weight).ToString()));
                             }
                         }
                         else
                             SkipDebug(name1, "unknow parameters");
-                    }
+                    //}
                 }
                 Console.WriteLine("Group Added :\t\t " + (totalAdded-added));
                 Console.WriteLine("Group Skipped :\t\t " + (totalSkipped-skipped));
@@ -167,12 +175,12 @@ namespace InitDB {
 
         private static void SkipDebug(string name, string reason) {
             totalSkipped++;
-            Console.WriteLine("Skipping: " + name + ", reason : " + reason);
+          //  Console.WriteLine("Skipping: " + name + ", reason : " + reason);
         }
 
         private static void AddDebug(string name) {
             totalAdded++;
-            Console.WriteLine("Adding: " + name + "");
+        //    Console.WriteLine("Adding: " + name + "");
         }
 
 

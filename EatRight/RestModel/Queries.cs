@@ -76,6 +76,7 @@ namespace RestModel {
             (x.Name3.Equals(part2.Remove(part2.Length-1,1)) && x.Name1.Equals(part1)) || // remove the last 's'
 
                 (x.Name3.Equals(part1) && x.Name1.Equals(part2)) ||
+                (x.Name3.Contains("or") && x.Name3.Contains(part1) && x.Name2.Equals(part2)) ||
                 (x.Name3.Equals(part1) && x.Name2.Equals(part2)) ||
                 (x.StorageMethod.Equals(part1) && x.Name1.Equals(part2)) ||
                 (x.StorageMethod.Equals(part1) && x.Name2.Equals(part2)) ||

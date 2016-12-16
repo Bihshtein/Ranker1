@@ -28,7 +28,7 @@ namespace Tests
                     { "Avocados", 50},
                     { "bacon", 50},
                     { "Tuna", 200},
-                    { "Almond", 25}
+                    { "Almonds", 25}
                 },
                 Types = new HashSet<MealType>() { MealType.Breakfast }
             };

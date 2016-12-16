@@ -67,7 +67,7 @@ namespace InitRecipes {
                             //  Console.WriteLine(res[0].FoodGroup+"\t"+res[0].Name1+"\t" + res[0].Name2 + "\t" + res[0].Name3 + "\t" + res.Count + "\t" + item);
                             ++totalMatched;
                         }
-                        if (innerSplit.Length == 2 && res.Count == 0) {
+                        if (innerSplit.Length == 3 && res!=null && res.Count == 0) {
                             Console.WriteLine(innerparts[0]);
                         }
                     }

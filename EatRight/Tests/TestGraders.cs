@@ -131,7 +131,7 @@ namespace Tests
                 Name = "Sample lunch 1",
                 ProductsWeight = new Dictionary<string, double>()
             {
-                {"Walnut", 20}
+                {"Walnuts", 20}
             },
                 Types = new HashSet<MealType>() { MealType.Lunch }
             };
@@ -269,7 +269,7 @@ namespace Tests
                     { "Avocados", 50},
                     { "bacon", 50},
                     { "Tuna", 200},
-                    { "Almond", 25}
+                    { "Almonds", 25}
                 },
                 Types = new HashSet<MealType>() { MealType.Breakfast },
                 Categories = new HashSet<MealCategory>() { MealCategory.Chinese }
@@ -299,7 +299,7 @@ namespace Tests
                     { "Avocados", -1},
                     { "bacon", -1},
                     { "Tuna", -1},
-                    { "Almond", -1}
+                    { "Almonds", -1}
                 };
             }
             indianGraderDB.range = range;

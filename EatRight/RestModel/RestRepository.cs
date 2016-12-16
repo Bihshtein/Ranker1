@@ -93,7 +93,7 @@ namespace RestModel {
             x = x.Where(y => y.Age.Within(age) && y.Gender.Within(gender)).ToList();
             return x as List<T>;
         }
-        public static List<string> FoodGroups = new List<string>() {"Sweets", "SpicesAndHerbs","OilsAndFats","Beverages","Baked","Fish","Carbs", "Chicken", "Beef", "Pork" ,"Vegs","Fruits","Dairy"};
+        public static List<string> FoodGroups = new List<string>() {"Legumes","SoupAndSauce","Nuts","Sweets", "SpicesAndHerbs","OilsAndFats","Beverages","Baked","Fish","Carbs", "Chicken", "Beef", "Pork" ,"Vegs","Fruits","Dairy"};
         public static Dictionary<string, double> DailyValues = new Dictionary<string, double>() {
             {"Protein",56},
             {"Fiber",25},

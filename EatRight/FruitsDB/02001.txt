@@ -82,11 +82,11 @@
                         "gm": 0.0
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "0.02",
-                        "gm": 0.81
+                        "value": "0",
+                        "gm": 4.0
                     },
                     {
                         "nutrient_id": "291",
@@ -131,13 +131,6 @@
                         "gm": 0.034
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "10.4",
-                        "gm": 414.8
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -157,6 +150,13 @@
                         "unit": "mg",
                         "value": "0.4",
                         "gm": 18.0
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
+                        "value": "0.01",
+                        "gm": 0.3
                     }
                 ]
             },
@@ -230,11 +230,11 @@
                         "gm": 0.0
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "0.03",
-                        "gm": 0.32
+                        "value": "202",
+                        "gm": 2348.0
                     },
                     {
                         "nutrient_id": "291",
@@ -279,13 +279,6 @@
                         "gm": 0.018
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "2.1",
-                        "gm": 24.6
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -305,6 +298,13 @@
                         "unit": "mg",
                         "value": "0.4",
                         "gm": 4.3
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
+                        "value": "0.04",
+                        "gm": 0.41
                     }
                 ]
             },
@@ -378,11 +378,11 @@
                         "gm": 0.0
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "0.01",
-                        "gm": 0.91
+                        "value": "1",
+                        "gm": 61.0
                     },
                     {
                         "nutrient_id": "291",
@@ -427,13 +427,6 @@
                         "gm": 0.058
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "--",
-                        "gm": "--"
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -453,6 +446,13 @@
                         "unit": "mg",
                         "value": "0.8",
                         "gm": 85.0
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
+                        "value": "--",
+                        "gm": "--"
                     }
                 ]
             },
@@ -526,11 +526,11 @@
                         "gm": 0.0
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "0.04",
-                        "gm": 0.83
+                        "value": "21",
+                        "gm": 420.0
                     },
                     {
                         "nutrient_id": "291",
@@ -575,13 +575,6 @@
                         "gm": 0.008
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "0.1",
-                        "gm": 1.3
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -601,6 +594,13 @@
                         "unit": "mg",
                         "value": "1.2",
                         "gm": 24.9
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
+                        "value": "0.40",
+                        "gm": 7.99
                     }
                 ]
             },
@@ -674,11 +674,11 @@
                         "gm": 0.0
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "0.03",
-                        "gm": 0.64
+                        "value": "55",
+                        "gm": 1104.0
                     },
                     {
                         "nutrient_id": "291",
@@ -723,13 +723,6 @@
                         "gm": 0.177
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "0.1",
-                        "gm": 1.4
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -749,6 +742,13 @@
                         "unit": "mg",
                         "value": "0.0",
                         "gm": 0.3
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
+                        "value": "0.05",
+                        "gm": 0.92
                     }
                 ]
             },
@@ -822,11 +822,11 @@
                         "gm": "--"
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "--",
-                        "gm": "--"
+                        "value": "428",
+                        "gm": 8068.0
                     },
                     {
                         "nutrient_id": "291",
@@ -871,13 +871,6 @@
                         "gm": "--"
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "--",
-                        "gm": "--"
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -897,6 +890,13 @@
                         "unit": "mg",
                         "value": "2.4",
                         "gm": 45.0
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
+                        "value": "0.99",
+                        "gm": 18.76
                     }
                 ]
             },
@@ -970,11 +970,11 @@
                         "gm": 0.0
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "0.00",
-                        "gm": 1.11
+                        "value": "0",
+                        "gm": 31.0
                     },
                     {
                         "nutrient_id": "291",
@@ -1019,13 +1019,6 @@
                         "gm": 0.082
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "--",
-                        "gm": "--"
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -1045,6 +1038,13 @@
                         "unit": "mg",
                         "value": "0.0",
                         "gm": 31.8
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
+                        "value": "--",
+                        "gm": "--"
                     }
                 ]
             },
@@ -1118,11 +1118,11 @@
                         "gm": 0.0
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "0.01",
-                        "gm": 0.93
+                        "value": "0",
+                        "gm": 26.0
                     },
                     {
                         "nutrient_id": "291",
@@ -1167,13 +1167,6 @@
                         "gm": 0.036
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "--",
-                        "gm": "--"
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -1193,6 +1186,13 @@
                         "unit": "mg",
                         "value": "0.2",
                         "gm": 21.8
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
+                        "value": "--",
+                        "gm": "--"
                     }
                 ]
             },
@@ -1266,11 +1266,11 @@
                         "gm": "--"
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "0.01",
-                        "gm": 0.1
+                        "value": "2325",
+                        "gm": 38758.0
                     },
                     {
                         "nutrient_id": "291",
@@ -1315,13 +1315,6 @@
                         "gm": "--"
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "--",
-                        "gm": "--"
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -1339,6 +1332,13 @@
                         "nutrient_id": "401",
                         "nutrient": "Vitamin C, total ascorbic acid",
                         "unit": "mg",
+                        "value": "--",
+                        "gm": "--"
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
                         "value": "--",
                         "gm": "--"
                     }
@@ -1414,11 +1414,11 @@
                         "gm": "--"
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "--",
-                        "gm": "--"
+                        "value": "415",
+                        "gm": 4616.0
                     },
                     {
                         "nutrient_id": "291",
@@ -1463,13 +1463,6 @@
                         "gm": "--"
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "--",
-                        "gm": "--"
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -1489,6 +1482,13 @@
                         "unit": "mg",
                         "value": "0.5",
                         "gm": 5.9
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
+                        "value": "0.78",
+                        "gm": 8.67
                     }
                 ]
             },
@@ -1562,11 +1562,11 @@
                         "gm": "--"
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "--",
-                        "gm": "--"
+                        "value": "170",
+                        "gm": 17000.0
                     },
                     {
                         "nutrient_id": "291",
@@ -1611,13 +1611,6 @@
                         "gm": "--"
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "--",
-                        "gm": "--"
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -1635,6 +1628,13 @@
                         "nutrient_id": "401",
                         "nutrient": "Vitamin C, total ascorbic acid",
                         "unit": "mg",
+                        "value": "--",
+                        "gm": "--"
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
                         "value": "--",
                         "gm": "--"
                     }
@@ -1710,11 +1710,11 @@
                         "gm": "--"
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "--",
-                        "gm": "--"
+                        "value": "411",
+                        "gm": 7203.0
                     },
                     {
                         "nutrient_id": "291",
@@ -1759,13 +1759,6 @@
                         "gm": "--"
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "--",
-                        "gm": "--"
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -1785,6 +1778,13 @@
                         "unit": "mg",
                         "value": "--",
                         "gm": "--"
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
+                        "value": "0.62",
+                        "gm": 10.83
                     }
                 ]
             },
@@ -1858,11 +1858,11 @@
                         "gm": 0.0
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "0.01",
-                        "gm": 2.41
+                        "value": "2",
+                        "gm": 344.0
                     },
                     {
                         "nutrient_id": "291",
@@ -1907,13 +1907,6 @@
                         "gm": 0.288
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "--",
-                        "gm": "--"
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -1931,6 +1924,13 @@
                         "nutrient_id": "401",
                         "nutrient": "Vitamin C, total ascorbic acid",
                         "unit": "mg",
+                        "value": "--",
+                        "gm": "--"
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
                         "value": "--",
                         "gm": "--"
                     }
@@ -2006,11 +2006,11 @@
                         "gm": 0.0
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "0.00",
-                        "gm": 1.09
+                        "value": "0",
+                        "gm": 30.0
                     },
                     {
                         "nutrient_id": "291",
@@ -2055,13 +2055,6 @@
                         "gm": 0.078
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "--",
-                        "gm": "--"
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -2081,6 +2074,13 @@
                         "unit": "mg",
                         "value": "0.0",
                         "gm": 13.3
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
+                        "value": "--",
+                        "gm": "--"
                     }
                 ]
             },
@@ -2154,11 +2154,11 @@
                         "gm": 0.0
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "0.02",
-                        "gm": 1.01
+                        "value": "1",
+                        "gm": 77.0
                     },
                     {
                         "nutrient_id": "291",
@@ -2203,13 +2203,6 @@
                         "gm": 0.101
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "--",
-                        "gm": "--"
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -2229,6 +2222,13 @@
                         "unit": "mg",
                         "value": "0.7",
                         "gm": 39.2
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
+                        "value": "--",
+                        "gm": "--"
                     }
                 ]
             },
@@ -2302,11 +2302,11 @@
                         "gm": 0.0
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "0.11",
-                        "gm": 5.3
+                        "value": "0",
+                        "gm": 16.0
                     },
                     {
                         "nutrient_id": "291",
@@ -2351,13 +2351,6 @@
                         "gm": 0.34
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "--",
-                        "gm": "--"
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -2377,6 +2370,13 @@
                         "unit": "mg",
                         "value": "0.4",
                         "gm": 21.0
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
+                        "value": "--",
+                        "gm": "--"
                     }
                 ]
             },
@@ -2450,11 +2450,11 @@
                         "gm": 0.0
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "0.05",
-                        "gm": 7.1
+                        "value": "1",
+                        "gm": 76.0
                     },
                     {
                         "nutrient_id": "291",
@@ -2499,13 +2499,6 @@
                         "gm": 0.08
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "12.0",
-                        "gm": 1714.5
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -2525,6 +2518,13 @@
                         "unit": "mg",
                         "value": "0.0",
                         "gm": 0.8
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
+                        "value": "0.01",
+                        "gm": 1.71
                     }
                 ]
             },
@@ -2598,11 +2598,11 @@
                         "gm": 0.0
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "0.02",
-                        "gm": 3.7
+                        "value": "0",
+                        "gm": 23.0
                     },
                     {
                         "nutrient_id": "291",
@@ -2647,13 +2647,6 @@
                         "gm": 0.009
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "--",
-                        "gm": "--"
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -2673,6 +2666,13 @@
                         "unit": "mg",
                         "value": "0.3",
                         "gm": 46.5
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
+                        "value": "--",
+                        "gm": "--"
                     }
                 ]
             },
@@ -2746,11 +2746,11 @@
                         "gm": 0.0
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "0.12",
-                        "gm": 5.5
+                        "value": "0",
+                        "gm": 17.0
                     },
                     {
                         "nutrient_id": "291",
@@ -2795,13 +2795,6 @@
                         "gm": 0.383
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "--",
-                        "gm": "--"
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -2821,6 +2814,13 @@
                         "unit": "mg",
                         "value": "0.4",
                         "gm": 21.0
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
+                        "value": "0.01",
+                        "gm": 0.64
                     }
                 ]
             },
@@ -2894,11 +2894,11 @@
                         "gm": "--"
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "0.15",
-                        "gm": 7.47
+                        "value": "0",
+                        "gm": 18.0
                     },
                     {
                         "nutrient_id": "291",
@@ -2943,13 +2943,6 @@
                         "gm": 0.198
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "--",
-                        "gm": "--"
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -2969,6 +2962,13 @@
                         "unit": "mg",
                         "value": "0.4",
                         "gm": 21.0
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
+                        "value": "--",
+                        "gm": "--"
                     }
                 ]
             },
@@ -3042,11 +3042,11 @@
                         "gm": 0.0
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "0.14",
-                        "gm": 6.93
+                        "value": "3",
+                        "gm": 160.0
                     },
                     {
                         "nutrient_id": "291",
@@ -3091,13 +3091,6 @@
                         "gm": 0.34
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "--",
-                        "gm": "--"
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -3117,6 +3110,13 @@
                         "unit": "mg",
                         "value": "0.3",
                         "gm": 17.1
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
+                        "value": "0.01",
+                        "gm": 0.67
                     }
                 ]
             },
@@ -3190,11 +3190,11 @@
                         "gm": 0.0
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "0.05",
-                        "gm": 8.8
+                        "value": "0",
+                        "gm": 83.0
                     },
                     {
                         "nutrient_id": "291",
@@ -3239,13 +3239,6 @@
                         "gm": 0.38
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "--",
-                        "gm": "--"
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -3265,6 +3258,13 @@
                         "unit": "mg",
                         "value": "0.3",
                         "gm": 50.0
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
+                        "value": "--",
+                        "gm": "--"
                     }
                 ]
             },
@@ -3338,11 +3338,11 @@
                         "gm": 0.0
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "0.12",
-                        "gm": 4.3
+                        "value": "77",
+                        "gm": 2867.0
                     },
                     {
                         "nutrient_id": "291",
@@ -3387,13 +3387,6 @@
                         "gm": 0.25
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "2.9",
-                        "gm": 105.7
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -3413,6 +3406,13 @@
                         "unit": "mg",
                         "value": "0.0",
                         "gm": 0.7
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
+                        "value": "0.19",
+                        "gm": 7.19
                     }
                 ]
             },
@@ -3486,11 +3486,11 @@
                         "gm": 0.0
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "0.05",
-                        "gm": 1.83
+                        "value": "0",
+                        "gm": 10.0
                     },
                     {
                         "nutrient_id": "291",
@@ -3535,13 +3535,6 @@
                         "gm": 0.022
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "0.8",
-                        "gm": 31.2
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -3561,6 +3554,13 @@
                         "unit": "mg",
                         "value": "0.1",
                         "gm": 3.8
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
+                        "value": "0.06",
+                        "gm": 2.17
                     }
                 ]
             },
@@ -3634,11 +3634,11 @@
                         "gm": 0.0
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "0.05",
-                        "gm": 2.32
+                        "value": "6",
+                        "gm": 277.0
                     },
                     {
                         "nutrient_id": "291",
@@ -3683,13 +3683,6 @@
                         "gm": 0.158
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "3.0",
-                        "gm": 141.8
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -3709,6 +3702,13 @@
                         "unit": "mg",
                         "value": "0.0",
                         "gm": 0.2
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
+                        "value": "0.05",
+                        "gm": 2.38
                     }
                 ]
             },
@@ -3782,11 +3782,11 @@
                         "gm": 0.0
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "0.03",
-                        "gm": 4.72
+                        "value": "1",
+                        "gm": 211.0
                     },
                     {
                         "nutrient_id": "291",
@@ -3831,13 +3831,6 @@
                         "gm": 1.252
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "8.2",
-                        "gm": 1359.5
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -3857,6 +3850,13 @@
                         "unit": "mg",
                         "value": "3.4",
                         "gm": 566.7
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
+                        "value": "0.04",
+                        "gm": 7.27
                     }
                 ]
             },
@@ -3930,11 +3930,11 @@
                         "gm": "--"
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "0.08",
-                        "gm": 4.7
+                        "value": "1",
+                        "gm": 35.0
                     },
                     {
                         "nutrient_id": "291",
@@ -3979,13 +3979,6 @@
                         "gm": 0.239
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "--",
-                        "gm": "--"
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -4005,6 +3998,13 @@
                         "unit": "mg",
                         "value": "0.4",
                         "gm": 21.0
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
+                        "value": "--",
+                        "gm": "--"
                     }
                 ]
             },
@@ -4078,11 +4078,11 @@
                         "gm": 0.0
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "0.10",
-                        "gm": 4.8
+                        "value": "4",
+                        "gm": 168.0
                     },
                     {
                         "nutrient_id": "291",
@@ -4127,13 +4127,6 @@
                         "gm": 0.628
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "0.1",
-                        "gm": 5.4
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -4153,6 +4146,13 @@
                         "unit": "mg",
                         "value": "0.2",
                         "gm": 7.7
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
+                        "value": "0.05",
+                        "gm": 2.25
                     }
                 ]
             },
@@ -4226,11 +4226,11 @@
                         "gm": 0.0
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "0.09",
-                        "gm": 4.7
+                        "value": "1",
+                        "gm": 52.0
                     },
                     {
                         "nutrient_id": "291",
@@ -4275,13 +4275,6 @@
                         "gm": 0.176
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "2.0",
-                        "gm": 99.8
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -4301,6 +4294,13 @@
                         "unit": "mg",
                         "value": "0.0",
                         "gm": 0.7
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
+                        "value": "0.06",
+                        "gm": 2.76
                     }
                 ]
             },
@@ -4374,11 +4374,11 @@
                         "gm": 0.0
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "0.11",
-                        "gm": 5.2
+                        "value": "0",
+                        "gm": 20.0
                     },
                     {
                         "nutrient_id": "291",
@@ -4423,13 +4423,6 @@
                         "gm": 0.418
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "--",
-                        "gm": "--"
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -4449,6 +4442,13 @@
                         "unit": "mg",
                         "value": "0.4",
                         "gm": 21.0
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
+                        "value": "--",
+                        "gm": "--"
                     }
                 ]
             },
@@ -4522,11 +4522,11 @@
                         "gm": 0.0
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "0.03",
-                        "gm": 3.3
+                        "value": "2",
+                        "gm": 208.0
                     },
                     {
                         "nutrient_id": "291",
@@ -4571,13 +4571,6 @@
                         "gm": 0.418
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "--",
-                        "gm": "--"
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -4597,6 +4590,13 @@
                         "unit": "mg",
                         "value": "0.5",
                         "gm": 50.0
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
+                        "value": "--",
+                        "gm": "--"
                     }
                 ]
             },
@@ -4670,11 +4670,11 @@
                         "gm": 0.0
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "0.07",
-                        "gm": 3.7
+                        "value": "2",
+                        "gm": 88.0
                     },
                     {
                         "nutrient_id": "291",
@@ -4719,13 +4719,6 @@
                         "gm": 0.408
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "--",
-                        "gm": "--"
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -4745,6 +4738,13 @@
                         "unit": "mg",
                         "value": "0.4",
                         "gm": 21.0
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
+                        "value": "--",
+                        "gm": "--"
                     }
                 ]
             },
@@ -4818,11 +4818,11 @@
                         "gm": 0.0
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "0.09",
-                        "gm": 2.5
+                        "value": "2",
+                        "gm": 67.0
                     },
                     {
                         "nutrient_id": "291",
@@ -4867,13 +4867,6 @@
                         "gm": 0.322
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "--",
-                        "gm": "--"
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -4893,6 +4886,13 @@
                         "unit": "mg",
                         "value": "0.1",
                         "gm": 3.0
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
+                        "value": "--",
+                        "gm": "--"
                     }
                 ]
             },
@@ -4966,11 +4966,11 @@
                         "gm": "--"
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "0.09",
-                        "gm": 2.99
+                        "value": "2",
+                        "gm": 60.0
                     },
                     {
                         "nutrient_id": "291",
@@ -5015,13 +5015,6 @@
                         "gm": 0.435
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "0.0",
-                        "gm": 0.4
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -5041,6 +5034,13 @@
                         "unit": "mg",
                         "value": "0.0",
                         "gm": 1.2
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
+                        "value": "0.08",
+                        "gm": 2.43
                     }
                 ]
             },
@@ -5114,11 +5114,11 @@
                         "gm": "--"
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "0.07",
-                        "gm": 3.64
+                        "value": "0",
+                        "gm": 27.0
                     },
                     {
                         "nutrient_id": "291",
@@ -5163,13 +5163,6 @@
                         "gm": 0.046
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "0.0",
-                        "gm": 0.8
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -5189,6 +5182,13 @@
                         "unit": "mg",
                         "value": "0.0",
                         "gm": 0.7
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
+                        "value": "0.06",
+                        "gm": 3.39
                     }
                 ]
             },
@@ -5262,11 +5262,11 @@
                         "gm": 0.0
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "0.04",
-                        "gm": 2.3
+                        "value": "1",
+                        "gm": 80.0
                     },
                     {
                         "nutrient_id": "291",
@@ -5311,13 +5311,6 @@
                         "gm": 0.312
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "--",
-                        "gm": "--"
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -5337,6 +5330,13 @@
                         "unit": "mg",
                         "value": "0.4",
                         "gm": 21.0
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
+                        "value": "--",
+                        "gm": "--"
                     }
                 ]
             },
@@ -5410,11 +5410,11 @@
                         "gm": 0.0
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "0.02",
-                        "gm": 3.6
+                        "value": "0",
+                        "gm": 77.0
                     },
                     {
                         "nutrient_id": "291",
@@ -5459,13 +5459,6 @@
                         "gm": 0.289
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "3.7",
-                        "gm": 621.7
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -5485,6 +5478,13 @@
                         "unit": "mg",
                         "value": "0.3",
                         "gm": 51.4
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
+                        "value": "0.02",
+                        "gm": 4.09
                     }
                 ]
             },
@@ -5558,11 +5558,11 @@
                         "gm": 0.0
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "0.12",
-                        "gm": 6.08
+                        "value": "0",
+                        "gm": 13.0
                     },
                     {
                         "nutrient_id": "291",
@@ -5607,13 +5607,6 @@
                         "gm": 0.805
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "0.1",
-                        "gm": 5.4
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -5633,6 +5626,13 @@
                         "unit": "mg",
                         "value": "0.1",
                         "gm": 7.1
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
+                        "value": "0.14",
+                        "gm": 6.79
                     }
                 ]
             },
@@ -5706,11 +5706,11 @@
                         "gm": "--"
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "0.05",
-                        "gm": 2.15
+                        "value": "0",
+                        "gm": 16.0
                     },
                     {
                         "nutrient_id": "291",
@@ -5755,13 +5755,6 @@
                         "gm": 0.346
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "--",
-                        "gm": "--"
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -5781,6 +5774,13 @@
                         "unit": "mg",
                         "value": "0.1",
                         "gm": 3.0
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
+                        "value": "0.07",
+                        "gm": 2.99
                     }
                 ]
             },
@@ -5854,11 +5854,11 @@
                         "gm": "--"
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "0.10",
-                        "gm": 4.05
+                        "value": "2",
+                        "gm": 73.0
                     },
                     {
                         "nutrient_id": "291",
@@ -5903,13 +5903,6 @@
                         "gm": 0.457
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "0.1",
-                        "gm": 4.1
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -5929,6 +5922,13 @@
                         "unit": "mg",
                         "value": "0.6",
                         "gm": 23.4
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
+                        "value": "0.16",
+                        "gm": 6.63
                     }
                 ]
             },
@@ -6002,11 +6002,11 @@
                         "gm": 0.0
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "0.03",
-                        "gm": 2.69
+                        "value": "0",
+                        "gm": 25.0
                     },
                     {
                         "nutrient_id": "291",
@@ -6051,13 +6051,6 @@
                         "gm": 0.177
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "6.2",
-                        "gm": 621.7
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -6077,6 +6070,13 @@
                         "unit": "mg",
                         "value": "0.0",
                         "gm": 2.3
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
+                        "value": "0.04",
+                        "gm": 4.09
                     }
                 ]
             },
@@ -6150,11 +6150,11 @@
                         "gm": 0.0
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "0.10",
-                        "gm": 4.33
+                        "value": "2",
+                        "gm": 68.0
                     },
                     {
                         "nutrient_id": "291",
@@ -6199,13 +6199,6 @@
                         "gm": 0.33
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "1.8",
-                        "gm": 80.3
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -6225,6 +6218,13 @@
                         "unit": "mg",
                         "value": "0.0",
                         "gm": 0.9
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
+                        "value": "0.24",
+                        "gm": 10.34
                     }
                 ]
             },
@@ -6298,11 +6298,11 @@
                         "gm": 0.0
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "0.03",
-                        "gm": 5.44
+                        "value": "2",
+                        "gm": 452.0
                     },
                     {
                         "nutrient_id": "291",
@@ -6347,13 +6347,6 @@
                         "gm": 0.196
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "6.8",
-                        "gm": 1359.5
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -6373,6 +6366,13 @@
                         "unit": "mg",
                         "value": "0.6",
                         "gm": 125.0
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
+                        "value": "0.04",
+                        "gm": 7.27
                     }
                 ]
             },
@@ -6446,11 +6446,11 @@
                         "gm": 0.0
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "0.03",
-                        "gm": 1.19
+                        "value": "0",
+                        "gm": 20.0
                     },
                     {
                         "nutrient_id": "291",
@@ -6495,13 +6495,6 @@
                         "gm": 0.108
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "3.8",
-                        "gm": 163.7
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -6521,6 +6514,13 @@
                         "unit": "mg",
                         "value": "--",
                         "gm": "--"
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
+                        "value": "0.01",
+                        "gm": 0.64
                     }
                 ]
             },
@@ -6594,11 +6594,11 @@
                         "gm": 0.0
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "0.04",
-                        "gm": 2.48
+                        "value": "1",
+                        "gm": 30.0
                     },
                     {
                         "nutrient_id": "291",
@@ -6643,13 +6643,6 @@
                         "gm": 0.328
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "1.4",
-                        "gm": 80.3
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -6669,6 +6662,13 @@
                         "unit": "mg",
                         "value": "1.4",
                         "gm": 76.4
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
+                        "value": "0.19",
+                        "gm": 10.34
                     }
                 ]
             },
@@ -6742,11 +6742,11 @@
                         "gm": "--"
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "0.03",
-                        "gm": 1.13
+                        "value": "0",
+                        "gm": 5.0
                     },
                     {
                         "nutrient_id": "291",
@@ -6791,13 +6791,6 @@
                         "gm": 0.022
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "--",
-                        "gm": "--"
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -6817,6 +6810,13 @@
                         "unit": "mg",
                         "value": "0.5",
                         "gm": 21.0
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
+                        "value": "--",
+                        "gm": "--"
                     }
                 ]
             },
@@ -6890,11 +6890,11 @@
                         "gm": "--"
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "0.22",
-                        "gm": 7.9
+                        "value": "1",
+                        "gm": 26.0
                     },
                     {
                         "nutrient_id": "291",
@@ -6939,13 +6939,6 @@
                         "gm": 0.854
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "--",
-                        "gm": "--"
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -6965,6 +6958,13 @@
                         "unit": "mg",
                         "value": "0.0",
                         "gm": 1.0
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
+                        "value": "0.08",
+                        "gm": 2.99
                     }
                 ]
             },
@@ -7038,11 +7038,11 @@
                         "gm": 0.0
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "0.05",
-                        "gm": 3.14
+                        "value": "0",
+                        "gm": 27.0
                     },
                     {
                         "nutrient_id": "291",
@@ -7087,13 +7087,6 @@
                         "gm": 0.264
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "12.1",
-                        "gm": 805.4
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -7113,6 +7106,13 @@
                         "unit": "mg",
                         "value": "0.2",
                         "gm": 12.0
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
+                        "value": "0.03",
+                        "gm": 1.8
                     }
                 ]
             },
@@ -7186,11 +7186,11 @@
                         "gm": 0.0
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "0.04",
-                        "gm": 2.37
+                        "value": "1",
+                        "gm": 52.0
                     },
                     {
                         "nutrient_id": "291",
@@ -7235,13 +7235,6 @@
                         "gm": 0.131
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "0.5",
-                        "gm": 28.4
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -7261,6 +7254,13 @@
                         "unit": "mg",
                         "value": "0.4",
                         "gm": 23.4
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
+                        "value": "0.13",
+                        "gm": 7.76
                     }
                 ]
             },
@@ -7334,11 +7334,11 @@
                         "gm": 0.0
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "0.04",
-                        "gm": 3.23
+                        "value": "1",
+                        "gm": 50.0
                     },
                     {
                         "nutrient_id": "291",
@@ -7383,13 +7383,6 @@
                         "gm": 0.514
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "--",
-                        "gm": "--"
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -7409,6 +7402,13 @@
                         "unit": "mg",
                         "value": "0.7",
                         "gm": 61.2
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
+                        "value": "--",
+                        "gm": "--"
                     }
                 ]
             },
@@ -7482,11 +7482,11 @@
                         "gm": 0.0
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "0.01",
-                        "gm": 1.09
+                        "value": "1",
+                        "gm": 148.0
                     },
                     {
                         "nutrient_id": "291",
@@ -7531,13 +7531,6 @@
                         "gm": 0.115
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "--",
-                        "gm": "--"
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -7557,6 +7550,13 @@
                         "unit": "mg",
                         "value": "0.6",
                         "gm": 80.8
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
+                        "value": "--",
+                        "gm": "--"
                     }
                 ]
             },
@@ -7630,11 +7630,11 @@
                         "gm": 0.0
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "0.03",
-                        "gm": 4.7
+                        "value": "0",
+                        "gm": 11.0
                     },
                     {
                         "nutrient_id": "291",
@@ -7679,13 +7679,6 @@
                         "gm": 0.754
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "12.0",
-                        "gm": 1714.5
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -7705,6 +7698,13 @@
                         "unit": "mg",
                         "value": "0.2",
                         "gm": 32.4
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
+                        "value": "0.01",
+                        "gm": 1.71
                     }
                 ]
             },
@@ -7778,11 +7778,11 @@
                         "gm": 0.0
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "0.06",
-                        "gm": 4.3
+                        "value": "0",
+                        "gm": 24.0
                     },
                     {
                         "nutrient_id": "291",
@@ -7827,13 +7827,6 @@
                         "gm": 0.366
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "--",
-                        "gm": "--"
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -7853,6 +7846,13 @@
                         "unit": "mg",
                         "value": "0.7",
                         "gm": 50.0
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
+                        "value": "--",
+                        "gm": "--"
                     }
                 ]
             },
@@ -7926,11 +7926,11 @@
                         "gm": 0.0
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "0.02",
-                        "gm": 3.9
+                        "value": "0",
+                        "gm": 62.0
                     },
                     {
                         "nutrient_id": "291",
@@ -7975,13 +7975,6 @@
                         "gm": 0.251
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "--",
-                        "gm": "--"
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -8001,6 +7994,13 @@
                         "unit": "mg",
                         "value": "0.3",
                         "gm": 50.0
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
+                        "value": "--",
+                        "gm": "--"
                     }
                 ]
             },
@@ -8074,11 +8074,11 @@
                         "gm": 0.0
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "0.06",
-                        "gm": 6.18
+                        "value": "1",
+                        "gm": 55.0
                     },
                     {
                         "nutrient_id": "291",
@@ -8123,13 +8123,6 @@
                         "gm": 0.513
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "17.1",
-                        "gm": 1714.5
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -8149,6 +8142,13 @@
                         "unit": "mg",
                         "value": "0.5",
                         "gm": 50.0
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
+                        "value": "0.02",
+                        "gm": 1.71
                     }
                 ]
             },
@@ -8222,11 +8222,11 @@
                         "gm": "--"
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "0.14",
-                        "gm": 4.5
+                        "value": "1",
+                        "gm": 27.0
                     },
                     {
                         "nutrient_id": "291",
@@ -8271,13 +8271,6 @@
                         "gm": 0.058
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "0.4",
-                        "gm": 13.4
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -8297,6 +8290,13 @@
                         "unit": "mg",
                         "value": "0.0",
                         "gm": 0.7
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
+                        "value": "0.10",
+                        "gm": 3.21
                     }
                 ]
             },
@@ -8370,11 +8370,11 @@
                         "gm": 0.0
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "0.01",
-                        "gm": 1.81
+                        "value": "0",
+                        "gm": 9.0
                     },
                     {
                         "nutrient_id": "291",
@@ -8419,13 +8419,6 @@
                         "gm": 0.048
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "--",
-                        "gm": "--"
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -8445,6 +8438,13 @@
                         "unit": "mg",
                         "value": "1.3",
                         "gm": 160.1
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
+                        "value": "--",
+                        "gm": "--"
                     }
                 ]
             },
@@ -8518,11 +8518,11 @@
                         "gm": "--"
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "0.00",
-                        "gm": 0.11
+                        "value": "0",
+                        "gm": 9.0
                     },
                     {
                         "nutrient_id": "291",
@@ -8567,13 +8567,6 @@
                         "gm": 0.011
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "--",
-                        "gm": "--"
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -8591,6 +8584,13 @@
                         "nutrient_id": "401",
                         "nutrient": "Vitamin C, total ascorbic acid",
                         "unit": "mg",
+                        "value": "--",
+                        "gm": "--"
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
                         "value": "--",
                         "gm": "--"
                     }
@@ -8666,11 +8666,11 @@
                         "gm": "--"
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "0.00",
-                        "gm": 0.06
+                        "value": "0",
+                        "gm": 4.0
                     },
                     {
                         "nutrient_id": "291",
@@ -8715,13 +8715,6 @@
                         "gm": 0.008
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "--",
-                        "gm": "--"
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -8739,6 +8732,13 @@
                         "nutrient_id": "401",
                         "nutrient": "Vitamin C, total ascorbic acid",
                         "unit": "mg",
+                        "value": "--",
+                        "gm": "--"
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
                         "value": "--",
                         "gm": "--"
                     }
@@ -8814,11 +8814,11 @@
                         "gm": "--"
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "0.00",
-                        "gm": 0.01
+                        "value": "--",
+                        "gm": "--"
                     },
                     {
                         "nutrient_id": "291",
@@ -8863,13 +8863,6 @@
                         "gm": 0.003
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "--",
-                        "gm": "--"
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -8887,6 +8880,13 @@
                         "nutrient_id": "401",
                         "nutrient": "Vitamin C, total ascorbic acid",
                         "unit": "mg",
+                        "value": "--",
+                        "gm": "--"
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
                         "value": "--",
                         "gm": "--"
                     }
@@ -8962,11 +8962,11 @@
                         "gm": "--"
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "0.01",
-                        "gm": 0.08
+                        "value": "4",
+                        "gm": 23.0
                     },
                     {
                         "nutrient_id": "291",
@@ -9011,13 +9011,6 @@
                         "gm": "--"
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "--",
-                        "gm": "--"
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -9037,6 +9030,13 @@
                         "unit": "mg",
                         "value": "--",
                         "gm": "--"
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
+                        "value": "2.39",
+                        "gm": 14.95
                     }
                 ]
             },
@@ -9110,11 +9110,11 @@
                         "gm": "--"
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "0.01",
-                        "gm": 0.04
+                        "value": "--",
+                        "gm": "--"
                     },
                     {
                         "nutrient_id": "291",
@@ -9159,13 +9159,6 @@
                         "gm": "--"
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "--",
-                        "gm": "--"
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -9185,6 +9178,13 @@
                         "unit": "mg",
                         "value": "--",
                         "gm": "--"
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
+                        "value": "0.06",
+                        "gm": 0.4
                     }
                 ]
             },
@@ -9258,11 +9258,11 @@
                         "gm": "--"
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "0.00",
-                        "gm": 0.01
+                        "value": "0",
+                        "gm": 2.0
                     },
                     {
                         "nutrient_id": "291",
@@ -9307,13 +9307,6 @@
                         "gm": "--"
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "--",
-                        "gm": "--"
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -9331,6 +9324,13 @@
                         "nutrient_id": "401",
                         "nutrient": "Vitamin C, total ascorbic acid",
                         "unit": "mg",
+                        "value": "--",
+                        "gm": "--"
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
                         "value": "--",
                         "gm": "--"
                     }
@@ -9406,11 +9406,11 @@
                         "gm": "--"
                     },
                     {
-                        "nutrient_id": "309",
-                        "nutrient": "Zinc, Zn",
+                        "nutrient_id": "307",
+                        "nutrient": "Sodium, Na",
                         "unit": "mg",
-                        "value": "0.00",
-                        "gm": 0.03
+                        "value": "1",
+                        "gm": 8.0
                     },
                     {
                         "nutrient_id": "291",
@@ -9455,13 +9455,6 @@
                         "gm": "--"
                     },
                     {
-                        "nutrient_id": "430",
-                        "nutrient": "Vitamin K (phylloquinone)",
-                        "unit": "\u00b5g",
-                        "value": "--",
-                        "gm": "--"
-                    },
-                    {
                         "nutrient_id": "406",
                         "nutrient": "Niacin",
                         "unit": "mg",
@@ -9481,6 +9474,13 @@
                         "unit": "mg",
                         "value": "0.1",
                         "gm": 0.5
+                    },
+                    {
+                        "nutrient_id": "269",
+                        "nutrient": "Sugars, total",
+                        "unit": "g",
+                        "value": "--",
+                        "gm": "--"
                     }
                 ]
             }

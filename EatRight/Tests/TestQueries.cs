@@ -8,7 +8,7 @@ namespace Tests {
         [TestMethod]
         public void TestAllProductCounts() {
             var unit = new RestDBInterface();
-            Assert.IsTrue(unit.Products.GetAllList().Count == 3490);
+            Assert.IsTrue(unit.Products.GetAllList().Count == 3591);
         }
 
         [TestMethod]
@@ -74,8 +74,8 @@ namespace Tests {
         public void Wine() {
             var unit = new RestDBInterface();
             var res = unit.Products.Queries.QueryByNameAndValue("wine", "Beverages", "Sugar", true);
-            Assert.IsTrue((res[res.Count - 1].Sugar / res[0].Sugar) > 150);
-            Assert.IsTrue(res.Count == 26);
+            Assert.IsTrue((res[res.Count - 1].Sugar / res[0].Sugar) > 12);
+            Assert.IsTrue(res.Count == 9);
         }
 
 

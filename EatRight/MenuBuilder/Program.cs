@@ -61,7 +61,7 @@ namespace MenuBuilder
                 { "Avocados", 50},
                 { "bacon", 50},
                 { "Tuna", 200},
-                { "Almond", 25}
+                { "Almonds", 25}
             },
                 Types = new HashSet<MealType>() { MealType.Breakfast, MealType.Dinner }
             };
@@ -73,9 +73,9 @@ namespace MenuBuilder
             {
                 {"Salmon", 150 },
                 {"Pepper", 100},
-                {"Walnut", 20},
+                {"walnuts", 20},
                 { "bacon", 50},
-                { "Almond", 25},
+                { "almonds", 25},
                 {"Broccoli", 100}
             },
                 Types = new HashSet<MealType>() { MealType.Lunch }

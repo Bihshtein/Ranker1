@@ -74,6 +74,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Validators\LegumesValidator.cs" />
+    <Compile Include="Validators\SoupAndSauceValidator.cs" />
+    <Compile Include="Validators\NutsValidator.cs" />
     <Compile Include="Validators\SweetsValidator.cs" />
     <Compile Include="Validators\OilsAndFatsValidator.cs" />
     <Compile Include="Validators\SpicesAndHerbsValidator.cs" />
