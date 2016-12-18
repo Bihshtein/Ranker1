@@ -9,7 +9,7 @@ namespace InitDB.Validators {
             };
 
             SecondParts = new List<string>() {
-           "all", "dry","sweet","orange", "mocha","regular","black", "green","herb","hibiscus","red","white","brewed","instant",
+           "all", "dry","sweet","orange", "mocha","regular","black", "green","herb","hibiscus","red","white","brewed","instant","generic"
             };
             ThirdParts = new List<string> {
             "chocolate", "breakfast type","dessert","cooking",  "regular",  "cooking","light","dessert", "lemon", "ready to drink","ready-to-drink","table","breakfast blend","espresso","chicory"
