@@ -92,7 +92,7 @@ namespace MenuBuilder
             menu.Days[index] = newDailyMenu;
         }
 
-        public Meal ReplaceMeal(Meal oldMeal)
+        public MenuMeal GetMeal()
         {
             if (!InMealMode())
             {
@@ -106,9 +106,8 @@ namespace MenuBuilder
             {
                 return null;
             }
-            SetMealAsUnused(oldMeal.ID);
             SetMealAsUsed(newMenuMeal);
-            return newMenuMeal.Meal;
+            return newMenuMeal;
         }
 
         private void SetMenuAsUsed(Menu menu)
