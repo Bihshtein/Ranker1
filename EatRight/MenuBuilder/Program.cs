@@ -92,7 +92,7 @@ namespace MenuBuilder
                 { "Lettuce", 100},
                 { "Garlic", 50},
                 { "Egg", 200},
-                { "Almond", 50}
+                { "Almonds", 50}
             },
                 Types = new HashSet<MealType>() { MealType.Dinner, MealType.Breakfast }
             };

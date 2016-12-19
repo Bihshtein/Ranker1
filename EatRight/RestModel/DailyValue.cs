@@ -76,7 +76,7 @@ namespace RestModel
 
         public override string ToString()
         {
-            return this.MinAge + "," + this.MaxAge;
+            return this.MinAge + "-" + this.MaxAge;
         }
 
         public static AgeParam FromString(string ageRange, char rangeDelim, char rangeTop)
@@ -149,7 +149,8 @@ namespace RestModel
 
         public override bool Equals(object obj)
         {
-            return ID.Equals(((Product)obj).ID);
+            if (obj is System.DBNull) return false;
+            return ID.Equals(((DailyValue)obj).ID);
         }
 
         [BsonElement("_id")]
@@ -160,6 +161,11 @@ namespace RestModel
 
         [BsonElement("Gender")]
         public GenderParam Gender { get; set; }
+
+        public override string ToString()
+        {
+            return Gender.ToString() + " " + Age.ToString();
+        }
 
         public DailyValue()
         {
