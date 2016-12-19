@@ -22,8 +22,8 @@ namespace InitDB {
         private static int totalAdded = 0;
         private static int totalSkipped = 0;
         public static Dictionary<string, string> FoodGroups = new Dictionary<string, string>() {
+            {"Baked","1800"},
             {"Beverages", "1400"},
-
             {"Sweets","1900"},
             {"Legumes","1600"},
             {"SoupAndSauce","0600"},
@@ -31,7 +31,6 @@ namespace InitDB {
             {"OilsAndFats","0400"},
             {"SpicesAndHerbs","0200"},
             {"Fish","1500"},
-            {"Baked","1800"},
             {"Carbs", "2000"},
             {"Dairy", "0100"},
             {"Fruits", "0900"},

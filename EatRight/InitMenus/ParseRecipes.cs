@@ -23,7 +23,7 @@ namespace InitRecipes {
         public static void PopulateMealsDB(int mealsNum) {
             var loadMealsBulkSize = mealsNum > 1000 ? 1000 : mealsNum;
             var unit = new RestDBInterface();
-            if (unit.Meals.GetAll().Count() == mealsNum)
+            if ((unit.Meals.GetAll().Count() / (double)mealsNum) > 0.97)
                 return;
             else
                 unit.Meals.Empty();
