@@ -40,6 +40,22 @@ namespace RestModel
         MealGraderEnd
     }
 
+    public class GraderTypeHelper
+    {
+        public static List<GraderType> GetPlaceHolders()
+        {
+            return new List<GraderType>()
+            {
+                GraderType.GraderMenuStart,
+                GraderType.GraderMenuEnd,
+                GraderType.DailyMenuGraderStart,
+                GraderType.DailyMenuGraderEnd,
+                GraderType.MealGraderStart,
+                GraderType.MealGraderEnd
+            };
+        }
+    }
+
     /// <summary>
     /// Different types of nutrition diets
     /// TODO: Need to come up with exception system - for example, what about a 'vegan' that eats fish   
