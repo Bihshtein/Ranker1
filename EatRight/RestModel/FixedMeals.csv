@@ -1,8 +1,14 @@
-name,healthy breakfast 1
-products,yogurt
-weights,200
-categories,chinese
-,
-name,healthy breakfast 2
-products,tomatoes
-weights,20
+name,Simple egg,,,,,
+products,egg,butter,onions,,,
+weights,100,25,100,,,
+types,breakfast,,,,,
+,,,,,,
+name,Simple pasta,,,,,
+products,oil,carrot,onions,garlic,tomatoes,pasta
+weights,50,30,75,6,50,50
+types,lunch,,,,,
+,,,,,,
+name,Simple dinner,,,,,
+products,tomatoes,cucumber,onions,bread,honey,
+weights,150,150,50,50,30,
+types,breakfast,dinner,,,,

@@ -23,6 +23,7 @@ namespace LogicRunner
 
 
             unit = new RestDBInterface();
+            MealsCSVReader.CreateFixedMealsList(unit);
             var dv = unit.DailyValues.GetAllList();
 
             this.bindingSource1.DataSource = dv;

@@ -32,6 +32,11 @@ namespace RestModel
                 while (line != null && line.Length > 1)
                 {
                     var tokens = line.Split(',');
+                    tokens = tokens.Where(x => !string.IsNullOrEmpty(x)).ToArray();
+                    if (tokens.Count() == 0)
+                    {
+                        break;
+                    }
 
                     if (line.Length <= 1)
                     {
