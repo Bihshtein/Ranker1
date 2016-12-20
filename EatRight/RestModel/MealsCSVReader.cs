@@ -27,6 +27,7 @@ namespace RestModel
                 var productsWeight = new Dictionary<string, double>();
                 var types = new HashSet<MealType>();
                 var categories = new HashSet<MealCategory>();
+                var prepTime = 0.0;
 
                 var line = reader.ReadLine();
                 while (line != null && line.Length > 1)
@@ -79,6 +80,9 @@ namespace RestModel
                                 productsWeight[productsIndex[idx]] = Convert.ToDouble(tokens[idx]);
                             }
                             break;
+                        case "prep_time":
+                            prepTime = Convert.ToDouble(tokens[1]);
+                            break;
                     }
 
                     line = reader.ReadLine();
@@ -86,7 +90,14 @@ namespace RestModel
 
                 if (name.Length > 0 && productsWeight.Count > 0)
                 {
-                    Meal meal = new Meal() { Name = name, ProductsWeight = productsWeight, Types = types, Categories = categories, ID = curID++ };
+                    Meal meal = new Meal() {
+                        Name = name,
+                        ProductsWeight = productsWeight,
+                        Types = types,
+                        Categories = categories,
+                        PrepTime = prepTime,
+                        ID = curID++
+                    };
                     unit.Meals.Add(meal);
                 }
             }
