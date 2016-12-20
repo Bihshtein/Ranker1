@@ -40,6 +40,8 @@ namespace MenuBuilder.Graders
                     return new ProductsTasteGrader();
                 case GraderType.VarietyGrader:
                     return new VarietyGrader();
+                case GraderType.PrepTimeGrader:
+                    return new PrepTimeGrader();
 
                 // DailyMenu graders
                 case GraderType.CaloriesCountDailyGrader:
@@ -52,6 +54,8 @@ namespace MenuBuilder.Graders
                     return new ProductsTasteDailyGrader();
                 case GraderType.VarietyDailyGrader:
                     return new VarietyDailyGrader();
+                case GraderType.PrepTimeDailyGrader:
+                    return new PrepTimeDailyGrader();
 
                 // Meal graders
                 case GraderType.CaloriesCountMealGrader:
@@ -62,6 +66,8 @@ namespace MenuBuilder.Graders
                     return new FoodCategoryMealGrader();
                 case GraderType.ProductsTasteMealGrader:
                     return new ProductsTasteMealGrader();
+                case GraderType.PrepTimeMealGrader:
+                    return new PrepTimeMealGrader();
 
                 default:
                     // TODO: better handle errors

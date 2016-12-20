@@ -53,12 +53,14 @@
     <Compile Include="DailyMenu.cs" />
     <Compile Include="Globals.cs" />
     <Compile Include="Graders\DailyMenuGraders\FoodCategoryDailyGrader.cs" />
+    <Compile Include="Graders\DailyMenuGraders\PrepTimeDailyGrader.cs" />
     <Compile Include="Graders\DailyMenuGraders\ProductsTasteDailyGrader.cs" />
     <Compile Include="Graders\DailyMenuGraders\DailyMenuGrader.cs" />
     <Compile Include="Graders\DailyMenuGraders\PerMealGrader.cs" />
     <Compile Include="Graders\DailyMenuGraders\VarietyDailyGrader.cs" />
     <Compile Include="Graders\Grader.cs" />
     <Compile Include="Graders\GraderDBFactory.cs" />
+    <Compile Include="Graders\MealGraders\PrepTimeMealGrader.cs" />
     <Compile Include="Graders\MealGraders\NutValuesMealGrader.cs" />
     <Compile Include="Graders\MealGraders\CaloriesCountMealGrader.cs" />
     <Compile Include="Graders\MealGraders\FoodCategoryMealGrader.cs" />
@@ -70,6 +72,7 @@
     <Compile Include="Graders\MenuGraders\CaloriesCountGrader.cs" />
     <Compile Include="Graders\MenuGraders\MenuGrader.cs" />
     <Compile Include="Graders\MenuGraders\FoodCategoryGrader.cs" />
+    <Compile Include="Graders\MenuGraders\PrepTimeGrader.cs" />
     <Compile Include="Graders\MenuGraders\ProductsTasteGrader.cs" />
     <Compile Include="Graders\MenuGraders\VarietyGrader.cs" />
     <Compile Include="Menu.cs" />

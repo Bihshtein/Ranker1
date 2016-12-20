@@ -456,20 +456,23 @@ namespace MenuBuilder
                     {GraderType.NutValuesGrader, 0.3},
                     {GraderType.CaloriesCountGrader, 0.3},
                     {GraderType.VarietyGrader, 0.25},
-                    {GraderType.ProductsTasteGrader, 0.1},
-                    {GraderType.FoodCategoryGrader, 0.05},
+                    {GraderType.ProductsTasteGrader, 0.06},
+                    {GraderType.FoodCategoryGrader, 0.03},
+                    {GraderType.PrepTimeGrader, 0.06},
                     {GraderType.CostGrader, 0}, // Currently zero as this is not fully implemented- need to add cost per product
 
                     // DailyMenu graders
                     {GraderType.NutValuesDailyGrader, 0.3},
                     {GraderType.CaloriesCountDailyGrader, 0.3},
                     {GraderType.VarietyDailyGrader, 0.25},
-                    {GraderType.ProductsTasteDailyGrader, 0.1},
-                    {GraderType.FoodCategoryDailyGrader, 0.05},
+                    {GraderType.ProductsTasteDailyGrader, 0.06},
+                    {GraderType.FoodCategoryDailyGrader, 0.03},
+                    {GraderType.PrepTimeDailyGrader, 0.06},
 
                     // Meal graders
-                    {GraderType.ProductsTasteMealGrader, 0.66},
-                    {GraderType.FoodCategoryMealGrader, 0.34}
+                    {GraderType.ProductsTasteMealGrader, 0.4},
+                    {GraderType.FoodCategoryMealGrader, 0.2},
+                    {GraderType.PrepTimeMealGrader, 0.4}
                 };
             }
             else if (InMealMode())
@@ -479,8 +482,9 @@ namespace MenuBuilder
                     // Meal graders
                     {GraderType.CaloriesCountMealGrader, 0.4},
                     {GraderType.NutValuesMealGrader, 0.4},
-                    {GraderType.ProductsTasteMealGrader, 0.13},
-                    {GraderType.FoodCategoryMealGrader, 0.07}
+                    {GraderType.ProductsTasteMealGrader, 0.08},
+                    {GraderType.FoodCategoryMealGrader, 0.04},
+                    {GraderType.PrepTimeMealGrader, 0.08}
                 };
             }
         }

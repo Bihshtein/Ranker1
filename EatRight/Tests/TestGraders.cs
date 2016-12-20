@@ -14,6 +14,58 @@ namespace Tests
     public class TestGraders
     {
         [TestMethod]
+        public void TestPrepTimeMealGrader()
+        {
+            var unit = new RestDBInterface();
+
+            var fastBreakfast = new Meal()
+            {
+                ID = 0,
+                Name = "Fast breakfast",
+                ProductsWeight = new Dictionary<string, double>() { { "Carrot", 1 } },
+                Types = new HashSet<MealType>() { MealType.Breakfast },
+                PrepTime = 2
+            };
+
+            var slowBreakfast = new Meal()
+            {
+                ID = 1,
+                Name = "Slow breakfast",
+                ProductsWeight = new Dictionary<string, double>() { { "Carrot", 1 } },
+                Types = new HashSet<MealType>() { MealType.Breakfast },
+                PrepTime = 20
+            };
+
+            unit.Meals.Empty();
+            unit.Meals.Add(fastBreakfast);
+            unit.Meals.Add(slowBreakfast);
+
+            var userProfile = new UserProfile() { Age = 30, Gender = GenderType.Male };
+            var range = new MealSuggestionRange() { Length = 1, MealType = MealType.Breakfast };
+
+            var graderDB = GraderDBGenerator.FromUserProfile(userProfile, unit);
+            graderDB.range = range;
+            graderDB.GradersWeight = null;
+
+            var menuGen = new MenuGenerator(unit, graderDB);
+
+            var firstMenuMeal = menuGen.GetMeal();
+            var secondMenuMeal = menuGen.GetMeal();
+
+            // Assertions
+
+            /* Since the 2 meals are equal except the prep time, we want the faster to be chosen.
+             */
+
+            // 1. Assert that the best graded meal is the fast one
+            Assert.IsTrue(firstMenuMeal.Meal.ID == 0);
+            // 2. Assert that the other meal is the slow one
+            Assert.IsTrue(secondMenuMeal.Meal.ID == 1);
+            // 3. Assert that the best graded meal got a better grade than the other one
+            Assert.IsTrue(firstMenuMeal.Grade > secondMenuMeal.Grade);
+        }
+
+        [TestMethod]
         public void TestNutValuesMealGrader()
         {
 
