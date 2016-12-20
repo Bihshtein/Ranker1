@@ -68,7 +68,7 @@ namespace InitRecipes {
                     res = HandleDoubleWordName(innerSplit[0], innerSplit[1]);
                 else if (innerSplit.Length == 3)
                     res = HandleTripleWordName(innerSplit[0], innerSplit[1], innerSplit[2]);
-                else if (innerSplit.Length == 4)
+                else if (innerSplit.Length == 4 )
                     res = HandleQuatroWordName(innerSplit[0], innerSplit[1], innerSplit[2], innerSplit[3]);
 
                 if (res == null || res.Count == 0) {

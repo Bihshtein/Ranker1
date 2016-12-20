@@ -32,7 +32,11 @@ namespace LogicRunner
             //  comboBox1.ValueMember = "Age";
             dataGridView1.AutoGenerateColumns = true;
 
-            
+            comboBox2.DataSource = Enum.GetNames(typeof(MealType));
+            comboBox5.DataSource = new List<int> { 500, 1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500, 5000 };
+            comboBox3.DataSource = new List<int> { 1, 2, 3, 3, 4, 5, 6, 7, 8, 9,10 };
+            comboBox4.DataSource = new List<int> { 1, 2, 3, 3, 4, 5, 6, 7, 8, 9, 10 };
+            comboBox6.DataSource = new List<int> { 1, 2, 3, 3, 4, 5, 6, 7, 8, 9, 10 };
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -52,9 +56,19 @@ namespace LogicRunner
             */
             var graderDB = GraderDBGenerator.FromUserProfile(uProfile, unit);
             graderDB.dailyValues = (comboBox1.SelectedValue as DailyValue).DuplicateDictionary();
-            graderDB.range = new MealSuggestionRange() { Length = 1, MealType = MealType.Breakfast };
+            graderDB.range = new MealSuggestionRange() { Length = 1, MealType = (MealType)Enum.Parse(typeof(MealType), comboBox2.SelectedItem.ToString()) };
+            graderDB.dailyCaloriesNum = int.Parse(comboBox5.SelectedItem.ToString());
+              graderDB.GradersWeight = new Dictionary<GraderType, double>()
+               {
+                    // Meal graders
+                    {GraderType.CaloriesCountMealGrader, int.Parse(comboBox3.SelectedItem.ToString())},
+                    {GraderType.NutValuesMealGrader,  int.Parse(comboBox6.SelectedItem.ToString())},
+                    {GraderType.PrepTimeMealGrader, int.Parse(comboBox4.SelectedItem.ToString()) }
+                };
             MenuGenerator generator = new MenuGenerator(unit, graderDB);
 
+
+          
             /*  
             var bindingList = new BindingList<MenuMeal>(menu.Days[0].Meals.Values.ToList());
             var source = new BindingSource(bindingList, null);
@@ -69,7 +83,7 @@ namespace LogicRunner
 
             if (!alexiknow)
             {
-                richTextBox1.DataBindings.Add("Text", bindingSource2, "NutValues");
+                richTextBox1.DataBindings.Add("Text", bindingSource2, "GradersResult");
                 alexiknow = true;
             }
 

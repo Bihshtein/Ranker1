@@ -453,8 +453,8 @@ namespace MenuBuilder
                 Grader.graderDB.GradersWeight = new Dictionary<GraderType, double>()
                 {
                     // Menu graders
-                    {GraderType.NutValuesGrader, 0.3},
-                    {GraderType.CaloriesCountGrader, 0.3},
+                    {GraderType.NutValuesGrader, 0.1},
+                    {GraderType.CaloriesCountGrader, 0.1},
                     {GraderType.VarietyGrader, 0.25},
                     {GraderType.ProductsTasteGrader, 0.06},
                     {GraderType.FoodCategoryGrader, 0.03},
@@ -480,11 +480,11 @@ namespace MenuBuilder
                 Grader.graderDB.GradersWeight = new Dictionary<GraderType, double>()
                 {
                     // Meal graders
-                    {GraderType.CaloriesCountMealGrader, 0.4},
-                    {GraderType.NutValuesMealGrader, 0.4},
-                    {GraderType.ProductsTasteMealGrader, 0.08},
-                    {GraderType.FoodCategoryMealGrader, 0.04},
-                    {GraderType.PrepTimeMealGrader, 0.08}
+                    {GraderType.CaloriesCountMealGrader, 0.5},
+                    {GraderType.NutValuesMealGrader, 0.5},
+                    {GraderType.ProductsTasteMealGrader, 0.00},
+                    {GraderType.FoodCategoryMealGrader, 0.00},
+                    {GraderType.PrepTimeMealGrader, 0.00}
                 };
             }
         }
