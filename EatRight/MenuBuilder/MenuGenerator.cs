@@ -289,7 +289,16 @@ namespace MenuBuilder
         private void GenerateMealsList()
         {
             var dbMealsList = unit.Meals.GetAll().ToList();
+
+            // Filter meals with unwanted products
             dbMealsList = FilterDBMealsList(dbMealsList);
+
+            // Filter meals of irrelevant type
+            if (InMealMode())
+            {
+                dbMealsList = dbMealsList.Where(x => x.Types.Contains(((MealSuggestionRange)Grader.graderDB.range).MealType)).ToList();
+            }
+
             mealsList = dbMealsList.Select(x => new MenuMeal(x)).ToList();
 
             var graderMap = InitGraderMap(GraderType.MealGraderStart, GraderType.MealGraderEnd);
@@ -434,27 +443,40 @@ namespace MenuBuilder
 
         private void SetDefaultGraderWeights()
         {
-            Grader.graderDB.GradersWeight = new Dictionary<GraderType, double>()
+            if (InMenuMode())
             {
-                // Menu graders
-                {GraderType.NutValuesGrader, 0.3},
-                {GraderType.CaloriesCountGrader, 0.3},
-                {GraderType.VarietyGrader, 0.25},
-                {GraderType.ProductsTasteGrader, 0.1},
-                {GraderType.FoodCategoryGrader, 0.05},
-                {GraderType.CostGrader, 0}, // Currently zero as this is not fully implemented- need to add cost per product
+                Grader.graderDB.GradersWeight = new Dictionary<GraderType, double>()
+                {
+                    // Menu graders
+                    {GraderType.NutValuesGrader, 0.3},
+                    {GraderType.CaloriesCountGrader, 0.3},
+                    {GraderType.VarietyGrader, 0.25},
+                    {GraderType.ProductsTasteGrader, 0.1},
+                    {GraderType.FoodCategoryGrader, 0.05},
+                    {GraderType.CostGrader, 0}, // Currently zero as this is not fully implemented- need to add cost per product
 
-                // DailyMenu graders
-                {GraderType.NutValuesDailyGrader, 0.3},
-                {GraderType.CaloriesCountDailyGrader, 0.3},
-                {GraderType.VarietyDailyGrader, 0.25},
-                {GraderType.ProductsTasteDailyGrader, 0.1},
-                {GraderType.FoodCategoryDailyGrader, 0.05},
+                    // DailyMenu graders
+                    {GraderType.NutValuesDailyGrader, 0.3},
+                    {GraderType.CaloriesCountDailyGrader, 0.3},
+                    {GraderType.VarietyDailyGrader, 0.25},
+                    {GraderType.ProductsTasteDailyGrader, 0.1},
+                    {GraderType.FoodCategoryDailyGrader, 0.05},
 
-                // Meal graders
-                {GraderType.ProductsTasteMealGrader, 0.66},
-                {GraderType.FoodCategoryMealGrader, 0.34}
-            };
+                    // Meal graders
+                    {GraderType.ProductsTasteMealGrader, 0.66},
+                    {GraderType.FoodCategoryMealGrader, 0.34}
+                };
+            }
+            else if (InMealMode())
+            {
+                Grader.graderDB.GradersWeight = new Dictionary<GraderType, double>()
+                {
+                    // Meal graders
+                    {GraderType.CaloriesCountMealGrader, 0.7},
+                    {GraderType.ProductsTasteMealGrader, 0.2},
+                    {GraderType.FoodCategoryMealGrader, 0.1}
+                };
+            }
         }
     }
 }

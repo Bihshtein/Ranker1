@@ -54,6 +54,8 @@ namespace MenuBuilder.Graders
                     return new VarietyDailyGrader();
 
                 // Meal graders
+                case GraderType.CaloriesCountMealGrader:
+                    return new CaloriesCountMealGrader();
                 case GraderType.FoodCategoryMealGrader:
                     return new FoodCategoryMealGrader();
                 case GraderType.ProductsTasteMealGrader:
@@ -129,6 +131,8 @@ namespace MenuBuilder.Graders
 
     public class MealSuggestionRange : SuggestionRange
     {
+        public MealType MealType { get; set; }
+
         public override bool IsMealSuggestionRange() { return true; }
 
         public override string ToString()

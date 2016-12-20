@@ -14,6 +14,73 @@ namespace Tests
     public class TestGraders
     {
         [TestMethod]
+        public void TestCaloriesCountMealGrader()
+        {
+            // Make sure that grader is grading different user profiles and different meals in a different manner
+
+            var unit = new RestDBInterface();
+            unit.Meals.Empty();
+
+            // Create 2 very small breakfasts. We expect the "big" breakfast (big compared to the small one) to be better
+            var smallBreakfast = new Meal()
+            {
+                ID = 0,
+                Name = "Small breakfast",
+                ProductsWeight = new Dictionary<string, double>()
+                {
+                    { "Carrot", 1 }
+                },
+                Types = new HashSet<MealType>() { MealType.Breakfast }
+            };
+
+            var bigBreakfast = new Meal()
+            {
+                ID = 1,
+                Name = "Big breakfast",
+                ProductsWeight = new Dictionary<string, double>()
+                {
+                    { "Carrot", 20 },
+                    { "Tomatoes", 20 }
+                },
+                Types = new HashSet<MealType>() { MealType.Breakfast }
+            };
+
+            unit.Meals.Empty();
+            unit.Meals.Add(smallBreakfast);
+            unit.Meals.Add(bigBreakfast);
+
+            Dictionary<GraderType, double> graderWeights = new Dictionary<GraderType, double>() {
+                {GraderType.CaloriesCountMealGrader, 1}
+            };
+
+            var babyProfile = new UserProfile() { Age = 3, Gender = GenderType.Male };
+            var manProfile = new UserProfile() { Age = 30, Gender = GenderType.Male };
+
+            var babyGraderDB = GraderDBGenerator.FromUserProfile(babyProfile, unit);
+            var manGraderDB = GraderDBGenerator.FromUserProfile(manProfile, unit);
+
+            babyGraderDB.GradersWeight = graderWeights;
+            manGraderDB.GradersWeight = graderWeights;
+
+            babyGraderDB.range = new MealSuggestionRange() { MealType = MealType.Breakfast, Length = 1 };
+            manGraderDB.range = new MealSuggestionRange() { MealType = MealType.Breakfast, Length = 1 };
+
+            // Since all users currently get the same calories number, force a difference
+            babyGraderDB.dailyCaloriesNum = manGraderDB.dailyCaloriesNum / 2;
+
+            var babyMenuGen = new MenuGenerator(unit, babyGraderDB);
+            var manMenuGen = new MenuGenerator(unit, manGraderDB);
+
+            var babyMeal = babyMenuGen.GetMeal();
+            var manMeal = manMenuGen.GetMeal();
+
+            // First, assert that the bigger meal was preferred
+            Assert.IsTrue(babyMeal.Meal.ID == 1 && manMeal.Meal.ID == 1);
+            // Second, assert that the man's grade was lower- the baby needs to eat less
+            Assert.IsTrue(babyMeal.Grade > manMeal.Grade);
+        }
+
+        [TestMethod]
         public void TestCaloriesCountGrader()
         {
             TestUserProfileDependentGrader(false);
@@ -90,6 +157,8 @@ namespace Tests
 
             var normalGraderDB = GraderDBGenerator.FromUserProfile(userProfile, unit);
             normalGraderDB.range = range;
+
+            normalGraderDB.GradersWeight = null;
 
             var varietyMenuGen = new MenuGenerator(unit, varietyGraderDB);
             var normalMenuGen = new MenuGenerator(unit, normalGraderDB);
@@ -314,6 +383,9 @@ namespace Tests
                 };
             }
             chineseGraderDB.range = range;
+
+            indianGraderDB.GradersWeight = null;
+            chineseGraderDB.GradersWeight = null;
 
             var indianMenuGen = new MenuGenerator(unit, indianGraderDB);
             var chineseMenuGen = new MenuGenerator(unit, chineseGraderDB);
