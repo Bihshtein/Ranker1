@@ -56,6 +56,8 @@ namespace MenuBuilder.Graders
                 // Meal graders
                 case GraderType.CaloriesCountMealGrader:
                     return new CaloriesCountMealGrader();
+                case GraderType.NutValuesMealGrader:
+                    return new NutValuesMealGrader();
                 case GraderType.FoodCategoryMealGrader:
                     return new FoodCategoryMealGrader();
                 case GraderType.ProductsTasteMealGrader:

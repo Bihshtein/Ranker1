@@ -21,31 +21,32 @@ namespace MenuBuilder.Graders.DailyMenuGraders
 
         protected override double InternalGrade(DailyMenu dailyMenu)
         {
+            var nutValues = GetNutritionValues(dailyMenu);
+            return GradeByNutValues(dailyValues, nutValues);
+        }
+
+        static public double GradeByNutValues(Dictionary<string, double> idealValues, Dictionary<string, double> actualValues)
+        {
             double grade = 0;
 
-            var nutValues = GetNutritionValues(dailyMenu);
-
             // Compare to daily needed values
-            foreach (var entry in dailyValues)
+            foreach (var entry in idealValues)
             {
                 var nutrient = entry.Key;
                 double actualValue = 0;
-                if (dailyValues.ContainsKey(nutrient))
+                if (idealValues.ContainsKey(nutrient))
                 {
-                    actualValue = nutValues[nutrient];
+                    actualValue = actualValues[nutrient];
                 }
 
                 var idealValue = entry.Value;
                 var basicRatio = actualValue / idealValue;
-                //if (basicRatio > 1)
-                //    Console.WriteLine("Too High Grade  : " + String.Format("{0:0.00}", basicRatio) + " nutrient : " + nutrient);
                 var gradeRatio = GradeRatio(basicRatio);
-                //if (gradeRatio < 1)
-                //    Console.WriteLine("Missing Grade : " + String.Format("{0:0.00}", gradeRatio) + " nutrient : " + nutrient);
 
                 grade += gradeRatio;
             }
-            return grade / dailyValues.Count;
+
+            return grade / idealValues.Count;
         }
 
         private Dictionary<string, double> GetNutritionValues(DailyMenu dailyMenu)

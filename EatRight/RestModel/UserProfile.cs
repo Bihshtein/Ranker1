@@ -35,6 +35,7 @@ namespace RestModel
         MealGraderStart,
 
         CaloriesCountMealGrader,
+        NutValuesMealGrader,
         FoodCategoryMealGrader,
         ProductsTasteMealGrader,
 
