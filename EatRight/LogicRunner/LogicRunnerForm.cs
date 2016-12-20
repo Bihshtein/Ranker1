@@ -62,7 +62,8 @@ namespace LogicRunner
             //     grid.DataSource = source;
 
             this.bindingSource2.DataSource = generator.GetMealsList().Select(o => new MyViewModel(o)
-            { Id = o.Meal.ID, Name = o.Meal.Name, Grade = o.Grade, NutValues = parse(o.NutValues) }).ToList();
+            { Id = o.Meal.ID, Name = o.Meal.Name, Grade = o.Grade,
+                NutValues = parseNutValues(o.NutValues), GradersResult = parseGradersResult(o.GradeInfo.GradersInfo) }).ToList();
 
             dataGridView1.DataSource = this.bindingSource2;
 
@@ -74,13 +75,24 @@ namespace LogicRunner
 
         }
 
-        private string parse(Dictionary<string, double> let)
+        private string parseNutValues(Dictionary<string, double> let)
         {
             var str = "";
 
             foreach (var x in let)
             {
                 str += string.Format("{0} = {1}\n", x.Key, x.Value);
+            }
+            return str;
+        }
+
+        private string parseGradersResult(HashSet<GraderInfo> gradersInfo)
+        {
+            var str = "";
+
+            foreach (var x in gradersInfo)
+            {
+                str += string.Format("{0}: weight = {1}, grade = {2}\n", x.Type.ToString(), x.Weight, x.Grade);
             }
             return str;
         }

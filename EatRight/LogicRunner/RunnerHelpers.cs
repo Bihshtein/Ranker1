@@ -13,6 +13,7 @@ namespace LogicRunner
         public string Name { get; set; }
         public double Grade { get; set; }
         public string NutValues { get; set; }
+        public string GradersResult { get; set; }
 
         //     public Dictionary<string, double> NutValues { get; set; }
 
