@@ -23,7 +23,12 @@ namespace LogicRunner
 
 
             unit = new RestDBInterface();
+            try { 
             MealsCSVReader.CreateFixedMealsList(unit);
+            }
+            catch  (Exception ex) {
+                MessageBox.Show(ex.Message);
+            }
             var dv = unit.DailyValues.GetAllList();
 
             this.bindingSource1.DataSource = dv;
@@ -54,7 +59,10 @@ namespace LogicRunner
             grid.DataSource = objects.Select(o => new MyViewModel(o)
             { Column1 = o.SomeValue, Column2 = o.SomeOtherValue }).ToList();
             */
-            var graderDB = GraderDBGenerator.FromUserProfile(uProfile, unit);
+
+            
+                var graderDB = GraderDBGenerator.FromUserProfile(uProfile, unit);
+          
             graderDB.dailyValues = (comboBox1.SelectedValue as DailyValue).DuplicateDictionary();
             graderDB.range = new MealSuggestionRange() { Length = 1, MealType = (MealType)Enum.Parse(typeof(MealType), comboBox2.SelectedItem.ToString()) };
             graderDB.dailyCaloriesNum = int.Parse(comboBox5.SelectedItem.ToString());

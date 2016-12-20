@@ -67,8 +67,7 @@ namespace RestModel
                             {
                                 if (unit.Products.GetByName(tokens[idx]).Count == 0)
                                 {
-                                    System.Console.WriteLine("No such product: " + tokens[idx]);
-                                    Environment.Exit(1);
+                                    throw new Exception("No such product: " + tokens[idx]);
                                 }
                                 productsWeight[tokens[idx]] = 0;
                                 productsIndex[idx] = tokens[idx];
