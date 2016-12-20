@@ -7,7 +7,7 @@ using RestModel;
 using System.Text.RegularExpressions;
 using System.IO;
 
-namespace InitDB
+namespace InitDailyValuesDB
 {
     public class TupleList<T1, T2> : List<Tuple<T1, T2>>
     {

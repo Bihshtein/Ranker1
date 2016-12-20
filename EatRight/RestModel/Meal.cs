@@ -38,7 +38,7 @@ namespace RestModel  {
         public string MealType { get; set; }
         public Dictionary<string, double> ProductsWeight;
         public List<string> Ingredients;
-
+        public double PrepTime { get; set; } // In minutes
 
         private static RestDBInterface Unit = new RestDBInterface();
 

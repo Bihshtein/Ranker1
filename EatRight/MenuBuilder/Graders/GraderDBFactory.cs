@@ -79,6 +79,60 @@ namespace MenuBuilder.Graders
         }
     }
 
+
+    public class GradersMap
+    {
+        protected Dictionary<GraderType, double> gradersMap;
+
+        public GradersMap()
+        {
+            gradersMap = new Dictionary<GraderType, double>();
+        }
+
+        public Dictionary<GraderType, double> DuplicateDictionary()
+        {
+            return gradersMap.ToDictionary(k => k.Key, k => (double)k.Value);
+        }
+
+        public static GradersMap EquallySpread()
+        {
+            var gMap = new GradersMap();
+            var gTypes = (GraderType[])Enum.GetValues(typeof(GraderType));
+            var gPlaceholders = GraderTypeHelper.GetPlaceHolders();
+
+            foreach (var gType in gTypes)
+            {
+                if (gPlaceholders.Contains(gType)) continue;
+                gMap.gradersMap.Add(gType, 
+                                    100.0 / (gTypes.Length - gPlaceholders.Count));
+            }
+
+            return gMap;
+        }
+
+        public static GradersMap NutGradersOnly()
+        {
+            var gMap = new GradersMap();
+            var gradersValues = new Dictionary<GraderType, double> {
+                { GraderType.CaloriesCountDailyGrader, 25},
+                { GraderType.NutValuesDailyGrader, 25},
+                { GraderType.CaloriesCountGrader, 25},
+                { GraderType.NutValuesGrader, 25} };
+
+            gMap.gradersMap = gradersValues;
+
+            return gMap;
+        }
+
+    }
+    public class GradersMapGenerator
+    {
+        public static GradersMap FromUserProfile(UserProfile userProfile)
+        {
+            // TODO: Get graders from user
+            return GradersMap.EquallySpread();
+        }
+    }
     /// <summary>
     /// A grader db configurator / generator according to UserProfiles
     /// </summary>
@@ -90,16 +144,20 @@ namespace MenuBuilder.Graders
             var dValues = DailyValuesGenerator.FromUserProfile(userProfile, unit);
             if (dValues == null) return null;
 
+            var gradersMap = GradersMapGenerator.FromUserProfile(userProfile);
+            if (gradersMap == null) return null;
+
             var graderDB = new GraderDB();
 
-            graderDB.dailyValues =
-                dValues.DuplicateDictionary();
-            graderDB.dailyCaloriesNum = 
-                DailyCaloriesGenerator.FromUserProfile(userProfile);
-            graderDB.range =
-               SuggestionRangeGenerator.FromUserProfile(userProfile);
+            //graderDB.GradersWeight = gradersMap.DuplicateDictionary();
+            graderDB.GradersWeight = null;
+            graderDB.dailyValues = dValues.DuplicateDictionary();
+            graderDB.dailyCaloriesNum = DailyCaloriesGenerator.FromUserProfile(userProfile);
+            graderDB.range = SuggestionRangeGenerator.FromUserProfile(userProfile);
             
             return graderDB;
         }
+
+
     }
 }

@@ -27,7 +27,7 @@ namespace MenuBuilder.Graders.DailyMenuGraders
             return GradeRatio(caloriesNum / dailyCaloriesNum);
         }
 
-        static private double GradeRatio(double ratio)
+        static public double GradeRatio(double ratio)
         {
             if (ratio <= 1)
             {

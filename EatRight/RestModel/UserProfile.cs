@@ -19,6 +19,7 @@ namespace RestModel
         NutValuesGrader,
         ProductsTasteGrader,
         VarietyGrader,
+        PrepTimeGrader,
 
         GraderMenuEnd,
 
@@ -29,15 +30,35 @@ namespace RestModel
         NutValuesDailyGrader,
         ProductsTasteDailyGrader,
         VarietyDailyGrader,
+        PrepTimeDailyGrader,
 
         DailyMenuGraderEnd,
 
         MealGraderStart,
 
+        CaloriesCountMealGrader,
+        NutValuesMealGrader,
         FoodCategoryMealGrader,
         ProductsTasteMealGrader,
+        PrepTimeMealGrader,
 
         MealGraderEnd
+    }
+
+    public class GraderTypeHelper
+    {
+        public static List<GraderType> GetPlaceHolders()
+        {
+            return new List<GraderType>()
+            {
+                GraderType.GraderMenuStart,
+                GraderType.GraderMenuEnd,
+                GraderType.DailyMenuGraderStart,
+                GraderType.DailyMenuGraderEnd,
+                GraderType.MealGraderStart,
+                GraderType.MealGraderEnd
+            };
+        }
     }
 
     /// <summary>

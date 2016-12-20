@@ -60,6 +60,9 @@ namespace Tests
 
             graderDBWithoutTomatoes.forbiddenProducts = new HashSet<string>() { "Tomatoes" };
 
+            graderDBWithoutTomatoes.GradersWeight = null;
+            graderDBWithTomatoes.GradersWeight = null;
+
             var menuGeneratorWOT = new MenuGenerator(unit, graderDBWithoutTomatoes);
             var menuGeneratorWT = new MenuGenerator(unit, graderDBWithTomatoes);
             var menuWOT = menuGeneratorWOT.GetMenu();
