@@ -52,8 +52,8 @@ namespace LogicRunner
             */
             var graderDB = GraderDBGenerator.FromUserProfile(uProfile, unit);
             graderDB.dailyValues = (comboBox1.SelectedValue as DailyValue).DuplicateDictionary();
+            graderDB.range = new MealSuggestionRange() { Length = 1, MealType = MealType.Breakfast };
             MenuGenerator generator = new MenuGenerator(unit, graderDB);
-            var menu = generator.GetMenu();
 
             /*  
             var bindingList = new BindingList<MenuMeal>(menu.Days[0].Meals.Values.ToList());
@@ -61,15 +61,14 @@ namespace LogicRunner
             */
             //     grid.DataSource = source;
 
-
-            this.bindingSource2.DataSource = menu.Days[0].Meals.Values.ToList().Select(o => new MyViewModel(o)
+            this.bindingSource2.DataSource = generator.GetMealsList().Select(o => new MyViewModel(o)
             { Id = o.Meal.ID, Name = o.Meal.Name, Grade = o.Grade, NutValues = parse(o.NutValues) }).ToList();
 
             dataGridView1.DataSource = this.bindingSource2;
 
             if (!alexiknow)
             {
-            richTextBox1.DataBindings.Add("Text", bindingSource2, "NutValues");
+                richTextBox1.DataBindings.Add("Text", bindingSource2, "NutValues");
                 alexiknow = true;
             }
 

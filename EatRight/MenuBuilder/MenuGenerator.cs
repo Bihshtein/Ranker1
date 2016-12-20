@@ -51,6 +51,11 @@ namespace MenuBuilder
             usedMeals = new HashSet<int>();
         }
 
+        public List<MenuMeal> GetMealsList()
+        {
+            return mealsList;
+        }
+
         private bool InMenuMode()
         {
             return Grader.graderDB.range.IsMenuSuggestionRange();
@@ -154,7 +159,7 @@ namespace MenuBuilder
 
         private bool IsUsed(MenuMeal meal)
         {
-            return usedDailyMenus.Contains(meal.Meal.ID);
+            return usedMeals.Contains(meal.Meal.ID);
         }
 
         private void SetDailyMenuAsUsed(DailyMenu dailyMenu)

@@ -149,7 +149,8 @@ namespace MenuBuilder.Graders
 
             var graderDB = new GraderDB();
 
-            graderDB.GradersWeight = gradersMap.DuplicateDictionary();
+            //graderDB.GradersWeight = gradersMap.DuplicateDictionary();
+            graderDB.GradersWeight = null;
             graderDB.dailyValues = dValues.DuplicateDictionary();
             graderDB.dailyCaloriesNum = DailyCaloriesGenerator.FromUserProfile(userProfile);
             graderDB.range = SuggestionRangeGenerator.FromUserProfile(userProfile);
