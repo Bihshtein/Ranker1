@@ -16,7 +16,8 @@ namespace MenuBuilder.Graders.DailyMenuGraders
             Description = "Nutrition values compared to the ideal nutrition values";
             Type = GraderType.NutValuesDailyGrader;
 
-            this.dailyValues = Grader.graderDB.dailyValues;
+            // TODO: (Hen) Uri, convert your dictionary's double to MinMaxDouble and use the MinValue & MaxValue.
+            this.dailyValues = graderDB.dailyValues.ToDictionary(k => k.Key, k => k.Value.MinValue);
         }
 
         protected override double InternalGrade(DailyMenu dailyMenu)

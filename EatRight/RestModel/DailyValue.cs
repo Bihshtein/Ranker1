@@ -136,6 +136,37 @@ namespace RestModel
         }
     }
 
+    public class MinMaxDouble
+    {
+        [BsonElement("MinValue")]
+        public double MinValue { get; set; }
+        [BsonElement("MaxValue")]
+        public double MaxValue { get; set; }
+
+        public MinMaxDouble(MinMaxDouble other)
+        {
+            if (other == null) throw new ArgumentNullException("MinMaxDouble::(MinMaxDouble other)");
+            if (other.MinValue > other.MaxValue) throw new Exception("MinMaxDouble:: other.MinValue > other.MaxValue");
+
+            this.MinValue = other.MinValue;
+            this.MaxValue = other.MaxValue;
+        }
+
+        public MinMaxDouble(double min, double max)
+        {
+            if (min > max) throw new Exception("MinMaxDouble:: min > max");
+
+            this.MinValue = min;
+            this.MaxValue = max;
+        }
+
+        public MinMaxDouble(double minMaxValue)
+        {
+            this.MinValue = minMaxValue;
+            this.MaxValue = minMaxValue;
+        }
+    }
+
     public class DailyValue : IQueryable
     {
         protected Dictionary<string, object> resetDailyValues;
@@ -206,28 +237,28 @@ namespace RestModel
             var ret = new DailyValue(
                 new Dictionary<string, object>()
                 {
-            { "Protein", (double)-1 }, //
-            { "Fiber",(double)-1}, //
-            { "VitaminC",(double)-1}, //
-            { "Fat",(double)-1 }, //
-            { "Thiamin",(double)-1 }, //
-            { "Riboflavin",(double)-1 }, //
-            { "Niacin",(double)-1 }, //
-            { "PantothenicAcid",(double)-1 }, // ?
-            { "VitaminB6",(double)-1 }, //
-            { "VitaminB12",(double)-1 }, //
-            { "VitaminD",(double)-1 }, //
-            { "VitaminA",(double)-1 }, //
-            { "Folate",(double)-1 }, //
-            { "VitaminE",(double)-1 }, //
-            { "VitaminK",(double)-1 }, //
-            { "Calcium",(double)-1}, //
-            { "Iron",(double)-1 }, //
-            { "Magnesium",(double)-1 }, //
-            { "Phosphorus",(double)-1 }, //
-            { "Potassium",(double)-1 }, //
-            { "Sodium",(double)-1 }, //
-            { "Zinc",(double)-1 } //
+            { "Protein", new MinMaxDouble(-1) }, //
+            { "Fiber",new MinMaxDouble(-1)}, //
+            { "VitaminC",new MinMaxDouble(-1)}, //
+            { "Fat",new MinMaxDouble(-1) }, //
+            { "Thiamin",new MinMaxDouble(-1) }, //
+            { "Riboflavin",new MinMaxDouble(-1) }, //
+            { "Niacin",new MinMaxDouble(-1) }, //
+            { "PantothenicAcid",new MinMaxDouble(-1) }, // ?
+            { "VitaminB6",new MinMaxDouble(-1) }, //
+            { "VitaminB12",new MinMaxDouble(-1) }, //
+            { "VitaminD",new MinMaxDouble(-1) }, //
+            { "VitaminA",new MinMaxDouble(-1) }, //
+            { "Folate",new MinMaxDouble(-1) }, //
+            { "VitaminE",new MinMaxDouble(-1) }, //
+            { "VitaminK",new MinMaxDouble(-1) }, //
+            { "Calcium",new MinMaxDouble(-1)}, //
+            { "Iron",new MinMaxDouble(-1) }, //
+            { "Magnesium",new MinMaxDouble(-1) }, //
+            { "Phosphorus",new MinMaxDouble(-1) }, //
+            { "Potassium",new MinMaxDouble(-1) }, //
+            { "Sodium",new MinMaxDouble(-1) }, //
+            { "Zinc",new MinMaxDouble(-1) } //
                 });
 
             ret.Age = null;
@@ -251,28 +282,28 @@ namespace RestModel
             var ret= new DailyValue(
                 new Dictionary<string, object>()
                 {
-            { "Protein", (double)56 }, //
-            { "Fiber",(double)25}, //
-            { "VitaminC",(double)90}, //
-            { "Fat",(double)65 }, //
-            { "Thiamin",(double)1.2 }, //
-            { "Riboflavin",(double)1.3 }, //
-            { "Niacin",(double)18 }, //
-            { "PantothenicAcid",(double)5 }, // ?
-            { "VitaminB6",(double)1.3 }, //
-            { "VitaminB12",(double)2.4 }, //
-            { "VitaminD",(double)600 }, //
-            { "VitaminA",(double)5000 }, //
-            { "Folate",(double)400 }, //
-            { "VitaminE",(double)15 }, //
-            { "VitaminK",(double)80 }, //
-            { "Calcium",(double)1000}, //
-            { "Iron",(double)11 }, //
-            { "Magnesium",(double)400 }, //
-            { "Phosphorus",(double)1000 }, //
-            { "Potassium",(double)3500 }, //
-            { "Sodium",(double)2400 }, //
-            { "Zinc",(double)15 } //
+            { "Protein", new MinMaxDouble(56) }, //
+            { "Fiber",new MinMaxDouble(25)}, //
+            { "VitaminC",new MinMaxDouble(90)}, //
+            { "Fat",new MinMaxDouble(65) }, //
+            { "Thiamin",new MinMaxDouble(1.2) }, //
+            { "Riboflavin",new MinMaxDouble(1.3) }, //
+            { "Niacin",new MinMaxDouble(18) }, //
+            { "PantothenicAcid",new MinMaxDouble(5) }, // ?
+            { "VitaminB6",new MinMaxDouble(1.3) }, //
+            { "VitaminB12",new MinMaxDouble(2.4) }, //
+            { "VitaminD",new MinMaxDouble(600) }, //
+            { "VitaminA",new MinMaxDouble(5000) }, //
+            { "Folate",new MinMaxDouble(400) }, //
+            { "VitaminE",new MinMaxDouble(15) }, //
+            { "VitaminK",new MinMaxDouble(80) }, //
+            { "Calcium",new MinMaxDouble(1000)}, //
+            { "Iron",new MinMaxDouble(11) }, //
+            { "Magnesium",new MinMaxDouble(400) }, //
+            { "Phosphorus",new MinMaxDouble(1000) }, //
+            { "Potassium",new MinMaxDouble(3500) }, //
+            { "Sodium",new MinMaxDouble(2400) }, //
+            { "Zinc",new MinMaxDouble(15) } //
                 });
 
             ret.Age = new AgeParam(25, 30);
@@ -280,9 +311,9 @@ namespace RestModel
             return ret;
         }
 
-        public Dictionary<string, double> DuplicateDictionary()
+        public Dictionary<string, MinMaxDouble> DuplicateDictionary()
         {
-            return dailyValues.ToDictionary(k => k.Key, k => (double)k.Value);
+            return dailyValues.ToDictionary(k => k.Key, k => new MinMaxDouble((double)k.Value));
         }
 
         public static DailyValue DefaultByDryParams(double age, int sex)
@@ -293,14 +324,14 @@ namespace RestModel
         public bool Increase(string dValue, double precentage)
         {
             if (!(dailyValues.ContainsKey(dValue))) return false;
-            dailyValues[dValue] = (double)dailyValues[dValue] + ((double)dailyValues[dValue] * precentage / 100);
+            dailyValues[dValue] = new MinMaxDouble(((MinMaxDouble)dailyValues[dValue]).MinValue + (((MinMaxDouble)dailyValues[dValue]).MinValue * precentage / 100));
             return true;
         }
 
         public bool Decrease(string dValue, double precentage)
         {
             if (!(dailyValues.ContainsKey(dValue))) return false;
-            dailyValues[dValue] = (double)dailyValues[dValue] - ((double)dailyValues[dValue] * precentage / 100);
+            dailyValues[dValue] = new MinMaxDouble(((MinMaxDouble)dailyValues[dValue]).MinValue - (((MinMaxDouble)dailyValues[dValue]).MinValue * precentage / 100));
             return true;
         }
 
