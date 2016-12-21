@@ -33,8 +33,6 @@ namespace LogicRunner
 
             this.bindingSource1.DataSource = dv;
             comboBox1.DataSource = bindingSource1.DataSource;
-            // comboBox1.DisplayMember = "Age";
-            //  comboBox1.ValueMember = "Age";
             dataGridView1.AutoGenerateColumns = true;
 
             comboBox2.DataSource = Enum.GetNames(typeof(MealType));
@@ -55,13 +53,7 @@ namespace LogicRunner
                 Name = "Hen"
             };
 
-            /*
-            grid.DataSource = objects.Select(o => new MyViewModel(o)
-            { Column1 = o.SomeValue, Column2 = o.SomeOtherValue }).ToList();
-            */
-
-            
-                var graderDB = GraderDBGenerator.FromUserProfile(uProfile, unit);
+            var graderDB = GraderDBGenerator.FromUserProfile(uProfile, unit);
           
             graderDB.dailyValues = (comboBox1.SelectedValue as DailyValue).DuplicateDictionary();
             graderDB.range = new MealSuggestionRange() { Length = 1, MealType = (MealType)Enum.Parse(typeof(MealType), comboBox2.SelectedItem.ToString()) };
@@ -74,27 +66,19 @@ namespace LogicRunner
                     {GraderType.PrepTimeMealGrader, int.Parse(comboBox4.SelectedItem.ToString()) }
                 };
             MenuGenerator generator = new MenuGenerator(unit, graderDB);
-
-
-          
-            /*  
-            var bindingList = new BindingList<MenuMeal>(menu.Days[0].Meals.Values.ToList());
-            var source = new BindingSource(bindingList, null);
-            */
-            //     grid.DataSource = source;
-
             this.bindingSource2.DataSource = generator.GetMealsList().Select(o => new MyViewModel(o)
             { Id = o.Meal.ID, Name = o.Meal.Name, Grade = o.Grade,
                 NutValues = parseNutValues(o.NutValues), GradersResult = parseGradersResult(o.GradeInfo.GradersInfo) }).ToList();
-
+            
             dataGridView1.DataSource = this.bindingSource2;
 
             if (!alexiknow)
             {
                 richTextBox1.DataBindings.Add("Text", bindingSource2, "GradersResult");
+                richTextBox2.DataBindings.Add("Text", bindingSource2, "Products");
+                richTextBox3.DataBindings.Add("Text", bindingSource2, "NutValues");
                 alexiknow = true;
             }
-
         }
 
         private string parseNutValues(Dictionary<string, double> let)
@@ -114,7 +98,7 @@ namespace LogicRunner
 
             foreach (var x in gradersInfo)
             {
-                str += string.Format("{0}: weight = {1}, grade = {2}\n", x.Type.ToString(), x.Weight, x.Grade);
+                str += string.Format("{0}: weight = {1}, grade = {2}\n", x.Type.ToString(), x.Weight, x.Grade.ToString("N3"));
             }
             return str;
         }
