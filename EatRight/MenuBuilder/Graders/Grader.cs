@@ -152,7 +152,7 @@ namespace MenuBuilder.Graders
     public class GraderDB
     {
         // Information unique for user (by age, weight etc.)
-        public Dictionary<string, double> dailyValues;
+        public Dictionary<string, MinMaxDouble> dailyValues;
         public int dailyCaloriesNum;
         public Dictionary<string, double> productFlavorGrade; // Maps a product to a double in the range [-1,1] where -1 means dislike and 1 means like
         public Dictionary<MealCategory, double> mealCategoryGrade; // Maps a meal category to a double in the range [-1,1] where -1 means dislike and 1 means like
