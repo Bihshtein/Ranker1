@@ -70,16 +70,6 @@ namespace RestModel {
 
 
 
-        public List<T> GetByName(string name)
-        {
-            string lowerCasedName = name.ToLower();
-            Expression<Func<Product, bool>> query = x =>
-                (Product.Name2FoodGroups.Contains(x.FoodGroup) && (x.Name2.Equals(name) || x.Name2.Equals(lowerCasedName))) ||
-                (!Product.Name2FoodGroups.Contains(x.FoodGroup) && (x.Name1.Equals(name) || x.Name1.Equals(lowerCasedName)));
-
-            return _collection.Find(query as Expression<Func<T, bool>>).ToList();
-        }
-
 
         public List<T> GetByGroupName(string name) {
             Expression<Func<Product, bool>> query = x => x.FoodGroup == name;
