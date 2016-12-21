@@ -45,8 +45,7 @@ namespace RestModel {
         public static List<string> ServeDetails = new List<string> { "warm", "cooked", "fresh" };
         public static List<string> PackDetails = new List<string> { "can", "package", "packages" };
 
-
-
+        
 
         public static List<Product> GetMatchingProductsForIngredient(string ingredient) {
             ingredient = ingredient.ToLower();
