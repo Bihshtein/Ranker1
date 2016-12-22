@@ -51,7 +51,8 @@ namespace InitRecipes {
             if (parts.Length > 1) {
                 ++totalParsed;
                 var innerpart = parts[1].Split(',')[0].Trim();
-                innerpart.Replace("(optional)", "");
+                innerpart = innerpart.Replace("(optional)", "");
+                innerpart = innerpart.Replace("(110 degrees f/45 degrees c)", "");
                 var res = Queries<Product>.GetMatchingProductsForIngredient(innerpart);
 
                 if (res == null || res.Count == 0) {

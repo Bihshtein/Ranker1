@@ -42,57 +42,40 @@ namespace RestModel {
             { "all-purpose flour","all-purpose wheat flour"},
             { "whole wheat flour","whole-grain wheat flour"},
             { "kosher salt","table salt"},
+            { "dry milk powder","dry milk"},
         };
-        public static List<string> CutDetails = new List<string> {"sifted", "sprig", "sprigs", "ground", "shredded", "cubed", "head", "heads", "sliced", "stalk", "stalks", "diced", "minced", "chopped" };
+        public static List<string> CutDetails = new List<string> {
+            "melted","sifted", "sprig", "sprigs", "ground", "shredded", "cubed",
+            "head", "heads", "sliced", "stalk", "stalks", "diced", "minced", "chopped",
+            "grated","mashed"};
         public static List<string> ServeDetails = new List<string> { "warm", "cooked", "fresh" };
-        public static List<string> PackDetails = new List<string> { "can", "package", "packages" };
+        public static List<string> PackDetails = new List<string> { "packed","can", "package", "packages" };
 
         
 
         public static List<Product> GetMatchingProductsForIngredient(string ingredient) {
             ingredient = ingredient.ToLower();
+            CutDetails.ForEach(item => ingredient = ingredient.Replace(item + " ", ""));
+            ServeDetails.ForEach(item => ingredient = ingredient.Replace(item + " ", ""));
+            PackDetails.ForEach(item => ingredient = ingredient.Replace(item + " ", ""));
+            ingredient = ingredient.Trim();
             if (RecipeToNutrientDictionary.ContainsKey(ingredient))
                 ingredient = RecipeToNutrientDictionary[ingredient];
             var innerSplit = ingredient.Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries);
 
             List<Product> res = null;
             if (innerSplit.Length == 1)
-                res = HandleSingleWordName(innerSplit[0]);
+                res = unit.Products.Queries.TryMatchWholeProduct(innerSplit[0]);
             else if (innerSplit.Length == 2)
-                res = HandleDoubleWordName(innerSplit[0], innerSplit[1]);
+                res = unit.Products.Queries.TryMatchWholeProduct(innerSplit[0], innerSplit[1]);
             else if (innerSplit.Length == 3)
-                res = HandleTripleWordName(innerSplit[0], innerSplit[1], innerSplit[2]);
-            else if (innerSplit.Length == 4)
-                res = HandleQuatroWordName(innerSplit[0], innerSplit[1], innerSplit[2], innerSplit[3]);
+                res = unit.Products.Queries.TryMatchWholeProduct(innerSplit[0], innerSplit[1], innerSplit[2]);
+           
             if (res == null || res.Count == 0)// special long ass names (manual recipe init from file)
-                res = HandleSingleWordName(ingredient);
+                res = unit.Products.Queries.TryMatchWholeProduct(ingredient);
             return res;
         }
 
-        public static List<Product> HandleDoubleWordName(string part1, string part2) {
-            if (CutDetails.Any(cut => cut.Equals(part1)) || ServeDetails.Any(cook => cook.Equals(part1)))
-                return HandleSingleWordName(part2);
-            else
-                return unit.Products.Queries.TryMatchWholeProduct(part1, part2);
-        }
-
-        public static List<Product> HandleSingleWordName(string name) {
-            return unit.Products.Queries.TryMatchWholeProduct(name);
-        }
-
-        public static List<Product> HandleTripleWordName(string part1, string part2, string part3) {
-            if (CutDetails.Any(cut => cut.Equals(part1)) || PackDetails.Any(pack => pack.Equals(part1)))
-                return HandleDoubleWordName(part2, part3);
-            else
-                return unit.Products.Queries.TryMatchWholeProduct(part1, part2, part3);
-        }
-
-        public static List<Product> HandleQuatroWordName(string part1, string part2, string part3, string part4) {
-            if (PackDetails.Any(pack => pack.Equals(part1)))
-                return HandleTripleWordName(part2, part3, part4);
-            else
-                return null;
-        }
 
 
         public List<DailyValue> GetByGender(GenderType gender) {
@@ -117,7 +100,9 @@ namespace RestModel {
         public List<Product> TryMatchWholeProduct(string part1, string part2, string part3) {
             Expression<Func<Product, bool>> query = x =>
             (x.Name3.Equals(part1 + " " + part2) && x.Name2.Equals(part3)) ||
+            (x.HealthData.Equals(part1)&& x.Name1.Equals(part2) && x.StorageMethod.Equals("dry " +part3)) ||
             (x.Name3.Equals(part1) && x.Name1.Equals(part2 + " " + part3)) ||
+            (x.Name2.Equals(part1) && x.Name1.Equals(part2 + " " + part3)) ||
               (x.FoodGroup.Equals(part1) && x.Name1.Equals(part2)) ||
               (x.Name3.Equals(part1) && x.Name1.Equals(part3)) ||
               (x.Name2.Equals(part2) && x.Name1.Equals(part3));

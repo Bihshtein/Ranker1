@@ -24,7 +24,7 @@ namespace InitDB {
             "reduced-calorie","sweetened","diet","caffeine","decaffeinated","dietetic","unenriched","gluten","enriched","glucose","lactose", "salted",
             "sugared","concentrate","sucralose","sugar","undiluted","calcium","low calorie","vitamin",
             "sulfured","ascorbic acid","sodium","salt","sweeten","original seasoning","aspartame","special dietary",
-            "alcohol","no alcohol"
+            "alcohol","no alcohol","unsweetened"
         };
 
         private static List<string> ConnectWordOptions = new List<string>{
