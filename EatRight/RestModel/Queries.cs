@@ -38,10 +38,12 @@ namespace RestModel {
         }
         public static Dictionary<string, string> RecipeToNutrientDictionary = new Dictionary<string, string> {
             { "white sugar","granulated sugar"},
-            { "all-purpose flour","wheat flour"},
+            { "bread flour","bread wheat flour"},
+            { "all-purpose flour","all-purpose wheat flour"},
+            { "whole wheat flour","whole-grain wheat flour"},
             { "kosher salt","table salt"},
         };
-        public static List<string> CutDetails = new List<string> { "sprig", "sprigs", "ground", "shredded", "cubed", "head", "heads", "sliced", "stalk", "stalks", "diced", "minced", "chopped" };
+        public static List<string> CutDetails = new List<string> {"sifted", "sprig", "sprigs", "ground", "shredded", "cubed", "head", "heads", "sliced", "stalk", "stalks", "diced", "minced", "chopped" };
         public static List<string> ServeDetails = new List<string> { "warm", "cooked", "fresh" };
         public static List<string> PackDetails = new List<string> { "can", "package", "packages" };
 
@@ -115,6 +117,7 @@ namespace RestModel {
         public List<Product> TryMatchWholeProduct(string part1, string part2, string part3) {
             Expression<Func<Product, bool>> query = x =>
             (x.Name3.Equals(part1 + " " + part2) && x.Name2.Equals(part3)) ||
+            (x.Name3.Equals(part1) && x.Name1.Equals(part2 + " " + part3)) ||
               (x.FoodGroup.Equals(part1) && x.Name1.Equals(part2)) ||
               (x.Name3.Equals(part1) && x.Name1.Equals(part3)) ||
               (x.Name2.Equals(part2) && x.Name1.Equals(part3));

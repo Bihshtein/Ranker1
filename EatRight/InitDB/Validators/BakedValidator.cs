@@ -14,7 +14,7 @@ namespace InitDB {
 
             SecondParts = new List<string> {
                 "apple","banana cream","blueberry","cherry","cheese","banana",
-                "Dutch Apple","yeast",
+                "Dutch Apple","yeast","baking soda","baking powder",
                 "egg custard","peach","pecan","pumpkin","mince","pecan",
                 "egg","oat bran", "plain","rye","sweet","wheat","whole-wheat","french",
                 "hamburger or hot dog", "hamburger or hotdog","pumpernickel","dinner","corn",
@@ -31,7 +31,7 @@ namespace InitDB {
             ThirdParts = new List<string> {
                 "white","plain","whole grain","whole wheat","mixed-grain","mixed grain","dry mix",
                 "whole grain white","wheat bran","oat bran","oatmeal","cracked-wheat","active dry",
-                "compressed",
+                "compressed","double-acting",
                 "plain or buttermilk","multigrain","wheat germ","buckwheat","buttermilk"
             };
         }

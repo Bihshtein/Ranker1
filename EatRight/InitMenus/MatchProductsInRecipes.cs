@@ -51,6 +51,7 @@ namespace InitRecipes {
             if (parts.Length > 1) {
                 ++totalParsed;
                 var innerpart = parts[1].Split(',')[0].Trim();
+                innerpart.Replace("(optional)", "");
                 var res = Queries<Product>.GetMatchingProductsForIngredient(innerpart);
 
                 if (res == null || res.Count == 0) {
