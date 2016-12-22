@@ -23,12 +23,7 @@ namespace LogicRunner
 
 
             unit = new RestDBInterface();
-            try { 
-            MealsCSVReader.CreateFixedMealsList(unit);
-            }
-            catch  (Exception ex) {
-                MessageBox.Show(ex.Message);
-            }
+     
             var dv = unit.DailyValues.GetAllList();
 
             this.bindingSource1.DataSource = dv;
@@ -101,6 +96,15 @@ namespace LogicRunner
                 str += string.Format("{0}: weight = {1}, grade = {2}\n", x.Type.ToString(), x.Weight, x.Grade.ToString("N3"));
             }
             return str;
+        }
+
+        private void button2_Click(object sender, EventArgs e) {
+               try { 
+                MealsCSVReader.CreateFixedMealsList(unit);
+                }
+                catch  (Exception ex) {
+                    MessageBox.Show(ex.Message);
+                }
         }
     }
 }

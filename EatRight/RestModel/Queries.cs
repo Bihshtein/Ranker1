@@ -49,7 +49,7 @@ namespace RestModel {
             "head", "heads", "sliced", "stalk", "stalks", "diced", "minced", "chopped",
             "grated","mashed"};
         public static List<string> ServeDetails = new List<string> { "warm", "cooked", "fresh" };
-        public static List<string> PackDetails = new List<string> { "packed","can", "package", "packages" };
+        public static List<string> PackDetails = new List<string> { "packed", "package", "packages" };
 
         
 

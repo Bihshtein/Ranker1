@@ -51,6 +51,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
@@ -81,12 +82,12 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(12, 239);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(586, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(586, 328);
             this.dataGridView1.TabIndex = 2;
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(9, 431);
+            this.richTextBox1.Location = new System.Drawing.Point(2, 592);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(232, 138);
             this.richTextBox1.TabIndex = 4;
@@ -203,7 +204,7 @@
             // 
             // richTextBox2
             // 
-            this.richTextBox2.Location = new System.Drawing.Point(248, 431);
+            this.richTextBox2.Location = new System.Drawing.Point(241, 592);
             this.richTextBox2.Name = "richTextBox2";
             this.richTextBox2.Size = new System.Drawing.Size(167, 138);
             this.richTextBox2.TabIndex = 21;
@@ -211,7 +212,7 @@
             // 
             // richTextBox3
             // 
-            this.richTextBox3.Location = new System.Drawing.Point(423, 430);
+            this.richTextBox3.Location = new System.Drawing.Point(416, 591);
             this.richTextBox3.Name = "richTextBox3";
             this.richTextBox3.Size = new System.Drawing.Size(181, 138);
             this.richTextBox3.TabIndex = 22;
@@ -223,7 +224,7 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.label7.ForeColor = System.Drawing.Color.Yellow;
-            this.label7.Location = new System.Drawing.Point(72, 409);
+            this.label7.Location = new System.Drawing.Point(65, 570);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(72, 19);
             this.label7.TabIndex = 23;
@@ -235,7 +236,7 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.label8.ForeColor = System.Drawing.Color.Yellow;
-            this.label8.Location = new System.Drawing.Point(285, 409);
+            this.label8.Location = new System.Drawing.Point(278, 570);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(86, 19);
             this.label8.TabIndex = 24;
@@ -247,18 +248,31 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.label9.ForeColor = System.Drawing.Color.Yellow;
-            this.label9.Location = new System.Drawing.Point(445, 407);
+            this.label9.Location = new System.Drawing.Point(438, 568);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(131, 19);
             this.label9.TabIndex = 25;
             this.label9.Text = "Nutrients Sum:";
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Red;
+            this.button2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.button2.Location = new System.Drawing.Point(416, 163);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(162, 51);
+            this.button2.TabIndex = 26;
+            this.button2.Text = "מתכונים ידניים בלבד";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // LogicRunnerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::LogicRunner.Properties.Resources.liiiran;
-            this.ClientSize = new System.Drawing.Size(601, 579);
+            this.ClientSize = new System.Drawing.Size(603, 740);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -313,5 +327,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.BindingSource bindingSource1;
+        private System.Windows.Forms.Button button2;
     }
 }

@@ -172,10 +172,9 @@ namespace RestModel {
         public void Empty() {
             _collection.DeleteMany(_ => true);
         }
-        public void Update(Expression<Func<T, string>> queryExpression, string id, T entity) {
+        public void Update(Expression<Func<T, int>> queryExpression, int id, T entity) {
             var query = new FilterDefinitionBuilder<T>();
-
-            _collection.FindOneAndReplace(query.Eq(queryExpression, id), entity);
+            _collection.ReplaceOne(query.Eq(queryExpression, id), entity);
         }
     }
 }
