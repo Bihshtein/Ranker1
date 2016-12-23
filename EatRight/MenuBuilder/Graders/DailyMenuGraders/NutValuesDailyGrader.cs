@@ -9,7 +9,7 @@ namespace MenuBuilder.Graders.DailyMenuGraders
 {
     abstract class NutValuesDailyGrader : DailyMenuGrader
     {
-        private Dictionary<string, double> dailyValues;
+        private Dictionary<string, MinMaxDouble> dailyValues;
         protected bool IsMinGrader;
 
         public NutValuesDailyGrader()
@@ -25,8 +25,7 @@ namespace MenuBuilder.Graders.DailyMenuGraders
             }
             Description = "Nutrition values compared to the " + minMaxStr + " nutrition values";
 
-            // TODO: (Hen) Uri, convert your dictionary's double to MinMaxDouble and use the MinValue & MaxValue.
-            this.dailyValues = graderDB.dailyValues.ToDictionary(k => k.Key, k => k.Value.MinValue);
+            this.dailyValues = graderDB.dailyValues;
         }
 
         protected override double InternalGrade(DailyMenu dailyMenu)
@@ -35,7 +34,8 @@ namespace MenuBuilder.Graders.DailyMenuGraders
             return GradeByNutValues(dailyValues, nutValues, IsMinGrader);
         }
 
-        static public double GradeByNutValues(Dictionary<string, double> idealValues, Dictionary<string, double> actualValues, bool min)
+        static public double GradeByNutValues(Dictionary<string, MinMaxDouble> idealValues,
+            Dictionary<string, double> actualValues, bool min)
         {
             double grade = 0;
 
@@ -49,15 +49,14 @@ namespace MenuBuilder.Graders.DailyMenuGraders
                     actualValue = actualValues[nutrient];
                 }
 
-                var idealValue = entry.Value;
                 double basicRatio = 0;
                 if (min)
                 {
-                    basicRatio = actualValue / idealValue;
+                    basicRatio = actualValue / entry.Value.MinValue;
                 }
                 else
                 {
-                    basicRatio = idealValue / actualValue;
+                    basicRatio = entry.Value.MaxValue / actualValue;
                 }
                 var gradeRatio = GradeRatio(basicRatio);
 

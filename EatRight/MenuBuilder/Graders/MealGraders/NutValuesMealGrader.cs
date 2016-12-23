@@ -10,7 +10,7 @@ namespace MenuBuilder.Graders.MealGraders
 {
     abstract class NutValuesMealGrader : MealGrader
     {
-        private Dictionary<string, double> mealValues;
+        private Dictionary<string, MinMaxDouble> mealValues;
         protected bool IsMinGrader;
 
         static Dictionary<MealType, double> MealPrecentage = new Dictionary<MealType, double>()
@@ -34,19 +34,9 @@ namespace MenuBuilder.Graders.MealGraders
             Description = "Nutrition values compared to the " + minMaxStr + " nutrition values";
 
             double precentage = MealPrecentage[((MealSuggestionRange)Grader.graderDB.range).MealType];
-			// TODO: (Hen) Uri, convert your dictionary's double to MinMaxDouble and use the MinValue & MaxValue.
-            if (IsMinGrader)
-            {
-				this.mealValues =
-				Grader.graderDB.dailyValues.Select(x => new KeyValuePair<string, double>(x.Key, x.Value.MinValue * precentage)).
-				ToDictionary(x => x.Key, x => x.Value);
-            }
-            else
-            {
-                this.mealValues =
-                Grader.graderDB.dailyValues.Select(x => new KeyValuePair<string, double>(x.Key, x.Value.MaxValue * precentage)).
-                ToDictionary(x => x.Key, x => x.Value);
-            }
+            this.mealValues = Grader.graderDB.dailyValues.Select(x => new KeyValuePair<string, MinMaxDouble>
+                (x.Key, new MinMaxDouble(x.Value.MinValue * precentage, x.Value.MaxValue * precentage)))
+                .ToDictionary(x => x.Key, x => x.Value);
         }
 
         protected override double InternalGrade(MenuMeal menuMeal)

@@ -14,6 +14,53 @@ namespace Tests
     public class TestGraders
     {
         [TestMethod]
+        public void TestMaxNutValuesGrader()
+        {
+            var unit = new RestDBInterface();
+
+            var smallBreakfast = new Meal()
+            {
+                ID = 0,
+                Name = "Small breakfast",
+                ProductsWeight = new Dictionary<string, double>() { { "Carrot", 1 } },
+                Types = new HashSet<MealType>() { MealType.Breakfast }
+            };
+
+            var bigBreakfast = new Meal()
+            {
+                ID = 1,
+                Name = "Big breakfast",
+                ProductsWeight = new Dictionary<string, double>() { { "Carrot", 1000 } },
+                Types = new HashSet<MealType>() { MealType.Breakfast }
+            };
+
+            unit.Meals.Empty();
+            unit.Meals.Add(smallBreakfast);
+            unit.Meals.Add(bigBreakfast);
+
+            var userProfile = new UserProfile() { Age = 30, Gender = GenderType.Male };
+            var range = new MealSuggestionRange() { Length = 1, MealType = MealType.Breakfast };
+
+            var graderDB = GraderDBGenerator.FromUserProfile(userProfile, unit);
+            graderDB.range = range;
+            graderDB.GradersWeight = new Dictionary<GraderType, double>()
+                {
+                    {GraderType.MaxNutValuesMealGrader, 1}
+                };
+
+            var menuGen = new MenuGenerator(unit, graderDB);
+
+            var menuMeal = menuGen.GetMeal();
+
+            // Assertions
+
+            /*
+             * The big meal is clearly better. But since it passes the maximum value, the menuGen should prefer the small one.
+             */
+            Assert.IsTrue(menuMeal.Meal.ID == 0);
+        }
+
+        [TestMethod]
         public void TestPrepTimeMealGrader()
         {
             var unit = new RestDBInterface();
