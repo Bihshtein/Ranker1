@@ -17,7 +17,7 @@ using log4net;
 namespace InitRecipes {
     class Program {
       
-        public static int LoadMealsNum = 100;
+        public static int LoadMealsNum = 5;
 
         static void Main(string[] args) {
             ParseRecipes.PopulateMealsDB(LoadMealsNum); // index file has 20,000 meals, load the first 200

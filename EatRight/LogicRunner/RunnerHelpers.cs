@@ -9,9 +9,22 @@ namespace LogicRunner
 {
     class MyViewModel
     {
-        public int Id { get; set; }
+        public string Calories {
+           
+            get {
+                return _obj.CaloriesNum.ToString("N2");
+            }
+            
+        }
         public string Name { get; set; }
-        public double Grade { get; set; }
+        public string Grade {
+          
+            get {
+                return _obj.Grade.ToString("N2");
+            }
+            
+        }
+        public int Id { get; set; }
         public string NutValues { get; set; }
         public string GradersResult { get; set; }
         public string Products {
@@ -21,6 +34,9 @@ namespace LogicRunner
                 return res;
             }
             }
+
+
+
 
         private MenuMeal _obj;
 

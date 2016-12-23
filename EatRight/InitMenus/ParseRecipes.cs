@@ -57,6 +57,7 @@ namespace InitRecipes {
             }
             var nameParts = page.Split(new string[2] { "<title>", "</title>" }, StringSplitOptions.None);
             var mealParts = page.Split(new string[1] { "<span class=\"toggle-similar__title\" itemprop=\"title\">" }, StringSplitOptions.None);
+            var servingParts = page.Split(new string[1] { "<meta id=\"metaRecipeServings\" itemprop=\"recipeYield\" content=" }, StringSplitOptions.None); 
             if (mealParts.Length < 4) {
                 log.Error("Wrong meal parts count : " + mealParts.Length);
                 lock (Locker) {
@@ -65,6 +66,8 @@ namespace InitRecipes {
                 return;
             }
             var name = nameParts[1];
+            var servingStr = new String(servingParts[1].TakeWhile(a => a != '>').ToArray());
+            int servings = int.Parse(servingStr.Replace("\"", ""));
             //var mealType =new String(mealParts[3].TakeWhile(a => a != '<').ToArray()).Trim().ToLower();
 
             var ingredientParts = page.Split(new string[1] { "itemprop=\"ingredients\">" }, StringSplitOptions.None);
@@ -78,7 +81,14 @@ namespace InitRecipes {
                         ingredients.Add(igredient);
                 }
             }
-            unit.Meals.Add(new Meal() { ID = index, Name = name, Ingredients = ingredients, Types = new HashSet<MealType>() { MealType.Breakfast } });
+            unit.Meals.Add(new Meal() {
+                ID = index,
+                Name = name,
+                Ingredients = ingredients,
+                Types = new HashSet<MealType>() { MealType.Breakfast },
+                Servings = servings
+            });
+
             lock (Locker) {
                 log.Debug("Num " + index);
                 Indexes.Remove(index);

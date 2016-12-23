@@ -16,7 +16,6 @@ namespace InitRecipes {
 
         public static ILog log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
 
-
         public static Dictionary<string, double> MeasuresRelativeSizes = new Dictionary<string, double>() {
             // relative to the weight stated by the USDA for the product
             { "slice ",0.5 },
@@ -44,7 +43,7 @@ namespace InitRecipes {
             {"fluid ounce)",28.3 },
 
         };
-      
+
         public static int totalMissing = 0;
         public static int total = 0;
         public static int totalParsed = 0;
@@ -57,20 +56,18 @@ namespace InitRecipes {
             var foundProducts = new List<Product>();
             foreach (var meal in meals) {
                 if (meal.ProductsWeight != null)
-                meal.ProductsWeight.Clear();
+                    meal.ProductsWeight.Clear();
                 foreach (var item in meal.Ingredients) {
-                        ParseItem(meal,item.ToLower().Trim());
-                    }
+                    ParseItem(meal, item.ToLower().Trim());
+                }
                 unit.Meals.Update(s => s.ID, meal.ID, meal);
             }
-            
+
             Console.WriteLine("total meals : " + meals.Count);
             Console.WriteLine("total ingredients : " + total);
             Console.WriteLine("total ingredients parsed : " + totalParsed);
             Console.WriteLine("total ingredients missed : " + totalMissing);
         }
-
-
 
         public static void ParseItem(Meal meal, string item) {
             var actualWeight = 0.0;
@@ -78,17 +75,17 @@ namespace InitRecipes {
             var parts = item.Split(MeasuresWeights.Keys.ToArray(), StringSplitOptions.None);
             if (parts.Length > 1) {
                 var unit = item.Replace(parts[0], "").Replace(parts[1], "");
-                actualWeight = ParseFraction(parts[0]) * MeasuresWeights[unit];
+                actualWeight = ParseAmount(parts[0]) * MeasuresWeights[unit];
             }
             else {
                 parts = item.Split(MeasuresRelativeSizes.Keys.ToArray(), StringSplitOptions.None);
                 if (parts.Length > 1) {
                     var unit = item.Replace(parts[0], "").Replace(parts[1], "");
-                    relativeWeight = ParseFraction(parts[0]) * MeasuresRelativeSizes[unit];
+                    relativeWeight = ParseAmount(parts[0]) * MeasuresRelativeSizes[unit];
                 }
             }
 
-            ++total;            
+            ++total;
             if (parts.Length == 1)
                 parts = Regex.Split(item, @"\d");
             if (parts.Length > 1) {
@@ -109,18 +106,34 @@ namespace InitRecipes {
                         meal.ProductsWeight = new Dictionary<string, double>();
                     if (meal.ProductsWeight.ContainsKey(innerpart))
                         meal.ProductsWeight[innerpart] += actualWeight;
-                    else 
-                    meal.ProductsWeight.Add(innerpart, actualWeight);
+                    else
+                        meal.ProductsWeight.Add(innerpart, actualWeight);
                 }
             }
-      
         }
 
-        private static double ParseFraction(string fraction) {
+        private static double ParseAmount(string fraction) {
             fraction = fraction.Trim();
 
+            if (!fraction.Contains('('))
+                return GetFractionedNumber(fraction);
+            else {
+                var parts = fraction.Split('(');
+                var fractioned = GetFractionedNumber(parts[0]);
+                double relative;
+                if (parts[1].Contains('.'))
+                    relative = double.Parse("0" + parts[1]);
+                else
+                    relative = double.Parse(parts[1]);
+                return fractioned * relative;
+            }
+          
+        }
 
-            if (fraction.Contains('/')) {
+        private static double GetFractionedNumber(string fraction) {
+            if (!fraction.Contains('/'))
+                return double.Parse(fraction);
+            else {
                 var wholeAndFract = fraction.Split(' ');
                 var num = 0;
                 var fractIndex = 0;
@@ -132,21 +145,6 @@ namespace InitRecipes {
                 var fract = wholeAndFract[fractIndex].Split('/');
                 return num + (double.Parse(fract[0]) / double.Parse(fract[1]));
             }
-
-            else if (fraction.Contains('(')) {
-                var parts = fraction.Split('(');
-                var part1 = int.Parse(parts[0]);
-                double part2;
-                if (parts[1].Contains('.'))
-                    part2 = double.Parse("0" + parts[1]);
-                else
-                    part2 = double.Parse(parts[1]);
-                return part1 * part2;
-            }
-            else return int.Parse(fraction);
-           
-
         }
-
     }
 }

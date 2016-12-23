@@ -62,7 +62,7 @@ namespace LogicRunner
                 };
             MenuGenerator generator = new MenuGenerator(unit, graderDB);
             this.bindingSource2.DataSource = generator.GetMealsList().Select(o => new MyViewModel(o)
-            { Id = o.Meal.ID, Name = o.Meal.Name, Grade = o.Grade,
+            { Id = o.Meal.ID, Name = o.Meal.Name, 
                 NutValues = parseNutValues(o.NutValues), GradersResult = parseGradersResult(o.GradeInfo.GradersInfo) }).ToList();
             
             dataGridView1.DataSource = this.bindingSource2;

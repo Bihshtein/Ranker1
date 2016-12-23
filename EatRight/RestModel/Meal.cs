@@ -41,7 +41,8 @@ namespace RestModel  {
         public double PrepTime { get; set; } // In minutes
 
         private static RestDBInterface Unit = new RestDBInterface();
-
+        [BsonElement("Servings")]
+        public int Servings { get; set; } = 1;
 
         public override bool Equals(object obj)
         {
@@ -58,7 +59,7 @@ namespace RestModel  {
         public KeyValuePair<Product, double> GetProductWeight(string prodName)
         {
             var product = Queries<Product>.GetMatchingProductsForIngredient(prodName)[0];
-            return new KeyValuePair<Product, double>(product, ProductsWeight[prodName]);
+            return new KeyValuePair<Product, double>(product, ProductsWeight[prodName]/Servings);
         }
 
         public Boolean HasType(MealType type)
