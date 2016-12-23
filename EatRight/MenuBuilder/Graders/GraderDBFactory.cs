@@ -115,9 +115,9 @@ namespace MenuBuilder.Graders
             var gMap = new GradersMap();
             var gradersValues = new Dictionary<GraderType, double> {
                 { GraderType.CaloriesCountDailyGrader, 25},
-                { GraderType.NutValuesDailyGrader, 25},
+                { GraderType.MinNutValuesDailyGrader, 25},
                 { GraderType.CaloriesCountGrader, 25},
-                { GraderType.NutValuesGrader, 25} };
+                { GraderType.MinNutValuesGrader, 25} };
 
             gMap.gradersMap = gradersValues;
 

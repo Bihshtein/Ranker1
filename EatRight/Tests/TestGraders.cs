@@ -278,8 +278,8 @@ namespace Tests
             var males = unit.DailyValues.Queries.GetByGender(GenderType.Male);
 
             Dictionary<GraderType, double> graderWeights = new Dictionary<GraderType, double>() {
-                {GraderType.NutValuesGrader, 1},
-                {GraderType.NutValuesDailyGrader, 1}
+                {GraderType.MinNutValuesGrader, 1},
+                {GraderType.MinNutValuesDailyGrader, 1}
             };
 
             var babyMenu = GetMenu(2, GenderType.Any, graderWeights, unit);
@@ -322,7 +322,7 @@ namespace Tests
             var males = unit.DailyValues.Queries.GetByGender(GenderType.Male);
 
             Dictionary<GraderType, double> graderWeights = new Dictionary<GraderType, double>() {
-                {GraderType.NutValuesGrader, 1}
+                {GraderType.MinNutValuesGrader, 1}
             };
 
             var babyMeal = GetMeal(2, GenderType.Any, MealType.Breakfast, graderWeights, unit);

@@ -34,8 +34,10 @@ namespace MenuBuilder.Graders
                     return new CostGrader();
                 case GraderType.FoodCategoryGrader:
                     return new FoodCategoryGrader();
-                case GraderType.NutValuesGrader:
-                    return new NutValuesGrader();
+                case GraderType.MinNutValuesGrader:
+                    return new MinNutValuesGrader();
+                case GraderType.MaxNutValuesGrader:
+                    return new MaxNutValuesGrader();
                 case GraderType.ProductsTasteGrader:
                     return new ProductsTasteGrader();
                 case GraderType.VarietyGrader:
@@ -48,8 +50,10 @@ namespace MenuBuilder.Graders
                     return new CaloriesCountDailyGrader();
                 case GraderType.FoodCategoryDailyGrader:
                     return new FoodCategoryDailyGrader();
-                case GraderType.NutValuesDailyGrader:
-                    return new NutValuesDailyGrader();
+                case GraderType.MinNutValuesDailyGrader:
+                    return new MinNutValuesDailyGrader();
+                case GraderType.MaxNutValuesDailyGrader:
+                    return new MaxNutValuesDailyGrader();
                 case GraderType.ProductsTasteDailyGrader:
                     return new ProductsTasteDailyGrader();
                 case GraderType.VarietyDailyGrader:
@@ -60,8 +64,10 @@ namespace MenuBuilder.Graders
                 // Meal graders
                 case GraderType.CaloriesCountMealGrader:
                     return new CaloriesCountMealGrader();
-                case GraderType.NutValuesMealGrader:
-                    return new NutValuesMealGrader();
+                case GraderType.MinNutValuesMealGrader:
+                    return new MinNutValuesMealGrader();
+                case GraderType.MaxNutValuesMealGrader:
+                    return new MaxNutValuesMealGrader();
                 case GraderType.FoodCategoryMealGrader:
                     return new FoodCategoryMealGrader();
                 case GraderType.ProductsTasteMealGrader:
@@ -153,6 +159,7 @@ namespace MenuBuilder.Graders
     {
         // Information unique for user (by age, weight etc.)
         public Dictionary<string, double> dailyValues;
+        public Dictionary<string, double> dailyMaxValues;
         public int dailyCaloriesNum;
         public Dictionary<string, double> productFlavorGrade; // Maps a product to a double in the range [-1,1] where -1 means dislike and 1 means like
         public Dictionary<MealCategory, double> mealCategoryGrade; // Maps a meal category to a double in the range [-1,1] where -1 means dislike and 1 means like

@@ -7,14 +7,23 @@ using RestModel;
 
 namespace MenuBuilder.Graders.DailyMenuGraders
 {
-    class NutValuesDailyGrader : DailyMenuGrader
+    abstract class NutValuesDailyGrader : DailyMenuGrader
     {
         private Dictionary<string, double> dailyValues;
+        protected bool IsMinGrader;
 
         public NutValuesDailyGrader()
         {
-            Description = "Nutrition values compared to the ideal nutrition values";
-            Type = GraderType.NutValuesDailyGrader;
+            string minMaxStr = "";
+            if (IsMinGrader)
+            {
+                minMaxStr = "minimum";
+            }
+            else
+            {
+                minMaxStr = "maximum";
+            }
+            Description = "Nutrition values compared to the " + minMaxStr + " nutrition values";
 
             this.dailyValues = Grader.graderDB.dailyValues;
         }
@@ -22,10 +31,10 @@ namespace MenuBuilder.Graders.DailyMenuGraders
         protected override double InternalGrade(DailyMenu dailyMenu)
         {
             var nutValues = GetNutritionValues(dailyMenu);
-            return GradeByNutValues(dailyValues, nutValues);
+            return GradeByNutValues(dailyValues, nutValues, IsMinGrader);
         }
 
-        static public double GradeByNutValues(Dictionary<string, double> idealValues, Dictionary<string, double> actualValues)
+        static public double GradeByNutValues(Dictionary<string, double> idealValues, Dictionary<string, double> actualValues, bool min)
         {
             double grade = 0;
 
@@ -40,7 +49,15 @@ namespace MenuBuilder.Graders.DailyMenuGraders
                 }
 
                 var idealValue = entry.Value;
-                var basicRatio = actualValue / idealValue;
+                double basicRatio = 0;
+                if (min)
+                {
+                    basicRatio = actualValue / idealValue;
+                }
+                else
+                {
+                    basicRatio = idealValue / actualValue;
+                }
                 var gradeRatio = GradeRatio(basicRatio);
 
                 grade += gradeRatio;

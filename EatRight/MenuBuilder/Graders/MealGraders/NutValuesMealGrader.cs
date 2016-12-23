@@ -8,9 +8,10 @@ using MenuBuilder.Graders.DailyMenuGraders;
 
 namespace MenuBuilder.Graders.MealGraders
 {
-    class NutValuesMealGrader : MealGrader
+    abstract class NutValuesMealGrader : MealGrader
     {
-        private Dictionary<string, double> dailyValues;
+        private Dictionary<string, double> mealValues;
+        protected bool IsMinGrader;
 
         static Dictionary<MealType, double> MealPrecentage = new Dictionary<MealType, double>()
         {
@@ -21,18 +22,35 @@ namespace MenuBuilder.Graders.MealGraders
 
         public NutValuesMealGrader()
         {
-            Description = "Nutrition values compared to the ideal nutrition values";
-            Type = GraderType.NutValuesMealGrader;
+            string minMaxStr = "";
+            if (IsMinGrader)
+            {
+                minMaxStr = "minimum";
+            }
+            else
+            {
+                minMaxStr = "maximum";
+            }
+            Description = "Nutrition values compared to the " + minMaxStr + " nutrition values";
 
             double precentage = MealPrecentage[((MealSuggestionRange)Grader.graderDB.range).MealType];
-            this.dailyValues =
+            if (IsMinGrader)
+            {
+                this.mealValues =
                 Grader.graderDB.dailyValues.Select(x => new KeyValuePair<string, double>(x.Key, x.Value * precentage)).
                 ToDictionary(x => x.Key, x => x.Value);
+            }
+            else
+            {
+                this.mealValues =
+                Grader.graderDB.dailyMaxValues.Select(x => new KeyValuePair<string, double>(x.Key, x.Value * precentage)).
+                ToDictionary(x => x.Key, x => x.Value);
+            }
         }
 
         protected override double InternalGrade(MenuMeal menuMeal)
         {
-            return NutValuesDailyGrader.GradeByNutValues(dailyValues, menuMeal.NutValues);
+            return NutValuesDailyGrader.GradeByNutValues(mealValues, menuMeal.NutValues, IsMinGrader);
         }
     }
 }

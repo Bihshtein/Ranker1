@@ -17,7 +17,7 @@ namespace MenuBuilder.Graders.MealGraders
 
         protected override double InternalGrade(MenuMeal menuMeal)
         {
-            // For 0-100 minutes, the grade will be 100 minus the number of minuter. For more, the grade will be 0
+            // For 0-100 minutes, the grade will be 100 minus the number of minutes. For more, the grade will be 0
             return Math.Max((100.0 - menuMeal.Meal.PrepTime), 0.0) / 100.0;
         }
     }

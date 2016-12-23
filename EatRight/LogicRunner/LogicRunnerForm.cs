@@ -70,7 +70,7 @@ namespace LogicRunner
                {
                     // Meal graders
                     {GraderType.CaloriesCountMealGrader, int.Parse(comboBox3.SelectedItem.ToString())},
-                    {GraderType.NutValuesMealGrader,  int.Parse(comboBox6.SelectedItem.ToString())},
+                    {GraderType.MinNutValuesMealGrader,  int.Parse(comboBox6.SelectedItem.ToString())},
                     {GraderType.PrepTimeMealGrader, int.Parse(comboBox4.SelectedItem.ToString()) }
                 };
             MenuGenerator generator = new MenuGenerator(unit, graderDB);
