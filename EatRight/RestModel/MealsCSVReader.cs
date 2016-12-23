@@ -65,7 +65,7 @@ namespace RestModel
                         case "products":
                             for (int idx = 1; idx < tokens.Length; idx++)
                             {
-                                if (unit.Products.GetByName(tokens[idx]).Count == 0)
+                                if (Queries<Product>.GetMatchingProductsForIngredient(tokens[idx]).Count == 0)
                                 {
                                     throw new Exception("No such product: " + tokens[idx]);
                                 }

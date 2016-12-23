@@ -121,7 +121,7 @@ namespace Tests
 
             // Not random for now
             var graderDB = new GraderDB();
-            graderDB.dailyValues = RestRepository<Product>.DailyValues;
+            graderDB.dailyValues = RestRepository<Product>.DailyValues.ToDictionary(k => k.Key, k => new MinMaxDouble(k.Value));
             graderDB.dailyCaloriesNum = 3000;
             graderDB.range = new MenuSuggestionRange() { Length = rand.Next(1, 7) };
             graderDB.productFlavorGrade = new Dictionary<string,double>() {

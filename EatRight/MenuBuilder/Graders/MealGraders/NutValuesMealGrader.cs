@@ -34,16 +34,17 @@ namespace MenuBuilder.Graders.MealGraders
             Description = "Nutrition values compared to the " + minMaxStr + " nutrition values";
 
             double precentage = MealPrecentage[((MealSuggestionRange)Grader.graderDB.range).MealType];
+			// TODO: (Hen) Uri, convert your dictionary's double to MinMaxDouble and use the MinValue & MaxValue.
             if (IsMinGrader)
             {
-                this.mealValues =
-                Grader.graderDB.dailyValues.Select(x => new KeyValuePair<string, double>(x.Key, x.Value * precentage)).
-                ToDictionary(x => x.Key, x => x.Value);
+				this.mealValues =
+				Grader.graderDB.dailyValues.Select(x => new KeyValuePair<string, double>(x.Key, x.Value.MinValue * precentage)).
+				ToDictionary(x => x.Key, x => x.Value);
             }
             else
             {
                 this.mealValues =
-                Grader.graderDB.dailyMaxValues.Select(x => new KeyValuePair<string, double>(x.Key, x.Value * precentage)).
+                Grader.graderDB.dailyValues.Select(x => new KeyValuePair<string, double>(x.Key, x.Value.MaxValue * precentage)).
                 ToDictionary(x => x.Key, x => x.Value);
             }
         }

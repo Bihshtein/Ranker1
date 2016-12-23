@@ -53,7 +53,7 @@ namespace Students.Services {
             dbLayer.Products.Add(student);
         }
         public void Update(Product student) {
-            dbLayer.Products.Update(s => s.Name1, student.Name1, student);
+            dbLayer.Products.Update(s => s.ID, student.ID, student);
         }
     }
 }

@@ -23,7 +23,7 @@ namespace InitRecipes {
         public static void PopulateMealsDB(int mealsNum) {
             var loadMealsBulkSize = mealsNum > 1000 ? 1000 : mealsNum;
             var unit = new RestDBInterface();
-            if (((unit.Meals.GetAll().Count() / (double)mealsNum) > 0.97) && ((unit.Meals.GetAll().Count() / (double)mealsNum) < 1.0))
+            if (((unit.Meals.GetAll().Count() / (double)mealsNum) > 0.97) && ((unit.Meals.GetAll().Count() / (double)mealsNum) <= 1.0))
                 return;
             else
                 unit.Meals.Empty();
@@ -65,7 +65,7 @@ namespace InitRecipes {
                 return;
             }
             var name = nameParts[1];
-            var mealType = new String(mealParts[3].TakeWhile(a => a != '<').ToArray()).Trim().ToLower();
+            //var mealType =new String(mealParts[3].TakeWhile(a => a != '<').ToArray()).Trim().ToLower();
 
             var ingredientParts = page.Split(new string[1] { "itemprop=\"ingredients\">" }, StringSplitOptions.None);
             var ingredients = new List<string>();
@@ -78,7 +78,7 @@ namespace InitRecipes {
                         ingredients.Add(igredient);
                 }
             }
-            unit.Meals.Add(new Meal() { ID = index, Name = name, Ingredients = ingredients, MealType = mealType });
+            unit.Meals.Add(new Meal() { ID = index, Name = name, Ingredients = ingredients, Types = new HashSet<MealType>() { MealType.Breakfast } });
             lock (Locker) {
                 log.Debug("Num " + index);
                 Indexes.Remove(index);

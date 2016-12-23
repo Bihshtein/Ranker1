@@ -10,6 +10,7 @@ using System.Linq.Expressions;
 namespace RestModel {
     public class Queries<T> {
         public IMongoCollection<T> collection { get; private set; }
+        public static RestDBInterface unit = new RestDBInterface();
         public Queries(IMongoCollection<T> collection) {
             this.collection = collection;
         }
@@ -35,6 +36,47 @@ namespace RestModel {
             newRes.Sort((a, b) => a.Nutrients()[value] > b.Nutrients()[value] ? 1 : -1);
             return newRes;
         }
+        public static Dictionary<string, string> RecipeToNutrientDictionary = new Dictionary<string, string> {
+            { "white sugar","granulated sugar"},
+            { "bread flour","bread wheat flour"},
+            { "all-purpose flour","all-purpose wheat flour"},
+            { "whole wheat flour","whole-grain wheat flour"},
+            { "kosher salt","table salt"},
+            { "dry milk powder","dry milk"},
+        };
+        public static List<string> CutDetails = new List<string> {
+            "melted","sifted", "sprig", "sprigs", "ground", "shredded", "cubed",
+            "head", "heads", "sliced", "stalk", "stalks", "diced", "minced", "chopped",
+            "grated","mashed"};
+        public static List<string> ServeDetails = new List<string> { "warm", "cooked", "fresh" };
+        public static List<string> PackDetails = new List<string> { "packed", "package", "packages" };
+
+        
+
+        public static List<Product> GetMatchingProductsForIngredient(string ingredient) {
+            ingredient = ingredient.ToLower();
+            CutDetails.ForEach(item => ingredient = ingredient.Replace(item + " ", ""));
+            ServeDetails.ForEach(item => ingredient = ingredient.Replace(item + " ", ""));
+            PackDetails.ForEach(item => ingredient = ingredient.Replace(item + " ", ""));
+            ingredient = ingredient.Trim();
+            if (RecipeToNutrientDictionary.ContainsKey(ingredient))
+                ingredient = RecipeToNutrientDictionary[ingredient];
+            var innerSplit = ingredient.Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries);
+
+            List<Product> res = null;
+            if (innerSplit.Length == 1)
+                res = unit.Products.Queries.TryMatchWholeProduct(innerSplit[0]);
+            else if (innerSplit.Length == 2)
+                res = unit.Products.Queries.TryMatchWholeProduct(innerSplit[0], innerSplit[1]);
+            else if (innerSplit.Length == 3)
+                res = unit.Products.Queries.TryMatchWholeProduct(innerSplit[0], innerSplit[1], innerSplit[2]);
+           
+            if (res == null || res.Count == 0)// special long ass names (manual recipe init from file)
+                res = unit.Products.Queries.TryMatchWholeProduct(ingredient);
+            return res;
+        }
+
+
 
         public List<DailyValue> GetByGender(GenderType gender) {
 
@@ -58,6 +100,9 @@ namespace RestModel {
         public List<Product> TryMatchWholeProduct(string part1, string part2, string part3) {
             Expression<Func<Product, bool>> query = x =>
             (x.Name3.Equals(part1 + " " + part2) && x.Name2.Equals(part3)) ||
+            (x.HealthData.Equals(part1)&& x.Name1.Equals(part2) && x.StorageMethod.Equals("dry " +part3)) ||
+            (x.Name3.Equals(part1) && x.Name1.Equals(part2 + " " + part3)) ||
+            (x.Name2.Equals(part1) && x.Name1.Equals(part2 + " " + part3)) ||
               (x.FoodGroup.Equals(part1) && x.Name1.Equals(part2)) ||
               (x.Name3.Equals(part1) && x.Name1.Equals(part3)) ||
               (x.Name2.Equals(part2) && x.Name1.Equals(part3));

@@ -57,7 +57,7 @@ namespace RestModel  {
 
         public KeyValuePair<Product, double> GetProductWeight(string prodName)
         {
-            var product = Unit.Products.GetByName(prodName)[0];
+            var product = Queries<Product>.GetMatchingProductsForIngredient(prodName)[0];
             return new KeyValuePair<Product, double>(product, ProductsWeight[prodName]);
         }
 
