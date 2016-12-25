@@ -21,6 +21,7 @@ namespace RestModel
         ProductsTasteGrader,
         VarietyGrader,
         PrepTimeGrader,
+        ServingsNumGrader,
 
         GraderMenuEnd,
 
@@ -33,6 +34,7 @@ namespace RestModel
         ProductsTasteDailyGrader,
         VarietyDailyGrader,
         PrepTimeDailyGrader,
+        ServingsNumDailyGrader,
 
         DailyMenuGraderEnd,
 
@@ -44,6 +46,7 @@ namespace RestModel
         FoodCategoryMealGrader,
         ProductsTasteMealGrader,
         PrepTimeMealGrader,
+        ServingsNumMealGrader,
 
         MealGraderEnd
     }

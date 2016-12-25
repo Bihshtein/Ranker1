@@ -44,6 +44,8 @@ namespace MenuBuilder.Graders
                     return new VarietyGrader();
                 case GraderType.PrepTimeGrader:
                     return new PrepTimeGrader();
+                case GraderType.ServingsNumGrader:
+                    return new ServingsNumGrader();
 
                 // DailyMenu graders
                 case GraderType.CaloriesCountDailyGrader:
@@ -60,6 +62,8 @@ namespace MenuBuilder.Graders
                     return new VarietyDailyGrader();
                 case GraderType.PrepTimeDailyGrader:
                     return new PrepTimeDailyGrader();
+                case GraderType.ServingsNumDailyGrader:
+                    return new ServingsNumDailyGrader();
 
                 // Meal graders
                 case GraderType.CaloriesCountMealGrader:
@@ -74,6 +78,8 @@ namespace MenuBuilder.Graders
                     return new ProductsTasteMealGrader();
                 case GraderType.PrepTimeMealGrader:
                     return new PrepTimeMealGrader();
+                case GraderType.ServingsNumMealGrader:
+                    return new ServingsNumMealGrader();
 
                 default:
                     // TODO: better handle errors
@@ -87,6 +93,7 @@ namespace MenuBuilder.Graders
     public abstract class SuggestionRange
     {
         public int Length { get; set; }
+        public int ServingsNum { get; set; } = 1;
 
         public virtual bool IsMenuSuggestionRange() { return false; }
         public virtual bool IsMealSuggestionRange() { return false; }
@@ -164,6 +171,7 @@ namespace MenuBuilder.Graders
         public Dictionary<MealCategory, double> mealCategoryGrade; // Maps a meal category to a double in the range [-1,1] where -1 means dislike and 1 means like
         public HashSet<string> forbiddenProducts; // All products that the user will never eat
         public Dictionary<GraderType, double> GradersWeight; // Maps grader type to the weight that this grader will have
+        public int idealServingsNum;
 
         // Information chosen by the user
         public SuggestionRange range; // How many days/meals will the menu contain

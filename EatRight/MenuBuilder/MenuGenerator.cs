@@ -453,28 +453,31 @@ namespace MenuBuilder
                 Grader.graderDB.GradersWeight = new Dictionary<GraderType, double>()
                 {
                     // Menu graders
-                    {GraderType.MinNutValuesGrader, 0.275},
-                    {GraderType.CaloriesCountGrader, 0.275},
-                    {GraderType.VarietyGrader, 0.23},
+                    {GraderType.MinNutValuesGrader, 0.25},
+                    {GraderType.CaloriesCountGrader, 0.25},
+                    {GraderType.VarietyGrader, 0.19},
                     {GraderType.ProductsTasteGrader, 0.05},
                     {GraderType.FoodCategoryGrader, 0.02},
                     {GraderType.PrepTimeGrader, 0.05},
                     {GraderType.MaxNutValuesGrader, 0.1},
+                    {GraderType.ServingsNumGrader, 0.19},
                     {GraderType.CostGrader, 0}, // Currently zero as this is not fully implemented- need to add cost per product
 
                     // DailyMenu graders
-                    {GraderType.MinNutValuesDailyGrader, 0.275},
-                    {GraderType.CaloriesCountDailyGrader, 0.275},
-                    {GraderType.VarietyDailyGrader, 0.23},
+                    {GraderType.MinNutValuesDailyGrader, 0.25},
+                    {GraderType.CaloriesCountDailyGrader, 0.25},
+                    {GraderType.VarietyDailyGrader, 0.19},
                     {GraderType.ProductsTasteDailyGrader, 0.05},
                     {GraderType.FoodCategoryDailyGrader, 0.02},
                     {GraderType.PrepTimeDailyGrader, 0.05},
                     {GraderType.MaxNutValuesDailyGrader, 0.1},
+                    {GraderType.ServingsNumDailyGrader, 0.19},
 
                     // Meal graders
-                    {GraderType.ProductsTasteMealGrader, 0.4},
-                    {GraderType.FoodCategoryMealGrader, 0.2},
-                    {GraderType.PrepTimeMealGrader, 0.4}
+                    {GraderType.ProductsTasteMealGrader, 0.3},
+                    {GraderType.FoodCategoryMealGrader, 0.1},
+                    {GraderType.PrepTimeMealGrader, 0.3},
+                    {GraderType.ServingsNumMealGrader, 0.3}
                 };
             }
             else if (InMealMode())
@@ -482,12 +485,13 @@ namespace MenuBuilder
                 Grader.graderDB.GradersWeight = new Dictionary<GraderType, double>()
                 {
                     // Meal graders
-                    {GraderType.CaloriesCountMealGrader, 0.35},
-                    {GraderType.MinNutValuesMealGrader, 0.35},
+                    {GraderType.CaloriesCountMealGrader, 0.3},
+                    {GraderType.MinNutValuesMealGrader, 0.3},
                     {GraderType.MaxNutValuesMealGrader, 0.1},
                     {GraderType.ProductsTasteMealGrader, 0.08},
                     {GraderType.FoodCategoryMealGrader, 0.04},
-                    {GraderType.PrepTimeMealGrader, 0.08}
+                    {GraderType.PrepTimeMealGrader, 0.08},
+                    {GraderType.ServingsNumMealGrader, 0.2}
                 };
             }
         }
