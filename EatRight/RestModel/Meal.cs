@@ -15,6 +15,11 @@ namespace RestModel  {
         Dinner
     }
 
+    public enum FoodType {
+       Meat,
+       VegAndFruit,
+    }
+
     public enum MealCategory
     {
         Indian,

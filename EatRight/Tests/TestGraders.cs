@@ -173,7 +173,7 @@ namespace Tests
             var smallLunch = new Meal() {
                 ID = 2,
                 Name = "Small lunch",
-                ProductsWeight = new Dictionary<string, double>() { { "Tomatoes", 1 } },
+                ProductsWeight = new Dictionary<string, double>() { { "Tomato", 1 } },
                 Types = new HashSet<MealType>() { MealType.Lunch } };
             var bigLunch = new Meal() {
                 ID = 3,
@@ -248,7 +248,7 @@ namespace Tests
                 ProductsWeight = new Dictionary<string, double>()
                 {
                     { "Carrot", 20 },
-                    { "Tomatoes", 20 }
+                    { "Tomato", 20 }
                 },
                 Types = new HashSet<MealType>() { MealType.Breakfast }
             };
@@ -279,7 +279,7 @@ namespace Tests
                 ProductsWeight = new Dictionary<string, double>()
             {
                 { "Carrot", 20},
-                { "Tomatoes", 23}
+                { "Tomato", 23}
             },
                 Types = new HashSet<MealType>() { MealType.Breakfast, MealType.Dinner }
             };
@@ -299,7 +299,7 @@ namespace Tests
                 Name = "Sample dinner 1",
                 ProductsWeight = new Dictionary<string, double>()
             {
-                { "Tomatoes", 10},
+                { "Tomato", 10},
                 { "Lettuce", 10}
             },
                 Types = new HashSet<MealType>() { MealType.Dinner, MealType.Breakfast }
@@ -511,7 +511,7 @@ namespace Tests
                 ProductsWeight = new Dictionary<string, double>()
                 {                   
                     { "Carrot", 200},
-                    { "Tomatoes", 123},
+                    { "Tomato", 123},
                     { "Avocados", 50},
                     { "bacon", 50},
                     { "Tuna", 200},
@@ -541,7 +541,7 @@ namespace Tests
             {
                 indianGraderDB.productFlavorGrade = new Dictionary<string, double>()
                 {
-                    { "Tomatoes", -1},
+                    { "Tomato", -1},
                     { "Avocados", -1},
                     { "bacon", -1},
                     { "Tuna", -1},

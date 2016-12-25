@@ -57,7 +57,7 @@ namespace MenuBuilder
                 ProductsWeight = new Dictionary<string, double>()
             {
                 { "Carrot", 200},
-                { "Tomatoes", 123},
+                { "Tomato", 123},
                 { "Avocados", 50},
                 { "bacon", 50},
                 { "Tuna", 200},
@@ -88,7 +88,7 @@ namespace MenuBuilder
             {
                 {"loin", 100 },
                 { "Cabbage", 100},
-                { "Tomatoes", 100},
+                { "Tomato", 100},
                 { "Lettuce", 100},
                 { "Garlic", 50},
                 { "Egg", 200},

@@ -43,17 +43,23 @@ namespace RestModel {
             { "whole wheat flour","whole-grain wheat flour"},
             { "kosher salt","table salt"},
             { "dry milk powder","dry milk"},
+            { "skinless chicken thighs","meat only chicken thighs"},
+            { "marsala wine","sweet wine"},
+            { "port wine","sweet wine"},
         };
         public static List<string> CutDetails = new List<string> {
             "melted","sifted", "sprig", "sprigs", "ground", "shredded", "cubed",
             "head", "heads", "sliced", "stalk", "stalks", "diced", "minced", "chopped",
-            "grated","mashed"};
+            "grated","mashed","crushed"};
         public static List<string> ServeDetails = new List<string> { "warm", "cooked", "fresh" };
         public static List<string> PackDetails = new List<string> { "packed", "package", "packages" };
 
         
 
         public static List<Product> GetMatchingProductsForIngredient(string ingredient) {
+            var  res = unit.Products.Queries.TryMatchWholeProduct(ingredient);
+            if (res != null && res.Count> 0)
+                return res;
             ingredient = ingredient.ToLower();
             CutDetails.ForEach(item => ingredient = ingredient.Replace(item + " ", ""));
             ServeDetails.ForEach(item => ingredient = ingredient.Replace(item + " ", ""));
@@ -63,20 +69,19 @@ namespace RestModel {
                 ingredient = RecipeToNutrientDictionary[ingredient];
             var innerSplit = ingredient.Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries);
 
-            List<Product> res = null;
             if (innerSplit.Length == 1)
                 res = unit.Products.Queries.TryMatchWholeProduct(innerSplit[0]);
             else if (innerSplit.Length == 2)
                 res = unit.Products.Queries.TryMatchWholeProduct(innerSplit[0], innerSplit[1]);
             else if (innerSplit.Length == 3)
                 res = unit.Products.Queries.TryMatchWholeProduct(innerSplit[0], innerSplit[1], innerSplit[2]);
-           
+            else if (innerSplit.Length == 4)
+                res = unit.Products.Queries.TryMatchWholeProduct(innerSplit[0], innerSplit[1], innerSplit[2], innerSplit[3]);
+
             if (res == null || res.Count == 0)// special long ass names (manual recipe init from file)
                 res = unit.Products.Queries.TryMatchWholeProduct(ingredient);
             return res;
         }
-
-
 
         public List<DailyValue> GetByGender(GenderType gender) {
 
@@ -104,6 +109,7 @@ namespace RestModel {
             (x.Name3.Equals(part1) && x.Name1.Equals(part2 + " " + part3)) ||
             (x.Name2.Equals(part1) && x.Name1.Equals(part2 + " " + part3)) ||
               (x.FoodGroup.Equals(part1) && x.Name1.Equals(part2)) ||
+              (x.FoodGroup.Equals(part1) && x.Name2.Equals(part2)) && x.Name3.Equals(part3) ||
               (x.Name3.Equals(part1) && x.Name1.Equals(part3)) ||
               (x.Name2.Equals(part2) && x.Name1.Equals(part3));
             var res = collection.Find(query as Expression<Func<T, bool>>).ToList();
@@ -111,6 +117,19 @@ namespace RestModel {
             return newRes;
 
         }
+
+        public List<Product> TryMatchWholeProduct(string part1, string part2, string part3, string part4) {
+            Expression<Func<Product, bool>> query = x =>
+            (x.PeelDetails.Equals(part1 + " " + part2) && x.FoodGroup.Equals(part3) && x.Name2.Equals(part4)) ||
+            (x.BoneDetails.Equals(part1) && x.FoodGroup.Equals(part2) && x.Name1.Equals(part3) && x.Name3.Equals(part4)) ||
+            (x.PeelDetails.Equals(part1 + " " + part2) && x.FoodGroup.Equals(part3) && (part4[part4.Length-1]=='s' && x.Name2.Equals(part4.Remove(part4.Length - 1))));
+            var res = collection.Find(query as Expression<Func<T, bool>>).ToList();
+            var newRes = res.Cast<Product>().ToList();
+            return newRes;
+
+        }
+
+
         public List<Product> TryMatchWholeProduct(string part1, string part2) {
             Expression<Func<Product, bool>> query = x =>
             (x.Name1.Equals(part1 + " " + part2)) ||

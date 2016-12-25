@@ -20,15 +20,15 @@ namespace InitRecipes {
 
       
 
-        public static void PopulateMealsDB(int mealsNum) {
-            var loadMealsBulkSize = mealsNum > 1000 ? 1000 : mealsNum;
+        public static void PopulateMealsDB() {
+            Indexes = File.ReadAllLines(FolderPath + "recipes_num.txt").ToList().ConvertAll<int>((a => int.Parse(a)));
+
+            var loadMealsBulkSize = Indexes.Count > 1000 ? 1000 : Indexes.Count;
             var unit = new RestDBInterface();
-            if (((unit.Meals.GetAll().Count() / (double)mealsNum) > 0.97) && ((unit.Meals.GetAll().Count() / (double)mealsNum) <= 1.0))
+            if (unit.Meals.GetAll().Count() == Indexes.Count)
                 return;
             else
                 unit.Meals.Empty();
-            Indexes = File.ReadAllLines(FolderPath + "recipes_num.txt").ToList().ConvertAll<int>((a => int.Parse(a)));
-            Indexes = Indexes.Take(mealsNum).ToList();
 
             while (Indexes.Count > 0) {
                 CurrIndex = 0;

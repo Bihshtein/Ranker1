@@ -9,7 +9,7 @@ namespace InitDB.Validators {
         public VegsValidator() {
             SecondParts = new List<string>() {
                 "summer", "winter", "sweet","hash brown","brown", "green", "yellow", "white","orange","red", "tahitian",
-                "hungarian","scotch","chinese", "japanese style", "swiss", "italian, or crimini",
+                "hungarian","scotch","chinese", "japanese style", "swiss", "italian, or crimini","paste",
                 "italian","fordhook","hawaii","hawaiian style","scallop","crookneck and straightneck",
                 "all varieties", "zucchini","acorn","au gratin","cucumber", "chowchow","hamburger","hot dog",
                 "serrano", "pasilla","jalapeno","hot pickled","hot-chile", "year round average", "butternut", "hubbard",
@@ -36,6 +36,12 @@ namespace InitDB.Validators {
                 "whole kernel", "in pod","immature seeds","shoots", "mature seeds","leaves",
                 "leafy tips", "pods", "young pods with seed"
             };
+        }
+
+        public override string GetPrettyName(string part) {
+            if (part.ToLower().Contains("tomato"))
+                return "tomato";
+            return part;
         }
 
     }

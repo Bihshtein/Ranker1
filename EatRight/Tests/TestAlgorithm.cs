@@ -24,7 +24,7 @@ namespace Tests
                 Name = "Good breakfast",
                 ProductsWeight = new Dictionary<string, double>(){
                     { "Carrot", 200},
-                    { "Tomatoes", 123},
+                    { "Tomato", 123},
                     { "Avocados", 50},
                     { "bacon", 50},
                     { "Tuna", 200},
@@ -58,7 +58,7 @@ namespace Tests
             var graderDBWithTomatoes = GraderDBGenerator.FromUserProfile(userProfile, unit);
             graderDBWithTomatoes.range = range;
 
-            graderDBWithoutTomatoes.forbiddenProducts = new HashSet<string>() { "Tomatoes" };
+            graderDBWithoutTomatoes.forbiddenProducts = new HashSet<string>() { "Tomato" };
 
             graderDBWithoutTomatoes.GradersWeight = null;
             graderDBWithTomatoes.GradersWeight = null;

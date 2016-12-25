@@ -28,5 +28,6 @@ namespace Tests
             Assert.IsNotNull(meal.Meal);
             Assert.IsTrue(meal.Grade > 0);
         }
+       
     }
 }
