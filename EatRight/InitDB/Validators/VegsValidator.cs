@@ -39,7 +39,7 @@ namespace InitDB.Validators {
         }
 
         public override string GetPrettyName(string part) {
-            if (part.ToLower().Contains("tomato"))
+            if (part.ToLower() !="tomato sauce" && part.ToLower().Contains("tomato"))
                 return "tomato";
             return part;
         }

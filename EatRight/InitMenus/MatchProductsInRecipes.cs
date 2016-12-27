@@ -72,7 +72,15 @@ namespace InitRecipes {
             Console.WriteLine("total ingredients missed : " + totalMissing);
         }
 
+        public static Dictionary<string, string> SimpleNames = new Dictionary<string, string>() {
+               { "skinless, boneless chicken breast halves","chicken breast"},
+        };
+
         public static void ParseItem(Meal meal, string item) {
+            SimpleNames.Keys.ToList().ForEach(key => {
+                if (item.Contains(key))
+                    item = item.Replace(key, SimpleNames[key]);
+            });
             var actualWeight = 0.0;
             var relativeWeight = 0.0;
             var innerpart = "";
@@ -97,12 +105,7 @@ namespace InitRecipes {
                 if (parts.Length > 1) {
                     var unit = item.Replace(parts[0], "").Replace(parts[1], "");
                     if (MeasuresRelativeSizes.ContainsKey(unit)) {
-                        try{
                             relativeWeight = ParseAmount(parts[0]) * MeasuresRelativeSizes[unit];
-                        }
-                        catch(Exception ex) {
-                            log.Error("Failed to parse relative weight for item : " + item, ex);
-                        }
                         innerpart = parts[1];
                     }
                     else

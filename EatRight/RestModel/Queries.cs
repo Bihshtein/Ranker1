@@ -46,15 +46,18 @@ namespace RestModel {
             { "skinless chicken thighs","meat only chicken thighs"},
             { "marsala wine","sweet wine"},
             { "port wine","sweet wine"},
+            { "white vinegar","distilled vinegar"},
+            { "ketchup","catsup"},
         };
         public static List<string> CutDetails = new List<string> {
             "melted","sifted", "sprig", "sprigs", "ground", "shredded", "cubed",
             "head", "heads", "sliced", "stalk", "stalks", "diced", "minced", "chopped",
             "grated","mashed","crushed"};
-        public static List<string> ServeDetails = new List<string> { "warm", "cooked", "fresh" };
-        public static List<string> PackDetails = new List<string> { "packed", "package", "packages" };
+        public static List<string> ServeDetails = new List<string> { "cold","warm",  "fresh" };
+        public static List<string> PackDetails = new List<string> {"for frying","prepared", "packed", "package", "packages" };
+        public static List<string> NeedlesInfo = new List<string> {"panko " ,"for frying" };
 
-        
+
 
         public static List<Product> GetMatchingProductsForIngredient(string ingredient) {
             var  res = unit.Products.Queries.TryMatchWholeProduct(ingredient);
@@ -63,7 +66,8 @@ namespace RestModel {
             ingredient = ingredient.ToLower();
             CutDetails.ForEach(item => ingredient = ingredient.Replace(item + " ", ""));
             ServeDetails.ForEach(item => ingredient = ingredient.Replace(item + " ", ""));
-            PackDetails.ForEach(item => ingredient = ingredient.Replace(item + " ", ""));
+            PackDetails.ForEach(item => ingredient = ingredient.Replace(item+ " ", ""));
+            NeedlesInfo.ForEach(item => ingredient = ingredient.Replace(item, ""));
             ingredient = ingredient.Trim();
             if (RecipeToNutrientDictionary.ContainsKey(ingredient))
                 ingredient = RecipeToNutrientDictionary[ingredient];
@@ -106,12 +110,13 @@ namespace RestModel {
             Expression<Func<Product, bool>> query = x =>
             (x.Name3.Equals(part1 + " " + part2) && x.Name2.Equals(part3)) ||
             (x.HealthData.Equals(part1)&& x.Name1.Equals(part2) && x.StorageMethod.Equals("dry " +part3)) ||
+            (x.PreparationMethod.Equals(part1) && x.Name2.Equals(part2) && x.Name1.Equals(part3)) ||
             (x.Name3.Equals(part1) && x.Name1.Equals(part2 + " " + part3)) ||
             (x.Name2.Equals(part1) && x.Name1.Equals(part2 + " " + part3)) ||
-              (x.FoodGroup.Equals(part1) && x.Name1.Equals(part2)) ||
-              (x.FoodGroup.Equals(part1) && x.Name2.Equals(part2)) && x.Name3.Equals(part3) ||
-              (x.Name3.Equals(part1) && x.Name1.Equals(part3)) ||
-              (x.Name2.Equals(part2) && x.Name1.Equals(part3));
+            (x.FoodGroup.Equals(part1) && x.Name1.Equals(part2)) ||
+            (x.FoodGroup.Equals(part1) && x.Name2.Equals(part2)) && x.Name3.Equals(part3) ||
+            (x.Name3.Equals(part1) && x.Name1.Equals(part3)) ||
+            (x.Name2.Equals(part2) && x.Name1.Equals(part3));
             var res = collection.Find(query as Expression<Func<T, bool>>).ToList();
             var newRes = res.Cast<Product>().ToList();
             return newRes;
