@@ -5,8 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using RestModel;
-using MenuBuilder;
-using MenuBuilder.Graders;
+using RecommendationBuilder;
+using RecommendationBuilder.Graders;
 using Logic;
 
 namespace Tests
@@ -48,25 +48,25 @@ namespace Tests
             var range = new MenuSuggestionRange()
                 { Length = 1, MealsInDailyMenu = new List<MealType>() { MealType.Breakfast } };
 
-            /* We create 2 graderDB's: one that allows tomatoes, and the other one forbids it.
+            /* We create 2 recommendationDB's: one that allows tomatoes, and the other one forbids it.
              * It's obvious that without any restriction, the good breakfast is better than the bad breakfast.
              * We'll make sure that the good breakfast is winning, but when not allowing tomatoes-
              * the bad one wins.
              */
-            var graderDBWithoutTomatoes = GraderDBGenerator.FromUserProfile(userProfile, unit);
-            graderDBWithoutTomatoes.range = range;
-            var graderDBWithTomatoes = GraderDBGenerator.FromUserProfile(userProfile, unit);
-            graderDBWithTomatoes.range = range;
+            var recommendationDBWithoutTomatoes = RecommendationDBGenerator.FromUserProfile(userProfile, unit);
+            recommendationDBWithoutTomatoes.range = range;
+            var recommendationDBWithTomatoes = RecommendationDBGenerator.FromUserProfile(userProfile, unit);
+            recommendationDBWithTomatoes.range = range;
 
-            graderDBWithoutTomatoes.forbiddenProducts = new HashSet<string>() { "Tomato" };
+            recommendationDBWithoutTomatoes.forbiddenProducts = new HashSet<string>() { "Tomato" };
 
-            graderDBWithoutTomatoes.GradersWeight = null;
-            graderDBWithTomatoes.GradersWeight = null;
+            recommendationDBWithoutTomatoes.GradersWeight = null;
+            recommendationDBWithTomatoes.GradersWeight = null;
 
-            var menuGeneratorWOT = new MenuGenerator(unit, graderDBWithoutTomatoes);
-            var menuGeneratorWT = new MenuGenerator(unit, graderDBWithTomatoes);
-            var menuWOT = menuGeneratorWOT.GetMenu();
-            var menuWT = menuGeneratorWT.GetMenu();
+            var recommendationGeneratorWOT = new RecommendationGenerator(unit, recommendationDBWithoutTomatoes);
+            var recommendationGeneratorWT = new RecommendationGenerator(unit, recommendationDBWithTomatoes);
+            var menuWOT = recommendationGeneratorWOT.GetMenu();
+            var menuWT = recommendationGeneratorWT.GetMenu();
             
             // Assertions
             // 1. Assert the menu isn't null
@@ -85,13 +85,13 @@ namespace Tests
         }
 
         [TestMethod]
-        public void TestMenuGeneration()
+        public void TestRecommendationGeneration()
         {
             var unit = new RestDBInterface();
             unit.Meals.Empty();
-            GraderDB graderDB = GenerateRandomGraderDB();
-            GenerateRandomMeals(unit, graderDB);
-            MenuGenerator generator = new MenuGenerator(unit, graderDB);
+            RecommendationDB recommendationDB = GenerateRandomRecommendationDB();
+            GenerateRandomMeals(unit, recommendationDB);
+            RecommendationGenerator generator = new RecommendationGenerator(unit, recommendationDB);
             var menu = generator.GetMenu();
             var otherMenu = generator.GetMenu();
 
@@ -115,24 +115,24 @@ namespace Tests
             System.Console.WriteLine("The grader in which the highest number of points was lost is: " + menu.GradeInfo.WorstGraders[0]);
         }
 
-        private static GraderDB GenerateRandomGraderDB()
+        private static RecommendationDB GenerateRandomRecommendationDB()
         {
             var rand = new Random(seed);
 
             // Not random for now
-            var graderDB = new GraderDB();
-            graderDB.dailyValues = RestRepository<Product>.DailyValues.ToDictionary(k => k.Key, k => new MinMaxDouble(k.Value));
-            graderDB.dailyCaloriesNum = 3000;
-            graderDB.range = new MenuSuggestionRange() { Length = rand.Next(1, 7) };
-            graderDB.productFlavorGrade = new Dictionary<string,double>() {
+            var recommendationDB = new RecommendationDB();
+            recommendationDB.dailyValues = RestRepository<Product>.DailyValues.ToDictionary(k => k.Key, k => new MinMaxDouble(k.Value));
+            recommendationDB.dailyCaloriesNum = 3000;
+            recommendationDB.range = new MenuSuggestionRange() { Length = rand.Next(1, 7) };
+            recommendationDB.productFlavorGrade = new Dictionary<string,double>() {
                 {"Mushroom", -1},
                 {"Mushrooms", -1},
             };
-            graderDB.mealCategoryGrade = new Dictionary<MealCategory, double>() {
+            recommendationDB.mealCategoryGrade = new Dictionary<MealCategory, double>() {
                 {MealCategory.Indian, 1},
                 {MealCategory.Chinese, -1},
             };
-            return graderDB;
+            return recommendationDB;
         }
 
         private static double Gaussian(Random rand, double mean, double stdDev)
@@ -156,13 +156,13 @@ namespace Tests
             }
         }
 
-        private void GenerateRandomMeals(RestDBInterface unit, GraderDB graderDB)
+        private void GenerateRandomMeals(RestDBInterface unit, RecommendationDB recommendationDB)
         {
             unit.Meals.Empty();
             var allProducts = unit.Products.GetAll().ToList();
             int prodNum = allProducts.Count;
             var rand = new Random(seed);
-            double caloriesInMeal = graderDB.dailyCaloriesNum / 3;
+            double caloriesInMeal = recommendationDB.dailyCaloriesNum / 3;
 
             for (int i = 0; i < mealsNum; ++i)
             {

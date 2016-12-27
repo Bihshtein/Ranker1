@@ -5,8 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using RestModel;
-using MenuBuilder;
-using MenuBuilder.Graders;
+using RecommendationBuilder;
+using RecommendationBuilder.Graders;
 
 namespace Tests
 {
@@ -19,10 +19,10 @@ namespace Tests
             var unit = new RestDBInterface();
             MealsCSVReader.CreateFixedMealsList(unit);
             var profile = new UserProfile() { Age = 30, Gender = GenderType.Male };
-            var graderDB = GraderDBGenerator.FromUserProfile(profile, unit);
-            graderDB.range = new MealSuggestionRange();
-            var menuGen = new MenuGenerator(unit, graderDB);
-            MenuMeal meal = menuGen.GetMeal();
+            var recommendationDB = RecommendationDBGenerator.FromUserProfile(profile, unit);
+            recommendationDB.range = new MealSuggestionRange();
+            var recomGen = new RecommendationGenerator(unit, recommendationDB);
+            MealWrapper meal = recomGen.GetMeal();
 
             Assert.IsNotNull(meal);
             Assert.IsNotNull(meal.Meal);

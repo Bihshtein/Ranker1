@@ -5,8 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using RestModel;
-using MenuBuilder;
-using MenuBuilder.Graders;
+using RecommendationBuilder;
+using RecommendationBuilder.Graders;
 
 namespace Tests
 {
@@ -41,23 +41,23 @@ namespace Tests
             var userProfile = new UserProfile() { Age = 30, Gender = GenderType.Male };
             var range = new MealSuggestionRange() { Length = 1, MealType = MealType.Breakfast };
 
-            var graderDB = GraderDBGenerator.FromUserProfile(userProfile, unit);
-            graderDB.range = range;
-            graderDB.GradersWeight = new Dictionary<GraderType, double>()
+            var recommendationDB = RecommendationDBGenerator.FromUserProfile(userProfile, unit);
+            recommendationDB.range = range;
+            recommendationDB.GradersWeight = new Dictionary<GraderType, double>()
                 {
                     {GraderType.MaxNutValuesMealGrader, 1}
                 };
 
-            var menuGen = new MenuGenerator(unit, graderDB);
+            var recommendationGen = new RecommendationGenerator(unit, recommendationDB);
 
-            var menuMeal = menuGen.GetMeal();
+            var mealWrapper = recommendationGen.GetMeal();
 
             // Assertions
 
             /*
-             * The big meal is clearly better. But since it passes the maximum value, the menuGen should prefer the small one.
+             * The big meal is clearly better. But since it passes the maximum value, the recommendationGen should prefer the small one.
              */
-            Assert.IsTrue(menuMeal.Meal.ID == 0);
+            Assert.IsTrue(mealWrapper.Meal.ID == 0);
         }
 
         [TestMethod]
@@ -90,14 +90,14 @@ namespace Tests
             var userProfile = new UserProfile() { Age = 30, Gender = GenderType.Male };
             var range = new MealSuggestionRange() { Length = 1, MealType = MealType.Breakfast };
 
-            var graderDB = GraderDBGenerator.FromUserProfile(userProfile, unit);
-            graderDB.range = range;
-            graderDB.GradersWeight = null;
+            var recommendationDB = RecommendationDBGenerator.FromUserProfile(userProfile, unit);
+            recommendationDB.range = range;
+            recommendationDB.GradersWeight = null;
 
-            var menuGen = new MenuGenerator(unit, graderDB);
+            var recommendationGen = new RecommendationGenerator(unit, recommendationDB);
 
-            var firstMenuMeal = menuGen.GetMeal();
-            var secondMenuMeal = menuGen.GetMeal();
+            var firstMealWrapper = recommendationGen.GetMeal();
+            var secondMealWrapper = recommendationGen.GetMeal();
 
             // Assertions
 
@@ -105,11 +105,11 @@ namespace Tests
              */
 
             // 1. Assert that the best graded meal is the fast one
-            Assert.IsTrue(firstMenuMeal.Meal.ID == 0);
+            Assert.IsTrue(firstMealWrapper.Meal.ID == 0);
             // 2. Assert that the other meal is the slow one
-            Assert.IsTrue(secondMenuMeal.Meal.ID == 1);
+            Assert.IsTrue(secondMealWrapper.Meal.ID == 1);
             // 3. Assert that the best graded meal got a better grade than the other one
-            Assert.IsTrue(firstMenuMeal.Grade > secondMenuMeal.Grade);
+            Assert.IsTrue(firstMealWrapper.Grade > secondMealWrapper.Grade);
         }
 
         [TestMethod]
@@ -142,14 +142,14 @@ namespace Tests
             var userProfile = new UserProfile() { Age = 30, Gender = GenderType.Male };
             var range = new MealSuggestionRange() { Length = 1, MealType = MealType.Breakfast, ServingsNum = 1 };
 
-            var graderDB = GraderDBGenerator.FromUserProfile(userProfile, unit);
-            graderDB.range = range;
-            graderDB.GradersWeight = null;
+            var recommendationDB = RecommendationDBGenerator.FromUserProfile(userProfile, unit);
+            recommendationDB.range = range;
+            recommendationDB.GradersWeight = null;
 
-            var menuGen = new MenuGenerator(unit, graderDB);
+            var recommendationGen = new RecommendationGenerator(unit, recommendationDB);
 
-            var firstMenuMeal = menuGen.GetMeal();
-            var secondMenuMeal = menuGen.GetMeal();
+            var firstMealWrapper = recommendationGen.GetMeal();
+            var secondMealWrapper = recommendationGen.GetMeal();
 
             // Assertions
 
@@ -157,11 +157,11 @@ namespace Tests
              */
 
             // 1. Assert that the best graded meal is the fast one
-            Assert.IsTrue(firstMenuMeal.Meal.ID == 0);
+            Assert.IsTrue(firstMealWrapper.Meal.ID == 0);
             // 2. Assert that the other meal is the slow one
-            Assert.IsTrue(secondMenuMeal.Meal.ID == 1);
+            Assert.IsTrue(secondMealWrapper.Meal.ID == 1);
             // 3. Assert that the best graded meal got a better grade than the other one
-            Assert.IsTrue(firstMenuMeal.Grade > secondMenuMeal.Grade);
+            Assert.IsTrue(firstMealWrapper.Grade > secondMealWrapper.Grade);
         }
 
         [TestMethod]
@@ -243,24 +243,24 @@ namespace Tests
             var range = new MenuSuggestionRange()
                 { Length = 1, MealsInDailyMenu = new List<MealType>() { MealType.Breakfast, MealType.Lunch } };
 
-            var varietyGraderDB = GraderDBGenerator.FromUserProfile(userProfile, unit);
-            varietyGraderDB.range = range;
-            varietyGraderDB.GradersWeight = new Dictionary<GraderType, double>()
+            var varietyRecommendationDB = RecommendationDBGenerator.FromUserProfile(userProfile, unit);
+            varietyRecommendationDB.range = range;
+            varietyRecommendationDB.GradersWeight = new Dictionary<GraderType, double>()
             {
                 {GraderType.VarietyGrader, 1},
                 {GraderType.VarietyDailyGrader, 1}
             };
 
-            var normalGraderDB = GraderDBGenerator.FromUserProfile(userProfile, unit);
-            normalGraderDB.range = range;
+            var normalRecommendationDB = RecommendationDBGenerator.FromUserProfile(userProfile, unit);
+            normalRecommendationDB.range = range;
 
-            normalGraderDB.GradersWeight = null;
+            normalRecommendationDB.GradersWeight = null;
 
-            var varietyMenuGen = new MenuGenerator(unit, varietyGraderDB);
-            var normalMenuGen = new MenuGenerator(unit, normalGraderDB);
+            var varietyRecommendationGen = new RecommendationGenerator(unit, varietyRecommendationDB);
+            var normalRecommendationGen = new RecommendationGenerator(unit, normalRecommendationDB);
 
-            var varietyMenu = varietyMenuGen.GetMenu();
-            var normalMenu = normalMenuGen.GetMenu();
+            var varietyMenu = varietyRecommendationGen.GetMenu();
+            var normalMenu = normalRecommendationGen.GetMenu();
 
             // Assertions
 
@@ -468,23 +468,23 @@ namespace Tests
             var babyProfile = new UserProfile() { Age = 3, Gender = GenderType.Male };
             var manProfile = new UserProfile() { Age = 30, Gender = GenderType.Male };
 
-            var babyGraderDB = GraderDBGenerator.FromUserProfile(babyProfile, unit);
-            var manGraderDB = GraderDBGenerator.FromUserProfile(manProfile, unit);
+            var babyRecommendationDB = RecommendationDBGenerator.FromUserProfile(babyProfile, unit);
+            var manRecommendationDB = RecommendationDBGenerator.FromUserProfile(manProfile, unit);
 
-            babyGraderDB.GradersWeight = graderWeights;
-            manGraderDB.GradersWeight = graderWeights;
+            babyRecommendationDB.GradersWeight = graderWeights;
+            manRecommendationDB.GradersWeight = graderWeights;
 
-            babyGraderDB.range = new MealSuggestionRange() { MealType = MealType.Breakfast, Length = 1 };
-            manGraderDB.range = new MealSuggestionRange() { MealType = MealType.Breakfast, Length = 1 };
+            babyRecommendationDB.range = new MealSuggestionRange() { MealType = MealType.Breakfast, Length = 1 };
+            manRecommendationDB.range = new MealSuggestionRange() { MealType = MealType.Breakfast, Length = 1 };
 
             // Since all users currently get the same calories number, force a difference
-            babyGraderDB.dailyCaloriesNum = manGraderDB.dailyCaloriesNum / 2;
+            babyRecommendationDB.dailyCaloriesNum = manRecommendationDB.dailyCaloriesNum / 2;
 
-            var babyMenuGen = new MenuGenerator(unit, babyGraderDB);
-            var manMenuGen = new MenuGenerator(unit, manGraderDB);
+            var babyRecommendationGen = new RecommendationGenerator(unit, babyRecommendationDB);
+            var manRecommendationGen = new RecommendationGenerator(unit, manRecommendationDB);
 
-            var babyMeal = babyMenuGen.GetMeal();
-            var manMeal = manMenuGen.GetMeal();
+            var babyMeal = babyRecommendationGen.GetMeal();
+            var manMeal = manRecommendationGen.GetMeal();
 
             // First, assert that the bigger meal was preferred
             Assert.IsTrue(babyMeal.Meal.ID == 1 && manMeal.Meal.ID == 1);
@@ -502,20 +502,20 @@ namespace Tests
             var babyProfile = new UserProfile() { Age = 3, Gender = GenderType.Male };
             var girlProfile = new UserProfile() { Age = 16, Gender = GenderType.Female };
 
-            var babyGraderDB = GraderDBGenerator.FromUserProfile(babyProfile, unit);
-            var girlGraderDB = GraderDBGenerator.FromUserProfile(girlProfile, unit);
+            var babyRecommendationDB = RecommendationDBGenerator.FromUserProfile(babyProfile, unit);
+            var girlRecommendationDB = RecommendationDBGenerator.FromUserProfile(girlProfile, unit);
 
-            babyGraderDB.GradersWeight = graderWeights;
-            girlGraderDB.GradersWeight = graderWeights;
+            babyRecommendationDB.GradersWeight = graderWeights;
+            girlRecommendationDB.GradersWeight = graderWeights;
 
             // Since all users currently get the same calories number, force a difference
-            babyGraderDB.dailyCaloriesNum = girlGraderDB.dailyCaloriesNum / 2;
+            babyRecommendationDB.dailyCaloriesNum = girlRecommendationDB.dailyCaloriesNum / 2;
 
-            var babyMenuGen = new MenuGenerator(unit, babyGraderDB);
-            var girlMenuGen = new MenuGenerator(unit, girlGraderDB);
+            var babyRecommendationGen = new RecommendationGenerator(unit, babyRecommendationDB);
+            var girlRecommendationGen = new RecommendationGenerator(unit, girlRecommendationDB);
 
-            var babyMenu = babyMenuGen.GetMenu();
-            var girlMenu = girlMenuGen.GetMenu();
+            var babyMenu = babyRecommendationGen.GetMenu();
+            var girlMenu = girlRecommendationGen.GetMenu();
 
             Assert.IsTrue(babyMenu.Grade > girlMenu.Grade);// babies don't need much
         }
@@ -523,25 +523,25 @@ namespace Tests
         private Menu GetMenu(int age, GenderType gender, Dictionary<GraderType, double> graderWeights, RestDBInterface unit )
         {
             var profile = new UserProfile() { Age = age, Gender = gender };
-            var graderDB = GraderDBGenerator.FromUserProfile(profile, unit);
-            graderDB.GradersWeight = graderWeights;
+            var recommendationDB = RecommendationDBGenerator.FromUserProfile(profile, unit);
+            recommendationDB.GradersWeight = graderWeights;
 
-            var menuGen = new MenuGenerator(unit, graderDB);
+            var recommendationGen = new RecommendationGenerator(unit, recommendationDB);
 
-            return menuGen.GetMenu();
+            return recommendationGen.GetMenu();
         }
 
-        private MenuMeal GetMeal(int age, GenderType gender, MealType mealType,
+        private MealWrapper GetMeal(int age, GenderType gender, MealType mealType,
             Dictionary<GraderType, double> graderWeights, RestDBInterface unit)
         {
             var profile = new UserProfile() { Age = age, Gender = gender };
-            var graderDB = GraderDBGenerator.FromUserProfile(profile, unit);
-            graderDB.GradersWeight = graderWeights;
-            graderDB.range = new MealSuggestionRange() { Length = 1, MealType = mealType };
+            var recommendationDB = RecommendationDBGenerator.FromUserProfile(profile, unit);
+            recommendationDB.GradersWeight = graderWeights;
+            recommendationDB.range = new MealSuggestionRange() { Length = 1, MealType = mealType };
 
-            var menuGen = new MenuGenerator(unit, graderDB);
+            var recommendationGen = new RecommendationGenerator(unit, recommendationDB);
 
-            return menuGen.GetMeal();
+            return recommendationGen.GetMeal();
         }
 
         private void TestTasteGrader(Boolean categoryTest)
@@ -580,10 +580,10 @@ namespace Tests
             var userProfile = new UserProfile() { Age = 30, Gender = GenderType.Male };
             var range = new MenuSuggestionRange() { Length = 1, MealsInDailyMenu = new List<MealType>() { MealType.Breakfast } };
 
-            var indianGraderDB = GraderDBGenerator.FromUserProfile(userProfile, unit);
+            var indianRecommendationDB = RecommendationDBGenerator.FromUserProfile(userProfile, unit);
             if (categoryTest)
             {
-                indianGraderDB.mealCategoryGrade = new Dictionary<MealCategory, double>()
+                indianRecommendationDB.mealCategoryGrade = new Dictionary<MealCategory, double>()
                 {
                     { MealCategory.Indian, 1 },
                     { MealCategory.Chinese, -1 }
@@ -591,7 +591,7 @@ namespace Tests
             }
             else
             {
-                indianGraderDB.productFlavorGrade = new Dictionary<string, double>()
+                indianRecommendationDB.productFlavorGrade = new Dictionary<string, double>()
                 {
                     { "Tomato", -1},
                     { "Avocados", -1},
@@ -600,27 +600,27 @@ namespace Tests
                     { "Almonds", -1}
                 };
             }
-            indianGraderDB.range = range;
+            indianRecommendationDB.range = range;
 
-            var chineseGraderDB = GraderDBGenerator.FromUserProfile(userProfile, unit);
+            var chineseRecommendationDB = RecommendationDBGenerator.FromUserProfile(userProfile, unit);
             if (categoryTest)
             {
-                chineseGraderDB.mealCategoryGrade = new Dictionary<MealCategory, double>()
+                chineseRecommendationDB.mealCategoryGrade = new Dictionary<MealCategory, double>()
                 {
                     { MealCategory.Indian, -1 },
                     { MealCategory.Chinese, 1 }
                 };
             }
-            chineseGraderDB.range = range;
+            chineseRecommendationDB.range = range;
 
-            indianGraderDB.GradersWeight = null;
-            chineseGraderDB.GradersWeight = null;
+            indianRecommendationDB.GradersWeight = null;
+            chineseRecommendationDB.GradersWeight = null;
 
-            var indianMenuGen = new MenuGenerator(unit, indianGraderDB);
-            var chineseMenuGen = new MenuGenerator(unit, chineseGraderDB);
+            var indianRecommendationGen = new RecommendationGenerator(unit, indianRecommendationDB);
+            var chineseRecommendationGen = new RecommendationGenerator(unit, chineseRecommendationDB);
 
-            var indianMenu = indianMenuGen.GetMenu();
-            var chineseMenu = chineseMenuGen.GetMenu();
+            var indianMenu = indianRecommendationGen.GetMenu();
+            var chineseMenu = chineseRecommendationGen.GetMenu();
 
             // Assertions
 

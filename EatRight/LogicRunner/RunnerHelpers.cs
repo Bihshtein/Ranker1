@@ -1,4 +1,4 @@
-﻿using MenuBuilder;
+﻿using RecommendationBuilder;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -38,14 +38,14 @@ namespace LogicRunner
 
 
 
-        private MenuMeal _obj;
+        private MealWrapper _obj;
 
-        public MyViewModel(MenuMeal obj)
+        public MyViewModel(MealWrapper obj)
         {
             _obj = obj;
         }
 
-        public MenuMeal GetModel()
+        public MealWrapper GetModel()
         {
             return _obj;
         }

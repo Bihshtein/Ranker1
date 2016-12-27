@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebServer", "WebServer\WebS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestModel", "RestModel\RestModel.csproj", "{5DF54FEA-0E92-4F32-AE85-80A7B484E427}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MenuBuilder", "MenuBuilder\MenuBuilder.csproj", "{9426FF15-9B65-4F16-918E-ED7A8E21D3F8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecommendationBuilder", "RecommendationBuilder\RecommendationBuilder.csproj", "{9426FF15-9B65-4F16-918E-ED7A8E21D3F8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{23D73F85-E1D1-4D21-88BF-CC9370D3B936}"
 EndProject

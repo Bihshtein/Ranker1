@@ -1,5 +1,5 @@
-﻿using MenuBuilder;
-using MenuBuilder.Graders;
+﻿using RecommendationBuilder;
+using RecommendationBuilder.Graders;
 using RestModel;
 using System;
 using System.Collections.Generic;
@@ -48,19 +48,19 @@ namespace LogicRunner
                 Name = "Hen"
             };
 
-            var graderDB = GraderDBGenerator.FromUserProfile(uProfile, unit);
+            var recommendationDB = RecommendationDBGenerator.FromUserProfile(uProfile, unit);
           
-            graderDB.dailyValues = (comboBox1.SelectedValue as DailyValue).DuplicateDictionary();
-            graderDB.range = new MealSuggestionRange() { Length = 1, MealType = (MealType)Enum.Parse(typeof(MealType), comboBox2.SelectedItem.ToString()) };
-            graderDB.dailyCaloriesNum = int.Parse(comboBox5.SelectedItem.ToString());
-              graderDB.GradersWeight = new Dictionary<GraderType, double>()
+            recommendationDB.dailyValues = (comboBox1.SelectedValue as DailyValue).DuplicateDictionary();
+            recommendationDB.range = new MealSuggestionRange() { Length = 1, MealType = (MealType)Enum.Parse(typeof(MealType), comboBox2.SelectedItem.ToString()) };
+            recommendationDB.dailyCaloriesNum = int.Parse(comboBox5.SelectedItem.ToString());
+              recommendationDB.GradersWeight = new Dictionary<GraderType, double>()
                {
                     // Meal graders
                     {GraderType.CaloriesCountMealGrader, int.Parse(comboBox3.SelectedItem.ToString())},
                     {GraderType.MinNutValuesMealGrader,  int.Parse(comboBox6.SelectedItem.ToString())},
                     {GraderType.PrepTimeMealGrader, int.Parse(comboBox4.SelectedItem.ToString()) }
                 };
-            MenuGenerator generator = new MenuGenerator(unit, graderDB);
+            RecommendationGenerator generator = new RecommendationGenerator(unit, recommendationDB);
             this.bindingSource2.DataSource = generator.GetMealsList().Select(o => new MyViewModel(o)
             { Id = o.Meal.ID, Name = o.Meal.Name, 
                 NutValues = parseNutValues(o.NutValues), GradersResult = parseGradersResult(o.GradeInfo.GradersInfo) }).ToList();
