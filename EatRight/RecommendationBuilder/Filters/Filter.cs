@@ -31,6 +31,8 @@ namespace RecommendationBuilder.Filters
                 // Meal filters
                 case FilterType.ForbiddenProductsMealFilter:
                     return new ForbiddenProductsMealFilter();
+                case FilterType.MealTypeMealFilter:
+                    return new MealTypeMealFilter();
 
                 default:
                     // TODO: better handle errors

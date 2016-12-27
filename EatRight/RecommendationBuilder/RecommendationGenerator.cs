@@ -331,12 +331,6 @@ namespace RecommendationBuilder
 
             var dbMealsList = unit.Meals.GetAll().ToList();
 
-            // Filter meals of irrelevant type
-            if (InMealMode())
-            {
-                dbMealsList = dbMealsList.Where(x => x.Types.Contains(((MealSuggestionRange)RecommendationObject.recommendationDB.range).MealType)).ToList();
-            }
-
             mealsList = dbMealsList.Select(x => new MealWrapper(x)).ToList();
             mealsList = FilterList(mealsList, filterSet);
 
@@ -479,7 +473,8 @@ namespace RecommendationBuilder
                 RecommendationObject.recommendationDB.FiltersSet = new HashSet<FilterType>()
                 {
                     // Meal filters
-                    FilterType.ForbiddenProductsMealFilter
+                    FilterType.ForbiddenProductsMealFilter,
+                    FilterType.MealTypeMealFilter
                 };
             }
         }

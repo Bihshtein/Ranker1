@@ -67,6 +67,7 @@ namespace RestModel
         MealFilterStart,
 
         ForbiddenProductsMealFilter,
+        MealTypeMealFilter,
 
         MealFilterEnd
     }

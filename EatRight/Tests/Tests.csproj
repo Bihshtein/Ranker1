@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="TestAlgorithm.cs" />
     <Compile Include="TestDB.cs" />
+    <Compile Include="TestFilters.cs" />
     <Compile Include="TestGraders.cs" />
     <Compile Include="TestQueries.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
