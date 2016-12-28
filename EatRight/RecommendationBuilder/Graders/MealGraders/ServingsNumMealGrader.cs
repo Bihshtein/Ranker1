@@ -30,7 +30,7 @@ namespace RecommendationBuilder.Graders.MealGraders
             {
                 return 0;
             }
-            return (3 - dist) / 3;
+            return (3 - dist) / 3.0;
         }
     }
 }

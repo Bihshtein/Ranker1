@@ -31,10 +31,21 @@ namespace LogicRunner
             dataGridView1.AutoGenerateColumns = true;
 
             comboBox2.DataSource = Enum.GetNames(typeof(MealType));
-            comboBox5.DataSource = new List<int> { 500, 1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500, 5000 };
-            comboBox3.DataSource = new List<int> { 1, 2, 3, 3, 4, 5, 6, 7, 8, 9,10 };
-            comboBox4.DataSource = new List<int> { 1, 2, 3, 3, 4, 5, 6, 7, 8, 9, 10 };
-            comboBox6.DataSource = new List<int> { 1, 2, 3, 3, 4, 5, 6, 7, 8, 9, 10 };
+            caloreis.DataSource = new List<int> { 500, 1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500, 5000 };
+            calories.DataSource = new List<int> { 1, 2, 3, 3, 4, 5, 6, 7, 8, 9,10 };
+            cookTime.DataSource = new List<int> { 1, 2, 3, 3, 4, 5, 6, 7, 8, 9, 10 };
+            minValues.DataSource = new List<int> { 1, 2, 3, 3, 4, 5, 6, 7, 8, 9, 10 };
+            maxValues.DataSource = new List<int> { 1, 2, 3, 3, 4, 5, 6, 7, 8, 9, 10 };
+            servings.DataSource = new List<int> { 1, 2, 3, 3, 4, 5, 6, 7, 8, 9, 10 };
+            idealServings.DataSource = new List<int> { 1, 2, 3, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+            caloreis.SelectedIndex = 5;
+            idealServings.SelectedIndex = 3;
+            maxValues.SelectedIndex = 5;
+            minValues.SelectedIndex =3;
+            servings.SelectedIndex = 2;
+            calories.SelectedIndex = 3;
+          
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -49,16 +60,18 @@ namespace LogicRunner
             };
 
             var recommendationDB = RecommendationDBGenerator.FromUserProfile(uProfile, unit);
-          
+            recommendationDB.idealServingsNum = int.Parse(idealServings.SelectedItem.ToString());
             recommendationDB.dailyValues = (comboBox1.SelectedValue as DailyValue).DuplicateDictionary();
             recommendationDB.range = new MealSuggestionRange() { Length = 1, MealType = (MealType)Enum.Parse(typeof(MealType), comboBox2.SelectedItem.ToString()) };
-            recommendationDB.dailyCaloriesNum = int.Parse(comboBox5.SelectedItem.ToString());
+            recommendationDB.dailyCaloriesNum = int.Parse(caloreis.SelectedItem.ToString());
               recommendationDB.GradersWeight = new Dictionary<GraderType, double>()
                {
                     // Meal graders
-                    {GraderType.CaloriesCountMealGrader, int.Parse(comboBox3.SelectedItem.ToString())},
-                    {GraderType.MinNutValuesMealGrader,  int.Parse(comboBox6.SelectedItem.ToString())},
-                    {GraderType.PrepTimeMealGrader, int.Parse(comboBox4.SelectedItem.ToString()) }
+                    {GraderType.CaloriesCountMealGrader, int.Parse(calories.SelectedItem.ToString())},
+                    {GraderType.MinNutValuesMealGrader,  int.Parse(minValues.SelectedItem.ToString())},
+                      {GraderType.MaxNutValuesMealGrader,  int.Parse(maxValues.SelectedItem.ToString())},
+                      {GraderType.ServingsNumMealGrader,  int.Parse(servings.SelectedItem.ToString())},
+                    {GraderType.PrepTimeMealGrader, int.Parse(cookTime.SelectedItem.ToString()) }
                 };
             RecommendationGenerator generator = new RecommendationGenerator(unit, recommendationDB);
             this.bindingSource2.DataSource = generator.GetMealsList().Select(o => new MyViewModel(o)

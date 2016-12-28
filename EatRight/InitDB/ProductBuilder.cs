@@ -47,7 +47,7 @@ namespace InitDB {
 
         public static void TrySetCommonProperties(Product p, string item) {
             if (CommonValidator.IsPreparationOption(item))
-                p.PreparationMethod = GetUpdatedStringParam(item,  p.PreparationMethod);
+                p.PreparationMethod = GetUpdatedStringParam(CommonValidator.GetPreparationOption(item),  p.PreparationMethod);
             p.StorageMethod = GetUpdatedStringParam(CommonValidator.StorageOptions, item, p.StorageMethod);
             p.FatDetails = GetUpdatedStringParam(CommonValidator.FatOptions, item, p.FatDetails);
             p.PackDetails = GetUpdatedStringParam(CommonValidator.PackOptions, item, p.PackDetails);

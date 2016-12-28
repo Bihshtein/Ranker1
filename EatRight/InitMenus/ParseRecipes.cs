@@ -25,9 +25,7 @@ namespace InitRecipes {
 
             var loadMealsBulkSize = Indexes.Count > 1000 ? 1000 : Indexes.Count;
             var unit = new RestDBInterface();
-            if (unit.Meals.GetAll().Count() == Indexes.Count)
-                return;
-            else
+         
                 unit.Meals.Empty();
 
             while (Indexes.Count > 0) {
