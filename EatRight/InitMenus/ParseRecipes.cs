@@ -15,21 +15,19 @@ namespace InitRecipes {
         public static ILog log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
         public static object Locker = new object();
         public static string FolderPath = Assembly.GetExecutingAssembly().Location + @"\..\..\..\..\FruitsDB\";
-        public static int CurrIndex = 0;
         public static List<int> Indexes;
 
-      
-
-        public static void PopulateMealsDB() {
+        public static void CreateDB(bool overrideDB) {
             Indexes = File.ReadAllLines(FolderPath + "recipes_num.txt").ToList().ConvertAll<int>((a => int.Parse(a)));
 
             var loadMealsBulkSize = Indexes.Count > 1000 ? 1000 : Indexes.Count;
             var unit = new RestDBInterface();
-         
-                unit.Meals.Empty();
+            var meals = unit.Meals.GetAll().ToList();
+            if (!overrideDB && meals.All(meal => Indexes.Contains(meal.ID)))
+                return;
+            unit.Meals.Empty();
 
             while (Indexes.Count > 0) {
-                CurrIndex = 0;
                 log.Debug("Indexes count : " + Indexes.Count);
                 List<Task> tasks = new List<Task>();
                 if (Indexes.Count > loadMealsBulkSize)
@@ -53,43 +51,15 @@ namespace InitRecipes {
                 log.Error("Failed to load recipe number : " + index);
                 return;
             }
-            var nameParts = page.Split(new string[2] { "<title>", "</title>" }, StringSplitOptions.None);
-            var prepTimeParts = page.Split(new string[1] { "<span class=\"ready-in-time\">" }, StringSplitOptions.None);
-            var mealParts = page.Split(new string[1] { "<span class=\"toggle-similar__title\" itemprop=\"title\">" }, StringSplitOptions.None);
-            var servingParts = page.Split(new string[1] { "<meta id=\"metaRecipeServings\" itemprop=\"recipeYield\" content=" }, StringSplitOptions.None); 
-            if (mealParts.Length < 4) {
-                log.Error("Wrong meal parts count : " + mealParts.Length);
-                lock (Locker) {
-                    Indexes.Remove(index);
-                }
-                return;
-            }
-            var name = nameParts[1];
-            var servingStr = new String(servingParts[1].TakeWhile(a => a != '>').ToArray());
-            var prepTimeStr = new String(prepTimeParts[1].TakeWhile(a => a != '<').ToArray());
-            var prepTime = GetPrepTime(prepTimeStr);
-            int servings = int.Parse(servingStr.Replace("\"", ""));
-            //var mealType =new String(mealParts[3].TakeWhile(a => a != '<').ToArray()).Trim().ToLower();
-
-            var ingredientParts = page.Split(new string[1] { "itemprop=\"ingredients\">" }, StringSplitOptions.None);
-            var ingredients = new List<string>();
-            for (int i = 1; i < ingredientParts.Length; i++) {
-                if (ingredientParts[i].Contains("<")) {
-                    var chars = ingredientParts[i].TakeWhile(a => a != '<');
-                    var igredient = new String(chars.ToArray());
-                    var words = igredient.Split(' ').ToList();
-                    if (!ingredients.Contains(igredient))
-                        ingredients.Add(igredient);
-                }
-            }
+           
             unit.Meals.Add(new Meal() {
                 ID = index,
-                Name = name,
-                Ingredients = ingredients,
-                Types = new HashSet<MealType>() { MealType.Breakfast },
-                Servings = servings,
-                PrepTime = prepTime
-                
+                Name = GetRecipeName(page),
+                Ingredients = GetIngredients(page),
+                Types = new HashSet<MealType>() { MealType.Breakfast, MealType.Lunch, MealType.Dinner},
+                Servings = GetServings(page),
+                PrepTime = GetPrepTime(page)
+
             });
 
             lock (Locker) {
@@ -98,7 +68,44 @@ namespace InitRecipes {
             }
         }
 
-        private static TimeSpan GetPrepTime(string time) {
+        private static string GetRecipeName(string page)
+        {
+            return  page.Split(new string[2] { "<title>", "</title>" }, StringSplitOptions.None)[1];
+        }
+
+        private static List<string> GetIngredients(string page)
+        {
+            var ingredientParts = page.Split(new string[1] { "itemprop=\"ingredients\">" }, StringSplitOptions.None);
+            var ingredients = new List<string>();
+            for (int i = 1; i < ingredientParts.Length; i++)
+            {
+                if (ingredientParts[i].Contains("<"))
+                {
+                    var chars = ingredientParts[i].TakeWhile(a => a != '<');
+                    var igredient = new String(chars.ToArray());
+                    var words = igredient.Split(' ').ToList();
+                    if (!ingredients.Contains(igredient))
+                        ingredients.Add(igredient);
+                }
+            }
+            return ingredients;
+        }
+
+        private static TimeSpan GetPrepTime(string page)
+        {
+            var prepTimeParts = page.Split(new string[1] { "<span class=\"ready-in-time\">" }, StringSplitOptions.None);
+            var prepTimeStr = new String(prepTimeParts[1].TakeWhile(a => a != '<').ToArray());
+            return ParsePrepTime(prepTimeStr);
+        }
+
+        private static int GetServings(string page)
+        {
+            var servingParts = page.Split(new string[1] { "<meta id=\"metaRecipeServings\" itemprop=\"recipeYield\" content=" }, StringSplitOptions.None);
+            var servingStr = new String(servingParts[1].TakeWhile(a => a != '>').ToArray());
+            return int.Parse(servingStr.Replace("\"", ""));
+        }
+
+        private static TimeSpan ParsePrepTime(string time) {
             var hours = GetTimeUnit(ref time, 'h');
             return new TimeSpan(hours, GetTimeUnit(ref time, 'm'), 0);
         }

@@ -20,8 +20,8 @@ namespace InitRecipes {
         
 
         static void Main(string[] args) {
-            ParseRecipes.PopulateMealsDB(); // index file has 20,000 meals, load the first 200
-            MatchProductsInRecipes.AddActualProductsToMealsDB();
+            ParseRecipes.CreateDB(true); // index file has 20,000 meals, load the first 200
+            AddProducts.Add();
         }
        
     }
