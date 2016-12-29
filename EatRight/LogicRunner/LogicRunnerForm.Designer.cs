@@ -44,7 +44,7 @@
             this.cookTime = new System.Windows.Forms.ComboBox();
             this.minValues = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.caloreis = new System.Windows.Forms.ComboBox();
+            this.totalCalories = new System.Windows.Forms.ComboBox();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.richTextBox3 = new System.Windows.Forms.RichTextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -200,13 +200,13 @@
             this.label6.TabIndex = 20;
             this.label6.Text = "Calories:";
             // 
-            // caloreis
+            // totalCalories
             // 
-            this.caloreis.FormattingEnabled = true;
-            this.caloreis.Location = new System.Drawing.Point(179, 83);
-            this.caloreis.Name = "caloreis";
-            this.caloreis.Size = new System.Drawing.Size(89, 21);
-            this.caloreis.TabIndex = 19;
+            this.totalCalories.FormattingEnabled = true;
+            this.totalCalories.Location = new System.Drawing.Point(179, 83);
+            this.totalCalories.Name = "totalCalories";
+            this.totalCalories.Size = new System.Drawing.Size(89, 21);
+            this.totalCalories.TabIndex = 19;
             // 
             // richTextBox2
             // 
@@ -350,7 +350,7 @@
             this.Controls.Add(this.richTextBox3);
             this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.caloreis);
+            this.Controls.Add(this.totalCalories);
             this.Controls.Add(this.minValues);
             this.Controls.Add(this.calories);
             this.Controls.Add(this.cookTime);
@@ -391,7 +391,7 @@
         private System.Windows.Forms.ComboBox cookTime;
         private System.Windows.Forms.ComboBox minValues;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox caloreis;
+        private System.Windows.Forms.ComboBox totalCalories;
         private System.Windows.Forms.RichTextBox richTextBox2;
         private System.Windows.Forms.RichTextBox richTextBox3;
         private System.Windows.Forms.Label label7;

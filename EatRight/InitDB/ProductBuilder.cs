@@ -82,7 +82,7 @@ namespace InitDB {
             if (validator.IsSecondPart(item)) {
                 var nameAndCut = validator.GetNameAndDescription(item);
                 p.Name2 = nameAndCut.Item1;
-                if (nameAndCut.Item2 != string.Empty)
+                if (nameAndCut.Item2 != null && nameAndCut.Item2 != string.Empty)
                     p.Name3 = nameAndCut.Item2;
                 p.Name2 = p.Name2.ToLower();
 

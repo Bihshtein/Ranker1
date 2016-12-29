@@ -15,7 +15,7 @@ namespace InitDB.Validators {
                     "medjool","deglet noor", "(mandarin oranges)","honeydew","casaba","cantaloupe","apple","jambolan)","strawberry",
                     "muscadine","common","bosc","green anjou","red anjou","bartlett","spiced","asian","golden delicious", "granny smith",
                     "red delicious","wild","fuji","gala","pink and red and white","yellow","green","purple", "sweet","sour","white","pink",
-                    "red","pink or red", "pink and red","red and white"
+                    "red","pink or red", "pink and red","red and white","California", "Florida"
             };
             ThirdParts = new List<string> { "sections", "all areas", "seeded", "seedless", "pitted", "sliced", "whole" };
         }

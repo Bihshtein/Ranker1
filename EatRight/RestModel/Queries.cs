@@ -47,13 +47,17 @@ namespace RestModel {
             { "marsala wine","sweet wine"},
             { "port wine","sweet wine"},
             { "white vinegar","distilled vinegar"},
-            { "ketchup","catsup"},
+            { "ketchup","catsup"},            
             { "sirloin steak","top sirloin steak"},
         };
-        public static List<string> CutDetails = new List<string> {
+        public static List<string> StartCutDetails = new List<string> {
             "melted","sifted", "sprig", "sprigs", "ground", "shredded", "cubed",
             "head", "heads", "sliced", "stalk", "stalks", "diced", "minced", "chopped",
-            "grated","mashed","crushed"};
+            "grated","mashed","crushed",  "steaks"};
+
+        public static List<string> EndCutDetails = new List<string> {
+            "steaks", "- peeled","halves"
+        };
         public static List<string> ServeDetails = new List<string> { "cold","warm",  "fresh" };
         public static List<string> PackDetails = new List<string> {"for frying","prepared", "packed", "package", "packages" };
         public static List<string> NeedlesInfo = new List<string> {"panko " ,"for frying" };
@@ -65,7 +69,8 @@ namespace RestModel {
             if (res != null && res.Count> 0)
                 return res;
             ingredient = ingredient.ToLower();
-            CutDetails.ForEach(item => ingredient = ingredient.Replace(item + " ", ""));
+            StartCutDetails.ForEach(item => ingredient = ingredient.Replace(item + " ", ""));
+            EndCutDetails.ForEach(item => ingredient = ingredient.Replace(item , ""));
             ServeDetails.ForEach(item => ingredient = ingredient.Replace(item + " ", ""));
             PackDetails.ForEach(item => ingredient = ingredient.Replace(item+ " ", ""));
             NeedlesInfo.ForEach(item => ingredient = ingredient.Replace(item, ""));
@@ -99,12 +104,25 @@ namespace RestModel {
 
         public List<Product> TryMatchWholeProduct(string part) {
             Expression<Func<Product, bool>> query = x =>
-              (x.Name1.Equals(part + "s") || x.Name1.Equals(part + "es") || x.Name1.Equals(part) ||
+              (x.Name1.Equals(part) || x.Name1.Equals(part + "s") || x.Name1.Equals(part + "es") || x.Name1.Equals(GetWithoutLast_ES_letters(part)) ||
               x.FoodGroup.Equals(part) || x.Name2.Equals(part));
             var res = collection.Find(query as Expression<Func<T, bool>>).ToList();
             var newRes = res.Cast<Product>().ToList();
             return newRes;
+        }
 
+        public string GetWithoutLast_ES_letters(string str) {
+            var length = str.Length;
+            if (str[length - 1] == 's' && str[length - 2] == 'e')
+                return str.Remove(length - 2, 2);
+            return str;
+        }
+
+        public string GetWithoutLast_S_letter(string str) {
+            var length = str.Length;
+            if (str[length - 1] == 's')
+                return str.Remove(length - 1);
+            return str;
         }
 
         public List<Product> TryMatchWholeProduct(string part1, string part2, string part3) {
@@ -129,7 +147,7 @@ namespace RestModel {
             Expression<Func<Product, bool>> query = x =>
             (x.PeelDetails.Equals(part1 + " " + part2) && x.FoodGroup.Equals(part3) && x.Name2.Equals(part4)) ||
             (x.BoneDetails.Equals(part1) && x.FoodGroup.Equals(part2) && x.Name1.Equals(part3) && x.Name3.Equals(part4)) ||
-            (x.PeelDetails.Equals(part1 + " " + part2) && x.FoodGroup.Equals(part3) && (part4[part4.Length-1]=='s' && x.Name2.Equals(part4.Remove(part4.Length - 1))));
+            (x.PeelDetails.Equals(part1 + " " + part2) && x.FoodGroup.Equals(part3) && x.Name2.Equals(GetWithoutLast_S_letter(part4)));
             var res = collection.Find(query as Expression<Func<T, bool>>).ToList();
             var newRes = res.Cast<Product>().ToList();
             return newRes;
@@ -144,13 +162,14 @@ namespace RestModel {
             (x.Name2.Equals(part1 + " " + part2+"s")) ||
 
 
-            (x.Name3.Equals(part2.Remove(part2.Length-1,1)) && x.Name1.Equals(part1)) || // remove the last 's'
+            (x.Name3.Equals(GetWithoutLast_S_letter(part2)) && x.Name1.Equals(part1)) || 
 
                 (x.Name3.Equals(part1) && x.Name1.Equals(part2)) ||
                 (x.Name3.Contains("or") && x.Name3.Contains(part1) && x.Name2.Equals(part2)) ||
                 (x.Name3.Equals(part1) && x.Name2.Equals(part2)) ||
                 (x.StorageMethod.Equals(part1) && x.Name1.Equals(part2)) ||
                 (x.StorageMethod.Equals(part1) && x.Name2.Equals(part2)) ||
+                (x.StorageMethod.Equals(part1+"ned") && x.Name1.Equals(part2)) ||
 
                 (x.Name3.Equals(part2) && x.Name1.Equals(part1)) ||
 
@@ -167,6 +186,7 @@ namespace RestModel {
                 (x.PreparationMethod.Equals(part1) && x.Name2.Equals(part2)) ||
 
                 (x.FoodGroup.Equals(part1) && x.Name1.Equals(part2)) ||
+                (x.FoodGroup.Equals(part1) && x.Name2.Equals(GetWithoutLast_S_letter(part2))) ||
                 (x.FoodGroup.Equals(part2) && x.Name1.Equals(part1)) ||
 
                 (x.Name2.Equals(part2) && x.Name2.Equals(part1)) ||
