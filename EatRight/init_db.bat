@@ -1,3 +1,3 @@
-C:\dev\Ranker\EatRight\InitDB\bin\Debug\InitDB.exe
-C:\dev\Ranker\EatRight\InitDailyValuesDB\bin\Debug\InitDailyValuesDB.exe
-C:\dev\Ranker\EatRight\InitMenus\bin\Debug\InitRecipes.exe
+InitDB\bin\Debug\InitDB.exe
+InitDailyValuesDB\bin\Debug\InitDailyValuesDB.exe
+InitMenus\bin\Debug\InitRecipes.exe
