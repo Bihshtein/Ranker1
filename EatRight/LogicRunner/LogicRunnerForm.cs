@@ -110,7 +110,7 @@ namespace LogicRunner
 
             this.labelConsole.Text = string.Format("[{0}] Process took: {1} ms", DateTime.Now.ToShortTimeString(), manager.TotalTime());
              
-            MessageBox.Show(manager.ToString());
+            //MessageBox.Show(manager.ToString());
         }
 
         private string parseNutValues(Dictionary<string, double> let)
