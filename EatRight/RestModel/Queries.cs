@@ -42,11 +42,9 @@ namespace RestModel {
             if (res != null && res.Count> 0)
                 return res;
             ingredient = ingredient.ToLower();
-            Mapping.StartCutDetails.ForEach(item => ingredient = ingredient.Replace(item + " ", ""));
-            Mapping.EndCutDetails.ForEach(item => ingredient = ingredient.Replace(item , ""));
-            Mapping.ServeDetails.ForEach(item => ingredient = ingredient.Replace(item + " ", ""));
-            Mapping.PackDetails.ForEach(item => ingredient = ingredient.Replace(item+ " ", ""));
-            Mapping.NeedlesInfo.ForEach(item => ingredient = ingredient.Replace(item, ""));
+            Mapping.ReplaceWord(new List<List<string>> { Mapping.StartCutDetails, Mapping.ServeDetails , Mapping.PackDetails } , ref ingredient);
+            Mapping.ReplaceLastWord(new List<List<string>> { Mapping.NeedlesInfo, Mapping.EndCutDetails },ref ingredient);
+
             ingredient = ingredient.Trim();
             if (Mapping.RecipeToNutrient.ContainsKey(ingredient))
                 ingredient = Mapping.RecipeToNutrient[ingredient];

@@ -8,6 +8,19 @@ namespace RestModel
 {
     class Mapping
     {
+        public static void ReplaceWord(List<List<string>> keyWordList, ref string ingredient)
+        {
+            var copy = ingredient;
+            keyWordList.ForEach(list => list.ForEach(item => copy = copy.Replace(item + " ", "")));
+            ingredient = copy;
+        }
+
+        public static void ReplaceLastWord(List<List<string>> keyWordList, ref string ingredient)
+        {
+            var copy = ingredient;
+            keyWordList.ForEach(list => list.ForEach(item => copy = copy.Replace(item + "", "")));
+            ingredient = copy;
+        }
         public static Dictionary<string, string> RecipeToNutrient = new Dictionary<string, string> {
             { "white sugar","granulated sugar"},
             { "bread flour","bread wheat flour"},
