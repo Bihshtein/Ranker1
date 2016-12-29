@@ -31,6 +31,8 @@ namespace RecommendationBuilder
 
         public RecommendationGenerator(RestDBInterface unit, RecommendationDB recommendationDB)
         {
+            var manager = GlobalProfilingManger.Instance.Manager;
+            manager.TakeTime("start of recomendation constructor");
             RecommendationObject.recommendationDB = recommendationDB; // For the initialization of graders map
             if (RecommendationObject.recommendationDB.GradersWeight == null)
             {
@@ -41,20 +43,26 @@ namespace RecommendationBuilder
                 SetDefaultFilterSet();
             }
 
+            manager.TakeTime("set default grader and filter sets");
+
+
             this.unit = unit;
 
             mealsList = new List<MealWrapper>();
             if (InMenuMode())
             {
                 GenerateMenusList();
+                manager.TakeTime("generate menu");
             }
             else if (InMealMode())
             {
                 GenerateMealsList();
+                manager.TakeTime("generate meals");
             }
 
             usedDailyMenus = new HashSet<int>();
             usedMeals = new HashSet<int>();
+            manager.TakeTime("end of recomendation constructor");
         }
 
         public List<MealWrapper> GetMealsList()
@@ -326,16 +334,28 @@ namespace RecommendationBuilder
 
         private void GenerateMealsList()
         {
+            var timer = GlobalProfilingManger.Instance.Manager;
+
             var graderMap = InitGraderMap(GraderType.MealGraderStart, GraderType.MealGraderEnd);
             var filterSet = InitFilterSet(FilterType.MealFilterStart, FilterType.MealFilterEnd);
 
+            timer.TakeTime("grader map and filter set initializied");
+
             var dbMealsList = unit.Meals.GetAll().ToList();
+            timer.TakeTime("meals - get all");
 
             mealsList = dbMealsList.Select(x => new MealWrapper(x)).ToList();
+            timer.TakeTime("create meal list");
+
             mealsList = FilterList(mealsList, filterSet);
+            timer.TakeTime("filter list");
 
             mealsList.ForEach(x => EvaluateObject(x, graderMap));
+            timer.TakeTime("evaulate objects for each grader map ");
+
             mealsList.Sort(new RecommendationObjectComparer<MealWrapper>());
+            timer.TakeTime("grader map and filter set initializied");
+
         }
 
         private static List<T> GetTopRecommendationObject<T>(List<T> origList, int maxNumInList)

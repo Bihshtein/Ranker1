@@ -58,6 +58,7 @@
             this.servings = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
             this.idealServings = new System.Windows.Forms.ComboBox();
+            this.labelConsole = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
@@ -331,12 +332,23 @@
             this.idealServings.Size = new System.Drawing.Size(89, 21);
             this.idealServings.TabIndex = 31;
             // 
+            // labelConsole
+            // 
+            this.labelConsole.AutoSize = true;
+            this.labelConsole.BackColor = System.Drawing.Color.Transparent;
+            this.labelConsole.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.labelConsole.Location = new System.Drawing.Point(3, 838);
+            this.labelConsole.Name = "labelConsole";
+            this.labelConsole.Size = new System.Drawing.Size(0, 19);
+            this.labelConsole.TabIndex = 33;
+            // 
             // LogicRunnerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(678, 866);
+            this.Controls.Add(this.labelConsole);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.idealServings);
             this.Controls.Add(this.label11);
@@ -405,5 +417,6 @@
         private System.Windows.Forms.ComboBox servings;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.ComboBox idealServings;
+        private System.Windows.Forms.Label labelConsole;
     }
 }
