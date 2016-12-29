@@ -55,7 +55,7 @@ namespace InitRecipes {
         public static void Add() {
             var customCulture = (CultureInfo)Thread.CurrentThread.CurrentCulture.Clone(); customCulture.NumberFormat.NumberDecimalSeparator = ".";
             Thread.CurrentThread.CurrentCulture = customCulture;
-
+            
             var meals = unit.Recipes.GetAll().ToList();
             var foundProducts = new List<Product>();
             foreach (var meal in meals) {

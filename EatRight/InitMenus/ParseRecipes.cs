@@ -22,8 +22,8 @@ namespace InitRecipes {
 
             var loadMealsBulkSize = Indexes.Count > 1000 ? 1000 : Indexes.Count;
             var unit = new RestDBInterface();
-            var meals = unit.Recipes.GetAll().ToList();
-            if (!overrideDB && meals.All(meal => Indexes.Contains(meal.ID)))
+            var recipes = unit.Recipes.GetAll().ToList();
+            if (!overrideDB && Indexes.All(index => recipes.Any(recipe => recipe.ID == index)))
                 return;
             unit.Recipes.Empty();
 
