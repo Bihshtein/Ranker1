@@ -1,4 +1,5 @@
 ﻿using log4net;
+using Logic;
 using RestModel;
 using System;
 using System.Collections.Generic;
@@ -95,7 +96,7 @@ namespace InitRecipes {
         {
             var prepTimeParts = page.Split(new string[1] { "<span class=\"ready-in-time\">" }, StringSplitOptions.None);
             var prepTimeStr = new String(prepTimeParts[1].TakeWhile(a => a != '<').ToArray());
-            return ParsePrepTime(prepTimeStr);
+            return Expressions.ParseTime(prepTimeStr);
         }
 
         private static int GetServings(string page)
@@ -105,19 +106,6 @@ namespace InitRecipes {
             return int.Parse(servingStr.Replace("\"", ""));
         }
 
-        private static TimeSpan ParsePrepTime(string time) {
-            var hours = GetTimeUnit(ref time, 'h');
-            return new TimeSpan(hours, GetTimeUnit(ref time, 'm'), 0);
-        }
-
-        public static int GetTimeUnit(ref string time, char timeUnit) {
-            var parts = time.Split(timeUnit);
-            if (parts.Length > 1) {
-                time = parts[1];
-                return int.Parse(parts[0]);
-            }
-            else
-                return 0;
-        }
+      
     }
 }

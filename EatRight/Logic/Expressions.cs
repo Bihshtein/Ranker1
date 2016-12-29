@@ -9,6 +9,24 @@ namespace Logic
     public class Expressions
     {
 
+        public static TimeSpan ParseTime(string time)
+        {
+            var hours = GetTimeUnit(ref time, 'h');
+            return new TimeSpan(hours, GetTimeUnit(ref time, 'm'), 0);
+        }
+
+        public static int GetTimeUnit(ref string time, char timeUnit)
+        {
+            var parts = time.Split(timeUnit);
+            if (parts.Length > 1)
+            {
+                time = parts[1];
+                return int.Parse(parts[0]);
+            }
+            else
+                return 0;
+        }
+
         public static double ParseAmount(string fraction)
         {
             fraction = fraction.Trim();
