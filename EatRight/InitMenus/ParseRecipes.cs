@@ -24,7 +24,7 @@ namespace InitRecipes {
             var loadMealsBulkSize = Indexes.Count > 1000 ? 1000 : Indexes.Count;
             var unit = new RestDBInterface();
             var meals = unit.Meals.GetAll().ToList();
-            if (!overrideDB && meals.All(meal => Indexes.Contains(meal.ID)))
+            if (!overrideDB && Indexes.All(index => meals.Any(meal => meal.ID == index)))
                 return;
             unit.Meals.Empty();
 
@@ -96,7 +96,7 @@ namespace InitRecipes {
         {
             var prepTimeParts = page.Split(new string[1] { "<span class=\"ready-in-time\">" }, StringSplitOptions.None);
             var prepTimeStr = new String(prepTimeParts[1].TakeWhile(a => a != '<').ToArray());
-            return Expressions.ParseTime(prepTimeStr);
+            return ParseHelpers.ParseTime(prepTimeStr);
         }
 
         private static int GetServings(string page)

@@ -89,7 +89,7 @@ namespace InitRecipes {
             {
                 try
                 {
-                    relativeWeight = Expressions.ParseAmount(parts[0]) * MeasuresRelativeSizes[unit];
+                    relativeWeight = ParseHelpers.ParseAmount(parts[0]) * MeasuresRelativeSizes[unit];
                 }
                 catch (Exception ex)
                 {
@@ -131,7 +131,7 @@ namespace InitRecipes {
                 {
                     try
                     {
-                        actualWeight = Expressions.ParseAmount(parts[0]) * MeasuresWeights[unit];
+                        actualWeight = ParseHelpers.ParseAmount(parts[0]) * MeasuresWeights[unit];
                     }
                     catch (Exception ex)
                     {

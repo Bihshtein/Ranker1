@@ -6,8 +6,24 @@ using System.Threading.Tasks;
 
 namespace Logic
 {
-    public class Expressions
+    public class ParseHelpers
     {
+        public static string GetWithoutLast_ES_letters(string str)
+        {
+            var length = str.Length;
+            if (str[length - 1] == 's' && str[length - 2] == 'e')
+                return str.Remove(length - 2, 2);
+            return str;
+        }
+
+        public static string GetWithoutLast_S_letter(string str)
+        {
+            var length = str.Length;
+            if (str[length - 1] == 's')
+                return str.Remove(length - 1);
+            return str;
+        }
+
 
         public static TimeSpan ParseTime(string time)
         {
