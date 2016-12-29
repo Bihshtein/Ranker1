@@ -50,6 +50,8 @@ namespace LogicRunner
 
         private void button1_Click(object sender, EventArgs e)
         {
+            var startingTime = DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond;
+
             var uProfile = new UserProfile()
             {
                 Id = 777,
@@ -59,7 +61,15 @@ namespace LogicRunner
                 Name = "Hen"
             };
 
+            var manager = GlobalProfilingManger.Instance.Manager;
+
+            manager.Reset();
+            manager.TakeTime("starting time");
+
             var recommendationDB = RecommendationDBGenerator.FromUserProfile(uProfile, unit);
+
+            manager.TakeTime("get recommendation db from user profile");
+
             recommendationDB.idealServingsNum = int.Parse(idealServings.SelectedItem.ToString());
             recommendationDB.dailyValues = (comboBox1.SelectedValue as DailyValue).DuplicateDictionary();
             recommendationDB.range = new MealSuggestionRange() { Length = 1, MealType = (MealType)Enum.Parse(typeof(MealType), comboBox2.SelectedItem.ToString()) };
@@ -73,11 +83,18 @@ namespace LogicRunner
                     {GraderType.ServingsNumMealGrader,  int.Parse(servings.SelectedItem.ToString())},
                     {GraderType.PrepTimeMealGrader, int.Parse(cookTime.SelectedItem.ToString()) }
                 };
+
+            manager.TakeTime("initialize recommendation db");
+            
             RecommendationGenerator generator = new RecommendationGenerator(unit, recommendationDB);
+
+            manager.TakeTime("creating recommendation generator");
             this.bindingSource2.DataSource = generator.GetMealsList().Select(o => new MyViewModel(o)
             { Id = o.Meal.ID, Name = o.Meal.Name, 
                 NutValues = parseNutValues(o.NutValues), GradersResult = parseGradersResult(o.GradeInfo.GradersInfo) }).ToList();
-            
+
+            manager.TakeTime("getting meals list ");
+
             dataGridView1.DataSource = this.bindingSource2;
 
             if (!alexiknow)
@@ -87,6 +104,13 @@ namespace LogicRunner
                 richTextBox3.DataBindings.Add("Text", bindingSource2, "NutValues");
                 alexiknow = true;
             }
+            manager.TakeTime("setting data source and rich text data binding");
+            
+            manager.End();
+
+            this.labelConsole.Text = string.Format("[{0}] Process took: {1} ms", DateTime.Now.ToShortTimeString(), manager.TotalTime());
+             
+            //MessageBox.Show(manager.ToString());
         }
 
         private string parseNutValues(Dictionary<string, double> let)

@@ -12,6 +12,8 @@ namespace RecommendationBuilder
     {
         public MealWrapper(Meal meal)
         {
+            var timer = GlobalProfilingManger.Instance.Manager;
+
             Meal = meal;
 
             // Calculate nutrition values
@@ -36,6 +38,8 @@ namespace RecommendationBuilder
                     NutValues[entry.Key] = curValue + (entry.Value * (weight / Formulas.DefaultGrams));
                 }
             }
+            timer.TakeTime("get nutrition values of all procuts");
+
 
             // Calculate calories number
             CaloriesNum = 0;
@@ -48,6 +52,8 @@ namespace RecommendationBuilder
 
                 CaloriesNum += Formulas.GetTotalCalories(weight, product.Protein, product.Fat, product.Carbs);
             }
+
+            timer.TakeTime("calculating calories num ");
         }
 
         public override bool Equals(object obj)
