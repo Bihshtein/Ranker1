@@ -63,6 +63,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Product.cs" />
     <Compile Include="Queries.cs" />
+    <Compile Include="RecipesToProductsMapping.cs" />
     <Compile Include="RestRepository.cs" />
     <Compile Include="UserProfile.cs" />
   </ItemGroup>
@@ -71,7 +72,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Logic\Logic.csproj">
-      <Project>{B797E613-7D9C-4A1C-99F8-97D296EDBAD0}</Project>
+      <Project>{b797e613-7d9c-4a1c-99f8-97d296edbad0}</Project>
       <Name>Logic</Name>
     </ProjectReference>
   </ItemGroup>
