@@ -1,6 +1,7 @@
 ﻿using InitDB.Validators;
 using System.Collections.Generic;
 using System.Linq;
+using System;
 
 namespace InitDB.Validators {
     public class VegsValidator : BasicValidator {
@@ -42,6 +43,12 @@ namespace InitDB.Validators {
             if (part.ToLower() !="tomato sauce" && part.ToLower().Contains("tomato"))
                 return "tomato";
             return part;
+        }
+
+        public override Tuple<string, string> GetNameAndDescription(string item) {
+            if (item.Contains("spring"))
+                item = "green";
+            return base.GetNameAndDescription(item);
         }
 
     }

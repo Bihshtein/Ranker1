@@ -23,7 +23,18 @@ namespace InitDB.Validators {
             else if (MainParts != null) 
                 return MainParts.Contains(part);
             else 
-                return Char.IsUpper(part[0]);
+                return IsName(part) && !IsSecondPart(part) && !IsThirdPart(part);
+        }
+
+        public bool IsName(string part) {
+            if (Char.IsLower(part[0]))
+                return false;
+            for (int i = 1; i < part.Length; i++) {
+                if (Char.IsUpper(part[i])) {
+                    return false;
+                }
+            }
+            return true;
         }
 
         public virtual bool IsThirdPart(string part) {

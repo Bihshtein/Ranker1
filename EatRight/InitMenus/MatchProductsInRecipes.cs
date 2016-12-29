@@ -73,7 +73,10 @@ namespace InitRecipes {
         }
 
         public static Dictionary<string, string> SimpleNames = new Dictionary<string, string>() {
-               { "skinless, boneless chicken breast halves","chicken breast"},
+               { "skinless, boneless chicken","chicken"},
+            { "fresh mozzarella, cut into small cubes", "mozzarella" },
+            { "leaves", "leaf" },
+            { "greek-style", "greek" },
         };
 
         public static void ParseItem(Meal meal, string item) {
@@ -158,6 +161,9 @@ namespace InitRecipes {
                     else
                         meal.ProductsWeight.Add(innerpart, actualWeight);
                 }
+            }
+            else {
+                log.Error(item);
             }
         }
 

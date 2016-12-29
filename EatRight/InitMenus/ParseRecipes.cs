@@ -39,9 +39,9 @@ namespace InitRecipes {
                 tasks.ForEach(task => task.Start());
                 tasks.ForEach(task => task.Wait());
             }
-
         }
 
+       
 
         public static void ParseRecipe(int index) {
             var unit = new RestDBInterface();
@@ -54,6 +54,7 @@ namespace InitRecipes {
                 return;
             }
             var nameParts = page.Split(new string[2] { "<title>", "</title>" }, StringSplitOptions.None);
+            var prepTimeParts = page.Split(new string[1] { "<span class=\"ready-in-time\">" }, StringSplitOptions.None);
             var mealParts = page.Split(new string[1] { "<span class=\"toggle-similar__title\" itemprop=\"title\">" }, StringSplitOptions.None);
             var servingParts = page.Split(new string[1] { "<meta id=\"metaRecipeServings\" itemprop=\"recipeYield\" content=" }, StringSplitOptions.None); 
             if (mealParts.Length < 4) {
@@ -65,6 +66,8 @@ namespace InitRecipes {
             }
             var name = nameParts[1];
             var servingStr = new String(servingParts[1].TakeWhile(a => a != '>').ToArray());
+            var prepTimeStr = new String(prepTimeParts[1].TakeWhile(a => a != '<').ToArray());
+            var prepTime = GetPrepTime(prepTimeStr);
             int servings = int.Parse(servingStr.Replace("\"", ""));
             //var mealType =new String(mealParts[3].TakeWhile(a => a != '<').ToArray()).Trim().ToLower();
 
@@ -84,13 +87,30 @@ namespace InitRecipes {
                 Name = name,
                 Ingredients = ingredients,
                 Types = new HashSet<MealType>() { MealType.Breakfast },
-                Servings = servings
+                Servings = servings,
+                PrepTime = prepTime
+                
             });
 
             lock (Locker) {
                 log.Debug("Num " + index);
                 Indexes.Remove(index);
             }
+        }
+
+        private static TimeSpan GetPrepTime(string time) {
+            var hours = GetTimeUnit(ref time, 'h');
+            return new TimeSpan(hours, GetTimeUnit(ref time, 'm'), 0);
+        }
+
+        public static int GetTimeUnit(ref string time, char timeUnit) {
+            var parts = time.Split(timeUnit);
+            if (parts.Length > 1) {
+                time = parts[1];
+                return int.Parse(parts[0]);
+            }
+            else
+                return 0;
         }
     }
 }

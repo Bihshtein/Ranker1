@@ -30,7 +30,7 @@ namespace LogicRunner
         public string Products {
             get {
                 string res = string.Empty;
-                _obj.Meal.ProductsWeight.Keys.ToList().ForEach(value => res += value + '\n');
+                _obj.Meal.ProductsWeight.Keys.ToList().ForEach(value => res += value +" : " + _obj.Meal.ProductsWeight[value] + " gm\n");
                 return res;
             }
             }

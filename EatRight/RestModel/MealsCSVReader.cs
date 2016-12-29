@@ -27,7 +27,7 @@ namespace RestModel
                 var productsWeight = new Dictionary<string, double>();
                 var types = new HashSet<MealType>();
                 var categories = new HashSet<MealCategory>();
-                var prepTime = 0.0;
+                TimeSpan prepTime = new TimeSpan(0);
 
                 var line = reader.ReadLine();
                 while (line != null && line.Length > 1)
@@ -80,7 +80,7 @@ namespace RestModel
                             }
                             break;
                         case "prep_time":
-                            prepTime = Convert.ToDouble(tokens[1]);
+                            prepTime = new TimeSpan(0,(int) Convert.ToDouble(tokens[1]),0);
                             break;
                     }
 

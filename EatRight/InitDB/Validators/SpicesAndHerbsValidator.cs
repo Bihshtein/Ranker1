@@ -7,7 +7,7 @@ namespace InitDB {
             MainParts = new List<string> {
                 "Basil", "Capers", "Dill weed", "Horseradish","Mustard","Peppermint",
                 "Rosemary","Salt", "Seasoning mix","Spearmint","Spices","Thyme",
-                "Vanilla extract","Vinegar"
+                "Vanilla extract","Vinegar",
             };
             SecondParts = new List<string> {
                 "imitation","balsamic","cider","distilled","red wine","turmeric","thyme",

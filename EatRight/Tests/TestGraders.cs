@@ -65,22 +65,20 @@ namespace Tests
         {
             var unit = new RestDBInterface();
 
-            var fastBreakfast = new Meal()
-            {
+            var fastBreakfast = new Meal() {
                 ID = 0,
                 Name = "Fast breakfast",
                 ProductsWeight = new Dictionary<string, double>() { { "Carrot", 1 } },
                 Types = new HashSet<MealType>() { MealType.Breakfast },
-                PrepTime = 2
+                PrepTime = new TimeSpan(0, 2, 0)
             };
 
-            var slowBreakfast = new Meal()
-            {
+            var slowBreakfast = new Meal() {
                 ID = 1,
                 Name = "Slow breakfast",
                 ProductsWeight = new Dictionary<string, double>() { { "Carrot", 1 } },
                 Types = new HashSet<MealType>() { MealType.Breakfast },
-                PrepTime = 20
+                PrepTime = new TimeSpan(0, 20, 0)
             };
 
             unit.Meals.Empty();
