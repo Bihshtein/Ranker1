@@ -18,7 +18,7 @@ namespace Tests
         public void TestRecommendationGeneration()
         {
             var unit = new RestDBInterface();
-            unit.Meals.Empty();
+            unit.Recipes.Empty();
             RecommendationDB recommendationDB = GenerateRandomRecommendationDB();
             GenerateRandomMeals(unit, recommendationDB);
             RecommendationGenerator generator = new RecommendationGenerator(unit, recommendationDB);
@@ -88,7 +88,7 @@ namespace Tests
 
         private void GenerateRandomMeals(RestDBInterface unit, RecommendationDB recommendationDB)
         {
-            unit.Meals.Empty();
+            unit.Recipes.Empty();
             var allProducts = unit.Products.GetAll().ToList();
             int prodNum = allProducts.Count;
             var rand = new Random(seed);
@@ -127,14 +127,17 @@ namespace Tests
                 Array categoryValues = Enum.GetValues(typeof(MealCategory));
                 MealCategory category = (MealCategory)categoryValues.GetValue(rand.Next(categoryValues.Length));
 
-                Meal randMeal = new Meal() {
+                Recipe randMeal = new Recipe() {
                     ID =i,
                     Name = "Random meal " + i,
                     ProductsWeight = products,
                     Types = new HashSet<MealType> { type },
                     Categories = new HashSet<MealCategory> { category }
                 };
-                unit.Meals.Add(randMeal);
+
+                randMeal.CalculateNutValuesAndCalories();
+
+                unit.Recipes.Add(randMeal);
             }
         }
 

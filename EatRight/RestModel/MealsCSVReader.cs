@@ -14,7 +14,7 @@ namespace RestModel
 
         public static void CreateFixedMealsList(RestDBInterface unit)
         {
-            unit.Meals.Empty();
+            unit.Recipes.Empty();
             int curID = 0;
 
             var reader = new StreamReader(File.OpenRead(csvPath));
@@ -89,7 +89,7 @@ namespace RestModel
 
                 if (name.Length > 0 && productsWeight.Count > 0)
                 {
-                    Meal meal = new Meal() {
+                    Recipe meal = new Recipe() {
                         Name = name,
                         ProductsWeight = productsWeight,
                         Types = types,
@@ -97,7 +97,10 @@ namespace RestModel
                         PrepTime = prepTime,
                         ID = curID++
                     };
-                    unit.Meals.Add(meal);
+
+                    meal.CalculateNutValuesAndCalories();
+
+                    unit.Recipes.Add(meal);
                 }
             }
         }

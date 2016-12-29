@@ -30,7 +30,7 @@ namespace LogicRunner
         public string Products {
             get {
                 string res = string.Empty;
-                _obj.Meal.ProductsWeight.Keys.ToList().ForEach(value => res += value +" : " + _obj.Meal.ProductsWeight[value] + " gm\n");
+                _obj.Recipe.ProductsWeight.Keys.ToList().ForEach(value => res += value +" : " + _obj.Recipe.ProductsWeight[value] + " gm\n");
                 return res;
             }
             }
@@ -38,14 +38,14 @@ namespace LogicRunner
 
 
 
-        private MealWrapper _obj;
+        private Meal _obj;
 
-        public MyViewModel(MealWrapper obj)
+        public MyViewModel(Meal obj)
         {
             _obj = obj;
         }
 
-        public MealWrapper GetModel()
+        public Meal GetModel()
         {
             return _obj;
         }

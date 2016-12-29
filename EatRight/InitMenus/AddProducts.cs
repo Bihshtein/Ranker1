@@ -56,15 +56,23 @@ namespace InitRecipes {
             var customCulture = (CultureInfo)Thread.CurrentThread.CurrentCulture.Clone(); customCulture.NumberFormat.NumberDecimalSeparator = ".";
             Thread.CurrentThread.CurrentCulture = customCulture;
 
-            var meals = unit.Meals.GetAll().ToList();
+            var meals = unit.Recipes.GetAll().ToList();
             var foundProducts = new List<Product>();
             foreach (var meal in meals) {
                 if (meal.ProductsWeight != null)
                     meal.ProductsWeight.Clear();
+                meal.TotalCaloriesNum = 0;
+                if (meal.TotalNutValues != null)
+                {
+                    meal.TotalNutValues.Clear();
+                }
+                else meal.TotalNutValues = new Dictionary<string, double>();
+
                 foreach (var item in meal.Ingredients) {
                     ParseItem(meal, item.ToLower().Trim());
                 }
-                unit.Meals.Update(s => s.ID, meal.ID, meal);
+
+                unit.Recipes.Update(s => s.ID, meal.ID, meal);
             }
 
             Console.WriteLine("total meals : " + meals.Count);
@@ -178,27 +186,31 @@ namespace InitRecipes {
             return new Tuple<string, double, bool>(innerpart, weight, isRelativeWeight);
         }
 
-    public static void ParseItem(Meal meal, string item) {
-        item = GetPrettyItem(item);
-        var results = ParseWeightAndName(item);
-        var innerpart = results.Item1;   
-          
-        ++total;
-        if (innerpart != string.Empty) {
-            innerpart = AdjustInnerPart(innerpart);
-            var res = Queries<Product>.GetMatchingProductsForIngredient(innerpart);
+        public static void ParseItem(Recipe meal, string item)
+        {
+            item = GetPrettyItem(item);
+            var results = ParseWeightAndName(item);
+            var innerpart = results.Item1;
 
-            if (res == null || res.Count == 0) {
-                log.Info(innerpart);
-                ++totalMissing;
+            ++total;
+            if (innerpart != string.Empty)
+            {
+                innerpart = AdjustInnerPart(innerpart);
+                var res = Queries<Product>.GetMatchingProductsForIngredient(innerpart);
+
+                if (res == null || res.Count == 0)
+                {
+                    log.Info(innerpart);
+                    ++totalMissing;
+                }
+                else
+                    AddItem(res[0], meal, results.Item3, results.Item2, innerpart);
             }
-            else 
-                AddItem(res[0], meal, results.Item3, results.Item2, innerpart);
+            else
+            {
+                log.Error(item);
+            }
         }
-        else {
-            log.Error(item);
-        }
-    }
 
         public static string GetPrettyItem(string item)
         {
@@ -222,7 +234,7 @@ namespace InitRecipes {
             return innerpart;
         }
 
-        public static void AddItem(Product product, Meal meal, bool isRelativeWeight, double weight, string innerpart)
+        public static void AddItem(Product product, Recipe meal, bool isRelativeWeight, double weight, string innerpart)
         {
             if (isRelativeWeight)
                 weight = product.Weight * weight;
@@ -232,6 +244,21 @@ namespace InitRecipes {
                 meal.ProductsWeight[innerpart] += weight;
             else
                 meal.ProductsWeight.Add(innerpart, weight);
+
+            var prodNutValues = product.Nutrients().ToList();
+
+            foreach (var entry in prodNutValues)
+            {
+                if (!meal.TotalNutValues.ContainsKey(entry.Key))
+                {
+                    meal.TotalNutValues[entry.Key] = 0;
+                }
+
+                double curValue = meal.TotalNutValues[entry.Key];
+                meal.TotalNutValues[entry.Key] = curValue + (entry.Value * (weight / Formulas.DefaultGrams));
+            }
+
+            meal.TotalCaloriesNum += Formulas.GetTotalCalories(weight, product.Protein, product.Fat, product.Carbs);
         }
 
        

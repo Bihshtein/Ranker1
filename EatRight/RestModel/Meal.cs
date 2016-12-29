@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using RestModel;
 using MongoDB.Bson.Serialization.Attributes;
+using Logic;
 
 namespace RestModel  {
 
@@ -26,7 +27,7 @@ namespace RestModel  {
         Chinese
     }
     
-    public class Meal : IQueryable
+    public class Recipe : IQueryable
     {
         public override int GetHashCode() {
             return ID;
@@ -44,6 +45,8 @@ namespace RestModel  {
         public Dictionary<string, double> ProductsWeight;
         public List<string> Ingredients;
         public TimeSpan PrepTime { get; set; } // In minutes
+        public Dictionary<string, double> TotalNutValues { get; set; }
+        public double TotalCaloriesNum { get; set; }
 
         private static RestDBInterface Unit = new RestDBInterface();
         [BsonElement("Servings")]
@@ -57,14 +60,14 @@ namespace RestModel  {
                 return false;
             }
 
-            Meal m = (Meal)obj;
+            Recipe m = (Recipe)obj;
             return ID.Equals(m.ID);
         }
-
-        public KeyValuePair<Product, double> GetProductWeight(string prodName)
+        
+        private KeyValuePair<Product, double> GetProductWeight(string prodName)
         {
             var product = Queries<Product>.GetMatchingProductsForIngredient(prodName)[0];
-            return new KeyValuePair<Product, double>(product, ProductsWeight[prodName]/Servings);
+            return new KeyValuePair<Product, double>(product, ProductsWeight[prodName]);
         }
 
         public Boolean HasType(MealType type)
@@ -75,6 +78,36 @@ namespace RestModel  {
         public Boolean HasCategory(MealCategory category)
         {
             return Categories != null && Categories.Contains(category);
+        }
+
+        public bool CalculateNutValuesAndCalories()
+        {
+            if (this.TotalNutValues != null) return false;
+
+            this.TotalNutValues = new Dictionary<string, double>();
+            this.TotalCaloriesNum = 0;
+
+            foreach (var pw in ProductsWeight)
+            {
+                var product = GetProductWeight(pw.Key).Key;
+                var weight = pw.Value;
+                var prodNutValues = product.Nutrients().ToList();
+
+                foreach (var entry in prodNutValues)
+                {
+                    if (!TotalNutValues.ContainsKey(entry.Key))
+                    {
+                        TotalNutValues[entry.Key] = 0;
+                    }
+
+                    double curValue = TotalNutValues[entry.Key];
+                    TotalNutValues[entry.Key] = curValue + (entry.Value * (weight / Formulas.DefaultGrams));
+                }
+
+                TotalCaloriesNum += Formulas.GetTotalCalories(weight, product.Protein, product.Fat, product.Carbs);
+            }
+            
+            return true;
         }
     }
 }

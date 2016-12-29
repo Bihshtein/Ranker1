@@ -10,8 +10,8 @@ namespace WebServer.Controllers
     public class MealsController : ApiController
     {
         public HttpResponseMessage GetAll() {
-            var meals = new RestDBInterface().Meals.GetAll();
-            var x = new List<List<Meal>>();
+            var meals = new RestDBInterface().Recipes.GetAll();
+            var x = new List<List<Recipe>>();
             x.Add(meals.ToList());
             if (meals.Any()) return Request.CreateResponse(HttpStatusCode.OK, x);
             return Request.CreateErrorResponse(HttpStatusCode.NotFound, "No products found.");

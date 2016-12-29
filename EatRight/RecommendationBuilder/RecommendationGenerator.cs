@@ -26,7 +26,7 @@ namespace RecommendationBuilder
         private List<DailyMenu> dailyMenusList = null;
         private HashSet<int> usedDailyMenus = null;
         // Meals
-        private List<MealWrapper> mealsList = null;
+        private List<Meal> mealsList = null;
         private HashSet<int> usedMeals = null;
 
         public RecommendationGenerator(RestDBInterface unit, RecommendationDB recommendationDB)
@@ -48,7 +48,7 @@ namespace RecommendationBuilder
 
             this.unit = unit;
 
-            mealsList = new List<MealWrapper>();
+            mealsList = new List<Meal>();
             if (InMenuMode())
             {
                 GenerateMenusList();
@@ -65,7 +65,7 @@ namespace RecommendationBuilder
             manager.TakeTime("end of recomendation constructor");
         }
 
-        public List<MealWrapper> GetMealsList()
+        public List<Meal> GetMealsList()
         {
             return mealsList;
         }
@@ -111,7 +111,7 @@ namespace RecommendationBuilder
             menu.Days[index] = newDailyMenu;
         }
 
-        public MealWrapper GetMeal()
+        public Meal GetMeal()
         {
             if (!InMealMode())
             {
@@ -120,7 +120,7 @@ namespace RecommendationBuilder
                 System.Environment.Exit(1);
             }
 
-            MealWrapper newMealWrapper = GetBestUnusedMeal();
+            Meal newMealWrapper = GetBestUnusedMeal();
             if (newMealWrapper == null)
             {
                 return null;
@@ -151,7 +151,7 @@ namespace RecommendationBuilder
             return null;
         }
 
-        private MealWrapper GetBestUnusedMeal()
+        private Meal GetBestUnusedMeal()
         {
             foreach (var meal in mealsList)
             {
@@ -171,9 +171,9 @@ namespace RecommendationBuilder
             return usedDailyMenus.Contains(dailyMenu.ID);
         }
 
-        private bool IsUsed(MealWrapper meal)
+        private bool IsUsed(Meal meal)
         {
-            return usedMeals.Contains(meal.Meal.ID);
+            return usedMeals.Contains(meal.Recipe.ID);
         }
 
         private void SetDailyMenuAsUsed(DailyMenu dailyMenu)
@@ -198,14 +198,14 @@ namespace RecommendationBuilder
             }
         }
 
-        private void SetMealAsUsed(MealWrapper meal)
+        private void SetMealAsUsed(Meal meal)
         {
-            usedMeals.Add(meal.Meal.ID);
+            usedMeals.Add(meal.Recipe.ID);
         }
 
-        private void SetMealAsUnused(MealWrapper meal)
+        private void SetMealAsUnused(Meal meal)
         {
-            usedMeals.Remove(meal.Meal.ID);
+            usedMeals.Remove(meal.Recipe.ID);
         }
 
         private void SetMealAsUnused(int mealIdx)
@@ -321,9 +321,9 @@ namespace RecommendationBuilder
             GenerateMealsList();
 
             // Take only the best MAX_MEALS_IN_LIST_NUM days
-            var mealsLists = new Dictionary<MealType, List<MealWrapper>>();
+            var mealsLists = new Dictionary<MealType, List<Meal>>();
             ((MenuSuggestionRange)RecommendationObject.recommendationDB.range).MealsInDailyMenu.ForEach
-                (x => mealsLists[x] = mealsList.Where(y => y.Meal.HasType(x)).Take(Globals.MAX_MEALS_IN_LIST_NUM).ToList());
+                (x => mealsLists[x] = mealsList.Where(y => y.Recipe.HasType(x)).Take(Globals.MAX_MEALS_IN_LIST_NUM).ToList());
             dailyMenusList = GetAllCombinations(mealsLists).Select(x => new DailyMenu(x)).ToList();
 
             var graderMap = InitGraderMap(GraderType.DailyMenuGraderStart, GraderType.DailyMenuGraderEnd);
@@ -341,10 +341,10 @@ namespace RecommendationBuilder
 
             timer.TakeTime("grader map and filter set initializied");
 
-            var dbMealsList = unit.Meals.GetAll().ToList();
+            var dbMealsList = unit.Recipes.GetAll().ToList();
             timer.TakeTime("meals - get all");
 
-            mealsList = dbMealsList.Select(x => new MealWrapper(x)).ToList();
+            mealsList = dbMealsList.Select(x => new Meal(x)).ToList();
             timer.TakeTime("create meal list");
 
             mealsList = FilterList(mealsList, filterSet);
@@ -353,7 +353,7 @@ namespace RecommendationBuilder
             mealsList.ForEach(x => EvaluateObject(x, graderMap));
             timer.TakeTime("evaulate objects for each grader map ");
 
-            mealsList.Sort(new RecommendationObjectComparer<MealWrapper>());
+            mealsList.Sort(new RecommendationObjectComparer<Meal>());
             timer.TakeTime("grader map and filter set initializied");
 
         }
@@ -412,13 +412,13 @@ namespace RecommendationBuilder
         /**
          * Get all combinations of possible mapping from meal types to meals.
          */
-        private static List<Dictionary<MealType, MealWrapper>> GetAllCombinations(Dictionary<MealType, List<MealWrapper>> listsMapping)
+        private static List<Dictionary<MealType, Meal>> GetAllCombinations(Dictionary<MealType, List<Meal>> listsMapping)
         {
-            var resList = new List<Dictionary<MealType, MealWrapper>>();
+            var resList = new List<Dictionary<MealType, Meal>>();
 
             if (listsMapping.Count == 0)
             {
-                resList.Add(new Dictionary<MealType, MealWrapper>());
+                resList.Add(new Dictionary<MealType, Meal>());
                 return resList;
             }
 
@@ -434,7 +434,7 @@ namespace RecommendationBuilder
             {
                 foreach (var comb in combWithoutFirstList)
                 {
-                    var finalComb = new Dictionary<MealType, MealWrapper>(comb);
+                    var finalComb = new Dictionary<MealType, Meal>(comb);
                     finalComb[firstType] = elem;
                     resList.Add(finalComb);
                 }

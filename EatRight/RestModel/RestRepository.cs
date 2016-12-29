@@ -10,7 +10,7 @@ namespace RestModel {
     public class RestDBInterface {
         private IMongoDatabase _database;
         protected RestRepository<Product> products;
-        protected RestRepository<Meal> meals;
+        protected RestRepository<Recipe> recipes;
         protected RestRepository<DailyValue> dailyvalues;
         public RestDBInterface() {
             var client = new MongoClient();
@@ -24,10 +24,10 @@ namespace RestModel {
             }
         }
 
-        public RestRepository<Meal> Meals {
+        public RestRepository<Recipe> Recipes {
             get {
-                if (meals == null) meals = new RestRepository<Meal>(_database, "meals");
-                return meals;
+                if (recipes == null) recipes = new RestRepository<Recipe>(_database, "recipes");
+                return recipes;
             }
         }
 

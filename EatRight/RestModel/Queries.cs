@@ -197,10 +197,10 @@ namespace RestModel {
             return newRes;
         }
 
-        public List<Meal> GetByMealType(string mealType) {
-            Expression<Func<Meal, bool>> query = x => x.MealType.Equals(mealType);
+        public List<Recipe> GetByMealType(string mealType) {
+            Expression<Func<Recipe, bool>> query = x => x.MealType.Equals(mealType);
             var res = collection.Find(query as Expression<Func<T, bool>>).ToList();
-            var newRes = res.Cast<Meal>().ToList();
+            var newRes = res.Cast<Recipe>().ToList();
             return newRes;
         }
 

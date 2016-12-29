@@ -8,9 +8,9 @@ namespace RecommendationBuilder.Graders.MealGraders
 {
     abstract class TasteMealGrader<T> : MealGrader
     {
-        abstract protected void InitDataStructures(MealWrapper meal);
+        abstract protected void InitDataStructures(Meal meal);
 
-        protected override double InternalGrade(MealWrapper meal)
+        protected override double InternalGrade(Meal meal)
         {
             InitDataStructures(meal);
             if (flavorDict == null)

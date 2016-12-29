@@ -22,10 +22,10 @@ namespace InitRecipes {
 
             var loadMealsBulkSize = Indexes.Count > 1000 ? 1000 : Indexes.Count;
             var unit = new RestDBInterface();
-            var meals = unit.Meals.GetAll().ToList();
+            var meals = unit.Recipes.GetAll().ToList();
             if (!overrideDB && meals.All(meal => Indexes.Contains(meal.ID)))
                 return;
-            unit.Meals.Empty();
+            unit.Recipes.Empty();
 
             while (Indexes.Count > 0) {
                 log.Debug("Indexes count : " + Indexes.Count);
@@ -52,7 +52,7 @@ namespace InitRecipes {
                 return;
             }
            
-            unit.Meals.Add(new Meal() {
+            unit.Recipes.Add(new Recipe() {
                 ID = index,
                 Name = GetRecipeName(page),
                 Ingredients = GetIngredients(page),

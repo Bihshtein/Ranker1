@@ -90,10 +90,10 @@ namespace LogicRunner
 
             manager.TakeTime("creating recommendation generator");
             this.bindingSource2.DataSource = generator.GetMealsList().Select(o => new MyViewModel(o)
-            { Id = o.Meal.ID, Name = o.Meal.Name, 
+            { Id = o.Recipe.ID, Name = o.Recipe.Name, 
                 NutValues = parseNutValues(o.NutValues), GradersResult = parseGradersResult(o.GradeInfo.GradersInfo) }).ToList();
 
-            manager.TakeTime("getting meals list ");
+            manager.TakeTime("getting meals list");
 
             dataGridView1.DataSource = this.bindingSource2;
 

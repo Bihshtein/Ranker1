@@ -10,14 +10,14 @@ namespace RecommendationBuilder.Filters.MealFilters
     {
         public override Boolean IsValid(RecommendationObject obj)
         {
-            if (!(obj is MealWrapper))
+            if (!(obj is Meal))
             {
                 throw new ArgumentException();
             }
 
-            return InternalIsValid((MealWrapper)obj);
+            return InternalIsValid((Meal)obj);
         }
 
-        abstract protected Boolean InternalIsValid(MealWrapper meal);
+        abstract protected Boolean InternalIsValid(Meal meal);
     }
 }

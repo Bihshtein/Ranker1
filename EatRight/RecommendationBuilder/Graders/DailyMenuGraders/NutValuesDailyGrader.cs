@@ -72,7 +72,7 @@ namespace RecommendationBuilder.Graders.DailyMenuGraders
 
             foreach(var outerEntry in dailyMenu.Meals)
             {
-                MealWrapper mealWrapper = outerEntry.Value;
+                Meal mealWrapper = outerEntry.Value;
                 foreach (var entry in mealWrapper.NutValues)
                 {
                     var nutName = entry.Key;
