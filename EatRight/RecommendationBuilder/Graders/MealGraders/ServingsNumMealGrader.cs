@@ -19,18 +19,18 @@ namespace RecommendationBuilder.Graders.MealGraders
             idealServingsNum = RecommendationObject.recommendationDB.idealServingsNum;
         }
 
-        protected override double InternalGrade(MealWrapper mealWrapper)
+        protected override double InternalGrade(Meal mealWrapper)
         {
             /* 
              * The ideal servings num will be graded 100.
              * If we missed by one we'll get 66.6, by two we'll get 33.3, and by more- 0.
              */
-            int dist = Math.Abs(mealWrapper.Meal.Servings - idealServingsNum);
+            int dist = Math.Abs(mealWrapper.Recipe.Servings - idealServingsNum);
             if (dist > 3)
             {
                 return 0;
             }
-            return (3 - dist) / 3;
+            return (3 - dist) / 3.0;
         }
     }
 }

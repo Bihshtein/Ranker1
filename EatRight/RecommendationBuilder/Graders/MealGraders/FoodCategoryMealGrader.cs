@@ -15,12 +15,12 @@ namespace RecommendationBuilder.Graders.MealGraders
             Type = GraderType.FoodCategoryMealGrader;
         }
 
-        protected override void InitDataStructures(MealWrapper meal)
+        protected override void InitDataStructures(Meal meal)
         {
             flavorDict = RecommendationObject.recommendationDB.mealCategoryGrade;
-            if (meal.Meal.Categories != null)
+            if (meal.Recipe.Categories != null)
             {
-                objectList = meal.Meal.Categories.ToList();
+                objectList = meal.Recipe.Categories.ToList();
             }
         }
     }

@@ -22,10 +22,10 @@ namespace Tests
             var recommendationDB = RecommendationDBGenerator.FromUserProfile(profile, unit);
             recommendationDB.range = new MealSuggestionRange();
             var recomGen = new RecommendationGenerator(unit, recommendationDB);
-            MealWrapper meal = recomGen.GetMeal();
+            Meal meal = recomGen.GetMeal();
 
             Assert.IsNotNull(meal);
-            Assert.IsNotNull(meal.Meal);
+            Assert.IsNotNull(meal.Recipe);
             Assert.IsTrue(meal.Grade > 0);
         }
        

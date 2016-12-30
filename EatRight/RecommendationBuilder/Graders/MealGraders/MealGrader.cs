@@ -11,14 +11,14 @@ namespace RecommendationBuilder.Graders.MealGraders
     {
         public override double Grade(RecommendationObject obj)
         {
-            if (!(obj is MealWrapper))
+            if (!(obj is Meal))
             {
                 throw new ArgumentException();
             }
 
-            return InternalGrade((MealWrapper)obj);
+            return InternalGrade((Meal)obj);
         }
 
-        abstract protected double InternalGrade(MealWrapper meal);
+        abstract protected double InternalGrade(Meal meal);
     }
 }

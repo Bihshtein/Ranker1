@@ -38,7 +38,7 @@ namespace InitDB {
          "moist heat", "dry heat", "smoked", "carbonated","cultured","poached","whipped","pasteurized","candied","sauteed", "breaded","steamed","fried","heated",
          "toasted","boiled", "grilled", "pan-browned", "crumbles", "pickled", "microwave", "baked", "pickled", "roasted",
              "oven","broiled","scalloped", "raw", "braised","stewed","rotisserie","BBQ","simmered","glazed","cooked",
-            "prepared","batter", "flour"
+            "prepared","batter", "flour",
         };
 
         public static List<string> StorageOptions = new List<string>{
@@ -54,6 +54,11 @@ namespace InitDB {
         public static bool IsPreparationOption(string part) {
             return PreparationOptions.Any((item) => part.Contains(item)) &&
                      !NoiseWords.Any((item) => part.Contains(item));
+        }
+
+
+        public static string GetPreparationOption(string part) {
+            return PreparationOptions.Find(item => part.Contains(item));
         }
 
 

@@ -21,7 +21,6 @@ namespace LogicRunner
         {
             InitializeComponent();
 
-
             unit = new RestDBInterface();
      
             var dv = unit.DailyValues.GetAllList();
@@ -31,14 +30,28 @@ namespace LogicRunner
             dataGridView1.AutoGenerateColumns = true;
 
             comboBox2.DataSource = Enum.GetNames(typeof(MealType));
-            comboBox5.DataSource = new List<int> { 500, 1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500, 5000 };
-            comboBox3.DataSource = new List<int> { 1, 2, 3, 3, 4, 5, 6, 7, 8, 9,10 };
-            comboBox4.DataSource = new List<int> { 1, 2, 3, 3, 4, 5, 6, 7, 8, 9, 10 };
-            comboBox6.DataSource = new List<int> { 1, 2, 3, 3, 4, 5, 6, 7, 8, 9, 10 };
+            totalCalories.DataSource = new List<int> { 500, 1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500, 5000 };
+            calories.DataSource = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9,10 };
+            cookTime.DataSource = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            minValues.DataSource = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            maxValues.DataSource = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            servings.DataSource = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            idealServings.DataSource = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+            totalCalories.SelectedIndex = 3;
+            idealServings.SelectedIndex = 2;
+
+            maxValues.SelectedIndex = 6;
+            minValues.SelectedIndex =6;
+            calories.SelectedIndex = 4;
+            servings.SelectedIndex = 2;
+            cookTime.SelectedIndex = 2;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            var startingTime = DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond;
+
             var uProfile = new UserProfile()
             {
                 Id = 777,
@@ -48,23 +61,40 @@ namespace LogicRunner
                 Name = "Hen"
             };
 
+            var manager = GlobalProfilingManger.Instance.Manager;
+
+            manager.Reset();
+            manager.TakeTime("starting time");
+
             var recommendationDB = RecommendationDBGenerator.FromUserProfile(uProfile, unit);
-          
+
+            manager.TakeTime("get recommendation db from user profile");
+
+            recommendationDB.idealServingsNum = int.Parse(idealServings.SelectedItem.ToString());
             recommendationDB.dailyValues = (comboBox1.SelectedValue as DailyValue).DuplicateDictionary();
             recommendationDB.range = new MealSuggestionRange() { Length = 1, MealType = (MealType)Enum.Parse(typeof(MealType), comboBox2.SelectedItem.ToString()) };
-            recommendationDB.dailyCaloriesNum = int.Parse(comboBox5.SelectedItem.ToString());
+            recommendationDB.dailyCaloriesNum = int.Parse(totalCalories.SelectedItem.ToString());
               recommendationDB.GradersWeight = new Dictionary<GraderType, double>()
                {
                     // Meal graders
-                    {GraderType.CaloriesCountMealGrader, int.Parse(comboBox3.SelectedItem.ToString())},
-                    {GraderType.MinNutValuesMealGrader,  int.Parse(comboBox6.SelectedItem.ToString())},
-                    {GraderType.PrepTimeMealGrader, int.Parse(comboBox4.SelectedItem.ToString()) }
+                    {GraderType.CaloriesCountMealGrader, int.Parse(calories.SelectedItem.ToString())},
+                    {GraderType.MinNutValuesMealGrader,  int.Parse(minValues.SelectedItem.ToString())},
+                    {GraderType.MaxNutValuesMealGrader,  int.Parse(maxValues.SelectedItem.ToString())},
+                    {GraderType.ServingsNumMealGrader,  int.Parse(servings.SelectedItem.ToString())},
+                    {GraderType.PrepTimeMealGrader, int.Parse(cookTime.SelectedItem.ToString()) }
                 };
-            RecommendationGenerator generator = new RecommendationGenerator(unit, recommendationDB);
-            this.bindingSource2.DataSource = generator.GetMealsList().Select(o => new MyViewModel(o)
-            { Id = o.Meal.ID, Name = o.Meal.Name, 
-                NutValues = parseNutValues(o.NutValues), GradersResult = parseGradersResult(o.GradeInfo.GradersInfo) }).ToList();
+
+            manager.TakeTime("initialize recommendation db");
             
+            RecommendationGenerator generator = new RecommendationGenerator(unit, recommendationDB);
+
+            manager.TakeTime("creating recommendation generator");
+            this.bindingSource2.DataSource = generator.GetMealsList().Select(o => new MyViewModel(o)
+            { Id = o.Recipe.ID, Name = o.Recipe.Name, 
+                NutValues = parseNutValues(o.NutValues), GradersResult = parseGradersResult(o.GradeInfo.GradersInfo) }).ToList();
+
+            manager.TakeTime("getting meals list");
+
             dataGridView1.DataSource = this.bindingSource2;
 
             if (!alexiknow)
@@ -74,6 +104,13 @@ namespace LogicRunner
                 richTextBox3.DataBindings.Add("Text", bindingSource2, "NutValues");
                 alexiknow = true;
             }
+            manager.TakeTime("setting data source and rich text data binding");
+            
+            manager.End();
+
+            this.labelConsole.Text = string.Format("[{0}] Process took: {1} ms", DateTime.Now.ToShortTimeString(), manager.TotalTime());
+             
+            //MessageBox.Show(manager.ToString());
         }
 
         private string parseNutValues(Dictionary<string, double> let)
@@ -82,7 +119,7 @@ namespace LogicRunner
 
             foreach (var x in let)
             {
-                str += string.Format("{0} = {1}\n", x.Key, x.Value);
+                str += string.Format("{0} = {1}\n", x.Key, x.Value.ToString("N3"));
             }
             return str;
         }

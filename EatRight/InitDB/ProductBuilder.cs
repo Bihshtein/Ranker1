@@ -47,7 +47,7 @@ namespace InitDB {
 
         public static void TrySetCommonProperties(Product p, string item) {
             if (CommonValidator.IsPreparationOption(item))
-                p.PreparationMethod = GetUpdatedStringParam(item,  p.PreparationMethod);
+                p.PreparationMethod = GetUpdatedStringParam(CommonValidator.GetPreparationOption(item),  p.PreparationMethod);
             p.StorageMethod = GetUpdatedStringParam(CommonValidator.StorageOptions, item, p.StorageMethod);
             p.FatDetails = GetUpdatedStringParam(CommonValidator.FatOptions, item, p.FatDetails);
             p.PackDetails = GetUpdatedStringParam(CommonValidator.PackOptions, item, p.PackDetails);
@@ -82,7 +82,7 @@ namespace InitDB {
             if (validator.IsSecondPart(item)) {
                 var nameAndCut = validator.GetNameAndDescription(item);
                 p.Name2 = nameAndCut.Item1;
-                if (nameAndCut.Item2 != string.Empty)
+                if (nameAndCut.Item2 != null && nameAndCut.Item2 != string.Empty)
                     p.Name3 = nameAndCut.Item2;
                 p.Name2 = p.Name2.ToLower();
 

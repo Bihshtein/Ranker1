@@ -18,7 +18,7 @@ namespace Tests
         {
             var unit = new RestDBInterface();
 
-            Meal goodBreakfast = new Meal()
+            Recipe goodBreakfast = new Recipe()
             {
                 ID = 0,
                 Name = "Good breakfast",
@@ -33,7 +33,7 @@ namespace Tests
                 Types = new HashSet<MealType>() { MealType.Breakfast }
             };
 
-            Meal badBreakfast = new Meal()
+            Recipe badBreakfast = new Recipe()
             {
                 ID = 1,
                 Name = "Bad breakfast",
@@ -41,9 +41,12 @@ namespace Tests
                 Types = new HashSet<MealType>() { MealType.Breakfast }
             };
 
-            unit.Meals.Empty();
-            unit.Meals.Add(goodBreakfast);
-            unit.Meals.Add(badBreakfast);
+            goodBreakfast.CalculateNutValuesAndCalories();
+            badBreakfast.CalculateNutValuesAndCalories();
+
+            unit.Recipes.Empty();
+            unit.Recipes.Add(goodBreakfast);
+            unit.Recipes.Add(badBreakfast);
 
             var userProfile = new UserProfile() { Age = 30, Gender = GenderType.Male };
             var range = new MenuSuggestionRange()
@@ -80,9 +83,9 @@ namespace Tests
             Assert.IsTrue(menuWOT.GetDay(0).Meals.ContainsKey(MealType.Breakfast));
             Assert.IsTrue(menuWT.GetDay(0).Meals.ContainsKey(MealType.Breakfast));
             // 4. Main assertion: assert that we got the bad meal (because the good one contains forbidden products)
-            Assert.IsTrue(menuWOT.GetDay(0).Meals[MealType.Breakfast].Meal.Equals(badBreakfast));
+            Assert.IsTrue(menuWOT.GetDay(0).Meals[MealType.Breakfast].Recipe.Equals(badBreakfast));
             // And we get the good meal with not restrictions
-            Assert.IsTrue(menuWT.GetDay(0).Meals[MealType.Breakfast].Meal.Equals(goodBreakfast));
+            Assert.IsTrue(menuWT.GetDay(0).Meals[MealType.Breakfast].Recipe.Equals(goodBreakfast));
         }
 
         [TestMethod]
@@ -90,7 +93,7 @@ namespace Tests
         {
             var unit = new RestDBInterface();
 
-            Meal breakfast = new Meal()
+            Recipe breakfast = new Recipe()
             {
                 ID = 0,
                 Name = "Breakfast",
@@ -98,8 +101,10 @@ namespace Tests
                 Types = new HashSet<MealType>() { MealType.Breakfast }
             };
 
-            unit.Meals.Empty();
-            unit.Meals.Add(breakfast);
+            breakfast.CalculateNutValuesAndCalories();
+
+            unit.Recipes.Empty();
+            unit.Recipes.Add(breakfast);
 
             var userProfile = new UserProfile() { Age = 30, Gender = GenderType.Male };
             var range = new MealSuggestionRange()

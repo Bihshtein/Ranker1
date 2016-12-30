@@ -18,14 +18,14 @@ namespace RecommendationBuilder.Filters.MealFilters
             forbiddenProducts = RecommendationObject.recommendationDB.forbiddenProducts;
         }
 
-        protected override Boolean InternalIsValid(MealWrapper mealWrapper)
+        protected override Boolean InternalIsValid(Meal mealWrapper)
         {
             if (forbiddenProducts == null || forbiddenProducts.Count == 0)
             {
                 return true;
             }
 
-            foreach (var prodName in mealWrapper.Meal.ProductsWeight.Keys)
+            foreach (var prodName in mealWrapper.Recipe.ProductsWeight.Keys)
             {
                 if (forbiddenProducts.Contains(prodName))
                 {

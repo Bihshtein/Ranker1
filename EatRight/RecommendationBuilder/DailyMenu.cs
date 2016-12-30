@@ -12,10 +12,10 @@ namespace RecommendationBuilder
         public DailyMenu()
         {
             ID = IDCounter++;
-            Meals = new Dictionary<MealType, MealWrapper>();
+            Meals = new Dictionary<MealType, Meal>();
         }
 
-        public DailyMenu(Dictionary<MealType, MealWrapper> meals)
+        public DailyMenu(Dictionary<MealType, Meal> meals)
         {
             ID = IDCounter++;
             Meals = meals;
@@ -33,13 +33,13 @@ namespace RecommendationBuilder
             return ID.Equals(dm.ID);
         }
 
-        public Dictionary<MealType, MealWrapper> Meals { get; private set; }
+        public Dictionary<MealType, Meal> Meals { get; private set; }
         public int ID { get; private set; }
 
         public List<string> GetAllProducts()
         {
             var resList = new List<string>();
-            Meals.Values.ToList().ForEach(x => resList.AddRange(x.Meal.ProductsWeight.Keys.ToList()));
+            Meals.Values.ToList().ForEach(x => resList.AddRange(x.Recipe.ProductsWeight.Keys.ToList()));
             return resList;
         }
 

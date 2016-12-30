@@ -9,14 +9,14 @@ namespace InitDB {
                 "Muffins","English muffins","Crackers","Cookies","Cookie",
                 "Coffeecake","Cake","Bread","Doughnuts","Croutons",
                 "Croissants","Cream puff","Danish pastry","Tortillas","Breakfast tart",
-                "Leavening agents",
+                "Leavening agents","Bread crumbs"
             };
 
             SecondParts = new List<string> {
                 "apple","banana cream","blueberry","cherry","cheese","banana",
                 "Dutch Apple","yeast","baking soda","baking powder",
                 "egg custard","peach","pecan","pumpkin","mince","pecan",
-                "egg","oat bran", "plain","rye","sweet","wheat","whole-wheat","french",
+                "egg","oat bran", "rye","sweet","wheat","whole-wheat","french",
                 "hamburger or hot dog", "hamburger or hotdog","pumpernickel","dinner","corn",
                 "pound","snack cakes","sugar","shortbread","peanut butter",
                 "brownies","boston brown","chapati or roti","cornbread",
@@ -31,7 +31,7 @@ namespace InitDB {
             ThirdParts = new List<string> {
                 "white","plain","whole grain","whole wheat","mixed-grain","mixed grain","dry mix",
                 "whole grain white","wheat bran","oat bran","oatmeal","cracked-wheat","active dry",
-                "compressed","double-acting",
+                "compressed","double-acting","grated",
                 "plain or buttermilk","multigrain","wheat germ","buckwheat","buttermilk"
             };
         }

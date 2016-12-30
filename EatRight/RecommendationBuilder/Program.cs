@@ -51,7 +51,7 @@ namespace RecommendationBuilder
         private static void InitSampleMeal(RestDBInterface unit) {
 
 
-            Meal breakfast = new Meal() {
+            Recipe breakfast = new Recipe() {
                 ID = 0,
                 Name = "Sample breakfast 1",
                 ProductsWeight = new Dictionary<string, double>()
@@ -66,7 +66,7 @@ namespace RecommendationBuilder
                 Types = new HashSet<MealType>() { MealType.Breakfast, MealType.Dinner }
             };
             
-            var lunch = new Meal() {
+            var lunch = new Recipe() {
                 ID = 1,
                 Name = "Sample lunch 1",
                 ProductsWeight = new Dictionary<string, double>()
@@ -81,7 +81,7 @@ namespace RecommendationBuilder
                 Types = new HashSet<MealType>() { MealType.Lunch }
             };
 
-            var dinner = new Meal() {
+            var dinner = new Recipe() {
                 ID = 2,
                 Name = "Sample dinner 1",
                 ProductsWeight = new Dictionary<string, double>()
@@ -96,13 +96,13 @@ namespace RecommendationBuilder
             },
                 Types = new HashSet<MealType>() { MealType.Dinner, MealType.Breakfast }
             };
-            unit.Meals.Empty();
-            if (unit.Meals.Get(0) == null)
-                unit.Meals.Add(breakfast);
-            if (unit.Meals.Get(1) == null)
-                unit.Meals.Add(lunch);
-            if (unit.Meals.Get(2) == null)
-                unit.Meals.Add(dinner);
+            unit.Recipes.Empty();
+            if (unit.Recipes.Get(0) == null)
+                unit.Recipes.Add(breakfast);
+            if (unit.Recipes.Get(1) == null)
+                unit.Recipes.Add(lunch);
+            if (unit.Recipes.Get(2) == null)
+                unit.Recipes.Add(dinner);
         }
     }
 }

@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Linq.Expressions;
+using Logic;
 
 namespace RestModel {
     public class Queries<T> {
@@ -14,7 +15,6 @@ namespace RestModel {
         public Queries(IMongoCollection<T> collection) {
             this.collection = collection;
         }
-
 
         public List<Product> QueryByNameAndValue(string name, string group, string value, bool partial = false) {
             name = name.ToLower();
@@ -35,38 +35,19 @@ namespace RestModel {
             newRes.RemoveAll(p => p.Nutrients()[value] == 0);
             newRes.Sort((a, b) => a.Nutrients()[value] > b.Nutrients()[value] ? 1 : -1);
             return newRes;
-        }
-        public static Dictionary<string, string> RecipeToNutrientDictionary = new Dictionary<string, string> {
-            { "white sugar","granulated sugar"},
-            { "bread flour","bread wheat flour"},
-            { "all-purpose flour","all-purpose wheat flour"},
-            { "whole wheat flour","whole-grain wheat flour"},
-            { "kosher salt","table salt"},
-            { "dry milk powder","dry milk"},
-            { "skinless chicken thighs","meat only chicken thighs"},
-            { "marsala wine","sweet wine"},
-            { "port wine","sweet wine"},
-        };
-        public static List<string> CutDetails = new List<string> {
-            "melted","sifted", "sprig", "sprigs", "ground", "shredded", "cubed",
-            "head", "heads", "sliced", "stalk", "stalks", "diced", "minced", "chopped",
-            "grated","mashed","crushed"};
-        public static List<string> ServeDetails = new List<string> { "warm", "cooked", "fresh" };
-        public static List<string> PackDetails = new List<string> { "packed", "package", "packages" };
-
-        
+        }      
 
         public static List<Product> GetMatchingProductsForIngredient(string ingredient) {
             var  res = unit.Products.Queries.TryMatchWholeProduct(ingredient);
             if (res != null && res.Count> 0)
                 return res;
             ingredient = ingredient.ToLower();
-            CutDetails.ForEach(item => ingredient = ingredient.Replace(item + " ", ""));
-            ServeDetails.ForEach(item => ingredient = ingredient.Replace(item + " ", ""));
-            PackDetails.ForEach(item => ingredient = ingredient.Replace(item + " ", ""));
+            Mapping.ReplaceWord(new List<List<string>> { Mapping.StartCutDetails, Mapping.ServeDetails , Mapping.PackDetails } , ref ingredient);
+            Mapping.ReplaceLastWord(new List<List<string>> { Mapping.NeedlesInfo, Mapping.EndCutDetails },ref ingredient);
+
             ingredient = ingredient.Trim();
-            if (RecipeToNutrientDictionary.ContainsKey(ingredient))
-                ingredient = RecipeToNutrientDictionary[ingredient];
+            if (Mapping.RecipeToNutrient.ContainsKey(ingredient))
+                ingredient = Mapping.RecipeToNutrient[ingredient];
             var innerSplit = ingredient.Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries);
 
             if (innerSplit.Length == 1)
@@ -94,24 +75,26 @@ namespace RestModel {
 
         public List<Product> TryMatchWholeProduct(string part) {
             Expression<Func<Product, bool>> query = x =>
-              (x.Name1.Equals(part + "s") || x.Name1.Equals(part + "es") || x.Name1.Equals(part) ||
+              (x.Name1.Equals(part) || x.Name1.Equals(part + "s") || x.Name1.Equals(part + "es") || x.Name1.Equals(ParseHelpers.GetWithoutLast_ES_letters(part)) ||
               x.FoodGroup.Equals(part) || x.Name2.Equals(part));
             var res = collection.Find(query as Expression<Func<T, bool>>).ToList();
             var newRes = res.Cast<Product>().ToList();
             return newRes;
-
         }
+             
 
         public List<Product> TryMatchWholeProduct(string part1, string part2, string part3) {
             Expression<Func<Product, bool>> query = x =>
             (x.Name3.Equals(part1 + " " + part2) && x.Name2.Equals(part3)) ||
+            (x.Name2.Equals(part1 + " " + part2) && x.Name3.Equals(part3)) ||
             (x.HealthData.Equals(part1)&& x.Name1.Equals(part2) && x.StorageMethod.Equals("dry " +part3)) ||
+            (x.PreparationMethod.Equals(part1) && x.Name2.Equals(part2) && x.Name1.Equals(part3)) ||
             (x.Name3.Equals(part1) && x.Name1.Equals(part2 + " " + part3)) ||
             (x.Name2.Equals(part1) && x.Name1.Equals(part2 + " " + part3)) ||
-              (x.FoodGroup.Equals(part1) && x.Name1.Equals(part2)) ||
-              (x.FoodGroup.Equals(part1) && x.Name2.Equals(part2)) && x.Name3.Equals(part3) ||
-              (x.Name3.Equals(part1) && x.Name1.Equals(part3)) ||
-              (x.Name2.Equals(part2) && x.Name1.Equals(part3));
+            (x.FoodGroup.Equals(part1) && x.Name1.Equals(part2)) ||
+            (x.FoodGroup.Equals(part1) && x.Name2.Equals(part2)) && x.Name3.Equals(part3) ||
+            (x.Name3.Equals(part1) && x.Name1.Equals(part3)) ||
+            (x.Name2.Equals(part2) && x.Name1.Equals(part3));
             var res = collection.Find(query as Expression<Func<T, bool>>).ToList();
             var newRes = res.Cast<Product>().ToList();
             return newRes;
@@ -122,57 +105,46 @@ namespace RestModel {
             Expression<Func<Product, bool>> query = x =>
             (x.PeelDetails.Equals(part1 + " " + part2) && x.FoodGroup.Equals(part3) && x.Name2.Equals(part4)) ||
             (x.BoneDetails.Equals(part1) && x.FoodGroup.Equals(part2) && x.Name1.Equals(part3) && x.Name3.Equals(part4)) ||
-            (x.PeelDetails.Equals(part1 + " " + part2) && x.FoodGroup.Equals(part3) && (part4[part4.Length-1]=='s' && x.Name2.Equals(part4.Remove(part4.Length - 1))));
+            (x.PeelDetails.Equals(part1 + " " + part2) && x.FoodGroup.Equals(part3) && x.Name2.Equals(ParseHelpers.GetWithoutLast_S_letter(part4)));
             var res = collection.Find(query as Expression<Func<T, bool>>).ToList();
             var newRes = res.Cast<Product>().ToList();
             return newRes;
-
         }
-
 
         public List<Product> TryMatchWholeProduct(string part1, string part2) {
             Expression<Func<Product, bool>> query = x =>
             (x.Name1.Equals(part1 + " " + part2)) ||
             (x.Name2.Equals(part1 + " " + part2)) ||
             (x.Name2.Equals(part1 + " " + part2+"s")) ||
-
-
-            (x.Name3.Equals(part2.Remove(part2.Length-1,1)) && x.Name1.Equals(part1)) || // remove the last 's'
-
-                (x.Name3.Equals(part1) && x.Name1.Equals(part2)) ||
-                (x.Name3.Contains("or") && x.Name3.Contains(part1) && x.Name2.Equals(part2)) ||
-                (x.Name3.Equals(part1) && x.Name2.Equals(part2)) ||
-                (x.StorageMethod.Equals(part1) && x.Name1.Equals(part2)) ||
-                (x.StorageMethod.Equals(part1) && x.Name2.Equals(part2)) ||
-
-                (x.Name3.Equals(part2) && x.Name1.Equals(part1)) ||
-
-                (x.Name2.Equals(part1) && x.Name1.Equals(part2)) ||
-
-                (x.Name2.Equals(part1) && x.Name1.Equals(part2 + "s")) ||
-                (x.Name2.Equals(part1) && x.Name1.Equals(part2+"es")) ||
-
-                (x.Name3.Equals(part1) && x.Name1.Equals(part2 + "s")) ||
-                (x.Name3.Equals(part1) && x.Name1.Equals(part2 + "es")) ||
-
-
-                (x.Name2.Equals(part2) && x.Name1.Equals(part1)) ||
-
-                (x.FoodGroup.Equals(part1) && x.Name1.Equals(part2)) ||
-                (x.FoodGroup.Equals(part2) && x.Name1.Equals(part1)) ||
-
-                (x.Name2.Equals(part2) && x.Name2.Equals(part1)) ||
-                (x.FoodGroup.Equals(part1) && x.Name2.Equals(part2));
-
+            (x.Name3.Equals(ParseHelpers.GetWithoutLast_S_letter(part2)) && x.Name1.Equals(part1)) || 
+            (x.Name3.Equals(part1) && x.Name1.Equals(part2)) ||
+            (x.Name3.Contains("or") && x.Name3.Contains(part1) && x.Name2.Equals(part2)) ||
+            (x.Name3.Equals(part1) && x.Name2.Equals(part2)) ||
+            (x.StorageMethod.Equals(part1) && x.Name1.Equals(part2)) ||
+            (x.StorageMethod.Equals(part1) && x.Name2.Equals(part2)) ||
+            (x.StorageMethod.Equals(part1+"ned") && x.Name1.Equals(part2)) ||
+            (x.Name3.Equals(part2) && x.Name1.Equals(part1)) ||
+            (x.Name2.Equals(part1) && x.Name1.Equals(part2)) ||
+            (x.Name2.Equals(part1) && x.Name1.Equals(part2 + "s")) ||
+            (x.Name2.Equals(part1) && x.Name1.Equals(part2+"es")) ||
+            (x.Name3.Equals(part1) && x.Name1.Equals(part2 + "s")) ||
+            (x.Name3.Equals(part1) && x.Name1.Equals(part2 + "es")) ||
+            (x.Name2.Equals(part2) && x.Name1.Equals(part1)) ||
+            (x.PreparationMethod.Equals(part1) && x.Name2.Equals(part2)) ||
+            (x.FoodGroup.Equals(part1) && x.Name1.Equals(part2)) ||
+            (x.FoodGroup.Equals(part1) && x.Name2.Equals(ParseHelpers.GetWithoutLast_S_letter(part2))) ||
+            (x.FoodGroup.Equals(part2) && x.Name1.Equals(part1)) ||
+            (x.Name2.Equals(part2) && x.Name2.Equals(part1)) ||
+            (x.FoodGroup.Equals(part1) && x.Name2.Equals(part2));
             var res = collection.Find(query as Expression<Func<T, bool>>).ToList();
             var newRes = res.Cast<Product>().ToList();
             return newRes;
         }
 
-        public List<Meal> GetByMealType(string mealType) {
-            Expression<Func<Meal, bool>> query = x => x.MealType.Equals(mealType);
+        public List<Recipe> GetByMealType(string mealType) {
+            Expression<Func<Recipe, bool>> query = x => x.MealType.Equals(mealType);
             var res = collection.Find(query as Expression<Func<T, bool>>).ToList();
-            var newRes = res.Cast<Meal>().ToList();
+            var newRes = res.Cast<Recipe>().ToList();
             return newRes;
         }
 

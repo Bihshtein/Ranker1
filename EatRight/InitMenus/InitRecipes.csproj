@@ -47,7 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MatchProductsInRecipes.cs" />
+    <Compile Include="AddProducts.cs" />
     <Compile Include="ParseRecipes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -60,6 +60,10 @@
     <ProjectReference Include="..\InitDB\InitDB.csproj">
       <Project>{e647d922-97f7-4bd0-b0b2-8b66bb810fba}</Project>
       <Name>InitDB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Logic\Logic.csproj">
+      <Project>{b797e613-7d9c-4a1c-99f8-97d296edbad0}</Project>
+      <Name>Logic</Name>
     </ProjectReference>
     <ProjectReference Include="..\RestModel\RestModel.csproj">
       <Project>{5df54fea-0e92-4f32-ae85-80a7b484e427}</Project>

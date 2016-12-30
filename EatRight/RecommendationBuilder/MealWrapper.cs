@@ -8,46 +8,21 @@ using Logic;
 
 namespace RecommendationBuilder
 {
-    public class MealWrapper : RecommendationObject
+    public class Meal : RecommendationObject
     {
-        public MealWrapper(Meal meal)
+        public Dictionary<string, double> NutValues { get; set; }
+        public double CaloriesNum { get; set; }
+
+        public Meal(Recipe recipe)
         {
-            Meal = meal;
+            var timer = GlobalProfilingManger.Instance.Manager;
 
-            // Calculate nutrition values
-            NutValues = new Dictionary<string, double>();
+            Recipe = recipe;
 
-            // Get nutrition values of all products
-            foreach (var prodName in Meal.ProductsWeight.Keys)
-            {
-                var productWeight = Meal.GetProductWeight(prodName);
-                var product = productWeight.Key;
-                var weight = productWeight.Value;
+            NutValues = Recipe.TotalNutValues.ToDictionary(x => x.Key, x => x.Value / Recipe.Servings);
+            CaloriesNum = Recipe.TotalCaloriesNum / Recipe.Servings;
 
-                var prodNutValues = product.Nutrients().ToList();
-                foreach (var entry in prodNutValues)
-                {
-                    if (!NutValues.ContainsKey(entry.Key))
-                    {
-                        NutValues[entry.Key] = 0;
-                    }
-
-                    double curValue = NutValues[entry.Key];
-                    NutValues[entry.Key] = curValue + (entry.Value * (weight / Formulas.DefaultGrams));
-                }
-            }
-
-            // Calculate calories number
-            CaloriesNum = 0;
-            // Get nutrition values of all products
-            foreach (var prodName in Meal.ProductsWeight.Keys)
-            {
-                var productWeight = Meal.GetProductWeight(prodName);
-                var product = productWeight.Key;
-                var weight = productWeight.Value;
-
-                CaloriesNum += Formulas.GetTotalCalories(weight, product.Protein, product.Fat, product.Carbs);
-            }
+            timer.TakeTime("calculating calories num ");
         }
 
         public override bool Equals(object obj)
@@ -58,12 +33,10 @@ namespace RecommendationBuilder
                 return false;
             }
 
-            MealWrapper mm = (MealWrapper)obj;
-            return Meal.Equals(mm.Meal);
+            Meal mm = (Meal)obj;
+            return this.Recipe.Equals(mm.Recipe);
         }
 
-        public Meal Meal { get; private set; }
-        public Dictionary<string, double> NutValues { get; private set; }
-        public double CaloriesNum { get; private set; }
+        public Recipe Recipe { get; set; }
     }
 }

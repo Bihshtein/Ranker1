@@ -15,7 +15,7 @@ namespace InitDB.Validators {
                 "edam","feta","fontina","cheddar", "blue","brick","brie","camembert","caraway",
                 "cream","cotage","gouda","goat", "gruyere","limburger","mexican","monterey", "mozzarella",
                 "muenster","neufchatel","parmesan","ricotta", "romano","roquefort","swiss","tilsit","white",
-                "provolone", "fruit","strawberry","Greek","plain","vanilla","chocolate"
+                "provolone", "fruit","strawberry","plain","vanilla","chocolate"
             };
             ThirdParts = new List<string> {
                "hard","queso blanco","soft serve","flakes", "queso fresco","queso seco","hard-boiled"
@@ -23,7 +23,7 @@ namespace InitDB.Validators {
                 "instant","flavored", "part skim milk",
                 "grated", "part-skim","queso cotija","queso chihuahua","queso asadero",
                 "queso anejo", "half and half", "soft type","powder",
-                "semisoft type", "hard type","whole", "yolk","white",
+                "semisoft type", "hard type","whole", "yolk","white","Greek",
                 "shredded","sliced","creamed","uncreamed","omelet","hard boiled","scrambled"
             };
         }

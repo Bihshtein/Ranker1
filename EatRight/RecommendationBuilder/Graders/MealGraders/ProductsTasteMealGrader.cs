@@ -15,10 +15,10 @@ namespace RecommendationBuilder.Graders.MealGraders
             Type = GraderType.ProductsTasteMealGrader;
         }
 
-        protected override void InitDataStructures(MealWrapper meal)
+        protected override void InitDataStructures(Meal meal)
         {
             flavorDict = RecommendationObject.recommendationDB.productFlavorGrade;
-            objectList = meal.Meal.ProductsWeight.Keys.ToList();
+            objectList = meal.Recipe.ProductsWeight.Keys.ToList();
         }
     }
 }

@@ -39,7 +39,7 @@ namespace RecommendationBuilder.Graders.MealGraders
                 .ToDictionary(x => x.Key, x => x.Value);
         }
 
-        protected override double InternalGrade(MealWrapper mealWrapper)
+        protected override double InternalGrade(Meal mealWrapper)
         {
             return NutValuesDailyGrader.GradeByNutValues(mealValues, mealWrapper.NutValues, IsMinGrader);
         }

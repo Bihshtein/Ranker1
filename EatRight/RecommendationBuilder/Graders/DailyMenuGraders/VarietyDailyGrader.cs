@@ -25,9 +25,9 @@ namespace RecommendationBuilder.Graders.DailyMenuGraders
             return GradeRatio((double)repeatedProductsNum / totalProductsNum);
         }
 
-        private void RepeatedProductsInMeal(MealWrapper mealWrapper, ref HashSet<string> products, ref int totalProductsNum, ref int repeatedProductsNum)
+        private void RepeatedProductsInMeal(Meal mealWrapper, ref HashSet<string> products, ref int totalProductsNum, ref int repeatedProductsNum)
         {
-            Meal meal = mealWrapper.Meal;
+            Recipe meal = mealWrapper.Recipe;
             foreach (var prodName in meal.ProductsWeight.Keys)
             {
                 totalProductsNum++;

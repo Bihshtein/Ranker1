@@ -18,7 +18,7 @@ namespace Tests
         {
             var unit = new RestDBInterface();
 
-            var smallBreakfast = new Meal()
+            var smallBreakfast = new Recipe()
             {
                 ID = 0,
                 Name = "Small breakfast",
@@ -26,7 +26,7 @@ namespace Tests
                 Types = new HashSet<MealType>() { MealType.Breakfast }
             };
 
-            var bigBreakfast = new Meal()
+            var bigBreakfast = new Recipe()
             {
                 ID = 1,
                 Name = "Big breakfast",
@@ -34,9 +34,12 @@ namespace Tests
                 Types = new HashSet<MealType>() { MealType.Breakfast }
             };
 
-            unit.Meals.Empty();
-            unit.Meals.Add(smallBreakfast);
-            unit.Meals.Add(bigBreakfast);
+            smallBreakfast.CalculateNutValuesAndCalories();
+            bigBreakfast.CalculateNutValuesAndCalories();
+
+            unit.Recipes.Empty();
+            unit.Recipes.Add(smallBreakfast);
+            unit.Recipes.Add(bigBreakfast);
 
             var userProfile = new UserProfile() { Age = 30, Gender = GenderType.Male };
             var range = new MealSuggestionRange() { Length = 1, MealType = MealType.Breakfast };
@@ -57,7 +60,7 @@ namespace Tests
             /*
              * The big meal is clearly better. But since it passes the maximum value, the recommendationGen should prefer the small one.
              */
-            Assert.IsTrue(mealWrapper.Meal.ID == 0);
+            Assert.IsTrue(mealWrapper.Recipe.ID == 0);
         }
 
         [TestMethod]
@@ -65,27 +68,28 @@ namespace Tests
         {
             var unit = new RestDBInterface();
 
-            var fastBreakfast = new Meal()
-            {
+            var fastBreakfast = new Recipe() {
                 ID = 0,
                 Name = "Fast breakfast",
                 ProductsWeight = new Dictionary<string, double>() { { "Carrot", 1 } },
                 Types = new HashSet<MealType>() { MealType.Breakfast },
-                PrepTime = 2
+                PrepTime = new TimeSpan(0, 2, 0)
             };
 
-            var slowBreakfast = new Meal()
-            {
+            var slowBreakfast = new Recipe() {
                 ID = 1,
                 Name = "Slow breakfast",
                 ProductsWeight = new Dictionary<string, double>() { { "Carrot", 1 } },
                 Types = new HashSet<MealType>() { MealType.Breakfast },
-                PrepTime = 20
+                PrepTime = new TimeSpan(0, 20, 0)
             };
 
-            unit.Meals.Empty();
-            unit.Meals.Add(fastBreakfast);
-            unit.Meals.Add(slowBreakfast);
+            fastBreakfast.CalculateNutValuesAndCalories();
+            slowBreakfast.CalculateNutValuesAndCalories();
+
+            unit.Recipes.Empty();
+            unit.Recipes.Add(fastBreakfast);
+            unit.Recipes.Add(slowBreakfast);
 
             var userProfile = new UserProfile() { Age = 30, Gender = GenderType.Male };
             var range = new MealSuggestionRange() { Length = 1, MealType = MealType.Breakfast };
@@ -105,9 +109,9 @@ namespace Tests
              */
 
             // 1. Assert that the best graded meal is the fast one
-            Assert.IsTrue(firstMealWrapper.Meal.ID == 0);
+            Assert.IsTrue(firstMealWrapper.Recipe.ID == 0);
             // 2. Assert that the other meal is the slow one
-            Assert.IsTrue(secondMealWrapper.Meal.ID == 1);
+            Assert.IsTrue(secondMealWrapper.Recipe.ID == 1);
             // 3. Assert that the best graded meal got a better grade than the other one
             Assert.IsTrue(firstMealWrapper.Grade > secondMealWrapper.Grade);
         }
@@ -117,7 +121,7 @@ namespace Tests
         {
             var unit = new RestDBInterface();
 
-            var singleBreakfast = new Meal()
+            var singleBreakfast = new Recipe()
             {
                 ID = 0,
                 Name = "Single breakfast",
@@ -126,7 +130,9 @@ namespace Tests
                 Servings = 1
             };
 
-            var multipleBreakfast = new Meal()
+            singleBreakfast.CalculateNutValuesAndCalories();
+
+            var multipleBreakfast = new Recipe()
             {
                 ID = 1,
                 Name = "Multiple breakfast",
@@ -135,9 +141,11 @@ namespace Tests
                 Servings = 4
             };
 
-            unit.Meals.Empty();
-            unit.Meals.Add(singleBreakfast);
-            unit.Meals.Add(multipleBreakfast);
+            multipleBreakfast.CalculateNutValuesAndCalories();
+
+            unit.Recipes.Empty();
+            unit.Recipes.Add(singleBreakfast);
+            unit.Recipes.Add(multipleBreakfast);
 
             var userProfile = new UserProfile() { Age = 30, Gender = GenderType.Male };
             var range = new MealSuggestionRange() { Length = 1, MealType = MealType.Breakfast, ServingsNum = 1 };
@@ -157,9 +165,9 @@ namespace Tests
              */
 
             // 1. Assert that the best graded meal is the fast one
-            Assert.IsTrue(firstMealWrapper.Meal.ID == 0);
+            Assert.IsTrue(firstMealWrapper.Recipe.ID == 0);
             // 2. Assert that the other meal is the slow one
-            Assert.IsTrue(secondMealWrapper.Meal.ID == 1);
+            Assert.IsTrue(secondMealWrapper.Recipe.ID == 1);
             // 3. Assert that the best graded meal got a better grade than the other one
             Assert.IsTrue(firstMealWrapper.Grade > secondMealWrapper.Grade);
         }
@@ -211,33 +219,38 @@ namespace Tests
         {
             var unit = new RestDBInterface();
 
-            var smallBreakfast = new Meal() {
+            var smallBreakfast = new Recipe() {
                 ID = 0,
                 Name = "Small breakfast",
                 ProductsWeight = new Dictionary<string, double>() { { "Carrot", 1 } },
                 Types =new HashSet<MealType>() { MealType.Breakfast }
             };
-            var bigBreakfast = new Meal() {
+            var bigBreakfast = new Recipe() {
                 ID = 1,
                 Name = "Big breakfast",
                 ProductsWeight = new Dictionary<string, double>() { { "Carrot", 40} },
                 Types = new HashSet<MealType>() { MealType.Breakfast } };
-            var smallLunch = new Meal() {
+            var smallLunch = new Recipe() {
                 ID = 2,
                 Name = "Small lunch",
                 ProductsWeight = new Dictionary<string, double>() { { "Tomato", 1 } },
                 Types = new HashSet<MealType>() { MealType.Lunch } };
-            var bigLunch = new Meal() {
+            var bigLunch = new Recipe() {
                 ID = 3,
                 Name = "Big Lunch",
                 ProductsWeight = new Dictionary<string, double>() { { "Carrot", 400 } },
                 Types = new HashSet<MealType>() { MealType.Lunch } };
 
-            unit.Meals.Empty();
-            unit.Meals.Add(smallBreakfast);
-            unit.Meals.Add(bigBreakfast);
-            unit.Meals.Add(smallLunch);
-            unit.Meals.Add(bigLunch);
+            smallBreakfast.CalculateNutValuesAndCalories();
+            bigBreakfast.CalculateNutValuesAndCalories();
+            smallLunch.CalculateNutValuesAndCalories();
+            bigLunch.CalculateNutValuesAndCalories();
+
+            unit.Recipes.Empty();
+            unit.Recipes.Add(smallBreakfast);
+            unit.Recipes.Add(bigBreakfast);
+            unit.Recipes.Add(smallLunch);
+            unit.Recipes.Add(bigLunch);
 
             var userProfile = new UserProfile() { Age = 30, Gender = GenderType.Male };
             var range = new MenuSuggestionRange()
@@ -269,9 +282,9 @@ namespace Tests
              */
 
             // 1. Assert that the variety menu generator didn't generate the big lunch.
-            Assert.IsTrue(varietyMenu.GetDay(0).Meals[MealType.Lunch].Meal.Equals(smallLunch));
+            Assert.IsTrue(varietyMenu.GetDay(0).Meals[MealType.Lunch].Recipe.Equals(smallLunch));
             // 2. Assert that the normal menu generator generated the big lunch.
-            Assert.IsTrue(normalMenu.GetDay(0).Meals[MealType.Lunch].Meal.Equals(bigLunch));
+            Assert.IsTrue(normalMenu.GetDay(0).Meals[MealType.Lunch].Recipe.Equals(bigLunch));
         }
 
         private void TestUserProfileDependentMealGrader(Boolean nutValues)
@@ -279,10 +292,10 @@ namespace Tests
             // Make sure that grader is grading different user profiles and different meals in a different manner
 
             var unit = new RestDBInterface();
-            unit.Meals.Empty();
+            unit.Recipes.Empty();
 
             // Create 2 very small breakfasts. We expect the "big" breakfast (big compared to the small one) to be better
-            var smallBreakfast = new Meal()
+            var smallBreakfast = new Recipe()
             {
                 ID = 0,
                 Name = "Small breakfast",
@@ -293,7 +306,7 @@ namespace Tests
                 Types = new HashSet<MealType>() { MealType.Breakfast }
             };
 
-            var bigBreakfast = new Meal()
+            var bigBreakfast = new Recipe()
             {
                 ID = 1,
                 Name = "Big breakfast",
@@ -305,9 +318,12 @@ namespace Tests
                 Types = new HashSet<MealType>() { MealType.Breakfast }
             };
 
-            unit.Meals.Empty();
-            unit.Meals.Add(smallBreakfast);
-            unit.Meals.Add(bigBreakfast);
+            smallBreakfast.CalculateNutValuesAndCalories();
+            bigBreakfast.CalculateNutValuesAndCalories();
+
+            unit.Recipes.Empty();
+            unit.Recipes.Add(smallBreakfast);
+            unit.Recipes.Add(bigBreakfast);
 
             if (nutValues)
             {
@@ -324,8 +340,8 @@ namespace Tests
             // Make sure that grader is grading different user profiles in a different manner
 
             var unit = new RestDBInterface();
-            unit.Meals.Empty();
-            var breakfast = new Meal() {
+            unit.Recipes.Empty();
+            var breakfast = new Recipe() {
                 ID = 0,
                 Name = "Sample breakfast 1",
                 ProductsWeight = new Dictionary<string, double>()
@@ -336,7 +352,7 @@ namespace Tests
                 Types = new HashSet<MealType>() { MealType.Breakfast, MealType.Dinner }
             };
 
-            var lunch = new Meal() {
+            var lunch = new Recipe() {
                 ID = 1,
                 Name = "Sample lunch 1",
                 ProductsWeight = new Dictionary<string, double>()
@@ -346,7 +362,7 @@ namespace Tests
                 Types = new HashSet<MealType>() { MealType.Lunch }
             };
 
-            var dinner = new Meal() {
+            var dinner = new Recipe() {
                 ID = 2,
                 Name = "Sample dinner 1",
                 ProductsWeight = new Dictionary<string, double>()
@@ -356,10 +372,15 @@ namespace Tests
             },
                 Types = new HashSet<MealType>() { MealType.Dinner, MealType.Breakfast }
             };
-            unit.Meals.Empty();
-            unit.Meals.Add(breakfast);
-            unit.Meals.Add(lunch);
-            unit.Meals.Add(dinner);
+
+            breakfast.CalculateNutValuesAndCalories();
+            lunch.CalculateNutValuesAndCalories();
+            dinner.CalculateNutValuesAndCalories();
+
+            unit.Recipes.Empty();
+            unit.Recipes.Add(breakfast);
+            unit.Recipes.Add(lunch);
+            unit.Recipes.Add(dinner);
 
             if (nutValues)
             {
@@ -487,7 +508,7 @@ namespace Tests
             var manMeal = manRecommendationGen.GetMeal();
 
             // First, assert that the bigger meal was preferred
-            Assert.IsTrue(babyMeal.Meal.ID == 1 && manMeal.Meal.ID == 1);
+            Assert.IsTrue(babyMeal.Recipe.ID == 1 && manMeal.Recipe.ID == 1);
             // Second, assert that the man's grade was lower- the baby needs to eat less
             Assert.IsTrue(babyMeal.Grade > manMeal.Grade);
         }
@@ -531,7 +552,7 @@ namespace Tests
             return recommendationGen.GetMenu();
         }
 
-        private MealWrapper GetMeal(int age, GenderType gender, MealType mealType,
+        private Meal GetMeal(int age, GenderType gender, MealType mealType,
             Dictionary<GraderType, double> graderWeights, RestDBInterface unit)
         {
             var profile = new UserProfile() { Age = age, Gender = gender };
@@ -549,15 +570,15 @@ namespace Tests
             // Make sure that grader is grading different user profiles in a different manner
 
             var unit = new RestDBInterface();
-            unit.Meals.Empty();
-            var indianBreakfast = new Meal() {
+            unit.Recipes.Empty();
+            var indianBreakfast = new Recipe() {
                 ID = 0,
                 Name = "Indian breakfast",
                 ProductsWeight = new Dictionary<string, double>() { { "Carrot", 20 } },
                 Types = new HashSet<MealType>() { MealType.Breakfast },
                 Categories= new HashSet<MealCategory>() { MealCategory.Indian }
             };
-            var chineseBreakfast = new Meal() {
+            var chineseBreakfast = new Recipe() {
                  ID = 1,
                 Name = "Chinese breakfast",
                 ProductsWeight = new Dictionary<string, double>()
@@ -573,9 +594,12 @@ namespace Tests
                 Categories = new HashSet<MealCategory>() { MealCategory.Chinese }
             };
 
-            unit.Meals.Empty();
-            unit.Meals.Add(indianBreakfast);
-            unit.Meals.Add(chineseBreakfast);
+            indianBreakfast.CalculateNutValuesAndCalories();
+            chineseBreakfast.CalculateNutValuesAndCalories();
+
+            unit.Recipes.Empty();
+            unit.Recipes.Add(indianBreakfast);
+            unit.Recipes.Add(chineseBreakfast);
 
             var userProfile = new UserProfile() { Age = 30, Gender = GenderType.Male };
             var range = new MenuSuggestionRange() { Length = 1, MealsInDailyMenu = new List<MealType>() { MealType.Breakfast } };

@@ -19,7 +19,7 @@ namespace RecommendationBuilder.Graders.MenuGraders
         {
             double cost = 0;
 
-            menu.Days.ForEach(dm => dm.Meals.ToList().ForEach(m => m.Value.Meal.ProductsWeight.Keys.ToList().ForEach(p => /* TODO: add cost per product */cost += 0)));
+            menu.Days.ForEach(dm => dm.Meals.ToList().ForEach(m => m.Value.Recipe.ProductsWeight.Keys.ToList().ForEach(p => /* TODO: add cost per product */cost += 0)));
 
             return GradeRatio(cost / RecommendationObject.recommendationDB.budget);
         }

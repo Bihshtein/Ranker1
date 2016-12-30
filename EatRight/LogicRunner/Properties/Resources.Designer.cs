@@ -69,5 +69,15 @@ namespace LogicRunner.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Zlatan_Ibrahimovic_623921 {
+            get {
+                object obj = ResourceManager.GetObject("Zlatan-Ibrahimovic-623921", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

@@ -14,7 +14,7 @@ namespace InitDB.Validators {
                 "haddock","grouper","gefiltefish", "flatfish","fish sticks","eel",
                 "drum","cusk","croaker","cod","cisco","caviar","catfish","carp",
                 "butterfish","burbot","bluefish","bass","anchovy","roughy","shad",
-                 "black and red",
+                 "black and red","Crustaceans",
 
             };
 
@@ -23,7 +23,8 @@ namespace InitDB.Validators {
                 "coho","chum","mixed species","american","rainbow","Atlantic and Pacific",
                 "freshwater","fresh water","channel","bluefin","skipjack","yellowfin","light",
                 "white","european","chinook","orange","pumpkin seed","granular","commercial",
-                "greenland","Greenland","jack","king","Pacific and jack","spanish","walleye"
+                "greenland","Greenland","jack","king","Pacific and jack","spanish","walleye",
+                "mixed species","shrimp"
 
             };
             ThirdParts = new List<string> {
