@@ -48,7 +48,14 @@ namespace RestModel
         PrepTimeMealGrader,
         ServingsNumMealGrader,
 
-        MealGraderEnd
+        MealGraderEnd,
+
+        RecommendationGraderStart,
+
+        VarietyRecoGrader,
+        GradeAverageRecoGrader,
+
+        RecommendationGraderEnd
     }
 
     /// <summary>

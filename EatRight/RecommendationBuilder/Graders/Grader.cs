@@ -7,6 +7,7 @@ using RestModel;
 using RecommendationBuilder.Graders.MenuGraders;
 using RecommendationBuilder.Graders.DailyMenuGraders;
 using RecommendationBuilder.Graders.MealGraders;
+using RecommendationBuilder.Graders.RecoGraders;
 
 namespace RecommendationBuilder.Graders
 {
@@ -78,6 +79,12 @@ namespace RecommendationBuilder.Graders
                     return new PrepTimeMealGrader();
                 case GraderType.ServingsNumMealGrader:
                     return new ServingsNumMealGrader();
+
+                // Recommendation graders
+                case GraderType.VarietyRecoGrader:
+                    return new VarietyRecoGrader();
+                case GraderType.GradeAverageRecoGrader:
+                    return new GradeAverageRecoGrader();
 
                 default:
                     // TODO: better handle errors

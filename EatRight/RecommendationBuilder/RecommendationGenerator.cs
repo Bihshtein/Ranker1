@@ -28,6 +28,8 @@ namespace RecommendationBuilder
         // Meals
         private List<MealWrapper> mealsList = null;
         private HashSet<int> usedMeals = null;
+        // Recommendations
+        private List<Recommendation> recoList = null;
 
         public RecommendationGenerator(RestDBInterface unit, RecommendationDB recommendationDB)
         {
@@ -50,7 +52,7 @@ namespace RecommendationBuilder
             }
             else if (InMealMode())
             {
-                GenerateMealsList();
+                GenerateRecommendationsList();
             }
 
             usedDailyMenus = new HashSet<int>();
@@ -70,6 +72,23 @@ namespace RecommendationBuilder
         private bool InMealMode()
         {
             return RecommendationObject.recommendationDB.range.IsMealSuggestionRange();
+        }
+
+        public Recommendation GetRecommendation()
+        {
+            if (!InMealMode())
+            {
+                // TODO: better handle errors
+                System.Console.WriteLine("***ERROR*** RecommendationGenerator object wasn't created for generating meals!");
+                System.Environment.Exit(1);
+            }
+            if (mealsList.Count < RecommendationObject.recommendationDB.range.Length)
+            {
+                // TODO: print a warning
+                return null;
+            }
+
+            return recoList[0];
         }
 
         public Menu GetMenu()
@@ -282,6 +301,33 @@ namespace RecommendationBuilder
                 { BestGraders = bestGraders, WorstGraders = worstGraders, GradersInfo = gradersInfo };
         }
 
+        private void GenerateRecommendationsList()
+        {
+            GenerateMealsList();
+            if (mealsList.Count == 0)
+            {
+                // No meals generated
+                return;
+            }
+
+            int mealsInRecoNum = ((MealSuggestionRange)RecommendationObject.recommendationDB.range).Length;
+
+            // Take only the best MAX_MEALS_IN_LIST_NUM days
+            var mealsTempList = mealsList.Take(Globals.MAX_DAYS_IN_LIST_NUM).ToList();
+
+            // Make sure the gap between the best and worst meal isn't too big
+            double worstPossibleGrade = mealsTempList[0].Grade - Globals.MAX_GRADE_GAP;
+            mealsTempList = mealsTempList.Where(x => x.Grade >= worstPossibleGrade).ToList();
+
+            recoList = GetAllSubsets(new HashSet<MealWrapper>(mealsTempList), mealsInRecoNum)
+                .Select(x => new Recommendation(x)).ToList();
+
+            var graderMap = InitGraderMap(GraderType.RecommendationGraderStart, GraderType.RecommendationGraderEnd);
+
+            recoList.ForEach(x => EvaluateObject(x, graderMap));
+            recoList.Sort(new RecommendationObjectComparer<Recommendation>());
+        }
+
         private void GenerateMenusList()
         {
             // If the meals type in each day weren't specifiec by the user, set it to the default type
@@ -316,7 +362,7 @@ namespace RecommendationBuilder
             var mealsLists = new Dictionary<MealType, List<MealWrapper>>();
             ((MenuSuggestionRange)RecommendationObject.recommendationDB.range).MealsInDailyMenu.ForEach
                 (x => mealsLists[x] = mealsList.Where(y => y.Meal.HasType(x)).Take(Globals.MAX_MEALS_IN_LIST_NUM).ToList());
-            dailyMenusList = GetAllCombinations(mealsLists).Select(x => new DailyMenu(x)).ToList();
+            dailyMenusList = GetAllMappingCombinations(mealsLists).Select(x => new DailyMenu(x)).ToList();
 
             var graderMap = InitGraderMap(GraderType.DailyMenuGraderStart, GraderType.DailyMenuGraderEnd);
 
@@ -390,9 +436,50 @@ namespace RecommendationBuilder
         }
 
         /**
+         * Get all subsetes of size n
+         */
+        private static HashSet<HashSet<MealWrapper>> GetAllSubsets(HashSet<MealWrapper> set, int n)
+        {
+            var resSet = new HashSet<HashSet<MealWrapper>>();
+
+            if (n == 0 || set.Count == 0)
+            {
+                resSet.Add(new HashSet<MealWrapper>());
+                return resSet;
+            }
+            if (n == set.Count)
+            {
+                resSet.Add(set);
+                return resSet;
+            }
+
+            var firstObj = set.First();
+            var restOfSet = new HashSet<MealWrapper>(set);
+            restOfSet.Remove(firstObj);
+
+            // Get all the sets without first object
+            var subsetsWithoutFirst = GetAllSubsets(restOfSet, n);
+
+            // Get all the sets with first object
+            var subsetsWithFirst = GetAllSubsets(restOfSet, n-1);
+
+            // Add first element to subsetes that should include it
+            foreach (var subset in subsetsWithFirst)
+            {
+                subset.Add(firstObj);
+                resSet.Add(subset);
+            }
+
+            // Add subsets that includes first element
+            resSet.UnionWith(subsetsWithoutFirst);
+
+            return resSet;
+        }
+
+        /**
          * Get all combinations of possible mapping from meal types to meals.
          */
-        private static List<Dictionary<MealType, MealWrapper>> GetAllCombinations(Dictionary<MealType, List<MealWrapper>> listsMapping)
+        private static List<Dictionary<MealType, MealWrapper>> GetAllMappingCombinations(Dictionary<MealType, List<MealWrapper>> listsMapping)
         {
             var resList = new List<Dictionary<MealType, MealWrapper>>();
 
@@ -407,7 +494,7 @@ namespace RecommendationBuilder
             var restOfLists = listsMapping;
             var firstType = firstEntry.Key;
             restOfLists.Remove(firstType);
-            var combWithoutFirstList = GetAllCombinations(restOfLists);
+            var combWithoutFirstList = GetAllMappingCombinations(restOfLists);
 
             // Add elements from first list to all the combinations
             foreach (var elem in firstEntry.Value)
@@ -517,6 +604,10 @@ namespace RecommendationBuilder
             {
                 RecommendationObject.recommendationDB.GradersWeight = new Dictionary<GraderType, double>()
                 {
+                    // Recommendation graders
+                    {GraderType.VarietyRecoGrader, 0.9},
+                    {GraderType.GradeAverageRecoGrader, 0.1},
+
                     // Meal graders
                     {GraderType.CaloriesCountMealGrader, 0.3},
                     {GraderType.MinNutValuesMealGrader, 0.3},

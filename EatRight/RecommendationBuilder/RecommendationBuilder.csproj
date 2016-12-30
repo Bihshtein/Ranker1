@@ -66,6 +66,10 @@
     <Compile Include="Graders\DailyMenuGraders\PerMealGrader.cs" />
     <Compile Include="Graders\DailyMenuGraders\VarietyDailyGrader.cs" />
     <Compile Include="Graders\Grader.cs" />
+    <Compile Include="Graders\RecoGraders\RecoGrader.cs" />
+    <Compile Include="Graders\RecoGraders\GradeAverageRecoGrader.cs" />
+    <Compile Include="Graders\RecoGraders\VarietyRecoGrader.cs" />
+    <Compile Include="Recommendation.cs" />
     <Compile Include="RecommendationDBFactory.cs" />
     <Compile Include="Graders\MealGraders\MaxNutValuesMealGrader.cs" />
     <Compile Include="Graders\MealGraders\MinNutValuesMealGrader.cs" />

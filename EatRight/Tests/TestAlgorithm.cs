@@ -15,10 +15,11 @@ namespace Tests
     public class TestAlgorithm
     {
         [TestMethod]
-        public void TestRecommendationGeneration()
+        public void TestMenuGeneration()
         {
             var unit = new RestDBInterface();
             unit.Meals.Empty();
+
             RecommendationDB recommendationDB = GenerateRandomRecommendationDB();
             GenerateRandomMeals(unit, recommendationDB);
             RecommendationGenerator generator = new RecommendationGenerator(unit, recommendationDB);
@@ -45,6 +46,24 @@ namespace Tests
             System.Console.WriteLine("The grader in which the highest number of points was lost is: " + menu.GradeInfo.WorstGraders[0]);
         }
 
+        [TestMethod]
+        public void TestRecommendationGeneration()
+        {
+            int mealsNum = 3;
+
+            var unit = new RestDBInterface();
+            unit.Meals.Empty();
+
+            RecommendationDB recommendationDB = GenerateRandomMealRecoDB(mealsNum);
+            GenerateRandomMeals(unit, recommendationDB);
+            RecommendationGenerator generator = new RecommendationGenerator(unit, recommendationDB);
+            var reco = generator.GetRecommendation();
+
+            // Assertions
+            Assert.IsNotNull(reco);
+            Assert.IsTrue(reco.MealsSet.Count == mealsNum);
+        }
+
         private static RecommendationDB GenerateRandomRecommendationDB()
         {
             var rand = new Random(seed);
@@ -55,6 +74,26 @@ namespace Tests
             recommendationDB.dailyCaloriesNum = 3000;
             recommendationDB.range = new MenuSuggestionRange() { Length = rand.Next(1, 7) };
             recommendationDB.productFlavorGrade = new Dictionary<string,double>() {
+                {"Mushroom", -1},
+                {"Mushrooms", -1},
+            };
+            recommendationDB.mealCategoryGrade = new Dictionary<MealCategory, double>() {
+                {MealCategory.Indian, 1},
+                {MealCategory.Chinese, -1},
+            };
+            return recommendationDB;
+        }
+
+        private static RecommendationDB GenerateRandomMealRecoDB(int mealsNum)
+        {
+            var rand = new Random(seed);
+
+            // Not random for now
+            var recommendationDB = new RecommendationDB();
+            recommendationDB.dailyValues = RestRepository<Product>.DailyValues.ToDictionary(k => k.Key, k => new MinMaxDouble(k.Value));
+            recommendationDB.dailyCaloriesNum = 3000;
+            recommendationDB.range = new MealSuggestionRange() { Length = mealsNum, MealType = MealType.Breakfast };
+            recommendationDB.productFlavorGrade = new Dictionary<string, double>() {
                 {"Mushroom", -1},
                 {"Mushrooms", -1},
             };
