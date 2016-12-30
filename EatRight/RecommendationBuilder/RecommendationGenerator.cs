@@ -90,11 +90,6 @@ namespace RecommendationBuilder
                 System.Console.WriteLine("***ERROR*** RecommendationGenerator object wasn't created for generating meals!");
                 System.Environment.Exit(1);
             }
-            if (mealsList.Count < RecommendationObject.recommendationDB.range.Length)
-            {
-                // TODO: print a warning
-                return null;
-            }
 
             return recoList[0];
         }
