@@ -72,7 +72,7 @@ namespace LogicRunner
 
             recommendationDB.idealServingsNum = int.Parse(idealServings.SelectedItem.ToString());
             recommendationDB.dailyValues = (comboBox1.SelectedValue as DailyValue).DuplicateDictionary();
-            recommendationDB.range = new MealSuggestionRange() { Length = 1, MealType = (MealType)Enum.Parse(typeof(MealType), comboBox2.SelectedItem.ToString()) };
+            recommendationDB.range = new MealSuggestionRange() { Length = 10, MealType = (MealType)Enum.Parse(typeof(MealType), comboBox2.SelectedItem.ToString()) };
             recommendationDB.dailyCaloriesNum = int.Parse(totalCalories.SelectedItem.ToString());
               recommendationDB.GradersWeight = new Dictionary<GraderType, double>()
                {
@@ -89,7 +89,7 @@ namespace LogicRunner
             RecommendationGenerator generator = new RecommendationGenerator(unit, recommendationDB);
 
             manager.TakeTime("creating recommendation generator");
-            this.bindingSource2.DataSource = generator.GetMealsList().Select(o => new MyViewModel(o)
+            this.bindingSource2.DataSource = generator.GetRecommendation().MealsSet.Select(o => new MyViewModel(o)
             { Id = o.Recipe.ID, Name = o.Recipe.Name, 
                 NutValues = parseNutValues(o.NutValues), GradersResult = parseGradersResult(o.GradeInfo.GradersInfo) }).ToList();
 
