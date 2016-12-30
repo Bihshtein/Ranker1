@@ -19,9 +19,9 @@ namespace RecommendationBuilder.Filters.MealFilters
             mealWantedType = ((MealSuggestionRange)RecommendationObject.recommendationDB.range).MealType;
         }
 
-        protected override Boolean InternalIsValid(Meal mealWrapper)
+        protected override Boolean InternalIsValid(Meal meal)
         {
-            return mealWrapper.Recipe.Types.Contains(mealWantedType);
+            return meal.Recipe.Types.Contains(mealWantedType);
         }
     }
 }

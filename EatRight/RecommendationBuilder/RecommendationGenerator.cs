@@ -139,13 +139,13 @@ namespace RecommendationBuilder
                 System.Environment.Exit(1);
             }
 
-            Meal newMealWrapper = GetBestUnusedMeal();
-            if (newMealWrapper == null)
+            Meal newMeal = GetBestUnusedMeal();
+            if (newMeal == null)
             {
                 return null;
             }
-            SetMealAsUsed(newMealWrapper);
-            return newMealWrapper;
+            SetMealAsUsed(newMeal);
+            return newMeal;
         }
 
         private void SetMenuAsUsed(Menu menu)
@@ -327,7 +327,7 @@ namespace RecommendationBuilder
             double worstPossibleGrade = mealsTempList[0].Grade - Globals.MAX_GRADE_GAP;
             mealsTempList = mealsTempList.Where(x => x.Grade >= worstPossibleGrade).ToList();
 
-            recoList = GetAllSubsets(new HashSet<MealWrapper>(mealsTempList), mealsInRecoNum)
+            recoList = GetAllSubsets(new HashSet<Meal>(mealsTempList), mealsInRecoNum)
                 .Select(x => new Recommendation(x)).ToList();
 
             var graderMap = InitGraderMap(GraderType.RecommendationGraderStart, GraderType.RecommendationGraderEnd);
@@ -458,13 +458,13 @@ namespace RecommendationBuilder
         /**
          * Get all subsetes of size n
          */
-        private static HashSet<HashSet<MealWrapper>> GetAllSubsets(HashSet<MealWrapper> set, int n)
+        private static HashSet<HashSet<Meal>> GetAllSubsets(HashSet<Meal> set, int n)
         {
-            var resSet = new HashSet<HashSet<MealWrapper>>();
+            var resSet = new HashSet<HashSet<Meal>>();
 
             if (n == 0 || set.Count == 0)
             {
-                resSet.Add(new HashSet<MealWrapper>());
+                resSet.Add(new HashSet<Meal>());
                 return resSet;
             }
             if (n == set.Count)
@@ -474,7 +474,7 @@ namespace RecommendationBuilder
             }
 
             var firstObj = set.First();
-            var restOfSet = new HashSet<MealWrapper>(set);
+            var restOfSet = new HashSet<Meal>(set);
             restOfSet.Remove(firstObj);
 
             // Get all the sets without first object

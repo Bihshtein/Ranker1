@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace RestModel
 {
     /// <summary>
-    /// Different types of graders for Menu, DailyMenu and MealWrapper objects.
+    /// Different types of graders for Menu, DailyMenu and Meal objects.
     /// </summary>
     public enum GraderType
     {
@@ -59,7 +59,7 @@ namespace RestModel
     }
 
     /// <summary>
-    /// Different types of filters for Menu, DailyMenu and MealWrapper objects.
+    /// Different types of filters for Menu, DailyMenu and Meal objects.
     /// </summary>
     public enum FilterType
     {

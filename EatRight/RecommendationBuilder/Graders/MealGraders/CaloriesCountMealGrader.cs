@@ -28,9 +28,9 @@ namespace RecommendationBuilder.Graders.MealGraders
                 (((double)RecommendationObject.recommendationDB.dailyCaloriesNum) * MealPrecentage[((MealSuggestionRange)RecommendationObject.recommendationDB.range).MealType]);
         }
 
-        protected override double InternalGrade(Meal mealWrapper)
+        protected override double InternalGrade(Meal meal)
         {
-            return CaloriesCountDailyGrader.GradeRatio(mealWrapper.CaloriesNum / dailyCaloriesNum);
+            return CaloriesCountDailyGrader.GradeRatio(meal.CaloriesNum / dailyCaloriesNum);
         }
     }
 }

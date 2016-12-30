@@ -52,7 +52,7 @@ namespace Tests
             int mealsNum = 3;
 
             var unit = new RestDBInterface();
-            unit.Meals.Empty();
+            unit.Recipes.Empty();
 
             RecommendationDB recommendationDB = GenerateRandomMealRecoDB(mealsNum);
             GenerateRandomMeals(unit, recommendationDB);

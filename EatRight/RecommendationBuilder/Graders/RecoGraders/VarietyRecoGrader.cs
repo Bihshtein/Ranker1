@@ -29,9 +29,9 @@ namespace RecommendationBuilder.Graders.RecoGraders
         {
             var res = new List<string>();
 
-            foreach (var mealWrapper in reco.MealsSet)
+            foreach (var meal in reco.MealsSet)
             {
-                res.AddRange(mealWrapper.Meal.ProductsWeight.Select(x => x.Key));
+                res.AddRange(meal.Recipe.ProductsWeight.Select(x => x.Key));
             }
 
             return res;

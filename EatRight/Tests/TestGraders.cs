@@ -53,14 +53,14 @@ namespace Tests
 
             var recommendationGen = new RecommendationGenerator(unit, recommendationDB);
 
-            var mealWrapper = recommendationGen.GetMeal();
+            var meal = recommendationGen.GetMeal();
 
             // Assertions
 
             /*
              * The big meal is clearly better. But since it passes the maximum value, the recommendationGen should prefer the small one.
              */
-            Assert.IsTrue(mealWrapper.Recipe.ID == 0);
+            Assert.IsTrue(meal.Recipe.ID == 0);
         }
 
         [TestMethod]
@@ -100,8 +100,8 @@ namespace Tests
 
             var recommendationGen = new RecommendationGenerator(unit, recommendationDB);
 
-            var firstMealWrapper = recommendationGen.GetMeal();
-            var secondMealWrapper = recommendationGen.GetMeal();
+            var firstMeal = recommendationGen.GetMeal();
+            var secondMeal = recommendationGen.GetMeal();
 
             // Assertions
 
@@ -109,11 +109,11 @@ namespace Tests
              */
 
             // 1. Assert that the best graded meal is the fast one
-            Assert.IsTrue(firstMealWrapper.Recipe.ID == 0);
+            Assert.IsTrue(firstMeal.Recipe.ID == 0);
             // 2. Assert that the other meal is the slow one
-            Assert.IsTrue(secondMealWrapper.Recipe.ID == 1);
+            Assert.IsTrue(secondMeal.Recipe.ID == 1);
             // 3. Assert that the best graded meal got a better grade than the other one
-            Assert.IsTrue(firstMealWrapper.Grade > secondMealWrapper.Grade);
+            Assert.IsTrue(firstMeal.Grade > secondMeal.Grade);
         }
 
         [TestMethod]
@@ -156,8 +156,8 @@ namespace Tests
 
             var recommendationGen = new RecommendationGenerator(unit, recommendationDB);
 
-            var firstMealWrapper = recommendationGen.GetMeal();
-            var secondMealWrapper = recommendationGen.GetMeal();
+            var firstMeal = recommendationGen.GetMeal();
+            var secondMeal = recommendationGen.GetMeal();
 
             // Assertions
 
@@ -165,11 +165,11 @@ namespace Tests
              */
 
             // 1. Assert that the best graded meal is the fast one
-            Assert.IsTrue(firstMealWrapper.Recipe.ID == 0);
+            Assert.IsTrue(firstMeal.Recipe.ID == 0);
             // 2. Assert that the other meal is the slow one
-            Assert.IsTrue(secondMealWrapper.Recipe.ID == 1);
+            Assert.IsTrue(secondMeal.Recipe.ID == 1);
             // 3. Assert that the best graded meal got a better grade than the other one
-            Assert.IsTrue(firstMealWrapper.Grade > secondMealWrapper.Grade);
+            Assert.IsTrue(firstMeal.Grade > secondMeal.Grade);
         }
 
         [TestMethod]

@@ -8,7 +8,7 @@ namespace RecommendationBuilder
 {
     public class Recommendation : RecommendationObject
     {
-        public Recommendation(HashSet<MealWrapper> mealsSet)
+        public Recommendation(HashSet<Meal> mealsSet)
         {
             ID = IDCounter++;
             this.MealsSet = mealsSet;
@@ -26,7 +26,7 @@ namespace RecommendationBuilder
             return ID.Equals(m.ID);
         }
 
-        public HashSet<MealWrapper> MealsSet { get; private set; }
+        public HashSet<Meal> MealsSet { get; private set; }
 
         public int ID { get; private set; }
 
