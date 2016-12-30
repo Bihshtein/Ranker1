@@ -346,8 +346,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.AliceBlue;
-            this.ClientSize = new System.Drawing.Size(678, 866);
+            this.ClientSize = new System.Drawing.Size(692, 837);
             this.Controls.Add(this.labelConsole);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.idealServings);
