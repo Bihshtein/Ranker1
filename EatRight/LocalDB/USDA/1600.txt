@@ -1,0 +1,5642 @@
+{
+    "report": {
+        "sr": "28",
+        "groups": [
+            {
+                "id": "1600",
+                "description": "Legumes and Legume Products"
+            }
+        ],
+        "subset": "All foods",
+        "end": 375,
+        "start": 0,
+        "total": 375,
+        "foods": [
+            {
+                "ndbno": "43212",
+                "name": "Bacon bits, meatless",
+                "weight": 7.0,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.24",
+                        "gm": 32.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "16104",
+                "name": "Bacon, meatless",
+                "weight": 144.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.83",
+                        "gm": 11.69
+                    }
+                ]
+            },
+            {
+                "ndbno": "16302",
+                "name": "Beans, adzuki, mature seed, cooked, boiled, with salt",
+                "weight": 230.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.30",
+                        "gm": 7.52
+                    }
+                ]
+            },
+            {
+                "ndbno": "16003",
+                "name": "Beans, adzuki, mature seeds, canned, sweetened",
+                "weight": 296.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.25",
+                        "gm": 3.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "16002",
+                "name": "Beans, adzuki, mature seeds, cooked, boiled, without salt",
+                "weight": 230.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.30",
+                        "gm": 7.52
+                    }
+                ]
+            },
+            {
+                "ndbno": "16001",
+                "name": "Beans, adzuki, mature seeds, raw",
+                "weight": 197.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "39.14",
+                        "gm": 19.87
+                    }
+                ]
+            },
+            {
+                "ndbno": "43449",
+                "name": "Beans, baked, canned, no salt added",
+                "weight": 253.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.14",
+                        "gm": 4.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "16006",
+                "name": "Beans, baked, canned, plain or vegetarian",
+                "weight": 254.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.06",
+                        "gm": 4.75
+                    }
+                ]
+            },
+            {
+                "ndbno": "16007",
+                "name": "Beans, baked, canned, with beef",
+                "weight": 266.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.97",
+                        "gm": 6.38
+                    }
+                ]
+            },
+            {
+                "ndbno": "16008",
+                "name": "Beans, baked, canned, with franks",
+                "weight": 259.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.48",
+                        "gm": 6.75
+                    }
+                ]
+            },
+            {
+                "ndbno": "16009",
+                "name": "Beans, baked, canned, with pork",
+                "weight": 253.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.13",
+                        "gm": 5.19
+                    }
+                ]
+            },
+            {
+                "ndbno": "16010",
+                "name": "Beans, baked, canned, with pork and sweet sauce",
+                "weight": 249.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.25",
+                        "gm": 4.52
+                    }
+                ]
+            },
+            {
+                "ndbno": "16011",
+                "name": "Beans, baked, canned, with pork and tomato sauce",
+                "weight": 246.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.67",
+                        "gm": 5.15
+                    }
+                ]
+            },
+            {
+                "ndbno": "16005",
+                "name": "Beans, baked, home prepared",
+                "weight": 253.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.02",
+                        "gm": 5.54
+                    }
+                ]
+            },
+            {
+                "ndbno": "16018",
+                "name": "Beans, black turtle, mature seeds, canned",
+                "weight": 240.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.47",
+                        "gm": 6.03
+                    }
+                ]
+            },
+            {
+                "ndbno": "16317",
+                "name": "Beans, black turtle, mature seeds, cooked, boiled, with salt",
+                "weight": 185.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.13",
+                        "gm": 8.18
+                    }
+                ]
+            },
+            {
+                "ndbno": "16017",
+                "name": "Beans, black turtle, mature seeds, cooked, boiled, without salt",
+                "weight": 185.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.13",
+                        "gm": 8.18
+                    }
+                ]
+            },
+            {
+                "ndbno": "16016",
+                "name": "Beans, black turtle, mature seeds, raw",
+                "weight": 184.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "39.10",
+                        "gm": 21.25
+                    }
+                ]
+            },
+            {
+                "ndbno": "16316",
+                "name": "Beans, black, mature seeds, canned, low sodium",
+                "weight": 240.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.47",
+                        "gm": 6.03
+                    }
+                ]
+            },
+            {
+                "ndbno": "16315",
+                "name": "Beans, black, mature seeds, cooked, boiled, with salt",
+                "weight": 172.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.24",
+                        "gm": 8.86
+                    }
+                ]
+            },
+            {
+                "ndbno": "16015",
+                "name": "Beans, black, mature seeds, cooked, boiled, without salt",
+                "weight": 172.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.24",
+                        "gm": 8.86
+                    }
+                ]
+            },
+            {
+                "ndbno": "16014",
+                "name": "Beans, black, mature seeds, raw",
+                "weight": 194.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "41.90",
+                        "gm": 21.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "43112",
+                "name": "Beans, chili, barbecue, ranch style, cooked",
+                "weight": 253.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.65",
+                        "gm": 5.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "16021",
+                "name": "Beans, cranberry (roman), mature seeds, canned",
+                "weight": 260.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.40",
+                        "gm": 5.54
+                    }
+                ]
+            },
+            {
+                "ndbno": "16320",
+                "name": "Beans, cranberry (roman), mature seeds, cooked, boiled, with salt",
+                "weight": 177.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.53",
+                        "gm": 9.34
+                    }
+                ]
+            },
+            {
+                "ndbno": "16020",
+                "name": "Beans, cranberry (roman), mature seeds, cooked, boiled, without salt",
+                "weight": 177.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.53",
+                        "gm": 9.34
+                    }
+                ]
+            },
+            {
+                "ndbno": "16019",
+                "name": "Beans, cranberry (roman), mature seeds, raw",
+                "weight": 195.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "44.91",
+                        "gm": 23.03
+                    }
+                ]
+            },
+            {
+                "ndbno": "16323",
+                "name": "Beans, french, mature seeds, cooked, boiled, with salt",
+                "weight": 177.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.48",
+                        "gm": 7.05
+                    }
+                ]
+            },
+            {
+                "ndbno": "16023",
+                "name": "Beans, french, mature seeds, cooked, boiled, without salt",
+                "weight": 177.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.48",
+                        "gm": 7.05
+                    }
+                ]
+            },
+            {
+                "ndbno": "16022",
+                "name": "Beans, french, mature seeds, raw",
+                "weight": 184.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "34.61",
+                        "gm": 18.81
+                    }
+                ]
+            },
+            {
+                "ndbno": "16026",
+                "name": "Beans, great northern, mature seeds, canned",
+                "weight": 262.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "19.31",
+                        "gm": 7.37
+                    }
+                ]
+            },
+            {
+                "ndbno": "16326",
+                "name": "Beans, great northern, mature seeds, canned, low sodium",
+                "weight": 262.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "19.31",
+                        "gm": 7.37
+                    }
+                ]
+            },
+            {
+                "ndbno": "16325",
+                "name": "Beans, great northern, mature seeds, cooked, boiled, with salt",
+                "weight": 177.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.74",
+                        "gm": 8.33
+                    }
+                ]
+            },
+            {
+                "ndbno": "16025",
+                "name": "Beans, great northern, mature seeds, cooked, boiled, without salt",
+                "weight": 177.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.74",
+                        "gm": 8.33
+                    }
+                ]
+            },
+            {
+                "ndbno": "16024",
+                "name": "Beans, great northern, mature seeds, raw",
+                "weight": 183.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "40.00",
+                        "gm": 21.86
+                    }
+                ]
+            },
+            {
+                "ndbno": "16029",
+                "name": "Beans, kidney, all types, mature seeds, canned",
+                "weight": 256.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.36",
+                        "gm": 5.22
+                    }
+                ]
+            },
+            {
+                "ndbno": "16328",
+                "name": "Beans, kidney, all types, mature seeds, cooked, boiled, with salt",
+                "weight": 177.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.35",
+                        "gm": 8.67
+                    }
+                ]
+            },
+            {
+                "ndbno": "16028",
+                "name": "Beans, kidney, all types, mature seeds, cooked, boiled, without salt",
+                "weight": 177.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.35",
+                        "gm": 8.67
+                    }
+                ]
+            },
+            {
+                "ndbno": "16027",
+                "name": "Beans, kidney, all types, mature seeds, raw",
+                "weight": 184.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "43.39",
+                        "gm": 23.58
+                    }
+                ]
+            },
+            {
+                "ndbno": "16331",
+                "name": "Beans, kidney, california red, mature seeds, cooked, boiled, with salt",
+                "weight": 177.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.16",
+                        "gm": 9.13
+                    }
+                ]
+            },
+            {
+                "ndbno": "16031",
+                "name": "Beans, kidney, california red, mature seeds, cooked, boiled, without salt",
+                "weight": 177.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.16",
+                        "gm": 9.13
+                    }
+                ]
+            },
+            {
+                "ndbno": "16030",
+                "name": "Beans, kidney, california red, mature seeds, raw",
+                "weight": 184.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "44.84",
+                        "gm": 24.37
+                    }
+                ]
+            },
+            {
+                "ndbno": "16145",
+                "name": "Beans, kidney, red, mature seeds, canned, drained solids",
+                "weight": 266.0,
+                "measure": "1.0 can drained solids",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "21.23",
+                        "gm": 7.98
+                    }
+                ]
+            },
+            {
+                "ndbno": "16335",
+                "name": "Beans, kidney, red, mature seeds, canned, drained solids, rinsed in tap water",
+                "weight": 158.0,
+                "measure": "1.0 cup cup rinsed solids",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.83",
+                        "gm": 8.12
+                    }
+                ]
+            },
+            {
+                "ndbno": "16337",
+                "name": "Beans, kidney, red, mature seeds, canned, solids and liquid, low sodium",
+                "weight": 256.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.36",
+                        "gm": 5.22
+                    }
+                ]
+            },
+            {
+                "ndbno": "16034",
+                "name": "Beans, kidney, red, mature seeds, canned, solids and liquids",
+                "weight": 256.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.36",
+                        "gm": 5.22
+                    }
+                ]
+            },
+            {
+                "ndbno": "16333",
+                "name": "Beans, kidney, red, mature seeds, cooked, boiled, with salt",
+                "weight": 177.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.35",
+                        "gm": 8.67
+                    }
+                ]
+            },
+            {
+                "ndbno": "16033",
+                "name": "Beans, kidney, red, mature seeds, cooked, boiled, without salt",
+                "weight": 177.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.35",
+                        "gm": 8.67
+                    }
+                ]
+            },
+            {
+                "ndbno": "16032",
+                "name": "Beans, kidney, red, mature seeds, raw",
+                "weight": 184.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "41.46",
+                        "gm": 22.53
+                    }
+                ]
+            },
+            {
+                "ndbno": "16336",
+                "name": "Beans, kidney, royal red, mature seeds, cooked, boiled with salt",
+                "weight": 177.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.80",
+                        "gm": 9.49
+                    }
+                ]
+            },
+            {
+                "ndbno": "16036",
+                "name": "Beans, kidney, royal red, mature seeds, cooked, boiled, without salt",
+                "weight": 177.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.80",
+                        "gm": 9.49
+                    }
+                ]
+            },
+            {
+                "ndbno": "16035",
+                "name": "Beans, kidney, royal red, mature seeds, raw",
+                "weight": 184.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "46.61",
+                        "gm": 25.33
+                    }
+                ]
+            },
+            {
+                "ndbno": "43125",
+                "name": "Beans, liquid from stewed kidney beans",
+                "weight": 240.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.32",
+                        "gm": 1.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "16039",
+                "name": "Beans, navy, mature seeds, canned",
+                "weight": 262.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "19.73",
+                        "gm": 7.53
+                    }
+                ]
+            },
+            {
+                "ndbno": "16338",
+                "name": "Beans, navy, mature seeds, cooked, boiled, with salt",
+                "weight": 182.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.98",
+                        "gm": 8.23
+                    }
+                ]
+            },
+            {
+                "ndbno": "16038",
+                "name": "Beans, navy, mature seeds, cooked, boiled, without salt",
+                "weight": 182.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.98",
+                        "gm": 8.23
+                    }
+                ]
+            },
+            {
+                "ndbno": "16037",
+                "name": "Beans, navy, mature seeds, raw",
+                "weight": 208.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "46.45",
+                        "gm": 22.33
+                    }
+                ]
+            },
+            {
+                "ndbno": "16341",
+                "name": "Beans, pink, mature seeds, cooked, boiled, with salt",
+                "weight": 169.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.31",
+                        "gm": 9.06
+                    }
+                ]
+            },
+            {
+                "ndbno": "16041",
+                "name": "Beans, pink, mature seeds, cooked, boiled, without salt",
+                "weight": 169.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.31",
+                        "gm": 9.06
+                    }
+                ]
+            },
+            {
+                "ndbno": "16040",
+                "name": "Beans, pink, mature seeds, raw",
+                "weight": 210.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "44.02",
+                        "gm": 20.96
+                    }
+                ]
+            },
+            {
+                "ndbno": "16146",
+                "name": "Beans, pinto, canned, drained solids",
+                "weight": 277.0,
+                "measure": "1.0 can drained solids",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "19.36",
+                        "gm": 6.99
+                    }
+                ]
+            },
+            {
+                "ndbno": "16345",
+                "name": "Beans, pinto, mature seeds, canned, drained solids, rinsed in tap water",
+                "weight": 169.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.90",
+                        "gm": 7.04
+                    }
+                ]
+            },
+            {
+                "ndbno": "16044",
+                "name": "Beans, pinto, mature seeds, canned, solids and liquids",
+                "weight": 240.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.04",
+                        "gm": 4.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "16347",
+                "name": "Beans, pinto, mature seeds, canned, solids and liquids, low sodium",
+                "weight": 240.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.04",
+                        "gm": 4.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "16343",
+                "name": "Beans, pinto, mature seeds, cooked, boiled, with salt",
+                "weight": 171.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.41",
+                        "gm": 9.01
+                    }
+                ]
+            },
+            {
+                "ndbno": "16043",
+                "name": "Beans, pinto, mature seeds, cooked, boiled, without salt",
+                "weight": 171.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.41",
+                        "gm": 9.01
+                    }
+                ]
+            },
+            {
+                "ndbno": "16042",
+                "name": "Beans, pinto, mature seeds, raw",
+                "weight": 193.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "41.34",
+                        "gm": 21.42
+                    }
+                ]
+            },
+            {
+                "ndbno": "16346",
+                "name": "Beans, small white, mature seeds, cooked, boiled, with salt",
+                "weight": 179.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.06",
+                        "gm": 8.97
+                    }
+                ]
+            },
+            {
+                "ndbno": "16046",
+                "name": "Beans, small white, mature seeds, cooked, boiled, without salt",
+                "weight": 179.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.06",
+                        "gm": 8.97
+                    }
+                ]
+            },
+            {
+                "ndbno": "16045",
+                "name": "Beans, small white, mature seeds, raw",
+                "weight": 215.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "45.39",
+                        "gm": 21.11
+                    }
+                ]
+            },
+            {
+                "ndbno": "16051",
+                "name": "Beans, white, mature seeds, canned",
+                "weight": 262.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "19.02",
+                        "gm": 7.26
+                    }
+                ]
+            },
+            {
+                "ndbno": "16350",
+                "name": "Beans, white, mature seeds, cooked, boiled, with salt",
+                "weight": 179.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.42",
+                        "gm": 9.73
+                    }
+                ]
+            },
+            {
+                "ndbno": "16050",
+                "name": "Beans, white, mature seeds, cooked, boiled, without salt",
+                "weight": 179.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.42",
+                        "gm": 9.73
+                    }
+                ]
+            },
+            {
+                "ndbno": "16049",
+                "name": "Beans, white, mature seeds, raw",
+                "weight": 202.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "47.19",
+                        "gm": 23.36
+                    }
+                ]
+            },
+            {
+                "ndbno": "16348",
+                "name": "Beans, yellow, mature seeds, cooked, boiled, with salt",
+                "weight": 177.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.21",
+                        "gm": 9.16
+                    }
+                ]
+            },
+            {
+                "ndbno": "16048",
+                "name": "Beans, yellow, mature seeds, cooked, boiled, without salt",
+                "weight": 177.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.21",
+                        "gm": 9.16
+                    }
+                ]
+            },
+            {
+                "ndbno": "16047",
+                "name": "Beans, yellow, mature seeds, raw",
+                "weight": 196.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "43.12",
+                        "gm": 22.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "16054",
+                "name": "Broadbeans (fava beans), mature seeds, canned",
+                "weight": 256.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.00",
+                        "gm": 5.47
+                    }
+                ]
+            },
+            {
+                "ndbno": "16353",
+                "name": "Broadbeans (fava beans), mature seeds, cooked, boiled, with salt",
+                "weight": 170.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.92",
+                        "gm": 7.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "16053",
+                "name": "Broadbeans (fava beans), mature seeds, cooked, boiled, without salt",
+                "weight": 170.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.92",
+                        "gm": 7.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "16052",
+                "name": "Broadbeans (fava beans), mature seeds, raw",
+                "weight": 150.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "39.18",
+                        "gm": 26.12
+                    }
+                ]
+            },
+            {
+                "ndbno": "16200",
+                "name": "Campbell's Brown Sugar And Bacon Flavored Baked Beans",
+                "weight": 130.0,
+                "measure": "0.5 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.00",
+                        "gm": 3.85
+                    }
+                ]
+            },
+            {
+                "ndbno": "16201",
+                "name": "Campbell's Pork and Beans",
+                "weight": 130.0,
+                "measure": "0.5 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.01",
+                        "gm": 4.62
+                    }
+                ]
+            },
+            {
+                "ndbno": "16055",
+                "name": "Carob flour",
+                "weight": 103.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.76",
+                        "gm": 4.62
+                    }
+                ]
+            },
+            {
+                "ndbno": "43128",
+                "name": "Chicken, meatless",
+                "weight": 168.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "39.72",
+                        "gm": 23.64
+                    }
+                ]
+            },
+            {
+                "ndbno": "43410",
+                "name": "Chicken, meatless, breaded, fried",
+                "weight": 130.0,
+                "measure": "1.0 cup, diced",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "27.66",
+                        "gm": 21.28
+                    }
+                ]
+            },
+            {
+                "ndbno": "16157",
+                "name": "Chickpea flour (besan)",
+                "weight": 92.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "20.60",
+                        "gm": 22.39
+                    }
+                ]
+            },
+            {
+                "ndbno": "16358",
+                "name": "Chickpeas (garbanzo beans, bengal gram), mature seeds, canned, drained solids",
+                "weight": 253.0,
+                "measure": "1.0 can drained",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.84",
+                        "gm": 7.05
+                    }
+                ]
+            },
+            {
+                "ndbno": "16359",
+                "name": "Chickpeas (garbanzo beans, bengal gram), mature seeds, canned, drained, rinsed in tap water",
+                "weight": 254.0,
+                "measure": "1.0 can drained, rinsed",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.88",
+                        "gm": 7.04
+                    }
+                ]
+            },
+            {
+                "ndbno": "16058",
+                "name": "Chickpeas (garbanzo beans, bengal gram), mature seeds, canned, solids and liquids",
+                "weight": 240.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.81",
+                        "gm": 4.92
+                    }
+                ]
+            },
+            {
+                "ndbno": "16360",
+                "name": "Chickpeas (garbanzo beans, bengal gram), mature seeds, canned, solids and liquids, low sodium",
+                "weight": 240.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.81",
+                        "gm": 4.92
+                    }
+                ]
+            },
+            {
+                "ndbno": "16357",
+                "name": "Chickpeas (garbanzo beans, bengal gram), mature seeds, cooked, boiled, with salt",
+                "weight": 164.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.53",
+                        "gm": 8.86
+                    }
+                ]
+            },
+            {
+                "ndbno": "16057",
+                "name": "Chickpeas (garbanzo beans, bengal gram), mature seeds, cooked, boiled, without salt",
+                "weight": 164.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.53",
+                        "gm": 8.86
+                    }
+                ]
+            },
+            {
+                "ndbno": "16056",
+                "name": "Chickpeas (garbanzo beans, bengal gram), mature seeds, raw",
+                "weight": 200.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "40.94",
+                        "gm": 20.47
+                    }
+                ]
+            },
+            {
+                "ndbno": "16059",
+                "name": "Chili with beans, canned",
+                "weight": 256.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.67",
+                        "gm": 6.12
+                    }
+                ]
+            },
+            {
+                "ndbno": "16361",
+                "name": "Cowpeas, catjang, mature seeds, cooked, boiled, with salt",
+                "weight": 171.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.90",
+                        "gm": 8.13
+                    }
+                ]
+            },
+            {
+                "ndbno": "16061",
+                "name": "Cowpeas, catjang, mature seeds, cooked, boiled, without salt",
+                "weight": 171.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.90",
+                        "gm": 8.13
+                    }
+                ]
+            },
+            {
+                "ndbno": "16060",
+                "name": "Cowpeas, catjang, mature seeds, raw",
+                "weight": 167.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "39.83",
+                        "gm": 23.85
+                    }
+                ]
+            },
+            {
+                "ndbno": "16065",
+                "name": "Cowpeas, common (blackeyes, crowder, southern), mature seeds, canned with pork",
+                "weight": 240.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.58",
+                        "gm": 2.74
+                    }
+                ]
+            },
+            {
+                "ndbno": "16064",
+                "name": "Cowpeas, common (blackeyes, crowder, southern), mature seeds, canned, plain",
+                "weight": 240.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.38",
+                        "gm": 4.74
+                    }
+                ]
+            },
+            {
+                "ndbno": "16363",
+                "name": "Cowpeas, common (blackeyes, crowder, southern), mature seeds, cooked, boiled, with salt",
+                "weight": 171.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.22",
+                        "gm": 7.73
+                    }
+                ]
+            },
+            {
+                "ndbno": "16063",
+                "name": "Cowpeas, common (blackeyes, crowder, southern), mature seeds, cooked, boiled, without salt",
+                "weight": 171.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.22",
+                        "gm": 7.73
+                    }
+                ]
+            },
+            {
+                "ndbno": "16062",
+                "name": "Cowpeas, common (blackeyes, crowder, southern), mature seeds, raw",
+                "weight": 167.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "39.28",
+                        "gm": 23.52
+                    }
+                ]
+            },
+            {
+                "ndbno": "16138",
+                "name": "Falafel, home-prepared",
+                "weight": 17.0,
+                "measure": "1.0 patty (approx 2-1/4\" dia)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.26",
+                        "gm": 13.31
+                    }
+                ]
+            },
+            {
+                "ndbno": "43130",
+                "name": "Frankfurter, meatless",
+                "weight": 140.0,
+                "measure": "1.0 cup, sliced",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "27.45",
+                        "gm": 19.61
+                    }
+                ]
+            },
+            {
+                "ndbno": "16173",
+                "name": "Frijoles rojos volteados (Refried beans, red, canned)",
+                "weight": 233.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.65",
+                        "gm": 5.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "16570",
+                "name": "GARDENBURGER Black Bean Chipotle Burger, frozen, unprepared",
+                "weight": 71.0,
+                "measure": "1.0 patty",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.62",
+                        "gm": 6.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "16581",
+                "name": "GARDENBURGER Flame Grilled Burger, frozen, unprepared",
+                "weight": 96.0,
+                "measure": "1.0 patty",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.59",
+                        "gm": 15.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "16579",
+                "name": "GARDENBURGER Original, frozen, unprepared",
+                "weight": 71.0,
+                "measure": "1.0 patty",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.11",
+                        "gm": 7.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "16584",
+                "name": "GARDENBURGER Savory Portabella Veggie Burger, frozen, unprepared",
+                "weight": 71.0,
+                "measure": "1.0 patty",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.19",
+                        "gm": 5.9
+                    }
+                ]
+            },
+            {
+                "ndbno": "16585",
+                "name": "GARDENBURGER Sun-Dried Tomato Basil Burger, frozen, unprepared",
+                "weight": 71.0,
+                "measure": "1.0 patty",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.90",
+                        "gm": 5.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "16586",
+                "name": "GARDENBURGER Veggie Medley Burger, frozen, unprepared",
+                "weight": 71.0,
+                "measure": "1.0 patty",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.91",
+                        "gm": 4.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "16281",
+                "name": "HOUSE FOODS Premium Firm Tofu",
+                "weight": 56.0,
+                "measure": "2.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.12",
+                        "gm": 10.92
+                    }
+                ]
+            },
+            {
+                "ndbno": "16279",
+                "name": "HOUSE FOODS Premium Soft Tofu",
+                "weight": 56.0,
+                "measure": "2.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.57",
+                        "gm": 6.38
+                    }
+                ]
+            },
+            {
+                "ndbno": "16158",
+                "name": "Hummus, commercial",
+                "weight": 15.0,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.19",
+                        "gm": 7.9
+                    }
+                ]
+            },
+            {
+                "ndbno": "16137",
+                "name": "Hummus, home prepared",
+                "weight": 15.0,
+                "measure": "1.0 tablespoon",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.73",
+                        "gm": 4.86
+                    }
+                ]
+            },
+            {
+                "ndbno": "16368",
+                "name": "Hyacinth beans, mature seeds, cooked, boiled, with salt",
+                "weight": 194.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.79",
+                        "gm": 8.14
+                    }
+                ]
+            },
+            {
+                "ndbno": "16068",
+                "name": "Hyacinth beans, mature seeds, cooked, boiled, without salt",
+                "weight": 194.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.79",
+                        "gm": 8.14
+                    }
+                ]
+            },
+            {
+                "ndbno": "16067",
+                "name": "Hyacinth beans, mature seeds, raw",
+                "weight": 210.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "50.19",
+                        "gm": 23.9
+                    }
+                ]
+            },
+            {
+                "ndbno": "16370",
+                "name": "Lentils, mature seeds, cooked, boiled, with salt",
+                "weight": 198.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.86",
+                        "gm": 9.02
+                    }
+                ]
+            },
+            {
+                "ndbno": "16070",
+                "name": "Lentils, mature seeds, cooked, boiled, without salt",
+                "weight": 198.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.86",
+                        "gm": 9.02
+                    }
+                ]
+            },
+            {
+                "ndbno": "16144",
+                "name": "Lentils, pink or red, raw",
+                "weight": 192.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "45.91",
+                        "gm": 23.91
+                    }
+                ]
+            },
+            {
+                "ndbno": "16069",
+                "name": "Lentils, raw",
+                "weight": 192.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "47.29",
+                        "gm": 24.63
+                    }
+                ]
+            },
+            {
+                "ndbno": "16073",
+                "name": "Lima beans, large, mature seeds, canned",
+                "weight": 241.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.88",
+                        "gm": 4.93
+                    }
+                ]
+            },
+            {
+                "ndbno": "16372",
+                "name": "Lima beans, large, mature seeds, cooked, boiled, with salt",
+                "weight": 188.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.66",
+                        "gm": 7.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "16072",
+                "name": "Lima beans, large, mature seeds, cooked, boiled, without salt",
+                "weight": 188.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.66",
+                        "gm": 7.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "16071",
+                "name": "Lima beans, large, mature seeds, raw",
+                "weight": 178.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "38.20",
+                        "gm": 21.46
+                    }
+                ]
+            },
+            {
+                "ndbno": "16375",
+                "name": "Lima beans, thin seeded (baby), mature seeds, cooked, boiled, with salt",
+                "weight": 182.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.63",
+                        "gm": 8.04
+                    }
+                ]
+            },
+            {
+                "ndbno": "16075",
+                "name": "Lima beans, thin seeded (baby), mature seeds, cooked, boiled, without salt",
+                "weight": 182.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.63",
+                        "gm": 8.04
+                    }
+                ]
+            },
+            {
+                "ndbno": "16074",
+                "name": "Lima beans, thin seeded (baby), mature seeds, raw",
+                "weight": 202.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "41.65",
+                        "gm": 20.62
+                    }
+                ]
+            },
+            {
+                "ndbno": "22126",
+                "name": "LOMA LINDA Big Franks, canned, unprepared",
+                "weight": 51.0,
+                "measure": "1.0 link",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.96",
+                        "gm": 21.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "16509",
+                "name": "LOMA LINDA Linketts, canned, unprepared",
+                "weight": 35.0,
+                "measure": "1.0 link",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.46",
+                        "gm": 21.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "16500",
+                "name": "LOMA LINDA Little Links, canned, unprepared",
+                "weight": 46.0,
+                "measure": "2.0 links",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.92",
+                        "gm": 19.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "16502",
+                "name": "LOMA LINDA Low Fat Big Franks, canned, unprepared",
+                "weight": 51.0,
+                "measure": "1.0 link",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.78",
+                        "gm": 23.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "16507",
+                "name": "LOMA LINDA Redi-Burger, canned, unprepared",
+                "weight": 85.0,
+                "measure": "1.0 slice , 5/8\"",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "18.61",
+                        "gm": 21.9
+                    }
+                ]
+            },
+            {
+                "ndbno": "16505",
+                "name": "LOMA LINDA Swiss Stake with Gravy, canned, unprepared",
+                "weight": 92.0,
+                "measure": "1.0 piece",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.38",
+                        "gm": 10.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "16508",
+                "name": "LOMA LINDA Tender Bits, canned, unprepared",
+                "weight": 85.0,
+                "measure": "6.0 pieces",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.84",
+                        "gm": 15.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "16504",
+                "name": "LOMA LINDA Tender Rounds with Gravy, canned, unprepared",
+                "weight": 80.0,
+                "measure": "6.0 pieces",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.04",
+                        "gm": 16.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "16506",
+                "name": "LOMA LINDA Vege-Burger, canned, unprepared",
+                "weight": 55.0,
+                "measure": "0.25 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.21",
+                        "gm": 22.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "43131",
+                "name": "Luncheon slices, meatless",
+                "weight": 14.0,
+                "measure": "1.0 slice, thin",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.49",
+                        "gm": 17.78
+                    }
+                ]
+            },
+            {
+                "ndbno": "16377",
+                "name": "Lupins, mature seeds, cooked, boiled, with salt",
+                "weight": 166.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "25.85",
+                        "gm": 15.57
+                    }
+                ]
+            },
+            {
+                "ndbno": "16077",
+                "name": "Lupins, mature seeds, cooked, boiled, without salt",
+                "weight": 166.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "25.85",
+                        "gm": 15.57
+                    }
+                ]
+            },
+            {
+                "ndbno": "16076",
+                "name": "Lupins, mature seeds, raw",
+                "weight": 180.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "65.11",
+                        "gm": 36.17
+                    }
+                ]
+            },
+            {
+                "ndbno": "16106",
+                "name": "Meat extender",
+                "weight": 88.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "36.70",
+                        "gm": 41.71
+                    }
+                ]
+            },
+            {
+                "ndbno": "43132",
+                "name": "Meatballs, meatless",
+                "weight": 144.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "30.24",
+                        "gm": 21.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "16112",
+                "name": "Miso",
+                "weight": 17.0,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.17",
+                        "gm": 12.79
+                    }
+                ]
+            },
+            {
+                "ndbno": "16163",
+                "name": "MORI-NU, Tofu, silken, extra firm",
+                "weight": 84.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.22",
+                        "gm": 7.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "16162",
+                "name": "MORI-NU, Tofu, silken, firm",
+                "weight": 84.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.80",
+                        "gm": 6.9
+                    }
+                ]
+            },
+            {
+                "ndbno": "16165",
+                "name": "MORI-NU, Tofu, silken, lite extra firm",
+                "weight": 84.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.88",
+                        "gm": 7.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "16164",
+                "name": "MORI-NU, Tofu, silken, lite firm",
+                "weight": 84.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.29",
+                        "gm": 6.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "16161",
+                "name": "MORI-NU, Tofu, silken, soft",
+                "weight": 84.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.03",
+                        "gm": 4.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "16551",
+                "name": "MORNINGSTAR FARMS Asian Veggie Patties, frozen, unprepared",
+                "weight": 67.0,
+                "measure": "1.0 burger",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.64",
+                        "gm": 11.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "16590",
+                "name": "MORNINGSTAR FARMS BBQ Riblets, frozen, unprepared",
+                "weight": 142.0,
+                "measure": "1.0 sauce",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.19",
+                        "gm": 11.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "16542",
+                "name": "MORNINGSTAR FARMS Breakfast Bacon Strips, frozen, unprepared",
+                "weight": 16.0,
+                "measure": "2.0 strips",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.98",
+                        "gm": 12.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "16603",
+                "name": "MORNINGSTAR FARMS Breakfast Biscuit Sausage, Egg &amp; Cheese, frozen, unprepared",
+                "weight": 105.0,
+                "measure": "1.0 biscuit",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.77",
+                        "gm": 9.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "16538",
+                "name": "MORNINGSTAR FARMS Breakfast Pattie with Organic Soy, frozen, unprepared",
+                "weight": 38.0,
+                "measure": "1.0 Patty",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.01",
+                        "gm": 23.7
+                    }
+                ]
+            },
+            {
+                "ndbno": "16609",
+                "name": "MORNINGSTAR FARMS Breakfast Pattie, frozen, unprepared",
+                "weight": 38.0,
+                "measure": "1.0 pattie",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.01",
+                        "gm": 23.7
+                    }
+                ]
+            },
+            {
+                "ndbno": "16546",
+                "name": "MORNINGSTAR FARMS Breakfast Sausage Links, frozen, unprepared",
+                "weight": 45.0,
+                "measure": "2.0 links",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.64",
+                        "gm": 19.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "22122",
+                "name": "MORNINGSTAR FARMS Breakfast Sausage Patties, frozen, unprepared",
+                "weight": 38.0,
+                "measure": "1.0 patty",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.80",
+                        "gm": 25.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "16607",
+                "name": "MORNINGSTAR FARMS Buffalo Chik Patties, frozen, unprepared",
+                "weight": 71.0,
+                "measure": "1.0 patty",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.59",
+                        "gm": 12.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "16555",
+                "name": "MORNINGSTAR FARMS Buffalo Wings, frozen, unprepared",
+                "weight": 85.0,
+                "measure": "5.0 Wings",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.98",
+                        "gm": 14.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "16592",
+                "name": "MORNINGSTAR FARMS California Turk'y Burger, frozen, unprepared",
+                "weight": 64.0,
+                "measure": "1.0 burger",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.54",
+                        "gm": 14.9
+                    }
+                ]
+            },
+            {
+                "ndbno": "16608",
+                "name": "MORNINGSTAR FARMS Chik Patties Original, frozen, unprepared",
+                "weight": 71.0,
+                "measure": "1.0 patty",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.95",
+                        "gm": 11.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "16557",
+                "name": "MORNINGSTAR FARMS Chik Patties, frozen, unprepared",
+                "weight": 71.0,
+                "measure": "1.0 patty",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.38",
+                        "gm": 11.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "16588",
+                "name": "MORNINGSTAR FARMS Chik'n Grill Veggie Patties, frozen, unprepared",
+                "weight": 67.0,
+                "measure": "1.0 patty",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.58",
+                        "gm": 12.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "16556",
+                "name": "MORNINGSTAR FARMS Chik'n Nuggets, frozen, unprepared",
+                "weight": 86.0,
+                "measure": "4.0 nuggets",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.38",
+                        "gm": 14.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "16615",
+                "name": "MORNINGSTAR FARMS Chipotle Black Bean Crumbles, frozen, unprepared",
+                "weight": 56.0,
+                "measure": "0.5 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.06",
+                        "gm": 14.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "16561",
+                "name": "MORNINGSTAR FARMS Corn Dog Mini, frozen, unprepared",
+                "weight": 76.0,
+                "measure": "4.0 pieces",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.03",
+                        "gm": 13.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "16560",
+                "name": "MORNINGSTAR FARMS Corn Dog, frozen, unprepared",
+                "weight": 71.0,
+                "measure": "1.0 dog",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.95",
+                        "gm": 11.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "16616",
+                "name": "MORNINGSTAR FARMS Garden Veggie Nuggets, frozen, unprepared",
+                "weight": 80.0,
+                "measure": "5.0 nuggets",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.68",
+                        "gm": 9.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "22118",
+                "name": "MORNINGSTAR FARMS Garden Veggie Patties, frozen, unprepared",
+                "weight": 67.0,
+                "measure": "1.0 burger",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.93",
+                        "gm": 17.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "22120",
+                "name": "MORNINGSTAR FARMS Grillers Burger Style Recipe Crumbles, frozen, unprepared",
+                "weight": 50.0,
+                "measure": "0.5 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.25",
+                        "gm": 18.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "16601",
+                "name": "MORNINGSTAR FARMS Grillers Chik'n Veggie Patties, frozen, unprepared",
+                "weight": 67.0,
+                "measure": "1.0 patty",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.58",
+                        "gm": 12.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "16548",
+                "name": "MORNINGSTAR FARMS Grillers Original, frozen, unprepared",
+                "weight": 64.0,
+                "measure": "1.0 burger",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.30",
+                        "gm": 23.9
+                    }
+                ]
+            },
+            {
+                "ndbno": "16549",
+                "name": "MORNINGSTAR FARMS Grillers Prime, frozen, unprepared",
+                "weight": 71.0,
+                "measure": "1.0 burger",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.04",
+                        "gm": 24.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "16596",
+                "name": "MORNINGSTAR FARMS Grillers Quarter Pound Veggie Burger, frozen, unprepared",
+                "weight": 114.0,
+                "measure": "1.0 burger",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "25.99",
+                        "gm": 22.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "22121",
+                "name": "MORNINGSTAR FARMS Grillers Vegan, frozen, unprepared",
+                "weight": 71.0,
+                "measure": "1.0 Burger",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.57",
+                        "gm": 16.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "16593",
+                "name": "MORNINGSTAR FARMS Hot and Spicy Veggie Sausage Patties, frozen, unprepared",
+                "weight": 38.0,
+                "measure": "1.0 patty",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.28",
+                        "gm": 21.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "16594",
+                "name": "MORNINGSTAR FARMS Lasagna with Veggie Sausage, frozen, unprepared",
+                "weight": 284.0,
+                "measure": "1.0 entree",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "20.16",
+                        "gm": 7.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "16602",
+                "name": "MORNINGSTAR FARMS Meal Starters Veggie Meatballs, frozen, unprepared",
+                "weight": 80.0,
+                "measure": "5.0 meatballs",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.16",
+                        "gm": 17.7
+                    }
+                ]
+            },
+            {
+                "ndbno": "16606",
+                "name": "MORNINGSTAR FARMS Mediterranean Chickpea, frozen, unprepared",
+                "weight": 67.0,
+                "measure": "1.0 Burger",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.38",
+                        "gm": 15.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "16552",
+                "name": "MORNINGSTAR FARMS Mushroom Lover's Burger, frozen, unprepared",
+                "weight": 64.0,
+                "measure": "1.0 burger",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.15",
+                        "gm": 14.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "16611",
+                "name": "MORNINGSTAR FARMS Parmesan Garlic Wings, frozen, unprepared",
+                "weight": 85.0,
+                "measure": "5.0 Wings",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.07",
+                        "gm": 14.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "16610",
+                "name": "MORNINGSTAR FARMS Roasted Garlic &amp; Quinoa Burger, frozen, unprepared",
+                "weight": 67.0,
+                "measure": "1.0 burger",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.17",
+                        "gm": 10.7
+                    }
+                ]
+            },
+            {
+                "ndbno": "16565",
+                "name": "MORNINGSTAR FARMS Sausage Style Recipe Crumbles, frozen, unprepared",
+                "weight": 55.0,
+                "measure": "0.667 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.11",
+                        "gm": 20.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "16600",
+                "name": "MORNINGSTAR FARMS Sesame Chik'n Entree, frozen, unprepared",
+                "weight": 269.0,
+                "measure": "1.0 package",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.26",
+                        "gm": 5.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "22123",
+                "name": "MORNINGSTAR FARMS Spicy Black Bean Burger, frozen, unprepared",
+                "weight": 67.0,
+                "measure": "1.0 burger",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.78",
+                        "gm": 14.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "16617",
+                "name": "MORNINGSTAR FARMS Spicy Black Bean Enchilada Entree, frozen, unprepared",
+                "weight": 255.0,
+                "measure": "1.0 entree",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.79",
+                        "gm": 5.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "16618",
+                "name": "MORNINGSTAR FARMS Spicy Indian Veggie Burger, frozen, unprepared",
+                "weight": 67.0,
+                "measure": "1.0 burger",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.16",
+                        "gm": 9.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "16554",
+                "name": "MORNINGSTAR FARMS Tomato &amp; Basil Pizza Burger, frozen, unprepared",
+                "weight": 67.0,
+                "measure": "1.0 burger",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.38",
+                        "gm": 15.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "16619",
+                "name": "MORNINGSTAR FARMS Tuscan Greens &amp; Beans, frozen, unprepared",
+                "weight": 241.0,
+                "measure": "1.0 entree",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.22",
+                        "gm": 5.9
+                    }
+                ]
+            },
+            {
+                "ndbno": "22119",
+                "name": "MORNINGSTAR FARMS Veggie Dog, frozen, unprepared",
+                "weight": 40.0,
+                "measure": "1.0 link",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.96",
+                        "gm": 17.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "16379",
+                "name": "Mothbeans, mature seeds, cooked, boiled, with salt",
+                "weight": 177.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.82",
+                        "gm": 7.81
+                    }
+                ]
+            },
+            {
+                "ndbno": "16079",
+                "name": "Mothbeans, mature seeds, cooked, boiled, without salt",
+                "weight": 177.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.82",
+                        "gm": 7.81
+                    }
+                ]
+            },
+            {
+                "ndbno": "16078",
+                "name": "Mothbeans, mature seeds, raw",
+                "weight": 196.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "44.96",
+                        "gm": 22.94
+                    }
+                ]
+            },
+            {
+                "ndbno": "16381",
+                "name": "Mung beans, mature seeds, cooked, boiled, with salt",
+                "weight": 202.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.18",
+                        "gm": 7.02
+                    }
+                ]
+            },
+            {
+                "ndbno": "16081",
+                "name": "Mung beans, mature seeds, cooked, boiled, without salt",
+                "weight": 202.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.18",
+                        "gm": 7.02
+                    }
+                ]
+            },
+            {
+                "ndbno": "16080",
+                "name": "Mung beans, mature seeds, raw",
+                "weight": 207.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "49.39",
+                        "gm": 23.86
+                    }
+                ]
+            },
+            {
+                "ndbno": "16384",
+                "name": "Mungo beans, mature seeds, cooked, boiled, with salt",
+                "weight": 180.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.57",
+                        "gm": 7.54
+                    }
+                ]
+            },
+            {
+                "ndbno": "16084",
+                "name": "Mungo beans, mature seeds, cooked, boiled, without salt",
+                "weight": 180.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.57",
+                        "gm": 7.54
+                    }
+                ]
+            },
+            {
+                "ndbno": "16083",
+                "name": "Mungo beans, mature seeds, raw",
+                "weight": 207.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "52.18",
+                        "gm": 25.21
+                    }
+                ]
+            },
+            {
+                "ndbno": "16113",
+                "name": "Natto",
+                "weight": 175.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "33.95",
+                        "gm": 19.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "16082",
+                "name": "Noodles, chinese, cellophane or long rice (mung beans), dehydrated",
+                "weight": 140.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.22",
+                        "gm": 0.16
+                    }
+                ]
+            },
+            {
+                "ndbno": "16130",
+                "name": "Okara",
+                "weight": 122.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.29",
+                        "gm": 3.52
+                    }
+                ]
+            },
+            {
+                "ndbno": "16203",
+                "name": "PACE, Salsa Refried Beans",
+                "weight": 120.0,
+                "measure": "0.5 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.00",
+                        "gm": 3.33
+                    }
+                ]
+            },
+            {
+                "ndbno": "16204",
+                "name": "PACE, Spicy Jalapeno Refried Beans",
+                "weight": 120.0,
+                "measure": "0.5 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.00",
+                        "gm": 4.17
+                    }
+                ]
+            },
+            {
+                "ndbno": "16202",
+                "name": "PACE, Traditional Refried Beans",
+                "weight": 120.0,
+                "measure": "0.5 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.00",
+                        "gm": 4.17
+                    }
+                ]
+            },
+            {
+                "ndbno": "16399",
+                "name": "Peanut butter with omega-3, creamy",
+                "weight": 16.0,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.92",
+                        "gm": 24.47
+                    }
+                ]
+            },
+            {
+                "ndbno": "16097",
+                "name": "Peanut butter, chunk style, with salt",
+                "weight": 32.0,
+                "measure": "2.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.70",
+                        "gm": 24.06
+                    }
+                ]
+            },
+            {
+                "ndbno": "16397",
+                "name": "Peanut butter, chunk style, without salt",
+                "weight": 32.0,
+                "measure": "2.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.70",
+                        "gm": 24.06
+                    }
+                ]
+            },
+            {
+                "ndbno": "16156",
+                "name": "Peanut butter, chunky, vitamin and mineral fortified",
+                "weight": 32.0,
+                "measure": "2.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.34",
+                        "gm": 26.06
+                    }
+                ]
+            },
+            {
+                "ndbno": "42291",
+                "name": "Peanut butter, reduced sodium",
+                "weight": 16.0,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.84",
+                        "gm": 24.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "16098",
+                "name": "Peanut butter, smooth style, with salt",
+                "weight": 32.0,
+                "measure": "2.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.11",
+                        "gm": 22.21
+                    }
+                ]
+            },
+            {
+                "ndbno": "16398",
+                "name": "Peanut butter, smooth style, without salt",
+                "weight": 32.0,
+                "measure": "2.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.11",
+                        "gm": 22.21
+                    }
+                ]
+            },
+            {
+                "ndbno": "16150",
+                "name": "Peanut butter, smooth, reduced fat",
+                "weight": 36.0,
+                "measure": "2.0 tablespoon",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.32",
+                        "gm": 25.9
+                    }
+                ]
+            },
+            {
+                "ndbno": "16155",
+                "name": "Peanut butter, smooth, vitamin and mineral fortified",
+                "weight": 32.0,
+                "measure": "2.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.23",
+                        "gm": 25.72
+                    }
+                ]
+            },
+            {
+                "ndbno": "16099",
+                "name": "Peanut flour, defatted",
+                "weight": 60.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "31.32",
+                        "gm": 52.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "16100",
+                "name": "Peanut flour, low fat",
+                "weight": 60.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "20.28",
+                        "gm": 33.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "16149",
+                "name": "Peanut spread, reduced sugar",
+                "weight": 31.0,
+                "measure": "2.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.69",
+                        "gm": 24.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "16088",
+                "name": "Peanuts, all types, cooked, boiled, with salt",
+                "weight": 63.0,
+                "measure": "1.0 cup in shell, edible yield",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.51",
+                        "gm": 13.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "16090",
+                "name": "Peanuts, all types, dry-roasted, with salt",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.90",
+                        "gm": 24.35
+                    }
+                ]
+            },
+            {
+                "ndbno": "16390",
+                "name": "Peanuts, all types, dry-roasted, without salt",
+                "weight": 146.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "35.55",
+                        "gm": 24.35
+                    }
+                ]
+            },
+            {
+                "ndbno": "16089",
+                "name": "Peanuts, all types, oil-roasted, with salt",
+                "weight": 144.0,
+                "measure": "1.0 cup, chopped",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "40.36",
+                        "gm": 28.03
+                    }
+                ]
+            },
+            {
+                "ndbno": "16389",
+                "name": "Peanuts, all types, oil-roasted, without salt",
+                "weight": 144.0,
+                "measure": "1.0 cup,",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "40.36",
+                        "gm": 28.03
+                    }
+                ]
+            },
+            {
+                "ndbno": "16087",
+                "name": "Peanuts, all types, raw",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.31",
+                        "gm": 25.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "16092",
+                "name": "Peanuts, spanish, oil-roasted, with salt",
+                "weight": 147.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "41.17",
+                        "gm": 28.01
+                    }
+                ]
+            },
+            {
+                "ndbno": "16392",
+                "name": "Peanuts, spanish, oil-roasted, without salt",
+                "weight": 147.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "41.17",
+                        "gm": 28.01
+                    }
+                ]
+            },
+            {
+                "ndbno": "16091",
+                "name": "Peanuts, spanish, raw",
+                "weight": 146.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "38.18",
+                        "gm": 26.15
+                    }
+                ]
+            },
+            {
+                "ndbno": "16094",
+                "name": "Peanuts, valencia, oil-roasted, with salt",
+                "weight": 144.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "38.94",
+                        "gm": 27.04
+                    }
+                ]
+            },
+            {
+                "ndbno": "16394",
+                "name": "Peanuts, valencia, oil-roasted, without salt",
+                "weight": 144.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "38.94",
+                        "gm": 27.04
+                    }
+                ]
+            },
+            {
+                "ndbno": "16093",
+                "name": "Peanuts, valencia, raw",
+                "weight": 146.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "36.63",
+                        "gm": 25.09
+                    }
+                ]
+            },
+            {
+                "ndbno": "16096",
+                "name": "Peanuts, virginia, oil-roasted, with salt",
+                "weight": 143.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "36.99",
+                        "gm": 25.87
+                    }
+                ]
+            },
+            {
+                "ndbno": "16396",
+                "name": "Peanuts, virginia, oil-roasted, without salt",
+                "weight": 143.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "36.99",
+                        "gm": 25.87
+                    }
+                ]
+            },
+            {
+                "ndbno": "16095",
+                "name": "Peanuts, virginia, raw",
+                "weight": 146.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "36.78",
+                        "gm": 25.19
+                    }
+                ]
+            },
+            {
+                "ndbno": "16085",
+                "name": "Peas, green, split, mature seeds, raw",
+                "weight": 197.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "46.93",
+                        "gm": 23.82
+                    }
+                ]
+            },
+            {
+                "ndbno": "16386",
+                "name": "Peas, split, mature seeds, cooked, boiled, with salt",
+                "weight": 196.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.35",
+                        "gm": 8.34
+                    }
+                ]
+            },
+            {
+                "ndbno": "16086",
+                "name": "Peas, split, mature seeds, cooked, boiled, without salt",
+                "weight": 196.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.35",
+                        "gm": 8.34
+                    }
+                ]
+            },
+            {
+                "ndbno": "16402",
+                "name": "Pigeon peas (red gram), mature seeds, cooked, boiled, with salt",
+                "weight": 168.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.36",
+                        "gm": 6.76
+                    }
+                ]
+            },
+            {
+                "ndbno": "16102",
+                "name": "Pigeon peas (red gram), mature seeds, cooked, boiled, without salt",
+                "weight": 168.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.36",
+                        "gm": 6.76
+                    }
+                ]
+            },
+            {
+                "ndbno": "16101",
+                "name": "Pigeon peas (red gram), mature seeds, raw",
+                "weight": 205.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "44.48",
+                        "gm": 21.7
+                    }
+                ]
+            },
+            {
+                "ndbno": "16172",
+                "name": "Refried beans, canned, fat-free",
+                "weight": 231.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.34",
+                        "gm": 5.34
+                    }
+                ]
+            },
+            {
+                "ndbno": "16103",
+                "name": "Refried beans, canned, traditional style (includes USDA commodity)",
+                "weight": 238.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.85",
+                        "gm": 4.98
+                    }
+                ]
+            },
+            {
+                "ndbno": "16403",
+                "name": "Refried beans, canned, traditional, reduced sodium",
+                "weight": 238.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.85",
+                        "gm": 4.98
+                    }
+                ]
+            },
+            {
+                "ndbno": "16171",
+                "name": "Refried beans, canned, vegetarian",
+                "weight": 242.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.78",
+                        "gm": 5.28
+                    }
+                ]
+            },
+            {
+                "ndbno": "43135",
+                "name": "Sandwich spread, meatless",
+                "weight": 15.0,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.20",
+                        "gm": 8.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "16107",
+                "name": "Sausage, meatless",
+                "weight": 25.0,
+                "measure": "1.0 link",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.07",
+                        "gm": 20.28
+                    }
+                ]
+            },
+            {
+                "ndbno": "16259",
+                "name": "SILK Banana-Strawberry soy yogurt",
+                "weight": 170.0,
+                "measure": "1.0 container",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.00",
+                        "gm": 2.35
+                    }
+                ]
+            },
+            {
+                "ndbno": "16256",
+                "name": "SILK Black Cherry soy yogurt",
+                "weight": 170.0,
+                "measure": "1.0 container",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.00",
+                        "gm": 2.35
+                    }
+                ]
+            },
+            {
+                "ndbno": "16257",
+                "name": "SILK Blueberry soy yogurt",
+                "weight": 170.0,
+                "measure": "1.0 container",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.00",
+                        "gm": 2.35
+                    }
+                ]
+            },
+            {
+                "ndbno": "16247",
+                "name": "SILK Chai, soymilk",
+                "weight": 243.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.00",
+                        "gm": 2.47
+                    }
+                ]
+            },
+            {
+                "ndbno": "16237",
+                "name": "SILK Chocolate, soymilk",
+                "weight": 243.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.01",
+                        "gm": 2.06
+                    }
+                ]
+            },
+            {
+                "ndbno": "16249",
+                "name": "SILK Coffee, soymilk",
+                "weight": 243.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.01",
+                        "gm": 2.06
+                    }
+                ]
+            },
+            {
+                "ndbno": "16261",
+                "name": "SILK French Vanilla Creamer",
+                "weight": 15.0,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "16262",
+                "name": "SILK Hazelnut Creamer",
+                "weight": 15.0,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "16258",
+                "name": "SILK Key Lime soy yogurt",
+                "weight": 170.0,
+                "measure": "1.0 container",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.00",
+                        "gm": 2.35
+                    }
+                ]
+            },
+            {
+                "ndbno": "16240",
+                "name": "SILK Light Chocolate, soymilk",
+                "weight": 243.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.01",
+                        "gm": 2.06
+                    }
+                ]
+            },
+            {
+                "ndbno": "16238",
+                "name": "SILK Light Plain, soymilk",
+                "weight": 243.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.00",
+                        "gm": 2.47
+                    }
+                ]
+            },
+            {
+                "ndbno": "16239",
+                "name": "SILK Light Vanilla, soymilk",
+                "weight": 243.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.00",
+                        "gm": 2.47
+                    }
+                ]
+            },
+            {
+                "ndbno": "16248",
+                "name": "SILK Mocha, soymilk",
+                "weight": 243.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.01",
+                        "gm": 2.06
+                    }
+                ]
+            },
+            {
+                "ndbno": "16246",
+                "name": "SILK Nog, soymilk",
+                "weight": 122.0,
+                "measure": "0.5 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.00",
+                        "gm": 2.46
+                    }
+                ]
+            },
+            {
+                "ndbno": "16260",
+                "name": "SILK Original Creamer",
+                "weight": 15.0,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "16255",
+                "name": "SILK Peach soy yogurt",
+                "weight": 170.0,
+                "measure": "1.0 container",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.00",
+                        "gm": 2.35
+                    }
+                ]
+            },
+            {
+                "ndbno": "16252",
+                "name": "SILK Plain soy yogurt",
+                "weight": 227.0,
+                "measure": "1.0 container",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.99",
+                        "gm": 2.64
+                    }
+                ]
+            },
+            {
+                "ndbno": "16235",
+                "name": "SILK Plain, soymilk",
+                "weight": 243.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.00",
+                        "gm": 2.88
+                    }
+                ]
+            },
+            {
+                "ndbno": "16243",
+                "name": "SILK Plus Fiber, soymilk",
+                "weight": 243.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.00",
+                        "gm": 2.47
+                    }
+                ]
+            },
+            {
+                "ndbno": "16242",
+                "name": "SILK Plus for Bone Health, soymilk",
+                "weight": 243.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.00",
+                        "gm": 2.47
+                    }
+                ]
+            },
+            {
+                "ndbno": "16241",
+                "name": "SILK Plus Omega-3 DHA, soymilk",
+                "weight": 243.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.00",
+                        "gm": 2.88
+                    }
+                ]
+            },
+            {
+                "ndbno": "16254",
+                "name": "SILK Raspberry soy yogurt",
+                "weight": 170.0,
+                "measure": "1.0 container",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.00",
+                        "gm": 2.35
+                    }
+                ]
+            },
+            {
+                "ndbno": "16253",
+                "name": "SILK Strawberry soy yogurt",
+                "weight": 170.0,
+                "measure": "1.0 container",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.00",
+                        "gm": 2.35
+                    }
+                ]
+            },
+            {
+                "ndbno": "16244",
+                "name": "SILK Unsweetened, soymilk",
+                "weight": 243.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.00",
+                        "gm": 2.88
+                    }
+                ]
+            },
+            {
+                "ndbno": "16250",
+                "name": "SILK Vanilla soy yogurt (family size)",
+                "weight": 227.0,
+                "measure": "1.0 container",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.99",
+                        "gm": 2.64
+                    }
+                ]
+            },
+            {
+                "ndbno": "16251",
+                "name": "SILK Vanilla soy yogurt (single serving size)",
+                "weight": 170.0,
+                "measure": "1.0 container",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.00",
+                        "gm": 2.94
+                    }
+                ]
+            },
+            {
+                "ndbno": "16236",
+                "name": "SILK Vanilla, soymilk",
+                "weight": 243.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.00",
+                        "gm": 2.47
+                    }
+                ]
+            },
+            {
+                "ndbno": "16245",
+                "name": "SILK Very Vanilla, soymilk",
+                "weight": 243.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.00",
+                        "gm": 2.47
+                    }
+                ]
+            },
+            {
+                "ndbno": "16117",
+                "name": "Soy flour, defatted",
+                "weight": 105.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "54.03",
+                        "gm": 51.46
+                    }
+                ]
+            },
+            {
+                "ndbno": "16115",
+                "name": "Soy flour, full-fat, raw",
+                "weight": 84.0,
+                "measure": "1.0 cup, stirred",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "31.76",
+                        "gm": 37.81
+                    }
+                ]
+            },
+            {
+                "ndbno": "16116",
+                "name": "Soy flour, full-fat, roasted",
+                "weight": 85.0,
+                "measure": "1.0 cup, stirred",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "32.38",
+                        "gm": 38.09
+                    }
+                ]
+            },
+            {
+                "ndbno": "16118",
+                "name": "Soy flour, low-fat",
+                "weight": 88.0,
+                "measure": "1.0 cup, stirred",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "43.83",
+                        "gm": 49.81
+                    }
+                ]
+            },
+            {
+                "ndbno": "16119",
+                "name": "Soy meal, defatted, raw",
+                "weight": 122.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "60.02",
+                        "gm": 49.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "16420",
+                "name": "Soy protein concentrate, produced by acid wash",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "18.04",
+                        "gm": 63.63
+                    }
+                ]
+            },
+            {
+                "ndbno": "16121",
+                "name": "Soy protein concentrate, produced by alcohol extraction",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "18.04",
+                        "gm": 63.63
+                    }
+                ]
+            },
+            {
+                "ndbno": "16122",
+                "name": "Soy protein isolate",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "25.04",
+                        "gm": 88.32
+                    }
+                ]
+            },
+            {
+                "ndbno": "16422",
+                "name": "Soy protein isolate, potassium type",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "25.04",
+                        "gm": 88.32
+                    }
+                ]
+            },
+            {
+                "ndbno": "16125",
+                "name": "Soy sauce made from hydrolyzed vegetable protein",
+                "weight": 18.0,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.26",
+                        "gm": 7.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "16124",
+                "name": "Soy sauce made from soy (tamari)",
+                "weight": 18.0,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.89",
+                        "gm": 10.51
+                    }
+                ]
+            },
+            {
+                "ndbno": "16123",
+                "name": "Soy sauce made from soy and wheat (shoyu)",
+                "weight": 16.0,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.30",
+                        "gm": 8.14
+                    }
+                ]
+            },
+            {
+                "ndbno": "16424",
+                "name": "Soy sauce made from soy and wheat (shoyu), low sodium",
+                "weight": 14.2,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.29",
+                        "gm": 9.05
+                    }
+                ]
+            },
+            {
+                "ndbno": "16425",
+                "name": "Soy sauce, reduced sodium, made from hydrolyzed vegetable protein",
+                "weight": 15.0,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.23",
+                        "gm": 8.19
+                    }
+                ]
+            },
+            {
+                "ndbno": "43299",
+                "name": "Soybean, curd cheese",
+                "weight": 225.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "28.12",
+                        "gm": 12.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "16109",
+                "name": "Soybeans, mature cooked, boiled, without salt",
+                "weight": 172.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "31.32",
+                        "gm": 18.21
+                    }
+                ]
+            },
+            {
+                "ndbno": "16409",
+                "name": "Soybeans, mature seeds, cooked, boiled, with salt",
+                "weight": 172.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "31.32",
+                        "gm": 18.21
+                    }
+                ]
+            },
+            {
+                "ndbno": "16111",
+                "name": "Soybeans, mature seeds, dry roasted",
+                "weight": 93.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "40.29",
+                        "gm": 43.32
+                    }
+                ]
+            },
+            {
+                "ndbno": "16108",
+                "name": "Soybeans, mature seeds, raw",
+                "weight": 186.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "67.87",
+                        "gm": 36.49
+                    }
+                ]
+            },
+            {
+                "ndbno": "16410",
+                "name": "Soybeans, mature seeds, roasted, no salt added",
+                "weight": 172.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "66.31",
+                        "gm": 38.55
+                    }
+                ]
+            },
+            {
+                "ndbno": "16110",
+                "name": "Soybeans, mature seeds, roasted, salted",
+                "weight": 172.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "66.31",
+                        "gm": 38.55
+                    }
+                ]
+            },
+            {
+                "ndbno": "16223",
+                "name": "Soymilk (All flavors), enhanced",
+                "weight": 243.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.14",
+                        "gm": 2.94
+                    }
+                ]
+            },
+            {
+                "ndbno": "16229",
+                "name": "Soymilk (All flavors), lowfat, with added calcium, vitamins A and D",
+                "weight": 243.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.01",
+                        "gm": 1.65
+                    }
+                ]
+            },
+            {
+                "ndbno": "16230",
+                "name": "Soymilk (all flavors), nonfat, with added calcium, vitamins A and D",
+                "weight": 243.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.00",
+                        "gm": 2.47
+                    }
+                ]
+            },
+            {
+                "ndbno": "16222",
+                "name": "Soymilk (all flavors), unsweetened, with added calcium, vitamins A and D",
+                "weight": 243.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.95",
+                        "gm": 2.86
+                    }
+                ]
+            },
+            {
+                "ndbno": "16227",
+                "name": "Soymilk, chocolate and other flavors, light, with added calcium, vitamins A and D",
+                "weight": 243.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.10",
+                        "gm": 2.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "16231",
+                "name": "Soymilk, chocolate, nonfat, with added calcium, vitamins A and D",
+                "weight": 243.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.00",
+                        "gm": 2.47
+                    }
+                ]
+            },
+            {
+                "ndbno": "16166",
+                "name": "Soymilk, chocolate, unfortified",
+                "weight": 243.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.49",
+                        "gm": 2.26
+                    }
+                ]
+            },
+            {
+                "ndbno": "16168",
+                "name": "Soymilk, chocolate, with added calcium, vitamins A and D",
+                "weight": 243.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.49",
+                        "gm": 2.26
+                    }
+                ]
+            },
+            {
+                "ndbno": "16228",
+                "name": "Soymilk, original and vanilla, light, unsweetened, with added calcium, vitamins A and D",
+                "weight": 243.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.37",
+                        "gm": 2.62
+                    }
+                ]
+            },
+            {
+                "ndbno": "16225",
+                "name": "Soymilk, original and vanilla, light, with added calcium, vitamins A and D",
+                "weight": 243.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.78",
+                        "gm": 2.38
+                    }
+                ]
+            },
+            {
+                "ndbno": "16120",
+                "name": "Soymilk, original and vanilla, unfortified",
+                "weight": 243.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.95",
+                        "gm": 3.27
+                    }
+                ]
+            },
+            {
+                "ndbno": "16139",
+                "name": "Soymilk, original and vanilla, with added calcium, vitamins A and D",
+                "weight": 243.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.32",
+                        "gm": 2.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "16114",
+                "name": "Tempeh",
+                "weight": 166.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "33.68",
+                        "gm": 20.29
+                    }
+                ]
+            },
+            {
+                "ndbno": "43476",
+                "name": "Tofu yogurt",
+                "weight": 262.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.17",
+                        "gm": 3.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "16128",
+                "name": "Tofu, dried-frozen (koyadofu)",
+                "weight": 17.0,
+                "measure": "1.0 piece",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.92",
+                        "gm": 52.47
+                    }
+                ]
+            },
+            {
+                "ndbno": "16428",
+                "name": "Tofu, dried-frozen (koyadofu), prepared with calcium sulfate",
+                "weight": 17.0,
+                "measure": "1.0 piece",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.91",
+                        "gm": 52.43
+                    }
+                ]
+            },
+            {
+                "ndbno": "16159",
+                "name": "Tofu, extra firm, prepared with nigari",
+                "weight": 91.0,
+                "measure": "0.2 block",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.08",
+                        "gm": 9.98
+                    }
+                ]
+            },
+            {
+                "ndbno": "16126",
+                "name": "Tofu, firm, prepared with calcium sulfate and magnesium chloride (nigari)",
+                "weight": 126.0,
+                "measure": "0.5 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.39",
+                        "gm": 9.04
+                    }
+                ]
+            },
+            {
+                "ndbno": "16129",
+                "name": "Tofu, fried",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.34",
+                        "gm": 18.82
+                    }
+                ]
+            },
+            {
+                "ndbno": "16429",
+                "name": "Tofu, fried, prepared with calcium sulfate",
+                "weight": 13.0,
+                "measure": "1.0 piece",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.45",
+                        "gm": 18.82
+                    }
+                ]
+            },
+            {
+                "ndbno": "16160",
+                "name": "Tofu, hard, prepared with nigari",
+                "weight": 122.0,
+                "measure": "0.25 block",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.47",
+                        "gm": 12.68
+                    }
+                ]
+            },
+            {
+                "ndbno": "16426",
+                "name": "Tofu, raw, firm, prepared with calcium sulfate",
+                "weight": 126.0,
+                "measure": "0.5 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "21.76",
+                        "gm": 17.27
+                    }
+                ]
+            },
+            {
+                "ndbno": "16427",
+                "name": "Tofu, raw, regular, prepared with calcium sulfate",
+                "weight": 124.0,
+                "measure": "0.5 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.02",
+                        "gm": 8.08
+                    }
+                ]
+            },
+            {
+                "ndbno": "16132",
+                "name": "Tofu, salted and fermented (fuyu)",
+                "weight": 11.0,
+                "measure": "1.0 block",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.98",
+                        "gm": 8.92
+                    }
+                ]
+            },
+            {
+                "ndbno": "16432",
+                "name": "Tofu, salted and fermented (fuyu), prepared with calcium sulfate",
+                "weight": 11.0,
+                "measure": "1.0 block",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.90",
+                        "gm": 8.15
+                    }
+                ]
+            },
+            {
+                "ndbno": "16127",
+                "name": "Tofu, soft, prepared with calcium sulfate and magnesium chloride (nigari)",
+                "weight": 120.0,
+                "measure": "1.0 piece (2-1/2\" x 2-3/4\" x 1\")",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.60",
+                        "gm": 7.17
+                    }
+                ]
+            },
+            {
+                "ndbno": "16167",
+                "name": "USDA Commodity, Peanut Butter, smooth",
+                "weight": 32.0,
+                "measure": "2.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.02",
+                        "gm": 21.93
+                    }
+                ]
+            },
+            {
+                "ndbno": "43134",
+                "name": "Vegetarian fillets",
+                "weight": 85.0,
+                "measure": "1.0 fillet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "19.55",
+                        "gm": 23.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "43137",
+                "name": "Vegetarian meatloaf or patties",
+                "weight": 56.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.76",
+                        "gm": 21.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "16147",
+                "name": "Veggie burgers or soyburgers, unprepared",
+                "weight": 70.0,
+                "measure": "1.0 pattie",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.99",
+                        "gm": 15.7
+                    }
+                ]
+            },
+            {
+                "ndbno": "43114",
+                "name": "Vermicelli, made from soy",
+                "weight": 140.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.14",
+                        "gm": 0.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "16276",
+                "name": "Vitasoy USA Azumaya, Extra Firm Tofu",
+                "weight": 79.0,
+                "measure": "0.2 package",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.96",
+                        "gm": 10.07
+                    }
+                ]
+            },
+            {
+                "ndbno": "16277",
+                "name": "Vitasoy USA Azumaya, Firm Tofu",
+                "weight": 79.0,
+                "measure": "0.2 package",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.17",
+                        "gm": 9.08
+                    }
+                ]
+            },
+            {
+                "ndbno": "16278",
+                "name": "Vitasoy USA Azumaya, Silken Tofu",
+                "weight": 91.0,
+                "measure": "0.2 package",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.39",
+                        "gm": 4.82
+                    }
+                ]
+            },
+            {
+                "ndbno": "16272",
+                "name": "Vitasoy USA Nasoya, Lite Silken Tofu",
+                "weight": 91.0,
+                "measure": "0.2 package",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.47",
+                        "gm": 8.21
+                    }
+                ]
+            },
+            {
+                "ndbno": "16275",
+                "name": "Vitasoy USA Organic Nasoya Sprouted, Tofu Plus Super Firm",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.25",
+                        "gm": 13.24
+                    }
+                ]
+            },
+            {
+                "ndbno": "16271",
+                "name": "Vitasoy USA Organic Nasoya, Soft Tofu",
+                "weight": 79.0,
+                "measure": "0.2 package",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.92",
+                        "gm": 8.76
+                    }
+                ]
+            },
+            {
+                "ndbno": "16273",
+                "name": "Vitasoy USA Organic Nasoya, Tofu Plus Extra Firm",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.65",
+                        "gm": 10.18
+                    }
+                ]
+            },
+            {
+                "ndbno": "16274",
+                "name": "Vitasoy USA Organic Nasoya, Tofu Plus Firm",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.81",
+                        "gm": 9.19
+                    }
+                ]
+            },
+            {
+                "ndbno": "16210",
+                "name": "Vitasoy USA, Nasoya Lite Firm Tofu",
+                "weight": 79.0,
+                "measure": "0.2 package",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.56",
+                        "gm": 8.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "16212",
+                "name": "Vitasoy USA, Organic Nasoya Extra Firm Tofu",
+                "weight": 79.0,
+                "measure": "0.2 package",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.98",
+                        "gm": 10.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "16213",
+                "name": "Vitasoy USA, Organic Nasoya Firm Tofu",
+                "weight": 79.0,
+                "measure": "0.2 package",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.03",
+                        "gm": 8.9
+                    }
+                ]
+            },
+            {
+                "ndbno": "16214",
+                "name": "Vitasoy USA, Organic Nasoya Silken Tofu",
+                "weight": 91.0,
+                "measure": "0.2 package",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.37",
+                        "gm": 4.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "16211",
+                "name": "Vitasoy USA, Organic Nasoya Super Firm Cubed Tofu",
+                "weight": 79.0,
+                "measure": "0.2 package",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.80",
+                        "gm": 12.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "16219",
+                "name": "Vitasoy USA, Vitasoy Light Vanilla Soymilk",
+                "weight": 243.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.89",
+                        "gm": 1.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "16216",
+                "name": "Vitasoy USA, Vitasoy Organic Classic Original Soymilk",
+                "weight": 243.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.78",
+                        "gm": 3.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "16215",
+                "name": "Vitasoy USA, Vitasoy Organic Creamy Original Soymilk",
+                "weight": 243.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.05",
+                        "gm": 2.9
+                    }
+                ]
+            },
+            {
+                "ndbno": "16436",
+                "name": "Winged beans, mature seeds, cooked, boiled, with salt",
+                "weight": 172.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "18.27",
+                        "gm": 10.62
+                    }
+                ]
+            },
+            {
+                "ndbno": "16136",
+                "name": "Winged beans, mature seeds, cooked, boiled, without salt",
+                "weight": 172.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "18.27",
+                        "gm": 10.62
+                    }
+                ]
+            },
+            {
+                "ndbno": "16135",
+                "name": "Winged beans, mature seeds, raw",
+                "weight": 182.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "53.96",
+                        "gm": 29.65
+                    }
+                ]
+            },
+            {
+                "ndbno": "16525",
+                "name": "WORTHINGTON Chic-Ketts, frozen, unprepared",
+                "weight": 55.0,
+                "measure": "2.0 slices (3/8\" thick)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.98",
+                        "gm": 23.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "16510",
+                "name": "WORTHINGTON Chili, canned, unprepared",
+                "weight": 230.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "23.92",
+                        "gm": 10.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "16511",
+                "name": "WORTHINGTON Choplets, canned, unprepared",
+                "weight": 92.0,
+                "measure": "2.0 slices",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.85",
+                        "gm": 19.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "16512",
+                "name": "WORTHINGTON Diced Chik, canned, unprepared",
+                "weight": 55.0,
+                "measure": "0.25 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.09",
+                        "gm": 14.7
+                    }
+                ]
+            },
+            {
+                "ndbno": "16528",
+                "name": "WORTHINGTON Dinner Roast, frozen, unprepared",
+                "weight": 85.0,
+                "measure": "1.0 slice , 3/4\"",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.60",
+                        "gm": 16.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "16513",
+                "name": "WORTHINGTON FriChik Original, canned, unprepared",
+                "weight": 90.0,
+                "measure": "2.0 pieces",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.06",
+                        "gm": 13.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "16529",
+                "name": "WORTHINGTON FriPats, frozen, unprepared",
+                "weight": 64.0,
+                "measure": "1.0 patty",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.17",
+                        "gm": 23.7
+                    }
+                ]
+            },
+            {
+                "ndbno": "16591",
+                "name": "WORTHINGTON Leanies, frozen, unprepared",
+                "weight": 40.0,
+                "measure": "1.0 link",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.80",
+                        "gm": 19.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "16514",
+                "name": "WORTHINGTON Low Fat Fri Chik, canned, unprepared",
+                "weight": 85.0,
+                "measure": "2.0 pieces",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.15",
+                        "gm": 14.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "16515",
+                "name": "WORTHINGTON Low Fat Veja-Links, canned, unprepared",
+                "weight": 31.0,
+                "measure": "1.0 link",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.90",
+                        "gm": 15.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "16526",
+                "name": "WORTHINGTON Meatless Chicken Roll, frozen, unprepared",
+                "weight": 55.0,
+                "measure": "1.0 slices , 3/8\"",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.86",
+                        "gm": 16.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "16527",
+                "name": "WORTHINGTON Meatless Corned Beef Roll, frozen, unprepared",
+                "weight": 55.0,
+                "measure": "2.0 slices , 3/8\"",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.23",
+                        "gm": 18.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "16516",
+                "name": "WORTHINGTON Multigrain Cutlets, canned, unprepared",
+                "weight": 92.0,
+                "measure": "2.0 slices",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "21.43",
+                        "gm": 23.29
+                    }
+                ]
+            },
+            {
+                "ndbno": "16517",
+                "name": "WORTHINGTON Prime Stakes, canned, unprepared",
+                "weight": 92.0,
+                "measure": "1.0 piece",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.38",
+                        "gm": 10.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "16531",
+                "name": "WORTHINGTON Prosage Links, frozen, unprepared",
+                "weight": 45.0,
+                "measure": "2.0 links",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.09",
+                        "gm": 20.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "16532",
+                "name": "WORTHINGTON Prosage Roll, frozen, unprepared",
+                "weight": 55.0,
+                "measure": "1.0 slice , 5/8\"",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.78",
+                        "gm": 19.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "16518",
+                "name": "WORTHINGTON Saucettes, canned, unprepared",
+                "weight": 38.0,
+                "measure": "1.0 link",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.70",
+                        "gm": 15.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "16533",
+                "name": "WORTHINGTON Smoked Turkey Roll, frozen, unprepared",
+                "weight": 55.0,
+                "measure": "1.0 slice , 3/8\"",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.18",
+                        "gm": 18.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "16534",
+                "name": "WORTHINGTON Stakelets, frozen, unprepared",
+                "weight": 71.0,
+                "measure": "1.0 piece",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.99",
+                        "gm": 19.7
+                    }
+                ]
+            },
+            {
+                "ndbno": "16535",
+                "name": "WORTHINGTON Stripples, frozen, unprepared",
+                "weight": 16.0,
+                "measure": "2.0 strip",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.98",
+                        "gm": 12.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "16519",
+                "name": "WORTHINGTON Super Links, canned, unprepared",
+                "weight": 48.0,
+                "measure": "1.0 link",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.96",
+                        "gm": 14.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "16521",
+                "name": "WORTHINGTON Vegetable Skallops, canned, unprepared",
+                "weight": 85.0,
+                "measure": "0.5 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.91",
+                        "gm": 19.9
+                    }
+                ]
+            },
+            {
+                "ndbno": "16522",
+                "name": "WORTHINGTON Vegetable Steaks, canned, unprepared",
+                "weight": 72.0,
+                "measure": "2.0 slices",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.90",
+                        "gm": 20.7
+                    }
+                ]
+            },
+            {
+                "ndbno": "16523",
+                "name": "WORTHINGTON Vegetarian Burger, canned, unprepared",
+                "weight": 55.0,
+                "measure": "0.25 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.23",
+                        "gm": 18.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "16524",
+                "name": "WORTHINGTON Veja-Links, canned, unprepared",
+                "weight": 31.0,
+                "measure": "1.0 link",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.53",
+                        "gm": 14.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "16536",
+                "name": "WORTHINGTON Wham (roll), frozen, unprepared",
+                "weight": 55.0,
+                "measure": "1.0 slice , 3/8\"",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.79",
+                        "gm": 17.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "16434",
+                "name": "Yardlong beans, mature seeds, cooked, boiled, with salt",
+                "weight": 171.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.18",
+                        "gm": 8.29
+                    }
+                ]
+            },
+            {
+                "ndbno": "16134",
+                "name": "Yardlong beans, mature seeds, cooked, boiled, without salt",
+                "weight": 171.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.18",
+                        "gm": 8.29
+                    }
+                ]
+            },
+            {
+                "ndbno": "16133",
+                "name": "Yardlong beans, mature seeds, raw",
+                "weight": 167.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "40.63",
+                        "gm": 24.33
+                    }
+                ]
+            },
+            {
+                "ndbno": "16004",
+                "name": "Yokan, prepared from adzuki beans and sugar",
+                "weight": 14.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.46",
+                        "gm": 3.29
+                    }
+                ]
+            }
+        ]
+    }
+}

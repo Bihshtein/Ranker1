@@ -1,0 +1,294 @@
+{
+    "report": {
+        "sr": "28",
+        "type": "Full",
+        "food": {
+            "ndbno": "14099",
+            "name": "Alcoholic Beverage, wine, table, red, Pinot Noir",
+            "sd": "ALCOHOLIC BEV,WINE,TABLE,RED,PINOT NOIR",
+            "fg": "Beverages",
+            "sn": "",
+            "cn": "",
+            "manu": "",
+            "nf": 6.25,
+            "cf": 3.92,
+            "ff": 8.37,
+            "pf": 3.36,
+            "r": "0%",
+            "rd": "",
+            "ds": "Standard Reference",
+            "nutrients": [
+                {
+                    "nutrient_id": 255,
+                    "name": "Water",
+                    "group": "Proximates",
+                    "unit": "g",
+                    "value": 86.94,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 25.56
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 127.8
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 208,
+                    "name": "Energy",
+                    "group": "Proximates",
+                    "unit": "kcal",
+                    "value": 82.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 24.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 121.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 268,
+                    "name": "Energy",
+                    "group": "Proximates",
+                    "unit": "kJ",
+                    "value": 341.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 100.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 501.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 203,
+                    "name": "Protein",
+                    "group": "Proximates",
+                    "unit": "g",
+                    "value": 0.07,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.02
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.1
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 204,
+                    "name": "Total lipid (fat)",
+                    "group": "Proximates",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 207,
+                    "name": "Ash",
+                    "group": "Proximates",
+                    "unit": "g",
+                    "value": 0.25,
+                    "sourcecode": [
+                        1
+                    ],
+                    "dp": 287,
+                    "se": "0.003",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.07
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.37
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 205,
+                    "name": "Carbohydrate, by difference",
+                    "group": "Proximates",
+                    "unit": "g",
+                    "value": 2.31,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.68
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 3.4
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 605,
+                    "name": "Fatty acids, total trans",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 221,
+                    "name": "Alcohol, ethyl",
+                    "group": "Other",
+                    "unit": "g",
+                    "value": 10.4,
+                    "sourcecode": [
+                        1
+                    ],
+                    "dp": 287,
+                    "se": "0.039",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 3.1
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 15.3
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 734,
+                    "name": "Proanthocyanidin dimers",
+                    "group": "Proanthocyanidin",
+                    "unit": "mg",
+                    "value": 18.3,
+                    "sourcecode": [
+                        2
+                    ],
+                    "dp": 20,
+                    "se": "9.890",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 5.4
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 26.9
+                        }
+                    ]
+                }
+            ]
+        },
+        "sources": [
+            {
+                "id": 1,
+                "title": "Wine and malt beverage data from TTB",
+                "authors": "Alcohol and Tobacco Tax and Trade Bureau",
+                "vol": "Beltsville",
+                "iss": "MD",
+                "year": "2004"
+            },
+            {
+                "id": 2,
+                "title": "Antioxidant capacity and phenolic composition of red wines from various grape varieties: Specificity of Pinot Noir.",
+                "authors": "Van Leeuw, R., Kevers, C., Pincemail, J., Defraigne, J. O., and Dommes, J.",
+                "vol": "36",
+                "iss": "",
+                "year": "2014"
+            }
+        ],
+        "footnotes": [
+            
+        ],
+        "langual": [
+            
+        ]
+    }
+}

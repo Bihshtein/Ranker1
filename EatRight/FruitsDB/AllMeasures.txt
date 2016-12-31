@@ -1,1 +1,0 @@
-VitaminC,Thiamin,Riboflavin,Niacin,PantothenicAcid,VitaminB6,Betaine,VitaminB12,Folate,VitaminA,VitaminE,VitaminK,Calcium,Iron,Magnesium,Phosphorus,Potassium,Sodium,Zinc

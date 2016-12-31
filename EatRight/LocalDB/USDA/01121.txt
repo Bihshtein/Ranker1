@@ -1,0 +1,3458 @@
+{
+    "report": {
+        "sr": "28",
+        "type": "Full",
+        "food": {
+            "ndbno": "01121",
+            "name": "Yogurt, fruit, low fat, 10 grams protein per 8 ounce",
+            "sd": "YOGURT,FRUIT,LOFAT,10 GRAMS PROT PER 8 OZ",
+            "fg": "Dairy and Egg Products",
+            "sn": "",
+            "cn": "",
+            "manu": "",
+            "nf": 6.38,
+            "cf": 3.87,
+            "ff": 8.79,
+            "pf": 4.27,
+            "r": "0%",
+            "rd": "",
+            "ds": "Standard Reference",
+            "nutrients": [
+                {
+                    "nutrient_id": 255,
+                    "name": "Water",
+                    "group": "Proximates",
+                    "unit": "g",
+                    "value": 74.48,
+                    "sourcecode": "",
+                    "dp": 26,
+                    "se": "0.610",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 126.62
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 182.48
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 169.07
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 86.4
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 208,
+                    "name": "Energy",
+                    "group": "Proximates",
+                    "unit": "kcal",
+                    "value": 102.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 173.0
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 250.0
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 232.0
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 118.0
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 268,
+                    "name": "Energy",
+                    "group": "Proximates",
+                    "unit": "kJ",
+                    "value": 426.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 724.0
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 1044.0
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 967.0
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 494.0
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 203,
+                    "name": "Protein",
+                    "group": "Proximates",
+                    "unit": "g",
+                    "value": 4.37,
+                    "sourcecode": "",
+                    "dp": 26,
+                    "se": "0.026",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 7.43
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 10.71
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 9.92
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 5.07
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 204,
+                    "name": "Total lipid (fat)",
+                    "group": "Proximates",
+                    "unit": "g",
+                    "value": 1.08,
+                    "sourcecode": "",
+                    "dp": 26,
+                    "se": "0.052",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 1.84
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 2.65
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 2.45
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 1.25
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 207,
+                    "name": "Ash",
+                    "group": "Proximates",
+                    "unit": "g",
+                    "value": 1.02,
+                    "sourcecode": "",
+                    "dp": 12,
+                    "se": "0.027",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 1.73
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 2.5
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 2.32
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 1.18
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 205,
+                    "name": "Carbohydrate, by difference",
+                    "group": "Proximates",
+                    "unit": "g",
+                    "value": 19.05,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 32.38
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 46.67
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 43.24
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 22.1
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 291,
+                    "name": "Fiber, total dietary",
+                    "group": "Proximates",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.0
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 269,
+                    "name": "Sugars, total",
+                    "group": "Proximates",
+                    "unit": "g",
+                    "value": 19.05,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 32.38
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 46.67
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 43.24
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 22.1
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 301,
+                    "name": "Calcium, Ca",
+                    "group": "Minerals",
+                    "unit": "mg",
+                    "value": 152.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 258.0
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 372.0
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 345.0
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 176.0
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 303,
+                    "name": "Iron, Fe",
+                    "group": "Minerals",
+                    "unit": "mg",
+                    "value": 0.07,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 0.12
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 0.17
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 0.16
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.08
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 304,
+                    "name": "Magnesium, Mg",
+                    "group": "Minerals",
+                    "unit": "mg",
+                    "value": 15.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 26.0
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 37.0
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 34.0
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 17.0
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 305,
+                    "name": "Phosphorus, P",
+                    "group": "Minerals",
+                    "unit": "mg",
+                    "value": 119.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 202.0
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 292.0
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 270.0
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 138.0
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 306,
+                    "name": "Potassium, K",
+                    "group": "Minerals",
+                    "unit": "mg",
+                    "value": 195.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 332.0
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 478.0
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 443.0
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 226.0
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 307,
+                    "name": "Sodium, Na",
+                    "group": "Minerals",
+                    "unit": "mg",
+                    "value": 58.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 99.0
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 142.0
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 132.0
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 67.0
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 309,
+                    "name": "Zinc, Zn",
+                    "group": "Minerals",
+                    "unit": "mg",
+                    "value": 0.74,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 1.26
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 1.81
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 1.68
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.86
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 312,
+                    "name": "Copper, Cu",
+                    "group": "Minerals",
+                    "unit": "mg",
+                    "value": 0.08,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 0.136
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 0.196
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 0.182
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.093
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 315,
+                    "name": "Manganese, Mn",
+                    "group": "Minerals",
+                    "unit": "mg",
+                    "value": 0.065,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 0.111
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 0.159
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 0.148
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.075
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 317,
+                    "name": "Selenium, Se",
+                    "group": "Minerals",
+                    "unit": "\u00b5g",
+                    "value": 3.1,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 5.3
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 7.6
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 7.0
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 3.6
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 313,
+                    "name": "Fluoride, F",
+                    "group": "Minerals",
+                    "unit": "\u00b5g",
+                    "value": 9.0,
+                    "sourcecode": [
+                        1
+                    ],
+                    "dp": 9,
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 15.3
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 22.1
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 20.4
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 10.4
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 401,
+                    "name": "Vitamin C, total ascorbic acid",
+                    "group": "Vitamins",
+                    "unit": "mg",
+                    "value": 0.7,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 1.2
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 1.7
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 1.6
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.8
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 404,
+                    "name": "Thiamin",
+                    "group": "Vitamins",
+                    "unit": "mg",
+                    "value": 0.037,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 0.063
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 0.091
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 0.084
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.043
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 405,
+                    "name": "Riboflavin",
+                    "group": "Vitamins",
+                    "unit": "mg",
+                    "value": 0.178,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 0.303
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 0.436
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 0.404
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.206
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 406,
+                    "name": "Niacin",
+                    "group": "Vitamins",
+                    "unit": "mg",
+                    "value": 0.095,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 0.161
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 0.233
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 0.216
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.11
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 410,
+                    "name": "Pantothenic acid",
+                    "group": "Vitamins",
+                    "unit": "mg",
+                    "value": 0.489,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 0.831
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 1.198
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 1.11
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.567
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 415,
+                    "name": "Vitamin B-6",
+                    "group": "Vitamins",
+                    "unit": "mg",
+                    "value": 0.04,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 0.068
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 0.098
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 0.091
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.046
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 417,
+                    "name": "Folate, total",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 9.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 15.0
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 22.0
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 20.0
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 10.0
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 431,
+                    "name": "Folic acid",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.0
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 432,
+                    "name": "Folate, food",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 9.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 15.0
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 22.0
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 20.0
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 10.0
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 435,
+                    "name": "Folate, DFE",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 9.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 15.0
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 22.0
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 20.0
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 10.0
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 421,
+                    "name": "Choline, total",
+                    "group": "Vitamins",
+                    "unit": "mg",
+                    "value": 14.0,
+                    "sourcecode": [
+                        2
+                    ],
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 23.8
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 34.3
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 31.8
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 16.2
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 454,
+                    "name": "Betaine",
+                    "group": "Vitamins",
+                    "unit": "mg",
+                    "value": 0.8,
+                    "sourcecode": [
+                        2
+                    ],
+                    "dp": 2,
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 1.4
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 2.0
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 1.8
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.9
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 418,
+                    "name": "Vitamin B-12",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 0.47,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 0.8
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 1.15
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 1.07
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.55
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 578,
+                    "name": "Vitamin B-12, added",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.0
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 320,
+                    "name": "Vitamin A, RAE",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 10.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 17.0
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 24.0
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 23.0
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 12.0
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 319,
+                    "name": "Retinol",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 10.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 17.0
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 24.0
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 23.0
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 12.0
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 321,
+                    "name": "Carotene, beta",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 2.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 3.0
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 5.0
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 5.0
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 2.0
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 322,
+                    "name": "Carotene, alpha",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.0
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 334,
+                    "name": "Cryptoxanthin, beta",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.0
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 318,
+                    "name": "Vitamin A, IU",
+                    "group": "Vitamins",
+                    "unit": "IU",
+                    "value": 36.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 61.0
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 88.0
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 82.0
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 42.0
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 337,
+                    "name": "Lycopene",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.0
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 338,
+                    "name": "Lutein + zeaxanthin",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.0
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 323,
+                    "name": "Vitamin E (alpha-tocopherol)",
+                    "group": "Vitamins",
+                    "unit": "mg",
+                    "value": 0.02,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 0.03
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 0.05
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 0.05
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.02
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 573,
+                    "name": "Vitamin E, added",
+                    "group": "Vitamins",
+                    "unit": "mg",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.0
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 328,
+                    "name": "Vitamin D (D2 + D3)",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.0
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 326,
+                    "name": "Vitamin D3 (cholecalciferol)",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.0
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 324,
+                    "name": "Vitamin D",
+                    "group": "Vitamins",
+                    "unit": "IU",
+                    "value": 1.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 2.0
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 2.0
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 2.0
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 1.0
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 430,
+                    "name": "Vitamin K (phylloquinone)",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 0.1,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 0.2
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 0.2
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 0.2
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.1
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 606,
+                    "name": "Fatty acids, total saturated",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.697,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 1.185
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 1.708
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 1.582
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.809
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 607,
+                    "name": "4:0",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.032,
+                    "sourcecode": "",
+                    "dp": 3,
+                    "se": "0.002",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 0.054
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 0.078
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 0.073
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.037
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 608,
+                    "name": "6:0",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.022,
+                    "sourcecode": "",
+                    "dp": 3,
+                    "se": "0.001",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 0.037
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 0.054
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 0.05
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.026
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 609,
+                    "name": "8:0",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.014,
+                    "sourcecode": "",
+                    "dp": 3,
+                    "se": "0.001",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 0.024
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 0.034
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 0.032
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.016
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 610,
+                    "name": "10:0",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.031,
+                    "sourcecode": "",
+                    "dp": 3,
+                    "se": "0.002",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 0.053
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 0.076
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 0.07
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.036
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 611,
+                    "name": "12:0",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.037,
+                    "sourcecode": "",
+                    "dp": 3,
+                    "se": "0.002",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 0.063
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 0.091
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 0.084
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.043
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 612,
+                    "name": "14:0",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.114,
+                    "sourcecode": "",
+                    "dp": 3,
+                    "se": "0.006",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 0.194
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 0.279
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 0.259
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.132
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 613,
+                    "name": "16:0",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.294,
+                    "sourcecode": "",
+                    "dp": 3,
+                    "se": "0.014",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 0.5
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 0.72
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 0.667
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.341
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 614,
+                    "name": "18:0",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.105,
+                    "sourcecode": "",
+                    "dp": 3,
+                    "se": "0.005",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 0.178
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 0.257
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 0.238
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.122
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 645,
+                    "name": "Fatty acids, total monounsaturated",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.297,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 0.505
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 0.728
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 0.674
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.345
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 626,
+                    "name": "16:1 undifferentiated",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.024,
+                    "sourcecode": "",
+                    "dp": 3,
+                    "se": "0.001",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 0.041
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 0.059
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 0.054
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.028
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 617,
+                    "name": "18:1 undifferentiated",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.247,
+                    "sourcecode": "",
+                    "dp": 3,
+                    "se": "0.012",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 0.42
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 0.605
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 0.561
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.287
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 628,
+                    "name": "20:1",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.0
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 630,
+                    "name": "22:1 undifferentiated",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.0
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 646,
+                    "name": "Fatty acids, total polyunsaturated",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.031,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 0.053
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 0.076
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 0.07
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.036
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 618,
+                    "name": "18:2 undifferentiated",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.022,
+                    "sourcecode": "",
+                    "dp": 3,
+                    "se": "0.001",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 0.037
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 0.054
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 0.05
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.026
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 619,
+                    "name": "18:3 undifferentiated",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.009,
+                    "sourcecode": "",
+                    "dp": 3,
+                    "se": "0.001",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 0.015
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 0.022
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 0.02
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.01
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 627,
+                    "name": "18:4",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.0
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 620,
+                    "name": "20:4 undifferentiated",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.0
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 629,
+                    "name": "20:5 n-3 (EPA)",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.0
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 631,
+                    "name": "22:5 n-3 (DPA)",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.0
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 621,
+                    "name": "22:6 n-3 (DHA)",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.0
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 601,
+                    "name": "Cholesterol",
+                    "group": "Lipids",
+                    "unit": "mg",
+                    "value": 4.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 7.0
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 10.0
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 9.0
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 5.0
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 501,
+                    "name": "Tryptophan",
+                    "group": "Amino Acids",
+                    "unit": "g",
+                    "value": 0.025,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 0.043
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 0.061
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 0.057
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.029
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 502,
+                    "name": "Threonine",
+                    "group": "Amino Acids",
+                    "unit": "g",
+                    "value": 0.179,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 0.304
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 0.439
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 0.406
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.208
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 503,
+                    "name": "Isoleucine",
+                    "group": "Amino Acids",
+                    "unit": "g",
+                    "value": 0.238,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 0.405
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 0.583
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 0.54
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.276
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 504,
+                    "name": "Leucine",
+                    "group": "Amino Acids",
+                    "unit": "g",
+                    "value": 0.44,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 0.748
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 1.078
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 0.999
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.51
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 505,
+                    "name": "Lysine",
+                    "group": "Amino Acids",
+                    "unit": "g",
+                    "value": 0.392,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 0.666
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 0.96
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 0.89
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.455
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 506,
+                    "name": "Methionine",
+                    "group": "Amino Acids",
+                    "unit": "g",
+                    "value": 0.129,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 0.219
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 0.316
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 0.293
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.15
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 507,
+                    "name": "Cystine",
+                    "group": "Amino Acids",
+                    "unit": "g",
+                    "value": 0.04,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 0.068
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 0.098
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 0.091
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.046
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 508,
+                    "name": "Phenylalanine",
+                    "group": "Amino Acids",
+                    "unit": "g",
+                    "value": 0.238,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 0.405
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 0.583
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 0.54
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.276
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 509,
+                    "name": "Tyrosine",
+                    "group": "Amino Acids",
+                    "unit": "g",
+                    "value": 0.221,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 0.376
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 0.541
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 0.502
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.256
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 510,
+                    "name": "Valine",
+                    "group": "Amino Acids",
+                    "unit": "g",
+                    "value": 0.362,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 0.615
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 0.887
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 0.822
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.42
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 511,
+                    "name": "Arginine",
+                    "group": "Amino Acids",
+                    "unit": "g",
+                    "value": 0.132,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 0.224
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 0.323
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 0.3
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.153
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 512,
+                    "name": "Histidine",
+                    "group": "Amino Acids",
+                    "unit": "g",
+                    "value": 0.108,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 0.184
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 0.265
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 0.245
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.125
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 513,
+                    "name": "Alanine",
+                    "group": "Amino Acids",
+                    "unit": "g",
+                    "value": 0.187,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 0.318
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 0.458
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 0.424
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.217
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 514,
+                    "name": "Aspartic acid",
+                    "group": "Amino Acids",
+                    "unit": "g",
+                    "value": 0.347,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 0.59
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 0.85
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 0.788
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.403
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 515,
+                    "name": "Glutamic acid",
+                    "group": "Amino Acids",
+                    "unit": "g",
+                    "value": 0.856,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 1.455
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 2.097
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 1.943
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.993
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 516,
+                    "name": "Glycine",
+                    "group": "Amino Acids",
+                    "unit": "g",
+                    "value": 0.105,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 0.178
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 0.257
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 0.238
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.122
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 517,
+                    "name": "Proline",
+                    "group": "Amino Acids",
+                    "unit": "g",
+                    "value": 0.518,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 0.881
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 1.269
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 1.176
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.601
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 518,
+                    "name": "Serine",
+                    "group": "Amino Acids",
+                    "unit": "g",
+                    "value": 0.271,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 0.461
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 0.664
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 0.615
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.314
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 221,
+                    "name": "Alcohol, ethyl",
+                    "group": "Other",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.0
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 262,
+                    "name": "Caffeine",
+                    "group": "Other",
+                    "unit": "mg",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.0
+                        },
+                        null
+                    ]
+                },
+                {
+                    "nutrient_id": 263,
+                    "name": "Theobromine",
+                    "group": "Other",
+                    "unit": "mg",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "container (6 oz)",
+                            "eqv": 170.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "cup (8 fl oz)",
+                            "eqv": 245.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "container (8 oz)",
+                            "eqv": 227.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "container (4 oz)",
+                            "eqv": 113.0,
+                            "qty": 0.5,
+                            "value": 0.0
+                        },
+                        null
+                    ]
+                }
+            ]
+        },
+        "sources": [
+            {
+                "id": 1,
+                "title": "Fluoride, Unpublished - Ophaug",
+                "authors": "Robert Ophaug",
+                "vol": "",
+                "iss": "",
+                "year": ""
+            },
+            {
+                "id": 2,
+                "title": "Choline Study, Local pickup UNC, NFNAP",
+                "authors": "Nutrient Data Laboratory, ARS, USDA",
+                "vol": "Beltsville",
+                "iss": "MD",
+                "year": "2003"
+            }
+        ],
+        "footnotes": [
+            
+        ],
+        "langual": [
+            
+        ]
+    }
+}

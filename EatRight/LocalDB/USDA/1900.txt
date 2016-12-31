@@ -1,0 +1,5147 @@
+{
+    "report": {
+        "sr": "28",
+        "groups": [
+            {
+                "id": "1900",
+                "description": "Sweets"
+            }
+        ],
+        "subset": "All foods",
+        "end": 342,
+        "start": 0,
+        "total": 342,
+        "foods": [
+            {
+                "ndbno": "19146",
+                "name": "Baking chocolate, MARS SNACKFOOD US, M&amp;M's Milk Chocolate Mini Baking Bits",
+                "weight": 14.0,
+                "measure": "1.0 serving 0.5 oz, about 1 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.67",
+                        "gm": 4.78
+                    }
+                ]
+            },
+            {
+                "ndbno": "19139",
+                "name": "Baking chocolate, MARS SNACKFOOD US, M&amp;M's Semisweet Chocolate Mini Baking Bits",
+                "weight": 14.0,
+                "measure": "1.0 serving 0.5 oz, about 1 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.62",
+                        "gm": 4.44
+                    }
+                ]
+            },
+            {
+                "ndbno": "19124",
+                "name": "Baking chocolate, mexican, squares",
+                "weight": 20.0,
+                "measure": "1.0 tablet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.73",
+                        "gm": 3.64
+                    }
+                ]
+            },
+            {
+                "ndbno": "19077",
+                "name": "Baking chocolate, unsweetened, liquid",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.43",
+                        "gm": 12.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "19078",
+                "name": "Baking chocolate, unsweetened, squares",
+                "weight": 29.0,
+                "measure": "1.0 oz square Bakers",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.15",
+                        "gm": 14.32
+                    }
+                ]
+            },
+            {
+                "ndbno": "19098",
+                "name": "Candies, 5TH AVENUE Candy Bar",
+                "weight": 56.0,
+                "measure": "1.0 bar 2 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.92",
+                        "gm": 8.78
+                    }
+                ]
+            },
+            {
+                "ndbno": "19065",
+                "name": "Candies, ALMOND JOY Candy Bar",
+                "weight": 49.0,
+                "measure": "1.0 package 1.76 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.02",
+                        "gm": 4.13
+                    }
+                ]
+            },
+            {
+                "ndbno": "19070",
+                "name": "Candies, butterscotch",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.01",
+                        "gm": 0.03
+                    }
+                ]
+            },
+            {
+                "ndbno": "19075",
+                "name": "Candies, CARAMELLO Candy Bar",
+                "weight": 35.0,
+                "measure": "1.0 bar 1.25 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.17",
+                        "gm": 6.19
+                    }
+                ]
+            },
+            {
+                "ndbno": "19074",
+                "name": "Candies, caramels",
+                "weight": 71.0,
+                "measure": "1.0 package (2.5 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.27",
+                        "gm": 4.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "19076",
+                "name": "Candies, caramels, chocolate-flavor roll",
+                "weight": 6.6,
+                "measure": "1.0 piece",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.10",
+                        "gm": 1.59
+                    }
+                ]
+            },
+            {
+                "ndbno": "19071",
+                "name": "Candies, carob, unsweetened",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.31",
+                        "gm": 8.15
+                    }
+                ]
+            },
+            {
+                "ndbno": "43031",
+                "name": "Candies, chocolate covered, caramel with nuts",
+                "weight": 14.0,
+                "measure": "1.0 piece",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.33",
+                        "gm": 9.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "19905",
+                "name": "Candies, chocolate, dark, NFS (45-59% cacao solids 90%; 60-69% cacao solids 5%; 70-85% cacao solids 5%)",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.44",
+                        "gm": 5.09
+                    }
+                ]
+            },
+            {
+                "ndbno": "19085",
+                "name": "Candies, confectioner's coating, butterscotch",
+                "weight": 170.0,
+                "measure": "1.0 cup chips",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.74",
+                        "gm": 2.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "19086",
+                "name": "Candies, confectioner's coating, peanut butter",
+                "weight": 168.0,
+                "measure": "1.0 cup chips",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "30.74",
+                        "gm": 18.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "19079",
+                "name": "Candies, confectioner's coating, yogurt",
+                "weight": 170.0,
+                "measure": "1.0 cup chips",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.98",
+                        "gm": 5.87
+                    }
+                ]
+            },
+            {
+                "ndbno": "19910",
+                "name": "Candies, crispy bar with peanut butter filling",
+                "weight": 42.0,
+                "measure": "1.0 serving 1.5 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.00",
+                        "gm": 9.53
+                    }
+                ]
+            },
+            {
+                "ndbno": "19268",
+                "name": "Candies, dark chocolate coated coffee beans",
+                "weight": 40.0,
+                "measure": "1.0 serving 28 pieces",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.00",
+                        "gm": 7.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "19384",
+                "name": "Candies, divinity, prepared-from-recipe",
+                "weight": 11.0,
+                "measure": "1.0 piece",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.15",
+                        "gm": 1.32
+                    }
+                ]
+            },
+            {
+                "ndbno": "19099",
+                "name": "Candies, fondant, prepared-from-recipe",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19919",
+                "name": "Candies, fruit snacks, with high vitamin C",
+                "weight": 44.0,
+                "measure": "1.0 serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.04",
+                        "gm": 0.08
+                    }
+                ]
+            },
+            {
+                "ndbno": "19379",
+                "name": "Candies, fudge, chocolate marshmallow, prepared-from-recipe",
+                "weight": 20.0,
+                "measure": "1.0 piece",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.45",
+                        "gm": 2.26
+                    }
+                ]
+            },
+            {
+                "ndbno": "19301",
+                "name": "Candies, fudge, chocolate marshmallow, with nuts, prepared-by-recipe",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.92",
+                        "gm": 3.24
+                    }
+                ]
+            },
+            {
+                "ndbno": "19100",
+                "name": "Candies, fudge, chocolate, prepared-from-recipe",
+                "weight": 17.0,
+                "measure": "1.0 piece",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.41",
+                        "gm": 2.39
+                    }
+                ]
+            },
+            {
+                "ndbno": "19101",
+                "name": "Candies, fudge, chocolate, with nuts, prepared-from-recipe",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.24",
+                        "gm": 4.38
+                    }
+                ]
+            },
+            {
+                "ndbno": "19102",
+                "name": "Candies, fudge, peanut butter, prepared-from-recipe",
+                "weight": 16.0,
+                "measure": "1.0 piece",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.60",
+                        "gm": 3.78
+                    }
+                ]
+            },
+            {
+                "ndbno": "19104",
+                "name": "Candies, fudge, vanilla with nuts",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.85",
+                        "gm": 3.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19103",
+                "name": "Candies, fudge, vanilla, prepared-from-recipe",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.30",
+                        "gm": 1.05
+                    }
+                ]
+            },
+            {
+                "ndbno": "43057",
+                "name": "Candies, gum drops, no sugar or low calorie (sorbitol)",
+                "weight": 182.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19106",
+                "name": "Candies, gumdrops, starch jelly pieces",
+                "weight": 182.0,
+                "measure": "1.0 cup gumdrops",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19117",
+                "name": "Candies, halavah, plain",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.54",
+                        "gm": 12.49
+                    }
+                ]
+            },
+            {
+                "ndbno": "19107",
+                "name": "Candies, hard",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "43058",
+                "name": "Candies, hard, dietetic or low calorie (sorbitol)",
+                "weight": 3.0,
+                "measure": "1.0 piece",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19243",
+                "name": "Candies, HEATH BITES",
+                "weight": 39.0,
+                "measure": "15.0 pieces",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.54",
+                        "gm": 3.94
+                    }
+                ]
+            },
+            {
+                "ndbno": "19084",
+                "name": "Candies, HERSHEY'S GOLDEN ALMOND SOLITAIRES",
+                "weight": 41.0,
+                "measure": "13.0 pieces",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.91",
+                        "gm": 11.97
+                    }
+                ]
+            },
+            {
+                "ndbno": "19236",
+                "name": "Candies, HERSHEY'S MILK CHOCOLATE WITH ALMOND BITES",
+                "weight": 39.0,
+                "measure": "17.0 pieces",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.81",
+                        "gm": 9.76
+                    }
+                ]
+            },
+            {
+                "ndbno": "19130",
+                "name": "Candies, HERSHEY'S POT OF GOLD Almond Bar",
+                "weight": 78.0,
+                "measure": "1.0 bar 2.8 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.00",
+                        "gm": 12.82
+                    }
+                ]
+            },
+            {
+                "ndbno": "19136",
+                "name": "Candies, HERSHEY'S SKOR Toffee Bar",
+                "weight": 39.0,
+                "measure": "1.0 bar 1.4 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.22",
+                        "gm": 3.13
+                    }
+                ]
+            },
+            {
+                "ndbno": "19248",
+                "name": "Candies, HERSHEY'S, ALMOND JOY BITES",
+                "weight": 40.0,
+                "measure": "18.0 pieces",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.23",
+                        "gm": 5.58
+                    }
+                ]
+            },
+            {
+                "ndbno": "19250",
+                "name": "Candies, HERSHEY, KIT KAT BIG KAT Bar",
+                "weight": 55.0,
+                "measure": "1.0 bar 1.94 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.43",
+                        "gm": 6.24
+                    }
+                ]
+            },
+            {
+                "ndbno": "19249",
+                "name": "Candies, HERSHEY, REESESTICKS crispy wafers, peanut butter, milk chocolate",
+                "weight": 42.0,
+                "measure": "1.0 serving 1.5 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.00",
+                        "gm": 9.53
+                    }
+                ]
+            },
+            {
+                "ndbno": "19108",
+                "name": "Candies, jellybeans",
+                "weight": 11.0,
+                "measure": "10.0 small",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19109",
+                "name": "Candies, KIT KAT Wafer Bar",
+                "weight": 42.0,
+                "measure": "1.0 bar (1.5 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.73",
+                        "gm": 6.51
+                    }
+                ]
+            },
+            {
+                "ndbno": "19110",
+                "name": "Candies, KRACKEL Chocolate Bar",
+                "weight": 41.0,
+                "measure": "1.0 bar 1.45 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.71",
+                        "gm": 6.62
+                    }
+                ]
+            },
+            {
+                "ndbno": "19914",
+                "name": "Candies, M&amp;M MARS 3 MUSKETEERS Truffle Crisp",
+                "weight": 31.0,
+                "measure": "1.0 serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.99",
+                        "gm": 6.41
+                    }
+                ]
+            },
+            {
+                "ndbno": "19917",
+                "name": "Candies, M&amp;M MARS Pretzel Chocolate Candies",
+                "weight": 40.0,
+                "measure": "0.25 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.00",
+                        "gm": 5.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19159",
+                "name": "Candies, MARS SNACKFOOD US, 3 MUSKETEERS Bar",
+                "weight": 60.0,
+                "measure": "1.0 serving 2.13 oz bar",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.56",
+                        "gm": 2.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "19327",
+                "name": "Candies, MARS SNACKFOOD US, COCOAVIA Blueberry and Almond Chocolate Bar",
+                "weight": 22.0,
+                "measure": "1.0 serving 0.78 oz bar",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.40",
+                        "gm": 6.35
+                    }
+                ]
+            },
+            {
+                "ndbno": "19326",
+                "name": "Candies, MARS SNACKFOOD US, COCOAVIA Chocolate Bar",
+                "weight": 22.0,
+                "measure": "1.0 serving 0.78 oz bar",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.28",
+                        "gm": 5.81
+                    }
+                ]
+            },
+            {
+                "ndbno": "19897",
+                "name": "Candies, MARS SNACKFOOD US, COCOAVIA Chocolate Covered Almonds",
+                "weight": 28.0,
+                "measure": "1.0 serving 1oz pack",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.66",
+                        "gm": 9.51
+                    }
+                ]
+            },
+            {
+                "ndbno": "19328",
+                "name": "Candies, MARS SNACKFOOD US, COCOAVIA Crispy Chocolate Bar",
+                "weight": 20.0,
+                "measure": "1.0 serving 0.7 oz bar",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.64",
+                        "gm": 8.21
+                    }
+                ]
+            },
+            {
+                "ndbno": "19255",
+                "name": "Candies, MARS SNACKFOOD US, DOVE Dark Chocolate",
+                "weight": 37.0,
+                "measure": "1.0 serving 1.3 oz bar",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.92",
+                        "gm": 5.19
+                    }
+                ]
+            },
+            {
+                "ndbno": "19254",
+                "name": "Candies, MARS SNACKFOOD US, DOVE Milk Chocolate",
+                "weight": 37.0,
+                "measure": "1.0 serving 1.30 oz bar",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.20",
+                        "gm": 5.94
+                    }
+                ]
+            },
+            {
+                "ndbno": "42227",
+                "name": "Candies, MARS SNACKFOOD US, M&amp;M's Almond Chocolate Candies",
+                "weight": 37.0,
+                "measure": "1.0 serving 1.31 oz bag",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.79",
+                        "gm": 7.53
+                    }
+                ]
+            },
+            {
+                "ndbno": "19292",
+                "name": "Candies, MARS SNACKFOOD US, M&amp;M's Crispy Chocolate Candies",
+                "weight": 47.0,
+                "measure": "1.0 serving 1.6 oz bag",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.01",
+                        "gm": 4.28
+                    }
+                ]
+            },
+            {
+                "ndbno": "19141",
+                "name": "Candies, MARS SNACKFOOD US, M&amp;M's Milk Chocolate Candies",
+                "weight": 48.0,
+                "measure": "1.0 package (1.69 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.08",
+                        "gm": 4.33
+                    }
+                ]
+            },
+            {
+                "ndbno": "19157",
+                "name": "Candies, MARS SNACKFOOD US, M&amp;M's MINIs Milk Chocolate Candies",
+                "weight": 30.0,
+                "measure": "1.0 serving 1.0 oz tube",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.43",
+                        "gm": 4.78
+                    }
+                ]
+            },
+            {
+                "ndbno": "42148",
+                "name": "Candies, MARS SNACKFOOD US, M&amp;M's Peanut Butter Chocolate Candies",
+                "weight": 46.0,
+                "measure": "1.0 serving 1.63 oz singles bag",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.67",
+                        "gm": 10.16
+                    }
+                ]
+            },
+            {
+                "ndbno": "19140",
+                "name": "Candies, MARS SNACKFOOD US, M&amp;M's Peanut Chocolate Candies",
+                "weight": 54.0,
+                "measure": "1.0 serving 1 singles bag",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.17",
+                        "gm": 9.57
+                    }
+                ]
+            },
+            {
+                "ndbno": "19115",
+                "name": "Candies, MARS SNACKFOOD US, MARS Almond Bar",
+                "weight": 50.0,
+                "measure": "1.0 bar (1.76 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.05",
+                        "gm": 8.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "19135",
+                "name": "Candies, MARS SNACKFOOD US, MILKY WAY Bar",
+                "weight": 58.0,
+                "measure": "1.0 serving 2.05 oz bar",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.33",
+                        "gm": 4.01
+                    }
+                ]
+            },
+            {
+                "ndbno": "19256",
+                "name": "Candies, MARS SNACKFOOD US, MILKY WAY Caramels, milk chocolate covered",
+                "weight": 44.0,
+                "measure": "1.0 serving 5 pieces",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.88",
+                        "gm": 4.28
+                    }
+                ]
+            },
+            {
+                "ndbno": "19258",
+                "name": "Candies, MARS SNACKFOOD US, MILKY WAY Caramels. dark chocolate covered",
+                "weight": 44.0,
+                "measure": "1.0 serving 5 pieces",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.68",
+                        "gm": 3.82
+                    }
+                ]
+            },
+            {
+                "ndbno": "42196",
+                "name": "Candies, MARS SNACKFOOD US, MILKY WAY Midnight Bar",
+                "weight": 50.0,
+                "measure": "1.0 serving 1.76 oz bar",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.60",
+                        "gm": 3.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "19308",
+                "name": "Candies, MARS SNACKFOOD US, POP'ABLES 3 MUSKETEERS Brand Bite Size Candies",
+                "weight": 41.0,
+                "measure": "1.0 serving 15 pieces",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.06",
+                        "gm": 2.59
+                    }
+                ]
+            },
+            {
+                "ndbno": "19307",
+                "name": "Candies, MARS SNACKFOOD US, POP'ABLES MILKY WAY Brand Bite Size Candies",
+                "weight": 39.0,
+                "measure": "1.0 serving 13 pieces",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.29",
+                        "gm": 3.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "19306",
+                "name": "Candies, MARS SNACKFOOD US, POP'ABLES SNICKERS Brand Bite Size Candies",
+                "weight": 39.0,
+                "measure": "1.0 serving 13 pieces",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.79",
+                        "gm": 7.15
+                    }
+                ]
+            },
+            {
+                "ndbno": "19370",
+                "name": "Candies, MARS SNACKFOOD US, SKITTLES Original Bite Size Candies",
+                "weight": 62.0,
+                "measure": "1.0 serving 2.17 oz pack",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.12",
+                        "gm": 0.19
+                    }
+                ]
+            },
+            {
+                "ndbno": "19369",
+                "name": "Candies, MARS SNACKFOOD US, SKITTLES Sours Original",
+                "weight": 51.0,
+                "measure": "1.0 serving 1.80 oz bag",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.09",
+                        "gm": 0.18
+                    }
+                ]
+            },
+            {
+                "ndbno": "19368",
+                "name": "Candies, MARS SNACKFOOD US, SKITTLES Tropical Bite Size Candies",
+                "weight": 62.0,
+                "measure": "1.0 serving 2.1 oz bag",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.12",
+                        "gm": 0.19
+                    }
+                ]
+            },
+            {
+                "ndbno": "19363",
+                "name": "Candies, MARS SNACKFOOD US, SKITTLES Wild Berry Bite Size Candies",
+                "weight": 62.0,
+                "measure": "1.0 serving 2.1 oz bag",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.12",
+                        "gm": 0.19
+                    }
+                ]
+            },
+            {
+                "ndbno": "19302",
+                "name": "Candies, MARS SNACKFOOD US, SNICKERS Almond bar",
+                "weight": 50.0,
+                "measure": "1.0 serving 1.76 oz bar",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.70",
+                        "gm": 5.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "19155",
+                "name": "Candies, MARS SNACKFOOD US, SNICKERS Bar",
+                "weight": 57.0,
+                "measure": "1.0 bar (2 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.29",
+                        "gm": 7.53
+                    }
+                ]
+            },
+            {
+                "ndbno": "19359",
+                "name": "Candies, MARS SNACKFOOD US, SNICKERS CRUNCHER",
+                "weight": 47.0,
+                "measure": "1.0 serving 1.66 oz bar",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.22",
+                        "gm": 6.86
+                    }
+                ]
+            },
+            {
+                "ndbno": "19295",
+                "name": "Candies, MARS SNACKFOOD US, SNICKERS MUNCH bar",
+                "weight": 40.0,
+                "measure": "1.0 serving 1.42 oz bar",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.10",
+                        "gm": 15.25
+                    }
+                ]
+            },
+            {
+                "ndbno": "19309",
+                "name": "Candies, MARS SNACKFOOD US, STARBURST Fruit Chews, Fruit and Creme",
+                "weight": 40.0,
+                "measure": "1.0 serving fun size (8 chews)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.16",
+                        "gm": 0.41
+                    }
+                ]
+            },
+            {
+                "ndbno": "19156",
+                "name": "Candies, MARS SNACKFOOD US, STARBURST Fruit Chews, Original fruits",
+                "weight": 40.0,
+                "measure": "1.0 serving fun size (8 chews)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.16",
+                        "gm": 0.41
+                    }
+                ]
+            },
+            {
+                "ndbno": "19313",
+                "name": "Candies, MARS SNACKFOOD US, STARBURST Fruit Chews, Tropical fruits",
+                "weight": 40.0,
+                "measure": "1.0 serving fun size (8 chews)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.16",
+                        "gm": 0.41
+                    }
+                ]
+            },
+            {
+                "ndbno": "19315",
+                "name": "Candies, MARS SNACKFOOD US, STARBURST Sour Fruit Chews",
+                "weight": 59.0,
+                "measure": "1.0 serving 2.07 oz pack",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.23",
+                        "gm": 0.39
+                    }
+                ]
+            },
+            {
+                "ndbno": "19160",
+                "name": "Candies, MARS SNACKFOOD US, TWIX Caramel Cookie Bars",
+                "weight": 57.0,
+                "measure": "1.0 package (2 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.80",
+                        "gm": 4.91
+                    }
+                ]
+            },
+            {
+                "ndbno": "42183",
+                "name": "Candies, MARS SNACKFOOD US, TWIX chocolate fudge cookie bars",
+                "weight": 51.0,
+                "measure": "2.0 cookie 2011 label",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.72",
+                        "gm": 7.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "19161",
+                "name": "Candies, MARS SNACKFOOD US, TWIX Peanut Butter Cookie Bars",
+                "weight": 54.0,
+                "measure": "1.0 package (1.89 oz, 2 bars)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.96",
+                        "gm": 9.18
+                    }
+                ]
+            },
+            {
+                "ndbno": "19116",
+                "name": "Candies, marshmallows",
+                "weight": 50.0,
+                "measure": "1.0 cup of miniature",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.90",
+                        "gm": 1.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "19120",
+                "name": "Candies, milk chocolate",
+                "weight": 7.0,
+                "measure": "1.0 bar, miniature",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.54",
+                        "gm": 7.65
+                    }
+                ]
+            },
+            {
+                "ndbno": "19279",
+                "name": "Candies, milk chocolate coated coffee beans",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.10",
+                        "gm": 7.41
+                    }
+                ]
+            },
+            {
+                "ndbno": "19126",
+                "name": "Candies, milk chocolate coated peanuts",
+                "weight": 149.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "19.52",
+                        "gm": 13.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "19132",
+                "name": "Candies, milk chocolate, with almonds",
+                "weight": 41.0,
+                "measure": "1.0 bar (1.45 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.69",
+                        "gm": 9.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19134",
+                "name": "Candies, milk chocolate, with rice cereal",
+                "weight": 40.0,
+                "measure": "1.0 bar (1.4 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.06",
+                        "gm": 7.64
+                    }
+                ]
+            },
+            {
+                "ndbno": "19142",
+                "name": "Candies, MOUNDS Candy Bar",
+                "weight": 19.0,
+                "measure": "1.0 bar snack size",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.87",
+                        "gm": 4.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "19143",
+                "name": "Candies, MR. GOODBAR Chocolate Bar",
+                "weight": 49.0,
+                "measure": "1.0 bar (1.75 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.01",
+                        "gm": 10.22
+                    }
+                ]
+            },
+            {
+                "ndbno": "19144",
+                "name": "Candies, NESTLE, 100 GRAND Bar",
+                "weight": 43.0,
+                "measure": "1.0 bar (1.5 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.07",
+                        "gm": 2.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "19153",
+                "name": "Candies, NESTLE, AFTER EIGHT Mints",
+                "weight": 42.0,
+                "measure": "1.0 serving 5 mints",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.70",
+                        "gm": 1.67
+                    }
+                ]
+            },
+            {
+                "ndbno": "19111",
+                "name": "Candies, NESTLE, BABY RUTH Bar",
+                "weight": 60.0,
+                "measure": "1.0 serving 2.1 oz bar",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.24",
+                        "gm": 5.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "19068",
+                "name": "Candies, NESTLE, BIT-O'-HONEY Candy Chews",
+                "weight": 40.0,
+                "measure": "1.0 serving 6 pieces",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.80",
+                        "gm": 2.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19069",
+                "name": "Candies, NESTLE, BUTTERFINGER Bar",
+                "weight": 60.0,
+                "measure": "1.0 serving 2.1 oz bar",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.24",
+                        "gm": 5.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "19913",
+                "name": "Candies, NESTLE, BUTTERFINGER Crisp",
+                "weight": 60.0,
+                "measure": "1.0 piece",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.00",
+                        "gm": 6.67
+                    }
+                ]
+            },
+            {
+                "ndbno": "19119",
+                "name": "Candies, NESTLE, CHUNKY Bar",
+                "weight": 40.0,
+                "measure": "1.0 serving 1.4 oz bar",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.00",
+                        "gm": 7.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "19145",
+                "name": "Candies, NESTLE, CRUNCH Bar and Dessert Topping",
+                "weight": 44.0,
+                "measure": "1.0 bar 1.55 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.20",
+                        "gm": 5.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19105",
+                "name": "Candies, NESTLE, GOOBERS Chocolate Covered Peanuts",
+                "weight": 39.0,
+                "measure": "1.0 package 1.375 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.78",
+                        "gm": 9.7
+                    }
+                ]
+            },
+            {
+                "ndbno": "19118",
+                "name": "Candies, NESTLE, OH HENRY! Bar",
+                "weight": 57.0,
+                "measure": "1.0 bar 2 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.39",
+                        "gm": 7.7
+                    }
+                ]
+            },
+            {
+                "ndbno": "19149",
+                "name": "Candies, NESTLE, RAISINETS Chocolate Covered Raisins",
+                "weight": 45.0,
+                "measure": "1.0 serving 1.58 oz bag",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.98",
+                        "gm": 4.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "43046",
+                "name": "Candies, nougat, with almonds",
+                "weight": 14.0,
+                "measure": "1.0 piece",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.47",
+                        "gm": 3.33
+                    }
+                ]
+            },
+            {
+                "ndbno": "19147",
+                "name": "Candies, peanut bar",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.39",
+                        "gm": 15.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "19148",
+                "name": "Candies, peanut brittle, prepared-from-recipe",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.15",
+                        "gm": 7.57
+                    }
+                ]
+            },
+            {
+                "ndbno": "19216",
+                "name": "Candies, praline, prepared-from-recipe",
+                "weight": 39.0,
+                "measure": "1.0 piece",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.29",
+                        "gm": 3.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "19238",
+                "name": "Candies, REESE'S BITES",
+                "weight": 39.0,
+                "measure": "16.0 pieces",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.42",
+                        "gm": 11.34
+                    }
+                ]
+            },
+            {
+                "ndbno": "19896",
+                "name": "Candies, REESE's Fast Break, milk chocolate, peanut butter, soft nougats, candy bar",
+                "weight": 56.0,
+                "measure": "1.0 serving 1 bar",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.00",
+                        "gm": 8.93
+                    }
+                ]
+            },
+            {
+                "ndbno": "19239",
+                "name": "Candies, REESE'S NUTRAGEOUS Candy Bar",
+                "weight": 54.0,
+                "measure": "1.0 bar 1.92 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.09",
+                        "gm": 11.28
+                    }
+                ]
+            },
+            {
+                "ndbno": "19150",
+                "name": "Candies, REESE'S Peanut Butter Cups",
+                "weight": 17.0,
+                "measure": "1.0 package 0.6 oz 1 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.74",
+                        "gm": 10.24
+                    }
+                ]
+            },
+            {
+                "ndbno": "19151",
+                "name": "Candies, REESE'S PIECES Candy",
+                "weight": 47.0,
+                "measure": "0.25 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.86",
+                        "gm": 12.46
+                    }
+                ]
+            },
+            {
+                "ndbno": "19252",
+                "name": "Candies, REESE'S, FAST BREAK, milk chocolate peanut butter and soft nougats",
+                "weight": 56.0,
+                "measure": "2.0 oz bar",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.85",
+                        "gm": 8.66
+                    }
+                ]
+            },
+            {
+                "ndbno": "19152",
+                "name": "Candies, ROLO Caramels in Milk Chocolate",
+                "weight": 48.0,
+                "measure": "1.0 package 1 package",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.44",
+                        "gm": 5.08
+                    }
+                ]
+            },
+            {
+                "ndbno": "19080",
+                "name": "Candies, semisweet chocolate",
+                "weight": 14.5,
+                "measure": "1.0 serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.61",
+                        "gm": 4.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "19701",
+                "name": "Candies, semisweet chocolate, made with butter",
+                "weight": 170.0,
+                "measure": "1.0 cup chips (6 oz package)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.14",
+                        "gm": 4.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "19154",
+                "name": "Candies, sesame crunch",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.29",
+                        "gm": 11.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "19866",
+                "name": "Candies, soft fruit and nut squares",
+                "weight": 42.0,
+                "measure": "3.0 pieces",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.97",
+                        "gm": 2.31
+                    }
+                ]
+            },
+            {
+                "ndbno": "19164",
+                "name": "Candies, SPECIAL DARK Chocolate Bar",
+                "weight": 41.0,
+                "measure": "1.0 bar 1.45 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.27",
+                        "gm": 5.54
+                    }
+                ]
+            },
+            {
+                "ndbno": "19858",
+                "name": "Candies, sugar-coated almonds",
+                "weight": 3.5,
+                "measure": "1.0 piece",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.35",
+                        "gm": 10.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19081",
+                "name": "Candies, sweet chocolate",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.11",
+                        "gm": 3.9
+                    }
+                ]
+            },
+            {
+                "ndbno": "19083",
+                "name": "Candies, sweet chocolate coated fondant",
+                "weight": 43.0,
+                "measure": "1.0 patty, large",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.95",
+                        "gm": 2.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "19093",
+                "name": "Candies, SYMPHONY Milk Chocolate Bar",
+                "weight": 42.0,
+                "measure": "1.0 bar 1.5 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.57",
+                        "gm": 8.51
+                    }
+                ]
+            },
+            {
+                "ndbno": "19382",
+                "name": "Candies, taffy, prepared-from-recipe",
+                "weight": 15.0,
+                "measure": "1.0 piece",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.03
+                    }
+                ]
+            },
+            {
+                "ndbno": "19001",
+                "name": "Candies, TOBLERONE, milk chocolate with honey and almond nougat",
+                "weight": 35.0,
+                "measure": "1.0 bar",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.00",
+                        "gm": 5.71
+                    }
+                ]
+            },
+            {
+                "ndbno": "19383",
+                "name": "Candies, toffee, prepared-from-recipe",
+                "weight": 12.0,
+                "measure": "1.0 piece",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.13",
+                        "gm": 1.07
+                    }
+                ]
+            },
+            {
+                "ndbno": "19064",
+                "name": "Candies, TOOTSIE ROLL, chocolate-flavor roll",
+                "weight": 40.0,
+                "measure": "1.0 serving 6 pieces",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.64",
+                        "gm": 1.59
+                    }
+                ]
+            },
+            {
+                "ndbno": "19138",
+                "name": "Candies, truffles, prepared-from-recipe",
+                "weight": 12.0,
+                "measure": "1.0 piece",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.75",
+                        "gm": 6.21
+                    }
+                ]
+            },
+            {
+                "ndbno": "19067",
+                "name": "Candies, TWIZZLERS CHERRY BITES",
+                "weight": 40.0,
+                "measure": "18.0 pieces",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.19",
+                        "gm": 2.97
+                    }
+                ]
+            },
+            {
+                "ndbno": "19092",
+                "name": "Candies, TWIZZLERS NIBS CHERRY BITS",
+                "weight": 40.0,
+                "measure": "27.0 pieces",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.92",
+                        "gm": 2.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "19112",
+                "name": "Candies, TWIZZLERS Strawberry Twists Candy",
+                "weight": 45.0,
+                "measure": "4.0 pieces 1.6oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.15",
+                        "gm": 2.56
+                    }
+                ]
+            },
+            {
+                "ndbno": "19162",
+                "name": "Candies, WHATCHAMACALLIT Candy Bar",
+                "weight": 48.0,
+                "measure": "1.0 bar 1.7 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.86",
+                        "gm": 8.04
+                    }
+                ]
+            },
+            {
+                "ndbno": "19087",
+                "name": "Candies, white chocolate",
+                "weight": 85.0,
+                "measure": "1.0 bar (3 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.99",
+                        "gm": 5.87
+                    }
+                ]
+            },
+            {
+                "ndbno": "19181",
+                "name": "Candies, YORK BITES",
+                "weight": 39.0,
+                "measure": "15.0 pieces",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.69",
+                        "gm": 1.78
+                    }
+                ]
+            },
+            {
+                "ndbno": "19091",
+                "name": "Candies, YORK Peppermint Pattie",
+                "weight": 43.0,
+                "measure": "1.0 patty 1.5 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.94",
+                        "gm": 2.19
+                    }
+                ]
+            },
+            {
+                "ndbno": "19163",
+                "name": "Chewing gum",
+                "weight": 3.0,
+                "measure": "1.0 stick",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "43060",
+                "name": "Chewing gum, sugarless",
+                "weight": 2.0,
+                "measure": "1.0 piece",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19902",
+                "name": "Chocolate, dark, 45- 59% cacao solids",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.38",
+                        "gm": 4.88
+                    }
+                ]
+            },
+            {
+                "ndbno": "19903",
+                "name": "Chocolate, dark, 60-69% cacao solids",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.74",
+                        "gm": 6.12
+                    }
+                ]
+            },
+            {
+                "ndbno": "19904",
+                "name": "Chocolate, dark, 70-85% cacao solids",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.21",
+                        "gm": 7.79
+                    }
+                ]
+            },
+            {
+                "ndbno": "19125",
+                "name": "Chocolate-flavored hazelnut spread",
+                "weight": 37.0,
+                "measure": "1.0 serving 2 TBSP",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.00",
+                        "gm": 5.41
+                    }
+                ]
+            },
+            {
+                "ndbno": "19859",
+                "name": "Cocoa, dry powder, hi-fat or breakfast, plain",
+                "weight": 5.4,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.91",
+                        "gm": 16.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "19860",
+                "name": "Cocoa, dry powder, hi-fat or breakfast, processed with alkali",
+                "weight": 6.0,
+                "measure": "1.0 tablespoon Ghirardelli label 2011",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.01",
+                        "gm": 16.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "19165",
+                "name": "Cocoa, dry powder, unsweetened",
+                "weight": 86.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.86",
+                        "gm": 19.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "19171",
+                "name": "Cocoa, dry powder, unsweetened, HERSHEY'S European Style Cocoa",
+                "weight": 5.0,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.00",
+                        "gm": 20.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19166",
+                "name": "Cocoa, dry powder, unsweetened, processed with alkali",
+                "weight": 86.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.57",
+                        "gm": 18.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "19186",
+                "name": "Desserts, apple crisp, prepared-from-recipe",
+                "weight": 141.0,
+                "measure": "0.5 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.47",
+                        "gm": 1.75
+                    }
+                ]
+            },
+            {
+                "ndbno": "19168",
+                "name": "Desserts, egg custard, baked, prepared-from-recipe",
+                "weight": 141.0,
+                "measure": "0.5 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.08",
+                        "gm": 5.02
+                    }
+                ]
+            },
+            {
+                "ndbno": "19094",
+                "name": "Desserts, flan, caramel custard, prepared-from-recipe",
+                "weight": 153.0,
+                "measure": "0.5 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.93",
+                        "gm": 4.53
+                    }
+                ]
+            },
+            {
+                "ndbno": "19182",
+                "name": "Desserts, mousse, chocolate, prepared-from-recipe",
+                "weight": 808.0,
+                "measure": "1.0 recipe yield",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "33.45",
+                        "gm": 4.14
+                    }
+                ]
+            },
+            {
+                "ndbno": "19220",
+                "name": "Desserts, rennin, chocolate, dry mix",
+                "weight": 9.0,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.22",
+                        "gm": 2.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "19225",
+                "name": "Desserts, rennin, tablets, unsweetened",
+                "weight": 9.9,
+                "measure": "1.0 package (0.35 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.10",
+                        "gm": 1.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19222",
+                "name": "Desserts, rennin, vanilla, dry mix",
+                "weight": 10.8,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19169",
+                "name": "Egg custards, dry mix",
+                "weight": 85.0,
+                "measure": "1.0 package (3 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.87",
+                        "gm": 6.9
+                    }
+                ]
+            },
+            {
+                "ndbno": "19205",
+                "name": "Egg custards, dry mix, prepared with 2% milk",
+                "weight": 141.0,
+                "measure": "0.5 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.82",
+                        "gm": 4.13
+                    }
+                ]
+            },
+            {
+                "ndbno": "19170",
+                "name": "Egg custards, dry mix, prepared with whole milk",
+                "weight": 141.0,
+                "measure": "0.5 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.63",
+                        "gm": 3.99
+                    }
+                ]
+            },
+            {
+                "ndbno": "19187",
+                "name": "Flan, caramel custard, dry mix",
+                "weight": 85.0,
+                "measure": "1.0 package (3 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19240",
+                "name": "Frostings, chocolate, creamy, dry mix",
+                "weight": 388.0,
+                "measure": "1.0 package",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.04",
+                        "gm": 1.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "19241",
+                "name": "Frostings, chocolate, creamy, dry mix, prepared with butter",
+                "weight": 33.0,
+                "measure": "2.0 tablespoon",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.37",
+                        "gm": 1.11
+                    }
+                ]
+            },
+            {
+                "ndbno": "19372",
+                "name": "Frostings, chocolate, creamy, dry mix, prepared with margarine",
+                "weight": 33.0,
+                "measure": "2.0 tablespoon",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.36",
+                        "gm": 1.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "19226",
+                "name": "Frostings, chocolate, creamy, ready-to-eat",
+                "weight": 41.0,
+                "measure": "2.0 tbsp creamy",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.45",
+                        "gm": 1.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "19227",
+                "name": "Frostings, coconut-nut, ready-to-eat",
+                "weight": 38.0,
+                "measure": "0.083 package",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.57",
+                        "gm": 1.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "19228",
+                "name": "Frostings, cream cheese-flavor, ready-to-eat",
+                "weight": 33.0,
+                "measure": "2.0 tbsp creamy",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.03",
+                        "gm": 0.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "19409",
+                "name": "Frostings, glaze, chocolate, prepared-from-recipe, with butter, NFSMI Recipe No. C-32",
+                "weight": 33.0,
+                "measure": "2.0 tablespoon",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.47",
+                        "gm": 1.42
+                    }
+                ]
+            },
+            {
+                "ndbno": "19375",
+                "name": "Frostings, glaze, prepared-from-recipe",
+                "weight": 327.0,
+                "measure": "1.0 recipe yield",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.44",
+                        "gm": 0.44
+                    }
+                ]
+            },
+            {
+                "ndbno": "19244",
+                "name": "Frostings, vanilla, creamy, dry mix",
+                "weight": 411.0,
+                "measure": "1.0 package",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.23",
+                        "gm": 0.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "19371",
+                "name": "Frostings, vanilla, creamy, dry mix, prepared with margarine",
+                "weight": 33.0,
+                "measure": "2.0 tablespoon",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.11",
+                        "gm": 0.34
+                    }
+                ]
+            },
+            {
+                "ndbno": "19230",
+                "name": "Frostings, vanilla, creamy, ready-to-eat",
+                "weight": 38.0,
+                "measure": "0.083 package",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19246",
+                "name": "Frostings, white, fluffy, dry mix",
+                "weight": 207.0,
+                "measure": "1.0 package",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.76",
+                        "gm": 2.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "19247",
+                "name": "Frostings, white, fluffy, dry mix, prepared with water",
+                "weight": 315.0,
+                "measure": "1.0 package yields",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.72",
+                        "gm": 1.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "19263",
+                "name": "Frozen novelties, fruit and juice bars",
+                "weight": 77.0,
+                "measure": "1.0 bar (2.5 fl oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.92",
+                        "gm": 1.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "43506",
+                "name": "Frozen novelties, ice cream type, chocolate or caramel covered, with nuts",
+                "weight": 54.0,
+                "measure": "1.0 bar",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.38",
+                        "gm": 4.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "42074",
+                "name": "Frozen novelties, ice cream type, vanilla ice cream, light, no sugar added, chocolate coated",
+                "weight": 78.0,
+                "measure": "1.0 bar",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.99",
+                        "gm": 6.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "19217",
+                "name": "Frozen novelties, ice type, fruit, no sugar added",
+                "weight": 51.0,
+                "measure": "1.0 bar",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.26",
+                        "gm": 0.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "19281",
+                "name": "Frozen novelties, ice type, italian, restaurant-prepared",
+                "weight": 29.0,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.01",
+                        "gm": 0.03
+                    }
+                ]
+            },
+            {
+                "ndbno": "19280",
+                "name": "Frozen novelties, ice type, lime",
+                "weight": 99.0,
+                "measure": "0.5 cup (4 fl oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.40",
+                        "gm": 0.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "19387",
+                "name": "Frozen novelties, ice type, pineapple-coconut",
+                "weight": 99.0,
+                "measure": "0.5 cup (4 fl oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19283",
+                "name": "Frozen novelties, ice type, pop",
+                "weight": 52.0,
+                "measure": "1.0 serving 1.75 fl oz pop",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "43514",
+                "name": "Frozen novelties, ice type, pop, with low calorie sweetener",
+                "weight": 55.0,
+                "measure": "1.0 serving 1.75 fl oz pop",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19873",
+                "name": "Frozen novelties, ice type, sugar free, orange, cherry, and grape POPSICLE pops",
+                "weight": 55.0,
+                "measure": "1.0 serving 1.75 fl oz pop",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "43450",
+                "name": "Frozen novelties, juice type, juice with cream",
+                "weight": 71.0,
+                "measure": "2.5 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.00",
+                        "gm": 1.41
+                    }
+                ]
+            },
+            {
+                "ndbno": "43346",
+                "name": "Frozen novelties, juice type, orange",
+                "weight": 29.8,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.15",
+                        "gm": 0.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "19856",
+                "name": "Frozen novelties, juice type, POPSICLE SCRIBBLERS",
+                "weight": 33.0,
+                "measure": "1.0 serving 1.2 fl oz pop",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19886",
+                "name": "Frozen novelties, KLONDIKE, SLIM-A-BEAR Chocolate Cone",
+                "weight": 79.0,
+                "measure": "1.0 serving 1 cone",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.23",
+                        "gm": 4.09
+                    }
+                ]
+            },
+            {
+                "ndbno": "19874",
+                "name": "Frozen novelties, KLONDIKE, SLIM-A-BEAR Fudge Bar, 98% fat free, no sugar added",
+                "weight": 74.0,
+                "measure": "1.0 serving 3.5 fl oz bar",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.19",
+                        "gm": 4.31
+                    }
+                ]
+            },
+            {
+                "ndbno": "19887",
+                "name": "Frozen novelties, KLONDIKE, SLIM-A-BEAR Vanilla Sandwich",
+                "weight": 64.0,
+                "measure": "1.0 serving 1 sandwich",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.50",
+                        "gm": 3.9
+                    }
+                ]
+            },
+            {
+                "ndbno": "19890",
+                "name": "Frozen novelties, KLONDIKE, SLIM-A-BEAR, No Sugar Added, Stickless Bar",
+                "weight": 78.0,
+                "measure": "1.0 serving 1 bar",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.06",
+                        "gm": 5.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "19891",
+                "name": "Frozen novelties, No Sugar Added CREAMSICLE Pops",
+                "weight": 44.0,
+                "measure": "1.0 serving 1 pop",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.62",
+                        "gm": 3.69
+                    }
+                ]
+            },
+            {
+                "ndbno": "19871",
+                "name": "Frozen novelties, No Sugar Added, FUDGSICLE pops",
+                "weight": 84.0,
+                "measure": "1.0 serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.08",
+                        "gm": 3.67
+                    }
+                ]
+            },
+            {
+                "ndbno": "19892",
+                "name": "Frozen novelties, Sugar Free, CREAMSICLE Pops",
+                "weight": 80.0,
+                "measure": "1.0 serving 2 pops",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.10",
+                        "gm": 1.37
+                    }
+                ]
+            },
+            {
+                "ndbno": "42186",
+                "name": "Frozen yogurts, chocolate",
+                "weight": 174.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.22",
+                        "gm": 3.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "42185",
+                "name": "Frozen yogurts, chocolate, nonfat milk, sweetened without sugar",
+                "weight": 186.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.18",
+                        "gm": 4.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "19393",
+                "name": "Frozen yogurts, chocolate, soft-serve",
+                "weight": 72.0,
+                "measure": "0.5 cup (4 fl oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.88",
+                        "gm": 4.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "42187",
+                "name": "Frozen yogurts, flavors other than chocolate",
+                "weight": 174.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.22",
+                        "gm": 3.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19293",
+                "name": "Frozen yogurts, vanilla, soft-serve",
+                "weight": 72.0,
+                "measure": "0.5 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.88",
+                        "gm": 4.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19294",
+                "name": "Fruit butters, apple",
+                "weight": 17.0,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.07",
+                        "gm": 0.39
+                    }
+                ]
+            },
+            {
+                "ndbno": "19018",
+                "name": "Fruit syrup",
+                "weight": 334.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19172",
+                "name": "Gelatin desserts, dry mix",
+                "weight": 85.0,
+                "measure": "1.0 package (3 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.63",
+                        "gm": 7.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "19173",
+                "name": "Gelatin desserts, dry mix, prepared with water",
+                "weight": 135.0,
+                "measure": "0.5 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.65",
+                        "gm": 1.22
+                    }
+                ]
+            },
+            {
+                "ndbno": "19175",
+                "name": "Gelatin desserts, dry mix, reduced calorie, with aspartame",
+                "weight": 6.4,
+                "measure": "1.0 serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.00",
+                        "gm": 15.67
+                    }
+                ]
+            },
+            {
+                "ndbno": "19703",
+                "name": "Gelatin desserts, dry mix, reduced calorie, with aspartame, added phosphorus, potassium, sodium, vitamin C",
+                "weight": 9.0,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.98",
+                        "gm": 55.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "19704",
+                "name": "Gelatin desserts, dry mix, reduced calorie, with aspartame, no added sodium",
+                "weight": 9.0,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.98",
+                        "gm": 55.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "19176",
+                "name": "Gelatin desserts, dry mix, reduced calorie, with aspartame, prepared with water",
+                "weight": 117.0,
+                "measure": "0.5 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.97",
+                        "gm": 0.83
+                    }
+                ]
+            },
+            {
+                "ndbno": "19702",
+                "name": "Gelatin desserts, dry mix, with added ascorbic acid, sodium-citrate and salt",
+                "weight": 85.0,
+                "measure": "1.0 package (3 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.63",
+                        "gm": 7.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "19177",
+                "name": "Gelatins, dry powder, unsweetened",
+                "weight": 7.0,
+                "measure": "1.0 envelope (1 tbsp)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.99",
+                        "gm": 85.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "42281",
+                "name": "Gums, seed gums (includes locust bean, guar)",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.30",
+                        "gm": 4.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "19296",
+                "name": "Honey",
+                "weight": 339.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.02",
+                        "gm": 0.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "19894",
+                "name": "Ice creams, BREYERS, 98% Fat Free Chocolate",
+                "weight": 68.0,
+                "measure": "1.0 serving 1/2 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.65",
+                        "gm": 3.89
+                    }
+                ]
+            },
+            {
+                "ndbno": "19877",
+                "name": "Ice creams, BREYERS, 98% Fat Free Vanilla",
+                "weight": 68.0,
+                "measure": "1.0 serving 1/2 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.24",
+                        "gm": 3.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "19893",
+                "name": "Ice creams, BREYERS, All Natural Light French Chocolate",
+                "weight": 68.0,
+                "measure": "1.0 serving 1/2 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.60",
+                        "gm": 5.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "19876",
+                "name": "Ice creams, BREYERS, All Natural Light French Vanilla",
+                "weight": 68.0,
+                "measure": "1.0 serving 1/2 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.28",
+                        "gm": 4.82
+                    }
+                ]
+            },
+            {
+                "ndbno": "19879",
+                "name": "Ice creams, BREYERS, All Natural Light Mint Chocolate Chip",
+                "weight": 68.0,
+                "measure": "1.0 serving 1/2 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.19",
+                        "gm": 4.69
+                    }
+                ]
+            },
+            {
+                "ndbno": "19875",
+                "name": "Ice creams, BREYERS, All Natural Light Vanilla",
+                "weight": 68.0,
+                "measure": "1.0 serving 1/2 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.29",
+                        "gm": 4.84
+                    }
+                ]
+            },
+            {
+                "ndbno": "19878",
+                "name": "Ice creams, BREYERS, All Natural Light Vanilla Chocolate Strawberry",
+                "weight": 68.0,
+                "measure": "1.0 serving 1/2 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.19",
+                        "gm": 4.69
+                    }
+                ]
+            },
+            {
+                "ndbno": "19880",
+                "name": "Ice creams, BREYERS, No Sugar Added, Butter Pecan",
+                "weight": 68.0,
+                "measure": "1.0 serving 1/2 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.71",
+                        "gm": 3.99
+                    }
+                ]
+            },
+            {
+                "ndbno": "19895",
+                "name": "Ice creams, BREYERS, No Sugar Added, Chocolate Caramel",
+                "weight": 71.0,
+                "measure": "1.0 serving 1/2 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.51",
+                        "gm": 3.54
+                    }
+                ]
+            },
+            {
+                "ndbno": "19881",
+                "name": "Ice creams, BREYERS, No Sugar Added, French Vanilla",
+                "weight": 68.0,
+                "measure": "1.0 serving 1/2 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.06",
+                        "gm": 4.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "19882",
+                "name": "Ice creams, BREYERS, No Sugar Added, Vanilla",
+                "weight": 69.0,
+                "measure": "1.0 serving 1/2 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.54",
+                        "gm": 3.68
+                    }
+                ]
+            },
+            {
+                "ndbno": "19884",
+                "name": "Ice creams, BREYERS, No Sugar Added, Vanilla Chocolate Strawberry",
+                "weight": 68.0,
+                "measure": "1.0 serving 1/2 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.52",
+                        "gm": 3.71
+                    }
+                ]
+            },
+            {
+                "ndbno": "19883",
+                "name": "Ice creams, BREYERS, No Sugar Added, Vanilla Fudge Twirl",
+                "weight": 72.0,
+                "measure": "1.0 serving 1/2 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.54",
+                        "gm": 3.53
+                    }
+                ]
+            },
+            {
+                "ndbno": "19270",
+                "name": "Ice creams, chocolate",
+                "weight": 58.0,
+                "measure": "1.0 individual (3.5 fl oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.20",
+                        "gm": 3.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "19114",
+                "name": "Ice creams, chocolate, light",
+                "weight": 68.0,
+                "measure": "1.0 serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.40",
+                        "gm": 5.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19265",
+                "name": "Ice creams, chocolate, light, no sugar added",
+                "weight": 72.0,
+                "measure": "1.0 serving 1/2 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.55",
+                        "gm": 3.54
+                    }
+                ]
+            },
+            {
+                "ndbno": "43541",
+                "name": "Ice creams, chocolate, rich",
+                "weight": 148.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.99",
+                        "gm": 4.72
+                    }
+                ]
+            },
+            {
+                "ndbno": "19090",
+                "name": "Ice creams, french vanilla, soft-serve",
+                "weight": 86.0,
+                "measure": "0.5 cup (4 fl oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.53",
+                        "gm": 4.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "19899",
+                "name": "Ice creams, regular, low carbohydrate, chocolate",
+                "weight": 58.0,
+                "measure": "1.0 individual (3.5 fl oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.20",
+                        "gm": 3.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "19898",
+                "name": "Ice creams, regular, low carbohydrate, vanilla",
+                "weight": 58.0,
+                "measure": "1.0 individual (3.5 fl oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.84",
+                        "gm": 3.17
+                    }
+                ]
+            },
+            {
+                "ndbno": "19271",
+                "name": "Ice creams, strawberry",
+                "weight": 58.0,
+                "measure": "1.0 individual (3.5 fl oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.86",
+                        "gm": 3.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "19095",
+                "name": "Ice creams, vanilla",
+                "weight": 66.0,
+                "measure": "1.0 serving 1/2 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.31",
+                        "gm": 3.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "19867",
+                "name": "Ice creams, vanilla, fat free",
+                "weight": 67.0,
+                "measure": "0.5 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.00",
+                        "gm": 4.48
+                    }
+                ]
+            },
+            {
+                "ndbno": "19088",
+                "name": "Ice creams, vanilla, light",
+                "weight": 76.0,
+                "measure": "1.0 serving 1/2 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.63",
+                        "gm": 4.78
+                    }
+                ]
+            },
+            {
+                "ndbno": "19260",
+                "name": "Ice creams, vanilla, light, no sugar added",
+                "weight": 68.0,
+                "measure": "1.0 serving 1/2 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.70",
+                        "gm": 3.97
+                    }
+                ]
+            },
+            {
+                "ndbno": "19096",
+                "name": "Ice creams, vanilla, light, soft-serve",
+                "weight": 88.0,
+                "measure": "1.0 serving 1/2 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.31",
+                        "gm": 4.9
+                    }
+                ]
+            },
+            {
+                "ndbno": "19089",
+                "name": "Ice creams, vanilla, rich",
+                "weight": 107.0,
+                "measure": "0.5 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.75",
+                        "gm": 3.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "19297",
+                "name": "Jams and preserves",
+                "weight": 20.0,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.07",
+                        "gm": 0.37
+                    }
+                ]
+            },
+            {
+                "ndbno": "19719",
+                "name": "Jams and preserves, apricot",
+                "weight": 20.0,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.14",
+                        "gm": 0.7
+                    }
+                ]
+            },
+            {
+                "ndbno": "43028",
+                "name": "Jams and preserves, no sugar (with sodium saccharin), any flavor",
+                "weight": 224.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.67",
+                        "gm": 0.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "19300",
+                "name": "Jellies",
+                "weight": 21.0,
+                "measure": "1.0 serving 1 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.03",
+                        "gm": 0.15
+                    }
+                ]
+            },
+            {
+                "ndbno": "43027",
+                "name": "Jellies, no sugar (with sodium saccharin), any flavors",
+                "weight": 300.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.65",
+                        "gm": 0.55
+                    }
+                ]
+            },
+            {
+                "ndbno": "44110",
+                "name": "Jellies, reduced sugar, home preserved",
+                "weight": 19.0,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.06",
+                        "gm": 0.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "19303",
+                "name": "Marmalade, orange",
+                "weight": 20.0,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.06",
+                        "gm": 0.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "42131",
+                "name": "Milk dessert, frozen, milk-fat free, chocolate",
+                "weight": 137.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.89",
+                        "gm": 4.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "19304",
+                "name": "Molasses",
+                "weight": 337.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19310",
+                "name": "Pectin, unsweetened, dry mix",
+                "weight": 50.0,
+                "measure": "1.0 package (1.75 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.15",
+                        "gm": 0.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "19312",
+                "name": "Pie fillings, apple, canned",
+                "weight": 74.0,
+                "measure": "0.125 can",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.07",
+                        "gm": 0.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "44158",
+                "name": "Pie fillings, blueberry, canned",
+                "weight": 151.0,
+                "measure": "1.0 serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.62",
+                        "gm": 0.41
+                    }
+                ]
+            },
+            {
+                "ndbno": "19314",
+                "name": "Pie fillings, canned, cherry",
+                "weight": 74.0,
+                "measure": "0.125 can",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.27",
+                        "gm": 0.37
+                    }
+                ]
+            },
+            {
+                "ndbno": "43098",
+                "name": "Pie fillings, cherry, low calorie",
+                "weight": 85.0,
+                "measure": "1.0 serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.70",
+                        "gm": 0.82
+                    }
+                ]
+            },
+            {
+                "ndbno": "19333",
+                "name": "Pudding, lemon, dry mix, regular, prepared with sugar, egg yolk and water",
+                "weight": 127.0,
+                "measure": "0.5 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.83",
+                        "gm": 0.65
+                    }
+                ]
+            },
+            {
+                "ndbno": "44260",
+                "name": "Puddings, all flavors except chocolate, low calorie, instant, dry mix",
+                "weight": 8.0,
+                "measure": "1.0 serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.06",
+                        "gm": 0.81
+                    }
+                ]
+            },
+            {
+                "ndbno": "44259",
+                "name": "Puddings, all flavors except chocolate, low calorie, regular, dry mix",
+                "weight": 113.0,
+                "measure": "1.0 serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.81",
+                        "gm": 1.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "19318",
+                "name": "Puddings, banana, dry mix, instant",
+                "weight": 99.0,
+                "measure": "1.0 package (3.5 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19121",
+                "name": "Puddings, banana, dry mix, instant, prepared with 2% milk",
+                "weight": 147.0,
+                "measure": "0.5 cup From 19191",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.06",
+                        "gm": 2.76
+                    }
+                ]
+            },
+            {
+                "ndbno": "19319",
+                "name": "Puddings, banana, dry mix, instant, prepared with whole milk",
+                "weight": 127.0,
+                "measure": "0.5 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.33",
+                        "gm": 2.62
+                    }
+                ]
+            },
+            {
+                "ndbno": "19705",
+                "name": "Puddings, banana, dry mix, instant, with added oil",
+                "weight": 99.0,
+                "measure": "1.0 package (3.5 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19320",
+                "name": "Puddings, banana, dry mix, regular",
+                "weight": 88.0,
+                "measure": "1.0 package (3.12 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19122",
+                "name": "Puddings, banana, dry mix, regular, prepared with 2% milk",
+                "weight": 142.0,
+                "measure": "0.5 cup From 19211",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.12",
+                        "gm": 2.9
+                    }
+                ]
+            },
+            {
+                "ndbno": "19321",
+                "name": "Puddings, banana, dry mix, regular, prepared with whole milk",
+                "weight": 127.0,
+                "measure": "0.5 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.48",
+                        "gm": 2.74
+                    }
+                ]
+            },
+            {
+                "ndbno": "19706",
+                "name": "Puddings, banana, dry mix, regular, with added oil",
+                "weight": 88.0,
+                "measure": "1.0 package (3.12 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "44061",
+                "name": "Puddings, chocolate flavor, low calorie, instant, dry mix",
+                "weight": 9.9,
+                "measure": "1.0 serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.52",
+                        "gm": 5.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "44258",
+                "name": "Puddings, chocolate flavor, low calorie, regular, dry mix",
+                "weight": 9.9,
+                "measure": "1.0 serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.00",
+                        "gm": 10.08
+                    }
+                ]
+            },
+            {
+                "ndbno": "19184",
+                "name": "Puddings, chocolate, dry mix, instant",
+                "weight": 99.0,
+                "measure": "1.0 package (3.5 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.28",
+                        "gm": 2.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "19123",
+                "name": "Puddings, chocolate, dry mix, instant, prepared with 2% milk",
+                "weight": 142.0,
+                "measure": "0.5 cup From 19211",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.47",
+                        "gm": 3.15
+                    }
+                ]
+            },
+            {
+                "ndbno": "19185",
+                "name": "Puddings, chocolate, dry mix, instant, prepared with whole milk",
+                "weight": 147.0,
+                "measure": "0.5 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.56",
+                        "gm": 3.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "19188",
+                "name": "Puddings, chocolate, dry mix, regular",
+                "weight": 99.0,
+                "measure": "1.0 package (3.5 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.57",
+                        "gm": 2.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "19190",
+                "name": "Puddings, chocolate, dry mix, regular, prepared with 2% milk",
+                "weight": 128.0,
+                "measure": "0.5 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.20",
+                        "gm": 3.28
+                    }
+                ]
+            },
+            {
+                "ndbno": "19189",
+                "name": "Puddings, chocolate, dry mix, regular, prepared with whole milk",
+                "weight": 142.0,
+                "measure": "0.5 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.49",
+                        "gm": 3.16
+                    }
+                ]
+            },
+            {
+                "ndbno": "19183",
+                "name": "Puddings, chocolate, ready-to-eat",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.59",
+                        "gm": 2.09
+                    }
+                ]
+            },
+            {
+                "ndbno": "19235",
+                "name": "Puddings, chocolate, ready-to-eat, fat free",
+                "weight": 113.0,
+                "measure": "1.0 serving 4 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.18",
+                        "gm": 1.93
+                    }
+                ]
+            },
+            {
+                "ndbno": "19322",
+                "name": "Puddings, coconut cream, dry mix, instant",
+                "weight": 99.0,
+                "measure": "1.0 package (3.5 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.89",
+                        "gm": 0.9
+                    }
+                ]
+            },
+            {
+                "ndbno": "19191",
+                "name": "Puddings, coconut cream, dry mix, instant, prepared with 2% milk",
+                "weight": 147.0,
+                "measure": "0.5 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.26",
+                        "gm": 2.9
+                    }
+                ]
+            },
+            {
+                "ndbno": "19323",
+                "name": "Puddings, coconut cream, dry mix, instant, prepared with whole milk",
+                "weight": 147.0,
+                "measure": "0.5 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.26",
+                        "gm": 2.9
+                    }
+                ]
+            },
+            {
+                "ndbno": "19324",
+                "name": "Puddings, coconut cream, dry mix, regular",
+                "weight": 88.0,
+                "measure": "1.0 package (3.12 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.88",
+                        "gm": 1.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19219",
+                "name": "Puddings, coconut cream, dry mix, regular, prepared with 2% milk",
+                "weight": 140.0,
+                "measure": "0.5 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.34",
+                        "gm": 3.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "19325",
+                "name": "Puddings, coconut cream, dry mix, regular, prepared with whole milk",
+                "weight": 140.0,
+                "measure": "0.5 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.20",
+                        "gm": 3.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19330",
+                "name": "Puddings, lemon, dry mix, instant",
+                "weight": 99.0,
+                "measure": "1.0 package (3.5 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19204",
+                "name": "Puddings, lemon, dry mix, instant, prepared with 2% milk",
+                "weight": 8.0,
+                "measure": "1.0 serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.22",
+                        "gm": 2.76
+                    }
+                ]
+            },
+            {
+                "ndbno": "19331",
+                "name": "Puddings, lemon, dry mix, instant, prepared with whole milk",
+                "weight": 147.0,
+                "measure": "0.5 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.97",
+                        "gm": 2.7
+                    }
+                ]
+            },
+            {
+                "ndbno": "19332",
+                "name": "Puddings, lemon, dry mix, regular",
+                "weight": 85.0,
+                "measure": "1.0 package (3 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.09",
+                        "gm": 0.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "19708",
+                "name": "Puddings, lemon, dry mix, regular, with added oil, potassium, sodium",
+                "weight": 85.0,
+                "measure": "1.0 package (3 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.09",
+                        "gm": 0.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "19194",
+                "name": "Puddings, rice, dry mix",
+                "weight": 106.0,
+                "measure": "1.0 package",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.86",
+                        "gm": 2.7
+                    }
+                ]
+            },
+            {
+                "ndbno": "19208",
+                "name": "Puddings, rice, dry mix, prepared with 2% milk",
+                "weight": 128.0,
+                "measure": "0.5 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.21",
+                        "gm": 3.29
+                    }
+                ]
+            },
+            {
+                "ndbno": "19195",
+                "name": "Puddings, rice, dry mix, prepared with whole milk",
+                "weight": 128.0,
+                "measure": "0.5 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.16",
+                        "gm": 3.25
+                    }
+                ]
+            },
+            {
+                "ndbno": "19193",
+                "name": "Puddings, rice, ready-to-eat",
+                "weight": 113.0,
+                "measure": "1.0 serving 4 oz pudding cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.65",
+                        "gm": 3.23
+                    }
+                ]
+            },
+            {
+                "ndbno": "19198",
+                "name": "Puddings, tapioca, dry mix",
+                "weight": 92.0,
+                "measure": "1.0 package (3.5 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.09",
+                        "gm": 0.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "19209",
+                "name": "Puddings, tapioca, dry mix, prepared with 2% milk",
+                "weight": 128.0,
+                "measure": "0.5 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.69",
+                        "gm": 2.88
+                    }
+                ]
+            },
+            {
+                "ndbno": "19199",
+                "name": "Puddings, tapioca, dry mix, prepared with whole milk",
+                "weight": 128.0,
+                "measure": "0.5 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.64",
+                        "gm": 2.84
+                    }
+                ]
+            },
+            {
+                "ndbno": "19709",
+                "name": "Puddings, tapioca, dry mix, with no added salt",
+                "weight": 92.0,
+                "measure": "1.0 package (3.5 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.09",
+                        "gm": 0.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "19218",
+                "name": "Puddings, tapioca, ready-to-eat",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.55",
+                        "gm": 1.95
+                    }
+                ]
+            },
+            {
+                "ndbno": "19234",
+                "name": "Puddings, tapioca, ready-to-eat, fat free",
+                "weight": 112.0,
+                "measure": "1.0 container refrigerated 4 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.61",
+                        "gm": 1.44
+                    }
+                ]
+            },
+            {
+                "ndbno": "19202",
+                "name": "Puddings, vanilla, dry mix, instant",
+                "weight": 99.0,
+                "measure": "1.0 package (3.5 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19203",
+                "name": "Puddings, vanilla, dry mix, instant, prepared with whole milk",
+                "weight": 142.0,
+                "measure": "0.5 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.83",
+                        "gm": 2.7
+                    }
+                ]
+            },
+            {
+                "ndbno": "19206",
+                "name": "Puddings, vanilla, dry mix, regular",
+                "weight": 88.0,
+                "measure": "1.0 package (3.12 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.26",
+                        "gm": 0.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "19212",
+                "name": "Puddings, vanilla, dry mix, regular, prepared with 2% milk",
+                "weight": 128.0,
+                "measure": "0.5 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.76",
+                        "gm": 2.94
+                    }
+                ]
+            },
+            {
+                "ndbno": "19207",
+                "name": "Puddings, vanilla, dry mix, regular, prepared with whole milk",
+                "weight": 140.0,
+                "measure": "0.5 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.92",
+                        "gm": 2.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "19710",
+                "name": "Puddings, vanilla, dry mix, regular, with added oil",
+                "weight": 88.0,
+                "measure": "1.0 package (3.12 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.26",
+                        "gm": 0.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "19201",
+                "name": "Puddings, vanilla, ready-to-eat",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.41",
+                        "gm": 1.45
+                    }
+                ]
+            },
+            {
+                "ndbno": "19233",
+                "name": "Puddings, vanilla, ready-to-eat, fat free",
+                "weight": 99.0,
+                "measure": "1.0 serving 3.5 oz shelf stable",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.00",
+                        "gm": 2.02
+                    }
+                ]
+            },
+            {
+                "ndbno": "19097",
+                "name": "Sherbet, orange",
+                "weight": 74.0,
+                "measure": "0.5 cup (4 fl oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.81",
+                        "gm": 1.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "19013",
+                "name": "Snacks, fruit leather, pieces",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.28",
+                        "gm": 1.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19014",
+                "name": "Snacks, fruit leather, rolls",
+                "weight": 21.0,
+                "measure": "1.0 large",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.02",
+                        "gm": 0.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "19908",
+                "name": "Sugar, turbinado",
+                "weight": 4.6,
+                "measure": "1.0 tsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19334",
+                "name": "Sugars, brown",
+                "weight": 3.0,
+                "measure": "1.0 tsp unpacked",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.12
+                    }
+                ]
+            },
+            {
+                "ndbno": "19335",
+                "name": "Sugars, granulated",
+                "weight": 2.8,
+                "measure": "1.0 serving packet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19340",
+                "name": "Sugars, maple",
+                "weight": 3.0,
+                "measure": "1.0 tsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "19336",
+                "name": "Sugars, powdered",
+                "weight": 120.0,
+                "measure": "1.0 cup unsifted",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19918",
+                "name": "Sweetener, herbal extract powder from Stevia leaf",
+                "weight": 1.0,
+                "measure": "1.0 package",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19912",
+                "name": "Sweetener, syrup, agave",
+                "weight": 6.9,
+                "measure": "1.0 tsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.01",
+                        "gm": 0.09
+                    }
+                ]
+            },
+            {
+                "ndbno": "19906",
+                "name": "Sweeteners, for baking, brown, contains sugar and sucralose",
+                "weight": 12.9,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19907",
+                "name": "Sweeteners, for baking, contains sugar and sucralose",
+                "weight": 14.5,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19909",
+                "name": "Sweeteners, sugar substitute, granulated, brown",
+                "weight": 0.5,
+                "measure": "1.0 tsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.01",
+                        "gm": 2.06
+                    }
+                ]
+            },
+            {
+                "ndbno": "19337",
+                "name": "Sweeteners, tabletop, aspartame, EQUAL, packets",
+                "weight": 3.5,
+                "measure": "1.0 tsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.08",
+                        "gm": 2.17
+                    }
+                ]
+            },
+            {
+                "ndbno": "43216",
+                "name": "Sweeteners, tabletop, fructose, dry, powder",
+                "weight": 196.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "44018",
+                "name": "Sweeteners, tabletop, fructose, liquid",
+                "weight": 0.1,
+                "measure": "1.0 serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "43158",
+                "name": "Sweeteners, tabletop, saccharin (sodium saccharin)",
+                "weight": 1.0,
+                "measure": "1.0 serving 1 packet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.01",
+                        "gm": 0.94
+                    }
+                ]
+            },
+            {
+                "ndbno": "19868",
+                "name": "Sweeteners, tabletop, sucralose, SPLENDA packets",
+                "weight": 1.0,
+                "measure": "1.0 serving 1 packet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "90480",
+                "name": "Syrup, Cane",
+                "weight": 21.0,
+                "measure": "1.0 serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19030",
+                "name": "Syrup, fruit flavored",
+                "weight": 20.0,
+                "measure": "1.0 serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19911",
+                "name": "Syrup, maple, Canadian",
+                "weight": 80.0,
+                "measure": "60.0 milliliter",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19924",
+                "name": "Syrup, NESTLE, chocolate",
+                "weight": 20.0,
+                "measure": "1.0 tablespoon",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19348",
+                "name": "Syrups, chocolate, fudge-type",
+                "weight": 304.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.98",
+                        "gm": 4.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "19345",
+                "name": "Syrups, chocolate, HERSHEY'S Genuine Chocolate Flavored Lite Syrup",
+                "weight": 35.0,
+                "measure": "2.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.49",
+                        "gm": 1.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "19916",
+                "name": "Syrups, chocolate, HERSHEY'S Sugar free, Genuine Chocolate Flavored, Lite Syrup",
+                "weight": 35.0,
+                "measure": "2.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.00",
+                        "gm": 2.87
+                    }
+                ]
+            },
+            {
+                "ndbno": "19349",
+                "name": "Syrups, corn, dark",
+                "weight": 328.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19351",
+                "name": "Syrups, corn, high-fructose",
+                "weight": 310.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19350",
+                "name": "Syrups, corn, light",
+                "weight": 341.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "42040",
+                "name": "Syrups, grenadine",
+                "weight": 20.0,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19352",
+                "name": "Syrups, malt",
+                "weight": 332.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "20.58",
+                        "gm": 6.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "19353",
+                "name": "Syrups, maple",
+                "weight": 20.0,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.01",
+                        "gm": 0.04
+                    }
+                ]
+            },
+            {
+                "ndbno": "19355",
+                "name": "Syrups, sorghum",
+                "weight": 330.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "43026",
+                "name": "Syrups, sugar free",
+                "weight": 240.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.92",
+                        "gm": 0.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "19361",
+                "name": "Syrups, table blends, cane and 15% maple",
+                "weight": 315.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19362",
+                "name": "Syrups, table blends, corn, refiner, and sugar",
+                "weight": 316.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19129",
+                "name": "Syrups, table blends, pancake",
+                "weight": 314.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19128",
+                "name": "Syrups, table blends, pancake, reduced-calorie",
+                "weight": 73.0,
+                "measure": "1.0 serving 1/4 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19360",
+                "name": "Syrups, table blends, pancake, with 2% maple",
+                "weight": 20.0,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19720",
+                "name": "Syrups, table blends, pancake, with 2% maple, with added potassium",
+                "weight": 315.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19113",
+                "name": "Syrups, table blends, pancake, with butter",
+                "weight": 73.0,
+                "measure": "1.0 serving 1/4 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19364",
+                "name": "Toppings, butterscotch or caramel",
+                "weight": 41.0,
+                "measure": "2.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.50",
+                        "gm": 1.21
+                    }
+                ]
+            },
+            {
+                "ndbno": "19365",
+                "name": "Toppings, marshmallow cream",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.23",
+                        "gm": 0.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "19367",
+                "name": "Toppings, nuts in syrup",
+                "weight": 328.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.76",
+                        "gm": 4.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "19366",
+                "name": "Toppings, pineapple",
+                "weight": 340.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.34",
+                        "gm": 0.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "19137",
+                "name": "Toppings, strawberry",
+                "weight": 42.0,
+                "measure": "2.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.08",
+                        "gm": 0.2
+                    }
+                ]
+            }
+        ]
+    }
+}

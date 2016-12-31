@@ -7,7 +7,8 @@ using RestModel;
 using MongoDB;
 using InitDB;
 using System.IO;
-
+using System.Globalization;
+using System.Threading;
 
 namespace InitDailyValuesDB
 {
@@ -16,6 +17,8 @@ namespace InitDailyValuesDB
 
         public static void InitDailyValuesCollection(bool overrideDB)
         {
+            var customCulture = (CultureInfo)Thread.CurrentThread.CurrentCulture.Clone(); customCulture.NumberFormat.NumberDecimalSeparator = ".";
+            Thread.CurrentThread.CurrentCulture = customCulture;
             if (overrideDB)
                 MongoData._database.DropCollection("dailyvalues");
             var unit = new RestDBInterface();
@@ -24,7 +27,7 @@ namespace InitDailyValuesDB
 
         private static void AddDailyValuesFromCSV(RestDBInterface unit)
         {
-            var filePath = Path.Combine(FolderPath, "DailyValues.csv");
+            var filePath = Path.Combine(FolderPath,"..\\", "DailyValues.csv");
 
             unit.DailyValues.Empty();
 

@@ -1,0 +1,1790 @@
+{
+    "report": {
+        "sr": "28",
+        "type": "Full",
+        "food": {
+            "ndbno": "09429",
+            "name": "Pineapple, raw, traditional varieties",
+            "sd": "PINEAPPLE,RAW,TRADITIONAL VAR",
+            "fg": "Fruits and Fruit Juices",
+            "sn": "Ananas comosus",
+            "cn": "",
+            "manu": "",
+            "nf": 0.0,
+            "cf": 3.6,
+            "ff": 8.37,
+            "pf": 3.36,
+            "r": "42%",
+            "rd": "8% core, 13% crown, 22% parings",
+            "ds": "Standard Reference",
+            "nutrients": [
+                {
+                    "nutrient_id": 255,
+                    "name": "Water",
+                    "group": "Proximates",
+                    "unit": "g",
+                    "value": 87.24,
+                    "sourcecode": [
+                        1,
+                        2
+                    ],
+                    "dp": 11,
+                    "se": "2.460",
+                    "measures": [
+                        {
+                            "label": "cup, chunks",
+                            "eqv": 165.0,
+                            "qty": 1.0,
+                            "value": 143.95
+                        },
+                        {
+                            "label": "slice (4-2/3\" dia x 3/4\" thick)",
+                            "eqv": 175.0,
+                            "qty": 1.0,
+                            "value": 152.67
+                        },
+                        {
+                            "label": "fruit",
+                            "eqv": 1002.0,
+                            "qty": 1.0,
+                            "value": 874.14
+                        },
+                        {
+                            "label": "NLEA serving",
+                            "eqv": 112.0,
+                            "qty": 1.0,
+                            "value": 97.71
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 208,
+                    "name": "Energy",
+                    "group": "Proximates",
+                    "unit": "kcal",
+                    "value": 45.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup, chunks",
+                            "eqv": 165.0,
+                            "qty": 1.0,
+                            "value": 74.0
+                        },
+                        {
+                            "label": "slice (4-2/3\" dia x 3/4\" thick)",
+                            "eqv": 175.0,
+                            "qty": 1.0,
+                            "value": 79.0
+                        },
+                        {
+                            "label": "fruit",
+                            "eqv": 1002.0,
+                            "qty": 1.0,
+                            "value": 451.0
+                        },
+                        {
+                            "label": "NLEA serving",
+                            "eqv": 112.0,
+                            "qty": 1.0,
+                            "value": 50.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 268,
+                    "name": "Energy",
+                    "group": "Proximates",
+                    "unit": "kJ",
+                    "value": 190.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup, chunks",
+                            "eqv": 165.0,
+                            "qty": 1.0,
+                            "value": 314.0
+                        },
+                        {
+                            "label": "slice (4-2/3\" dia x 3/4\" thick)",
+                            "eqv": 175.0,
+                            "qty": 1.0,
+                            "value": 332.0
+                        },
+                        {
+                            "label": "fruit",
+                            "eqv": 1002.0,
+                            "qty": 1.0,
+                            "value": 1904.0
+                        },
+                        {
+                            "label": "NLEA serving",
+                            "eqv": 112.0,
+                            "qty": 1.0,
+                            "value": 213.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 203,
+                    "name": "Protein",
+                    "group": "Proximates",
+                    "unit": "g",
+                    "value": 0.55,
+                    "sourcecode": [
+                        1,
+                        2
+                    ],
+                    "dp": 11,
+                    "se": "0.045",
+                    "measures": [
+                        {
+                            "label": "cup, chunks",
+                            "eqv": 165.0,
+                            "qty": 1.0,
+                            "value": 0.91
+                        },
+                        {
+                            "label": "slice (4-2/3\" dia x 3/4\" thick)",
+                            "eqv": 175.0,
+                            "qty": 1.0,
+                            "value": 0.96
+                        },
+                        {
+                            "label": "fruit",
+                            "eqv": 1002.0,
+                            "qty": 1.0,
+                            "value": 5.51
+                        },
+                        {
+                            "label": "NLEA serving",
+                            "eqv": 112.0,
+                            "qty": 1.0,
+                            "value": 0.62
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 204,
+                    "name": "Total lipid (fat)",
+                    "group": "Proximates",
+                    "unit": "g",
+                    "value": 0.13,
+                    "sourcecode": [
+                        1,
+                        2
+                    ],
+                    "dp": 11,
+                    "se": "0.033",
+                    "measures": [
+                        {
+                            "label": "cup, chunks",
+                            "eqv": 165.0,
+                            "qty": 1.0,
+                            "value": 0.21
+                        },
+                        {
+                            "label": "slice (4-2/3\" dia x 3/4\" thick)",
+                            "eqv": 175.0,
+                            "qty": 1.0,
+                            "value": 0.23
+                        },
+                        {
+                            "label": "fruit",
+                            "eqv": 1002.0,
+                            "qty": 1.0,
+                            "value": 1.3
+                        },
+                        {
+                            "label": "NLEA serving",
+                            "eqv": 112.0,
+                            "qty": 1.0,
+                            "value": 0.15
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 207,
+                    "name": "Ash",
+                    "group": "Proximates",
+                    "unit": "g",
+                    "value": 0.27,
+                    "sourcecode": [
+                        1,
+                        2
+                    ],
+                    "dp": 11,
+                    "se": "0.049",
+                    "measures": [
+                        {
+                            "label": "cup, chunks",
+                            "eqv": 165.0,
+                            "qty": 1.0,
+                            "value": 0.45
+                        },
+                        {
+                            "label": "slice (4-2/3\" dia x 3/4\" thick)",
+                            "eqv": 175.0,
+                            "qty": 1.0,
+                            "value": 0.47
+                        },
+                        {
+                            "label": "fruit",
+                            "eqv": 1002.0,
+                            "qty": 1.0,
+                            "value": 2.71
+                        },
+                        {
+                            "label": "NLEA serving",
+                            "eqv": 112.0,
+                            "qty": 1.0,
+                            "value": 0.3
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 205,
+                    "name": "Carbohydrate, by difference",
+                    "group": "Proximates",
+                    "unit": "g",
+                    "value": 11.82,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup, chunks",
+                            "eqv": 165.0,
+                            "qty": 1.0,
+                            "value": 19.5
+                        },
+                        {
+                            "label": "slice (4-2/3\" dia x 3/4\" thick)",
+                            "eqv": 175.0,
+                            "qty": 1.0,
+                            "value": 20.68
+                        },
+                        {
+                            "label": "fruit",
+                            "eqv": 1002.0,
+                            "qty": 1.0,
+                            "value": 118.44
+                        },
+                        {
+                            "label": "NLEA serving",
+                            "eqv": 112.0,
+                            "qty": 1.0,
+                            "value": 13.24
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 269,
+                    "name": "Sugars, total",
+                    "group": "Proximates",
+                    "unit": "g",
+                    "value": 8.29,
+                    "sourcecode": [
+                        2
+                    ],
+                    "dp": 3,
+                    "se": "0.932",
+                    "measures": [
+                        {
+                            "label": "cup, chunks",
+                            "eqv": 165.0,
+                            "qty": 1.0,
+                            "value": 13.68
+                        },
+                        {
+                            "label": "slice (4-2/3\" dia x 3/4\" thick)",
+                            "eqv": 175.0,
+                            "qty": 1.0,
+                            "value": 14.51
+                        },
+                        {
+                            "label": "fruit",
+                            "eqv": 1002.0,
+                            "qty": 1.0,
+                            "value": 83.07
+                        },
+                        {
+                            "label": "NLEA serving",
+                            "eqv": 112.0,
+                            "qty": 1.0,
+                            "value": 9.28
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 210,
+                    "name": "Sucrose",
+                    "group": "Proximates",
+                    "unit": "g",
+                    "value": 4.59,
+                    "sourcecode": [
+                        2
+                    ],
+                    "dp": 3,
+                    "se": "0.729",
+                    "measures": [
+                        {
+                            "label": "cup, chunks",
+                            "eqv": 165.0,
+                            "qty": 1.0,
+                            "value": 7.57
+                        },
+                        {
+                            "label": "slice (4-2/3\" dia x 3/4\" thick)",
+                            "eqv": 175.0,
+                            "qty": 1.0,
+                            "value": 8.03
+                        },
+                        {
+                            "label": "fruit",
+                            "eqv": 1002.0,
+                            "qty": 1.0,
+                            "value": 45.99
+                        },
+                        {
+                            "label": "NLEA serving",
+                            "eqv": 112.0,
+                            "qty": 1.0,
+                            "value": 5.14
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 211,
+                    "name": "Glucose (dextrose)",
+                    "group": "Proximates",
+                    "unit": "g",
+                    "value": 1.76,
+                    "sourcecode": [
+                        2
+                    ],
+                    "dp": 3,
+                    "se": "0.227",
+                    "measures": [
+                        {
+                            "label": "cup, chunks",
+                            "eqv": 165.0,
+                            "qty": 1.0,
+                            "value": 2.9
+                        },
+                        {
+                            "label": "slice (4-2/3\" dia x 3/4\" thick)",
+                            "eqv": 175.0,
+                            "qty": 1.0,
+                            "value": 3.08
+                        },
+                        {
+                            "label": "fruit",
+                            "eqv": 1002.0,
+                            "qty": 1.0,
+                            "value": 17.64
+                        },
+                        {
+                            "label": "NLEA serving",
+                            "eqv": 112.0,
+                            "qty": 1.0,
+                            "value": 1.97
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 212,
+                    "name": "Fructose",
+                    "group": "Proximates",
+                    "unit": "g",
+                    "value": 1.94,
+                    "sourcecode": [
+                        2
+                    ],
+                    "dp": 3,
+                    "se": "0.325",
+                    "measures": [
+                        {
+                            "label": "cup, chunks",
+                            "eqv": 165.0,
+                            "qty": 1.0,
+                            "value": 3.2
+                        },
+                        {
+                            "label": "slice (4-2/3\" dia x 3/4\" thick)",
+                            "eqv": 175.0,
+                            "qty": 1.0,
+                            "value": 3.4
+                        },
+                        {
+                            "label": "fruit",
+                            "eqv": 1002.0,
+                            "qty": 1.0,
+                            "value": 19.44
+                        },
+                        {
+                            "label": "NLEA serving",
+                            "eqv": 112.0,
+                            "qty": 1.0,
+                            "value": 2.17
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 213,
+                    "name": "Lactose",
+                    "group": "Proximates",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": [
+                        2
+                    ],
+                    "dp": 3,
+                    "se": "0.000",
+                    "measures": [
+                        {
+                            "label": "cup, chunks",
+                            "eqv": 165.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "slice (4-2/3\" dia x 3/4\" thick)",
+                            "eqv": 175.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "fruit",
+                            "eqv": 1002.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "NLEA serving",
+                            "eqv": 112.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 214,
+                    "name": "Maltose",
+                    "group": "Proximates",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": [
+                        2
+                    ],
+                    "dp": 3,
+                    "se": "0.000",
+                    "measures": [
+                        {
+                            "label": "cup, chunks",
+                            "eqv": 165.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "slice (4-2/3\" dia x 3/4\" thick)",
+                            "eqv": 175.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "fruit",
+                            "eqv": 1002.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "NLEA serving",
+                            "eqv": 112.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 287,
+                    "name": "Galactose",
+                    "group": "Proximates",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": [
+                        2
+                    ],
+                    "dp": 3,
+                    "se": "0.000",
+                    "measures": [
+                        {
+                            "label": "cup, chunks",
+                            "eqv": 165.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "slice (4-2/3\" dia x 3/4\" thick)",
+                            "eqv": 175.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "fruit",
+                            "eqv": 1002.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "NLEA serving",
+                            "eqv": 112.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 301,
+                    "name": "Calcium, Ca",
+                    "group": "Minerals",
+                    "unit": "mg",
+                    "value": 13.0,
+                    "sourcecode": [
+                        1,
+                        2,
+                        3
+                    ],
+                    "dp": 11,
+                    "se": "1.723",
+                    "measures": [
+                        {
+                            "label": "cup, chunks",
+                            "eqv": 165.0,
+                            "qty": 1.0,
+                            "value": 21.0
+                        },
+                        {
+                            "label": "slice (4-2/3\" dia x 3/4\" thick)",
+                            "eqv": 175.0,
+                            "qty": 1.0,
+                            "value": 23.0
+                        },
+                        {
+                            "label": "fruit",
+                            "eqv": 1002.0,
+                            "qty": 1.0,
+                            "value": 130.0
+                        },
+                        {
+                            "label": "NLEA serving",
+                            "eqv": 112.0,
+                            "qty": 1.0,
+                            "value": 15.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 303,
+                    "name": "Iron, Fe",
+                    "group": "Minerals",
+                    "unit": "mg",
+                    "value": 0.25,
+                    "sourcecode": [
+                        1,
+                        2,
+                        3
+                    ],
+                    "dp": 12,
+                    "se": "0.063",
+                    "measures": [
+                        {
+                            "label": "cup, chunks",
+                            "eqv": 165.0,
+                            "qty": 1.0,
+                            "value": 0.41
+                        },
+                        {
+                            "label": "slice (4-2/3\" dia x 3/4\" thick)",
+                            "eqv": 175.0,
+                            "qty": 1.0,
+                            "value": 0.44
+                        },
+                        {
+                            "label": "fruit",
+                            "eqv": 1002.0,
+                            "qty": 1.0,
+                            "value": 2.5
+                        },
+                        {
+                            "label": "NLEA serving",
+                            "eqv": 112.0,
+                            "qty": 1.0,
+                            "value": 0.28
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 304,
+                    "name": "Magnesium, Mg",
+                    "group": "Minerals",
+                    "unit": "mg",
+                    "value": 12.0,
+                    "sourcecode": [
+                        1,
+                        2,
+                        3
+                    ],
+                    "dp": 12,
+                    "se": "1.630",
+                    "measures": [
+                        {
+                            "label": "cup, chunks",
+                            "eqv": 165.0,
+                            "qty": 1.0,
+                            "value": 20.0
+                        },
+                        {
+                            "label": "slice (4-2/3\" dia x 3/4\" thick)",
+                            "eqv": 175.0,
+                            "qty": 1.0,
+                            "value": 21.0
+                        },
+                        {
+                            "label": "fruit",
+                            "eqv": 1002.0,
+                            "qty": 1.0,
+                            "value": 120.0
+                        },
+                        {
+                            "label": "NLEA serving",
+                            "eqv": 112.0,
+                            "qty": 1.0,
+                            "value": 13.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 305,
+                    "name": "Phosphorus, P",
+                    "group": "Minerals",
+                    "unit": "mg",
+                    "value": 9.0,
+                    "sourcecode": [
+                        1,
+                        2
+                    ],
+                    "dp": 11,
+                    "se": "2.849",
+                    "measures": [
+                        {
+                            "label": "cup, chunks",
+                            "eqv": 165.0,
+                            "qty": 1.0,
+                            "value": 15.0
+                        },
+                        {
+                            "label": "slice (4-2/3\" dia x 3/4\" thick)",
+                            "eqv": 175.0,
+                            "qty": 1.0,
+                            "value": 16.0
+                        },
+                        {
+                            "label": "fruit",
+                            "eqv": 1002.0,
+                            "qty": 1.0,
+                            "value": 90.0
+                        },
+                        {
+                            "label": "NLEA serving",
+                            "eqv": 112.0,
+                            "qty": 1.0,
+                            "value": 10.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 306,
+                    "name": "Potassium, K",
+                    "group": "Minerals",
+                    "unit": "mg",
+                    "value": 125.0,
+                    "sourcecode": [
+                        1,
+                        2,
+                        3
+                    ],
+                    "dp": 12,
+                    "se": "18.777",
+                    "measures": [
+                        {
+                            "label": "cup, chunks",
+                            "eqv": 165.0,
+                            "qty": 1.0,
+                            "value": 206.0
+                        },
+                        {
+                            "label": "slice (4-2/3\" dia x 3/4\" thick)",
+                            "eqv": 175.0,
+                            "qty": 1.0,
+                            "value": 219.0
+                        },
+                        {
+                            "label": "fruit",
+                            "eqv": 1002.0,
+                            "qty": 1.0,
+                            "value": 1252.0
+                        },
+                        {
+                            "label": "NLEA serving",
+                            "eqv": 112.0,
+                            "qty": 1.0,
+                            "value": 140.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 307,
+                    "name": "Sodium, Na",
+                    "group": "Minerals",
+                    "unit": "mg",
+                    "value": 1.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup, chunks",
+                            "eqv": 165.0,
+                            "qty": 1.0,
+                            "value": 2.0
+                        },
+                        {
+                            "label": "slice (4-2/3\" dia x 3/4\" thick)",
+                            "eqv": 175.0,
+                            "qty": 1.0,
+                            "value": 2.0
+                        },
+                        {
+                            "label": "fruit",
+                            "eqv": 1002.0,
+                            "qty": 1.0,
+                            "value": 10.0
+                        },
+                        {
+                            "label": "NLEA serving",
+                            "eqv": 112.0,
+                            "qty": 1.0,
+                            "value": 1.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 309,
+                    "name": "Zinc, Zn",
+                    "group": "Minerals",
+                    "unit": "mg",
+                    "value": 0.08,
+                    "sourcecode": [
+                        1,
+                        2,
+                        3
+                    ],
+                    "dp": 11,
+                    "se": "0.008",
+                    "measures": [
+                        {
+                            "label": "cup, chunks",
+                            "eqv": 165.0,
+                            "qty": 1.0,
+                            "value": 0.13
+                        },
+                        {
+                            "label": "slice (4-2/3\" dia x 3/4\" thick)",
+                            "eqv": 175.0,
+                            "qty": 1.0,
+                            "value": 0.14
+                        },
+                        {
+                            "label": "fruit",
+                            "eqv": 1002.0,
+                            "qty": 1.0,
+                            "value": 0.8
+                        },
+                        {
+                            "label": "NLEA serving",
+                            "eqv": 112.0,
+                            "qty": 1.0,
+                            "value": 0.09
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 312,
+                    "name": "Copper, Cu",
+                    "group": "Minerals",
+                    "unit": "mg",
+                    "value": 0.081,
+                    "sourcecode": [
+                        1,
+                        2,
+                        3
+                    ],
+                    "dp": 12,
+                    "se": "0.013",
+                    "measures": [
+                        {
+                            "label": "cup, chunks",
+                            "eqv": 165.0,
+                            "qty": 1.0,
+                            "value": 0.134
+                        },
+                        {
+                            "label": "slice (4-2/3\" dia x 3/4\" thick)",
+                            "eqv": 175.0,
+                            "qty": 1.0,
+                            "value": 0.142
+                        },
+                        {
+                            "label": "fruit",
+                            "eqv": 1002.0,
+                            "qty": 1.0,
+                            "value": 0.812
+                        },
+                        {
+                            "label": "NLEA serving",
+                            "eqv": 112.0,
+                            "qty": 1.0,
+                            "value": 0.091
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 315,
+                    "name": "Manganese, Mn",
+                    "group": "Minerals",
+                    "unit": "mg",
+                    "value": 1.593,
+                    "sourcecode": [
+                        1,
+                        2,
+                        3
+                    ],
+                    "dp": 12,
+                    "se": "0.473",
+                    "measures": [
+                        {
+                            "label": "cup, chunks",
+                            "eqv": 165.0,
+                            "qty": 1.0,
+                            "value": 2.628
+                        },
+                        {
+                            "label": "slice (4-2/3\" dia x 3/4\" thick)",
+                            "eqv": 175.0,
+                            "qty": 1.0,
+                            "value": 2.788
+                        },
+                        {
+                            "label": "fruit",
+                            "eqv": 1002.0,
+                            "qty": 1.0,
+                            "value": 15.962
+                        },
+                        {
+                            "label": "NLEA serving",
+                            "eqv": 112.0,
+                            "qty": 1.0,
+                            "value": 1.784
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 317,
+                    "name": "Selenium, Se",
+                    "group": "Minerals",
+                    "unit": "\u00b5g",
+                    "value": 0.0,
+                    "sourcecode": [
+                        2
+                    ],
+                    "dp": 2,
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup, chunks",
+                            "eqv": 165.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "slice (4-2/3\" dia x 3/4\" thick)",
+                            "eqv": 175.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "fruit",
+                            "eqv": 1002.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "NLEA serving",
+                            "eqv": 112.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 401,
+                    "name": "Vitamin C, total ascorbic acid",
+                    "group": "Vitamins",
+                    "unit": "mg",
+                    "value": 16.9,
+                    "sourcecode": [
+                        1,
+                        2
+                    ],
+                    "dp": 11,
+                    "se": "2.464",
+                    "measures": [
+                        {
+                            "label": "cup, chunks",
+                            "eqv": 165.0,
+                            "qty": 1.0,
+                            "value": 27.9
+                        },
+                        {
+                            "label": "slice (4-2/3\" dia x 3/4\" thick)",
+                            "eqv": 175.0,
+                            "qty": 1.0,
+                            "value": 29.6
+                        },
+                        {
+                            "label": "fruit",
+                            "eqv": 1002.0,
+                            "qty": 1.0,
+                            "value": 169.3
+                        },
+                        {
+                            "label": "NLEA serving",
+                            "eqv": 112.0,
+                            "qty": 1.0,
+                            "value": 18.9
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 404,
+                    "name": "Thiamin",
+                    "group": "Vitamins",
+                    "unit": "mg",
+                    "value": 0.078,
+                    "sourcecode": [
+                        1,
+                        2
+                    ],
+                    "dp": 10,
+                    "se": "0.002",
+                    "measures": [
+                        {
+                            "label": "cup, chunks",
+                            "eqv": 165.0,
+                            "qty": 1.0,
+                            "value": 0.129
+                        },
+                        {
+                            "label": "slice (4-2/3\" dia x 3/4\" thick)",
+                            "eqv": 175.0,
+                            "qty": 1.0,
+                            "value": 0.137
+                        },
+                        {
+                            "label": "fruit",
+                            "eqv": 1002.0,
+                            "qty": 1.0,
+                            "value": 0.782
+                        },
+                        {
+                            "label": "NLEA serving",
+                            "eqv": 112.0,
+                            "qty": 1.0,
+                            "value": 0.087
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 405,
+                    "name": "Riboflavin",
+                    "group": "Vitamins",
+                    "unit": "mg",
+                    "value": 0.029,
+                    "sourcecode": [
+                        1,
+                        2
+                    ],
+                    "dp": 10,
+                    "se": "0.016",
+                    "measures": [
+                        {
+                            "label": "cup, chunks",
+                            "eqv": 165.0,
+                            "qty": 1.0,
+                            "value": 0.048
+                        },
+                        {
+                            "label": "slice (4-2/3\" dia x 3/4\" thick)",
+                            "eqv": 175.0,
+                            "qty": 1.0,
+                            "value": 0.051
+                        },
+                        {
+                            "label": "fruit",
+                            "eqv": 1002.0,
+                            "qty": 1.0,
+                            "value": 0.291
+                        },
+                        {
+                            "label": "NLEA serving",
+                            "eqv": 112.0,
+                            "qty": 1.0,
+                            "value": 0.032
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 406,
+                    "name": "Niacin",
+                    "group": "Vitamins",
+                    "unit": "mg",
+                    "value": 0.47,
+                    "sourcecode": [
+                        1,
+                        2
+                    ],
+                    "dp": 6,
+                    "se": "0.283",
+                    "measures": [
+                        {
+                            "label": "cup, chunks",
+                            "eqv": 165.0,
+                            "qty": 1.0,
+                            "value": 0.775
+                        },
+                        {
+                            "label": "slice (4-2/3\" dia x 3/4\" thick)",
+                            "eqv": 175.0,
+                            "qty": 1.0,
+                            "value": 0.823
+                        },
+                        {
+                            "label": "fruit",
+                            "eqv": 1002.0,
+                            "qty": 1.0,
+                            "value": 4.709
+                        },
+                        {
+                            "label": "NLEA serving",
+                            "eqv": 112.0,
+                            "qty": 1.0,
+                            "value": 0.526
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 410,
+                    "name": "Pantothenic acid",
+                    "group": "Vitamins",
+                    "unit": "mg",
+                    "value": 0.193,
+                    "sourcecode": [
+                        1,
+                        2
+                    ],
+                    "dp": 10,
+                    "se": "0.032",
+                    "measures": [
+                        {
+                            "label": "cup, chunks",
+                            "eqv": 165.0,
+                            "qty": 1.0,
+                            "value": 0.318
+                        },
+                        {
+                            "label": "slice (4-2/3\" dia x 3/4\" thick)",
+                            "eqv": 175.0,
+                            "qty": 1.0,
+                            "value": 0.338
+                        },
+                        {
+                            "label": "fruit",
+                            "eqv": 1002.0,
+                            "qty": 1.0,
+                            "value": 1.934
+                        },
+                        {
+                            "label": "NLEA serving",
+                            "eqv": 112.0,
+                            "qty": 1.0,
+                            "value": 0.216
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 415,
+                    "name": "Vitamin B-6",
+                    "group": "Vitamins",
+                    "unit": "mg",
+                    "value": 0.106,
+                    "sourcecode": [
+                        1,
+                        2
+                    ],
+                    "dp": 10,
+                    "se": "0.003",
+                    "measures": [
+                        {
+                            "label": "cup, chunks",
+                            "eqv": 165.0,
+                            "qty": 1.0,
+                            "value": 0.175
+                        },
+                        {
+                            "label": "slice (4-2/3\" dia x 3/4\" thick)",
+                            "eqv": 175.0,
+                            "qty": 1.0,
+                            "value": 0.185
+                        },
+                        {
+                            "label": "fruit",
+                            "eqv": 1002.0,
+                            "qty": 1.0,
+                            "value": 1.062
+                        },
+                        {
+                            "label": "NLEA serving",
+                            "eqv": 112.0,
+                            "qty": 1.0,
+                            "value": 0.119
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 417,
+                    "name": "Folate, total",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 11.0,
+                    "sourcecode": [
+                        1,
+                        2
+                    ],
+                    "dp": 10,
+                    "se": "2.313",
+                    "measures": [
+                        {
+                            "label": "cup, chunks",
+                            "eqv": 165.0,
+                            "qty": 1.0,
+                            "value": 18.0
+                        },
+                        {
+                            "label": "slice (4-2/3\" dia x 3/4\" thick)",
+                            "eqv": 175.0,
+                            "qty": 1.0,
+                            "value": 19.0
+                        },
+                        {
+                            "label": "fruit",
+                            "eqv": 1002.0,
+                            "qty": 1.0,
+                            "value": 110.0
+                        },
+                        {
+                            "label": "NLEA serving",
+                            "eqv": 112.0,
+                            "qty": 1.0,
+                            "value": 12.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 432,
+                    "name": "Folate, food",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 11.0,
+                    "sourcecode": "",
+                    "dp": 10,
+                    "se": "2.313",
+                    "measures": [
+                        {
+                            "label": "cup, chunks",
+                            "eqv": 165.0,
+                            "qty": 1.0,
+                            "value": 18.0
+                        },
+                        {
+                            "label": "slice (4-2/3\" dia x 3/4\" thick)",
+                            "eqv": 175.0,
+                            "qty": 1.0,
+                            "value": 19.0
+                        },
+                        {
+                            "label": "fruit",
+                            "eqv": 1002.0,
+                            "qty": 1.0,
+                            "value": 110.0
+                        },
+                        {
+                            "label": "NLEA serving",
+                            "eqv": 112.0,
+                            "qty": 1.0,
+                            "value": 12.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 421,
+                    "name": "Choline, total",
+                    "group": "Vitamins",
+                    "unit": "mg",
+                    "value": 5.6,
+                    "sourcecode": [
+                        4
+                    ],
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup, chunks",
+                            "eqv": 165.0,
+                            "qty": 1.0,
+                            "value": 9.2
+                        },
+                        {
+                            "label": "slice (4-2/3\" dia x 3/4\" thick)",
+                            "eqv": 175.0,
+                            "qty": 1.0,
+                            "value": 9.8
+                        },
+                        {
+                            "label": "fruit",
+                            "eqv": 1002.0,
+                            "qty": 1.0,
+                            "value": 56.1
+                        },
+                        {
+                            "label": "NLEA serving",
+                            "eqv": 112.0,
+                            "qty": 1.0,
+                            "value": 6.3
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 454,
+                    "name": "Betaine",
+                    "group": "Vitamins",
+                    "unit": "mg",
+                    "value": 0.1,
+                    "sourcecode": [
+                        4
+                    ],
+                    "dp": 1,
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup, chunks",
+                            "eqv": 165.0,
+                            "qty": 1.0,
+                            "value": 0.2
+                        },
+                        {
+                            "label": "slice (4-2/3\" dia x 3/4\" thick)",
+                            "eqv": 175.0,
+                            "qty": 1.0,
+                            "value": 0.2
+                        },
+                        {
+                            "label": "fruit",
+                            "eqv": 1002.0,
+                            "qty": 1.0,
+                            "value": 1.0
+                        },
+                        {
+                            "label": "NLEA serving",
+                            "eqv": 112.0,
+                            "qty": 1.0,
+                            "value": 0.1
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 320,
+                    "name": "Vitamin A, RAE",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 3.0,
+                    "sourcecode": [
+                        1,
+                        2
+                    ],
+                    "dp": 10,
+                    "se": "0.312",
+                    "measures": [
+                        {
+                            "label": "cup, chunks",
+                            "eqv": 165.0,
+                            "qty": 1.0,
+                            "value": 5.0
+                        },
+                        {
+                            "label": "slice (4-2/3\" dia x 3/4\" thick)",
+                            "eqv": 175.0,
+                            "qty": 1.0,
+                            "value": 5.0
+                        },
+                        {
+                            "label": "fruit",
+                            "eqv": 1002.0,
+                            "qty": 1.0,
+                            "value": 30.0
+                        },
+                        {
+                            "label": "NLEA serving",
+                            "eqv": 112.0,
+                            "qty": 1.0,
+                            "value": 3.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 321,
+                    "name": "Carotene, beta",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 31.0,
+                    "sourcecode": [
+                        1,
+                        2
+                    ],
+                    "dp": 10,
+                    "se": "3.750",
+                    "measures": [
+                        {
+                            "label": "cup, chunks",
+                            "eqv": 165.0,
+                            "qty": 1.0,
+                            "value": 51.0
+                        },
+                        {
+                            "label": "slice (4-2/3\" dia x 3/4\" thick)",
+                            "eqv": 175.0,
+                            "qty": 1.0,
+                            "value": 54.0
+                        },
+                        {
+                            "label": "fruit",
+                            "eqv": 1002.0,
+                            "qty": 1.0,
+                            "value": 311.0
+                        },
+                        {
+                            "label": "NLEA serving",
+                            "eqv": 112.0,
+                            "qty": 1.0,
+                            "value": 35.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 322,
+                    "name": "Carotene, alpha",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 0.0,
+                    "sourcecode": [
+                        2
+                    ],
+                    "dp": 2,
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup, chunks",
+                            "eqv": 165.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "slice (4-2/3\" dia x 3/4\" thick)",
+                            "eqv": 175.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "fruit",
+                            "eqv": 1002.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "NLEA serving",
+                            "eqv": 112.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 334,
+                    "name": "Cryptoxanthin, beta",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 0.0,
+                    "sourcecode": [
+                        2
+                    ],
+                    "dp": 2,
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup, chunks",
+                            "eqv": 165.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "slice (4-2/3\" dia x 3/4\" thick)",
+                            "eqv": 175.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "fruit",
+                            "eqv": 1002.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "NLEA serving",
+                            "eqv": 112.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 318,
+                    "name": "Vitamin A, IU",
+                    "group": "Vitamins",
+                    "unit": "IU",
+                    "value": 52.0,
+                    "sourcecode": [
+                        1,
+                        2
+                    ],
+                    "dp": 10,
+                    "se": "6.250",
+                    "measures": [
+                        {
+                            "label": "cup, chunks",
+                            "eqv": 165.0,
+                            "qty": 1.0,
+                            "value": 86.0
+                        },
+                        {
+                            "label": "slice (4-2/3\" dia x 3/4\" thick)",
+                            "eqv": 175.0,
+                            "qty": 1.0,
+                            "value": 91.0
+                        },
+                        {
+                            "label": "fruit",
+                            "eqv": 1002.0,
+                            "qty": 1.0,
+                            "value": 521.0
+                        },
+                        {
+                            "label": "NLEA serving",
+                            "eqv": 112.0,
+                            "qty": 1.0,
+                            "value": 58.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 337,
+                    "name": "Lycopene",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 0.0,
+                    "sourcecode": [
+                        2
+                    ],
+                    "dp": 2,
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup, chunks",
+                            "eqv": 165.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "slice (4-2/3\" dia x 3/4\" thick)",
+                            "eqv": 175.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "fruit",
+                            "eqv": 1002.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "NLEA serving",
+                            "eqv": 112.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 338,
+                    "name": "Lutein + zeaxanthin",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 0.0,
+                    "sourcecode": [
+                        2
+                    ],
+                    "dp": 2,
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup, chunks",
+                            "eqv": 165.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "slice (4-2/3\" dia x 3/4\" thick)",
+                            "eqv": 175.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "fruit",
+                            "eqv": 1002.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "NLEA serving",
+                            "eqv": 112.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 328,
+                    "name": "Vitamin D (D2 + D3)",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup, chunks",
+                            "eqv": 165.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "slice (4-2/3\" dia x 3/4\" thick)",
+                            "eqv": 175.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "fruit",
+                            "eqv": 1002.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "NLEA serving",
+                            "eqv": 112.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 324,
+                    "name": "Vitamin D",
+                    "group": "Vitamins",
+                    "unit": "IU",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup, chunks",
+                            "eqv": 165.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "slice (4-2/3\" dia x 3/4\" thick)",
+                            "eqv": 175.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "fruit",
+                            "eqv": 1002.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "NLEA serving",
+                            "eqv": 112.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 430,
+                    "name": "Vitamin K (phylloquinone)",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 0.7,
+                    "sourcecode": [
+                        2
+                    ],
+                    "dp": 2,
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup, chunks",
+                            "eqv": 165.0,
+                            "qty": 1.0,
+                            "value": 1.2
+                        },
+                        {
+                            "label": "slice (4-2/3\" dia x 3/4\" thick)",
+                            "eqv": 175.0,
+                            "qty": 1.0,
+                            "value": 1.2
+                        },
+                        {
+                            "label": "fruit",
+                            "eqv": 1002.0,
+                            "qty": 1.0,
+                            "value": 7.0
+                        },
+                        {
+                            "label": "NLEA serving",
+                            "eqv": 112.0,
+                            "qty": 1.0,
+                            "value": 0.8
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 605,
+                    "name": "Fatty acids, total trans",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup, chunks",
+                            "eqv": 165.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "slice (4-2/3\" dia x 3/4\" thick)",
+                            "eqv": 175.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "fruit",
+                            "eqv": 1002.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "NLEA serving",
+                            "eqv": 112.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                }
+            ]
+        },
+        "sources": [
+            {
+                "id": 1,
+                "title": "Nutrient Content of Pineapple",
+                "authors": "Produce Marketing Association (PMA)",
+                "vol": "",
+                "iss": "",
+                "year": "1981"
+            },
+            {
+                "id": 2,
+                "title": "National Food and Nutrient Analysis Program Wave 5k",
+                "authors": "Nutrient Data Laboratory, ARS, USDA",
+                "vol": "Beltsville",
+                "iss": "MD",
+                "year": "2001"
+            },
+            {
+                "id": 3,
+                "title": "Atomic absorption and atomic emission spectrometry for the determination of the trace element content of selected fruits consumed in the United States",
+                "authors": "N.J. Miller-Ihli",
+                "vol": "9",
+                "iss": "4",
+                "year": "1996"
+            },
+            {
+                "id": 4,
+                "title": "National Food and Nutrient Analysis Program Wave 5b",
+                "authors": "Nutrient Data Laboratory, ARS, USDA",
+                "vol": "Beltsville",
+                "iss": "MD",
+                "year": "2000"
+            }
+        ],
+        "footnotes": [
+            {
+                "id": "a",
+                "desc": "Values based on Champaka and Smoothe Cayenne varieties."
+            }
+        ],
+        "langual": [
+            
+        ]
+    }
+}

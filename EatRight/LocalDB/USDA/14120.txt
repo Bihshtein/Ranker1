@@ -1,0 +1,260 @@
+{
+    "report": {
+        "sr": "28",
+        "type": "Full",
+        "food": {
+            "ndbno": "14120",
+            "name": "Alcoholic beverage, wine, table, white, Muller Thurgau",
+            "sd": "ALCOHOLIC BEV,WINE,TABLE,WHITE,MULLER THURGAU",
+            "fg": "Beverages",
+            "sn": "",
+            "cn": "",
+            "manu": "",
+            "nf": 6.25,
+            "cf": 3.92,
+            "ff": 8.37,
+            "pf": 3.36,
+            "r": "0%",
+            "rd": "",
+            "ds": "Standard Reference",
+            "nutrients": [
+                {
+                    "nutrient_id": 255,
+                    "name": "Water",
+                    "group": "Proximates",
+                    "unit": "g",
+                    "value": 87.28,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.5,
+                            "qty": 1.0,
+                            "value": 25.75
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 148.0,
+                            "qty": 1.0,
+                            "value": 129.17
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 208,
+                    "name": "Energy",
+                    "group": "Proximates",
+                    "unit": "kcal",
+                    "value": 76.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.5,
+                            "qty": 1.0,
+                            "value": 22.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 148.0,
+                            "qty": 1.0,
+                            "value": 112.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 268,
+                    "name": "Energy",
+                    "group": "Proximates",
+                    "unit": "kJ",
+                    "value": 319.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.5,
+                            "qty": 1.0,
+                            "value": 94.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 148.0,
+                            "qty": 1.0,
+                            "value": 472.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 203,
+                    "name": "Protein",
+                    "group": "Proximates",
+                    "unit": "g",
+                    "value": 0.07,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.5,
+                            "qty": 1.0,
+                            "value": 0.02
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 148.0,
+                            "qty": 1.0,
+                            "value": 0.1
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 204,
+                    "name": "Total lipid (fat)",
+                    "group": "Proximates",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.5,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 148.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 207,
+                    "name": "Ash",
+                    "group": "Proximates",
+                    "unit": "g",
+                    "value": 0.15,
+                    "sourcecode": [
+                        1
+                    ],
+                    "dp": 13,
+                    "se": "0.012",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.5,
+                            "qty": 1.0,
+                            "value": 0.04
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 148.0,
+                            "qty": 1.0,
+                            "value": 0.22
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 205,
+                    "name": "Carbohydrate, by difference",
+                    "group": "Proximates",
+                    "unit": "g",
+                    "value": 3.48,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.5,
+                            "qty": 1.0,
+                            "value": 1.03
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 148.0,
+                            "qty": 1.0,
+                            "value": 5.15
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 605,
+                    "name": "Fatty acids, total trans",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.5,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 148.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 221,
+                    "name": "Alcohol, ethyl",
+                    "group": "Other",
+                    "unit": "g",
+                    "value": 9.0,
+                    "sourcecode": [
+                        1
+                    ],
+                    "dp": 13,
+                    "se": "0.365",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.5,
+                            "qty": 1.0,
+                            "value": 2.7
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 148.0,
+                            "qty": 1.0,
+                            "value": 13.3
+                        }
+                    ]
+                }
+            ]
+        },
+        "sources": [
+            {
+                "id": 1,
+                "title": "Wine and malt beverage data from TTB",
+                "authors": "Alcohol and Tobacco Tax and Trade Bureau",
+                "vol": "Beltsville",
+                "iss": "MD",
+                "year": "2004"
+            }
+        ],
+        "footnotes": [
+            
+        ],
+        "langual": [
+            
+        ]
+    }
+}

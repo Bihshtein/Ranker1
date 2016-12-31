@@ -1,0 +1,5507 @@
+{
+    "report": {
+        "sr": "28",
+        "groups": [
+            {
+                "id": "1400",
+                "description": "Beverages"
+            }
+        ],
+        "subset": "All foods",
+        "end": 366,
+        "start": 0,
+        "total": 366,
+        "foods": [
+            {
+                "ndbno": "14006",
+                "name": "Alcoholic beverage, beer, light",
+                "weight": 29.5,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.07",
+                        "gm": 0.24
+                    }
+                ]
+            },
+            {
+                "ndbno": "14007",
+                "name": "Alcoholic beverage, beer, light, BUD LIGHT",
+                "weight": 29.5,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.07",
+                        "gm": 0.25
+                    }
+                ]
+            },
+            {
+                "ndbno": "14005",
+                "name": "Alcoholic beverage, beer, light, BUDWEISER SELECT",
+                "weight": 29.5,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.06",
+                        "gm": 0.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "14248",
+                "name": "Alcoholic beverage, beer, light, higher alcohol",
+                "weight": 356.0,
+                "measure": "12.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.89",
+                        "gm": 0.25
+                    }
+                ]
+            },
+            {
+                "ndbno": "14013",
+                "name": "Alcoholic beverage, beer, light, low carb",
+                "weight": 29.5,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.05",
+                        "gm": 0.17
+                    }
+                ]
+            },
+            {
+                "ndbno": "14003",
+                "name": "Alcoholic beverage, beer, regular, all",
+                "weight": 29.7,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.14",
+                        "gm": 0.46
+                    }
+                ]
+            },
+            {
+                "ndbno": "14004",
+                "name": "Alcoholic beverage, beer, regular, BUDWEISER",
+                "weight": 29.8,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.11",
+                        "gm": 0.36
+                    }
+                ]
+            },
+            {
+                "ndbno": "14034",
+                "name": "Alcoholic beverage, creme de menthe, 72 proof",
+                "weight": 33.6,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14009",
+                "name": "Alcoholic beverage, daiquiri, canned",
+                "weight": 30.5,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14010",
+                "name": "Alcoholic beverage, daiquiri, prepared-from-recipe",
+                "weight": 30.2,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.02",
+                        "gm": 0.06
+                    }
+                ]
+            },
+            {
+                "ndbno": "14533",
+                "name": "Alcoholic beverage, distilled, all (gin, rum, vodka, whiskey) 100 proof",
+                "weight": 27.8,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14037",
+                "name": "Alcoholic beverage, distilled, all (gin, rum, vodka, whiskey) 80 proof",
+                "weight": 27.8,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14550",
+                "name": "Alcoholic beverage, distilled, all (gin, rum, vodka, whiskey) 86 proof",
+                "weight": 27.8,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14551",
+                "name": "Alcoholic beverage, distilled, all (gin, rum, vodka, whiskey) 90 proof",
+                "weight": 27.8,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14532",
+                "name": "Alcoholic beverage, distilled, all (gin, rum, vodka, whiskey) 94 proof",
+                "weight": 27.8,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14049",
+                "name": "Alcoholic beverage, distilled, gin, 90 proof",
+                "weight": 27.8,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14050",
+                "name": "Alcoholic beverage, distilled, rum, 80 proof",
+                "weight": 27.8,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14051",
+                "name": "Alcoholic beverage, distilled, vodka, 80 proof",
+                "weight": 27.8,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14052",
+                "name": "Alcoholic beverage, distilled, whiskey, 86 proof",
+                "weight": 27.8,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14415",
+                "name": "Alcoholic beverage, liqueur, coffee with cream, 34 proof",
+                "weight": 31.1,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.87",
+                        "gm": 2.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "14414",
+                "name": "Alcoholic beverage, liqueur, coffee, 53 proof",
+                "weight": 34.8,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.03",
+                        "gm": 0.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "14534",
+                "name": "Alcoholic beverage, liqueur, coffee, 63 proof",
+                "weight": 34.8,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.03",
+                        "gm": 0.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "14239",
+                "name": "Alcoholic beverage, malt beer, hard lemonade",
+                "weight": 335.0,
+                "measure": "11.2 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14015",
+                "name": "Alcoholic beverage, pina colada, canned",
+                "weight": 32.6,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.20",
+                        "gm": 0.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "14017",
+                "name": "Alcoholic beverage, pina colada, prepared-from-recipe",
+                "weight": 31.4,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.13",
+                        "gm": 0.42
+                    }
+                ]
+            },
+            {
+                "ndbno": "43479",
+                "name": "Alcoholic beverage, rice (sake)",
+                "weight": 29.1,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.15",
+                        "gm": 0.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "14019",
+                "name": "Alcoholic beverage, tequila sunrise, canned",
+                "weight": 31.1,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.09",
+                        "gm": 0.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "14531",
+                "name": "Alcoholic beverage, whiskey sour",
+                "weight": 30.4,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14027",
+                "name": "Alcoholic beverage, whiskey sour, canned",
+                "weight": 30.8,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14029",
+                "name": "Alcoholic beverage, whiskey sour, prepared from item 14028",
+                "weight": 30.4,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.02",
+                        "gm": 0.06
+                    }
+                ]
+            },
+            {
+                "ndbno": "14025",
+                "name": "Alcoholic beverage, whiskey sour, prepared with water, whiskey and powder mix",
+                "weight": 29.4,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.03",
+                        "gm": 0.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "43154",
+                "name": "Alcoholic beverage, wine, cooking",
+                "weight": 4.9,
+                "measure": "1.0 tsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.02",
+                        "gm": 0.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "14536",
+                "name": "Alcoholic beverage, wine, dessert, dry",
+                "weight": 29.5,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.06",
+                        "gm": 0.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "14057",
+                "name": "Alcoholic beverage, wine, dessert, sweet",
+                "weight": 29.5,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.06",
+                        "gm": 0.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "43155",
+                "name": "Alcoholic beverage, wine, light",
+                "weight": 29.5,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.02",
+                        "gm": 0.07
+                    }
+                ]
+            },
+            {
+                "ndbno": "14084",
+                "name": "Alcoholic beverage, wine, table, all",
+                "weight": 148.0,
+                "measure": "1.0 serving (5 fl oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.10",
+                        "gm": 0.07
+                    }
+                ]
+            },
+            {
+                "ndbno": "14096",
+                "name": "Alcoholic beverage, wine, table, red",
+                "weight": 29.4,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.02",
+                        "gm": 0.07
+                    }
+                ]
+            },
+            {
+                "ndbno": "14101",
+                "name": "Alcoholic Beverage, wine, table, red, Barbera",
+                "weight": 29.4,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.02",
+                        "gm": 0.07
+                    }
+                ]
+            },
+            {
+                "ndbno": "14152",
+                "name": "Alcoholic Beverage, wine, table, red, Burgundy",
+                "weight": 29.5,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.02",
+                        "gm": 0.07
+                    }
+                ]
+            },
+            {
+                "ndbno": "14098",
+                "name": "Alcoholic Beverage, wine, table, red, Cabernet Franc",
+                "weight": 29.4,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.02",
+                        "gm": 0.07
+                    }
+                ]
+            },
+            {
+                "ndbno": "14097",
+                "name": "Alcoholic Beverage, wine, table, red, Cabernet Sauvignon",
+                "weight": 29.4,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.02",
+                        "gm": 0.07
+                    }
+                ]
+            },
+            {
+                "ndbno": "14109",
+                "name": "Alcoholic Beverage, wine, table, red, Carignane",
+                "weight": 29.4,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.02",
+                        "gm": 0.07
+                    }
+                ]
+            },
+            {
+                "ndbno": "14105",
+                "name": "Alcoholic Beverage, wine, table, red, Claret",
+                "weight": 29.4,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.02",
+                        "gm": 0.07
+                    }
+                ]
+            },
+            {
+                "ndbno": "14158",
+                "name": "Alcoholic Beverage, wine, table, red, Gamay",
+                "weight": 29.4,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.02",
+                        "gm": 0.07
+                    }
+                ]
+            },
+            {
+                "ndbno": "14107",
+                "name": "Alcoholic Beverage, wine, table, red, Lemberger",
+                "weight": 29.4,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.02",
+                        "gm": 0.07
+                    }
+                ]
+            },
+            {
+                "ndbno": "14602",
+                "name": "Alcoholic Beverage, wine, table, red, Merlot",
+                "weight": 29.4,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.02",
+                        "gm": 0.07
+                    }
+                ]
+            },
+            {
+                "ndbno": "14159",
+                "name": "Alcoholic Beverage, wine, table, red, Mouvedre",
+                "weight": 29.4,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.02",
+                        "gm": 0.07
+                    }
+                ]
+            },
+            {
+                "ndbno": "14103",
+                "name": "Alcoholic Beverage, wine, table, red, Petite Sirah",
+                "weight": 29.5,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.02",
+                        "gm": 0.07
+                    }
+                ]
+            },
+            {
+                "ndbno": "14099",
+                "name": "Alcoholic Beverage, wine, table, red, Pinot Noir",
+                "weight": 29.4,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.02",
+                        "gm": 0.07
+                    }
+                ]
+            },
+            {
+                "ndbno": "14108",
+                "name": "Alcoholic Beverage, wine, table, red, Sangiovese",
+                "weight": 29.4,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.02",
+                        "gm": 0.07
+                    }
+                ]
+            },
+            {
+                "ndbno": "14100",
+                "name": "Alcoholic Beverage, wine, table, red, Syrah",
+                "weight": 29.4,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.02",
+                        "gm": 0.07
+                    }
+                ]
+            },
+            {
+                "ndbno": "14102",
+                "name": "Alcoholic Beverage, wine, table, red, Zinfandel",
+                "weight": 29.4,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.02",
+                        "gm": 0.07
+                    }
+                ]
+            },
+            {
+                "ndbno": "14106",
+                "name": "Alcoholic beverage, wine, table, white",
+                "weight": 29.4,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.02",
+                        "gm": 0.07
+                    }
+                ]
+            },
+            {
+                "ndbno": "14160",
+                "name": "Alcoholic beverage, wine, table, white, Chardonnay",
+                "weight": 29.3,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.02",
+                        "gm": 0.07
+                    }
+                ]
+            },
+            {
+                "ndbno": "14116",
+                "name": "Alcoholic beverage, wine, table, white, Chenin Blanc",
+                "weight": 29.5,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.02",
+                        "gm": 0.07
+                    }
+                ]
+            },
+            {
+                "ndbno": "14117",
+                "name": "Alcoholic beverage, wine, table, white, Fume Blanc",
+                "weight": 29.3,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.02",
+                        "gm": 0.07
+                    }
+                ]
+            },
+            {
+                "ndbno": "14124",
+                "name": "Alcoholic beverage, wine, table, white, Gewurztraminer",
+                "weight": 29.5,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.02",
+                        "gm": 0.07
+                    }
+                ]
+            },
+            {
+                "ndbno": "14135",
+                "name": "Alcoholic beverage, wine, table, white, late harvest",
+                "weight": 30.8,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.02",
+                        "gm": 0.07
+                    }
+                ]
+            },
+            {
+                "ndbno": "14125",
+                "name": "Alcoholic beverage, wine, table, white, late harvest, Gewurztraminer",
+                "weight": 30.5,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.02",
+                        "gm": 0.07
+                    }
+                ]
+            },
+            {
+                "ndbno": "14120",
+                "name": "Alcoholic beverage, wine, table, white, Muller Thurgau",
+                "weight": 29.5,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.02",
+                        "gm": 0.07
+                    }
+                ]
+            },
+            {
+                "ndbno": "14140",
+                "name": "Alcoholic beverage, wine, table, white, Muscat",
+                "weight": 30.0,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.02",
+                        "gm": 0.07
+                    }
+                ]
+            },
+            {
+                "ndbno": "14138",
+                "name": "Alcoholic beverage, wine, table, white, Pinot Blanc",
+                "weight": 29.3,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.02",
+                        "gm": 0.07
+                    }
+                ]
+            },
+            {
+                "ndbno": "14113",
+                "name": "Alcoholic beverage, wine, table, white, Pinot Gris (Grigio)",
+                "weight": 29.3,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.02",
+                        "gm": 0.07
+                    }
+                ]
+            },
+            {
+                "ndbno": "14132",
+                "name": "Alcoholic beverage, wine, table, white, Riesling",
+                "weight": 29.6,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.02",
+                        "gm": 0.07
+                    }
+                ]
+            },
+            {
+                "ndbno": "14134",
+                "name": "Alcoholic beverage, wine, table, white, Sauvignon Blanc",
+                "weight": 29.3,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.02",
+                        "gm": 0.07
+                    }
+                ]
+            },
+            {
+                "ndbno": "14126",
+                "name": "Alcoholic beverage, wine, table, white, Semillon",
+                "weight": 29.5,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.02",
+                        "gm": 0.07
+                    }
+                ]
+            },
+            {
+                "ndbno": "14251",
+                "name": "Alcoholic beverages, beer, higher alcohol",
+                "weight": 30.6,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.28",
+                        "gm": 0.9
+                    }
+                ]
+            },
+            {
+                "ndbno": "14253",
+                "name": "Alcoholic beverages, wine, rose",
+                "weight": 30.3,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.11",
+                        "gm": 0.36
+                    }
+                ]
+            },
+            {
+                "ndbno": "14021",
+                "name": "Beverages,  Energy drink, Citrus",
+                "weight": 240.0,
+                "measure": "8.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14035",
+                "name": "Beverages, ABBOTT, EAS soy protein powder",
+                "weight": 44.0,
+                "measure": "1.0 scoop",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "20.95",
+                        "gm": 47.62
+                    }
+                ]
+            },
+            {
+                "ndbno": "14033",
+                "name": "Beverages, ABBOTT, EAS whey protein powder",
+                "weight": 39.0,
+                "measure": "2.0 scoop",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "26.00",
+                        "gm": 66.67
+                    }
+                ]
+            },
+            {
+                "ndbno": "43528",
+                "name": "Beverages, ABBOTT, ENSURE PLUS, ready-to-drink",
+                "weight": 252.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.00",
+                        "gm": 5.16
+                    }
+                ]
+            },
+            {
+                "ndbno": "14062",
+                "name": "Beverages, ABBOTT, ENSURE, Nutritional Shake, Ready-to-Drink",
+                "weight": 254.0,
+                "measure": "8.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.65",
+                        "gm": 3.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "14056",
+                "name": "Beverages, Acai berry drink, fortified",
+                "weight": 266.0,
+                "measure": "8.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.21",
+                        "gm": 0.83
+                    }
+                ]
+            },
+            {
+                "ndbno": "14054",
+                "name": "Beverages, almond milk, chocolate, ready-to-drink",
+                "weight": 240.0,
+                "measure": "8.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.51",
+                        "gm": 0.63
+                    }
+                ]
+            },
+            {
+                "ndbno": "14016",
+                "name": "Beverages, almond milk, sweetened, vanilla flavor, ready-to-drink",
+                "weight": 240.0,
+                "measure": "8.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.01",
+                        "gm": 0.42
+                    }
+                ]
+            },
+            {
+                "ndbno": "14091",
+                "name": "Beverages, almond milk, unsweetened, shelf stable",
+                "weight": 262.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.55",
+                        "gm": 0.59
+                    }
+                ]
+            },
+            {
+                "ndbno": "14216",
+                "name": "Beverages, aloe vera juice drink, fortified with Vitamin C",
+                "weight": 240.0,
+                "measure": "8.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14250",
+                "name": "Beverages, AMBER, hard cider",
+                "weight": 355.0,
+                "measure": "12.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14162",
+                "name": "Beverages, Apple juice drink, light, fortified with vitamin C",
+                "weight": 240.0,
+                "measure": "8.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14475",
+                "name": "Beverages, ARIZONA, tea, ready-to-drink, lemon",
+                "weight": 30.6,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14121",
+                "name": "Beverages, carbonated, club soda",
+                "weight": 29.6,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14400",
+                "name": "Beverages, carbonated, cola, fast-food cola",
+                "weight": 258.0,
+                "measure": "1.0 serving child 12 fl oz, without ice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.18",
+                        "gm": 0.07
+                    }
+                ]
+            },
+            {
+                "ndbno": "14148",
+                "name": "Beverages, carbonated, cola, regular",
+                "weight": 30.7,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14147",
+                "name": "Beverages, carbonated, cola, without caffeine",
+                "weight": 30.7,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14136",
+                "name": "Beverages, carbonated, ginger ale",
+                "weight": 30.5,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14142",
+                "name": "Beverages, carbonated, grape soda",
+                "weight": 31.0,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14144",
+                "name": "Beverages, carbonated, lemon-lime soda, no caffeine",
+                "weight": 30.8,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.03",
+                        "gm": 0.09
+                    }
+                ]
+            },
+            {
+                "ndbno": "14165",
+                "name": "Beverages, carbonated, limeade, high caffeine",
+                "weight": 253.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14416",
+                "name": "Beverages, carbonated, low calorie, cola or pepper-type, with aspartame, contains caffeine",
+                "weight": 29.6,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.03",
+                        "gm": 0.11
+                    }
+                ]
+            },
+            {
+                "ndbno": "14146",
+                "name": "Beverages, carbonated, low calorie, cola or pepper-type, with aspartame, without caffeine",
+                "weight": 29.6,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.04",
+                        "gm": 0.12
+                    }
+                ]
+            },
+            {
+                "ndbno": "14166",
+                "name": "Beverages, carbonated, low calorie, cola or pepper-types, with sodium saccharin, contains caffeine",
+                "weight": 29.6,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14143",
+                "name": "Beverages, carbonated, low calorie, other than cola or pepper,  without caffeine",
+                "weight": 29.6,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.03",
+                        "gm": 0.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "14151",
+                "name": "Beverages, carbonated, low calorie, other than cola or pepper, with aspartame, contains caffeine",
+                "weight": 29.6,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.03",
+                        "gm": 0.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "14150",
+                "name": "Beverages, carbonated, orange",
+                "weight": 31.0,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14153",
+                "name": "Beverages, carbonated, pepper-type, contains caffeine",
+                "weight": 30.7,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14149",
+                "name": "Beverages, carbonated, reduced sugar, cola, contains caffeine and sweeteners",
+                "weight": 29.6,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14157",
+                "name": "Beverages, carbonated, root beer",
+                "weight": 30.8,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14145",
+                "name": "Beverages, carbonated, SPRITE, lemon-lime, without caffeine",
+                "weight": 30.8,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.02",
+                        "gm": 0.05
+                    }
+                ]
+            },
+            {
+                "ndbno": "14155",
+                "name": "Beverages, carbonated, tonic water",
+                "weight": 30.5,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14168",
+                "name": "Beverages, Carob-flavor beverage mix, powder",
+                "weight": 12.0,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.22",
+                        "gm": 1.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "14169",
+                "name": "Beverages, Carob-flavor beverage mix, powder, prepared with whole milk",
+                "weight": 256.0,
+                "measure": "1.0 cup (8 fl oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.09",
+                        "gm": 3.16
+                    }
+                ]
+            },
+            {
+                "ndbno": "14092",
+                "name": "Beverages, chocolate almond milk, unsweetened, shelf-stable, fortified with vitamin D2 and E",
+                "weight": 240.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.99",
+                        "gm": 0.83
+                    }
+                ]
+            },
+            {
+                "ndbno": "14163",
+                "name": "Beverages, chocolate drink, milk and soy based, ready to drink, fortified",
+                "weight": 237.0,
+                "measure": "8.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.00",
+                        "gm": 4.22
+                    }
+                ]
+            },
+            {
+                "ndbno": "14164",
+                "name": "Beverages, chocolate malt powder, prepared with 1% milk, fortified",
+                "weight": 98.0,
+                "measure": "1.0 cup dry mix",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.25",
+                        "gm": 3.32
+                    }
+                ]
+            },
+            {
+                "ndbno": "14083",
+                "name": "Beverages, chocolate malt, powder, prepared with fat free milk",
+                "weight": 256.0,
+                "measure": "1.0 serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.32",
+                        "gm": 3.25
+                    }
+                ]
+            },
+            {
+                "ndbno": "14063",
+                "name": "Beverages, chocolate powder, no sugar added",
+                "weight": 11.0,
+                "measure": "2.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.00",
+                        "gm": 9.09
+                    }
+                ]
+            },
+            {
+                "ndbno": "14181",
+                "name": "Beverages, chocolate syrup",
+                "weight": 39.0,
+                "measure": "1.0 serving 2 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.82",
+                        "gm": 2.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "14182",
+                "name": "Beverages, chocolate syrup, prepared with whole milk",
+                "weight": 282.0,
+                "measure": "1.0 cup (8 fl oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.66",
+                        "gm": 3.07
+                    }
+                ]
+            },
+            {
+                "ndbno": "14557",
+                "name": "Beverages, chocolate-flavor beverage mix for milk, powder, with added nutrients",
+                "weight": 22.0,
+                "measure": "1.0 serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.00",
+                        "gm": 4.55
+                    }
+                ]
+            },
+            {
+                "ndbno": "14558",
+                "name": "Beverages, chocolate-flavor beverage mix for milk, powder, with added nutrients, prepared with whole milk",
+                "weight": 266.0,
+                "measure": "1.0 serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.70",
+                        "gm": 3.27
+                    }
+                ]
+            },
+            {
+                "ndbno": "14177",
+                "name": "Beverages, chocolate-flavor beverage mix, powder, prepared with whole milk",
+                "weight": 266.0,
+                "measure": "1.0 cup (8 fl oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.59",
+                        "gm": 3.23
+                    }
+                ]
+            },
+            {
+                "ndbno": "43369",
+                "name": "Beverages, Chocolate-flavored drink, whey and milk based",
+                "weight": 244.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.56",
+                        "gm": 0.64
+                    }
+                ]
+            },
+            {
+                "ndbno": "14262",
+                "name": "Beverages, citrus fruit juice drink, frozen concentrate",
+                "weight": 35.2,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.42",
+                        "gm": 1.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "14263",
+                "name": "Beverages, citrus fruit juice drink, frozen concentrate, prepared with water",
+                "weight": 31.0,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.11",
+                        "gm": 0.34
+                    }
+                ]
+            },
+            {
+                "ndbno": "14187",
+                "name": "Beverages, Clam and tomato juice, canned",
+                "weight": 30.2,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.18",
+                        "gm": 0.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "14461",
+                "name": "Beverages, COCA-COLA, POWERADE, lemon-lime flavored, ready-to-drink",
+                "weight": 30.5,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "44203",
+                "name": "Beverages, Cocktail mix, non-alcoholic, concentrated, frozen",
+                "weight": 36.0,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.03",
+                        "gm": 0.08
+                    }
+                ]
+            },
+            {
+                "ndbno": "14538",
+                "name": "Beverages, Cocoa mix, low calorie, powder, with added calcium, phosphorus, aspartame, without added sodium or vitamin A",
+                "weight": 15.0,
+                "measure": "1.0 envelope  Swiss Miss (.53 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.77",
+                        "gm": 25.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "14195",
+                "name": "Beverages, Cocoa mix, NESTLE, Hot Cocoa Mix Rich Chocolate With Marshmallows",
+                "weight": 20.0,
+                "measure": "1.0 serving 1 envelope",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.56",
+                        "gm": 2.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "14196",
+                "name": "Beverages, Cocoa mix, no sugar added, powder",
+                "weight": 19.0,
+                "measure": "1.0 envelope Alba (.675 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.94",
+                        "gm": 15.49
+                    }
+                ]
+            },
+            {
+                "ndbno": "14192",
+                "name": "Beverages, Cocoa mix, powder",
+                "weight": 28.0,
+                "measure": "1.0 serving (3 heaping tsp or 1 envelope)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.87",
+                        "gm": 6.67
+                    }
+                ]
+            },
+            {
+                "ndbno": "14194",
+                "name": "Beverages, Cocoa mix, powder, prepared with water",
+                "weight": 34.3,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.32",
+                        "gm": 0.92
+                    }
+                ]
+            },
+            {
+                "ndbno": "14390",
+                "name": "Beverages, cocoa mix, with aspartame, powder, prepared with water",
+                "weight": 32.1,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.39",
+                        "gm": 1.21
+                    }
+                ]
+            },
+            {
+                "ndbno": "14171",
+                "name": "Beverages, coconut milk, sweetened, fortified with calcium, vitamins A, B12, D2",
+                "weight": 240.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.50",
+                        "gm": 0.21
+                    }
+                ]
+            },
+            {
+                "ndbno": "14090",
+                "name": "Beverages, Coconut water, ready-to-drink, unsweetened",
+                "weight": 245.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.54",
+                        "gm": 0.22
+                    }
+                ]
+            },
+            {
+                "ndbno": "14204",
+                "name": "Beverages, coffee and cocoa, instant, decaffeinated, with whitener and low calorie sweetener",
+                "weight": 6.4,
+                "measure": "1.0 tsp dry",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.58",
+                        "gm": 9.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14236",
+                "name": "Beverages, coffee substitute, cereal grain beverage, powder",
+                "weight": 3.0,
+                "measure": "1.0 tsp (1 serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.18",
+                        "gm": 6.01
+                    }
+                ]
+            },
+            {
+                "ndbno": "14421",
+                "name": "Beverages, coffee substitute, cereal grain beverage, powder, prepared with whole milk",
+                "weight": 185.0,
+                "measure": "6.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.11",
+                        "gm": 3.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "14237",
+                "name": "Beverages, coffee substitute, cereal grain beverage, prepared with water",
+                "weight": 30.1,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.03",
+                        "gm": 0.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "14180",
+                "name": "Beverages, coffee, brewed, breakfast blend",
+                "weight": 248.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.74",
+                        "gm": 0.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "14210",
+                "name": "Beverages, coffee, brewed, espresso, restaurant-prepared",
+                "weight": 29.6,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.04",
+                        "gm": 0.12
+                    }
+                ]
+            },
+            {
+                "ndbno": "14202",
+                "name": "Beverages, coffee, brewed, espresso, restaurant-prepared, decaffeinated",
+                "weight": 29.6,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.03",
+                        "gm": 0.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "14209",
+                "name": "Beverages, coffee, brewed, prepared with tap water",
+                "weight": 29.6,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.04",
+                        "gm": 0.12
+                    }
+                ]
+            },
+            {
+                "ndbno": "14201",
+                "name": "Beverages, coffee, brewed, prepared with tap water, decaffeinated",
+                "weight": 29.6,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.03",
+                        "gm": 0.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "14223",
+                "name": "Beverages, coffee, instant, chicory",
+                "weight": 29.9,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.03",
+                        "gm": 0.09
+                    }
+                ]
+            },
+            {
+                "ndbno": "14218",
+                "name": "Beverages, coffee, instant, decaffeinated, powder",
+                "weight": 1.8,
+                "measure": "1.0 tsp rounded",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.21",
+                        "gm": 11.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "14219",
+                "name": "Beverages, coffee, instant, decaffeinated, prepared with water",
+                "weight": 29.9,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.04",
+                        "gm": 0.12
+                    }
+                ]
+            },
+            {
+                "ndbno": "14224",
+                "name": "Beverages, coffee, instant, mocha, sweetened",
+                "weight": 13.0,
+                "measure": "1.0 serving 2 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.69",
+                        "gm": 5.29
+                    }
+                ]
+            },
+            {
+                "ndbno": "14203",
+                "name": "Beverages, coffee, instant, regular, half the caffeine",
+                "weight": 1.0,
+                "measure": "1.0 tsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.14",
+                        "gm": 14.42
+                    }
+                ]
+            },
+            {
+                "ndbno": "14214",
+                "name": "Beverages, coffee, instant, regular, powder",
+                "weight": 1.0,
+                "measure": "1.0 tsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.12",
+                        "gm": 12.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "14215",
+                "name": "Beverages, coffee, instant, regular, prepared with water",
+                "weight": 29.8,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.03",
+                        "gm": 0.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "14270",
+                "name": "Beverages, coffee, instant, vanilla, sweetened, decaffeinated, with non dairy creamer",
+                "weight": 15.0,
+                "measure": "1.0 serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14222",
+                "name": "Beverages, coffee, instant, with chicory",
+                "weight": 1.8,
+                "measure": "1.0 tsp, rounded",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.17",
+                        "gm": 9.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "43401",
+                "name": "Beverages, coffee, instant, with whitener, reduced calorie",
+                "weight": 1.7,
+                "measure": "1.0 tsp dry",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.03",
+                        "gm": 1.96
+                    }
+                ]
+            },
+            {
+                "ndbno": "14183",
+                "name": "Beverages, coffee, ready to drink, iced, mocha, milk based",
+                "weight": 265.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.92",
+                        "gm": 1.48
+                    }
+                ]
+            },
+            {
+                "ndbno": "14179",
+                "name": "Beverages, coffee, ready to drink, milk based, sweetened",
+                "weight": 262.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.19",
+                        "gm": 1.98
+                    }
+                ]
+            },
+            {
+                "ndbno": "14173",
+                "name": "Beverages, coffee, ready to drink, vanilla, light, milk based, sweetened",
+                "weight": 281.0,
+                "measure": "9.5 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.01",
+                        "gm": 2.14
+                    }
+                ]
+            },
+            {
+                "ndbno": "14284",
+                "name": "Beverages, Cranberry juice cocktail",
+                "weight": 271.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14238",
+                "name": "Beverages, cranberry-apple juice drink, bottled",
+                "weight": 30.6,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "43404",
+                "name": "Beverages, cranberry-apple juice drink, low calorie, with vitamin C added",
+                "weight": 240.0,
+                "measure": "1.0 cup (8 fl oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.24",
+                        "gm": 0.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "14240",
+                "name": "Beverages, cranberry-apricot juice drink, bottled",
+                "weight": 30.6,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.06",
+                        "gm": 0.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "14241",
+                "name": "Beverages, cranberry-grape juice drink, bottled",
+                "weight": 30.6,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.06",
+                        "gm": 0.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "14036",
+                "name": "Beverages, CYTOSPORT, Muscle Milk, ready-to-drink",
+                "weight": 414.0,
+                "measure": "14.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "24.30",
+                        "gm": 5.87
+                    }
+                ]
+            },
+            {
+                "ndbno": "14423",
+                "name": "Beverages, dairy drink mix, chocolate, reduced calorie, with aspartame, powder, prepared with water and ice",
+                "weight": 243.0,
+                "measure": "1.0 serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.32",
+                        "gm": 2.19
+                    }
+                ]
+            },
+            {
+                "ndbno": "14422",
+                "name": "Beverages, Dairy drink mix, chocolate, reduced calorie, with low-calorie sweeteners, powder",
+                "weight": 21.0,
+                "measure": "1.0 packet (.75 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.25",
+                        "gm": 25.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14450",
+                "name": "Beverages, drink mix, QUAKER OATS, GATORADE, orange flavor, powder",
+                "weight": 23.0,
+                "measure": "1.0 scoop powder",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14245",
+                "name": "Beverages, Eggnog-flavor mix, powder, prepared with whole milk",
+                "weight": 272.0,
+                "measure": "1.0 cup (8 fl oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.97",
+                        "gm": 2.93
+                    }
+                ]
+            },
+            {
+                "ndbno": "14060",
+                "name": "Beverages, Energy Drink with carbonated water and high fructose corn syrup",
+                "weight": 240.0,
+                "measure": "8.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.01",
+                        "gm": 0.42
+                    }
+                ]
+            },
+            {
+                "ndbno": "14625",
+                "name": "Beverages, Energy drink, AMP",
+                "weight": 240.0,
+                "measure": "1.0 serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.60",
+                        "gm": 0.25
+                    }
+                ]
+            },
+            {
+                "ndbno": "14628",
+                "name": "Beverages, Energy drink, AMP, sugar free",
+                "weight": 240.0,
+                "measure": "8.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14626",
+                "name": "Beverages, Energy drink, FULL THROTTLE",
+                "weight": 240.0,
+                "measure": "1.0 serving 8 fluid oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.60",
+                        "gm": 0.25
+                    }
+                ]
+            },
+            {
+                "ndbno": "14627",
+                "name": "Beverages, Energy Drink, Monster, fortified with vitamins C, B2, B3, B6, B12",
+                "weight": 240.0,
+                "measure": "1.0 serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.13",
+                        "gm": 0.47
+                    }
+                ]
+            },
+            {
+                "ndbno": "14154",
+                "name": "Beverages, Energy drink, RED BULL",
+                "weight": 258.0,
+                "measure": "1.0 can 8.4 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.19",
+                        "gm": 0.46
+                    }
+                ]
+            },
+            {
+                "ndbno": "14156",
+                "name": "Beverages, Energy drink, RED BULL, sugar free, with added caffeine, niacin, pantothenic acid, vitamins B6 and B12",
+                "weight": 250.0,
+                "measure": "1.0 serving 8.3 fl oz can",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.62",
+                        "gm": 0.25
+                    }
+                ]
+            },
+            {
+                "ndbno": "14629",
+                "name": "Beverages, Energy drink, ROCKSTAR",
+                "weight": 31.0,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.11",
+                        "gm": 0.34
+                    }
+                ]
+            },
+            {
+                "ndbno": "14630",
+                "name": "Beverages, Energy drink, ROCKSTAR, sugar free",
+                "weight": 240.0,
+                "measure": "8.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.60",
+                        "gm": 0.25
+                    }
+                ]
+            },
+            {
+                "ndbno": "14061",
+                "name": "Beverages, Energy Drink, sugar free",
+                "weight": 240.0,
+                "measure": "8.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.01",
+                        "gm": 0.42
+                    }
+                ]
+            },
+            {
+                "ndbno": "14641",
+                "name": "Beverages, Energy drink, VAULT Zero, sugar-free, citrus flavor",
+                "weight": 246.0,
+                "measure": "1.0 serving (8 fl oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.61",
+                        "gm": 0.25
+                    }
+                ]
+            },
+            {
+                "ndbno": "14640",
+                "name": "Beverages, Energy drink, VAULT, citrus flavor",
+                "weight": 31.0,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14646",
+                "name": "Beverages, Fruit flavored drink containing less than 3% fruit juice, with high vitamin C",
+                "weight": 238.0,
+                "measure": "1.0 cup (8 fl oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14645",
+                "name": "Beverages, Fruit flavored drink, less than 3% juice, not fortified with vitamin C",
+                "weight": 238.0,
+                "measure": "1.0 cup (8 fl oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14647",
+                "name": "Beverages, Fruit flavored drink, reduced sugar, greater than 3% fruit juice, high vitamin C, added calcium",
+                "weight": 240.0,
+                "measure": "8.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14648",
+                "name": "Beverages, fruit juice drink, greater than 3% fruit juice, high vitamin C and added thiamin",
+                "weight": 237.0,
+                "measure": "8.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.31",
+                        "gm": 0.13
+                    }
+                ]
+            },
+            {
+                "ndbno": "14651",
+                "name": "Beverages, fruit juice drink, greater than 3% juice, high vitamin C",
+                "weight": 238.0,
+                "measure": "1.0 cup (8 fl oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.31",
+                        "gm": 0.13
+                    }
+                ]
+            },
+            {
+                "ndbno": "14636",
+                "name": "Beverages, fruit juice drink, reduced sugar, with vitamin E added",
+                "weight": 209.0,
+                "measure": "1.0 container",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14268",
+                "name": "Beverages, Fruit punch drink, frozen concentrate",
+                "weight": 34.8,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.07",
+                        "gm": 0.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "14269",
+                "name": "Beverages, Fruit punch drink, frozen concentrate, prepared with water",
+                "weight": 30.9,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.02",
+                        "gm": 0.06
+                    }
+                ]
+            },
+            {
+                "ndbno": "14267",
+                "name": "Beverages, Fruit punch drink, with added nutrients, canned",
+                "weight": 31.0,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14264",
+                "name": "Beverages, fruit punch drink, without added nutrients, canned",
+                "weight": 210.0,
+                "measure": "6.75 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14405",
+                "name": "Beverages, fruit punch juice drink, frozen concentrate",
+                "weight": 35.2,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.11",
+                        "gm": 0.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "14406",
+                "name": "Beverages, fruit punch juice drink, frozen concentrate, prepared with water",
+                "weight": 29.3,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.02",
+                        "gm": 0.07
+                    }
+                ]
+            },
+            {
+                "ndbno": "14541",
+                "name": "Beverages, fruit punch-flavor drink, powder, without added sodium, prepared with water",
+                "weight": 32.7,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "42055",
+                "name": "Beverages, fruit-flavored drink, dry powdered mix, low calorie, with aspartame",
+                "weight": 8.0,
+                "measure": "1.0 tsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.04",
+                        "gm": 0.45
+                    }
+                ]
+            },
+            {
+                "ndbno": "43345",
+                "name": "Beverages, fruit-flavored drink, powder, with high vitamin C with other added vitamins, low calorie",
+                "weight": 2.0,
+                "measure": "1.0 tsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.01",
+                        "gm": 0.25
+                    }
+                ]
+            },
+            {
+                "ndbno": "14048",
+                "name": "Beverages, FUZE, orange mango, fortified with vitamins A, C, E, B6",
+                "weight": 500.0,
+                "measure": "1.0 bottle",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.40",
+                        "gm": 0.68
+                    }
+                ]
+            },
+            {
+                "ndbno": "14075",
+                "name": "Beverages, GEROLSTEINER BRUNNEN GmbH &amp; Co. KG,Gerolsteiner naturally sparkling mineral water,",
+                "weight": 240.0,
+                "measure": "8.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14277",
+                "name": "Beverages, grape drink, canned",
+                "weight": 31.3,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14282",
+                "name": "Beverages, grape juice drink, canned",
+                "weight": 31.3,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14638",
+                "name": "Beverages, Horchata, as served in restaurant",
+                "weight": 228.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.09",
+                        "gm": 0.48
+                    }
+                ]
+            },
+            {
+                "ndbno": "14631",
+                "name": "Beverages, Horchata, dry mix, unprepared, variety of brands, all with morro seeds",
+                "weight": 7.8,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.58",
+                        "gm": 7.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "14076",
+                "name": "Beverages, ICELANDIC, Glacial Natural spring water",
+                "weight": 100.0,
+                "measure": "1.0 serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14068",
+                "name": "Beverages, KELLOGG'S SPECIAL K20 protein powder",
+                "weight": 14.5,
+                "measure": "1.0 packet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.10",
+                        "gm": 35.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "14059",
+                "name": "Beverages, KELLOGG'S, SPECIAL K Protein Shake",
+                "weight": 296.0,
+                "measure": "1.0 serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.47",
+                        "gm": 3.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "14161",
+                "name": "Beverages, Kiwi Strawberry Juice Drink",
+                "weight": 473.0,
+                "measure": "16.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14231",
+                "name": "Beverages, KRAFT, coffee, instant, French Vanilla Cafe",
+                "weight": 14.0,
+                "measure": "1.0 NLEA Serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.35",
+                        "gm": 2.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "14174",
+                "name": "Beverages, Lemonade fruit juice drink light, fortified with vitamin E and C",
+                "weight": 240.0,
+                "measure": "8.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14543",
+                "name": "Beverages, lemonade, frozen concentrate, pink, prepared with water",
+                "weight": 30.9,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.02",
+                        "gm": 0.05
+                    }
+                ]
+            },
+            {
+                "ndbno": "14287",
+                "name": "Beverages, Lemonade, powder",
+                "weight": 18.0,
+                "measure": "1.0 serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14296",
+                "name": "Beverages, lemonade-flavor drink, powder",
+                "weight": 18.0,
+                "measure": "1.0 serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14297",
+                "name": "Beverages, lemonade-flavor drink, powder, prepared with water",
+                "weight": 31.8,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14476",
+                "name": "Beverages, LIPTON BRISK, tea, black, ready-to-drink, lemon",
+                "weight": 30.6,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14252",
+                "name": "Beverages, Malt liquor beverage",
+                "weight": 1184.0,
+                "measure": "1.0 bottle",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.14",
+                        "gm": 0.35
+                    }
+                ]
+            },
+            {
+                "ndbno": "14317",
+                "name": "Beverages, malted drink mix, chocolate, powder",
+                "weight": 21.0,
+                "measure": "1.0 serving (3 heaping tsp or 1 envelope)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.07",
+                        "gm": 5.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "14318",
+                "name": "Beverages, Malted drink mix, chocolate, powder, prepared with whole milk",
+                "weight": 265.0,
+                "measure": "1.0 cup (8 fl oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.93",
+                        "gm": 3.37
+                    }
+                ]
+            },
+            {
+                "ndbno": "14316",
+                "name": "Beverages, Malted drink mix, chocolate, with added nutrients, powder, prepared with whole milk",
+                "weight": 265.0,
+                "measure": "1.0 cup (8 fl oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.72",
+                        "gm": 3.29
+                    }
+                ]
+            },
+            {
+                "ndbno": "14311",
+                "name": "Beverages, Malted drink mix, natural, powder, dairy based.",
+                "weight": 21.0,
+                "measure": "1.0 serving (3 heaping tsp or 1 envelope)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.00",
+                        "gm": 14.29
+                    }
+                ]
+            },
+            {
+                "ndbno": "14312",
+                "name": "Beverages, Malted drink mix, natural, powder, prepared with whole milk",
+                "weight": 265.0,
+                "measure": "1.0 cup (8 fl oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.23",
+                        "gm": 3.86
+                    }
+                ]
+            },
+            {
+                "ndbno": "14310",
+                "name": "Beverages, Malted drink mix, natural, with added nutrients, powder, prepared with whole milk",
+                "weight": 265.0,
+                "measure": "1.0 cup (8 fl oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.73",
+                        "gm": 3.67
+                    }
+                ]
+            },
+            {
+                "ndbno": "14632",
+                "name": "Beverages, Meal supplement drink, canned, peanut flavor",
+                "weight": 158.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.53",
+                        "gm": 3.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "14634",
+                "name": "Beverages, milk beverage, reduced fat, flavored and sweetened, Ready-to-drink,  added calcium, vitamin A and vitamin D",
+                "weight": 244.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.44",
+                        "gm": 3.05
+                    }
+                ]
+            },
+            {
+                "ndbno": "14095",
+                "name": "Beverages, MINUTE MAID, Lemonada, Limeade",
+                "weight": 240.0,
+                "measure": "8.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14119",
+                "name": "Beverages, Mixed vegetable and fruit juice drink, with added nutrients",
+                "weight": 247.0,
+                "measure": "8.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.10",
+                        "gm": 0.04
+                    }
+                ]
+            },
+            {
+                "ndbno": "14022",
+                "name": "Beverages, MONSTER energy drink, low carb",
+                "weight": 240.0,
+                "measure": "8.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14137",
+                "name": "Beverages, NESTEA, tea, black, ready-to-drink, lemon",
+                "weight": 30.6,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14041",
+                "name": "Beverages, NESTLE, Boost plus, nutritional drink, ready-to-drink",
+                "weight": 237.0,
+                "measure": "1.0 bottle",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.75",
+                        "gm": 5.38
+                    }
+                ]
+            },
+            {
+                "ndbno": "14654",
+                "name": "Beverages, nutritional shake mix, high protein, powder",
+                "weight": 10.0,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.36",
+                        "gm": 53.57
+                    }
+                ]
+            },
+            {
+                "ndbno": "14256",
+                "name": "Beverages, OCEAN SPRAY, Cran Cherry",
+                "weight": 248.0,
+                "measure": "8.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.47",
+                        "gm": 0.19
+                    }
+                ]
+            },
+            {
+                "ndbno": "14217",
+                "name": "Beverages, OCEAN SPRAY, Cran Grape",
+                "weight": 240.0,
+                "measure": "8.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.50",
+                        "gm": 0.21
+                    }
+                ]
+            },
+            {
+                "ndbno": "14234",
+                "name": "Beverages, OCEAN SPRAY, Cran Lemonade",
+                "weight": 247.0,
+                "measure": "8.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.17",
+                        "gm": 0.07
+                    }
+                ]
+            },
+            {
+                "ndbno": "14255",
+                "name": "Beverages, OCEAN SPRAY, Cran Pomegranate",
+                "weight": 248.0,
+                "measure": "8.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.17",
+                        "gm": 0.07
+                    }
+                ]
+            },
+            {
+                "ndbno": "14233",
+                "name": "Beverages, OCEAN SPRAY, Cran Raspberry Juice Drink",
+                "weight": 248.0,
+                "measure": "8.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.69",
+                        "gm": 0.28
+                    }
+                ]
+            },
+            {
+                "ndbno": "14038",
+                "name": "Beverages, OCEAN SPRAY, Cran-Energy, Cranberry Energy Juice Drink",
+                "weight": 250.0,
+                "measure": "1.0 can",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14220",
+                "name": "Beverages, OCEAN SPRAY, Cranberry-Apple Juice Drink, bottled",
+                "weight": 249.0,
+                "measure": "8.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.72",
+                        "gm": 0.29
+                    }
+                ]
+            },
+            {
+                "ndbno": "14235",
+                "name": "Beverages, OCEAN SPRAY, Diet Cran Cherry",
+                "weight": 237.0,
+                "measure": "8.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.50",
+                        "gm": 0.21
+                    }
+                ]
+            },
+            {
+                "ndbno": "14221",
+                "name": "Beverages, OCEAN SPRAY, Diet Cranberry Juice",
+                "weight": 237.0,
+                "measure": "8.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.17",
+                        "gm": 0.07
+                    }
+                ]
+            },
+            {
+                "ndbno": "14257",
+                "name": "Beverages, OCEAN SPRAY, Light Cranberry",
+                "weight": 248.0,
+                "measure": "8.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.55",
+                        "gm": 0.22
+                    }
+                ]
+            },
+            {
+                "ndbno": "14226",
+                "name": "Beverages, OCEAN SPRAY, Light Cranberry and Raspberry Flavored Juice",
+                "weight": 242.0,
+                "measure": "8.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.77",
+                        "gm": 0.73
+                    }
+                ]
+            },
+            {
+                "ndbno": "14259",
+                "name": "Beverages, OCEAN SPRAY, Light Cranberry, Concord Grape",
+                "weight": 248.0,
+                "measure": "8.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.89",
+                        "gm": 0.36
+                    }
+                ]
+            },
+            {
+                "ndbno": "14285",
+                "name": "Beverages, OCEAN SPRAY, Ruby Red cranberry",
+                "weight": 227.0,
+                "measure": "8.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.16",
+                        "gm": 0.07
+                    }
+                ]
+            },
+            {
+                "ndbno": "14258",
+                "name": "Beverages, OCEAN SPRAY, White Cranberry Peach",
+                "weight": 247.0,
+                "measure": "8.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.32",
+                        "gm": 0.13
+                    }
+                ]
+            },
+            {
+                "ndbno": "14227",
+                "name": "Beverages, OCEAN SPRAY, White Cranberry Strawberry Flavored Juice Drink",
+                "weight": 247.0,
+                "measure": "8.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.54",
+                        "gm": 0.22
+                    }
+                ]
+            },
+            {
+                "ndbno": "14327",
+                "name": "Beverages, orange and apricot juice drink, canned",
+                "weight": 31.2,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.09",
+                        "gm": 0.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "14436",
+                "name": "Beverages, orange breakfast drink, ready-to-drink, with added nutrients",
+                "weight": 31.6,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14426",
+                "name": "Beverages, Orange drink, breakfast type, with juice and pulp, frozen concentrate",
+                "weight": 36.3,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.15",
+                        "gm": 0.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "14427",
+                "name": "Beverages, Orange drink, breakfast type, with juice and pulp, frozen concentrate, prepared with water",
+                "weight": 31.3,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.04",
+                        "gm": 0.12
+                    }
+                ]
+            },
+            {
+                "ndbno": "14323",
+                "name": "Beverages, orange drink, canned, with added vitamin C",
+                "weight": 31.0,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "42270",
+                "name": "Beverages, Orange juice drink",
+                "weight": 249.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.50",
+                        "gm": 0.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "14064",
+                "name": "Beverages, Orange juice, light, No pulp",
+                "weight": 240.0,
+                "measure": "8.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.50",
+                        "gm": 0.21
+                    }
+                ]
+            },
+            {
+                "ndbno": "14409",
+                "name": "Beverages, Orange-flavor drink, breakfast type, low calorie, powder",
+                "weight": 2.5,
+                "measure": "1.0 portion, amount of dry mix to make 8 fl oz prepared",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.09",
+                        "gm": 3.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "14407",
+                "name": "Beverages, orange-flavor drink, breakfast type, powder",
+                "weight": 26.0,
+                "measure": "1.0 serving 2 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14408",
+                "name": "Beverages, orange-flavor drink, breakfast type, powder, prepared with water",
+                "weight": 33.9,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14425",
+                "name": "Beverages, Orange-flavor drink, breakfast type, with pulp, frozen concentrate, prepared with water",
+                "weight": 31.0,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.01",
+                        "gm": 0.03
+                    }
+                ]
+            },
+            {
+                "ndbno": "14424",
+                "name": "Beverages, Orange-flavor drink, breakfast type, with pulp, frozen concentrate. Not manufactured anymore.",
+                "weight": 35.3,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.04",
+                        "gm": 0.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "14315",
+                "name": "Beverages, OVALTINE, chocolate malt powder",
+                "weight": 78.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14309",
+                "name": "Beverages, OVALTINE, Classic Malt powder",
+                "weight": 21.0,
+                "measure": "1.0 serving (4 tbsp or 1 envelope)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14644",
+                "name": "Beverages, PEPSICO QUAKER, Gatorade G2, low calorie",
+                "weight": 237.0,
+                "measure": "8.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.12",
+                        "gm": 0.05
+                    }
+                ]
+            },
+            {
+                "ndbno": "14460",
+                "name": "Beverages, PEPSICO QUAKER, Gatorade, G performance O 2, ready-to-drink.",
+                "weight": 30.5,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14334",
+                "name": "Beverages, pineapple and grapefruit juice drink, canned",
+                "weight": 31.3,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.06",
+                        "gm": 0.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "14341",
+                "name": "Beverages, pineapple and orange juice drink, canned",
+                "weight": 31.3,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.41",
+                        "gm": 1.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "14599",
+                "name": "Beverages, Powerade Zero Ion4, calorie-free, assorted flavors",
+                "weight": 237.0,
+                "measure": "8.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14167",
+                "name": "Beverages, POWERADE, Zero, Mixed Berry",
+                "weight": 360.0,
+                "measure": "12.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14462",
+                "name": "Beverages, Propel Zero, fruit-flavored, non-carbonated",
+                "weight": 29.6,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14067",
+                "name": "Beverages, Protein powder soy based",
+                "weight": 45.0,
+                "measure": "1.0 scoop",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "25.00",
+                        "gm": 55.56
+                    }
+                ]
+            },
+            {
+                "ndbno": "14066",
+                "name": "Beverages, Protein powder whey based",
+                "weight": 32.0,
+                "measure": "0.33 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "25.00",
+                        "gm": 78.13
+                    }
+                ]
+            },
+            {
+                "ndbno": "14639",
+                "name": "Beverages, rice milk, unsweetened",
+                "weight": 240.0,
+                "measure": "8.0 fl oz (approximate weight, 1 serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.67",
+                        "gm": 0.28
+                    }
+                ]
+            },
+            {
+                "ndbno": "14080",
+                "name": "Beverages, rich chocolate, powder",
+                "weight": 11.0,
+                "measure": "2.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14428",
+                "name": "Beverages, shake, fast food, strawberry",
+                "weight": 23.5,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.80",
+                        "gm": 3.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "14044",
+                "name": "Beverages, SLIMFAST, Meal replacement,  High Protein Shake, Ready-To-Drink, 3-2-1 plan",
+                "weight": 295.0,
+                "measure": "1.0 bottle",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "19.44",
+                        "gm": 6.59
+                    }
+                ]
+            },
+            {
+                "ndbno": "14351",
+                "name": "Beverages, Strawberry-flavor beverage mix, powder, prepared with whole milk",
+                "weight": 266.0,
+                "measure": "1.0 cup (8 fl oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.98",
+                        "gm": 3.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14544",
+                "name": "Beverages, tea, black, brewed, prepared with distilled water",
+                "weight": 29.6,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14355",
+                "name": "Beverages, tea, black, brewed, prepared with tap water",
+                "weight": 29.6,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14352",
+                "name": "Beverages, tea, black, brewed, prepared with tap water, decaffeinated",
+                "weight": 29.6,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14247",
+                "name": "Beverages, tea, black, ready to drink",
+                "weight": 473.0,
+                "measure": "16.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14281",
+                "name": "Beverages, tea, black, ready to drink, decaffeinated",
+                "weight": 240.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14280",
+                "name": "Beverages, tea, black, ready to drink, decaffeinated, diet",
+                "weight": 240.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14211",
+                "name": "Beverages, tea, black, ready-to-drink, lemon, diet",
+                "weight": 265.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14199",
+                "name": "Beverages, tea, black, ready-to-drink, lemon, sweetened",
+                "weight": 271.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14279",
+                "name": "Beverages, tea, black, ready-to-drink, peach, diet",
+                "weight": 268.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14260",
+                "name": "Beverages, tea, green, brewed, decaffeinated",
+                "weight": 240.0,
+                "measure": "240.0 ml",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14278",
+                "name": "Beverages, tea, green, brewed, regular",
+                "weight": 245.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.54",
+                        "gm": 0.22
+                    }
+                ]
+            },
+            {
+                "ndbno": "14246",
+                "name": "Beverages, tea, green, instant, decaffeinated, lemon, unsweetened, fortified with vitamin C",
+                "weight": 4.5,
+                "measure": "2.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14188",
+                "name": "Beverages, tea, green, ready to drink, ginseng and honey, sweetened",
+                "weight": 260.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14261",
+                "name": "Beverages, tea, green, ready to drink, unsweetened",
+                "weight": 473.0,
+                "measure": "16.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14191",
+                "name": "Beverages, tea, green, ready-to-drink, citrus, diet, fortified with vitamin C",
+                "weight": 265.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14190",
+                "name": "Beverages, tea, green, ready-to-drink, diet",
+                "weight": 269.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14206",
+                "name": "Beverages, tea, green, ready-to-drink, sweetened",
+                "weight": 270.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14545",
+                "name": "Beverages, tea, herb, brewed, chamomile",
+                "weight": 29.6,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14381",
+                "name": "Beverages, tea, herb, other than chamomile, brewed",
+                "weight": 29.6,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14649",
+                "name": "Beverages, tea, hibiscus, brewed",
+                "weight": 237.0,
+                "measure": "8.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14356",
+                "name": "Beverages, tea, instant, decaffeinated, lemon, diet",
+                "weight": 1.6,
+                "measure": "2.0 tsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.05",
+                        "gm": 3.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "14357",
+                "name": "Beverages, tea, instant, decaffeinated, lemon, sweetened",
+                "weight": 23.0,
+                "measure": "1.0 serving (3 heaping tsp)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.03",
+                        "gm": 0.12
+                    }
+                ]
+            },
+            {
+                "ndbno": "14353",
+                "name": "Beverages, tea, instant, decaffeinated, unsweetened",
+                "weight": 0.7,
+                "measure": "1.0 serving 2 tsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.14",
+                        "gm": 20.21
+                    }
+                ]
+            },
+            {
+                "ndbno": "14376",
+                "name": "Beverages, tea, instant, lemon, diet",
+                "weight": 29.8,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.01",
+                        "gm": 0.02
+                    }
+                ]
+            },
+            {
+                "ndbno": "14370",
+                "name": "Beverages, tea, instant, lemon, sweetened, powder",
+                "weight": 23.0,
+                "measure": "1.0 serving (3 heaping tsp)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.03",
+                        "gm": 0.12
+                    }
+                ]
+            },
+            {
+                "ndbno": "14371",
+                "name": "Beverages, tea, instant, lemon, sweetened, prepared with water",
+                "weight": 259.0,
+                "measure": "1.0 cup (8 fl oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.03",
+                        "gm": 0.01
+                    }
+                ]
+            },
+            {
+                "ndbno": "14368",
+                "name": "Beverages, tea, instant, lemon, unsweetened",
+                "weight": 1.4,
+                "measure": "1.0 tsp, rounded",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.10",
+                        "gm": 7.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "14548",
+                "name": "Beverages, tea, instant, lemon, with added ascorbic acid",
+                "weight": 23.0,
+                "measure": "1.0 serving (3 heaping tsp)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.14",
+                        "gm": 0.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "14375",
+                "name": "Beverages, tea, instant, sweetened with sodium saccharin, lemon-flavored, powder",
+                "weight": 1.6,
+                "measure": "2.0 tsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.05",
+                        "gm": 3.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "14366",
+                "name": "Beverages, tea, instant, unsweetened, powder",
+                "weight": 0.7,
+                "measure": "1.0 serving 1 tsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.14",
+                        "gm": 20.21
+                    }
+                ]
+            },
+            {
+                "ndbno": "14367",
+                "name": "Beverages, tea, instant, unsweetened, prepared with water",
+                "weight": 29.7,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.02",
+                        "gm": 0.06
+                    }
+                ]
+            },
+            {
+                "ndbno": "14207",
+                "name": "Beverages, tea, ready-to-drink, lemon, diet",
+                "weight": 266.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14434",
+                "name": "Beverages, The COCA-COLA company, DASANI, water, bottled, non-carbonated",
+                "weight": 29.6,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14093",
+                "name": "Beverages, The COCA-COLA company, Glaceau Vitamin Water, Revive Fruit Punch, fortified",
+                "weight": 591.0,
+                "measure": "20.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14065",
+                "name": "Beverages, The COCA-COLA company, Hi-C Flashin' Fruit Punch",
+                "weight": 200.0,
+                "measure": "6.75 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14189",
+                "name": "Beverages, The COCA-COLA company, Minute Maid, Lemonade",
+                "weight": 240.0,
+                "measure": "8.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14030",
+                "name": "Beverages, THE COCA-COLA COMPANY, NOS energy drink, Original, grape, loaded cherry, charged citrus, fortified with vitamins B6 and B12",
+                "weight": 480.0,
+                "measure": "16.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14026",
+                "name": "Beverages, THE COCA-COLA COMPANY, NOS Zero, energy drink, sugar-free with guarana, fortified with vitamins B6 and B12",
+                "weight": 480.0,
+                "measure": "16.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14276",
+                "name": "Beverages, Tropical Punch, ready-to-drink",
+                "weight": 210.0,
+                "measure": "1.0 NLEA Serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14055",
+                "name": "Beverages, UNILEVER, SLIMFAST Shake Mix, high protein, whey powder, 3-2-1 Plan,",
+                "weight": 26.0,
+                "measure": "1.0 scoop",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.25",
+                        "gm": 27.87
+                    }
+                ]
+            },
+            {
+                "ndbno": "14047",
+                "name": "Beverages, UNILEVER, SLIMFAST Shake Mix, powder, 3-2-1 Plan",
+                "weight": 26.0,
+                "measure": "1.0 scoop",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.11",
+                        "gm": 8.13
+                    }
+                ]
+            },
+            {
+                "ndbno": "14045",
+                "name": "Beverages, UNILEVER, SLIMFAST, meal replacement, regular, ready-to-drink,  3-2-1 Plan",
+                "weight": 295.0,
+                "measure": "1.0 bottle",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.79",
+                        "gm": 3.32
+                    }
+                ]
+            },
+            {
+                "ndbno": "14611",
+                "name": "Beverages, V8 SPLASH Juice Drinks, Berry Blend",
+                "weight": 243.0,
+                "measure": "1.0 serving 8 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14607",
+                "name": "Beverages, V8 SPLASH Juice Drinks, Diet Berry Blend",
+                "weight": 243.0,
+                "measure": "8.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14608",
+                "name": "Beverages, V8 SPLASH Juice Drinks, Diet Fruit Medley",
+                "weight": 238.0,
+                "measure": "1.0 serving 8 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14609",
+                "name": "Beverages, V8 SPLASH Juice Drinks, Diet Strawberry Kiwi",
+                "weight": 238.0,
+                "measure": "1.0 serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14610",
+                "name": "Beverages, V8 SPLASH Juice Drinks, Diet Tropical Blend",
+                "weight": 238.0,
+                "measure": "1.0 serving 8 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14612",
+                "name": "Beverages, V8 SPLASH Juice Drinks, Fruit Medley",
+                "weight": 243.0,
+                "measure": "1.0 serving 8 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14613",
+                "name": "Beverages, V8 SPLASH Juice Drinks, Guava Passion Fruit",
+                "weight": 243.0,
+                "measure": "1.0 serving 8 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14614",
+                "name": "Beverages, V8 SPLASH Juice Drinks, Mango Peach",
+                "weight": 243.0,
+                "measure": "1.0 serving 8 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14615",
+                "name": "Beverages, V8 SPLASH Juice Drinks, Orange Pineapple",
+                "weight": 243.0,
+                "measure": "1.0 serving 8 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14616",
+                "name": "Beverages, V8 SPLASH Juice Drinks, Orchard Blend",
+                "weight": 243.0,
+                "measure": "1.0 serving 8 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14617",
+                "name": "Beverages, V8 SPLASH Juice Drinks, Strawberry Banana",
+                "weight": 243.0,
+                "measure": "1.0 serving 8 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14618",
+                "name": "Beverages, V8 SPLASH Juice Drinks, Strawberry Kiwi",
+                "weight": 243.0,
+                "measure": "1.0 serving 8 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14619",
+                "name": "Beverages, V8 SPLASH Juice Drinks, Tropical Blend",
+                "weight": 243.0,
+                "measure": "1.0 serving 8 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14086",
+                "name": "Beverages, V8 SPLASH Smoothies, Peach Mango",
+                "weight": 245.0,
+                "measure": "1.0 serving 8 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.99",
+                        "gm": 1.22
+                    }
+                ]
+            },
+            {
+                "ndbno": "14087",
+                "name": "Beverages, V8 SPLASH Smoothies, Strawberry Banana",
+                "weight": 245.0,
+                "measure": "1.0 serving 8 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.99",
+                        "gm": 1.22
+                    }
+                ]
+            },
+            {
+                "ndbno": "14088",
+                "name": "Beverages, V8 SPLASH Smoothies, Tropical Colada",
+                "weight": 246.0,
+                "measure": "1.0 serving 8 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.00",
+                        "gm": 1.22
+                    }
+                ]
+            },
+            {
+                "ndbno": "14623",
+                "name": "Beverages, V8 V- FUSION Juices, Acai Berry",
+                "weight": 246.0,
+                "measure": "1.0 serving 8 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14620",
+                "name": "Beverages, V8 V-FUSION Juices, Peach Mango",
+                "weight": 246.0,
+                "measure": "1.0 serving 8 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.01",
+                        "gm": 0.41
+                    }
+                ]
+            },
+            {
+                "ndbno": "14621",
+                "name": "Beverages, V8 V-FUSION Juices, Strawberry Banana",
+                "weight": 246.0,
+                "measure": "1.0 serving 8 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.01",
+                        "gm": 0.41
+                    }
+                ]
+            },
+            {
+                "ndbno": "14622",
+                "name": "Beverages, V8 V-FUSION Juices, Tropical",
+                "weight": 246.0,
+                "measure": "1.0 serving 8 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.01",
+                        "gm": 0.41
+                    }
+                ]
+            },
+            {
+                "ndbno": "14635",
+                "name": "Beverages, vegetable and fruit juice blend, 100% juice, with added vitamins A, C, E",
+                "weight": 246.0,
+                "measure": "1.0 serving 8 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.74",
+                        "gm": 0.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "14633",
+                "name": "Beverages, Vegetable and fruit juice drink, reduced calorie, with low-calorie sweetener, added vitamin C",
+                "weight": 238.0,
+                "measure": "1.0 serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14605",
+                "name": "Beverages, Water with added vitamins and minerals, bottles, sweetened, assorted fruit flavors",
+                "weight": 237.0,
+                "measure": "8.0 fl oz (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14437",
+                "name": "Beverages, water, bottled, non-carbonated, CALISTOGA",
+                "weight": 29.6,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14438",
+                "name": "Beverages, water, bottled, non-carbonated, CRYSTAL GEYSER",
+                "weight": 29.6,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14432",
+                "name": "Beverages, water, bottled, non-carbonated, DANNON",
+                "weight": 29.6,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14440",
+                "name": "Beverages, water, bottled, non-carbonated, DANNON Fluoride To Go",
+                "weight": 29.6,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14559",
+                "name": "Beverages, water, bottled, non-carbonated, EVIAN",
+                "weight": 29.6,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14433",
+                "name": "Beverages, water, bottled, non-carbonated, PEPSI, AQUAFINA",
+                "weight": 29.6,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14384",
+                "name": "Beverages, water, bottled, PERRIER",
+                "weight": 29.6,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14385",
+                "name": "Beverages, water, bottled, POLAND SPRING",
+                "weight": 29.6,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14031",
+                "name": "Beverages, water, bottled, yumberry, pomegranate with anti-oxidants, zero calories",
+                "weight": 240.0,
+                "measure": "8.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14411",
+                "name": "Beverages, water, tap, drinking",
+                "weight": 29.6,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14429",
+                "name": "Beverages, water, tap, municipal",
+                "weight": 29.6,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14412",
+                "name": "Beverages, water, tap, well",
+                "weight": 29.6,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14601",
+                "name": "Beverages, WENDY'S, tea, ready-to-drink, unsweetened",
+                "weight": 29.6,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.07",
+                        "gm": 0.22
+                    }
+                ]
+            },
+            {
+                "ndbno": "14058",
+                "name": "Beverages, Whey protein powder isolate",
+                "weight": 86.0,
+                "measure": "3.0 scoop",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "50.00",
+                        "gm": 58.14
+                    }
+                ]
+            },
+            {
+                "ndbno": "14028",
+                "name": "Beverages, Whiskey sour mix, bottled",
+                "weight": 32.3,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.03",
+                        "gm": 0.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "14024",
+                "name": "Beverages, Whiskey sour mix, powder",
+                "weight": 17.0,
+                "measure": "1.0 packet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.10",
+                        "gm": 0.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "14553",
+                "name": "Beverages, Wine, non-alcoholic",
+                "weight": 29.0,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.14",
+                        "gm": 0.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "14079",
+                "name": "Beverages, yellow green colored citrus soft drink with caffeine",
+                "weight": 473.0,
+                "measure": "16.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14073",
+                "name": "Beverages, ZEVIA, cola",
+                "weight": 355.0,
+                "measure": "1.0 can",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14074",
+                "name": "Beverages, ZEVIA, cola, caffeine free",
+                "weight": 355.0,
+                "measure": "1.0 can",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14552",
+                "name": "Carbonated beverage, chocolate-flavored soda",
+                "weight": 31.0,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14130",
+                "name": "Carbonated beverage, cream soda",
+                "weight": 30.9,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14537",
+                "name": "Carbonated beverage, low calorie, other than cola or pepper, with sodium saccharin, without caffeine",
+                "weight": 29.6,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14197",
+                "name": "Cocoa mix, NESTLE, Rich Chocolate Hot Cocoa Mix",
+                "weight": 20.0,
+                "measure": "1.0 serving 1 envelope",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.60",
+                        "gm": 3.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14242",
+                "name": "Cranberry juice cocktail, bottled",
+                "weight": 31.6,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14243",
+                "name": "Cranberry juice cocktail, bottled, low calorie, with calcium, saccharin and corn sweetener",
+                "weight": 29.6,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.01",
+                        "gm": 0.02
+                    }
+                ]
+            },
+            {
+                "ndbno": "14430",
+                "name": "Cranberry juice cocktail, frozen concentrate",
+                "weight": 36.2,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.02",
+                        "gm": 0.05
+                    }
+                ]
+            },
+            {
+                "ndbno": "14431",
+                "name": "Cranberry juice cocktail, frozen concentrate, prepared with water",
+                "weight": 29.6,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.01
+                    }
+                ]
+            },
+            {
+                "ndbno": "14542",
+                "name": "Lemonade, frozen concentrate, pink",
+                "weight": 36.4,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.08",
+                        "gm": 0.22
+                    }
+                ]
+            },
+            {
+                "ndbno": "14292",
+                "name": "Lemonade, frozen concentrate, white",
+                "weight": 36.5,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.08",
+                        "gm": 0.22
+                    }
+                ]
+            },
+            {
+                "ndbno": "14293",
+                "name": "Lemonade, frozen concentrate, white, prepared with water",
+                "weight": 30.9,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.02",
+                        "gm": 0.07
+                    }
+                ]
+            },
+            {
+                "ndbno": "14288",
+                "name": "Lemonade, powder, prepared with water",
+                "weight": 33.0,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14303",
+                "name": "Limeade, frozen concentrate, prepared with water",
+                "weight": 30.9,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14305",
+                "name": "Malt beverage, includes non-alcoholic beer",
+                "weight": 29.6,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.06",
+                        "gm": 0.21
+                    }
+                ]
+            },
+            {
+                "ndbno": "14347",
+                "name": "Shake, fast food, vanilla",
+                "weight": 20.8,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.70",
+                        "gm": 3.37
+                    }
+                ]
+            },
+            {
+                "ndbno": "14350",
+                "name": "Strawberry-flavor beverage mix, powder",
+                "weight": 22.0,
+                "measure": "1.0 serving (2-3 heaping tsp)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.02",
+                        "gm": 0.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "14555",
+                "name": "Water, bottled, generic",
+                "weight": 29.6,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14439",
+                "name": "Water, bottled, non-carbonated, NAYA",
+                "weight": 29.6,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14604",
+                "name": "Water, non-carbonated, bottles, natural fruit flavors, sweetened with low calorie sweetener",
+                "weight": 29.6,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14637",
+                "name": "Water, with corn syrup and/or sugar and low calorie sweetener, fruit flavored",
+                "weight": 200.0,
+                "measure": "1.0 pouch",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "14530",
+                "name": "Whiskey sour mix, bottled, with added potassium and sodium",
+                "weight": 32.3,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.03",
+                        "gm": 0.1
+                    }
+                ]
+            }
+        ]
+    }
+}

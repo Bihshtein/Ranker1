@@ -1,0 +1,4860 @@
+{
+    "report": {
+        "sr": "28",
+        "type": "Full",
+        "food": {
+            "ndbno": "09004",
+            "name": "Apples, raw, without skin",
+            "sd": "APPLES,RAW,WITHOUT SKIN",
+            "fg": "Fruits and Fruit Juices",
+            "sn": "Malus domestica",
+            "cn": "",
+            "manu": "",
+            "nf": 6.25,
+            "cf": 3.6,
+            "ff": 8.37,
+            "pf": 3.36,
+            "r": "23%",
+            "rd": "10% core and stem, 13% skin",
+            "ds": "Standard Reference",
+            "nutrients": [
+                {
+                    "nutrient_id": 255,
+                    "name": "Water",
+                    "group": "Proximates",
+                    "unit": "g",
+                    "value": 86.67,
+                    "sourcecode": [
+                        1,
+                        2
+                    ],
+                    "dp": 6,
+                    "se": "0.110",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 95.34
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 187.21
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 139.54
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 114.4
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 208,
+                    "name": "Energy",
+                    "group": "Proximates",
+                    "unit": "kcal",
+                    "value": 48.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 53.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 104.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 77.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 63.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 268,
+                    "name": "Energy",
+                    "group": "Proximates",
+                    "unit": "kJ",
+                    "value": 200.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 220.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 432.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 322.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 264.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 203,
+                    "name": "Protein",
+                    "group": "Proximates",
+                    "unit": "g",
+                    "value": 0.27,
+                    "sourcecode": [
+                        1
+                    ],
+                    "dp": 4,
+                    "se": "0.051",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.3
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.58
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.43
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.36
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 204,
+                    "name": "Total lipid (fat)",
+                    "group": "Proximates",
+                    "unit": "g",
+                    "value": 0.13,
+                    "sourcecode": [
+                        1,
+                        2
+                    ],
+                    "dp": 5,
+                    "se": "0.021",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.14
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.28
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.21
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.17
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 207,
+                    "name": "Ash",
+                    "group": "Proximates",
+                    "unit": "g",
+                    "value": 0.17,
+                    "sourcecode": [
+                        1
+                    ],
+                    "dp": 4,
+                    "se": "0.028",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.19
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.37
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.27
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.22
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 205,
+                    "name": "Carbohydrate, by difference",
+                    "group": "Proximates",
+                    "unit": "g",
+                    "value": 12.76,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 14.04
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 27.56
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 20.54
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 16.84
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 291,
+                    "name": "Fiber, total dietary",
+                    "group": "Proximates",
+                    "unit": "g",
+                    "value": 1.3,
+                    "sourcecode": [
+                        1
+                    ],
+                    "dp": 4,
+                    "se": "0.090",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 1.4
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 2.8
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 2.1
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 1.7
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 269,
+                    "name": "Sugars, total",
+                    "group": "Proximates",
+                    "unit": "g",
+                    "value": 10.1,
+                    "sourcecode": [
+                        1
+                    ],
+                    "dp": 4,
+                    "se": "1.059",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 11.11
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 21.82
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 16.26
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 13.33
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 210,
+                    "name": "Sucrose",
+                    "group": "Proximates",
+                    "unit": "g",
+                    "value": 0.82,
+                    "sourcecode": [
+                        1
+                    ],
+                    "dp": 4,
+                    "se": "0.109",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.9
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 1.77
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 1.32
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 1.08
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 211,
+                    "name": "Glucose (dextrose)",
+                    "group": "Proximates",
+                    "unit": "g",
+                    "value": 3.25,
+                    "sourcecode": [
+                        1
+                    ],
+                    "dp": 4,
+                    "se": "0.546",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 3.58
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 7.02
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 5.23
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 4.29
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 212,
+                    "name": "Fructose",
+                    "group": "Proximates",
+                    "unit": "g",
+                    "value": 6.03,
+                    "sourcecode": [
+                        1
+                    ],
+                    "dp": 4,
+                    "se": "0.409",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 6.63
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 13.02
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 9.71
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 7.96
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 213,
+                    "name": "Lactose",
+                    "group": "Proximates",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": [
+                        1
+                    ],
+                    "dp": 4,
+                    "se": "0.000",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 214,
+                    "name": "Maltose",
+                    "group": "Proximates",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": [
+                        1
+                    ],
+                    "dp": 4,
+                    "se": "0.000",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 287,
+                    "name": "Galactose",
+                    "group": "Proximates",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": [
+                        1
+                    ],
+                    "dp": 4,
+                    "se": "0.000",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 301,
+                    "name": "Calcium, Ca",
+                    "group": "Minerals",
+                    "unit": "mg",
+                    "value": 5.0,
+                    "sourcecode": [
+                        1
+                    ],
+                    "dp": 4,
+                    "se": "0.678",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 6.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 11.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 8.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 7.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 303,
+                    "name": "Iron, Fe",
+                    "group": "Minerals",
+                    "unit": "mg",
+                    "value": 0.07,
+                    "sourcecode": "",
+                    "dp": 163,
+                    "se": "0.004",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.08
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.15
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.11
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.09
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 304,
+                    "name": "Magnesium, Mg",
+                    "group": "Minerals",
+                    "unit": "mg",
+                    "value": 4.0,
+                    "sourcecode": [
+                        1
+                    ],
+                    "dp": 4,
+                    "se": "0.280",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 4.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 9.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 6.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 5.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 305,
+                    "name": "Phosphorus, P",
+                    "group": "Minerals",
+                    "unit": "mg",
+                    "value": 11.0,
+                    "sourcecode": [
+                        1
+                    ],
+                    "dp": 4,
+                    "se": "0.811",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 12.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 24.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 18.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 15.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 306,
+                    "name": "Potassium, K",
+                    "group": "Minerals",
+                    "unit": "mg",
+                    "value": 90.0,
+                    "sourcecode": [
+                        1
+                    ],
+                    "dp": 4,
+                    "se": "7.728",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 99.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 194.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 145.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 119.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 307,
+                    "name": "Sodium, Na",
+                    "group": "Minerals",
+                    "unit": "mg",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": 85,
+                    "se": "0.025",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 309,
+                    "name": "Zinc, Zn",
+                    "group": "Minerals",
+                    "unit": "mg",
+                    "value": 0.05,
+                    "sourcecode": [
+                        1
+                    ],
+                    "dp": 4,
+                    "se": "0.009",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.06
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.11
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.08
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.07
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 312,
+                    "name": "Copper, Cu",
+                    "group": "Minerals",
+                    "unit": "mg",
+                    "value": 0.031,
+                    "sourcecode": "",
+                    "dp": 164,
+                    "se": "0.001",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.034
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.067
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.05
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.041
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 315,
+                    "name": "Manganese, Mn",
+                    "group": "Minerals",
+                    "unit": "mg",
+                    "value": 0.038,
+                    "sourcecode": [
+                        1
+                    ],
+                    "dp": 4,
+                    "se": "0.005",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.042
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.082
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.061
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.05
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 317,
+                    "name": "Selenium, Se",
+                    "group": "Minerals",
+                    "unit": "\u00b5g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 401,
+                    "name": "Vitamin C, total ascorbic acid",
+                    "group": "Vitamins",
+                    "unit": "mg",
+                    "value": 4.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 4.4
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 8.6
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 6.4
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 5.3
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 404,
+                    "name": "Thiamin",
+                    "group": "Vitamins",
+                    "unit": "mg",
+                    "value": 0.019,
+                    "sourcecode": [
+                        1
+                    ],
+                    "dp": 4,
+                    "se": "0.002",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.021
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.041
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.031
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.025
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 405,
+                    "name": "Riboflavin",
+                    "group": "Vitamins",
+                    "unit": "mg",
+                    "value": 0.028,
+                    "sourcecode": [
+                        1
+                    ],
+                    "dp": 4,
+                    "se": "0.008",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.031
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.06
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.045
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.037
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 406,
+                    "name": "Niacin",
+                    "group": "Vitamins",
+                    "unit": "mg",
+                    "value": 0.091,
+                    "sourcecode": "",
+                    "dp": 6,
+                    "se": "0.018",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.1
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.197
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.147
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.12
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 410,
+                    "name": "Pantothenic acid",
+                    "group": "Vitamins",
+                    "unit": "mg",
+                    "value": 0.071,
+                    "sourcecode": [
+                        1
+                    ],
+                    "dp": 4,
+                    "se": "0.005",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.078
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.153
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.114
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.094
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 415,
+                    "name": "Vitamin B-6",
+                    "group": "Vitamins",
+                    "unit": "mg",
+                    "value": 0.037,
+                    "sourcecode": [
+                        1
+                    ],
+                    "dp": 4,
+                    "se": "0.004",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.041
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.08
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.06
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.049
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 417,
+                    "name": "Folate, total",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": 6,
+                    "se": "0.056",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 431,
+                    "name": "Folic acid",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 432,
+                    "name": "Folate, food",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": 6,
+                    "se": "0.056",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 435,
+                    "name": "Folate, DFE",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 421,
+                    "name": "Choline, total",
+                    "group": "Vitamins",
+                    "unit": "mg",
+                    "value": 3.4,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 3.7
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 7.3
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 5.5
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 4.5
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 418,
+                    "name": "Vitamin B-12",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 578,
+                    "name": "Vitamin B-12, added",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 320,
+                    "name": "Vitamin A, RAE",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 2.0,
+                    "sourcecode": [
+                        1
+                    ],
+                    "dp": 4,
+                    "se": "0.058",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 2.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 4.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 3.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 3.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 319,
+                    "name": "Retinol",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 321,
+                    "name": "Carotene, beta",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 17.0,
+                    "sourcecode": [
+                        1
+                    ],
+                    "dp": 4,
+                    "se": "0.900",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 19.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 37.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 27.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 22.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 322,
+                    "name": "Carotene, alpha",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 0.0,
+                    "sourcecode": [
+                        1
+                    ],
+                    "dp": 4,
+                    "se": "0.000",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 334,
+                    "name": "Cryptoxanthin, beta",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 13.0,
+                    "sourcecode": [
+                        1
+                    ],
+                    "dp": 4,
+                    "se": "0.570",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 14.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 28.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 21.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 17.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 318,
+                    "name": "Vitamin A, IU",
+                    "group": "Vitamins",
+                    "unit": "IU",
+                    "value": 38.0,
+                    "sourcecode": [
+                        1
+                    ],
+                    "dp": 4,
+                    "se": "1.162",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 42.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 82.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 61.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 50.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 337,
+                    "name": "Lycopene",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 0.0,
+                    "sourcecode": [
+                        1
+                    ],
+                    "dp": 4,
+                    "se": "0.000",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 338,
+                    "name": "Lutein + zeaxanthin",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 18.0,
+                    "sourcecode": [
+                        1
+                    ],
+                    "dp": 4,
+                    "se": "0.300",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 20.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 39.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 29.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 24.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 323,
+                    "name": "Vitamin E (alpha-tocopherol)",
+                    "group": "Vitamins",
+                    "unit": "mg",
+                    "value": 0.05,
+                    "sourcecode": [
+                        2
+                    ],
+                    "dp": 2,
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.06
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.11
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.08
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.07
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 573,
+                    "name": "Vitamin E, added",
+                    "group": "Vitamins",
+                    "unit": "mg",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 341,
+                    "name": "Tocopherol, beta",
+                    "group": "Vitamins",
+                    "unit": "mg",
+                    "value": 0.01,
+                    "sourcecode": [
+                        2
+                    ],
+                    "dp": 2,
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.01
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.02
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.02
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.01
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 342,
+                    "name": "Tocopherol, gamma",
+                    "group": "Vitamins",
+                    "unit": "mg",
+                    "value": 0.0,
+                    "sourcecode": [
+                        2
+                    ],
+                    "dp": 2,
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 343,
+                    "name": "Tocopherol, delta",
+                    "group": "Vitamins",
+                    "unit": "mg",
+                    "value": 0.0,
+                    "sourcecode": [
+                        2
+                    ],
+                    "dp": 2,
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 328,
+                    "name": "Vitamin D (D2 + D3)",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 324,
+                    "name": "Vitamin D",
+                    "group": "Vitamins",
+                    "unit": "IU",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 430,
+                    "name": "Vitamin K (phylloquinone)",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 0.6,
+                    "sourcecode": [
+                        1
+                    ],
+                    "dp": 4,
+                    "se": "0.045",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.7
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 1.3
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 1.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.8
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 606,
+                    "name": "Fatty acids, total saturated",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.021,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.023
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.045
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.034
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.028
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 607,
+                    "name": "4:0",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 608,
+                    "name": "6:0",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 609,
+                    "name": "8:0",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 610,
+                    "name": "10:0",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 611,
+                    "name": "12:0",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 612,
+                    "name": "14:0",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 613,
+                    "name": "16:0",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.017,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.019
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.037
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.027
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.022
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 614,
+                    "name": "18:0",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.002,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.002
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.004
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.003
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.003
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 645,
+                    "name": "Fatty acids, total monounsaturated",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.005,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.006
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.011
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.008
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.007
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 626,
+                    "name": "16:1 undifferentiated",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 617,
+                    "name": "18:1 undifferentiated",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.005,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.006
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.011
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.008
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.007
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 628,
+                    "name": "20:1",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 630,
+                    "name": "22:1 undifferentiated",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 646,
+                    "name": "Fatty acids, total polyunsaturated",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.037,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.041
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.08
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.06
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.049
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 618,
+                    "name": "18:2 undifferentiated",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.031,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.034
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.067
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.05
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.041
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 619,
+                    "name": "18:3 undifferentiated",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.007,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.008
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.015
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.011
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.009
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 627,
+                    "name": "18:4",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 620,
+                    "name": "20:4 undifferentiated",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 629,
+                    "name": "20:5 n-3 (EPA)",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 631,
+                    "name": "22:5 n-3 (DPA)",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 621,
+                    "name": "22:6 n-3 (DHA)",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 605,
+                    "name": "Fatty acids, total trans",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 601,
+                    "name": "Cholesterol",
+                    "group": "Lipids",
+                    "unit": "mg",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 501,
+                    "name": "Tryptophan",
+                    "group": "Amino Acids",
+                    "unit": "g",
+                    "value": 0.001,
+                    "sourcecode": [
+                        3
+                    ],
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.001
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.002
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.002
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.001
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 502,
+                    "name": "Threonine",
+                    "group": "Amino Acids",
+                    "unit": "g",
+                    "value": 0.006,
+                    "sourcecode": [
+                        3
+                    ],
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.007
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.013
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.01
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.008
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 503,
+                    "name": "Isoleucine",
+                    "group": "Amino Acids",
+                    "unit": "g",
+                    "value": 0.006,
+                    "sourcecode": [
+                        3
+                    ],
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.007
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.013
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.01
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.008
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 504,
+                    "name": "Leucine",
+                    "group": "Amino Acids",
+                    "unit": "g",
+                    "value": 0.014,
+                    "sourcecode": [
+                        3
+                    ],
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.015
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.03
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.023
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.018
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 505,
+                    "name": "Lysine",
+                    "group": "Amino Acids",
+                    "unit": "g",
+                    "value": 0.013,
+                    "sourcecode": [
+                        3
+                    ],
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.014
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.028
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.021
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.017
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 506,
+                    "name": "Methionine",
+                    "group": "Amino Acids",
+                    "unit": "g",
+                    "value": 0.001,
+                    "sourcecode": [
+                        3
+                    ],
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.001
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.002
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.002
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.001
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 507,
+                    "name": "Cystine",
+                    "group": "Amino Acids",
+                    "unit": "g",
+                    "value": 0.001,
+                    "sourcecode": [
+                        3
+                    ],
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.001
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.002
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.002
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.001
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 508,
+                    "name": "Phenylalanine",
+                    "group": "Amino Acids",
+                    "unit": "g",
+                    "value": 0.007,
+                    "sourcecode": [
+                        3
+                    ],
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.008
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.015
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.011
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.009
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 509,
+                    "name": "Tyrosine",
+                    "group": "Amino Acids",
+                    "unit": "g",
+                    "value": 0.001,
+                    "sourcecode": [
+                        3
+                    ],
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.001
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.002
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.002
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.001
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 510,
+                    "name": "Valine",
+                    "group": "Amino Acids",
+                    "unit": "g",
+                    "value": 0.012,
+                    "sourcecode": [
+                        3
+                    ],
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.013
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.026
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.019
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.016
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 511,
+                    "name": "Arginine",
+                    "group": "Amino Acids",
+                    "unit": "g",
+                    "value": 0.006,
+                    "sourcecode": [
+                        3
+                    ],
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.007
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.013
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.01
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.008
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 512,
+                    "name": "Histidine",
+                    "group": "Amino Acids",
+                    "unit": "g",
+                    "value": 0.005,
+                    "sourcecode": [
+                        3
+                    ],
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.006
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.011
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.008
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.007
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 513,
+                    "name": "Alanine",
+                    "group": "Amino Acids",
+                    "unit": "g",
+                    "value": 0.012,
+                    "sourcecode": [
+                        3
+                    ],
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.013
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.026
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.019
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.016
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 514,
+                    "name": "Aspartic acid",
+                    "group": "Amino Acids",
+                    "unit": "g",
+                    "value": 0.074,
+                    "sourcecode": [
+                        3
+                    ],
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.081
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.16
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.119
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.098
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 515,
+                    "name": "Glutamic acid",
+                    "group": "Amino Acids",
+                    "unit": "g",
+                    "value": 0.026,
+                    "sourcecode": [
+                        3
+                    ],
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.029
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.056
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.042
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.034
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 516,
+                    "name": "Glycine",
+                    "group": "Amino Acids",
+                    "unit": "g",
+                    "value": 0.009,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.01
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.019
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.014
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.012
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 517,
+                    "name": "Proline",
+                    "group": "Amino Acids",
+                    "unit": "g",
+                    "value": 0.006,
+                    "sourcecode": [
+                        3
+                    ],
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.007
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.013
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.01
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.008
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 518,
+                    "name": "Serine",
+                    "group": "Amino Acids",
+                    "unit": "g",
+                    "value": 0.011,
+                    "sourcecode": [
+                        3
+                    ],
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.012
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.024
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.018
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.015
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 221,
+                    "name": "Alcohol, ethyl",
+                    "group": "Other",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 262,
+                    "name": "Caffeine",
+                    "group": "Other",
+                    "unit": "mg",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 263,
+                    "name": "Theobromine",
+                    "group": "Other",
+                    "unit": "mg",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 731,
+                    "name": "Cyanidin",
+                    "group": "Anthocyanidins",
+                    "unit": "mg",
+                    "value": 2.17,
+                    "sourcecode": [
+                        7,
+                        8
+                    ],
+                    "dp": 6,
+                    "se": "1.340",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 2.39
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 4.69
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 3.49
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 2.86
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 740,
+                    "name": "Petunidin",
+                    "group": "Anthocyanidins",
+                    "unit": "mg",
+                    "value": 0.0,
+                    "sourcecode": [
+                        8
+                    ],
+                    "dp": 4,
+                    "se": "0.000",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 741,
+                    "name": "Delphinidin",
+                    "group": "Anthocyanidins",
+                    "unit": "mg",
+                    "value": 0.0,
+                    "sourcecode": [
+                        7,
+                        8
+                    ],
+                    "dp": 8,
+                    "se": "0.000",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 742,
+                    "name": "Malvidin",
+                    "group": "Anthocyanidins",
+                    "unit": "mg",
+                    "value": 0.0,
+                    "sourcecode": [
+                        8
+                    ],
+                    "dp": 4,
+                    "se": "0.000",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 743,
+                    "name": "Pelargonidin",
+                    "group": "Anthocyanidins",
+                    "unit": "mg",
+                    "value": 0.0,
+                    "sourcecode": [
+                        7,
+                        8
+                    ],
+                    "dp": 8,
+                    "se": "0.000",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 745,
+                    "name": "Peonidin",
+                    "group": "Anthocyanidins",
+                    "unit": "mg",
+                    "value": 0.0,
+                    "sourcecode": [
+                        8
+                    ],
+                    "dp": 4,
+                    "se": "0.000",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 749,
+                    "name": "(+)-Catechin",
+                    "group": "Flavan-3-ols",
+                    "unit": "mg",
+                    "value": 1.2,
+                    "sourcecode": [
+                        8,
+                        9,
+                        10
+                    ],
+                    "dp": 37,
+                    "se": "0.170",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 1.4
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 2.7
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 2.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 1.6
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 750,
+                    "name": "(-)-Epigallocatechin",
+                    "group": "Flavan-3-ols",
+                    "unit": "mg",
+                    "value": 0.1,
+                    "sourcecode": [
+                        8,
+                        9
+                    ],
+                    "dp": 31,
+                    "se": "0.080",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.2
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.3
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.2
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.2
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 751,
+                    "name": "(-)-Epicatechin",
+                    "group": "Flavan-3-ols",
+                    "unit": "mg",
+                    "value": 6.2,
+                    "sourcecode": [
+                        8,
+                        9,
+                        10,
+                        11
+                    ],
+                    "dp": 43,
+                    "se": "0.600",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 6.9
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 13.5
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 10.1
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 8.2
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 752,
+                    "name": "(-)-Epicatechin 3-gallate",
+                    "group": "Flavan-3-ols",
+                    "unit": "mg",
+                    "value": 0.0,
+                    "sourcecode": [
+                        8,
+                        9
+                    ],
+                    "dp": 31,
+                    "se": "0.000",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 753,
+                    "name": "(-)-Epigallocatechin 3-gallate",
+                    "group": "Flavan-3-ols",
+                    "unit": "mg",
+                    "value": 0.0,
+                    "sourcecode": [
+                        8,
+                        9
+                    ],
+                    "dp": 31,
+                    "se": "0.020",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.1
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 794,
+                    "name": "(+)-Gallocatechin",
+                    "group": "Flavan-3-ols",
+                    "unit": "mg",
+                    "value": 0.0,
+                    "sourcecode": [
+                        8,
+                        9
+                    ],
+                    "dp": 31,
+                    "se": "0.000",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 759,
+                    "name": "Hesperetin",
+                    "group": "Flavanones",
+                    "unit": "mg",
+                    "value": 0.0,
+                    "sourcecode": [
+                        8
+                    ],
+                    "dp": 3,
+                    "se": "0.000",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 762,
+                    "name": "Naringenin",
+                    "group": "Flavanones",
+                    "unit": "mg",
+                    "value": 0.0,
+                    "sourcecode": [
+                        8
+                    ],
+                    "dp": 3,
+                    "se": "0.000",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 770,
+                    "name": "Apigenin",
+                    "group": "Flavones",
+                    "unit": "mg",
+                    "value": 0.0,
+                    "sourcecode": [
+                        7,
+                        8
+                    ],
+                    "dp": 8,
+                    "se": "0.000",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 773,
+                    "name": "Luteolin",
+                    "group": "Flavones",
+                    "unit": "mg",
+                    "value": 0.0,
+                    "sourcecode": [
+                        7,
+                        8
+                    ],
+                    "dp": 8,
+                    "se": "0.000",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 786,
+                    "name": "Kaempferol",
+                    "group": "Flavonols",
+                    "unit": "mg",
+                    "value": 0.0,
+                    "sourcecode": [
+                        7
+                    ],
+                    "dp": 4,
+                    "se": "0.000",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 788,
+                    "name": "Myricetin",
+                    "group": "Flavonols",
+                    "unit": "mg",
+                    "value": 0.0,
+                    "sourcecode": [
+                        7,
+                        8
+                    ],
+                    "dp": 8,
+                    "se": "0.000",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 789,
+                    "name": "Quercetin",
+                    "group": "Flavonols",
+                    "unit": "mg",
+                    "value": 1.1,
+                    "sourcecode": [
+                        7,
+                        8,
+                        10,
+                        11,
+                        12,
+                        13
+                    ],
+                    "dp": 39,
+                    "se": "0.160",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 1.2
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 2.3
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 1.7
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 1.4
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 710,
+                    "name": "Daidzein",
+                    "group": "Isoflavones",
+                    "unit": "mg",
+                    "value": 0.0,
+                    "sourcecode": [
+                        14
+                    ],
+                    "dp": 3,
+                    "se": "0.000",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 711,
+                    "name": "Genistein",
+                    "group": "Isoflavones",
+                    "unit": "mg",
+                    "value": 0.0,
+                    "sourcecode": [
+                        14
+                    ],
+                    "dp": 3,
+                    "se": "0.000",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 713,
+                    "name": "Total isoflavones",
+                    "group": "Isoflavones",
+                    "unit": "mg",
+                    "value": 0.0,
+                    "sourcecode": [
+                        14
+                    ],
+                    "dp": 3,
+                    "se": "0.000",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 734,
+                    "name": "Proanthocyanidin dimers",
+                    "group": "Proanthocyanidin",
+                    "unit": "mg",
+                    "value": 12.3,
+                    "sourcecode": [
+                        4,
+                        5,
+                        6
+                    ],
+                    "dp": 39,
+                    "se": "12.370",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 13.5
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 26.5
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 19.8
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 16.2
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 735,
+                    "name": "Proanthocyanidin trimers",
+                    "group": "Proanthocyanidin",
+                    "unit": "mg",
+                    "value": 6.5,
+                    "sourcecode": [
+                        5
+                    ],
+                    "dp": 4,
+                    "se": "1.030",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 7.1
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 14.0
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 10.4
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 8.6
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 736,
+                    "name": "Proanthocyanidin 4-6mers",
+                    "group": "Proanthocyanidin",
+                    "unit": "mg",
+                    "value": 22.8,
+                    "sourcecode": [
+                        5
+                    ],
+                    "dp": 4,
+                    "se": "3.070",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 25.0
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 49.1
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 36.6
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 30.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 737,
+                    "name": "Proanthocyanidin 7-10mers",
+                    "group": "Proanthocyanidin",
+                    "unit": "mg",
+                    "value": 18.9,
+                    "sourcecode": [
+                        5
+                    ],
+                    "dp": 4,
+                    "se": "3.040",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 20.8
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 40.9
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 30.5
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 25.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 738,
+                    "name": "Proanthocyanidin polymers (>10mers)",
+                    "group": "Proanthocyanidin",
+                    "unit": "mg",
+                    "value": 25.6,
+                    "sourcecode": [
+                        5
+                    ],
+                    "dp": 4,
+                    "se": "6.390",
+                    "measures": [
+                        {
+                            "label": "cup slices",
+                            "eqv": 110.0,
+                            "qty": 1.0,
+                            "value": 28.1
+                        },
+                        {
+                            "label": "large (3-1/4\" dia)",
+                            "eqv": 216.0,
+                            "qty": 1.0,
+                            "value": 55.2
+                        },
+                        {
+                            "label": "medium (3\" dia)",
+                            "eqv": 161.0,
+                            "qty": 1.0,
+                            "value": 41.2
+                        },
+                        {
+                            "label": "small (2-3/4\" dia)",
+                            "eqv": 132.0,
+                            "qty": 1.0,
+                            "value": 33.8
+                        }
+                    ]
+                }
+            ]
+        },
+        "sources": [
+            {
+                "id": 1,
+                "title": "National Food and Nutrient Analysis Program Wave 5j",
+                "authors": "Nutrient Data Laboratory, ARS, USDA",
+                "vol": "Beltsville",
+                "iss": "MD",
+                "year": "2001"
+            },
+            {
+                "id": 2,
+                "title": "Determination of the Tocopherol Content of Selected Foods",
+                "authors": "Nutrient Data Laboratory, ARS, USDA",
+                "vol": "Beltsville",
+                "iss": "MD",
+                "year": "1992"
+            },
+            {
+                "id": 3,
+                "title": "National Food and Nutrient Analysis Program Wave 5b",
+                "authors": "Nutrient Data Laboratory, ARS, USDA",
+                "vol": "Beltsville",
+                "iss": "MD",
+                "year": "2000"
+            },
+            {
+                "id": 4,
+                "title": "Phenolic compounds and their changes in apples during maturation and cold storage",
+                "authors": "Burda, S., Oleszek, W., and Lee, C.Y.",
+                "vol": "38",
+                "iss": "",
+                "year": "1990"
+            },
+            {
+                "id": 5,
+                "title": "Concentrations of proanthocyanidins in common foods and estimations of normal consumption",
+                "authors": "Gu, L., Kelm, M.A., Hammerstone, J.F., Beecher, G., Holden, J., Haytowitz, D., Gebhardt, S., and Prior, R.L.",
+                "vol": "134",
+                "iss": "",
+                "year": "2004"
+            },
+            {
+                "id": 6,
+                "title": "Polyphenolic profiles in eight apple cultivars using high-performance liquid chromatography (HPLC)",
+                "authors": "Tsao, R., Yang, R., Young, C., and Zhu, H.",
+                "vol": "51",
+                "iss": "",
+                "year": "2003"
+            },
+            {
+                "id": 7,
+                "title": "Vitamin C and flavonoid levels of fruits and vegetables consumed in Hawaii.",
+                "authors": "Franke, A.A., Custer, L.J., Arakaki, C., and Murphy, S.P.",
+                "vol": "17",
+                "iss": "",
+                "year": "2004"
+            },
+            {
+                "id": 8,
+                "title": "Flavonoid content of U.S. fruits, vegetables, and nuts",
+                "authors": "Harnly, J. M., Doherty, R., Beecher, G. R., Holden, J. M., Haytowitz, D. B., and Bhagwat, S., and Gebhardt S.",
+                "vol": "54",
+                "iss": "",
+                "year": "2006"
+            },
+            {
+                "id": 9,
+                "title": "Catechin content of foods commonly consumed in the Netherlands. 1. Fruits, vegetables, staple foods and processed foods.",
+                "authors": "Arts, I. C. W., van de Putte, B., and Hollman, P. C. H.",
+                "vol": "48",
+                "iss": "",
+                "year": "2000"
+            },
+            {
+                "id": 10,
+                "title": "Polyphenolic profiles in eight apple cultivars using high-performance liquid chromatography (HPLC).",
+                "authors": "Tsao, R., Yang, R., Young, J.C., and Zhu, H. T",
+                "vol": "51",
+                "iss": "",
+                "year": "2003"
+            },
+            {
+                "id": 11,
+                "title": "Phenolic compounds and their changes in apples during maturation and cold storage.",
+                "authors": "Burda, S., Oleszek, W., and Lee, C. Y.",
+                "vol": "38",
+                "iss": "",
+                "year": "1990"
+            },
+            {
+                "id": 12,
+                "title": "Quantitative analysis of flavonols, flavones, and flavonones in fruits, vegetables and beverages by high-performance liquid chromatography with photo-diode array and mass spectrometric detection.",
+                "authors": "Justesen, U., Knuthsen, P., and Leth, T.",
+                "vol": "799",
+                "iss": "",
+                "year": "1998"
+            },
+            {
+                "id": 13,
+                "title": "Activity and concentration of polyphenolic antioxidants in apple: Effect of cultivar, harvest year, and storage conditions.",
+                "authors": "van der Sluis, A.A., Dekker, M., de Jager, A., and Jongen, W.M.F.",
+                "vol": "49",
+                "iss": "8",
+                "year": "2001"
+            },
+            {
+                "id": 14,
+                "title": "Daidzein and genistein content of fruits and nuts.",
+                "authors": "Liggins, J., Bluck, L. J. C., Runswick, S., Atkinson, C., Coward, W. A., Bingham, S. A.",
+                "vol": "11",
+                "iss": "",
+                "year": "2000"
+            }
+        ],
+        "footnotes": [
+            
+        ],
+        "langual": [
+            
+        ]
+    }
+}

@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AddProducts.cs" />
+    <Compile Include="Map.cs" />
     <Compile Include="ParseRecipes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

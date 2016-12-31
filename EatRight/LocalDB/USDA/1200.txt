@@ -1,0 +1,2072 @@
+{
+    "report": {
+        "sr": "28",
+        "groups": [
+            {
+                "id": "1200",
+                "description": "Nut and Seed Products"
+            }
+        ],
+        "subset": "All foods",
+        "end": 137,
+        "start": 0,
+        "total": 137,
+        "foods": [
+            {
+                "ndbno": "12060",
+                "name": "Nuts, acorn flour, full fat",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.12",
+                        "gm": 7.49
+                    }
+                ]
+            },
+            {
+                "ndbno": "12059",
+                "name": "Nuts, acorns, dried",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.30",
+                        "gm": 8.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "12058",
+                "name": "Nuts, acorns, raw",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.74",
+                        "gm": 6.15
+                    }
+                ]
+            },
+            {
+                "ndbno": "12695",
+                "name": "Nuts, almond butter, plain, with salt added",
+                "weight": 16.0,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.35",
+                        "gm": 20.96
+                    }
+                ]
+            },
+            {
+                "ndbno": "12195",
+                "name": "Nuts, almond butter, plain, without salt added",
+                "weight": 16.0,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.35",
+                        "gm": 20.96
+                    }
+                ]
+            },
+            {
+                "ndbno": "12071",
+                "name": "Nuts, almond paste",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.55",
+                        "gm": 9.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "12061",
+                "name": "Nuts, almonds",
+                "weight": 143.0,
+                "measure": "1.0 cup, whole",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "30.24",
+                        "gm": 21.15
+                    }
+                ]
+            },
+            {
+                "ndbno": "12062",
+                "name": "Nuts, almonds, blanched",
+                "weight": 145.0,
+                "measure": "1.0 cup whole kernels",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "31.03",
+                        "gm": 21.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "12563",
+                "name": "Nuts, almonds, dry roasted, with salt added",
+                "weight": 138.0,
+                "measure": "1.0 cup whole kernels",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "28.92",
+                        "gm": 20.96
+                    }
+                ]
+            },
+            {
+                "ndbno": "12063",
+                "name": "Nuts, almonds, dry roasted, without salt added",
+                "weight": 138.0,
+                "measure": "1.0 cup whole kernels",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "28.92",
+                        "gm": 20.96
+                    }
+                ]
+            },
+            {
+                "ndbno": "12206",
+                "name": "Nuts, almonds, honey roasted, unblanched",
+                "weight": 144.0,
+                "measure": "1.0 cup whole kernels",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "26.16",
+                        "gm": 18.17
+                    }
+                ]
+            },
+            {
+                "ndbno": "12665",
+                "name": "Nuts, almonds, oil roasted, lightly salted",
+                "weight": 157.0,
+                "measure": "1.0 cup whole kernels",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "33.33",
+                        "gm": 21.23
+                    }
+                ]
+            },
+            {
+                "ndbno": "12565",
+                "name": "Nuts, almonds, oil roasted, with salt added",
+                "weight": 157.0,
+                "measure": "1.0 cup whole kernels",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "33.33",
+                        "gm": 21.23
+                    }
+                ]
+            },
+            {
+                "ndbno": "12567",
+                "name": "Nuts, almonds, oil roasted, with salt added, smoke flavor",
+                "weight": 28.0,
+                "measure": "1.0 oz (28 almonds)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.00",
+                        "gm": 21.43
+                    }
+                ]
+            },
+            {
+                "ndbno": "12065",
+                "name": "Nuts, almonds, oil roasted, without salt added",
+                "weight": 157.0,
+                "measure": "1.0 cup whole kernels",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "33.33",
+                        "gm": 21.23
+                    }
+                ]
+            },
+            {
+                "ndbno": "12077",
+                "name": "Nuts, beechnuts, dried",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.76",
+                        "gm": 6.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "12078",
+                "name": "Nuts, brazilnuts, dried, unblanched",
+                "weight": 133.0,
+                "measure": "1.0 cup, whole",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "19.05",
+                        "gm": 14.32
+                    }
+                ]
+            },
+            {
+                "ndbno": "12084",
+                "name": "Nuts, butternuts, dried",
+                "weight": 120.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "29.88",
+                        "gm": 24.9
+                    }
+                ]
+            },
+            {
+                "ndbno": "12588",
+                "name": "Nuts, cashew butter, plain, with salt added",
+                "weight": 16.0,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.94",
+                        "gm": 12.12
+                    }
+                ]
+            },
+            {
+                "ndbno": "12088",
+                "name": "Nuts, cashew butter, plain, without salt added",
+                "weight": 16.0,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.81",
+                        "gm": 17.56
+                    }
+                ]
+            },
+            {
+                "ndbno": "12585",
+                "name": "Nuts, cashew nuts, dry roasted, with salt added",
+                "weight": 137.0,
+                "measure": "1.0 cup, halves and whole",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "20.97",
+                        "gm": 15.31
+                    }
+                ]
+            },
+            {
+                "ndbno": "12085",
+                "name": "Nuts, cashew nuts, dry roasted, without salt added",
+                "weight": 137.0,
+                "measure": "1.0 cup, halves and whole",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "20.97",
+                        "gm": 15.31
+                    }
+                ]
+            },
+            {
+                "ndbno": "12586",
+                "name": "Nuts, cashew nuts, oil roasted, with salt added",
+                "weight": 129.0,
+                "measure": "1.0 cup, whole",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "21.72",
+                        "gm": 16.84
+                    }
+                ]
+            },
+            {
+                "ndbno": "12086",
+                "name": "Nuts, cashew nuts, oil roasted, without salt added",
+                "weight": 129.0,
+                "measure": "1.0 cup, whole",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "21.72",
+                        "gm": 16.84
+                    }
+                ]
+            },
+            {
+                "ndbno": "12087",
+                "name": "Nuts, cashew nuts, raw",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.17",
+                        "gm": 18.22
+                    }
+                ]
+            },
+            {
+                "ndbno": "12095",
+                "name": "Nuts, chestnuts, chinese, boiled and steamed",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.82",
+                        "gm": 2.88
+                    }
+                ]
+            },
+            {
+                "ndbno": "12094",
+                "name": "Nuts, chestnuts, chinese, dried",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.93",
+                        "gm": 6.82
+                    }
+                ]
+            },
+            {
+                "ndbno": "12093",
+                "name": "Nuts, chestnuts, chinese, raw",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.19",
+                        "gm": 4.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "12096",
+                "name": "Nuts, chestnuts, chinese, roasted",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.27",
+                        "gm": 4.48
+                    }
+                ]
+            },
+            {
+                "ndbno": "12101",
+                "name": "Nuts, chestnuts, european, boiled and steamed",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.57",
+                        "gm": 2.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "12100",
+                "name": "Nuts, chestnuts, european, dried, peeled",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.42",
+                        "gm": 5.01
+                    }
+                ]
+            },
+            {
+                "ndbno": "12099",
+                "name": "Nuts, chestnuts, european, dried, unpeeled",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.81",
+                        "gm": 6.39
+                    }
+                ]
+            },
+            {
+                "ndbno": "12098",
+                "name": "Nuts, chestnuts, european, raw, peeled",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.46",
+                        "gm": 1.63
+                    }
+                ]
+            },
+            {
+                "ndbno": "12097",
+                "name": "Nuts, chestnuts, european, raw, unpeeled",
+                "weight": 145.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.51",
+                        "gm": 2.42
+                    }
+                ]
+            },
+            {
+                "ndbno": "12167",
+                "name": "Nuts, chestnuts, european, roasted",
+                "weight": 143.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.53",
+                        "gm": 3.17
+                    }
+                ]
+            },
+            {
+                "ndbno": "12203",
+                "name": "Nuts, chestnuts, japanese, boiled and steamed",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.23",
+                        "gm": 0.82
+                    }
+                ]
+            },
+            {
+                "ndbno": "12175",
+                "name": "Nuts, chestnuts, japanese, dried",
+                "weight": 155.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.14",
+                        "gm": 5.25
+                    }
+                ]
+            },
+            {
+                "ndbno": "12202",
+                "name": "Nuts, chestnuts, japanese, raw",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.64",
+                        "gm": 2.25
+                    }
+                ]
+            },
+            {
+                "ndbno": "12204",
+                "name": "Nuts, chestnuts, japanese, roasted",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.84",
+                        "gm": 2.97
+                    }
+                ]
+            },
+            {
+                "ndbno": "12116",
+                "name": "Nuts, coconut cream, canned, sweetened",
+                "weight": 19.0,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.22",
+                        "gm": 1.17
+                    }
+                ]
+            },
+            {
+                "ndbno": "12115",
+                "name": "Nuts, coconut cream, raw (liquid expressed from grated meat)",
+                "weight": 15.0,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.54",
+                        "gm": 3.63
+                    }
+                ]
+            },
+            {
+                "ndbno": "12177",
+                "name": "Nuts, coconut meat, dried (desiccated), creamed",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.50",
+                        "gm": 5.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "12108",
+                "name": "Nuts, coconut meat, dried (desiccated), not sweetened",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.95",
+                        "gm": 6.88
+                    }
+                ]
+            },
+            {
+                "ndbno": "12110",
+                "name": "Nuts, coconut meat, dried (desiccated), sweetened, flaked, canned",
+                "weight": 77.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.58",
+                        "gm": 3.35
+                    }
+                ]
+            },
+            {
+                "ndbno": "12109",
+                "name": "Nuts, coconut meat, dried (desiccated), sweetened, flaked, packaged",
+                "weight": 85.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.66",
+                        "gm": 3.13
+                    }
+                ]
+            },
+            {
+                "ndbno": "12179",
+                "name": "Nuts, coconut meat, dried (desiccated), sweetened, shredded",
+                "weight": 93.0,
+                "measure": "1.0 cup, shredded",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.68",
+                        "gm": 2.88
+                    }
+                ]
+            },
+            {
+                "ndbno": "12114",
+                "name": "Nuts, coconut meat, dried (desiccated), toasted",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.50",
+                        "gm": 5.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "12104",
+                "name": "Nuts, coconut meat, raw",
+                "weight": 80.0,
+                "measure": "1.0 cup, shredded",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.66",
+                        "gm": 3.33
+                    }
+                ]
+            },
+            {
+                "ndbno": "12118",
+                "name": "Nuts, coconut milk, canned (liquid expressed from grated meat and water)",
+                "weight": 226.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.57",
+                        "gm": 2.02
+                    }
+                ]
+            },
+            {
+                "ndbno": "12176",
+                "name": "Nuts, coconut milk, frozen (liquid expressed from grated meat and water)",
+                "weight": 240.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.86",
+                        "gm": 1.61
+                    }
+                ]
+            },
+            {
+                "ndbno": "12117",
+                "name": "Nuts, coconut milk, raw (liquid expressed from grated meat and water)",
+                "weight": 240.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.50",
+                        "gm": 2.29
+                    }
+                ]
+            },
+            {
+                "ndbno": "12119",
+                "name": "Nuts, coconut water (liquid from coconuts)",
+                "weight": 240.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.73",
+                        "gm": 0.72
+                    }
+                ]
+            },
+            {
+                "ndbno": "12200",
+                "name": "Nuts, formulated, wheat-based, all flavors except macadamia, without salt",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.72",
+                        "gm": 13.11
+                    }
+                ]
+            },
+            {
+                "ndbno": "12140",
+                "name": "Nuts, formulated, wheat-based, unflavored, with salt added",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.92",
+                        "gm": 13.82
+                    }
+                ]
+            },
+            {
+                "ndbno": "12129",
+                "name": "Nuts, ginkgo nuts, canned",
+                "weight": 155.0,
+                "measure": "1.0 cup (78 kernels)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.55",
+                        "gm": 2.29
+                    }
+                ]
+            },
+            {
+                "ndbno": "12128",
+                "name": "Nuts, ginkgo nuts, dried",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.93",
+                        "gm": 10.35
+                    }
+                ]
+            },
+            {
+                "ndbno": "12127",
+                "name": "Nuts, ginkgo nuts, raw",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.22",
+                        "gm": 4.32
+                    }
+                ]
+            },
+            {
+                "ndbno": "12120",
+                "name": "Nuts, hazelnuts or filberts",
+                "weight": 115.0,
+                "measure": "1.0 cup, chopped",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.19",
+                        "gm": 14.95
+                    }
+                ]
+            },
+            {
+                "ndbno": "12121",
+                "name": "Nuts, hazelnuts or filberts, blanched",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.88",
+                        "gm": 13.7
+                    }
+                ]
+            },
+            {
+                "ndbno": "12122",
+                "name": "Nuts, hazelnuts or filberts, dry roasted, without salt added",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.26",
+                        "gm": 15.03
+                    }
+                ]
+            },
+            {
+                "ndbno": "12130",
+                "name": "Nuts, hickorynuts, dried",
+                "weight": 120.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.26",
+                        "gm": 12.72
+                    }
+                ]
+            },
+            {
+                "ndbno": "12632",
+                "name": "Nuts, macadamia nuts, dry roasted, with salt added",
+                "weight": 132.0,
+                "measure": "1.0 cup, whole or halves",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.28",
+                        "gm": 7.79
+                    }
+                ]
+            },
+            {
+                "ndbno": "12132",
+                "name": "Nuts, macadamia nuts, dry roasted, without salt added",
+                "weight": 132.0,
+                "measure": "1.0 cup, whole or halves",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.28",
+                        "gm": 7.79
+                    }
+                ]
+            },
+            {
+                "ndbno": "12131",
+                "name": "Nuts, macadamia nuts, raw",
+                "weight": 134.0,
+                "measure": "1.0 cup, whole or halves",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.60",
+                        "gm": 7.91
+                    }
+                ]
+            },
+            {
+                "ndbno": "12141",
+                "name": "Nuts, mixed nuts, dry roasted, with peanuts, salt added, CHOSEN ROASTER",
+                "weight": 132.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "23.76",
+                        "gm": 18.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "12136",
+                "name": "Nuts, mixed nuts, dry roasted, with peanuts, salt added, PLANTERS pistachio blend",
+                "weight": 147.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "32.27",
+                        "gm": 21.95
+                    }
+                ]
+            },
+            {
+                "ndbno": "12635",
+                "name": "Nuts, mixed nuts, dry roasted, with peanuts, with salt added",
+                "weight": 137.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "23.70",
+                        "gm": 17.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "12135",
+                "name": "Nuts, mixed nuts, dry roasted, with peanuts, without salt added",
+                "weight": 131.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "25.55",
+                        "gm": 19.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "12737",
+                "name": "Nuts, mixed nuts, oil roasted, with peanuts, lightly salted",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.68",
+                        "gm": 20.04
+                    }
+                ]
+            },
+            {
+                "ndbno": "12637",
+                "name": "Nuts, mixed nuts, oil roasted, with peanuts, with salt added",
+                "weight": 134.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "26.85",
+                        "gm": 20.04
+                    }
+                ]
+            },
+            {
+                "ndbno": "12137",
+                "name": "Nuts, mixed nuts, oil roasted, with peanuts, without salt added",
+                "weight": 134.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "26.85",
+                        "gm": 20.04
+                    }
+                ]
+            },
+            {
+                "ndbno": "12738",
+                "name": "Nuts, mixed nuts, oil roasted, without peanuts, lightly salted",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.06",
+                        "gm": 17.86
+                    }
+                ]
+            },
+            {
+                "ndbno": "12638",
+                "name": "Nuts, mixed nuts, oil roasted, without peanuts, with salt added",
+                "weight": 144.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.35",
+                        "gm": 15.52
+                    }
+                ]
+            },
+            {
+                "ndbno": "12138",
+                "name": "Nuts, mixed nuts, oil roasted, without peanuts, without salt added",
+                "weight": 144.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.35",
+                        "gm": 15.52
+                    }
+                ]
+            },
+            {
+                "ndbno": "12142",
+                "name": "Nuts, pecans",
+                "weight": 109.0,
+                "measure": "1.0 cup, chopped",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.00",
+                        "gm": 9.17
+                    }
+                ]
+            },
+            {
+                "ndbno": "12643",
+                "name": "Nuts, pecans, dry roasted, with salt added",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.69",
+                        "gm": 9.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "12143",
+                "name": "Nuts, pecans, dry roasted, without salt added",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.69",
+                        "gm": 9.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "12644",
+                "name": "Nuts, pecans, oil roasted, with salt added",
+                "weight": 110.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.12",
+                        "gm": 9.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "12144",
+                "name": "Nuts, pecans, oil roasted, without salt added",
+                "weight": 110.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.12",
+                        "gm": 9.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "12145",
+                "name": "Nuts, pilinuts, dried",
+                "weight": 120.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.96",
+                        "gm": 10.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "12147",
+                "name": "Nuts, pine nuts, dried",
+                "weight": 135.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "18.48",
+                        "gm": 13.69
+                    }
+                ]
+            },
+            {
+                "ndbno": "12149",
+                "name": "Nuts, pine nuts, pinyon, dried",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.28",
+                        "gm": 11.57
+                    }
+                ]
+            },
+            {
+                "ndbno": "12652",
+                "name": "Nuts, pistachio nuts, dry roasted, with salt added",
+                "weight": 123.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "25.89",
+                        "gm": 21.05
+                    }
+                ]
+            },
+            {
+                "ndbno": "12152",
+                "name": "Nuts, pistachio nuts, dry roasted, without salt added",
+                "weight": 123.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "25.89",
+                        "gm": 21.05
+                    }
+                ]
+            },
+            {
+                "ndbno": "12151",
+                "name": "Nuts, pistachio nuts, raw",
+                "weight": 123.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "24.80",
+                        "gm": 20.16
+                    }
+                ]
+            },
+            {
+                "ndbno": "12154",
+                "name": "Nuts, walnuts, black, dried",
+                "weight": 125.0,
+                "measure": "1.0 cup, chopped",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "30.07",
+                        "gm": 24.06
+                    }
+                ]
+            },
+            {
+                "ndbno": "12157",
+                "name": "Nuts, walnuts, dry roasted, with salt added",
+                "weight": 28.0,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.00",
+                        "gm": 14.29
+                    }
+                ]
+            },
+            {
+                "ndbno": "12155",
+                "name": "Nuts, walnuts, english",
+                "weight": 117.0,
+                "measure": "1.0 cup, chopped",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.82",
+                        "gm": 15.23
+                    }
+                ]
+            },
+            {
+                "ndbno": "12156",
+                "name": "Nuts, walnuts, glazed",
+                "weight": 28.0,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.32",
+                        "gm": 8.28
+                    }
+                ]
+            },
+            {
+                "ndbno": "12003",
+                "name": "Seeds, breadfruit seeds, boiled",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.50",
+                        "gm": 5.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "12001",
+                "name": "Seeds, breadfruit seeds, raw",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.10",
+                        "gm": 7.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "12158",
+                "name": "Seeds, breadfruit seeds, roasted",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.76",
+                        "gm": 6.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "12005",
+                "name": "Seeds, breadnut tree seeds, dried",
+                "weight": 160.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.79",
+                        "gm": 8.62
+                    }
+                ]
+            },
+            {
+                "ndbno": "12004",
+                "name": "Seeds, breadnut tree seeds, raw",
+                "weight": 28.35,
+                "measure": "1.0 oz (8-14 seeds)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.69",
+                        "gm": 5.97
+                    }
+                ]
+            },
+            {
+                "ndbno": "12006",
+                "name": "Seeds, chia seeds, dried",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.69",
+                        "gm": 16.54
+                    }
+                ]
+            },
+            {
+                "ndbno": "12008",
+                "name": "Seeds, cottonseed flour, low fat (glandless)",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.13",
+                        "gm": 49.83
+                    }
+                ]
+            },
+            {
+                "ndbno": "12007",
+                "name": "Seeds, cottonseed flour, partially defatted (glandless)",
+                "weight": 94.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "38.50",
+                        "gm": 40.96
+                    }
+                ]
+            },
+            {
+                "ndbno": "12160",
+                "name": "Seeds, cottonseed kernels, roasted (glandless)",
+                "weight": 149.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "48.56",
+                        "gm": 32.59
+                    }
+                ]
+            },
+            {
+                "ndbno": "12011",
+                "name": "Seeds, cottonseed meal, partially defatted (glandless)",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.92",
+                        "gm": 49.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "12220",
+                "name": "Seeds, flaxseed",
+                "weight": 10.3,
+                "measure": "1.0 tbsp, whole",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.88",
+                        "gm": 18.29
+                    }
+                ]
+            },
+            {
+                "ndbno": "12012",
+                "name": "Seeds, hemp seed, hulled",
+                "weight": 30.0,
+                "measure": "3.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.47",
+                        "gm": 31.56
+                    }
+                ]
+            },
+            {
+                "ndbno": "12013",
+                "name": "Seeds, lotus seeds, dried",
+                "weight": 32.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.93",
+                        "gm": 15.41
+                    }
+                ]
+            },
+            {
+                "ndbno": "12205",
+                "name": "Seeds, lotus seeds, raw",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.17",
+                        "gm": 4.13
+                    }
+                ]
+            },
+            {
+                "ndbno": "12014",
+                "name": "Seeds, pumpkin and squash seed kernels, dried",
+                "weight": 129.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "39.00",
+                        "gm": 30.23
+                    }
+                ]
+            },
+            {
+                "ndbno": "12516",
+                "name": "Seeds, pumpkin and squash seed kernels, roasted, with salt added",
+                "weight": 118.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "35.21",
+                        "gm": 29.84
+                    }
+                ]
+            },
+            {
+                "ndbno": "12016",
+                "name": "Seeds, pumpkin and squash seed kernels, roasted, without salt",
+                "weight": 118.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "35.21",
+                        "gm": 29.84
+                    }
+                ]
+            },
+            {
+                "ndbno": "12663",
+                "name": "Seeds, pumpkin and squash seeds, whole, roasted, with salt added",
+                "weight": 64.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.87",
+                        "gm": 18.55
+                    }
+                ]
+            },
+            {
+                "ndbno": "12163",
+                "name": "Seeds, pumpkin and squash seeds, whole, roasted, without salt",
+                "weight": 64.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.87",
+                        "gm": 18.55
+                    }
+                ]
+            },
+            {
+                "ndbno": "12021",
+                "name": "Seeds, safflower seed kernels, dried",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.59",
+                        "gm": 16.18
+                    }
+                ]
+            },
+            {
+                "ndbno": "12022",
+                "name": "Seeds, safflower seed meal, partially defatted",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.10",
+                        "gm": 35.62
+                    }
+                ]
+            },
+            {
+                "ndbno": "12169",
+                "name": "Seeds, sesame butter, paste",
+                "weight": 16.0,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.89",
+                        "gm": 18.08
+                    }
+                ]
+            },
+            {
+                "ndbno": "12198",
+                "name": "Seeds, sesame butter, tahini, from raw and stone ground kernels",
+                "weight": 15.0,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.67",
+                        "gm": 17.81
+                    }
+                ]
+            },
+            {
+                "ndbno": "12166",
+                "name": "Seeds, sesame butter, tahini, from roasted and toasted kernels (most common type)",
+                "weight": 15.0,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.55",
+                        "gm": 17.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "12171",
+                "name": "Seeds, sesame butter, tahini, from unroasted kernels (non-chemically removed seed coat)",
+                "weight": 14.0,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.51",
+                        "gm": 17.95
+                    }
+                ]
+            },
+            {
+                "ndbno": "12698",
+                "name": "Seeds, sesame butter, tahini, type of kernels unspecified",
+                "weight": 15.0,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.61",
+                        "gm": 17.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "12170",
+                "name": "Seeds, sesame flour, high-fat",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.73",
+                        "gm": 30.78
+                    }
+                ]
+            },
+            {
+                "ndbno": "12033",
+                "name": "Seeds, sesame flour, low-fat",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.21",
+                        "gm": 50.14
+                    }
+                ]
+            },
+            {
+                "ndbno": "12032",
+                "name": "Seeds, sesame flour, partially defatted",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.43",
+                        "gm": 40.32
+                    }
+                ]
+            },
+            {
+                "ndbno": "12034",
+                "name": "Seeds, sesame meal, partially defatted",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.81",
+                        "gm": 16.96
+                    }
+                ]
+            },
+            {
+                "ndbno": "12201",
+                "name": "Seeds, sesame seed kernels, dried (decorticated)",
+                "weight": 150.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "30.68",
+                        "gm": 20.45
+                    }
+                ]
+            },
+            {
+                "ndbno": "12529",
+                "name": "Seeds, sesame seed kernels, toasted, with salt added (decorticated)",
+                "weight": 128.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "21.71",
+                        "gm": 16.96
+                    }
+                ]
+            },
+            {
+                "ndbno": "12029",
+                "name": "Seeds, sesame seed kernels, toasted, without salt added (decorticated)",
+                "weight": 128.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "21.71",
+                        "gm": 16.96
+                    }
+                ]
+            },
+            {
+                "ndbno": "12023",
+                "name": "Seeds, sesame seeds, whole, dried",
+                "weight": 144.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "25.53",
+                        "gm": 17.73
+                    }
+                ]
+            },
+            {
+                "ndbno": "12024",
+                "name": "Seeds, sesame seeds, whole, roasted and toasted",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.81",
+                        "gm": 16.96
+                    }
+                ]
+            },
+            {
+                "ndbno": "12193",
+                "name": "Seeds, sisymbrium sp. seeds, whole, dried",
+                "weight": 74.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.98",
+                        "gm": 12.14
+                    }
+                ]
+            },
+            {
+                "ndbno": "12540",
+                "name": "Seeds, sunflower seed butter, with salt added",
+                "weight": 16.0,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.76",
+                        "gm": 17.28
+                    }
+                ]
+            },
+            {
+                "ndbno": "12040",
+                "name": "Seeds, sunflower seed butter, without salt",
+                "weight": 16.0,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.76",
+                        "gm": 17.28
+                    }
+                ]
+            },
+            {
+                "ndbno": "12041",
+                "name": "Seeds, sunflower seed flour, partially defatted",
+                "weight": 64.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "30.76",
+                        "gm": 48.06
+                    }
+                ]
+            },
+            {
+                "ndbno": "12536",
+                "name": "Seeds, sunflower seed kernels from shell, dry roasted, with salt added",
+                "weight": 128.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "24.74",
+                        "gm": 19.33
+                    }
+                ]
+            },
+            {
+                "ndbno": "12036",
+                "name": "Seeds, sunflower seed kernels, dried",
+                "weight": 46.0,
+                "measure": "1.0 cup, with hulls, edible yield",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.56",
+                        "gm": 20.78
+                    }
+                ]
+            },
+            {
+                "ndbno": "12537",
+                "name": "Seeds, sunflower seed kernels, dry roasted, with salt added",
+                "weight": 128.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "24.74",
+                        "gm": 19.33
+                    }
+                ]
+            },
+            {
+                "ndbno": "12037",
+                "name": "Seeds, sunflower seed kernels, dry roasted, without salt",
+                "weight": 128.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "24.74",
+                        "gm": 19.33
+                    }
+                ]
+            },
+            {
+                "ndbno": "12538",
+                "name": "Seeds, sunflower seed kernels, oil roasted, with salt added",
+                "weight": 135.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "27.08",
+                        "gm": 20.06
+                    }
+                ]
+            },
+            {
+                "ndbno": "12038",
+                "name": "Seeds, sunflower seed kernels, oil roasted, without salt",
+                "weight": 135.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "27.08",
+                        "gm": 20.06
+                    }
+                ]
+            },
+            {
+                "ndbno": "12539",
+                "name": "Seeds, sunflower seed kernels, toasted, with salt added",
+                "weight": 134.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "23.06",
+                        "gm": 17.21
+                    }
+                ]
+            },
+            {
+                "ndbno": "12039",
+                "name": "Seeds, sunflower seed kernels, toasted, without salt",
+                "weight": 134.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "23.06",
+                        "gm": 17.21
+                    }
+                ]
+            },
+            {
+                "ndbno": "12174",
+                "name": "Seeds, watermelon seed kernels, dried",
+                "weight": 108.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "30.60",
+                        "gm": 28.33
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -14,7 +14,7 @@ namespace InitRecipes {
 
         public static ILog log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
         public static object Locker = new object();
-        public static string FolderPath = Assembly.GetExecutingAssembly().Location + @"\..\..\..\..\FruitsDB\";
+        public static string FolderPath = Assembly.GetExecutingAssembly().Location + @"\..\..\..\..\LocalDB\";
         public static List<int> Indexes;
 
         public static void CreateDB(bool overrideDB) {

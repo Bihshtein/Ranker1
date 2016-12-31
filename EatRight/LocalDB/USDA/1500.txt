@@ -1,0 +1,3992 @@
+{
+    "report": {
+        "sr": "28",
+        "groups": [
+            {
+                "id": "1500",
+                "description": "Finfish and Shellfish Products"
+            }
+        ],
+        "subset": "All foods",
+        "end": 265,
+        "start": 0,
+        "total": 265,
+        "foods": [
+            {
+                "ndbno": "15137",
+                "name": "Crustaceans, crab, alaska king, cooked, moist heat",
+                "weight": 134.0,
+                "measure": "1.0 leg",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "25.93",
+                        "gm": 19.35
+                    }
+                ]
+            },
+            {
+                "ndbno": "15138",
+                "name": "Crustaceans, crab, alaska king, imitation, made from surimi",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.48",
+                        "gm": 7.62
+                    }
+                ]
+            },
+            {
+                "ndbno": "15136",
+                "name": "Crustaceans, crab, alaska king, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.55",
+                        "gm": 18.29
+                    }
+                ]
+            },
+            {
+                "ndbno": "15141",
+                "name": "Crustaceans, crab, blue, canned",
+                "weight": 135.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "24.14",
+                        "gm": 17.88
+                    }
+                ]
+            },
+            {
+                "ndbno": "15140",
+                "name": "Crustaceans, crab, blue, cooked, moist heat",
+                "weight": 118.0,
+                "measure": "1.0 cup, flaked and pieces",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "21.10",
+                        "gm": 17.88
+                    }
+                ]
+            },
+            {
+                "ndbno": "15142",
+                "name": "Crustaceans, crab, blue, crab cakes, home recipe",
+                "weight": 60.0,
+                "measure": "1.0 cake",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.13",
+                        "gm": 20.21
+                    }
+                ]
+            },
+            {
+                "ndbno": "15139",
+                "name": "Crustaceans, crab, blue, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.35",
+                        "gm": 18.06
+                    }
+                ]
+            },
+            {
+                "ndbno": "15226",
+                "name": "Crustaceans, crab, dungeness, cooked, moist heat",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "18.97",
+                        "gm": 22.32
+                    }
+                ]
+            },
+            {
+                "ndbno": "15143",
+                "name": "Crustaceans, crab, dungeness, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.80",
+                        "gm": 17.41
+                    }
+                ]
+            },
+            {
+                "ndbno": "15227",
+                "name": "Crustaceans, crab, queen, cooked, moist heat",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "20.16",
+                        "gm": 23.72
+                    }
+                ]
+            },
+            {
+                "ndbno": "15144",
+                "name": "Crustaceans, crab, queen, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.72",
+                        "gm": 18.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "15243",
+                "name": "Crustaceans, crayfish, mixed species, farmed, cooked, moist heat",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.89",
+                        "gm": 17.52
+                    }
+                ]
+            },
+            {
+                "ndbno": "15242",
+                "name": "Crustaceans, crayfish, mixed species, farmed, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.62",
+                        "gm": 14.85
+                    }
+                ]
+            },
+            {
+                "ndbno": "15146",
+                "name": "Crustaceans, crayfish, mixed species, wild, cooked, moist heat",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.25",
+                        "gm": 16.77
+                    }
+                ]
+            },
+            {
+                "ndbno": "15145",
+                "name": "Crustaceans, crayfish, mixed species, wild, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.57",
+                        "gm": 15.97
+                    }
+                ]
+            },
+            {
+                "ndbno": "15148",
+                "name": "Crustaceans, lobster, northern, cooked, moist heat",
+                "weight": 145.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "27.55",
+                        "gm": 19.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "15147",
+                "name": "Crustaceans, lobster, northern, raw",
+                "weight": 150.0,
+                "measure": "1.0 lobster",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "24.78",
+                        "gm": 16.52
+                    }
+                ]
+            },
+            {
+                "ndbno": "15271",
+                "name": "Crustaceans, shrimp, cooked (not previously frozen)",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "20.38",
+                        "gm": 23.98
+                    }
+                ]
+            },
+            {
+                "ndbno": "15152",
+                "name": "Crustaceans, shrimp, mixed species, canned",
+                "weight": 128.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "26.14",
+                        "gm": 20.42
+                    }
+                ]
+            },
+            {
+                "ndbno": "15150",
+                "name": "Crustaceans, shrimp, mixed species, cooked, breaded and fried",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "18.18",
+                        "gm": 21.39
+                    }
+                ]
+            },
+            {
+                "ndbno": "15151",
+                "name": "Crustaceans, shrimp, mixed species, cooked, moist heat (may have been previously frozen)",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "19.36",
+                        "gm": 22.78
+                    }
+                ]
+            },
+            {
+                "ndbno": "15153",
+                "name": "Crustaceans, shrimp, mixed species, imitation, made from surimi",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.53",
+                        "gm": 12.39
+                    }
+                ]
+            },
+            {
+                "ndbno": "15149",
+                "name": "Crustaceans, shrimp, mixed species, raw (may have been previously frozen)",
+                "weight": 6.0,
+                "measure": "1.0 medium",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.82",
+                        "gm": 13.61
+                    }
+                ]
+            },
+            {
+                "ndbno": "15270",
+                "name": "Crustaceans, shrimp, raw (not previously frozen)",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.09",
+                        "gm": 20.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "15228",
+                "name": "Crustaceans, spiny lobster, mixed species, cooked, moist heat",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.45",
+                        "gm": 26.41
+                    }
+                ]
+            },
+            {
+                "ndbno": "15154",
+                "name": "Crustaceans, spiny lobster, mixed species, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.51",
+                        "gm": 20.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "15002",
+                "name": "Fish, anchovy, european, canned in oil, drained solids",
+                "weight": 28.35,
+                "measure": "1.0 oz, boneless",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.19",
+                        "gm": 28.89
+                    }
+                ]
+            },
+            {
+                "ndbno": "15001",
+                "name": "Fish, anchovy, european, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.30",
+                        "gm": 20.35
+                    }
+                ]
+            },
+            {
+                "ndbno": "15003",
+                "name": "Fish, bass, fresh water, mixed species, raw",
+                "weight": 79.0,
+                "measure": "1.0 fillet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.90",
+                        "gm": 18.86
+                    }
+                ]
+            },
+            {
+                "ndbno": "15187",
+                "name": "Fish, bass, freshwater, mixed species, cooked, dry heat",
+                "weight": 62.0,
+                "measure": "1.0 fillet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.99",
+                        "gm": 24.18
+                    }
+                ]
+            },
+            {
+                "ndbno": "15188",
+                "name": "Fish, bass, striped, cooked, dry heat",
+                "weight": 124.0,
+                "measure": "1.0 fillet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "28.19",
+                        "gm": 22.73
+                    }
+                ]
+            },
+            {
+                "ndbno": "15004",
+                "name": "Fish, bass, striped, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.07",
+                        "gm": 17.73
+                    }
+                ]
+            },
+            {
+                "ndbno": "15189",
+                "name": "Fish, bluefish, cooked, dry heat",
+                "weight": 117.0,
+                "measure": "1.0 fillet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "30.06",
+                        "gm": 25.69
+                    }
+                ]
+            },
+            {
+                "ndbno": "15005",
+                "name": "Fish, bluefish, raw",
+                "weight": 150.0,
+                "measure": "1.0 fillet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "30.06",
+                        "gm": 20.04
+                    }
+                ]
+            },
+            {
+                "ndbno": "15190",
+                "name": "Fish, burbot, cooked, dry heat",
+                "weight": 90.0,
+                "measure": "1.0 fillet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.28",
+                        "gm": 24.76
+                    }
+                ]
+            },
+            {
+                "ndbno": "15006",
+                "name": "Fish, burbot, raw",
+                "weight": 116.0,
+                "measure": "1.0 fillet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.40",
+                        "gm": 19.31
+                    }
+                ]
+            },
+            {
+                "ndbno": "15191",
+                "name": "Fish, butterfish, cooked, dry heat",
+                "weight": 25.0,
+                "measure": "1.0 fillet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.54",
+                        "gm": 22.15
+                    }
+                ]
+            },
+            {
+                "ndbno": "15007",
+                "name": "Fish, butterfish, raw",
+                "weight": 32.0,
+                "measure": "1.0 fillet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.53",
+                        "gm": 17.28
+                    }
+                ]
+            },
+            {
+                "ndbno": "15009",
+                "name": "Fish, carp, cooked, dry heat",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "19.43",
+                        "gm": 22.86
+                    }
+                ]
+            },
+            {
+                "ndbno": "15008",
+                "name": "Fish, carp, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.16",
+                        "gm": 17.83
+                    }
+                ]
+            },
+            {
+                "ndbno": "15011",
+                "name": "Fish, catfish, channel, cooked, breaded and fried",
+                "weight": 87.0,
+                "measure": "1.0 fillet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.74",
+                        "gm": 18.09
+                    }
+                ]
+            },
+            {
+                "ndbno": "15235",
+                "name": "Fish, catfish, channel, farmed, cooked, dry heat",
+                "weight": 143.0,
+                "measure": "1.0 fillet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "26.37",
+                        "gm": 18.44
+                    }
+                ]
+            },
+            {
+                "ndbno": "15234",
+                "name": "Fish, catfish, channel, farmed, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.95",
+                        "gm": 15.23
+                    }
+                ]
+            },
+            {
+                "ndbno": "15233",
+                "name": "Fish, catfish, channel, wild, cooked, dry heat",
+                "weight": 143.0,
+                "measure": "1.0 fillet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "26.41",
+                        "gm": 18.47
+                    }
+                ]
+            },
+            {
+                "ndbno": "15010",
+                "name": "Fish, catfish, channel, wild, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.92",
+                        "gm": 16.38
+                    }
+                ]
+            },
+            {
+                "ndbno": "15012",
+                "name": "Fish, caviar, black and red, granular",
+                "weight": 16.0,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.94",
+                        "gm": 24.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "15013",
+                "name": "Fish, cisco, raw",
+                "weight": 79.0,
+                "measure": "1.0 fillet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.00",
+                        "gm": 18.99
+                    }
+                ]
+            },
+            {
+                "ndbno": "15014",
+                "name": "Fish, cisco, smoked",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.64",
+                        "gm": 16.36
+                    }
+                ]
+            },
+            {
+                "ndbno": "15017",
+                "name": "Fish, cod, Atlantic, canned, solids and liquid",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "19.35",
+                        "gm": 22.76
+                    }
+                ]
+            },
+            {
+                "ndbno": "15016",
+                "name": "Fish, cod, Atlantic, cooked, dry heat",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "19.41",
+                        "gm": 22.83
+                    }
+                ]
+            },
+            {
+                "ndbno": "15018",
+                "name": "Fish, cod, Atlantic, dried and salted",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.81",
+                        "gm": 62.82
+                    }
+                ]
+            },
+            {
+                "ndbno": "15015",
+                "name": "Fish, cod, Atlantic, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.14",
+                        "gm": 17.81
+                    }
+                ]
+            },
+            {
+                "ndbno": "15269",
+                "name": "Fish, cod, Pacific, cooked (not previously frozen)",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.36",
+                        "gm": 20.42
+                    }
+                ]
+            },
+            {
+                "ndbno": "15192",
+                "name": "Fish, cod, Pacific, cooked, dry heat (may have been previously frozen)",
+                "weight": 90.0,
+                "measure": "1.0 fillet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.86",
+                        "gm": 18.73
+                    }
+                ]
+            },
+            {
+                "ndbno": "15019",
+                "name": "Fish, cod, Pacific, raw (may have been previously frozen)",
+                "weight": 116.0,
+                "measure": "1.0 fillet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.71",
+                        "gm": 15.27
+                    }
+                ]
+            },
+            {
+                "ndbno": "15268",
+                "name": "Fish, cod, Pacific, raw (not previously frozen)",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.91",
+                        "gm": 17.54
+                    }
+                ]
+            },
+            {
+                "ndbno": "15021",
+                "name": "Fish, croaker, Atlantic, cooked, breaded and fried",
+                "weight": 87.0,
+                "measure": "1.0 fillet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.83",
+                        "gm": 18.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "15020",
+                "name": "Fish, croaker, Atlantic, raw",
+                "weight": 79.0,
+                "measure": "1.0 fillet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.05",
+                        "gm": 17.78
+                    }
+                ]
+            },
+            {
+                "ndbno": "15193",
+                "name": "Fish, cusk, cooked, dry heat",
+                "weight": 95.0,
+                "measure": "1.0 fillet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "23.13",
+                        "gm": 24.35
+                    }
+                ]
+            },
+            {
+                "ndbno": "15022",
+                "name": "Fish, cusk, raw",
+                "weight": 122.0,
+                "measure": "1.0 fillet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "23.17",
+                        "gm": 18.99
+                    }
+                ]
+            },
+            {
+                "ndbno": "15195",
+                "name": "Fish, drum, freshwater, cooked, dry heat",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "19.12",
+                        "gm": 22.49
+                    }
+                ]
+            },
+            {
+                "ndbno": "15024",
+                "name": "Fish, drum, freshwater, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.91",
+                        "gm": 17.54
+                    }
+                ]
+            },
+            {
+                "ndbno": "15026",
+                "name": "Fish, eel, mixed species, cooked, dry heat",
+                "weight": 28.35,
+                "measure": "1.0 oz, boneless",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.70",
+                        "gm": 23.65
+                    }
+                ]
+            },
+            {
+                "ndbno": "15025",
+                "name": "Fish, eel, mixed species, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.67",
+                        "gm": 18.44
+                    }
+                ]
+            },
+            {
+                "ndbno": "15027",
+                "name": "Fish, fish sticks, frozen, prepared",
+                "weight": 57.0,
+                "measure": "1.0 piece (4\" x 2\" x 1/2\")",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.28",
+                        "gm": 11.01
+                    }
+                ]
+            },
+            {
+                "ndbno": "15029",
+                "name": "Fish, flatfish (flounder and sole species), cooked, dry heat",
+                "weight": 127.0,
+                "measure": "1.0 fillet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "19.35",
+                        "gm": 15.24
+                    }
+                ]
+            },
+            {
+                "ndbno": "15028",
+                "name": "Fish, flatfish (flounder and sole species), raw",
+                "weight": 28.35,
+                "measure": "1.0 oz, boneless",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.52",
+                        "gm": 12.41
+                    }
+                ]
+            },
+            {
+                "ndbno": "15030",
+                "name": "Fish, gefiltefish, commercial, sweet recipe",
+                "weight": 42.0,
+                "measure": "1.0 piece",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.81",
+                        "gm": 9.07
+                    }
+                ]
+            },
+            {
+                "ndbno": "15032",
+                "name": "Fish, grouper, mixed species, cooked, dry heat",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "21.11",
+                        "gm": 24.84
+                    }
+                ]
+            },
+            {
+                "ndbno": "15031",
+                "name": "Fish, grouper, mixed species, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.47",
+                        "gm": 19.38
+                    }
+                ]
+            },
+            {
+                "ndbno": "15034",
+                "name": "Fish, haddock, cooked, dry heat",
+                "weight": 150.0,
+                "measure": "1.0 fillet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "29.98",
+                        "gm": 19.99
+                    }
+                ]
+            },
+            {
+                "ndbno": "15033",
+                "name": "Fish, haddock, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.87",
+                        "gm": 16.32
+                    }
+                ]
+            },
+            {
+                "ndbno": "15035",
+                "name": "Fish, haddock, smoked",
+                "weight": 28.35,
+                "measure": "1.0 oz, boneless",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.15",
+                        "gm": 25.23
+                    }
+                ]
+            },
+            {
+                "ndbno": "15037",
+                "name": "Fish, halibut, Atlantic and Pacific, cooked, dry heat",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "19.16",
+                        "gm": 22.54
+                    }
+                ]
+            },
+            {
+                "ndbno": "15036",
+                "name": "Fish, halibut, Atlantic and Pacific, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.78",
+                        "gm": 18.56
+                    }
+                ]
+            },
+            {
+                "ndbno": "15196",
+                "name": "Fish, halibut, greenland, cooked, dry heat",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.66",
+                        "gm": 18.42
+                    }
+                ]
+            },
+            {
+                "ndbno": "15038",
+                "name": "Fish, halibut, Greenland, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.21",
+                        "gm": 14.37
+                    }
+                ]
+            },
+            {
+                "ndbno": "15040",
+                "name": "Fish, herring, Atlantic, cooked, dry heat",
+                "weight": 143.0,
+                "measure": "1.0 fillet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "32.93",
+                        "gm": 23.03
+                    }
+                ]
+            },
+            {
+                "ndbno": "15042",
+                "name": "Fish, herring, Atlantic, kippered",
+                "weight": 28.35,
+                "measure": "1.0 oz, boneless",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.97",
+                        "gm": 24.58
+                    }
+                ]
+            },
+            {
+                "ndbno": "15041",
+                "name": "Fish, herring, Atlantic, pickled",
+                "weight": 140.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "19.87",
+                        "gm": 14.19
+                    }
+                ]
+            },
+            {
+                "ndbno": "15039",
+                "name": "Fish, herring, Atlantic, raw",
+                "weight": 28.35,
+                "measure": "1.0 oz, boneless",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.09",
+                        "gm": 17.96
+                    }
+                ]
+            },
+            {
+                "ndbno": "15197",
+                "name": "Fish, herring, Pacific, cooked, dry heat",
+                "weight": 144.0,
+                "measure": "1.0 fillet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "30.25",
+                        "gm": 21.01
+                    }
+                ]
+            },
+            {
+                "ndbno": "15043",
+                "name": "Fish, herring, Pacific, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.93",
+                        "gm": 16.39
+                    }
+                ]
+            },
+            {
+                "ndbno": "15198",
+                "name": "Fish, ling, cooked, dry heat",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "20.70",
+                        "gm": 24.35
+                    }
+                ]
+            },
+            {
+                "ndbno": "15044",
+                "name": "Fish, ling, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.14",
+                        "gm": 18.99
+                    }
+                ]
+            },
+            {
+                "ndbno": "15199",
+                "name": "Fish, lingcod, cooked, dry heat",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "19.24",
+                        "gm": 22.64
+                    }
+                ]
+            },
+            {
+                "ndbno": "15045",
+                "name": "Fish, lingcod, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.01",
+                        "gm": 17.66
+                    }
+                ]
+            },
+            {
+                "ndbno": "15047",
+                "name": "Fish, mackerel, Atlantic, cooked, dry heat",
+                "weight": 88.0,
+                "measure": "1.0 fillet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "20.99",
+                        "gm": 23.85
+                    }
+                ]
+            },
+            {
+                "ndbno": "15046",
+                "name": "Fish, mackerel, Atlantic, raw",
+                "weight": 112.0,
+                "measure": "1.0 fillet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "20.83",
+                        "gm": 18.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "15048",
+                "name": "Fish, mackerel, jack, canned, drained solids",
+                "weight": 28.35,
+                "measure": "1.0 oz, boneless",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.57",
+                        "gm": 23.19
+                    }
+                ]
+            },
+            {
+                "ndbno": "15200",
+                "name": "Fish, mackerel, king, cooked, dry heat",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.10",
+                        "gm": 26.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "15049",
+                "name": "Fish, mackerel, king, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.24",
+                        "gm": 20.28
+                    }
+                ]
+            },
+            {
+                "ndbno": "15201",
+                "name": "Fish, mackerel, Pacific and jack, mixed species, cooked, dry heat",
+                "weight": 28.35,
+                "measure": "1.0 oz, boneless",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.29",
+                        "gm": 25.73
+                    }
+                ]
+            },
+            {
+                "ndbno": "15050",
+                "name": "Fish, mackerel, Pacific and jack, mixed species, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.06",
+                        "gm": 20.07
+                    }
+                ]
+            },
+            {
+                "ndbno": "83110",
+                "name": "Fish, mackerel, salted",
+                "weight": 80.0,
+                "measure": "1.0 piece (5-1/2\" x 1-1/2\" x 1/2\")",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.80",
+                        "gm": 18.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "15052",
+                "name": "Fish, mackerel, spanish, cooked, dry heat",
+                "weight": 146.0,
+                "measure": "1.0 fillet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "34.44",
+                        "gm": 23.59
+                    }
+                ]
+            },
+            {
+                "ndbno": "15051",
+                "name": "Fish, mackerel, spanish, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.40",
+                        "gm": 19.29
+                    }
+                ]
+            },
+            {
+                "ndbno": "15194",
+                "name": "Fish, mahimahi, cooked, dry heat",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "20.16",
+                        "gm": 23.72
+                    }
+                ]
+            },
+            {
+                "ndbno": "15023",
+                "name": "Fish, mahimahi, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.72",
+                        "gm": 18.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "15202",
+                "name": "Fish, milkfish, cooked, dry heat",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.37",
+                        "gm": 26.32
+                    }
+                ]
+            },
+            {
+                "ndbno": "15053",
+                "name": "Fish, milkfish, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.45",
+                        "gm": 20.53
+                    }
+                ]
+            },
+            {
+                "ndbno": "15203",
+                "name": "Fish, monkfish, cooked, dry heat",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.78",
+                        "gm": 18.56
+                    }
+                ]
+            },
+            {
+                "ndbno": "15054",
+                "name": "Fish, monkfish, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.31",
+                        "gm": 14.48
+                    }
+                ]
+            },
+            {
+                "ndbno": "15056",
+                "name": "Fish, mullet, striped, cooked, dry heat",
+                "weight": 93.0,
+                "measure": "1.0 fillet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "23.07",
+                        "gm": 24.81
+                    }
+                ]
+            },
+            {
+                "ndbno": "15055",
+                "name": "Fish, mullet, striped, raw",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.49",
+                        "gm": 19.35
+                    }
+                ]
+            },
+            {
+                "ndbno": "15058",
+                "name": "Fish, ocean perch, Atlantic, cooked, dry heat",
+                "weight": 50.0,
+                "measure": "1.0 fillet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.26",
+                        "gm": 18.51
+                    }
+                ]
+            },
+            {
+                "ndbno": "15057",
+                "name": "Fish, ocean perch, Atlantic, raw",
+                "weight": 28.35,
+                "measure": "1.0 oz, boneless",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.34",
+                        "gm": 15.31
+                    }
+                ]
+            },
+            {
+                "ndbno": "15061",
+                "name": "Fish, perch, mixed species, cooked, dry heat",
+                "weight": 46.0,
+                "measure": "1.0 fillet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.44",
+                        "gm": 24.86
+                    }
+                ]
+            },
+            {
+                "ndbno": "15060",
+                "name": "Fish, perch, mixed species, raw",
+                "weight": 60.0,
+                "measure": "1.0 fillet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.63",
+                        "gm": 19.39
+                    }
+                ]
+            },
+            {
+                "ndbno": "15063",
+                "name": "Fish, pike, northern, cooked, dry heat",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "20.99",
+                        "gm": 24.69
+                    }
+                ]
+            },
+            {
+                "ndbno": "15062",
+                "name": "Fish, pike, northern, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.37",
+                        "gm": 19.26
+                    }
+                ]
+            },
+            {
+                "ndbno": "15204",
+                "name": "Fish, pike, walleye, cooked, dry heat",
+                "weight": 124.0,
+                "measure": "1.0 fillet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "30.43",
+                        "gm": 24.54
+                    }
+                ]
+            },
+            {
+                "ndbno": "15064",
+                "name": "Fish, pike, walleye, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.27",
+                        "gm": 19.14
+                    }
+                ]
+            },
+            {
+                "ndbno": "15267",
+                "name": "Fish, pollock, Alaska, cooked (not previously frozen)",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.51",
+                        "gm": 19.42
+                    }
+                ]
+            },
+            {
+                "ndbno": "15067",
+                "name": "Fish, pollock, Alaska, cooked, dry heat (may have been previously frozen)",
+                "weight": 60.0,
+                "measure": "1.0 fillet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.09",
+                        "gm": 23.48
+                    }
+                ]
+            },
+            {
+                "ndbno": "15066",
+                "name": "Fish, pollock, Alaska, raw (may have been previously frozen)",
+                "weight": 77.0,
+                "measure": "1.0 fillet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.39",
+                        "gm": 12.19
+                    }
+                ]
+            },
+            {
+                "ndbno": "15266",
+                "name": "Fish, pollock, Alaska, raw (not previously frozen)",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.59",
+                        "gm": 17.17
+                    }
+                ]
+            },
+            {
+                "ndbno": "15205",
+                "name": "Fish, pollock, Atlantic, cooked, dry heat",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "21.18",
+                        "gm": 24.92
+                    }
+                ]
+            },
+            {
+                "ndbno": "15065",
+                "name": "Fish, pollock, Atlantic, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.52",
+                        "gm": 19.44
+                    }
+                ]
+            },
+            {
+                "ndbno": "15069",
+                "name": "Fish, pompano, florida, cooked, dry heat",
+                "weight": 88.0,
+                "measure": "1.0 fillet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "20.85",
+                        "gm": 23.69
+                    }
+                ]
+            },
+            {
+                "ndbno": "15068",
+                "name": "Fish, pompano, florida, raw",
+                "weight": 28.35,
+                "measure": "1.0 oz, boneless",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.24",
+                        "gm": 18.48
+                    }
+                ]
+            },
+            {
+                "ndbno": "15206",
+                "name": "Fish, pout, ocean, cooked, dry heat",
+                "weight": 137.0,
+                "measure": "0.5 fillet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "29.22",
+                        "gm": 21.33
+                    }
+                ]
+            },
+            {
+                "ndbno": "15059",
+                "name": "Fish, pout, ocean, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.14",
+                        "gm": 16.64
+                    }
+                ]
+            },
+            {
+                "ndbno": "15071",
+                "name": "Fish, rockfish, Pacific, mixed species, cooked, dry heat",
+                "weight": 149.0,
+                "measure": "1.0 fillet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "33.12",
+                        "gm": 22.23
+                    }
+                ]
+            },
+            {
+                "ndbno": "15070",
+                "name": "Fish, rockfish, Pacific, mixed species, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.61",
+                        "gm": 18.36
+                    }
+                ]
+            },
+            {
+                "ndbno": "15207",
+                "name": "Fish, roe, mixed species, cooked, dry heat",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.11",
+                        "gm": 28.62
+                    }
+                ]
+            },
+            {
+                "ndbno": "15072",
+                "name": "Fish, roe, mixed species, raw",
+                "weight": 14.0,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.12",
+                        "gm": 22.32
+                    }
+                ]
+            },
+            {
+                "ndbno": "15232",
+                "name": "Fish, roughy, orange, cooked, dry heat",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "19.24",
+                        "gm": 22.64
+                    }
+                ]
+            },
+            {
+                "ndbno": "15073",
+                "name": "Fish, roughy, orange, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.95",
+                        "gm": 16.41
+                    }
+                ]
+            },
+            {
+                "ndbno": "15208",
+                "name": "Fish, sablefish, cooked, dry heat",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.61",
+                        "gm": 17.19
+                    }
+                ]
+            },
+            {
+                "ndbno": "15074",
+                "name": "Fish, sablefish, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.40",
+                        "gm": 13.41
+                    }
+                ]
+            },
+            {
+                "ndbno": "15075",
+                "name": "Fish, sablefish, smoked",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.00",
+                        "gm": 17.65
+                    }
+                ]
+            },
+            {
+                "ndbno": "15237",
+                "name": "Fish, salmon, Atlantic, farmed, cooked, dry heat",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "18.79",
+                        "gm": 22.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "15236",
+                "name": "Fish, salmon, Atlantic, farmed, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.36",
+                        "gm": 20.42
+                    }
+                ]
+            },
+            {
+                "ndbno": "15209",
+                "name": "Fish, salmon, Atlantic, wild, cooked, dry heat",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "21.62",
+                        "gm": 25.44
+                    }
+                ]
+            },
+            {
+                "ndbno": "15076",
+                "name": "Fish, salmon, Atlantic, wild, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.86",
+                        "gm": 19.84
+                    }
+                ]
+            },
+            {
+                "ndbno": "15210",
+                "name": "Fish, salmon, chinook, cooked, dry heat",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "21.86",
+                        "gm": 25.72
+                    }
+                ]
+            },
+            {
+                "ndbno": "15078",
+                "name": "Fish, salmon, chinook, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.94",
+                        "gm": 19.93
+                    }
+                ]
+            },
+            {
+                "ndbno": "15077",
+                "name": "Fish, salmon, chinook, smoked",
+                "weight": 28.35,
+                "measure": "1.0 oz, boneless",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.18",
+                        "gm": 18.28
+                    }
+                ]
+            },
+            {
+                "ndbno": "15179",
+                "name": "Fish, salmon, chinook, smoked, (lox), regular",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.18",
+                        "gm": 18.28
+                    }
+                ]
+            },
+            {
+                "ndbno": "15080",
+                "name": "Fish, salmon, chum, canned, drained solids with bone",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "18.22",
+                        "gm": 21.43
+                    }
+                ]
+            },
+            {
+                "ndbno": "15180",
+                "name": "Fish, salmon, chum, canned, without salt, drained solids with bone",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "18.22",
+                        "gm": 21.43
+                    }
+                ]
+            },
+            {
+                "ndbno": "15211",
+                "name": "Fish, salmon, chum, cooked, dry heat",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "21.95",
+                        "gm": 25.82
+                    }
+                ]
+            },
+            {
+                "ndbno": "15079",
+                "name": "Fish, salmon, chum, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.12",
+                        "gm": 20.14
+                    }
+                ]
+            },
+            {
+                "ndbno": "15239",
+                "name": "Fish, salmon, coho, farmed, cooked, dry heat",
+                "weight": 143.0,
+                "measure": "1.0 fillet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "34.75",
+                        "gm": 24.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "15238",
+                "name": "Fish, salmon, coho, farmed, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "18.08",
+                        "gm": 21.27
+                    }
+                ]
+            },
+            {
+                "ndbno": "15247",
+                "name": "Fish, salmon, coho, wild, cooked, dry heat",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "19.93",
+                        "gm": 23.45
+                    }
+                ]
+            },
+            {
+                "ndbno": "15082",
+                "name": "Fish, salmon, coho, wild, cooked, moist heat",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "23.26",
+                        "gm": 27.36
+                    }
+                ]
+            },
+            {
+                "ndbno": "15081",
+                "name": "Fish, salmon, coho, wild, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "18.38",
+                        "gm": 21.62
+                    }
+                ]
+            },
+            {
+                "ndbno": "15260",
+                "name": "Fish, salmon, pink, canned, drained solids",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "19.64",
+                        "gm": 23.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "15265",
+                "name": "Fish, Salmon, pink, canned, drained solids, without skin and bones",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "20.93",
+                        "gm": 24.62
+                    }
+                ]
+            },
+            {
+                "ndbno": "15084",
+                "name": "Fish, salmon, pink, canned, total can contents",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.73",
+                        "gm": 19.68
+                    }
+                ]
+            },
+            {
+                "ndbno": "15181",
+                "name": "Fish, salmon, pink, canned, without salt, solids with bone and liquid",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.81",
+                        "gm": 19.78
+                    }
+                ]
+            },
+            {
+                "ndbno": "15212",
+                "name": "Fish, salmon, pink, cooked, dry heat",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "20.89",
+                        "gm": 24.58
+                    }
+                ]
+            },
+            {
+                "ndbno": "15083",
+                "name": "Fish, salmon, pink, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.43",
+                        "gm": 20.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "15087",
+                "name": "Fish, salmon, sockeye, canned, drained solids",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "20.05",
+                        "gm": 23.59
+                    }
+                ]
+            },
+            {
+                "ndbno": "15182",
+                "name": "Fish, salmon, sockeye, canned, without salt, drained solids with bone",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.40",
+                        "gm": 20.47
+                    }
+                ]
+            },
+            {
+                "ndbno": "15086",
+                "name": "Fish, salmon, sockeye, cooked, dry heat",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.51",
+                        "gm": 26.48
+                    }
+                ]
+            },
+            {
+                "ndbno": "15085",
+                "name": "Fish, salmon, sockeye, raw",
+                "weight": 28.35,
+                "measure": "1.0 oz, boneless",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.31",
+                        "gm": 22.25
+                    }
+                ]
+            },
+            {
+                "ndbno": "15088",
+                "name": "Fish, sardine, Atlantic, canned in oil, drained solids with bone",
+                "weight": 149.0,
+                "measure": "1.0 cup, drained",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "36.68",
+                        "gm": 24.62
+                    }
+                ]
+            },
+            {
+                "ndbno": "15089",
+                "name": "Fish, sardine, Pacific, canned in tomato sauce, drained solids with bone",
+                "weight": 89.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "18.57",
+                        "gm": 20.86
+                    }
+                ]
+            },
+            {
+                "ndbno": "15213",
+                "name": "Fish, scup, cooked, dry heat",
+                "weight": 50.0,
+                "measure": "1.0 fillet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.11",
+                        "gm": 24.21
+                    }
+                ]
+            },
+            {
+                "ndbno": "15090",
+                "name": "Fish, scup, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.05",
+                        "gm": 18.88
+                    }
+                ]
+            },
+            {
+                "ndbno": "15092",
+                "name": "Fish, sea bass, mixed species, cooked, dry heat",
+                "weight": 101.0,
+                "measure": "1.0 fillet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "23.87",
+                        "gm": 23.63
+                    }
+                ]
+            },
+            {
+                "ndbno": "15091",
+                "name": "Fish, sea bass, mixed species, raw",
+                "weight": 129.0,
+                "measure": "1.0 fillet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "23.77",
+                        "gm": 18.43
+                    }
+                ]
+            },
+            {
+                "ndbno": "15214",
+                "name": "Fish, seatrout, mixed species, cooked, dry heat",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "18.24",
+                        "gm": 21.46
+                    }
+                ]
+            },
+            {
+                "ndbno": "15093",
+                "name": "Fish, seatrout, mixed species, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.23",
+                        "gm": 16.74
+                    }
+                ]
+            },
+            {
+                "ndbno": "15215",
+                "name": "Fish, shad, american, cooked, dry heat",
+                "weight": 144.0,
+                "measure": "1.0 fillet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "31.26",
+                        "gm": 21.71
+                    }
+                ]
+            },
+            {
+                "ndbno": "15094",
+                "name": "Fish, shad, american, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.39",
+                        "gm": 16.93
+                    }
+                ]
+            },
+            {
+                "ndbno": "15096",
+                "name": "Fish, shark, mixed species, cooked, batter-dipped and fried",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.83",
+                        "gm": 18.62
+                    }
+                ]
+            },
+            {
+                "ndbno": "15095",
+                "name": "Fish, shark, mixed species, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.83",
+                        "gm": 20.98
+                    }
+                ]
+            },
+            {
+                "ndbno": "15098",
+                "name": "Fish, sheepshead, cooked, dry heat",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.12",
+                        "gm": 26.02
+                    }
+                ]
+            },
+            {
+                "ndbno": "15097",
+                "name": "Fish, sheepshead, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.18",
+                        "gm": 20.21
+                    }
+                ]
+            },
+            {
+                "ndbno": "15100",
+                "name": "Fish, smelt, rainbow, cooked, dry heat",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "19.21",
+                        "gm": 22.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "15099",
+                "name": "Fish, smelt, rainbow, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.99",
+                        "gm": 17.63
+                    }
+                ]
+            },
+            {
+                "ndbno": "15102",
+                "name": "Fish, snapper, mixed species, cooked, dry heat",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.36",
+                        "gm": 26.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "15101",
+                "name": "Fish, snapper, mixed species, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.43",
+                        "gm": 20.51
+                    }
+                ]
+            },
+            {
+                "ndbno": "15216",
+                "name": "Fish, spot, cooked, dry heat",
+                "weight": 50.0,
+                "measure": "1.0 fillet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.87",
+                        "gm": 23.73
+                    }
+                ]
+            },
+            {
+                "ndbno": "15103",
+                "name": "Fish, spot, raw",
+                "weight": 64.0,
+                "measure": "1.0 fillet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.85",
+                        "gm": 18.51
+                    }
+                ]
+            },
+            {
+                "ndbno": "15105",
+                "name": "Fish, sturgeon, mixed species, cooked, dry heat",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.59",
+                        "gm": 20.7
+                    }
+                ]
+            },
+            {
+                "ndbno": "15104",
+                "name": "Fish, sturgeon, mixed species, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.72",
+                        "gm": 16.14
+                    }
+                ]
+            },
+            {
+                "ndbno": "15106",
+                "name": "Fish, sturgeon, mixed species, smoked",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.85",
+                        "gm": 31.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "15217",
+                "name": "Fish, sucker, white, cooked, dry heat",
+                "weight": 124.0,
+                "measure": "1.0 fillet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "26.65",
+                        "gm": 21.49
+                    }
+                ]
+            },
+            {
+                "ndbno": "15107",
+                "name": "Fish, sucker, white, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.25",
+                        "gm": 16.76
+                    }
+                ]
+            },
+            {
+                "ndbno": "15218",
+                "name": "Fish, sunfish, pumpkin seed, cooked, dry heat",
+                "weight": 37.0,
+                "measure": "1.0 fillet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.20",
+                        "gm": 24.87
+                    }
+                ]
+            },
+            {
+                "ndbno": "15108",
+                "name": "Fish, sunfish, pumpkin seed, raw",
+                "weight": 48.0,
+                "measure": "1.0 fillet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.31",
+                        "gm": 19.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "15109",
+                "name": "Fish, surimi",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.30",
+                        "gm": 15.18
+                    }
+                ]
+            },
+            {
+                "ndbno": "15111",
+                "name": "Fish, swordfish, cooked, dry heat",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "19.93",
+                        "gm": 23.45
+                    }
+                ]
+            },
+            {
+                "ndbno": "15110",
+                "name": "Fish, swordfish, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.71",
+                        "gm": 19.66
+                    }
+                ]
+            },
+            {
+                "ndbno": "15262",
+                "name": "Fish, tilapia, cooked, dry heat",
+                "weight": 87.0,
+                "measure": "1.0 fillet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.75",
+                        "gm": 26.15
+                    }
+                ]
+            },
+            {
+                "ndbno": "15261",
+                "name": "Fish, tilapia, raw",
+                "weight": 116.0,
+                "measure": "1.0 fillet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "23.29",
+                        "gm": 20.08
+                    }
+                ]
+            },
+            {
+                "ndbno": "15113",
+                "name": "Fish, tilefish, cooked, dry heat",
+                "weight": 150.0,
+                "measure": "0.5 fillet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "36.73",
+                        "gm": 24.49
+                    }
+                ]
+            },
+            {
+                "ndbno": "15112",
+                "name": "Fish, tilefish, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.88",
+                        "gm": 17.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "15274",
+                "name": "Fish, trout, brook, raw, New York State",
+                "weight": 149.0,
+                "measure": "1.0 filet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "31.63",
+                        "gm": 21.23
+                    }
+                ]
+            },
+            {
+                "ndbno": "15219",
+                "name": "Fish, trout, mixed species, cooked, dry heat",
+                "weight": 62.0,
+                "measure": "1.0 fillet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.51",
+                        "gm": 26.63
+                    }
+                ]
+            },
+            {
+                "ndbno": "15114",
+                "name": "Fish, trout, mixed species, raw",
+                "weight": 79.0,
+                "measure": "1.0 fillet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.41",
+                        "gm": 20.77
+                    }
+                ]
+            },
+            {
+                "ndbno": "15241",
+                "name": "Fish, trout, rainbow, farmed, cooked, dry heat",
+                "weight": 71.0,
+                "measure": "1.0 fillet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.90",
+                        "gm": 23.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "15240",
+                "name": "Fish, trout, rainbow, farmed, raw",
+                "weight": 79.0,
+                "measure": "1.0 fillet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.75",
+                        "gm": 19.94
+                    }
+                ]
+            },
+            {
+                "ndbno": "15116",
+                "name": "Fish, trout, rainbow, wild, cooked, dry heat",
+                "weight": 143.0,
+                "measure": "1.0 fillet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "32.78",
+                        "gm": 22.92
+                    }
+                ]
+            },
+            {
+                "ndbno": "15115",
+                "name": "Fish, trout, rainbow, wild, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.41",
+                        "gm": 20.48
+                    }
+                ]
+            },
+            {
+                "ndbno": "15128",
+                "name": "Fish, tuna salad",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.63",
+                        "gm": 16.04
+                    }
+                ]
+            },
+            {
+                "ndbno": "15118",
+                "name": "Fish, tuna, fresh, bluefin, cooked, dry heat",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "25.42",
+                        "gm": 29.91
+                    }
+                ]
+            },
+            {
+                "ndbno": "15117",
+                "name": "Fish, tuna, fresh, bluefin, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "19.83",
+                        "gm": 23.33
+                    }
+                ]
+            },
+            {
+                "ndbno": "15123",
+                "name": "Fish, tuna, fresh, skipjack, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "18.70",
+                        "gm": 22.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "15127",
+                "name": "Fish, tuna, fresh, yellowfin, raw",
+                "weight": 28.35,
+                "measure": "1.0 oz, boneless",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.92",
+                        "gm": 24.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "15119",
+                "name": "Fish, tuna, light, canned in oil, drained solids",
+                "weight": 146.0,
+                "measure": "1.0 cup, solid or chunks",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "42.53",
+                        "gm": 29.13
+                    }
+                ]
+            },
+            {
+                "ndbno": "15183",
+                "name": "Fish, tuna, light, canned in oil, without salt, drained solids",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "24.76",
+                        "gm": 29.13
+                    }
+                ]
+            },
+            {
+                "ndbno": "15121",
+                "name": "Fish, tuna, light, canned in water, drained solids",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.51",
+                        "gm": 19.44
+                    }
+                ]
+            },
+            {
+                "ndbno": "15184",
+                "name": "Fish, tuna, light, canned in water, without salt, drained solids",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "21.68",
+                        "gm": 25.51
+                    }
+                ]
+            },
+            {
+                "ndbno": "15220",
+                "name": "Fish, tuna, skipjack, fresh, cooked, dry heat",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "23.98",
+                        "gm": 28.21
+                    }
+                ]
+            },
+            {
+                "ndbno": "15124",
+                "name": "Fish, tuna, white, canned in oil, drained solids",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.55",
+                        "gm": 26.53
+                    }
+                ]
+            },
+            {
+                "ndbno": "15185",
+                "name": "Fish, tuna, white, canned in oil, without salt, drained solids",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.55",
+                        "gm": 26.53
+                    }
+                ]
+            },
+            {
+                "ndbno": "15126",
+                "name": "Fish, tuna, white, canned in water, drained solids",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "20.08",
+                        "gm": 23.62
+                    }
+                ]
+            },
+            {
+                "ndbno": "15186",
+                "name": "Fish, tuna, white, canned in water, without salt, drained solids",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "20.08",
+                        "gm": 23.62
+                    }
+                ]
+            },
+            {
+                "ndbno": "15221",
+                "name": "Fish, tuna, yellowfin, fresh, cooked, dry heat",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "24.78",
+                        "gm": 29.15
+                    }
+                ]
+            },
+            {
+                "ndbno": "15222",
+                "name": "Fish, turbot, european, cooked, dry heat",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.49",
+                        "gm": 20.58
+                    }
+                ]
+            },
+            {
+                "ndbno": "15129",
+                "name": "Fish, turbot, european, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.64",
+                        "gm": 16.05
+                    }
+                ]
+            },
+            {
+                "ndbno": "15223",
+                "name": "Fish, whitefish, mixed species, cooked, dry heat",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "20.80",
+                        "gm": 24.47
+                    }
+                ]
+            },
+            {
+                "ndbno": "15130",
+                "name": "Fish, whitefish, mixed species, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.23",
+                        "gm": 19.09
+                    }
+                ]
+            },
+            {
+                "ndbno": "15131",
+                "name": "Fish, whitefish, mixed species, smoked",
+                "weight": 136.0,
+                "measure": "1.0 cup, cooked",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "31.82",
+                        "gm": 23.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "15133",
+                "name": "Fish, whiting, mixed species, cooked, dry heat",
+                "weight": 72.0,
+                "measure": "1.0 fillet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.91",
+                        "gm": 23.48
+                    }
+                ]
+            },
+            {
+                "ndbno": "15132",
+                "name": "Fish, whiting, mixed species, raw",
+                "weight": 92.0,
+                "measure": "1.0 fillet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.85",
+                        "gm": 18.31
+                    }
+                ]
+            },
+            {
+                "ndbno": "15224",
+                "name": "Fish, wolffish, Atlantic, cooked, dry heat",
+                "weight": 119.0,
+                "measure": "0.5 fillet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "26.70",
+                        "gm": 22.44
+                    }
+                ]
+            },
+            {
+                "ndbno": "15134",
+                "name": "Fish, wolffish, Atlantic, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.88",
+                        "gm": 17.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "15225",
+                "name": "Fish, yellowtail, mixed species, cooked, dry heat",
+                "weight": 146.0,
+                "measure": "0.5 fillet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "43.32",
+                        "gm": 29.67
+                    }
+                ]
+            },
+            {
+                "ndbno": "15135",
+                "name": "Fish, yellowtail, mixed species, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "19.67",
+                        "gm": 23.14
+                    }
+                ]
+            },
+            {
+                "ndbno": "80200",
+                "name": "Frog legs, raw",
+                "weight": 45.0,
+                "measure": "1.0 leg",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.38",
+                        "gm": 16.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "43497",
+                "name": "Jellyfish, dried, salted",
+                "weight": 58.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.19",
+                        "gm": 5.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "15156",
+                "name": "Mollusks, abalone, mixed species, cooked, fried",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.69",
+                        "gm": 19.63
+                    }
+                ]
+            },
+            {
+                "ndbno": "15155",
+                "name": "Mollusks, abalone, mixed species, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.54",
+                        "gm": 17.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "15160",
+                "name": "Mollusks, clam, mixed species, canned, drained solids",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "20.61",
+                        "gm": 24.25
+                    }
+                ]
+            },
+            {
+                "ndbno": "15162",
+                "name": "Mollusks, clam, mixed species, canned, liquid",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.34",
+                        "gm": 0.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "15158",
+                "name": "Mollusks, clam, mixed species, cooked, breaded and fried",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.10",
+                        "gm": 14.24
+                    }
+                ]
+            },
+            {
+                "ndbno": "15159",
+                "name": "Mollusks, clam, mixed species, cooked, moist heat",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "21.72",
+                        "gm": 25.55
+                    }
+                ]
+            },
+            {
+                "ndbno": "15157",
+                "name": "Mollusks, clam, mixed species, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.47",
+                        "gm": 14.67
+                    }
+                ]
+            },
+            {
+                "ndbno": "15250",
+                "name": "Mollusks, conch, baked or broiled",
+                "weight": 127.0,
+                "measure": "1.0 cup, sliced",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "33.40",
+                        "gm": 26.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "15229",
+                "name": "Mollusks, cuttlefish, mixed species, cooked, moist heat",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "27.61",
+                        "gm": 32.48
+                    }
+                ]
+            },
+            {
+                "ndbno": "15163",
+                "name": "Mollusks, cuttlefish, mixed species, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.80",
+                        "gm": 16.24
+                    }
+                ]
+            },
+            {
+                "ndbno": "15165",
+                "name": "Mollusks, mussel, blue, cooked, moist heat",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "20.23",
+                        "gm": 23.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "15164",
+                "name": "Mollusks, mussel, blue, raw",
+                "weight": 150.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.85",
+                        "gm": 11.9
+                    }
+                ]
+            },
+            {
+                "ndbno": "15230",
+                "name": "Mollusks, octopus, common, cooked, moist heat",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "25.35",
+                        "gm": 29.82
+                    }
+                ]
+            },
+            {
+                "ndbno": "15166",
+                "name": "Mollusks, octopus, common, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.67",
+                        "gm": 14.91
+                    }
+                ]
+            },
+            {
+                "ndbno": "15170",
+                "name": "Mollusks, oyster, eastern, canned",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.00",
+                        "gm": 7.06
+                    }
+                ]
+            },
+            {
+                "ndbno": "15168",
+                "name": "Mollusks, oyster, eastern, cooked, breaded and fried",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.45",
+                        "gm": 8.77
+                    }
+                ]
+            },
+            {
+                "ndbno": "15246",
+                "name": "Mollusks, oyster, eastern, farmed, cooked, dry heat",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.95",
+                        "gm": 7.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "15245",
+                "name": "Mollusks, oyster, eastern, farmed, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.44",
+                        "gm": 5.22
+                    }
+                ]
+            },
+            {
+                "ndbno": "15244",
+                "name": "Mollusks, oyster, eastern, wild, cooked, dry heat",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.54",
+                        "gm": 8.87
+                    }
+                ]
+            },
+            {
+                "ndbno": "15169",
+                "name": "Mollusks, oyster, eastern, wild, cooked, moist heat",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.71",
+                        "gm": 11.42
+                    }
+                ]
+            },
+            {
+                "ndbno": "15167",
+                "name": "Mollusks, oyster, eastern, wild, raw",
+                "weight": 84.0,
+                "measure": "6.0 medium",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.80",
+                        "gm": 5.71
+                    }
+                ]
+            },
+            {
+                "ndbno": "15231",
+                "name": "Mollusks, oyster, Pacific, cooked, moist heat",
+                "weight": 25.0,
+                "measure": "1.0 medium",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.72",
+                        "gm": 18.9
+                    }
+                ]
+            },
+            {
+                "ndbno": "15171",
+                "name": "Mollusks, oyster, Pacific, raw",
+                "weight": 50.0,
+                "measure": "1.0 medium",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.72",
+                        "gm": 9.45
+                    }
+                ]
+            },
+            {
+                "ndbno": "90240",
+                "name": "Mollusks, scallop, (bay and sea), cooked, steamed",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.46",
+                        "gm": 20.54
+                    }
+                ]
+            },
+            {
+                "ndbno": "15173",
+                "name": "Mollusks, scallop, mixed species, cooked, breaded and fried",
+                "weight": 31.0,
+                "measure": "2.0 large",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.60",
+                        "gm": 18.07
+                    }
+                ]
+            },
+            {
+                "ndbno": "15174",
+                "name": "Mollusks, scallop, mixed species, imitation, made from surimi",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.85",
+                        "gm": 12.77
+                    }
+                ]
+            },
+            {
+                "ndbno": "15172",
+                "name": "Mollusks, scallop, mixed species, raw",
+                "weight": 30.0,
+                "measure": "1.0 unit 2 large or 5 small",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.62",
+                        "gm": 12.06
+                    }
+                ]
+            },
+            {
+                "ndbno": "90560",
+                "name": "Mollusks, snail, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.69",
+                        "gm": 16.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "15176",
+                "name": "Mollusks, squid, mixed species, cooked, fried",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.25",
+                        "gm": 17.94
+                    }
+                ]
+            },
+            {
+                "ndbno": "15175",
+                "name": "Mollusks, squid, mixed species, raw",
+                "weight": 28.35,
+                "measure": "1.0 oz, boneless",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.42",
+                        "gm": 15.58
+                    }
+                ]
+            },
+            {
+                "ndbno": "15178",
+                "name": "Mollusks, whelk, unspecified, cooked, moist heat",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "40.53",
+                        "gm": 47.68
+                    }
+                ]
+            },
+            {
+                "ndbno": "15177",
+                "name": "Mollusks, whelk, unspecified, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "20.26",
+                        "gm": 23.84
+                    }
+                ]
+            },
+            {
+                "ndbno": "15264",
+                "name": "Salmon, sockeye, canned, drained solids, without skin and bones",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.38",
+                        "gm": 26.33
+                    }
+                ]
+            },
+            {
+                "ndbno": "15253",
+                "name": "Salmon, sockeye, canned, total can contents",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.54",
+                        "gm": 20.63
+                    }
+                ]
+            },
+            {
+                "ndbno": "93600",
+                "name": "Turtle, green, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.83",
+                        "gm": 19.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "15251",
+                "name": "USDA Commodity, salmon nuggets, breaded, frozen, heated",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.60",
+                        "gm": 12.69
+                    }
+                ]
+            },
+            {
+                "ndbno": "15252",
+                "name": "USDA Commodity, salmon nuggets, cooked as purchased, unheated",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.39",
+                        "gm": 11.97
+                    }
+                ]
+            }
+        ]
+    }
+}

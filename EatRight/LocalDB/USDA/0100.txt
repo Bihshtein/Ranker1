@@ -1,0 +1,4067 @@
+{
+    "report": {
+        "sr": "28",
+        "groups": [
+            {
+                "id": "0100",
+                "description": "Dairy and Egg Products"
+            }
+        ],
+        "subset": "All foods",
+        "end": 270,
+        "start": 0,
+        "total": 270,
+        "foods": [
+            {
+                "ndbno": "43205",
+                "name": "Beverage, instant breakfast powder, chocolate, not reconstituted",
+                "weight": 7.4,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.47",
+                        "gm": 19.9
+                    }
+                ]
+            },
+            {
+                "ndbno": "43260",
+                "name": "Beverage, instant breakfast powder, chocolate, sugar-free, not reconstituted",
+                "weight": 5.6,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.00",
+                        "gm": 35.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "43078",
+                "name": "Beverage, milkshake mix, dry, not chocolate",
+                "weight": 7.0,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.65",
+                        "gm": 23.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "01003",
+                "name": "Butter oil, anhydrous",
+                "weight": 12.8,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.04",
+                        "gm": 0.28
+                    }
+                ]
+            },
+            {
+                "ndbno": "01001",
+                "name": "Butter, salted",
+                "weight": 5.0,
+                "measure": "1.0 pat (1\" sq, 1/3\" high)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.04",
+                        "gm": 0.85
+                    }
+                ]
+            },
+            {
+                "ndbno": "01002",
+                "name": "Butter, whipped, with salt",
+                "weight": 3.8,
+                "measure": "1.0 pat (1\" sq, 1/3\" high)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.02",
+                        "gm": 0.49
+                    }
+                ]
+            },
+            {
+                "ndbno": "01145",
+                "name": "Butter, without salt",
+                "weight": 5.0,
+                "measure": "1.0 pat (1\" sq, 1/3\" high)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.04",
+                        "gm": 0.85
+                    }
+                ]
+            },
+            {
+                "ndbno": "01045",
+                "name": "Cheese food, cold pack, American",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.57",
+                        "gm": 19.66
+                    }
+                ]
+            },
+            {
+                "ndbno": "44048",
+                "name": "Cheese food, pasteurized process, American, imitation, without added vitamin D",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.16",
+                        "gm": 4.08
+                    }
+                ]
+            },
+            {
+                "ndbno": "01046",
+                "name": "Cheese food, pasteurized process, American, vitamin D fortified",
+                "weight": 113.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "19.05",
+                        "gm": 16.86
+                    }
+                ]
+            },
+            {
+                "ndbno": "01254",
+                "name": "Cheese food, pasteurized process, American, without added vitamin D",
+                "weight": 113.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "19.05",
+                        "gm": 16.86
+                    }
+                ]
+            },
+            {
+                "ndbno": "01047",
+                "name": "Cheese food, pasteurized process, swiss",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.21",
+                        "gm": 21.92
+                    }
+                ]
+            },
+            {
+                "ndbno": "01215",
+                "name": "Cheese product, pasteurized process, American, reduced fat, fortified with vitamin D",
+                "weight": 21.0,
+                "measure": "1.0 slice 3/4 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.70",
+                        "gm": 17.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "01252",
+                "name": "Cheese product, pasteurized process, American, vitamin D fortified",
+                "weight": 19.0,
+                "measure": "1.0 slice (2/3 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.06",
+                        "gm": 16.09
+                    }
+                ]
+            },
+            {
+                "ndbno": "42258",
+                "name": "Cheese product, pasteurized process, cheddar, reduced fat",
+                "weight": 28.0,
+                "measure": "1.0 slice 1 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.93",
+                        "gm": 17.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "01164",
+                "name": "Cheese sauce, prepared from recipe",
+                "weight": 30.0,
+                "measure": "2.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.10",
+                        "gm": 10.33
+                    }
+                ]
+            },
+            {
+                "ndbno": "01259",
+                "name": "Cheese spread, American or Cheddar cheese base, reduced fat",
+                "weight": 21.0,
+                "measure": "1.0 piece",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.82",
+                        "gm": 13.41
+                    }
+                ]
+            },
+            {
+                "ndbno": "43276",
+                "name": "Cheese spread, cream cheese base",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.01",
+                        "gm": 7.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "01048",
+                "name": "Cheese spread, pasteurized process, American",
+                "weight": 140.0,
+                "measure": "1.0 cup, diced",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.97",
+                        "gm": 16.41
+                    }
+                ]
+            },
+            {
+                "ndbno": "01161",
+                "name": "Cheese substitute, mozzarella",
+                "weight": 113.0,
+                "measure": "1.0 cup, shredded",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.96",
+                        "gm": 11.47
+                    }
+                ]
+            },
+            {
+                "ndbno": "43278",
+                "name": "Cheese, american cheddar, imitation",
+                "weight": 21.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.51",
+                        "gm": 16.7
+                    }
+                ]
+            },
+            {
+                "ndbno": "01061",
+                "name": "Cheese, American, nonfat or fat free",
+                "weight": 19.0,
+                "measure": "1.0 serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.00",
+                        "gm": 21.05
+                    }
+                ]
+            },
+            {
+                "ndbno": "01004",
+                "name": "Cheese, blue",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.07",
+                        "gm": 21.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "01005",
+                "name": "Cheese, brick",
+                "weight": 132.0,
+                "measure": "1.0 cup, diced",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "30.68",
+                        "gm": 23.24
+                    }
+                ]
+            },
+            {
+                "ndbno": "01006",
+                "name": "Cheese, brie",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.88",
+                        "gm": 20.75
+                    }
+                ]
+            },
+            {
+                "ndbno": "01007",
+                "name": "Cheese, camembert",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.61",
+                        "gm": 19.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "01008",
+                "name": "Cheese, caraway",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.14",
+                        "gm": 25.18
+                    }
+                ]
+            },
+            {
+                "ndbno": "01009",
+                "name": "Cheese, cheddar",
+                "weight": 132.0,
+                "measure": "1.0 cup, diced",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "30.19",
+                        "gm": 22.87
+                    }
+                ]
+            },
+            {
+                "ndbno": "01265",
+                "name": "Cheese, cheddar, nonfat or fat free",
+                "weight": 28.0,
+                "measure": "1.0 serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.00",
+                        "gm": 32.14
+                    }
+                ]
+            },
+            {
+                "ndbno": "01260",
+                "name": "Cheese, cheddar, reduced fat",
+                "weight": 21.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.74",
+                        "gm": 27.35
+                    }
+                ]
+            },
+            {
+                "ndbno": "01270",
+                "name": "Cheese, cheddar, sharp, sliced",
+                "weight": 19.0,
+                "measure": "1.0 slice (2/3 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.61",
+                        "gm": 24.25
+                    }
+                ]
+            },
+            {
+                "ndbno": "01010",
+                "name": "Cheese, cheshire",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.63",
+                        "gm": 23.37
+                    }
+                ]
+            },
+            {
+                "ndbno": "01011",
+                "name": "Cheese, colby",
+                "weight": 132.0,
+                "measure": "1.0 cup, diced",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "31.36",
+                        "gm": 23.76
+                    }
+                ]
+            },
+            {
+                "ndbno": "01012",
+                "name": "Cheese, cottage, creamed, large or small curd",
+                "weight": 113.0,
+                "measure": "4.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.57",
+                        "gm": 11.12
+                    }
+                ]
+            },
+            {
+                "ndbno": "01013",
+                "name": "Cheese, cottage, creamed, with fruit",
+                "weight": 113.0,
+                "measure": "4.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.08",
+                        "gm": 10.69
+                    }
+                ]
+            },
+            {
+                "ndbno": "01016",
+                "name": "Cheese, cottage, lowfat, 1% milkfat",
+                "weight": 113.0,
+                "measure": "4.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.00",
+                        "gm": 12.39
+                    }
+                ]
+            },
+            {
+                "ndbno": "42235",
+                "name": "Cheese, cottage, lowfat, 1% milkfat, lactose reduced",
+                "weight": 113.0,
+                "measure": "4.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.01",
+                        "gm": 12.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "43352",
+                "name": "Cheese, cottage, lowfat, 1% milkfat, no sodium added",
+                "weight": 113.0,
+                "measure": "4.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.01",
+                        "gm": 12.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "43396",
+                "name": "Cheese, cottage, lowfat, 1% milkfat, with vegetables",
+                "weight": 113.0,
+                "measure": "4.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.32",
+                        "gm": 10.9
+                    }
+                ]
+            },
+            {
+                "ndbno": "01015",
+                "name": "Cheese, cottage, lowfat, 2% milkfat",
+                "weight": 113.0,
+                "measure": "4.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.81",
+                        "gm": 10.45
+                    }
+                ]
+            },
+            {
+                "ndbno": "01014",
+                "name": "Cheese, cottage, nonfat, uncreamed, dry, large or small curd",
+                "weight": 145.0,
+                "measure": "1.0 cup (not packed)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.99",
+                        "gm": 10.34
+                    }
+                ]
+            },
+            {
+                "ndbno": "43273",
+                "name": "Cheese, cottage, with vegetables",
+                "weight": 113.0,
+                "measure": "4.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.32",
+                        "gm": 10.9
+                    }
+                ]
+            },
+            {
+                "ndbno": "01017",
+                "name": "Cheese, cream",
+                "weight": 14.5,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.89",
+                        "gm": 6.15
+                    }
+                ]
+            },
+            {
+                "ndbno": "01186",
+                "name": "Cheese, cream, fat free",
+                "weight": 18.0,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.82",
+                        "gm": 15.69
+                    }
+                ]
+            },
+            {
+                "ndbno": "43274",
+                "name": "Cheese, cream, low fat",
+                "weight": 15.0,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.18",
+                        "gm": 7.85
+                    }
+                ]
+            },
+            {
+                "ndbno": "01227",
+                "name": "Cheese, dry white, queso seco",
+                "weight": 97.0,
+                "measure": "1.0 cup grated",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "23.77",
+                        "gm": 24.51
+                    }
+                ]
+            },
+            {
+                "ndbno": "01018",
+                "name": "Cheese, edam",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.08",
+                        "gm": 24.99
+                    }
+                ]
+            },
+            {
+                "ndbno": "01019",
+                "name": "Cheese, feta",
+                "weight": 150.0,
+                "measure": "1.0 cup, crumbled",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "21.32",
+                        "gm": 14.21
+                    }
+                ]
+            },
+            {
+                "ndbno": "01020",
+                "name": "Cheese, fontina",
+                "weight": 132.0,
+                "measure": "1.0 cup, diced",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "33.79",
+                        "gm": 25.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "01228",
+                "name": "Cheese, fresh, queso fresco",
+                "weight": 122.0,
+                "measure": "1.0 cup, crumbled",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.07",
+                        "gm": 18.09
+                    }
+                ]
+            },
+            {
+                "ndbno": "01021",
+                "name": "Cheese, gjetost",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.74",
+                        "gm": 9.65
+                    }
+                ]
+            },
+            {
+                "ndbno": "01156",
+                "name": "Cheese, goat, hard type",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.65",
+                        "gm": 30.52
+                    }
+                ]
+            },
+            {
+                "ndbno": "01157",
+                "name": "Cheese, goat, semisoft type",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.12",
+                        "gm": 21.58
+                    }
+                ]
+            },
+            {
+                "ndbno": "01159",
+                "name": "Cheese, goat, soft type",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.25",
+                        "gm": 18.52
+                    }
+                ]
+            },
+            {
+                "ndbno": "01022",
+                "name": "Cheese, gouda",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.07",
+                        "gm": 24.94
+                    }
+                ]
+            },
+            {
+                "ndbno": "01023",
+                "name": "Cheese, gruyere",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.45",
+                        "gm": 29.81
+                    }
+                ]
+            },
+            {
+                "ndbno": "01024",
+                "name": "Cheese, limburger",
+                "weight": 134.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "26.87",
+                        "gm": 20.05
+                    }
+                ]
+            },
+            {
+                "ndbno": "01168",
+                "name": "Cheese, low fat, cheddar or colby",
+                "weight": 132.0,
+                "measure": "1.0 cup, diced",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "32.14",
+                        "gm": 24.35
+                    }
+                ]
+            },
+            {
+                "ndbno": "01169",
+                "name": "Cheese, low-sodium, cheddar or colby",
+                "weight": 132.0,
+                "measure": "1.0 cup, diced",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "32.14",
+                        "gm": 24.35
+                    }
+                ]
+            },
+            {
+                "ndbno": "01251",
+                "name": "Cheese, Mexican blend",
+                "weight": 28.0,
+                "measure": "0.25 cup shredded",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.59",
+                        "gm": 23.54
+                    }
+                ]
+            },
+            {
+                "ndbno": "01209",
+                "name": "Cheese, Mexican, blend, reduced fat",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.00",
+                        "gm": 24.69
+                    }
+                ]
+            },
+            {
+                "ndbno": "01165",
+                "name": "Cheese, mexican, queso anejo",
+                "weight": 132.0,
+                "measure": "1.0 cup, crumbled",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "28.30",
+                        "gm": 21.44
+                    }
+                ]
+            },
+            {
+                "ndbno": "01166",
+                "name": "Cheese, mexican, queso asadero",
+                "weight": 132.0,
+                "measure": "1.0 cup, diced",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "29.83",
+                        "gm": 22.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "01167",
+                "name": "Cheese, mexican, queso chihuahua",
+                "weight": 132.0,
+                "measure": "1.0 cup, diced",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "28.46",
+                        "gm": 21.56
+                    }
+                ]
+            },
+            {
+                "ndbno": "01267",
+                "name": "Cheese, mexican, queso cotija",
+                "weight": 5.0,
+                "measure": "2.0 tsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.00",
+                        "gm": 20.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "01025",
+                "name": "Cheese, monterey",
+                "weight": 132.0,
+                "measure": "1.0 cup, diced",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "32.31",
+                        "gm": 24.48
+                    }
+                ]
+            },
+            {
+                "ndbno": "42155",
+                "name": "Cheese, monterey, low fat",
+                "weight": 132.0,
+                "measure": "1.0 cup, diced",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "37.22",
+                        "gm": 28.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "01029",
+                "name": "Cheese, mozzarella, low moisture, part-skim",
+                "weight": 132.0,
+                "measure": "1.0 cup, diced",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "31.35",
+                        "gm": 23.75
+                    }
+                ]
+            },
+            {
+                "ndbno": "01271",
+                "name": "Cheese, mozzarella, low moisture, part-skim, shredded",
+                "weight": 86.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "20.32",
+                        "gm": 23.63
+                    }
+                ]
+            },
+            {
+                "ndbno": "43597",
+                "name": "Cheese, mozzarella, low sodium",
+                "weight": 132.0,
+                "measure": "1.0 cup, diced",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "36.30",
+                        "gm": 27.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "42304",
+                "name": "Cheese, mozzarella, nonfat",
+                "weight": 113.0,
+                "measure": "1.0 cup, shredded",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "35.82",
+                        "gm": 31.7
+                    }
+                ]
+            },
+            {
+                "ndbno": "01028",
+                "name": "Cheese, mozzarella, part skim milk",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.88",
+                        "gm": 24.26
+                    }
+                ]
+            },
+            {
+                "ndbno": "01026",
+                "name": "Cheese, mozzarella, whole milk",
+                "weight": 112.0,
+                "measure": "1.0 cup, shredded",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "24.83",
+                        "gm": 22.17
+                    }
+                ]
+            },
+            {
+                "ndbno": "01027",
+                "name": "Cheese, mozzarella, whole milk, low moisture",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.12",
+                        "gm": 21.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "01030",
+                "name": "Cheese, muenster",
+                "weight": 132.0,
+                "measure": "1.0 cup, diced",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "30.90",
+                        "gm": 23.41
+                    }
+                ]
+            },
+            {
+                "ndbno": "42303",
+                "name": "Cheese, muenster, low fat",
+                "weight": 113.0,
+                "measure": "1.0 cup, shredded",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "27.91",
+                        "gm": 24.7
+                    }
+                ]
+            },
+            {
+                "ndbno": "01031",
+                "name": "Cheese, neufchatel",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.59",
+                        "gm": 9.15
+                    }
+                ]
+            },
+            {
+                "ndbno": "01204",
+                "name": "Cheese, parmesan, dry grated, reduced fat",
+                "weight": 100.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "20.00",
+                        "gm": 20.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "01032",
+                "name": "Cheese, parmesan, grated",
+                "weight": 100.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "28.42",
+                        "gm": 28.42
+                    }
+                ]
+            },
+            {
+                "ndbno": "01033",
+                "name": "Cheese, parmesan, hard",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.14",
+                        "gm": 35.75
+                    }
+                ]
+            },
+            {
+                "ndbno": "43340",
+                "name": "Cheese, parmesan, low sodium",
+                "weight": 100.0,
+                "measure": "1.0 cup, grated",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "41.60",
+                        "gm": 41.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "01146",
+                "name": "Cheese, parmesan, shredded",
+                "weight": 5.0,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.89",
+                        "gm": 37.86
+                    }
+                ]
+            },
+            {
+                "ndbno": "01042",
+                "name": "Cheese, pasteurized process, American, fortified with vitamin D",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.14",
+                        "gm": 18.13
+                    }
+                ]
+            },
+            {
+                "ndbno": "43275",
+                "name": "Cheese, pasteurized process, American, low fat",
+                "weight": 140.0,
+                "measure": "1.0 cup, diced",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "34.44",
+                        "gm": 24.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "01253",
+                "name": "Cheese, pasteurized process, American, without added vitamin D",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.14",
+                        "gm": 18.13
+                    }
+                ]
+            },
+            {
+                "ndbno": "42205",
+                "name": "Cheese, pasteurized process, cheddar or American, fat-free",
+                "weight": 16.0,
+                "measure": "1.0 cubic inch",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.60",
+                        "gm": 22.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "43398",
+                "name": "Cheese, pasteurized process, cheddar or American, low sodium",
+                "weight": 140.0,
+                "measure": "1.0 cup, diced",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "31.08",
+                        "gm": 22.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "01043",
+                "name": "Cheese, pasteurized process, pimento",
+                "weight": 140.0,
+                "measure": "1.0 cup, diced",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "30.98",
+                        "gm": 22.13
+                    }
+                ]
+            },
+            {
+                "ndbno": "01044",
+                "name": "Cheese, pasteurized process, swiss",
+                "weight": 140.0,
+                "measure": "1.0 cup, diced",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "34.62",
+                        "gm": 24.73
+                    }
+                ]
+            },
+            {
+                "ndbno": "43379",
+                "name": "Cheese, pasteurized process, swiss, low fat",
+                "weight": 140.0,
+                "measure": "1.0 cup, diced",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "35.70",
+                        "gm": 25.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "01034",
+                "name": "Cheese, port de salut",
+                "weight": 132.0,
+                "measure": "1.0 cup, diced",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "31.39",
+                        "gm": 23.78
+                    }
+                ]
+            },
+            {
+                "ndbno": "01035",
+                "name": "Cheese, provolone",
+                "weight": 132.0,
+                "measure": "1.0 cup, diced",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "33.77",
+                        "gm": 25.58
+                    }
+                ]
+            },
+            {
+                "ndbno": "01208",
+                "name": "Cheese, provolone, reduced fat",
+                "weight": 132.0,
+                "measure": "1.0 cup, diced",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "32.60",
+                        "gm": 24.7
+                    }
+                ]
+            },
+            {
+                "ndbno": "01037",
+                "name": "Cheese, ricotta, part skim milk",
+                "weight": 124.0,
+                "measure": "0.5 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.12",
+                        "gm": 11.39
+                    }
+                ]
+            },
+            {
+                "ndbno": "01036",
+                "name": "Cheese, ricotta, whole milk",
+                "weight": 124.0,
+                "measure": "0.5 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.96",
+                        "gm": 11.26
+                    }
+                ]
+            },
+            {
+                "ndbno": "01038",
+                "name": "Cheese, romano",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.02",
+                        "gm": 31.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "01039",
+                "name": "Cheese, roquefort",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.11",
+                        "gm": 21.54
+                    }
+                ]
+            },
+            {
+                "ndbno": "01040",
+                "name": "Cheese, swiss",
+                "weight": 132.0,
+                "measure": "1.0 cup, diced",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "35.59",
+                        "gm": 26.96
+                    }
+                ]
+            },
+            {
+                "ndbno": "43589",
+                "name": "Cheese, swiss, low fat",
+                "weight": 28.0,
+                "measure": "1.0 slice (1 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.95",
+                        "gm": 28.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "43405",
+                "name": "Cheese, swiss, low sodium",
+                "weight": 28.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.95",
+                        "gm": 28.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "01266",
+                "name": "Cheese, Swiss, nonfat or fat free",
+                "weight": 28.0,
+                "measure": "1.0 serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.95",
+                        "gm": 28.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "01041",
+                "name": "Cheese, tilsit",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.92",
+                        "gm": 24.41
+                    }
+                ]
+            },
+            {
+                "ndbno": "01229",
+                "name": "Cheese, white, queso blanco",
+                "weight": 118.0,
+                "measure": "1.0 cup, crumbled",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "24.05",
+                        "gm": 20.38
+                    }
+                ]
+            },
+            {
+                "ndbno": "01205",
+                "name": "Cream substitute, flavored, liquid",
+                "weight": 15.0,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.10",
+                        "gm": 0.69
+                    }
+                ]
+            },
+            {
+                "ndbno": "01206",
+                "name": "Cream substitute, flavored, powdered",
+                "weight": 12.0,
+                "measure": "4.0 tsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.08",
+                        "gm": 0.68
+                    }
+                ]
+            },
+            {
+                "ndbno": "42141",
+                "name": "Cream substitute, liquid, light",
+                "weight": 30.0,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.24",
+                        "gm": 0.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "01067",
+                "name": "Cream substitute, liquid, with hydrogenated vegetable oil and soy protein",
+                "weight": 15.0,
+                "measure": "1.0 container, individual",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.15",
+                        "gm": 1.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "01068",
+                "name": "Cream substitute, liquid, with lauric acid oil and sodium caseinate",
+                "weight": 15.0,
+                "measure": "1.0 container, individual",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.15",
+                        "gm": 1.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "01069",
+                "name": "Cream substitute, powdered",
+                "weight": 94.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.33",
+                        "gm": 2.48
+                    }
+                ]
+            },
+            {
+                "ndbno": "42136",
+                "name": "Cream substitute, powdered, light",
+                "weight": 94.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.79",
+                        "gm": 1.9
+                    }
+                ]
+            },
+            {
+                "ndbno": "01049",
+                "name": "Cream, fluid, half and half",
+                "weight": 30.2,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.95",
+                        "gm": 3.13
+                    }
+                ]
+            },
+            {
+                "ndbno": "01053",
+                "name": "Cream, fluid, heavy whipping",
+                "weight": 120.0,
+                "measure": "1.0 cup, whipped",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.41",
+                        "gm": 2.84
+                    }
+                ]
+            },
+            {
+                "ndbno": "01050",
+                "name": "Cream, fluid, light (coffee cream or table cream)",
+                "weight": 30.0,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.89",
+                        "gm": 2.96
+                    }
+                ]
+            },
+            {
+                "ndbno": "01052",
+                "name": "Cream, fluid, light whipping",
+                "weight": 120.0,
+                "measure": "1.0 cup, whipped",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.60",
+                        "gm": 2.17
+                    }
+                ]
+            },
+            {
+                "ndbno": "01199",
+                "name": "Cream, half and half, fat free",
+                "weight": 29.0,
+                "measure": "2.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.75",
+                        "gm": 2.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "01056",
+                "name": "Cream, sour, cultured",
+                "weight": 12.0,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.29",
+                        "gm": 2.44
+                    }
+                ]
+            },
+            {
+                "ndbno": "01055",
+                "name": "Cream, sour, reduced fat, cultured",
+                "weight": 15.0,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.44",
+                        "gm": 2.94
+                    }
+                ]
+            },
+            {
+                "ndbno": "01054",
+                "name": "Cream, whipped, cream topping, pressurized",
+                "weight": 60.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.92",
+                        "gm": 3.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "01070",
+                "name": "Dessert topping, powdered",
+                "weight": 43.0,
+                "measure": "1.5 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.11",
+                        "gm": 4.9
+                    }
+                ]
+            },
+            {
+                "ndbno": "01071",
+                "name": "Dessert topping, powdered, 1.5 ounce prepared with 1/2 cup milk",
+                "weight": 80.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.89",
+                        "gm": 3.61
+                    }
+                ]
+            },
+            {
+                "ndbno": "01072",
+                "name": "Dessert topping, pressurized",
+                "weight": 70.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.69",
+                        "gm": 0.98
+                    }
+                ]
+            },
+            {
+                "ndbno": "01073",
+                "name": "Dessert topping, semi solid, frozen",
+                "weight": 75.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.94",
+                        "gm": 1.25
+                    }
+                ]
+            },
+            {
+                "ndbno": "01225",
+                "name": "Dulce de Leche",
+                "weight": 19.0,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.30",
+                        "gm": 6.84
+                    }
+                ]
+            },
+            {
+                "ndbno": "01210",
+                "name": "Egg Mix, USDA Commodity",
+                "weight": 8.6,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.06",
+                        "gm": 35.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "01226",
+                "name": "Egg substitute, liquid or frozen, fat free",
+                "weight": 60.0,
+                "measure": "0.25 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.00",
+                        "gm": 10.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "01144",
+                "name": "Egg substitute, powder",
+                "weight": 9.9,
+                "measure": "0.35 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.49",
+                        "gm": 55.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "01138",
+                "name": "Egg, duck, whole, fresh, raw",
+                "weight": 70.0,
+                "measure": "1.0 egg",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.97",
+                        "gm": 12.81
+                    }
+                ]
+            },
+            {
+                "ndbno": "01139",
+                "name": "Egg, goose, whole, fresh, raw",
+                "weight": 144.0,
+                "measure": "1.0 egg",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "19.97",
+                        "gm": 13.87
+                    }
+                ]
+            },
+            {
+                "ndbno": "01140",
+                "name": "Egg, quail, whole, fresh, raw",
+                "weight": 9.0,
+                "measure": "1.0 egg",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.17",
+                        "gm": 13.05
+                    }
+                ]
+            },
+            {
+                "ndbno": "01141",
+                "name": "Egg, turkey, whole, fresh, raw",
+                "weight": 79.0,
+                "measure": "1.0 egg",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.81",
+                        "gm": 13.68
+                    }
+                ]
+            },
+            {
+                "ndbno": "01173",
+                "name": "Egg, white, dried",
+                "weight": 28.0,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.71",
+                        "gm": 81.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "01135",
+                "name": "Egg, white, dried, flakes, stabilized, glucose reduced",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "21.81",
+                        "gm": 76.92
+                    }
+                ]
+            },
+            {
+                "ndbno": "01136",
+                "name": "Egg, white, dried, powder, stabilized, glucose reduced",
+                "weight": 107.0,
+                "measure": "1.0 cup, sifted",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "88.17",
+                        "gm": 82.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "01258",
+                "name": "Egg, white, dried, stabilized, glucose reduced",
+                "weight": 107.0,
+                "measure": "1.0 cup, sifted",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "89.97",
+                        "gm": 84.08
+                    }
+                ]
+            },
+            {
+                "ndbno": "01124",
+                "name": "Egg, white, raw, fresh",
+                "weight": 33.0,
+                "measure": "1.0 large",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.60",
+                        "gm": 10.9
+                    }
+                ]
+            },
+            {
+                "ndbno": "01172",
+                "name": "Egg, white, raw, frozen, pasteurized",
+                "weight": 28.0,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.86",
+                        "gm": 10.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "01128",
+                "name": "Egg, whole, cooked, fried",
+                "weight": 46.0,
+                "measure": "1.0 large",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.26",
+                        "gm": 13.61
+                    }
+                ]
+            },
+            {
+                "ndbno": "01129",
+                "name": "Egg, whole, cooked, hard-boiled",
+                "weight": 136.0,
+                "measure": "1.0 cup, chopped",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.11",
+                        "gm": 12.58
+                    }
+                ]
+            },
+            {
+                "ndbno": "01130",
+                "name": "Egg, whole, cooked, omelet",
+                "weight": 15.0,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.59",
+                        "gm": 10.57
+                    }
+                ]
+            },
+            {
+                "ndbno": "01131",
+                "name": "Egg, whole, cooked, poached",
+                "weight": 50.0,
+                "measure": "1.0 large",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.25",
+                        "gm": 12.51
+                    }
+                ]
+            },
+            {
+                "ndbno": "01132",
+                "name": "Egg, whole, cooked, scrambled",
+                "weight": 61.0,
+                "measure": "1.0 large",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.09",
+                        "gm": 9.99
+                    }
+                ]
+            },
+            {
+                "ndbno": "01133",
+                "name": "Egg, whole, dried",
+                "weight": 85.0,
+                "measure": "1.0 cup, sifted",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "40.84",
+                        "gm": 48.05
+                    }
+                ]
+            },
+            {
+                "ndbno": "01134",
+                "name": "Egg, whole, dried, stabilized, glucose reduced",
+                "weight": 85.0,
+                "measure": "1.0 cup, sifted",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "40.94",
+                        "gm": 48.17
+                    }
+                ]
+            },
+            {
+                "ndbno": "01123",
+                "name": "Egg, whole, raw, fresh",
+                "weight": 50.0,
+                "measure": "1.0 large",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.28",
+                        "gm": 12.56
+                    }
+                ]
+            },
+            {
+                "ndbno": "01171",
+                "name": "Egg, whole, raw, frozen, pasteurized",
+                "weight": 28.0,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.45",
+                        "gm": 12.33
+                    }
+                ]
+            },
+            {
+                "ndbno": "01255",
+                "name": "Egg, whole, raw, frozen, salted, pasteurized",
+                "weight": 28.0,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.07",
+                        "gm": 10.97
+                    }
+                ]
+            },
+            {
+                "ndbno": "01137",
+                "name": "Egg, yolk, dried",
+                "weight": 67.0,
+                "measure": "1.0 cup, sifted",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.53",
+                        "gm": 33.63
+                    }
+                ]
+            },
+            {
+                "ndbno": "01125",
+                "name": "Egg, yolk, raw, fresh",
+                "weight": 17.0,
+                "measure": "1.0 large",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.70",
+                        "gm": 15.86
+                    }
+                ]
+            },
+            {
+                "ndbno": "01126",
+                "name": "Egg, yolk, raw, frozen, pasteurized",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.40",
+                        "gm": 15.53
+                    }
+                ]
+            },
+            {
+                "ndbno": "01160",
+                "name": "Egg, yolk, raw, frozen, salted, pasteurized",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.99",
+                        "gm": 14.07
+                    }
+                ]
+            },
+            {
+                "ndbno": "01127",
+                "name": "Egg, yolk, raw, frozen, sugared, pasteurized",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.93",
+                        "gm": 13.87
+                    }
+                ]
+            },
+            {
+                "ndbno": "01057",
+                "name": "Eggnog",
+                "weight": 254.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.56",
+                        "gm": 4.55
+                    }
+                ]
+            },
+            {
+                "ndbno": "43285",
+                "name": "Eggs, scrambled, frozen mixture",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.71",
+                        "gm": 13.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "01243",
+                "name": "Fat free ice cream, no sugar added, flavors other than chocolate",
+                "weight": 68.0,
+                "measure": "0.5 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.00",
+                        "gm": 4.41
+                    }
+                ]
+            },
+            {
+                "ndbno": "01264",
+                "name": "Ice cream bar, stick or nugget, with crunch coating",
+                "weight": 95.0,
+                "measure": "26.0 pieces",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.00",
+                        "gm": 2.11
+                    }
+                ]
+            },
+            {
+                "ndbno": "01240",
+                "name": "Ice cream cone, chocolate covered, with nuts, flavors other than chocolate",
+                "weight": 96.0,
+                "measure": "1.0 unit",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.00",
+                        "gm": 5.21
+                    }
+                ]
+            },
+            {
+                "ndbno": "01239",
+                "name": "Ice cream cookie sandwich",
+                "weight": 82.0,
+                "measure": "1.0 serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.03",
+                        "gm": 3.7
+                    }
+                ]
+            },
+            {
+                "ndbno": "01238",
+                "name": "Ice cream sandwich",
+                "weight": 70.0,
+                "measure": "1.0 serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.00",
+                        "gm": 4.29
+                    }
+                ]
+            },
+            {
+                "ndbno": "01241",
+                "name": "Ice cream sandwich, made with light ice cream, vanilla",
+                "weight": 70.0,
+                "measure": "1.0 serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.00",
+                        "gm": 4.29
+                    }
+                ]
+            },
+            {
+                "ndbno": "01242",
+                "name": "Ice cream sandwich, vanilla, light, no sugar added",
+                "weight": 70.0,
+                "measure": "1.0 serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.00",
+                        "gm": 5.71
+                    }
+                ]
+            },
+            {
+                "ndbno": "01237",
+                "name": "Ice cream, bar or stick, chocolate covered",
+                "weight": 50.0,
+                "measure": "1.0 bar",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.05",
+                        "gm": 4.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "01263",
+                "name": "Ice cream, light, soft serve, chocolate",
+                "weight": 298.0,
+                "measure": "1.0 medium",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.01",
+                        "gm": 3.36
+                    }
+                ]
+            },
+            {
+                "ndbno": "01236",
+                "name": "Ice cream, soft serve, chocolate",
+                "weight": 86.0,
+                "measure": "0.5 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.53",
+                        "gm": 4.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "42117",
+                "name": "Imitation cheese, american or cheddar, low cholesterol",
+                "weight": 113.0,
+                "measure": "1.0 cup, shredded",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "28.25",
+                        "gm": 25.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "01194",
+                "name": "KRAFT BREAKSTONE'S FREE Fat Free Sour Cream",
+                "weight": 32.0,
+                "measure": "2.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.50",
+                        "gm": 4.7
+                    }
+                ]
+            },
+            {
+                "ndbno": "01193",
+                "name": "KRAFT BREAKSTONE'S Reduced Fat Sour Cream",
+                "weight": 31.0,
+                "measure": "2.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.40",
+                        "gm": 4.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "01189",
+                "name": "KRAFT CHEEZ WHIZ LIGHT Pasteurized Process Cheese Product",
+                "weight": 35.0,
+                "measure": "2.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.71",
+                        "gm": 16.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "01188",
+                "name": "KRAFT CHEEZ WHIZ Pasteurized Process Cheese Sauce",
+                "weight": 33.0,
+                "measure": "2.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.96",
+                        "gm": 12.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "01190",
+                "name": "KRAFT FREE Singles American Nonfat Pasteurized Process Cheese Product",
+                "weight": 21.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.77",
+                        "gm": 22.7
+                    }
+                ]
+            },
+            {
+                "ndbno": "01192",
+                "name": "KRAFT VELVEETA LIGHT Reduced Fat Pasteurized Process Cheese Product",
+                "weight": 28.0,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.49",
+                        "gm": 19.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "01191",
+                "name": "KRAFT VELVEETA Pasteurized Process Cheese Spread",
+                "weight": 28.0,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.56",
+                        "gm": 16.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "01244",
+                "name": "Milk dessert bar, frozen, made from lowfat milk",
+                "weight": 68.0,
+                "measure": "1.0 bar",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.00",
+                        "gm": 4.41
+                    }
+                ]
+            },
+            {
+                "ndbno": "01110",
+                "name": "Milk shakes, thick chocolate",
+                "weight": 28.4,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.87",
+                        "gm": 3.05
+                    }
+                ]
+            },
+            {
+                "ndbno": "01111",
+                "name": "Milk shakes, thick vanilla",
+                "weight": 28.4,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.10",
+                        "gm": 3.86
+                    }
+                ]
+            },
+            {
+                "ndbno": "01076",
+                "name": "Milk substitutes, fluid, with lauric acid oil",
+                "weight": 244.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.27",
+                        "gm": 1.75
+                    }
+                ]
+            },
+            {
+                "ndbno": "01094",
+                "name": "Milk, buttermilk, dried",
+                "weight": 30.0,
+                "measure": "0.25 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.29",
+                        "gm": 34.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "01088",
+                "name": "Milk, buttermilk, fluid, cultured, lowfat",
+                "weight": 245.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.11",
+                        "gm": 3.31
+                    }
+                ]
+            },
+            {
+                "ndbno": "42189",
+                "name": "Milk, buttermilk, fluid, cultured, reduced fat",
+                "weight": 245.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.04",
+                        "gm": 4.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "01230",
+                "name": "Milk, buttermilk, fluid, whole",
+                "weight": 245.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.86",
+                        "gm": 3.21
+                    }
+                ]
+            },
+            {
+                "ndbno": "01095",
+                "name": "Milk, canned, condensed, sweetened",
+                "weight": 38.2,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.02",
+                        "gm": 7.91
+                    }
+                ]
+            },
+            {
+                "ndbno": "01097",
+                "name": "Milk, canned, evaporated, nonfat, with added vitamin A and vitamin D",
+                "weight": 31.9,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.41",
+                        "gm": 7.55
+                    }
+                ]
+            },
+            {
+                "ndbno": "01153",
+                "name": "Milk, canned, evaporated, with added vitamin A",
+                "weight": 31.5,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.15",
+                        "gm": 6.81
+                    }
+                ]
+            },
+            {
+                "ndbno": "01096",
+                "name": "Milk, canned, evaporated, with added vitamin D and without added vitamin A",
+                "weight": 31.5,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.15",
+                        "gm": 6.81
+                    }
+                ]
+            },
+            {
+                "ndbno": "01214",
+                "name": "Milk, canned, evaporated, without added vitamin A and vitamin D",
+                "weight": 252.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.16",
+                        "gm": 6.81
+                    }
+                ]
+            },
+            {
+                "ndbno": "01105",
+                "name": "Milk, chocolate beverage, hot cocoa, homemade",
+                "weight": 250.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.80",
+                        "gm": 3.52
+                    }
+                ]
+            },
+            {
+                "ndbno": "01202",
+                "name": "Milk, chocolate, fluid, commercial, reduced fat, with added calcium",
+                "weight": 250.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.47",
+                        "gm": 2.99
+                    }
+                ]
+            },
+            {
+                "ndbno": "01103",
+                "name": "Milk, chocolate, fluid, commercial, reduced fat, with added vitamin A and vitamin D",
+                "weight": 250.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.47",
+                        "gm": 2.99
+                    }
+                ]
+            },
+            {
+                "ndbno": "01102",
+                "name": "Milk, chocolate, fluid, commercial, whole, with added vitamin A and vitamin D",
+                "weight": 250.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.92",
+                        "gm": 3.17
+                    }
+                ]
+            },
+            {
+                "ndbno": "01104",
+                "name": "Milk, chocolate, lowfat, with added vitamin A and vitamin D",
+                "weight": 250.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.65",
+                        "gm": 3.46
+                    }
+                ]
+            },
+            {
+                "ndbno": "01093",
+                "name": "Milk, dry, nonfat, calcium reduced",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.06",
+                        "gm": 35.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "01092",
+                "name": "Milk, dry, nonfat, instant, with added vitamin A and vitamin D",
+                "weight": 68.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "23.87",
+                        "gm": 35.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "01155",
+                "name": "Milk, dry, nonfat, instant, without added vitamin A and vitamin D",
+                "weight": 68.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "23.87",
+                        "gm": 35.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "01154",
+                "name": "Milk, dry, nonfat, regular, with added vitamin A and vitamin D",
+                "weight": 30.0,
+                "measure": "0.25 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.85",
+                        "gm": 36.16
+                    }
+                ]
+            },
+            {
+                "ndbno": "01091",
+                "name": "Milk, dry, nonfat, regular, without added vitamin A and vitamin D",
+                "weight": 30.0,
+                "measure": "0.25 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.85",
+                        "gm": 36.16
+                    }
+                ]
+            },
+            {
+                "ndbno": "01090",
+                "name": "Milk, dry, whole, with added vitamin D",
+                "weight": 32.0,
+                "measure": "0.25 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.42",
+                        "gm": 26.32
+                    }
+                ]
+            },
+            {
+                "ndbno": "01212",
+                "name": "Milk, dry, whole, without added vitamin D",
+                "weight": 128.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "33.69",
+                        "gm": 26.32
+                    }
+                ]
+            },
+            {
+                "ndbno": "01291",
+                "name": "Milk, evaporated, 2% fat, with added vitamin A and vitamin D",
+                "weight": 252.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.81",
+                        "gm": 6.67
+                    }
+                ]
+            },
+            {
+                "ndbno": "01059",
+                "name": "Milk, filled, fluid, with blend of hydrogenated vegetable oils",
+                "weight": 244.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.13",
+                        "gm": 3.33
+                    }
+                ]
+            },
+            {
+                "ndbno": "01060",
+                "name": "Milk, filled, fluid, with lauric acid oil",
+                "weight": 244.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.13",
+                        "gm": 3.33
+                    }
+                ]
+            },
+            {
+                "ndbno": "01175",
+                "name": "Milk, fluid, 1% fat, without added vitamin A and vitamin D",
+                "weight": 244.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.22",
+                        "gm": 3.37
+                    }
+                ]
+            },
+            {
+                "ndbno": "42290",
+                "name": "Milk, fluid, nonfat, calcium fortified (fat free or skim)",
+                "weight": 247.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.40",
+                        "gm": 3.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "01106",
+                "name": "Milk, goat, fluid, with added vitamin D",
+                "weight": 30.5,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.09",
+                        "gm": 3.56
+                    }
+                ]
+            },
+            {
+                "ndbno": "01107",
+                "name": "Milk, human, mature, fluid",
+                "weight": 30.8,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.32",
+                        "gm": 1.03
+                    }
+                ]
+            },
+            {
+                "ndbno": "43543",
+                "name": "Milk, imitation, non-soy",
+                "weight": 244.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.90",
+                        "gm": 1.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "01108",
+                "name": "Milk, indian buffalo, fluid",
+                "weight": 244.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.15",
+                        "gm": 3.75
+                    }
+                ]
+            },
+            {
+                "ndbno": "01089",
+                "name": "Milk, low sodium, fluid",
+                "weight": 244.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.56",
+                        "gm": 3.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "01084",
+                "name": "Milk, lowfat, fluid, 1% milkfat, protein fortified, with added vitamin A and vitamin D",
+                "weight": 246.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.67",
+                        "gm": 3.93
+                    }
+                ]
+            },
+            {
+                "ndbno": "01083",
+                "name": "Milk, lowfat, fluid, 1% milkfat, with added nonfat milk solids, vitamin A and vitamin D",
+                "weight": 245.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.53",
+                        "gm": 3.48
+                    }
+                ]
+            },
+            {
+                "ndbno": "01082",
+                "name": "Milk, lowfat, fluid, 1% milkfat, with added vitamin A and vitamin D",
+                "weight": 244.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.22",
+                        "gm": 3.37
+                    }
+                ]
+            },
+            {
+                "ndbno": "01087",
+                "name": "Milk, nonfat, fluid, protein fortified, with added vitamin A and vitamin D (fat free and skim)",
+                "weight": 246.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.74",
+                        "gm": 3.96
+                    }
+                ]
+            },
+            {
+                "ndbno": "01086",
+                "name": "Milk, nonfat, fluid, with added nonfat milk solids, vitamin A and vitamin D (fat free or skim)",
+                "weight": 245.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.75",
+                        "gm": 3.57
+                    }
+                ]
+            },
+            {
+                "ndbno": "01085",
+                "name": "Milk, nonfat, fluid, with added vitamin A and vitamin D (fat free or skim)",
+                "weight": 245.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.26",
+                        "gm": 3.37
+                    }
+                ]
+            },
+            {
+                "ndbno": "01151",
+                "name": "Milk, nonfat, fluid, without added vitamin A and vitamin D (fat free or skim)",
+                "weight": 245.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.26",
+                        "gm": 3.37
+                    }
+                ]
+            },
+            {
+                "ndbno": "01078",
+                "name": "Milk, producer, fluid, 3.7% milkfat",
+                "weight": 244.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.00",
+                        "gm": 3.28
+                    }
+                ]
+            },
+            {
+                "ndbno": "01081",
+                "name": "Milk, reduced fat, fluid, 2% milkfat, protein fortified, with added vitamin A and vitamin D",
+                "weight": 246.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.72",
+                        "gm": 3.95
+                    }
+                ]
+            },
+            {
+                "ndbno": "01080",
+                "name": "Milk, reduced fat, fluid, 2% milkfat, with added nonfat milk solids and vitamin A and vitamin D",
+                "weight": 245.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.53",
+                        "gm": 3.48
+                    }
+                ]
+            },
+            {
+                "ndbno": "01152",
+                "name": "Milk, reduced fat, fluid, 2% milkfat, with added nonfat milk solids, without added vitamin A",
+                "weight": 245.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.68",
+                        "gm": 3.95
+                    }
+                ]
+            },
+            {
+                "ndbno": "01079",
+                "name": "Milk, reduced fat, fluid, 2% milkfat, with added vitamin A and vitamin D",
+                "weight": 244.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.05",
+                        "gm": 3.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "01174",
+                "name": "Milk, reduced fat, fluid, 2% milkfat, without added vitamin A and vitamin D",
+                "weight": 246.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.12",
+                        "gm": 3.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "01109",
+                "name": "Milk, sheep, fluid",
+                "weight": 245.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.65",
+                        "gm": 5.98
+                    }
+                ]
+            },
+            {
+                "ndbno": "01077",
+                "name": "Milk, whole, 3.25% milkfat, with added vitamin D",
+                "weight": 244.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.69",
+                        "gm": 3.15
+                    }
+                ]
+            },
+            {
+                "ndbno": "01211",
+                "name": "Milk, whole, 3.25% milkfat, without added vitamin A and vitamin D",
+                "weight": 244.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.69",
+                        "gm": 3.15
+                    }
+                ]
+            },
+            {
+                "ndbno": "01250",
+                "name": "Nutritional supplement for people with diabetes, liquid",
+                "weight": 227.0,
+                "measure": "1.0 can",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.99",
+                        "gm": 4.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "01185",
+                "name": "Parmesan cheese topping, fat free",
+                "weight": 5.0,
+                "measure": "1.0 tablespoon",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.00",
+                        "gm": 40.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "01224",
+                "name": "Protein supplement, milk based, Muscle Milk Light, powder",
+                "weight": 50.0,
+                "measure": "2.0 scoop",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "25.00",
+                        "gm": 50.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "01223",
+                "name": "Protein supplement, milk based, Muscle Milk, powder",
+                "weight": 11.0,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.03",
+                        "gm": 45.71
+                    }
+                ]
+            },
+            {
+                "ndbno": "01200",
+                "name": "Reddi Wip Fat Free Whipped Topping",
+                "weight": 4.0,
+                "measure": "1.0 tablespoon",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.12",
+                        "gm": 3.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "01180",
+                "name": "Sour cream, fat free",
+                "weight": 12.0,
+                "measure": "1.0 tablespoon",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.37",
+                        "gm": 3.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "01074",
+                "name": "Sour cream, imitation, cultured",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.68",
+                        "gm": 2.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "01179",
+                "name": "Sour cream, light",
+                "weight": 12.0,
+                "measure": "1.0 tablespoon",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.42",
+                        "gm": 3.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "01178",
+                "name": "Sour cream, reduced fat",
+                "weight": 12.0,
+                "measure": "1.0 tablespoon",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.84",
+                        "gm": 7.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "01058",
+                "name": "Sour dressing, non-butterfat, cultured, filled cream-type",
+                "weight": 12.0,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.39",
+                        "gm": 3.25
+                    }
+                ]
+            },
+            {
+                "ndbno": "01182",
+                "name": "USDA Commodity, cheese, cheddar, reduced fat",
+                "weight": 113.0,
+                "measure": "1.0 cup shredded",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "30.74",
+                        "gm": 27.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "01113",
+                "name": "Whey, acid, dried",
+                "weight": 57.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.69",
+                        "gm": 11.73
+                    }
+                ]
+            },
+            {
+                "ndbno": "01112",
+                "name": "Whey, acid, fluid",
+                "weight": 246.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.87",
+                        "gm": 0.76
+                    }
+                ]
+            },
+            {
+                "ndbno": "01115",
+                "name": "Whey, sweet, dried",
+                "weight": 145.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "18.75",
+                        "gm": 12.93
+                    }
+                ]
+            },
+            {
+                "ndbno": "01114",
+                "name": "Whey, sweet, fluid",
+                "weight": 246.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.09",
+                        "gm": 0.85
+                    }
+                ]
+            },
+            {
+                "ndbno": "43268",
+                "name": "Whipped cream substitute, dietetic, made from powdered mix",
+                "weight": 80.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.72",
+                        "gm": 0.9
+                    }
+                ]
+            },
+            {
+                "ndbno": "42135",
+                "name": "Whipped topping, frozen, low fat",
+                "weight": 75.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.25",
+                        "gm": 3.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "01187",
+                "name": "Yogurt, chocolate, nonfat milk",
+                "weight": 170.0,
+                "measure": "1.0 container (6 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.00",
+                        "gm": 3.53
+                    }
+                ]
+            },
+            {
+                "ndbno": "01222",
+                "name": "Yogurt, chocolate, nonfat milk, fortified with vitamin D",
+                "weight": 170.0,
+                "measure": "1.0 container (6 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.00",
+                        "gm": 3.53
+                    }
+                ]
+            },
+            {
+                "ndbno": "01235",
+                "name": "Yogurt, frozen, flavors not chocolate, nonfat milk, with low-calorie sweetener",
+                "weight": 68.0,
+                "measure": "0.5 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.99",
+                        "gm": 4.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "43261",
+                "name": "Yogurt, fruit variety, nonfat",
+                "weight": 170.0,
+                "measure": "1.0 container (6 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.48",
+                        "gm": 4.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "01218",
+                "name": "Yogurt, fruit variety, nonfat, fortified with vitamin D",
+                "weight": 170.0,
+                "measure": "1.0 container (6 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.48",
+                        "gm": 4.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "01121",
+                "name": "Yogurt, fruit, low fat, 10 grams protein per 8 ounce",
+                "weight": 170.0,
+                "measure": "1.0 container (6 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.43",
+                        "gm": 4.37
+                    }
+                ]
+            },
+            {
+                "ndbno": "01217",
+                "name": "Yogurt, fruit, low fat, 10 grams protein per 8 ounce, fortified with vitamin D",
+                "weight": 170.0,
+                "measure": "1.0 container (6 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.43",
+                        "gm": 4.37
+                    }
+                ]
+            },
+            {
+                "ndbno": "01122",
+                "name": "Yogurt, fruit, low fat, 11 grams protein per 8 ounce",
+                "weight": 170.0,
+                "measure": "1.0 container (6 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.26",
+                        "gm": 4.86
+                    }
+                ]
+            },
+            {
+                "ndbno": "01120",
+                "name": "Yogurt, fruit, low fat, 9 grams protein per 8 ounce",
+                "weight": 170.0,
+                "measure": "1.0 container (6 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.77",
+                        "gm": 3.98
+                    }
+                ]
+            },
+            {
+                "ndbno": "01216",
+                "name": "Yogurt, fruit, low fat, 9 grams protein per 8 ounce, fortified with vitamin D",
+                "weight": 170.0,
+                "measure": "1.0 container (6 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.77",
+                        "gm": 3.98
+                    }
+                ]
+            },
+            {
+                "ndbno": "01203",
+                "name": "Yogurt, fruit, lowfat, with low calorie sweetener",
+                "weight": 170.0,
+                "measure": "1.0 container (6 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.26",
+                        "gm": 4.86
+                    }
+                ]
+            },
+            {
+                "ndbno": "01219",
+                "name": "Yogurt, fruit, lowfat, with low calorie sweetener, fortified with vitamin D",
+                "weight": 170.0,
+                "measure": "1.0 container (6 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.26",
+                        "gm": 4.86
+                    }
+                ]
+            },
+            {
+                "ndbno": "01281",
+                "name": "Yogurt, Greek, nonfat, strawberry, CHOBANI",
+                "weight": 150.0,
+                "measure": "5.3 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.04",
+                        "gm": 8.03
+                    }
+                ]
+            },
+            {
+                "ndbno": "01280",
+                "name": "Yogurt, Greek, nonfat, strawberry, DANNON OIKOS",
+                "weight": 150.0,
+                "measure": "5.3 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.04",
+                        "gm": 8.03
+                    }
+                ]
+            },
+            {
+                "ndbno": "01275",
+                "name": "Yogurt, Greek, nonfat, vanilla, CHOBANI",
+                "weight": 150.0,
+                "measure": "5.3 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.61",
+                        "gm": 9.07
+                    }
+                ]
+            },
+            {
+                "ndbno": "01278",
+                "name": "Yogurt, Greek, nonfat, vanilla, DANNON OIKOS",
+                "weight": 150.0,
+                "measure": "5.3 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.18",
+                        "gm": 8.12
+                    }
+                ]
+            },
+            {
+                "ndbno": "01287",
+                "name": "Yogurt, Greek, plain, lowfat",
+                "weight": 200.0,
+                "measure": "1.0 container (7 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "19.90",
+                        "gm": 9.95
+                    }
+                ]
+            },
+            {
+                "ndbno": "01256",
+                "name": "Yogurt, Greek, plain, nonfat",
+                "weight": 170.0,
+                "measure": "1.0 container",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.32",
+                        "gm": 10.19
+                    }
+                ]
+            },
+            {
+                "ndbno": "01276",
+                "name": "Yogurt, Greek, strawberry, DANNON OIKOS",
+                "weight": 150.0,
+                "measure": "5.3 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.38",
+                        "gm": 8.25
+                    }
+                ]
+            },
+            {
+                "ndbno": "01284",
+                "name": "Yogurt, Greek, strawberry, lowfat",
+                "weight": 150.0,
+                "measure": "1.0 container (5.3 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.26",
+                        "gm": 8.17
+                    }
+                ]
+            },
+            {
+                "ndbno": "01285",
+                "name": "Yogurt, Greek, strawberry, nonfat",
+                "weight": 150.0,
+                "measure": "1.0 container (5.3 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.07",
+                        "gm": 8.05
+                    }
+                ]
+            },
+            {
+                "ndbno": "01286",
+                "name": "Yogurt, Greek, vanilla, nonfat",
+                "weight": 150.0,
+                "measure": "1.0 container (5.3 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.96",
+                        "gm": 8.64
+                    }
+                ]
+            },
+            {
+                "ndbno": "01117",
+                "name": "Yogurt, plain, low fat, 12 grams protein per 8 ounce",
+                "weight": 170.0,
+                "measure": "1.0 container (6 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.93",
+                        "gm": 5.25
+                    }
+                ]
+            },
+            {
+                "ndbno": "01118",
+                "name": "Yogurt, plain, skim milk, 13 grams protein per 8 ounce",
+                "weight": 170.0,
+                "measure": "1.0 container (6 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.74",
+                        "gm": 5.73
+                    }
+                ]
+            },
+            {
+                "ndbno": "01116",
+                "name": "Yogurt, plain, whole milk, 8 grams protein per 8 ounce",
+                "weight": 170.0,
+                "measure": "1.0 container (6 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.90",
+                        "gm": 3.47
+                    }
+                ]
+            },
+            {
+                "ndbno": "01231",
+                "name": "Yogurt, vanilla flavor, lowfat milk, sweetened with low calorie sweetener",
+                "weight": 170.0,
+                "measure": "1.0 container",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.38",
+                        "gm": 4.93
+                    }
+                ]
+            },
+            {
+                "ndbno": "01184",
+                "name": "Yogurt, vanilla or lemon flavor, nonfat milk, sweetened with low-calorie sweetener",
+                "weight": 170.0,
+                "measure": "1.0 container (6 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.56",
+                        "gm": 3.86
+                    }
+                ]
+            },
+            {
+                "ndbno": "01221",
+                "name": "Yogurt, vanilla or lemon flavor, nonfat milk, sweetened with low-calorie sweetener, fortified with vitamin D",
+                "weight": 170.0,
+                "measure": "1.0 container (6 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.56",
+                        "gm": 3.86
+                    }
+                ]
+            },
+            {
+                "ndbno": "01119",
+                "name": "Yogurt, vanilla, low fat, 11 grams protein per 8 ounce",
+                "weight": 170.0,
+                "measure": "1.0 container (6 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.38",
+                        "gm": 4.93
+                    }
+                ]
+            },
+            {
+                "ndbno": "01220",
+                "name": "Yogurt, vanilla, low fat, 11 grams protein per 8 ounce, fortified with vitamin D",
+                "weight": 170.0,
+                "measure": "1.0 container (6 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.38",
+                        "gm": 4.93
+                    }
+                ]
+            },
+            {
+                "ndbno": "01295",
+                "name": "Yogurt, vanilla, non-fat",
+                "weight": 245.0,
+                "measure": "1.0 cup (8 fl oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.20",
+                        "gm": 2.94
+                    }
+                ]
+            }
+        ]
+    }
+}

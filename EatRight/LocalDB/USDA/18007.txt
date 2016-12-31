@@ -1,0 +1,3771 @@
+{
+    "report": {
+        "sr": "28",
+        "type": "Full",
+        "food": {
+            "ndbno": "18007",
+            "name": "Bagels, oat bran",
+            "sd": "BAGELS,OAT BRAN",
+            "fg": "Baked Products",
+            "sn": "",
+            "cn": "",
+            "manu": "",
+            "nf": 5.8,
+            "cf": 3.9,
+            "ff": 8.4,
+            "pf": 3.5,
+            "r": "0%",
+            "rd": "",
+            "ds": "Standard Reference",
+            "nutrients": [
+                {
+                    "nutrient_id": 255,
+                    "name": "Water",
+                    "group": "Proximates",
+                    "unit": "g",
+                    "value": 32.9,
+                    "sourcecode": "",
+                    "dp": 1,
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 8.55
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 22.7
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 34.55
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 43.1
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 9.33
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 208,
+                    "name": "Energy",
+                    "group": "Proximates",
+                    "unit": "kcal",
+                    "value": 255.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 66.0
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 176.0
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 268.0
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 334.0
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 72.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 268,
+                    "name": "Energy",
+                    "group": "Proximates",
+                    "unit": "kJ",
+                    "value": 1067.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 277.0
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 736.0
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 1120.0
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 1398.0
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 302.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 203,
+                    "name": "Protein",
+                    "group": "Proximates",
+                    "unit": "g",
+                    "value": 10.7,
+                    "sourcecode": "",
+                    "dp": 1,
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 2.78
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 7.38
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 11.23
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 14.02
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 3.03
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 204,
+                    "name": "Total lipid (fat)",
+                    "group": "Proximates",
+                    "unit": "g",
+                    "value": 1.2,
+                    "sourcecode": "",
+                    "dp": 1,
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.31
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 0.83
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 1.26
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 1.57
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.34
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 207,
+                    "name": "Ash",
+                    "group": "Proximates",
+                    "unit": "g",
+                    "value": 1.9,
+                    "sourcecode": "",
+                    "dp": 1,
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.49
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 1.31
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 2.0
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 2.49
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.54
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 205,
+                    "name": "Carbohydrate, by difference",
+                    "group": "Proximates",
+                    "unit": "g",
+                    "value": 53.3,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 13.86
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 36.78
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 55.97
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 69.82
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 15.11
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 291,
+                    "name": "Fiber, total dietary",
+                    "group": "Proximates",
+                    "unit": "g",
+                    "value": 3.6,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.9
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 2.5
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 3.8
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 4.7
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 1.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 269,
+                    "name": "Sugars, total",
+                    "group": "Proximates",
+                    "unit": "g",
+                    "value": 1.63,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.42
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 1.12
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 1.71
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 2.14
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.46
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 301,
+                    "name": "Calcium, Ca",
+                    "group": "Minerals",
+                    "unit": "mg",
+                    "value": 12.0,
+                    "sourcecode": "",
+                    "dp": 1,
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 3.0
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 8.0
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 13.0
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 16.0
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 3.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 303,
+                    "name": "Iron, Fe",
+                    "group": "Minerals",
+                    "unit": "mg",
+                    "value": 3.08,
+                    "sourcecode": "",
+                    "dp": 1,
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.8
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 2.13
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 3.23
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 4.03
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.87
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 304,
+                    "name": "Magnesium, Mg",
+                    "group": "Minerals",
+                    "unit": "mg",
+                    "value": 31.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 8.0
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 21.0
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 33.0
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 41.0
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 9.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 305,
+                    "name": "Phosphorus, P",
+                    "group": "Minerals",
+                    "unit": "mg",
+                    "value": 110.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 29.0
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 76.0
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 116.0
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 144.0
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 31.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 306,
+                    "name": "Potassium, K",
+                    "group": "Minerals",
+                    "unit": "mg",
+                    "value": 115.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 30.0
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 79.0
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 121.0
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 151.0
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 33.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 307,
+                    "name": "Sodium, Na",
+                    "group": "Minerals",
+                    "unit": "mg",
+                    "value": 590.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 153.0
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 407.0
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 620.0
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 773.0
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 167.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 309,
+                    "name": "Zinc, Zn",
+                    "group": "Minerals",
+                    "unit": "mg",
+                    "value": 0.9,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.23
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 0.62
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 0.94
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 1.18
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.26
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 312,
+                    "name": "Copper, Cu",
+                    "group": "Minerals",
+                    "unit": "mg",
+                    "value": 0.151,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.039
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 0.104
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 0.159
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 0.198
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.043
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 315,
+                    "name": "Manganese, Mn",
+                    "group": "Minerals",
+                    "unit": "mg",
+                    "value": 0.863,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.224
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 0.595
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 0.906
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 1.131
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.245
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 317,
+                    "name": "Selenium, Se",
+                    "group": "Minerals",
+                    "unit": "\u00b5g",
+                    "value": 34.2,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 8.9
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 23.6
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 35.9
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 44.8
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 9.7
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 401,
+                    "name": "Vitamin C, total ascorbic acid",
+                    "group": "Vitamins",
+                    "unit": "mg",
+                    "value": 0.2,
+                    "sourcecode": "",
+                    "dp": 1,
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.1
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 0.1
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 0.2
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 0.3
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.1
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 404,
+                    "name": "Thiamin",
+                    "group": "Vitamins",
+                    "unit": "mg",
+                    "value": 0.331,
+                    "sourcecode": "",
+                    "dp": 1,
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.086
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 0.228
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 0.348
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 0.434
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.094
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 405,
+                    "name": "Riboflavin",
+                    "group": "Vitamins",
+                    "unit": "mg",
+                    "value": 0.338,
+                    "sourcecode": "",
+                    "dp": 1,
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.088
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 0.233
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 0.355
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 0.443
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.096
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 406,
+                    "name": "Niacin",
+                    "group": "Vitamins",
+                    "unit": "mg",
+                    "value": 2.96,
+                    "sourcecode": "",
+                    "dp": 1,
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.77
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 2.042
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 3.108
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 3.878
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.839
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 410,
+                    "name": "Pantothenic acid",
+                    "group": "Vitamins",
+                    "unit": "mg",
+                    "value": 0.445,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.116
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 0.307
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 0.467
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 0.583
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.126
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 415,
+                    "name": "Vitamin B-6",
+                    "group": "Vitamins",
+                    "unit": "mg",
+                    "value": 0.043,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.011
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 0.03
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 0.045
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 0.056
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.012
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 417,
+                    "name": "Folate, total",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 98.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 25.0
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 68.0
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 103.0
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 128.0
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 28.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 431,
+                    "name": "Folic acid",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 52.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 14.0
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 36.0
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 55.0
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 68.0
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 15.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 432,
+                    "name": "Folate, food",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 46.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 12.0
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 32.0
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 48.0
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 60.0
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 13.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 435,
+                    "name": "Folate, DFE",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 134.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 35.0
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 92.0
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 141.0
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 176.0
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 38.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 421,
+                    "name": "Choline, total",
+                    "group": "Vitamins",
+                    "unit": "mg",
+                    "value": 15.3,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 4.0
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 10.6
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 16.1
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 20.0
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 4.3
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 418,
+                    "name": "Vitamin B-12",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 578,
+                    "name": "Vitamin B-12, added",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 320,
+                    "name": "Vitamin A, RAE",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 1.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 1.0
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 1.0
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 1.0
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 319,
+                    "name": "Retinol",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 1.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 1.0
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 1.0
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 1.0
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 321,
+                    "name": "Carotene, beta",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 1.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 1.0
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 1.0
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 1.0
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 322,
+                    "name": "Carotene, alpha",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 334,
+                    "name": "Cryptoxanthin, beta",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 318,
+                    "name": "Vitamin A, IU",
+                    "group": "Vitamins",
+                    "unit": "IU",
+                    "value": 4.0,
+                    "sourcecode": "",
+                    "dp": 1,
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 1.0
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 3.0
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 4.0
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 5.0
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 1.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 337,
+                    "name": "Lycopene",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 338,
+                    "name": "Lutein + zeaxanthin",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 58.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 15.0
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 40.0
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 61.0
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 76.0
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 16.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 323,
+                    "name": "Vitamin E (alpha-tocopherol)",
+                    "group": "Vitamins",
+                    "unit": "mg",
+                    "value": 0.33,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.09
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 0.23
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 0.35
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 0.43
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.09
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 573,
+                    "name": "Vitamin E, added",
+                    "group": "Vitamins",
+                    "unit": "mg",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 328,
+                    "name": "Vitamin D (D2 + D3)",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 324,
+                    "name": "Vitamin D",
+                    "group": "Vitamins",
+                    "unit": "IU",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 430,
+                    "name": "Vitamin K (phylloquinone)",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 0.4,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.1
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 0.3
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 0.4
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 0.5
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.1
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 606,
+                    "name": "Fatty acids, total saturated",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.191,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.05
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 0.132
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 0.201
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 0.25
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.054
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 607,
+                    "name": "4:0",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 608,
+                    "name": "6:0",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 609,
+                    "name": "8:0",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 610,
+                    "name": "10:0",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 611,
+                    "name": "12:0",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.002,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.001
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 0.001
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 0.002
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 0.003
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.001
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 612,
+                    "name": "14:0",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.001,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 0.001
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 0.001
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 0.001
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 613,
+                    "name": "16:0",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.17,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.044
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 0.117
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 0.179
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 0.223
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.048
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 614,
+                    "name": "18:0",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.01,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.003
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 0.007
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 0.011
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 0.013
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.003
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 645,
+                    "name": "Fatty acids, total monounsaturated",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.249,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.065
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 0.172
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 0.261
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 0.326
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.071
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 626,
+                    "name": "16:1 undifferentiated",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.007,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.002
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 0.005
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 0.007
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 0.009
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.002
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 617,
+                    "name": "18:1 undifferentiated",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.242,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.063
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 0.167
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 0.254
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 0.317
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.069
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 628,
+                    "name": "20:1",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 630,
+                    "name": "22:1 undifferentiated",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 646,
+                    "name": "Fatty acids, total polyunsaturated",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.486,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.126
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 0.335
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 0.51
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 0.637
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.138
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 618,
+                    "name": "18:2 undifferentiated",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.465,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.121
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 0.321
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 0.488
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 0.609
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.132
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 619,
+                    "name": "18:3 undifferentiated",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.022,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.006
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 0.015
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 0.023
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 0.029
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.006
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 627,
+                    "name": "18:4",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 620,
+                    "name": "20:4 undifferentiated",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 629,
+                    "name": "20:5 n-3 (EPA)",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 631,
+                    "name": "22:5 n-3 (DPA)",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 621,
+                    "name": "22:6 n-3 (DHA)",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 601,
+                    "name": "Cholesterol",
+                    "group": "Lipids",
+                    "unit": "mg",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": 1,
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 501,
+                    "name": "Tryptophan",
+                    "group": "Amino Acids",
+                    "unit": "g",
+                    "value": 0.138,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.036
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 0.095
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 0.145
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 0.181
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.039
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 502,
+                    "name": "Threonine",
+                    "group": "Amino Acids",
+                    "unit": "g",
+                    "value": 0.301,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.078
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 0.208
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 0.316
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 0.394
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.085
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 503,
+                    "name": "Isoleucine",
+                    "group": "Amino Acids",
+                    "unit": "g",
+                    "value": 0.406,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.106
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 0.28
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 0.426
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 0.532
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.115
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 504,
+                    "name": "Leucine",
+                    "group": "Amino Acids",
+                    "unit": "g",
+                    "value": 0.757,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.197
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 0.522
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 0.795
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 0.992
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.215
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 505,
+                    "name": "Lysine",
+                    "group": "Amino Acids",
+                    "unit": "g",
+                    "value": 0.288,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.075
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 0.199
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 0.302
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 0.377
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.082
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 506,
+                    "name": "Methionine",
+                    "group": "Amino Acids",
+                    "unit": "g",
+                    "value": 0.188,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.049
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 0.13
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 0.197
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 0.246
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.053
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 507,
+                    "name": "Cystine",
+                    "group": "Amino Acids",
+                    "unit": "g",
+                    "value": 0.253,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.066
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 0.175
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 0.266
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 0.331
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.072
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 508,
+                    "name": "Phenylalanine",
+                    "group": "Amino Acids",
+                    "unit": "g",
+                    "value": 0.526,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.137
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 0.363
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 0.552
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 0.689
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.149
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 509,
+                    "name": "Tyrosine",
+                    "group": "Amino Acids",
+                    "unit": "g",
+                    "value": 0.321,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.083
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 0.221
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 0.337
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 0.421
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.091
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 510,
+                    "name": "Valine",
+                    "group": "Amino Acids",
+                    "unit": "g",
+                    "value": 0.482,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.125
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 0.333
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 0.506
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 0.631
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.137
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 511,
+                    "name": "Arginine",
+                    "group": "Amino Acids",
+                    "unit": "g",
+                    "value": 0.46,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.12
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 0.317
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 0.483
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 0.603
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.13
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 512,
+                    "name": "Histidine",
+                    "group": "Amino Acids",
+                    "unit": "g",
+                    "value": 0.233,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.061
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 0.161
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 0.245
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 0.305
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.066
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 513,
+                    "name": "Alanine",
+                    "group": "Amino Acids",
+                    "unit": "g",
+                    "value": 0.382,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.099
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 0.264
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 0.401
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 0.5
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.108
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 514,
+                    "name": "Aspartic acid",
+                    "group": "Amino Acids",
+                    "unit": "g",
+                    "value": 0.561,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.146
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 0.387
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 0.589
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 0.735
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.159
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 515,
+                    "name": "Glutamic acid",
+                    "group": "Amino Acids",
+                    "unit": "g",
+                    "value": 3.318,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.863
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 2.289
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 3.484
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 4.347
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.941
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 516,
+                    "name": "Glycine",
+                    "group": "Amino Acids",
+                    "unit": "g",
+                    "value": 0.41,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.107
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 0.283
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 0.43
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 0.537
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.116
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 517,
+                    "name": "Proline",
+                    "group": "Amino Acids",
+                    "unit": "g",
+                    "value": 1.082,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.281
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 0.747
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 1.136
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 1.417
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.307
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 518,
+                    "name": "Serine",
+                    "group": "Amino Acids",
+                    "unit": "g",
+                    "value": 0.517,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.134
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 0.357
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 0.543
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 0.677
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.147
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 221,
+                    "name": "Alcohol, ethyl",
+                    "group": "Other",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 262,
+                    "name": "Caffeine",
+                    "group": "Other",
+                    "unit": "mg",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 263,
+                    "name": "Theobromine",
+                    "group": "Other",
+                    "unit": "mg",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "mini bagel (2-1/2\" dia)",
+                            "eqv": 26.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "small bagel (3\" dia)",
+                            "eqv": 69.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "medium bagel (3-1/2\" to 4\" dia)",
+                            "eqv": 105.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "large bagel (4-1/2\" dia)",
+                            "eqv": 131.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "oz",
+                            "eqv": 28.35,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                }
+            ]
+        },
+        "sources": [
+            
+        ],
+        "footnotes": [
+            
+        ],
+        "langual": [
+            
+        ]
+    }
+}
