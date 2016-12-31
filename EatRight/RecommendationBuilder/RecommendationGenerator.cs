@@ -17,6 +17,8 @@ namespace RecommendationBuilder
     {
         // Input
         RestDBInterface unit;
+        private Boolean useDBRecipes;
+        private Boolean useTestsRecipes;
 
         // Output
         // Menus
@@ -31,8 +33,12 @@ namespace RecommendationBuilder
         // Recommendations
         private List<Recommendation> recoList = null;
 
-        public RecommendationGenerator(RestDBInterface unit, RecommendationDB recommendationDB)
+        public RecommendationGenerator(RestDBInterface unit, RecommendationDB recommendationDB,
+            Boolean useDBRecipes, Boolean useTestsRecipes=false)
         {
+            this.useDBRecipes = useDBRecipes;
+            this.useTestsRecipes = useTestsRecipes;
+
             var manager = GlobalProfilingManger.Instance.Manager;
             manager.TakeTime("start of recommendation constructor");
             RecommendationObject.recommendationDB = recommendationDB; // For the initialization of graders map
@@ -387,7 +393,15 @@ namespace RecommendationBuilder
 
             timer.TakeTime("grader map and filter set initialized");
 
-            var recipesList = unit.Recipes.GetAll().ToList();
+            var recipesList = new List<Recipe>();
+            if (useDBRecipes)
+            {
+                recipesList.AddRange(unit.Recipes.GetAllList());
+            }
+            if (useTestsRecipes)
+            {
+                recipesList.AddRange(unit.TestsRecipes.GetAllList());
+            }
             timer.TakeTime("recipes - get all");
 
             mealsList = recipesList.Select(x => new Meal(x)).ToList();

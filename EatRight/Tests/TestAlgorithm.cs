@@ -18,11 +18,11 @@ namespace Tests
         public void TestMenuGeneration()
         {
             var unit = new RestDBInterface();
-            unit.Recipes.Empty();
+            unit.TestsRecipes.Empty();
 			
             RecommendationDB recommendationDB = GenerateRandomRecommendationDB();
             GenerateRandomMeals(unit, recommendationDB);
-            RecommendationGenerator generator = new RecommendationGenerator(unit, recommendationDB);
+            RecommendationGenerator generator = new RecommendationGenerator(unit, recommendationDB, false, true);
             var menu = generator.GetMenu();
             var otherMenu = generator.GetMenu();
 
@@ -52,11 +52,11 @@ namespace Tests
             int mealsNum = 3;
 
             var unit = new RestDBInterface();
-            unit.Recipes.Empty();
+            unit.TestsRecipes.Empty();
 
             RecommendationDB recommendationDB = GenerateRandomMealRecoDB(mealsNum);
             GenerateRandomMeals(unit, recommendationDB);
-            RecommendationGenerator generator = new RecommendationGenerator(unit, recommendationDB);
+            RecommendationGenerator generator = new RecommendationGenerator(unit, recommendationDB, false, true);
             var reco = generator.GetRecommendation();
 
             // Assertions
@@ -127,7 +127,7 @@ namespace Tests
 
         private void GenerateRandomMeals(RestDBInterface unit, RecommendationDB recommendationDB)
         {
-            unit.Recipes.Empty();
+            unit.TestsRecipes.Empty();
             var allProducts = unit.Products.GetAll().ToList();
             int prodNum = allProducts.Count;
             var rand = new Random(seed);
@@ -176,7 +176,7 @@ namespace Tests
 
                 randMeal.CalculateNutValuesAndCalories();
 
-                unit.Recipes.Add(randMeal);
+                unit.TestsRecipes.Add(randMeal);
             }
         }
 

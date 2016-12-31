@@ -44,9 +44,9 @@ namespace Tests
             goodBreakfast.CalculateNutValuesAndCalories();
             badBreakfast.CalculateNutValuesAndCalories();
 
-            unit.Recipes.Empty();
-            unit.Recipes.Add(goodBreakfast);
-            unit.Recipes.Add(badBreakfast);
+            unit.TestsRecipes.Empty();
+            unit.TestsRecipes.Add(goodBreakfast);
+            unit.TestsRecipes.Add(badBreakfast);
 
             var userProfile = new UserProfile() { Age = 30, Gender = GenderType.Male };
             var range = new MenuSuggestionRange()
@@ -67,8 +67,8 @@ namespace Tests
             recommendationDBWithoutTomatoes.GradersWeight = null;
             recommendationDBWithTomatoes.GradersWeight = null;
 
-            var recommendationGeneratorWOT = new RecommendationGenerator(unit, recommendationDBWithoutTomatoes);
-            var recommendationGeneratorWT = new RecommendationGenerator(unit, recommendationDBWithTomatoes);
+            var recommendationGeneratorWOT = new RecommendationGenerator(unit, recommendationDBWithoutTomatoes, false, true);
+            var recommendationGeneratorWT = new RecommendationGenerator(unit, recommendationDBWithTomatoes, false, true);
             var menuWOT = recommendationGeneratorWOT.GetMenu();
             var menuWT = recommendationGeneratorWT.GetMenu();
 
@@ -103,8 +103,8 @@ namespace Tests
 
             breakfast.CalculateNutValuesAndCalories();
 
-            unit.Recipes.Empty();
-            unit.Recipes.Add(breakfast);
+            unit.TestsRecipes.Empty();
+            unit.TestsRecipes.Add(breakfast);
 
             var userProfile = new UserProfile() { Age = 30, Gender = GenderType.Male };
             var range = new MealSuggestionRange()
@@ -113,7 +113,7 @@ namespace Tests
             var recommendationDB = RecommendationDBGenerator.FromUserProfile(userProfile, unit);
             recommendationDB.range = range;
 
-            var recommendationGenerator = new RecommendationGenerator(unit, recommendationDB);
+            var recommendationGenerator = new RecommendationGenerator(unit, recommendationDB, false, true);
             var meal = recommendationGenerator.GetMeal();
 
             // Assertions
@@ -136,8 +136,8 @@ namespace Tests
 
             breakfast.CalculateNutValuesAndCalories();
 
-            unit.Recipes.Empty();
-            unit.Recipes.Add(breakfast);
+            unit.TestsRecipes.Empty();
+            unit.TestsRecipes.Add(breakfast);
 
             var userProfile = new UserProfile() { Age = 30, Gender = GenderType.Male };
             var range = new MealSuggestionRange()
@@ -147,7 +147,7 @@ namespace Tests
             recommendationDB.range = range;
             recommendationDB.preferences = new HashSet<UserPreference>() { UserPreference.Meat };
 
-            var recommendationGenerator = new RecommendationGenerator(unit, recommendationDB);
+            var recommendationGenerator = new RecommendationGenerator(unit, recommendationDB, false, true);
             var reco = recommendationGenerator.GetRecommendation();
 
             // Assertions

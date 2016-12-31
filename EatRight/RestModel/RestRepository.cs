@@ -11,6 +11,7 @@ namespace RestModel {
         private IMongoDatabase _database;
         protected RestRepository<Product> products;
         protected RestRepository<Recipe> recipes;
+        protected RestRepository<Recipe> testsRecipes;
         protected RestRepository<DailyValue> dailyvalues;
         public RestDBInterface() {
             var client = new MongoClient();
@@ -31,6 +32,14 @@ namespace RestModel {
             }
         }
 
+        public RestRepository<Recipe> TestsRecipes {
+            get
+            {
+                if (testsRecipes == null) testsRecipes = new RestRepository<Recipe>(_database, "testsRecipes");
+                return testsRecipes;
+            }
+        }
+
         public RestRepository<DailyValue> DailyValues
         {
             get
@@ -38,6 +47,13 @@ namespace RestModel {
                 if (dailyvalues == null) dailyvalues = new RestRepository<DailyValue>(_database, "dailyvalues");
                 return dailyvalues;
             }
+        }
+
+        public List<Recipe> GetAllRecipes()
+        {
+            var resList = Recipes.GetAllList();
+            resList.AddRange(TestsRecipes.GetAllList());
+            return resList;
         }
     }
 

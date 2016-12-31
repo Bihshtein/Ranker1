@@ -29,7 +29,7 @@ namespace RecommendationBuilder
 
             var recommendationDB = RecommendationDBGenerator.FromUserProfile(uProfile, unit);
 
-            RecommendationGenerator generator = new RecommendationGenerator(unit, recommendationDB);
+            RecommendationGenerator generator = new RecommendationGenerator(unit, recommendationDB, false, true);
             var menu = generator.GetMenu();
             System.Console.WriteLine("Menu eavluated to " + menu.Grade);
             System.Console.WriteLine("The grader that contributed the highest value to the grade is: " + menu.GradeInfo.BestGraders[0]);

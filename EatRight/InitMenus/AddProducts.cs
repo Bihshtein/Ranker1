@@ -25,33 +25,34 @@ namespace InitRecipes {
         public static void Add() {
             var customCulture = (CultureInfo)Thread.CurrentThread.CurrentCulture.Clone(); customCulture.NumberFormat.NumberDecimalSeparator = ".";
             Thread.CurrentThread.CurrentCulture = customCulture;
-            
-            var meals = unit.Recipes.GetAll().ToList();
+
+            var recipes = unit.GetAllRecipes();
             var foundProducts = new List<Product>();
-            foreach (var meal in meals) {
-                if (meal.ProductsWeight != null)
-                    meal.ProductsWeight.Clear();
-                meal.TotalCaloriesNum = 0;
-                if (meal.TotalNutValues != null)
+            foreach (var recipe in recipes) {
+                if (recipe.ProductsWeight != null)
+                    recipe.ProductsWeight.Clear();
+                recipe.TotalCaloriesNum = 0;
+                if (recipe.TotalNutValues != null)
                 {
-                    meal.TotalNutValues.Clear();
+                    recipe.TotalNutValues.Clear();
                 }
-                else meal.TotalNutValues = new Dictionary<string, double>();
+                else recipe.TotalNutValues = new Dictionary<string, double>();
 
-                foreach (var item in meal.Ingredients) {
-                    ParseItem(meal, item.ToLower().Trim());
+                foreach (var item in recipe.Ingredients) {
+                    ParseItem(recipe, item.ToLower().Trim());
                 }
 
-                unit.Recipes.Update(s => s.ID, meal.ID, meal);
+                unit.Recipes.Update(s => s.ID, recipe.ID, recipe);
+                unit.TestsRecipes.Update(s => s.ID, recipe.ID, recipe);
             }
 
-            Console.WriteLine("total meals : " + meals.Count);
+            Console.WriteLine("total recipes : " + recipes.Count);
             Console.WriteLine("total ingredients : " + total);
             Console.WriteLine("total ingredients parsed : " + totalParsed);
             Console.WriteLine("total ingredients missed : " + totalMissing);
         }
 
-        public static void ParseItem(Recipe meal, string item) {
+        public static void ParseItem(Recipe recipe, string item) {
             item = Map.GetPrettyItem(item);
             var results = ParseWeightAndName(item);
             var innerpart = results.Item1.Trim();
@@ -74,7 +75,7 @@ namespace InitRecipes {
                     if (relativeMeasure != string.Empty) {
                         weight = TryParseRelativeWeight(relativeMeasure,weight, product, innerpart);
                     }
-                    AddItem(product, meal, weight, innerpart);
+                    AddItem(product, recipe, weight, innerpart);
                 }
             }
             else {
@@ -222,29 +223,29 @@ namespace InitRecipes {
             return new Tuple<string, double, string>(innerpart, weight, weightKey);
         }   
 
-        public static void AddItem(Product product, Recipe meal,double weight, string innerpart)
+        public static void AddItem(Product product, Recipe recipe,double weight, string innerpart)
         {
-            if (meal.ProductsWeight == null)
-                meal.ProductsWeight = new Dictionary<string, double>();
-            if (meal.ProductsWeight.ContainsKey(innerpart))
-                meal.ProductsWeight[innerpart] += weight;
+            if (recipe.ProductsWeight == null)
+                recipe.ProductsWeight = new Dictionary<string, double>();
+            if (recipe.ProductsWeight.ContainsKey(innerpart))
+                recipe.ProductsWeight[innerpart] += weight;
             else
-                meal.ProductsWeight.Add(innerpart, weight);
+                recipe.ProductsWeight.Add(innerpart, weight);
 
             var prodNutValues = product.Nutrients().ToList();
 
             foreach (var entry in prodNutValues)
             {
-                if (!meal.TotalNutValues.ContainsKey(entry.Key))
+                if (!recipe.TotalNutValues.ContainsKey(entry.Key))
                 {
-                    meal.TotalNutValues[entry.Key] = 0;
+                    recipe.TotalNutValues[entry.Key] = 0;
                 }
 
-                double curValue = meal.TotalNutValues[entry.Key];
-                meal.TotalNutValues[entry.Key] = curValue + (entry.Value * (weight / Formulas.DefaultGrams));
+                double curValue = recipe.TotalNutValues[entry.Key];
+                recipe.TotalNutValues[entry.Key] = curValue + (entry.Value * (weight / Formulas.DefaultGrams));
             }
 
-            meal.TotalCaloriesNum += Formulas.GetTotalCalories(weight, product.Protein, product.Fat, product.Carbs);
+            recipe.TotalCaloriesNum += Formulas.GetTotalCalories(weight, product.Protein, product.Fat, product.Carbs);
         }
 
        

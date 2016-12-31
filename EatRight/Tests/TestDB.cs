@@ -21,7 +21,7 @@ namespace Tests
             var profile = new UserProfile() { Age = 30, Gender = GenderType.Male };
             var recommendationDB = RecommendationDBGenerator.FromUserProfile(profile, unit);
             recommendationDB.range = new MealSuggestionRange();
-            var recomGen = new RecommendationGenerator(unit, recommendationDB);
+            var recomGen = new RecommendationGenerator(unit, recommendationDB, false, true);
             Meal meal = recomGen.GetMeal();
 
             Assert.IsNotNull(meal);

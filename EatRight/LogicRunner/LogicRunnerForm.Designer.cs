@@ -36,6 +36,7 @@
             this.bindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -53,7 +54,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.button2 = new System.Windows.Forms.Button();
             this.maxValues = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -63,6 +63,8 @@
             this.labelConsole = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.recommendationsNum = new System.Windows.Forms.ComboBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
@@ -72,7 +74,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.LimeGreen;
             this.button1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.button1.Location = new System.Drawing.Point(347, 266);
+            this.button1.Location = new System.Drawing.Point(347, 298);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(205, 58);
@@ -93,10 +95,10 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(15, 332);
+            this.dataGridView1.Location = new System.Drawing.Point(15, 361);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(868, 366);
+            this.dataGridView1.Size = new System.Drawing.Size(868, 337);
             this.dataGridView1.TabIndex = 2;
             // 
             // richTextBox1
@@ -125,6 +127,16 @@
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(117, 24);
             this.comboBox3.TabIndex = 5;
+            // 
+            // comboBox4
+            // 
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Location = new System.Drawing.Point(237, 270);
+            this.comboBox4.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(117, 24);
+            this.comboBox4.TabIndex = 5;
+            this.comboBox4.SelectedIndexChanged += new System.EventHandler(this.comboBox4_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -306,19 +318,6 @@
             this.label9.TabIndex = 25;
             this.label9.Text = "Nutrients Sum:";
             // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Red;
-            this.button2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.button2.Location = new System.Drawing.Point(384, 57);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(131, 103);
-            this.button2.TabIndex = 26;
-            this.button2.Text = "מתכונים ידניים בלבד";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // maxValues
             // 
             this.maxValues.FormattingEnabled = true;
@@ -400,7 +399,7 @@
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.label13.Location = new System.Drawing.Point(11, 221);
+            this.label13.Location = new System.Drawing.Point(11, 223);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(204, 24);
             this.label13.TabIndex = 35;
@@ -414,13 +413,38 @@
             this.recommendationsNum.Size = new System.Drawing.Size(117, 24);
             this.recommendationsNum.TabIndex = 34;
             // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.Transparent;
+            this.label15.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label15.Location = new System.Drawing.Point(9, 266);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(150, 24);
+            this.label15.TabIndex = 36;
+            this.label15.Text = "Recipes from:";
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Red;
+            this.button2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.button2.Location = new System.Drawing.Point(384, 21);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(131, 110);
+            this.button2.TabIndex = 26;
+            this.button2.Text = "רענן מתכונים ידניים";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // LogicRunnerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.AliceBlue;
-            this.ClientSize = new System.Drawing.Size(924, 837);
+            this.ClientSize = new System.Drawing.Size(966, 837);
+            this.Controls.Add(this.label15);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.recommendationsNum);
             this.Controls.Add(this.labelConsole);
@@ -449,6 +473,7 @@
             this.Controls.Add(this.label14);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.comboBox4);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.comboBox1);
@@ -473,6 +498,7 @@
         private System.Windows.Forms.BindingSource bindingSource2;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox comboBox4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label5;
@@ -490,7 +516,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.BindingSource bindingSource1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.ComboBox maxValues;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
@@ -500,5 +525,7 @@
         private System.Windows.Forms.Label labelConsole;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.ComboBox recommendationsNum;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Button button2;
     }
 }

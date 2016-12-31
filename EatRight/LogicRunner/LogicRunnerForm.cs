@@ -17,6 +17,10 @@ namespace LogicRunner
     {
         public RestDBInterface unit = null;
         bool alexiknow = false;
+
+        private Boolean useDBRecipes = true;
+        private Boolean useTestsRecipes = false;
+
         public LogicRunnerForm()
         {
             InitializeComponent();
@@ -31,6 +35,7 @@ namespace LogicRunner
 
             comboBox2.DataSource = Enum.GetNames(typeof(MealType));
             comboBox3.DataSource = Enum.GetNames(typeof(UserPreference));
+            comboBox4.DataSource = new string[] { "Fixed", "Internet", "Both" };
             totalCalories.DataSource = new List<int> { 500, 1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500, 5000 };
             calories.DataSource = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9,10 };
             cookTime.DataSource = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
@@ -91,7 +96,7 @@ namespace LogicRunner
 
             manager.TakeTime("initialize recommendation db");
             
-            RecommendationGenerator generator = new RecommendationGenerator(unit, recommendationDB);
+            RecommendationGenerator generator = new RecommendationGenerator(unit, recommendationDB, useDBRecipes, useTestsRecipes);
 
             manager.TakeTime("creating recommendation generator");
             Recommendation reco = generator.GetRecommendation();
@@ -152,13 +157,35 @@ namespace LogicRunner
             return str;
         }
 
-        private void button2_Click(object sender, EventArgs e) {
-               try { 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            try
+            { 
                 MealsCSVReader.CreateFixedMealsList(unit);
-                }
-                catch  (Exception ex) {
-                    MessageBox.Show(ex.Message);
-                }
+            }
+            catch  (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (comboBox4.Text)
+            {
+                case "Fixed":
+                    useDBRecipes = false;
+                    useTestsRecipes = true;
+                    break;
+                case "Internet":
+                    useDBRecipes = true;
+                    useTestsRecipes = false;
+                    break;
+                case "Both":
+                    useDBRecipes = true;
+                    useTestsRecipes = true;
+                    break;comboBox3.DataSource = Enum.GetNames(typeof(UserPreference));
+            }
         }
     }
 }

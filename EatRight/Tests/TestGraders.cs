@@ -37,9 +37,9 @@ namespace Tests
             smallBreakfast.CalculateNutValuesAndCalories();
             bigBreakfast.CalculateNutValuesAndCalories();
 
-            unit.Recipes.Empty();
-            unit.Recipes.Add(smallBreakfast);
-            unit.Recipes.Add(bigBreakfast);
+            unit.TestsRecipes.Empty();
+            unit.TestsRecipes.Add(smallBreakfast);
+            unit.TestsRecipes.Add(bigBreakfast);
 
             var userProfile = new UserProfile() { Age = 30, Gender = GenderType.Male };
             var range = new MealSuggestionRange() { Length = 1, MealType = MealType.Breakfast };
@@ -51,7 +51,7 @@ namespace Tests
                     {GraderType.MaxNutValuesMealGrader, 1}
                 };
 
-            var recommendationGen = new RecommendationGenerator(unit, recommendationDB);
+            var recommendationGen = new RecommendationGenerator(unit, recommendationDB, false, true);
 
             var meal = recommendationGen.GetMeal();
 
@@ -87,9 +87,9 @@ namespace Tests
             fastBreakfast.CalculateNutValuesAndCalories();
             slowBreakfast.CalculateNutValuesAndCalories();
 
-            unit.Recipes.Empty();
-            unit.Recipes.Add(fastBreakfast);
-            unit.Recipes.Add(slowBreakfast);
+            unit.TestsRecipes.Empty();
+            unit.TestsRecipes.Add(fastBreakfast);
+            unit.TestsRecipes.Add(slowBreakfast);
 
             var userProfile = new UserProfile() { Age = 30, Gender = GenderType.Male };
             var range = new MealSuggestionRange() { Length = 1, MealType = MealType.Breakfast };
@@ -98,7 +98,7 @@ namespace Tests
             recommendationDB.range = range;
             recommendationDB.GradersWeight = null;
 
-            var recommendationGen = new RecommendationGenerator(unit, recommendationDB);
+            var recommendationGen = new RecommendationGenerator(unit, recommendationDB, false, true);
 
             var firstMeal = recommendationGen.GetMeal();
             var secondMeal = recommendationGen.GetMeal();
@@ -143,9 +143,9 @@ namespace Tests
 
             multipleBreakfast.CalculateNutValuesAndCalories();
 
-            unit.Recipes.Empty();
-            unit.Recipes.Add(singleBreakfast);
-            unit.Recipes.Add(multipleBreakfast);
+            unit.TestsRecipes.Empty();
+            unit.TestsRecipes.Add(singleBreakfast);
+            unit.TestsRecipes.Add(multipleBreakfast);
 
             var userProfile = new UserProfile() { Age = 30, Gender = GenderType.Male };
             var range = new MealSuggestionRange() { Length = 1, MealType = MealType.Breakfast, ServingsNum = 1 };
@@ -154,7 +154,7 @@ namespace Tests
             recommendationDB.range = range;
             recommendationDB.GradersWeight = null;
 
-            var recommendationGen = new RecommendationGenerator(unit, recommendationDB);
+            var recommendationGen = new RecommendationGenerator(unit, recommendationDB, false, true);
 
             var firstMeal = recommendationGen.GetMeal();
             var secondMeal = recommendationGen.GetMeal();
@@ -246,11 +246,11 @@ namespace Tests
             smallLunch.CalculateNutValuesAndCalories();
             bigLunch.CalculateNutValuesAndCalories();
 
-            unit.Recipes.Empty();
-            unit.Recipes.Add(smallBreakfast);
-            unit.Recipes.Add(bigBreakfast);
-            unit.Recipes.Add(smallLunch);
-            unit.Recipes.Add(bigLunch);
+            unit.TestsRecipes.Empty();
+            unit.TestsRecipes.Add(smallBreakfast);
+            unit.TestsRecipes.Add(bigBreakfast);
+            unit.TestsRecipes.Add(smallLunch);
+            unit.TestsRecipes.Add(bigLunch);
 
             var userProfile = new UserProfile() { Age = 30, Gender = GenderType.Male };
             var range = new MenuSuggestionRange()
@@ -269,8 +269,8 @@ namespace Tests
 
             normalRecommendationDB.GradersWeight = null;
 
-            var varietyRecommendationGen = new RecommendationGenerator(unit, varietyRecommendationDB);
-            var normalRecommendationGen = new RecommendationGenerator(unit, normalRecommendationDB);
+            var varietyRecommendationGen = new RecommendationGenerator(unit, varietyRecommendationDB, false, true);
+            var normalRecommendationGen = new RecommendationGenerator(unit, normalRecommendationDB, false, true);
 
             var varietyMenu = varietyRecommendationGen.GetMenu();
             var normalMenu = normalRecommendationGen.GetMenu();
@@ -292,7 +292,7 @@ namespace Tests
             // Make sure that grader is grading different user profiles and different meals in a different manner
 
             var unit = new RestDBInterface();
-            unit.Recipes.Empty();
+            unit.TestsRecipes.Empty();
 
             // Create 2 very small breakfasts. We expect the "big" breakfast (big compared to the small one) to be better
             var smallBreakfast = new Recipe()
@@ -321,9 +321,9 @@ namespace Tests
             smallBreakfast.CalculateNutValuesAndCalories();
             bigBreakfast.CalculateNutValuesAndCalories();
 
-            unit.Recipes.Empty();
-            unit.Recipes.Add(smallBreakfast);
-            unit.Recipes.Add(bigBreakfast);
+            unit.TestsRecipes.Empty();
+            unit.TestsRecipes.Add(smallBreakfast);
+            unit.TestsRecipes.Add(bigBreakfast);
 
             if (nutValues)
             {
@@ -340,7 +340,7 @@ namespace Tests
             // Make sure that grader is grading different user profiles in a different manner
 
             var unit = new RestDBInterface();
-            unit.Recipes.Empty();
+            unit.TestsRecipes.Empty();
             var breakfast = new Recipe() {
                 ID = 0,
                 Name = "Sample breakfast 1",
@@ -377,10 +377,10 @@ namespace Tests
             lunch.CalculateNutValuesAndCalories();
             dinner.CalculateNutValuesAndCalories();
 
-            unit.Recipes.Empty();
-            unit.Recipes.Add(breakfast);
-            unit.Recipes.Add(lunch);
-            unit.Recipes.Add(dinner);
+            unit.TestsRecipes.Empty();
+            unit.TestsRecipes.Add(breakfast);
+            unit.TestsRecipes.Add(lunch);
+            unit.TestsRecipes.Add(dinner);
 
             if (nutValues)
             {
@@ -501,8 +501,8 @@ namespace Tests
             // Since all users currently get the same calories number, force a difference
             babyRecommendationDB.dailyCaloriesNum = manRecommendationDB.dailyCaloriesNum / 2;
 
-            var babyRecommendationGen = new RecommendationGenerator(unit, babyRecommendationDB);
-            var manRecommendationGen = new RecommendationGenerator(unit, manRecommendationDB);
+            var babyRecommendationGen = new RecommendationGenerator(unit, babyRecommendationDB, false, true);
+            var manRecommendationGen = new RecommendationGenerator(unit, manRecommendationDB, false, true);
 
             var babyMeal = babyRecommendationGen.GetMeal();
             var manMeal = manRecommendationGen.GetMeal();
@@ -532,8 +532,8 @@ namespace Tests
             // Since all users currently get the same calories number, force a difference
             babyRecommendationDB.dailyCaloriesNum = girlRecommendationDB.dailyCaloriesNum / 2;
 
-            var babyRecommendationGen = new RecommendationGenerator(unit, babyRecommendationDB);
-            var girlRecommendationGen = new RecommendationGenerator(unit, girlRecommendationDB);
+            var babyRecommendationGen = new RecommendationGenerator(unit, babyRecommendationDB, false, true);
+            var girlRecommendationGen = new RecommendationGenerator(unit, girlRecommendationDB, false, true);
 
             var babyMenu = babyRecommendationGen.GetMenu();
             var girlMenu = girlRecommendationGen.GetMenu();
@@ -547,7 +547,7 @@ namespace Tests
             var recommendationDB = RecommendationDBGenerator.FromUserProfile(profile, unit);
             recommendationDB.GradersWeight = graderWeights;
 
-            var recommendationGen = new RecommendationGenerator(unit, recommendationDB);
+            var recommendationGen = new RecommendationGenerator(unit, recommendationDB, false, true);
 
             return recommendationGen.GetMenu();
         }
@@ -560,7 +560,7 @@ namespace Tests
             recommendationDB.GradersWeight = graderWeights;
             recommendationDB.range = new MealSuggestionRange() { Length = 1, MealType = mealType };
 
-            var recommendationGen = new RecommendationGenerator(unit, recommendationDB);
+            var recommendationGen = new RecommendationGenerator(unit, recommendationDB, false, true);
 
             return recommendationGen.GetMeal();
         }
@@ -570,7 +570,7 @@ namespace Tests
             // Make sure that grader is grading different user profiles in a different manner
 
             var unit = new RestDBInterface();
-            unit.Recipes.Empty();
+            unit.TestsRecipes.Empty();
             var indianBreakfast = new Recipe() {
                 ID = 0,
                 Name = "Indian breakfast",
@@ -597,9 +597,9 @@ namespace Tests
             indianBreakfast.CalculateNutValuesAndCalories();
             chineseBreakfast.CalculateNutValuesAndCalories();
 
-            unit.Recipes.Empty();
-            unit.Recipes.Add(indianBreakfast);
-            unit.Recipes.Add(chineseBreakfast);
+            unit.TestsRecipes.Empty();
+            unit.TestsRecipes.Add(indianBreakfast);
+            unit.TestsRecipes.Add(chineseBreakfast);
 
             var userProfile = new UserProfile() { Age = 30, Gender = GenderType.Male };
             var range = new MenuSuggestionRange() { Length = 1, MealsInDailyMenu = new List<MealType>() { MealType.Breakfast } };
@@ -640,8 +640,8 @@ namespace Tests
             indianRecommendationDB.GradersWeight = null;
             chineseRecommendationDB.GradersWeight = null;
 
-            var indianRecommendationGen = new RecommendationGenerator(unit, indianRecommendationDB);
-            var chineseRecommendationGen = new RecommendationGenerator(unit, chineseRecommendationDB);
+            var indianRecommendationGen = new RecommendationGenerator(unit, indianRecommendationDB, false, true);
+            var chineseRecommendationGen = new RecommendationGenerator(unit, chineseRecommendationDB, false, true);
 
             var indianMenu = indianRecommendationGen.GetMenu();
             var chineseMenu = chineseRecommendationGen.GetMenu();
