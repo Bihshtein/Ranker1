@@ -37,6 +37,7 @@ namespace LogicRunner
             maxValues.DataSource = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
             servings.DataSource = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
             idealServings.DataSource = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            recommendationsNum.DataSource = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
             totalCalories.SelectedIndex = 3;
             idealServings.SelectedIndex = 2;
@@ -46,6 +47,7 @@ namespace LogicRunner
             calories.SelectedIndex = 4;
             servings.SelectedIndex = 2;
             cookTime.SelectedIndex = 2;
+            recommendationsNum.SelectedIndex = 2;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -72,7 +74,7 @@ namespace LogicRunner
 
             recommendationDB.idealServingsNum = int.Parse(idealServings.SelectedItem.ToString());
             recommendationDB.dailyValues = (comboBox1.SelectedValue as DailyValue).DuplicateDictionary();
-            recommendationDB.range = new MealSuggestionRange() { Length = 3, MealType = (MealType)Enum.Parse(typeof(MealType), comboBox2.SelectedItem.ToString()) };
+            recommendationDB.range = new MealSuggestionRange() { Length = int.Parse(recommendationsNum.SelectedItem.ToString()), MealType = (MealType)Enum.Parse(typeof(MealType), comboBox2.SelectedItem.ToString()) };
             recommendationDB.dailyCaloriesNum = int.Parse(totalCalories.SelectedItem.ToString());
               recommendationDB.GradersWeight = new Dictionary<GraderType, double>()
                {

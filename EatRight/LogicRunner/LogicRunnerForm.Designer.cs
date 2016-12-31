@@ -59,6 +59,8 @@
             this.label12 = new System.Windows.Forms.Label();
             this.idealServings = new System.Windows.Forms.ComboBox();
             this.labelConsole = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.recommendationsNum = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
@@ -342,13 +344,34 @@
             this.labelConsole.Size = new System.Drawing.Size(0, 19);
             this.labelConsole.TabIndex = 33;
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label13.Location = new System.Drawing.Point(8, 151);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(165, 19);
+            this.label13.TabIndex = 35;
+            this.label13.Text = "Recommendations:";
+            // 
+            // recommendationsNum
+            // 
+            this.recommendationsNum.FormattingEnabled = true;
+            this.recommendationsNum.Location = new System.Drawing.Point(179, 149);
+            this.recommendationsNum.Name = "recommendationsNum";
+            this.recommendationsNum.Size = new System.Drawing.Size(89, 21);
+            this.recommendationsNum.TabIndex = 34;
+            // 
             // LogicRunnerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.AliceBlue;
-            this.ClientSize = new System.Drawing.Size(692, 837);
+            this.ClientSize = new System.Drawing.Size(709, 837);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.recommendationsNum);
             this.Controls.Add(this.labelConsole);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.idealServings);
@@ -419,5 +442,7 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.ComboBox idealServings;
         private System.Windows.Forms.Label labelConsole;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.ComboBox recommendationsNum;
     }
 }
