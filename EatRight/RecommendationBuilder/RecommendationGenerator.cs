@@ -584,6 +584,19 @@ namespace RecommendationBuilder
                     FilterType.MealTypeMealFilter
                 };
             }
+
+            if (RecommendationObject.recommendationDB.preferences != null)
+            {
+                foreach (var pref in RecommendationObject.recommendationDB.preferences)
+                {
+                    switch (pref)
+                    {
+                        case UserPreference.Meat:
+                            RecommendationObject.recommendationDB.FiltersSet.Add(FilterType.HasMeatMealFilter);
+                            break;
+                    }
+                }
+            }
         }
 
         private void SetDefaultGraderWeights()

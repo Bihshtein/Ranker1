@@ -6,6 +6,13 @@ using System.Threading.Tasks;
 
 namespace RestModel
 {
+    public enum UserPreference
+    {
+        None = 0,
+
+        Meat
+    }
+
     /// <summary>
     /// Different types of graders for Menu, DailyMenu and Meal objects.
     /// </summary>
@@ -75,6 +82,8 @@ namespace RestModel
 
         ForbiddenProductsMealFilter,
         MealTypeMealFilter,
+        HasMeatMealFilter,
+        HasNoMeatMealFilter,
 
         MealFilterEnd
     }
@@ -103,7 +112,8 @@ namespace RestModel
     {
         None = 0,
         Pregnant, // (no raw meat, no sushi, etc)
-        Vegeterian, // (no animal products, including no fish or seafood)
+        Vegetarian, // (no animal products, including no fish or seafood)
+        Pescetarian, // (like Vegetarian, but eats fish and seafood)
         Vegan, // (no animal, fish, dairy, or other foods derived from or made by animals incl. insects)
         RawFood, // (definitions may vary but often uncooked vegan)
         Diabetic, // (diet subject to management of the medical condition diabetes - which can have different levels of severity)
@@ -150,7 +160,6 @@ namespace RestModel
             return (((DietRestrictions != null) && (DietRestrictions.Any())));
         }
     }
-
 
     /// <summary>
     ///  TODO: fill this once figured out

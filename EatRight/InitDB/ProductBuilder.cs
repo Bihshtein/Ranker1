@@ -12,7 +12,7 @@ namespace InitDB {
     class ProductBuilder {
         public static Product GetProduct(string groupName, int id, string name, JArray nutrients, double weight) {
             var validator = InitDB.Validators[groupName];
-            var p = new Product() { ID = id};
+            var p = new Product() { ID = id, IsMeatProduct = false };
             p.FoodGroup = groupName.ToLower();
             var parts = name.Split(',').ToList();
             if (groupName == "manual")
@@ -21,6 +21,10 @@ namespace InitDB {
                 parts.ForEach((item) => TryMatchPartToProperty(p, item, validator));
             p.Weight = weight;
             SetNutrientProperties(nutrients, p, weight);
+            if (IsMeatProduct(p))
+            {
+                p.IsMeatProduct = true;
+            }
             return p;
         }
 
@@ -141,6 +145,35 @@ namespace InitDB {
             else
                 imgBytes = File.ReadAllBytes(InitDB.FolderPath + "Rick.png");
             return imgBytes;
+        }
+
+        private static Boolean IsSoupAndSauceMeatProduct(Product product)
+        {
+            if (product.FoodGroup != "soupandsauce")
+            {
+                return false;
+            }
+
+            var soupAndSauceMeats = new HashSet<string>() { "chicken", "beef", "duck", "pork" };
+            foreach (var meatStr in soupAndSauceMeats)
+            {
+                if ((product.Name1 != null && product.Name1.Contains(meatStr)) ||
+                    (product.Name2 != null && product.Name2.Contains(meatStr)) ||
+                    (product.Name3 != null && product.Name3.Contains(meatStr)))
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public static Boolean IsMeatProduct(Product product)
+        {
+            return
+                product.FoodGroup == "beef" ||
+                product.FoodGroup == "chicken" ||
+                product.FoodGroup == "pork" ||
+                IsSoupAndSauceMeatProduct(product);
         }
     }
 }

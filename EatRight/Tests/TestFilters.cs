@@ -114,11 +114,45 @@ namespace Tests
             recommendationDB.range = range;
 
             var recommendationGenerator = new RecommendationGenerator(unit, recommendationDB);
-            var meal = recommendationGenerator.GetMeal(); ;
+            var meal = recommendationGenerator.GetMeal();
 
             // Assertions
             // There's no lunch in the meals list, so we expect no meals to be generated.
             Assert.IsNull(meal);
+        }
+
+        [TestMethod]
+        public void TestHasMeatFilter()
+        {
+            var unit = new RestDBInterface();
+
+            Recipe breakfast = new Recipe()
+            {
+                ID = 0,
+                Name = "Breakfast",
+                ProductsWeight = new Dictionary<string, double>() { { "Carrot", 1 } },
+                Types = new HashSet<MealType>() { MealType.Breakfast }
+            };
+
+            breakfast.CalculateNutValuesAndCalories();
+
+            unit.Recipes.Empty();
+            unit.Recipes.Add(breakfast);
+
+            var userProfile = new UserProfile() { Age = 30, Gender = GenderType.Male };
+            var range = new MealSuggestionRange()
+            { Length = 1, MealType = MealType.Breakfast };
+
+            var recommendationDB = RecommendationDBGenerator.FromUserProfile(userProfile, unit);
+            recommendationDB.range = range;
+            recommendationDB.preferences = new HashSet<UserPreference>() { UserPreference.Meat };
+
+            var recommendationGenerator = new RecommendationGenerator(unit, recommendationDB);
+            var reco = recommendationGenerator.GetRecommendation();
+
+            // Assertions
+            // There's no meal with meat in the meals list, so we expect no meals to be generated.
+            Assert.IsNull(reco);
         }
     }
 }

@@ -30,6 +30,7 @@ namespace LogicRunner
             dataGridView1.AutoGenerateColumns = true;
 
             comboBox2.DataSource = Enum.GetNames(typeof(MealType));
+            comboBox3.DataSource = Enum.GetNames(typeof(UserPreference));
             totalCalories.DataSource = new List<int> { 500, 1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500, 5000 };
             calories.DataSource = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9,10 };
             cookTime.DataSource = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
@@ -73,6 +74,7 @@ namespace LogicRunner
             recommendationDB.idealServingsNum = int.Parse(idealServings.SelectedItem.ToString());
             recommendationDB.dailyValues = (comboBox1.SelectedValue as DailyValue).DuplicateDictionary();
             recommendationDB.range = new MealSuggestionRange() { Length = 3, MealType = (MealType)Enum.Parse(typeof(MealType), comboBox2.SelectedItem.ToString()) };
+            recommendationDB.preferences = new HashSet<UserPreference>() { (UserPreference)Enum.Parse(typeof(UserPreference), comboBox3.SelectedItem.ToString()) };
             recommendationDB.dailyCaloriesNum = int.Parse(totalCalories.SelectedItem.ToString());
               recommendationDB.GradersWeight = new Dictionary<GraderType, double>()
                {

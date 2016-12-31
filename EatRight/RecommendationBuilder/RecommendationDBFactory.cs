@@ -153,6 +153,11 @@ namespace RecommendationBuilder
             recommendationDB.dailyValues = dValues.DuplicateDictionary();
             recommendationDB.dailyCaloriesNum = DailyCaloriesGenerator.FromUserProfile(userProfile);
             recommendationDB.range = SuggestionRangeGenerator.FromUserProfile(userProfile);
+
+            if (userProfile.DietProfile != null)
+            {
+                recommendationDB.dietRestrictions = userProfile.DietProfile.DietRestrictions;
+            }
             
             return recommendationDB;
         }

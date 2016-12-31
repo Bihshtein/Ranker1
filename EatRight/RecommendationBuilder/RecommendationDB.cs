@@ -89,6 +89,7 @@ namespace RecommendationBuilder
         public Dictionary<RecipeCategory, double> recipeCategoryGrade; // Maps a recipe category to a double in the range [-1,1] where -1 means dislike and 1 means like
         public HashSet<string> forbiddenProducts; // All products that the user will never eat
         public int idealServingsNum;
+        public List<NutritionDietType> dietRestrictions;
 
         public Dictionary<GraderType, double> GradersWeight; // Maps grader type to the weight that this grader will have
         public HashSet<FilterType> FiltersSet; // Set of filters for current user
@@ -96,5 +97,6 @@ namespace RecommendationBuilder
         // Information chosen by the user
         public SuggestionRange range; // How many days/meals will the menu contain
         public double budget = Double.PositiveInfinity; // Specific user's budget, default is infinity (no budget)
+        public HashSet<UserPreference> preferences; // Preferences for meal, for example- meat
     }
 }

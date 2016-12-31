@@ -139,6 +139,9 @@ namespace RestModel {
         [BsonElement("Fiber")]
         public double Fiber { get; set; }
 
+        [BsonElement("IsMeatProduct")]
+        public Boolean IsMeatProduct { get; set; }
+
         public byte[] Image { get; set; }
 
         public Dictionary<string, double> Nutrients() {

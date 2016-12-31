@@ -49,6 +49,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Filters\Filter.cs" />
+    <Compile Include="Filters\MealFilters\HasNoMeatMealFilter.cs" />
+    <Compile Include="Filters\MealFilters\HasMeatMealFilter.cs" />
+    <Compile Include="Filters\MealFilters\ProductPropertyMealFilter.cs" />
     <Compile Include="Filters\MealFilters\MealTypeMealFilter.cs" />
     <Compile Include="Filters\MealFilters\ForbiddenProductsMealFilter.cs" />
     <Compile Include="Filters\MealFilters\MealFilter.cs" />
