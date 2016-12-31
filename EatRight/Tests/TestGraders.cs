@@ -576,7 +576,7 @@ namespace Tests
                 Name = "Indian breakfast",
                 ProductsWeight = new Dictionary<string, double>() { { "Carrot", 20 } },
                 Types = new HashSet<MealType>() { MealType.Breakfast },
-                Categories= new HashSet<MealCategory>() { MealCategory.Indian }
+                Categories= new HashSet<RecipeCategory>() { RecipeCategory.Indian }
             };
             var chineseBreakfast = new Recipe() {
                  ID = 1,
@@ -591,7 +591,7 @@ namespace Tests
                     { "Almonds", 25}
                 },
                 Types = new HashSet<MealType>() { MealType.Breakfast },
-                Categories = new HashSet<MealCategory>() { MealCategory.Chinese }
+                Categories = new HashSet<RecipeCategory>() { RecipeCategory.Chinese }
             };
 
             indianBreakfast.CalculateNutValuesAndCalories();
@@ -607,10 +607,10 @@ namespace Tests
             var indianRecommendationDB = RecommendationDBGenerator.FromUserProfile(userProfile, unit);
             if (categoryTest)
             {
-                indianRecommendationDB.mealCategoryGrade = new Dictionary<MealCategory, double>()
+                indianRecommendationDB.recipeCategoryGrade = new Dictionary<RecipeCategory, double>()
                 {
-                    { MealCategory.Indian, 1 },
-                    { MealCategory.Chinese, -1 }
+                    { RecipeCategory.Indian, 1 },
+                    { RecipeCategory.Chinese, -1 }
                 };
             }
             else
@@ -629,10 +629,10 @@ namespace Tests
             var chineseRecommendationDB = RecommendationDBGenerator.FromUserProfile(userProfile, unit);
             if (categoryTest)
             {
-                chineseRecommendationDB.mealCategoryGrade = new Dictionary<MealCategory, double>()
+                chineseRecommendationDB.recipeCategoryGrade = new Dictionary<RecipeCategory, double>()
                 {
-                    { MealCategory.Indian, -1 },
-                    { MealCategory.Chinese, 1 }
+                    { RecipeCategory.Indian, -1 },
+                    { RecipeCategory.Chinese, 1 }
                 };
             }
             chineseRecommendationDB.range = range;

@@ -47,7 +47,6 @@ namespace RecommendationBuilder
 
             manager.TakeTime("set default grader and filter sets");
 
-
             this.unit = unit;
 
             mealsList = new List<Meal>();
@@ -90,9 +89,10 @@ namespace RecommendationBuilder
                 System.Console.WriteLine("***ERROR*** RecommendationGenerator object wasn't created for generating meals!");
                 System.Environment.Exit(1);
             }
-            if (mealsList.Count < RecommendationObject.recommendationDB.range.Length)
+
+            if (recoList == null || recoList.Count == 0)
             {
-                // TODO: print a warning
+                // TODO: add a warning
                 return null;
             }
 
@@ -387,10 +387,10 @@ namespace RecommendationBuilder
 
             timer.TakeTime("grader map and filter set initialized");
 
-            var dbMealsList = unit.Recipes.GetAll().ToList();
-            timer.TakeTime("meals - get all");
+            var recipesList = unit.Recipes.GetAll().ToList();
+            timer.TakeTime("recipes - get all");
 
-            mealsList = dbMealsList.Select(x => new Meal(x)).ToList();
+            mealsList = recipesList.Select(x => new Meal(x)).ToList();
             timer.TakeTime("create meal list");
 
             mealsList = FilterList(mealsList, filterSet);

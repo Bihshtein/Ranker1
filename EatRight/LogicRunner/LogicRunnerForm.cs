@@ -72,7 +72,7 @@ namespace LogicRunner
 
             recommendationDB.idealServingsNum = int.Parse(idealServings.SelectedItem.ToString());
             recommendationDB.dailyValues = (comboBox1.SelectedValue as DailyValue).DuplicateDictionary();
-            recommendationDB.range = new MealSuggestionRange() { Length = 10, MealType = (MealType)Enum.Parse(typeof(MealType), comboBox2.SelectedItem.ToString()) };
+            recommendationDB.range = new MealSuggestionRange() { Length = 3, MealType = (MealType)Enum.Parse(typeof(MealType), comboBox2.SelectedItem.ToString()) };
             recommendationDB.dailyCaloriesNum = int.Parse(totalCalories.SelectedItem.ToString());
               recommendationDB.GradersWeight = new Dictionary<GraderType, double>()
                {
@@ -89,28 +89,40 @@ namespace LogicRunner
             RecommendationGenerator generator = new RecommendationGenerator(unit, recommendationDB);
 
             manager.TakeTime("creating recommendation generator");
-            this.bindingSource2.DataSource = generator.GetRecommendation().MealsSet.Select(o => new MyViewModel(o)
-            { Id = o.Recipe.ID, Name = o.Recipe.Name, 
-                NutValues = parseNutValues(o.NutValues), GradersResult = parseGradersResult(o.GradeInfo.GradersInfo) }).ToList();
-
-            manager.TakeTime("getting meals list");
-
-            dataGridView1.DataSource = this.bindingSource2;
-
-            if (!alexiknow)
+            Recommendation reco = generator.GetRecommendation();
+            if (reco == null)
             {
-                richTextBox1.DataBindings.Add("Text", bindingSource2, "GradersResult");
-                richTextBox2.DataBindings.Add("Text", bindingSource2, "Products");
-                richTextBox3.DataBindings.Add("Text", bindingSource2, "NutValues");
-                alexiknow = true;
+                MessageBox.Show("I'm sorry, but I can't recommend on any " + comboBox2.SelectedItem.ToString() + "s");
             }
-            manager.TakeTime("setting data source and rich text data binding");
-            
-            manager.End();
+            else
+            {
+                this.bindingSource2.DataSource = reco.MealsSet.Select(o => new MyViewModel(o)
+                {
+                    Id = o.Recipe.ID,
+                    Name = o.Recipe.Name,
+                    NutValues = parseNutValues(o.NutValues),
+                    GradersResult = parseGradersResult(o.GradeInfo.GradersInfo)
+                }).ToList();
 
-            this.labelConsole.Text = string.Format("[{0}] Process took: {1} ms", DateTime.Now.ToShortTimeString(), manager.TotalTime());
-             
-            //MessageBox.Show(manager.ToString());
+                manager.TakeTime("getting meals list");
+
+                dataGridView1.DataSource = this.bindingSource2;
+
+                if (!alexiknow)
+                {
+                    richTextBox1.DataBindings.Add("Text", bindingSource2, "GradersResult");
+                    richTextBox2.DataBindings.Add("Text", bindingSource2, "Products");
+                    richTextBox3.DataBindings.Add("Text", bindingSource2, "NutValues");
+                    alexiknow = true;
+                }
+                manager.TakeTime("setting data source and rich text data binding");
+
+                manager.End();
+
+                this.labelConsole.Text = string.Format("[{0}] Process took: {1} ms", DateTime.Now.ToShortTimeString(), manager.TotalTime());
+
+                //MessageBox.Show(manager.ToString());
+            }
         }
 
         private string parseNutValues(Dictionary<string, double> let)
