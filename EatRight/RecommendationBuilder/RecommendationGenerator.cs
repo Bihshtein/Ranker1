@@ -90,6 +90,12 @@ namespace RecommendationBuilder
                 System.Environment.Exit(1);
             }
 
+            if (recoList == null || recoList.Count == 0)
+            {
+                // TODO: add a warning
+                return null;
+            }
+
             return recoList[0];
         }
 
