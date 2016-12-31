@@ -8,14 +8,14 @@ namespace Tests {
         [TestMethod]
         public void TestAllProductCounts() {
             var unit = new RestDBInterface();
-            Assert.IsTrue(unit.Products.GetAllList().Count == 3630);
+            Assert.IsTrue(unit.Products.GetAllList().Count == 3628);
         }
 
         [TestMethod]
         public void ChickenBreast() {
             var unit = new RestDBInterface();
             var res = unit.Products.Queries.QueryByNameAndValue("breast", "chicken","VitaminB12");
-            Assert.IsTrue(res.Count == 14);
+            Assert.IsTrue(res.Count == 16);
             Assert.IsTrue((res[res.Count-1].VitaminB12 / res[0].VitaminB12) >2 );
             Assert.IsTrue((res[res.Count - 1].VitaminB12 / res[0].VitaminB12) < 3);
         }
@@ -47,7 +47,7 @@ namespace Tests {
             var res = unit.Products.Queries.QueryByNameAndValue("Tomato", "Vegs", "Magnesium");
             Assert.IsTrue((res[res.Count - 1].Magnesium / res[0].Magnesium) >23);
             Assert.IsTrue((res[res.Count - 1].Magnesium / res[0].Magnesium) < 24);
-            Assert.IsTrue(res.Count == 15);
+            Assert.IsTrue(res.Count == 16);
         }
 
 
@@ -75,7 +75,7 @@ namespace Tests {
             var unit = new RestDBInterface();
             var res = unit.Products.Queries.QueryByNameAndValue("wine", "Beverages", "Sugar", true);
             Assert.IsTrue((res[res.Count - 1].Sugar / res[0].Sugar) > 12);
-            Assert.IsTrue(res.Count == 9);
+            Assert.IsTrue(res.Count == 10);
         }
 
 

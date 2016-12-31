@@ -64,8 +64,7 @@ namespace RestModel {
         [BsonElement("PackDetails")]
         public string PackDetails { get; set; }
 
-        [BsonElement("Weight")]
-        public double Weight { get; set; }
+        public Dictionary<string, double> Weights;
 
         [BsonElement("Protein")]
         public double Protein { get; set; }
@@ -138,8 +137,6 @@ namespace RestModel {
 
         [BsonElement("Fiber")]
         public double Fiber { get; set; }
-
-        public byte[] Image { get; set; }
 
         public Dictionary<string, double> Nutrients() {
                 var res = new Dictionary<string, double>();

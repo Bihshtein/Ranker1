@@ -44,7 +44,7 @@ namespace RestModel
             "steaks", "- peeled","halves"
         };
         public static List<string> ServeDetails = new List<string> { "cold", "warm", "fresh" };
-        public static List<string> PackDetails = new List<string> { "for frying", "prepared", "packed", "package", "packages" };
+        public static List<string> PackDetails = new List<string> { "for frying", "prepared", "package", "packages" };
         public static List<string> NeedlesInfo = new List<string> { "panko ", "for frying" };
     }
 }

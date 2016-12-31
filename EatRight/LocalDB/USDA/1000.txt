@@ -1,0 +1,5132 @@
+{
+    "report": {
+        "sr": "28",
+        "groups": [
+            {
+                "id": "1000",
+                "description": "Pork Products"
+            }
+        ],
+        "subset": "All foods",
+        "end": 341,
+        "start": 0,
+        "total": 341,
+        "foods": [
+            {
+                "ndbno": "10994",
+                "name": "Bacon, pre-sliced, reduced/low sodium, unprepared",
+                "weight": 26.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.26",
+                        "gm": 12.53
+                    }
+                ]
+            },
+            {
+                "ndbno": "10998",
+                "name": "Canadian bacon, cooked, pan-fried",
+                "weight": 13.8,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.91",
+                        "gm": 28.31
+                    }
+                ]
+            },
+            {
+                "ndbno": "10130",
+                "name": "Canadian bacon, unprepared",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.26",
+                        "gm": 20.31
+                    }
+                ]
+            },
+            {
+                "ndbno": "10856",
+                "name": "HORMEL ALWAYS TENDER, Boneless Pork Loin, Fresh Pork",
+                "weight": 28.0,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.33",
+                        "gm": 19.02
+                    }
+                ]
+            },
+            {
+                "ndbno": "10855",
+                "name": "HORMEL ALWAYS TENDER, Center Cut Chops, Fresh Pork",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.31",
+                        "gm": 18.74
+                    }
+                ]
+            },
+            {
+                "ndbno": "10854",
+                "name": "HORMEL ALWAYS TENDER, Pork Loin Filets, Lemon Garlic-Flavored",
+                "weight": 28.0,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.99",
+                        "gm": 17.83
+                    }
+                ]
+            },
+            {
+                "ndbno": "10853",
+                "name": "HORMEL ALWAYS TENDER, Pork Tenderloin, Peppercorn-Flavored",
+                "weight": 112.0,
+                "measure": "4.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "19.28",
+                        "gm": 17.21
+                    }
+                ]
+            },
+            {
+                "ndbno": "10852",
+                "name": "HORMEL ALWAYS TENDER, Pork Tenderloin, Teriyaki-Flavored",
+                "weight": 112.0,
+                "measure": "4.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "20.38",
+                        "gm": 18.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "10857",
+                "name": "HORMEL Canadian Style Bacon",
+                "weight": 56.0,
+                "measure": "1.0 serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.45",
+                        "gm": 16.88
+                    }
+                ]
+            },
+            {
+                "ndbno": "10851",
+                "name": "HORMEL, Cure 81 Ham",
+                "weight": 84.0,
+                "measure": "1.0 serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.48",
+                        "gm": 18.43
+                    }
+                ]
+            },
+            {
+                "ndbno": "10981",
+                "name": "Pork loin, fresh, backribs, bone-in, cooked-roasted, lean only",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "20.53",
+                        "gm": 24.15
+                    }
+                ]
+            },
+            {
+                "ndbno": "10980",
+                "name": "Pork loin, fresh, backribs, bone-in, raw, lean only",
+                "weight": 114.0,
+                "measure": "4.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "23.77",
+                        "gm": 20.85
+                    }
+                ]
+            },
+            {
+                "ndbno": "10864",
+                "name": "Pork, bacon, rendered fat, cooked",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.06",
+                        "gm": 0.07
+                    }
+                ]
+            },
+            {
+                "ndbno": "10860",
+                "name": "Pork, cured, bacon, cooked, baked",
+                "weight": 8.1,
+                "measure": "1.0 slice cooked",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.89",
+                        "gm": 35.73
+                    }
+                ]
+            },
+            {
+                "ndbno": "43378",
+                "name": "Pork, cured, bacon, cooked, broiled, pan-fried or roasted, reduced sodium",
+                "weight": 8.0,
+                "measure": "1.0 slice cooked",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.96",
+                        "gm": 37.04
+                    }
+                ]
+            },
+            {
+                "ndbno": "10861",
+                "name": "Pork, cured, bacon, cooked, microwaved",
+                "weight": 9.1,
+                "measure": "1.0 slice cooked",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.55",
+                        "gm": 39.01
+                    }
+                ]
+            },
+            {
+                "ndbno": "10862",
+                "name": "Pork, cured, bacon, pre-sliced, cooked, pan-fried",
+                "weight": 11.5,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.90",
+                        "gm": 33.92
+                    }
+                ]
+            },
+            {
+                "ndbno": "10123",
+                "name": "Pork, cured, bacon, unprepared",
+                "weight": 28.0,
+                "measure": "1.0 slice raw",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.53",
+                        "gm": 12.62
+                    }
+                ]
+            },
+            {
+                "ndbno": "10128",
+                "name": "Pork, cured, breakfast strips, raw or unheated",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.98",
+                        "gm": 11.74
+                    }
+                ]
+            },
+            {
+                "ndbno": "10132",
+                "name": "Pork, cured, feet, pickled",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.30",
+                        "gm": 11.63
+                    }
+                ]
+            },
+            {
+                "ndbno": "10913",
+                "name": "Pork, cured, ham -- water added, rump, bone-in, separable lean and fat, heated, roasted",
+                "weight": 85.0,
+                "measure": "1.0 serving (3 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.09",
+                        "gm": 20.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "10912",
+                "name": "Pork, cured, ham -- water added, rump, bone-in, separable lean and fat, unheated",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.97",
+                        "gm": 13.99
+                    }
+                ]
+            },
+            {
+                "ndbno": "10865",
+                "name": "Pork, cured, ham -- water added, rump, bone-in, separable lean only, heated, roasted",
+                "weight": 85.0,
+                "measure": "1.0 serving (3 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "18.20",
+                        "gm": 21.41
+                    }
+                ]
+            },
+            {
+                "ndbno": "10866",
+                "name": "Pork, cured, ham -- water added, rump, bone-in, separable lean only, unheated",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.12",
+                        "gm": 15.43
+                    }
+                ]
+            },
+            {
+                "ndbno": "10914",
+                "name": "Pork, cured, ham -- water added, shank, bone-in, separable lean and fat, heated, roasted",
+                "weight": 85.0,
+                "measure": "1.0 serving (3 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.83",
+                        "gm": 18.62
+                    }
+                ]
+            },
+            {
+                "ndbno": "10911",
+                "name": "Pork, cured, ham -- water added, shank, bone-in, separable lean and fat, unheated",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.72",
+                        "gm": 16.65
+                    }
+                ]
+            },
+            {
+                "ndbno": "10867",
+                "name": "Pork, cured, ham -- water added, shank, bone-in, separable lean only, heated, roasted",
+                "weight": 85.0,
+                "measure": "1.0 serving (3 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.78",
+                        "gm": 20.92
+                    }
+                ]
+            },
+            {
+                "ndbno": "10885",
+                "name": "Pork, cured, ham -- water added, shank, bone-in, separable lean only, unheated",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.85",
+                        "gm": 18.65
+                    }
+                ]
+            },
+            {
+                "ndbno": "10915",
+                "name": "Pork, cured, ham -- water added, slice, bone-in, separable lean and fat, heated, pan-broil",
+                "weight": 85.0,
+                "measure": "1.0 serving (3 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.68",
+                        "gm": 20.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "10910",
+                "name": "Pork, cured, ham -- water added, slice, bone-in, separable lean and fat, unheated",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.46",
+                        "gm": 15.73
+                    }
+                ]
+            },
+            {
+                "ndbno": "10868",
+                "name": "Pork, cured, ham -- water added, slice, bone-in, separable lean only, heated, pan-broil",
+                "weight": 85.0,
+                "measure": "1.0 serving (3 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "18.73",
+                        "gm": 22.04
+                    }
+                ]
+            },
+            {
+                "ndbno": "10886",
+                "name": "Pork, cured, ham -- water added, slice, bone-in, separable lean only, unheated",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.77",
+                        "gm": 17.38
+                    }
+                ]
+            },
+            {
+                "ndbno": "10916",
+                "name": "Pork, cured, ham -- water added, slice, boneless, separable lean and fat, heated, pan-broil",
+                "weight": 85.0,
+                "measure": "1.0 serving (3 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.83",
+                        "gm": 18.62
+                    }
+                ]
+            },
+            {
+                "ndbno": "10878",
+                "name": "Pork, cured, ham -- water added, slice, boneless, separable lean only, heated, pan-broil",
+                "weight": 85.0,
+                "measure": "1.0 serving (3 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.00",
+                        "gm": 18.82
+                    }
+                ]
+            },
+            {
+                "ndbno": "10917",
+                "name": "Pork, cured, ham -- water added, whole, boneless, separable lean and fat, heated, roasted",
+                "weight": 85.0,
+                "measure": "1.0 serving (3 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.10",
+                        "gm": 17.77
+                    }
+                ]
+            },
+            {
+                "ndbno": "10909",
+                "name": "Pork, cured, ham -- water added, whole, boneless, separable lean and fat, unheated",
+                "weight": 28.35,
+                "measure": "1.0 oz whole",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.84",
+                        "gm": 17.06
+                    }
+                ]
+            },
+            {
+                "ndbno": "10879",
+                "name": "Pork, cured, ham -- water added, whole, boneless, separable lean only, heated, roasted",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.29",
+                        "gm": 17.99
+                    }
+                ]
+            },
+            {
+                "ndbno": "10880",
+                "name": "Pork, cured, ham -- water added, whole, boneless, separable lean only, unheated",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.74",
+                        "gm": 17.34
+                    }
+                ]
+            },
+            {
+                "ndbno": "10918",
+                "name": "Pork, cured, ham and water product, rump, bone-in, separable lean and fat, heated, roasted",
+                "weight": 85.0,
+                "measure": "1.0 serving (3 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.54",
+                        "gm": 19.46
+                    }
+                ]
+            },
+            {
+                "ndbno": "10908",
+                "name": "Pork, cured, ham and water product, rump, bone-in, separable lean and fat, unheated",
+                "weight": 28.35,
+                "measure": "1.0 oz rump",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.56",
+                        "gm": 16.09
+                    }
+                ]
+            },
+            {
+                "ndbno": "10877",
+                "name": "Pork, cured, ham and water product, rump, bone-in, separable lean only, heated, roasted",
+                "weight": 85.0,
+                "measure": "1.0 serving (3 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "18.09",
+                        "gm": 21.28
+                    }
+                ]
+            },
+            {
+                "ndbno": "10887",
+                "name": "Pork, cured, ham and water product, rump, bone-in, separable lean only, unheated",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.08",
+                        "gm": 17.93
+                    }
+                ]
+            },
+            {
+                "ndbno": "10919",
+                "name": "Pork, cured, ham and water product, shank, bone-in, separable lean and fat, heated, roasted",
+                "weight": 85.0,
+                "measure": "1.0 serving (3 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.44",
+                        "gm": 18.17
+                    }
+                ]
+            },
+            {
+                "ndbno": "10907",
+                "name": "Pork, cured, ham and water product, shank, bone-in, separable lean and fat, unheated",
+                "weight": 28.35,
+                "measure": "1.0 oz shank",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.05",
+                        "gm": 14.28
+                    }
+                ]
+            },
+            {
+                "ndbno": "10881",
+                "name": "Pork, cured, ham and water product, shank, bone-in, separable lean only, heated, roasted",
+                "weight": 85.0,
+                "measure": "1.0 serving (3 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "18.44",
+                        "gm": 21.69
+                    }
+                ]
+            },
+            {
+                "ndbno": "10889",
+                "name": "Pork, cured, ham and water product, shank, bone-in, unheated, separable lean only",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.90",
+                        "gm": 17.53
+                    }
+                ]
+            },
+            {
+                "ndbno": "10920",
+                "name": "Pork, cured, ham and water product, slice, bone-in, separable lean and fat, heated, pan-broil",
+                "weight": 85.0,
+                "measure": "1.0 serving (3 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.87",
+                        "gm": 19.85
+                    }
+                ]
+            },
+            {
+                "ndbno": "10906",
+                "name": "Pork, cured, ham and water product, slice, bone-in, separable lean and fat, unheated",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.88",
+                        "gm": 13.69
+                    }
+                ]
+            },
+            {
+                "ndbno": "10869",
+                "name": "Pork, cured, ham and water product, slice, bone-in, separable lean only, heated, pan-broil",
+                "weight": 85.0,
+                "measure": "1.0 serving (3 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.76",
+                        "gm": 20.9
+                    }
+                ]
+            },
+            {
+                "ndbno": "10888",
+                "name": "Pork, cured, ham and water product, slice, bone-in, separable lean only, unheated",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.30",
+                        "gm": 14.47
+                    }
+                ]
+            },
+            {
+                "ndbno": "10921",
+                "name": "Pork, cured, ham and water product, slice, boneless, separable lean and fat, heated, pan-broil",
+                "weight": 136.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "20.51",
+                        "gm": 15.08
+                    }
+                ]
+            },
+            {
+                "ndbno": "10870",
+                "name": "Pork, cured, ham and water product, slice, boneless, separable lean only, heated, pan-broil",
+                "weight": 138.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "20.82",
+                        "gm": 15.09
+                    }
+                ]
+            },
+            {
+                "ndbno": "10922",
+                "name": "Pork, cured, ham and water product, whole, boneless, separable lean and fat, heated, roasted",
+                "weight": 85.0,
+                "measure": "1.0 serving (3 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.80",
+                        "gm": 13.88
+                    }
+                ]
+            },
+            {
+                "ndbno": "10905",
+                "name": "Pork, cured, ham and water product, whole, boneless, separable lean and fat, unheated",
+                "weight": 28.35,
+                "measure": "1.0 oz whole",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.98",
+                        "gm": 14.05
+                    }
+                ]
+            },
+            {
+                "ndbno": "10871",
+                "name": "Pork, cured, ham and water product, whole, boneless, separable lean only, heated, roasted",
+                "weight": 85.0,
+                "measure": "1.0 serving (3 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.80",
+                        "gm": 13.88
+                    }
+                ]
+            },
+            {
+                "ndbno": "10872",
+                "name": "Pork, cured, ham and water product, whole, boneless, separable lean only, unheated",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.96",
+                        "gm": 14.07
+                    }
+                ]
+            },
+            {
+                "ndbno": "10923",
+                "name": "Pork, cured, ham with natural juices, rump, bone-in, separable lean and fat, heated, roasted",
+                "weight": 85.0,
+                "measure": "1.0 serving (3 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "19.10",
+                        "gm": 22.47
+                    }
+                ]
+            },
+            {
+                "ndbno": "10904",
+                "name": "Pork, cured, ham with natural juices, rump, bone-in, separable lean and fat, unheated",
+                "weight": 28.35,
+                "measure": "1.0 oz rump",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.58",
+                        "gm": 19.7
+                    }
+                ]
+            },
+            {
+                "ndbno": "10873",
+                "name": "Pork, cured, ham with natural juices, rump, bone-in, separable lean only, heated, roasted",
+                "weight": 85.0,
+                "measure": "1.0 serving (3 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "20.52",
+                        "gm": 24.14
+                    }
+                ]
+            },
+            {
+                "ndbno": "10890",
+                "name": "Pork, cured, ham with natural juices, rump, bone-in, separable lean only, unheated",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "19.30",
+                        "gm": 22.71
+                    }
+                ]
+            },
+            {
+                "ndbno": "10924",
+                "name": "Pork, cured, ham with natural juices, shank, bone-in, separable lean and fat, heated, roasted",
+                "weight": 85.0,
+                "measure": "1.0 serving (3 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "19.45",
+                        "gm": 22.88
+                    }
+                ]
+            },
+            {
+                "ndbno": "10903",
+                "name": "Pork, cured, ham with natural juices, shank, bone-in, separable lean and fat, unheated",
+                "weight": 28.35,
+                "measure": "1.0 oz shank",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.34",
+                        "gm": 22.35
+                    }
+                ]
+            },
+            {
+                "ndbno": "10874",
+                "name": "Pork, cured, ham with natural juices, shank, bone-in, separable lean only, heated, roasted",
+                "weight": 85.0,
+                "measure": "1.0 serving (3 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "21.21",
+                        "gm": 24.95
+                    }
+                ]
+            },
+            {
+                "ndbno": "10891",
+                "name": "Pork, cured, ham with natural juices, shank, bone-in, separable lean only, unheated",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "21.34",
+                        "gm": 25.11
+                    }
+                ]
+            },
+            {
+                "ndbno": "10925",
+                "name": "Pork, cured, ham with natural juices, slice, bone-in, separable lean and fat, heated, pan-broil",
+                "weight": 85.0,
+                "measure": "1.0 serving (3 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.25",
+                        "gm": 26.18
+                    }
+                ]
+            },
+            {
+                "ndbno": "10902",
+                "name": "Pork, cured, ham with natural juices, slice, bone-in, separable lean and fat, unheated",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "19.40",
+                        "gm": 22.82
+                    }
+                ]
+            },
+            {
+                "ndbno": "10875",
+                "name": "Pork, cured, ham with natural juices, slice, bone-in, separable lean only, heated, pan-broil",
+                "weight": 85.0,
+                "measure": "1.0 serving (3 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "23.59",
+                        "gm": 27.75
+                    }
+                ]
+            },
+            {
+                "ndbno": "10892",
+                "name": "Pork, cured, ham with natural juices, slice, bone-in, separable lean only, unheated",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "20.69",
+                        "gm": 24.34
+                    }
+                ]
+            },
+            {
+                "ndbno": "10926",
+                "name": "Pork, cured, ham with natural juices, slice, boneless, separable lean and fat, heated, pan-broil",
+                "weight": 85.0,
+                "measure": "1.0 serving (3 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.76",
+                        "gm": 20.89
+                    }
+                ]
+            },
+            {
+                "ndbno": "10882",
+                "name": "Pork, cured, ham with natural juices, slice, boneless, separable lean only, heated, pan-broil",
+                "weight": 85.0,
+                "measure": "1.0 serving (3 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.81",
+                        "gm": 20.95
+                    }
+                ]
+            },
+            {
+                "ndbno": "10927",
+                "name": "Pork, cured, ham with natural juices, spiral slice, boneless, separable lean and fat, heated, roasted",
+                "weight": 145.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "32.16",
+                        "gm": 22.18
+                    }
+                ]
+            },
+            {
+                "ndbno": "10901",
+                "name": "Pork, cured, ham with natural juices, spiral slice, boneless, separable lean and fat, unheated",
+                "weight": 28.35,
+                "measure": "1.0 oz spiral slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.29",
+                        "gm": 18.66
+                    }
+                ]
+            },
+            {
+                "ndbno": "10893",
+                "name": "Pork, cured, ham with natural juices, spiral slice, boneless, separable lean only, unheated",
+                "weight": 28.35,
+                "measure": "1.0 oz spiral slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.46",
+                        "gm": 19.25
+                    }
+                ]
+            },
+            {
+                "ndbno": "10876",
+                "name": "Pork, cured, ham with natural juices, spiral slice, meat only, boneless, separable lean only, heated, roasted",
+                "weight": 145.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "32.71",
+                        "gm": 22.56
+                    }
+                ]
+            },
+            {
+                "ndbno": "10928",
+                "name": "Pork, cured, ham with natural juices, whole, boneless, separable lean and fat, heated, roasted",
+                "weight": 85.0,
+                "measure": "1.0 serving (3 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.46",
+                        "gm": 20.54
+                    }
+                ]
+            },
+            {
+                "ndbno": "10900",
+                "name": "Pork, cured, ham with natural juices, whole, boneless, separable lean and fat, unheated",
+                "weight": 28.35,
+                "measure": "1.0 oz whole",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.49",
+                        "gm": 19.38
+                    }
+                ]
+            },
+            {
+                "ndbno": "10883",
+                "name": "Pork, cured, ham with natural juices, whole, boneless, separable lean only, heated, roasted",
+                "weight": 85.0,
+                "measure": "1.0 serving (3 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.48",
+                        "gm": 20.57
+                    }
+                ]
+            },
+            {
+                "ndbno": "10884",
+                "name": "Pork, cured, ham with natural juices, whole, boneless, separable lean only, unheated",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.51",
+                        "gm": 19.44
+                    }
+                ]
+            },
+            {
+                "ndbno": "10134",
+                "name": "Pork, cured, ham, boneless, extra lean (approximately 5% fat), roasted",
+                "weight": 140.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "29.30",
+                        "gm": 20.93
+                    }
+                ]
+            },
+            {
+                "ndbno": "10183",
+                "name": "Pork, cured, ham, boneless, extra lean and regular, roasted",
+                "weight": 140.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "30.76",
+                        "gm": 21.97
+                    }
+                ]
+            },
+            {
+                "ndbno": "10182",
+                "name": "Pork, cured, ham, boneless, extra lean and regular, unheated",
+                "weight": 140.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "25.56",
+                        "gm": 18.26
+                    }
+                ]
+            },
+            {
+                "ndbno": "43327",
+                "name": "Pork, cured, ham, boneless, low sodium, extra lean (approximately 5% fat), roasted",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.93",
+                        "gm": 20.9
+                    }
+                ]
+            },
+            {
+                "ndbno": "43325",
+                "name": "Pork, cured, ham, boneless, low sodium, extra lean and regular, roasted",
+                "weight": 28.35,
+                "measure": "1.0 oz, boneless",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.24",
+                        "gm": 22.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "10136",
+                "name": "Pork, cured, ham, boneless, regular (approximately 11% fat), roasted",
+                "weight": 140.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "31.67",
+                        "gm": 22.62
+                    }
+                ]
+            },
+            {
+                "ndbno": "10141",
+                "name": "Pork, cured, ham, center slice, country-style, separable lean only, raw",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.88",
+                        "gm": 27.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "10142",
+                "name": "Pork, cured, ham, center slice, separable lean and fat, unheated",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.72",
+                        "gm": 20.17
+                    }
+                ]
+            },
+            {
+                "ndbno": "10138",
+                "name": "Pork, cured, ham, extra lean (approximately 4% fat), canned, roasted",
+                "weight": 140.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "29.62",
+                        "gm": 21.16
+                    }
+                ]
+            },
+            {
+                "ndbno": "10137",
+                "name": "Pork, cured, ham, extra lean (approximately 4% fat), canned, unheated",
+                "weight": 140.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "25.89",
+                        "gm": 18.49
+                    }
+                ]
+            },
+            {
+                "ndbno": "10185",
+                "name": "Pork, cured, ham, extra lean and regular, canned, roasted",
+                "weight": 140.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "29.32",
+                        "gm": 20.94
+                    }
+                ]
+            },
+            {
+                "ndbno": "10184",
+                "name": "Pork, cured, ham, extra lean and regular, canned, unheated",
+                "weight": 140.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "25.16",
+                        "gm": 17.97
+                    }
+                ]
+            },
+            {
+                "ndbno": "43326",
+                "name": "Pork, cured, ham, low sodium, lean and fat, cooked",
+                "weight": 28.35,
+                "measure": "1.0 oz, boneless",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.32",
+                        "gm": 22.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "10146",
+                "name": "Pork, cured, ham, patties, unheated",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.62",
+                        "gm": 12.78
+                    }
+                ]
+            },
+            {
+                "ndbno": "10140",
+                "name": "Pork, cured, ham, regular (approximately 13% fat), canned, roasted",
+                "weight": 140.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "28.74",
+                        "gm": 20.53
+                    }
+                ]
+            },
+            {
+                "ndbno": "10929",
+                "name": "Pork, cured, ham, rump, bone-in, separable lean and fat, heated, roasted",
+                "weight": 85.0,
+                "measure": "1.0 serving (3 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "20.36",
+                        "gm": 23.95
+                    }
+                ]
+            },
+            {
+                "ndbno": "10955",
+                "name": "Pork, cured, ham, rump, bone-in, separable lean and fat, unheated",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "18.93",
+                        "gm": 22.27
+                    }
+                ]
+            },
+            {
+                "ndbno": "10931",
+                "name": "Pork, cured, ham, rump, bone-in, separable lean only, heated, roasted",
+                "weight": 85.0,
+                "measure": "1.0 serving (3 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.12",
+                        "gm": 26.02
+                    }
+                ]
+            },
+            {
+                "ndbno": "10932",
+                "name": "Pork, cured, ham, rump, bone-in, separable lean only, unheated",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.93",
+                        "gm": 24.46
+                    }
+                ]
+            },
+            {
+                "ndbno": "10894",
+                "name": "Pork, cured, ham, separable fat, boneless, heated",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.45",
+                        "gm": 8.77
+                    }
+                ]
+            },
+            {
+                "ndbno": "10895",
+                "name": "Pork, cured, ham, separable fat, boneless, unheated",
+                "weight": 117.0,
+                "measure": "4.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.78",
+                        "gm": 7.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "10935",
+                "name": "Pork, cured, ham, shank, bone-in, separable lean and fat, heated, roasted",
+                "weight": 85.0,
+                "measure": "1.0 serving (3 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "20.73",
+                        "gm": 24.39
+                    }
+                ]
+            },
+            {
+                "ndbno": "10936",
+                "name": "Pork, cured, ham, shank, bone-in, separable lean and fat, unheated",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.13",
+                        "gm": 21.61
+                    }
+                ]
+            },
+            {
+                "ndbno": "10933",
+                "name": "Pork, cured, ham, shank, bone-in, separable lean only, heated, roasted",
+                "weight": 85.0,
+                "measure": "1.0 serving (3 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.52",
+                        "gm": 26.49
+                    }
+                ]
+            },
+            {
+                "ndbno": "10934",
+                "name": "Pork, cured, ham, shank, bone-in, separable lean only, unheated",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.74",
+                        "gm": 23.79
+                    }
+                ]
+            },
+            {
+                "ndbno": "10937",
+                "name": "Pork, cured, ham, slice, bone-in, separable lean and fat, heated, pan-broil",
+                "weight": 85.0,
+                "measure": "1.0 serving (3 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "21.66",
+                        "gm": 25.48
+                    }
+                ]
+            },
+            {
+                "ndbno": "10939",
+                "name": "Pork, cured, ham, slice, bone-in, separable lean and fat, unheated",
+                "weight": 85.0,
+                "measure": "1.0 serving (3 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "19.08",
+                        "gm": 22.45
+                    }
+                ]
+            },
+            {
+                "ndbno": "10899",
+                "name": "Pork, cured, ham, slice, bone-in, separable lean only, heated, pan-broil",
+                "weight": 85.0,
+                "measure": "1.0 serving (3 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "23.10",
+                        "gm": 27.18
+                    }
+                ]
+            },
+            {
+                "ndbno": "10938",
+                "name": "Pork, cured, ham, slice, bone-in, separable lean only, unheated",
+                "weight": 85.0,
+                "measure": "1.0 serving (3 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "20.71",
+                        "gm": 24.36
+                    }
+                ]
+            },
+            {
+                "ndbno": "10149",
+                "name": "Pork, cured, ham, steak, boneless, extra lean, unheated",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.55",
+                        "gm": 19.56
+                    }
+                ]
+            },
+            {
+                "ndbno": "10150",
+                "name": "Pork, cured, ham, whole, separable lean and fat, unheated",
+                "weight": 140.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "25.89",
+                        "gm": 18.49
+                    }
+                ]
+            },
+            {
+                "ndbno": "10153",
+                "name": "Pork, cured, ham, whole, separable lean only, roasted",
+                "weight": 140.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "35.07",
+                        "gm": 25.05
+                    }
+                ]
+            },
+            {
+                "ndbno": "10152",
+                "name": "Pork, cured, ham, whole, separable lean only, unheated",
+                "weight": 140.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "31.25",
+                        "gm": 22.32
+                    }
+                ]
+            },
+            {
+                "ndbno": "10165",
+                "name": "Pork, cured, salt pork, raw",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.43",
+                        "gm": 5.05
+                    }
+                ]
+            },
+            {
+                "ndbno": "10167",
+                "name": "Pork, cured, separable fat (from ham and arm picnic), roasted",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.17",
+                        "gm": 7.64
+                    }
+                ]
+            },
+            {
+                "ndbno": "10166",
+                "name": "Pork, cured, separable fat (from ham and arm picnic), unheated",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.61",
+                        "gm": 5.68
+                    }
+                ]
+            },
+            {
+                "ndbno": "10168",
+                "name": "Pork, cured, shoulder, arm picnic, separable lean and fat, roasted",
+                "weight": 140.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "28.60",
+                        "gm": 20.43
+                    }
+                ]
+            },
+            {
+                "ndbno": "10169",
+                "name": "Pork, cured, shoulder, arm picnic, separable lean only, roasted",
+                "weight": 140.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "34.92",
+                        "gm": 24.94
+                    }
+                ]
+            },
+            {
+                "ndbno": "10171",
+                "name": "Pork, cured, shoulder, blade roll, separable lean and fat, roasted",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.69",
+                        "gm": 17.28
+                    }
+                ]
+            },
+            {
+                "ndbno": "10170",
+                "name": "Pork, cured, shoulder, blade roll, separable lean and fat, unheated",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.67",
+                        "gm": 16.47
+                    }
+                ]
+            },
+            {
+                "ndbno": "10004",
+                "name": "Pork, fresh, backfat, raw",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.83",
+                        "gm": 2.92
+                    }
+                ]
+            },
+            {
+                "ndbno": "10193",
+                "name": "Pork, fresh, backribs, separable lean and fat, cooked, roasted",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "19.56",
+                        "gm": 23.01
+                    }
+                ]
+            },
+            {
+                "ndbno": "10192",
+                "name": "Pork, fresh, backribs, separable lean and fat, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.21",
+                        "gm": 19.07
+                    }
+                ]
+            },
+            {
+                "ndbno": "10005",
+                "name": "Pork, fresh, belly, raw",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.65",
+                        "gm": 9.34
+                    }
+                ]
+            },
+            {
+                "ndbno": "10988",
+                "name": "Pork, fresh, blade, (chops), boneless, separable lean and fat, cooked, broiled",
+                "weight": 131.0,
+                "measure": "1.0 chop",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "32.40",
+                        "gm": 24.73
+                    }
+                ]
+            },
+            {
+                "ndbno": "10001",
+                "name": "Pork, fresh, carcass, separable lean and fat, raw",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.94",
+                        "gm": 13.91
+                    }
+                ]
+            },
+            {
+                "ndbno": "10000",
+                "name": "Pork, fresh, composite of separable fat, with added solution, cooked",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.55",
+                        "gm": 10.06
+                    }
+                ]
+            },
+            {
+                "ndbno": "10942",
+                "name": "Pork, fresh, composite of separable fat, with added solution, raw",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.63",
+                        "gm": 9.27
+                    }
+                ]
+            },
+            {
+                "ndbno": "10003",
+                "name": "Pork, fresh, composite of trimmed leg, loin, shoulder, and spareribs, (includes cuts to be cured), separable lean and fat, raw",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.17",
+                        "gm": 18.22
+                    }
+                ]
+            },
+            {
+                "ndbno": "10093",
+                "name": "Pork, fresh, composite of trimmed retail cuts (leg, loin, and shoulder), separable lean only, cooked",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "23.38",
+                        "gm": 27.51
+                    }
+                ]
+            },
+            {
+                "ndbno": "10002",
+                "name": "Pork, fresh, composite of trimmed retail cuts (leg, loin, shoulder), separable lean only, raw",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.01",
+                        "gm": 21.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "10188",
+                "name": "Pork, fresh, composite of trimmed retail cuts (leg, loin, shoulder, and spareribs), separable lean and fat, cooked",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.41",
+                        "gm": 26.36
+                    }
+                ]
+            },
+            {
+                "ndbno": "10187",
+                "name": "Pork, fresh, composite of trimmed retail cuts (leg, loin, shoulder, and spareribs), separable lean and fat, raw",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.37",
+                        "gm": 18.95
+                    }
+                ]
+            },
+            {
+                "ndbno": "10227",
+                "name": "Pork, fresh, composite of trimmed retail cuts (loin and shoulder blade), separable lean and fat, cooked",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.16",
+                        "gm": 26.07
+                    }
+                ]
+            },
+            {
+                "ndbno": "10226",
+                "name": "Pork, fresh, composite of trimmed retail cuts (loin and shoulder blade), separable lean and fat, raw",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.69",
+                        "gm": 20.08
+                    }
+                ]
+            },
+            {
+                "ndbno": "10229",
+                "name": "Pork, fresh, composite of trimmed retail cuts (loin and shoulder blade), separable lean only, cooked",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "25.05",
+                        "gm": 29.47
+                    }
+                ]
+            },
+            {
+                "ndbno": "10228",
+                "name": "Pork, fresh, composite of trimmed retail cuts (loin and shoulder blade), separable lean only, raw",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.02",
+                        "gm": 21.23
+                    }
+                ]
+            },
+            {
+                "ndbno": "10944",
+                "name": "Pork, fresh, enhanced, loin, tenderloin, separable lean only, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.33",
+                        "gm": 20.39
+                    }
+                ]
+            },
+            {
+                "ndbno": "10220",
+                "name": "Pork, fresh, ground, cooked",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "21.84",
+                        "gm": 25.69
+                    }
+                ]
+            },
+            {
+                "ndbno": "10219",
+                "name": "Pork, fresh, ground, raw",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.79",
+                        "gm": 16.88
+                    }
+                ]
+            },
+            {
+                "ndbno": "10013",
+                "name": "Pork, fresh, leg (ham), rump half, separable lean and fat, cooked, roasted",
+                "weight": 135.0,
+                "measure": "1.0 cup, diced",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "36.49",
+                        "gm": 27.03
+                    }
+                ]
+            },
+            {
+                "ndbno": "10012",
+                "name": "Pork, fresh, leg (ham), rump half, separable lean and fat, raw",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.75",
+                        "gm": 20.27
+                    }
+                ]
+            },
+            {
+                "ndbno": "10015",
+                "name": "Pork, fresh, leg (ham), rump half, separable lean only, cooked, roasted",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "24.53",
+                        "gm": 28.86
+                    }
+                ]
+            },
+            {
+                "ndbno": "10014",
+                "name": "Pork, fresh, leg (ham), rump half, separable lean only, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "18.54",
+                        "gm": 21.81
+                    }
+                ]
+            },
+            {
+                "ndbno": "10017",
+                "name": "Pork, fresh, leg (ham), shank half, separable lean and fat, cooked, roasted",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.07",
+                        "gm": 25.96
+                    }
+                ]
+            },
+            {
+                "ndbno": "10016",
+                "name": "Pork, fresh, leg (ham), shank half, separable lean and fat, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.89",
+                        "gm": 19.87
+                    }
+                ]
+            },
+            {
+                "ndbno": "10019",
+                "name": "Pork, fresh, leg (ham), shank half, separable lean only, cooked, roasted",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "24.39",
+                        "gm": 28.69
+                    }
+                ]
+            },
+            {
+                "ndbno": "10018",
+                "name": "Pork, fresh, leg (ham), shank half, separable lean only, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "18.41",
+                        "gm": 21.66
+                    }
+                ]
+            },
+            {
+                "ndbno": "10009",
+                "name": "Pork, fresh, leg (ham), whole, separable lean and fat, cooked, roasted",
+                "weight": 135.0,
+                "measure": "1.0 cup, diced",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "36.22",
+                        "gm": 26.83
+                    }
+                ]
+            },
+            {
+                "ndbno": "10008",
+                "name": "Pork, fresh, leg (ham), whole, separable lean and fat, raw",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.94",
+                        "gm": 17.43
+                    }
+                ]
+            },
+            {
+                "ndbno": "10011",
+                "name": "Pork, fresh, leg (ham), whole, separable lean only, cooked, roasted",
+                "weight": 135.0,
+                "measure": "1.0 cup, diced",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "39.70",
+                        "gm": 29.41
+                    }
+                ]
+            },
+            {
+                "ndbno": "10010",
+                "name": "Pork, fresh, leg (ham), whole, separable lean only, raw",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.81",
+                        "gm": 20.48
+                    }
+                ]
+            },
+            {
+                "ndbno": "10028",
+                "name": "Pork, fresh, loin, blade (chops or roasts), bone-in, separable lean and fat, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.63",
+                        "gm": 19.56
+                    }
+                ]
+            },
+            {
+                "ndbno": "10032",
+                "name": "Pork, fresh, loin, blade (chops or roasts), bone-in, separable lean only, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "18.04",
+                        "gm": 21.22
+                    }
+                ]
+            },
+            {
+                "ndbno": "10989",
+                "name": "Pork, fresh, loin, blade (chops or roasts), boneless, separable lean and fat only, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.46",
+                        "gm": 20.54
+                    }
+                ]
+            },
+            {
+                "ndbno": "10982",
+                "name": "Pork, fresh, loin, blade (chops or roasts), boneless, separable lean only, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "18.15",
+                        "gm": 21.35
+                    }
+                ]
+            },
+            {
+                "ndbno": "10029",
+                "name": "Pork, fresh, loin, blade (chops), bone-in, separable lean and fat, cooked, braised",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.56",
+                        "gm": 26.54
+                    }
+                ]
+            },
+            {
+                "ndbno": "10030",
+                "name": "Pork, fresh, loin, blade (chops), bone-in, separable lean and fat, cooked, broiled",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "20.16",
+                        "gm": 23.72
+                    }
+                ]
+            },
+            {
+                "ndbno": "10178",
+                "name": "Pork, fresh, loin, blade (chops), bone-in, separable lean and fat, cooked, pan-fried",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "21.27",
+                        "gm": 25.02
+                    }
+                ]
+            },
+            {
+                "ndbno": "10033",
+                "name": "Pork, fresh, loin, blade (chops), bone-in, separable lean only, cooked, braised",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "23.82",
+                        "gm": 28.02
+                    }
+                ]
+            },
+            {
+                "ndbno": "10034",
+                "name": "Pork, fresh, loin, blade (chops), bone-in, separable lean only, cooked, broiled",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "21.24",
+                        "gm": 24.99
+                    }
+                ]
+            },
+            {
+                "ndbno": "10120",
+                "name": "Pork, fresh, loin, blade (chops), bone-in, separable lean only, cooked, pan-fried",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.42",
+                        "gm": 26.38
+                    }
+                ]
+            },
+            {
+                "ndbno": "10984",
+                "name": "Pork, fresh, loin, blade (chops), boneless, separable lean only, boneless, cooked, broiled",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.22",
+                        "gm": 26.14
+                    }
+                ]
+            },
+            {
+                "ndbno": "10031",
+                "name": "Pork, fresh, loin, blade (roasts), bone-in, separable lean and fat, cooked, roasted",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "20.65",
+                        "gm": 24.29
+                    }
+                ]
+            },
+            {
+                "ndbno": "10035",
+                "name": "Pork, fresh, loin, blade (roasts), bone-in, separable lean only, cooked, roasted",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "21.84",
+                        "gm": 25.7
+                    }
+                ]
+            },
+            {
+                "ndbno": "10990",
+                "name": "Pork, fresh, loin, blade (roasts), boneless, separable lean and fat, cooked, roasted",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.51",
+                        "gm": 26.48
+                    }
+                ]
+            },
+            {
+                "ndbno": "10983",
+                "name": "Pork, fresh, loin, blade (roasts), boneless, separable lean only, cooked, roasted",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "23.44",
+                        "gm": 27.58
+                    }
+                ]
+            },
+            {
+                "ndbno": "10037",
+                "name": "Pork, fresh, loin, center loin (chops), bone-in, separable lean and fat, cooked, braised",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "23.98",
+                        "gm": 28.21
+                    }
+                ]
+            },
+            {
+                "ndbno": "10038",
+                "name": "Pork, fresh, loin, center loin (chops), bone-in, separable lean and fat, cooked, broiled",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "21.77",
+                        "gm": 25.61
+                    }
+                ]
+            },
+            {
+                "ndbno": "10179",
+                "name": "Pork, fresh, loin, center loin (chops), bone-in, separable lean and fat, cooked, pan-fried",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "23.49",
+                        "gm": 27.63
+                    }
+                ]
+            },
+            {
+                "ndbno": "10036",
+                "name": "Pork, fresh, loin, center loin (chops), bone-in, separable lean and fat, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.60",
+                        "gm": 20.71
+                    }
+                ]
+            },
+            {
+                "ndbno": "10041",
+                "name": "Pork, fresh, loin, center loin (chops), bone-in, separable lean only, cooked, braised",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "25.67",
+                        "gm": 30.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "10042",
+                "name": "Pork, fresh, loin, center loin (chops), bone-in, separable lean only, cooked, broiled",
+                "weight": 146.0,
+                "measure": "1.0 chop without refuse (Yield from 1 cooked chop, with refuse, weighing 209g)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "39.07",
+                        "gm": 26.76
+                    }
+                ]
+            },
+            {
+                "ndbno": "10176",
+                "name": "Pork, fresh, loin, center loin (chops), bone-in, separable lean only, cooked, pan-fried",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "25.13",
+                        "gm": 29.56
+                    }
+                ]
+            },
+            {
+                "ndbno": "10040",
+                "name": "Pork, fresh, loin, center loin (chops), bone-in, separable lean only, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "18.69",
+                        "gm": 21.99
+                    }
+                ]
+            },
+            {
+                "ndbno": "10189",
+                "name": "Pork, fresh, loin, center loin (chops), boneless, separable lean and fat, cooked, pan-broiled",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.68",
+                        "gm": 26.68
+                    }
+                ]
+            },
+            {
+                "ndbno": "10164",
+                "name": "Pork, fresh, loin, center loin (chops), boneless, separable lean and fat, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.97",
+                        "gm": 21.14
+                    }
+                ]
+            },
+            {
+                "ndbno": "10163",
+                "name": "Pork, fresh, loin, center loin (chops), boneless, separable lean only, cooked, pan-broiled",
+                "weight": 114.0,
+                "measure": "4.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "34.22",
+                        "gm": 30.02
+                    }
+                ]
+            },
+            {
+                "ndbno": "10094",
+                "name": "Pork, fresh, loin, center loin (chops), boneless, separable lean only, raw",
+                "weight": 114.0,
+                "measure": "4.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "27.07",
+                        "gm": 23.75
+                    }
+                ]
+            },
+            {
+                "ndbno": "10039",
+                "name": "Pork, fresh, loin, center loin (roasts), bone-in, separable lean and fat, cooked, roasted",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.96",
+                        "gm": 27.01
+                    }
+                ]
+            },
+            {
+                "ndbno": "10043",
+                "name": "Pork, fresh, loin, center loin (roasts), bone-in, separable lean only, cooked, roasted",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "24.29",
+                        "gm": 28.58
+                    }
+                ]
+            },
+            {
+                "ndbno": "10044",
+                "name": "Pork, fresh, loin, center rib (chops or roasts), bone-in, separable lean and fat, raw",
+                "weight": 133.0,
+                "measure": "1.0 chop without refuse (Yield from 1 raw chop, with refuse, weighing 201g)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "26.97",
+                        "gm": 20.28
+                    }
+                ]
+            },
+            {
+                "ndbno": "10048",
+                "name": "Pork, fresh, loin, center rib (chops or roasts), bone-in, separable lean only, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "18.52",
+                        "gm": 21.79
+                    }
+                ]
+            },
+            {
+                "ndbno": "10194",
+                "name": "Pork, fresh, loin, center rib (chops or roasts), boneless, separable lean and fat, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.91",
+                        "gm": 19.9
+                    }
+                ]
+            },
+            {
+                "ndbno": "10199",
+                "name": "Pork, fresh, loin, center rib (chops or roasts), boneless, separable lean only, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "18.53",
+                        "gm": 21.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "10045",
+                "name": "Pork, fresh, loin, center rib (chops), bone-in, separable lean and fat, cooked, braised",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.66",
+                        "gm": 26.66
+                    }
+                ]
+            },
+            {
+                "ndbno": "10046",
+                "name": "Pork, fresh, loin, center rib (chops), bone-in, separable lean and fat, cooked, broiled",
+                "weight": 112.0,
+                "measure": "1.0 chop without refuse (Yield from 1 cooked chop, with refuse, weighing 172g)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "27.35",
+                        "gm": 24.42
+                    }
+                ]
+            },
+            {
+                "ndbno": "10180",
+                "name": "Pork, fresh, loin, center rib (chops), bone-in, separable lean and fat, cooked, pan-fried",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.79",
+                        "gm": 26.81
+                    }
+                ]
+            },
+            {
+                "ndbno": "10049",
+                "name": "Pork, fresh, loin, center rib (chops), bone-in, separable lean only, cooked, braised",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "24.68",
+                        "gm": 29.03
+                    }
+                ]
+            },
+            {
+                "ndbno": "10050",
+                "name": "Pork, fresh, loin, center rib (chops), bone-in, separable lean only, cooked, broiled",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "21.92",
+                        "gm": 25.79
+                    }
+                ]
+            },
+            {
+                "ndbno": "10177",
+                "name": "Pork, fresh, loin, center rib (chops), bone-in, separable lean only, cooked, pan-fried",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "24.51",
+                        "gm": 28.84
+                    }
+                ]
+            },
+            {
+                "ndbno": "10195",
+                "name": "Pork, fresh, loin, center rib (chops), boneless, separable lean and fat, cooked, braised",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.35",
+                        "gm": 26.29
+                    }
+                ]
+            },
+            {
+                "ndbno": "10196",
+                "name": "Pork, fresh, loin, center rib (chops), boneless, separable lean and fat, cooked, broiled",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "23.49",
+                        "gm": 27.63
+                    }
+                ]
+            },
+            {
+                "ndbno": "10197",
+                "name": "Pork, fresh, loin, center rib (chops), boneless, separable lean and fat, cooked, pan-fried",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "21.95",
+                        "gm": 25.82
+                    }
+                ]
+            },
+            {
+                "ndbno": "10200",
+                "name": "Pork, fresh, loin, center rib (chops), boneless, separable lean only, cooked, braised",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "23.76",
+                        "gm": 27.95
+                    }
+                ]
+            },
+            {
+                "ndbno": "10201",
+                "name": "Pork, fresh, loin, center rib (chops), boneless, separable lean only, cooked, broiled",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "25.04",
+                        "gm": 29.46
+                    }
+                ]
+            },
+            {
+                "ndbno": "10202",
+                "name": "Pork, fresh, loin, center rib (chops), boneless, separable lean only, cooked, pan-fried",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "23.53",
+                        "gm": 27.68
+                    }
+                ]
+            },
+            {
+                "ndbno": "10047",
+                "name": "Pork, fresh, loin, center rib (roasts), bone-in, separable lean and fat, cooked, roasted",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.94",
+                        "gm": 26.99
+                    }
+                ]
+            },
+            {
+                "ndbno": "10051",
+                "name": "Pork, fresh, loin, center rib (roasts), bone-in, separable lean only, cooked, roasted",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "24.50",
+                        "gm": 28.82
+                    }
+                ]
+            },
+            {
+                "ndbno": "10198",
+                "name": "Pork, fresh, loin, center rib (roasts), boneless, separable lean and fat, cooked, roasted",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.94",
+                        "gm": 26.99
+                    }
+                ]
+            },
+            {
+                "ndbno": "10203",
+                "name": "Pork, fresh, loin, center rib (roasts), boneless, separable lean only, cooked, roasted",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "24.49",
+                        "gm": 28.81
+                    }
+                ]
+            },
+            {
+                "ndbno": "10992",
+                "name": "Pork, fresh, loin, country-style ribs, separable lean and fat, bone-in, cooked, broiled",
+                "weight": 122.0,
+                "measure": "1.0 rack",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "31.21",
+                        "gm": 25.58
+                    }
+                ]
+            },
+            {
+                "ndbno": "10206",
+                "name": "Pork, fresh, loin, country-style ribs, separable lean and fat, bone-in, cooked, roasted",
+                "weight": 138.0,
+                "measure": "1.0 rack",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "30.02",
+                        "gm": 21.75
+                    }
+                ]
+            },
+            {
+                "ndbno": "10991",
+                "name": "Pork, fresh, loin, country-style ribs, separable lean and fat, boneless, cooked, broiled",
+                "weight": 122.0,
+                "measure": "1.0 rack",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "32.06",
+                        "gm": 26.28
+                    }
+                ]
+            },
+            {
+                "ndbno": "10993",
+                "name": "Pork, fresh, loin, country-style ribs, separable lean and fat, boneless, cooked, roasted",
+                "weight": 138.0,
+                "measure": "1.0 rack",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "36.43",
+                        "gm": 26.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "10205",
+                "name": "Pork, fresh, loin, country-style ribs, separable lean and fat, cooked, braised",
+                "weight": 86.0,
+                "measure": "1.0 rib without refuse (Yield from 1 cooked rib, with refuse, weighing 140g)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.78",
+                        "gm": 26.49
+                    }
+                ]
+            },
+            {
+                "ndbno": "10204",
+                "name": "Pork, fresh, loin, country-style ribs, separable lean and fat, raw",
+                "weight": 128.0,
+                "measure": "1.0 rib without refuse (Yield from 1 raw rib, with refuse, weighing 196g)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "24.76",
+                        "gm": 19.34
+                    }
+                ]
+            },
+            {
+                "ndbno": "10986",
+                "name": "Pork, fresh, loin, country-style ribs, separable lean only, bone-in, cooked, broiled",
+                "weight": 122.0,
+                "measure": "1.0 rack",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "33.95",
+                        "gm": 27.83
+                    }
+                ]
+            },
+            {
+                "ndbno": "10209",
+                "name": "Pork, fresh, loin, country-style ribs, separable lean only, bone-in, cooked, roasted",
+                "weight": 138.0,
+                "measure": "1.0 rack",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "40.30",
+                        "gm": 29.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "10985",
+                "name": "Pork, fresh, loin, country-style ribs, separable lean only, boneless, cooked, broiled",
+                "weight": 122.0,
+                "measure": "1.0 rack",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "33.95",
+                        "gm": 27.83
+                    }
+                ]
+            },
+            {
+                "ndbno": "10987",
+                "name": "Pork, fresh, loin, country-style ribs, separable lean only, boneless, cooked, roasted",
+                "weight": 138.0,
+                "measure": "1.0 rack",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "40.30",
+                        "gm": 29.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "10208",
+                "name": "Pork, fresh, loin, country-style ribs, separable lean only, cooked, braised",
+                "weight": 80.0,
+                "measure": "1.0 rib without refuse (yield from 1 cooked rib, with refuse, weighing 141g)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.19",
+                        "gm": 27.74
+                    }
+                ]
+            },
+            {
+                "ndbno": "10207",
+                "name": "Pork, fresh, loin, country-style ribs, separable lean only, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.65",
+                        "gm": 20.76
+                    }
+                ]
+            },
+            {
+                "ndbno": "10052",
+                "name": "Pork, fresh, loin, sirloin (chops or roasts), bone-in, separable lean and fat, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.41",
+                        "gm": 20.48
+                    }
+                ]
+            },
+            {
+                "ndbno": "10056",
+                "name": "Pork, fresh, loin, sirloin (chops or roasts), bone-in, separable lean only, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "18.40",
+                        "gm": 21.65
+                    }
+                ]
+            },
+            {
+                "ndbno": "10210",
+                "name": "Pork, fresh, loin, sirloin (chops or roasts), boneless, separable lean and fat, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "19.12",
+                        "gm": 22.49
+                    }
+                ]
+            },
+            {
+                "ndbno": "10214",
+                "name": "Pork, fresh, loin, sirloin (chops or roasts), boneless, separable lean only, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "19.39",
+                        "gm": 22.81
+                    }
+                ]
+            },
+            {
+                "ndbno": "10053",
+                "name": "Pork, fresh, loin, sirloin (chops), bone-in, separable lean and fat, cooked, braised",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "24.49",
+                        "gm": 28.81
+                    }
+                ]
+            },
+            {
+                "ndbno": "10054",
+                "name": "Pork, fresh, loin, sirloin (chops), bone-in, separable lean and fat, cooked, broiled",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.92",
+                        "gm": 26.96
+                    }
+                ]
+            },
+            {
+                "ndbno": "10057",
+                "name": "Pork, fresh, loin, sirloin (chops), bone-in, separable lean only, cooked, braised",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "26.35",
+                        "gm": 31.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "10058",
+                "name": "Pork, fresh, loin, sirloin (chops), bone-in, separable lean only, cooked, broiled",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "24.90",
+                        "gm": 29.29
+                    }
+                ]
+            },
+            {
+                "ndbno": "10211",
+                "name": "Pork, fresh, loin, sirloin (chops), boneless, separable lean and fat, cooked, braised",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "24.15",
+                        "gm": 28.41
+                    }
+                ]
+            },
+            {
+                "ndbno": "10212",
+                "name": "Pork, fresh, loin, sirloin (chops), boneless, separable lean and fat, cooked, broiled",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "23.96",
+                        "gm": 28.19
+                    }
+                ]
+            },
+            {
+                "ndbno": "10215",
+                "name": "Pork, fresh, loin, sirloin (chops), boneless, separable lean only, cooked, braised",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "24.44",
+                        "gm": 28.75
+                    }
+                ]
+            },
+            {
+                "ndbno": "10216",
+                "name": "Pork, fresh, loin, sirloin (chops), boneless, separable lean only, cooked, broiled",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "24.31",
+                        "gm": 28.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "10055",
+                "name": "Pork, fresh, loin, sirloin (roasts), bone-in, separable lean and fat, cooked, roasted",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.64",
+                        "gm": 26.64
+                    }
+                ]
+            },
+            {
+                "ndbno": "10059",
+                "name": "Pork, fresh, loin, sirloin (roasts), bone-in, separable lean only, cooked, roasted",
+                "weight": 85.0,
+                "measure": "3.0 oz (Yield from 1 cooked roast, with refuse, weighing 1515g)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "23.61",
+                        "gm": 27.78
+                    }
+                ]
+            },
+            {
+                "ndbno": "10213",
+                "name": "Pork, fresh, loin, sirloin (roasts), boneless, separable lean and fat, cooked, roasted",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "25.18",
+                        "gm": 29.62
+                    }
+                ]
+            },
+            {
+                "ndbno": "10217",
+                "name": "Pork, fresh, loin, sirloin (roasts), boneless, separable lean only, cooked, roasted",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "25.83",
+                        "gm": 30.39
+                    }
+                ]
+            },
+            {
+                "ndbno": "10221",
+                "name": "Pork, fresh, loin, tenderloin, separable lean and fat, cooked, broiled",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "25.38",
+                        "gm": 29.86
+                    }
+                ]
+            },
+            {
+                "ndbno": "10222",
+                "name": "Pork, fresh, loin, tenderloin, separable lean and fat, cooked, roasted",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.13",
+                        "gm": 26.04
+                    }
+                ]
+            },
+            {
+                "ndbno": "10218",
+                "name": "Pork, fresh, loin, tenderloin, separable lean and fat, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.55",
+                        "gm": 20.65
+                    }
+                ]
+            },
+            {
+                "ndbno": "10952",
+                "name": "Pork, fresh, loin, tenderloin, separable lean and fat, with added solution, cooked, roasted",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "18.27",
+                        "gm": 21.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "10951",
+                "name": "Pork, fresh, loin, tenderloin, separable lean and fat, with added solution, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.14",
+                        "gm": 20.16
+                    }
+                ]
+            },
+            {
+                "ndbno": "10223",
+                "name": "Pork, fresh, loin, tenderloin, separable lean only, cooked, broiled",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "25.86",
+                        "gm": 30.42
+                    }
+                ]
+            },
+            {
+                "ndbno": "10061",
+                "name": "Pork, fresh, loin, tenderloin, separable lean only, cooked, roasted",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.24",
+                        "gm": 26.17
+                    }
+                ]
+            },
+            {
+                "ndbno": "10060",
+                "name": "Pork, fresh, loin, tenderloin, separable lean only, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.81",
+                        "gm": 20.95
+                    }
+                ]
+            },
+            {
+                "ndbno": "10943",
+                "name": "Pork, fresh, loin, tenderloin, separable lean only, with added solution, cooked, roasted",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "18.37",
+                        "gm": 21.61
+                    }
+                ]
+            },
+            {
+                "ndbno": "10063",
+                "name": "Pork, fresh, loin, top loin (chops), boneless, separable lean and fat, cooked, braised",
+                "weight": 135.0,
+                "measure": "1.0 chop",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "39.42",
+                        "gm": 29.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "10064",
+                "name": "Pork, fresh, loin, top loin (chops), boneless, separable lean and fat, cooked, broiled",
+                "weight": 145.0,
+                "measure": "1.0 chop",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "38.60",
+                        "gm": 26.62
+                    }
+                ]
+            },
+            {
+                "ndbno": "10186",
+                "name": "Pork, fresh, loin, top loin (chops), boneless, separable lean and fat, cooked, pan-fried",
+                "weight": 142.0,
+                "measure": "1.0 chop",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "41.69",
+                        "gm": 29.36
+                    }
+                ]
+            },
+            {
+                "ndbno": "10062",
+                "name": "Pork, fresh, loin, top loin (chops), boneless, separable lean and fat, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "18.32",
+                        "gm": 21.55
+                    }
+                ]
+            },
+            {
+                "ndbno": "10950",
+                "name": "Pork, fresh, loin, top loin (chops), boneless, separable lean and fat, with added solution, cooked, broiled",
+                "weight": 107.0,
+                "measure": "1.0 chop",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "30.31",
+                        "gm": 28.33
+                    }
+                ]
+            },
+            {
+                "ndbno": "10859",
+                "name": "Pork, fresh, loin, top loin (chops), boneless, separable lean and fat, with added solution, cooked, pan-broiled",
+                "weight": 150.0,
+                "measure": "1.0 chop boneless (yield from 189g raw meat)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "42.52",
+                        "gm": 28.35
+                    }
+                ]
+            },
+            {
+                "ndbno": "10949",
+                "name": "Pork, fresh, loin, top loin (chops), boneless, separable lean and fat, with added solution, raw",
+                "weight": 146.0,
+                "measure": "1.0 chop",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "28.40",
+                        "gm": 19.45
+                    }
+                ]
+            },
+            {
+                "ndbno": "10067",
+                "name": "Pork, fresh, loin, top loin (chops), boneless, separable lean only, cooked, braised",
+                "weight": 135.0,
+                "measure": "1.0 chop",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "41.23",
+                        "gm": 30.54
+                    }
+                ]
+            },
+            {
+                "ndbno": "10068",
+                "name": "Pork, fresh, loin, top loin (chops), boneless, separable lean only, cooked, broiled",
+                "weight": 145.0,
+                "measure": "1.0 chop",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "39.99",
+                        "gm": 27.58
+                    }
+                ]
+            },
+            {
+                "ndbno": "10181",
+                "name": "Pork, fresh, loin, top loin (chops), boneless, separable lean only, cooked, pan-fried",
+                "weight": 142.0,
+                "measure": "1.0 chop",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "43.25",
+                        "gm": 30.46
+                    }
+                ]
+            },
+            {
+                "ndbno": "10066",
+                "name": "Pork, fresh, loin, top loin (chops), boneless, separable lean only, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "19.05",
+                        "gm": 22.41
+                    }
+                ]
+            },
+            {
+                "ndbno": "10947",
+                "name": "Pork, fresh, loin, top loin (chops), boneless, separable lean only, with added solution, cooked, broiled",
+                "weight": 107.0,
+                "measure": "1.0 chop",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "31.73",
+                        "gm": 29.65
+                    }
+                ]
+            },
+            {
+                "ndbno": "10858",
+                "name": "Pork, fresh, loin, top loin (chops), boneless, separable lean only, with added solution, cooked, pan-broiled",
+                "weight": 150.0,
+                "measure": "1.0 chop boneless",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "43.42",
+                        "gm": 28.95
+                    }
+                ]
+            },
+            {
+                "ndbno": "10948",
+                "name": "Pork, fresh, loin, top loin (chops), boneless, separable lean only, with added solution, raw",
+                "weight": 114.0,
+                "measure": "4.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "24.04",
+                        "gm": 21.09
+                    }
+                ]
+            },
+            {
+                "ndbno": "10065",
+                "name": "Pork, fresh, loin, top loin (roasts), boneless, separable lean and fat, cooked, roasted",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.48",
+                        "gm": 26.45
+                    }
+                ]
+            },
+            {
+                "ndbno": "10224",
+                "name": "Pork, fresh, loin, top loin (roasts), boneless, separable lean and fat, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "18.14",
+                        "gm": 21.34
+                    }
+                ]
+            },
+            {
+                "ndbno": "10069",
+                "name": "Pork, fresh, loin, top loin (roasts), boneless, separable lean only, cooked, roasted",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "23.15",
+                        "gm": 27.23
+                    }
+                ]
+            },
+            {
+                "ndbno": "10225",
+                "name": "Pork, fresh, loin, top loin (roasts), boneless, separable lean only, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "19.03",
+                        "gm": 22.39
+                    }
+                ]
+            },
+            {
+                "ndbno": "10021",
+                "name": "Pork, fresh, loin, whole, separable lean and fat, cooked, braised",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "23.15",
+                        "gm": 27.23
+                    }
+                ]
+            },
+            {
+                "ndbno": "10022",
+                "name": "Pork, fresh, loin, whole, separable lean and fat, cooked, broiled",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "23.22",
+                        "gm": 27.32
+                    }
+                ]
+            },
+            {
+                "ndbno": "10023",
+                "name": "Pork, fresh, loin, whole, separable lean and fat, cooked, roasted",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "23.03",
+                        "gm": 27.09
+                    }
+                ]
+            },
+            {
+                "ndbno": "10020",
+                "name": "Pork, fresh, loin, whole, separable lean and fat, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.78",
+                        "gm": 19.74
+                    }
+                ]
+            },
+            {
+                "ndbno": "10025",
+                "name": "Pork, fresh, loin, whole, separable lean only, cooked, braised",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "24.28",
+                        "gm": 28.57
+                    }
+                ]
+            },
+            {
+                "ndbno": "10026",
+                "name": "Pork, fresh, loin, whole, separable lean only, cooked, broiled",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "24.28",
+                        "gm": 28.57
+                    }
+                ]
+            },
+            {
+                "ndbno": "10027",
+                "name": "Pork, fresh, loin, whole, separable lean only, cooked, roasted",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "24.33",
+                        "gm": 28.62
+                    }
+                ]
+            },
+            {
+                "ndbno": "10024",
+                "name": "Pork, fresh, loin, whole, separable lean only, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "18.22",
+                        "gm": 21.43
+                    }
+                ]
+            },
+            {
+                "ndbno": "10007",
+                "name": "Pork, fresh, separable fat, cooked",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.00",
+                        "gm": 7.06
+                    }
+                ]
+            },
+            {
+                "ndbno": "10006",
+                "name": "Pork, fresh, separable fat, raw",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.62",
+                        "gm": 9.25
+                    }
+                ]
+            },
+            {
+                "ndbno": "10081",
+                "name": "Pork, fresh, shoulder, (Boston butt), blade (steaks), separable lean and fat, cooked, braised",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "21.31",
+                        "gm": 25.07
+                    }
+                ]
+            },
+            {
+                "ndbno": "10080",
+                "name": "Pork, fresh, shoulder, (Boston butt), blade (steaks), separable lean and fat, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.81",
+                        "gm": 17.42
+                    }
+                ]
+            },
+            {
+                "ndbno": "10954",
+                "name": "Pork, fresh, shoulder, (Boston butt), blade (steaks), separable lean and fat, with added solution, cooked, braised",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "21.96",
+                        "gm": 25.84
+                    }
+                ]
+            },
+            {
+                "ndbno": "10953",
+                "name": "Pork, fresh, shoulder, (Boston butt), blade (steaks), separable lean and fat,with added solution, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.61",
+                        "gm": 17.19
+                    }
+                ]
+            },
+            {
+                "ndbno": "10085",
+                "name": "Pork, fresh, shoulder, (Boston butt), blade (steaks), separable lean only, cooked, braised",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.58",
+                        "gm": 26.57
+                    }
+                ]
+            },
+            {
+                "ndbno": "10084",
+                "name": "Pork, fresh, shoulder, (Boston butt), blade (steaks), separable lean only, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.92",
+                        "gm": 18.73
+                    }
+                ]
+            },
+            {
+                "ndbno": "10945",
+                "name": "Pork, fresh, shoulder, (Boston butt), blade (steaks), separable lean only, with added solution cooked, braised",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "23.44",
+                        "gm": 27.58
+                    }
+                ]
+            },
+            {
+                "ndbno": "10946",
+                "name": "Pork, fresh, shoulder, (Boston butt), blade (steaks), separable lean only, with added solution, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.55",
+                        "gm": 18.29
+                    }
+                ]
+            },
+            {
+                "ndbno": "10075",
+                "name": "Pork, fresh, shoulder, arm picnic, separable lean and fat, cooked, braised",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "21.15",
+                        "gm": 24.88
+                    }
+                ]
+            },
+            {
+                "ndbno": "10076",
+                "name": "Pork, fresh, shoulder, arm picnic, separable lean and fat, cooked, roasted",
+                "weight": 135.0,
+                "measure": "1.0 cup, diced",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "31.68",
+                        "gm": 23.47
+                    }
+                ]
+            },
+            {
+                "ndbno": "10074",
+                "name": "Pork, fresh, shoulder, arm picnic, separable lean and fat, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.90",
+                        "gm": 18.71
+                    }
+                ]
+            },
+            {
+                "ndbno": "10078",
+                "name": "Pork, fresh, shoulder, arm picnic, separable lean only, cooked, braised",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.75",
+                        "gm": 26.76
+                    }
+                ]
+            },
+            {
+                "ndbno": "10079",
+                "name": "Pork, fresh, shoulder, arm picnic, separable lean only, cooked, roasted",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.68",
+                        "gm": 26.68
+                    }
+                ]
+            },
+            {
+                "ndbno": "10077",
+                "name": "Pork, fresh, shoulder, arm picnic, separable lean only, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.22",
+                        "gm": 20.26
+                    }
+                ]
+            },
+            {
+                "ndbno": "10083",
+                "name": "Pork, fresh, shoulder, blade, boston (roasts), separable lean and fat, cooked, roasted",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "19.64",
+                        "gm": 23.11
+                    }
+                ]
+            },
+            {
+                "ndbno": "10087",
+                "name": "Pork, fresh, shoulder, blade, boston (roasts), separable lean only, cooked, roasted",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "20.58",
+                        "gm": 24.21
+                    }
+                ]
+            },
+            {
+                "ndbno": "10082",
+                "name": "Pork, fresh, shoulder, blade, boston (steaks), separable lean and fat, cooked, broiled",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "21.74",
+                        "gm": 25.58
+                    }
+                ]
+            },
+            {
+                "ndbno": "10086",
+                "name": "Pork, fresh, shoulder, blade, boston (steaks), separable lean only, cooked, broiled",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.73",
+                        "gm": 26.74
+                    }
+                ]
+            },
+            {
+                "ndbno": "10071",
+                "name": "Pork, fresh, shoulder, whole, separable lean and fat, cooked, roasted",
+                "weight": 135.0,
+                "measure": "1.0 cup, diced",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "31.43",
+                        "gm": 23.28
+                    }
+                ]
+            },
+            {
+                "ndbno": "10070",
+                "name": "Pork, fresh, shoulder, whole, separable lean and fat, raw",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.87",
+                        "gm": 17.18
+                    }
+                ]
+            },
+            {
+                "ndbno": "10073",
+                "name": "Pork, fresh, shoulder, whole, separable lean only, cooked, roasted",
+                "weight": 135.0,
+                "measure": "1.0 cup, diced",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "34.20",
+                        "gm": 25.33
+                    }
+                ]
+            },
+            {
+                "ndbno": "10072",
+                "name": "Pork, fresh, shoulder, whole, separable lean only, raw",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.54",
+                        "gm": 19.55
+                    }
+                ]
+            },
+            {
+                "ndbno": "10089",
+                "name": "Pork, fresh, spareribs, separable lean and fat, cooked, braised",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "24.70",
+                        "gm": 29.06
+                    }
+                ]
+            },
+            {
+                "ndbno": "10940",
+                "name": "Pork, fresh, spareribs, separable lean and fat, cooked, roasted",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.76",
+                        "gm": 20.89
+                    }
+                ]
+            },
+            {
+                "ndbno": "10088",
+                "name": "Pork, fresh, spareribs, separable lean and fat, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.15",
+                        "gm": 15.47
+                    }
+                ]
+            },
+            {
+                "ndbno": "10097",
+                "name": "Pork, fresh, variety meats and by-products, brain, cooked, braised",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.32",
+                        "gm": 12.14
+                    }
+                ]
+            },
+            {
+                "ndbno": "10096",
+                "name": "Pork, fresh, variety meats and by-products, brain, raw",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.91",
+                        "gm": 10.28
+                    }
+                ]
+            },
+            {
+                "ndbno": "10099",
+                "name": "Pork, fresh, variety meats and by-products, chitterlings, cooked, simmered",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.62",
+                        "gm": 12.49
+                    }
+                ]
+            },
+            {
+                "ndbno": "10098",
+                "name": "Pork, fresh, variety meats and by-products, chitterlings, raw",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.17",
+                        "gm": 7.64
+                    }
+                ]
+            },
+            {
+                "ndbno": "10101",
+                "name": "Pork, fresh, variety meats and by-products, ears, frozen, cooked, simmered",
+                "weight": 111.0,
+                "measure": "1.0 ear (yield after cooking)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.70",
+                        "gm": 15.95
+                    }
+                ]
+            },
+            {
+                "ndbno": "10100",
+                "name": "Pork, fresh, variety meats and by-products, ears, frozen, raw",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.36",
+                        "gm": 22.45
+                    }
+                ]
+            },
+            {
+                "ndbno": "10173",
+                "name": "Pork, fresh, variety meats and by-products, feet, cooked, simmered",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "18.65",
+                        "gm": 21.94
+                    }
+                ]
+            },
+            {
+                "ndbno": "10102",
+                "name": "Pork, fresh, variety meats and by-products, feet, raw",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.57",
+                        "gm": 23.16
+                    }
+                ]
+            },
+            {
+                "ndbno": "10104",
+                "name": "Pork, fresh, variety meats and by-products, heart, cooked, braised",
+                "weight": 145.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "34.22",
+                        "gm": 23.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "10103",
+                "name": "Pork, fresh, variety meats and by-products, heart, raw",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.90",
+                        "gm": 17.27
+                    }
+                ]
+            },
+            {
+                "ndbno": "10105",
+                "name": "Pork, fresh, variety meats and by-products, jowl, raw",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.81",
+                        "gm": 6.38
+                    }
+                ]
+            },
+            {
+                "ndbno": "10107",
+                "name": "Pork, fresh, variety meats and by-products, kidneys, cooked, braised",
+                "weight": 140.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "35.56",
+                        "gm": 25.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "10106",
+                "name": "Pork, fresh, variety meats and by-products, kidneys, raw",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.67",
+                        "gm": 16.46
+                    }
+                ]
+            },
+            {
+                "ndbno": "10109",
+                "name": "Pork, fresh, variety meats and by-products, leaf fat, raw",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.50",
+                        "gm": 1.76
+                    }
+                ]
+            },
+            {
+                "ndbno": "10111",
+                "name": "Pork, fresh, variety meats and by-products, liver, cooked, braised",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.12",
+                        "gm": 26.02
+                    }
+                ]
+            },
+            {
+                "ndbno": "10110",
+                "name": "Pork, fresh, variety meats and by-products, liver, raw",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.06",
+                        "gm": 21.39
+                    }
+                ]
+            },
+            {
+                "ndbno": "10113",
+                "name": "Pork, fresh, variety meats and by-products, lungs, cooked, braised",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.11",
+                        "gm": 16.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "10112",
+                "name": "Pork, fresh, variety meats and by-products, lungs, raw",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.99",
+                        "gm": 14.08
+                    }
+                ]
+            },
+            {
+                "ndbno": "10114",
+                "name": "Pork, fresh, variety meats and by-products, mechanically separated, raw",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.26",
+                        "gm": 15.03
+                    }
+                ]
+            },
+            {
+                "ndbno": "10116",
+                "name": "Pork, fresh, variety meats and by-products, pancreas, cooked, braised",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "24.23",
+                        "gm": 28.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "10115",
+                "name": "Pork, fresh, variety meats and by-products, pancreas, raw",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.26",
+                        "gm": 18.56
+                    }
+                ]
+            },
+            {
+                "ndbno": "10118",
+                "name": "Pork, fresh, variety meats and by-products, spleen, cooked, braised",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "23.97",
+                        "gm": 28.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "10117",
+                "name": "Pork, fresh, variety meats and by-products, spleen, raw",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.06",
+                        "gm": 17.86
+                    }
+                ]
+            },
+            {
+                "ndbno": "10863",
+                "name": "Pork, fresh, variety meats and by-products, stomach, cooked, simmered",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "18.19",
+                        "gm": 21.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "10119",
+                "name": "Pork, fresh, variety meats and by-products, stomach, raw",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.78",
+                        "gm": 16.85
+                    }
+                ]
+            },
+            {
+                "ndbno": "10175",
+                "name": "Pork, fresh, variety meats and by-products, tail, cooked, simmered",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.45",
+                        "gm": 17.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "10174",
+                "name": "Pork, fresh, variety meats and by-products, tail, raw",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.03",
+                        "gm": 17.75
+                    }
+                ]
+            },
+            {
+                "ndbno": "10122",
+                "name": "Pork, fresh, variety meats and by-products, tongue, cooked, braised",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "20.48",
+                        "gm": 24.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "10121",
+                "name": "Pork, fresh, variety meats and by-products, tongue, raw",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.62",
+                        "gm": 16.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "10974",
+                "name": "Pork, ground, 72% lean / 28% fat, cooked, crumbles",
+                "weight": 113.0,
+                "measure": "4.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "25.80",
+                        "gm": 22.83
+                    }
+                ]
+            },
+            {
+                "ndbno": "10977",
+                "name": "Pork, ground, 72% lean / 28% fat, cooked, pan-broiled",
+                "weight": 85.0,
+                "measure": "3.0 oz grilled patties",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "19.20",
+                        "gm": 22.59
+                    }
+                ]
+            },
+            {
+                "ndbno": "10975",
+                "name": "Pork, ground, 84% lean / 16% fat, cooked, crumbles",
+                "weight": 85.0,
+                "measure": "3.0 oz grilled patties",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.69",
+                        "gm": 26.69
+                    }
+                ]
+            },
+            {
+                "ndbno": "10978",
+                "name": "Pork, ground, 84% lean / 16% fat, cooked, pan-broiled",
+                "weight": 85.0,
+                "measure": "3.0 oz grilled patties",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "23.07",
+                        "gm": 27.14
+                    }
+                ]
+            },
+            {
+                "ndbno": "10972",
+                "name": "Pork, ground, 84% lean / 16% fat, raw",
+                "weight": 113.0,
+                "measure": "4.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "20.33",
+                        "gm": 17.99
+                    }
+                ]
+            },
+            {
+                "ndbno": "10976",
+                "name": "Pork, ground, 96% lean / 4% fat, cooked, crumbles",
+                "weight": 85.0,
+                "measure": "3.0 oz grilled patties",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "25.97",
+                        "gm": 30.55
+                    }
+                ]
+            },
+            {
+                "ndbno": "10979",
+                "name": "Pork, ground, 96% lean / 4% fat, cooked, pan-broiled",
+                "weight": 85.0,
+                "measure": "3.0 oz grilled patties",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "26.94",
+                        "gm": 31.69
+                    }
+                ]
+            },
+            {
+                "ndbno": "10973",
+                "name": "Pork, ground, 96% lean / 4% fat, raw",
+                "weight": 113.0,
+                "measure": "4.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "23.84",
+                        "gm": 21.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "10957",
+                "name": "Pork, Leg Cap Steak, boneless, separable lean and fat, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "18.39",
+                        "gm": 21.64
+                    }
+                ]
+            },
+            {
+                "ndbno": "10962",
+                "name": "Pork, Leg sirloin tip roast, boneless, separable lean and fat, cooked, braised",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "26.44",
+                        "gm": 31.11
+                    }
+                ]
+            },
+            {
+                "ndbno": "10963",
+                "name": "Pork, Leg sirloin tip roast, boneless, separable lean and fat, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "19.45",
+                        "gm": 22.88
+                    }
+                ]
+            },
+            {
+                "ndbno": "10956",
+                "name": "Pork, loin, leg cap steak, boneless, separable lean and fat, cooked, broiled",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "23.43",
+                        "gm": 27.57
+                    }
+                ]
+            },
+            {
+                "ndbno": "43297",
+                "name": "Pork, oriental style, dehydrated",
+                "weight": 22.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.60",
+                        "gm": 11.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "10898",
+                "name": "Pork, pickled pork hocks",
+                "weight": 117.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.36",
+                        "gm": 19.11
+                    }
+                ]
+            },
+            {
+                "ndbno": "10959",
+                "name": "Pork, Shoulder breast, boneless, separable lean and fat, cooked, broiled",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "24.20",
+                        "gm": 28.47
+                    }
+                ]
+            },
+            {
+                "ndbno": "10958",
+                "name": "Pork, Shoulder breast, boneless, separable lean and fat, raw",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "19.16",
+                        "gm": 22.54
+                    }
+                ]
+            },
+            {
+                "ndbno": "10961",
+                "name": "Pork, Shoulder petite tender, boneless, separable lean and fat, raw",
+                "weight": 105.0,
+                "measure": "1.0 piece",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.73",
+                        "gm": 21.65
+                    }
+                ]
+            },
+            {
+                "ndbno": "10960",
+                "name": "Pork, shoulder, petite tender, boneless, separable lean and fat, cooked, broiled",
+                "weight": 92.0,
+                "measure": "1.0 piece",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "25.27",
+                        "gm": 27.47
+                    }
+                ]
+            },
+            {
+                "ndbno": "10158",
+                "name": "USDA Commodity, pork, canned",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.49",
+                        "gm": 19.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "10802",
+                "name": "USDA Commodity, pork, cured, ham, boneless, cooked, heated",
+                "weight": 28.35,
+                "measure": "1.0 oz boneless",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.34",
+                        "gm": 18.84
+                    }
+                ]
+            },
+            {
+                "ndbno": "10804",
+                "name": "USDA Commodity, pork, cured, ham, boneless, cooked, unheated",
+                "weight": 28.35,
+                "measure": "1.0 oz boneless",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.94",
+                        "gm": 17.44
+                    }
+                ]
+            },
+            {
+                "ndbno": "10803",
+                "name": "USDA Commodity, pork, ground, fine/coarse, frozen, cooked",
+                "weight": 28.35,
+                "measure": "1.0 oz grilled patties",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.68",
+                        "gm": 23.55
+                    }
+                ]
+            },
+            {
+                "ndbno": "10805",
+                "name": "USDA Commodity, pork, ground, fine/coarse, frozen, raw",
+                "weight": 113.0,
+                "measure": "1.0 oz crumbles",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.41",
+                        "gm": 15.41
+                    }
+                ]
+            }
+        ]
+    }
+}

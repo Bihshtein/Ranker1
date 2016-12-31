@@ -1,0 +1,2522 @@
+{
+    "report": {
+        "sr": "28",
+        "groups": [
+            {
+                "id": "2000",
+                "description": "Cereal Grains and Pasta"
+            }
+        ],
+        "subset": "All foods",
+        "end": 167,
+        "start": 0,
+        "total": 167,
+        "foods": [
+            {
+                "ndbno": "20002",
+                "name": "Amaranth grain, cooked",
+                "weight": 246.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.35",
+                        "gm": 3.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "20001",
+                "name": "Amaranth grain, uncooked",
+                "weight": 193.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "26.17",
+                        "gm": 13.56
+                    }
+                ]
+            },
+            {
+                "ndbno": "20003",
+                "name": "Arrowroot flour",
+                "weight": 128.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.38",
+                        "gm": 0.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "20130",
+                "name": "Barley flour or meal",
+                "weight": 148.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.54",
+                        "gm": 10.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "20131",
+                "name": "Barley malt flour",
+                "weight": 162.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.65",
+                        "gm": 10.28
+                    }
+                ]
+            },
+            {
+                "ndbno": "20004",
+                "name": "Barley, hulled",
+                "weight": 184.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.96",
+                        "gm": 12.48
+                    }
+                ]
+            },
+            {
+                "ndbno": "20006",
+                "name": "Barley, pearled, cooked",
+                "weight": 157.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.55",
+                        "gm": 2.26
+                    }
+                ]
+            },
+            {
+                "ndbno": "20005",
+                "name": "Barley, pearled, raw",
+                "weight": 200.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "19.82",
+                        "gm": 9.91
+                    }
+                ]
+            },
+            {
+                "ndbno": "20008",
+                "name": "Buckwheat",
+                "weight": 170.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.52",
+                        "gm": 13.25
+                    }
+                ]
+            },
+            {
+                "ndbno": "20011",
+                "name": "Buckwheat flour, whole-groat",
+                "weight": 120.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.14",
+                        "gm": 12.62
+                    }
+                ]
+            },
+            {
+                "ndbno": "20010",
+                "name": "Buckwheat groats, roasted, cooked",
+                "weight": 168.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.68",
+                        "gm": 3.38
+                    }
+                ]
+            },
+            {
+                "ndbno": "20009",
+                "name": "Buckwheat groats, roasted, dry",
+                "weight": 164.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "19.24",
+                        "gm": 11.73
+                    }
+                ]
+            },
+            {
+                "ndbno": "20013",
+                "name": "Bulgur, cooked",
+                "weight": 182.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.61",
+                        "gm": 3.08
+                    }
+                ]
+            },
+            {
+                "ndbno": "20012",
+                "name": "Bulgur, dry",
+                "weight": 140.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.21",
+                        "gm": 12.29
+                    }
+                ]
+            },
+            {
+                "ndbno": "20015",
+                "name": "Corn bran, crude",
+                "weight": 76.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.35",
+                        "gm": 8.36
+                    }
+                ]
+            },
+            {
+                "ndbno": "20017",
+                "name": "Corn flour, masa, enriched, white",
+                "weight": 114.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.64",
+                        "gm": 8.46
+                    }
+                ]
+            },
+            {
+                "ndbno": "20019",
+                "name": "Corn flour, masa, unenriched, white",
+                "weight": 114.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.64",
+                        "gm": 8.46
+                    }
+                ]
+            },
+            {
+                "ndbno": "20315",
+                "name": "Corn flour, whole-grain, blue (harina de maiz morado)",
+                "weight": 6.9,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.60",
+                        "gm": 8.75
+                    }
+                ]
+            },
+            {
+                "ndbno": "20316",
+                "name": "Corn flour, whole-grain, white",
+                "weight": 117.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.11",
+                        "gm": 6.93
+                    }
+                ]
+            },
+            {
+                "ndbno": "20016",
+                "name": "Corn flour, whole-grain, yellow",
+                "weight": 117.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.11",
+                        "gm": 6.93
+                    }
+                ]
+            },
+            {
+                "ndbno": "20018",
+                "name": "Corn flour, yellow, degermed, unenriched",
+                "weight": 126.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.04",
+                        "gm": 5.59
+                    }
+                ]
+            },
+            {
+                "ndbno": "20317",
+                "name": "Corn flour, yellow, masa, enriched",
+                "weight": 114.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.64",
+                        "gm": 8.46
+                    }
+                ]
+            },
+            {
+                "ndbno": "20314",
+                "name": "Corn grain, white",
+                "weight": 166.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.64",
+                        "gm": 9.42
+                    }
+                ]
+            },
+            {
+                "ndbno": "20014",
+                "name": "Corn grain, yellow",
+                "weight": 166.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.64",
+                        "gm": 9.42
+                    }
+                ]
+            },
+            {
+                "ndbno": "20322",
+                "name": "Cornmeal, degermed, enriched, white",
+                "weight": 157.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.16",
+                        "gm": 7.11
+                    }
+                ]
+            },
+            {
+                "ndbno": "20022",
+                "name": "Cornmeal, degermed, enriched, yellow",
+                "weight": 157.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.16",
+                        "gm": 7.11
+                    }
+                ]
+            },
+            {
+                "ndbno": "20522",
+                "name": "Cornmeal, degermed, unenriched, white",
+                "weight": 157.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.16",
+                        "gm": 7.11
+                    }
+                ]
+            },
+            {
+                "ndbno": "20422",
+                "name": "Cornmeal, degermed, unenriched, yellow",
+                "weight": 157.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.16",
+                        "gm": 7.11
+                    }
+                ]
+            },
+            {
+                "ndbno": "20323",
+                "name": "Cornmeal, white, self-rising, bolted, plain, enriched",
+                "weight": 122.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.10",
+                        "gm": 8.28
+                    }
+                ]
+            },
+            {
+                "ndbno": "20324",
+                "name": "Cornmeal, white, self-rising, bolted, with wheat flour added, enriched",
+                "weight": 170.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.30",
+                        "gm": 8.41
+                    }
+                ]
+            },
+            {
+                "ndbno": "20325",
+                "name": "Cornmeal, white, self-rising, degermed, enriched",
+                "weight": 138.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.61",
+                        "gm": 8.41
+                    }
+                ]
+            },
+            {
+                "ndbno": "20320",
+                "name": "Cornmeal, whole-grain, white",
+                "weight": 122.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.91",
+                        "gm": 8.12
+                    }
+                ]
+            },
+            {
+                "ndbno": "20020",
+                "name": "Cornmeal, whole-grain, yellow",
+                "weight": 122.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.91",
+                        "gm": 8.12
+                    }
+                ]
+            },
+            {
+                "ndbno": "20023",
+                "name": "Cornmeal, yellow, self-rising, bolted, plain, enriched",
+                "weight": 122.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.10",
+                        "gm": 8.28
+                    }
+                ]
+            },
+            {
+                "ndbno": "20024",
+                "name": "Cornmeal, yellow, self-rising, bolted, with wheat flour added, enriched",
+                "weight": 170.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.30",
+                        "gm": 8.41
+                    }
+                ]
+            },
+            {
+                "ndbno": "20025",
+                "name": "Cornmeal, yellow, self-rising, degermed, enriched",
+                "weight": 138.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.61",
+                        "gm": 8.41
+                    }
+                ]
+            },
+            {
+                "ndbno": "20027",
+                "name": "Cornstarch",
+                "weight": 128.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.33",
+                        "gm": 0.26
+                    }
+                ]
+            },
+            {
+                "ndbno": "20029",
+                "name": "Couscous, cooked",
+                "weight": 157.0,
+                "measure": "1.0 cup, cooked",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.95",
+                        "gm": 3.79
+                    }
+                ]
+            },
+            {
+                "ndbno": "20028",
+                "name": "Couscous, dry",
+                "weight": 173.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.07",
+                        "gm": 12.76
+                    }
+                ]
+            },
+            {
+                "ndbno": "20030",
+                "name": "Hominy, canned, white",
+                "weight": 165.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.44",
+                        "gm": 1.48
+                    }
+                ]
+            },
+            {
+                "ndbno": "20330",
+                "name": "Hominy, canned, yellow",
+                "weight": 160.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.37",
+                        "gm": 1.48
+                    }
+                ]
+            },
+            {
+                "ndbno": "20106",
+                "name": "Macaroni, vegetable, enriched, cooked",
+                "weight": 134.0,
+                "measure": "1.0 cup spiral shaped",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.07",
+                        "gm": 4.53
+                    }
+                ]
+            },
+            {
+                "ndbno": "20105",
+                "name": "Macaroni, vegetable, enriched, dry",
+                "weight": 84.0,
+                "measure": "1.0 cup spiral shaped",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.04",
+                        "gm": 13.14
+                    }
+                ]
+            },
+            {
+                "ndbno": "20647",
+                "name": "Millet flour",
+                "weight": 119.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.79",
+                        "gm": 10.75
+                    }
+                ]
+            },
+            {
+                "ndbno": "20032",
+                "name": "Millet, cooked",
+                "weight": 174.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.11",
+                        "gm": 3.51
+                    }
+                ]
+            },
+            {
+                "ndbno": "20031",
+                "name": "Millet, raw",
+                "weight": 200.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.04",
+                        "gm": 11.02
+                    }
+                ]
+            },
+            {
+                "ndbno": "20113",
+                "name": "Noodles, chinese, chow mein",
+                "weight": 28.0,
+                "measure": "0.5 cup dry",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.27",
+                        "gm": 8.11
+                    }
+                ]
+            },
+            {
+                "ndbno": "20310",
+                "name": "Noodles, egg, cooked, enriched, with added salt",
+                "weight": 160.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.26",
+                        "gm": 4.54
+                    }
+                ]
+            },
+            {
+                "ndbno": "20510",
+                "name": "Noodles, egg, cooked, unenriched, with added salt",
+                "weight": 160.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.26",
+                        "gm": 4.54
+                    }
+                ]
+            },
+            {
+                "ndbno": "20109",
+                "name": "Noodles, egg, dry, enriched",
+                "weight": 38.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.38",
+                        "gm": 14.16
+                    }
+                ]
+            },
+            {
+                "ndbno": "20409",
+                "name": "Noodles, egg, dry, unenriched",
+                "weight": 38.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.38",
+                        "gm": 14.16
+                    }
+                ]
+            },
+            {
+                "ndbno": "20110",
+                "name": "Noodles, egg, enriched, cooked",
+                "weight": 160.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.26",
+                        "gm": 4.54
+                    }
+                ]
+            },
+            {
+                "ndbno": "20112",
+                "name": "Noodles, egg, spinach, enriched, cooked",
+                "weight": 160.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.06",
+                        "gm": 5.04
+                    }
+                ]
+            },
+            {
+                "ndbno": "20111",
+                "name": "Noodles, egg, spinach, enriched, dry",
+                "weight": 38.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.55",
+                        "gm": 14.61
+                    }
+                ]
+            },
+            {
+                "ndbno": "20410",
+                "name": "Noodles, egg, unenriched, cooked, without added salt",
+                "weight": 160.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.26",
+                        "gm": 4.54
+                    }
+                ]
+            },
+            {
+                "ndbno": "20118",
+                "name": "Noodles, flat, crunchy, Chinese restaurant",
+                "weight": 45.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.65",
+                        "gm": 10.33
+                    }
+                ]
+            },
+            {
+                "ndbno": "20115",
+                "name": "Noodles, japanese, soba, cooked",
+                "weight": 114.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.77",
+                        "gm": 5.06
+                    }
+                ]
+            },
+            {
+                "ndbno": "20114",
+                "name": "Noodles, japanese, soba, dry",
+                "weight": 57.0,
+                "measure": "2.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.20",
+                        "gm": 14.38
+                    }
+                ]
+            },
+            {
+                "ndbno": "20117",
+                "name": "Noodles, japanese, somen, cooked",
+                "weight": 176.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.04",
+                        "gm": 4.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "20116",
+                "name": "Noodles, japanese, somen, dry",
+                "weight": 57.0,
+                "measure": "2.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.47",
+                        "gm": 11.35
+                    }
+                ]
+            },
+            {
+                "ndbno": "20034",
+                "name": "Oat bran, cooked",
+                "weight": 219.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.03",
+                        "gm": 3.21
+                    }
+                ]
+            },
+            {
+                "ndbno": "20033",
+                "name": "Oat bran, raw",
+                "weight": 94.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.26",
+                        "gm": 17.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "20132",
+                "name": "Oat flour, partially debranned",
+                "weight": 104.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.25",
+                        "gm": 14.66
+                    }
+                ]
+            },
+            {
+                "ndbno": "20038",
+                "name": "Oats",
+                "weight": 156.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "26.35",
+                        "gm": 16.89
+                    }
+                ]
+            },
+            {
+                "ndbno": "20321",
+                "name": "Pasta, cooked, enriched, with added salt",
+                "weight": 124.0,
+                "measure": "1.0 cup spaghetti not packed",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.19",
+                        "gm": 5.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "20121",
+                "name": "Pasta, cooked, enriched, without added salt",
+                "weight": 124.0,
+                "measure": "1.0 cup spaghetti not packed",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.19",
+                        "gm": 5.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "20521",
+                "name": "Pasta, cooked, unenriched, with added salt",
+                "weight": 124.0,
+                "measure": "1.0 cup spaghetti not packed",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.19",
+                        "gm": 5.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "20421",
+                "name": "Pasta, cooked, unenriched, without added salt",
+                "weight": 124.0,
+                "measure": "1.0 cup spaghetti not packed",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.19",
+                        "gm": 5.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "20120",
+                "name": "Pasta, dry, enriched",
+                "weight": 91.0,
+                "measure": "1.0 cup spaghetti",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.87",
+                        "gm": 13.04
+                    }
+                ]
+            },
+            {
+                "ndbno": "20420",
+                "name": "Pasta, dry, unenriched",
+                "weight": 91.0,
+                "measure": "1.0 cup spaghetti",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.87",
+                        "gm": 13.04
+                    }
+                ]
+            },
+            {
+                "ndbno": "20093",
+                "name": "Pasta, fresh-refrigerated, plain, as purchased",
+                "weight": 128.0,
+                "measure": "4.5 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.48",
+                        "gm": 11.31
+                    }
+                ]
+            },
+            {
+                "ndbno": "20094",
+                "name": "Pasta, fresh-refrigerated, plain, cooked",
+                "weight": 128.0,
+                "measure": "2.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.59",
+                        "gm": 5.15
+                    }
+                ]
+            },
+            {
+                "ndbno": "20095",
+                "name": "Pasta, fresh-refrigerated, spinach, as purchased",
+                "weight": 128.0,
+                "measure": "4.5 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.41",
+                        "gm": 11.26
+                    }
+                ]
+            },
+            {
+                "ndbno": "20096",
+                "name": "Pasta, fresh-refrigerated, spinach, cooked",
+                "weight": 57.0,
+                "measure": "2.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.88",
+                        "gm": 5.06
+                    }
+                ]
+            },
+            {
+                "ndbno": "20654",
+                "name": "Pasta, gluten-free, brown rice flour, cooked, TINKYADA",
+                "weight": 169.0,
+                "measure": "1.0 cup spaghetti not packed",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.85",
+                        "gm": 3.46
+                    }
+                ]
+            },
+            {
+                "ndbno": "20657",
+                "name": "Pasta, gluten-free, corn and rice flour, cooked",
+                "weight": 141.0,
+                "measure": "1.0 cup spaghetti",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.51",
+                        "gm": 3.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "20655",
+                "name": "Pasta, gluten-free, corn flour and quinoa flour, cooked, ANCIENT HARVEST",
+                "weight": 166.0,
+                "measure": "1.0 cup spaghetti packed",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.36",
+                        "gm": 3.23
+                    }
+                ]
+            },
+            {
+                "ndbno": "20092",
+                "name": "Pasta, gluten-free, corn, cooked",
+                "weight": 140.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.68",
+                        "gm": 2.63
+                    }
+                ]
+            },
+            {
+                "ndbno": "20091",
+                "name": "Pasta, gluten-free, corn, dry",
+                "weight": 105.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.83",
+                        "gm": 7.46
+                    }
+                ]
+            },
+            {
+                "ndbno": "20656",
+                "name": "Pasta, gluten-free, rice flour and rice bran extract, cooked, DE BOLES",
+                "weight": 121.0,
+                "measure": "1.0 cup spaghetti",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.09",
+                        "gm": 4.21
+                    }
+                ]
+            },
+            {
+                "ndbno": "20097",
+                "name": "Pasta, homemade, made with egg, cooked",
+                "weight": 57.0,
+                "measure": "2.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.01",
+                        "gm": 5.28
+                    }
+                ]
+            },
+            {
+                "ndbno": "20098",
+                "name": "Pasta, homemade, made without egg, cooked",
+                "weight": 57.0,
+                "measure": "2.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.49",
+                        "gm": 4.37
+                    }
+                ]
+            },
+            {
+                "ndbno": "20652",
+                "name": "Pasta, whole grain, 51% whole wheat, remaining enriched semolina, cooked",
+                "weight": 116.0,
+                "measure": "1.0 cup spaghetti not packed",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.58",
+                        "gm": 5.67
+                    }
+                ]
+            },
+            {
+                "ndbno": "20653",
+                "name": "Pasta, whole grain, 51% whole wheat, remaining enriched semolina, dry",
+                "weight": 91.0,
+                "measure": "1.0 cup spaghetti",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.01",
+                        "gm": 13.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "20136",
+                "name": "Pasta, whole grain, 51% whole wheat, remaining unenriched semolina, cooked",
+                "weight": 116.0,
+                "measure": "1.0 cup spaghetti not packed",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.75",
+                        "gm": 5.82
+                    }
+                ]
+            },
+            {
+                "ndbno": "20135",
+                "name": "Pasta, whole grain, 51% whole wheat, remaining unenriched semolina, dry",
+                "weight": 91.0,
+                "measure": "1.0 cup spaghetti",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.29",
+                        "gm": 13.51
+                    }
+                ]
+            },
+            {
+                "ndbno": "20125",
+                "name": "Pasta, whole-wheat, cooked",
+                "weight": 117.0,
+                "measure": "1.0 cup spaghetti not packed",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.01",
+                        "gm": 5.99
+                    }
+                ]
+            },
+            {
+                "ndbno": "20124",
+                "name": "Pasta, whole-wheat, dry",
+                "weight": 91.0,
+                "measure": "1.0 cup spaghetti",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.62",
+                        "gm": 13.87
+                    }
+                ]
+            },
+            {
+                "ndbno": "20137",
+                "name": "Quinoa, cooked",
+                "weight": 185.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.14",
+                        "gm": 4.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "20035",
+                "name": "Quinoa, uncooked",
+                "weight": 170.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "24.00",
+                        "gm": 14.12
+                    }
+                ]
+            },
+            {
+                "ndbno": "20060",
+                "name": "Rice bran, crude",
+                "weight": 118.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.75",
+                        "gm": 13.35
+                    }
+                ]
+            },
+            {
+                "ndbno": "20090",
+                "name": "Rice flour, brown",
+                "weight": 158.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.42",
+                        "gm": 7.23
+                    }
+                ]
+            },
+            {
+                "ndbno": "20061",
+                "name": "Rice flour, white, unenriched",
+                "weight": 158.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.40",
+                        "gm": 5.95
+                    }
+                ]
+            },
+            {
+                "ndbno": "20134",
+                "name": "Rice noodles, cooked",
+                "weight": 176.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.15",
+                        "gm": 1.79
+                    }
+                ]
+            },
+            {
+                "ndbno": "20133",
+                "name": "Rice noodles, dry",
+                "weight": 57.0,
+                "measure": "2.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.39",
+                        "gm": 5.95
+                    }
+                ]
+            },
+            {
+                "ndbno": "20037",
+                "name": "Rice, brown, long-grain, cooked",
+                "weight": 202.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.53",
+                        "gm": 2.74
+                    }
+                ]
+            },
+            {
+                "ndbno": "20036",
+                "name": "Rice, brown, long-grain, raw",
+                "weight": 185.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.95",
+                        "gm": 7.54
+                    }
+                ]
+            },
+            {
+                "ndbno": "20041",
+                "name": "Rice, brown, medium-grain, cooked",
+                "weight": 195.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.52",
+                        "gm": 2.32
+                    }
+                ]
+            },
+            {
+                "ndbno": "20040",
+                "name": "Rice, brown, medium-grain, raw",
+                "weight": 190.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.25",
+                        "gm": 7.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "20651",
+                "name": "Rice, brown, parboiled, cooked, UNCLE BENS",
+                "weight": 155.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.79",
+                        "gm": 3.09
+                    }
+                ]
+            },
+            {
+                "ndbno": "20042",
+                "name": "Rice, brown, parboiled, dry, UNCLE BEN'S",
+                "weight": 48.0,
+                "measure": "0.25 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.65",
+                        "gm": 7.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "20055",
+                "name": "Rice, white, glutinous, unenriched, cooked",
+                "weight": 174.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.51",
+                        "gm": 2.02
+                    }
+                ]
+            },
+            {
+                "ndbno": "20054",
+                "name": "Rice, white, glutinous, unenriched, uncooked",
+                "weight": 185.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.60",
+                        "gm": 6.81
+                    }
+                ]
+            },
+            {
+                "ndbno": "20047",
+                "name": "Rice, white, long-grain, parboiled, enriched, cooked",
+                "weight": 158.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.60",
+                        "gm": 2.91
+                    }
+                ]
+            },
+            {
+                "ndbno": "20046",
+                "name": "Rice, white, long-grain, parboiled, enriched, dry",
+                "weight": 185.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.89",
+                        "gm": 7.51
+                    }
+                ]
+            },
+            {
+                "ndbno": "20447",
+                "name": "Rice, white, long-grain, parboiled, unenriched, cooked",
+                "weight": 158.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.60",
+                        "gm": 2.91
+                    }
+                ]
+            },
+            {
+                "ndbno": "20446",
+                "name": "Rice, white, long-grain, parboiled, unenriched, dry",
+                "weight": 185.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.89",
+                        "gm": 7.51
+                    }
+                ]
+            },
+            {
+                "ndbno": "20048",
+                "name": "Rice, white, long-grain, precooked or instant, enriched, dry",
+                "weight": 95.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.43",
+                        "gm": 7.82
+                    }
+                ]
+            },
+            {
+                "ndbno": "20049",
+                "name": "Rice, white, long-grain, precooked or instant, enriched, prepared",
+                "weight": 165.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.60",
+                        "gm": 2.18
+                    }
+                ]
+            },
+            {
+                "ndbno": "20345",
+                "name": "Rice, white, long-grain, regular, cooked, enriched, with salt",
+                "weight": 158.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.25",
+                        "gm": 2.69
+                    }
+                ]
+            },
+            {
+                "ndbno": "20545",
+                "name": "Rice, white, long-grain, regular, cooked, unenriched, with salt",
+                "weight": 158.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.25",
+                        "gm": 2.69
+                    }
+                ]
+            },
+            {
+                "ndbno": "20045",
+                "name": "Rice, white, long-grain, regular, enriched, cooked",
+                "weight": 158.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.25",
+                        "gm": 2.69
+                    }
+                ]
+            },
+            {
+                "ndbno": "20044",
+                "name": "Rice, white, long-grain, regular, raw, enriched",
+                "weight": 185.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.19",
+                        "gm": 7.13
+                    }
+                ]
+            },
+            {
+                "ndbno": "20444",
+                "name": "Rice, white, long-grain, regular, raw, unenriched",
+                "weight": 185.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.19",
+                        "gm": 7.13
+                    }
+                ]
+            },
+            {
+                "ndbno": "20445",
+                "name": "Rice, white, long-grain, regular, unenriched, cooked without salt",
+                "weight": 158.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.25",
+                        "gm": 2.69
+                    }
+                ]
+            },
+            {
+                "ndbno": "20451",
+                "name": "Rice, white, medium-grain, cooked, unenriched",
+                "weight": 186.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.43",
+                        "gm": 2.38
+                    }
+                ]
+            },
+            {
+                "ndbno": "20051",
+                "name": "Rice, white, medium-grain, enriched, cooked",
+                "weight": 186.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.43",
+                        "gm": 2.38
+                    }
+                ]
+            },
+            {
+                "ndbno": "20050",
+                "name": "Rice, white, medium-grain, raw, enriched",
+                "weight": 195.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.89",
+                        "gm": 6.61
+                    }
+                ]
+            },
+            {
+                "ndbno": "20450",
+                "name": "Rice, white, medium-grain, raw, unenriched",
+                "weight": 195.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.89",
+                        "gm": 6.61
+                    }
+                ]
+            },
+            {
+                "ndbno": "20453",
+                "name": "Rice, white, short-grain, cooked, unenriched",
+                "weight": 205.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.84",
+                        "gm": 2.36
+                    }
+                ]
+            },
+            {
+                "ndbno": "20053",
+                "name": "Rice, white, short-grain, enriched, cooked",
+                "weight": 186.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.39",
+                        "gm": 2.36
+                    }
+                ]
+            },
+            {
+                "ndbno": "20052",
+                "name": "Rice, white, short-grain, enriched, uncooked",
+                "weight": 200.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.00",
+                        "gm": 6.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "20452",
+                "name": "Rice, white, short-grain, raw, unenriched",
+                "weight": 200.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.00",
+                        "gm": 6.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "20058",
+                "name": "Rice, white, steamed, Chinese restaurant",
+                "weight": 132.0,
+                "measure": "1.0 cup, loosely packed",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.22",
+                        "gm": 3.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "20063",
+                "name": "Rye flour, dark",
+                "weight": 128.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "20.36",
+                        "gm": 15.91
+                    }
+                ]
+            },
+            {
+                "ndbno": "20065",
+                "name": "Rye flour, light",
+                "weight": 102.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.02",
+                        "gm": 9.82
+                    }
+                ]
+            },
+            {
+                "ndbno": "20064",
+                "name": "Rye flour, medium",
+                "weight": 102.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.10",
+                        "gm": 10.88
+                    }
+                ]
+            },
+            {
+                "ndbno": "20062",
+                "name": "Rye grain",
+                "weight": 169.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.47",
+                        "gm": 10.34
+                    }
+                ]
+            },
+            {
+                "ndbno": "20066",
+                "name": "Semolina, enriched",
+                "weight": 167.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "21.18",
+                        "gm": 12.68
+                    }
+                ]
+            },
+            {
+                "ndbno": "20466",
+                "name": "Semolina, unenriched",
+                "weight": 167.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "21.18",
+                        "gm": 12.68
+                    }
+                ]
+            },
+            {
+                "ndbno": "20650",
+                "name": "Sorghum flour, refined, unenriched",
+                "weight": 161.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.34",
+                        "gm": 9.53
+                    }
+                ]
+            },
+            {
+                "ndbno": "20648",
+                "name": "Sorghum flour, whole-grain",
+                "weight": 121.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.20",
+                        "gm": 8.43
+                    }
+                ]
+            },
+            {
+                "ndbno": "20067",
+                "name": "Sorghum grain",
+                "weight": 192.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "20.39",
+                        "gm": 10.62
+                    }
+                ]
+            },
+            {
+                "ndbno": "20523",
+                "name": "Spaghetti, protein-fortified, cooked, enriched (n x 6.25)",
+                "weight": 140.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.40",
+                        "gm": 8.86
+                    }
+                ]
+            },
+            {
+                "ndbno": "20622",
+                "name": "Spaghetti, protein-fortified, dry, enriched (n x 6.25)",
+                "weight": 57.0,
+                "measure": "2.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.41",
+                        "gm": 21.78
+                    }
+                ]
+            },
+            {
+                "ndbno": "20127",
+                "name": "Spaghetti, spinach, cooked",
+                "weight": 140.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.41",
+                        "gm": 4.58
+                    }
+                ]
+            },
+            {
+                "ndbno": "20126",
+                "name": "Spaghetti, spinach, dry",
+                "weight": 57.0,
+                "measure": "2.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.61",
+                        "gm": 13.35
+                    }
+                ]
+            },
+            {
+                "ndbno": "20141",
+                "name": "Spelt, cooked",
+                "weight": 194.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.67",
+                        "gm": 5.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "20140",
+                "name": "Spelt, uncooked",
+                "weight": 174.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "25.35",
+                        "gm": 14.57
+                    }
+                ]
+            },
+            {
+                "ndbno": "20068",
+                "name": "Tapioca, pearl, dry",
+                "weight": 152.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.29",
+                        "gm": 0.19
+                    }
+                ]
+            },
+            {
+                "ndbno": "20143",
+                "name": "Teff, cooked",
+                "weight": 252.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.75",
+                        "gm": 3.87
+                    }
+                ]
+            },
+            {
+                "ndbno": "20142",
+                "name": "Teff, uncooked",
+                "weight": 193.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "25.67",
+                        "gm": 13.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "20069",
+                "name": "Triticale",
+                "weight": 192.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "25.06",
+                        "gm": 13.05
+                    }
+                ]
+            },
+            {
+                "ndbno": "20070",
+                "name": "Triticale flour, whole-grain",
+                "weight": 130.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.13",
+                        "gm": 13.18
+                    }
+                ]
+            },
+            {
+                "ndbno": "20077",
+                "name": "Wheat bran, crude",
+                "weight": 58.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.02",
+                        "gm": 15.55
+                    }
+                ]
+            },
+            {
+                "ndbno": "20081",
+                "name": "Wheat flour, white, all-purpose, enriched, bleached",
+                "weight": 125.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.91",
+                        "gm": 10.33
+                    }
+                ]
+            },
+            {
+                "ndbno": "20381",
+                "name": "Wheat flour, white, all-purpose, enriched, calcium-fortified",
+                "weight": 125.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.91",
+                        "gm": 10.33
+                    }
+                ]
+            },
+            {
+                "ndbno": "20581",
+                "name": "Wheat flour, white, all-purpose, enriched, unbleached",
+                "weight": 125.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.91",
+                        "gm": 10.33
+                    }
+                ]
+            },
+            {
+                "ndbno": "20082",
+                "name": "Wheat flour, white, all-purpose, self-rising, enriched",
+                "weight": 125.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.36",
+                        "gm": 9.89
+                    }
+                ]
+            },
+            {
+                "ndbno": "20481",
+                "name": "Wheat flour, white, all-purpose, unenriched",
+                "weight": 125.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.91",
+                        "gm": 10.33
+                    }
+                ]
+            },
+            {
+                "ndbno": "20083",
+                "name": "Wheat flour, white, bread, enriched",
+                "weight": 137.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.41",
+                        "gm": 11.98
+                    }
+                ]
+            },
+            {
+                "ndbno": "20084",
+                "name": "Wheat flour, white, cake, enriched",
+                "weight": 137.0,
+                "measure": "1.0 cup unsifted, dipped",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.23",
+                        "gm": 8.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "20086",
+                "name": "Wheat flour, white, tortilla mix, enriched",
+                "weight": 111.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.72",
+                        "gm": 9.66
+                    }
+                ]
+            },
+            {
+                "ndbno": "20080",
+                "name": "Wheat flour, whole-grain",
+                "weight": 120.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.85",
+                        "gm": 13.21
+                    }
+                ]
+            },
+            {
+                "ndbno": "20129",
+                "name": "Wheat flours, bread, unenriched",
+                "weight": 137.0,
+                "measure": "1.0 cup unsifted, dipped",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.41",
+                        "gm": 11.98
+                    }
+                ]
+            },
+            {
+                "ndbno": "20078",
+                "name": "Wheat germ, crude",
+                "weight": 115.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "26.62",
+                        "gm": 23.15
+                    }
+                ]
+            },
+            {
+                "ndbno": "20076",
+                "name": "Wheat, durum",
+                "weight": 192.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "26.27",
+                        "gm": 13.68
+                    }
+                ]
+            },
+            {
+                "ndbno": "20071",
+                "name": "Wheat, hard red spring",
+                "weight": 192.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "29.57",
+                        "gm": 15.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "20072",
+                "name": "Wheat, hard red winter",
+                "weight": 192.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "24.21",
+                        "gm": 12.61
+                    }
+                ]
+            },
+            {
+                "ndbno": "20074",
+                "name": "Wheat, hard white",
+                "weight": 192.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "21.72",
+                        "gm": 11.31
+                    }
+                ]
+            },
+            {
+                "ndbno": "20139",
+                "name": "Wheat, KAMUT khorasan, cooked",
+                "weight": 172.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.82",
+                        "gm": 5.71
+                    }
+                ]
+            },
+            {
+                "ndbno": "20138",
+                "name": "Wheat, KAMUT khorasan, uncooked",
+                "weight": 186.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "27.04",
+                        "gm": 14.54
+                    }
+                ]
+            },
+            {
+                "ndbno": "20073",
+                "name": "Wheat, soft red winter",
+                "weight": 168.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.39",
+                        "gm": 10.35
+                    }
+                ]
+            },
+            {
+                "ndbno": "20075",
+                "name": "Wheat, soft white",
+                "weight": 168.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.96",
+                        "gm": 10.69
+                    }
+                ]
+            },
+            {
+                "ndbno": "20087",
+                "name": "Wheat, sprouted",
+                "weight": 108.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.09",
+                        "gm": 7.49
+                    }
+                ]
+            },
+            {
+                "ndbno": "20089",
+                "name": "Wild rice, cooked",
+                "weight": 164.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.54",
+                        "gm": 3.99
+                    }
+                ]
+            },
+            {
+                "ndbno": "20088",
+                "name": "Wild rice, raw",
+                "weight": 160.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "23.57",
+                        "gm": 14.73
+                    }
+                ]
+            }
+        ]
+    }
+}

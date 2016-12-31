@@ -12,20 +12,7 @@ namespace Students.Services {
             return dbLayer.Products.Get(i);
         }
 
-        public List<Product> GetProtein(double min, double minProteinForDay, double maxCaloriesForDay) {
-            var products = dbLayer.Products.GetByProtein(min).Where(IsEmpty).ToList();
-            var filteredProducts = new List<Product>();
-            foreach (var product in products) {
-                var totalCalories = product.Fat*7 + product.Carbs*4 + product.Protein * 4;
-                var ratio = maxCaloriesForDay / totalCalories;
-                var proteinForDay = ratio * product.Protein;
-
-                if (proteinForDay > minProteinForDay)
-                    filteredProducts.Add(product);
-            }
-            return filteredProducts;
-        }
-
+    
         public List<Product> GetNutrient(string name, int min, bool vegetarian)
         {
             return dbLayer.Products.GetByMeasure(name, min, vegetarian);
@@ -40,9 +27,7 @@ namespace Students.Services {
             return dbLayer.Products.GetByGroupName(group.ToLower());
         }
 
-        public static bool IsEmpty(Product p) {
-            return p.Image != null;
-        }
+       
         public IQueryable<Product> GetAll() {
             return dbLayer.Products.GetAll();
         }

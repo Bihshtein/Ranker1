@@ -18,7 +18,7 @@ using System.Threading.Tasks;
 namespace InitDB {
     public class InitDB {
 
-        public static string FolderPath = Assembly.GetExecutingAssembly().Location + @"\..\..\..\..\FruitsDB\";
+        public static string FolderPath = Assembly.GetExecutingAssembly().Location + @"\..\..\..\..\LocalDB\USDA";
         private static int totalAdded = 0;
         private static int totalSkipped = 0;
         public static Dictionary<string, string> FoodGroups = new Dictionary<string, string>() {
@@ -40,23 +40,22 @@ namespace InitDB {
             {"Beef", "1300"}
         };
         public static Dictionary<string, BasicValidator> Validators = new Dictionary<string, BasicValidator>() {
-                { "Sweets", new SweetsValidator()},
-                { "Nuts", new NutsValidator()},
-                { "Pork", new PorkValidator()},
-                { "Beef", new BeefValidator()},
-                { "Vegs", new VegsValidator()},
-                { "Fruits", new FruitsValidator()},
-                { "Chicken", new ChickenValidator()},
-                { "Dairy", new DairyValidator()},
-                { "Carbs", new CarbsValidator()},
-                { "Beverages", new BeveragesValidator()},
-                { "Fish", new FishValidator()},
-                { "Baked", new BakedValidator()},
-                { "SpicesAndHerbs", new SpicesAndHerbsValidator()},
-                { "OilsAndFats", new OilsAndFatsValidator()},
-                { "SoupAndSauce", new SoupAndSauceValidator()},
-                { "Legumes", new LegumesValidator()},
-                { "manual", null}
+            { "Sweets", new SweetsValidator()},
+            { "Nuts", new NutsValidator()},
+            { "Pork", new PorkValidator()},
+            { "Beef", new BeefValidator()},
+            { "Vegs", new VegsValidator()},
+            { "Fruits", new FruitsValidator()},
+            { "Chicken", new ChickenValidator()},
+            { "Dairy", new DairyValidator()},
+            { "Carbs", new CarbsValidator()},
+            { "Beverages", new BeveragesValidator()},
+            { "Fish", new FishValidator()},
+            { "Baked", new BakedValidator()},
+            { "SpicesAndHerbs", new SpicesAndHerbsValidator()},
+            { "OilsAndFats", new OilsAndFatsValidator()},
+            { "SoupAndSauce", new SoupAndSauceValidator()},
+            { "Legumes", new LegumesValidator()},
             };
 
         public static void InitProductsCollection(bool loadGroups, bool loadManual, bool overrideDB) {
@@ -65,57 +64,36 @@ namespace InitDB {
             var unit = new RestDBInterface();
             if (overrideDB)
                 MongoData._database.DropCollection("products");
-            var nutrientsQuery1 = string.Empty;
-            var nutrientsQuery2 = string.Empty;
-            foreach (var item in QueryData.Nutrients1) {
-                nutrientsQuery1 += "nutrients=" + item + "&";
-            }
-            foreach (var item in QueryData.Nutrients2) {
-                nutrientsQuery2 += "nutrients=" + item + "&";
-            }
+            var nutrientsQuery = "nutrients=203&";
             if (loadGroups)
-                AddFoodGroups(unit, nutrientsQuery1, nutrientsQuery2);
-            if (loadManual)
-                AddManual(unit, nutrientsQuery1, nutrientsQuery2);
+                AddFoodGroups(unit, nutrientsQuery);
 
             Console.WriteLine("Total Added : " + totalAdded);
             Console.WriteLine("Total Skipped : " + totalSkipped);
         }
 
-        private static void AddFoodGroups(RestDBInterface unit, string nutrientsQuery1, string nutrientsQuery2) {
-            foreach (var item in FoodGroups.Keys) {
-                Console.WriteLine("Adding group :\t\t" + item);
+        private static void AddFoodGroups(RestDBInterface unit, string nutrientsQuery) {
+            foreach (var foodGroup in FoodGroups.Keys) {
+                Console.WriteLine("Adding group :\t\t" + foodGroup);
                 var added = totalAdded;
                 var skipped = totalSkipped;
-
-                var foods1 = GetFoods(QueryData.GroupUrl, FoodGroups[item], nutrientsQuery1, "1");
-                //var foods2 = GetFoods(QueryData.GroupUrl, FoodGroups[item], nutrientsQuery2, "2");
-                
-                for (int i = 0; i < /*Math.Max(*/foods1.Count/*, foods2.Count)*/; i++) {
-                    var food1 = (dynamic)foods1[i];
-                    //var food2 = (dynamic)foods2[i];
-                    var id1 = ((object)food1.ndbno).ToString();
-                    var name1 = ((object)food1.name).ToString();
-                    //var id2 = ((object)food1.ndbno).ToString();
-                    //var name2 = ((object)food1.name).ToString();
-                    //if (id1 == id2 && name1 == name2) {
-                    name1= name1.Replace(".", "");// can't have this in mongo for some silly reason
-                        var _params = name1.Split(',').ToList();
-
-                        var allParamsAreKnown = _params.All(Validators[item].IsValidPart);
-                        if (allParamsAreKnown) {
-                            var idAlreadyInDB = unit.Products.Get(int.Parse(id1)) != null;
-                            if (idAlreadyInDB)
-                                SkipDebug(name1, "already in DB");
-                            else {
-                                JArray nutrients1 = food1.nutrients;
-                                //JArray nutrients2 = food2.nutrients;
-                                AddProduct(item, unit, id1, name1, /*new JArray(*/nutrients1/*.Concat(nutrients2))*/, double.Parse(((object)food1.weight).ToString()));
-                            }
-                        }
-                        else
-                            SkipDebug(name1, "unknow parameters");
-                    //}
+                var foods = GetFoodsList(QueryData.GroupUrl, FoodGroups[foodGroup], nutrientsQuery);
+                for (int i = 0; i < foods.Count; i++) {
+                    var food = (dynamic)foods[i];
+                    var id = ((object)food.ndbno).ToString();
+                    var name = ((object)food.name).ToString();
+                    name = name.Replace(".", "");// can't have this in mongo for some silly reason
+                    var _params = name.Split(',').ToList();
+                    var allParamsAreKnown = _params.All(Validators[foodGroup].IsValidPart);
+                    if (allParamsAreKnown) {
+                        var idAlreadyInDB = unit.Products.Get(int.Parse(id)) != null;
+                        if (idAlreadyInDB)
+                            SkipDebug(name, "already in DB");
+                        else 
+                            QueryAndAddSingleProduct(unit, foodGroup, name, id);
+                    }
+                    else
+                        SkipDebug(name, "unknow parameters");
                 }
                 Console.WriteLine("Group Added :\t\t " + (totalAdded-added));
                 Console.WriteLine("Group Skipped :\t\t " + (totalSkipped-skipped));
@@ -123,36 +101,31 @@ namespace InitDB {
             }
         }
 
-        private static void AddManual(RestDBInterface unit, string nutrientsQuery1, string nutrientsQuery2) {
-            var lines = File.ReadAllLines(Path.Combine(FolderPath, "Products_IDS.csv"));
-
-            foreach (var line in lines) {
-                var parts = line.Split(',');
-                var name = parts[0];
-                var id = parts[1];
-                if (unit.Products.Get(int.Parse(id)) != null) {
-                    SkipDebug(name, "already in DB");
-                }
-                else {
-
-                    var url1 = string.Format(QueryData.SingleUrl, nutrientsQuery1, id, QueryData.Format, QueryData.ApiKey);
-                    var url2 = string.Format(QueryData.SingleUrl, nutrientsQuery2, id, QueryData.Format, QueryData.ApiKey);
-                    var food1 = (dynamic)GetFoods(url1)[0];
-
-                    var food2 = (dynamic)GetFoods(url2)[0];
-                    JArray nutrients1 = (food1).nutrients;
-                    JArray nutrients2 = (food2).nutrients;
-                    AddProduct("manual", unit, id, name, new JArray(nutrients1.Concat(nutrients2)), double.Parse(((object)food1.weight).ToString()));
-                }
+        private static void QueryAndAddSingleProduct(RestDBInterface unit, string groupName, string name, string id) {
+            if (unit.Products.Get(int.Parse(id)) != null) {
+                SkipDebug(name, "already in DB");
+            }
+            else {
+                var url1 = string.Format(QueryData.SingleUrl,  id, QueryData.Format, QueryData.ApiKey);
+                var food1 = (dynamic)GetFood(url1, "", id);
+                JArray nutrients = (food1).nutrients;
+                AddProduct(groupName, unit, id, name, nutrients);
             }
         }
 
-        private static JArray GetFoods(string url, string foodGroup, string nutrientQuery, string num = "") {
-            var fullUrl = string.Format(QueryData.GroupUrl, foodGroup, QueryData.Format, QueryData.ApiKey, nutrientQuery);
-            return GetFoods(fullUrl, foodGroup, num);
+        public static void AddProduct(string groupName, RestDBInterface unit, string id, string name, JArray nutrients) {
+            AddDebug(name);
+            var collection = MongoData._database.GetCollection<BsonDocument>(MongoData.CollectionName);
+            var newProduct = ProductBuilder.GetProduct(groupName, int.Parse(id), name, nutrients);
+            unit.Products.Add(newProduct);
         }
 
-        private static JArray GetFoods(string fullUrl, string foodGroup = "", string num = "") {
+        private static JArray GetFoodsList(string url, string foodGroup, string nutrientQuery) {
+            var fullUrl = string.Format(QueryData.GroupUrl, foodGroup, QueryData.Format, QueryData.ApiKey, nutrientQuery);
+            return JArray.FromObject(GetFood(fullUrl, foodGroup));
+        }
+
+        private static object GetFood(string fullUrl, string foodGroup = "", string num = "") {
             string data;
             var path = Path.Combine(FolderPath, foodGroup + num + ".txt");
             if (!File.Exists(path)) {
@@ -162,25 +135,19 @@ namespace InitDB {
             else
                 data = File.ReadAllText(path);
             var res = JsonConvert.DeserializeObject<dynamic>(data);
-            return res.report.foods;
-        }
-
-        public static void AddProduct(string groupName, RestDBInterface unit, string id, string name, JArray nutrients, double weight) {
-            AddDebug(name);
-            var collection = MongoData._database.GetCollection<BsonDocument>(MongoData.CollectionName);
-            var newProduct = ProductBuilder.GetProduct(groupName, int.Parse(id), name, nutrients, weight);
-            unit.Products.Add(newProduct);
+            if (foodGroup != string.Empty)
+                return res.report.foods;
+            else
+                return res.report.food;
         }
 
 
         private static void SkipDebug(string name, string reason) {
             totalSkipped++;
-          //  Console.WriteLine("Skipping: " + name + ", reason : " + reason);
         }
 
         private static void AddDebug(string name) {
             totalAdded++;
-        //    Console.WriteLine("Adding: " + name + "");
         }
 
 

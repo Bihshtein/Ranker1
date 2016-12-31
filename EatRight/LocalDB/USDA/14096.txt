@@ -1,0 +1,3000 @@
+{
+    "report": {
+        "sr": "28",
+        "type": "Full",
+        "food": {
+            "ndbno": "14096",
+            "name": "Alcoholic beverage, wine, table, red",
+            "sd": "ALCOHOLIC BEV,WINE,TABLE,RED",
+            "fg": "Beverages",
+            "sn": "",
+            "cn": "",
+            "manu": "",
+            "nf": 6.25,
+            "cf": 3.92,
+            "ff": 8.37,
+            "pf": 3.36,
+            "r": "0%",
+            "rd": "",
+            "ds": "Standard Reference",
+            "nutrients": [
+                {
+                    "nutrient_id": 255,
+                    "name": "Water",
+                    "group": "Proximates",
+                    "unit": "g",
+                    "value": 86.49,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 25.43
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 127.14
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 208,
+                    "name": "Energy",
+                    "group": "Proximates",
+                    "unit": "kcal",
+                    "value": 85.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 25.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 125.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 268,
+                    "name": "Energy",
+                    "group": "Proximates",
+                    "unit": "kJ",
+                    "value": 356.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 105.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 523.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 203,
+                    "name": "Protein",
+                    "group": "Proximates",
+                    "unit": "g",
+                    "value": 0.07,
+                    "sourcecode": [
+                        1
+                    ],
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.02
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.1
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 204,
+                    "name": "Total lipid (fat)",
+                    "group": "Proximates",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": [
+                        1
+                    ],
+                    "dp": 1,
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 207,
+                    "name": "Ash",
+                    "group": "Proximates",
+                    "unit": "g",
+                    "value": 0.28,
+                    "sourcecode": [
+                        2
+                    ],
+                    "dp": 1300,
+                    "se": "0.002",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.08
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.41
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 205,
+                    "name": "Carbohydrate, by difference",
+                    "group": "Proximates",
+                    "unit": "g",
+                    "value": 2.61,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.77
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 3.84
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 291,
+                    "name": "Fiber, total dietary",
+                    "group": "Proximates",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": [
+                        1
+                    ],
+                    "dp": 1,
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 269,
+                    "name": "Sugars, total",
+                    "group": "Proximates",
+                    "unit": "g",
+                    "value": 0.62,
+                    "sourcecode": [
+                        1
+                    ],
+                    "dp": 1,
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.18
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.91
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 301,
+                    "name": "Calcium, Ca",
+                    "group": "Minerals",
+                    "unit": "mg",
+                    "value": 8.0,
+                    "sourcecode": [
+                        1
+                    ],
+                    "dp": 1,
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 2.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 12.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 303,
+                    "name": "Iron, Fe",
+                    "group": "Minerals",
+                    "unit": "mg",
+                    "value": 0.46,
+                    "sourcecode": [
+                        1
+                    ],
+                    "dp": 1,
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.14
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.68
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 304,
+                    "name": "Magnesium, Mg",
+                    "group": "Minerals",
+                    "unit": "mg",
+                    "value": 12.0,
+                    "sourcecode": [
+                        1
+                    ],
+                    "dp": 1,
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 4.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 18.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 305,
+                    "name": "Phosphorus, P",
+                    "group": "Minerals",
+                    "unit": "mg",
+                    "value": 23.0,
+                    "sourcecode": [
+                        1
+                    ],
+                    "dp": 1,
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 7.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 34.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 306,
+                    "name": "Potassium, K",
+                    "group": "Minerals",
+                    "unit": "mg",
+                    "value": 127.0,
+                    "sourcecode": [
+                        1
+                    ],
+                    "dp": 1,
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 37.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 187.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 307,
+                    "name": "Sodium, Na",
+                    "group": "Minerals",
+                    "unit": "mg",
+                    "value": 4.0,
+                    "sourcecode": [
+                        1
+                    ],
+                    "dp": 1,
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 1.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 6.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 309,
+                    "name": "Zinc, Zn",
+                    "group": "Minerals",
+                    "unit": "mg",
+                    "value": 0.14,
+                    "sourcecode": [
+                        1
+                    ],
+                    "dp": 1,
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.04
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.21
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 312,
+                    "name": "Copper, Cu",
+                    "group": "Minerals",
+                    "unit": "mg",
+                    "value": 0.011,
+                    "sourcecode": [
+                        1
+                    ],
+                    "dp": 1,
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.003
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.016
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 315,
+                    "name": "Manganese, Mn",
+                    "group": "Minerals",
+                    "unit": "mg",
+                    "value": 0.132,
+                    "sourcecode": [
+                        1
+                    ],
+                    "dp": 1,
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.039
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.194
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 317,
+                    "name": "Selenium, Se",
+                    "group": "Minerals",
+                    "unit": "\u00b5g",
+                    "value": 0.2,
+                    "sourcecode": [
+                        1
+                    ],
+                    "dp": 1,
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.1
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.3
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 313,
+                    "name": "Fluoride, F",
+                    "group": "Minerals",
+                    "unit": "\u00b5g",
+                    "value": 104.6,
+                    "sourcecode": [
+                        1
+                    ],
+                    "dp": 14,
+                    "se": "3.255",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 30.8
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 153.8
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 401,
+                    "name": "Vitamin C, total ascorbic acid",
+                    "group": "Vitamins",
+                    "unit": "mg",
+                    "value": 0.0,
+                    "sourcecode": [
+                        1
+                    ],
+                    "dp": 1,
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 404,
+                    "name": "Thiamin",
+                    "group": "Vitamins",
+                    "unit": "mg",
+                    "value": 0.005,
+                    "sourcecode": [
+                        1
+                    ],
+                    "dp": 1,
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.001
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.007
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 405,
+                    "name": "Riboflavin",
+                    "group": "Vitamins",
+                    "unit": "mg",
+                    "value": 0.031,
+                    "sourcecode": [
+                        1
+                    ],
+                    "dp": 1,
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.009
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.046
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 406,
+                    "name": "Niacin",
+                    "group": "Vitamins",
+                    "unit": "mg",
+                    "value": 0.224,
+                    "sourcecode": [
+                        1
+                    ],
+                    "dp": 1,
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.066
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.329
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 410,
+                    "name": "Pantothenic acid",
+                    "group": "Vitamins",
+                    "unit": "mg",
+                    "value": 0.03,
+                    "sourcecode": [
+                        1
+                    ],
+                    "dp": 1,
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.009
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.044
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 415,
+                    "name": "Vitamin B-6",
+                    "group": "Vitamins",
+                    "unit": "mg",
+                    "value": 0.057,
+                    "sourcecode": [
+                        1
+                    ],
+                    "dp": 1,
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.017
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.084
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 417,
+                    "name": "Folate, total",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 1.0,
+                    "sourcecode": [
+                        1
+                    ],
+                    "dp": 1,
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 1.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 431,
+                    "name": "Folic acid",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 432,
+                    "name": "Folate, food",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 1.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 1.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 435,
+                    "name": "Folate, DFE",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 1.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 1.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 421,
+                    "name": "Choline, total",
+                    "group": "Vitamins",
+                    "unit": "mg",
+                    "value": 5.7,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 1.7
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 8.4
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 454,
+                    "name": "Betaine",
+                    "group": "Vitamins",
+                    "unit": "mg",
+                    "value": 0.3,
+                    "sourcecode": "",
+                    "dp": 1,
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.1
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.4
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 418,
+                    "name": "Vitamin B-12",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 0.0,
+                    "sourcecode": [
+                        1
+                    ],
+                    "dp": 1,
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 578,
+                    "name": "Vitamin B-12, added",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 320,
+                    "name": "Vitamin A, RAE",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 319,
+                    "name": "Retinol",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 321,
+                    "name": "Carotene, beta",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 1.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 1.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 322,
+                    "name": "Carotene, alpha",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 334,
+                    "name": "Cryptoxanthin, beta",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 318,
+                    "name": "Vitamin A, IU",
+                    "group": "Vitamins",
+                    "unit": "IU",
+                    "value": 2.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 1.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 3.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 337,
+                    "name": "Lycopene",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 338,
+                    "name": "Lutein + zeaxanthin",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 6.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 2.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 9.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 323,
+                    "name": "Vitamin E (alpha-tocopherol)",
+                    "group": "Vitamins",
+                    "unit": "mg",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 573,
+                    "name": "Vitamin E, added",
+                    "group": "Vitamins",
+                    "unit": "mg",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 328,
+                    "name": "Vitamin D (D2 + D3)",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 324,
+                    "name": "Vitamin D",
+                    "group": "Vitamins",
+                    "unit": "IU",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 430,
+                    "name": "Vitamin K (phylloquinone)",
+                    "group": "Vitamins",
+                    "unit": "\u00b5g",
+                    "value": 0.4,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.1
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.6
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 606,
+                    "name": "Fatty acids, total saturated",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 607,
+                    "name": "4:0",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 608,
+                    "name": "6:0",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 609,
+                    "name": "8:0",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 610,
+                    "name": "10:0",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 611,
+                    "name": "12:0",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 612,
+                    "name": "14:0",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 613,
+                    "name": "16:0",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 614,
+                    "name": "18:0",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 645,
+                    "name": "Fatty acids, total monounsaturated",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 626,
+                    "name": "16:1 undifferentiated",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 617,
+                    "name": "18:1 undifferentiated",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 628,
+                    "name": "20:1",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 630,
+                    "name": "22:1 undifferentiated",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 646,
+                    "name": "Fatty acids, total polyunsaturated",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 618,
+                    "name": "18:2 undifferentiated",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 619,
+                    "name": "18:3 undifferentiated",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 627,
+                    "name": "18:4",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 620,
+                    "name": "20:4 undifferentiated",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 629,
+                    "name": "20:5 n-3 (EPA)",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 631,
+                    "name": "22:5 n-3 (DPA)",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 621,
+                    "name": "22:6 n-3 (DHA)",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 605,
+                    "name": "Fatty acids, total trans",
+                    "group": "Lipids",
+                    "unit": "g",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 601,
+                    "name": "Cholesterol",
+                    "group": "Lipids",
+                    "unit": "mg",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 221,
+                    "name": "Alcohol, ethyl",
+                    "group": "Other",
+                    "unit": "g",
+                    "value": 10.6,
+                    "sourcecode": [
+                        2
+                    ],
+                    "dp": 1300,
+                    "se": "0.020",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 3.1
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 15.6
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 262,
+                    "name": "Caffeine",
+                    "group": "Other",
+                    "unit": "mg",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 263,
+                    "name": "Theobromine",
+                    "group": "Other",
+                    "unit": "mg",
+                    "value": 0.0,
+                    "sourcecode": "",
+                    "dp": "",
+                    "se": "",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 731,
+                    "name": "Cyanidin",
+                    "group": "Anthocyanidins",
+                    "unit": "mg",
+                    "value": 0.19,
+                    "sourcecode": [
+                        16,
+                        17,
+                        18,
+                        19,
+                        20,
+                        21,
+                        22
+                    ],
+                    "dp": 91,
+                    "se": "0.060",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.06
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.28
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 740,
+                    "name": "Petunidin",
+                    "group": "Anthocyanidins",
+                    "unit": "mg",
+                    "value": 2.0,
+                    "sourcecode": [
+                        16,
+                        17,
+                        19,
+                        20,
+                        21,
+                        22,
+                        23,
+                        24
+                    ],
+                    "dp": 147,
+                    "se": "0.140",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.6
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 2.9
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 741,
+                    "name": "Delphinidin",
+                    "group": "Anthocyanidins",
+                    "unit": "mg",
+                    "value": 2.0,
+                    "sourcecode": [
+                        16,
+                        17,
+                        19,
+                        20,
+                        21,
+                        22,
+                        23,
+                        24
+                    ],
+                    "dp": 147,
+                    "se": "0.140",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.6
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 3.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 742,
+                    "name": "Malvidin",
+                    "group": "Anthocyanidins",
+                    "unit": "mg",
+                    "value": 13.8,
+                    "sourcecode": [
+                        16,
+                        17,
+                        18,
+                        19,
+                        20,
+                        21,
+                        22,
+                        23,
+                        24,
+                        25
+                    ],
+                    "dp": 166,
+                    "se": "0.780",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 4.1
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 20.3
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 745,
+                    "name": "Peonidin",
+                    "group": "Anthocyanidins",
+                    "unit": "mg",
+                    "value": 1.2,
+                    "sourcecode": [
+                        16,
+                        17,
+                        19,
+                        20,
+                        21,
+                        22,
+                        23,
+                        24
+                    ],
+                    "dp": 147,
+                    "se": "0.080",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.4
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 1.8
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 749,
+                    "name": "(+)-Catechin",
+                    "group": "Flavan-3-ols",
+                    "unit": "mg",
+                    "value": 7.1,
+                    "sourcecode": [
+                        18,
+                        20,
+                        23,
+                        24,
+                        25,
+                        26,
+                        27,
+                        28,
+                        29,
+                        30,
+                        31,
+                        32,
+                        33,
+                        34,
+                        35
+                    ],
+                    "dp": 939,
+                    "se": "0.190",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 2.1
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 10.5
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 750,
+                    "name": "(-)-Epigallocatechin",
+                    "group": "Flavan-3-ols",
+                    "unit": "mg",
+                    "value": 0.1,
+                    "sourcecode": [
+                        26,
+                        28
+                    ],
+                    "dp": 15,
+                    "se": "0.010",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.1
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 751,
+                    "name": "(-)-Epicatechin",
+                    "group": "Flavan-3-ols",
+                    "unit": "mg",
+                    "value": 3.8,
+                    "sourcecode": [
+                        16,
+                        18,
+                        20,
+                        23,
+                        24,
+                        25,
+                        26,
+                        27,
+                        28,
+                        29,
+                        30,
+                        31,
+                        32,
+                        33,
+                        34,
+                        35
+                    ],
+                    "dp": 938,
+                    "se": "0.100",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 1.1
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 5.6
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 752,
+                    "name": "(-)-Epicatechin 3-gallate",
+                    "group": "Flavan-3-ols",
+                    "unit": "mg",
+                    "value": 0.0,
+                    "sourcecode": [
+                        26,
+                        27,
+                        28
+                    ],
+                    "dp": 16,
+                    "se": "0.010",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 753,
+                    "name": "(-)-Epigallocatechin 3-gallate",
+                    "group": "Flavan-3-ols",
+                    "unit": "mg",
+                    "value": 0.0,
+                    "sourcecode": [
+                        26,
+                        28
+                    ],
+                    "dp": 15,
+                    "se": "0.000",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 794,
+                    "name": "(+)-Gallocatechin",
+                    "group": "Flavan-3-ols",
+                    "unit": "mg",
+                    "value": 0.1,
+                    "sourcecode": [
+                        26,
+                        28
+                    ],
+                    "dp": 15,
+                    "se": "0.020",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.1
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 759,
+                    "name": "Hesperetin",
+                    "group": "Flavanones",
+                    "unit": "mg",
+                    "value": 0.6,
+                    "sourcecode": "",
+                    "dp": 2,
+                    "se": "0.360",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.2
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.9
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 762,
+                    "name": "Naringenin",
+                    "group": "Flavanones",
+                    "unit": "mg",
+                    "value": 1.8,
+                    "sourcecode": "",
+                    "dp": 2,
+                    "se": "0.740",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.5
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 2.6
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 770,
+                    "name": "Apigenin",
+                    "group": "Flavones",
+                    "unit": "mg",
+                    "value": 0.1,
+                    "sourcecode": [
+                        19,
+                        36,
+                        37
+                    ],
+                    "dp": 24,
+                    "se": "0.020",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.2
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 773,
+                    "name": "Luteolin",
+                    "group": "Flavones",
+                    "unit": "mg",
+                    "value": 0.0,
+                    "sourcecode": [
+                        36,
+                        37,
+                        38,
+                        39
+                    ],
+                    "dp": 39,
+                    "se": "0.010",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.1
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 785,
+                    "name": "Isorhamnetin",
+                    "group": "Flavonols",
+                    "unit": "mg",
+                    "value": 0.0,
+                    "sourcecode": [
+                        38,
+                        39,
+                        40,
+                        41,
+                        42
+                    ],
+                    "dp": 64,
+                    "se": "0.000",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 786,
+                    "name": "Kaempferol",
+                    "group": "Flavonols",
+                    "unit": "mg",
+                    "value": 0.1,
+                    "sourcecode": [
+                        20,
+                        32,
+                        33,
+                        34,
+                        36,
+                        37,
+                        38,
+                        39,
+                        40,
+                        41,
+                        42,
+                        43,
+                        44
+                    ],
+                    "dp": 166,
+                    "se": "0.010",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.0
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.1
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 788,
+                    "name": "Myricetin",
+                    "group": "Flavonols",
+                    "unit": "mg",
+                    "value": 0.4,
+                    "sourcecode": [
+                        18,
+                        19,
+                        20,
+                        31,
+                        32,
+                        33,
+                        34,
+                        36,
+                        37,
+                        38,
+                        39,
+                        40,
+                        41,
+                        42,
+                        43,
+                        44,
+                        45
+                    ],
+                    "dp": 219,
+                    "se": "0.010",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.1
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 0.6
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 789,
+                    "name": "Quercetin",
+                    "group": "Flavonols",
+                    "unit": "mg",
+                    "value": 1.0,
+                    "sourcecode": [
+                        18,
+                        19,
+                        20,
+                        24,
+                        30,
+                        31,
+                        32,
+                        33,
+                        34,
+                        35,
+                        36,
+                        37,
+                        38,
+                        39,
+                        40,
+                        41,
+                        42,
+                        43,
+                        44,
+                        45,
+                        46
+                    ],
+                    "dp": 313,
+                    "se": "0.040",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.3
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 1.5
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 734,
+                    "name": "Proanthocyanidin dimers",
+                    "group": "Proanthocyanidin",
+                    "unit": "mg",
+                    "value": 12.3,
+                    "sourcecode": [
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15
+                    ],
+                    "dp": 270,
+                    "se": "8.900",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 3.6
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 18.1
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 735,
+                    "name": "Proanthocyanidin trimers",
+                    "group": "Proanthocyanidin",
+                    "unit": "mg",
+                    "value": 2.4,
+                    "sourcecode": [
+                        3,
+                        4,
+                        6,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13
+                    ],
+                    "dp": 73,
+                    "se": "2.250",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.7
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 3.6
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 736,
+                    "name": "Proanthocyanidin 4-6mers",
+                    "group": "Proanthocyanidin",
+                    "unit": "mg",
+                    "value": 2.5,
+                    "sourcecode": [
+                        8,
+                        9,
+                        13
+                    ],
+                    "dp": 57,
+                    "se": "1.050",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 0.7
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 3.7
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 737,
+                    "name": "Proanthocyanidin 7-10mers",
+                    "group": "Proanthocyanidin",
+                    "unit": "mg",
+                    "value": 3.8,
+                    "sourcecode": [
+                        8,
+                        9
+                    ],
+                    "dp": 3,
+                    "se": "1.950",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 1.1
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 5.5
+                        }
+                    ]
+                },
+                {
+                    "nutrient_id": 738,
+                    "name": "Proanthocyanidin polymers (>10mers)",
+                    "group": "Proanthocyanidin",
+                    "unit": "mg",
+                    "value": 8.6,
+                    "sourcecode": [
+                        8,
+                        9
+                    ],
+                    "dp": 3,
+                    "se": "3.790",
+                    "measures": [
+                        {
+                            "label": "fl oz",
+                            "eqv": 29.4,
+                            "qty": 1.0,
+                            "value": 2.5
+                        },
+                        {
+                            "label": "serving (5 fl oz)",
+                            "eqv": 147.0,
+                            "qty": 1.0,
+                            "value": 12.6
+                        }
+                    ]
+                }
+            ]
+        },
+        "sources": [
+            {
+                "id": 1,
+                "title": "National Food and Nutrient Analysis Program Wave 7b",
+                "authors": "Nutrient Data Laboratory, ARS, USDA",
+                "vol": "Beltsville",
+                "iss": "MD",
+                "year": "2002"
+            },
+            {
+                "id": 2,
+                "title": "Wine and malt beverage data from TTB",
+                "authors": "Alcohol and Tobacco Tax and Trade Bureau",
+                "vol": "Beltsville",
+                "iss": "MD",
+                "year": "2004"
+            },
+            {
+                "id": 3,
+                "title": "Developmental changes of procyanidins in grapes of red Vitis vinifera varieties and their composition in respective wines",
+                "authors": "de Freitas, V.A.P., Glories, Y., and Monique, A.",
+                "vol": "51",
+                "iss": "",
+                "year": "2000"
+            },
+            {
+                "id": 4,
+                "title": "Quantitative analysis of flavan-3-ols in Spanish foodstuffs and beverages",
+                "authors": "de Pascual-Teresa, S., Santos-Buelga, C., and Rivas-Gonzalo, J.C.",
+                "vol": "48",
+                "iss": "",
+                "year": "2000"
+            },
+            {
+                "id": 5,
+                "title": "Phenolic characterization of  Malbec wines from Mendoza province (Argentina)",
+                "authors": "Fanzone, M., Pe\u00f1a-Neira, \u00c1., Jofr\u00e9, V., Assof, M., and Zamora, F.Phenolic characterization of  Malbec wines from Mendoza province (Argentina)",
+                "vol": "58",
+                "iss": "",
+                "year": "2010"
+            },
+            {
+                "id": 6,
+                "title": "Antioxidant activity of different phenolic fractions separated from an Italian red wine",
+                "authors": "Ghiselli, A., Nardini, M., Baldi, A., and Scaccini, C.",
+                "vol": "46",
+                "iss": "",
+                "year": "1998"
+            },
+            {
+                "id": 7,
+                "title": "Color and phenolic compounds of a young red wine as discriminating variables of its aging status",
+                "authors": "Gomez-Plaza, E., Gil-Munoz, R., Lopez-Roca, J.M., and Martinez, A.",
+                "vol": "32",
+                "iss": "",
+                "year": "1999"
+            },
+            {
+                "id": 8,
+                "title": "Concentrations of proanthocyanidins in common foods and estimations of normal consumption",
+                "authors": "Gu, L., Kelm, M.A., Hammerstone, J.F., Beecher, G., Holden, J., Haytowitz, D., Gebhardt, S., and Prior, R.L.",
+                "vol": "134",
+                "iss": "",
+                "year": "2004"
+            },
+            {
+                "id": 9,
+                "title": "Proanthocyanidins in common food products of plant origin",
+                "authors": "Hellstr\u00f6m, T\u00f6rr\u00f6nen, A.R., and Matilla, P.H.",
+                "vol": "57",
+                "iss": "",
+                "year": "2009"
+            },
+            {
+                "id": 10,
+                "title": "Effect of several enological practices on the content of catechins and proanthocyanidins of red wines",
+                "authors": "Kovac, V., Alonso, E., Bourzeix, M., and Revilla, E.",
+                "vol": "40",
+                "iss": "",
+                "year": "1992"
+            },
+            {
+                "id": 11,
+                "title": "Monomeric, oligomeric, and polymeric flavan-3-ol composition of wines and grapes from Vitis vinifera L. Cv. Graciano, Tempranillo, and Cabernet Sauvignon",
+                "authors": "Monogas, M., G\u00f3mez-Cardov\u00e9s, C., Bartolom\u00e9, B., Laureano, O., and Da Silva, J.M.R.",
+                "vol": "51",
+                "iss": "",
+                "year": "2003"
+            },
+            {
+                "id": 12,
+                "title": "Dimer and trimer procyanidins in Carignan and Mourvedre grapes and red wines",
+                "authors": "Ricardo da Silva, J.M., Rosec, J-Ph., Bourziex, M., Mourgues, J., & Moutounet, M.",
+                "vol": "31",
+                "iss": "",
+                "year": "1992"
+            },
+            {
+                "id": 13,
+                "title": "Anthocyanin and proanthocyanin content in selected white and red wines.  Oxygen radical absorbance capacity comparison with nontraditional wines obtained from highbush blueberry",
+                "authors": "S\u00e1nchez-Moreno, C., Cao, G., Ou, B, and Prior, R. L.",
+                "vol": "51",
+                "iss": "",
+                "year": "2003"
+            },
+            {
+                "id": 14,
+                "title": "Wine phenolics: contribution to intake and bioavailability",
+                "authors": "Teissedre, P.L. and Landrault, T.",
+                "vol": "33",
+                "iss": "",
+                "year": "2000"
+            },
+            {
+                "id": 15,
+                "title": "Antioxidant capacity and phenolic composition of red wines from various grape varieties: Specificity of Pinot Noir.",
+                "authors": "Van Leeuw, R., Kevers, C., Pincemail, J., Defraigne, J. O., and Dommes, J.",
+                "vol": "36",
+                "iss": "",
+                "year": "2014"
+            },
+            {
+                "id": 16,
+                "title": "Influence of the acetification process on phenolic compounds.",
+                "authors": "Andlauer, W., Stumpf, C., and F\u00fcrst, P.",
+                "vol": "48",
+                "iss": "",
+                "year": "2000"
+            },
+            {
+                "id": 17,
+                "title": "Determination of anthocyanins and related components in red wines by micro- and capillary HPLC.",
+                "authors": "Dugo, P., Favoino, O., Presti, M.L.,Luppino, R., Dogo, G., and Mondello, L.",
+                "vol": "27",
+                "iss": "",
+                "year": "2004"
+            },
+            {
+                "id": 18,
+                "title": "Principal phenolic phytochemicals in selected California wines and their antioxidant activity in inhibiting oxidation of human low-density lipoproteins.",
+                "authors": "Frankel, E. N., Waterhouse, A. l., and Teissedre, P. L.",
+                "vol": "43",
+                "iss": "",
+                "year": "1995"
+            },
+            {
+                "id": 19,
+                "title": "Polyphenols content in some Italian red wines of different geographical origins.",
+                "authors": "Gambelli, L., and Santorini, G.P.",
+                "vol": "17",
+                "iss": "",
+                "year": "2004"
+            },
+            {
+                "id": 20,
+                "title": "Antioxidant activity of different phenolic fractions separated from an Italian red wine.",
+                "authors": "Ghiselli, A., Nardini, M., Baldi, A., and Scaccini, C.",
+                "vol": "46",
+                "iss": "2",
+                "year": "1998"
+            },
+            {
+                "id": 21,
+                "title": "Determination of anthocyanins in berries and red wine by high-performance liquid chromatography.",
+                "authors": "Nyman, N. A. and Kumpulainen, J. T.",
+                "vol": "49",
+                "iss": "",
+                "year": "2001"
+            },
+            {
+                "id": 22,
+                "title": "Anthocyanin and proanthocyanin content in selected white and red wines.  Oxygen radical absorbance capacity comparison with nontraditional wines obtained from highbush blueberry.",
+                "authors": "Sanchez-Moreno, C., Cao, G., Ou, B., and Prior, R.L.",
+                "vol": "51",
+                "iss": "",
+                "year": "2003"
+            },
+            {
+                "id": 23,
+                "title": "Color and phenolic compounds of a young red wine as discriminanting variables of its status.",
+                "authors": "G\u00f3mez-Plaza, E., Gil-Mu\u00f1oz, R., L\u00f3pez-Roca , and J. M., Mart\u00ednez, A.",
+                "vol": "32",
+                "iss": "",
+                "year": "1999"
+            },
+            {
+                "id": 24,
+                "title": "Polyphenols, anthocyanins, and trans-resveratrol in red wines from the Hungarian villainy region.",
+                "authors": "Pour Nikfardjam, M. S., M\u00e1rk, L., Avar, P., Figler, M., and Ohmacht, R.",
+                "vol": "98",
+                "iss": "",
+                "year": "2006"
+            },
+            {
+                "id": 25,
+                "title": "Wine phenolics: contribution to dietary intake and bioavailability.",
+                "authors": "Teissedre, P-L., and Landrault, N.",
+                "vol": "33",
+                "iss": "",
+                "year": "2000"
+            },
+            {
+                "id": 26,
+                "title": "Catechin content of foods commonly consumed in the Netherlands. 2. Tea, wine, fruit juices, and chocolate milk.",
+                "authors": "Arts, I. C. W., van de Putte, B., and Hollman, P. C. H.",
+                "vol": "48",
+                "iss": "",
+                "year": "2000"
+            },
+            {
+                "id": 27,
+                "title": "Developmental changes of procyanidins in grapes of red Vitis vinifera varieties and their composition in respective wines",
+                "authors": "de Freitas, V.A.P., Glories, Y., and Monique, A.",
+                "vol": "51",
+                "iss": "4",
+                "year": "2000"
+            },
+            {
+                "id": 28,
+                "title": "Quantitative analysis of flavan-3-ols in Spanish foodstuffs and beverages.",
+                "authors": "de Pascual-Teresa, S., Santos-Buelga, C., & Rivas-Gonzalo, J.C.",
+                "vol": "48",
+                "iss": "",
+                "year": "2000"
+            },
+            {
+                "id": 29,
+                "title": "Catechin and epicatechin concentrations of red wines: regional and cultivar-related differences.",
+                "authors": "Goldberg, D.M., Karumanchiri, A., Tsang, E., and Soleas, G.J.",
+                "vol": "49",
+                "iss": "1",
+                "year": "1998"
+            },
+            {
+                "id": 30,
+                "title": "Method to assay the concentrations of phenolic  constituents of biological interest in wines.",
+                "authors": "Goldberg, D.M., Tsang, E., Karumanchiri, A., Diamandis, E.P., Doleas, G., and Ng, E.",
+                "vol": "68",
+                "iss": "",
+                "year": "1996"
+            },
+            {
+                "id": 31,
+                "title": "Determination of flavonoids in plant material by HPLC with diode-array and electro-array detection.",
+                "authors": "Mattila, P., Astola, J., and Kumpulainen, J.",
+                "vol": "48",
+                "iss": "",
+                "year": "2000"
+            },
+            {
+                "id": 32,
+                "title": "Principal component analysis of the polyphenol content in young red wines.",
+                "authors": "Rodriguez-Delgado, M.-A., Gonzalez-Hernandez, G., Conde-Gonzalez, J.-E., and Perez-Trujillo, J.-P.",
+                "vol": "78",
+                "iss": "4",
+                "year": "2002"
+            },
+            {
+                "id": 33,
+                "title": "Separation of phenolic compounds by high-performance liquid chromatography with absorbance and fluorimetric detection",
+                "authors": "Rodr\u00edguez-Delgado, M. A., Malovan\u00e1, S., P\u00e9rez, J. P., and Borges, T.",
+                "vol": "912",
+                "iss": "",
+                "year": "2001"
+            },
+            {
+                "id": 34,
+                "title": "Optimization of the separation of phenolic compounds by micellar electokinetic capillary chromatography",
+                "authors": "Rodr\u00edguez-Delgado, M. A., P\u00e9rez, M. L., Corbella, R., Gonz\u00e1lez, G., Garc\u00eda Montelongo, F. J.",
+                "vol": "871",
+                "iss": "",
+                "year": "2000"
+            },
+            {
+                "id": 35,
+                "title": "Simultaneous determination of phenolic compounds in red wines by HPLC.",
+                "authors": "Tarola, A. M., Milano, F., and Giannetti, V.",
+                "vol": "40",
+                "iss": "",
+                "year": "2007"
+            },
+            {
+                "id": 36,
+                "title": "Content of potentially anticarcinogenic flavonoids of tea infusions, wines, and fruit juices.",
+                "authors": "Hertog, M. G. L., Hollman, P. C. H., and van de Putte, B.",
+                "vol": "41",
+                "iss": "",
+                "year": "1993"
+            },
+            {
+                "id": 37,
+                "title": "Flavonol and flavone intakes in US health professionals",
+                "authors": "Sampson, L., Rimm, E., Hollman, P.C.H., de Vries, J.H.M., and Katan, M.B.",
+                "vol": "102",
+                "iss": "10",
+                "year": "2002"
+            },
+            {
+                "id": 38,
+                "title": "Effects of grape veriety, harvest date, fermentation vessel and wine ageing on flavonoid concentration in res wines.",
+                "authors": "Fang, F., Li, J-M., Zhang, P., Tang, K., Wang, W., Pan, Q-H., and Huang, W-D.",
+                "vol": "41",
+                "iss": "",
+                "year": "2008"
+            },
+            {
+                "id": 39,
+                "title": "Determination of red wine flavonoids by HPLC and effect of aging.",
+                "authors": "Fang, F., Li, J-M., Pan, Q-H., and Huang, W-D.",
+                "vol": "101",
+                "iss": "",
+                "year": "2007"
+            },
+            {
+                "id": 40,
+                "title": "Determination of resveratrol and othe phenolic compounds in experimental wines from grapes subjected to different pesticide treatments",
+                "authors": "Dugo, G., Saitta, M., Guifrida, F., Vilasi, F., and La Torre, G. L.",
+                "vol": "16",
+                "iss": "",
+                "year": "2004"
+            },
+            {
+                "id": 41,
+                "title": "Analysis of flavonol aglycones in wine extracts by high performance liquid chromatography.",
+                "authors": "Revilla, E.",
+                "vol": "22",
+                "iss": "",
+                "year": "1986"
+            },
+            {
+                "id": 42,
+                "title": "Polyphenol content and total antioxidant potential of selected Italian wines",
+                "authors": "Simonetti, P., Pi\u00e9tta, P., and Testolin, G.",
+                "vol": "45",
+                "iss": "",
+                "year": "1997"
+            },
+            {
+                "id": 43,
+                "title": "Free and conjugated myricetin, quercetin, and kaempferol in Bulgarian red wines.",
+                "authors": "Tsanova-Savova, S., and Ribarova, F.",
+                "vol": "15",
+                "iss": "",
+                "year": "2002"
+            },
+            {
+                "id": 44,
+                "title": "Content of the flavonols Myricetin, Quercetin, and Kaempferol in Finnish berry wines.",
+                "authors": "Vuorinen, H., M\u00e4\u00e4tt\u00e4, T\u00f6rr\u00f6nen, R.",
+                "vol": "48",
+                "iss": "",
+                "year": "2000"
+            },
+            {
+                "id": 45,
+                "title": "Quantitative analysis of flavonols, flavones, and flavonones in fruits, vegetables and beverages by high-performance liquid chromatography with photo-diode array and mass spectrometric detection.",
+                "authors": "Justesen, U., Knuthsen, P., and Leth, T.",
+                "vol": "799",
+                "iss": "",
+                "year": "1998"
+            },
+            {
+                "id": 46,
+                "title": "Analysis of phenolic constituents of biological interest in red wines by high-performance liquid chromatography.",
+                "authors": "Lopez, M., Martinez, F., Del Valle, C., Orte, C., and Miro, M.",
+                "vol": "922",
+                "iss": "",
+                "year": "2001"
+            }
+        ],
+        "footnotes": [
+            {
+                "id": "a",
+                "desc": "Minerals, B vitamins and vitamin C determinations were made on samples of Merlot."
+            }
+        ],
+        "langual": [
+            
+        ]
+    }
+}
