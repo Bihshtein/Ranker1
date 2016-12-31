@@ -27,7 +27,7 @@ namespace InitDailyValuesDB
 
         private static void AddDailyValuesFromCSV(RestDBInterface unit)
         {
-            var filePath = Path.Combine(FolderPath, "DailyValues.csv");
+            var filePath = Path.Combine(FolderPath,"..\\", "DailyValues.csv");
 
             unit.DailyValues.Empty();
 
