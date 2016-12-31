@@ -41,7 +41,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             this.calories = new System.Windows.Forms.ComboBox();
             this.cookTime = new System.Windows.Forms.ComboBox();
             this.minValues = new System.Windows.Forms.ComboBox();
@@ -61,6 +61,8 @@
             this.label12 = new System.Windows.Forms.Label();
             this.idealServings = new System.Windows.Forms.ComboBox();
             this.labelConsole = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.recommendationsNum = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
@@ -70,7 +72,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.LimeGreen;
             this.button1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.button1.Location = new System.Drawing.Point(349, 229);
+            this.button1.Location = new System.Drawing.Point(347, 266);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(205, 58);
@@ -91,10 +93,10 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(15, 294);
+            this.dataGridView1.Location = new System.Drawing.Point(15, 332);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(868, 404);
+            this.dataGridView1.Size = new System.Drawing.Size(868, 366);
             this.dataGridView1.TabIndex = 2;
             // 
             // richTextBox1
@@ -187,17 +189,17 @@
             this.label3.TabIndex = 11;
             this.label3.Text = "משקל זמן בישול:";
             // 
-            // label13
+            // label14
             // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.label13.Location = new System.Drawing.Point(9, 183);
-            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(190, 24);
-            this.label13.TabIndex = 7;
-            this.label13.Text = "User preferences:";
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label14.Location = new System.Drawing.Point(9, 183);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(190, 24);
+            this.label14.TabIndex = 7;
+            this.label14.Text = "User preferences:";
             // 
             // calories
             // 
@@ -393,13 +395,34 @@
             this.labelConsole.Size = new System.Drawing.Size(0, 24);
             this.labelConsole.TabIndex = 33;
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label13.Location = new System.Drawing.Point(11, 221);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(204, 24);
+            this.label13.TabIndex = 35;
+            this.label13.Text = "Recommendations:";
+            // 
+            // recommendationsNum
+            // 
+            this.recommendationsNum.FormattingEnabled = true;
+            this.recommendationsNum.Location = new System.Drawing.Point(237, 225);
+            this.recommendationsNum.Name = "recommendationsNum";
+            this.recommendationsNum.Size = new System.Drawing.Size(117, 24);
+            this.recommendationsNum.TabIndex = 34;
+            // 
             // LogicRunnerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.AliceBlue;
-            this.ClientSize = new System.Drawing.Size(944, 1030);
+            this.ClientSize = new System.Drawing.Size(924, 837);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.recommendationsNum);
             this.Controls.Add(this.labelConsole);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.idealServings);
@@ -423,7 +446,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label14);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.richTextBox1);
@@ -455,7 +478,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
         private System.Windows.Forms.ComboBox calories;
         private System.Windows.Forms.ComboBox cookTime;
         private System.Windows.Forms.ComboBox minValues;
@@ -475,5 +498,7 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.ComboBox idealServings;
         private System.Windows.Forms.Label labelConsole;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.ComboBox recommendationsNum;
     }
 }
