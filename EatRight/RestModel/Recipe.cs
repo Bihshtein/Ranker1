@@ -21,7 +21,7 @@ namespace RestModel  {
        VegAndFruit,
     }
 
-    public enum MealCategory
+    public enum RecipeCategory
     {
         Indian,
         Chinese
@@ -37,7 +37,7 @@ namespace RestModel  {
         [BsonElement("_types")]
         public HashSet<MealType> Types { get; set;  }
         [BsonElement("_categories")]
-        public HashSet<MealCategory> Categories { get; set; }
+        public HashSet<RecipeCategory> Categories { get; set; }
         [BsonElement("_name")]
         public string Name { get; set; }
         [BsonElement("MealType")]
@@ -75,7 +75,7 @@ namespace RestModel  {
             return Types != null && Types.Contains(type);
         }
 
-        public Boolean HasCategory(MealCategory category)
+        public Boolean HasCategory(RecipeCategory category)
         {
             return Categories != null && Categories.Contains(category);
         }

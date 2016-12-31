@@ -26,7 +26,7 @@ namespace RestModel
                 string name = "";
                 var productsWeight = new Dictionary<string, double>();
                 var types = new HashSet<MealType>();
-                var categories = new HashSet<MealCategory>();
+                var categories = new HashSet<RecipeCategory>();
                 TimeSpan prepTime = new TimeSpan(0);
 
                 var line = reader.ReadLine();
@@ -103,6 +103,7 @@ namespace RestModel
                     unit.Recipes.Add(meal);
                 }
             }
+            reader.Close();
         }
 
         public static MealType GetType(string typeStr)
@@ -121,9 +122,9 @@ namespace RestModel
             return MealType.Breakfast;
         }
 
-        public static MealCategory GetCategory(string categoryStr)
+        public static RecipeCategory GetCategory(string categoryStr)
         {
-            foreach (MealCategory category in Enum.GetValues(typeof(MealCategory)))
+            foreach (RecipeCategory category in Enum.GetValues(typeof(RecipeCategory)))
             {
                 if (category.ToString().ToLower() == categoryStr.ToLower())
                 {
@@ -134,7 +135,7 @@ namespace RestModel
             System.Console.WriteLine("***ERROR*** No such category: " + categoryStr);
             Environment.Exit(1);
 
-            return MealCategory.Chinese;
+            return RecipeCategory.Chinese;
         }
     }
 }

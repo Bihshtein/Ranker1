@@ -77,9 +77,9 @@ namespace Tests
                 {"Mushroom", -1},
                 {"Mushrooms", -1},
             };
-            recommendationDB.mealCategoryGrade = new Dictionary<MealCategory, double>() {
-                {MealCategory.Indian, 1},
-                {MealCategory.Chinese, -1},
+            recommendationDB.recipeCategoryGrade = new Dictionary<RecipeCategory, double>() {
+                {RecipeCategory.Indian, 1},
+                {RecipeCategory.Chinese, -1},
             };
             return recommendationDB;
         }
@@ -97,9 +97,9 @@ namespace Tests
                 {"Mushroom", -1},
                 {"Mushrooms", -1},
             };
-            recommendationDB.mealCategoryGrade = new Dictionary<MealCategory, double>() {
-                {MealCategory.Indian, 1},
-                {MealCategory.Chinese, -1},
+            recommendationDB.recipeCategoryGrade = new Dictionary<RecipeCategory, double>() {
+                {RecipeCategory.Indian, 1},
+                {RecipeCategory.Chinese, -1},
             };
             return recommendationDB;
         }
@@ -163,15 +163,15 @@ namespace Tests
                 MealType type = (MealType)typeValues.GetValue(rand.Next(typeValues.Length));
 
                 // Generate random category
-                Array categoryValues = Enum.GetValues(typeof(MealCategory));
-                MealCategory category = (MealCategory)categoryValues.GetValue(rand.Next(categoryValues.Length));
+                Array categoryValues = Enum.GetValues(typeof(RecipeCategory));
+                RecipeCategory category = (RecipeCategory)categoryValues.GetValue(rand.Next(categoryValues.Length));
 
                 Recipe randMeal = new Recipe() {
                     ID =i,
                     Name = "Random meal " + i,
                     ProductsWeight = products,
                     Types = new HashSet<MealType> { type },
-                    Categories = new HashSet<MealCategory> { category }
+                    Categories = new HashSet<RecipeCategory> { category }
                 };
 
                 randMeal.CalculateNutValuesAndCalories();

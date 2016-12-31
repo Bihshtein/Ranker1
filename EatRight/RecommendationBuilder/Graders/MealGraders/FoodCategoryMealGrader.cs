@@ -7,7 +7,7 @@ using RestModel;
 
 namespace RecommendationBuilder.Graders.MealGraders
 {
-    class FoodCategoryMealGrader : TasteMealGrader<MealCategory>
+    class FoodCategoryMealGrader : TasteMealGrader<RecipeCategory>
     {
         public FoodCategoryMealGrader()
         {
@@ -17,7 +17,7 @@ namespace RecommendationBuilder.Graders.MealGraders
 
         protected override void InitDataStructures(Meal meal)
         {
-            flavorDict = RecommendationObject.recommendationDB.mealCategoryGrade;
+            flavorDict = RecommendationObject.recommendationDB.recipeCategoryGrade;
             if (meal.Recipe.Categories != null)
             {
                 objectList = meal.Recipe.Categories.ToList();
