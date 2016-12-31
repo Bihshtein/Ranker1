@@ -76,8 +76,14 @@ namespace RestModel {
         public List<Product> TryMatchWholeProduct(string part) {
             Expression<Func<Product, bool>> query = x =>
               (x.Name1.Equals(part) || x.Name1.Equals(part + "s") || x.Name1.Equals(part + "es") || x.Name1.Equals(ParseHelpers.GetWithoutLast_ES_letters(part)) ||
-              x.FoodGroup.Equals(part) || x.Name2.Equals(part));
+              x.FoodGroup.Equals(part) );
             var res = collection.Find(query as Expression<Func<T, bool>>).ToList();
+
+            if (res.Count == 0) {
+                 query = x => (x.Name2.Equals(part));
+                 res = collection.Find(query as Expression<Func<T, bool>>).ToList();
+
+            }
             var newRes = res.Cast<Product>().ToList();
             return newRes;
         }
@@ -88,6 +94,7 @@ namespace RestModel {
             (x.Name3.Equals(part1 + " " + part2) && x.Name2.Equals(part3)) ||
             (x.Name2.Equals(part1 + " " + part2) && x.Name3.Equals(part3)) ||
             (x.HealthData.Equals(part1)&& x.Name1.Equals(part2) && x.StorageMethod.Equals("dry " +part3)) ||
+            (x.HealthData.Equals(part1.Replace('-',' ')) && x.Name2.Equals(part2+ " " + part3))|| // low-sodium chicken broth
             (x.PreparationMethod.Equals(part1) && x.Name2.Equals(part2) && x.Name1.Equals(part3)) ||
             (x.Name3.Equals(part1) && x.Name1.Equals(part2 + " " + part3)) ||
             (x.Name2.Equals(part1) && x.Name1.Equals(part2 + " " + part3)) ||

@@ -83,14 +83,19 @@ namespace InitRecipes {
         }
 
         public static double TryParseRelativeWeight(string mes, double weight, Product prd, string fullName) {
-            mes = ParseHelpers.GetWithoutLast_S_letter(mes);
+            var noSMes = ParseHelpers.GetWithoutLast_S_letter(mes);
 
             if (prd.Weights.ContainsKey(mes)) {
                 return weight * prd.Weights[mes];
             }
+
+            else if (prd.Weights.ContainsKey(noSMes)) {
+                return weight * prd.Weights[noSMes];
+            }
             else if (prd.Weights.ContainsKey(fullName)) {
                 return weight * prd.Weights[fullName];
             }
+
             else if (prd.Weights.Keys.Any(key => key.Contains(mes))) {
                 return weight * prd.Weights[prd.Weights.Keys.First(key => key.Contains(mes))];
             }

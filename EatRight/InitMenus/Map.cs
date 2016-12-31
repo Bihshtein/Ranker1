@@ -37,6 +37,8 @@ namespace InitRecipes {
             { "chicken breast","piece" },
             { "salmon steak","fillet" },
             { "chicken breast halve","piece" },
+            { "chicken breast halves","piece" },
+            { "cornish game hens", "bird"}
 
         };
 
