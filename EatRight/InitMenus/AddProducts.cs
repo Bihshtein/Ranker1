@@ -26,7 +26,7 @@ namespace InitRecipes {
             var customCulture = (CultureInfo)Thread.CurrentThread.CurrentCulture.Clone(); customCulture.NumberFormat.NumberDecimalSeparator = ".";
             Thread.CurrentThread.CurrentCulture = customCulture;
 
-            var recipes = unit.GetAllRecipes();
+            var recipes = unit.Recipes.GetAllList();
             var foundProducts = new List<Product>();
             foreach (var recipe in recipes) {
                 if (recipe.ProductsWeight != null)
