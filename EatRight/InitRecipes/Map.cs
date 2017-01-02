@@ -41,7 +41,9 @@ namespace InitRecipes {
             { "salmon steak","fillet" },
             { "chicken breast halve","piece" },
             { "chicken breast halves","piece" },
-            { "cornish game hens", "bird"}
+            { "cornish game hens", "bird"},
+            { "teaspoon", "tsp"},
+            { "tablespoon", "tbsp"}
         };
 
 
@@ -55,13 +57,14 @@ namespace InitRecipes {
             {"tablespoon ",14 },
             {"pound ",453.5},
             {"pound)",453.5},
-            {"pounds ",453.5},
+            {"pounds",453.5},
             {"ounces",28.3 },
             {"ounce ",28.3 },
             {"ounce)",28.3 },
             {"fluid ounce)",28.3 },
             {"fluid ounce ",28.3 },
             {"fluid ounces",28.3 },
+            {"ounce",28.3 },
         };
 
         public static string GetPrettyItem(string item) {

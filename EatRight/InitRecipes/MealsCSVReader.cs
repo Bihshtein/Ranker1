@@ -74,9 +74,23 @@ namespace InitRecipes {
                             }
                             break;
                         case "weights":
-                            for (int idx = 1; idx < tokens.Length; idx++)
-                            {
-                                productsWeight[productsIndex[idx]] = Convert.ToDouble(tokens[idx]);
+                            for (int idx = 1; idx < tokens.Length; idx++) {
+                                var parts = tokens[idx].Split(':');
+                                var weight = double.Parse(parts[0]);
+                                if (parts.Length > 1) {
+                                    var measureName = parts[1]; ;
+                                    if (Map.MeasuresWeights.ContainsKey(measureName)) {
+                                        productsWeight[productsIndex[idx]] = weight * Map.MeasuresWeights[measureName];
+                                    }
+                                    else {
+                                        var fullName = productsWeight.Keys.ToList().First(item => item == productsIndex[idx]);
+                                        var product = Queries<Product>.GetMatchingProductsForIngredient(fullName)[0];
+                                        productsWeight[productsIndex[idx]] = AddProducts.TryParseRelativeWeight(measureName, weight, product, fullName);
+
+                                    }
+                                }
+                                else 
+                                    productsWeight[productsIndex[idx]] = weight;
                             }
                             break;
                         case "prep_time":

@@ -121,8 +121,6 @@ namespace InitRecipes {
                 log.Debug("measure not found : " + mes + ", returning default, measure : " + prd.Weights.First().Value);
                 return weight * defaultMeasure;
             } 
-           
-            
         }
 
 
