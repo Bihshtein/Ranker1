@@ -82,13 +82,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\InitDailyValuesDB\InitDailyValuesDB.csproj">
-      <Project>{b11f2bda-b7f6-4d70-af68-2494d2ba20ee}</Project>
-      <Name>InitDailyValuesDB</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\InitDB\InitDB.csproj">
-      <Project>{e647d922-97f7-4bd0-b0b2-8b66bb810fba}</Project>
-      <Name>InitDB</Name>
+    <ProjectReference Include="..\InitRecipes\InitRecipes.csproj">
+      <Project>{52f8c30c-d623-4b42-9ab8-da649a1892b9}</Project>
+      <Name>InitRecipes</Name>
     </ProjectReference>
     <ProjectReference Include="..\RecommendationBuilder\RecommendationBuilder.csproj">
       <Project>{9426ff15-9b65-4f16-918e-ed7a8e21d3f8}</Project>

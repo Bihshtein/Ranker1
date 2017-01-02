@@ -58,6 +58,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\InitRecipes\InitRecipes.csproj">
+      <Project>{52f8c30c-d623-4b42-9ab8-da649a1892b9}</Project>
+      <Name>InitRecipes</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Logic\Logic.csproj">
       <Project>{B797E613-7D9C-4A1C-99F8-97D296EDBAD0}</Project>
       <Name>Logic</Name>

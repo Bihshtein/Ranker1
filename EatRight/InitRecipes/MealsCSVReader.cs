@@ -5,12 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Reflection;
 using System.IO;
+using RestModel;
 
-namespace RestModel
-{
+namespace InitRecipes {
     public class MealsCSVReader
     {
-        public static string csvPath = Assembly.GetExecutingAssembly().Location + @"..\..\..\..\..\RestModel\FixedMeals.csv";
+        public static string csvPath = Assembly.GetExecutingAssembly().Location + @"..\..\..\..\..\LocalDB\FixedMeals.csv";
 
         public static void CreateFixedMealsList(RestDBInterface unit)
         {

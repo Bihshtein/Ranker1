@@ -7,8 +7,8 @@
     <ProjectGuid>{E647D922-97F7-4BD0-B0B2-8B66BB810FBA}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>InitDB</RootNamespace>
-    <AssemblyName>InitDB</AssemblyName>
+    <RootNamespace>InitProducts</RootNamespace>
+    <AssemblyName>InitProducts</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
