@@ -30,10 +30,10 @@ namespace LogicRunner
             var dv = unit.DailyValues.GetAllList();
 
             this.bindingSource1.DataSource = dv;
-            comboBox1.DataSource = bindingSource1.DataSource;
+            ageGender.DataSource = bindingSource1.DataSource;
             dataGridView1.AutoGenerateColumns = true;
 
-            comboBox2.DataSource = Enum.GetNames(typeof(MealType));
+            mealType.DataSource = Enum.GetNames(typeof(MealType));
             comboBox3.DataSource = Enum.GetNames(typeof(UserPreference));
             comboBox4.DataSource = new string[] { "Fixed", "Internet", "Both" };
             totalCalories.DataSource = new List<int> { 500, 1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500, 5000 };
@@ -45,12 +45,13 @@ namespace LogicRunner
             idealServings.DataSource = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
             recommendationsNum.DataSource = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
-            totalCalories.SelectedIndex = 3;
+            totalCalories.SelectedIndex = 5;
             idealServings.SelectedIndex = 2;
-
+            ageGender.SelectedIndex = 8;
             maxValues.SelectedIndex = 6;
+            mealType.SelectedIndex = 1;
             minValues.SelectedIndex =6;
-            calories.SelectedIndex = 4;
+            calories.SelectedIndex = 2;
             servings.SelectedIndex = 2;
             cookTime.SelectedIndex = 2;
             recommendationsNum.SelectedIndex = 2;
@@ -79,9 +80,9 @@ namespace LogicRunner
             manager.TakeTime("get recommendation db from user profile");
 
             recommendationDB.idealServingsNum = int.Parse(idealServings.SelectedItem.ToString());
-            recommendationDB.dailyValues = (comboBox1.SelectedValue as DailyValue).DuplicateDictionary();
+            recommendationDB.dailyValues = (ageGender.SelectedValue as DailyValue).DuplicateDictionary();
 
-            recommendationDB.range = new MealSuggestionRange() { Length = int.Parse(recommendationsNum.SelectedItem.ToString()), MealType = (MealType)Enum.Parse(typeof(MealType), comboBox2.SelectedItem.ToString()) };
+            recommendationDB.range = new MealSuggestionRange() { Length = int.Parse(recommendationsNum.SelectedItem.ToString()), MealType = (MealType)Enum.Parse(typeof(MealType), mealType.SelectedItem.ToString()) };
 			recommendationDB.preferences = new HashSet<UserPreference>() { (UserPreference)Enum.Parse(typeof(UserPreference), comboBox3.SelectedItem.ToString()) };
             recommendationDB.dailyCaloriesNum = int.Parse(totalCalories.SelectedItem.ToString());
               recommendationDB.GradersWeight = new Dictionary<GraderType, double>()
@@ -102,7 +103,7 @@ namespace LogicRunner
             Recommendation reco = generator.GetRecommendation();
             if (reco == null)
             {
-                MessageBox.Show("I'm sorry, but I can't recommend on any " + comboBox2.SelectedItem.ToString() + "s");
+                MessageBox.Show("I'm sorry, but I can't recommend on any " + mealType.SelectedItem.ToString() + "s");
             }
             else
             {

@@ -12,21 +12,24 @@ namespace InitRecipes {
             { "fresh mozzarella, cut into small cubes", "mozzarella" },
             { "leaves", "leaf" },
             { "greek-style", "greek" },
+            { "cooking oil", "salad or cooking oil" },
         };
 
         public static List<string> RelativeSizes = new List<string> {
             // relative to the weight stated by the USDA for the product
-            "slice ",
+            // order matter keep the more inclusicve delimiters first
             "slices",
+            "slice ",
             "large",
             "small",
             "medium",
-            "cup ",
             "cup packed",
             "cup unpacked",
+            "cups",
+            "cup",
             "cup sliced",
             "cup small",
-            "cups ",
+            
         };
 
 
@@ -39,7 +42,6 @@ namespace InitRecipes {
             { "chicken breast halve","piece" },
             { "chicken breast halves","piece" },
             { "cornish game hens", "bird"}
-
         };
 
 

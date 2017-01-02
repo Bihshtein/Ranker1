@@ -20,7 +20,6 @@ namespace InitRecipes {
 
         public static int totalMissing = 0;
         public static int total = 0;
-        public static int totalParsed = 0;
         public static RestDBInterface unit = new RestDBInterface();
         public static void Add() {
             var customCulture = (CultureInfo)Thread.CurrentThread.CurrentCulture.Clone(); customCulture.NumberFormat.NumberDecimalSeparator = ".";
@@ -48,7 +47,6 @@ namespace InitRecipes {
 
             Console.WriteLine("total recipes : " + recipes.Count);
             Console.WriteLine("total ingredients : " + total);
-            Console.WriteLine("total ingredients parsed : " + totalParsed);
             Console.WriteLine("total ingredients missed : " + totalMissing);
         }
 
@@ -58,28 +56,31 @@ namespace InitRecipes {
             var innerpart = results.Item1.Trim();
             var weight = results.Item2;
             var relativeMeasure = results.Item3.Trim();
-
+            if (item.Contains("to taste"))
+                innerpart = item.Replace("to taste", "");
             ++total;
             if (innerpart != string.Empty) {
                 innerpart = Map.AdjustInnerPart(innerpart);
-                ++totalParsed;
                 var res = Queries<Product>.GetMatchingProductsForIngredient(innerpart);
 
                 if (res == null || res.Count == 0) {
-                    log.Info(innerpart);
+                    log.Error(innerpart + " : " + item);
                     ++totalMissing;
                 }
                 else {
                     var product = res[0];
-                   
+
                     if (relativeMeasure != string.Empty) {
-                        weight = TryParseRelativeWeight(relativeMeasure,weight, product, innerpart);
+                        weight = TryParseRelativeWeight(relativeMeasure, weight, product, innerpart);
                     }
+                  
+                        
                     AddItem(product, recipe, weight, innerpart);
                 }
             }
             else {
                 log.Error(item);
+                ++totalMissing;
             }
         }
 
@@ -117,7 +118,7 @@ namespace InitRecipes {
             }
             else {
                 var defaultMeasure = prd.Weights.First().Value;
-                log.Error("measure not found : " + mes + ", returning default, measure : " + prd.Weights.First().Value);
+                log.Debug("measure not found : " + mes + ", returning default, measure : " + prd.Weights.First().Value);
                 return weight * defaultMeasure;
             } 
            

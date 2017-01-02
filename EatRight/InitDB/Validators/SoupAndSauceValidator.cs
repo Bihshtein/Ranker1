@@ -10,10 +10,10 @@ namespace InitDB {
                 "oyster","pesto","pizza","plum","salsa","teriyaki","tomato chili sauce","tartar",
                 "sweet and sour","sofrito",
                 "bean with bacon", "bean with frankfurters", "bean with pork",
-                "beef and mushroom", "beef and vegetables","beef barley","beef broth",
+                "beef and mushroom", "beef and vegetables","beef barley","beef broth","beef",
                 "beef broth or bouillon","beef mushroom","black bean","chicken broth","worcestershire"
             };
-            ThirdParts = new List<string> { "ready-to-serve" ,"cubed","bouillon","consomme"};
+            ThirdParts = new List<string> {"stock", "ready-to-serve" ,"cubed","bouillon","consomme"};
         }
     }
 }
