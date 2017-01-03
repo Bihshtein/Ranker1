@@ -17,15 +17,13 @@ namespace InitRecipes {
         public static string FolderPath = Assembly.GetExecutingAssembly().Location + @"\..\..\..\..\LocalDB\";
         public static List<int> Indexes;
 
-        public static void CreateDB(bool overrideDB) {
+        public static void CreateDB() {
             Indexes = File.ReadAllLines(FolderPath + "recipes_num.txt").ToList().ConvertAll<int>((a => int.Parse(a)));
-
+            
             var loadMealsBulkSize = Indexes.Count > 1000 ? 1000 : Indexes.Count;
             var unit = new RestDBInterface();
-            var recipes = unit.Recipes.GetAll().ToList();
-            if (!overrideDB && Indexes.All(index => recipes.Any(recipe => recipe.ID == index)))
-                return;
             unit.Recipes.Empty();
+            var recipes = unit.Recipes.GetAll().ToList();
 
             while (Indexes.Count > 0) {
                 log.Debug("Indexes count : " + Indexes.Count);
@@ -42,7 +40,14 @@ namespace InitRecipes {
        
 
         public static void ParseRecipe(int index) {
-            var unit = new RestDBInterface();
+            
+           var unit = new RestDBInterface();
+            lock (Locker) {
+                if (unit.Recipes.Get(index) != null) {
+                    Indexes.Remove(index);
+                    return;
+                }
+            }
             string page = string.Empty;
             try {
                 page = new WebClient().DownloadString("http://allrecipes.com/recipe/" + index.ToString());

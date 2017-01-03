@@ -55,6 +55,7 @@ namespace LogicRunner
             calories.SelectedIndex = 2;
             servings.SelectedIndex = 2;
             cookTime.SelectedIndex = 2;
+            comboBox4.SelectedIndex = 1;
             recommendationsNum.SelectedIndex = 2;
         }
 

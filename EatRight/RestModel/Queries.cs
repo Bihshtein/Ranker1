@@ -93,6 +93,7 @@ namespace RestModel {
             Expression<Func<Product, bool>> query = x =>
             (x.Name3.Equals(part1 + " " + part2) && x.Name2.Equals(part3)) ||
             (x.StorageMethod.Equals(part1) && x.Name2.Equals(part2 + " " + part3)) ||
+            (x.StorageMethod.Equals(part1) && x.Name1.Equals(part2 + " " + part3)) ||
             (x.Name2.Equals(part1 + " " + part2) && x.Name3.Equals(part3)) ||
             (x.HealthData.Equals(part1)&& x.Name1.Equals(part2) && x.StorageMethod.Equals("dry " +part3)) ||
             (x.HealthData.Equals(part1.Replace('-',' ')) && x.Name2.Equals(part2+ " " + part3))|| // low-sodium chicken broth
@@ -144,6 +145,7 @@ namespace RestModel {
             (x.FoodGroup.Equals(part1) && x.Name2.Equals(ParseHelpers.GetWithoutLast_S_letter(part2))) ||
             (x.FoodGroup.Equals(part2) && x.Name1.Equals(part1)) ||
             (x.Name2.Equals(part2) && x.Name2.Equals(part1)) ||
+            (x.PreparationMethod.Equals(part1) && x.Name1.Equals(part2)) ||
             (x.Name2.Equals(part1) && x.Name3.Equals(part2)) ||
             (x.FoodGroup.Equals(part1) && x.Name2.Equals(part2));
             var res = collection.Find(query as Expression<Func<T, bool>>).ToList();

@@ -13,6 +13,13 @@ namespace InitRecipes {
             { "leaves", "leaf" },
             { "greek-style", "greek" },
             { "cooking oil", "salad or cooking oil" },
+            { "package elbow macaroni", "macaroni"},
+            { "dijon mustard", "mustard"},
+            { "fine bread crumbs", "bread crumbs" },
+            { "can anchovy fillets", "anchovy"},
+            { " sprigs",""},
+            { "fresh dill","fresh dill weed"},
+            
         };
 
         public static List<string> RelativeSizes = new List<string> {
@@ -50,6 +57,7 @@ namespace InitRecipes {
         public static Dictionary<string, double> MeasuresWeights = new Dictionary<string, double>(){
             {"bunch",60 },
             {"cloves",3 },//garlic
+            {"clove",1 },//garlic
             {"pinch",0.25 },//green onion or whatever
             {"teaspoon ",5 },
             {"teaspoons",5 },
