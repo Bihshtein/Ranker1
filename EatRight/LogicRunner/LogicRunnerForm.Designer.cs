@@ -35,7 +35,6 @@
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.bindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.mealType = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -65,6 +64,12 @@
             this.recommendationsNum = new System.Windows.Forms.ComboBox();
             this.label15 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
+            this.Meat = new System.Windows.Forms.CheckBox();
+            this.NoFish = new System.Windows.Forms.CheckBox();
+            this.NoMeat = new System.Windows.Forms.CheckBox();
+            this.Dairy = new System.Windows.Forms.CheckBox();
+            this.Fish = new System.Windows.Forms.CheckBox();
+            this.NoDairy = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
@@ -74,7 +79,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.LimeGreen;
             this.button1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.button1.Location = new System.Drawing.Point(376, 188);
+            this.button1.Location = new System.Drawing.Point(290, 191);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(128, 47);
             this.button1.TabIndex = 0;
@@ -114,18 +119,10 @@
             this.mealType.Size = new System.Drawing.Size(89, 21);
             this.mealType.TabIndex = 5;
             // 
-            // comboBox3
-            // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(178, 149);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(89, 21);
-            this.comboBox3.TabIndex = 5;
-            // 
             // comboBox4
             // 
             this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(178, 219);
+            this.comboBox4.Location = new System.Drawing.Point(179, 185);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(89, 21);
             this.comboBox4.TabIndex = 5;
@@ -158,7 +155,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.label5.Location = new System.Drawing.Point(412, 80);
+            this.label5.Location = new System.Drawing.Point(449, 83);
             this.label5.Name = "label5";
             this.label5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label5.Size = new System.Drawing.Size(119, 19);
@@ -170,7 +167,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.label4.Location = new System.Drawing.Point(412, 49);
+            this.label4.Location = new System.Drawing.Point(449, 52);
             this.label4.Name = "label4";
             this.label4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label4.Size = new System.Drawing.Size(75, 19);
@@ -182,7 +179,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.label3.Location = new System.Drawing.Point(413, 14);
+            this.label3.Location = new System.Drawing.Point(450, 17);
             this.label3.Name = "label3";
             this.label3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label3.Size = new System.Drawing.Size(121, 19);
@@ -194,16 +191,16 @@
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.label14.Location = new System.Drawing.Point(7, 149);
+            this.label14.Location = new System.Drawing.Point(305, 15);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(147, 19);
+            this.label14.Size = new System.Drawing.Size(99, 19);
             this.label14.TabIndex = 7;
-            this.label14.Text = "User preferences";
+            this.label14.Text = "Peferences";
             // 
             // calories
             // 
             this.calories.FormattingEnabled = true;
-            this.calories.Location = new System.Drawing.Point(552, 48);
+            this.calories.Location = new System.Drawing.Point(579, 51);
             this.calories.Name = "calories";
             this.calories.Size = new System.Drawing.Size(89, 21);
             this.calories.TabIndex = 17;
@@ -211,7 +208,7 @@
             // cookTime
             // 
             this.cookTime.FormattingEnabled = true;
-            this.cookTime.Location = new System.Drawing.Point(552, 15);
+            this.cookTime.Location = new System.Drawing.Point(579, 18);
             this.cookTime.Name = "cookTime";
             this.cookTime.Size = new System.Drawing.Size(89, 21);
             this.cookTime.TabIndex = 16;
@@ -219,7 +216,7 @@
             // minValues
             // 
             this.minValues.FormattingEnabled = true;
-            this.minValues.Location = new System.Drawing.Point(552, 80);
+            this.minValues.Location = new System.Drawing.Point(579, 83);
             this.minValues.Name = "minValues";
             this.minValues.Size = new System.Drawing.Size(89, 21);
             this.minValues.TabIndex = 18;
@@ -298,7 +295,7 @@
             // maxValues
             // 
             this.maxValues.FormattingEnabled = true;
-            this.maxValues.Location = new System.Drawing.Point(552, 113);
+            this.maxValues.Location = new System.Drawing.Point(579, 116);
             this.maxValues.Name = "maxValues";
             this.maxValues.Size = new System.Drawing.Size(89, 21);
             this.maxValues.TabIndex = 27;
@@ -308,7 +305,7 @@
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.label10.Location = new System.Drawing.Point(412, 114);
+            this.label10.Location = new System.Drawing.Point(449, 117);
             this.label10.Name = "label10";
             this.label10.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label10.Size = new System.Drawing.Size(122, 19);
@@ -320,7 +317,7 @@
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.label11.Location = new System.Drawing.Point(414, 149);
+            this.label11.Location = new System.Drawing.Point(451, 152);
             this.label11.Name = "label11";
             this.label11.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label11.Size = new System.Drawing.Size(78, 19);
@@ -330,7 +327,7 @@
             // servings
             // 
             this.servings.FormattingEnabled = true;
-            this.servings.Location = new System.Drawing.Point(552, 148);
+            this.servings.Location = new System.Drawing.Point(579, 151);
             this.servings.Name = "servings";
             this.servings.Size = new System.Drawing.Size(89, 21);
             this.servings.TabIndex = 29;
@@ -369,7 +366,7 @@
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.label13.Location = new System.Drawing.Point(8, 181);
+            this.label13.Location = new System.Drawing.Point(9, 148);
             this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(159, 19);
@@ -379,7 +376,7 @@
             // recommendationsNum
             // 
             this.recommendationsNum.FormattingEnabled = true;
-            this.recommendationsNum.Location = new System.Drawing.Point(178, 183);
+            this.recommendationsNum.Location = new System.Drawing.Point(179, 150);
             this.recommendationsNum.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.recommendationsNum.Name = "recommendationsNum";
             this.recommendationsNum.Size = new System.Drawing.Size(89, 21);
@@ -390,7 +387,7 @@
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.label15.Location = new System.Drawing.Point(9, 216);
+            this.label15.Location = new System.Drawing.Point(10, 182);
             this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(115, 19);
@@ -399,15 +396,75 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.Red;
-            this.button2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.button2.Location = new System.Drawing.Point(510, 190);
+            this.button2.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.button2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.button2.Location = new System.Drawing.Point(472, 190);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(154, 45);
             this.button2.TabIndex = 26;
             this.button2.Text = "Refresh Manual";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // Meat
+            // 
+            this.Meat.AutoSize = true;
+            this.Meat.Location = new System.Drawing.Point(318, 41);
+            this.Meat.Name = "Meat";
+            this.Meat.Size = new System.Drawing.Size(50, 17);
+            this.Meat.TabIndex = 37;
+            this.Meat.Text = "Meat";
+            this.Meat.UseVisualStyleBackColor = true;
+            // 
+            // NoFish
+            // 
+            this.NoFish.AutoSize = true;
+            this.NoFish.Location = new System.Drawing.Point(318, 132);
+            this.NoFish.Name = "NoFish";
+            this.NoFish.Size = new System.Drawing.Size(62, 17);
+            this.NoFish.TabIndex = 38;
+            this.NoFish.Text = "No Fish";
+            this.NoFish.UseVisualStyleBackColor = true;
+            // 
+            // NoMeat
+            // 
+            this.NoMeat.AutoSize = true;
+            this.NoMeat.Location = new System.Drawing.Point(318, 109);
+            this.NoMeat.Name = "NoMeat";
+            this.NoMeat.Size = new System.Drawing.Size(67, 17);
+            this.NoMeat.TabIndex = 39;
+            this.NoMeat.Text = "No Meat";
+            this.NoMeat.UseVisualStyleBackColor = true;
+            // 
+            // Dairy
+            // 
+            this.Dairy.AutoSize = true;
+            this.Dairy.Location = new System.Drawing.Point(318, 86);
+            this.Dairy.Name = "Dairy";
+            this.Dairy.Size = new System.Drawing.Size(50, 17);
+            this.Dairy.TabIndex = 40;
+            this.Dairy.Text = "Dairy";
+            this.Dairy.UseVisualStyleBackColor = true;
+            // 
+            // Fish
+            // 
+            this.Fish.AutoSize = true;
+            this.Fish.Location = new System.Drawing.Point(318, 63);
+            this.Fish.Name = "Fish";
+            this.Fish.Size = new System.Drawing.Size(45, 17);
+            this.Fish.TabIndex = 41;
+            this.Fish.Text = "Fish";
+            this.Fish.UseVisualStyleBackColor = true;
+            // 
+            // NoDairy
+            // 
+            this.NoDairy.AutoSize = true;
+            this.NoDairy.Location = new System.Drawing.Point(318, 160);
+            this.NoDairy.Name = "NoDairy";
+            this.NoDairy.Size = new System.Drawing.Size(67, 17);
+            this.NoDairy.TabIndex = 42;
+            this.NoDairy.Text = "No Dairy";
+            this.NoDairy.UseVisualStyleBackColor = true;
             // 
             // LogicRunnerForm
             // 
@@ -416,6 +473,12 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(690, 720);
+            this.Controls.Add(this.NoDairy);
+            this.Controls.Add(this.Fish);
+            this.Controls.Add(this.Dairy);
+            this.Controls.Add(this.NoMeat);
+            this.Controls.Add(this.NoFish);
+            this.Controls.Add(this.Meat);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.recommendationsNum);
@@ -444,7 +507,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.mealType);
-            this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.comboBox4);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.dataGridView1);
@@ -468,7 +530,6 @@
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.BindingSource bindingSource2;
         private System.Windows.Forms.ComboBox mealType;
-        private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.ComboBox comboBox4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -498,5 +559,11 @@
         private System.Windows.Forms.ComboBox recommendationsNum;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.CheckBox Meat;
+        private System.Windows.Forms.CheckBox NoFish;
+        private System.Windows.Forms.CheckBox NoMeat;
+        private System.Windows.Forms.CheckBox Dairy;
+        private System.Windows.Forms.CheckBox Fish;
+        private System.Windows.Forms.CheckBox NoDairy;
     }
 }

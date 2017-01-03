@@ -33,9 +33,8 @@ namespace LogicRunner
             this.bindingSource1.DataSource = dv;
             ageGender.DataSource = bindingSource1.DataSource;
             dataGridView1.AutoGenerateColumns = true;
-
             mealType.DataSource = Enum.GetNames(typeof(MealType));
-            comboBox3.DataSource = Enum.GetNames(typeof(UserRestrictions));
+            
             comboBox4.DataSource = new string[] { "Fixed", "Internet", "Both" };
             totalCalories.DataSource = new List<int> { 500, 1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500, 5000 };
             calories.DataSource = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9,10 };
@@ -85,7 +84,19 @@ namespace LogicRunner
             recommendationDB.dailyValues = (ageGender.SelectedValue as DailyValue).DuplicateDictionary();
 
             recommendationDB.range = new MealSuggestionRange() { Length = int.Parse(recommendationsNum.SelectedItem.ToString()), MealType = (MealType)Enum.Parse(typeof(MealType), mealType.SelectedItem.ToString()) };
-			recommendationDB.preferences = new HashSet<UserRestrictions>() { (UserRestrictions)Enum.Parse(typeof(UserRestrictions), comboBox3.SelectedItem.ToString()) };
+            recommendationDB.preferences = new HashSet<UserRestrictions>();
+            if (Meat.Checked)
+                recommendationDB.preferences.Add(UserRestrictions.Meat);
+            if (Fish.Checked)
+                recommendationDB.preferences.Add(UserRestrictions.Fish);
+            if (Dairy.Checked)
+                recommendationDB.preferences.Add(UserRestrictions.Dairy);
+            if (NoFish.Checked)
+                recommendationDB.preferences.Add(UserRestrictions.NoFish);
+            if (NoDairy.Checked)
+                recommendationDB.preferences.Add(UserRestrictions.NoDairy);
+            if (NoMeat.Checked)
+                recommendationDB.preferences.Add(UserRestrictions.NoMeat);
             recommendationDB.dailyCaloriesNum = int.Parse(totalCalories.SelectedItem.ToString());
               recommendationDB.GradersWeight = new Dictionary<GraderType, double>()
                {
@@ -187,7 +198,7 @@ namespace LogicRunner
                 case "Both":
                     useDBRecipes = true;
                     useTestsRecipes = true;
-                    break;comboBox3.DataSource = Enum.GetNames(typeof(UserRestrictions));
+                    break;
             }
         }
     }

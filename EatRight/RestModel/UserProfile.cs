@@ -9,7 +9,7 @@ namespace RestModel
     public enum UserRestrictions
     {
         None = 0,
-
+            
         Meat,
         Dairy,
         Fish,
