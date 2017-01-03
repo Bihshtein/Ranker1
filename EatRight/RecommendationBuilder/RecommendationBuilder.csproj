@@ -50,7 +50,9 @@
   <ItemGroup>
     <Compile Include="Filters\Filter.cs" />
     <Compile Include="Filters\MealFilters\HasDairyMealFilter.cs" />
+    <Compile Include="Filters\MealFilters\HasFishMealFilter.cs" />
     <Compile Include="Filters\MealFilters\HasNoDairyMealFilter.cs" />
+    <Compile Include="Filters\MealFilters\HasNoFishMealFilter.cs" />
     <Compile Include="Filters\MealFilters\HasNoMeatMealFilter.cs" />
     <Compile Include="Filters\MealFilters\HasMeatMealFilter.cs" />
     <Compile Include="Filters\MealFilters\ProductPropertyMealFilter.cs" />

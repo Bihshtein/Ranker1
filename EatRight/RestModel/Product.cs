@@ -199,7 +199,8 @@ namespace RestModel {
         None = 0,
 
         Meat,
-        Dairy
+        Dairy,
+        Fish
     }
 }  
 

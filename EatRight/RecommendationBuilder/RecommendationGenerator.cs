@@ -605,11 +605,23 @@ namespace RecommendationBuilder
                 {
                     switch (pref)
                     {
-                        case UserPreference.Meat:
+                        case UserRestrictions.Meat:
                             RecommendationObject.recommendationDB.FiltersSet.Add(FilterType.HasMeatMealFilter);
                             break;
-                        case UserPreference.Dairy:
+                        case UserRestrictions.Dairy:
                             RecommendationObject.recommendationDB.FiltersSet.Add(FilterType.HasDairyMealFilter);
+                            break;
+                        case UserRestrictions.Fish:
+                            RecommendationObject.recommendationDB.FiltersSet.Add(FilterType.HasFishMealFilter);
+                            break;
+                        case UserRestrictions.NoMeat:
+                            RecommendationObject.recommendationDB.FiltersSet.Add(FilterType.HasNoMeatMealFilter);
+                            break;
+                        case UserRestrictions.NoDairy:
+                            RecommendationObject.recommendationDB.FiltersSet.Add(FilterType.HasNoDairyMealFilter);
+                            break;
+                        case UserRestrictions.NoFish:
+                            RecommendationObject.recommendationDB.FiltersSet.Add(FilterType.HasNoFishMealFilter);
                             break;
                     }
                 }

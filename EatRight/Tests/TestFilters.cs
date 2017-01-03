@@ -121,7 +121,7 @@ namespace Tests
             Assert.IsNull(meal);
         }
 
-        private void TestHasProperyFilter(string productName, UserPreference pref)
+        private void TestHasProperyFilter(string productName, UserRestrictions pref)
         {
             var unit = new RestDBInterface();
 
@@ -144,7 +144,7 @@ namespace Tests
 
             var recommendationDB = RecommendationDBGenerator.FromUserProfile(userProfile, unit);
             recommendationDB.range = range;
-            recommendationDB.preferences = new HashSet<UserPreference>() { pref };
+            recommendationDB.preferences = new HashSet<UserRestrictions>() { pref };
 
             var recommendationGenerator = new RecommendationGenerator(unit, recommendationDB, false, true);
             var reco = recommendationGenerator.GetRecommendation();
@@ -157,13 +157,37 @@ namespace Tests
         [TestMethod]
         public void TestHasMeatFilter()
         {
-            TestHasProperyFilter("Carrot", UserPreference.Meat);
+            TestHasProperyFilter("Carrot", UserRestrictions.Meat);
+        }
+
+        [TestMethod]
+        public void TestHasNoMeatFilter()
+        {
+            TestHasProperyFilter("Ham", UserRestrictions.NoMeat);
         }
 
         [TestMethod]
         public void TestHasDairyFilter()
         {
-            TestHasProperyFilter("Egg", UserPreference.Dairy);
+            TestHasProperyFilter("Egg", UserRestrictions.Dairy);
+        }
+
+        [TestMethod]
+        public void TestHasNoDairyFilter()
+        {
+            TestHasProperyFilter("Butter", UserRestrictions.NoDairy);
+        }
+
+        [TestMethod]
+        public void TestHasFishFilter()
+        {
+            TestHasProperyFilter("Carrot", UserRestrictions.Fish);
+        }
+
+        [TestMethod]
+        public void TestHasNoFishFilter()
+        {
+            TestHasProperyFilter("Salmon", UserRestrictions.NoFish);
         }
     }
 }

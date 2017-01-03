@@ -29,6 +29,10 @@ namespace InitDB {
             {
                 p.Types.Add(ProductType.Dairy);
             }
+            if (IsFishProduct(p))
+            {
+                p.Types.Add(ProductType.Fish);
+            }
             return p;
         }
 
@@ -157,50 +161,20 @@ namespace InitDB {
             }
         }
 
-        private static Boolean IsSoupAndSauceMeatProduct(Product product)
+        private static Boolean IsProductOutsideFoodgroup(Product product, HashSet<string> prodWords,
+            HashSet<string> exceptionWords)
         {
-            if (product.FoodGroup != "soupandsauce")
+            Boolean hasProdWord = false;
+            foreach (var str in prodWords)
             {
-                return false;
-            }
-
-            var soupAndSauceMeats = new HashSet<string>() { "chicken", "beef", "duck", "pork" };
-            foreach (var meatStr in soupAndSauceMeats)
-            {
-                if (product.NameContains(meatStr))
+                if (product.NameContains(str))
                 {
-                    return true;
-                }
-            }
-            return false;
-        }
-
-        public static Boolean IsMeatProduct(Product product)
-        {
-            return
-                product.FoodGroup == "beef" ||
-                product.FoodGroup == "chicken" ||
-                product.FoodGroup == "pork" ||
-                IsSoupAndSauceMeatProduct(product);
-        }
-
-        private static Boolean IsDairyOutsideFoodgroup(Product product)
-        {
-            var dairyWords = new HashSet<string>() { "milk", "chocolate", "brownies", "cheese", "buttermilk", "mocha",
-            "vanilla coffee", "ovaltine", "dannon", "shortening" };
-            var exceptionWords = new HashSet<string>() { "almond milk", "coconut milk", "soy milk", "rice milk", "milkfish" };
-
-            Boolean hasDairyWord = false;
-            foreach (var dairyStr in dairyWords)
-            {
-                if (product.NameContains(dairyStr))
-                {
-                    hasDairyWord = true;
+                    hasProdWord = true;
                     break;
                 }
             }
 
-            if (!hasDairyWord)
+            if (!hasProdWord)
             {
                 return false;
             }
@@ -216,11 +190,35 @@ namespace InitDB {
             return true;
         }
 
+        public static Boolean IsMeatProduct(Product product)
+        {
+            var meatWords = new HashSet<string>() { "chicken", "beef", "duck", "pork" };
+
+            return
+                product.FoodGroup == "beef" ||
+                product.FoodGroup == "chicken" ||
+                product.FoodGroup == "pork" ||
+                IsProductOutsideFoodgroup(product, meatWords, new HashSet<string>());
+        }
+
         public static Boolean IsDairyProduct(Product product)
         {
+            var dairyWords = new HashSet<string>() { "milk", "chocolate", "brownies", "cheese", "buttermilk", "mocha",
+            "vanilla coffee", "ovaltine", "dannon", "shortening" };
+            var exceptionWords = new HashSet<string>() { "almond milk", "coconut milk", "soy milk", "rice milk", "milkfish" };
+
             return
                 (product.FoodGroup == "dairy" && !product.NameContains("egg")) ||
-                (IsDairyOutsideFoodgroup(product));
+                (IsProductOutsideFoodgroup(product, dairyWords, exceptionWords));
+        }
+
+        public static Boolean IsFishProduct(Product product)
+        {
+            var fishWords = new HashSet<string>() { "fish" };
+
+            return
+                product.FoodGroup == "fish" ||
+                IsProductOutsideFoodgroup(product, fishWords, new HashSet<string>());
         }
     }
 }

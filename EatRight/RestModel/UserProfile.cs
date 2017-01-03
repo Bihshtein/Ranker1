@@ -6,12 +6,16 @@ using System.Threading.Tasks;
 
 namespace RestModel
 {
-    public enum UserPreference
+    public enum UserRestrictions
     {
         None = 0,
 
         Meat,
-        Dairy
+        Dairy,
+        Fish,
+        NoMeat,
+        NoDairy,
+        NoFish
     }
 
     /// <summary>
@@ -87,6 +91,8 @@ namespace RestModel
         HasNoMeatMealFilter,
         HasDairyMealFilter,
         HasNoDairyMealFilter,
+        HasFishMealFilter,
+        HasNoFishMealFilter,
 
         MealFilterEnd
     }
