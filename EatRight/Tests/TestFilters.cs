@@ -121,8 +121,7 @@ namespace Tests
             Assert.IsNull(meal);
         }
 
-        [TestMethod]
-        public void TestHasMeatFilter()
+        private void TestHasProperyFilter(string productName, UserPreference pref)
         {
             var unit = new RestDBInterface();
 
@@ -130,7 +129,7 @@ namespace Tests
             {
                 ID = 0,
                 Name = "Breakfast",
-                ProductsWeight = new Dictionary<string, double>() { { "Carrot", 1 } },
+                ProductsWeight = new Dictionary<string, double>() { { productName, 1 } },
                 Types = new HashSet<MealType>() { MealType.Breakfast }
             };
 
@@ -145,14 +144,26 @@ namespace Tests
 
             var recommendationDB = RecommendationDBGenerator.FromUserProfile(userProfile, unit);
             recommendationDB.range = range;
-            recommendationDB.preferences = new HashSet<UserPreference>() { UserPreference.Meat };
+            recommendationDB.preferences = new HashSet<UserPreference>() { pref };
 
             var recommendationGenerator = new RecommendationGenerator(unit, recommendationDB, false, true);
             var reco = recommendationGenerator.GetRecommendation();
 
             // Assertions
-            // There's no meal with meat in the meals list, so we expect no meals to be generated.
+            // There's no meal with the property in the meals list, so we expect no meals to be generated.
             Assert.IsNull(reco);
+        }
+
+        [TestMethod]
+        public void TestHasMeatFilter()
+        {
+            TestHasProperyFilter("Carrot", UserPreference.Meat);
+        }
+
+        [TestMethod]
+        public void TestHasDairyFilter()
+        {
+            TestHasProperyFilter("Egg", UserPreference.Dairy);
         }
     }
 }

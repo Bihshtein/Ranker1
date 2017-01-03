@@ -608,6 +608,9 @@ namespace RecommendationBuilder
                         case UserPreference.Meat:
                             RecommendationObject.recommendationDB.FiltersSet.Add(FilterType.HasMeatMealFilter);
                             break;
+                        case UserPreference.Dairy:
+                            RecommendationObject.recommendationDB.FiltersSet.Add(FilterType.HasDairyMealFilter);
+                            break;
                     }
                 }
             }

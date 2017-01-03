@@ -10,7 +10,8 @@ namespace RestModel
     {
         None = 0,
 
-        Meat
+        Meat,
+        Dairy
     }
 
     /// <summary>
@@ -84,6 +85,8 @@ namespace RestModel
         MealTypeMealFilter,
         HasMeatMealFilter,
         HasNoMeatMealFilter,
+        HasDairyMealFilter,
+        HasNoDairyMealFilter,
 
         MealFilterEnd
     }
