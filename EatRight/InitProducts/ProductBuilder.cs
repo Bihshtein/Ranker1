@@ -193,12 +193,14 @@ namespace InitDB {
         public static Boolean IsMeatProduct(Product product)
         {
             var meatWords = new HashSet<string>() { "chicken", "beef", "duck", "pork" };
+            // We need exception because of the duck egg product
+            var exceptionWords = new HashSet<string>() { "egg" };
 
             return
                 product.FoodGroup == "beef" ||
                 product.FoodGroup == "chicken" ||
                 product.FoodGroup == "pork" ||
-                IsProductOutsideFoodgroup(product, meatWords, new HashSet<string>());
+                IsProductOutsideFoodgroup(product, meatWords, exceptionWords);
         }
 
         public static Boolean IsDairyProduct(Product product)
