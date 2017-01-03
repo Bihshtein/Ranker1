@@ -138,8 +138,8 @@ namespace RestModel {
         [BsonElement("Fiber")]
         public double Fiber { get; set; }
 
-        [BsonElement("IsMeatProduct")]
-        public Boolean IsMeatProduct { get; set; }
+        [BsonElement("Types")]
+        public HashSet<ProductType> Types { get; set; }
 
         public Dictionary<string, double> Nutrients() {
                 var res = new Dictionary<string, double>();
@@ -185,6 +185,21 @@ namespace RestModel {
         }
 
         public static List<string> Name2FoodGroups = new List<string>{ "beef", "chicken" };
+
+        public Boolean NameContains(string str)
+        {
+            return (Name1 != null && Name1.Contains(str)) ||
+                (Name2 != null && Name2.Contains(str)) ||
+                (Name3 != null && Name3.Contains(str));
+        }
+    }
+
+    public enum ProductType
+    {
+        None = 0,
+
+        Meat,
+        Dairy
     }
 }  
 

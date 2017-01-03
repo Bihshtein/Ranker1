@@ -11,7 +11,7 @@ namespace RecommendationBuilder.Filters.MealFilters
     {
         protected override bool HasProperty(Product product)
         {
-            return product.IsMeatProduct;
+            return product.Types.Contains(ProductType.Meat);
         }
 
         public HasMeatMealFilter()

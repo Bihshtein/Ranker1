@@ -12,7 +12,7 @@ namespace InitDB {
     class ProductBuilder {
         public static Product GetProduct(string groupName, int id, string name, JArray nutrients) {
             var validator = InitDB.Validators[groupName];
-            var p = new Product() { ID = id, IsMeatProduct = false };
+            var p = new Product() { ID = id, Types = new HashSet<ProductType>() };
             p.FoodGroup = groupName.ToLower();
             var parts = name.Split(',').ToList();
             if (groupName == "manual")
@@ -23,7 +23,11 @@ namespace InitDB {
             SetNutrientProperties(nutrients, p);
 			if (IsMeatProduct(p))
             {
-                p.IsMeatProduct = true;
+                p.Types.Add(ProductType.Meat);
+            }
+            if (IsDairyProduct(p))
+            {
+                p.Types.Add(ProductType.Dairy);
             }
             return p;
         }
@@ -163,9 +167,7 @@ namespace InitDB {
             var soupAndSauceMeats = new HashSet<string>() { "chicken", "beef", "duck", "pork" };
             foreach (var meatStr in soupAndSauceMeats)
             {
-                if ((product.Name1 != null && product.Name1.Contains(meatStr)) ||
-                    (product.Name2 != null && product.Name2.Contains(meatStr)) ||
-                    (product.Name3 != null && product.Name3.Contains(meatStr)))
+                if (product.NameContains(meatStr))
                 {
                     return true;
                 }
@@ -180,6 +182,45 @@ namespace InitDB {
                 product.FoodGroup == "chicken" ||
                 product.FoodGroup == "pork" ||
                 IsSoupAndSauceMeatProduct(product);
+        }
+
+        private static Boolean IsDairyOutsideFoodgroup(Product product)
+        {
+            var dairyWords = new HashSet<string>() { "milk", "chocolate", "brownies", "cheese", "buttermilk", "mocha",
+            "vanilla coffee", "ovaltine", "dannon", "shortening" };
+            var exceptionWords = new HashSet<string>() { "almond milk", "coconut milk", "soy milk", "rice milk", "milkfish" };
+
+            Boolean hasDairyWord = false;
+            foreach (var dairyStr in dairyWords)
+            {
+                if (product.NameContains(dairyStr))
+                {
+                    hasDairyWord = true;
+                    break;
+                }
+            }
+
+            if (!hasDairyWord)
+            {
+                return false;
+            }
+
+            foreach (var exStr in exceptionWords)
+            {
+                if (product.NameContains(exStr))
+                {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
+        public static Boolean IsDairyProduct(Product product)
+        {
+            return
+                (product.FoodGroup == "dairy" && !product.NameContains("egg")) ||
+                (IsDairyOutsideFoodgroup(product));
         }
     }
 }
