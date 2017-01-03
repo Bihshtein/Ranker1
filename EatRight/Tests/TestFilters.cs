@@ -138,13 +138,18 @@ namespace Tests
             unit.TestsRecipes.Empty();
             unit.TestsRecipes.Add(breakfast);
 
-            var userProfile = new UserProfile() { Age = 30, Gender = GenderType.Male };
+            var userProfile = new UserProfile()
+            {
+                Age = 30,
+                Gender = GenderType.Male,
+                Restrictions = new HashSet<UserRestrictions>() { pref }
+            };
+
             var range = new MealSuggestionRange()
             { Length = 1, MealType = MealType.Breakfast };
 
             var recommendationDB = RecommendationDBGenerator.FromUserProfile(userProfile, unit);
             recommendationDB.range = range;
-            recommendationDB.preferences = new HashSet<UserRestrictions>() { pref };
 
             var recommendationGenerator = new RecommendationGenerator(unit, recommendationDB, false, true);
             var reco = recommendationGenerator.GetRecommendation();
