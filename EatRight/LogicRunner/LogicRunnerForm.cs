@@ -120,6 +120,7 @@ namespace LogicRunner
             Recommendation reco = generator.GetRecommendation();
             if (reco == null)
             {
+                manager.End();
                 MessageBox.Show("I'm sorry, but I can't recommend on any " + mealType.SelectedItem.ToString() + "s");
             }
             else
@@ -146,11 +147,11 @@ namespace LogicRunner
                 manager.TakeTime("setting data source and rich text data binding");
 
                 manager.End();
-
-                this.labelConsole.Text = string.Format("[{0}] Process took: {1} ms", DateTime.Now.ToShortTimeString(), manager.TotalTime());
-
-                //MessageBox.Show(manager.ToString());
             }
+            
+            this.labelConsole.Text = string.Format("[{0}] Process took: {1} ms", DateTime.Now.ToShortTimeString(), manager.TotalTime());
+
+            //MessageBox.Show(manager.ToString());
         }
 
         private string parseNutValues(Dictionary<string, double> let)
