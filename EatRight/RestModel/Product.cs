@@ -141,6 +141,9 @@ namespace RestModel {
         [BsonElement("Types")]
         public HashSet<ProductType> Types { get; set; }
 
+        [BsonElement("USDAString")]
+        public string USDAString { get; set; }
+
         public Dictionary<string, double> Nutrients() {
                 var res = new Dictionary<string, double>();
 

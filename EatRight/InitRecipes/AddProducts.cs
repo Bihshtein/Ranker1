@@ -37,6 +37,9 @@ namespace InitRecipes {
                 }
                 else recipe.TotalNutValues = new Dictionary<string, double>();
 
+                if (recipe.USDAProducts == null) recipe.USDAProducts = new Dictionary<string, List<string>>();
+                recipe.USDAProducts.Clear();
+
                 foreach (var item in recipe.Ingredients) {
                     ParseItem(recipe, item.ToLower().Trim());
                 }
@@ -69,6 +72,14 @@ namespace InitRecipes {
                 }
                 else {
                     var product = res[0];
+
+                    var retProducts = new List<string>();
+
+                    res.ForEach(x => retProducts.Add(string.Format("[{0}] {1}", x.ID, x.USDAString)));
+
+                    recipe.USDAProducts.Add(
+                        string.Format("{0} => <0/{3}> [{1}] {2}", innerpart, product.ID, product.USDAString, res.Count),
+                        retProducts);
 
                     if (relativeMeasure != string.Empty) {
                         weight = TryParseRelativeWeight(relativeMeasure, weight, product, innerpart);

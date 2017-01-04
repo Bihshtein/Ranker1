@@ -47,6 +47,7 @@ namespace RestModel  {
         public TimeSpan PrepTime { get; set; } // In minutes
         public Dictionary<string, double> TotalNutValues { get; set; }
         public double TotalCaloriesNum { get; set; }
+        public Dictionary<string, List<string>> USDAProducts { get; set; }
 
         private static RestDBInterface Unit = new RestDBInterface();
         [BsonElement("Servings")]
@@ -64,10 +65,10 @@ namespace RestModel  {
             return ID.Equals(m.ID);
         }
         
-        private KeyValuePair<Product, double> GetProductWeight(string prodName)
+        private KeyValuePair<List<Product>, double> GetProductWeight(string prodName)
         {
-            var product = Queries<Product>.GetMatchingProductsForIngredient(prodName)[0];
-            return new KeyValuePair<Product, double>(product, ProductsWeight[prodName]);
+            var product = Queries<Product>.GetMatchingProductsForIngredient(prodName);
+            return new KeyValuePair<List<Product>, double>(product, ProductsWeight[prodName]);
         }
 
         public Boolean HasType(MealType type)
@@ -86,13 +87,22 @@ namespace RestModel  {
 
             this.TotalNutValues = new Dictionary<string, double>();
             this.TotalCaloriesNum = 0;
+            this.USDAProducts = new Dictionary<string, List<string>>();
 
             foreach (var pw in ProductsWeight)
             {
-                var product = GetProductWeight(pw.Key).Key;
+                var res = GetProductWeight(pw.Key).Key;
+                var product = res[0];
                 var weight = pw.Value;
                 var prodNutValues = product.Nutrients().ToList();
 
+                var retProducts = new List<string>();
+                res.ForEach(x => retProducts.Add(string.Format("[{0}] {1}", x.ID, x.USDAString)));
+
+                USDAProducts.Add(
+                    string.Format("{0} => <0/{3}> [{1}] {2}", pw.Key, product.ID, product.USDAString, res.Count),
+                    retProducts);
+                
                 foreach (var entry in prodNutValues)
                 {
                     if (!TotalNutValues.ContainsKey(entry.Key))
