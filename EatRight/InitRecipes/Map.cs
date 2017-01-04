@@ -19,7 +19,8 @@ namespace InitRecipes {
             { "can anchovy fillets", "anchovy"},
             { " sprigs",""},
             { "fresh dill","fresh dill weed"},
-            
+               { "skim", "nonfat"}
+
         };
 
         public static List<string> RelativeSizes = new List<string> {
@@ -50,14 +51,15 @@ namespace InitRecipes {
             { "chicken breast halves","piece" },
             { "cornish game hens", "bird"},
             { "teaspoon", "tsp"},
-            { "tablespoon", "tbsp"}
+            { "tablespoon", "tbsp"},
+         
         };
 
 
         public static Dictionary<string, double> MeasuresWeights = new Dictionary<string, double>(){
             {"bunch",60 },
             {"cloves",3 },//garlic
-            {"clove",1 },//garlic
+            {"clove",3 },//garlic
             {"pinch",0.25 },//green onion or whatever
             {"teaspoon ",5 },
             {"teaspoons",5 },

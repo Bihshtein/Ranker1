@@ -37,7 +37,7 @@ namespace RestModel
         
         };
         public static List<string> StartCutDetails = new List<string> {
-            "melted","sifted", "sprig", "sprigs", "ground", "shredded", "cubed",
+            "melted","sifted", "sprig", "sprigs", "ground", "shredded", "cubed", "rolled",
             "head", "heads", "sliced", "stalk", "stalks", "diced", "minced", "chopped",
             "grated","mashed","crushed",  "steaks"};
 
