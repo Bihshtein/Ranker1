@@ -205,6 +205,7 @@ namespace InitDB {
                 product.FoodGroup == "beef" ||
                 product.FoodGroup == "chicken" ||
                 product.FoodGroup == "pork" ||
+                product.FoodGroup == "sausages" ||
                 IsProductOutsideFoodgroup(product, meatWords, exceptionWords);
         }
 
