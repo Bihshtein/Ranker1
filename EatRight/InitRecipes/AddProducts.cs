@@ -64,6 +64,7 @@ namespace InitRecipes {
             ++total;
             if (innerpart != string.Empty) {
                 innerpart = Map.AdjustInnerPart(innerpart);
+
                 var res = Queries<Product>.GetMatchingProductsForIngredient(innerpart);
 
                 if (res == null || res.Count == 0) {
@@ -75,11 +76,20 @@ namespace InitRecipes {
 
                     var retProducts = new List<string>();
 
+                    var usdaKey = string.Format("{0} => <0/{3}> [{1}] {2}", innerpart, product.ID, product.USDAString, res.Count);
+
                     res.ForEach(x => retProducts.Add(string.Format("[{0}] {1}", x.ID, x.USDAString)));
 
-                    recipe.USDAProducts.Add(
-                        string.Format("{0} => <0/{3}> [{1}] {2}", innerpart, product.ID, product.USDAString, res.Count),
-                        retProducts);
+                    if (recipe.USDAProducts.ContainsKey(usdaKey))
+                    {
+                        Console.WriteLine("Warning: Recipe {0} contains USDA Product duplicate {1}", recipe.ID, innerpart);
+                    }
+                    else
+                    {
+                        recipe.USDAProducts.Add(usdaKey,
+                            retProducts);
+
+                    }
 
                     if (relativeMeasure != string.Empty) {
                         weight = TryParseRelativeWeight(relativeMeasure, weight, product, innerpart);
