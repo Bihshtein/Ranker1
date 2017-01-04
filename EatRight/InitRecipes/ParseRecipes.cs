@@ -22,9 +22,8 @@ namespace InitRecipes {
             
             var loadMealsBulkSize = Indexes.Count > 1000 ? 1000 : Indexes.Count;
             var unit = new RestDBInterface();
-            unit.Recipes.Empty();
             var recipes = unit.Recipes.GetAll().ToList();
-
+            recipes.RemoveAll(recipe => !Indexes.Contains(recipe.ID ));
             while (Indexes.Count > 0) {
                 log.Debug("Indexes count : " + Indexes.Count);
                 List<Task> tasks = new List<Task>();
