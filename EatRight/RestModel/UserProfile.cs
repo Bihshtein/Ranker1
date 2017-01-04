@@ -13,9 +13,11 @@ namespace RestModel
         Meat,
         Dairy,
         Fish,
+        Seafood,
         NoMeat,
         NoDairy,
-        NoFish
+        NoFish,
+        NoSeafood
     }
 
     /// <summary>
@@ -93,6 +95,8 @@ namespace RestModel
         HasNoDairyMealFilter,
         HasFishMealFilter,
         HasNoFishMealFilter,
+        HasSeafoodMealFilter,
+        HasNoSeafoodMealFilter,
 
         MealFilterEnd
     }
@@ -183,7 +187,7 @@ namespace RestModel
         // Social credentials
         // Social link
     }
-    
+
     public class UserProfile
     {
         public string Name { get; set; }
@@ -193,6 +197,8 @@ namespace RestModel
         public GenderType Gender { get; set; }
         public int Pregnant { get; set; }
 
+        // TODO: temp support for uri's restriction code
+        public HashSet<UserRestrictions> Restrictions { get; set;}
 
         public UserDietProfile DietProfile { get; protected set; }
         public UserSocialProfile SocialProfile { get; protected set; }

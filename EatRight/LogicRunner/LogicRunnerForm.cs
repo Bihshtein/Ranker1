@@ -91,12 +91,16 @@ namespace LogicRunner
                 recommendationDB.preferences.Add(UserRestrictions.Fish);
             if (Dairy.Checked)
                 recommendationDB.preferences.Add(UserRestrictions.Dairy);
+            if (Seafood.Checked)
+                recommendationDB.preferences.Add(UserRestrictions.Seafood);
             if (NoFish.Checked)
                 recommendationDB.preferences.Add(UserRestrictions.NoFish);
             if (NoDairy.Checked)
                 recommendationDB.preferences.Add(UserRestrictions.NoDairy);
             if (NoMeat.Checked)
                 recommendationDB.preferences.Add(UserRestrictions.NoMeat);
+            if (NoSeafood.Checked)
+                recommendationDB.preferences.Add(UserRestrictions.NoSeafood);
             recommendationDB.dailyCaloriesNum = int.Parse(totalCalories.SelectedItem.ToString());
               recommendationDB.GradersWeight = new Dictionary<GraderType, double>()
                {

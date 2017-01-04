@@ -79,6 +79,23 @@ namespace RecommendationBuilder
         }
     }
 
+    public class UserRestrictionsGenerator
+    {
+        public static HashSet<UserRestrictions> FromUserProfile(UserProfile userProfile)
+        {
+            if (userProfile == null) return null;
+
+            var ret = 
+                (userProfile.Restrictions == null) ? new HashSet<UserRestrictions>() : 
+                    new HashSet<UserRestrictions>(userProfile.Restrictions);
+            
+            // uri: for now i'm just adding this to support your UserRestrictions but there's gotta
+            // be a different logic from the UI, there are duplicates in nutriention diet through out the filters.
+            return ret;
+        }
+    }
+
+
 
     public class GradersMap
     {
@@ -153,6 +170,7 @@ namespace RecommendationBuilder
             recommendationDB.dailyValues = dValues.DuplicateDictionary();
             recommendationDB.dailyCaloriesNum = DailyCaloriesGenerator.FromUserProfile(userProfile);
             recommendationDB.range = SuggestionRangeGenerator.FromUserProfile(userProfile);
+            recommendationDB.preferences = UserRestrictionsGenerator.FromUserProfile(userProfile);
             
             return recommendationDB;
         }
