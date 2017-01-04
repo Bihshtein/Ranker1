@@ -99,7 +99,7 @@ namespace RestModel {
             x = x.Where(y => y.Age.Within(age) && y.Gender.Within(gender)).ToList();
             return x as List<T>;
         }
-        public static List<string> FoodGroups = new List<string>() {"Legumes","SoupAndSauce","Nuts","Sweets", "SpicesAndHerbs","OilsAndFats","Beverages","Baked","Fish","Carbs", "Chicken", "Beef", "Pork" ,"Vegs","Fruits","Dairy"};
+        public static List<string> FoodGroups = new List<string>() {"Sausages","Legumes","SoupAndSauce","Nuts","Sweets", "SpicesAndHerbs","OilsAndFats","Beverages","Baked","Fish","Carbs", "Chicken", "Beef", "Pork" ,"Vegs","Fruits","Dairy"};
         public static Dictionary<string, double> DailyValues = new Dictionary<string, double>() {
             {"Protein",56},
             {"Fiber",25},
@@ -179,7 +179,7 @@ namespace RestModel {
         public void Add(T entity) {
             _collection.InsertOne(entity);
         }
-        public void Delete(Expression<Func<T, string>> queryExpression, string id) {
+        public void Delete(Expression<Func<T, int>> queryExpression, int id) {
             var query = new FilterDefinitionBuilder<T>();
             
             _collection.DeleteMany(query.Eq(queryExpression, id));

@@ -54,7 +54,7 @@ namespace InitRecipes {
         }
 
         public static void ParseItem(Recipe recipe, string item) {
-            item = Map.GetPrettyItem(item);
+            item = Map.AdjustNames(item);
             var results = ParseWeightAndName(item);
             var innerpart = results.Item1.Trim();
             var weight = results.Item2;
@@ -151,7 +151,7 @@ namespace InitRecipes {
             var relativeWeight = 0.0;
             var innerpart = string.Empty;
             var unit = item.Replace(parts[0], "").Replace(parts[1], "");
-            if (Map.RelativeSizes.Contains(unit))
+            if (Formulas.RelativeSizes.Contains(unit))
             {
                 try
                 {
@@ -193,11 +193,11 @@ namespace InitRecipes {
             var innerpart = string.Empty;
           
                 var unit = item.Replace(parts[0], "").Replace(parts[1], "");
-                if (Map.MeasuresWeights.ContainsKey(unit))
+                if (Formulas.MeasuresWeights.ContainsKey(unit))
                 {
                     try
                     {
-                        actualWeight = ParseHelpers.ParseAmount(parts[0]) * Map.MeasuresWeights[unit];
+                        actualWeight = ParseHelpers.ParseAmount(parts[0]) * Formulas.MeasuresWeights[unit];
                     }
                     catch (Exception ex)
                     {
@@ -215,7 +215,7 @@ namespace InitRecipes {
             var weight = 0.0;
             var innerpart = "";
             var weightKey = "";
-            var parts = item.Split(Map.MeasuresWeights.Keys.ToArray(), StringSplitOptions.RemoveEmptyEntries);
+            var parts = item.Split(Formulas.MeasuresWeights.Keys.ToArray(), StringSplitOptions.RemoveEmptyEntries);
             if (parts.Length > 1)
             {
                 var res = ParseByAbsoluteMeasures(parts, item);
@@ -224,7 +224,7 @@ namespace InitRecipes {
             }
             else
             {
-                parts = item.Split(Map.RelativeSizes.ToArray(), StringSplitOptions.RemoveEmptyEntries);
+                parts = item.Split(Formulas.RelativeSizes.ToArray(), StringSplitOptions.RemoveEmptyEntries);
                 if (parts.Length > 1)
                 {
                     var res = ParseByRelativeMeasures(parts, item);

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Reflection;
 using System.IO;
 using RestModel;
+using Logic;
 
 namespace InitRecipes {
     public class MealsCSVReader
@@ -79,8 +80,8 @@ namespace InitRecipes {
                                 var weight = double.Parse(parts[0]);
                                 if (parts.Length > 1) {
                                     var measureName = parts[1]; ;
-                                    if (Map.MeasuresWeights.ContainsKey(measureName)) {
-                                        productsWeight[productsIndex[idx]] = weight * Map.MeasuresWeights[measureName];
+                                    if (Formulas.MeasuresWeights.ContainsKey(measureName)) {
+                                        productsWeight[productsIndex[idx]] = weight * Formulas.MeasuresWeights[measureName];
                                     }
                                     else {
                                         var fullName = productsWeight.Keys.ToList().First(item => item == productsIndex[idx]);

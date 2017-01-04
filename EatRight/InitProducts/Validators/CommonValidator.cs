@@ -42,7 +42,7 @@ namespace InitDB {
         };
 
         public static List<string> StorageOptions = new List<string>{
-            "powder","fresh", "cured","moisture","chilled","ripe", "bottled", "hydrated","dry","sprouted","hydrated",
+            "powder","fresh", "cured","moisture","chilled", "bottled", "hydrated","dry","sprouted","hydrated",
             "seasoned","freshly harvest", "stored","refrigerated","exposed to ultraviolet light",
             "shelf stable","dried", "ground", "pre-sliced", "frozen", "canned", "as purchased","ready-to-bake"
         };

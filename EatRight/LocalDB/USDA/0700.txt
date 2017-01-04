@@ -1,0 +1,2537 @@
+{
+    "report": {
+        "sr": "28",
+        "groups": [
+            {
+                "id": "0700",
+                "description": "Sausages and Luncheon Meats"
+            }
+        ],
+        "subset": "All foods",
+        "end": 168,
+        "start": 0,
+        "total": 168,
+        "foods": [
+            {
+                "ndbno": "07921",
+                "name": "Bacon and beef sticks",
+                "weight": 28.0,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.15",
+                        "gm": 29.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "07974",
+                "name": "Bacon, turkey, low sodium",
+                "weight": 15.0,
+                "measure": "1.0 serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.00",
+                        "gm": 13.33
+                    }
+                ]
+            },
+            {
+                "ndbno": "07001",
+                "name": "Barbecue loaf, pork, beef",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.49",
+                        "gm": 15.84
+                    }
+                ]
+            },
+            {
+                "ndbno": "07956",
+                "name": "Beef sausage, fresh, cooked",
+                "weight": 43.0,
+                "measure": "1.0 serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.83",
+                        "gm": 18.21
+                    }
+                ]
+            },
+            {
+                "ndbno": "07954",
+                "name": "Beef sausage, pre-cooked",
+                "weight": 48.0,
+                "measure": "1.0 serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.44",
+                        "gm": 15.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "43384",
+                "name": "Beef, bologna, reduced sodium",
+                "weight": 138.0,
+                "measure": "1.0 cup pieces",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.15",
+                        "gm": 11.7
+                    }
+                ]
+            },
+            {
+                "ndbno": "13348",
+                "name": "Beef, cured, corned beef, canned",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.68",
+                        "gm": 27.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "13350",
+                "name": "Beef, cured, dried",
+                "weight": 28.0,
+                "measure": "10.0 slices",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.71",
+                        "gm": 31.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "13353",
+                "name": "Beef, cured, luncheon meat, jellied",
+                "weight": 28.0,
+                "measure": "1.0 slice (1 oz) (4\" x 4\" x 3/32\" thick)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.32",
+                        "gm": 19.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "13355",
+                "name": "Beef, cured, pastrami",
+                "weight": 71.0,
+                "measure": "1.0 package, 2.5 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.48",
+                        "gm": 21.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "13357",
+                "name": "Beef, cured, sausage, cooked, smoked",
+                "weight": 43.0,
+                "measure": "1.0 sausage",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.07",
+                        "gm": 14.11
+                    }
+                ]
+            },
+            {
+                "ndbno": "13358",
+                "name": "Beef, cured, smoked, chopped beef",
+                "weight": 28.0,
+                "measure": "1.0 slice (1 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.65",
+                        "gm": 20.19
+                    }
+                ]
+            },
+            {
+                "ndbno": "07003",
+                "name": "Beerwurst, beer salami, pork",
+                "weight": 23.0,
+                "measure": "1.0 slice (4\" dia x 1/8\" thick)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.28",
+                        "gm": 14.24
+                    }
+                ]
+            },
+            {
+                "ndbno": "07002",
+                "name": "Beerwurst, beer salami, pork and beef",
+                "weight": 56.0,
+                "measure": "2.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.84",
+                        "gm": 14.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "07931",
+                "name": "Beerwurst, pork and beef",
+                "weight": 56.0,
+                "measure": "1.0 serving 2 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.84",
+                        "gm": 14.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "07005",
+                "name": "Blood sausage",
+                "weight": 100.0,
+                "measure": "4.0 slices",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.60",
+                        "gm": 14.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "07006",
+                "name": "Bockwurst, pork, veal, raw",
+                "weight": 91.0,
+                "measure": "1.0 sausage",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.77",
+                        "gm": 14.03
+                    }
+                ]
+            },
+            {
+                "ndbno": "07007",
+                "name": "Bologna, beef",
+                "weight": 30.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.27",
+                        "gm": 10.91
+                    }
+                ]
+            },
+            {
+                "ndbno": "07008",
+                "name": "Bologna, beef and pork",
+                "weight": 100.0,
+                "measure": "3.527 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.20",
+                        "gm": 15.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "42129",
+                "name": "Bologna, beef and pork, low fat",
+                "weight": 138.0,
+                "measure": "1.0 cup pieces",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.87",
+                        "gm": 11.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "42161",
+                "name": "Bologna, beef, low fat",
+                "weight": 28.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.30",
+                        "gm": 11.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "07960",
+                "name": "Bologna, chicken, pork",
+                "weight": 28.0,
+                "measure": "1.0 serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.89",
+                        "gm": 10.31
+                    }
+                ]
+            },
+            {
+                "ndbno": "07959",
+                "name": "Bologna, chicken, pork, beef",
+                "weight": 28.0,
+                "measure": "1.0 serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.17",
+                        "gm": 11.33
+                    }
+                ]
+            },
+            {
+                "ndbno": "07952",
+                "name": "Bologna, chicken, turkey, pork",
+                "weight": 28.0,
+                "measure": "1.0 serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.77",
+                        "gm": 9.88
+                    }
+                ]
+            },
+            {
+                "ndbno": "07971",
+                "name": "Bologna, meat and poultry",
+                "weight": 33.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.41",
+                        "gm": 10.34
+                    }
+                ]
+            },
+            {
+                "ndbno": "07010",
+                "name": "Bologna, pork",
+                "weight": 28.0,
+                "measure": "1.0 slice, medium (4-1/2\" dia x 1/8\" thick) (1 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.28",
+                        "gm": 15.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "07936",
+                "name": "Bologna, pork and turkey, lite",
+                "weight": 56.0,
+                "measure": "1.0 serving 2 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.31",
+                        "gm": 13.06
+                    }
+                ]
+            },
+            {
+                "ndbno": "07937",
+                "name": "Bologna, pork, turkey and beef",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.28",
+                        "gm": 11.56
+                    }
+                ]
+            },
+            {
+                "ndbno": "07011",
+                "name": "Bologna, turkey",
+                "weight": 28.0,
+                "measure": "0.99 oz 1 serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.20",
+                        "gm": 11.42
+                    }
+                ]
+            },
+            {
+                "ndbno": "07922",
+                "name": "Bratwurst, beef and pork, smoked",
+                "weight": 66.0,
+                "measure": "1.0 serving 2.33 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.05",
+                        "gm": 12.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "07923",
+                "name": "Bratwurst, chicken, cooked",
+                "weight": 84.0,
+                "measure": "1.0 serving 2.96 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.33",
+                        "gm": 19.44
+                    }
+                ]
+            },
+            {
+                "ndbno": "07924",
+                "name": "Bratwurst, pork, beef and turkey, lite, smoked",
+                "weight": 66.0,
+                "measure": "1.0 serving 2.33 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.54",
+                        "gm": 14.45
+                    }
+                ]
+            },
+            {
+                "ndbno": "07013",
+                "name": "Bratwurst, pork, cooked",
+                "weight": 85.0,
+                "measure": "1.0 link cooked",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.66",
+                        "gm": 13.72
+                    }
+                ]
+            },
+            {
+                "ndbno": "07910",
+                "name": "Bratwurst, veal, cooked",
+                "weight": 84.0,
+                "measure": "1.0 serving 2.96 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.75",
+                        "gm": 13.99
+                    }
+                ]
+            },
+            {
+                "ndbno": "07014",
+                "name": "Braunschweiger (a liver sausage), pork",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.11",
+                        "gm": 14.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "07015",
+                "name": "Brotwurst, pork, beef, link",
+                "weight": 70.0,
+                "measure": "1.0 link",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.01",
+                        "gm": 14.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "07016",
+                "name": "Cheesefurter, cheese smokie, pork, beef",
+                "weight": 100.0,
+                "measure": "2.33 links",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.10",
+                        "gm": 14.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "07961",
+                "name": "Chicken breast, deli, rotisserie seasoned, sliced, prepackaged",
+                "weight": 12.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.09",
+                        "gm": 17.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "07932",
+                "name": "Chicken breast, fat-free, mesquite flavor, sliced",
+                "weight": 42.0,
+                "measure": "1.0 serving 2 slices",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.06",
+                        "gm": 16.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "07933",
+                "name": "Chicken breast, oven-roasted, fat-free, sliced",
+                "weight": 42.0,
+                "measure": "1.0 serving 2 slices",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.05",
+                        "gm": 16.79
+                    }
+                ]
+            },
+            {
+                "ndbno": "07018",
+                "name": "Chicken spread",
+                "weight": 56.0,
+                "measure": "1.0 serving (1 serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.09",
+                        "gm": 18.01
+                    }
+                ]
+            },
+            {
+                "ndbno": "07019",
+                "name": "Chorizo, pork and beef",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.83",
+                        "gm": 24.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "07020",
+                "name": "Corned beef loaf, jellied",
+                "weight": 28.0,
+                "measure": "1.0 slice (1 oz) (4\" x 4\" x 3/32\" thick)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.41",
+                        "gm": 22.9
+                    }
+                ]
+            },
+            {
+                "ndbno": "07021",
+                "name": "Dutch brand loaf, chicken, pork and beef",
+                "weight": 38.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.56",
+                        "gm": 12.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "07945",
+                "name": "Frankfurter, beef, heated",
+                "weight": 48.0,
+                "measure": "1.0 frankfurter",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.61",
+                        "gm": 11.69
+                    }
+                ]
+            },
+            {
+                "ndbno": "42179",
+                "name": "Frankfurter, beef, low fat",
+                "weight": 57.0,
+                "measure": "1.0 frankfurter",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.84",
+                        "gm": 12.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "07905",
+                "name": "Frankfurter, beef, pork, and turkey, fat free",
+                "weight": 57.0,
+                "measure": "1.0 frank 1 NLEA serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.12",
+                        "gm": 12.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "07022",
+                "name": "Frankfurter, beef, unheated",
+                "weight": 49.0,
+                "measure": "1.0 hot dog",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.73",
+                        "gm": 11.69
+                    }
+                ]
+            },
+            {
+                "ndbno": "07024",
+                "name": "Frankfurter, chicken",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.18",
+                        "gm": 15.51
+                    }
+                ]
+            },
+            {
+                "ndbno": "43507",
+                "name": "Frankfurter, low sodium",
+                "weight": 57.0,
+                "measure": "1.0 frankfurter",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.84",
+                        "gm": 12.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "07950",
+                "name": "Frankfurter, meat",
+                "weight": 52.0,
+                "measure": "1.0 serving (1 hot dog)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.34",
+                        "gm": 10.26
+                    }
+                ]
+            },
+            {
+                "ndbno": "07963",
+                "name": "Frankfurter, meat and poultry, cooked, boiled",
+                "weight": 50.0,
+                "measure": "1.0 frankfurter",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.16",
+                        "gm": 10.31
+                    }
+                ]
+            },
+            {
+                "ndbno": "07964",
+                "name": "Frankfurter, meat and poultry, cooked, grilled",
+                "weight": 48.0,
+                "measure": "1.0 frankfurter",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.12",
+                        "gm": 10.67
+                    }
+                ]
+            },
+            {
+                "ndbno": "42280",
+                "name": "Frankfurter, meat and poultry, low fat",
+                "weight": 143.0,
+                "measure": "1.0 cup, sliced",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.16",
+                        "gm": 15.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "07962",
+                "name": "Frankfurter, meat and poultry, unheated",
+                "weight": 51.0,
+                "measure": "1.0 frankfurter",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.96",
+                        "gm": 9.72
+                    }
+                ]
+            },
+            {
+                "ndbno": "07949",
+                "name": "Frankfurter, meat, heated",
+                "weight": 52.0,
+                "measure": "1.0 serving (1 hot dog)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.08",
+                        "gm": 9.77
+                    }
+                ]
+            },
+            {
+                "ndbno": "07939",
+                "name": "Frankfurter, pork",
+                "weight": 76.0,
+                "measure": "1.0 link",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.74",
+                        "gm": 12.81
+                    }
+                ]
+            },
+            {
+                "ndbno": "07025",
+                "name": "Frankfurter, turkey",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.47",
+                        "gm": 12.23
+                    }
+                ]
+            },
+            {
+                "ndbno": "07032",
+                "name": "Ham and cheese loaf or roll",
+                "weight": 28.0,
+                "measure": "1.0 slice (1 oz) (4\" x 4\" x 3/32\" thick)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.81",
+                        "gm": 13.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "07033",
+                "name": "Ham and cheese spread",
+                "weight": 15.0,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.43",
+                        "gm": 16.18
+                    }
+                ]
+            },
+            {
+                "ndbno": "07031",
+                "name": "Ham salad spread",
+                "weight": 15.0,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.30",
+                        "gm": 8.68
+                    }
+                ]
+            },
+            {
+                "ndbno": "07026",
+                "name": "Ham, chopped, canned",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.55",
+                        "gm": 16.06
+                    }
+                ]
+            },
+            {
+                "ndbno": "07027",
+                "name": "Ham, chopped, not canned",
+                "weight": 28.0,
+                "measure": "1.0 slice (1 oz) (4\" x 4\" x 3/32\" thick)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.62",
+                        "gm": 16.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "07938",
+                "name": "Ham, honey, smoked, cooked",
+                "weight": 55.0,
+                "measure": "1.94 oz (1 serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.86",
+                        "gm": 17.93
+                    }
+                ]
+            },
+            {
+                "ndbno": "07030",
+                "name": "Ham, minced",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.62",
+                        "gm": 16.28
+                    }
+                ]
+            },
+            {
+                "ndbno": "07028",
+                "name": "Ham, sliced, pre-packaged, deli meat (96%fat free, water added)",
+                "weight": 13.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.19",
+                        "gm": 16.85
+                    }
+                ]
+            },
+            {
+                "ndbno": "07029",
+                "name": "Ham, sliced, regular (approximately 11% fat)",
+                "weight": 56.0,
+                "measure": "56.0 grams 1 serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.30",
+                        "gm": 16.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "07034",
+                "name": "Headcheese, pork",
+                "weight": 28.0,
+                "measure": "1.0 slice (1 oz) (4\" x 4\" x 3/32\" thick)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.87",
+                        "gm": 13.83
+                    }
+                ]
+            },
+            {
+                "ndbno": "07088",
+                "name": "Honey roll sausage, beef",
+                "weight": 23.0,
+                "measure": "1.0 slice (4\" dia x 1/8\" thick)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.27",
+                        "gm": 18.58
+                    }
+                ]
+            },
+            {
+                "ndbno": "07278",
+                "name": "HORMEL Pillow Pak Sliced Turkey Pepperoni",
+                "weight": 30.0,
+                "measure": "1.0 serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.30",
+                        "gm": 30.99
+                    }
+                ]
+            },
+            {
+                "ndbno": "07968",
+                "name": "Kielbasa, fully cooked, grilled",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.58",
+                        "gm": 12.45
+                    }
+                ]
+            },
+            {
+                "ndbno": "07969",
+                "name": "Kielbasa, fully cooked, pan-fried",
+                "weight": 370.0,
+                "measure": "1.0 link",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "45.73",
+                        "gm": 12.36
+                    }
+                ]
+            },
+            {
+                "ndbno": "07970",
+                "name": "Kielbasa, fully cooked, unheated",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.21",
+                        "gm": 10.84
+                    }
+                ]
+            },
+            {
+                "ndbno": "07934",
+                "name": "Kielbasa, Polish, turkey and beef, smoked",
+                "weight": 56.0,
+                "measure": "1.0 serving 2 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.34",
+                        "gm": 13.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "07038",
+                "name": "Knackwurst, knockwurst, pork, beef",
+                "weight": 72.0,
+                "measure": "1.0 link",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.99",
+                        "gm": 11.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "07039",
+                "name": "Lebanon bologna, beef",
+                "weight": 57.0,
+                "measure": "1.0 serving 2 slices",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.85",
+                        "gm": 19.03
+                    }
+                ]
+            },
+            {
+                "ndbno": "07040",
+                "name": "Liver cheese, pork",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.31",
+                        "gm": 15.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "07041",
+                "name": "Liver sausage, liverwurst, pork",
+                "weight": 18.0,
+                "measure": "1.0 slice (2-1/2\" dia x 1/4\" thick)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.54",
+                        "gm": 14.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "07911",
+                "name": "Liverwurst spread",
+                "weight": 55.0,
+                "measure": "0.25 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.81",
+                        "gm": 12.38
+                    }
+                ]
+            },
+            {
+                "ndbno": "07909",
+                "name": "Luncheon meat, pork and chicken, minced, canned, includes SPAM Lite",
+                "weight": 56.0,
+                "measure": "2.0 oz (1 serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.53",
+                        "gm": 15.23
+                    }
+                ]
+            },
+            {
+                "ndbno": "07908",
+                "name": "Luncheon meat, pork with ham, minced, canned, includes SPAM (Hormel)",
+                "weight": 56.0,
+                "measure": "2.0 oz 1 NLEA serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.50",
+                        "gm": 13.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "07045",
+                "name": "Luncheon meat, pork, canned",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.54",
+                        "gm": 12.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "07906",
+                "name": "Luncheon meat, pork, ham, and chicken, minced, canned, reduced sodium, added ascorbic acid, includes SPAM, 25% less sodium",
+                "weight": 56.0,
+                "measure": "2.0 oz 1 NLEA serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.00",
+                        "gm": 12.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "07090",
+                "name": "Luncheon sausage, pork and beef",
+                "weight": 23.0,
+                "measure": "1.0 slice (4\" dia x 1/8\" thick)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.54",
+                        "gm": 15.38
+                    }
+                ]
+            },
+            {
+                "ndbno": "07060",
+                "name": "Luxury loaf, pork",
+                "weight": 28.0,
+                "measure": "1.0 slice (1 oz) (4\" x 4\" x 3/32\" thick)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.15",
+                        "gm": 18.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "07940",
+                "name": "Macaroni and cheese loaf, chicken, pork and beef",
+                "weight": 38.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.47",
+                        "gm": 11.76
+                    }
+                ]
+            },
+            {
+                "ndbno": "07972",
+                "name": "Meatballs, frozen, Italian style",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.24",
+                        "gm": 14.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "07050",
+                "name": "Mortadella, beef, pork",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.64",
+                        "gm": 16.37
+                    }
+                ]
+            },
+            {
+                "ndbno": "07061",
+                "name": "Mother's loaf, pork",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.42",
+                        "gm": 12.07
+                    }
+                ]
+            },
+            {
+                "ndbno": "07091",
+                "name": "New england brand sausage, pork, beef",
+                "weight": 23.0,
+                "measure": "1.0 slice (4\" dia x 1/8\" thick)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.97",
+                        "gm": 17.27
+                    }
+                ]
+            },
+            {
+                "ndbno": "07051",
+                "name": "Olive loaf, pork",
+                "weight": 28.0,
+                "measure": "1.0 slice (1 oz) (4\" x 4\" x 3/32\" thick)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.30",
+                        "gm": 11.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "07201",
+                "name": "OSCAR MAYER, Bologna (beef)",
+                "weight": 28.0,
+                "measure": "1.0 serving (1 slice)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.09",
+                        "gm": 11.05
+                    }
+                ]
+            },
+            {
+                "ndbno": "07207",
+                "name": "OSCAR MAYER, Braunschweiger Liver Sausage (sliced)",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.11",
+                        "gm": 14.25
+                    }
+                ]
+            },
+            {
+                "ndbno": "07209",
+                "name": "OSCAR MAYER, Chicken Breast (honey glazed)",
+                "weight": 52.0,
+                "measure": "1.0 serving (4 slices)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.32",
+                        "gm": 19.85
+                    }
+                ]
+            },
+            {
+                "ndbno": "07212",
+                "name": "OSCAR MAYER, Ham (chopped with natural juice)",
+                "weight": 28.0,
+                "measure": "1.0 serving (1 slice)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.56",
+                        "gm": 16.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "07230",
+                "name": "OSCAR MAYER, Salami (hard)",
+                "weight": 27.0,
+                "measure": "1.0 serving 3 slices",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.99",
+                        "gm": 25.9
+                    }
+                ]
+            },
+            {
+                "ndbno": "07236",
+                "name": "OSCAR MAYER, Smokies Sausage Little Cheese (pork, turkey)",
+                "weight": 9.0,
+                "measure": "1.0 link",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.22",
+                        "gm": 13.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "07241",
+                "name": "OSCAR MAYER, Wieners (beef franks)",
+                "weight": 45.0,
+                "measure": "1.0 serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.11",
+                        "gm": 11.35
+                    }
+                ]
+            },
+            {
+                "ndbno": "07935",
+                "name": "Oven-roasted chicken breast roll",
+                "weight": 56.0,
+                "measure": "1.0 serving 2 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.17",
+                        "gm": 14.59
+                    }
+                ]
+            },
+            {
+                "ndbno": "07925",
+                "name": "Pastrami, beef, 98% fat-free",
+                "weight": 57.0,
+                "measure": "1.0 serving 6 slices",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.17",
+                        "gm": 19.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "07052",
+                "name": "Pastrami, turkey",
+                "weight": 57.0,
+                "measure": "2.0 slices",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.29",
+                        "gm": 16.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "07053",
+                "name": "Pate, chicken liver, canned",
+                "weight": 13.0,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.75",
+                        "gm": 13.45
+                    }
+                ]
+            },
+            {
+                "ndbno": "07054",
+                "name": "Pate, goose liver, smoked, canned",
+                "weight": 13.0,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.48",
+                        "gm": 11.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "07055",
+                "name": "Pate, liver, not specified, canned",
+                "weight": 13.0,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.85",
+                        "gm": 14.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "07942",
+                "name": "Pate, truffle flavor",
+                "weight": 56.0,
+                "measure": "1.0 serving 2 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.27",
+                        "gm": 11.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "07056",
+                "name": "Peppered loaf, pork, beef",
+                "weight": 100.0,
+                "measure": "3.52 slices",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.30",
+                        "gm": 17.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "07057",
+                "name": "Pepperoni, beef and pork, sliced",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.36",
+                        "gm": 19.25
+                    }
+                ]
+            },
+            {
+                "ndbno": "07058",
+                "name": "Pickle and pimiento loaf, pork",
+                "weight": 38.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.27",
+                        "gm": 11.23
+                    }
+                ]
+            },
+            {
+                "ndbno": "07062",
+                "name": "Picnic loaf, pork, beef",
+                "weight": 28.0,
+                "measure": "1.0 slice (1 oz) (4\" x 4\" x 3/32\" thick)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.18",
+                        "gm": 14.92
+                    }
+                ]
+            },
+            {
+                "ndbno": "07059",
+                "name": "Polish sausage, pork",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.98",
+                        "gm": 14.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "07065",
+                "name": "Pork and beef sausage, fresh, cooked",
+                "weight": 13.0,
+                "measure": "1.0 link (raw dimensions: 4\" long x 7/8\" dia), cooked",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.79",
+                        "gm": 13.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "07957",
+                "name": "Pork and turkey sausage, pre-cooked",
+                "weight": 57.0,
+                "measure": "1.0 serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.87",
+                        "gm": 12.05
+                    }
+                ]
+            },
+            {
+                "ndbno": "42190",
+                "name": "Pork sausage rice links, brown and serve, cooked",
+                "weight": 45.0,
+                "measure": "2.0 links 1 NLEA serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.17",
+                        "gm": 13.7
+                    }
+                ]
+            },
+            {
+                "ndbno": "07064",
+                "name": "Pork sausage, link/patty, cooked, pan-fried",
+                "weight": 27.0,
+                "measure": "1.0 patty",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.00",
+                        "gm": 18.53
+                    }
+                ]
+            },
+            {
+                "ndbno": "07953",
+                "name": "Pork sausage, link/patty, fully cooked, microwaved",
+                "weight": 30.0,
+                "measure": "1.0 patty",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.54",
+                        "gm": 15.12
+                    }
+                ]
+            },
+            {
+                "ndbno": "07967",
+                "name": "Pork sausage, link/patty, fully cooked, unheated",
+                "weight": 23.0,
+                "measure": "1.0 link",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.10",
+                        "gm": 13.46
+                    }
+                ]
+            },
+            {
+                "ndbno": "07966",
+                "name": "Pork sausage, link/patty, reduced fat, cooked, pan-fried",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.80",
+                        "gm": 20.94
+                    }
+                ]
+            },
+            {
+                "ndbno": "07965",
+                "name": "Pork sausage, link/patty, reduced fat, unprepared",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.24",
+                        "gm": 16.75
+                    }
+                ]
+            },
+            {
+                "ndbno": "07063",
+                "name": "Pork sausage, link/patty, unprepared",
+                "weight": 25.0,
+                "measure": "1.0 link",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.85",
+                        "gm": 15.39
+                    }
+                ]
+            },
+            {
+                "ndbno": "07978",
+                "name": "Pork sausage, reduced sodium, cooked",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.00",
+                        "gm": 9.41
+                    }
+                ]
+            },
+            {
+                "ndbno": "07067",
+                "name": "Poultry salad sandwich spread",
+                "weight": 13.0,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.51",
+                        "gm": 11.64
+                    }
+                ]
+            },
+            {
+                "ndbno": "07912",
+                "name": "Roast beef spread",
+                "weight": 57.0,
+                "measure": "1.0 serving .25 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.70",
+                        "gm": 15.27
+                    }
+                ]
+            },
+            {
+                "ndbno": "07043",
+                "name": "Roast beef, deli style, prepackaged, sliced",
+                "weight": 9.3,
+                "measure": "1.0 slice oval",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.73",
+                        "gm": 18.62
+                    }
+                ]
+            },
+            {
+                "ndbno": "07068",
+                "name": "Salami, cooked, beef",
+                "weight": 26.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.28",
+                        "gm": 12.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "07069",
+                "name": "Salami, cooked, beef and pork",
+                "weight": 12.3,
+                "measure": "1.0 slice round",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.69",
+                        "gm": 21.85
+                    }
+                ]
+            },
+            {
+                "ndbno": "07070",
+                "name": "Salami, cooked, turkey",
+                "weight": 28.0,
+                "measure": "1.0 serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.38",
+                        "gm": 19.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "07071",
+                "name": "Salami, dry or hard, pork",
+                "weight": 113.0,
+                "measure": "1.0 package (4 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "25.52",
+                        "gm": 22.58
+                    }
+                ]
+            },
+            {
+                "ndbno": "07072",
+                "name": "Salami, dry or hard, pork, beef",
+                "weight": 9.8,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.06",
+                        "gm": 21.07
+                    }
+                ]
+            },
+            {
+                "ndbno": "07926",
+                "name": "Salami, Italian, pork",
+                "weight": 28.0,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.08",
+                        "gm": 21.7
+                    }
+                ]
+            },
+            {
+                "ndbno": "07941",
+                "name": "Salami, Italian, pork and beef, dry, sliced, 50% less sodium",
+                "weight": 28.0,
+                "measure": "1.0 serving 5 slices",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.10",
+                        "gm": 21.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "07913",
+                "name": "Salami, pork, beef, less sodium",
+                "weight": 100.0,
+                "measure": "3.527 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.01",
+                        "gm": 15.01
+                    }
+                ]
+            },
+            {
+                "ndbno": "07073",
+                "name": "Sandwich spread, pork, beef",
+                "weight": 15.0,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.15",
+                        "gm": 7.66
+                    }
+                ]
+            },
+            {
+                "ndbno": "07004",
+                "name": "Sausage, Berliner, pork, beef",
+                "weight": 23.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.51",
+                        "gm": 15.27
+                    }
+                ]
+            },
+            {
+                "ndbno": "07928",
+                "name": "Sausage, chicken, beef, pork, skinless, smoked",
+                "weight": 84.0,
+                "measure": "1.0 link",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.42",
+                        "gm": 13.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "07089",
+                "name": "Sausage, Italian, pork, cooked",
+                "weight": 83.0,
+                "measure": "1.0 link, 4/lb",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.87",
+                        "gm": 19.12
+                    }
+                ]
+            },
+            {
+                "ndbno": "07036",
+                "name": "Sausage, Italian, pork, raw",
+                "weight": 113.0,
+                "measure": "1.0 link, 4/lb",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.10",
+                        "gm": 14.25
+                    }
+                ]
+            },
+            {
+                "ndbno": "07914",
+                "name": "Sausage, Italian, sweet, links",
+                "weight": 84.0,
+                "measure": "1.0 link 3 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.55",
+                        "gm": 16.13
+                    }
+                ]
+            },
+            {
+                "ndbno": "07927",
+                "name": "Sausage, Italian, turkey, smoked",
+                "weight": 56.0,
+                "measure": "1.0 serving 2 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.43",
+                        "gm": 15.05
+                    }
+                ]
+            },
+            {
+                "ndbno": "07915",
+                "name": "Sausage, Polish, beef with chicken, hot",
+                "weight": 55.0,
+                "measure": "1.0 serving 5 pieces",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.68",
+                        "gm": 17.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "07916",
+                "name": "Sausage, Polish, pork and beef, smoked",
+                "weight": 76.0,
+                "measure": "1.0 serving 2.67 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.17",
+                        "gm": 12.07
+                    }
+                ]
+            },
+            {
+                "ndbno": "07917",
+                "name": "Sausage, pork and beef, with cheddar cheese, smoked",
+                "weight": 77.0,
+                "measure": "12.0 oz serving 2.7 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.93",
+                        "gm": 12.89
+                    }
+                ]
+            },
+            {
+                "ndbno": "07979",
+                "name": "Sausage, pork, turkey, and beef, reduced sodium",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.10",
+                        "gm": 10.71
+                    }
+                ]
+            },
+            {
+                "ndbno": "07075",
+                "name": "Sausage, smoked link sausage, pork and beef",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.20",
+                        "gm": 12.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "07918",
+                "name": "Sausage, summer, pork and beef, sticks, with cheddar cheese",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.51",
+                        "gm": 19.43
+                    }
+                ]
+            },
+            {
+                "ndbno": "07919",
+                "name": "Sausage, turkey, breakfast links, mild",
+                "weight": 56.0,
+                "measure": "2.0 oz, 2 links",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.64",
+                        "gm": 15.42
+                    }
+                ]
+            },
+            {
+                "ndbno": "07929",
+                "name": "Sausage, turkey, hot, smoked",
+                "weight": 56.0,
+                "measure": "2.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.43",
+                        "gm": 15.05
+                    }
+                ]
+            },
+            {
+                "ndbno": "07083",
+                "name": "Sausage, Vienna, canned, chicken, beef, pork",
+                "weight": 16.0,
+                "measure": "1.0 sausage (7/8\" dia x 2\" long)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.68",
+                        "gm": 10.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "07951",
+                "name": "Scrapple, pork",
+                "weight": 17.0,
+                "measure": "1.0 cubic inch",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.37",
+                        "gm": 8.06
+                    }
+                ]
+            },
+            {
+                "ndbno": "07074",
+                "name": "Smoked link sausage, pork",
+                "weight": 68.0,
+                "measure": "1.0 link (4\" long x 1-1/8\" dia)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.15",
+                        "gm": 11.98
+                    }
+                ]
+            },
+            {
+                "ndbno": "07077",
+                "name": "Smoked link sausage, pork and beef, nonfat dry milk added",
+                "weight": 68.0,
+                "measure": "1.0 link (4\" long x 1-1/8\" dia)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.03",
+                        "gm": 13.28
+                    }
+                ]
+            },
+            {
+                "ndbno": "07920",
+                "name": "Swisswurst, pork and beef, with swiss cheese, smoked",
+                "weight": 77.0,
+                "measure": "1.0 serving 2.7 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.77",
+                        "gm": 12.69
+                    }
+                ]
+            },
+            {
+                "ndbno": "07078",
+                "name": "Thuringer, cervelat, summer sausage, beef, pork",
+                "weight": 56.0,
+                "measure": "2.0 oz 1 serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.77",
+                        "gm": 17.45
+                    }
+                ]
+            },
+            {
+                "ndbno": "42173",
+                "name": "Turkey and pork sausage, fresh, bulk, patty or link, cooked",
+                "weight": 130.0,
+                "measure": "1.0 cup, cooked",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "29.51",
+                        "gm": 22.7
+                    }
+                ]
+            },
+            {
+                "ndbno": "07973",
+                "name": "Turkey bacon, microwaved",
+                "weight": 8.1,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.39",
+                        "gm": 29.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "07254",
+                "name": "Turkey bacon, unprepared",
+                "weight": 14.0,
+                "measure": "1.0 serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.23",
+                        "gm": 15.94
+                    }
+                ]
+            },
+            {
+                "ndbno": "07046",
+                "name": "Turkey breast, low salt, prepackaged or deli, luncheon meat",
+                "weight": 28.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.11",
+                        "gm": 21.81
+                    }
+                ]
+            },
+            {
+                "ndbno": "07081",
+                "name": "Turkey breast, sliced, prepackaged",
+                "weight": 16.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.37",
+                        "gm": 14.81
+                    }
+                ]
+            },
+            {
+                "ndbno": "42128",
+                "name": "Turkey ham, sliced, extra lean, prepackaged or deli-sliced",
+                "weight": 138.0,
+                "measure": "1.0 cup pieces",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "27.05",
+                        "gm": 19.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "07958",
+                "name": "Turkey sausage, fresh, cooked",
+                "weight": 57.0,
+                "measure": "1.0 serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.62",
+                        "gm": 23.89
+                    }
+                ]
+            },
+            {
+                "ndbno": "07955",
+                "name": "Turkey sausage, fresh, raw",
+                "weight": 57.0,
+                "measure": "1.0 serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.71",
+                        "gm": 18.79
+                    }
+                ]
+            },
+            {
+                "ndbno": "07066",
+                "name": "Turkey sausage, reduced fat, brown and serve, cooked (include BUTTERBALL breakfast links turkey sausage)",
+                "weight": 128.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "21.76",
+                        "gm": 17.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "07943",
+                "name": "Turkey, breast, smoked, lemon pepper flavor, 97% fat-free",
+                "weight": 28.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.85",
+                        "gm": 20.9
+                    }
+                ]
+            },
+            {
+                "ndbno": "07900",
+                "name": "Turkey, pork, and beef sausage, low fat, smoked",
+                "weight": 85.0,
+                "measure": "3.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.80",
+                        "gm": 8.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "07944",
+                "name": "Turkey, white, rotisserie, deli cut",
+                "weight": 48.0,
+                "measure": "1.69 oz (1 serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.48",
+                        "gm": 13.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "07044",
+                "name": "USDA Commodity, luncheon meat, canned",
+                "weight": 45.0,
+                "measure": "1.0 serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.88",
+                        "gm": 17.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "07907",
+                "name": "USDA Commodity, pork sausage, bulk/links/patties, frozen, raw",
+                "weight": 28.0,
+                "measure": "1.0 link",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.19",
+                        "gm": 14.95
+                    }
+                ]
+            },
+            {
+                "ndbno": "07901",
+                "name": "USDA Commodity, pork, sausage, bulk/links/patties, frozen, cooked",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.60",
+                        "gm": 19.76
+                    }
+                ]
+            },
+            {
+                "ndbno": "07930",
+                "name": "Yachtwurst, with pistachio nuts, cooked",
+                "weight": 56.0,
+                "measure": "1.0 serving 2 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.29",
+                        "gm": 14.8
+                    }
+                ]
+            }
+        ]
+    }
+}

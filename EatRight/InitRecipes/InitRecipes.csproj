@@ -48,7 +48,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AddProducts.cs" />
-    <Compile Include="Map.cs" />
     <Compile Include="MealsCSVReader.cs" />
     <Compile Include="ParseRecipes.cs" />
     <Compile Include="Program.cs" />

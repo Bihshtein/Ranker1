@@ -20,5 +20,44 @@ namespace Logic
                 ((carbsWeight * weightRatio) * ProteinCarbsGramCalories) +
                 ((FatGramCalories * weightRatio) * 9);
         }
+
+        public static List<string> RelativeSizes = new List<string> {
+            // relative to the weight stated by the USDA for the product
+            // order matter keep the more inclusicve delimiters first
+            "slices",
+            "slice ",
+            "large",
+            "small",
+            "medium",
+            "cup packed",
+            "cup unpacked",
+            "cups",
+            "cup",
+            "cup sliced",
+            "cup small",
+
+        };
+
+
+        public static Dictionary<string, double> MeasuresWeights = new Dictionary<string, double>(){
+            {"bunch",60 },
+            {"cloves",3 },//garlic
+            {"clove",3 },//garlic
+            {"pinch",0.25 },//green onion or whatever
+            {"teaspoon ",5 },
+            {"teaspoons",5 },
+            {"tablespoons",14 },
+            {"tablespoon ",14 },
+            {"pound ",453.5},
+            {"pound)",453.5},
+            {"pounds",453.5},
+            {"ounces",28.3 },
+            {"ounce ",28.3 },
+            {"ounce)",28.3 },
+            {"fluid ounce)",28.3 },
+            {"fluid ounce ",28.3 },
+            {"fluid ounces",28.3 },
+            {"ounce",28.3 },
+        };
     }
 }

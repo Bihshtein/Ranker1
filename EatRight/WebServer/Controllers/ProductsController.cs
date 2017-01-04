@@ -130,7 +130,7 @@ namespace Students.Services
         {
             productsService.Insert(student);
         }
-        public void Delete(string id)
+        public void Delete(int id)
         {
             productsService.Delete(id);
         }

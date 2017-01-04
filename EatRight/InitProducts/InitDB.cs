@@ -37,7 +37,8 @@ namespace InitDB {
             {"Vegs", "1100"},
             {"Chicken", "0500"},
             {"Pork", "1000"},
-            {"Beef", "1300"}
+            {"Beef", "1300"},
+            {"Sausages", "0700"}
         };
         public static Dictionary<string, BasicValidator> Validators = new Dictionary<string, BasicValidator>() {
             { "Sweets", new SweetsValidator()},
@@ -56,6 +57,7 @@ namespace InitDB {
             { "OilsAndFats", new OilsAndFatsValidator()},
             { "SoupAndSauce", new SoupAndSauceValidator()},
             { "Legumes", new LegumesValidator()},
+            { "Sausages", new SausagesValidator()},
             };
 
         public static void InitProductsCollection(bool loadGroups, bool loadManual, bool overrideDB) {

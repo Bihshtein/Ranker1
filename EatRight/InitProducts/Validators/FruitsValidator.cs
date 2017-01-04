@@ -5,8 +5,8 @@ namespace InitDB.Validators {
     public class FruitsValidator : BasicValidator {
         public FruitsValidator() {
             SecondParts = new List<string> {
-                    "tropical" ,"(west indian cherry)","(pineapple and papaya and banana and guava)",
-                    "(cape-gooseberries or poha)","(jambolan)","single strength","canned (jumbo-super colossal)",
+                    "tropical" ,"(west indian cherry)","(pineapple and papaya and banana and guava)","ripe",
+                    "(cape-gooseberries or poha)","(jambolan)","single strength",
                     "canned (small-extra large)","all commercial varieties","valencias","navels","(granadilla)",
                     "(sweetsop)","(surinam-cherry)", "(mamey)", "mamey","golden seedless", "all varieties",
                     "extra sweet variety","traditional varieties","chunks","native","grape and pear blend","apple and grape blend",
@@ -17,7 +17,7 @@ namespace InitDB.Validators {
                     "red delicious","wild","fuji","gala","pink and red and white","yellow","green","purple", "sweet","sour","white","pink",
                     "red","pink or red", "pink and red","red and white","California", "Florida"
             };
-            ThirdParts = new List<string> { "sections", "all areas", "seeded", "seedless", "pitted", "sliced", "whole" };
+            ThirdParts = new List<string> { "sections", "all areas", "seeded", "seedless", "pitted", "sliced", "whole","canned (jumbo-super colossal)" };
         }
     }
 }
