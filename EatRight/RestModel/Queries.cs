@@ -134,6 +134,7 @@ namespace RestModel {
             (x.StorageMethod.Equals(part1) && x.Name2.Equals(part2)) ||
             (x.StorageMethod.Equals(part1+"ned") && x.Name1.Equals(part2)) ||
             (x.Name3.Equals(part2) && x.Name1.Equals(part1)) ||
+            (x.FatDetails.Contains(part1 + "|") && x.Name1.Equals(part2)) ||
             (x.Name2.Equals(part1) && x.Name1.Equals(part2)) ||
             (x.Name2.Equals(part1) && x.Name1.Equals(part2 + "s")) ||
             (x.Name2.Equals(part1) && x.Name1.Equals(part2+"es")) ||

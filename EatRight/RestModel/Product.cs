@@ -203,7 +203,8 @@ namespace RestModel {
 
         Meat,
         Dairy,
-        Fish
+        Fish,
+        Seafood
     }
 }  
 
