@@ -13,9 +13,11 @@ namespace RestModel
         Meat,
         Dairy,
         Fish,
+        Seafood,
         NoMeat,
         NoDairy,
-        NoFish
+        NoFish,
+        NoSeafood
     }
 
     /// <summary>
@@ -93,6 +95,8 @@ namespace RestModel
         HasNoDairyMealFilter,
         HasFishMealFilter,
         HasNoFishMealFilter,
+        HasSeafoodMealFilter,
+        HasNoSeafoodMealFilter,
 
         MealFilterEnd
     }

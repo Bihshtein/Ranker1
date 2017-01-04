@@ -45,6 +45,10 @@ namespace RecommendationBuilder.Filters
                     return new HasFishMealFilter();
                 case FilterType.HasNoFishMealFilter:
                     return new HasNoFishMealFilter();
+                case FilterType.HasSeafoodMealFilter:
+                    return new HasSeafoodMealFilter();
+                case FilterType.HasNoSeafoodMealFilter:
+                    return new HasNoSeafoodMealFilter();
 
                 default:
                     // TODO: better handle errors

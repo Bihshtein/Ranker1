@@ -33,6 +33,10 @@ namespace InitDB {
             {
                 p.Types.Add(ProductType.Fish);
             }
+            if (IsSeafoodProduct(p))
+            {
+                p.Types.Add(ProductType.Seafood);
+            }
             return p;
         }
 
@@ -161,10 +165,10 @@ namespace InitDB {
             }
         }
 
-        private static Boolean IsProductOutsideFoodgroup(Product product, HashSet<string> prodWords,
+        private static bool IsProductOutsideFoodgroup(Product product, HashSet<string> prodWords,
             HashSet<string> exceptionWords)
         {
-            Boolean hasProdWord = false;
+            var hasProdWord = false;
             foreach (var str in prodWords)
             {
                 if (product.NameContains(str))
@@ -190,7 +194,7 @@ namespace InitDB {
             return true;
         }
 
-        public static Boolean IsMeatProduct(Product product)
+        public static bool IsMeatProduct(Product product)
         {
             var meatWords = new HashSet<string>() { "chicken", "beef", "duck", "pork" };
             // We need exception because of the duck egg product
@@ -203,7 +207,7 @@ namespace InitDB {
                 IsProductOutsideFoodgroup(product, meatWords, exceptionWords);
         }
 
-        public static Boolean IsDairyProduct(Product product)
+        public static bool IsDairyProduct(Product product)
         {
             var dairyWords = new HashSet<string>() { "milk", "chocolate", "brownies", "cheese", "buttermilk", "mocha",
             "vanilla coffee", "ovaltine", "dannon", "shortening" };
@@ -214,13 +218,45 @@ namespace InitDB {
                 (IsProductOutsideFoodgroup(product, dairyWords, exceptionWords));
         }
 
-        public static Boolean IsFishProduct(Product product)
+        public static bool IsFishProduct(Product product)
         {
             var fishWords = new HashSet<string>() { "fish" };
 
             return
                 product.FoodGroup == "fish" ||
                 IsProductOutsideFoodgroup(product, fishWords, new HashSet<string>());
+        }
+
+        public static bool IsSeafoodProduct(Product product)
+        {
+            var seafoodWords = new HashSet<string>() { "oyster", "crustaceans", "shrimp", "caviar", "roe" };
+            // We need exception because of the oyster mushrooms, salsify, oyster blade products
+            var exceptionWords = new HashSet<string>() { "mushrooms", "salsify", "oyster blade" };
+
+            return
+                IsProductOutsideFoodgroup(product, seafoodWords, exceptionWords);
+        }
+
+        public static bool IsAnimalProduct(Product product)
+        {
+            var animalWords = new HashSet<string>() { "egg" };
+
+            return
+                // TODO: Add more, this is currently not functional
+                product.Types.Contains(ProductType.Meat) ||
+                product.Types.Contains(ProductType.Dairy) ||
+                product.Types.Contains(ProductType.Fish) ||
+                product.Types.Contains(ProductType.Seafood) ||
+                IsProductOutsideFoodgroup(product, animalWords, new HashSet<string>());
+        }
+
+        public static bool IsNonKosherProduct(Product product)
+        {
+            var nonkosherWords = new HashSet<string>() { "eel", "shark", "swrodfish" };
+
+            return
+                // TODO: Add more, this is currently not functional
+                IsProductOutsideFoodgroup(product, nonkosherWords, new HashSet<string>());
         }
     }
 }

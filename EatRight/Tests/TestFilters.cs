@@ -194,5 +194,17 @@ namespace Tests
         {
             TestHasProperyFilter("Salmon", UserRestrictions.NoFish);
         }
+
+        [TestMethod]
+        public void TestHasSeafoodFilter()
+        {
+            TestHasProperyFilter("Carrot", UserRestrictions.Seafood);
+        }
+
+        [TestMethod]
+        public void TestHasNoSeafoodFilter()
+        {
+            TestHasProperyFilter("Crustaceans", UserRestrictions.NoSeafood);
+        }
     }
 }

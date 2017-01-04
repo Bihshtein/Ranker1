@@ -614,6 +614,9 @@ namespace RecommendationBuilder
                         case UserRestrictions.Fish:
                             RecommendationObject.recommendationDB.FiltersSet.Add(FilterType.HasFishMealFilter);
                             break;
+                        case UserRestrictions.Seafood:
+                            RecommendationObject.recommendationDB.FiltersSet.Add(FilterType.HasSeafoodMealFilter);
+                            break;
                         case UserRestrictions.NoMeat:
                             RecommendationObject.recommendationDB.FiltersSet.Add(FilterType.HasNoMeatMealFilter);
                             break;
@@ -622,6 +625,9 @@ namespace RecommendationBuilder
                             break;
                         case UserRestrictions.NoFish:
                             RecommendationObject.recommendationDB.FiltersSet.Add(FilterType.HasNoFishMealFilter);
+                            break;
+                        case UserRestrictions.NoSeafood:
+                            RecommendationObject.recommendationDB.FiltersSet.Add(FilterType.HasNoSeafoodMealFilter);
                             break;
                     }
                 }
