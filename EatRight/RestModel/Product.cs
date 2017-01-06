@@ -204,7 +204,8 @@ namespace RestModel {
         Meat,
         Dairy,
         Fish,
-        Seafood
+        Seafood,
+        FromAnimal
     }
 }  
 

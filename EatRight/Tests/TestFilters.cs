@@ -206,5 +206,59 @@ namespace Tests
         {
             TestHasProperyFilter("Crustaceans", UserRestrictions.NoSeafood);
         }
+
+        [TestMethod]
+        public void TestVeganFilter()
+        {
+            var unit = new RestDBInterface();
+
+            Recipe breakfast1 = new Recipe()
+            {
+                ID = 0,
+                Name = "Breakfast1",
+                ProductsWeight = new Dictionary<string, double>() { { "Ham", 1 } },
+                Types = new HashSet<MealType>() { MealType.Breakfast }
+            };
+
+            Recipe breakfast2 = new Recipe()
+            {
+                ID = 1,
+                Name = "Breakfast2",
+                ProductsWeight = new Dictionary<string, double>() { { "Butter", 1 } },
+                Types = new HashSet<MealType>() { MealType.Breakfast }
+            };
+
+            Recipe breakfast3 = new Recipe()
+            {
+                ID = 2,
+                Name = "Breakfast3",
+                ProductsWeight = new Dictionary<string, double>() { { "Egg", 1 } },
+                Types = new HashSet<MealType>() { MealType.Breakfast }
+            };
+
+            breakfast1.CalculateNutValuesAndCalories();
+            breakfast2.CalculateNutValuesAndCalories();
+            breakfast3.CalculateNutValuesAndCalories();
+
+            unit.TestsRecipes.Empty();
+            unit.TestsRecipes.Add(breakfast1);
+            unit.TestsRecipes.Add(breakfast2);
+            unit.TestsRecipes.Add(breakfast3);
+
+            var userProfile = new UserProfile() { Age = 30, Gender = GenderType.Male };
+
+            var range = new MealSuggestionRange() { Length = 1, MealType = MealType.Breakfast };
+
+            var recommendationDB = RecommendationDBGenerator.FromUserProfile(userProfile, unit);
+            recommendationDB.range = range;
+            recommendationDB.FiltersSet = new HashSet<FilterType>() { FilterType.VeganMealFilter };
+
+            var recommendationGenerator = new RecommendationGenerator(unit, recommendationDB, false, true);
+            var reco = recommendationGenerator.GetRecommendation();
+
+            // Assertions
+            // There's no meal with the property in the meals list, so we expect no meals to be generated.
+            Assert.IsNull(reco);
+        }
     }
 }

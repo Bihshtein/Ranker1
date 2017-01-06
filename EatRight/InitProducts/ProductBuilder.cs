@@ -38,6 +38,10 @@ namespace InitDB {
             {
                 p.Types.Add(ProductType.Seafood);
             }
+            if (IsFromAnimalProduct(p)) // Must run thie after IsMeatProduct, IsDairyProduct, IsFishProduct, IsSeafoodproduct
+            {
+                p.Types.Add(ProductType.FromAnimal);
+            }
             return p;
         }
 
@@ -239,12 +243,11 @@ namespace InitDB {
                 IsProductOutsideFoodgroup(product, seafoodWords, exceptionWords);
         }
 
-        public static bool IsAnimalProduct(Product product)
+        public static bool IsFromAnimalProduct(Product product)
         {
             var animalWords = new HashSet<string>() { "egg" };
 
             return
-                // TODO: Add more, this is currently not functional
                 product.Types.Contains(ProductType.Meat) ||
                 product.Types.Contains(ProductType.Dairy) ||
                 product.Types.Contains(ProductType.Fish) ||
