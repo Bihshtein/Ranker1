@@ -92,6 +92,8 @@ namespace InitRecipes {
                     }
 
                     if (relativeMeasure != string.Empty) {
+                        if (relativeMeasure.Contains(innerpart))
+                            relativeMeasure = innerpart;
                         weight = TryParseRelativeWeight(relativeMeasure, weight, product, innerpart);
                     }
                   
@@ -107,7 +109,8 @@ namespace InitRecipes {
 
         public static double TryParseRelativeWeight(string mes, double weight, Product prd, string fullName) {
             var noSMes = ParseHelpers.GetWithoutLast_S_letter(mes);
-
+            var keys = prd.Weights.Keys;
+            var mesPartsList = mes.Split(' ').ToList();
             if (prd.Weights.ContainsKey(mes)) {
                 return weight * prd.Weights[mes];
             }
@@ -119,23 +122,26 @@ namespace InitRecipes {
                 return weight * prd.Weights[fullName];
             }
 
-            else if (prd.Weights.Keys.Any(key => key.Contains(mes))) {
-                return weight * prd.Weights[prd.Weights.Keys.First(key => key.Contains(mes))];
+            else if (keys.Any(key => key.Contains(mes))) {
+                return weight * prd.Weights[keys.First(key => key.Contains(mes))];
             }
             else if (Map.RecipeToUSDAMeasure.ContainsKey(mes)) {
                 mes = Map.RecipeToUSDAMeasure[mes];
                 if (prd.Weights.ContainsKey(mes)) {
                     return weight * prd.Weights[mes];
                 }
-                else if (prd.Weights.Keys.Any(key => key.Contains(mes))) {
-                    return weight * prd.Weights[prd.Weights.Keys.First(key => key.Contains(mes))];
+                else if (keys.Any(key => key.Contains(mes))) {
+                    return weight * prd.Weights[keys.First(key => key.Contains(mes))];
                 }
-                else if (prd.Weights.Keys.Any(key => key.Contains("serving"))) {
+                else if (keys.Any(key => key.Contains("serving"))) {
                     return weight * prd.Weights.First(key => key.Key.Contains("serving")).Value;
                 }
             }
-            if (prd.Weights.Keys.Any(key => key.Contains("cup"))) {
-                return weight * prd.Weights.First(key => key.Key.Contains("cup")).Value;
+            var matchingWord = MatchAnyWord(mesPartsList, keys.ToList());
+            if (matchingWord == null)
+                matchingWord = "cup";
+            if (keys.Any(key => key.Contains(matchingWord))) {
+                return weight * prd.Weights.First(key => key.Key.StartsWith(matchingWord)).Value;
             }
             else {
                 var defaultMeasure = prd.Weights.First().Value;
@@ -144,6 +150,20 @@ namespace InitRecipes {
             } 
         }
 
+        private static string MatchAnyWord(List<string>  list1, List<string> list2) {
+            foreach (var part1 in list1) {
+                var res = list2.FirstOrDefault(part2 => part2.StartsWith(part1));
+                if (res != null)
+                    return res;
+            }
+
+            foreach (var part1 in list2) {
+                var res = list1.FirstOrDefault(part2 => part2.StartsWith(part1));
+                if (res != null)
+                    return part1;
+            }
+            return null;
+        }
 
         public static Tuple<string, double, string> ParseByRelativeMeasures(string[] parts, string item)
         {

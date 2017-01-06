@@ -7,24 +7,23 @@ using System.Threading.Tasks;
 namespace Logic {
     public class Map {
 
-        public static void ReplaceWord(List<List<string>> keyWordList, ref string ingredient) {
-            var copy = ingredient;
-            keyWordList.ForEach(list => list.ForEach(item => copy = copy.Replace(item + " ", "")));
-            ingredient = copy;
-        }
-
-        public static void ReplaceLastWord(List<List<string>> keyWordList, ref string ingredient) {
-            var copy = ingredient;
-            keyWordList.ForEach(list => list.ForEach(item => copy = copy.Replace(item + "", "")));
-            ingredient = copy;
-        }
-      
+        
         public static string AdjustNames(string item) {
             SimpleNames.Keys.ToList().ForEach(key => {
                 if (item.Contains(key))
                     item = item.Replace(key, Map.SimpleNames[key]);
             });
             return item;
+        }
+
+
+        public static string AdjustIngredient(string ingredient) {
+            ingredient = ingredient.ToLower();
+            Map.StartPharseRemove.ForEach(item => ingredient = ingredient.Replace(item + " ", ""));
+            Map.OtherPhraseRemove.ForEach(item => ingredient = ingredient.Replace(item, ""));
+            ingredient = ingredient.Trim();
+
+            return ingredient;
         }
 
         public static string AdjustInnerPart(string innerpart) {
@@ -50,7 +49,6 @@ namespace Logic {
             { "tablespoon", "tbsp"},
         };
 
-
         public static Dictionary<string, string> SimpleNames = new Dictionary<string, string>() {
             { "skinless, boneless chicken","chicken"},
             { "fresh mozzarella, cut into small cubes", "mozzarella" },
@@ -61,7 +59,6 @@ namespace Logic {
             { "dijon mustard", "mustard"},
             { "fine bread crumbs", "bread crumbs" },
             { "can anchovy fillets", "anchovy"},
-            { " sprigs",""},
             { "fresh dill","fresh dill weed"},
             { "skim", "nonfat"},
             { "bell pepper", "pepper" },
@@ -69,7 +66,7 @@ namespace Logic {
             { "pepperoni sausage", "pepperoni" },
             { "genoa", "italian" },
             { "zest", "peel" },
-             { "white sugar","granulated sugar"},
+            { "white sugar","granulated sugar"},
             { "bread flour","bread wheat flour"},
             { "all-purpose flour","all-purpose wheat flour"},
             { "whole wheat flour","whole-grain wheat flour"},
@@ -87,19 +84,16 @@ namespace Logic {
 
         };
 
-        public static List<string> StartCutDetails = new List<string> {
+        public static List<string> StartPharseRemove = new List<string> {
+             "prepared", "package", "packages",
             "melted","sifted", "sprig", "sprigs", "ground", "shredded", "cubed", "rolled",
             "head", "heads", "sliced", "stalk", "stalks", "diced", "minced", "chopped",
-            "grated","mashed","crushed", "ripe", "steaks"};
+            "grated","mashed","crushed", "ripe", "steaks", "cold", "warm", "fresh"};
 
-        public static List<string> EndCutDetails = new List<string> {
-            "steaks", "- peeled","halves"
+        public static List<string> OtherPhraseRemove = new List<string> {
+           "sprigs", "(optional)", "asiago", "extra virgin", "panko" , "steaks", "- peeled","halves",
+            "for frying", "herb-seasoned"
         };
-        public static List<string> ServeDetails = new List<string> { "cold", "warm", "fresh" };
-        public static List<string> PackDetails = new List<string> { "for frying", "prepared", "package", "packages" };
-        public static List<string> NeedlesInfo = new List<string> { "(optional)", "asiago", "extra virgin", "panko ", "for frying" };
-
-
 
     }
 }

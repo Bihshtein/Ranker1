@@ -41,11 +41,7 @@ namespace RestModel {
             var  res = unit.Products.Queries.TryMatchWholeProduct(ingredient);
             if (res != null && res.Count> 0)
                 return res;
-            ingredient = ingredient.ToLower();
-            Map.ReplaceWord(new List<List<string>> { Map.StartCutDetails, Map.ServeDetails , Map.PackDetails } , ref ingredient);
-            Map.ReplaceLastWord(new List<List<string>> { Map.NeedlesInfo, Map.EndCutDetails },ref ingredient);
-
-            ingredient = ingredient.Trim();
+            ingredient = Map.AdjustIngredient(ingredient);
             var innerSplit = ingredient.Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries);
 
             if (innerSplit.Length == 1)
@@ -114,6 +110,7 @@ namespace RestModel {
             (x.PeelDetails.Equals(part1 + " " + part2) && x.FoodGroup.Equals(part3) && x.Name2.Equals(part4)) ||
             (x.Name3.Equals(part1 + " " + part2 + " " + part3) && x.Name1.Equals(part4)) ||
             (x.BoneDetails.Equals(part1) && x.FoodGroup.Equals(part2) && x.Name1.Equals(part3) && x.Name3.Equals(part4)) ||
+            (x.Name1.Equals(part2 + " " + part3) && x.Name3.Equals(part1 + " "  + part4)) ||
             (x.PeelDetails.Equals(part1 + " " + part2) && x.FoodGroup.Equals(part3) && x.Name2.Equals(ParseHelpers.GetWithoutLast_S_letter(part4)));
             var res = collection.Find(query as Expression<Func<T, bool>>).ToList();
             var newRes = res.Cast<Product>().ToList();
@@ -131,6 +128,7 @@ namespace RestModel {
             (x.Name3.Contains("or") && x.Name3.Contains(part1) && x.Name2.Equals(part2)) ||
             (x.Name3.Equals(part1) && x.Name2.Equals(part2)) ||
             (x.StorageMethod.Equals(part1) && x.Name1.Equals(part2)) ||
+            (x.FoodGroup.Equals(part1) && x.Name3.Equals(part2)) ||
             (x.StorageMethod.Equals(part1) && x.Name2.Equals(part2)) ||
             (x.StorageMethod.Contains(part1+"ned") && x.Name1.Equals(part2)) ||
             (x.Name3.Equals(part2) && x.Name1.Equals(part1)) ||

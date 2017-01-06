@@ -9,7 +9,7 @@ namespace InitDB {
                 "Muffins","English muffins","Crackers","Cookies","Cookie",
                 "Coffeecake","Cake","Bread","Doughnuts","Croutons",
                 "Croissants","Cream puff","Danish pastry","Tortillas","Breakfast tart",
-                "Leavening agents","Bread crumbs"
+                "Leavening agents","Bread crumbs", "Bread stuffing"
             };
 
             SecondParts = new List<string> {
@@ -21,7 +21,7 @@ namespace InitDB {
                 "pound","snack cakes","sugar","shortbread","peanut butter",
                 "brownies","boston brown","chapati or roti","cornbread",
                 "sponge","white","yellow","gingerbread","angelfood","boston cream pie",
-                "deep dish","irish","italian",
+                "deep dish","irish","italian","bread",
                 "naan","pan dulce","paratha","pita","potato","pound cake type","raisin",
                 "protein","pumpernickel","french or vienna","shortcake","fortune", "fig bars",
                 "fudge","gingersnaps","ladyfingers","Marie biscuit","marshmallow","molasses",
