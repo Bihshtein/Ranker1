@@ -43,19 +43,19 @@ namespace LogicRunner
             maxValues.DataSource = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
             servings.DataSource = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
             idealServings.DataSource = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-            recommendationsNum.DataSource = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            recommendationsNum.DataSource = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10,11,12,13,14,15,16,17,18,19,20,21 };
 
             totalCalories.SelectedIndex = 5;
-            idealServings.SelectedIndex = 2;
+            idealServings.SelectedIndex = 4;
             ageGender.SelectedIndex = 8;
-            maxValues.SelectedIndex = 6;
+            maxValues.SelectedIndex = 9;
             mealType.SelectedIndex = 1;
-            minValues.SelectedIndex =6;
-            calories.SelectedIndex = 2;
-            servings.SelectedIndex = 2;
+            minValues.SelectedIndex =8;
+            calories.SelectedIndex = 4;
+            servings.SelectedIndex = 0;
             cookTime.SelectedIndex = 2;
             comboBox4.SelectedIndex = 1;
-            recommendationsNum.SelectedIndex = 2;
+            recommendationsNum.SelectedIndex = 4;
         }
 
         private void button1_Click(object sender, EventArgs e)

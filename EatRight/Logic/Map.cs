@@ -47,6 +47,7 @@ namespace Logic {
             { "cornish game hens", "bird"},
             { "teaspoon", "tsp"},
             { "tablespoon", "tbsp"},
+
         };
 
         public static Dictionary<string, string> SimpleNames = new Dictionary<string, string>() {
@@ -83,12 +84,14 @@ namespace Logic {
             { "white wine vinegar","red wine vinegar"},
             { "seashell pasta", "pasta" },
             { "prime rib", "rib eye" },
+            { "whole chicken", "chicken" },
             { "links pork sausage links", "frankfurter pork sausage"},
             { "packages refrigerated crescent roll dough (such as pillsbury&#174;", "pillsbury refrigerated dough"},
+            { "italian parsley", "parsley"},
         };
 
         public static List<string> StartPharseRemove = new List<string> {
-             "prepared", "package", "packages",
+             "prepared", "package", "packages","blanched","slivered",
             "melted","sifted", "sprig", "sprigs", "ground", "shredded", "cubed", "rolled",
             "head", "heads", "sliced", "stalk", "stalks", "diced", "minced", "chopped",
             "grated","mashed","crushed", "ripe", "steaks", "cold", "warm", "fresh"};

@@ -26,11 +26,11 @@ namespace RecommendationBuilder.Graders.MealGraders
              * If we missed by one we'll get 66.6, by two we'll get 33.3, and by more- 0.
              */
             int dist = Math.Abs(meal.Recipe.Servings - idealServingsNum);
-            if (dist > 3)
+            if (dist > 5)
             {
                 return 0;
             }
-            return (3 - dist) / 3.0;
+            return (5 - dist) / 5.0;
         }
     }
 }
