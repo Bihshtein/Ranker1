@@ -17,7 +17,7 @@ namespace InitDB {
                 "coriander seed","curry powder","dill seed","dill weed","fennel seed","fenugreek seed",
                 "garlic powder","ginger","mace","marjoram","mustard seed","nutmeg","onio powder",
                 "oregano", "paprika","parsley","pepper","poppy seed","poultry seasoning",
-                "pumpkin pie spice","rosemary","cumin seed"
+                "pumpkin pie spice","rosemary","cumin seed", "onion powder"
             };
             ThirdParts = new List<string> {
                 "original","coriander & annatto","black","red or cayenne","white"

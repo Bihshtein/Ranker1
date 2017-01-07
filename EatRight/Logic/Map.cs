@@ -51,6 +51,7 @@ namespace Logic {
 
         public static Dictionary<string, string> SimpleNames = new Dictionary<string, string>() {
             { "skinless, boneless chicken","chicken"},
+            { "boneless, skinless chicken","chicken"},
             { "fresh mozzarella, cut into small cubes", "mozzarella" },
             { "leaves", "leaf" },
             { "greek-style", "greek" },
@@ -81,7 +82,9 @@ namespace Logic {
             { "red onion","onions"},
             { "white wine vinegar","red wine vinegar"},
             { "seashell pasta", "pasta" },
-
+            { "prime rib", "rib eye" },
+            { "links pork sausage links", "frankfurter pork sausage"},
+            { "packages refrigerated crescent roll dough (such as pillsbury&#174;", "pillsbury refrigerated dough"},
         };
 
         public static List<string> StartPharseRemove = new List<string> {

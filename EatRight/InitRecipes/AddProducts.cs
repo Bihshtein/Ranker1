@@ -125,6 +125,13 @@ namespace InitRecipes {
             else if (keys.Any(key => key.Contains(mes))) {
                 return weight * prd.Weights[keys.First(key => key.Contains(mes))];
             }
+        
+            var matchingWord = MatchAnyWord(mesPartsList, keys.ToList());
+            if (matchingWord == null)
+                matchingWord = "cup";
+            if (keys.Any(key => key.Contains(matchingWord))) {
+                return weight * prd.Weights.First(key => key.Key.StartsWith(matchingWord)).Value;
+            }
             else if (Map.RecipeToUSDAMeasure.ContainsKey(mes)) {
                 mes = Map.RecipeToUSDAMeasure[mes];
                 if (prd.Weights.ContainsKey(mes)) {
@@ -137,17 +144,10 @@ namespace InitRecipes {
                     return weight * prd.Weights.First(key => key.Key.Contains("serving")).Value;
                 }
             }
-            var matchingWord = MatchAnyWord(mesPartsList, keys.ToList());
-            if (matchingWord == null)
-                matchingWord = "cup";
-            if (keys.Any(key => key.Contains(matchingWord))) {
-                return weight * prd.Weights.First(key => key.Key.StartsWith(matchingWord)).Value;
-            }
-            else {
-                var defaultMeasure = prd.Weights.First().Value;
-                log.Debug("measure not found : " + mes + ", returning default, measure : " + prd.Weights.First().Value);
-                return weight * defaultMeasure;
-            } 
+          
+            var defaultMeasure = prd.Weights.First().Value;
+            log.Debug("measure not found : " + mes + ", returning default, measure : " + prd.Weights.First().Value);
+            return weight * defaultMeasure;
         }
 
         private static string MatchAnyWord(List<string>  list1, List<string> list2) {

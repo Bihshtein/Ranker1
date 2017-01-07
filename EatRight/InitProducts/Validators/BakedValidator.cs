@@ -9,7 +9,7 @@ namespace InitDB {
                 "Muffins","English muffins","Crackers","Cookies","Cookie",
                 "Coffeecake","Cake","Bread","Doughnuts","Croutons",
                 "Croissants","Cream puff","Danish pastry","Tortillas","Breakfast tart",
-                "Leavening agents","Bread crumbs", "Bread stuffing"
+                "Leavening agents","Bread crumbs", "Bread stuffing","PILLSBURY"
             };
 
             SecondParts = new List<string> {
@@ -26,6 +26,7 @@ namespace InitDB {
                 "protein","pumpernickel","french or vienna","shortcake","fortune", "fig bars",
                 "fudge","gingersnaps","ladyfingers","Marie biscuit","marshmallow","molasses",
                 "saltines","melba toast","matzo","irish soda","fruitcake","carrot","marble",
+                "Crusty French Loaf"
             };
 
             ThirdParts = new List<string> {

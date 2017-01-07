@@ -86,8 +86,10 @@ namespace RestModel {
         public List<Product> TryMatchWholeProduct(string part1, string part2, string part3) {
             Expression<Func<Product, bool>> query = x =>
             (x.Name3.Equals(part1 + " " + part2) && x.Name2.Equals(part3)) ||
+            (x.Name2.Equals(part2 + " or " + part1) && x.Name1.Equals(part3)) ||
             (x.StorageMethod.Equals(part1) && x.Name2.Equals(part2 + " " + part3)) ||
             (x.StorageMethod.Equals(part1) && x.Name1.Equals(part2 + " " + part3)) ||
+            (x.Name1.Equals(part1) && x.StorageMethod.Equals(part2 + " " + part3)) ||
             (x.Name2.Equals(part1 + " " + part2) && x.Name3.Equals(part3)) ||
             (x.HealthData.Equals(part1)&& x.Name1.Equals(part2) && x.StorageMethod.Equals("dry " +part3)) ||
             (x.HealthData.Equals(part1.Replace('-',' ')) && x.Name2.Equals(part2+ " " + part3))|| // low-sodium chicken broth
