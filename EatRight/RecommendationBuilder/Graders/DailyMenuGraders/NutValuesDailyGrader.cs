@@ -61,6 +61,12 @@ namespace RecommendationBuilder.Graders.DailyMenuGraders
                 var gradeRatio = GradeRatio(basicRatio);
 
                 grade += gradeRatio;
+
+                // Debug information
+                if (min)
+                {
+                    RecommendationObject.recommendationDB.NutrientGrades[nutrient] = gradeRatio;
+                }
             }
 
             return grade / idealValues.Count;
