@@ -35,7 +35,19 @@ namespace RestModel {
             newRes.RemoveAll(p => p.Nutrients()[value] == 0);
             newRes.Sort((a, b) => a.Nutrients()[value] > b.Nutrients()[value] ? 1 : -1);
             return newRes;
-        }      
+        }
+
+        public List<T> QueryByExpression(Expression<Func<Product, bool>> query)
+        {
+            return collection.Find(query as Expression<Func<T, bool>>).ToList();
+        }
+
+        public static List<Product> GetBestMatchingProductForIngredient(string ingredient)
+        {
+            var pqb = ProductQueryBuilder.FromString(ingredient);
+            var res = unit.Products.Queries.QueryByExpression(pqb.Expression);
+            return res.Cast<Product>().ToList();
+        }
 
         public static List<Product> GetMatchingProductsForIngredient(string ingredient) {
             var  res = unit.Products.Queries.TryMatchWholeProduct(ingredient);
@@ -91,7 +103,7 @@ namespace RestModel {
             (x.StorageMethod.Equals(part1) && x.Name1.Equals(part2 + " " + part3)) ||
             (x.Name1.Equals(part1) && x.StorageMethod.Equals(part2 + " " + part3)) ||
             (x.Name2.Equals(part1 + " " + part2) && x.Name3.Equals(part3)) ||
-            (x.HealthData.Equals(part1)&& x.Name1.Equals(part2) && x.StorageMethod.Equals("dry " +part3)) ||
+            (x.HealthData.Equals(part1) && x.Name1.Equals(part2) && x.StorageMethod.Equals("dry " +part3)) ||
             (x.HealthData.Equals(part1.Replace('-',' ')) && x.Name2.Equals(part2+ " " + part3))|| // low-sodium chicken broth
             (x.PreparationMethod.Equals(part1) && x.Name2.Equals(part2) && x.Name1.Equals(part3)) ||
             (x.Name3.Equals(part1) && x.Name1.Equals(part2 + " " + part3)) ||
@@ -137,7 +149,7 @@ namespace RestModel {
             (x.FatDetails.Contains(part1 + "|") && x.Name1.Equals(part2)) ||
             (x.Name2.Equals(part1) && x.Name1.Equals(part2)) ||
             (x.Name2.Equals(part1) && x.Name1.Equals(part2 + "s")) ||
-            (x.Name2.Equals(part1) && x.Name1.Equals(part2+"es")) ||
+            (x.Name2.Equals(part1) && x.Name1.Equals(part2 +"es")) ||
             (x.Name3.Equals(part1) && x.Name1.Equals(part2 + "s")) ||
             (x.Name3.Equals(part1) && x.Name1.Equals(part2 + "es")) ||
             (x.Name2.Equals(part2) && x.Name1.Equals(part1)) ||

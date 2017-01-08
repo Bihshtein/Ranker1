@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DailyValue.cs" />
+    <Compile Include="ProductQuery.cs" />
     <Compile Include="Recipe.cs" />
     <Compile Include="ProfilingManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
