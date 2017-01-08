@@ -99,6 +99,13 @@ namespace RestModel {
             x = x.Where(y => y.Age.Within(age) && y.Gender.Within(gender)).ToList();
             return x as List<T>;
         }
+
+        public List<T> GetRecipeById(int id)
+        {
+            Expression<Func<Recipe, bool>> query = x => x.ID == id;
+            return _collection.Find(query as Expression<Func<T, bool>>).ToList();
+        }
+
         public static List<string> FoodGroups = new List<string>() {"Sausages","Legumes","SoupAndSauce","Nuts","Sweets", "SpicesAndHerbs","OilsAndFats","Beverages","Baked","Fish","Carbs", "Chicken", "Beef", "Pork" ,"Vegs","Fruits","Dairy"};
         public static Dictionary<string, double> DailyValues = new Dictionary<string, double>() {
             {"Protein",56},

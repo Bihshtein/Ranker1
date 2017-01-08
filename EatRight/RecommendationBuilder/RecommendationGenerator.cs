@@ -17,8 +17,11 @@ namespace RecommendationBuilder
     {
         // Input
         RestDBInterface unit;
-        private Boolean useDBRecipes;
-        private Boolean useTestsRecipes;
+        private bool useDBRecipes;
+        private bool useTestsRecipes;
+
+        // Only in debug mode, not for user usage
+        HashSet<int> recipeIds = null;
 
         // Output
         // Menus
@@ -66,6 +69,36 @@ namespace RecommendationBuilder
                 GenerateRecommendationsList();
                 manager.TakeTime("generate recommendations");
             }
+
+            usedDailyMenus = new HashSet<int>();
+            usedMeals = new HashSet<int>();
+            manager.TakeTime("end of recommendation constructor");
+        }
+
+        public RecommendationGenerator(RestDBInterface unit, RecommendationDB recommendationDB, HashSet<int> recipeIds)
+        {
+            this.useDBRecipes = false;
+            this.useTestsRecipes = false;
+            this.recipeIds = recipeIds;
+
+            var manager = GlobalProfilingManger.Instance.Manager;
+            manager.TakeTime("start of recommendation constructor");
+            RecommendationObject.recommendationDB = recommendationDB; // For the initialization of graders map
+            if (RecommendationObject.recommendationDB.GradersWeight == null)
+            {
+                SetDefaultGraderWeights();
+            }
+            if (RecommendationObject.recommendationDB.FiltersSet == null)
+            {
+                SetDefaultFilterSet();
+            }
+
+            manager.TakeTime("set default grader and filter sets");
+
+            this.unit = unit;
+
+            mealsList = new List<Meal>();
+            GenerateMealsList();
 
             usedDailyMenus = new HashSet<int>();
             usedMeals = new HashSet<int>();
@@ -394,13 +427,22 @@ namespace RecommendationBuilder
             timer.TakeTime("grader map and filter set initialized");
 
             var recipesList = new List<Recipe>();
-            if (useDBRecipes)
+            if (recipeIds != null)
             {
-                recipesList.AddRange(unit.Recipes.GetAllList());
+                recipesList = recipeIds.Select
+                    (x => (unit.Recipes.GetRecipeById(x).Count == 0 ? null : unit.Recipes.GetRecipeById(x)[0])).ToList();
+                recipesList = recipesList.Where(x => x != null).ToList();
             }
-            if (useTestsRecipes)
+            else
             {
-                recipesList.AddRange(unit.TestsRecipes.GetAllList());
+                if (useDBRecipes)
+                {
+                    recipesList.AddRange(unit.Recipes.GetAllList());
+                }
+                if (useTestsRecipes)
+                {
+                    recipesList.AddRange(unit.TestsRecipes.GetAllList());
+                }
             }
             timer.TakeTime("recipes - get all");
 
