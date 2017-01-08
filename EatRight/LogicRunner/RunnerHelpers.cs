@@ -35,6 +35,14 @@ namespace LogicRunner
             }
             }
 
+        public string Scores {
+            get {
+                string res = string.Empty;
+                _obj.GradeInfo.NutrientGrades.ToList().ForEach(value => res += value.Key + " : " + value.Value.ToString("N2") + " \n");
+                return res;
+            }
+        }
+
 
 
 

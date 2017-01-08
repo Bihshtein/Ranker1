@@ -36,6 +36,7 @@ namespace LogicRunner
             mealType.DataSource = Enum.GetNames(typeof(MealType));
             
             comboBox4.DataSource = new string[] { "Fixed", "Internet", "Both" };
+            workMode.DataSource = new string[] { "Recommend", "Debug" };
             totalCalories.DataSource = new List<int> { 500, 1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500, 5000 };
             calories.DataSource = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9,10 };
             cookTime.DataSource = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
@@ -114,18 +115,28 @@ namespace LogicRunner
 
             manager.TakeTime("initialize recommendation db");
             
-            RecommendationGenerator generator = new RecommendationGenerator(unit, recommendationDB, useDBRecipes, useTestsRecipes);
+            RecommendationGenerator generator = null;
+            if (workMode.SelectedItem.ToString() == "Debug") {
+                var recipes = new HashSet<int>(custom.Text.Split(',').ToList<string>().ConvertAll<int>(a => int.Parse(a)));
+                generator = new RecommendationGenerator(unit, recommendationDB, recipes);
+            }
+            else
+                generator = new RecommendationGenerator(unit, recommendationDB, useDBRecipes, useTestsRecipes);
 
             manager.TakeTime("creating recommendation generator");
-            Recommendation reco = generator.GetRecommendation();
-            if (reco == null)
+            IEnumerable<Meal> meals = null;
+            if (workMode.SelectedItem.ToString() == "Debug")
+                meals = generator.GetMealsList();
+            else
+                meals = generator.GetRecommendation().MealsSet;
+            if (meals == null)
             {
                 manager.End();
                 MessageBox.Show("I'm sorry, but I can't recommend on any " + mealType.SelectedItem.ToString() + "s");
             }
             else
             {
-                this.bindingSource2.DataSource = reco.MealsSet.Select(o => new MyViewModel(o)
+                this.bindingSource2.DataSource = meals.Select(o => new MyViewModel(o)
                 {
                     Id = o.Recipe.ID,
                     Name = o.Recipe.Name,
@@ -142,6 +153,7 @@ namespace LogicRunner
                     richTextBox1.DataBindings.Add("Text", bindingSource2, "GradersResult");
                     richTextBox2.DataBindings.Add("Text", bindingSource2, "Products");
                     richTextBox3.DataBindings.Add("Text", bindingSource2, "NutValues");
+                    richTextBox4.DataBindings.Add("Text", bindingSource2, "Scores");
                     alexiknow = true;
                 }
                 manager.TakeTime("setting data source and rich text data binding");
