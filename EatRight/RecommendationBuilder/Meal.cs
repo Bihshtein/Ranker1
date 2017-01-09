@@ -13,14 +13,17 @@ namespace RecommendationBuilder
         public Dictionary<string, double> NutValues { get; set; }
         public double CaloriesNum { get; set; }
 
-        public Meal(Recipe recipe)
+        public Meal(Recipe recipe, int fixedCaloriesNum=0)
         {
             var timer = GlobalProfilingManger.Instance.Manager;
 
             Recipe = recipe;
 
-            NutValues = Recipe.TotalNutValues.ToDictionary(x => x.Key, x => x.Value / Recipe.Servings);
             CaloriesNum = Recipe.TotalCaloriesNum / Recipe.Servings;
+            var ratio = 1.0;
+            if (fixedCaloriesNum > 0)
+             ratio = 3000 / (double)CaloriesNum;
+            NutValues = Recipe.TotalNutValues.ToDictionary(x => x.Key, x => x.Value / Recipe.Servings * ratio);
 
             timer.TakeTime("calculating calories num ");
         }

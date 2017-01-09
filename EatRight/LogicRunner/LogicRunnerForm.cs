@@ -7,7 +7,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -16,6 +18,8 @@ namespace LogicRunner
 {
     public partial class LogicRunnerForm : Form
     {
+        public string FolderPath = Assembly.GetExecutingAssembly().Location + @"\..\..\..\..\LocalDB\";
+
         public RestDBInterface unit = null;
         bool alexiknow = false;
 
@@ -38,23 +42,25 @@ namespace LogicRunner
             comboBox4.DataSource = new string[] { "Fixed", "Internet", "Both" };
             workMode.DataSource = new string[] { "Recommend", "Debug" };
             totalCalories.DataSource = new List<int> { 500, 1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500, 5000 };
-            calories.DataSource = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9,10 };
-            cookTime.DataSource = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-            minValues.DataSource = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-            maxValues.DataSource = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-            servings.DataSource = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-            idealServings.DataSource = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-            recommendationsNum.DataSource = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10,11,12,13,14,15,16,17,18,19,20,21 };
+            var range = new List<int> { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21 };
+
+            calories.DataSource = new List<int>(range);
+            cookTime.DataSource = new List<int>(range);
+            minValues.DataSource = new List<int>(range);
+            maxValues.DataSource = new List<int>(range);
+            servings.DataSource = new List<int>(range);
+            idealServings.DataSource = new List<int>(range);
+            recommendationsNum.DataSource = new List<int>(range);
 
             totalCalories.SelectedIndex = 5;
             idealServings.SelectedIndex = 4;
             ageGender.SelectedIndex = 8;
-            maxValues.SelectedIndex = 9;
+            maxValues.SelectedIndex = 8;
             mealType.SelectedIndex = 1;
             minValues.SelectedIndex =8;
-            calories.SelectedIndex = 4;
+           // calories.SelectedIndex = 4;
             servings.SelectedIndex = 0;
-            cookTime.SelectedIndex = 2;
+           // cookTime.SelectedIndex = 2;
             comboBox4.SelectedIndex = 1;
             recommendationsNum.SelectedIndex = 4;
         }
@@ -117,8 +123,14 @@ namespace LogicRunner
             
             RecommendationGenerator generator = null;
             if (workMode.SelectedItem.ToString() == "Debug") {
-                var recipes = new HashSet<int>(custom.Text.Split(',').ToList<string>().ConvertAll<int>(a => int.Parse(a)));
-                generator = new RecommendationGenerator(unit, recommendationDB, recipes);
+                HashSet<int> recipes = null;
+                try {
+                    recipes = new HashSet<int>(custom.Text.Split(',').ToList<string>().ConvertAll<int>(a => int.Parse(a)));
+                }
+                catch {
+                    recipes = new HashSet<int>(File.ReadAllLines(FolderPath + "recipes_num.txt").ToList().ConvertAll<int>((a => int.Parse(a))));
+                }
+                generator = new RecommendationGenerator(unit, recommendationDB, recipes, int.Parse(totalCalories.SelectedItem.ToString()));
             }
             else
                 generator = new RecommendationGenerator(unit, recommendationDB, useDBRecipes, useTestsRecipes);
@@ -129,25 +141,29 @@ namespace LogicRunner
                 meals = generator.GetMealsList();
             else
                 meals = generator.GetRecommendation().MealsSet;
-            if (meals == null)
-            {
+            if (meals == null) {
                 manager.End();
                 MessageBox.Show("I'm sorry, but I can't recommend on any " + mealType.SelectedItem.ToString() + "s");
             }
-            else
-            {
-                this.bindingSource2.DataSource = meals.Select(o => new MyViewModel(o)
-                {
+            else {
+                var list = meals.Select(o => new MyViewModel(o) {
                     Id = o.Recipe.ID,
                     Name = o.Recipe.Name,
                     NutValues = parseNutValues(o.NutValues),
                     GradersResult = parseGradersResult(o.GradeInfo.GradersInfo)
                 }).ToList();
-
                 manager.TakeTime("getting meals list");
+            /*    list.Sort((a, b) => {
+                     if (a.Id > b.Id)
+                         return 1;
+                     else
+                         return -1;
+                 });*///usefull only when creating exel files manually
+                this.bindingSource2.DataSource = list;
+
 
                 dataGridView1.DataSource = this.bindingSource2;
-
+                
                 if (!alexiknow)
                 {
                     richTextBox1.DataBindings.Add("Text", bindingSource2, "GradersResult");
@@ -157,7 +173,7 @@ namespace LogicRunner
                     alexiknow = true;
                 }
                 manager.TakeTime("setting data source and rich text data binding");
-
+                
                 manager.End();
             }
             
@@ -165,6 +181,7 @@ namespace LogicRunner
 
             //MessageBox.Show(manager.ToString());
         }
+
 
         private string parseNutValues(Dictionary<string, double> let)
         {
