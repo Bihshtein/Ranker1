@@ -125,8 +125,15 @@ namespace InitDB {
            "condensed","pressurized","syrup pack","drained solids","all styles", "regular pack", "brine pack", "vacuum pack",
            "drained", "jellied","juice pack","water","cream style" ,"in oil", "solids and liquids" };
 
-        // ALEX - i didn't find this in the DB - maybe there's a bug that causing the prepration options not to be written?
-        private static List<string> PreparationOptions = new List<string>(){
+        public static List<string> PreperationOptionsRaw = new List<string>{
+            "toasted","prepared","baked","flour","raw","glazed","fried","carbonated","roasted",
+            "cooked","breaded","moist heat","dry heat","smoked","pickled","boiled","steamed",
+            "whipped","pasteurized","cultured","poached","heated","stewed","microwave","grilled",
+            "sauteed","scalloped","candied","braised","rotisserie","BBQ","batter","simmered",
+            "broiled",
+        };
+
+       private static List<string> PreparationOptions = new List<string>(){
          "moist heat", "dry heat", "smoked", "carbonated","cultured","poached","whipped","pasteurized","candied","sauteed", "breaded","steamed","fried","heated",
          "toasted","boiled", "grilled", "pan-browned", "crumbles", "pickled", "microwave", "baked", "pickled", "roasted",
              "oven","broiled","scalloped", "raw", "braised","stewed","rotisserie","BBQ","simmered","glazed","cooked",
