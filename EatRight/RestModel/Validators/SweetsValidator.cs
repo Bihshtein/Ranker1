@@ -1,7 +1,7 @@
-﻿using InitDB.Validators;
+﻿using RestModel.Validators;
 using System.Collections.Generic;
 
-namespace InitDB {
+namespace RestModel {
     internal class SweetsValidator : BasicValidator {
         public SweetsValidator() {
             MainParts = new List<string> {"Sugars","Honey","Cocoa"};

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace InitDB {
+namespace RestModel {
     public class CommonValidator {
 
         public static List<string> PeelingOptionsRaw = new List<string>{"with skin","without skin",
@@ -210,7 +210,7 @@ namespace InitDB {
                     CheckWithWord(PeelingOptions, part) ||
                     CheckWithWord(AdditionalFoodsData, part) ||
                     CheckWithWord(AdditionalHealthData, part) ||
-                    InitDB.FoodGroups.Keys.Contains(part)
+                    USDA.FoodGroups.Keys.Contains(part)
                     );
         }
 

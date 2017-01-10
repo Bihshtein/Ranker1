@@ -46,6 +46,10 @@
       <HintPath>..\packages\mongocsharpdriver.2.3.0\lib\net45\MongoDB.Driver.Legacy.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -57,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DailyValue.cs" />
+    <Compile Include="ProductBuilder.cs" />
     <Compile Include="ProductQuery.cs" />
     <Compile Include="Recipe.cs" />
     <Compile Include="ProfilingManager.cs" />
@@ -66,6 +71,25 @@
     <Compile Include="RecipesToProductsMapping.cs" />
     <Compile Include="RestRepository.cs" />
     <Compile Include="UserProfile.cs" />
+    <Compile Include="Validators\BakedValidator.cs" />
+    <Compile Include="Validators\BasicValidator.cs" />
+    <Compile Include="Validators\BeefValidator.cs" />
+    <Compile Include="Validators\BeveragesValidator.cs" />
+    <Compile Include="Validators\CarbsValidator.cs" />
+    <Compile Include="Validators\ChickenValidator.cs" />
+    <Compile Include="Validators\CommonValidator.cs" />
+    <Compile Include="Validators\DairyValidator.cs" />
+    <Compile Include="Validators\FishValidator.cs" />
+    <Compile Include="Validators\FruitsValidator.cs" />
+    <Compile Include="Validators\LegumesValidator.cs" />
+    <Compile Include="Validators\NutsValidator.cs" />
+    <Compile Include="Validators\OilsAndFatsValidator.cs" />
+    <Compile Include="Validators\PorkValidator.cs" />
+    <Compile Include="Validators\SausagesValidator.cs" />
+    <Compile Include="Validators\SoupAndSauceValidator.cs" />
+    <Compile Include="Validators\SpicesAndHerbsValidator.cs" />
+    <Compile Include="Validators\SweetsValidator.cs" />
+    <Compile Include="Validators\VegsValidator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

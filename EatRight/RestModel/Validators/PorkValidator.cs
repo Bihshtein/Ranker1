@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace InitDB.Validators {
+namespace RestModel.Validators {
     class PorkValidator : BasicValidator {
 
         public PorkValidator() {

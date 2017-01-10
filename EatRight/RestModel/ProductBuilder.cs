@@ -1,6 +1,5 @@
-﻿using InitDB.Validators;
+﻿using RestModel.Validators;
 using Newtonsoft.Json.Linq;
-using RestModel;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -8,10 +7,53 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace InitDB {
-    class ProductBuilder {
+namespace RestModel {
+    public class USDA
+    {
+        public static Dictionary<string, string> FoodGroups = new Dictionary<string, string>() {
+            {"Baked","1800"},
+            {"Beverages", "1400"},
+            {"Sweets","1900"},
+            {"Legumes","1600"},
+            {"SoupAndSauce","0600"},
+            {"Nuts","1200"},
+            {"OilsAndFats","0400"},
+            {"SpicesAndHerbs","0200"},
+            {"Fish","1500"},
+            {"Carbs", "2000"},
+            {"Dairy", "0100"},
+            {"Fruits", "0900"},
+            {"Vegs", "1100"},
+            {"Chicken", "0500"},
+            {"Pork", "1000"},
+            {"Beef", "1300"},
+            {"Sausages", "0700"}
+        };
+        public static Dictionary<string, BasicValidator> Validators = new Dictionary<string, BasicValidator>() {
+            { "Sweets", new SweetsValidator()},
+            { "Nuts", new NutsValidator()},
+            { "Pork", new PorkValidator()},
+            { "Beef", new BeefValidator()},
+            { "Vegs", new VegsValidator()},
+            { "Fruits", new FruitsValidator()},
+            { "Chicken", new ChickenValidator()},
+            { "Dairy", new DairyValidator()},
+            { "Carbs", new CarbsValidator()},
+            { "Beverages", new BeveragesValidator()},
+            { "Fish", new FishValidator()},
+            { "Baked", new BakedValidator()},
+            { "SpicesAndHerbs", new SpicesAndHerbsValidator()},
+            { "OilsAndFats", new OilsAndFatsValidator()},
+            { "SoupAndSauce", new SoupAndSauceValidator()},
+            { "Legumes", new LegumesValidator()},
+            { "Sausages", new SausagesValidator()},
+            };
+    }
+  
+
+    public class ProductBuilder {
         public static Product GetProduct(string groupName, int id, string name, JArray nutrients) {
-            var validator = InitDB.Validators[groupName];
+            var validator = USDA.Validators[groupName];
             var p = new Product() { ID = id, Types = new HashSet<ProductType>() };
             p.FoodGroup = groupName.ToLower();
             p.USDAString = name;
@@ -43,6 +85,11 @@ namespace InitDB {
                 p.Types.Add(ProductType.FromAnimal);
             }
             return p;
+        }
+
+        public static Product GetProductFromString(string searchQuery)
+        {
+            return GetProduct("Pork", 0, searchQuery, null);
         }
 
         public static void TryMatchPartToProperty(Product p, string item,BasicValidator validator) {

@@ -1,7 +1,7 @@
-﻿using InitDB.Validators;
+﻿using RestModel.Validators;
 using System.Collections.Generic;
 
-namespace InitDB {
+namespace RestModel {
     internal class SoupAndSauceValidator : BasicValidator {
          public SoupAndSauceValidator() {
             MainParts = new List<string> {"Sauce","Soup"};

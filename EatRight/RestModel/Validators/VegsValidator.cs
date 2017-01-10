@@ -1,9 +1,9 @@
-﻿using InitDB.Validators;
+﻿using RestModel.Validators;
 using System.Collections.Generic;
 using System.Linq;
 using System;
 
-namespace InitDB.Validators {
+namespace RestModel.Validators {
     public class VegsValidator : BasicValidator {
 
 

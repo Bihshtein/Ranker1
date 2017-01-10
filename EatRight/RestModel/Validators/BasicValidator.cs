@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace InitDB.Validators {
+namespace RestModel.Validators {
     public abstract class BasicValidator {
         public List<string> MainParts { get; protected set; }
         public List<string> SecondParts { get; protected set; }
