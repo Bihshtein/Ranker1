@@ -502,6 +502,7 @@
             this.custom.Name = "custom";
             this.custom.Size = new System.Drawing.Size(752, 20);
             this.custom.TabIndex = 45;
+            this.custom.Text = "if empty will take all the recipes in the file (used only in debug work mode)";
             // 
             // label16
             // 

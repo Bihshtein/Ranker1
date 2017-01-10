@@ -75,7 +75,7 @@ namespace RecommendationBuilder
             manager.TakeTime("end of recommendation constructor");
         }
 
-        public RecommendationGenerator(RestDBInterface unit, RecommendationDB recommendationDB, HashSet<int> recipeIds)
+        public RecommendationGenerator(RestDBInterface unit, RecommendationDB recommendationDB, HashSet<int> recipeIds, int fixedCaloriesNum)
         {
             this.useDBRecipes = false;
             this.useTestsRecipes = false;
@@ -98,7 +98,7 @@ namespace RecommendationBuilder
             this.unit = unit;
 
             mealsList = new List<Meal>();
-            GenerateMealsList();
+            GenerateMealsList(fixedCaloriesNum);
 
             usedDailyMenus = new HashSet<int>();
             usedMeals = new HashSet<int>();
@@ -419,7 +419,7 @@ namespace RecommendationBuilder
             dailyMenusList.Sort(new RecommendationObjectComparer<DailyMenu>());
         }
 
-        private void GenerateMealsList()
+        private void GenerateMealsList(int fixedCaloriesNum=0)
         {
             var timer = GlobalProfilingManger.Instance.Manager;
 
@@ -448,7 +448,7 @@ namespace RecommendationBuilder
             }
             timer.TakeTime("recipes - get all");
 
-            mealsList = recipesList.Select(x => new Meal(x)).ToList();
+            mealsList = recipesList.Select(x => new Meal(x, fixedCaloriesNum)).ToList();
             timer.TakeTime("create meal list");
 
             mealsList = FilterList(mealsList, filterSet);

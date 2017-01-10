@@ -88,6 +88,7 @@ namespace Logic {
             { "links pork sausage links", "frankfurter pork sausage"},
             { "packages refrigerated crescent roll dough (such as pillsbury&#174;", "pillsbury refrigerated dough"},
             { "italian parsley", "parsley"},
+            { "salmon fillets", "salmon"},
         };
 
         public static List<string> StartPharseRemove = new List<string> {

@@ -22,7 +22,9 @@ namespace InitRecipes {
             
             var loadMealsBulkSize = Indexes.Count > 1000 ? 1000 : Indexes.Count;
             var unit = new RestDBInterface();
+            unit.Recipes.Empty();
             var recipes = unit.Recipes.GetAll().ToList();
+            
             var indexesToRemove = recipes.FindAll(recipe => !Indexes.Contains(recipe.ID ));
             indexesToRemove.ForEach(index => unit.Recipes.Delete(s => s.ID  , index.ID));
             while (Indexes.Count > 0) {
@@ -59,7 +61,7 @@ namespace InitRecipes {
            
             unit.Recipes.Add(new Recipe() {
                 ID = index,
-                Name = GetRecipeName(page),
+                Name = GetRecipeName(page).Replace(" - Allrecipes.com",""),
                 Ingredients = GetIngredients(page),
                 Types = new HashSet<MealType>() { MealType.Breakfast, MealType.Lunch, MealType.Dinner},
                 Servings = GetServings(page),

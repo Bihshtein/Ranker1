@@ -107,7 +107,7 @@
     <Compile Include="RecommendationGenerator.cs" />
     <Compile Include="Graders\DailyMenuGraders\NutValuesDailyGrader.cs" />
     <Compile Include="Graders\MenuGraders\PerDayGrader.cs" />
-    <Compile Include="MealWrapper.cs" />
+    <Compile Include="Meal.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
