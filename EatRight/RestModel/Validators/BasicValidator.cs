@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Text.RegularExpressions;
 
 namespace RestModel.Validators {
     public abstract class BasicValidator {
@@ -12,7 +13,9 @@ namespace RestModel.Validators {
 
         public virtual bool IsSecondPart(string part) {
             if (ThirdParts != null)
-                return ThirdParts.Any((cut) => SecondParts.Contains(part.Replace(cut, string.Empty).Trim()));
+                return ThirdParts.Any((cut) => 
+                SecondParts.Any(s => s.Equals(Regex.Replace(part, cut, string.Empty, RegexOptions.IgnoreCase).Trim(),
+                StringComparison.OrdinalIgnoreCase)));
             return ((SecondParts != null) && SecondParts.Contains(part));
 
         }
@@ -20,9 +23,9 @@ namespace RestModel.Validators {
         public virtual bool IsMainPart(string part) {
             if (part == string.Empty)
                 return true;
-            else if (MainParts != null) 
-                return MainParts.Contains(part);
-            else 
+            else if (MainParts != null)
+                return MainParts.Any(s => s.Equals(part, StringComparison.OrdinalIgnoreCase));
+            else
                 return IsName(part) && !IsSecondPart(part) && !IsThirdPart(part);
         }
 
@@ -38,7 +41,7 @@ namespace RestModel.Validators {
         }
 
         public virtual bool IsThirdPart(string part) {
-            return ThirdParts != null && ThirdParts.Contains(part);
+            return ThirdParts != null && ThirdParts.Any(s => s.Equals(part, StringComparison.OrdinalIgnoreCase));
         }
 
         public virtual string GetPrettyName(string part){ return part; } 

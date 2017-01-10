@@ -9,7 +9,7 @@ namespace Tests {
         public void TestAllProductCounts() {
             var unit = new RestDBInterface();
             var count = unit.Products.GetAllList().Count;
-            Assert.IsTrue(count == 3733);
+            Assert.IsTrue(count == 3737);
         }
 
         [TestMethod]
@@ -86,7 +86,7 @@ namespace Tests {
             var res = unit.Products.Queries.QueryByNameAndValue("salmon", "Fish", "VitaminD");
             Assert.IsTrue((res[res.Count - 1].VitaminD / res[0].VitaminD) > 2);
             Assert.IsTrue((res[res.Count - 1].VitaminD / res[0].VitaminD) < 3);
-            Assert.IsTrue(res.Count == 12);
+            Assert.IsTrue(res.Count == 14);
         }
 
 
@@ -97,6 +97,14 @@ namespace Tests {
             Assert.IsTrue((res[res.Count - 1].Fiber / res[0].Fiber) > 19);
             Assert.IsTrue((res[res.Count - 1].Fiber / res[0].Fiber) < 20);
             Assert.IsTrue(res.Count == 64);
+        }
+
+        [TestMethod]
+        public void GetProductBySearchQuery()
+        {
+            var product = ProductQueryBuilder.FromString("cheese,cake");
+
+            Assert.IsNotNull(product);
         }
     }
 }

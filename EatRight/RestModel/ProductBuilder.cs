@@ -62,8 +62,12 @@ namespace RestModel {
                 p.Name1 = name;
             else 
                 parts.ForEach((item) => TryMatchPartToProperty(p, item, validator));
-            SetWeights(nutrients, "Protein", p);
-            SetNutrientProperties(nutrients, p);
+            if (nutrients != null)
+            {
+                SetWeights(nutrients, "Protein", p);
+                SetNutrientProperties(nutrients, p);
+            }
+            
 			if (IsMeatProduct(p))
             {
                 p.Types.Add(ProductType.Meat);
@@ -89,7 +93,53 @@ namespace RestModel {
 
         public static Product GetProductFromString(string searchQuery)
         {
-            return GetProduct("Pork", 0, searchQuery, null);
+            // TODO: Find out how to seperate the search query
+            var group = ExtractFoodGroup(searchQuery);
+            return GetProduct(group, 0, searchQuery, null);
+        }
+
+        private class InvertedDuplicateComparer<T> : IComparer<T> where T : IComparable
+        {
+            public int Compare(T x, T y)
+            {
+                var result = y.CompareTo(x);
+                if (result == 0)
+                    return 1;   // Handle equality as being greater
+                else
+                    return result;
+            }
+        }
+
+        public static string ExtractFoodGroup(string searchQuery)
+        {
+            var searchQueryWords = searchQuery.Split(',');
+            var validatorsByScore = new SortedList<int, string>(new InvertedDuplicateComparer<int>());
+
+            foreach (var validator in USDA.Validators)
+            {
+                var score = 1;
+                bool mainPart, secondPart, thirdPart;
+                mainPart = secondPart = thirdPart = false;
+
+                foreach (var sqWord in searchQueryWords)
+                {
+                    if ((!mainPart) && (validator.Value.IsMainPart(sqWord))) {
+                        mainPart = true; score += 60; continue;
+                    }
+                    if ((!secondPart) && (validator.Value.IsSecondPart(sqWord))) {
+                        secondPart = true; score += 20; continue;
+                    }
+                    if ((!thirdPart) && (validator.Value.IsThirdPart(sqWord))) {
+                        thirdPart = true; score += 10; continue;
+                    }
+
+                    if (mainPart && secondPart && thirdPart) break;
+                }
+
+                validatorsByScore.Add(score, validator.Key);
+            }
+
+            return validatorsByScore.First().Value;
         }
 
         public static void TryMatchPartToProperty(Product p, string item,BasicValidator validator) {

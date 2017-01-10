@@ -19,7 +19,7 @@ namespace RestModel
 
     public class ProductQuery
     {
-        protected Product product;
+        public Product Product { get; set; }
         protected string searchQuery;
         protected static bool expFlag = true;
         protected static object expLocker = new object();
@@ -36,7 +36,7 @@ namespace RestModel
         {
             lock (expLocker)
             {
-                product = ProductBuilder.GetProductFromString(searchQuery);
+                Product = ProductBuilder.GetProductFromString(searchQuery);
                 expFlag = true;
             }
         }
@@ -61,7 +61,7 @@ namespace RestModel
 
         public void RefreshExpression()
         {
-            if (product == null) { _query = null; return; }
+            if (Product == null) { _query = null; return; }
         }
     }
 }
