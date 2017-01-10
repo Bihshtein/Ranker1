@@ -65,7 +65,10 @@ namespace RecommendationBuilder.Graders.DailyMenuGraders
                 // Debug information
                 if (min)
                 {
-                    RecommendationObject.recommendationDB.NutrientGrades[nutrient] = gradeRatio;
+                    RecommendationObject.recommendationDB.MinNutrientGrades[nutrient] = gradeRatio;
+                }
+                else {
+                    RecommendationObject.recommendationDB.MaxNutrientGrades[nutrient] = gradeRatio;
                 }
             }
 

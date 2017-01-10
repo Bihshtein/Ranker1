@@ -27,6 +27,7 @@ namespace RecommendationBuilder
         public List<string> WorstGraders { get; set; }
 
         public HashSet<GraderInfo> GradersInfo { get; set; }
-        public Dictionary<string, double> NutrientGrades { get; set; }
+        public Dictionary<string, double> MinNutrientGrades { get; set; }
+        public Dictionary<string, double> MaxNutrientGrades { get; set; }
     }
 }

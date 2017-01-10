@@ -347,7 +347,8 @@ namespace RecommendationBuilder
             obj.GradeInfo = new GradeInfo()
                 { BestGraders = bestGraders, WorstGraders = worstGraders, GradersInfo = gradersInfo };
 
-            obj.GradeInfo.NutrientGrades = new Dictionary<string, double>(RecommendationObject.recommendationDB.NutrientGrades);
+            obj.GradeInfo.MinNutrientGrades = new Dictionary<string, double>(RecommendationObject.recommendationDB.MinNutrientGrades);
+            obj.GradeInfo.MaxNutrientGrades = new Dictionary<string, double>(RecommendationObject.recommendationDB.MaxNutrientGrades);
         }
 
         private void GenerateRecommendationsList()
