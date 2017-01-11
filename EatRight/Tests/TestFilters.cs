@@ -245,13 +245,13 @@ namespace Tests
             unit.TestsRecipes.Add(breakfast2);
             unit.TestsRecipes.Add(breakfast3);
 
-            var userProfile = new UserProfile() { Age = 30, Gender = GenderType.Male };
+            var userProfile = new UserProfile()
+            { Age = 30, Gender = GenderType.Male, Restrictions = new HashSet<UserRestrictions>() { UserRestrictions.Vegan } };
 
             var range = new MealSuggestionRange() { Length = 1, MealType = MealType.Breakfast };
 
             var recommendationDB = RecommendationDBGenerator.FromUserProfile(userProfile, unit);
             recommendationDB.range = range;
-            recommendationDB.FiltersSet = new HashSet<FilterType>() { FilterType.VeganMealFilter };
 
             var recommendationGenerator = new RecommendationGenerator(unit, recommendationDB, false, true);
             var reco = recommendationGenerator.GetRecommendation();
@@ -299,14 +299,13 @@ namespace Tests
             unit.TestsRecipes.Add(breakfast2);
             unit.TestsRecipes.Add(breakfast3);
 
-            var userProfile = new UserProfile() { Age = 30, Gender = GenderType.Male };
+            var userProfile = new UserProfile()
+            { Age = 30, Gender = GenderType.Male, Restrictions = new HashSet<UserRestrictions>() { UserRestrictions.Kosher } };
 
             var range = new MealSuggestionRange() { Length = 1, MealType = MealType.Breakfast };
 
             var recommendationDB = RecommendationDBGenerator.FromUserProfile(userProfile, unit);
             recommendationDB.range = range;
-            recommendationDB.FiltersSet = new HashSet<FilterType>()
-            { FilterType.OnlyKosherProductsMealFilter, FilterType.NoMeatDairyMealFilter };
 
             var recommendationGenerator = new RecommendationGenerator(unit, recommendationDB, false, true);
             var reco = recommendationGenerator.GetRecommendation();

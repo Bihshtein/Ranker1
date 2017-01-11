@@ -674,6 +674,21 @@ namespace RecommendationBuilder
                         case UserRestrictions.NoSeafood:
                             RecommendationObject.recommendationDB.FiltersSet.Add(FilterType.HasNoSeafoodMealFilter);
                             break;
+                        case UserRestrictions.Vegetarian:
+                            RecommendationObject.recommendationDB.FiltersSet.Add(FilterType.HasNoMeatMealFilter);
+                            RecommendationObject.recommendationDB.FiltersSet.Add(FilterType.HasNoFishMealFilter);
+                            RecommendationObject.recommendationDB.FiltersSet.Add(FilterType.HasNoSeafoodMealFilter);
+                            break;
+                        case UserRestrictions.Pescetarian:
+                            RecommendationObject.recommendationDB.FiltersSet.Add(FilterType.HasNoMeatMealFilter);
+                            break;
+                        case UserRestrictions.Vegan:
+                            RecommendationObject.recommendationDB.FiltersSet.Add(FilterType.VeganMealFilter);
+                            break;
+                        case UserRestrictions.Kosher:
+                            RecommendationObject.recommendationDB.FiltersSet.Add(FilterType.OnlyKosherProductsMealFilter);
+                            RecommendationObject.recommendationDB.FiltersSet.Add(FilterType.NoMeatDairyMealFilter);
+                            break;
                     }
                 }
             }

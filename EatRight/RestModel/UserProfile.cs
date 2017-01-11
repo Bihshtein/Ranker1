@@ -17,7 +17,11 @@ namespace RestModel
         NoMeat,
         NoDairy,
         NoFish,
-        NoSeafood
+        NoSeafood,
+        Vegetarian,
+        Pescetarian,
+        Vegan,
+        Kosher
     }
 
     /// <summary>
