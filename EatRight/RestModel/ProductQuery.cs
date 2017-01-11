@@ -23,24 +23,15 @@ namespace RestModel
         protected string searchQuery;
         protected static bool expFlag = true;
         protected static object expLocker = new object();
-        protected Expression<Func<Product, bool>> _query;
+        protected Expression<Func<Product, bool>> _expression;
 
         public ProductQuery(string searchQuery)
         {
-            _query = null;
+            _expression = null;
             this.searchQuery = (string)searchQuery.Clone();
             RebuildProduct();
         }
-
-        protected void RebuildProduct()
-        {
-            lock (expLocker)
-            {
-                Product = ProductBuilder.GetProductFromString(searchQuery);
-                expFlag = true;
-            }
-        }
-
+        
         public Expression<Func<Product, bool>> Expression
         {
             get
@@ -54,14 +45,21 @@ namespace RestModel
                     }
                 }
 
-                return _query;
+                return _expression;
             }
-
+        }
+        protected void RebuildProduct()
+        {
+            lock (expLocker)
+            {
+                Product = ProductBuilder.GetProductFromString(searchQuery);
+                expFlag = true;
+            }
         }
 
         public void RefreshExpression()
         {
-            if (Product == null) { _query = null; return; }
+            if (Product == null) { _expression = null; return; }
         }
     }
 }

@@ -6,6 +6,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Text.RegularExpressions;
 
 namespace RestModel {
     public class USDA
@@ -94,8 +95,11 @@ namespace RestModel {
         public static Product GetProductFromString(string searchQuery)
         {
             // TODO: Find out how to seperate the search query
-            var group = ExtractFoodGroup(searchQuery);
-            return GetProduct(group, 0, searchQuery, null);
+            searchQuery = Regex.Replace(searchQuery.Replace(",", " "), @"\s+", " ");
+            var groupAndSearchQuery = ExtractFoodGroupAndSearchQuery(searchQuery.Split(' '));
+            var group = groupAndSearchQuery.Item1;
+            var fixSearchQuery = String.Join(",", groupAndSearchQuery.Item2);
+            return GetProduct(group, 0, fixSearchQuery, null);
         }
 
         private class InvertedDuplicateComparer<T> : IComparer<T> where T : IComparable
@@ -110,33 +114,128 @@ namespace RestModel {
             }
         }
 
-        public static string ExtractFoodGroup(string searchQuery)
+        public static IEnumerable<IEnumerable<T>> GetPermutationIndexes<T>(IEnumerable<T> items, int count)
         {
-            var searchQueryWords = searchQuery.Split(',');
-            var validatorsByScore = new SortedList<int, string>(new InvertedDuplicateComparer<int>());
+            int i = 0;
+            foreach (var item in items)
+            {
+                if (count == 1)
+                    yield return new T[] { item };
+                else
+                {
+                    foreach (var result in GetPermutationIndexes(items.Skip(i + 1), count - 1))
+                        yield return new T[] { item }.Concat(result);
+                }
+
+                ++i;
+            }
+        }
+
+        protected static List<string[]> GetPermutations(string[] searchQueryWords)
+        {
+            if ((searchQueryWords == null) || (searchQueryWords.Length <= 1)) return new List<string[]> { searchQueryWords };
+
+            var indexArray = Enumerable.Range(0, searchQueryWords.Length - 1);
+            var indexArray2 = Enumerable.Range(0, searchQueryWords.Length);
+
+            var permutationList = new List<string[]>();
+
+            permutationList.Add(new string[] { string.Join(" ", searchQueryWords) });
+            for (int i = 1; i < indexArray2.Count(); i++)
+            {
+                foreach (var x in GetPermutationIndexes(indexArray, indexArray2.ElementAt(i)))
+                {
+                    var seps = x.ToList();
+                    string partialString = string.Empty;
+                    List<string> curPermutation = new List<string>();
+
+                    for (int indx = 0; indx < searchQueryWords.Length; indx++)
+                    {
+                        if (partialString != string.Empty)
+                            partialString += " ";
+                        partialString += searchQueryWords[indx];
+                        if (seps.Contains(indx)) { curPermutation.Add(partialString); partialString = string.Empty; }
+                    }
+
+                    if (partialString != string.Empty)
+                        curPermutation.Add(partialString);
+
+                    if (curPermutation.Count > 0)
+                        permutationList.Add(curPermutation.ToArray());
+                }
+            }
+            return permutationList;
+
+            /*
+            'frozen peas on fire'
+
+            frozen, peas on fire
+            frozen, peas, on fire
+            frozen, peas, on, fire
+            frozen peas, on fire
+            frozen peas, on, fire
+            frozen peas on, fire
+            frozen peas on fire
+
+            seperatosr = { } zero positions
+            seperators = { {0}, {1}, {2} } one position
+            seperators = { {0, 1}, {1, 2} } two positions
+            seperators = { {0, 1, 2} } three positions
+
+
+              */
+            // [ a,b,c,d]
+            // [ 
+            // [ a,b,c,d ]
+            // [ a,b,c d ]
+            // [ a b,c d ]
+            // [ a b,c,d ]
+            // [ a b c,d ]
+            // [ a b c d ]
+        }
+
+        /// <summary>
+        /// TODO: from all permutations => go through all validators and get the best of score
+        /// </summary>
+        /// <param name="searchQueryWords"></param>
+        /// <returns></returns>
+        public static Tuple<string, string[]> ExtractFoodGroupAndSearchQuery(string[] searchQuery)
+        {
+            if ((searchQuery == null) || (searchQuery.Length <= 0))
+                return new Tuple<string, string[]>(string.Empty, null);
+
+            var validatorsByScore = new SortedList<double, Tuple<string, string[]>>(new InvertedDuplicateComparer<double>());
+
+            var searchQueryPermutations = GetPermutations(searchQuery);
+            if ((searchQueryPermutations == null) ||
+                (searchQueryPermutations.Count == 0)) return new Tuple<string, string[]>(string.Empty, null);
 
             foreach (var validator in USDA.Validators)
             {
-                var score = 1;
-                bool mainPart, secondPart, thirdPart;
-                mainPart = secondPart = thirdPart = false;
-
-                foreach (var sqWord in searchQueryWords)
+                var valid = validator;
+                foreach (var searchQueryWords in searchQueryPermutations)
                 {
-                    if ((!mainPart) && (validator.Value.IsMainPart(sqWord))) {
-                        mainPart = true; score += 60; continue;
-                    }
-                    if ((!secondPart) && (validator.Value.IsSecondPart(sqWord))) {
-                        secondPart = true; score += 20; continue;
-                    }
-                    if ((!thirdPart) && (validator.Value.IsThirdPart(sqWord))) {
-                        thirdPart = true; score += 10; continue;
+                    var score = 1.0;
+                    int mainPart, secondPart, thirdPart, validPart;
+                    mainPart = secondPart = thirdPart = validPart = 0;
+
+                    foreach (var sqWord in searchQueryWords)
+                    {
+                        if ((mainPart == 0) && (validator.Value.IsExactlyMainPart(sqWord))) mainPart++;
+                        else if ((secondPart == 0) && (validator.Value.IsExactlySecondPart(sqWord))) secondPart++;
+                        else if ((thirdPart == 0) && (validator.Value.IsExactlyThirdPart(sqWord))) thirdPart++;
+                    //    else if (validator.Value.IsValidPart(sqWord)) validPart++;
                     }
 
-                    if (mainPart && secondPart && thirdPart) break;
+                    if ((mainPart + secondPart + thirdPart) == 0)
+                        score = 1.0;
+                    else
+                        score = ((mainPart + secondPart + thirdPart + validPart) / (double)searchQueryWords.Length) * 100;
+
+                    if ((score == 1.0) && (validatorsByScore.Count > 0))
+                        continue;
+                    validatorsByScore.Add(score, new Tuple<string, string[]>(validator.Key, searchQueryWords));
                 }
-
-                validatorsByScore.Add(score, validator.Key);
             }
 
             return validatorsByScore.First().Value;

@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using RestModel;
+using System.Collections.Generic;
 
 namespace Tests {
     [TestClass]
@@ -102,9 +103,20 @@ namespace Tests {
         [TestMethod]
         public void GetProductBySearchQuery()
         {
-            var product = ProductQueryBuilder.FromString("cheese,cake");
+            var testString = new List<string>
+            {
+                "cheese cake",
+                "cookies chocolate chip commercially prepared, regular",
+                "cookie chocolate, chip enriched"
+            };
 
-            Assert.IsNotNull(product);
+            foreach (var searchQuery in testString)
+            {
+                var product = ProductQueryBuilder.FromString(searchQuery);
+                var str = product.Product.USDAString;
+                Assert.IsNotNull(product);
+            }
+            
         }
     }
 }

@@ -20,6 +20,31 @@ namespace RestModel.Validators {
 
         }
 
+        public bool IsExactlySecondPart(string part)
+        {
+            if (ThirdParts != null)
+                return ThirdParts.Any((cut) =>
+                SecondParts.Any(s => s.Equals(Regex.Replace(part, cut, string.Empty, RegexOptions.IgnoreCase).Trim(),
+                StringComparison.OrdinalIgnoreCase)));
+            return ((SecondParts != null) && SecondParts.Contains(part));
+
+        }
+
+        public bool IsExactlyMainPart(string part)
+        {
+            if (part == string.Empty)
+                return true;
+            else if (MainParts != null)
+                return MainParts.Any(s => s.Equals(part, StringComparison.OrdinalIgnoreCase));
+            else
+                return IsName(part) && !IsSecondPart(part) && !IsThirdPart(part);
+        }
+
+        public bool IsExactlyThirdPart(string part)
+        {
+            return ThirdParts != null && ThirdParts.Any(s => s.Equals(part, StringComparison.OrdinalIgnoreCase));
+        }
+
         public virtual bool IsMainPart(string part) {
             if (part == string.Empty)
                 return true;
