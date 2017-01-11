@@ -169,7 +169,8 @@ namespace LogicRunner
                     richTextBox1.DataBindings.Add("Text", bindingSource2, "GradersResult");
                     richTextBox2.DataBindings.Add("Text", bindingSource2, "Products");
                     richTextBox3.DataBindings.Add("Text", bindingSource2, "NutValues");
-                    richTextBox4.DataBindings.Add("Text", bindingSource2, "Scores");
+                    richTextBox4.DataBindings.Add("Text", bindingSource2, "MinScores");
+                    richTextBox5.DataBindings.Add("Text", bindingSource2, "MaxScores");
                     alexiknow = true;
                 }
                 manager.TakeTime("setting data source and rich text data binding");

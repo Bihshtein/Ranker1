@@ -112,10 +112,7 @@ namespace RestModel
     {
         public GenderType Type { get; set; }
 
-        public GenderParam(GenderType param)
-        {
-            Type = param;
-        }
+    
 
         public override string ToString()
         {
@@ -132,7 +129,9 @@ namespace RestModel
         {
             if ((StringToGenderType == null) || (!StringToGenderType.ContainsKey(gender))) return null;
 
-            return new GenderParam(StringToGenderType[gender]);
+            var ret = new GenderParam();
+            ret.Type = StringToGenderType[gender];
+            return ret;
         }
     }
 
@@ -166,12 +165,11 @@ namespace RestModel
             this.MaxValue = minMaxValue;
         }
     }
-
     public class DailyValue : IQueryable
     {
-        protected Dictionary<string, object> resetDailyValues;
+        public Dictionary<string, object> ResetDailyValues;
         [BsonExtraElements]
-        protected Dictionary<string, object> dailyValues;
+        public Dictionary<string, object> DailyValues;
 
         public override int GetHashCode()
         {
@@ -198,29 +196,15 @@ namespace RestModel
             return Gender.ToString() + " " + Age.ToString();
         }
 
-        public DailyValue()
-        {
-            dailyValues = new Dictionary<string, object>();
-            resetDailyValues = new Dictionary<string, object>(dailyValues);
-            
-        }
+    
 
-        public DailyValue(Dictionary<string, object> dValues)
-        {
-            dailyValues = new Dictionary<string, object>(dValues);
-            resetDailyValues = new Dictionary<string, object>(dailyValues);
-        }
-
-        protected DailyValue(DailyValue dup)
-        {
-            if (dup == null) throw new ArgumentNullException("dup");
-            resetDailyValues = new Dictionary<string, object>(dup.resetDailyValues);
-            dailyValues = new Dictionary<string, object>(dup.dailyValues);
-        }
 
         public DailyValue Clone()
         {
-            return new DailyValue(this);
+            var ret = new DailyValue();
+            ret.DailyValues = new Dictionary<string, object>(this.DailyValues);
+            ret.ResetDailyValues = new Dictionary<string, object>(this.ResetDailyValues);
+            return ret;
         }
 
         public static DailyValue NullDefault(Tuple<GenderParam, AgeParam> ageGender, int id)
@@ -234,7 +218,8 @@ namespace RestModel
 
         public static DailyValue NullDefault()
         {
-            var ret = new DailyValue(
+            var ret = new DailyValue();
+            ret.DailyValues = 
                 new Dictionary<string, object>()
                 {
             { "Protein", new MinMaxDouble(-1) }, //
@@ -259,8 +244,8 @@ namespace RestModel
             { "Potassium",new MinMaxDouble(-1) }, //
             { "Sodium",new MinMaxDouble(-1) }, //
             { "Zinc",new MinMaxDouble(-1) } //
-                });
-
+                };
+            ret.ResetDailyValues = ret.DailyValues;
             ret.Age = null;
             ret.Gender = null;
             return ret;
@@ -270,7 +255,7 @@ namespace RestModel
         {
             var valid = (Age != null) && (Gender != null);
             if (!valid) return false;
-            foreach (var nutrient in dailyValues)
+            foreach (var nutrient in DailyValues)
             {
                 if (!(nutrient.Value is double) || ((double)nutrient.Value == -1)) return false;
             }
@@ -279,7 +264,8 @@ namespace RestModel
 
         public static DailyValue Default()
         {
-            var ret= new DailyValue(
+            var ret = new DailyValue();
+            ret.DailyValues = 
                 new Dictionary<string, object>()
                 {
             { "Protein", new MinMaxDouble(56) }, //
@@ -304,16 +290,17 @@ namespace RestModel
             { "Potassium",new MinMaxDouble(3500) }, //
             { "Sodium",new MinMaxDouble(2400) }, //
             { "Zinc",new MinMaxDouble(15) } //
-                });
+                };
 
             ret.Age = new AgeParam(25, 30);
-            ret.Gender = new GenderParam(GenderType.Any);
+            ret.Gender = new GenderParam();
+            ret.Gender.Type = GenderType.Any;
             return ret;
         }
 
         public Dictionary<string, MinMaxDouble> DuplicateDictionary()
         {
-            return dailyValues.ToDictionary(k => k.Key, k => new MinMaxDouble((double)k.Value));
+            return DailyValues.ToDictionary(k => k.Key, k => new MinMaxDouble((double)k.Value));
         }
 
         public static DailyValue DefaultByDryParams(double age, int sex)
@@ -323,36 +310,36 @@ namespace RestModel
 
         public bool Increase(string dValue, double precentage)
         {
-            if (!(dailyValues.ContainsKey(dValue))) return false;
-            dailyValues[dValue] = new MinMaxDouble(((MinMaxDouble)dailyValues[dValue]).MinValue + (((MinMaxDouble)dailyValues[dValue]).MinValue * precentage / 100));
+            if (!(DailyValues.ContainsKey(dValue))) return false;
+            DailyValues[dValue] = new MinMaxDouble(((MinMaxDouble)DailyValues[dValue]).MinValue + (((MinMaxDouble)DailyValues[dValue]).MinValue * precentage / 100));
             return true;
         }
 
         public bool Decrease(string dValue, double precentage)
         {
-            if (!(dailyValues.ContainsKey(dValue))) return false;
-            dailyValues[dValue] = new MinMaxDouble(((MinMaxDouble)dailyValues[dValue]).MinValue - (((MinMaxDouble)dailyValues[dValue]).MinValue * precentage / 100));
+            if (!(DailyValues.ContainsKey(dValue))) return false;
+            DailyValues[dValue] = new MinMaxDouble(((MinMaxDouble)DailyValues[dValue]).MinValue - (((MinMaxDouble)DailyValues[dValue]).MinValue * precentage / 100));
             return true;
         }
 
         public bool Set(string dValue, double value)
         {
-            if (!(dailyValues.ContainsKey(dValue))) return false;
-            dailyValues[dValue] = value;
+            if (!(DailyValues.ContainsKey(dValue))) return false;
+            DailyValues[dValue] = value;
             return true;
         }
 
         public bool Reset(string dValue, double value)
         {
-            if (!(resetDailyValues.ContainsKey(dValue) &&
-                (dailyValues.ContainsKey(dValue)))) return false;
-            dailyValues[dValue] = resetDailyValues[dValue];
+            if (!(ResetDailyValues.ContainsKey(dValue) &&
+                (DailyValues.ContainsKey(dValue)))) return false;
+            DailyValues[dValue] = ResetDailyValues[dValue];
             return true;
         }
 
         public void Save()
         {
-            resetDailyValues = new Dictionary<string, object>(dailyValues);
+            ResetDailyValues = new Dictionary<string, object>(DailyValues);
         }
     }
 }

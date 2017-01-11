@@ -98,6 +98,8 @@ namespace RestModel
         HasSeafoodMealFilter,
         HasNoSeafoodMealFilter,
         VeganMealFilter,
+        OnlyKosherProductsMealFilter,
+        NoMeatDairyMealFilter,
 
         MealFilterEnd
     }

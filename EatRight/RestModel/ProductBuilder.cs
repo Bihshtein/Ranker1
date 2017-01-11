@@ -85,9 +85,13 @@ namespace RestModel {
             {
                 p.Types.Add(ProductType.Seafood);
             }
-            if (IsFromAnimalProduct(p)) // Must run thie after IsMeatProduct, IsDairyProduct, IsFishProduct, IsSeafoodproduct
+            if (IsFromAnimalProduct(p)) // Must run this after IsMeatProduct, IsDairyProduct, IsFishProduct, IsSeafoodProduct
             {
                 p.Types.Add(ProductType.FromAnimal);
+            }
+            if (IsNonKosherProduct(p)) // Must run this after IsSeafoodProduct
+            {
+                p.Types.Add(ProductType.NonKosher);
             }
             return p;
         }
@@ -453,11 +457,14 @@ namespace RestModel {
 
         public static bool IsNonKosherProduct(Product product)
         {
-            var nonkosherWords = new HashSet<string>() { "eel", "shark", "swrodfish" };
+            var nonkosherWords = new HashSet<string>() { "eel", "shark", "swrodfish", "camel", "rabbit", "horse", "donkey" };
+            // We need exception because of horseradish, peel products
+            var exceptionWords = new HashSet<string>() { "horseradish", "peel" };
 
             return
-                // TODO: Add more, this is currently not functional
-                IsProductOutsideFoodgroup(product, nonkosherWords, new HashSet<string>());
+                product.FoodGroup == "pork" ||
+                product.Types.Contains(ProductType.Seafood) ||
+                IsProductOutsideFoodgroup(product, nonkosherWords, exceptionWords);
         }
     }
 }

@@ -79,6 +79,8 @@
             this.richTextBox4 = new System.Windows.Forms.RichTextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.workMode = new System.Windows.Forms.ComboBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.richTextBox5 = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
@@ -114,9 +116,9 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(604, 852);
+            this.richTextBox1.Location = new System.Drawing.Point(819, 632);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(303, 83);
+            this.richTextBox1.Size = new System.Drawing.Size(263, 253);
             this.richTextBox1.TabIndex = 4;
             this.richTextBox1.Text = "";
             // 
@@ -253,13 +255,13 @@
             // 
             this.richTextBox2.Location = new System.Drawing.Point(602, 632);
             this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(305, 194);
+            this.richTextBox2.Size = new System.Drawing.Size(211, 253);
             this.richTextBox2.TabIndex = 21;
             this.richTextBox2.Text = "";
             // 
             // richTextBox3
             // 
-            this.richTextBox3.Location = new System.Drawing.Point(756, 271);
+            this.richTextBox3.Location = new System.Drawing.Point(914, 271);
             this.richTextBox3.Name = "richTextBox3";
             this.richTextBox3.Size = new System.Drawing.Size(151, 336);
             this.richTextBox3.TabIndex = 22;
@@ -271,7 +273,7 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label7.Location = new System.Drawing.Point(719, 829);
+            this.label7.Location = new System.Drawing.Point(941, 610);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(66, 19);
             this.label7.TabIndex = 23;
@@ -283,7 +285,7 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label8.Location = new System.Drawing.Point(703, 610);
+            this.label8.Location = new System.Drawing.Point(667, 610);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(80, 19);
             this.label8.TabIndex = 24;
@@ -295,7 +297,7 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label9.Location = new System.Drawing.Point(765, 249);
+            this.label9.Location = new System.Drawing.Point(923, 249);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(125, 19);
             this.label9.TabIndex = 25;
@@ -522,11 +524,11 @@
             this.label17.BackColor = System.Drawing.Color.Transparent;
             this.label17.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.label17.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label17.Location = new System.Drawing.Point(603, 249);
+            this.label17.Location = new System.Drawing.Point(622, 249);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(147, 19);
+            this.label17.Size = new System.Drawing.Size(100, 19);
             this.label17.TabIndex = 48;
-            this.label17.Text = "Nutrients Grades";
+            this.label17.Text = "Min Grades";
             // 
             // richTextBox4
             // 
@@ -556,13 +558,35 @@
             this.workMode.Size = new System.Drawing.Size(89, 21);
             this.workMode.TabIndex = 49;
             // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.BackColor = System.Drawing.Color.Transparent;
+            this.label19.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label19.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label19.Location = new System.Drawing.Point(773, 249);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(105, 19);
+            this.label19.TabIndex = 52;
+            this.label19.Text = "Max Grades";
+            // 
+            // richTextBox5
+            // 
+            this.richTextBox5.Location = new System.Drawing.Point(755, 271);
+            this.richTextBox5.Name = "richTextBox5";
+            this.richTextBox5.Size = new System.Drawing.Size(147, 336);
+            this.richTextBox5.TabIndex = 51;
+            this.richTextBox5.Text = "";
+            // 
             // LogicRunnerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.AliceBlue;
-            this.ClientSize = new System.Drawing.Size(913, 948);
+            this.ClientSize = new System.Drawing.Size(1086, 948);
+            this.Controls.Add(this.label19);
+            this.Controls.Add(this.richTextBox5);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.workMode);
             this.Controls.Add(this.label17);
@@ -672,5 +696,7 @@
         private System.Windows.Forms.RichTextBox richTextBox4;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.ComboBox workMode;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.RichTextBox richTextBox5;
     }
 }

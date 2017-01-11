@@ -99,6 +99,7 @@ namespace RecommendationBuilder
         public HashSet<UserRestrictions> preferences; // Preferences for meal, for example- meat
 
         // Debug information
-        public Dictionary<string, double> NutrientGrades = new Dictionary<string, double>();
+        public Dictionary<string, double> MinNutrientGrades = new Dictionary<string, double>();
+        public Dictionary<string, double> MaxNutrientGrades = new Dictionary<string, double>();
     }
 }

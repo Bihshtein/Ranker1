@@ -35,10 +35,18 @@ namespace LogicRunner
             }
             }
 
-        public string Scores {
+        public string MinScores {
             get {
                 string res = string.Empty;
-                _obj.GradeInfo.NutrientGrades.ToList().ForEach(value => res += value.Key + " : " + value.Value.ToString("N2") + " \n");
+                _obj.GradeInfo.MinNutrientGrades.ToList().ForEach(value => res += value.Key + " : " + value.Value.ToString("N2") + " \n");
+                return res;
+            }
+        }
+
+        public string MaxScores {
+            get {
+                string res = string.Empty;
+                _obj.GradeInfo.MaxNutrientGrades.ToList().ForEach(value => res += value.Key + " : " + value.Value.ToString("N2") + " \n");
                 return res;
             }
         }
