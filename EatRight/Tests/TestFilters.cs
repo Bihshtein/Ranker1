@@ -260,5 +260,60 @@ namespace Tests
             // There's no meal with the property in the meals list, so we expect no meals to be generated.
             Assert.IsNull(reco);
         }
+
+        [TestMethod]
+        public void TestKosherFilters()
+        {
+            var unit = new RestDBInterface();
+
+            Recipe breakfast1 = new Recipe() // With seafood
+            {
+                ID = 0,
+                Name = "Breakfast1",
+                ProductsWeight = new Dictionary<string, double>() { { "Shark", 1 } },
+                Types = new HashSet<MealType>() { MealType.Breakfast }
+            };
+
+            Recipe breakfast2 = new Recipe() // With ham
+            {
+                ID = 1,
+                Name = "Breakfast2",
+                ProductsWeight = new Dictionary<string, double>() { { "Ham", 1 } },
+                Types = new HashSet<MealType>() { MealType.Breakfast }
+            };
+
+            Recipe breakfast3 = new Recipe() // Meat and dairy combined
+            {
+                ID = 2,
+                Name = "Breakfast3",
+                ProductsWeight = new Dictionary<string, double>() { { "Chicken breast halves", 1 }, { "Butter", 1 } },
+                Types = new HashSet<MealType>() { MealType.Breakfast }
+            };
+
+            breakfast1.CalculateNutValuesAndCalories();
+            breakfast2.CalculateNutValuesAndCalories();
+            breakfast3.CalculateNutValuesAndCalories();
+
+            unit.TestsRecipes.Empty();
+            unit.TestsRecipes.Add(breakfast1);
+            unit.TestsRecipes.Add(breakfast2);
+            unit.TestsRecipes.Add(breakfast3);
+
+            var userProfile = new UserProfile() { Age = 30, Gender = GenderType.Male };
+
+            var range = new MealSuggestionRange() { Length = 1, MealType = MealType.Breakfast };
+
+            var recommendationDB = RecommendationDBGenerator.FromUserProfile(userProfile, unit);
+            recommendationDB.range = range;
+            recommendationDB.FiltersSet = new HashSet<FilterType>()
+            { FilterType.OnlyKosherProductsMealFilter, FilterType.NoMeatDairyMealFilter };
+
+            var recommendationGenerator = new RecommendationGenerator(unit, recommendationDB, false, true);
+            var reco = recommendationGenerator.GetRecommendation();
+
+            // Assertions
+            // There's no meal with the property in the meals list, so we expect no meals to be generated.
+            Assert.IsNull(reco);
+        }
     }
 }

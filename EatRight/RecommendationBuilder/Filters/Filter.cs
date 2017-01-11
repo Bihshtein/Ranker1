@@ -51,6 +51,10 @@ namespace RecommendationBuilder.Filters
                     return new HasNoSeafoodMealFilter();
                 case FilterType.VeganMealFilter:
                     return new VeganMealFilter();
+                case FilterType.OnlyKosherProductsMealFilter:
+                    return new OnlyKosherProductsMealFilter();
+                case FilterType.NoMeatDairyMealFilter:
+                    return new NoMeatDairyMealFilter();
 
                 default:
                     // TODO: better handle errors
