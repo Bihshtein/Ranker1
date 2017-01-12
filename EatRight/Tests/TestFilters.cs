@@ -41,8 +41,8 @@ namespace Tests
                 Types = new HashSet<MealType>() { MealType.Breakfast }
             };
 
-            goodBreakfast.CalculateNutValuesAndCalories();
-            badBreakfast.CalculateNutValuesAndCalories();
+            goodBreakfast.CalculateProperties();
+            badBreakfast.CalculateProperties();
 
             unit.TestsRecipes.Empty();
             unit.TestsRecipes.Add(goodBreakfast);
@@ -101,7 +101,7 @@ namespace Tests
                 Types = new HashSet<MealType>() { MealType.Breakfast }
             };
 
-            breakfast.CalculateNutValuesAndCalories();
+            breakfast.CalculateProperties();
 
             unit.TestsRecipes.Empty();
             unit.TestsRecipes.Add(breakfast);
@@ -133,7 +133,7 @@ namespace Tests
                 Types = new HashSet<MealType>() { MealType.Breakfast }
             };
 
-            breakfast.CalculateNutValuesAndCalories();
+            breakfast.CalculateProperties();
 
             unit.TestsRecipes.Empty();
             unit.TestsRecipes.Add(breakfast);
@@ -236,9 +236,9 @@ namespace Tests
                 Types = new HashSet<MealType>() { MealType.Breakfast }
             };
 
-            breakfast1.CalculateNutValuesAndCalories();
-            breakfast2.CalculateNutValuesAndCalories();
-            breakfast3.CalculateNutValuesAndCalories();
+            breakfast1.CalculateProperties();
+            breakfast2.CalculateProperties();
+            breakfast3.CalculateProperties();
 
             unit.TestsRecipes.Empty();
             unit.TestsRecipes.Add(breakfast1);
@@ -290,9 +290,9 @@ namespace Tests
                 Types = new HashSet<MealType>() { MealType.Breakfast }
             };
 
-            breakfast1.CalculateNutValuesAndCalories();
-            breakfast2.CalculateNutValuesAndCalories();
-            breakfast3.CalculateNutValuesAndCalories();
+            breakfast1.CalculateProperties();
+            breakfast2.CalculateProperties();
+            breakfast3.CalculateProperties();
 
             unit.TestsRecipes.Empty();
             unit.TestsRecipes.Add(breakfast1);

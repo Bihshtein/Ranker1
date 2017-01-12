@@ -7,19 +7,17 @@ using System.Threading.Tasks;
 
 namespace RecommendationBuilder.Filters.MealFilters
 {
-    class HasDairyMealFilter : ProductPropertyMealFilter
+    class HasDairyMealFilter : MealFilter
     {
-        protected override bool HasProperty(Product product)
-        {
-            return product.Types.Contains(ProductType.Dairy);
-        }
-
         public HasDairyMealFilter()
         {
-            hasProperty = true;
-
             Description = "The meal contains dairy products";
             Type = FilterType.HasDairyMealFilter;
+        }
+
+        protected override Boolean InternalIsValid(Meal meal)
+        {
+            return meal.Recipe.ProductTypes.Contains(ProductType.Dairy);
         }
     }
 }

@@ -17,31 +17,7 @@ namespace RecommendationBuilder.Filters.MealFilters
 
         protected override Boolean InternalIsValid(Meal meal)
         {
-            var hasMeat = false;
-            var hasDairy = false;
-
-            foreach (var entry in meal.Recipe.ProductsWeight)
-            {
-                var prodName = entry.Key;
-                var product = Queries<Product>.GetMatchingProductsForIngredient(prodName)[0];
-                if (product.Types.Contains(ProductType.Meat))
-                {
-                    if (hasDairy)
-                    {
-                        return false;
-                    }
-                    hasMeat = true;
-                }
-                if (product.Types.Contains(ProductType.Dairy))
-                {
-                    if (hasMeat)
-                    {
-                        return false;
-                    }
-                    hasDairy = true;
-                }
-            }
-            return (!hasMeat) || (!hasDairy);
+            return !(meal.Recipe.ProductTypes.Contains(ProductType.Dairy) && meal.Recipe.ProductTypes.Contains(ProductType.Meat));
         }
     }
 }

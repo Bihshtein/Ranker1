@@ -7,19 +7,17 @@ using System.Threading.Tasks;
 
 namespace RecommendationBuilder.Filters.MealFilters
 {
-    class VeganMealFilter : ProductPropertyMealFilter
+    class VeganMealFilter : MealFilter
     {
-        protected override bool HasProperty(Product product)
-        {
-            return product.Types.Contains(ProductType.FromAnimal);
-        }
-
         public VeganMealFilter()
         {
-            hasProperty = false;
-
             Description = "The meal contain only vegan products";
             Type = FilterType.VeganMealFilter;
+        }
+
+        protected override Boolean InternalIsValid(Meal meal)
+        {
+            return !meal.Recipe.ProductTypes.Contains(ProductType.FromAnimal);
         }
     }
 }

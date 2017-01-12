@@ -138,9 +138,17 @@ namespace LogicRunner
             manager.TakeTime("creating recommendation generator");
             IEnumerable<Meal> meals = null;
             if (workMode.SelectedItem.ToString() == "Debug")
+            {
                 meals = generator.GetMealsList();
+            }
             else
-                meals = generator.GetRecommendation().MealsSet;
+            {
+                meals = null;
+                if (generator.GetRecommendation() != null)
+                {
+                    meals = generator.GetRecommendation().MealsSet;
+                }
+            }
             if (meals == null) {
                 manager.End();
                 MessageBox.Show("I'm sorry, but I can't recommend on any " + mealType.SelectedItem.ToString() + "s");

@@ -74,6 +74,8 @@ namespace InitRecipes {
                 else {
                     var product = res[0];
 
+                    recipe.ProductTypes.UnionWith(product.Types);
+
                     var retProducts = new List<string>();
 
                     var usdaKey = string.Format("{0} => <0/{3}> [{1}] {2}", innerpart, product.ID, product.USDAString, res.Count);

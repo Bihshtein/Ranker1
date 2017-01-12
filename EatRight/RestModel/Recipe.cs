@@ -38,6 +38,8 @@ namespace RestModel  {
         public HashSet<MealType> Types { get; set;  }
         [BsonElement("_categories")]
         public HashSet<RecipeCategory> Categories { get; set; }
+        [BsonElement("_productTypes")]
+        public HashSet<ProductType> ProductTypes { get; set; } = new HashSet<ProductType>();
         [BsonElement("_name")]
         public string Name { get; set; }
         [BsonElement("MealType")]
@@ -79,6 +81,26 @@ namespace RestModel  {
         public Boolean HasCategory(RecipeCategory category)
         {
             return Categories != null && Categories.Contains(category);
+        }
+
+        public void CalculateProperties()
+        {
+            CalculateProductTypes();
+            CalculateNutValuesAndCalories();
+        }
+
+        public void CalculateProductTypes()
+        {
+            foreach (var pw in ProductsWeight)
+            {
+                var products = Queries<Product>.GetMatchingProductsForIngredient(pw.Key);
+                if (products == null || products.Count == 0)
+                {
+                    continue;
+                }
+                var product = products[0];
+                ProductTypes.UnionWith(product.Types);
+            }
         }
 
         public bool CalculateNutValuesAndCalories()

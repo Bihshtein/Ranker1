@@ -7,19 +7,17 @@ using System.Threading.Tasks;
 
 namespace RecommendationBuilder.Filters.MealFilters
 {
-    class HasNoFishMealFilter : ProductPropertyMealFilter
+    class HasNoFishMealFilter : MealFilter
     {
-        protected override bool HasProperty(Product product)
-        {
-            return product.Types.Contains(ProductType.Fish);
-        }
-
         public HasNoFishMealFilter()
         {
-            hasProperty = false;
-
             Description = "The meal doesn't contain fish products";
             Type = FilterType.HasNoFishMealFilter;
+        }
+
+        protected override Boolean InternalIsValid(Meal meal)
+        {
+            return !meal.Recipe.ProductTypes.Contains(ProductType.Fish);
         }
     }
 }
