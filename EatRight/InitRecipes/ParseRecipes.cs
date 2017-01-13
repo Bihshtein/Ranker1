@@ -16,6 +16,64 @@ namespace InitRecipes {
         public static object Locker = new object();
         public static string FolderPath = Assembly.GetExecutingAssembly().Location + @"\..\..\..\..\LocalDB\";
         public static List<int> Indexes;
+        private static Dictionary<MealType, string> typeURLs = new Dictionary<MealType, string>() {
+            { MealType.Breakfast,  "78/breakfast-and-brunch" },
+            { MealType.Dinner,  "17562/dinner" }
+        };
+
+        private static HashSet<int> GetRecipeIdsByURL(string categoryURL)
+        {
+            var client = new WebClient();
+            var first = true;
+            var pageCount = 2;
+            var ids = new HashSet<int>();
+            while (true)
+            {
+                string pageStr = null;
+                var urlSuffix = first ? "" : ("?page=" + pageCount);
+                var url = "http://allrecipes.com/recipes/" + categoryURL + "/" + urlSuffix;
+                try
+                {
+                    pageStr = client.DownloadString(url);
+                }
+                catch (Exception) // We've passed the last page
+                {
+                    break;
+                }
+
+                if (first)
+                {
+                    first = false;
+                }
+                else
+                {
+                    if (pageCount % 10 == 0)
+                    {
+                        System.Console.WriteLine("Locating recipes in " + categoryURL + ": Parsing page " + pageCount);
+                    }
+                    pageCount++;
+                }
+
+                // Split the whole page str by recipe URLs. We assume that each recipe URL on this page is relevant
+                string[] parts = pageStr.Split(new string[] { "/recipe/" }, StringSplitOptions.None);
+                foreach (var part in parts)
+                {
+                    string[] splittedPart = part.Split('/');
+                    if (splittedPart.Length == 0)
+                    {
+                        continue;
+                    }
+                    var idStr = splittedPart[0];
+                    int id;
+                    if (int.TryParse(idStr, out id))
+                    {
+                        ids.Add(id);
+                    }
+                }
+            }
+
+            return ids;
+        }
 
         public static void CreateDB() {
             Indexes = File.ReadAllLines(FolderPath + "recipes_num.txt").ToList().ConvertAll<int>((a => int.Parse(a)));
