@@ -41,7 +41,6 @@ namespace LogicRunner
             
             comboBox4.DataSource = new string[] { "Fixed", "Internet", "Both" };
             workMode.DataSource = new string[] { "Recommend", "Debug" };
-            totalCalories.DataSource = new List<int> { 500, 1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500, 5000 };
             var range = new List<int> { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21 };
 
             calories.DataSource = new List<int>(range);
@@ -51,8 +50,7 @@ namespace LogicRunner
             servings.DataSource = new List<int>(range);
             idealServings.DataSource = new List<int>(range);
             recommendationsNum.DataSource = new List<int>(range);
-
-            totalCalories.SelectedIndex = 5;
+            activityLevel.DataSource = Enum.GetNames(typeof(PhysicalActivityLevel));
             idealServings.SelectedIndex = 4;
             ageGender.SelectedIndex = 8;
             maxValues.SelectedIndex = 8;
@@ -82,7 +80,9 @@ namespace LogicRunner
 
             manager.Reset();
             manager.TakeTime("starting time");
-
+            uProfile.activityLevel = (PhysicalActivityLevel)Enum.Parse(typeof(PhysicalActivityLevel),activityLevel.SelectedItem.ToString());
+            uProfile.Weight = int.Parse(txtWeight.Text);
+            uProfile.Height = int.Parse(txtHeight.Text);
             var recommendationDB = RecommendationDBGenerator.FromUserProfile(uProfile, unit);
 
             manager.TakeTime("get recommendation db from user profile");
@@ -108,7 +108,16 @@ namespace LogicRunner
                 recommendationDB.preferences.Add(UserRestrictions.NoMeat);
             if (NoSeafood.Checked)
                 recommendationDB.preferences.Add(UserRestrictions.NoSeafood);
-            recommendationDB.dailyCaloriesNum = int.Parse(totalCalories.SelectedItem.ToString());
+            if (Vegetarian.Checked)
+                recommendationDB.preferences.Add(UserRestrictions.Vegetarian);
+            if (Pescetarian.Checked)
+                recommendationDB.preferences.Add(UserRestrictions.Pescetarian);
+            if (Vegan.Checked)
+                recommendationDB.preferences.Add(UserRestrictions.Vegan);
+            if (Kosher.Checked)
+                recommendationDB.preferences.Add(UserRestrictions.Kosher);
+
+            txtCalories.Text = recommendationDB.dailyCaloriesNum.ToString();
               recommendationDB.GradersWeight = new Dictionary<GraderType, double>()
                {
                     // Meal graders
@@ -130,7 +139,7 @@ namespace LogicRunner
                 catch {
                     recipes = new HashSet<int>(File.ReadAllLines(FolderPath + "recipes_num.txt").ToList().ConvertAll<int>((a => int.Parse(a))));
                 }
-                generator = new RecommendationGenerator(unit, recommendationDB, recipes, int.Parse(totalCalories.SelectedItem.ToString()));
+                generator = new RecommendationGenerator(unit, recommendationDB, recipes, int.Parse(txtCalories.Text));
             }
             else
                 generator = new RecommendationGenerator(unit, recommendationDB, useDBRecipes, useTestsRecipes);
@@ -243,6 +252,18 @@ namespace LogicRunner
                     useTestsRecipes = true;
                     break;
             }
+        }
+
+        private void LogicRunnerForm_Load(object sender, EventArgs e) {
+
+        }
+
+        private void label13_Click(object sender, EventArgs e) {
+
+        }
+
+        private void recommendationsNum_SelectedIndexChanged(object sender, EventArgs e) {
+
         }
     }
 }
