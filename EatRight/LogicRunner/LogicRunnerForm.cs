@@ -38,7 +38,7 @@ namespace LogicRunner
             ageGender.DataSource = bindingSource1.DataSource;
             dataGridView1.AutoGenerateColumns = true;
             mealType.DataSource = Enum.GetNames(typeof(MealType));
-            
+            minMax.DataSource = new string[] { "min", "max" };
             comboBox4.DataSource = new string[] { "Fixed", "Internet", "Both" };
             workMode.DataSource = new string[] { "Recommend", "Debug" };
             var range = new List<int> { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21 };
@@ -180,7 +180,6 @@ namespace LogicRunner
 
 
                 dataGridView1.DataSource = this.bindingSource2;
-                
                 if (!alexiknow)
                 {
                     richTextBox1.DataBindings.Add("Text", bindingSource2, "GradersResult");
@@ -188,10 +187,9 @@ namespace LogicRunner
                     richTextBox3.DataBindings.Add("Text", bindingSource2, "NutValues");
                     richTextBox4.DataBindings.Add("Text", bindingSource2, "MinScores");
                     richTextBox5.DataBindings.Add("Text", bindingSource2, "MaxScores");
-                    alexiknow = true;
                 }
                 manager.TakeTime("setting data source and rich text data binding");
-                
+                alexiknow = true;
                 manager.End();
             }
             
@@ -264,6 +262,19 @@ namespace LogicRunner
 
         private void recommendationsNum_SelectedIndexChanged(object sender, EventArgs e) {
 
+        }
+
+        private void minMax_SelectedIndexChanged(object sender, EventArgs e) {
+          //  if (this.alexiknow) {
+                if (minMax.SelectedItem.ToString() == "min") {
+                    richTextBox4.Visible = false;
+                    richTextBox5.Visible = true;
+                }
+                else {
+                    richTextBox4.Visible = true;
+                    richTextBox5.Visible = false;
+                }
+            //    }
         }
     }
 }

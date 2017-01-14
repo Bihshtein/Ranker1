@@ -8,8 +8,17 @@ using Logic;
 
 namespace RecommendationBuilder
 {
+
+   
     public class Meal : RecommendationObject
     {
+        public static Meal operator +(Meal m1, Meal m2) {
+            var meal = new  Meal(m1.Recipe);
+            meal.CaloriesNum = m1.Recipe.TotalCaloriesNum + m2.Recipe.TotalCaloriesNum;
+            m1.Recipe.TotalNutValues.Keys.ToList().ForEach(key =>
+                meal.NutValues.Add(key, m1.Recipe.TotalNutValues[key] + m2.Recipe.TotalNutValues[key]));
+            return meal;
+        }
         public Dictionary<string, double> NutValues { get; set; }
         public double CaloriesNum { get; set; }
 
@@ -42,4 +51,7 @@ namespace RecommendationBuilder
 
         public Recipe Recipe { get; set; }
     }
+
+
+
 }
