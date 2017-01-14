@@ -195,6 +195,15 @@ namespace RestModel
         // Social link
     }
 
+    public enum PhysicalActivityLevel
+    {
+        Sedentary, // Little to no exercise
+        LightlyActive, // Light exercise, 1-3 days a week
+        ModeratelyActive, // Moderate exercise, 3-5 days a week
+        VeriActive, // Hard exercise, 6-7 days a week
+        ExtraActive // Very hard exercise, twice a day
+    }
+
     public class UserProfile
     {
         public string Name { get; set; }
@@ -209,6 +218,10 @@ namespace RestModel
 
         public UserDietProfile DietProfile { get; protected set; }
         public UserSocialProfile SocialProfile { get; protected set; }
+
+        public int Weight { get; set; } // In kilograms
+        public int Height { get; set; } // In centimeters
+        public PhysicalActivityLevel activityLevel { get; set; } = PhysicalActivityLevel.Sedentary;
 
         // TODO: Add user credentials / Hash keys
         public int Id { get; set; }

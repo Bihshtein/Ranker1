@@ -487,30 +487,45 @@ namespace Tests
             };
 
             var babyProfile = new UserProfile() { Age = 3, Gender = GenderType.Male };
-            var manProfile = new UserProfile() { Age = 30, Gender = GenderType.Male };
+            var manProfile = new UserProfile() { Age = 30, Gender = GenderType.Male, Height = 175, Weight = 75 };
+            var sportitianProfile = new UserProfile()
+            { Age = 30, Gender = GenderType.Male, Height = 175, Weight = 75, activityLevel = PhysicalActivityLevel.VeriActive };
+            var womanProfile = new UserProfile() { Age = 30, Gender = GenderType.Female, Height = 175, Weight = 75 };
 
-            var babyRecommendationDB = RecommendationDBGenerator.FromUserProfile(babyProfile, unit);
-            var manRecommendationDB = RecommendationDBGenerator.FromUserProfile(manProfile, unit);
+            var babyRecoDB = RecommendationDBGenerator.FromUserProfile(babyProfile, unit);
+            var manRecoDB = RecommendationDBGenerator.FromUserProfile(manProfile, unit);
+            var sportitianRecoDB = RecommendationDBGenerator.FromUserProfile(sportitianProfile, unit);
+            var womanRecoDB = RecommendationDBGenerator.FromUserProfile(womanProfile, unit);
 
-            babyRecommendationDB.GradersWeight = graderWeights;
-            manRecommendationDB.GradersWeight = graderWeights;
+            babyRecoDB.GradersWeight = graderWeights;
+            manRecoDB.GradersWeight = graderWeights;
+            sportitianRecoDB.GradersWeight = graderWeights;
+            womanRecoDB.GradersWeight = graderWeights;
 
-            babyRecommendationDB.range = new MealSuggestionRange() { MealType = MealType.Breakfast, Length = 1 };
-            manRecommendationDB.range = new MealSuggestionRange() { MealType = MealType.Breakfast, Length = 1 };
+            babyRecoDB.range = new MealSuggestionRange() { MealType = MealType.Breakfast, Length = 1 };
+            manRecoDB.range = new MealSuggestionRange() { MealType = MealType.Breakfast, Length = 1 };
+            sportitianRecoDB.range = new MealSuggestionRange() { MealType = MealType.Breakfast, Length = 1 };
+            womanRecoDB.range = new MealSuggestionRange() { MealType = MealType.Breakfast, Length = 1 };
 
-            // Since all users currently get the same calories number, force a difference
-            babyRecommendationDB.dailyCaloriesNum = manRecommendationDB.dailyCaloriesNum / 2;
+            var babyRecoGen = new RecommendationGenerator(unit, babyRecoDB, false, true);
+            var manRecoGen = new RecommendationGenerator(unit, manRecoDB, false, true);
+            var sportitianRecoGen = new RecommendationGenerator(unit, sportitianRecoDB, false, true);
+            var womanRecoGen = new RecommendationGenerator(unit, womanRecoDB, false, true);
 
-            var babyRecommendationGen = new RecommendationGenerator(unit, babyRecommendationDB, false, true);
-            var manRecommendationGen = new RecommendationGenerator(unit, manRecommendationDB, false, true);
-
-            var babyMeal = babyRecommendationGen.GetMeal();
-            var manMeal = manRecommendationGen.GetMeal();
+            var babyMeal = babyRecoGen.GetMeal();
+            var manMeal = manRecoGen.GetMeal();
+            var sportitianMeal = sportitianRecoGen.GetMeal();
+            var womanMeal = womanRecoGen.GetMeal();
 
             // First, assert that the bigger meal was preferred
-            Assert.IsTrue(babyMeal.Recipe.ID == 1 && manMeal.Recipe.ID == 1);
+            Assert.IsTrue(babyMeal.Recipe.ID == 1 && manMeal.Recipe.ID == 1 &&
+                sportitianMeal.Recipe.ID == 1 && womanMeal.Recipe.ID == 1);
             // Second, assert that the man's grade was lower- the baby needs to eat less
             Assert.IsTrue(babyMeal.Grade > manMeal.Grade);
+            // Third, assert that the sportitian's grade was lower- he needs to eat more
+            Assert.IsTrue(manMeal.Grade > sportitianMeal.Grade);
+            // Last, assert that the man's grade was lower- woman needs to eat less
+            Assert.IsTrue(womanMeal.Grade > manMeal.Grade);
         }
 
         private void TestCaloriesCountGraderInternal(RestDBInterface unit)
