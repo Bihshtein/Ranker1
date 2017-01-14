@@ -86,6 +86,10 @@
       <Project>{52f8c30c-d623-4b42-9ab8-da649a1892b9}</Project>
       <Name>InitRecipes</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Logic\Logic.csproj">
+      <Project>{b797e613-7d9c-4a1c-99f8-97d296edbad0}</Project>
+      <Name>Logic</Name>
+    </ProjectReference>
     <ProjectReference Include="..\RecommendationBuilder\RecommendationBuilder.csproj">
       <Project>{9426ff15-9b65-4f16-918e-ed7a8e21d3f8}</Project>
       <Name>RecommendationBuilder</Name>

@@ -1,4 +1,5 @@
-﻿using MongoDB.Bson;
+﻿using Logic;
+using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 using System;
 using System.Collections.Generic;
@@ -100,13 +101,7 @@ namespace RestModel
         }
     }
 
-    public enum GenderType
-    {
-        Undefined = 0,
-        Female,
-        Male,
-        Any
-    }
+  
 
     public class GenderParam : DailyValueParam<GenderType>
     {
@@ -141,31 +136,6 @@ namespace RestModel
         public double MinValue { get; set; }
         [BsonElement("MaxValue")]
         public double MaxValue { get; set; }
-
-        public MinMaxDouble(MinMaxDouble other)
-        {
-            if (other == null) throw new ArgumentNullException("MinMaxDouble::(MinMaxDouble other)");
-            if (other.MinValue > other.MaxValue) throw new Exception("MinMaxDouble:: other.MinValue > other.MaxValue");
-
-            this.MinValue = other.MinValue;
-            this.MaxValue = other.MaxValue;
-        }
-
-        public MinMaxDouble(double min, double max)
-        {
-            if (max == -1)
-                max = double.PositiveInfinity;
-            if (min == -1)
-                min = double.NegativeInfinity;
-            this.MinValue = min;
-            this.MaxValue = max;
-        }
-
-        public MinMaxDouble(double minMaxValue)
-        {
-            this.MinValue = minMaxValue;
-            this.MaxValue = minMaxValue;
-        }
     }
     public class DailyValue : IQueryable
     {
@@ -232,8 +202,6 @@ namespace RestModel
             return Gender.ToString() + " " + Age.ToString();
         }
 
-    
-
 
         public DailyValue Clone()
         {
@@ -256,61 +224,17 @@ namespace RestModel
         {
             var ret = new DailyValue();
             ret.DailyValues = new Dictionary<string, MinMaxDouble>();
-            Map.Values.ToList().ForEach(key => ret.DailyValues.Add(key, new MinMaxDouble(-1)));
+            Map.Values.ToList().ForEach(key => ret.DailyValues.Add(key, new MinMaxDouble() ));
             ret.ResetDailyValues = ret.DailyValues;
             ret.Age = null;
             ret.Gender = null;
             return ret;
         }
 
-        public bool IsMinValid()
-        {
-            var valid = (Age != null) && (Gender != null);
-            if (!valid) return false;
-            foreach (var nutrient in DailyValues)
-            {
-                if ((double)nutrient.Value.MinValue == -1)
-                    return false;
-            }
-            return true;
-        }
-
       
         public Dictionary<string, MinMaxDouble> DuplicateDictionary()
         {
-            return DailyValues.ToDictionary(k => k.Key, k => new MinMaxDouble(k.Value.MinValue, k.Value.MaxValue ));
-        }
-
-     
-
-        public bool Increase(string dValue, double precentage)
-        {
-            if (!(DailyValues.ContainsKey(dValue))) return false;
-            DailyValues[dValue] = new MinMaxDouble(((MinMaxDouble)DailyValues[dValue]).MinValue + (((MinMaxDouble)DailyValues[dValue]).MinValue * precentage / 100));
-            return true;
-        }
-
-        public bool Decrease(string dValue, double precentage)
-        {
-            if (!(DailyValues.ContainsKey(dValue))) return false;
-            DailyValues[dValue] = new MinMaxDouble(((MinMaxDouble)DailyValues[dValue]).MinValue - (((MinMaxDouble)DailyValues[dValue]).MinValue * precentage / 100));
-            return true;
-        }
-
-        public bool SetMin(string dValue, double value)
-        {
-            if (!(DailyValues.ContainsKey(dValue)))
-                return false;
-            DailyValues[dValue].MinValue = value;
-            return true;
-        }
-
-        public bool Reset(string dValue, double value)
-        {
-            if (!(ResetDailyValues.ContainsKey(dValue) &&
-                (DailyValues.ContainsKey(dValue)))) return false;
-            DailyValues[dValue] = ResetDailyValues[dValue];
-            return true;
+            return DailyValues.ToDictionary(k => k.Key, k => new MinMaxDouble() { MinValue = k.Value.MinValue, MaxValue = k.Value.MaxValue });
         }
 
         public void Save()

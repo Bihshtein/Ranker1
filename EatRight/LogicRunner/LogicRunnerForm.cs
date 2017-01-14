@@ -1,4 +1,5 @@
 ﻿using InitRecipes;
+using Logic;
 using RecommendationBuilder;
 using RecommendationBuilder.Graders;
 using RestModel;
@@ -83,6 +84,8 @@ namespace LogicRunner
             uProfile.activityLevel = (PhysicalActivityLevel)Enum.Parse(typeof(PhysicalActivityLevel),activityLevel.SelectedItem.ToString());
             uProfile.Weight = int.Parse(txtWeight.Text);
             uProfile.Height = int.Parse(txtHeight.Text);
+            uProfile.Age = (ageGender.SelectedValue as DailyValue).Age.MaxAge;
+            uProfile.Gender = (ageGender.SelectedValue as DailyValue).Gender.Type;
             var recommendationDB = RecommendationDBGenerator.FromUserProfile(uProfile, unit);
 
             manager.TakeTime("get recommendation db from user profile");
@@ -266,7 +269,7 @@ namespace LogicRunner
 
         private void minMax_SelectedIndexChanged(object sender, EventArgs e) {
           //  if (this.alexiknow) {
-                if (minMax.SelectedItem.ToString() == "min") {
+                if (minMax.SelectedItem.ToString() == "max") {
                     richTextBox4.Visible = false;
                     richTextBox5.Visible = true;
                 }
@@ -278,3 +281,4 @@ namespace LogicRunner
         }
     }
 }
+

@@ -8,6 +8,7 @@ using RestModel;
 using RecommendationBuilder;
 using RecommendationBuilder.Graders;
 using InitRecipes;
+using Logic;
 
 namespace Tests
 {

@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using RestModel;
 using RecommendationBuilder.Graders;
+using Logic;
 
 namespace RecommendationBuilder
 {

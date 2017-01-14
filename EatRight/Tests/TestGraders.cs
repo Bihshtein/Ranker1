@@ -7,6 +7,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using RestModel;
 using RecommendationBuilder;
 using RecommendationBuilder.Graders;
+using Logic;
 
 namespace Tests
 {
