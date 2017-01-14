@@ -116,7 +116,7 @@ namespace RestModel  {
                 var res = GetProductWeight(pw.Key).Key;
                 var product = res[0];
                 var weight = pw.Value;
-                var prodNutValues = product.Nutrients().ToList();
+                var prodNutValues = product.NutrientsList();
 
                 var retProducts = new List<string>();
                 res.ForEach(x => retProducts.Add(string.Format("[{0}] {1}", x.ID, x.USDAString)));
@@ -136,7 +136,11 @@ namespace RestModel  {
                     TotalNutValues[entry.Key] = curValue + (entry.Value * (weight / Formulas.DefaultGrams));
                 }
 
-                TotalCaloriesNum += Formulas.GetTotalCalories(weight, product.Protein, product.Fat, product.Carbs);
+                TotalCaloriesNum += Formulas.GetTotalCalories(weight,
+                    product.Nutrients["Proximates"]["Protein"],
+                    product.Nutrients["Proximates"]["Total lipid (fat)"],
+                    product.Nutrients["Proximates"]["Carbohydrate, by difference"]);
+                    
             }
             
             return true;

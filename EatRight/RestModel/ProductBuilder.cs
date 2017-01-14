@@ -11,6 +11,7 @@ using System.Text.RegularExpressions;
 namespace RestModel {
     public class USDA
     {
+      
         public static Dictionary<string, string> FoodGroups = new Dictionary<string, string>() {
             {"Baked","1800"},
             {"Beverages", "1400"},
@@ -314,41 +315,24 @@ namespace RestModel {
             }
         }
 
+        
+
         private static void SetNutrientProperties(JArray nutrients, Product p) {
-            p.Protein = GetNutrient(nutrients, "Protein");   //203
-            p.Sugar = GetNutrient(nutrients, "Sugars, total");//269
-            p.Fat = GetNutrient(nutrients, "Total lipid (fat)");//204
-            p.Fiber = GetNutrient(nutrients, "Fiber, total dietary");//291
-            p.Carbs = GetNutrient(nutrients, "Carbohydrate, by difference");//205
-            p.VitaminC = GetNutrient(nutrients, "Vitamin C, total ascorbic acid");//401
-            p.Thiamin = GetNutrient(nutrients, "Thiamin");//404
-            p.Riboflavin = GetNutrient(nutrients, "Riboflavin");//405
-            p.Niacin = GetNutrient(nutrients, "Niacin");//406
-            p.PantothenicAcid = GetNutrient(nutrients, "Pantothenic acid");//410
-            p.VitaminB6 = GetNutrient(nutrients, "Vitamin B-6");//415
-            p.VitaminD = GetNutrient(nutrients, "Vitamin D");//328
-            p.VitaminB12 = GetNutrient(nutrients, "Vitamin B-12");//418
-            p.Folate = GetNutrient(nutrients, "Folate, total");//417
-            p.VitaminA = GetNutrient(nutrients, "Vitamin A, IU");//318
-            p.VitaminE = GetNutrient(nutrients, "Vitamin E (alpha-tocopherol)");//323
-            p.VitaminK = GetNutrient(nutrients, "Vitamin K (phylloquinone)");//430
-            p.Calcium = GetNutrient(nutrients, "Calcium, Ca");//301
-            p.Iron = GetNutrient(nutrients, "Iron, Fe");//303
-            p.Magnesium = GetNutrient(nutrients, "Magnesium, Mg");//304
-            p.Phosphorus = GetNutrient(nutrients, "Phosphorus, P");//305
-            p.Potassium = GetNutrient(nutrients, "Potassium, K");//306
-            p.Sodium = GetNutrient(nutrients, "Sodium, Na");//307
-            p.Zinc = GetNutrient(nutrients, "Zinc, Zn");//309
+            p.Nutrients = new Dictionary<string, Dictionary<string, double>>();
+            nutrients.ToList().ForEach(n => SetNutrient(nutrients, (dynamic)n, p));
         }
 
-        private static double GetNutrient(JArray array, string item) {
-            var obj = ((dynamic)array.FirstOrDefault((i) => ((dynamic)i).name == item));
-            if (obj == null)
-                return 0;
+      
+
+        private static void SetNutrient(JArray nutrients, dynamic obj, Product p) {
             double value,weight = 0;
             double.TryParse(obj.measures[0].value.ToString(), out value);
             double.TryParse(obj.measures[0].eqv.ToString(), out weight);
-            return value * (100.0 / weight);
+            if (!p.Nutrients.ContainsKey((string)obj.group))
+                p.Nutrients.Add((string)obj.group, new Dictionary<string, double>());
+            var name = ((string)obj.name);
+            if (!p.Nutrients[(string)obj.group].ContainsKey(name)) 
+                p.Nutrients[(string)obj.group].Add(name, value * (100.0 / weight));
         }
 
         private static void SetWeights(JArray array, string item, Product p) {

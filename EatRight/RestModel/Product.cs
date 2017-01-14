@@ -15,6 +15,7 @@ namespace RestModel {
 
     public class Product : IQueryable
     {
+
         public override int GetHashCode()
         {
             return ID;
@@ -66,114 +67,25 @@ namespace RestModel {
 
         public Dictionary<string, double> Weights;
 
-        [BsonElement("Protein")]
-        public double Protein { get; set; }
-
-        [BsonElement("Fat")]
-        public double Fat { get; set; }
-
-        [BsonElement("Sugar")]
-        public double Sugar { get; set; }
-
-        [BsonElement("Carbs")]
-        public double Carbs { get; set; }
-
-        [BsonElement("VitaminC")]
-        public double VitaminC { get; set; }
-
-        [BsonElement("Thiamin")]
-        public double Thiamin { get; set; }
-
-        [BsonElement("Riboflavin")]
-        public double Riboflavin { get; set; }
-
-        [BsonElement("Niacin")]
-        public double Niacin { get; set; }
-
-        [BsonElement("PantothenicAcid")]
-        public double PantothenicAcid { get; set; }
-
-        [BsonElement("VitaminB6")]
-        public double VitaminB6 { get; set; }
-
-        [BsonElement("VitaminB12")]
-        public double VitaminB12 { get; set; }
-
-        [BsonElement("Folate")]
-        public double Folate { get; set; }
-
-        [BsonElement("VitaminD")]
-        public double VitaminD { get; set; }
-
-        [BsonElement("VitaminA")]
-        public double VitaminA { get; set; }
-
-        [BsonElement("VitaminE")]
-        public double VitaminE { get; set; }
-
-        [BsonElement("VitaminK")]
-        public double VitaminK { get; set; }
-
-        [BsonElement("Calcium")]
-        public double Calcium { get; set; }
-
-        [BsonElement("Iron")]
-        public double Iron { get; set; }
-
-        [BsonElement("Phosphorus")]
-        public double Phosphorus { get; set; }
-
-        [BsonElement("Zinc")]
-        public double Zinc { get; set; }
-
-        [BsonElement("Potassium")]
-        public double Potassium { get; set; }
-
-        [BsonElement("Sodium")]
-        public double Sodium { get; set; }
-
-        [BsonElement("Magnesium")]
-        public double Magnesium { get; set; }
-
-        [BsonElement("Fiber")]
-        public double Fiber { get; set; }
-
+        
+        public List<KeyValuePair<string, double>> NutrientsList() {
+            var prodNutValues = this.Nutrients["Proximates"].ToList();
+            if (this.Nutrients.ContainsKey("Minerals"))
+            prodNutValues.AddRange(this.Nutrients["Minerals"].ToList());
+            if (this.Nutrients.ContainsKey("Vitamins"))
+                prodNutValues.AddRange(this.Nutrients["Vitamins"].ToList());
+            if (this.Nutrients.ContainsKey("Lipids"))
+                prodNutValues.AddRange(this.Nutrients["Lipids"].ToList());
+            return prodNutValues;
+        }
         [BsonElement("Types")]
         public HashSet<ProductType> Types { get; set; }
 
         [BsonElement("USDAString")]
         public string USDAString { get; set; }
 
-        public Dictionary<string, double> Nutrients() {
-                var res = new Dictionary<string, double>();
-
-                res["Protein"] = Protein;
-                res["Fat"] = Fat;
-                res["Carbs"] = Carbs;
-                res["VitaminC"] = VitaminC;
-                res["Thiamin"] = Thiamin;
-                res["Riboflavin"] = Riboflavin;
-                res["Niacin"] = Niacin;
-                res["PantothenicAcid"] = PantothenicAcid;
-                res["VitaminB6"] = VitaminB6;
-                res["VitaminB12"] = VitaminB12;
-                res["Folate"] = Folate;
-                res["VitaminD"] = VitaminD;
-                res["VitaminA"] = VitaminA;
-                res["VitaminE"] = VitaminE;
-                res["VitaminK"] = VitaminK;
-                res["Calcium"] = Calcium;
-                res["Iron"] = Iron;
-                res["Phosphorus"] = Phosphorus;
-                res["Zinc"] = Zinc;
-                res["Potassium"] = Potassium;
-                res["Sodium"] = Sodium;
-                res["Magnesium"] = Magnesium;
-                res["Fiber"] = Fiber;
-                res["Sugar"] = Sugar;
-
-            return res;
-        }
+        [BsonElement("Nutrients")]
+        public Dictionary<string,Dictionary<string, double>> Nutrients { get; set; }
 
         public string GetName()
         {

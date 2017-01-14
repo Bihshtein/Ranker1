@@ -70,7 +70,7 @@ namespace Tests
 
             // Not random for now
             var recommendationDB = new RecommendationDB();
-            recommendationDB.dailyValues = RestRepository<Product>.DailyValues.ToDictionary(k => k.Key, k => new MinMaxDouble(k.Value));
+            recommendationDB.dailyValues = new RestDBInterface().DailyValues.GetAllList()[0].DailyValues;
             recommendationDB.dailyCaloriesNum = 3000;
             recommendationDB.range = new MenuSuggestionRange() { Length = rand.Next(1, 7) };
             recommendationDB.productFlavorGrade = new Dictionary<string,double>() {
@@ -90,7 +90,7 @@ namespace Tests
 
             // Not random for now
             var recommendationDB = new RecommendationDB();
-            recommendationDB.dailyValues = RestRepository<Product>.DailyValues.ToDictionary(k => k.Key, k => new MinMaxDouble(k.Value));
+            recommendationDB.dailyValues = new RestDBInterface().DailyValues.GetAllList()[0].DailyValues;
             recommendationDB.dailyCaloriesNum = 3000;
             recommendationDB.range = new MealSuggestionRange() { Length = mealsNum, MealType = MealType.Breakfast };
             recommendationDB.productFlavorGrade = new Dictionary<string, double>() {
@@ -155,7 +155,10 @@ namespace Tests
 
                     var product = allProducts[prodInd];
 
-                    caloriesInCurMeal += Formulas.GetTotalCalories(prodWeight, product.Protein, product.Fat, product.Carbs);
+                    caloriesInCurMeal += Formulas.GetTotalCalories(prodWeight,
+                    product.Nutrients["Proximates"]["Protein"],
+                    product.Nutrients["Proximates"]["Total lipid (fat)"],
+                    product.Nutrients["Proximates"]["Carbohydrate, by difference"]);
                 }
 
                 // Generate random type

@@ -15,90 +15,56 @@ namespace Tests {
 
         [TestMethod]
         public void ChickenBreast() {
-            var unit = new RestDBInterface();
-            var res = unit.Products.Queries.QueryByNameAndValue("breast", "chicken","VitaminB12");
-            Assert.IsTrue(res.Count == 16);
-            Assert.IsTrue((res[res.Count-1].VitaminB12 / res[0].VitaminB12) >2 );
-            Assert.IsTrue((res[res.Count - 1].VitaminB12 / res[0].VitaminB12) < 3);
+            CheckNutrientDiff("breast", "chicken", "Vitamins", "Vitamin B-12",2,3,16);
         }
-
-
         [TestMethod]
         public void Tendterloin() {
-            var unit = new RestDBInterface();
-            var res = unit.Products.Queries.QueryByNameAndValue("tenderloin","Beef", "VitaminB12");
-            Assert.IsTrue((res[res.Count-1].VitaminB12 / res[0].VitaminB12) >5);
-            Assert.IsTrue((res[res.Count - 1].VitaminB12 / res[0].VitaminB12)< 6);
-            Assert.IsTrue(res.Count == 46);
+            CheckNutrientDiff("tenderloin","Beef", "Vitamins", "Vitamin B-12",5,6,46);
         }
-
-
         [TestMethod]
-        public void Ham() {
-            var unit = new RestDBInterface();
-            var res = unit.Products.Queries.QueryByNameAndValue("ham", "Pork", "VitaminB12");
-            Assert.IsTrue((res[res.Count - 1].VitaminB12 / res[0].VitaminB12) > 3);
-            Assert.IsTrue((res[res.Count - 1].VitaminB12 / res[0].VitaminB12) <4);
-            Assert.IsTrue(res.Count == 87);
+        public void Ham(){
+            CheckNutrientDiff("ham", "Pork","Vitamins", "Vitamin B-12",3,4,87);
         }
-
-
         [TestMethod]
         public void Tomato() {
-            var unit = new RestDBInterface();
-            var res = unit.Products.Queries.QueryByNameAndValue("Tomato", "Vegs", "Magnesium");
-            Assert.IsTrue((res[res.Count - 1].Magnesium / res[0].Magnesium) >23);
-            Assert.IsTrue((res[res.Count - 1].Magnesium / res[0].Magnesium) < 24);
-            Assert.IsTrue(res.Count == 16);
+            CheckNutrientDiff("Tomato", "Vegs","Minerals", "Magnesium, Mg",23,25,16);
         }
-
-
         [TestMethod]
         public void Apple() {
-            var unit = new RestDBInterface();
-            var res = unit.Products.Queries.QueryByNameAndValue("Apples", "Fruits", "Carbs");
-            Assert.IsTrue((res[res.Count - 1].Carbs / res[0].Carbs) > 7);
-            Assert.IsTrue((res[res.Count - 1].Carbs / res[0].Carbs) < 8);
-            Assert.IsTrue(res.Count == 18);
+            CheckNutrientDiff("Apples", "Fruits","Proximates", "Carbohydrate, by difference", 7,8,18);
         }
 
         [TestMethod]
         public void Egg() {
-            var unit = new RestDBInterface();
-            var res = unit.Products.Queries.QueryByNameAndValue("Egg", "Dairy", "Protein");
-            Assert.IsTrue((res[res.Count - 1].Protein / res[0].Protein) > 8);
-            Assert.IsTrue((res[res.Count - 1].Protein / res[0].Protein) < 9);
-            Assert.IsTrue(res.Count == 25);
+            CheckNutrientDiff("Egg", "Dairy", "Proximates", "Protein",8,9,25);
         }
-
 
         [TestMethod]
         public void Wine() {
-            var unit = new RestDBInterface();
-            var res = unit.Products.Queries.QueryByNameAndValue("wine", "Beverages", "Sugar", true);
-            Assert.IsTrue((res[res.Count - 1].Sugar / res[0].Sugar) > 12);
-            Assert.IsTrue(res.Count == 10);
+            CheckNutrientDiff("wine", "Beverages", "Proximates", "Sugars, total",12,13,10, true);
         }
-
 
         [TestMethod]
         public void Salmon() {
-            var unit = new RestDBInterface();
-            var res = unit.Products.Queries.QueryByNameAndValue("salmon", "Fish", "VitaminD");
-            Assert.IsTrue((res[res.Count - 1].VitaminD / res[0].VitaminD) > 2);
-            Assert.IsTrue((res[res.Count - 1].VitaminD / res[0].VitaminD) < 3);
-            Assert.IsTrue(res.Count == 14);
+            CheckNutrientDiff("salmon", "Fish", "Vitamins", "Vitamin D", 2, 3, 14);
         }
-
 
         [TestMethod]
         public void Bread() {
-            var unit = new RestDBInterface();
-            var res = unit.Products.Queries.QueryByNameAndValue("Bread", "Baked", "Fiber");
-            Assert.IsTrue((res[res.Count - 1].Fiber / res[0].Fiber) > 19);
-            Assert.IsTrue((res[res.Count - 1].Fiber / res[0].Fiber) < 20);
-            Assert.IsTrue(res.Count == 64);
+            CheckNutrientDiff("Bread", "Baked", "Proximates", "Fiber, total dietary", 19, 20, 64);
         }
+
+        private void CheckNutrientDiff(string name, string group,string nutGroup, string nutName, int minRatio, int maxRatio, int total,bool partial=false) { 
+            var unit = new RestDBInterface();
+            var res = unit.Products.Queries.QueryByNameAndValue(name, group, nutGroup, nutName,partial);
+            var max = res[res.Count - 1].Nutrients[nutGroup][nutName];
+            var min = res[0].Nutrients[nutGroup][nutName];
+            var ratio = max / min;
+            Assert.IsTrue(ratio > minRatio);
+            Assert.IsTrue(ratio < maxRatio);
+            Assert.IsTrue(res.Count == total);
+        }
+     
 
         [TestMethod]
         public void GetProductBySearchQuery()

@@ -53,15 +53,7 @@ namespace InitDailyValuesDB
 
         private bool ValidateDailyValuesList(List<DailyValue> dailyValuesList)
         {
-            for (var pIndex = 0; pIndex < dailyValuesList.Count; pIndex++)
-            {
-                dailyValuesList[pIndex].Set("Fat", 65);
-                dailyValuesList[pIndex].Set("PantothenicAcid", 15);
-
-                if (!dailyValuesList[pIndex].IsValid()) { return false; }
-            }
-
-            return true;
+            return dailyValuesList.All(val => val.IsMinValid());
         }
 
         private bool PopulateDailyValuesListFromLines(List<DailyValue> dailyValuesList, string[] lines, 
@@ -83,12 +75,14 @@ namespace InitDailyValuesDB
                         tempStr = tempStr.Replace("<", "");
                         tempStr = tempStr.Replace(",", "");
                         tempStr = tempStr.Replace("\"", "");
+                        tempStr = tempStr.Replace("?", "");
+                        tempStr = tempStr.Replace("%", "");
 
                         double val = -1;
 
                         if (!double.TryParse(tempStr, out val)) return false;
 
-                        if (!dailyValuesList[pIndex].Set(nameToProductDVMap[result[0]].Item1, val)) return false;
+                        if (!dailyValuesList[pIndex].SetMin(nameToProductDVMap[result[0]].Item1, val)) return false;
                     }
                 }
             }
@@ -110,50 +104,9 @@ namespace InitDailyValuesDB
         {
             public static Dictionary<string, Tuple<string, int>> NameToProductDV()
             {
-                return new Dictionary<string, Tuple<string, int>>()
-            {
-                //Macronutrients
-                { "Protein (g)" , new Tuple<string, int>("Protein", 0) },
-             //   { "Carbohydrate (g)" , new Tuple<string, int>("Protein", 0) },
-                { "Total fiber (g)" , new Tuple<string, int>("Fiber", 0) },
-           //     { "Total fat (% of calories)" , new Tuple<string, int>("Fat", 0) },
-         //       { "Saturated fat (% of calories)" , new Tuple<string, int>("Protein", 0) },
-            //    { "Linoleic acid (g)" , new Tuple<string, int>("Protein", 0) },
-           //     { "alpha-Linolenic acid (g)" , new Tuple<string, int>("Protein", 0) },
-          //      { "Cholesterol (mg)" , new Tuple<string, int>("Protein", 0) },
-
-                //Minerals
-                { "Calcium (mg)" , new Tuple<string, int>("Calcium", 0) },
-                { "Iron (mg)" , new Tuple<string, int>("Iron", 0) },
-                { "Magnesium (mg)" , new Tuple<string, int>("Magnesium", 0) },
-                { "Phosphorus (mg)" , new Tuple<string, int>("Phosphorus", 0) },
-                { "Potassium (mg)" , new Tuple<string, int>("Potassium", 0) },
-                { "Sodium (mg)" , new Tuple<string, int>("Sodium", 0) },
-                { "Zinc (mg)" , new Tuple<string, int>("Zinc", 0) },
-           //     { "Copper (mcg)" , new Tuple<string, int>("Protein", 0) },
-            //    { "Selenium (mcg)" , new Tuple<string, int>("Protein", 0) },
-
-                // vitamins
-                { "Vitamin A (mcg RAE)" , new Tuple<string, int>("VitaminA", 0) },
-                { "Vitamin Dh (mcg)" , new Tuple<string, int>("VitaminD", 0) },
-                { "Vitamin E (mg AT)" , new Tuple<string, int>("VitaminE", 0) },
-                { "Vitamin C (mg)" , new Tuple<string, int>("VitaminC", 0) },
-                { "Thiamin (mg)" , new Tuple<string, int>("Thiamin", 0) },
-                { "Riboflavin (mg)" , new Tuple<string, int>("Riboflavin", 0) },
-                { "Niacin (mg)" , new Tuple<string, int>("Niacin", 0) },
-                { "Folate (mcg)" , new Tuple<string, int>("Folate", 0) },
-                { "Vitamin B6 (mg)" , new Tuple<string, int>("VitaminB6", 0) },
-                { "Vitamin B12 (mcg)" , new Tuple<string, int>("VitaminB12", 0) },
-           //     { "Choline (mg)" , new Tuple<string, int>("Protein", 0) },
-                { "Vitamin K (mcg)" , new Tuple<string, int>("VitaminK", 0) },
-
-                // Missing to daily values (from excel) - all the commented out values
-
-                // Missing from daily values:
-                // PantothenicAcid - Supposed to be VitmainB5 but it's not in the table
-                // Fat - total fat and total saturated fat is in precetnage,
-                //       need to calc it to whatever fat is considered in the code
-            };
+                var nameToProduct = new Dictionary<string, Tuple<string, int>>();
+                DailyValue.Map.ToList().ForEach(item => nameToProduct.Add(item.Key, new Tuple<string, int>(item.Value, 0)));
+                return nameToProduct;
             }
         }
 

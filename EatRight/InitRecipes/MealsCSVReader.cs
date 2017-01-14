@@ -7,6 +7,8 @@ using System.Reflection;
 using System.IO;
 using RestModel;
 using Logic;
+using System.Globalization;
+using System.Threading;
 
 namespace InitRecipes {
     public class MealsCSVReader
@@ -15,6 +17,8 @@ namespace InitRecipes {
 
         public static void CreateFixedMealsList(RestDBInterface unit)
         {
+            var customCulture = (CultureInfo)Thread.CurrentThread.CurrentCulture.Clone(); customCulture.NumberFormat.NumberDecimalSeparator = ".";
+            Thread.CurrentThread.CurrentCulture = customCulture;
             unit.TestsRecipes.Empty();
             int curID = 0;
 

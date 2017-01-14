@@ -16,7 +16,7 @@ namespace RestModel {
             this.collection = collection;
         }
 
-        public List<Product> QueryByNameAndValue(string name, string group, string value, bool partial = false) {
+        public List<Product> QueryByNameAndValue(string name, string group,string nutGroup, string value, bool partial = false) {
             name = name.ToLower();
             group = group.ToLower();
             Expression<Func<Product, bool>> query;
@@ -32,8 +32,8 @@ namespace RestModel {
             var res = collection.Find<T>(query as Expression<Func<T, bool>>).ToList();
 
             var newRes = res.Cast<Product>().ToList();
-            newRes.RemoveAll(p => p.Nutrients()[value] == 0);
-            newRes.Sort((a, b) => a.Nutrients()[value] > b.Nutrients()[value] ? 1 : -1);
+            newRes.RemoveAll(p => !p.Nutrients[nutGroup].ContainsKey(value) || p.Nutrients[nutGroup][value] == 0);
+            newRes.Sort((a, b) => a.Nutrients[nutGroup][value] > b.Nutrients[nutGroup][value] ? 1 : -1);
             return newRes;
         }
 

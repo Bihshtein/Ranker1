@@ -153,8 +153,10 @@ namespace RestModel
 
         public MinMaxDouble(double min, double max)
         {
-            if (min > max) throw new Exception("MinMaxDouble:: min > max");
-
+            if (max == -1)
+                max = double.PositiveInfinity;
+            if (min == -1)
+                min = double.NegativeInfinity;
             this.MinValue = min;
             this.MaxValue = max;
         }
@@ -167,9 +169,43 @@ namespace RestModel
     }
     public class DailyValue : IQueryable
     {
-        public Dictionary<string, object> ResetDailyValues;
-        [BsonExtraElements]
-        public Dictionary<string, object> DailyValues;
+
+        public static Dictionary<string, string> Map = new Dictionary<string, string> {
+                //Macronutrients
+                { "Protein (g)" ,"Protein"},
+                {"Carbohydrate (g)" , "Carbohydrate, by difference" },
+                { "Total fiber (g)" , "Fiber, total dietary"},
+                { "Total fat (% of calories)" , "Total lipid (fat)" },
+               {"Saturated fat (% of calories)" , "Fatty acids, total saturated" },
+              /*  { "Linoleic acid (g)" , new Tuple<string, int>("Protein", 0) },
+                { "alpha-Linolenic acid (g)" , new Tuple<string, int>("Protein", 0) },*/
+                { "Cholesterol (mg)" , "Cholesterol"},
+                //Minerals
+                { "Calcium (mg)" , "Calcium, Ca"},
+                { "Iron (mg)" , "Iron, Fe"},
+                { "Magnesium (mg)" ,"Magnesium, Mg"},
+                { "Phosphorus (mg)", "Phosphorus, P"},
+                { "Potassium (mg)" , "Potassium, K"},
+                { "Sodium (mg)" , "Sodium, Na"},
+                { "Zinc (mg)" , "Zinc, Zn"},
+                { "Copper (mcg)" , "Copper, Cu"},
+                { "Selenium (mcg)" ,"Selenium, Se"},
+                // vitamins
+                { "Vitamin A (mcg RAE)" , "Vitamin A, IU"},
+                { "Vitamin Dh (mcg)" ,"Vitamin D"},
+                { "Vitamin E (mg AT)" , "Vitamin E (alpha-tocopherol)" },
+                { "Vitamin C (mg)" , "Vitamin C, total ascorbic acid"},
+                { "Thiamin (mg)" , "Thiamin"},
+                { "Riboflavin (mg)" , "Riboflavin"},
+                { "Niacin (mg)" , "Niacin"},
+                { "Folate (mcg)" , "Folate, total"},
+                { "Vitamin B6 (mg)" , "Vitamin B-6"},
+                { "Vitamin B12 (mcg)" , "Vitamin B-12"},
+                { "Choline (mg)" , "Choline, total"},
+                { "Vitamin K (mcg)" , "Vitamin K (phylloquinone)"},
+        };
+        public Dictionary<string, MinMaxDouble> ResetDailyValues;
+        public Dictionary<string, MinMaxDouble> DailyValues;
 
         public override int GetHashCode()
         {
@@ -202,8 +238,8 @@ namespace RestModel
         public DailyValue Clone()
         {
             var ret = new DailyValue();
-            ret.DailyValues = new Dictionary<string, object>(this.DailyValues);
-            ret.ResetDailyValues = new Dictionary<string, object>(this.ResetDailyValues);
+            ret.DailyValues = new Dictionary<string, MinMaxDouble>(this.DailyValues);
+            ret.ResetDailyValues = new Dictionary<string, MinMaxDouble>(this.ResetDailyValues);
             return ret;
         }
 
@@ -219,94 +255,33 @@ namespace RestModel
         public static DailyValue NullDefault()
         {
             var ret = new DailyValue();
-            ret.DailyValues = 
-                new Dictionary<string, object>()
-                {
-            { "Protein", new MinMaxDouble(-1) }, //
-            { "Fiber",new MinMaxDouble(-1)}, //
-            { "VitaminC",new MinMaxDouble(-1)}, //
-            { "Fat",new MinMaxDouble(-1) }, //
-            { "Thiamin",new MinMaxDouble(-1) }, //
-            { "Riboflavin",new MinMaxDouble(-1) }, //
-            { "Niacin",new MinMaxDouble(-1) }, //
-            { "PantothenicAcid",new MinMaxDouble(-1) }, // ?
-            { "VitaminB6",new MinMaxDouble(-1) }, //
-            { "VitaminB12",new MinMaxDouble(-1) }, //
-            { "VitaminD",new MinMaxDouble(-1) }, //
-            { "VitaminA",new MinMaxDouble(-1) }, //
-            { "Folate",new MinMaxDouble(-1) }, //
-            { "VitaminE",new MinMaxDouble(-1) }, //
-            { "VitaminK",new MinMaxDouble(-1) }, //
-            { "Calcium",new MinMaxDouble(-1)}, //
-            { "Iron",new MinMaxDouble(-1) }, //
-            { "Magnesium",new MinMaxDouble(-1) }, //
-            { "Phosphorus",new MinMaxDouble(-1) }, //
-            { "Potassium",new MinMaxDouble(-1) }, //
-            { "Sodium",new MinMaxDouble(-1) }, //
-            { "Zinc",new MinMaxDouble(-1) } //
-                };
+            ret.DailyValues = new Dictionary<string, MinMaxDouble>();
+            Map.Values.ToList().ForEach(key => ret.DailyValues.Add(key, new MinMaxDouble(-1)));
             ret.ResetDailyValues = ret.DailyValues;
             ret.Age = null;
             ret.Gender = null;
             return ret;
         }
 
-        public bool IsValid()
+        public bool IsMinValid()
         {
             var valid = (Age != null) && (Gender != null);
             if (!valid) return false;
             foreach (var nutrient in DailyValues)
             {
-                if (!(nutrient.Value is double) || ((double)nutrient.Value == -1)) return false;
+                if ((double)nutrient.Value.MinValue == -1)
+                    return false;
             }
             return true;
         }
 
-        public static DailyValue Default()
-        {
-            var ret = new DailyValue();
-            ret.DailyValues = 
-                new Dictionary<string, object>()
-                {
-            { "Protein", new MinMaxDouble(56) }, //
-            { "Fiber",new MinMaxDouble(25)}, //
-            { "VitaminC",new MinMaxDouble(90)}, //
-            { "Fat",new MinMaxDouble(65) }, //
-            { "Thiamin",new MinMaxDouble(1.2) }, //
-            { "Riboflavin",new MinMaxDouble(1.3) }, //
-            { "Niacin",new MinMaxDouble(18) }, //
-            { "PantothenicAcid",new MinMaxDouble(5) }, // ?
-            { "VitaminB6",new MinMaxDouble(1.3) }, //
-            { "VitaminB12",new MinMaxDouble(2.4) }, //
-            { "VitaminD",new MinMaxDouble(600) }, //
-            { "VitaminA",new MinMaxDouble(5000) }, //
-            { "Folate",new MinMaxDouble(400) }, //
-            { "VitaminE",new MinMaxDouble(15) }, //
-            { "VitaminK",new MinMaxDouble(80) }, //
-            { "Calcium",new MinMaxDouble(1000)}, //
-            { "Iron",new MinMaxDouble(11) }, //
-            { "Magnesium",new MinMaxDouble(400) }, //
-            { "Phosphorus",new MinMaxDouble(1000) }, //
-            { "Potassium",new MinMaxDouble(3500) }, //
-            { "Sodium",new MinMaxDouble(2400) }, //
-            { "Zinc",new MinMaxDouble(15) } //
-                };
-
-            ret.Age = new AgeParam(25, 30);
-            ret.Gender = new GenderParam();
-            ret.Gender.Type = GenderType.Any;
-            return ret;
-        }
-
+      
         public Dictionary<string, MinMaxDouble> DuplicateDictionary()
         {
-            return DailyValues.ToDictionary(k => k.Key, k => new MinMaxDouble((double)k.Value));
+            return DailyValues.ToDictionary(k => k.Key, k => new MinMaxDouble(k.Value.MinValue, k.Value.MaxValue ));
         }
 
-        public static DailyValue DefaultByDryParams(double age, int sex)
-        {
-            return Default();
-        }
+     
 
         public bool Increase(string dValue, double precentage)
         {
@@ -322,10 +297,11 @@ namespace RestModel
             return true;
         }
 
-        public bool Set(string dValue, double value)
+        public bool SetMin(string dValue, double value)
         {
-            if (!(DailyValues.ContainsKey(dValue))) return false;
-            DailyValues[dValue] = value;
+            if (!(DailyValues.ContainsKey(dValue)))
+                return false;
+            DailyValues[dValue].MinValue = value;
             return true;
         }
 
@@ -339,7 +315,7 @@ namespace RestModel
 
         public void Save()
         {
-            ResetDailyValues = new Dictionary<string, object>(DailyValues);
+            ResetDailyValues = new Dictionary<string, MinMaxDouble>(DailyValues);
         }
     }
 }

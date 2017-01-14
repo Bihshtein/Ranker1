@@ -79,13 +79,6 @@ namespace RestModel {
             return ret[0];
         }
 
-        public List<T> GetByProtein(double min) {
-            Expression<Func<Product, bool>> query = x => x.Protein > min;
-            return _collection.Find(query as Expression<Func<T, bool>>).ToList();
-        }
-
-
-
 
         public List<T> GetByGroupName(string name) {
             Expression<Func<Product, bool>> query = x => x.FoodGroup == name;
@@ -110,19 +103,19 @@ namespace RestModel {
         public static Dictionary<string, double> DailyValues = new Dictionary<string, double>() {
             {"Protein",56},
             {"Fiber",25},
-            {"VitaminC",90},
-            {"Fat",65 },
+            {"Vitamin C",90},
+            {"Total lipid (fat)",65 },
             {"Thiamin",1.2 },
             {"Riboflavin",1.3 },
             {"Niacin",18 },
-            {"PantothenicAcid",5 },
-            {"VitaminB6",1.3 },
-            {"VitaminB12",2.4 },
-            {"VitaminD",600 },
-            {"VitaminA",5000 },
+            //{"Pantothenic Acid",5 },
+            {"Vitamin B-6",1.3 },
+            {"Vitamin B-12",2.4 },
+            {"Vitamin D",600 },
+            {"Vitamin A",5000 },
             {"Folate",400 },
-            {"VitaminE",15 },
-            {"VitaminK",80 },
+            {"Vitamin E",15 },
+            {"Vitamin K (phylloquinone)",80 },
             {"Calcium",1000},
             {"Iron",11 },
             {"Magnesium",400 },

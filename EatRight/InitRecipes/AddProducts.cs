@@ -274,7 +274,7 @@ namespace InitRecipes {
             else
                 recipe.ProductsWeight.Add(innerpart, weight);
 
-            var prodNutValues = product.Nutrients().ToList();
+            var prodNutValues = product.NutrientsList().ToList();
 
             foreach (var entry in prodNutValues)
             {
@@ -287,7 +287,10 @@ namespace InitRecipes {
                 recipe.TotalNutValues[entry.Key] = curValue + (entry.Value * (weight / Formulas.DefaultGrams));
             }
 
-            recipe.TotalCaloriesNum += Formulas.GetTotalCalories(weight, product.Protein, product.Fat, product.Carbs);
+            recipe.TotalCaloriesNum += Formulas.GetTotalCalories(weight,
+                    product.Nutrients["Proximates"]["Protein"],
+                    product.Nutrients["Proximates"]["Total lipid (fat)"],
+                    product.Nutrients["Proximates"]["Carbohydrate, by difference"]);
         }
 
        

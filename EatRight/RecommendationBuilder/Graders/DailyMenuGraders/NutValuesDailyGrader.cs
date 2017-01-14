@@ -46,7 +46,7 @@ namespace RecommendationBuilder.Graders.DailyMenuGraders
                 double actualValue = 0;
                 if (idealValues.ContainsKey(nutrient))
                 {
-                    actualValue = actualValues[nutrient];
+                        actualValue = actualValues[nutrient];
                 }
 
                 double basicRatio = 0;
