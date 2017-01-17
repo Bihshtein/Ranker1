@@ -18,9 +18,9 @@ namespace Students.Services {
             return dbLayer.Products.GetByMeasure(name, min, vegetarian);
         }
 
-        public List<Product> GetTopFoods(int min)
+        public List<Product> GetIngredient(string ingredient)
         {
-            return dbLayer.Products.GetTopFoods(min);
+            return Queries<Product>.GetMatchingProductsForIngredient(ingredient);
         }
 
         public List<Product> GetFoodGroup(string group) {

@@ -21,10 +21,7 @@ namespace RestModel {
             return ID;
         }
 
-        public override bool Equals(object obj)
-        {
-            return ID.Equals(((Product)obj).ID);
-        }
+       
 
         [BsonElement("_id")]
         public int ID { get; set; }
@@ -64,7 +61,7 @@ namespace RestModel {
 
         [BsonElement("PackDetails")]
         public string PackDetails { get; set; }
-
+        [BsonElement("Weights")]
         public Dictionary<string, double> Weights;
 
         
