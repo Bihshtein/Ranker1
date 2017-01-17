@@ -38,15 +38,24 @@ namespace RecommendationBuilder.Graders.DailyMenuGraders
             Dictionary<string, double> actualValues, bool min)
         {
             double grade = 0;
+            int count = 0;
 
             // Compare to daily needed values
             foreach (var entry in idealValues)
             {
+                if ((min && entry.Value.MinValue == Double.NegativeInfinity) ||
+                    (!min && entry.Value.MaxValue == Double.PositiveInfinity))
+                {
+                    continue;
+                }
+
+                count++;
+
                 var nutrient = entry.Key;
                 double actualValue = 0;
                 if (idealValues.ContainsKey(nutrient))
                 {
-                        actualValue = actualValues[nutrient];
+                    actualValue = actualValues[nutrient];
                 }
 
                 double basicRatio = 0;
@@ -67,12 +76,13 @@ namespace RecommendationBuilder.Graders.DailyMenuGraders
                 {
                     RecommendationObject.recommendationDB.MinNutrientGrades[nutrient] = gradeRatio;
                 }
-                else {
+                else
+                {
                     RecommendationObject.recommendationDB.MaxNutrientGrades[nutrient] = gradeRatio;
                 }
             }
 
-            return grade / idealValues.Count;
+            return grade / count;
         }
 
         private Dictionary<string, double> GetNutritionValues(DailyMenu dailyMenu)
