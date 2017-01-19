@@ -13,14 +13,26 @@
         .controller('Query', Hello);
   
     function Hello($scope, $http) {
-        $scope.init = function (query) {
+        $scope.initProducts = function (query) {
             $http.get('http://localhost:51612/Api/Products/' + query).
                 then(function (data) {
-                    if ($scope.dict != null)
-                        $scope.dict[query] = angular.fromJson(data);
+                    if ($scope.dictProducts != null)
+                        $scope.dictProducts[query] = angular.fromJson(data);
                     else 
-                        $scope.dict = {
+                        $scope.dictProducts = {
                             query : angular.fromJson(data),
+                        };
+                });
+        };
+
+        $scope.initRecipes = function (query) {
+            $http.get('http://localhost:51612/Api/Meals/' + query).
+                then(function (data) {
+                    if ($scope.dictRecipes != null)
+                        $scope.dictRecipes[query] = angular.fromJson(data);
+                    else
+                        $scope.dictRecipes = {
+                            query: angular.fromJson(data),
                         };
                 });
         };

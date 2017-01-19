@@ -16,5 +16,13 @@ namespace WebServer.Controllers
             if (meals.Any()) return Request.CreateResponse(HttpStatusCode.OK, x);
             return Request.CreateErrorResponse(HttpStatusCode.NotFound, "No products found.");
         }
+
+        public HttpResponseMessage Get(string id) {
+
+            List<List<Recipe>> productsList = new List<List<Recipe>>() { new RestDBInterface().Recipes.Queries.GetByIngredient(id) };
+
+
+            return Request.CreateResponse(HttpStatusCode.OK, productsList);
+        }
     }
 }
