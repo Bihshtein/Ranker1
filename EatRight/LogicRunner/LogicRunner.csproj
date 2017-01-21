@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Hack.cs" />
     <Compile Include="LogicRunnerForm.cs">
       <SubType>Form</SubType>
     </Compile>

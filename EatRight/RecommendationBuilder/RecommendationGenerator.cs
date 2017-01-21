@@ -329,7 +329,7 @@ namespace RecommendationBuilder
 
                     graderStrToGain[grader.Description] = curScaledGrade;
                     graderStrToLoss[grader.Description] = entry.Value - curScaledGrade;
-                    gradersInfo.Add(new GraderInfo(grader.Type, entry.Value, curGrade));
+                    gradersInfo.Add(new GraderInfo() {Type = grader.Type, Weight = entry.Value, Grade = curGrade });
                 }
                 catch (ArgumentException)
                 {
@@ -449,7 +449,7 @@ namespace RecommendationBuilder
             }
             timer.TakeTime("recipes - get all");
 
-            mealsList = recipesList.Select(x => new Meal(x, fixedCaloriesNum)).ToList();
+            mealsList = recipesList.Select(x => new Meal() { Recipe = x }).ToList();
             timer.TakeTime("create meal list");
 
             mealsList = FilterList(mealsList, filterSet);

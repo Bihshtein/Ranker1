@@ -81,45 +81,46 @@ namespace LogicRunner
 
             manager.Reset();
             manager.TakeTime("starting time");
-            uProfile.activityLevel = (PhysicalActivityLevel)Enum.Parse(typeof(PhysicalActivityLevel),activityLevel.SelectedItem.ToString());
+            uProfile.ActivityLevel = (PhysicalActivityLevel)Enum.Parse(typeof(PhysicalActivityLevel),activityLevel.SelectedItem.ToString());
             uProfile.Weight = int.Parse(txtWeight.Text);
             uProfile.Height = int.Parse(txtHeight.Text);
             uProfile.Age = (ageGender.SelectedValue as DailyValue).Age.MaxAge;
             uProfile.Gender = (ageGender.SelectedValue as DailyValue).Gender.Type;
-            var recommendationDB = RecommendationDBGenerator.FromUserProfile(uProfile, unit);
+            
 
             manager.TakeTime("get recommendation db from user profile");
 
+          
+            uProfile.Restrictions = new HashSet<UserRestrictions>();
+            if (Meat.Checked)
+                uProfile.Restrictions.Add(UserRestrictions.Meat);
+            if (Fish.Checked)
+                uProfile.Restrictions.Add(UserRestrictions.Fish);
+            if (Dairy.Checked)
+                uProfile.Restrictions.Add(UserRestrictions.Dairy);
+            if (Seafood.Checked)
+                uProfile.Restrictions.Add(UserRestrictions.Seafood);
+            if (NoFish.Checked)
+                uProfile.Restrictions.Add(UserRestrictions.NoFish);
+            if (NoDairy.Checked)
+                uProfile.Restrictions.Add(UserRestrictions.NoDairy);
+            if (NoMeat.Checked)
+                uProfile.Restrictions.Add(UserRestrictions.NoMeat);
+            if (NoSeafood.Checked)
+                uProfile.Restrictions.Add(UserRestrictions.NoSeafood);
+            if (Vegetarian.Checked)
+                uProfile.Restrictions.Add(UserRestrictions.Vegetarian);
+            if (Pescetarian.Checked)
+                uProfile.Restrictions.Add(UserRestrictions.Pescetarian);
+            if (Vegan.Checked)
+                uProfile.Restrictions.Add(UserRestrictions.Vegan);
+            if (Kosher.Checked)
+                uProfile.Restrictions.Add(UserRestrictions.Kosher);
+            var recommendationDB = RecommendationDBGenerator.FromUserProfile(uProfile, unit);
             recommendationDB.idealServingsNum = int.Parse(idealServings.SelectedItem.ToString());
             recommendationDB.dailyValues = (ageGender.SelectedValue as DailyValue).DuplicateDictionary();
 
             recommendationDB.range = new MealSuggestionRange() { Length = int.Parse(recommendationsNum.SelectedItem.ToString()), MealType = (MealType)Enum.Parse(typeof(MealType), mealType.SelectedItem.ToString()) };
-            recommendationDB.preferences = new HashSet<UserRestrictions>();
-            if (Meat.Checked)
-                recommendationDB.preferences.Add(UserRestrictions.Meat);
-            if (Fish.Checked)
-                recommendationDB.preferences.Add(UserRestrictions.Fish);
-            if (Dairy.Checked)
-                recommendationDB.preferences.Add(UserRestrictions.Dairy);
-            if (Seafood.Checked)
-                recommendationDB.preferences.Add(UserRestrictions.Seafood);
-            if (NoFish.Checked)
-                recommendationDB.preferences.Add(UserRestrictions.NoFish);
-            if (NoDairy.Checked)
-                recommendationDB.preferences.Add(UserRestrictions.NoDairy);
-            if (NoMeat.Checked)
-                recommendationDB.preferences.Add(UserRestrictions.NoMeat);
-            if (NoSeafood.Checked)
-                recommendationDB.preferences.Add(UserRestrictions.NoSeafood);
-            if (Vegetarian.Checked)
-                recommendationDB.preferences.Add(UserRestrictions.Vegetarian);
-            if (Pescetarian.Checked)
-                recommendationDB.preferences.Add(UserRestrictions.Pescetarian);
-            if (Vegan.Checked)
-                recommendationDB.preferences.Add(UserRestrictions.Vegan);
-            if (Kosher.Checked)
-                recommendationDB.preferences.Add(UserRestrictions.Kosher);
-
             txtCalories.Text = recommendationDB.dailyCaloriesNum.ToString();
               recommendationDB.GradersWeight = new Dictionary<GraderType, double>()
                {

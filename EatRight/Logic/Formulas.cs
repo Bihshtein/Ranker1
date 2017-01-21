@@ -22,7 +22,7 @@ namespace Logic
         public int Pregnant { get; set; }
         public int Weight { get; set; } // In kilograms
         public int Height { get; set; } // In centimeters
-        public PhysicalActivityLevel activityLevel { get; set; } = PhysicalActivityLevel.Sedentary;
+        public PhysicalActivityLevel ActivityLevel{ get; set; } = PhysicalActivityLevel.Sedentary;
 
 
     }
@@ -54,7 +54,7 @@ namespace Logic
                         bmr = (int)(10 * userProfile.Weight + 6.25 * userProfile.Height - 5 * userProfile.Age - 161);
                     }
                     if (bmr > 0) {
-                        switch (userProfile.activityLevel) {
+                        switch (userProfile.ActivityLevel) {
                             case PhysicalActivityLevel.Sedentary:
                                 return (int)(bmr * 1.2);
                             case PhysicalActivityLevel.LightlyActive:

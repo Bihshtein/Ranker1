@@ -9,16 +9,9 @@ namespace RecommendationBuilder
 {
     public class GraderInfo
     {
-        public GraderInfo(GraderType type, double weight, double grade)
-        {
-            Type = type;
-            Weight = weight;
-            Grade = grade;
-        }
-
-        public GraderType Type { get; private set; }
-        public double Weight { get; private set; }
-        public double Grade { get; private set; }
+        public GraderType Type { get; set; }
+        public double Weight { get; set; }
+        public double Grade { get; set; }
     }
 
     public class GradeInfo

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Angular", "ANGULAR\Angular.csproj", "{8BA41284-FF39-4F88-AA4F-84A203AF6C5E}"
 EndProject
@@ -22,6 +22,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InitRecipes", "InitRecipes\InitRecipes.csproj", "{52F8C30C-D623-4B42-9AB8-DA649A1892B9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InitDailyValues", "InitDailyValues\InitDailyValues.csproj", "{B11F2BDA-B7F6-4D70-AF68-2494D2BA20EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InitUsers", "InitUsers\InitUsers.csproj", "{BFD820C5-4C9D-4C4E-9EC7-0BACBA57C1C2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -195,6 +197,22 @@ Global
 		{B11F2BDA-B7F6-4D70-AF68-2494D2BA20EE}.Release|x64.Build.0 = Release|Any CPU
 		{B11F2BDA-B7F6-4D70-AF68-2494D2BA20EE}.Release|x86.ActiveCfg = Release|Any CPU
 		{B11F2BDA-B7F6-4D70-AF68-2494D2BA20EE}.Release|x86.Build.0 = Release|Any CPU
+		{BFD820C5-4C9D-4C4E-9EC7-0BACBA57C1C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFD820C5-4C9D-4C4E-9EC7-0BACBA57C1C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFD820C5-4C9D-4C4E-9EC7-0BACBA57C1C2}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{BFD820C5-4C9D-4C4E-9EC7-0BACBA57C1C2}.Debug|ARM.Build.0 = Debug|Any CPU
+		{BFD820C5-4C9D-4C4E-9EC7-0BACBA57C1C2}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{BFD820C5-4C9D-4C4E-9EC7-0BACBA57C1C2}.Debug|x64.Build.0 = Debug|Any CPU
+		{BFD820C5-4C9D-4C4E-9EC7-0BACBA57C1C2}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BFD820C5-4C9D-4C4E-9EC7-0BACBA57C1C2}.Debug|x86.Build.0 = Debug|Any CPU
+		{BFD820C5-4C9D-4C4E-9EC7-0BACBA57C1C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFD820C5-4C9D-4C4E-9EC7-0BACBA57C1C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFD820C5-4C9D-4C4E-9EC7-0BACBA57C1C2}.Release|ARM.ActiveCfg = Release|Any CPU
+		{BFD820C5-4C9D-4C4E-9EC7-0BACBA57C1C2}.Release|ARM.Build.0 = Release|Any CPU
+		{BFD820C5-4C9D-4C4E-9EC7-0BACBA57C1C2}.Release|x64.ActiveCfg = Release|Any CPU
+		{BFD820C5-4C9D-4C4E-9EC7-0BACBA57C1C2}.Release|x64.Build.0 = Release|Any CPU
+		{BFD820C5-4C9D-4C4E-9EC7-0BACBA57C1C2}.Release|x86.ActiveCfg = Release|Any CPU
+		{BFD820C5-4C9D-4C4E-9EC7-0BACBA57C1C2}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
