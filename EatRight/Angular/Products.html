@@ -31,11 +31,15 @@
 
     <div class="Container">
         <label>
-            Products  <input type="text" name="input" size="150" ng-model="products.text" ng-pattern="input.word" ng-list>
+            Products  <input type="text" name="input" size="150" ng-model="products.text" ng-pattern="input.word" ng-list> eg : salmon
         </label>
         <br/><br/><br/><br/>
         <label>
-            Recipes   <input type="text" name="input" size="150" ng-model="recipes.text" ng-pattern="input.word" ng-list>
+            Recipes   <input type="text" name="input" size="150" ng-model="recipes.text" ng-pattern="input.word" ng-list> eg : salmon steaks
+        </label>
+        <br /><br /><br /><br />
+        <label>
+            Meals    <input type="text" name="input" size="150" ng-model="meals.text" ng-pattern="input.word" ng-list> eg : 30_Male
         </label>
         <div ng-controller="Query">
             <div layout="column" class="Container2">
@@ -54,7 +58,7 @@
                     </div>
                 </div7>
                 <div7 ng-repeat="val in recipes.text" class="Container3" style="float:left">
-                    <div layout="row" flex="20" flex-order="-1" ng-init="initRecipes(val)" ng-class="$even ? 'odd' : 'even'">
+                    <div layout="row" flex="20" flex-order="-1" ng-init="initRecipes(val)" ng-class="$even ? 'even' : 'odd'">
                         <div ng-repeat="P in dictRecipes[val].data[0]">
                             <div style="width:160px">
                                 <h2>. {{P.Name}} </h2>
@@ -62,6 +66,21 @@
                                 <h2>. {{P.Servings}} </h2>
                                 <h2>. {{P.TotalCaloriesNum}} </h2>   
                                 <h2>. {{P.ID}} </h2>                             
+                            </div>
+                        </div>
+                    </div>
+                </div7>
+
+                <div7 ng-repeat="val in meals.text" class="Container3" style="float:left">
+                    <div layout="row" flex="20" flex-order="-1" ng-init="initMeals(val)" ng-class="$even ? 'odd' : 'even'">
+                        <div ng-repeat="P in dictMeals[val].data[0]">
+                            <div style="width:300px">
+                                <h2>. {{P.Recipe.Name}} </h2>
+                                <h2>. Overall : {{P.Grade}} </h2>
+                                <h2>. Diet : {{P.GradeInfo.GradersInfo['CaloriesCountMealGrader'].Grade}} </h2>
+                                <h2>. Nutrition : {{(P.GradeInfo.GradersInfo['MaxNutValuesMealGrader'].Grade + P.GradeInfo.GradersInfo['MinNutValuesMealGrader'].Grade)/2}} </h2>
+                                <h2>. Convenience : {{(P.GradeInfo.GradersInfo['PrepTimeMealGrader'].Grade + P.GradeInfo.GradersInfo['ServingsNumMealGrader'].Grade)/2}} </h2>
+                          
                             </div>
                         </div>
                     </div>

@@ -25,8 +25,21 @@
                 });
         };
 
-        $scope.initRecipes = function (query) {
+        $scope.initMeals = function (query) {
             $http.get('http://localhost:51612/Api/Meals/' + query).
+                then(function (data) {
+                    if ($scope.dictMeals != null)
+                        $scope.dictMeals[query] = angular.fromJson(data);
+                    else
+                        $scope.dictMeals = {
+                            query: angular.fromJson(data),
+                        };
+                });
+        };
+
+
+        $scope.initRecipes = function (query) {
+            $http.get('http://localhost:51612/Api/Recipes/' + query).
                 then(function (data) {
                     if ($scope.dictRecipes != null)
                         $scope.dictRecipes[query] = angular.fromJson(data);

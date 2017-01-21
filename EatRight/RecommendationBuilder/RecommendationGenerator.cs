@@ -314,7 +314,7 @@ namespace RecommendationBuilder
             double grade = 0;
             var graderStrToGain = new Dictionary<string, double>();
             var graderStrToLoss = new Dictionary<string, double>();
-            var gradersInfo = new HashSet<GraderInfo>();
+            var gradersInfo = new Dictionary<GraderType,GraderInfo>();
 
             foreach (var entry in graderMap)
             {
@@ -329,7 +329,7 @@ namespace RecommendationBuilder
 
                     graderStrToGain[grader.Description] = curScaledGrade;
                     graderStrToLoss[grader.Description] = entry.Value - curScaledGrade;
-                    gradersInfo.Add(new GraderInfo() {Type = grader.Type, Weight = entry.Value, Grade = curGrade });
+                    gradersInfo.Add( grader.Type, new GraderInfo() { Weight = entry.Value, Grade = curGrade });
                 }
                 catch (ArgumentException)
                 {

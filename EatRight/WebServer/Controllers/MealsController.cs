@@ -24,11 +24,12 @@ namespace WebServer.Controllers {
 
         public HttpResponseMessage Get(string id) {
             var parts = id.Split('_');
-
-            var mealsList = Hack.GetRecommendation(
+            var mealsList = new List<List<Meal>>();
+            if (parts.Length > 1)
+             mealsList.Add(Hack.GetRecommendation(
                 int.Parse(parts[0]),
                 (GenderType)Enum.Parse(typeof(GenderType), parts[1])
-                );
+                ));
                 
 
 

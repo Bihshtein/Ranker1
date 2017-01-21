@@ -214,13 +214,13 @@ namespace LogicRunner
             return str;
         }
 
-        private string parseGradersResult(HashSet<GraderInfo> gradersInfo)
+        private string parseGradersResult(Dictionary<GraderType,GraderInfo> gradersInfo)
         {
             var str = "";
 
             foreach (var x in gradersInfo)
             {
-                str += string.Format("{0}: weight = {1}, grade = {2}\n", x.Type.ToString(), x.Weight, x.Grade.ToString("N3"));
+                str += string.Format("{0}: weight = {1}, grade = {2}\n", x.Key.ToString(), x.Value.Weight, x.Value.Grade.ToString("N3"));
             }
             return str;
         }
