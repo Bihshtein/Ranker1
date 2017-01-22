@@ -50,6 +50,7 @@ namespace InitRecipes {
                     if (pageCount % 10 == 0)
                     {
                         System.Console.WriteLine("Locating recipes in " + categoryURL + ": Parsing page " + pageCount);
+                        return ids;
                     }
                     pageCount++;
                 }
@@ -76,30 +77,34 @@ namespace InitRecipes {
         }
 
         public static void CreateDB() {
-            Indexes = File.ReadAllLines(FolderPath + "recipes_num.txt").ToList().ConvertAll<int>((a => int.Parse(a)));
-            
-            var loadMealsBulkSize = Indexes.Count > 1000 ? 1000 : Indexes.Count;
+            //Indexes = File.ReadAllLines(FolderPath + "recipes_num.txt").ToList().ConvertAll<int>((a => int.Parse(a)));
+            Indexes = new List<int>();
             var unit = new RestDBInterface();
             unit.Recipes.Empty();
-            var recipes = unit.Recipes.GetAll().ToList();
-            
-            var indexesToRemove = recipes.FindAll(recipe => !Indexes.Contains(recipe.ID ));
-            indexesToRemove.ForEach(index => unit.Recipes.Delete(s => s.ID  , index.ID));
-            while (Indexes.Count > 0) {
-                log.Debug("Indexes count : " + Indexes.Count);
-                List<Task> tasks = new List<Task>();
-                if (Indexes.Count > loadMealsBulkSize)
-                    Indexes.Take(loadMealsBulkSize).ToList().ForEach(a => tasks.Add(new Task(new Action(() => ParseRecipe(a)))));
-                else
-                    Indexes.Take(Indexes.Count).ToList().ForEach(a => tasks.Add(new Task(new Action(() => ParseRecipe(a)))));
-                tasks.ForEach(task => task.Start());
-                tasks.ForEach(task => task.Wait());
+            foreach (var entry in typeURLs)
+            {
+                Indexes.Clear();
+                Indexes = GetRecipeIdsByURL(entry.Value).ToList();
+                ProblematicRecipes.ForEach(x => Indexes.Remove(x));
+
+                var loadMealsBulkSize = Indexes.Count > 1000 ? 1000 : Indexes.Count;
+                while (Indexes.Count > 0)
+                {
+                    log.Debug("Indexes count : " + Indexes.Count);
+                    List<Task> tasks = new List<Task>();
+                    if (Indexes.Count > loadMealsBulkSize)
+                        Indexes.Take(loadMealsBulkSize).ToList().ForEach(a => tasks.Add(new Task(new Action(() => ParseRecipe(a, entry.Key)))));
+                    else
+                        Indexes.Take(Indexes.Count).ToList().ForEach(a => tasks.Add(new Task(new Action(() => ParseRecipe(a, entry.Key)))));
+                    tasks.ForEach(task => task.Start());
+                    tasks.ForEach(task => task.Wait());
+                }
             }
         }
 
        
 
-        public static void ParseRecipe(int index) {
+        public static void ParseRecipe(int index, MealType mealType) {
             
            var unit = new RestDBInterface();
             lock (Locker) {
@@ -121,7 +126,7 @@ namespace InitRecipes {
                 ID = index,
                 Name = GetRecipeName(page).Replace(" - Allrecipes.com",""),
                 Ingredients = GetIngredients(page),
-                Types = new HashSet<MealType>() { MealType.Breakfast, MealType.Lunch, MealType.Dinner},
+                Types = new HashSet<MealType>() { mealType },
                 Servings = GetServings(page),
                 PrepTime = GetPrepTime(page)
 
@@ -147,10 +152,10 @@ namespace InitRecipes {
                 if (ingredientParts[i].Contains("<"))
                 {
                     var chars = ingredientParts[i].TakeWhile(a => a != '<');
-                    var igredient = new String(chars.ToArray());
-                    var words = igredient.Split(' ').ToList();
-                    if (!ingredients.Contains(igredient))
-                        ingredients.Add(igredient);
+                    var ingredient = new String(chars.ToArray());
+                    var words = ingredient.Split(' ').ToList();
+                    if (!ingredients.Contains(ingredient))
+                        ingredients.Add(ingredient);
                 }
             }
             return ingredients;
@@ -159,6 +164,10 @@ namespace InitRecipes {
         private static TimeSpan GetPrepTime(string page)
         {
             var prepTimeParts = page.Split(new string[1] { "<span class=\"ready-in-time\">" }, StringSplitOptions.None);
+            if (prepTimeParts.Length < 2)
+            {
+                return TimeSpan.MaxValue;
+            }
             var prepTimeStr = new String(prepTimeParts[1].TakeWhile(a => a != '<').ToArray());
             return ParsePrepTime(prepTimeStr);
         }
@@ -171,7 +180,9 @@ namespace InitRecipes {
         }
 
         private static TimeSpan ParsePrepTime(string time) {
+            var days = GetTimeUnit(ref time, 'd');
             var hours = GetTimeUnit(ref time, 'h');
+            hours = hours + days * 24;
             return new TimeSpan(hours, GetTimeUnit(ref time, 'm'), 0);
         }
 
@@ -184,5 +195,11 @@ namespace InitRecipes {
             else
                 return 0;
         }
+
+        private static List<int> ProblematicRecipes = new List<int>
+        {
+            235853,
+            20096
+        };
     }
 }

@@ -112,7 +112,9 @@ namespace RestModel {
             (x.FoodGroup.Equals(part1) && x.Name1.Equals(part2)) ||
             (x.FoodGroup.Equals(part1) && x.Name2.Equals(part2)) && x.Name3.Equals(part3) ||
             (x.Name3.Equals(part1) && x.Name1.Equals(part3)) ||
-            (x.Name2.Equals(part2) && x.Name1.Equals(part3));
+            (x.Name2.Equals(part2) && x.Name1.Equals(part3)) ||
+            (x.Name2.Equals(part1) && x.Name1.Equals(part2)) ||
+            (x.Name2.Equals(part3) && x.Name3.Equals(part2));
             var res = collection.Find(query as Expression<Func<T, bool>>).ToList();
             var newRes = res.Cast<Product>().ToList();
             return newRes;
@@ -123,9 +125,13 @@ namespace RestModel {
             Expression<Func<Product, bool>> query = x =>
             (x.PeelDetails.Equals(part1 + " " + part2) && x.FoodGroup.Equals(part3) && x.Name2.Equals(part4)) ||
             (x.Name3.Equals(part1 + " " + part2 + " " + part3) && x.Name1.Equals(part4)) ||
+            (x.Name2.Equals(part1 + " " + part2 + " " + part3) && x.Name1.Equals(part4)) ||
             (x.BoneDetails.Equals(part1) && x.FoodGroup.Equals(part2) && x.Name1.Equals(part3) && x.Name3.Equals(part4)) ||
             (x.Name1.Equals(part2 + " " + part3) && x.Name3.Equals(part1 + " "  + part4)) ||
-            (x.PeelDetails.Equals(part1 + " " + part2) && x.FoodGroup.Equals(part3) && x.Name2.Equals(ParseHelpers.GetWithoutLast_S_letter(part4)));
+            (x.PeelDetails.Equals(part1 + " " + part2) && x.FoodGroup.Equals(part3) && x.Name2.Equals(ParseHelpers.GetWithoutLast_S_letter(part4))) ||
+            (x.Name2.Equals(part3 + " " + part4)) ||
+            (x.Name1.Equals(part2) && x.Name2.Equals(part1)) ||
+            (x.Name1.Equals(part3 + " " + part4) && x.Name2.Equals(part2));
             var res = collection.Find(query as Expression<Func<T, bool>>).ToList();
             var newRes = res.Cast<Product>().ToList();
             return newRes;

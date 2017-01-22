@@ -53,54 +53,122 @@ namespace InitRecipes {
             Console.WriteLine("total ingredients missed : " + totalMissing);
         }
 
+        private static void ParseInnerpart(Recipe recipe, List<Product> res, string innerpart,
+            string relativeMeasure, double weight)
+        {
+            var product = res[0];
+
+            recipe.ProductTypes.UnionWith(product.Types);
+
+            var retProducts = new List<string>();
+
+            var usdaKey = string.Format("{0} => <0/{3}> [{1}] {2}", innerpart, product.ID, product.USDAString, res.Count);
+
+            res.ForEach(x => retProducts.Add(string.Format("[{0}] {1}", x.ID, x.USDAString)));
+
+            if (recipe.USDAProducts.ContainsKey(usdaKey))
+            {
+                Console.WriteLine("Warning: Recipe {0} contains USDA Product duplicate {1}", recipe.ID, innerpart);
+            }
+            else
+            {
+                recipe.USDAProducts.Add(usdaKey,
+                    retProducts);
+
+            }
+
+            if (relativeMeasure != string.Empty)
+            {
+                if (relativeMeasure.Contains(innerpart))
+                    relativeMeasure = innerpart;
+                weight = TryParseRelativeWeight(relativeMeasure, weight, product, innerpart);
+            }
+
+
+            AddItem(product, recipe, weight, innerpart);
+        }
+
         public static void ParseItem(Recipe recipe, string item) {
             item = Map.AdjustNames(item);
             var results = ParseWeightAndName(item);
             var innerpart = results.Item1.Trim();
             var weight = results.Item2;
             var relativeMeasure = results.Item3.Trim();
-            if (item.Contains("to taste"))
-                innerpart = item.Replace("to taste", "");
+            if (innerpart.Contains("to taste"))
+                innerpart = innerpart.Replace("to taste", "");
             ++total;
             if (innerpart != string.Empty) {
-                innerpart = Map.AdjustInnerPart(innerpart);
+                var unifiedInnerpart = "";
+                innerpart = Map.AdjustInnerPart(innerpart, ref unifiedInnerpart);
 
                 var res = Queries<Product>.GetMatchingProductsForIngredient(innerpart);
 
-                if (res == null || res.Count == 0) {
-                    log.Error(innerpart + " : " + item);
-                    ++totalMissing;
+                var oldInnerpart = innerpart;
+                if (unifiedInnerpart.Length > 0 && (res == null || res.Count == 0))
+                {
+                    innerpart = unifiedInnerpart;
+                    res = Queries<Product>.GetMatchingProductsForIngredient(innerpart);
                 }
-                else {
-                    var product = res[0];
 
-                    recipe.ProductTypes.UnionWith(product.Types);
-
-                    var retProducts = new List<string>();
-
-                    var usdaKey = string.Format("{0} => <0/{3}> [{1}] {2}", innerpart, product.ID, product.USDAString, res.Count);
-
-                    res.ForEach(x => retProducts.Add(string.Format("[{0}] {1}", x.ID, x.USDAString)));
-
-                    if (recipe.USDAProducts.ContainsKey(usdaKey))
+                if (res == null || res.Count == 0)
+                {
+                    innerpart = oldInnerpart;
+                    var hasAnd = false;
+                    var hasOr = false;
+                    if (innerpart.Contains(" and "))
                     {
-                        Console.WriteLine("Warning: Recipe {0} contains USDA Product duplicate {1}", recipe.ID, innerpart);
+                        hasAnd = true;
+                    }
+                    if (innerpart.Contains(" or "))
+                    {
+                        hasOr = true;
+                    }
+                    if (hasAnd || hasOr) // Try parsing the two parts seperated
+                    {
+                        var splitStr = new string[] { " and " };
+                        if (hasOr)
+                        {
+                            splitStr = new string[] { " or " };
+                        }
+                        string[] innerparts = innerpart.Split(splitStr, StringSplitOptions.None);
+                        total += (hasAnd ? (innerparts.Length - 1) : 1);
+                        var parsed = false;
+                        foreach (var itervar in innerparts)
+                        {
+                            res = Queries<Product>.GetMatchingProductsForIngredient(itervar);
+                            if (res == null || res.Count == 0)
+                            {
+                                if (hasAnd)
+                                {
+                                    log.Error(itervar + " : " + item);
+                                    ++totalMissing;
+                                }
+                            }
+                            else
+                            {
+                                ParseInnerpart(recipe, res, itervar, relativeMeasure, weight);
+                                if (hasOr)
+                                {
+                                    parsed = true;
+                                    break;
+                                }
+                            }
+                        }
+                        if (hasOr && !parsed)
+                        {
+                            log.Error(innerpart + " : " + item);
+                            ++totalMissing;
+                        }
                     }
                     else
                     {
-                        recipe.USDAProducts.Add(usdaKey,
-                            retProducts);
-
+                        log.Error(innerpart + " : " + item);
+                        ++totalMissing;
                     }
-
-                    if (relativeMeasure != string.Empty) {
-                        if (relativeMeasure.Contains(innerpart))
-                            relativeMeasure = innerpart;
-                        weight = TryParseRelativeWeight(relativeMeasure, weight, product, innerpart);
-                    }
-                  
-                        
-                    AddItem(product, recipe, weight, innerpart);
+                }
+                else
+                {
+                    ParseInnerpart(recipe, res, innerpart, relativeMeasure, weight);
                 }
             }
             else {

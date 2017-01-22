@@ -22,16 +22,30 @@ namespace Logic {
             Map.StartPharseRemove.ForEach(item => ingredient = ingredient.Replace(item + " ", ""));
             Map.OtherPhraseRemove.ForEach(item => ingredient = ingredient.Replace(item, ""));
             ingredient = ingredient.Trim();
+            foreach (var prefix in PrefixRemove)
+            {
+                if (ingredient.StartsWith(prefix))
+                {
+                    ingredient = ingredient.Substring(prefix.Length);
+                    break;
+                }
+            }
 
             return ingredient;
         }
 
-        public static string AdjustInnerPart(string innerpart) {
+        public static string AdjustInnerPart(string innerpart, ref string unifiedInnerpart) {
             var split = innerpart.Split(',');
             if (split[0] != string.Empty)
                 innerpart = split[0];
             else
-                innerpart = split[1];         
+                innerpart = split[1];
+
+            if (split.Length > 1)
+            {
+                unifiedInnerpart = split[0] + " " + split[1];
+                unifiedInnerpart = unifiedInnerpart.Trim();
+            }
       
             return innerpart;
         }
@@ -89,17 +103,47 @@ namespace Logic {
             { "packages refrigerated crescent roll dough (such as pillsbury&#174;", "pillsbury refrigerated dough"},
             { "italian parsley", "parsley"},
             { "salmon fillets", "salmon"},
+            { "red pepper", "red peppers" },
+            { "pepper (any color)", "peppers" },
+            { "pumpkin puree", "pumpkin" },
+            { "breakfast sausage", "pork sausage" },
+            { "strips bacon", "bacon" },
+            { "chorizo sausage", "pork sausage" },
+            { "flat-leaf parsley", "parsley" },
+            { "frozen hash brown potatoes", "hash brown potatoes" },
+            { "half-and-half cream", "half and half cream" },
+            { "dry sherry", "dry dessert wine" },
+            { "cilantro", "coriander (cilantro) leaves" },
+            { "rib celery", "celery" },
+            { "confectioners' sugar", "granulated sugars" },
+            { "french bread", "french or vienna bread" },
+            { "shredded pepperjack cheese", "monterey cheese" },
+            { "parmigiano-reggiano cheese", "parmesan cheese" },
+            { "low-fat cottage cheese", "cottage 1% milkfat|cheese" },
+            { "monterey jack cheese", "monterey cheese" },
+            { "green chile peppers", "green peppers" },
+            { "canola oil", "corn and canola oil" },
+            { "unsweetened applesauce", "applesauce" },
+            { "whole wheat pastry flour", "wheat flour" },
+            { "barbeque", "barbecue" },
+            { "spinach leaf", "chopped or leaf spinach" }
         };
 
         public static List<string> StartPharseRemove = new List<string> {
              "prepared", "package", "packages","blanched","slivered",
             "melted","sifted", "sprig", "sprigs", "ground", "shredded", "cubed", "rolled",
-            "head", "heads", "sliced", "stalk", "stalks", "diced", "minced", "chopped",
-            "grated","mashed","crushed", "ripe", "steaks", "cold", "warm", "fresh"};
+            "head", "heads", "thick sliced", "sliced", "stalk", "stalks", "finely diced",
+            "diced", "dried minced", "minced", "finely chopped", "chopped", "grated","mashed","crushed",
+            "ripe", "steaks", "cold", "warm", "fresh"};
 
         public static List<string> OtherPhraseRemove = new List<string> {
            "sprigs", "(optional)", "asiago", "extra virgin", "panko" , "steaks", "- peeled","halves",
-            "for frying", "herb-seasoned"
+            "for frying", "herb-seasoned", "steel cut", "peeled"
+        };
+
+        public static List<string> PrefixRemove = new List<string>
+        {
+            "and "
         };
 
     }
