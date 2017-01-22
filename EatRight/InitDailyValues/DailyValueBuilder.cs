@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using RestModel;
 using System.Text.RegularExpressions;
 using System.IO;
+using Logic;
 
 namespace InitDailyValuesDB
 {
@@ -42,52 +43,63 @@ namespace InitDailyValuesDB
             var lines = File.ReadAllLines(filePath);
             var ageGenderList = AgeGenderRow.GetGenderAgeList(lines);
             var nameToProductDVMap = NutrientRow.NameToProductDV();
-
-            var dailyValuesList = GetDefaultDailyValuesList(ageGenderList);
-            if (!PopulateDailyValuesListFromLines(dailyValuesList, lines, 
-                                                  ageGenderList, nameToProductDVMap)) return null;
-            if (!ValidateDailyValuesList(dailyValuesList)) return null;
-
-            return dailyValuesList;
+            return GetDailyValues(lines, ageGenderList, nameToProductDVMap);
         }
 
-        private bool ValidateDailyValuesList(List<DailyValue> dailyValuesList)
-        {
-            return dailyValuesList.All(val => val.IsMinValid());
-        }
-
-        private bool PopulateDailyValuesListFromLines(List<DailyValue> dailyValuesList, string[] lines, 
+        private List<DailyValue> GetDailyValues(string[] lines, 
                                                       TupleList<GenderParam, AgeParam> ageGenderList, 
                                                       Dictionary<string, Tuple<string, int>> nameToProductDVMap)
         {
+            List<DailyValue> dailyValuesList = GetDefaultDailyValuesList(ageGenderList);
             foreach (var line in lines)
             {
                 string[] result = Split(line);
 
                 if (nameToProductDVMap.ContainsKey(result[0]))
                 {
-                    if (nameToProductDVMap[result[0]].Item2 != 0) return false; 
+                    if (nameToProductDVMap[result[0]].Item2 != 0)
+                        throw new Exception();
                     nameToProductDVMap[result[0]] = new Tuple<string, int>(nameToProductDVMap[result[0]].Item1, 1);
 
                     for (var pIndex = 0; pIndex < ageGenderList.Count; pIndex++)
                     {
+                        double min= double.NegativeInfinity, max = double.PositiveInfinity;
                         var tempStr = result[pIndex + 2];
-                        tempStr = tempStr.Replace("<", "");
-                        tempStr = tempStr.Replace(",", "");
-                        tempStr = tempStr.Replace("\"", "");
-                        tempStr = tempStr.Replace("?", "");
+                       
+                        tempStr = tempStr.Replace("\"", "");// stupid end of line
+                        var nutrient = nameToProductDVMap[result[0]].Item1;
                         tempStr = tempStr.Replace("%", "");
+                        if (nutrient == "Fatty acids, total saturated") {
+                            // this is just a silly hack for no
+                            //this values should be stored as percentage and later graded for specific user
+                            var parts = tempStr.Split('<');
+                            var calories = Formulas.GetCalories(new BodyProfile() { Age = 15 });
+                            max = calories/ 9 / double.Parse(parts[1]);
+                        }
+                        else if (tempStr.Contains('?')) {
+                            var parts = tempStr.Split('?');
+                            min = double.Parse(parts[0]);
+                            max = double.Parse(parts[1]);
+                        }
+                     
+                        else if (tempStr.Contains('<')) {
+                            var parts = tempStr.Split('<');
+                            max = double.Parse(parts[1]);
+                        }
+                       
 
-                        double val = -1;
+                        else {
+                            max = double.PositiveInfinity;
+                            min = double.Parse(tempStr);
+                        }
 
-                        if (!double.TryParse(tempStr, out val)) return false;
-
-                        if (!dailyValuesList[pIndex].SetMin(nameToProductDVMap[result[0]].Item1, val)) return false;
+                        dailyValuesList[pIndex].DailyValues[nutrient].MinValue = min;
+                        dailyValuesList[pIndex].DailyValues[nutrient].MaxValue = max;
                     }
                 }
             }
 
-            return true;
+            return dailyValuesList;
         }
 
         private List<DailyValue> GetDefaultDailyValuesList(TupleList<GenderParam, AgeParam> ageGenderList)

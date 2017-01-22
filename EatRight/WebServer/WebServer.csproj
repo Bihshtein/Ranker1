@@ -209,6 +209,7 @@
     <Compile Include="Controllers\DailyValuesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MealsController.cs" />
+    <Compile Include="Controllers\RecipesController.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
     <Compile Include="Controllers\ProductsService.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
@@ -292,6 +293,18 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\LogicRunner\LogicRunner.csproj">
+      <Project>{b1818606-bc90-45a3-82d9-4b2f77276e4a}</Project>
+      <Name>LogicRunner</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Logic\Logic.csproj">
+      <Project>{b797e613-7d9c-4a1c-99f8-97d296edbad0}</Project>
+      <Name>Logic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RecommendationBuilder\RecommendationBuilder.csproj">
+      <Project>{9426ff15-9b65-4f16-918e-ed7a8e21d3f8}</Project>
+      <Name>RecommendationBuilder</Name>
+    </ProjectReference>
     <ProjectReference Include="..\RestModel\RestModel.csproj">
       <Project>{5df54fea-0e92-4f32-ae85-80a7b484e427}</Project>
       <Name>RestModel</Name>

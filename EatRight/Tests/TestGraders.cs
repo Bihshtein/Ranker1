@@ -7,6 +7,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using RestModel;
 using RecommendationBuilder;
 using RecommendationBuilder.Graders;
+using Logic;
 
 namespace Tests
 {
@@ -489,7 +490,7 @@ namespace Tests
             var babyProfile = new UserProfile() { Age = 3, Gender = GenderType.Male };
             var manProfile = new UserProfile() { Age = 30, Gender = GenderType.Male, Height = 175, Weight = 75 };
             var sportitianProfile = new UserProfile()
-            { Age = 30, Gender = GenderType.Male, Height = 175, Weight = 75, activityLevel = PhysicalActivityLevel.VeriActive };
+            { Age = 30, Gender = GenderType.Male, Height = 175, Weight = 75, ActivityLevel = PhysicalActivityLevel.VeriActive };
             var womanProfile = new UserProfile() { Age = 30, Gender = GenderType.Female, Height = 175, Weight = 75 };
 
             var babyRecoDB = RecommendationDBGenerator.FromUserProfile(babyProfile, unit);

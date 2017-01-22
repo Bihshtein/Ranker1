@@ -93,19 +93,17 @@ namespace Students.Services
                                                                  sqParser.MinMeasure,
                                                                  sqParser.IsVegeterian));
                 }
-                else if (searchKeyword == "TopFoods")
-                {
-                    productLists.Add( productsService.GetTopFoods(sqParser.MinMeasure));
-                }
+                
 
                 else if (RestRepository<Product>.FoodGroups.Contains(searchKeyword)) {
                     productLists.Add(productsService.GetFoodGroup(searchKeyword));
                 }
 
-                else if (searchKeyword == "All")
-                {
-                    productLists.Add( productsService.GetAll().ToList());
+                else  {
+                    productLists.Add(productsService.GetIngredient(searchKeyword));
                 }
+
+
             }
             
             return productLists;

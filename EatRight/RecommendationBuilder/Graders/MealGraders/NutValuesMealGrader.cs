@@ -20,22 +20,19 @@ namespace RecommendationBuilder.Graders.MealGraders
             {MealType.Dinner, 0.3}
         };
 
-        public NutValuesMealGrader()
-        {
+        public NutValuesMealGrader() {
             string minMaxStr = "";
-            if (IsMinGrader)
-            {
+            if (IsMinGrader) {
                 minMaxStr = "minimum";
             }
-            else
-            {
+            else {
                 minMaxStr = "maximum";
             }
             Description = "Nutrition values compared to the " + minMaxStr + " nutrition values";
 
             double precentage = MealPrecentage[((MealSuggestionRange)RecommendationObject.recommendationDB.range).MealType];
             this.mealValues = RecommendationObject.recommendationDB.dailyValues.Select(x => new KeyValuePair<string, MinMaxDouble>
-                (x.Key, new MinMaxDouble(x.Value.MinValue * precentage, x.Value.MaxValue * precentage)))
+                (x.Key, new MinMaxDouble() { MinValue = x.Value.MinValue * precentage, MaxValue = x.Value.MaxValue * precentage }))
                 .ToDictionary(x => x.Key, x => x.Value);
         }
 

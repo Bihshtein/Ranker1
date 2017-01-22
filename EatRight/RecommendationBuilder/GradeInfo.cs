@@ -9,16 +9,8 @@ namespace RecommendationBuilder
 {
     public class GraderInfo
     {
-        public GraderInfo(GraderType type, double weight, double grade)
-        {
-            Type = type;
-            Weight = weight;
-            Grade = grade;
-        }
-
-        public GraderType Type { get; private set; }
-        public double Weight { get; private set; }
-        public double Grade { get; private set; }
+        public double Weight { get; set; }
+        public double Grade { get; set; }
     }
 
     public class GradeInfo
@@ -26,7 +18,7 @@ namespace RecommendationBuilder
         public List<string> BestGraders { get; set; }
         public List<string> WorstGraders { get; set; }
 
-        public HashSet<GraderInfo> GradersInfo { get; set; }
+        public Dictionary<GraderType,GraderInfo> GradersInfo { get; set; }
         public Dictionary<string, double> MinNutrientGrades { get; set; }
         public Dictionary<string, double> MaxNutrientGrades { get; set; }
     }
