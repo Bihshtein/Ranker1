@@ -53,7 +53,7 @@ namespace RecommendationBuilder.Graders.DailyMenuGraders
 
                 var nutrient = entry.Key;
                 double actualValue = 0;
-                if (idealValues.ContainsKey(nutrient))
+                if (actualValues.ContainsKey(nutrient))
                 {
                     actualValue = actualValues[nutrient];
                 }
