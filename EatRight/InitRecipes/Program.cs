@@ -20,7 +20,7 @@ namespace InitRecipes {
         
 
         static void Main(string[] args) {
-            ParseRecipes.CreateDB(); // index file has 20,000 meals, load the first 200
+            //ParseRecipes.CreateDB(); // index file has 20,000 meals, load the first 200
             AddProducts.Add();
         }
        

@@ -9,7 +9,7 @@ namespace RestModel.Validators {
         public BeefValidator() {
             MainParts = new List<string>(){
                 "liver", "heart", "kidney", "tongue", "loin", "flank", "chuck",
-                "rib", "round", "brisket", "plate", "short loin" }; ;
+                "rib", "round", "brisket", "plate", "short loin", }; ;
 
             SecondParts = new List<string>(){
                 "small end rib","striploin","strip loin","rump centre","ribs prepared","oyster blade","flat","hind shin", 

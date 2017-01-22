@@ -136,13 +136,9 @@ namespace LogicRunner
             
             RecommendationGenerator generator = null;
             if (workMode.SelectedItem.ToString() == "Debug") {
-                HashSet<int> recipes = null;
-                try {
-                    recipes = new HashSet<int>(custom.Text.Split(',').ToList<string>().ConvertAll<int>(a => int.Parse(a)));
-                }
-                catch {
-                    recipes = new HashSet<int>(File.ReadAllLines(FolderPath + "recipes_num.txt").ToList().ConvertAll<int>((a => int.Parse(a))));
-                }
+                var recipes = new HashSet<int>();
+                new RestDBInterface().Recipes.GetAllList().ForEach(a => recipes.Add(a.ID));
+                    
                 generator = new RecommendationGenerator(unit, recommendationDB, recipes, int.Parse(txtCalories.Text));
             }
             else

@@ -40,6 +40,11 @@ namespace Logic {
                 innerpart = split[0];
             else
                 innerpart = split[1];
+            split = innerpart.Split('-');
+            if (split[0] != string.Empty)
+                innerpart = split[0];
+            else
+                innerpart = split[1];
 
             if (split.Length > 1)
             {
@@ -126,7 +131,12 @@ namespace Logic {
             { "unsweetened applesauce", "applesauce" },
             { "whole wheat pastry flour", "wheat flour" },
             { "barbeque", "barbecue" },
-            { "spinach leaf", "chopped or leaf spinach" }
+            { "spinach leaf", "chopped or leaf spinach" },
+            { "cherry tomatoes", "tomatoes" },
+            { "toast", "toasted bread"},
+            { "smoked ham", "cured ham"},
+            { "lean ground beef", "ground beef"},
+            { "extra-lean ground beef", "ground beef"}
         };
 
         public static List<string> StartPharseRemove = new List<string> {

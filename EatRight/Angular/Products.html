@@ -60,7 +60,7 @@
                 <div7 ng-repeat="val in recipes.text" class="Container3" style="float:left">
                     <div layout="row" flex="20" flex-order="-1" ng-init="initRecipes(val)" ng-class="$even ? 'even' : 'odd'">
                         <div ng-repeat="P in dictRecipes[val].data[0]">
-                            <div style="width:160px">
+                            <div style="width:300px">
                                 <h2>. {{P.Name}} </h2>
                                 <h2>. {{P.PrepTime}} </h2>
                                 <h2>. {{P.Servings}} </h2>

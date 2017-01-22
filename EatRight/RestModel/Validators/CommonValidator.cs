@@ -98,7 +98,7 @@ namespace RestModel {
             "reduced-calorie","sweetened","diet","caffeine","decaffeinated","dietetic","unenriched","gluten","enriched","glucose","lactose", "salted",
             "sugared","concentrate","sucralose","sugar","undiluted","calcium","low calorie","vitamin",
             "sulfured","ascorbic acid","sodium","salt","sweeten","original seasoning","aspartame","special dietary",
-            "alcohol","no alcohol","unsweetened", "unbleached",
+            "alcohol","no alcohol","unsweetened", "unbleached","unfortified"
         };
 
         private static List<string> ConnectWordOptions = new List<string>{

@@ -14,7 +14,7 @@ namespace RestModel.Validators {
                 "haddock","grouper","gefiltefish", "flatfish","fish sticks","eel",
                 "drum","cusk","croaker","cod","cisco","caviar","catfish","carp",
                 "butterfish","burbot","bluefish","bass","anchovy","roughy","shad",
-                 "black and red","Crustaceans",
+                 "black and red","Crustaceans","Mollusks",
 
             };
 
@@ -24,11 +24,11 @@ namespace RestModel.Validators {
                 "freshwater","fresh water","channel","bluefin","skipjack","yellowfin","light",
                 "white","european","chinook","orange","pumpkin seed","granular","commercial",
                 "greenland","Greenland","jack","king","Pacific and jack","spanish","walleye",
-                "mixed species","shrimp"
+                "mixed species","shrimp","oyster"
 
             };
             ThirdParts = new List<string> {
-                "farmed","wild"
+                "farmed","wild","eastern"
             };
         }
     }

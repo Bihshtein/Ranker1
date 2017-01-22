@@ -90,6 +90,8 @@ namespace InitRecipes {
 
         public static void ParseItem(Recipe recipe, string item) {
             item = Map.AdjustNames(item);
+            var unifiedInnerpart = "";
+            item = Map.AdjustInnerPart(item, ref unifiedInnerpart);
             var results = ParseWeightAndName(item);
             var innerpart = results.Item1.Trim();
             var weight = results.Item2;
@@ -98,8 +100,8 @@ namespace InitRecipes {
                 innerpart = innerpart.Replace("to taste", "");
             ++total;
             if (innerpart != string.Empty) {
-                var unifiedInnerpart = "";
-                innerpart = Map.AdjustInnerPart(innerpart, ref unifiedInnerpart);
+              
+                
 
                 var res = Queries<Product>.GetMatchingProductsForIngredient(innerpart);
 
