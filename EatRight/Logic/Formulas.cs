@@ -136,6 +136,7 @@ namespace Logic
             {"clove",3 },//garlic
             {"pinch",0.25 },//green onion or whatever
             {"teaspoon ",5 },
+            {"dash ",5/16 },
             {"teaspoons",5 },
             {"tablespoons",14 },
             {"tablespoon ",14 },
@@ -152,3 +153,4 @@ namespace Logic
         };
     }
 }
+

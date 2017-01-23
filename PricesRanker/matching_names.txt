@@ -1,1 +1,1354 @@
-1555matching
+2017-01-23 22:36:37,406 ERROR InitRecipes.AddProducts - softened butter : 2 tablespoons softened butter
+2017-01-23 22:36:37,511 DEBUG InitRecipes.AddProducts - measure not found : wheat bread, returning default, measure : 28.35
+2017-01-23 22:36:37,518 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:37,614 DEBUG InitRecipes.AddProducts - measure not found : large, returning default, measure : 28.35
+2017-01-23 22:36:37,712 ERROR InitRecipes.AddProducts - cooking spray
+2017-01-23 22:36:37,750 ERROR InitRecipes.AddProducts - refrigerated biscuits (unbaked) : 18 refrigerated biscuits (unbaked)
+2017-01-23 22:36:37,762 DEBUG InitRecipes.AddProducts - measure not found : large, returning default, measure : 28.35
+2017-01-23 22:36:37,771 ERROR InitRecipes.AddProducts - salt and ground black pepper to taste
+2017-01-23 22:36:37,915 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 28.35
+2017-01-23 22:36:37,921 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:38,000 ERROR InitRecipes.AddProducts - cooking spray
+2017-01-23 22:36:38,013 DEBUG InitRecipes.AddProducts - measure not found : large, returning default, measure : 28.35
+2017-01-23 22:36:38,104 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 29.7
+Warning: Recipe 219167 contains USDA Product duplicate vegetable oil
+2017-01-23 22:36:38,516 ERROR InitRecipes.AddProducts - sage flavored pork sausage : 1 pound sage flavored pork sausage
+2017-01-23 22:36:38,536 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 820.359281437126
+2017-01-23 22:36:38,598 ERROR InitRecipes.AddProducts - container small curd cottage cheese : 1 (16 ounce) container small curd cottage cheese
+2017-01-23 22:36:38,642 ERROR InitRecipes.AddProducts - jumbo eggs : 6 jumbo eggs
+2017-01-23 22:36:38,717 ERROR InitRecipes.AddProducts - biscuit baking mix : 2 cups biscuit baking mix
+2017-01-23 22:36:38,756 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 29.7
+2017-01-23 22:36:38,871 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:38,888 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 29.7
+2017-01-23 22:36:39,016 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:39,042 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 29.7
+2017-01-23 22:36:39,136 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 29.7
+2017-01-23 22:36:39,248 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 29.7
+2017-01-23 22:36:39,506 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:39,544 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 14
+2017-01-23 22:36:39,609 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 29.7
+2017-01-23 22:36:39,659 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 28
+2017-01-23 22:36:39,662 ERROR InitRecipes.AddProducts - Failed to parse relative weight for item : 6 thick slices bread
+System.FormatException: Input string was not in a correct format.
+   at System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Double.Parse(String s)
+   at Logic.ParseHelpers.GetFractionedNumber(String fraction) in C:\dev\Ranker\EatRight\Logic\Expressions.cs:line 75
+   at Logic.ParseHelpers.ParseAmount(String fraction) in C:\dev\Ranker\EatRight\Logic\Expressions.cs:line 51
+   at InitRecipes.AddProducts.ParseByRelativeMeasures(String[] parts, String item) in C:\dev\Ranker\EatRight\InitRecipes\AddProducts.cs:line 250
+2017-01-23 22:36:39,688 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:39,763 ERROR InitRecipes.AddProducts - salt to taste
+2017-01-23 22:36:39,838 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:39,853 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 29.7
+2017-01-23 22:36:39,883 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 29.7
+2017-01-23 22:36:39,970 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 29.7
+2017-01-23 22:36:40,077 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 28
+2017-01-23 22:36:40,087 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 29.7
+2017-01-23 22:36:40,203 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 14
+2017-01-23 22:36:40,209 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+Warning: Recipe 6934 contains USDA Product duplicate granulated sugar
+Warning: Recipe 6934 contains USDA Product duplicate ground cinnamon
+2017-01-23 22:36:40,282 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:40,311 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 29.7
+2017-01-23 22:36:40,425 ERROR InitRecipes.AddProducts - salt and pepper to taste
+2017-01-23 22:36:40,426 ERROR InitRecipes.AddProducts - Failed to parse relative weight for item : 2 (9 inch) unbaked pie crusts
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at InitRecipes.AddProducts.ParseByRelativeNumber(String[] parts, String item) in C:\dev\Ranker\EatRight\InitRecipes\AddProducts.cs:line 272
+2017-01-23 22:36:40,429 ERROR InitRecipes.AddProducts - 2 (9 inch) unbaked pie crusts
+2017-01-23 22:36:40,533 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 85
+2017-01-23 22:36:40,650 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:40,717 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 29.7
+2017-01-23 22:36:40,772 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:40,853 ERROR InitRecipes.AddProducts - sunflower seeds : 1 cup sunflower seeds
+2017-01-23 22:36:40,893 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 28
+2017-01-23 22:36:41,012 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 14
+2017-01-23 22:36:41,079 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 29.7
+2017-01-23 22:36:41,180 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 14
+2017-01-23 22:36:41,187 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:41,258 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:41,288 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 29.7
+2017-01-23 22:36:41,378 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 200
+2017-01-23 22:36:41,464 ERROR InitRecipes.AddProducts - cubes ice : 6 cubes ice
+2017-01-23 22:36:41,508 ERROR InitRecipes.AddProducts - unsalted butter : 1/2 cup unsalted butter
+2017-01-23 22:36:41,589 ERROR InitRecipes.AddProducts - corn syrup : 2 tablespoons corn syrup
+2017-01-23 22:36:41,590 ERROR InitRecipes.AddProducts - Failed to parse relative weight for item : 6 (1
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at InitRecipes.AddProducts.ParseByRelativeNumber(String[] parts, String item) in C:\dev\Ranker\EatRight\InitRecipes\AddProducts.cs:line 272
+2017-01-23 22:36:41,604 ERROR InitRecipes.AddProducts - 6 (1
+2017-01-23 22:36:41,621 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:41,684 ERROR InitRecipes.AddProducts - brandy : 1 teaspoon brandy
+2017-01-23 22:36:41,696 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:41,721 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 29.7
+2017-01-23 22:36:41,778 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:41,817 ERROR InitRecipes.AddProducts - biscuit baking mix : 3/4 cup biscuit baking mix
+2017-01-23 22:36:41,934 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 28.35
+2017-01-23 22:36:41,994 ERROR InitRecipes.AddProducts - flour : 1 cup flour
+2017-01-23 22:36:42,038 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 29.7
+2017-01-23 22:36:42,075 ERROR InitRecipes.AddProducts - quick cooking oats : 1/2 cup quick cooking oats
+2017-01-23 22:36:42,336 ERROR InitRecipes.AddProducts - package refrigerated biscuit dough : 1 (10 ounce) package refrigerated biscuit dough
+2017-01-23 22:36:42,405 ERROR InitRecipes.AddProducts - package refrigerated crescent roll dough : 1 (8 ounce) package refrigerated crescent roll dough
+2017-01-23 22:36:42,412 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:42,535 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 29.7
+2017-01-23 22:36:42,607 ERROR InitRecipes.AddProducts - cooking spray
+2017-01-23 22:36:42,698 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 14
+2017-01-23 22:36:42,736 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 28
+2017-01-23 22:36:42,745 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 29.7
+2017-01-23 22:36:42,853 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:42,968 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 29.7
+2017-01-23 22:36:43,019 ERROR InitRecipes.AddProducts - warm water (110 degrees f/45 degrees c) : 1 cup warm water (110 degrees f/45 degrees c)
+2017-01-23 22:36:43,054 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:43,118 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 29.7
+Warning: Recipe 6779 contains USDA Product duplicate milk
+Warning: Recipe 6779 contains USDA Product duplicate granulated sugar
+2017-01-23 22:36:43,192 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:43,236 DEBUG InitRecipes.AddProducts - measure not found : medium, returning default, measure : 820.359281437126
+2017-01-23 22:36:43,291 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 14
+2017-01-23 22:36:43,302 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 29.7
+2017-01-23 22:36:43,419 ERROR InitRecipes.AddProducts - solid pack pumpkin : 2 cups solid pack pumpkin
+2017-01-23 22:36:43,460 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 14
+2017-01-23 22:36:43,467 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:43,481 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 28
+2017-01-23 22:36:43,527 ERROR InitRecipes.AddProducts - very ripe bananas : 5 very ripe bananas
+2017-01-23 22:36:43,533 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:43,589 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 29.7
+2017-01-23 22:36:43,611 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:43,704 ERROR InitRecipes.AddProducts - salt and pepper to taste (optional)
+2017-01-23 22:36:43,712 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 29.7
+2017-01-23 22:36:43,892 ERROR InitRecipes.AddProducts - torn fresh spinach : 1 cup torn fresh spinach
+2017-01-23 22:36:43,942 ERROR InitRecipes.AddProducts - salt and pepper to taste
+2017-01-23 22:36:43,948 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:44,005 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 28.3333333333333
+2017-01-23 22:36:44,079 ERROR InitRecipes.AddProducts - artificial sweetener : 1 tablespoon artificial sweetener
+2017-01-23 22:36:44,093 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:44,118 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 29.7
+2017-01-23 22:36:44,173 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 29.7
+2017-01-23 22:36:44,279 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 14
+2017-01-23 22:36:44,288 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:44,385 DEBUG InitRecipes.AddProducts - measure not found : slices, returning default, measure : 60
+2017-01-23 22:36:44,409 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 29.7
+2017-01-23 22:36:44,459 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:44,509 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:44,526 ERROR InitRecipes.AddProducts - can condensed cream of mushroom soup : 1 (10.75 ounce) can condensed cream of mushroom soup
+2017-01-23 22:36:44,589 ERROR InitRecipes.AddProducts - package frozen potato rounds : 1 (32 ounce) package frozen potato rounds
+2017-01-23 22:36:44,677 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:44,697 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:44,760 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 29.7
+2017-01-23 22:36:44,862 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 14
+2017-01-23 22:36:44,869 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:44,940 ERROR InitRecipes.AddProducts - slices bread : 6 (1 ounce) slices bread
+2017-01-23 22:36:44,982 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:45,041 ERROR InitRecipes.AddProducts - ground dry mustard : 1 teaspoon ground dry mustard
+2017-01-23 22:36:45,107 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 29.7
+2017-01-23 22:36:45,200 DEBUG InitRecipes.AddProducts - measure not found : egg whites, returning default, measure : 28
+2017-01-23 22:36:45,225 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 29.7
+Warning: Recipe 233074 contains USDA Product duplicate oil
+2017-01-23 22:36:45,424 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:45,476 ERROR InitRecipes.AddProducts - package country gravy mix : 1 (2.64 ounce) package country gravy mix
+2017-01-23 22:36:45,505 ERROR InitRecipes.AddProducts - paprika to taste (optional)
+2017-01-23 22:36:45,549 ERROR InitRecipes.AddProducts - coarsely ground grits : 1 cup coarsely ground grits
+2017-01-23 22:36:45,612 ERROR InitRecipes.AddProducts - half : 2 cups half
+2017-01-23 22:36:45,658 ERROR InitRecipes.AddProducts - uncooked shrimp : 2 pounds uncooked shrimp
+2017-01-23 22:36:45,658 ERROR InitRecipes.AddProducts - salt to taste
+2017-01-23 22:36:45,745 ERROR InitRecipes.AddProducts - andouille sausage : 1 pound andouille sausage
+2017-01-23 22:36:45,905 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 29.7
+2017-01-23 22:36:46,029 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:46,055 ERROR InitRecipes.AddProducts - salt and ground black pepper to taste
+2017-01-23 22:36:46,100 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 28.3333333333333
+2017-01-23 22:36:46,110 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 29.7
+2017-01-23 22:36:46,198 ERROR InitRecipes.AddProducts - quick cooking oats : 1 1/2 cups quick cooking oats
+2017-01-23 22:36:46,241 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:46,375 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:46,412 ERROR InitRecipes.AddProducts - salt and pepper to taste
+2017-01-23 22:36:46,422 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 29.7
+2017-01-23 22:36:46,491 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:46,501 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:46,600 ERROR InitRecipes.AddProducts - light brown sugar : 1 cup light brown sugar
+2017-01-23 22:36:46,695 ERROR InitRecipes.AddProducts - can bacon bits : 1 (3 ounce) can bacon bits
+2017-01-23 22:36:46,786 ERROR InitRecipes.AddProducts - Failed to parse relative weight for item : 1 (9 inch) deep dish frozen pie crust
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at InitRecipes.AddProducts.ParseByRelativeNumber(String[] parts, String item) in C:\dev\Ranker\EatRight\InitRecipes\AddProducts.cs:line 272
+2017-01-23 22:36:46,806 ERROR InitRecipes.AddProducts - 1 (9 inch) deep dish frozen pie crust
+2017-01-23 22:36:46,812 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:46,850 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:46,860 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 29.7
+2017-01-23 22:36:46,891 ERROR InitRecipes.AddProducts - Failed to parse actual weight for item : 1/2 teaspoon ground cloves
+2017-01-23 22:36:46,892 ERROR InitRecipes.AddProducts - 1/2 teaspoon ground cloves
+2017-01-23 22:36:47,000 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:47,063 ERROR InitRecipes.AddProducts - Failed to parse relative weight for item : 2 (8 inch) unbaked pie shells
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at InitRecipes.AddProducts.ParseByRelativeNumber(String[] parts, String item) in C:\dev\Ranker\EatRight\InitRecipes\AddProducts.cs:line 272
+2017-01-23 22:36:47,076 ERROR InitRecipes.AddProducts - 2 (8 inch) unbaked pie shells
+2017-01-23 22:36:47,129 DEBUG InitRecipes.AddProducts - measure not found : egg white, returning default, measure : 28
+2017-01-23 22:36:47,137 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:47,172 ERROR InitRecipes.AddProducts - salt and pepper to taste
+2017-01-23 22:36:47,257 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:47,284 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 29.7
+2017-01-23 22:36:47,314 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 29.7
+2017-01-23 22:36:47,379 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:47,497 ERROR InitRecipes.AddProducts - salt and pepper to taste
+2017-01-23 22:36:47,498 ERROR InitRecipes.AddProducts - cooking spray
+2017-01-23 22:36:47,507 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 29.7
+2017-01-23 22:36:47,591 DEBUG InitRecipes.AddProducts - measure not found : large, returning default, measure : 28.35
+2017-01-23 22:36:47,618 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 28
+2017-01-23 22:36:47,657 ERROR InitRecipes.AddProducts - semisweet chocolate chips : 1/3 cup semisweet chocolate chips
+2017-01-23 22:36:47,745 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:47,813 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:47,925 ERROR InitRecipes.AddProducts - flax seed meal : 1/2 cup flax seed meal
+2017-01-23 22:36:47,939 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 29.7
+2017-01-23 22:36:47,982 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 28.35
+2017-01-23 22:36:48,032 ERROR InitRecipes.AddProducts - ice cubes : 2 cups ice cubes
+2017-01-23 22:36:48,254 ERROR InitRecipes.AddProducts - uncooked white long : 1 cup uncooked white long
+2017-01-23 22:36:48,335 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 29.7
+2017-01-23 22:36:48,404 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:48,478 ERROR InitRecipes.AddProducts - miniature semisweet chocolate chips : 1/2 cup miniature semisweet chocolate chips
+2017-01-23 22:36:48,495 ERROR InitRecipes.AddProducts - cooking spray
+2017-01-23 22:36:48,595 ERROR InitRecipes.AddProducts - poppy seeds : 1 1/2 tablespoons poppy seeds
+2017-01-23 22:36:48,649 ERROR InitRecipes.AddProducts - mini sandwich rolls : 24 mini sandwich rolls
+2017-01-23 22:36:48,676 ERROR InitRecipes.AddProducts - thinly sliced cooked deli ham : 1 pound thinly sliced cooked deli ham
+2017-01-23 22:36:48,742 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 14
+2017-01-23 22:36:48,760 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:48,783 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 28.3333333333333
+2017-01-23 22:36:48,842 ERROR InitRecipes.AddProducts - hot water : 1/4 cup hot water
+2017-01-23 22:36:48,857 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 28
+2017-01-23 22:36:48,864 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:48,938 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 14
+2017-01-23 22:36:48,973 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 28
+2017-01-23 22:36:49,011 ERROR InitRecipes.AddProducts - semisweet chocolate chips : 1 cup semisweet chocolate chips
+2017-01-23 22:36:49,026 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 29.7
+2017-01-23 22:36:49,085 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:49,145 ERROR InitRecipes.AddProducts - unbleached all : 1/2 cup unbleached all
+2017-01-23 22:36:49,222 ERROR InitRecipes.AddProducts - unsalted butter : 2 tablespoons unsalted butter
+2017-01-23 22:36:49,280 ERROR InitRecipes.AddProducts - unsalted butter : 1/4 cup unsalted butter
+2017-01-23 22:36:49,403 ERROR InitRecipes.AddProducts - tart apple : 1 large tart apple
+2017-01-23 22:36:49,455 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:49,507 ERROR InitRecipes.AddProducts - very ripe bananas : 4 very ripe bananas
+2017-01-23 22:36:49,515 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 29.7
+2017-01-23 22:36:49,543 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 28
+2017-01-23 22:36:49,590 ERROR InitRecipes.AddProducts - bacon grease : 1 1/2 teaspoons bacon grease
+2017-01-23 22:36:49,613 ERROR InitRecipes.AddProducts - salt and ground black pepper to taste
+2017-01-23 22:36:49,652 ERROR InitRecipes.AddProducts - dry pancake mix : 2 cups dry pancake mix
+2017-01-23 22:36:49,676 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:49,813 ERROR InitRecipes.AddProducts - loaf french baguette : 1 (1 pound) loaf french baguette
+2017-01-23 22:36:49,819 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+Warning: Recipe 45620 contains USDA Product duplicate ground cinnamon
+2017-01-23 22:36:49,895 ERROR InitRecipes.AddProducts - uncooked rolled oats : 1 cup uncooked rolled oats
+2017-01-23 22:36:49,904 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 28.3333333333333
+2017-01-23 22:36:49,913 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 29.7
+2017-01-23 22:36:50,280 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:50,369 ERROR InitRecipes.AddProducts - strips canadian : 8 strips canadian
+Warning: Recipe 17205 contains USDA Product duplicate butter
+2017-01-23 22:36:50,390 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:50,442 ERROR InitRecipes.AddProducts - seasoning salt : 1/2 teaspoon seasoning salt
+2017-01-23 22:36:50,575 ERROR InitRecipes.AddProducts - Failed to parse relative weight for item : 1/2 onion
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at InitRecipes.AddProducts.ParseByRelativeNumber(String[] parts, String item) in C:\dev\Ranker\EatRight\InitRecipes\AddProducts.cs:line 272
+2017-01-23 22:36:50,594 ERROR InitRecipes.AddProducts - 1/2 onion
+2017-01-23 22:36:50,596 ERROR InitRecipes.AddProducts - Failed to parse relative weight for item : 1/2 green pepper
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at InitRecipes.AddProducts.ParseByRelativeNumber(String[] parts, String item) in C:\dev\Ranker\EatRight\InitRecipes\AddProducts.cs:line 272
+2017-01-23 22:36:50,615 ERROR InitRecipes.AddProducts - 1/2 green pepper
+2017-01-23 22:36:50,669 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 28.35
+2017-01-23 22:36:50,676 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:50,722 ERROR InitRecipes.AddProducts - salt and ground black pepper to taste
+2017-01-23 22:36:50,731 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 29.7
+2017-01-23 22:36:50,826 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:50,870 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 14
+2017-01-23 22:36:50,914 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:50,973 ERROR InitRecipes.AddProducts - quick cooking oats : 3 cups quick cooking oats
+2017-01-23 22:36:51,068 ERROR InitRecipes.AddProducts - sifted self : 1 cup sifted self
+2017-01-23 22:36:51,152 ERROR InitRecipes.AddProducts - salt to taste
+2017-01-23 22:36:51,167 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 29.7
+2017-01-23 22:36:51,182 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:51,215 ERROR InitRecipes.AddProducts - can refrigerated jumbo buttermilk biscuits : 1 (16 ounce) can refrigerated jumbo buttermilk biscuits
+2017-01-23 22:36:51,232 ERROR InitRecipes.AddProducts - package jimmy dean&#174; original hearty pork sausage crumbles : 1 (9.6 ounce) package jimmy dean&#174; original hearty pork sausage crumbles
+2017-01-23 22:36:51,256 ERROR InitRecipes.AddProducts - flour : 1/4 cup flour
+2017-01-23 22:36:51,265 ERROR InitRecipes.AddProducts - salt and ground black pepper to taste
+2017-01-23 22:36:51,334 ERROR InitRecipes.AddProducts - shredded tart apple : 1 cup shredded tart apple
+2017-01-23 22:36:51,343 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 29.7
+2017-01-23 22:36:51,464 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 29.7
+Warning: Recipe 23376 contains USDA Product duplicate granulated sugar
+2017-01-23 22:36:51,569 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 14
+2017-01-23 22:36:51,628 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:51,728 ERROR InitRecipes.AddProducts - can refrigerated flaky biscuit dough : 1 (10 ounce) can refrigerated flaky biscuit dough
+2017-01-23 22:36:51,777 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:51,785 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 28.35
+2017-01-23 22:36:51,800 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 29.7
+2017-01-23 22:36:51,821 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 28
+2017-01-23 22:36:51,895 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:51,977 ERROR InitRecipes.AddProducts - very ripe bananas : 2 very ripe bananas
+2017-01-23 22:36:52,072 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 29.7
+2017-01-23 22:36:52,106 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 28
+2017-01-23 22:36:52,145 ERROR InitRecipes.AddProducts - white bread cubes : 10 cups white bread cubes
+2017-01-23 22:36:52,180 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:52,285 ERROR InitRecipes.AddProducts - Failed to parse relative weight for item : 1 recipe pastry for a 9 inch single crust pie
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at InitRecipes.AddProducts.ParseByRelativeNumber(String[] parts, String item) in C:\dev\Ranker\EatRight\InitRecipes\AddProducts.cs:line 272
+2017-01-23 22:36:52,297 ERROR InitRecipes.AddProducts - 1 recipe pastry for a 9 inch single crust pie
+2017-01-23 22:36:52,333 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:52,402 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 29.7
+2017-01-23 22:36:52,513 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:52,550 ERROR InitRecipes.AddProducts - semisweet chocolate chips : 1 cup semisweet chocolate chips
+2017-01-23 22:36:52,570 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:52,661 ERROR InitRecipes.AddProducts - salt and pepper to taste
+2017-01-23 22:36:52,662 ERROR InitRecipes.AddProducts - Failed to parse relative weight for item : 1 (9 inch) unbaked pie crust
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at InitRecipes.AddProducts.ParseByRelativeNumber(String[] parts, String item) in C:\dev\Ranker\EatRight\InitRecipes\AddProducts.cs:line 272
+2017-01-23 22:36:52,673 ERROR InitRecipes.AddProducts - 1 (9 inch) unbaked pie crust
+2017-01-23 22:36:52,770 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 29.7
+2017-01-23 22:36:52,842 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:52,897 ERROR InitRecipes.AddProducts - corn syrup : 2 tablespoons corn syrup
+Warning: Recipe 20140 contains USDA Product duplicate vanilla extract
+Warning: Recipe 20140 contains USDA Product duplicate milk
+2017-01-23 22:36:53,008 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:53,030 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 29.7
+2017-01-23 22:36:53,072 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 28
+2017-01-23 22:36:53,083 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 29.7
+2017-01-23 22:36:53,172 DEBUG InitRecipes.AddProducts - measure not found : egg whites, returning default, measure : 28
+2017-01-23 22:36:53,212 ERROR InitRecipes.AddProducts - packages refrigerated biscuit dough : 3 (10 ounce) packages refrigerated biscuit dough
+2017-01-23 22:36:53,337 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 170
+2017-01-23 22:36:53,387 ERROR InitRecipes.AddProducts - garlic salt : 1/4 teaspoon garlic salt
+2017-01-23 22:36:53,431 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:53,554 ERROR InitRecipes.AddProducts - Failed to parse relative weight for item : 1/2 apple
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at InitRecipes.AddProducts.ParseByRelativeNumber(String[] parts, String item) in C:\dev\Ranker\EatRight\InitRecipes\AddProducts.cs:line 272
+2017-01-23 22:36:53,570 ERROR InitRecipes.AddProducts - 1/2 apple
+2017-01-23 22:36:53,683 ERROR InitRecipes.AddProducts - fresh chopped or leaf spinach : 1 1/2 cups fresh chopped or leaf spinach
+2017-01-23 22:36:53,734 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 29.7
+2017-01-23 22:36:53,816 ERROR InitRecipes.AddProducts - creamy peanut butter : 2 tablespoons creamy peanut butter
+2017-01-23 22:36:53,864 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 29.7
+2017-01-23 22:36:53,904 ERROR InitRecipes.AddProducts - quick cooking oats : 1/2 cup quick cooking oats
+2017-01-23 22:36:53,981 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:54,039 ERROR InitRecipes.AddProducts - baking potatoes : 6 baking potatoes
+2017-01-23 22:36:54,132 ERROR InitRecipes.AddProducts - seasoning salt : 2 teaspoons seasoning salt
+2017-01-23 22:36:54,175 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:54,176 ERROR InitRecipes.AddProducts - salt and pepper to taste
+2017-01-23 22:36:54,183 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:54,201 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 29.7
+2017-01-23 22:36:54,311 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 170
+2017-01-23 22:36:54,317 ERROR InitRecipes.AddProducts - seasoning salt to taste
+2017-01-23 22:36:54,353 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 28.35
+2017-01-23 22:36:54,413 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:54,421 ERROR InitRecipes.AddProducts - salt and pepper to taste
+2017-01-23 22:36:54,437 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 29.7
+2017-01-23 22:36:54,473 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:54,570 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:54,615 ERROR InitRecipes.AddProducts - tater tots : 2 pounds tater tots
+2017-01-23 22:36:54,656 ERROR InitRecipes.AddProducts - old : 1 1/2 cups old
+2017-01-23 22:36:54,666 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 28.3333333333333
+2017-01-23 22:36:54,747 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 14
+2017-01-23 22:36:54,933 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 29.7
+2017-01-23 22:36:55,131 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:55,154 ERROR InitRecipes.AddProducts - can condensed cream of mushroom soup : 1 (10.75 ounce) can condensed cream of mushroom soup
+2017-01-23 22:36:55,317 ERROR InitRecipes.AddProducts - dry mustard : 1/4 teaspoon dry mustard
+2017-01-23 22:36:55,340 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 29.7
+2017-01-23 22:36:55,384 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+Warning: Recipe 25216 contains USDA Product duplicate butter
+2017-01-23 22:36:55,549 ERROR InitRecipes.AddProducts - whipped heavy cream : 1 1/2 cups whipped heavy cream
+Warning: Recipe 25216 contains USDA Product duplicate ground cinnamon
+2017-01-23 22:36:55,573 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:55,592 DEBUG InitRecipes.AddProducts - measure not found : slices, returning default, measure : 85
+2017-01-23 22:36:55,743 ERROR InitRecipes.AddProducts - chunky salsa (optional) : 1 tablespoon chunky salsa (optional)
+2017-01-23 22:36:55,813 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:55,863 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 29.7
+2017-01-23 22:36:55,877 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:55,915 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 14
+2017-01-23 22:36:56,023 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 29.7
+2017-01-23 22:36:56,113 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 28
+2017-01-23 22:36:56,176 ERROR InitRecipes.AddProducts - Failed to parse relative weight for item : 12 (3/4 inch thick) slices day
+System.FormatException: Input string was not in a correct format.
+   at System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Double.Parse(String s)
+   at Logic.ParseHelpers.ParseAmount(String fraction) in C:\dev\Ranker\EatRight\Logic\Expressions.cs:line 62
+   at InitRecipes.AddProducts.ParseByRelativeMeasures(String[] parts, String item) in C:\dev\Ranker\EatRight\InitRecipes\AddProducts.cs:line 250
+2017-01-23 22:36:56,233 ERROR InitRecipes.AddProducts - day : 12 (3/4 inch thick) slices day
+2017-01-23 22:36:56,239 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:56,263 ERROR InitRecipes.AddProducts - Failed to parse relative weight for item : 12 links johnsonville&#174; original pork sausage
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at InitRecipes.AddProducts.ParseByRelativeNumber(String[] parts, String item) in C:\dev\Ranker\EatRight\InitRecipes\AddProducts.cs:line 272
+2017-01-23 22:36:56,283 ERROR InitRecipes.AddProducts - 12 links johnsonville&#174; original pork sausage
+2017-01-23 22:36:56,300 ERROR InitRecipes.AddProducts - frozen country style shredded hash brown potatoes : 3 cups frozen country style shredded hash brown potatoes
+2017-01-23 22:36:56,327 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:56,367 ERROR InitRecipes.AddProducts - shredded 4 : 2 cups shredded 4
+2017-01-23 22:36:56,403 ERROR InitRecipes.AddProducts - chopped fresh chives or green onion
+2017-01-23 22:36:56,528 DEBUG InitRecipes.AddProducts - measure not found : slices, returning default, measure : 60
+2017-01-23 22:36:56,535 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:56,650 ERROR InitRecipes.AddProducts - package refrigerated crescent roll dough : 1 (8 ounce) package refrigerated crescent roll dough
+2017-01-23 22:36:56,694 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:56,703 ERROR InitRecipes.AddProducts - salt and pepper to taste
+2017-01-23 22:36:56,783 ERROR InitRecipes.AddProducts - frozen shredded hash brown potatoes : 4 cups frozen shredded hash brown potatoes
+2017-01-23 22:36:56,789 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:56,826 ERROR InitRecipes.AddProducts - Failed to parse relative weight for item : 1 1/2 cups small curd cottage cheese
+2017-01-23 22:36:56,827 ERROR InitRecipes.AddProducts - 1 1/2 cups small curd cottage cheese
+2017-01-23 22:36:56,909 ERROR InitRecipes.AddProducts - quart oil for frying : 1 quart oil for frying
+2017-01-23 22:36:56,932 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 29.7
+2017-01-23 22:36:56,983 DEBUG InitRecipes.AddProducts - measure not found : slices, returning default, measure : 60
+2017-01-23 22:36:57,030 DEBUG InitRecipes.AddProducts - measure not found : slices, returning default, measure : 79
+2017-01-23 22:36:57,048 DEBUG InitRecipes.AddProducts - measure not found : slices, returning default, measure : 85
+2017-01-23 22:36:57,153 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:57,181 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 29.7
+2017-01-23 22:36:57,232 ERROR InitRecipes.AddProducts - quick cooking oats : 1/2 cup quick cooking oats
+2017-01-23 22:36:57,245 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 28
+2017-01-23 22:36:57,253 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:57,351 ERROR InitRecipes.AddProducts - torn baby chopped or leaf spinach : 1 cup torn baby chopped or leaf spinach
+2017-01-23 22:36:57,413 ERROR InitRecipes.AddProducts - salt and pepper to taste
+2017-01-23 22:36:57,421 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 29.7
+2017-01-23 22:36:57,547 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:57,554 ERROR InitRecipes.AddProducts - apple cider syrup
+Warning: Recipe 65691 contains USDA Product duplicate ground cinnamon
+2017-01-23 22:36:57,658 ERROR InitRecipes.AddProducts - apple cider : 1 cup apple cider
+Warning: Recipe 65691 contains USDA Product duplicate butter
+2017-01-23 22:36:57,710 DEBUG InitRecipes.AddProducts - measure not found : red potatoes, returning default, measure : 299
+Warning: Recipe 20462 contains USDA Product duplicate olive oil
+2017-01-23 22:36:57,914 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:57,922 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 29.7
+2017-01-23 22:36:58,007 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 28
+2017-01-23 22:36:58,093 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:58,270 ERROR InitRecipes.AddProducts - chopped cooked ham (optional)
+2017-01-23 22:36:58,271 ERROR InitRecipes.AddProducts - sliced jalapeno peppers (optional)
+2017-01-23 22:36:58,278 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:58,349 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 28.3333333333333
+2017-01-23 22:36:58,357 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 29.7
+2017-01-23 22:36:58,466 ERROR InitRecipes.AddProducts - unsalted butter : 5 1/3 tablespoons unsalted butter
+2017-01-23 22:36:58,480 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:58,524 ERROR InitRecipes.AddProducts - unsalted butter : 3 tablespoons unsalted butter
+2017-01-23 22:36:58,526 ERROR InitRecipes.AddProducts - cooking spray
+2017-01-23 22:36:58,639 ERROR InitRecipes.AddProducts - imitation crab meat : 1/2 pound imitation crab meat
+2017-01-23 22:36:58,677 ERROR InitRecipes.AddProducts - Failed to parse relative weight for item : 1 (9 inch) unbaked pie crust
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at InitRecipes.AddProducts.ParseByRelativeNumber(String[] parts, String item) in C:\dev\Ranker\EatRight\InitRecipes\AddProducts.cs:line 272
+2017-01-23 22:36:58,697 ERROR InitRecipes.AddProducts - 1 (9 inch) unbaked pie crust
+2017-01-23 22:36:58,736 ERROR InitRecipes.AddProducts - hot whole milk : 3 cups hot whole milk
+2017-01-23 22:36:58,824 ERROR InitRecipes.AddProducts - double : 6 ounces double
+2017-01-23 22:36:58,862 ERROR InitRecipes.AddProducts - sweetened whipped cream : 3 tablespoons sweetened whipped cream
+2017-01-23 22:36:58,888 ERROR InitRecipes.AddProducts - es pumpkin pie spice : 3 pinches pumpkin pie spice
+2017-01-23 22:36:58,900 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 29.7
+2017-01-23 22:36:58,963 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:36:59,008 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 29.7
+2017-01-23 22:36:59,152 DEBUG InitRecipes.AddProducts - measure not found : egg whites, returning default, measure : 28
+2017-01-23 22:36:59,169 ERROR InitRecipes.AddProducts - can condensed cream of mushroom soup : 1 (10.75 ounce) can condensed cream of mushroom soup
+2017-01-23 22:36:59,276 ERROR InitRecipes.AddProducts - kielbasa sausage : 1 pound kielbasa sausage
+2017-01-23 22:36:59,352 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 29.7
+Warning: Recipe 6864 contains USDA Product duplicate margarine
+2017-01-23 22:36:59,490 DEBUG InitRecipes.AddProducts - measure not found : large, returning default, measure : 820.359281437126
+2017-01-23 22:36:59,558 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 29.7
+2017-01-23 22:36:59,688 DEBUG InitRecipes.AddProducts - measure not found : egg whites, returning default, measure : 28
+2017-01-23 22:36:59,733 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 14
+2017-01-23 22:36:59,757 ERROR InitRecipes.AddProducts - fresh : 1 pound fresh
+2017-01-23 22:36:59,832 ERROR InitRecipes.AddProducts - packages refrigerated crescent rolls : 2 (8 ounce) packages refrigerated crescent rolls
+2017-01-23 22:36:59,869 DEBUG InitRecipes.AddProducts - measure not found : egg white, returning default, measure : 28
+2017-01-23 22:36:59,915 ERROR InitRecipes.AddProducts - poppy seeds : 1 tablespoon poppy seeds
+2017-01-23 22:37:00,010 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 29.7
+2017-01-23 22:37:00,105 ERROR InitRecipes.AddProducts - raw sunflower seeds : 1 cup raw sunflower seeds
+2017-01-23 22:37:00,163 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 29.7
+2017-01-23 22:37:00,250 ERROR InitRecipes.AddProducts - solid pack pumpkin : 1 cup solid pack pumpkin
+2017-01-23 22:37:00,329 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:37:00,449 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 29.7
+2017-01-23 22:37:00,523 ERROR InitRecipes.AddProducts - tapioca flour : 3 tablespoons tapioca flour
+2017-01-23 22:37:00,568 ERROR InitRecipes.AddProducts - potato starch : 1/3 cup potato starch
+2017-01-23 22:37:00,607 ERROR InitRecipes.AddProducts - dry buttermilk powder : 4 tablespoons dry buttermilk powder
+2017-01-23 22:37:00,646 ERROR InitRecipes.AddProducts - packet sugar substitute : 1 packet sugar substitute
+2017-01-23 22:37:00,714 ERROR InitRecipes.AddProducts - xanthan gum : 1/2 teaspoon xanthan gum
+2017-01-23 22:37:00,720 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:37:00,755 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 29.7
+2017-01-23 22:37:00,763 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:37:00,837 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 14
+2017-01-23 22:37:00,893 ERROR InitRecipes.AddProducts - semisweet chocolate chips : 1 cup semisweet chocolate chips
+2017-01-23 22:37:01,072 ERROR InitRecipes.AddProducts - self : 2 3/4 cups self
+2017-01-23 22:37:01,125 DEBUG InitRecipes.AddProducts - measure not found : egg whites, returning default, measure : 28
+2017-01-23 22:37:01,174 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 29.7
+2017-01-23 22:37:01,275 ERROR InitRecipes.AddProducts - poppy seeds : 1 teaspoon poppy seeds
+2017-01-23 22:37:01,282 ERROR InitRecipes.AddProducts - cooking spray
+2017-01-23 22:37:01,289 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 28
+2017-01-23 22:37:01,328 ERROR InitRecipes.AddProducts - old : 1 1/2 cups old
+2017-01-23 22:37:01,337 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 28.3333333333333
+2017-01-23 22:37:01,383 ERROR InitRecipes.AddProducts - ground flax meal : 1/2 cup ground flax meal
+2017-01-23 22:37:01,457 ERROR InitRecipes.AddProducts - almond butter : 1/2 cup almond butter
+2017-01-23 22:37:01,514 ERROR InitRecipes.AddProducts - blue agave nectar : 1/4 cup blue agave nectar
+2017-01-23 22:37:01,609 ERROR InitRecipes.AddProducts - dried cherries : 1/2 cup dried cherries
+2017-01-23 22:37:01,649 ERROR InitRecipes.AddProducts - semi : 1 cup semi
+2017-01-23 22:37:01,659 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 29.7
+2017-01-23 22:37:01,736 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:37:01,766 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 28
+2017-01-23 22:37:01,776 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 29.7
+2017-01-23 22:37:01,857 ERROR InitRecipes.AddProducts - Failed to parse relative weight for item : 8 (6 inch) corn tortillas
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at InitRecipes.AddProducts.ParseByRelativeNumber(String[] parts, String item) in C:\dev\Ranker\EatRight\InitRecipes\AddProducts.cs:line 272
+2017-01-23 22:37:01,875 ERROR InitRecipes.AddProducts - 8 (6 inch) corn tortillas
+2017-01-23 22:37:01,882 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:37:01,961 ERROR InitRecipes.AddProducts - hot pepper sauce (e.g. tabasco&#8482;) : 1 dash hot pepper sauce (e.g. tabasco&#8482;)
+2017-01-23 22:37:02,015 ERROR InitRecipes.AddProducts - warm milk (110 degrees f/45 degrees c) : 1/4 cup warm milk (110 degrees f/45 degrees c)
+2017-01-23 22:37:02,067 ERROR InitRecipes.AddProducts - warm milk  (110 degrees f/45 degrees c) : 2 3/4 cups warm milk  (110 degrees f/45 degrees c)
+2017-01-23 22:37:02,131 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 29.7
+2017-01-23 22:37:02,168 DEBUG InitRecipes.AddProducts - measure not found : egg whites, returning default, measure : 28
+2017-01-23 22:37:02,186 ERROR InitRecipes.AddProducts - warm milk (110 degrees f/45 degrees c) : 1 cup warm milk (110 degrees f/45 degrees c)
+2017-01-23 22:37:02,192 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:37:02,307 ERROR InitRecipes.AddProducts - bread machine yeast : 2 1/2 teaspoons bread machine yeast
+Warning: Recipe 20156 contains USDA Product duplicate butter
+Warning: Recipe 20156 contains USDA Product duplicate salt
+2017-01-23 22:37:02,477 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:37:02,514 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 14
+2017-01-23 22:37:02,566 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 29.7
+2017-01-23 22:37:02,617 ERROR InitRecipes.AddProducts - Failed to parse actual weight for item : 1/2 teaspoon ground cloves
+2017-01-23 22:37:02,618 ERROR InitRecipes.AddProducts - 1/2 teaspoon ground cloves
+2017-01-23 22:37:02,736 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:37:02,838 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 29.7
+Warning: Recipe 21554 contains USDA Product duplicate butter
+2017-01-23 22:37:02,868 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 29.7
+2017-01-23 22:37:02,911 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:37:02,949 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 14
+2017-01-23 22:37:03,021 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 28
+2017-01-23 22:37:03,076 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 29.7
+2017-01-23 22:37:03,149 ERROR InitRecipes.AddProducts - cooking spray
+Warning: Recipe 6984 contains USDA Product duplicate granulated sugar
+2017-01-23 22:37:03,253 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:37:03,298 ERROR InitRecipes.AddProducts - very ripe bananas : 6 very ripe bananas
+Warning: Recipe 6984 contains USDA Product duplicate ground cinnamon
+2017-01-23 22:37:03,374 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 29.7
+2017-01-23 22:37:03,389 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 28
+2017-01-23 22:37:03,436 ERROR InitRecipes.AddProducts - marinara sauce : 1/3 cup marinara sauce
+2017-01-23 22:37:03,467 ERROR InitRecipes.AddProducts - salt and freshly ground black pepper to taste
+2017-01-23 22:37:03,487 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:37:03,590 ERROR InitRecipes.AddProducts - heavy whipping cream : 2 tablespoons heavy whipping cream
+2017-01-23 22:37:03,628 DEBUG InitRecipes.AddProducts - measure not found : slices, returning default, measure : 28.35
+2017-01-23 22:37:03,703 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 29.7
+2017-01-23 22:37:03,813 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:37:03,822 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 29.7
+2017-01-23 22:37:03,866 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 14
+2017-01-23 22:37:03,930 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 29.7
+2017-01-23 22:37:04,010 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:37:04,097 ERROR InitRecipes.AddProducts - light corn syrup : 2 tablespoons light corn syrup
+2017-01-23 22:37:04,112 ERROR InitRecipes.AddProducts - Failed to parse relative weight for item : 12 (3/4 inch thick) slices french or vienna bread
+System.FormatException: Input string was not in a correct format.
+   at System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Double.Parse(String s)
+   at Logic.ParseHelpers.ParseAmount(String fraction) in C:\dev\Ranker\EatRight\Logic\Expressions.cs:line 62
+   at InitRecipes.AddProducts.ParseByRelativeMeasures(String[] parts, String item) in C:\dev\Ranker\EatRight\InitRecipes\AddProducts.cs:line 250
+2017-01-23 22:37:04,145 DEBUG InitRecipes.AddProducts - measure not found : slices, returning default, measure : 28.35
+2017-01-23 22:37:04,263 ERROR InitRecipes.AddProducts - 2% milk : 1/2 cup 2% milk
+2017-01-23 22:37:04,357 DEBUG InitRecipes.AddProducts - measure not found : egg whites, returning default, measure : 28
+2017-01-23 22:37:04,364 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:37:04,393 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 29.7
+2017-01-23 22:37:04,450 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:37:04,489 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 29.7
+2017-01-23 22:37:04,657 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 14
+2017-01-23 22:37:04,702 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:37:04,710 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 29.7
+2017-01-23 22:37:04,763 ERROR InitRecipes.AddProducts - Failed to parse actual weight for item : 1 1/2 teaspoons ground cloves
+2017-01-23 22:37:04,764 ERROR InitRecipes.AddProducts - 1 1/2 teaspoons ground cloves
+2017-01-23 22:37:04,778 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 29.7
+2017-01-23 22:37:04,797 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:37:04,856 ERROR InitRecipes.AddProducts - Failed to parse relative weight for item : 12 thick slices bread
+System.FormatException: Input string was not in a correct format.
+   at System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Double.Parse(String s)
+   at Logic.ParseHelpers.GetFractionedNumber(String fraction) in C:\dev\Ranker\EatRight\Logic\Expressions.cs:line 75
+   at Logic.ParseHelpers.ParseAmount(String fraction) in C:\dev\Ranker\EatRight\Logic\Expressions.cs:line 51
+   at InitRecipes.AddProducts.ParseByRelativeMeasures(String[] parts, String item) in C:\dev\Ranker\EatRight\InitRecipes\AddProducts.cs:line 250
+2017-01-23 22:37:04,924 ERROR InitRecipes.AddProducts - packages refrigerated biscuit dough : 3 (12 ounce) packages refrigerated biscuit dough
+2017-01-23 22:37:05,032 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 28
+2017-01-23 22:37:05,121 ERROR InitRecipes.AddProducts - mustard powder : 1 teaspoon mustard powder
+2017-01-23 22:37:05,132 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:37:05,178 DEBUG InitRecipes.AddProducts - measure not found : slices, returning default, measure : 60
+2017-01-23 22:37:05,219 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 29.7
+2017-01-23 22:37:05,226 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:37:05,296 ERROR InitRecipes.AddProducts - bread cubes : 5 cups bread cubes
+2017-01-23 22:37:05,303 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:37:05,421 ERROR InitRecipes.AddProducts - day : 12 slices day
+2017-01-23 22:37:05,476 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:37:05,605 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:37:05,735 ERROR InitRecipes.AddProducts - light corn syrup : 3 tablespoons light corn syrup
+2017-01-23 22:37:05,963 ERROR InitRecipes.AddProducts - salt and pepper to taste
+2017-01-23 22:37:06,017 ERROR InitRecipes.AddProducts - dry dessert wine : 1 cup dry dessert wine
+2017-01-23 22:37:06,152 ERROR InitRecipes.AddProducts - smoked spanish paprika : 1/4 cup smoked spanish paprika
+2017-01-23 22:37:06,242 ERROR InitRecipes.AddProducts - lean beef stew meat : 3 pounds lean beef stew meat
+Warning: Recipe 182157 contains USDA Product duplicate vegetable oil
+2017-01-23 22:37:06,542 ERROR InitRecipes.AddProducts - celery salt : 2 teaspoons celery salt
+2017-01-23 22:37:06,588 ERROR InitRecipes.AddProducts - garlic salt : 2 teaspoons garlic salt
+2017-01-23 22:37:06,637 ERROR InitRecipes.AddProducts - package herb : 1 (6 ounce) package herb
+2017-01-23 22:37:06,735 ERROR InitRecipes.AddProducts - garlic salt : 1/4 teaspoon garlic salt
+2017-01-23 22:37:06,825 ERROR InitRecipes.AddProducts - penne pasta : 12 ounces penne pasta
+2017-01-23 22:37:06,879 ERROR InitRecipes.AddProducts - extra : 2 tablespoons extra
+2017-01-23 22:37:06,974 ERROR InitRecipes.AddProducts - portobello mushrooms : 1/2 pound portobello mushrooms
+2017-01-23 22:37:07,019 ERROR InitRecipes.AddProducts - medium shrimp : 1 pound medium shrimp
+2017-01-23 22:37:07,055 ERROR InitRecipes.AddProducts - jar alfredo sauce : 1 (15 ounce) jar alfredo sauce
+2017-01-23 22:37:07,091 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 28.35
+2017-01-23 22:37:07,136 ERROR InitRecipes.AddProducts - salt and pepper to taste
+2017-01-23 22:37:07,150 ERROR InitRecipes.AddProducts - meatloaf ingredients:
+2017-01-23 22:37:07,165 ERROR InitRecipes.AddProducts - Failed to parse relative weight for item : 1/2 onion
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at InitRecipes.AddProducts.ParseByRelativeNumber(String[] parts, String item) in C:\dev\Ranker\EatRight\InitRecipes\AddProducts.cs:line 272
+2017-01-23 22:37:07,187 ERROR InitRecipes.AddProducts - 1/2 onion
+2017-01-23 22:37:07,188 ERROR InitRecipes.AddProducts - Failed to parse relative weight for item : 1/2 red peppers
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at InitRecipes.AddProducts.ParseByRelativeNumber(String[] parts, String item) in C:\dev\Ranker\EatRight\InitRecipes\AddProducts.cs:line 272
+2017-01-23 22:37:07,220 ERROR InitRecipes.AddProducts - 1/2 red peppers
+2017-01-23 22:37:07,375 ERROR InitRecipes.AddProducts - dried italian herbs : 1 teaspoon dried italian herbs
+2017-01-23 22:37:07,518 ERROR InitRecipes.AddProducts - glaze ingredients:
+2017-01-23 22:37:07,566 ERROR InitRecipes.AddProducts - hot pepper sauce to taste
+2017-01-23 22:37:07,777 ERROR InitRecipes.AddProducts - celery salt : 1/8 teaspoon celery salt
+2017-01-23 22:37:07,822 ERROR InitRecipes.AddProducts - tilapia fillets : 2 pounds tilapia fillets
+2017-01-23 22:37:07,979 ERROR InitRecipes.AddProducts - cans condensed cream of mushroom soup : 2 (10.75 ounce) cans condensed cream of mushroom soup
+2017-01-23 22:37:08,008 ERROR InitRecipes.AddProducts - package dry onion soup mix : 1 (1 ounce) package dry onion soup mix
+2017-01-23 22:37:08,057 ERROR InitRecipes.AddProducts - pot roast : 5 1/2 pounds pot roast
+2017-01-23 22:37:08,104 ERROR InitRecipes.AddProducts - pork butt : 1 pound pork butt
+2017-01-23 22:37:08,188 DEBUG InitRecipes.AddProducts - measure not found : egg white, returning default, measure : 28
+2017-01-23 22:37:08,254 DEBUG InitRecipes.AddProducts - measure not found : quart vegetable oil for frying, returning default, measure : 14
+2017-01-23 22:37:08,353 ERROR InitRecipes.AddProducts - granulated sugar to taste
+2017-01-23 22:37:08,354 ERROR InitRecipes.AddProducts - salt to taste
+Warning: Recipe 31144 contains USDA Product duplicate salt
+Warning: Recipe 31144 contains USDA Product duplicate granulated sugar
+Warning: Recipe 31144 contains USDA Product duplicate soy sauce
+Warning: Recipe 31144 contains USDA Product duplicate cornstarch
+Warning: Recipe 31144 contains USDA Product duplicate water
+2017-01-23 22:37:08,512 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 29.7
+2017-01-23 22:37:08,513 ERROR InitRecipes.AddProducts - Failed to parse actual weight for item : 1 (2 1/2 pound) boneless beef chuck roast
+System.FormatException: Input string was not in a correct format.
+   at System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Double.Parse(String s)
+   at Logic.ParseHelpers.ParseAmount(String fraction) in C:\dev\Ranker\EatRight\Logic\Expressions.cs:line 62
+   at InitRecipes.AddProducts.ParseByAbsoluteMeasures(String[] parts, String item) in C:\dev\Ranker\EatRight\InitRecipes\AddProducts.cs:line 292
+2017-01-23 22:37:08,557 ERROR InitRecipes.AddProducts - boneless beef chuck roast : 1 (2 1/2 pound) boneless beef chuck roast
+2017-01-23 22:37:08,653 ERROR InitRecipes.AddProducts - package dry beef gravy mix : 1 (1.2 ounce) package dry beef gravy mix
+2017-01-23 22:37:08,692 ERROR InitRecipes.AddProducts - package ranch dressing mix : 1 (1 ounce) package ranch dressing mix
+2017-01-23 22:37:08,751 ERROR InitRecipes.AddProducts - package dry italian : 1 (.7 ounce) package dry italian
+2017-01-23 22:37:08,800 ERROR InitRecipes.AddProducts - whole peeled carrots (optional) : 5 whole peeled carrots (optional)
+2017-01-23 22:37:08,840 ERROR InitRecipes.AddProducts - sweet italian sausage : 1 pound sweet italian sausage
+2017-01-23 22:37:09,044 ERROR InitRecipes.AddProducts - dried basil leaf : 1 1/2 teaspoons dried basil leaf
+2017-01-23 22:37:09,089 ERROR InitRecipes.AddProducts - fennel seeds : 1/2 teaspoon fennel seeds
+2017-01-23 22:37:09,132 ERROR InitRecipes.AddProducts - italian seasoning : 1 teaspoon italian seasoning
+2017-01-23 22:37:09,232 ERROR InitRecipes.AddProducts - lasagna noodles : 12 lasagna noodles
+Warning: Recipe 23600 contains USDA Product duplicate salt
+2017-01-23 22:37:09,431 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:37:09,524 ERROR InitRecipes.AddProducts - finely crushed saltine cracker crumbs : 3/4 cup finely crushed saltine cracker crumbs
+2017-01-23 22:37:09,711 ERROR InitRecipes.AddProducts - dry ziti pasta : 1 pound dry ziti pasta
+2017-01-23 22:37:09,774 ERROR InitRecipes.AddProducts - jars spaghetti sauce : 2 (26 ounce) jars spaghetti sauce
+2017-01-23 22:37:09,943 ERROR InitRecipes.AddProducts - chicken breast meat : 2 pounds chicken breast meat
+2017-01-23 22:37:09,960 ERROR InitRecipes.AddProducts - can condensed cream of chicken soup : 1 (10.75 ounce) can condensed cream of chicken soup
+2017-01-23 22:37:10,033 ERROR InitRecipes.AddProducts - can chopped green chilies : 1 (4 ounce) can chopped green chilies
+2017-01-23 22:37:10,116 ERROR InitRecipes.AddProducts - Failed to parse relative weight for item : 5 (12 inch) flour tortillas
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at InitRecipes.AddProducts.ParseByRelativeNumber(String[] parts, String item) in C:\dev\Ranker\EatRight\InitRecipes\AddProducts.cs:line 272
+2017-01-23 22:37:10,133 ERROR InitRecipes.AddProducts - 5 (12 inch) flour tortillas
+2017-01-23 22:37:10,222 ERROR InitRecipes.AddProducts - can enchilada sauce : 1 (10 ounce) can enchilada sauce
+2017-01-23 22:37:10,390 ERROR InitRecipes.AddProducts - salt to taste
+2017-01-23 22:37:10,391 ERROR InitRecipes.AddProducts - ground black pepper to taste
+2017-01-23 22:37:10,487 ERROR InitRecipes.AddProducts - seasoning salt : 1 teaspoon seasoning salt
+2017-01-23 22:37:10,505 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 29.7
+2017-01-23 22:37:10,514 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 28.35
+2017-01-23 22:37:10,566 ERROR InitRecipes.AddProducts - can condensed cream of mushroom soup : 1 (10.75 ounce) can condensed cream of mushroom soup
+2017-01-23 22:37:10,706 DEBUG InitRecipes.AddProducts - measure not found : slices, returning default, measure : 85
+2017-01-23 22:37:10,793 ERROR InitRecipes.AddProducts - chicken bouillon granules : 1 teaspoon chicken bouillon granules
+2017-01-23 22:37:10,836 ERROR InitRecipes.AddProducts - heavy whipping cream : 1 cup heavy whipping cream
+2017-01-23 22:37:10,886 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 28.35
+2017-01-23 22:37:11,042 ERROR InitRecipes.AddProducts - dried bread crumbs : 1 cup dried bread crumbs
+2017-01-23 22:37:11,043 ERROR InitRecipes.AddProducts - salt and pepper to taste
+2017-01-23 22:37:11,108 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 29.7
+2017-01-23 22:37:11,364 ERROR InitRecipes.AddProducts - cooking sherry : 1/4 cup cooking sherry
+2017-01-23 22:37:11,489 ERROR InitRecipes.AddProducts - can or bottle root beer : 1 (12 fluid ounce) can or bottle root beer
+2017-01-23 22:37:11,504 ERROR InitRecipes.AddProducts - bottle your favorite barbecue sauce : 1 (18 ounce) bottle your favorite barbecue sauce
+2017-01-23 22:37:11,548 ERROR InitRecipes.AddProducts - hamburger buns : 8 hamburger buns
+2017-01-23 22:37:11,557 ERROR InitRecipes.AddProducts - lemon pepper to taste
+2017-01-23 22:37:11,558 ERROR InitRecipes.AddProducts - garlic powder to taste
+2017-01-23 22:37:11,559 ERROR InitRecipes.AddProducts - salt to taste
+2017-01-23 22:37:11,648 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 14
+2017-01-23 22:37:11,891 ERROR InitRecipes.AddProducts - can diced green chiles : 1 (4 ounce) can diced green chiles
+2017-01-23 22:37:11,907 ERROR InitRecipes.AddProducts - can condensed cream of mushroom soup : 1 (10.75 ounce) can condensed cream of mushroom soup
+2017-01-23 22:37:11,943 ERROR InitRecipes.AddProducts - cubed cooked chicken breast meat : 1 1/2 cups cubed cooked chicken breast meat
+2017-01-23 22:37:11,980 ERROR InitRecipes.AddProducts - Failed to parse relative weight for item : 6 (12 inch) flour tortillas
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at InitRecipes.AddProducts.ParseByRelativeNumber(String[] parts, String item) in C:\dev\Ranker\EatRight\InitRecipes\AddProducts.cs:line 272
+2017-01-23 22:37:11,999 ERROR InitRecipes.AddProducts - 6 (12 inch) flour tortillas
+2017-01-23 22:37:12,093 ERROR InitRecipes.AddProducts - garlic salt : 1 teaspoon garlic salt
+2017-01-23 22:37:12,094 ERROR InitRecipes.AddProducts - ground black pepper to taste
+2017-01-23 22:37:12,535 ERROR InitRecipes.AddProducts - chickens : 2 (4 pound) chickens
+2017-01-23 22:37:12,576 ERROR InitRecipes.AddProducts - frozen chicken breast halves : 6 frozen chicken breast halves
+2017-01-23 22:37:12,643 ERROR InitRecipes.AddProducts - italian salad dressing : 1/2 cup italian salad dressing
+2017-01-23 22:37:12,819 ERROR InitRecipes.AddProducts - package dry italian : 1 (.7 ounce) package dry italian
+2017-01-23 22:37:12,872 ERROR InitRecipes.AddProducts - can condensed cream of chicken soup : 1 (10.75 ounce) can condensed cream of chicken soup
+2017-01-23 22:37:12,913 ERROR InitRecipes.AddProducts - cubed beef stew meat : 1 pound cubed beef stew meat
+2017-01-23 22:37:12,940 ERROR InitRecipes.AddProducts - can condensed golden mushroom soup : 1 (10.75 ounce) can condensed golden mushroom soup
+2017-01-23 22:37:13,124 ERROR InitRecipes.AddProducts - can diced green chili peppers : 1 (4 ounce) can diced green chili peppers
+2017-01-23 22:37:13,150 ERROR InitRecipes.AddProducts - can diced tomatoes with green peppers : 1 (10 ounce) can diced tomatoes with green peppers
+2017-01-23 22:37:13,189 ERROR InitRecipes.AddProducts - jar taco sauce : 1 (16 ounce) jar taco sauce
+2017-01-23 22:37:13,233 ERROR InitRecipes.AddProducts - cans refried beans : 2 (16 ounce) cans refried beans
+2017-01-23 22:37:13,234 ERROR InitRecipes.AddProducts - Failed to parse relative weight for item : 12 (8 inch) flour tortillas
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at InitRecipes.AddProducts.ParseByRelativeNumber(String[] parts, String item) in C:\dev\Ranker\EatRight\InitRecipes\AddProducts.cs:line 272
+2017-01-23 22:37:13,249 ERROR InitRecipes.AddProducts - 12 (8 inch) flour tortillas
+2017-01-23 22:37:13,444 ERROR InitRecipes.AddProducts - hot sauce : 2 tablespoons hot sauce
+2017-01-23 22:37:13,444 ERROR InitRecipes.AddProducts - salt and pepper to taste
+2017-01-23 22:37:13,547 ERROR InitRecipes.AddProducts - can condensed french onion soup : 1 (10.5 ounce) can condensed french onion soup
+2017-01-23 22:37:13,748 ERROR InitRecipes.AddProducts - mustard powder : 1/2 teaspoon mustard powder
+2017-01-23 22:37:13,852 ERROR InitRecipes.AddProducts - package dry italian : 1 (.7 ounce) package dry italian
+2017-01-23 22:37:13,915 ERROR InitRecipes.AddProducts - can condensed golden mushroom soup : 1 (10.75 ounce) can condensed golden mushroom soup
+2017-01-23 22:37:13,973 ERROR InitRecipes.AddProducts - angel hair pasta : 1 pound angel hair pasta
+2017-01-23 22:37:14,018 ERROR InitRecipes.AddProducts - rump roast : 4 pounds rump roast
+2017-01-23 22:37:14,084 ERROR InitRecipes.AddProducts - can condensed french onion soup : 1 (10.5 ounce) can condensed french onion soup
+2017-01-23 22:37:14,189 ERROR InitRecipes.AddProducts - can or bottle beer : 1 (12 fluid ounce) can or bottle beer
+2017-01-23 22:37:14,277 ERROR InitRecipes.AddProducts - extra ground beef : 1 pound extra ground beef
+2017-01-23 22:37:14,320 ERROR InitRecipes.AddProducts - sea salt : 1/2 teaspoon sea salt
+2017-01-23 22:37:14,373 ERROR InitRecipes.AddProducts - garlic salt : 1/2 teaspoon garlic salt
+2017-01-23 22:37:14,418 ERROR InitRecipes.AddProducts - italian seasoning : 1 1/2 teaspoons italian seasoning
+2017-01-23 22:37:14,503 ERROR InitRecipes.AddProducts - hot pepper sauce (such as frank's redhot&#174;) : 1 dash hot pepper sauce (such as frank's redhot&#174;)
+2017-01-23 22:37:14,649 ERROR InitRecipes.AddProducts - seasoned bread crumbs : 1/2 cup seasoned bread crumbs
+2017-01-23 22:37:14,727 ERROR InitRecipes.AddProducts - boneless pork ribs : 3 pounds boneless pork ribs
+2017-01-23 22:37:14,904 ERROR InitRecipes.AddProducts - skewers
+2017-01-23 22:37:14,918 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:37:14,946 ERROR InitRecipes.AddProducts - italian seasoned bread crumbs : 4 cups italian seasoned bread crumbs
+2017-01-23 22:37:14,989 ERROR InitRecipes.AddProducts - spaghetti sauce : 6 cups spaghetti sauce
+2017-01-23 22:37:15,147 ERROR InitRecipes.AddProducts - can black beans : 1 (16 ounce) can black beans
+2017-01-23 22:37:15,148 ERROR InitRecipes.AddProducts - Failed to parse relative weight for item : 1/2 green pepper
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at InitRecipes.AddProducts.ParseByRelativeNumber(String[] parts, String item) in C:\dev\Ranker\EatRight\InitRecipes\AddProducts.cs:line 272
+2017-01-23 22:37:15,162 ERROR InitRecipes.AddProducts - 1/2 green pepper
+2017-01-23 22:37:15,175 ERROR InitRecipes.AddProducts - Failed to parse relative weight for item : 1/2 onion
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at InitRecipes.AddProducts.ParseByRelativeNumber(String[] parts, String item) in C:\dev\Ranker\EatRight\InitRecipes\AddProducts.cs:line 272
+2017-01-23 22:37:15,202 ERROR InitRecipes.AddProducts - 1/2 onion
+2017-01-23 22:37:15,251 ERROR InitRecipes.AddProducts - cumin : 1 tablespoon cumin
+2017-01-23 22:37:15,348 ERROR InitRecipes.AddProducts - thai chili sauce or hot sauce : 1 teaspoon thai chili sauce or hot sauce
+2017-01-23 22:37:15,434 ERROR InitRecipes.AddProducts - ranch dressing : 1/2 cup ranch dressing
+2017-01-23 22:37:15,682 ERROR InitRecipes.AddProducts - package bow tie pasta : 1 (12 ounce) package bow tie pasta
+2017-01-23 22:37:15,756 ERROR InitRecipes.AddProducts - sweet italian sausage : 1 pound sweet italian sausage
+2017-01-23 22:37:15,866 ERROR InitRecipes.AddProducts - heavy cream : 1 1/2 cups heavy cream
+2017-01-23 22:37:15,894 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:37:15,920 ERROR InitRecipes.AddProducts - crushed buttery round cracker crumbs : 1 cup crushed buttery round cracker crumbs
+2017-01-23 22:37:15,964 ERROR InitRecipes.AddProducts - garlic salt : 1/2 teaspoon garlic salt
+2017-01-23 22:37:15,965 ERROR InitRecipes.AddProducts - ground black pepper to taste
+2017-01-23 22:37:16,053 ERROR InitRecipes.AddProducts - beef sirloin : 2 pounds beef sirloin
+2017-01-23 22:37:16,054 ERROR InitRecipes.AddProducts - garlic powder to taste
+2017-01-23 22:37:16,131 ERROR InitRecipes.AddProducts - cube beef bouillon : 1 cube beef bouillon
+2017-01-23 22:37:16,174 ERROR InitRecipes.AddProducts - hot water : 1/4 cup hot water
+2017-01-23 22:37:16,278 ERROR InitRecipes.AddProducts - can stewed tomatoes : 1 (14.5 ounce) can stewed tomatoes
+2017-01-23 22:37:16,437 ERROR InitRecipes.AddProducts - teriyaki basting sauce : 1/2 cup teriyaki basting sauce
+2017-01-23 22:37:16,476 ERROR InitRecipes.AddProducts - ranch : 1/2 cup ranch
+2017-01-23 22:37:16,594 ERROR InitRecipes.AddProducts - can bacon bits : 1/2 (3 ounce) can bacon bits
+2017-01-23 22:37:16,726 ERROR InitRecipes.AddProducts - fillets salmon : 4 (4 ounce) fillets salmon
+2017-01-23 22:37:16,727 ERROR InitRecipes.AddProducts - salt and pepper to taste
+2017-01-23 22:37:16,790 ERROR InitRecipes.AddProducts - crushed buttery round crackers : 1/2 cup crushed buttery round crackers
+2017-01-23 22:37:16,854 ERROR InitRecipes.AddProducts - package dry onion soup mix : 1 (1 ounce) package dry onion soup mix
+2017-01-23 22:37:16,861 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:37:16,912 ERROR InitRecipes.AddProducts - steak sauce : 2 tablespoons steak sauce
+Warning: Recipe 44868 contains USDA Product duplicate garlic powder
+2017-01-23 22:37:17,218 ERROR InitRecipes.AddProducts - salt and pepper to taste
+2017-01-23 22:37:17,338 DEBUG InitRecipes.AddProducts - measure not found : bay leaf, returning default, measure : 0.6
+2017-01-23 22:37:17,560 ERROR InitRecipes.AddProducts - fillets salmon : 2 (6 ounce) fillets salmon
+2017-01-23 22:37:17,568 ERROR InitRecipes.AddProducts - salt and black pepper to taste
+2017-01-23 22:37:17,680 ERROR InitRecipes.AddProducts - seasoning salt : 2 teaspoons seasoning salt
+2017-01-23 22:37:17,767 ERROR InitRecipes.AddProducts - light corn syrup : 1/4 cup light corn syrup
+2017-01-23 22:37:17,812 ERROR InitRecipes.AddProducts - dried onion flakes : 1 tablespoon dried onion flakes
+2017-01-23 22:37:18,124 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 14
+2017-01-23 22:37:18,267 ERROR InitRecipes.AddProducts - red pepperss : 2 red pepperss
+2017-01-23 22:37:18,268 ERROR InitRecipes.AddProducts - skewers
+2017-01-23 22:37:18,283 DEBUG InitRecipes.AddProducts - measure not found : large, returning default, measure : 820.359281437126
+2017-01-23 22:37:18,341 ERROR InitRecipes.AddProducts - salt and pepper to taste
+2017-01-23 22:37:18,352 DEBUG InitRecipes.AddProducts - measure not found : carrots, returning default, measure : 15
+2017-01-23 22:37:18,445 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 170
+2017-01-23 22:37:18,473 ERROR InitRecipes.AddProducts - ground cumin : 2 teaspoons ground cumin
+2017-01-23 22:37:18,603 ERROR InitRecipes.AddProducts - boneless skinless chicken breasts : 3 boneless skinless chicken breasts
+2017-01-23 22:37:18,649 ERROR InitRecipes.AddProducts - long skewers : 4 long skewers
+Warning: Recipe 45736 contains USDA Product duplicate salt
+2017-01-23 22:37:18,788 ERROR InitRecipes.AddProducts - heavy cream : 1 cup heavy cream
+2017-01-23 22:37:18,871 ERROR InitRecipes.AddProducts - Failed to parse relative weight for item : 1/2 pint sour cream
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at InitRecipes.AddProducts.ParseByRelativeNumber(String[] parts, String item) in C:\dev\Ranker\EatRight\InitRecipes\AddProducts.cs:line 272
+2017-01-23 22:37:18,891 ERROR InitRecipes.AddProducts - 1/2 pint sour cream
+2017-01-23 22:37:19,141 ERROR InitRecipes.AddProducts - Failed to parse relative weight for item : 8 (10 inch) flour tortillas
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at InitRecipes.AddProducts.ParseByRelativeNumber(String[] parts, String item) in C:\dev\Ranker\EatRight\InitRecipes\AddProducts.cs:line 272
+2017-01-23 22:37:19,151 ERROR InitRecipes.AddProducts - 8 (10 inch) flour tortillas
+2017-01-23 22:37:19,205 ERROR InitRecipes.AddProducts - jar taco sauce : 1 (12 ounce) jar taco sauce
+Warning: Recipe 8691 contains USDA Product duplicate shredded cheddar cheese
+2017-01-23 22:37:19,281 ERROR InitRecipes.AddProducts - salt to taste
+2017-01-23 22:37:19,314 ERROR InitRecipes.AddProducts - salt and pepper to taste
+2017-01-23 22:37:19,357 ERROR InitRecipes.AddProducts - can whole peeled tomatoes : 1 (14.5 ounce) can whole peeled tomatoes
+2017-01-23 22:37:19,438 ERROR InitRecipes.AddProducts - uncooked rice : 1/2 cup uncooked rice
+2017-01-23 22:37:19,517 ERROR InitRecipes.AddProducts - cans condensed tomato soup : 2 (10.75 ounce) cans condensed tomato soup
+2017-01-23 22:37:19,518 ERROR InitRecipes.AddProducts - water as needed
+2017-01-23 22:37:19,683 ERROR InitRecipes.AddProducts - mahi mahi fillets : 4 (6 ounce) mahi mahi fillets
+2017-01-23 22:37:19,684 ERROR InitRecipes.AddProducts - salt and pepper to taste
+2017-01-23 22:37:19,836 ERROR InitRecipes.AddProducts - seasoned salt : 1/2 teaspoon seasoned salt
+2017-01-23 22:37:19,970 ERROR InitRecipes.AddProducts - thinly sliced onion : 1 cup thinly sliced onion
+2017-01-23 22:37:20,033 ERROR InitRecipes.AddProducts - cooking sherry : 1 tablespoon cooking sherry
+2017-01-23 22:37:20,122 ERROR InitRecipes.AddProducts - portobello mushrooms : 1 pound portobello mushrooms
+2017-01-23 22:37:20,207 ERROR InitRecipes.AddProducts - arborio rice : 1 1/2 cups arborio rice
+2017-01-23 22:37:20,238 ERROR InitRecipes.AddProducts - sea salt to taste
+2017-01-23 22:37:20,238 ERROR InitRecipes.AddProducts - freshly ground black pepper to taste
+2017-01-23 22:37:20,389 ERROR InitRecipes.AddProducts - salt and pepper to taste
+2017-01-23 22:37:20,451 ERROR InitRecipes.AddProducts - steak sauce : 1 teaspoon steak sauce
+2017-01-23 22:37:20,700 ERROR InitRecipes.AddProducts - dry lasagna noodles : 12 dry lasagna noodles
+2017-01-23 22:37:20,706 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:37:20,767 ERROR InitRecipes.AddProducts - pint part : 1 pint part
+Warning: Recipe 11729 contains USDA Product duplicate salt
+Warning: Recipe 11729 contains USDA Product duplicate grated parmesan cheese
+2017-01-23 22:37:20,965 ERROR InitRecipes.AddProducts - prepared dijon : 2 tablespoons prepared dijon
+2017-01-23 22:37:21,065 ERROR InitRecipes.AddProducts - medium raw shrimp : 2 pounds medium raw shrimp
+2017-01-23 22:37:21,233 ERROR InitRecipes.AddProducts - can condensed beef broth : 1 (10.5 ounce) can condensed beef broth
+2017-01-23 22:37:21,315 ERROR InitRecipes.AddProducts - salt to taste
+2017-01-23 22:37:21,316 ERROR InitRecipes.AddProducts - ground black pepper to taste
+2017-01-23 22:37:21,325 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 29.7
+2017-01-23 22:37:21,359 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 29.5
+2017-01-23 22:37:21,397 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 200
+2017-01-23 22:37:21,409 DEBUG InitRecipes.AddProducts - measure not found : lime, returning default, measure : 67
+2017-01-23 22:37:21,523 ERROR InitRecipes.AddProducts - ground cumin : 1/2 teaspoon ground cumin
+2017-01-23 22:37:21,634 ERROR InitRecipes.AddProducts - quart oil for frying : 1 quart oil for frying
+2017-01-23 22:37:21,676 ERROR InitRecipes.AddProducts - cod fillets : 1 pound cod fillets
+2017-01-23 22:37:21,782 ERROR InitRecipes.AddProducts - chicken breast meat : 1 1/2 pounds chicken breast meat
+2017-01-23 22:37:21,811 ERROR InitRecipes.AddProducts - Failed to parse relative weight for item : 1/2 lime
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at InitRecipes.AddProducts.ParseByRelativeNumber(String[] parts, String item) in C:\dev\Ranker\EatRight\InitRecipes\AddProducts.cs:line 272
+2017-01-23 22:37:21,833 ERROR InitRecipes.AddProducts - 1/2 lime
+2017-01-23 22:37:21,988 ERROR InitRecipes.AddProducts - Failed to parse relative weight for item : 10 (6 inch) flour tortillas
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at InitRecipes.AddProducts.ParseByRelativeNumber(String[] parts, String item) in C:\dev\Ranker\EatRight\InitRecipes\AddProducts.cs:line 272
+2017-01-23 22:37:22,009 ERROR InitRecipes.AddProducts - 10 (6 inch) flour tortillas
+2017-01-23 22:37:22,121 ERROR InitRecipes.AddProducts - saltine crackers : 30 saltine crackers
+2017-01-23 22:37:22,167 ERROR InitRecipes.AddProducts - dry potato flakes : 2 tablespoons dry potato flakes
+2017-01-23 22:37:22,210 ERROR InitRecipes.AddProducts - seasoned salt : 1 teaspoon seasoned salt
+2017-01-23 22:37:22,331 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 14
+2017-01-23 22:37:22,396 ERROR InitRecipes.AddProducts - bottle buffalo wing sauce : 1 (17.5 fluid ounce) bottle buffalo wing sauce
+2017-01-23 22:37:22,412 ERROR InitRecipes.AddProducts - package dry ranch salad dressing mix : 1/2 (1 ounce) package dry ranch salad dressing mix
+2017-01-23 22:37:22,462 ERROR InitRecipes.AddProducts - hoagie rolls : 6 hoagie rolls
+2017-01-23 22:37:22,465 ERROR InitRecipes.AddProducts - Failed to parse relative weight for item : 4 (3/4 inch) thick pork chops
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at InitRecipes.AddProducts.ParseByRelativeNumber(String[] parts, String item) in C:\dev\Ranker\EatRight\InitRecipes\AddProducts.cs:line 272
+2017-01-23 22:37:22,474 ERROR InitRecipes.AddProducts - 4 (3/4 inch) thick pork chops
+2017-01-23 22:37:22,566 ERROR InitRecipes.AddProducts - salt and pepper to taste
+2017-01-23 22:37:22,641 ERROR InitRecipes.AddProducts - unsalted butter : 2 tablespoons unsalted butter
+2017-01-23 22:37:22,724 ERROR InitRecipes.AddProducts - tart apples : 2 tart apples
+2017-01-23 22:37:22,747 ERROR InitRecipes.AddProducts - pecans (optional) : 3 tablespoons pecans (optional)
+2017-01-23 22:37:22,902 DEBUG InitRecipes.AddProducts - measure not found : slices, returning default, measure : 28.35
+2017-01-23 22:37:22,939 ERROR InitRecipes.AddProducts - seasoned bread crumbs : 1/2 cup seasoned bread crumbs
+2017-01-23 22:37:22,986 ERROR InitRecipes.AddProducts - linguine pasta : 4 ounces linguine pasta
+2017-01-23 22:37:23,069 ERROR InitRecipes.AddProducts - cajun seasoning : 2 teaspoons cajun seasoning
+2017-01-23 22:37:23,113 ERROR InitRecipes.AddProducts - Failed to parse relative weight for item : 1/2 red peppers
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at InitRecipes.AddProducts.ParseByRelativeNumber(String[] parts, String item) in C:\dev\Ranker\EatRight\InitRecipes\AddProducts.cs:line 272
+2017-01-23 22:37:23,133 ERROR InitRecipes.AddProducts - 1/2 red peppers
+2017-01-23 22:37:23,227 ERROR InitRecipes.AddProducts - heavy cream : 1 1/2 cups heavy cream
+2017-01-23 22:37:23,307 ERROR InitRecipes.AddProducts - lemon pepper : 1/4 teaspoon lemon pepper
+2017-01-23 22:37:23,486 ERROR InitRecipes.AddProducts - quick cooking oats : 1/2 cup quick cooking oats
+2017-01-23 22:37:23,619 ERROR InitRecipes.AddProducts - seasoned bread crumbs : 1/4 cup seasoned bread crumbs
+2017-01-23 22:37:23,669 DEBUG InitRecipes.AddProducts - measure not found : egg whites, returning default, measure : 28
+2017-01-23 22:37:23,816 ERROR InitRecipes.AddProducts - prepared coarse : 3 tablespoons prepared coarse
+2017-01-23 22:37:23,827 DEBUG InitRecipes.AddProducts - measure not found : lime, returning default, measure : 67
+2017-01-23 22:37:23,828 ERROR InitRecipes.AddProducts - Failed to parse relative weight for item : 1/2 lemon
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at InitRecipes.AddProducts.ParseByRelativeNumber(String[] parts, String item) in C:\dev\Ranker\EatRight\InitRecipes\AddProducts.cs:line 272
+2017-01-23 22:37:23,844 ERROR InitRecipes.AddProducts - 1/2 lemon
+2017-01-23 22:37:23,903 ERROR InitRecipes.AddProducts - ground black pepper to taste
+2017-01-23 22:37:24,091 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 28.3333333333333
+2017-01-23 22:37:24,266 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 29.7
+2017-01-23 22:37:24,357 ERROR InitRecipes.AddProducts - can stewed tomatoes : 1 (14.5 ounce) can stewed tomatoes
+Warning: Recipe 16707 contains USDA Product duplicate salt
+2017-01-23 22:37:24,523 ERROR InitRecipes.AddProducts - mustard powder : 1 teaspoon mustard powder
+2017-01-23 22:37:24,610 ERROR InitRecipes.AddProducts - lasagna noodles : 9 lasagna noodles
+2017-01-23 22:37:24,640 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 29.7
+2017-01-23 22:37:24,905 ERROR InitRecipes.AddProducts - cubed : 2 cups cubed
+2017-01-23 22:37:25,076 ERROR InitRecipes.AddProducts - chicken bouillon : 3 tablespoons chicken bouillon
+2017-01-23 22:37:25,172 ERROR InitRecipes.AddProducts - seasoning salt : 2 tablespoons seasoning salt
+2017-01-23 22:37:25,219 ERROR InitRecipes.AddProducts - tilapia fillets : 4 tilapia fillets
+2017-01-23 22:37:25,305 ERROR InitRecipes.AddProducts - dried parsley flakes : 1 teaspoon dried parsley flakes
+2017-01-23 22:37:25,305 ERROR InitRecipes.AddProducts - pepper to taste
+2017-01-23 22:37:25,472 ERROR InitRecipes.AddProducts - onion salt : 1 teaspoon onion salt
+2017-01-23 22:37:25,524 DEBUG InitRecipes.AddProducts - measure not found : bay leaf, returning default, measure : 0.6
+2017-01-23 22:37:25,585 ERROR InitRecipes.AddProducts - package dry italian : 1 (.7 ounce) package dry italian
+2017-01-23 22:37:25,629 ERROR InitRecipes.AddProducts - rump roast : 1 (5 pound) rump roast
+2017-01-23 22:37:25,843 ERROR InitRecipes.AddProducts - Failed to parse actual weight for item : 1 large clove garlic
+System.FormatException: Input string was not in a correct format.
+   at System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Double.Parse(String s)
+   at Logic.ParseHelpers.GetFractionedNumber(String fraction) in C:\dev\Ranker\EatRight\Logic\Expressions.cs:line 75
+   at Logic.ParseHelpers.ParseAmount(String fraction) in C:\dev\Ranker\EatRight\Logic\Expressions.cs:line 51
+   at InitRecipes.AddProducts.ParseByAbsoluteMeasures(String[] parts, String item) in C:\dev\Ranker\EatRight\InitRecipes\AddProducts.cs:line 292
+Warning: Recipe 213211 contains USDA Product duplicate worcestershire sauce
+Warning: Recipe 213211 contains USDA Product duplicate water
+2017-01-23 22:37:26,141 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:37:26,165 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 29.7
+2017-01-23 22:37:26,240 ERROR InitRecipes.AddProducts - salt to taste
+2017-01-23 22:37:26,284 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:37:26,320 ERROR InitRecipes.AddProducts - italian seasoned bread crumbs : 1 1/2 cups italian seasoned bread crumbs
+2017-01-23 22:37:26,569 ERROR InitRecipes.AddProducts - can condensed cream of mushroom soup : 1 (10.75 ounce) can condensed cream of mushroom soup
+2017-01-23 22:37:26,586 ERROR InitRecipes.AddProducts - can condensed cream of chicken soup : 1 (10.75 ounce) can condensed cream of chicken soup
+2017-01-23 22:37:26,595 ERROR InitRecipes.AddProducts - salt to taste
+2017-01-23 22:37:26,595 ERROR InitRecipes.AddProducts - ground black pepper to taste
+2017-01-23 22:37:26,624 ERROR InitRecipes.AddProducts - crumbled buttery round crackers : 1 cup crumbled buttery round crackers
+2017-01-23 22:37:26,680 ERROR InitRecipes.AddProducts - sun : 1/2 cup sun
+2017-01-23 22:37:26,735 ERROR InitRecipes.AddProducts - heavy cream : 1 cup heavy cream
+2017-01-23 22:37:26,774 ERROR InitRecipes.AddProducts - salt and pepper to taste
+2017-01-23 22:37:26,860 ERROR InitRecipes.AddProducts - dry fettuccini pasta : 8 ounces dry fettuccini pasta
+2017-01-23 22:37:26,899 ERROR InitRecipes.AddProducts - steak seasoning rub : 2 tablespoons steak seasoning rub
+2017-01-23 22:37:26,997 ERROR InitRecipes.AddProducts - boneless pork loin roast : 2 pounds boneless pork loin roast
+2017-01-23 22:37:27,043 ERROR InitRecipes.AddProducts - linguine pasta : 4 ounces linguine pasta
+2017-01-23 22:37:27,126 ERROR InitRecipes.AddProducts - cajun seasoning : 2 teaspoons cajun seasoning
+2017-01-23 22:37:27,302 ERROR InitRecipes.AddProducts - heavy cream : 1 cup heavy cream
+2017-01-23 22:37:27,381 ERROR InitRecipes.AddProducts - lemon pepper : 1/4 teaspoon lemon pepper
+2017-01-23 22:37:27,475 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:37:27,552 ERROR InitRecipes.AddProducts - seasoned bread crumbs : 7 ounces seasoned bread crumbs
+2017-01-23 22:37:27,670 ERROR InitRecipes.AddProducts - pasta sauce : 12 ounces pasta sauce
+2017-01-23 22:37:27,741 ERROR InitRecipes.AddProducts - boneless pork loin roast : 2 1/2 pounds boneless pork loin roast
+2017-01-23 22:37:27,786 ERROR InitRecipes.AddProducts - hot water : 1 cup hot water
+2017-01-23 22:37:27,983 ERROR InitRecipes.AddProducts - salt and pepper to taste
+2017-01-23 22:37:28,000 ERROR InitRecipes.AddProducts - packet dry onion soup mix : 1 packet dry onion soup mix
+2017-01-23 22:37:28,013 DEBUG InitRecipes.AddProducts - measure not found : carrots, returning default, measure : 15
+2017-01-23 22:37:28,034 DEBUG InitRecipes.AddProducts - measure not found : potatoes, returning default, measure : 820.359281437126
+2017-01-23 22:37:28,117 ERROR InitRecipes.AddProducts - can chili beans : 1 (16 ounce) can chili beans
+2017-01-23 22:37:28,162 ERROR InitRecipes.AddProducts - tortilla chips : 3 cups tortilla chips
+2017-01-23 22:37:28,272 ERROR InitRecipes.AddProducts - Failed to parse relative weight for item : 2 (10 inch) flour tortillas
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at InitRecipes.AddProducts.ParseByRelativeNumber(String[] parts, String item) in C:\dev\Ranker\EatRight\InitRecipes\AddProducts.cs:line 272
+2017-01-23 22:37:28,292 ERROR InitRecipes.AddProducts - 2 (10 inch) flour tortillas
+2017-01-23 22:37:28,339 ERROR InitRecipes.AddProducts - Failed to parse relative weight for item : 1/2 red peppers
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at InitRecipes.AddProducts.ParseByRelativeNumber(String[] parts, String item) in C:\dev\Ranker\EatRight\InitRecipes\AddProducts.cs:line 272
+2017-01-23 22:37:28,361 ERROR InitRecipes.AddProducts - 1/2 red peppers
+2017-01-23 22:37:28,420 ERROR InitRecipes.AddProducts - can black beans : 1 (15 ounce) can black beans
+2017-01-23 22:37:28,555 ERROR InitRecipes.AddProducts - salt and pepper to taste
+2017-01-23 22:37:28,606 ERROR InitRecipes.AddProducts - chili sauce : 1 cup chili sauce
+2017-01-23 22:37:28,765 ERROR InitRecipes.AddProducts - hot sauce : 1 dash hot sauce
+2017-01-23 22:37:28,902 ERROR InitRecipes.AddProducts - boneless chicken thighs : 6 boneless chicken thighs
+2017-01-23 22:37:28,903 ERROR InitRecipes.AddProducts - dried parsley
+2017-01-23 22:37:29,080 ERROR InitRecipes.AddProducts - light brown sugar : 1/4 cup light brown sugar
+2017-01-23 22:37:29,162 ERROR InitRecipes.AddProducts - Failed to parse relative weight for item : 1 extra large onion
+System.FormatException: Input string was not in a correct format.
+   at System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Double.Parse(String s)
+   at Logic.ParseHelpers.GetFractionedNumber(String fraction) in C:\dev\Ranker\EatRight\Logic\Expressions.cs:line 75
+   at Logic.ParseHelpers.ParseAmount(String fraction) in C:\dev\Ranker\EatRight\Logic\Expressions.cs:line 51
+   at InitRecipes.AddProducts.ParseByRelativeMeasures(String[] parts, String item) in C:\dev\Ranker\EatRight\InitRecipes\AddProducts.cs:line 250
+2017-01-23 22:37:29,189 ERROR InitRecipes.AddProducts - Failed to parse actual weight for item : 2 large cloves garlic
+System.FormatException: Input string was not in a correct format.
+   at System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Double.Parse(String s)
+   at Logic.ParseHelpers.GetFractionedNumber(String fraction) in C:\dev\Ranker\EatRight\Logic\Expressions.cs:line 75
+   at Logic.ParseHelpers.ParseAmount(String fraction) in C:\dev\Ranker\EatRight\Logic\Expressions.cs:line 51
+   at InitRecipes.AddProducts.ParseByAbsoluteMeasures(String[] parts, String item) in C:\dev\Ranker\EatRight\InitRecipes\AddProducts.cs:line 292
+2017-01-23 22:37:29,300 ERROR InitRecipes.AddProducts - hamburger buns : 8 hamburger buns
+2017-01-23 22:37:29,350 ERROR InitRecipes.AddProducts - package cheese tortellini : 1 (16 ounce) package cheese tortellini
+2017-01-23 22:37:29,405 ERROR InitRecipes.AddProducts - can diced tomatoes with garlic : 1 (14.5 ounce) can diced tomatoes with garlic and onion
+2017-01-23 22:37:29,551 ERROR InitRecipes.AddProducts - heavy cream : 3/4 cup heavy cream
+2017-01-23 22:37:29,606 ERROR InitRecipes.AddProducts - beef eye of round roast : 1 (3 pound) beef eye of round roast
+2017-01-23 22:37:29,607 ERROR InitRecipes.AddProducts - salt and pepper to taste
+2017-01-23 22:37:29,767 ERROR InitRecipes.AddProducts - cooked : 1 cup cooked
+2017-01-23 22:37:29,952 ERROR InitRecipes.AddProducts - fresh chopped or leaf spinach : 2 cups fresh chopped or leaf spinach
+2017-01-23 22:37:29,981 ERROR InitRecipes.AddProducts - package dry alfredo sauce mix : 1 (4.5 ounce) package dry alfredo sauce mix
+2017-01-23 22:37:30,028 ERROR InitRecipes.AddProducts - package dry penne pasta : 1 (8 ounce) package dry penne pasta
+2017-01-23 22:37:30,065 ERROR InitRecipes.AddProducts - sauce:
+2017-01-23 22:37:30,128 ERROR InitRecipes.AddProducts - rice vinegar : 1/3 cup rice vinegar
+Warning: Recipe 61024 contains USDA Product duplicate water
+2017-01-23 22:37:30,332 ERROR InitRecipes.AddProducts - chicken:
+2017-01-23 22:37:30,379 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 29.7
+2017-01-23 22:37:30,527 ERROR InitRecipes.AddProducts - italian seasoning : 1 tablespoon italian seasoning
+2017-01-23 22:37:30,572 ERROR InitRecipes.AddProducts - fettuccini pasta : 1 pound fettuccini pasta
+2017-01-23 22:37:30,603 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 29.7
+2017-01-23 22:37:30,701 ERROR InitRecipes.AddProducts - half : 1 cup half
+2017-01-23 22:37:30,791 ERROR InitRecipes.AddProducts - roma (plum) tomatoes : 3 roma (plum) tomatoes
+2017-01-23 22:37:30,881 ERROR InitRecipes.AddProducts - lemon pepper : 1 teaspoon lemon pepper
+2017-01-23 22:37:30,975 ERROR InitRecipes.AddProducts - whipping cream : 1/2 cup whipping cream
+2017-01-23 22:37:30,982 ERROR InitRecipes.AddProducts - cooking spray
+2017-01-23 22:37:31,019 ERROR InitRecipes.AddProducts - uncooked lasagna noodles : 9 uncooked lasagna noodles
+2017-01-23 22:37:31,120 ERROR InitRecipes.AddProducts - can marinated artichoke hearts : 1 (14 ounce) can marinated artichoke hearts
+2017-01-23 22:37:31,181 ERROR InitRecipes.AddProducts - jar tomato pasta sauce : 1 (28 ounce) jar tomato pasta sauce
+2017-01-23 22:37:31,269 ERROR InitRecipes.AddProducts - package herb : 1 (4 ounce) package herb and garlic feta
+2017-01-23 22:37:31,314 ERROR InitRecipes.AddProducts - garlic feta : 1 (4 ounce) package herb and garlic feta
+2017-01-23 22:37:31,352 ERROR InitRecipes.AddProducts - package refrigerated crescent rolls : 1 (8 ounce) package refrigerated crescent rolls
+2017-01-23 22:37:31,481 ERROR InitRecipes.AddProducts - bag tortilla chips : 1 (14 ounce) bag tortilla chips
+2017-01-23 22:37:31,547 ERROR InitRecipes.AddProducts - italian seasoned bread crumbs : 1 cup italian seasoned bread crumbs
+2017-01-23 22:37:31,713 ERROR InitRecipes.AddProducts - salt and pepper to taste
+2017-01-23 22:37:31,758 ERROR InitRecipes.AddProducts - garlic salt : 1 pinch garlic salt
+2017-01-23 22:37:31,797 ERROR InitRecipes.AddProducts - can condensed cream of mushroom soup : 1 (10.75 ounce) can condensed cream of mushroom soup
+2017-01-23 22:37:31,885 ERROR InitRecipes.AddProducts - Failed to parse relative weight for item : 1/2 onion
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at InitRecipes.AddProducts.ParseByRelativeNumber(String[] parts, String item) in C:\dev\Ranker\EatRight\InitRecipes\AddProducts.cs:line 272
+2017-01-23 22:37:31,901 ERROR InitRecipes.AddProducts - 1/2 onion
+2017-01-23 22:37:31,946 ERROR InitRecipes.AddProducts - packet dry brown gravy mix : 1 (.75 ounce) packet dry brown gravy mix
+2017-01-23 22:37:31,986 ERROR InitRecipes.AddProducts - salt and freshly ground black pepper to taste
+2017-01-23 22:37:31,993 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+Warning: Recipe 223042 contains USDA Product duplicate grated parmesan cheese
+2017-01-23 22:37:32,323 ERROR InitRecipes.AddProducts - package linguine pasta : 1 (8 ounce) package linguine pasta
+2017-01-23 22:37:32,423 ERROR InitRecipes.AddProducts - salt to taste
+2017-01-23 22:37:32,526 ERROR InitRecipes.AddProducts - standing beef rib roast : 1 (5 pound) standing beef rib roast
+2017-01-23 22:37:32,614 ERROR InitRecipes.AddProducts - pork butt roast : 1 (6 pound) pork butt roast
+2017-01-23 22:37:32,652 ERROR InitRecipes.AddProducts - hawaiian sea salt : 1 1/2 tablespoons hawaiian sea salt
+2017-01-23 22:37:32,691 ERROR InitRecipes.AddProducts - liquid smoke flavoring : 1 tablespoon liquid smoke flavoring
+2017-01-23 22:37:32,751 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:37:32,791 ERROR InitRecipes.AddProducts - seasoned bread crumbs : 1 cup seasoned bread crumbs
+2017-01-23 22:37:33,005 ERROR InitRecipes.AddProducts - jar spaghetti sauce : 3/4 (16 ounce) jar spaghetti sauce
+2017-01-23 22:37:33,203 ERROR InitRecipes.AddProducts - fillets salmon : 6 (4 ounce) fillets salmon
+2017-01-23 22:37:33,204 ERROR InitRecipes.AddProducts - salt and pepper to taste
+2017-01-23 22:37:33,249 ERROR InitRecipes.AddProducts - lemon wedges : 6 lemon wedges
+2017-01-23 22:37:33,346 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+Warning: Recipe 11973 contains USDA Product duplicate grated parmesan cheese
+2017-01-23 22:37:33,516 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 29.7
+2017-01-23 22:37:33,648 ERROR InitRecipes.AddProducts - italian seasoned bread crumbs : 1/2 cup italian seasoned bread crumbs
+2017-01-23 22:37:33,685 ERROR InitRecipes.AddProducts - crispy rice cereal : 1 cup crispy rice cereal
+Warning: Recipe 85740 contains USDA Product duplicate butter
+2017-01-23 22:37:33,829 ERROR InitRecipes.AddProducts - seasoning salt : 1 teaspoon seasoning salt
+2017-01-23 22:37:34,050 DEBUG InitRecipes.AddProducts - measure not found : carrots, returning default, measure : 15
+2017-01-23 22:37:34,079 DEBUG InitRecipes.AddProducts - measure not found : sprigs fresh thyme, returning default, measure : 0.8
+2017-01-23 22:37:34,087 DEBUG InitRecipes.AddProducts - measure not found : bay leaf, returning default, measure : 0.6
+2017-01-23 22:37:34,146 ERROR InitRecipes.AddProducts - country style pork ribs : 2 1/2 pounds country style pork ribs
+2017-01-23 22:37:34,272 ERROR InitRecipes.AddProducts - bone : 1 (6 pound) bone
+2017-01-23 22:37:34,287 ERROR InitRecipes.AddProducts - envelope dry onion soup mix : 1 (1 ounce) envelope dry onion soup mix
+2017-01-23 22:37:34,320 ERROR InitRecipes.AddProducts - package uncooked medium egg noodles : 1 (8 ounce) package uncooked medium egg noodles
+2017-01-23 22:37:34,392 ERROR InitRecipes.AddProducts - button mushrooms : 8 ounces button mushrooms
+2017-01-23 22:37:34,400 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 29.7
+2017-01-23 22:37:34,409 ERROR InitRecipes.AddProducts - salt and pepper to taste
+Warning: Recipe 86069 contains USDA Product duplicate butter
+2017-01-23 22:37:34,547 ERROR InitRecipes.AddProducts - uncooked penne pasta : 1 pound uncooked penne pasta
+2017-01-23 22:37:34,665 ERROR InitRecipes.AddProducts - vodka : 2 tablespoons vodka
+2017-01-23 22:37:34,703 ERROR InitRecipes.AddProducts - heavy whipping cream : 1/2 cup heavy whipping cream
+2017-01-23 22:37:34,744 ERROR InitRecipes.AddProducts - links sweet italian sausage : 2 (3.5 ounce) links sweet italian sausage
+2017-01-23 22:37:34,987 ERROR InitRecipes.AddProducts - Failed to parse relative weight for item : 12 (6 inch) corn tortillas
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at InitRecipes.AddProducts.ParseByRelativeNumber(String[] parts, String item) in C:\dev\Ranker\EatRight\InitRecipes\AddProducts.cs:line 272
+2017-01-23 22:37:35,003 ERROR InitRecipes.AddProducts - 12 (6 inch) corn tortillas
+2017-01-23 22:37:35,104 ERROR InitRecipes.AddProducts - can red enchilada sauce : 1 (10 ounce) can red enchilada sauce
+2017-01-23 22:37:35,150 ERROR InitRecipes.AddProducts - leaf cabbage : 12 leaf cabbage
+2017-01-23 22:37:35,262 ERROR InitRecipes.AddProducts - extra : 1 pound extra
+2017-01-23 22:37:35,457 ERROR InitRecipes.AddProducts - ready : 1 (5 pound) ready
+2017-01-23 22:37:35,502 ERROR InitRecipes.AddProducts - whole cloves : 1/4 cup whole cloves
+2017-01-23 22:37:35,540 ERROR InitRecipes.AddProducts - dark corn syrup : 1/4 cup dark corn syrup
+2017-01-23 22:37:35,632 ERROR InitRecipes.AddProducts - old bay seasoning tm : 1 teaspoon old bay seasoning tm
+2017-01-23 22:37:35,642 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 29.7
+2017-01-23 22:37:35,679 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 14
+2017-01-23 22:37:35,788 ERROR InitRecipes.AddProducts - prepared dijon : 2 tablespoons prepared dijon
+2017-01-23 22:37:35,862 ERROR InitRecipes.AddProducts - liquid smoke flavoring : 1 teaspoon liquid smoke flavoring
+2017-01-23 22:37:35,949 ERROR InitRecipes.AddProducts - boneless chuck roast : 1 (4 pound) boneless chuck roast
+2017-01-23 22:37:36,280 ERROR InitRecipes.AddProducts - lasagna noodles : 9 lasagna noodles
+2017-01-23 22:37:36,397 ERROR InitRecipes.AddProducts - spicy italian sausage : 1 pound spicy italian sausage
+2017-01-23 22:37:36,737 ERROR InitRecipes.AddProducts - can condensed cream of chicken soup : 1 (10.75 ounce) can condensed cream of chicken soup
+2017-01-23 22:37:36,753 ERROR InitRecipes.AddProducts - can condensed cream of mushroom soup : 1 (10.75 ounce) can condensed cream of mushroom soup
+2017-01-23 22:37:36,805 ERROR InitRecipes.AddProducts - mild salsa : 1 1/2 cups mild salsa
+2017-01-23 22:37:36,846 ERROR InitRecipes.AddProducts - dry fettuccini pasta : 24 ounces dry fettuccini pasta
+2017-01-23 22:37:36,853 ERROR InitRecipes.AddProducts - Failed to parse relative weight for item : 3/4 pint heavy cream
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at InitRecipes.AddProducts.ParseByRelativeNumber(String[] parts, String item) in C:\dev\Ranker\EatRight\InitRecipes\AddProducts.cs:line 272
+2017-01-23 22:37:36,877 ERROR InitRecipes.AddProducts - 3/4 pint heavy cream
+2017-01-23 22:37:36,878 ERROR InitRecipes.AddProducts - salt and pepper to taste
+2017-01-23 22:37:36,929 ERROR InitRecipes.AddProducts - garlic salt : 1 dash garlic salt
+2017-01-23 22:37:36,967 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 28.35
+2017-01-23 22:37:37,251 ERROR InitRecipes.AddProducts - large shrimp : 2 pounds large shrimp
+2017-01-23 22:37:37,252 ERROR InitRecipes.AddProducts - skewers
+2017-01-23 22:37:37,282 ERROR InitRecipes.AddProducts - links sweet italian sausage : 6 (4 ounce) links sweet italian sausage
+2017-01-23 22:37:37,324 ERROR InitRecipes.AddProducts - Failed to parse relative weight for item : 1/2 onions
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at InitRecipes.AddProducts.ParseByRelativeNumber(String[] parts, String item) in C:\dev\Ranker\EatRight\InitRecipes\AddProducts.cs:line 272
+2017-01-23 22:37:37,341 ERROR InitRecipes.AddProducts - 1/2 onions
+2017-01-23 22:37:37,567 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 14
+2017-01-23 22:37:37,846 ERROR InitRecipes.AddProducts - bottle hot sauce : 1 (2 ounce) bottle hot sauce
+2017-01-23 22:37:37,862 ERROR InitRecipes.AddProducts - bottle blue cheese salad dressing : 1 (8 ounce) bottle blue cheese salad dressing
+2017-01-23 22:37:37,863 ERROR InitRecipes.AddProducts - Failed to parse relative weight for item : 1 (16 inch) prepared pizza crust
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at InitRecipes.AddProducts.ParseByRelativeNumber(String[] parts, String item) in C:\dev\Ranker\EatRight\InitRecipes\AddProducts.cs:line 272
+2017-01-23 22:37:37,886 ERROR InitRecipes.AddProducts - 1 (16 inch) prepared pizza crust
+2017-01-23 22:37:37,969 ERROR InitRecipes.AddProducts - sirloin tips : 1 pound sirloin tips
+2017-01-23 22:37:37,985 ERROR InitRecipes.AddProducts - can condensed cream of mushroom soup : 1 (10.75 ounce) can condensed cream of mushroom soup
+2017-01-23 22:37:38,002 ERROR InitRecipes.AddProducts - package beef with onion soup mix : 1 (1.25 ounce) package beef with onion soup mix
+2017-01-23 22:37:38,095 ERROR InitRecipes.AddProducts - package dried penne pasta : 1 (16 ounce) package dried penne pasta
+2017-01-23 22:37:38,168 ERROR InitRecipes.AddProducts - salt and pepper to taste
+2017-01-23 22:37:38,169 ERROR InitRecipes.AddProducts - garlic powder to taste
+2017-01-23 22:37:38,209 ERROR InitRecipes.AddProducts - low : 1/2 cup low
+2017-01-23 22:37:38,248 ERROR InitRecipes.AddProducts - slender asparagus spears : 1 bunch slender asparagus spears
+2017-01-23 22:37:38,336 ERROR InitRecipes.AddProducts - salt and pepper to taste
+2017-01-23 22:37:38,337 ERROR InitRecipes.AddProducts - garlic powder to taste
+2017-01-23 22:37:38,347 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 29.7
+2017-01-23 22:37:38,392 ERROR InitRecipes.AddProducts - cubes chicken bouillon : 2 cubes chicken bouillon
+2017-01-23 22:37:38,436 ERROR InitRecipes.AddProducts - boiling water : 2 cups boiling water
+Warning: Recipe 24037 contains USDA Product duplicate all
+2017-01-23 22:37:38,521 ERROR InitRecipes.AddProducts - jar salsa : 1 (16 ounce) jar salsa
+2017-01-23 22:37:38,547 DEBUG InitRecipes.AddProducts - measure not found : lime, returning default, measure : 67
+2017-01-23 22:37:38,772 ERROR InitRecipes.AddProducts - package linguine pasta : 1 (16 ounce) package linguine pasta
+2017-01-23 22:37:38,884 ERROR InitRecipes.AddProducts - chicken breast meat : 1 pound chicken breast meat
+2017-01-23 22:37:38,921 ERROR InitRecipes.AddProducts - can marinated artichoke hearts : 1 (14 ounce) can marinated artichoke hearts
+2017-01-23 22:37:39,014 ERROR InitRecipes.AddProducts - salt and pepper to taste
+2017-01-23 22:37:39,021 ERROR InitRecipes.AddProducts - for sauce:
+2017-01-23 22:37:39,052 ERROR InitRecipes.AddProducts - Failed to parse relative weight for item : 1/2 cucumber
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at InitRecipes.AddProducts.ParseByRelativeNumber(String[] parts, String item) in C:\dev\Ranker\EatRight\InitRecipes\AddProducts.cs:line 272
+2017-01-23 22:37:39,069 ERROR InitRecipes.AddProducts - 1/2 cucumber
+2017-01-23 22:37:39,100 ERROR InitRecipes.AddProducts - salt and pepper to taste
+2017-01-23 22:37:39,115 ERROR InitRecipes.AddProducts - for falafel:
+2017-01-23 22:37:39,153 ERROR InitRecipes.AddProducts - can chickpeas (garbanzo beans) : 1 (15 ounce) can chickpeas (garbanzo beans)
+2017-01-23 22:37:39,213 ERROR InitRecipes.AddProducts - ground cumin : 2 teaspoons ground cumin
+2017-01-23 22:37:39,237 ERROR InitRecipes.AddProducts - ground coriander : 1 teaspoon ground coriander
+2017-01-23 22:37:39,370 ERROR InitRecipes.AddProducts - oil for frying
+2017-01-23 22:37:39,415 ERROR InitRecipes.AddProducts - pita breads : 2 pita breads
+2017-01-23 22:37:39,468 ERROR InitRecipes.AddProducts - packed brown sugar : 2 cups packed brown sugar
+2017-01-23 22:37:39,492 ERROR InitRecipes.AddProducts - cured : 1 (8 pound) cured
+2017-01-23 22:37:39,585 ERROR InitRecipes.AddProducts - can condensed cream of chicken soup : 1 (10.75 ounce) can condensed cream of chicken soup
+2017-01-23 22:37:39,632 ERROR InitRecipes.AddProducts - herb : 2 cups herb
+2017-01-23 22:37:39,688 ERROR InitRecipes.AddProducts - dried sage : 1 teaspoon dried sage
+2017-01-23 22:37:39,778 ERROR InitRecipes.AddProducts - center cut bone : 6 center cut bone
+2017-01-23 22:37:39,828 ERROR InitRecipes.AddProducts - cubes beef bouillon : 2 cubes beef bouillon
+2017-01-23 22:37:40,052 ERROR InitRecipes.AddProducts - liquid smoke flavoring : 1/2 teaspoon liquid smoke flavoring
+2017-01-23 22:37:40,088 ERROR InitRecipes.AddProducts - Failed to parse actual weight for item : 2 (1/2 pound) rib
+System.FormatException: Input string was not in a correct format.
+   at System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Double.Parse(String s)
+   at Logic.ParseHelpers.ParseAmount(String fraction) in C:\dev\Ranker\EatRight\Logic\Expressions.cs:line 62
+   at InitRecipes.AddProducts.ParseByAbsoluteMeasures(String[] parts, String item) in C:\dev\Ranker\EatRight\InitRecipes\AddProducts.cs:line 292
+2017-01-23 22:37:40,168 ERROR InitRecipes.AddProducts - fillets salmon : 8 (4 ounce) fillets salmon
+2017-01-23 22:37:40,213 ERROR InitRecipes.AddProducts - peanut oil : 1/2 cup peanut oil
+2017-01-23 22:37:40,421 ERROR InitRecipes.AddProducts - sesame oil : 1 teaspoon sesame oil
+2017-01-23 22:37:40,489 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 29.7
+2017-01-23 22:37:40,550 ERROR InitRecipes.AddProducts - chicken bouillon powder : 2 teaspoons chicken bouillon powder
+2017-01-23 22:37:40,594 ERROR InitRecipes.AddProducts - boiling water : 1/2 cup boiling water
+2017-01-23 22:37:40,639 ERROR InitRecipes.AddProducts - linguine pasta : 1 pound linguine pasta
+2017-01-23 22:37:40,688 ERROR InitRecipes.AddProducts - heavy cream : 2 cups heavy cream
+2017-01-23 22:37:40,817 ERROR InitRecipes.AddProducts - large shrimp : 1 pound large shrimp
+2017-01-23 22:37:40,834 ERROR InitRecipes.AddProducts - can condensed cream of chicken soup : 1 (10.75 ounce) can condensed cream of chicken soup
+2017-01-23 22:37:40,900 ERROR InitRecipes.AddProducts - chopped cooked chicken breast : 2 cups chopped cooked chicken breast
+2017-01-23 22:37:40,937 ERROR InitRecipes.AddProducts - Failed to parse relative weight for item : 8 (8 inch) flour tortillas
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at InitRecipes.AddProducts.ParseByRelativeNumber(String[] parts, String item) in C:\dev\Ranker\EatRight\InitRecipes\AddProducts.cs:line 272
+2017-01-23 22:37:40,957 ERROR InitRecipes.AddProducts - 8 (8 inch) flour tortillas
+2017-01-23 22:37:41,011 ERROR InitRecipes.AddProducts - slabs baby back pork ribs : 2 (2 pound) slabs baby back pork ribs
+2017-01-23 22:37:41,012 ERROR InitRecipes.AddProducts - coarsely ground black pepper
+2017-01-23 22:37:41,050 ERROR InitRecipes.AddProducts - ground red chile pepper : 1 tablespoon ground red chile pepper
+2017-01-23 22:37:41,328 ERROR InitRecipes.AddProducts - liquid smoke flavoring : 1 1/4 teaspoons liquid smoke flavoring
+2017-01-23 22:37:41,353 ERROR InitRecipes.AddProducts - whiskey : 2 teaspoons whiskey
+2017-01-23 22:37:41,422 ERROR InitRecipes.AddProducts - dark molasses : 1 tablespoon dark molasses
+2017-01-23 22:37:41,460 ERROR InitRecipes.AddProducts - ground red chile pepper : 1/2 tablespoon ground red chile pepper
+2017-01-23 22:37:41,557 ERROR InitRecipes.AddProducts - seasoned bread crumbs : 1/2 cup seasoned bread crumbs
+2017-01-23 22:37:41,567 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 29.7
+2017-01-23 22:37:41,789 ERROR InitRecipes.AddProducts - prepared marinara sauce : 2 cups prepared marinara sauce
+2017-01-23 22:37:41,921 ERROR InitRecipes.AddProducts - package garlic croutons : 1 (5 ounce) package garlic croutons
+2017-01-23 22:37:42,022 DEBUG InitRecipes.AddProducts - measure not found : potatoes, returning default, measure : 820.359281437126
+2017-01-23 22:37:42,030 DEBUG InitRecipes.AddProducts - measure not found : carrots, returning default, measure : 15
+2017-01-23 22:37:42,109 ERROR InitRecipes.AddProducts - ground unsalted cashews : 3 tablespoons ground unsalted cashews
+2017-01-23 22:37:42,188 ERROR InitRecipes.AddProducts - Failed to parse relative weight for item : 1/2 green pepper
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at InitRecipes.AddProducts.ParseByRelativeNumber(String[] parts, String item) in C:\dev\Ranker\EatRight\InitRecipes\AddProducts.cs:line 272
+2017-01-23 22:37:42,207 ERROR InitRecipes.AddProducts - 1/2 green pepper
+2017-01-23 22:37:42,208 ERROR InitRecipes.AddProducts - Failed to parse relative weight for item : 1/2 red peppers
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at InitRecipes.AddProducts.ParseByRelativeNumber(String[] parts, String item) in C:\dev\Ranker\EatRight\InitRecipes\AddProducts.cs:line 272
+2017-01-23 22:37:42,236 ERROR InitRecipes.AddProducts - 1/2 red peppers
+2017-01-23 22:37:42,282 ERROR InitRecipes.AddProducts - heavy cream : 1 cup heavy cream
+2017-01-23 22:37:42,299 ERROR InitRecipes.AddProducts - fresh coriander (cilantro) leaves for garnish : 1 bunch fresh coriander (cilantro) leaves for garnish
+2017-01-23 22:37:42,352 ERROR InitRecipes.AddProducts - rice wine : 2 tablespoons rice wine
+2017-01-23 22:37:42,572 ERROR InitRecipes.AddProducts - snow peas : 8 ounces snow peas
+2017-01-23 22:37:42,619 ERROR InitRecipes.AddProducts - package penne pasta : 1 (8 ounce) package penne pasta
+2017-01-23 22:37:42,810 ERROR InitRecipes.AddProducts - chopped or leaf spinach : 2 cups chopped or leaf spinach
+2017-01-23 22:37:42,811 ERROR InitRecipes.AddProducts - salt and pepper to taste
+2017-01-23 22:37:43,002 ERROR InitRecipes.AddProducts - extra : 1/2 cup extra
+2017-01-23 22:37:43,040 ERROR InitRecipes.AddProducts - salt and pepper to taste
+2017-01-23 22:37:43,156 ERROR InitRecipes.AddProducts - uncooked long grain rice : 3/4 cup uncooked long grain rice
+2017-01-23 22:37:43,203 ERROR InitRecipes.AddProducts - chile sauce : 1/2 cup chile sauce
+2017-01-23 22:37:43,270 ERROR InitRecipes.AddProducts - ground cumin : 1/2 teaspoon ground cumin
+2017-01-23 22:37:43,458 ERROR InitRecipes.AddProducts - salt and pepper to taste
+2017-01-23 22:37:43,675 ERROR InitRecipes.AddProducts - package angel hair pasta : 1 (8 ounce) package angel hair pasta
+2017-01-23 22:37:43,787 ERROR InitRecipes.AddProducts - boneless chicken breast halves : 2 cups boneless chicken breast halves
+2017-01-23 22:37:43,967 ERROR InitRecipes.AddProducts - sliced red pepperss : 1 cup sliced red pepperss
+2017-01-23 22:37:44,025 ERROR InitRecipes.AddProducts - yellow squash : 1 small yellow squash
+2017-01-23 22:37:44,026 ERROR InitRecipes.AddProducts - Failed to parse relative weight for item : 2 (4
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at InitRecipes.AddProducts.ParseByRelativeNumber(String[] parts, String item) in C:\dev\Ranker\EatRight\InitRecipes\AddProducts.cs:line 272
+2017-01-23 22:37:44,041 ERROR InitRecipes.AddProducts - 2 (4
+2017-01-23 22:37:44,134 ERROR InitRecipes.AddProducts - fillets salmon : 4 (4 ounce) fillets salmon
+2017-01-23 22:37:44,173 ERROR InitRecipes.AddProducts - prepared dijon : 3 tablespoons prepared dijon
+2017-01-23 22:37:44,174 ERROR InitRecipes.AddProducts - salt and pepper to taste
+2017-01-23 22:37:44,183 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 28.35
+2017-01-23 22:37:44,235 ERROR InitRecipes.AddProducts - filet mignon steaks : 2 (4 ounce) filet mignon steaks
+2017-01-23 22:37:44,265 ERROR InitRecipes.AddProducts - salt to taste
+2017-01-23 22:37:44,368 ERROR InitRecipes.AddProducts - seasoned bread crumbs : 1/2 cup seasoned bread crumbs
+2017-01-23 22:37:44,439 ERROR InitRecipes.AddProducts - salt to taste
+2017-01-23 22:37:44,440 ERROR InitRecipes.AddProducts - ground black pepper to taste
+2017-01-23 22:37:44,486 ERROR InitRecipes.AddProducts - package firm tofu : 1 (12 ounce) package firm tofu
+2017-01-23 22:37:44,679 ERROR InitRecipes.AddProducts - peanut oil : 1 tablespoon peanut oil
+2017-01-23 22:37:44,687 ERROR InitRecipes.AddProducts - Failed to parse relative weight for item : 1/4 white onion
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at InitRecipes.AddProducts.ParseByRelativeNumber(String[] parts, String item) in C:\dev\Ranker\EatRight\InitRecipes\AddProducts.cs:line 272
+2017-01-23 22:37:44,708 ERROR InitRecipes.AddProducts - 1/4 white onion
+2017-01-23 22:37:44,760 ERROR InitRecipes.AddProducts - ginger garlic paste : 1 tablespoon ginger garlic paste
+2017-01-23 22:37:44,804 ERROR InitRecipes.AddProducts - garam masala : 1 teaspoon garam masala
+2017-01-23 22:37:44,835 ERROR InitRecipes.AddProducts - ground cumin : 1 teaspoon ground cumin
+2017-01-23 22:37:44,843 DEBUG InitRecipes.AddProducts - measure not found : bay leaf, returning default, measure : 0.6
+2017-01-23 22:37:44,881 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 200
+2017-01-23 22:37:44,930 ERROR InitRecipes.AddProducts - half : 1 cup half
+2017-01-23 22:37:44,975 ERROR InitRecipes.AddProducts - tomato puree : 1 cup tomato puree
+Warning: Recipe 45957 contains USDA Product duplicate cayenne pepper
+2017-01-23 22:37:45,378 ERROR InitRecipes.AddProducts - Failed to parse relative weight for item : 1/2 lemon
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at InitRecipes.AddProducts.ParseByRelativeNumber(String[] parts, String item) in C:\dev\Ranker\EatRight\InitRecipes\AddProducts.cs:line 272
+2017-01-23 22:37:45,388 ERROR InitRecipes.AddProducts - 1/2 lemon
+2017-01-23 22:37:45,507 ERROR InitRecipes.AddProducts - package angel hair pasta : 1 (8 ounce) package angel hair pasta
+2017-01-23 22:37:45,578 ERROR InitRecipes.AddProducts - large shrimp : 1 pound large shrimp
+2017-01-23 22:37:45,718 ERROR InitRecipes.AddProducts - dry ziti pasta : 1 pound dry ziti pasta
+2017-01-23 22:37:45,874 ERROR InitRecipes.AddProducts - jars spaghetti sauce : 1 1/2 (26 ounce) jars spaghetti sauce
+2017-01-23 22:37:45,874 ERROR InitRecipes.AddProducts - salt to taste
+2017-01-23 22:37:46,104 ERROR InitRecipes.AddProducts - cabbage leaf : 8 cabbage leaf
+2017-01-23 22:37:46,223 ERROR InitRecipes.AddProducts - can condensed tomato soup : 1 (10.75 ounce) can condensed tomato soup
+2017-01-23 22:37:46,316 ERROR InitRecipes.AddProducts - mustard powder : 1 teaspoon mustard powder
+2017-01-23 22:37:46,408 ERROR InitRecipes.AddProducts - beef bouillon granules : 1 teaspoon beef bouillon granules
+2017-01-23 22:37:46,452 ERROR InitRecipes.AddProducts - ground veal : 1/2 pound ground veal
+2017-01-23 22:37:46,480 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:37:46,511 DEBUG InitRecipes.AddProducts - measure not found : glass, returning default, measure : 28.35
+2017-01-23 22:37:46,540 ERROR InitRecipes.AddProducts - chopped italian flat leaf parsley : 1 1/2 tablespoons chopped italian flat leaf parsley
+2017-01-23 22:37:46,541 ERROR InitRecipes.AddProducts - salt and ground black pepper to taste
+2017-01-23 22:37:46,573 DEBUG InitRecipes.AddProducts - measure not found : cups, returning default, measure : 28.35
+2017-01-23 22:37:46,597 ERROR InitRecipes.AddProducts - lukewarm water : 1 1/2 cups lukewarm water
+2017-01-23 22:37:46,743 ERROR InitRecipes.AddProducts - whole kernel corn : 1 1/2 cups whole kernel corn
+2017-01-23 22:37:46,790 ERROR InitRecipes.AddProducts - taco sauce : 2 cups taco sauce
+2017-01-23 22:37:46,845 ERROR InitRecipes.AddProducts - garlic salt : 1 teaspoon garlic salt
+2017-01-23 22:37:46,871 ERROR InitRecipes.AddProducts - ground cumin : 1 teaspoon ground cumin
+2017-01-23 22:37:46,915 ERROR InitRecipes.AddProducts - can refried beans : 1 (16 ounce) can refried beans
+2017-01-23 22:37:46,916 ERROR InitRecipes.AddProducts - Failed to parse relative weight for item : 8 (12 inch) flour tortillas
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at InitRecipes.AddProducts.ParseByRelativeNumber(String[] parts, String item) in C:\dev\Ranker\EatRight\InitRecipes\AddProducts.cs:line 272
+2017-01-23 22:37:46,927 ERROR InitRecipes.AddProducts - 8 (12 inch) flour tortillas
+2017-01-23 22:37:46,988 ERROR InitRecipes.AddProducts - shredded lettuce
+2017-01-23 22:37:47,041 ERROR InitRecipes.AddProducts - red lentils : 2 cups red lentils
+2017-01-23 22:37:47,127 ERROR InitRecipes.AddProducts - curry paste : 2 tablespoons curry paste
+2017-01-23 22:37:47,173 ERROR InitRecipes.AddProducts - ground cumin : 1 teaspoon ground cumin
+2017-01-23 22:37:47,297 ERROR InitRecipes.AddProducts - can tomato puree : 1 (14.25 ounce) can tomato puree
+2017-01-23 22:37:47,337 ERROR InitRecipes.AddProducts - salt and pepper to taste
+2017-01-23 22:37:47,370 ERROR InitRecipes.AddProducts - italian seasoned bread crumbs : 2 cups italian seasoned bread crumbs
+2017-01-23 22:37:47,517 DEBUG InitRecipes.AddProducts - measure not found : eggs, returning default, measure : 28.35
+2017-01-23 22:37:47,519 ERROR InitRecipes.AddProducts - soy sauce to taste
+2017-01-23 22:37:47,520 ERROR InitRecipes.AddProducts - sesame oil
+2017-01-23 22:37:47,566 DEBUG InitRecipes.AddProducts - measure not found : baby red potatoes, returning default, measure : 299
+2017-01-23 22:37:47,594 ERROR InitRecipes.AddProducts - corned beef brisket with spice packet : 1 (4 pound) corned beef brisket with spice packet
+2017-01-23 22:37:47,601 ERROR InitRecipes.AddProducts - Failed to parse relative weight for item : 1/2 head cabbage
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at InitRecipes.AddProducts.ParseByRelativeNumber(String[] parts, String item) in C:\dev\Ranker\EatRight\InitRecipes\AddProducts.cs:line 272
+2017-01-23 22:37:47,622 ERROR InitRecipes.AddProducts - 1/2 head cabbage
+2017-01-23 22:37:47,639 ERROR InitRecipes.AddProducts - uncooked long grain white rice : 1 cup uncooked long grain white rice
+2017-01-23 22:37:47,646 ERROR InitRecipes.AddProducts - sauce:
+2017-01-23 22:37:47,735 ERROR InitRecipes.AddProducts - marinara sauce : 2 cups marinara sauce
+2017-01-23 22:37:47,811 ERROR InitRecipes.AddProducts - peppers:
+2017-01-23 22:37:47,857 ERROR InitRecipes.AddProducts - hot italian pork sausage : 1/4 pound hot italian pork sausage
+2017-01-23 22:37:48,072 ERROR InitRecipes.AddProducts - uncooked arborio rice : 1/2 cup uncooked arborio rice
+2017-01-23 22:37:48,261 ERROR InitRecipes.AddProducts - italian seasoning : 1 teaspoon italian seasoning
+2017-01-23 22:37:48,504 ERROR InitRecipes.AddProducts - diced green chile pepper : 1 1/4 cups diced green chile pepper
+2017-01-23 22:37:48,574 ERROR InitRecipes.AddProducts - bottle hot pepper sauce : 1 (5 ounce) bottle hot pepper sauce
+total recipes : 376
+total ingredients : 3471
+total ingredients missed : 635
+Press any key to continue . . .

@@ -136,7 +136,9 @@ namespace Logic {
             { "toast", "toasted bread"},
             { "smoked ham", "cured ham"},
             { "lean ground beef", "ground beef"},
-            { "extra-lean ground beef", "ground beef"}
+            { "extra-lean ground beef", "ground beef"},
+            { "extra ground ground beef", "ground beef"},
+            { "extra lean ground beef", "ground beef"}
         };
 
         public static List<string> StartPharseRemove = new List<string> {
@@ -144,11 +146,13 @@ namespace Logic {
             "melted","sifted", "sprig", "sprigs", "ground", "shredded", "cubed", "rolled",
             "head", "heads", "thick sliced", "sliced", "stalk", "stalks", "finely diced",
             "diced", "dried minced", "minced", "finely chopped", "chopped", "grated","mashed","crushed",
-            "ripe", "steaks", "cold", "warm", "fresh"};
+            "ripe", "steaks", "cold", "warm", "fresh",
+            "canned", "cans","can"
+        };
 
         public static List<string> OtherPhraseRemove = new List<string> {
            "sprigs", "(optional)", "asiago", "extra virgin", "panko" , "steaks", "- peeled","halves",
-            "for frying", "herb-seasoned", "steel cut", "peeled"
+            "for frying", "herb-seasoned", "steel cut", "peeled","loaf"
         };
 
         public static List<string> PrefixRemove = new List<string>
