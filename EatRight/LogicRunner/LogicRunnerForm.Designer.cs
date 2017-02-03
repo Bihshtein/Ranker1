@@ -92,6 +92,7 @@
             this.minMax = new System.Windows.Forms.ComboBox();
             this.label19 = new System.Windows.Forms.Label();
             this.richTextBox5 = new System.Windows.Forms.RichTextBox();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
@@ -699,6 +700,7 @@
             this.richTextBox5.Size = new System.Drawing.Size(263, 384);
             this.richTextBox5.TabIndex = 68;
             this.richTextBox5.Text = "";
+            
             // 
             // LogicRunnerForm
             // 
@@ -706,7 +708,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.AliceBlue;
-            this.ClientSize = new System.Drawing.Size(1160, 1011);
+            this.ClientSize = new System.Drawing.Size(1160, 989);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.richTextBox5);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.minMax);
@@ -843,5 +846,6 @@
         private System.Windows.Forms.ComboBox minMax;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.RichTextBox richTextBox5;
+        private System.Windows.Forms.Button button3;
     }
 }

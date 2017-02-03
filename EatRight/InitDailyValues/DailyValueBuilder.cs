@@ -7,6 +7,8 @@ using RestModel;
 using System.Text.RegularExpressions;
 using System.IO;
 using Logic;
+using System.Globalization;
+using System.Threading;
 
 namespace InitDailyValuesDB
 {
@@ -50,6 +52,7 @@ namespace InitDailyValuesDB
                                                       TupleList<GenderParam, AgeParam> ageGenderList, 
                                                       Dictionary<string, Tuple<string, int>> nameToProductDVMap)
         {
+            Thread.CurrentThread.CurrentCulture = new CultureInfo("us-EN");
             List<DailyValue> dailyValuesList = GetDefaultDailyValuesList(ageGenderList);
             foreach (var line in lines)
             {

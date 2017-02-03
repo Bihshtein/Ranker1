@@ -10,6 +10,8 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Net;
+using System.Net.Mail;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
@@ -55,7 +57,6 @@ namespace LogicRunner
             idealServings.SelectedIndex = 4;
             ageGender.SelectedIndex = 8;
             maxValues.SelectedIndex = 8;
-            mealType.SelectedIndex = 1;
             minValues.SelectedIndex =8;
            // calories.SelectedIndex = 4;
             servings.SelectedIndex = 0;
@@ -195,7 +196,44 @@ namespace LogicRunner
             
             this.labelConsole.Text = string.Format("[{0}] Process took: {1} ms", DateTime.Now.ToShortTimeString(), manager.TotalTime());
 
-            //MessageBox.Show(manager.ToString());
+            var fromAddress = new MailAddress("alex_bihshtein@hotmail.com");
+            var toAddress = new MailAddress("alexbihsh@gmail.com, uriberger@mail.tau.ac.il, liran.madjar@gmail.com");
+            string fromPassword = "99sozio#";
+            string subject = mealType.SelectedItem.ToString() + " Recommendation, " + DateTime.Now.ToShortDateString();
+            string body = "";
+            meals.ToList().ForEach(m => body +=
+            string.Format("<p><font style=\"background-color:{0};font-weight: bold;\">{1}</font></p><a href=\"http://allrecipes.com/recipe/{3}\"><img src=\"{2}\" style=\"width: 250; height: 250;\"></a>", "skyblue", m.Recipe.Name.Replace("Recipe","Score : ") + ((int)m.Grade).ToString() , GetImage(m.Recipe.ID), m.Recipe.ID.ToString()));
+            body = "<!DOCTYPE html><html><body>" + body + "</html></body>";
+            var smtp = new SmtpClient
+            {
+                Host = "smtp.live.com",
+                Port = 587,
+                EnableSsl = true,
+                DeliveryMethod = SmtpDeliveryMethod.Network,
+                UseDefaultCredentials = false,
+                Credentials = new NetworkCredential(fromAddress.Address, fromPassword
+
+               )
+            };
+            using (var message = new MailMessage(fromAddress, toAddress)
+            {
+                Subject = subject,
+                Body = body,
+                IsBodyHtml = true
+            })
+            {
+                smtp.Send(message);
+            }
+        }
+
+        private string GetImage(int id)
+        {
+            var str = new WebClient().DownloadString("https://allrecipes.com/recipe/" + id.ToString());
+            var part = str.Split(new string[] { "http://images.media-allrecipes.com/userphotos/250x250/" },StringSplitOptions.None);
+            var num = part[1].TakeWhile(c => c != '.');
+            var strNum = new String(num.ToArray());
+            return "http://images.media-allrecipes.com/userphotos/250x250/" + strNum + ".jpg";
+
         }
 
 
@@ -276,6 +314,8 @@ namespace LogicRunner
                 }
             //    }
         }
+
+       
     }
 }
 
