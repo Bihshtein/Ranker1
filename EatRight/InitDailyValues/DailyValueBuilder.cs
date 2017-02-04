@@ -98,6 +98,9 @@ namespace InitDailyValuesDB
 
                         dailyValuesList[pIndex].DailyValues[nutrient].MinValue = min;
                         dailyValuesList[pIndex].DailyValues[nutrient].MaxValue = max;
+                        dailyValuesList[pIndex].DailyValues["Sugars, total"].MinValue = double.NegativeInfinity;
+                        dailyValuesList[pIndex].DailyValues["Sugars, total"].MaxValue = 90.0;
+
                     }
                 }
             }

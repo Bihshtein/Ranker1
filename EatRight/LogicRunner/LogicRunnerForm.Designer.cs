@@ -93,6 +93,7 @@
             this.label19 = new System.Windows.Forms.Label();
             this.richTextBox5 = new System.Windows.Forms.RichTextBox();
             this.button3 = new System.Windows.Forms.Button();
+            this.sendEmail = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
@@ -549,7 +550,7 @@
             this.label18.AutoSize = true;
             this.label18.BackColor = System.Drawing.Color.Transparent;
             this.label18.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.label18.Location = new System.Drawing.Point(1027, 81);
+            this.label18.Location = new System.Drawing.Point(1027, 65);
             this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(77, 16);
@@ -559,7 +560,7 @@
             // workMode
             // 
             this.workMode.FormattingEnabled = true;
-            this.workMode.Location = new System.Drawing.Point(1020, 100);
+            this.workMode.Location = new System.Drawing.Point(1020, 84);
             this.workMode.Name = "workMode";
             this.workMode.Size = new System.Drawing.Size(89, 21);
             this.workMode.TabIndex = 49;
@@ -700,7 +701,24 @@
             this.richTextBox5.Size = new System.Drawing.Size(263, 384);
             this.richTextBox5.TabIndex = 68;
             this.richTextBox5.Text = "";
-            
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(0, 0);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 0;
+            // 
+            // sendEmail
+            // 
+            this.sendEmail.AutoSize = true;
+            this.sendEmail.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.sendEmail.Location = new System.Drawing.Point(1020, 117);
+            this.sendEmail.Name = "sendEmail";
+            this.sendEmail.Size = new System.Drawing.Size(91, 20);
+            this.sendEmail.TabIndex = 69;
+            this.sendEmail.Text = "Send Email";
+            this.sendEmail.UseVisualStyleBackColor = true;
             // 
             // LogicRunnerForm
             // 
@@ -709,6 +727,7 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(1160, 989);
+            this.Controls.Add(this.sendEmail);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.richTextBox5);
             this.Controls.Add(this.label19);
@@ -847,5 +866,6 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.RichTextBox richTextBox5;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.CheckBox sendEmail;
     }
 }

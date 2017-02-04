@@ -147,6 +147,7 @@ namespace RestModel
                 { "Total fiber (g)" , "Fiber, total dietary"},
                 { "Total fat (% of calories)" , "Total lipid (fat)" },
                {"Saturated fat (% of calories)" , "Fatty acids, total saturated" },
+                {"Sugars, total","Sugars, total" },
               /*  { "Linoleic acid (g)" , new Tuple<string, int>("Protein", 0) },
                 { "alpha-Linolenic acid (g)" , new Tuple<string, int>("Protein", 0) },*/
                 { "Cholesterol (mg)" , "Cholesterol"},
