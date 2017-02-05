@@ -38,39 +38,6 @@ namespace Students.Services
         public int MinMeasure { get; protected set; }
         public ProfileType ProfileType { get; protected set; }
 
-        public SearchQueryParser(string searchQuery)
-        {
-            MinMeasure = DEFAULT_MIN_MEASURE;
-            IsVegeterian = DEFAULT_IS_VEGETERIAN;
-            ProfileType = ProfileType.Normal;
-            SearchQuery = new List<string>();
-
-            if (String.IsNullOrEmpty(searchQuery)) return;
-
-            // TODO: handle cases where '=' is part of the search query
-            var spltQuery = searchQuery.Split(QUERY_PARAMS_DELIMITER);
-            if (spltQuery.Length > LEGAL_SEARCH_PARAMS_LENGTH) return;
-
-            SearchQuery = spltQuery[SEARCH_WORDS_INDEX].Split(',').ToList();
-            if ((spltQuery.Length != LEGAL_SEARCH_PARAMS_LENGTH) ||
-                (string.IsNullOrEmpty(spltQuery[OTHER_PARAMS_INDEX]))) return;
-
-            var otherParamsSplt =
-                spltQuery[OTHER_PARAMS_INDEX].Split(OTHER_PARAMS_DELIMITER);
-
-            if (otherParamsSplt.Length != LEGAL_OTHER_PARAMS_LENGTH) return;
-
-            int tempMinMeasure = 0;
-            if (int.TryParse(otherParamsSplt[MIN_MEASURE_INDEX], out tempMinMeasure))
-                MinMeasure = tempMinMeasure;
-
-            ProfileType tempProfileType = ProfileType.Normal;
-            if (ProfileType.TryParse(otherParamsSplt[PROFILE_TYPE_INDEX], out tempProfileType))
-                ProfileType = tempProfileType;
-
-            IsVegeterian = ProfileType == ProfileType.Vegeterian;
-        }
-
     }
 
     public class ProductsController : ApiController
@@ -80,41 +47,18 @@ namespace Students.Services
         {
             productsService = new ProductsService();
         }
-        public List<List<Product>> ProductListCreator(SearchQueryParser sqParser)
+        public List<List<Product>> GetProducts(string searchKeyword)
         {
             var productLists = new List<List<Product>>();
+            if (RestRepository<Product>.FoodGroups.Contains(searchKeyword)) 
+                return new List<List<Product>>() { productsService.GetFoodGroup(searchKeyword) };
+            else
+                return new List<List<Product>>() { productsService.GetIngredient(searchKeyword) };
 
-
-            foreach (var searchKeyword in sqParser.SearchQuery)
-            {
-                if (RestRepository<Product>.DailyValues.ContainsKey(searchKeyword))
-                {
-                    productLists.Add(productsService.GetNutrient(searchKeyword,
-                                                                 sqParser.MinMeasure,
-                                                                 sqParser.IsVegeterian));
-                }
-                
-
-                else if (RestRepository<Product>.FoodGroups.Contains(searchKeyword)) {
-                    productLists.Add(productsService.GetFoodGroup(searchKeyword));
-                }
-
-                else  {
-                    productLists.Add(productsService.GetIngredient(searchKeyword));
-                }
-
-
-            }
-            
-            return productLists;
         }
         public HttpResponseMessage Get(string id)
         {
-            var sqParser = new SearchQueryParser(id);
-            List<List<Product>> productsList = ProductListCreator(sqParser);
-           
-
-            return Request.CreateResponse(HttpStatusCode.OK, productsList);
+            return Request.CreateResponse(HttpStatusCode.OK, GetProducts(id));
         }
         public HttpResponseMessage GetAll()
         {
