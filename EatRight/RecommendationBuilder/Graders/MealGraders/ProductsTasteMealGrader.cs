@@ -18,7 +18,8 @@ namespace RecommendationBuilder.Graders.MealGraders
         protected override void InitDataStructures(Meal meal)
         {
             flavorDict = RecommendationObject.recommendationDB.productFlavorGrade;
-            objectList = meal.Recipe.ProductsWeight.Keys.ToList();
+            if (meal.Recipe.ProductsWeight != null)
+                objectList = meal.Recipe.ProductsWeight.Keys.ToList();
         }
     }
 }

@@ -25,15 +25,20 @@ namespace WebServer.Controllers {
         public HttpResponseMessage Get(string id) {
             var parts = id.Split('_');
             var mealsList = new List<List<Meal>>();
-            if (parts.Length > 1)
-             mealsList.Add(Hack.GetRecommendation(
-                int.Parse(parts[0]),
-                (GenderType)Enum.Parse(typeof(GenderType), parts[1])
-                ));
-                
+            if (parts.Length < 2)
+                return null;
+            else { 
+                mealsList.Add(Hack.GetRecommendation(
+                   int.Parse(parts[0]),
+                   (GenderType)Enum.Parse(typeof(GenderType), parts[1])
+                   ));
 
 
-            return Request.CreateResponse(HttpStatusCode.OK, mealsList);
+
+                return Request.CreateResponse(HttpStatusCode.OK, mealsList);
+
+            }
+
         }
     }
 }

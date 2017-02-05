@@ -701,7 +701,7 @@ namespace RecommendationBuilder
                 RecommendationObject.recommendationDB.GradersWeight = new Dictionary<GraderType, double>()
                 {
                     // Menu graders
-                    {GraderType.MinNutValuesGrader, 0.25},
+                    {GraderType.MinNutValuesGrader, 0.2},
                     {GraderType.CaloriesCountGrader, 0.25},
                     {GraderType.VarietyGrader, 0.19},
                     {GraderType.ProductsTasteGrader, 0.05},
@@ -737,12 +737,12 @@ namespace RecommendationBuilder
                     {GraderType.GradeAverageRecoGrader, 0.1},
 
                     // Meal graders
-                    {GraderType.CaloriesCountMealGrader, 0.3},
-                    {GraderType.MinNutValuesMealGrader, 0.3},
-                    {GraderType.MaxNutValuesMealGrader, 0.1},
+                    {GraderType.CaloriesCountMealGrader, 2},
+                    {GraderType.MinNutValuesMealGrader, 4},
+                    {GraderType.MaxNutValuesMealGrader, 2},
                     {GraderType.ProductsTasteMealGrader, 0.08},
                     {GraderType.FoodCategoryMealGrader, 0.04},
-                    {GraderType.PrepTimeMealGrader, 0.08},
+                    {GraderType.PrepTimeMealGrader, 0.2},
                     {GraderType.ServingsNumMealGrader, 0.2}
                 };
             }

@@ -121,15 +121,15 @@ namespace InitRecipes {
                 log.Error("Failed to load recipe number : " + index);
                 return;
             }
-           
+
             unit.Recipes.Add(new Recipe() {
                 ID = index,
-                Name = GetRecipeName(page).Replace(" - Allrecipes.com",""),
+                Name = GetRecipeName(page).Replace(" - Allrecipes.com", ""),
                 Ingredients = GetIngredients(page),
                 Types = new HashSet<MealType>() { mealType },
                 Servings = GetServings(page),
-                PrepTime = GetPrepTime(page)
-
+                PrepTime = GetPrepTime(page),
+                ImageUrl = GetImageUrl(page)
             });
 
             lock (Locker) {
@@ -137,6 +137,15 @@ namespace InitRecipes {
                 Indexes.Remove(index);
             }
         }
+
+        private static string GetImageUrl(string page) {
+            var part = page.Split(new string[] { "http://images.media-allrecipes.com/userphotos/250x250/" }, StringSplitOptions.None);
+            var num = part[1].TakeWhile(c => c != '.');
+            var strNum = new String(num.ToArray());
+            return "http://images.media-allrecipes.com/userphotos/250x250/" + strNum + ".jpg";
+
+        }
+
 
         private static string GetRecipeName(string page)
         {

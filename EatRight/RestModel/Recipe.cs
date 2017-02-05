@@ -42,6 +42,8 @@ namespace RestModel  {
         public HashSet<ProductType> ProductTypes { get; set; } = new HashSet<ProductType>();
         [BsonElement("_name")]
         public string Name { get; set; }
+        [BsonElement("ImageUrl")]
+        public string ImageUrl { get; set; }
         [BsonElement("MealType")]
         public string MealType { get; set; }
         public Dictionary<string, double> ProductsWeight;
