@@ -11,7 +11,8 @@
     angular
         .module('app')
         .controller('Query', Hello);
-  
+   
+   
     function Hello($scope, $http) {
         $scope.initProducts = function (query) {
             $http.get('http://localhost:51612/Api/Products/' + query).
