@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+
+<html ng-app="app">
+<head>
+    <link href="Content/ui-bootstrap-csp.css" rel="stylesheet" />
+    <link href="Content/angular-material/angular-material.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title></title>
+    <style>
+        input[type='text'] {
+            font-size: 20px;
+        }
+
+        div {
+            font-size: 8px;
+        }
+
+        label {
+            font-size: 20px;
+        }
+
+        .odd {
+            background-color: Beige;
+        }
+
+        .even {
+            background-color: Snow;
+        }
+
+      
+    </style>
+
+</head>
+<body>
+    <div class="Container">
+        <label>
+            Products  <input type="text" name="input" size="150" ng-model="products.text" ng-pattern="input.word" ng-list> eg : salmon
+        </label>
+        <br /><br /><br /><br />
+        <label>
+            Recipes   <input type="text" name="input" size="150" ng-model="recipes.text" ng-pattern="input.word" ng-list> eg : salmon steaks
+        </label>
+        <br /><br /><br /><br />
+        <div ng-controller="Query">
+
+            <div layout="column" class="Container2">
+                <div7 ng-repeat="val in products.text" class="Container3" style="float:left">
+                    <div layout="row" flex="20" flex-order="-1" ng-init="initProducts(val)" ng-class="$even ? 'odd' : 'even'">
+                        <div ng-repeat="P in dictProducts[val].data[0]">
+                            <div style="width:160px">
+                                <h2>. {{P.Name1}} </h2>
+                                <h2>. {{P.Name2}} </h2>
+                                <h2>. {{P.Name3}} </h2>
+                                <h2>. {{P.PreparationMethod}} </h2>
+                                <h2>. {{P.StorageMethod}} </h2>
+                                <h2>. {{P.ID}} </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div7>
+                <div7 ng-repeat="val in recipes.text" class="Container3" style="float:left">
+                    <div layout="row" flex="20" flex-order="-1" ng-init="initRecipes(val)" ng-class="$even ? 'even' : 'odd'">
+                        <div ng-repeat="P in dictRecipes[val].data[0]">
+                            <div style="width:300px">
+                                <h2>. {{P.Name}} </h2>
+                                <h2>. {{P.PrepTime}} </h2>
+                                <h2>. {{P.Servings}} </h2>
+                                <h2>. {{P.TotalCaloriesNum}} </h2>
+                                <h2>. {{P.ID}} </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div7>
+            </div>
+        </div>
+
+
+
+    </div>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="app/Products.js"></script>
+
+</body>
+</html>

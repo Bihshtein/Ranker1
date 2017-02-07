@@ -14,6 +14,17 @@
    
    
     function Hello($scope, $http) {
+        $scope.colours = [];
+        for (var i = 0; i < 50*2.5; i++) {
+            $scope.colours.push("LightCoral");
+        }
+        for (var i = 50 * 2.5; i < 75 * 2.5; i++) {
+            $scope.colours.push("Khaki");
+        }
+      
+        for (var i = 75 * 2.5; i < 101 * 2.5; i++) {
+            $scope.colours.push("LightGreen");
+        }
         $scope.initProducts = function (query) {
             $http.get('http://localhost:51612/Api/Products/' + query).
                 then(function (data) {
