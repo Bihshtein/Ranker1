@@ -16,8 +16,17 @@ namespace LogicRunner {
             string fromPassword = "99sozio#";
             string subject = mealType + " Recommendation, " + DateTime.Now.ToShortDateString();
             string body = "";
-            meals.ToList().ForEach(m => body +=
-            string.Format("<p><font style=\"background-color:{0};font-weight: bold;\">{1}</font></p><a href=\"http://allrecipes.com/recipe/{3}\"><img src=\"{2}\" style=\"width: 250; height: 250;\"></a>", "skyblue", m.Recipe.Name.Replace("Recipe", "Score : ") + ((int)m.Grade).ToString(), m.Recipe.ImageUrl, m.Recipe.ID.ToString()));
+            meals.ToList().ForEach(m => {
+                var recipeLink = "allrecipes.com/recipe/" + m.Recipe.ID.ToString();
+                var shortlink = new WebClient().DownloadString(string.Format("http://wasitviewed.com/index.php?href=http%3A%2F%2F{0}&email=alex_bihshtein%40hotmail.com&notes=&bitly=bitly&nobots=nobots&submit=Generate+Link", recipeLink));
+                var parts = shortlink.Split(new string[] { "bit.ly" }, StringSplitOptions.None);
+                var link = new String(parts[1].TakeWhile(c => c != '\"').ToArray());
+                body +=
+
+                    string.Format(
+                        "<p><font style=\"background-color:{0};font-weight: bold;\">{1}</font></p><a href=\"{3}\"><img src=\"{2}\" style=\"width: 250; height: 250;\"></a>",
+                        "Beige", m.Recipe.Name.Replace("Recipe", "Score : ") + ((int)m.Grade).ToString(), m.Recipe.ImageUrl,  "http://bit.ly"+ link);
+                });
             body = "<!DOCTYPE html><html><body>" + body + "</html></body>";
             var smtp = new SmtpClient {
                 Host = "smtp.live.com",
@@ -37,7 +46,8 @@ namespace LogicRunner {
             };
             message.To.Add(new MailAddress("alexbihsh@gmail.com"));
             message.To.Add(new MailAddress("uriberger@mail.tau.ac.il"));
-            message.To.Add(new MailAddress(" liran.madjar@gmail.com"));
+            message.To.Add(new MailAddress("liran.madjar@gmail.com"));
+            message.To.Add(new MailAddress("siukeicheung184@gmail.com"));
 
             {
                 smtp.Send(message);
