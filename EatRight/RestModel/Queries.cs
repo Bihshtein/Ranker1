@@ -54,6 +54,8 @@ namespace RestModel {
             if (res != null && res.Count> 0)
                 return res;
             ingredient = Map.AdjustIngredient(ingredient);
+            if (ingredient == string.Empty)
+                return null;
             var innerSplit = ingredient.Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries);
 
             if (innerSplit.Length == 1)

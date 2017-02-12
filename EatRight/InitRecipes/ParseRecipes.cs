@@ -21,11 +21,33 @@ namespace InitRecipes {
             { MealType.Dinner,  "17562/dinner" }
         };
 
-        private static HashSet<int> GetRecipeIdsByURL(string categoryURL)
+        public static void CreateDB() {
+            Indexes = new List<int>();
+            var unit = new RestDBInterface();
+            foreach (var entry in typeURLs) {
+                Indexes.Clear();
+                Indexes = GetRecipeIdsByURL(entry.Value, unit).ToList();
+                ProblematicRecipes.ForEach(x => Indexes.Remove(x));
+
+                var loadMealsBulkSize = Indexes.Count > 1000 ? 1000 : Indexes.Count;
+                while (Indexes.Count > 0) {
+                    log.Debug("Indexes count : " + Indexes.Count);
+                    List<Task> tasks = new List<Task>();
+                    if (Indexes.Count > loadMealsBulkSize)
+                        Indexes.Take(loadMealsBulkSize).ToList().ForEach(a => tasks.Add(new Task(new Action(() => ParseRecipe(a, entry.Key)))));
+                    else
+                        Indexes.Take(Indexes.Count).ToList().ForEach(a => tasks.Add(new Task(new Action(() => ParseRecipe(a, entry.Key)))));
+                    tasks.ForEach(task => task.Start());
+                    tasks.ForEach(task => task.Wait());
+                }
+            }
+        }
+
+        private static HashSet<int> GetRecipeIdsByURL(string categoryURL, RestDBInterface unit)
         {
             var client = new WebClient();
             var first = true;
-            var pageCount = 2;
+            var pageCount = 0;
             var ids = new HashSet<int>();
             while (true)
             {
@@ -47,7 +69,7 @@ namespace InitRecipes {
                 }
                 else
                 {
-                    if (pageCount % 10 == 0)
+                    if (pageCount == 100)
                     {
                         System.Console.WriteLine("Locating recipes in " + categoryURL + ": Parsing page " + pageCount);
                         return ids;
@@ -68,7 +90,8 @@ namespace InitRecipes {
                     int id;
                     if (int.TryParse(idStr, out id))
                     {
-                        ids.Add(id);
+                        if (unit.Recipes.GetRecipeById(id).Count == 0 )
+                            ids.Add(id);
                     }
                 }
             }
@@ -76,34 +99,7 @@ namespace InitRecipes {
             return ids;
         }
 
-        public static void CreateDB() {
-            //Indexes = File.ReadAllLines(FolderPath + "recipes_num.txt").ToList().ConvertAll<int>((a => int.Parse(a)));
-            Indexes = new List<int>();
-            var unit = new RestDBInterface();
-            unit.Recipes.Empty();
-            foreach (var entry in typeURLs)
-            {
-                Indexes.Clear();
-                Indexes = GetRecipeIdsByURL(entry.Value).ToList();
-                ProblematicRecipes.ForEach(x => Indexes.Remove(x));
-
-                var loadMealsBulkSize = Indexes.Count > 1000 ? 1000 : Indexes.Count;
-                while (Indexes.Count > 0)
-                {
-                    log.Debug("Indexes count : " + Indexes.Count);
-                    List<Task> tasks = new List<Task>();
-                    if (Indexes.Count > loadMealsBulkSize)
-                        Indexes.Take(loadMealsBulkSize).ToList().ForEach(a => tasks.Add(new Task(new Action(() => ParseRecipe(a, entry.Key)))));
-                    else
-                        Indexes.Take(Indexes.Count).ToList().ForEach(a => tasks.Add(new Task(new Action(() => ParseRecipe(a, entry.Key)))));
-                    tasks.ForEach(task => task.Start());
-                    tasks.ForEach(task => task.Wait());
-                }
-            }
-        }
-
-       
-
+      
         public static void ParseRecipe(int index, MealType mealType) {
             
            var unit = new RestDBInterface();

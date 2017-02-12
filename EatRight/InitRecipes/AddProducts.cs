@@ -266,15 +266,15 @@ namespace InitRecipes {
             if (item != Regex.Replace(item, @"\d", ""))
             {
                 innerpart = Regex.Replace(item, @"\d", "").Trim();
-                var units = item.Replace(innerpart, "");
-                try
-                {
-                    relativeWeight = int.Parse(units.Trim());
-                }
-                catch (Exception ex)
-                {
-                    innerpart = string.Empty;
-                    log.Error("Failed to parse relative weight for item : " + item, ex);
+                if (innerpart != string.Empty) {
+                    var units = item.Replace(innerpart, "");
+                    try {
+                        relativeWeight = int.Parse(units.Trim());
+                    }
+                    catch (Exception ex) {
+                        innerpart = string.Empty;
+                        log.Error("Failed to parse relative weight for item : " + item, ex);
+                    }
                 }
             }
             return new Tuple<string, double>(innerpart, relativeWeight);
