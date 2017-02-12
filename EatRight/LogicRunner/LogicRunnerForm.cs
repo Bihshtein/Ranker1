@@ -56,13 +56,13 @@ namespace LogicRunner
             activityLevel.DataSource = Enum.GetNames(typeof(PhysicalActivityLevel));
             idealServings.SelectedIndex = 4;
             ageGender.SelectedIndex = 8;
-            maxValues.SelectedIndex = 8;
-            minValues.SelectedIndex =8;
-           // calories.SelectedIndex = 4;
+            maxValues.SelectedIndex = 3;
+            minValues.SelectedIndex =4;
+            calories.SelectedIndex = 1;
             servings.SelectedIndex = 0;
-           // cookTime.SelectedIndex = 2;
+            cookTime.SelectedIndex = 2;
             comboBox4.SelectedIndex = 1;
-            recommendationsNum.SelectedIndex = 4;
+            recommendationsNum.SelectedIndex = 7;
         }
 
         private void button1_Click(object sender, EventArgs e)

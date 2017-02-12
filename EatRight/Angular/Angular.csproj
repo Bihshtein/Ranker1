@@ -95,8 +95,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\Products.js" />
-    <Content Include="bubble.html" />
-    <Content Include="bubble.js" />
     <Content Include="Content\angular-material\angular-material.css" />
     <Content Include="Content\angular-material\angular-material.min.css" />
     <Content Include="Content\ui-bootstrap-csp.css" />
