@@ -18,19 +18,23 @@ namespace LogicRunner {
             {GraderType.PrepTimeMealGrader, "Convenience" },
         };
         public static void SendEmail(RecommendationDB recommendationDB, IEnumerable<Meal> meals, string mealType) {
+            meals = meals.OrderByDescending(m => m.Grade);
             var fromAddress = new MailAddress("alex_bihshtein@hotmail.com");
             string fromPassword = "99sozio#";
             string subject = DateTime.Now.DayOfWeek.ToString() + " " + mealType + " recommendation for "+ recommendationDB.UserProfile.Name;
             var graders = recommendationDB.GradersWeight.OrderByDescending(i => i.Value).ToList();
 
 
-            string body = string.Format("<p>Recommendation priorities are : ");
+            string body = string.Format("<p>Recommendation priorities are :     ");
             for (int i = 0; i < 4; i++) 
-                body += (++i).ToString() + "." + GradersGroupsNames[graders[--i].Key] +"  ";
+                body += (++i).ToString() + "." + GradersGroupsNames[graders[--i].Key] +" , ";
+            body = body.Remove(body.Length - 3, 2);
             body += "</p>";
-            body += string.Format("<p>Your priorities (and restictions)  are : ");
-            recommendationDB.UserProfile.Restrictions.ToList().ForEach(r => body += r.ToString() + " ");
+            body += string.Format("<p>Your priorities (and restictions)  are :     ");
+            recommendationDB.UserProfile.Restrictions.ToList().ForEach(r => body += r.ToString() + " - ");
+            body = body.Remove(body.Length - 3, 2);
             body += "</p>";
+           
 
             meals.ToList().ForEach(m => {
                 var recipeLink = "allrecipes.com/recipe/" + m.Recipe.ID.ToString();
@@ -54,6 +58,8 @@ namespace LogicRunner {
                        );
 
                 });
+            body += "<p>Press the picture to go to the recipe</p>";
+            body += "<p>For any requests or concerns please reply to this address</p>";
             body = "<!DOCTYPE html><html><body>" + body + "</html></body>";
             var smtp = new SmtpClient {
                 Host = "smtp.live.com",
