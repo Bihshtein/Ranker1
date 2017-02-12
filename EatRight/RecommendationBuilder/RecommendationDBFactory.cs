@@ -154,7 +154,7 @@ namespace RecommendationBuilder
             recommendationDB.GradersWeight = null;
             recommendationDB.range = SuggestionRangeGenerator.FromUserProfile(userProfile);
             recommendationDB.preferences = UserRestrictionsGenerator.FromUserProfile(userProfile);
-            
+            recommendationDB.UserProfile = userProfile;
             return recommendationDB;
         }
 

@@ -97,6 +97,7 @@ namespace RecommendationBuilder
         public SuggestionRange range; // How many days/meals will the menu contain
         public double budget = Double.PositiveInfinity; // Specific user's budget, default is infinity (no budget)
         public HashSet<UserRestrictions> preferences; // Preferences for meal, for example- meat
+        public UserProfile UserProfile;
 
         // Debug information
         public Dictionary<string, double> MinNutrientGrades = new Dictionary<string, double>();

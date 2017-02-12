@@ -6,24 +6,40 @@ using System.Net;
 using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
+using RestModel;
 
 
 namespace LogicRunner {
     public class PersonalFeed {
-      
-        public static void SendEmail(IEnumerable<Meal> meals, string mealType) {
+        public static Dictionary<GraderType, string> GradersGroupsNames = new Dictionary<GraderType, string>() {
+            {GraderType.CaloriesCountMealGrader, "Calories" },
+            {GraderType.MaxNutValuesMealGrader, "Unhealthy compounds" },
+            {GraderType.MinNutValuesMealGrader, "Nutritious elements" },
+            {GraderType.PrepTimeMealGrader, "Convenience" },
+        };
+        public static void SendEmail(RecommendationDB recommendationDB, IEnumerable<Meal> meals, string mealType) {
             var fromAddress = new MailAddress("alex_bihshtein@hotmail.com");
             string fromPassword = "99sozio#";
-            string subject = mealType + " Recommendation, " + DateTime.Now.ToShortDateString();
-            string body = "";
+            string subject = DateTime.Now.DayOfWeek.ToString() + " " + mealType + " recommendation for "+ recommendationDB.UserProfile.Name;
+            var graders = recommendationDB.GradersWeight.OrderByDescending(i => i.Value).ToList();
+
+
+            string body = string.Format("<p>Recommendation priorities are : ");
+            for (int i = 0; i < 4; i++) 
+                body += (++i).ToString() + "." + GradersGroupsNames[graders[--i].Key] +"  ";
+            body += "</p>";
+            body += string.Format("<p>Your priorities (and restictions)  are : ");
+            recommendationDB.UserProfile.Restrictions.ToList().ForEach(r => body += r.ToString() + " ");
+            body += "</p>";
+
             meals.ToList().ForEach(m => {
                 var recipeLink = "allrecipes.com/recipe/" + m.Recipe.ID.ToString();
                 var shortlink = new WebClient().DownloadString(string.Format("http://wasitviewed.com/index.php?href=http%3A%2F%2F{0}&email=alex_bihshtein%40hotmail.com&notes=&bitly=bitly&nobots=nobots&submit=Generate+Link", recipeLink));
                 var parts = shortlink.Split(new string[] { "bit.ly" }, StringSplitOptions.None);
                 var link = new String(parts[1].TakeWhile(c => c != '\"').ToArray());
-                var caloriesScore = m.GradeInfo.GradersInfo[RestModel.GraderType.CaloriesCountMealGrader].Grade * 100 * 2.5;
-                var nutritionScore = (m.GradeInfo.GradersInfo[RestModel.GraderType.MaxNutValuesMealGrader].Grade + m.GradeInfo.GradersInfo[RestModel.GraderType.MinNutValuesMealGrader].Grade) / 2 * 100 * 2.5;
-                var convennienceScore = m.GradeInfo.GradersInfo[RestModel.GraderType.PrepTimeMealGrader].Grade * 100 * 2.5;
+                var caloriesScore = m.GradeInfo.GradersInfo[GraderType.CaloriesCountMealGrader].Grade * 100 * 2.5;
+                var nutritionScore = (m.GradeInfo.GradersInfo[GraderType.MaxNutValuesMealGrader].Grade + m.GradeInfo.GradersInfo[RestModel.GraderType.MinNutValuesMealGrader].Grade) / 2 * 100 * 2.5;
+                var convennienceScore = m.GradeInfo.GradersInfo[GraderType.PrepTimeMealGrader].Grade * 100 * 2.5;
                 body +=
 
                     string.Format(
@@ -56,9 +72,9 @@ namespace LogicRunner {
                 IsBodyHtml = true
             };
             message.To.Add(new MailAddress("alexbihsh@gmail.com"));
-            message.To.Add(new MailAddress("uriberger@mail.tau.ac.il"));
+         /*   message.To.Add(new MailAddress("uriberger@mail.tau.ac.il"));
             message.To.Add(new MailAddress("liran.madjar@gmail.com"));
-            message.To.Add(new MailAddress("siukeicheung184@gmail.com"));
+            message.To.Add(new MailAddress("siukeicheung184@gmail.com"));*/
 
             {
                 smtp.Send(message);

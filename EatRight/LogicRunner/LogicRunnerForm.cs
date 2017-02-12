@@ -196,7 +196,7 @@ namespace LogicRunner
             
             this.labelConsole.Text = string.Format("[{0}] Process took: {1} ms", DateTime.Now.ToShortTimeString(), manager.TotalTime());
             if (sendEmail.Checked)
-                PersonalFeed.SendEmail(meals, mealType.SelectedItem.ToString());
+                PersonalFeed.SendEmail(recommendationDB ,meals, mealType.SelectedItem.ToString());
          
         }
 
