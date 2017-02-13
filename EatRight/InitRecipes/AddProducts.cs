@@ -11,11 +11,13 @@ using System.Globalization;
 using System.Threading;
 using System.Linq.Expressions;
 using Logic;
+using System.IO;
 
 namespace InitRecipes {
     class AddProducts {
 
         public static ILog log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
+        public static string FolderPath = Assembly.GetExecutingAssembly().Location + @"\..\..\..\..\LocalDB\";
 
 
         public static int totalMissing = 0;
@@ -51,6 +53,8 @@ namespace InitRecipes {
             Console.WriteLine("total recipes : " + recipes.Count);
             Console.WriteLine("total ingredients : " + total);
             Console.WriteLine("total ingredients missed : " + totalMissing);
+            var sorted = MissingCount.OrderByDescending(i => i.Value).ToList();
+            File.WriteAllLines(FolderPath + "MissingIndex.txt", sorted.ConvertAll<string>(i => i.Key + " : " + i.Value));
         }
 
         private static void ParseInnerpart(Recipe recipe, List<Product> res, string innerpart,
@@ -87,6 +91,8 @@ namespace InitRecipes {
 
             AddItem(product, recipe, weight, innerpart);
         }
+
+        public static Dictionary<string, int> MissingCount = new Dictionary<string, int>();
 
         public static void ParseItem(Recipe recipe, string item) {
             item = Map.AdjustNames(item);
@@ -158,13 +164,19 @@ namespace InitRecipes {
                         }
                         if (hasOr && !parsed)
                         {
-                            log.Error(innerpart + " : " + item);
+                            if (MissingCount.ContainsKey(item))
+                                MissingCount[item]++;
+                            else
+                                MissingCount.Add(item,1);
                             ++totalMissing;
                         }
                     }
                     else
                     {
-                        log.Error(innerpart + " : " + item);
+                        if (MissingCount.ContainsKey(item))
+                            MissingCount[item]++;
+                        else
+                            MissingCount.Add(item, 1);
                         ++totalMissing;
                     }
                 }
@@ -174,7 +186,10 @@ namespace InitRecipes {
                 }
             }
             else {
-                log.Error(item);
+                if (MissingCount.ContainsKey(item))
+                    MissingCount[item]++;
+                else
+                    MissingCount.Add(item, 1);
                 ++totalMissing;
             }
         }
