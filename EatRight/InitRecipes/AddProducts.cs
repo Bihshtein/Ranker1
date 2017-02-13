@@ -21,6 +21,7 @@ namespace InitRecipes {
 
 
         public static int totalMissing = 0;
+        private static object Locker = new object();
         public static int total = 0;
         public static RestDBInterface unit = new RestDBInterface();
         public static void Add() {
@@ -28,33 +29,37 @@ namespace InitRecipes {
             Thread.CurrentThread.CurrentCulture = customCulture;
 
             var recipes = unit.Recipes.GetAllList();
+            var tasks = new List<Task>();
+            recipes.ForEach(r => tasks.Add(new Task(new Action(()=>AddRecipe(r)))));
             var foundProducts = new List<Product>();
-            foreach (var recipe in recipes) {
-                if (recipe.ProductsWeight != null)
-                    recipe.ProductsWeight.Clear();
-                recipe.TotalCaloriesNum = 0;
-                if (recipe.TotalNutValues != null)
-                {
-                    recipe.TotalNutValues.Clear();
-                }
-                else recipe.TotalNutValues = new Dictionary<string, double>();
-
-                if (recipe.USDAProducts == null) recipe.USDAProducts = new Dictionary<string, List<string>>();
-                recipe.USDAProducts.Clear();
-
-                foreach (var item in recipe.Ingredients) {
-                    ParseItem(recipe, item.ToLower().Trim());
-                }
-
-                unit.Recipes.Update(s => s.ID, recipe.ID, recipe);
-                unit.TestsRecipes.Update(s => s.ID, recipe.ID, recipe);
-            }
+            tasks.ForEach(task => task.Start());
+            tasks.ForEach(task => task.Wait());
 
             Console.WriteLine("total recipes : " + recipes.Count);
             Console.WriteLine("total ingredients : " + total);
             Console.WriteLine("total ingredients missed : " + totalMissing);
             var sorted = MissingCount.OrderByDescending(i => i.Value).ToList();
             File.WriteAllLines(FolderPath + "MissingIndex.txt", sorted.ConvertAll<string>(i => i.Key + " : " + i.Value));
+        }
+
+        private static void AddRecipe(Recipe recipe) {
+            if (recipe.ProductsWeight != null)
+                recipe.ProductsWeight.Clear();
+            recipe.TotalCaloriesNum = 0;
+            if (recipe.TotalNutValues != null) {
+                recipe.TotalNutValues.Clear();
+            }
+            else recipe.TotalNutValues = new Dictionary<string, double>();
+
+            if (recipe.USDAProducts == null) recipe.USDAProducts = new Dictionary<string, List<string>>();
+            recipe.USDAProducts.Clear();
+
+            foreach (var item in recipe.Ingredients) {
+                ParseItem(recipe, item.ToLower().Trim());
+            }
+
+            unit.Recipes.Update(s => s.ID, recipe.ID, recipe);
+            unit.TestsRecipes.Update(s => s.ID, recipe.ID, recipe);
         }
 
         private static void ParseInnerpart(Recipe recipe, List<Product> res, string innerpart,
@@ -76,9 +81,7 @@ namespace InitRecipes {
             }
             else
             {
-                recipe.USDAProducts.Add(usdaKey,
-                    retProducts);
-
+                recipe.USDAProducts.Add(usdaKey,retProducts);
             }
 
             if (relativeMeasure != string.Empty)
@@ -106,8 +109,6 @@ namespace InitRecipes {
                 innerpart = innerpart.Replace("to taste", "");
             ++total;
             if (innerpart != string.Empty) {
-              
-                
 
                 var res = Queries<Product>.GetMatchingProductsForIngredient(innerpart);
 
@@ -164,20 +165,24 @@ namespace InitRecipes {
                         }
                         if (hasOr && !parsed)
                         {
-                            if (MissingCount.ContainsKey(item))
-                                MissingCount[item]++;
-                            else
-                                MissingCount.Add(item,1);
-                            ++totalMissing;
+                            lock (Locker) {
+                                if (MissingCount.ContainsKey(innerpart))
+                                    MissingCount[innerpart]++;
+                                else
+                                    MissingCount.Add(innerpart, 1);
+                                ++totalMissing;
+                            }
                         }
                     }
                     else
                     {
-                        if (MissingCount.ContainsKey(item))
-                            MissingCount[item]++;
-                        else
-                            MissingCount.Add(item, 1);
-                        ++totalMissing;
+                        lock (Locker) {
+                            if (MissingCount.ContainsKey(innerpart))
+                                MissingCount[innerpart]++;
+                            else
+                                MissingCount.Add(innerpart, 1);
+                            ++totalMissing;
+                        }
                     }
                 }
                 else
@@ -186,11 +191,13 @@ namespace InitRecipes {
                 }
             }
             else {
-                if (MissingCount.ContainsKey(item))
-                    MissingCount[item]++;
-                else
-                    MissingCount.Add(item, 1);
-                ++totalMissing;
+                lock (Locker) {
+                    if (MissingCount.ContainsKey(item))
+                        MissingCount[item]++;
+                    else
+                        MissingCount.Add(item, 1);
+                    ++totalMissing;
+                }
             }
         }
 
