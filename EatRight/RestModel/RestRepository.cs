@@ -14,6 +14,7 @@ namespace RestModel {
         protected RestRepository<Recipe> recipes;
         protected RestRepository<Recipe> testsRecipes;
         protected RestRepository<DailyValue> dailyvalues;
+        protected RestRepository<UserProfile> users;
         public RestDBInterface() {
             var client = new MongoClient();
 
@@ -23,6 +24,13 @@ namespace RestModel {
             get {
                 if (products == null) products = new RestRepository<Product>(_database, "products");
                 return products;
+            }
+        }
+
+        public RestRepository<UserProfile> Users {
+            get {
+                if (users == null) users = new RestRepository<UserProfile>(_database, "users");
+                return users;
             }
         }
 

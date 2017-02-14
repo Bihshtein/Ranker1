@@ -21,11 +21,11 @@ namespace RecommendationBuilder
 
             var uProfile = new UserProfile()
             {
-                Id = 777,
+                ID = 777,
                 Age = 27,
                 Gender = GenderType.Male,
-                Pregnant = 0,
-                Name = "Hen"
+                Pregnant = false,
+                Name = "Aleg"
             };
 
             var recommendationDB = RecommendationDBGenerator.FromUserProfile(uProfile, unit);

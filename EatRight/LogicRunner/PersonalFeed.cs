@@ -30,11 +30,12 @@ namespace LogicRunner {
                 body += (++i).ToString() + "." + GradersGroupsNames[graders[--i].Key] +" , ";
             body = body.Remove(body.Length - 3, 2);
             body += "</p>";
-            body += string.Format("<p>Your priorities (and restictions)  are :     ");
-            recommendationDB.UserProfile.Restrictions.ToList().ForEach(r => body += r.ToString() + " - ");
-            body = body.Remove(body.Length - 3, 2);
-            body += "</p>";
-           
+            if (recommendationDB.UserProfile.Restrictions != null) {
+                body += string.Format("<p>Your priorities (and restictions)  are :     ");
+                recommendationDB.UserProfile.Restrictions.ToList().ForEach(r => body += r.ToString() + " - ");
+                body = body.Remove(body.Length - 3, 2);
+                body += "</p>";
+            }
 
             meals.ToList().ForEach(m => {
                 var recipeLink = "allrecipes.com/recipe/" + m.Recipe.ID.ToString();
@@ -77,10 +78,7 @@ namespace LogicRunner {
                 Body = body,
                 IsBodyHtml = true
             };
-            message.To.Add(new MailAddress("alexbihsh@gmail.com"));
-         /*   message.To.Add(new MailAddress("uriberger@mail.tau.ac.il"));
-            message.To.Add(new MailAddress("liran.madjar@gmail.com"));
-            message.To.Add(new MailAddress("siukeicheung184@gmail.com"));*/
+            message.To.Add(new MailAddress(recommendationDB.UserProfile.Email));  
 
             {
                 smtp.Send(message);

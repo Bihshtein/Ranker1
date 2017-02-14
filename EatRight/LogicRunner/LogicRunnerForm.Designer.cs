@@ -416,12 +416,12 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.button2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.button2.Location = new System.Drawing.Point(1011, 175);
+            this.button2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.button2.Location = new System.Drawing.Point(997, 178);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(127, 30);
+            this.button2.Size = new System.Drawing.Size(141, 30);
             this.button2.TabIndex = 26;
-            this.button2.Text = "Refresh Manual";
+            this.button2.Text = "RecommendToUsers";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -713,7 +713,7 @@
             // 
             this.sendEmail.AutoSize = true;
             this.sendEmail.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.sendEmail.Location = new System.Drawing.Point(1020, 117);
+            this.sendEmail.Location = new System.Drawing.Point(1020, 113);
             this.sendEmail.Name = "sendEmail";
             this.sendEmail.Size = new System.Drawing.Size(91, 20);
             this.sendEmail.TabIndex = 69;

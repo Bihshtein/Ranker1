@@ -14,17 +14,12 @@ namespace Logic
     }
 
     public class BodyProfile {
-        public string Name { get; set; }
-        public int Age { get; set; }
-
-        // todo: those two going to be removed
+        public int Age { get; set; } = 30;
         public GenderType Gender { get; set; }
-        public int Pregnant { get; set; }
-        public int Weight { get; set; } // In kilograms
-        public int Height { get; set; } // In centimeters
+        public bool Pregnant { get; set; }
+        public int Weight { get; set; } = 70;
+        public int Height { get; set; } = 175;
         public PhysicalActivityLevel ActivityLevel{ get; set; } = PhysicalActivityLevel.Sedentary;
-
-
     }
 
     public enum PhysicalActivityLevel {

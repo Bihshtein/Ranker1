@@ -71,11 +71,11 @@ namespace LogicRunner
 
             var uProfile = new UserProfile()
             {
-                Id = 777,
+                ID = 777,
                 Age = 27,
                 Gender = GenderType.Male,
-                Pregnant = 0,
-                Name = "Hen"
+                Pregnant = false,
+                Name = "Aleg"
             };
 
             var manager = GlobalProfilingManger.Instance.Manager;
@@ -226,14 +226,7 @@ namespace LogicRunner
 
         private void button2_Click(object sender, EventArgs e)
         {
-            try
-            { 
-                MealsCSVReader.CreateFixedMealsList(unit);
-            }
-            catch  (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            Hack.RecommendToUsers((MealType)Enum.Parse(typeof(MealType),mealType.SelectedItem.ToString()));
         }
 
         private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)

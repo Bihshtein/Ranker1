@@ -144,14 +144,29 @@ namespace RecommendationBuilder
     /// </summary>
     public class RecommendationDBGenerator
     {
+        public static Dictionary<UserPriorities,List<GraderType>> PriorityToGradersMap = new Dictionary<UserPriorities, List<GraderType>>() {
+            { UserPriorities.Diet, new List<GraderType>() {GraderType.CaloriesCountMealGrader } },
+            { UserPriorities.Nutrition, new List<GraderType>() { GraderType.MinNutValuesMealGrader, GraderType.MaxNutValuesMealGrader, } },
+            { UserPriorities.Convenience, new List<GraderType>() { GraderType.PrepTimeMealGrader } }
+        };
+
+        public static Dictionary<GraderType, double> GraderDefaults = new Dictionary<GraderType, double>() {
+            { GraderType.CaloriesCountMealGrader, 1},
+            { GraderType.MinNutValuesMealGrader,  1},
+            { GraderType.MaxNutValuesMealGrader,  1},
+            { GraderType.PrepTimeMealGrader, 1}
+        };
         public static RecommendationDB FromUserProfile(UserProfile userProfile, RestDBInterface unit)
         {
             var gradersMap = GradersMapGenerator.FromUserProfile(userProfile);
             if (gradersMap == null) return null;
-
+           
             var recommendationDB = FromBodyProfile(userProfile, unit);
-
-            recommendationDB.GradersWeight = null;
+            recommendationDB.GradersWeight = new Dictionary<GraderType, double>();
+            while (userProfile.Priorities.Count > 0) {
+                var graders = PriorityToGradersMap[userProfile.Priorities.Pop()];
+                graders.ForEach(g => recommendationDB.GradersWeight.Add(g, GraderDefaults[g] * userProfile.Priorities.Count));
+            }
             recommendationDB.range = SuggestionRangeGenerator.FromUserProfile(userProfile);
             recommendationDB.preferences = UserRestrictionsGenerator.FromUserProfile(userProfile);
             recommendationDB.UserProfile = userProfile;
@@ -166,20 +181,8 @@ namespace RecommendationBuilder
 
             var recommendationDB = new RecommendationDB();
 
-            recommendationDB.GradersWeight = null;
             recommendationDB.dailyValues = dValues.DuplicateDictionary();
             recommendationDB.dailyCaloriesNum = Logic.Formulas.GetCalories(userProfile);
-            
-         /*   recommendationDB.GradersWeight = new Dictionary<GraderType, double>()
-             {
-                    // Meal graders
-                    {GraderType.CaloriesCountMealGrader,2 },
-                    {GraderType.MinNutValuesMealGrader,  5},
-                    {GraderType.MaxNutValuesMealGrader,  4},
-                    {GraderType.ServingsNumMealGrader, 1},
-                    {GraderType.PrepTimeMealGrader,      3 }
-                };
-            recommendationDB.idealServingsNum = 4;*/
             return recommendationDB;
             
         }
