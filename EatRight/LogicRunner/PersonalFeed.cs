@@ -50,9 +50,9 @@ namespace LogicRunner {
                     string.Format(
                         "<p><font style=\"background-color:{0};font-weight: bold;\">{1}</font></p><a href=\"{3}\"><img src=\"{2}\" style=\"width: 250; height: 250;\"></a> <div class=\"chart\"><data ng-init=\"{4}\"/><div style =\"background-color:{7}; width:{4}px;\">Calories</div></div>    <div class=\"chart\"><data ng-init=\"{5}\"/><div style =\"background-color:{8}; width:{5}px;\">Nutrition</div></div>    <div class=\"chart\"><data ng-init=\"{6}\"/><div style =\"background-color:{9}; width:{6}px;\">Convenience</div></div>",
                         "Beige", m.Recipe.Name.Replace("Recipe", " , Score : ") + ((int)m.Grade).ToString(), m.Recipe.ImageUrl, "http://bit.ly" + link,
-                       caloriesScore,
-                       nutritionScore,
-                       convennienceScore,
+                       caloriesScore <100 ? 100 : caloriesScore,
+                       nutritionScore < 100 ? 100 : nutritionScore,
+                       convennienceScore < 100 ? 100 : convennienceScore,
                        GetColorByScore(caloriesScore),
                        GetColorByScore(nutritionScore),
                        GetColorByScore(convennienceScore)
