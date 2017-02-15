@@ -78,19 +78,11 @@ namespace LogicRunner
                 Name = "Aleg"
             };
 
-            var manager = GlobalProfilingManger.Instance.Manager;
-
-            manager.Reset();
-            manager.TakeTime("starting time");
             uProfile.ActivityLevel = (PhysicalActivityLevel)Enum.Parse(typeof(PhysicalActivityLevel),activityLevel.SelectedItem.ToString());
             uProfile.Weight = int.Parse(txtWeight.Text);
             uProfile.Height = int.Parse(txtHeight.Text);
             uProfile.Age = (ageGender.SelectedValue as DailyValue).Age.MaxAge;
             uProfile.Gender = (ageGender.SelectedValue as DailyValue).Gender.Type;
-            
-
-            manager.TakeTime("get recommendation db from user profile");
-
           
             uProfile.Restrictions = new HashSet<UserRestrictions>();
             if (Meat.Checked)
@@ -133,8 +125,6 @@ namespace LogicRunner
                     {GraderType.PrepTimeMealGrader, int.Parse(cookTime.SelectedItem.ToString()) }
                 };
 
-            manager.TakeTime("initialize recommendation db");
-            
             RecommendationGenerator generator = null;
             if (workMode.SelectedItem.ToString() == "Debug") {
                 var recipes = new HashSet<int>();
@@ -145,7 +135,6 @@ namespace LogicRunner
             else
                 generator = new RecommendationGenerator(unit, recommendationDB, useDBRecipes, useTestsRecipes);
 
-            manager.TakeTime("creating recommendation generator");
             IEnumerable<Meal> meals = null;
             if (workMode.SelectedItem.ToString() == "Debug")
             {
@@ -160,7 +149,6 @@ namespace LogicRunner
                 }
             }
             if (meals == null) {
-                manager.End();
                 MessageBox.Show("I'm sorry, but I can't recommend on any " + mealType.SelectedItem.ToString() + "s");
             }
             else {
@@ -170,7 +158,6 @@ namespace LogicRunner
                     NutValues = parseNutValues(o.NutValues),
                     GradersResult = parseGradersResult(o.GradeInfo.GradersInfo)
                 }).ToList();
-                manager.TakeTime("getting meals list");
             /*    list.Sort((a, b) => {
                      if (a.Id > b.Id)
                          return 1;
@@ -189,17 +176,13 @@ namespace LogicRunner
                     richTextBox4.DataBindings.Add("Text", bindingSource2, "MinScores");
                     richTextBox5.DataBindings.Add("Text", bindingSource2, "MaxScores");
                 }
-                manager.TakeTime("setting data source and rich text data binding");
                 alexiknow = true;
-                manager.End();
             }
             
-            this.labelConsole.Text = string.Format("[{0}] Process took: {1} ms", DateTime.Now.ToShortTimeString(), manager.TotalTime());
             if (sendEmail.Checked)
                 PersonalFeed.SendEmail(recommendationDB ,meals, mealType.SelectedItem.ToString());
          
         }
-
        
 
         private string parseNutValues(Dictionary<string, double> let)

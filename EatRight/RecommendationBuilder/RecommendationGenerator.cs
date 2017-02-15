@@ -42,8 +42,6 @@ namespace RecommendationBuilder
             this.useDBRecipes = useDBRecipes;
             this.useTestsRecipes = useTestsRecipes;
 
-            var manager = GlobalProfilingManger.Instance.Manager;
-            manager.TakeTime("start of recommendation constructor");
             RecommendationObject.recommendationDB = recommendationDB; // For the initialization of graders map
             if (RecommendationObject.recommendationDB.GradersWeight == null)
             {
@@ -54,25 +52,20 @@ namespace RecommendationBuilder
                 SetDefaultFilterSet();
             }
 
-            manager.TakeTime("set default grader and filter sets");
-
             this.unit = unit;
 
             mealsList = new List<Meal>();
             if (InMenuMode())
             {
                 GenerateMenusList();
-                manager.TakeTime("generate menu");
             }
             else if (InMealMode())
             {
                 GenerateRecommendationsList();
-                manager.TakeTime("generate recommendations");
             }
 
             usedDailyMenus = new HashSet<int>();
             usedMeals = new HashSet<int>();
-            manager.TakeTime("end of recommendation constructor");
         }
 
         public RecommendationGenerator(RestDBInterface unit, RecommendationDB recommendationDB, HashSet<int> recipeIds, int fixedCaloriesNum)
@@ -81,8 +74,6 @@ namespace RecommendationBuilder
             this.useTestsRecipes = false;
             this.recipeIds = recipeIds;
 
-            var manager = GlobalProfilingManger.Instance.Manager;
-            manager.TakeTime("start of recommendation constructor");
             RecommendationObject.recommendationDB = recommendationDB; // For the initialization of graders map
             if (RecommendationObject.recommendationDB.GradersWeight == null)
             {
@@ -93,8 +84,6 @@ namespace RecommendationBuilder
                 SetDefaultFilterSet();
             }
 
-            manager.TakeTime("set default grader and filter sets");
-
             this.unit = unit;
 
             mealsList = new List<Meal>();
@@ -102,7 +91,6 @@ namespace RecommendationBuilder
 
             usedDailyMenus = new HashSet<int>();
             usedMeals = new HashSet<int>();
-            manager.TakeTime("end of recommendation constructor");
         }
 
         public List<Meal> GetMealsList()
@@ -422,12 +410,8 @@ namespace RecommendationBuilder
 
         private void GenerateMealsList(int fixedCaloriesNum=0)
         {
-            var timer = GlobalProfilingManger.Instance.Manager;
-
             var graderMap = InitGraderMap(GraderType.MealGraderStart, GraderType.MealGraderEnd);
             var filterSet = InitFilterSet(FilterType.MealFilterStart, FilterType.MealFilterEnd);
-
-            timer.TakeTime("grader map and filter set initialized");
 
             var recipesList = new List<Recipe>();
             if (recipeIds != null)
@@ -447,19 +431,11 @@ namespace RecommendationBuilder
                     recipesList.AddRange(unit.TestsRecipes.GetAllList());
                 }
             }
-            timer.TakeTime("recipes - get all");
 
             mealsList = recipesList.Select(x => new Meal() { Recipe = x }).ToList();
-            timer.TakeTime("create meal list");
-
             mealsList = FilterList(mealsList, filterSet);
-            timer.TakeTime("filter list");
-
             mealsList.ForEach(x => EvaluateObject(x, graderMap));
-            timer.TakeTime("evaulate objects for each grader map ");
-
             mealsList.Sort(new RecommendationObjectComparer<Meal>());
-            timer.TakeTime("grader map and filter set initializied");
 
         }
 

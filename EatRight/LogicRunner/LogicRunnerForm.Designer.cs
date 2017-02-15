@@ -59,7 +59,6 @@
             this.servings = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
             this.idealServings = new System.Windows.Forms.ComboBox();
-            this.labelConsole = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.recommendationsNum = new System.Windows.Forms.ComboBox();
             this.label15 = new System.Windows.Forms.Label();
@@ -366,17 +365,6 @@
             this.idealServings.Name = "idealServings";
             this.idealServings.Size = new System.Drawing.Size(89, 21);
             this.idealServings.TabIndex = 31;
-            // 
-            // labelConsole
-            // 
-            this.labelConsole.AutoSize = true;
-            this.labelConsole.BackColor = System.Drawing.Color.Transparent;
-            this.labelConsole.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.labelConsole.Location = new System.Drawing.Point(533, 156);
-            this.labelConsole.Name = "labelConsole";
-            this.labelConsole.Size = new System.Drawing.Size(63, 19);
-            this.labelConsole.TabIndex = 33;
-            this.labelConsole.Text = "---------";
             // 
             // label13
             // 
@@ -760,7 +748,6 @@
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.recommendationsNum);
-            this.Controls.Add(this.labelConsole);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.idealServings);
             this.Controls.Add(this.label11);
@@ -832,7 +819,6 @@
         private System.Windows.Forms.ComboBox servings;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.ComboBox idealServings;
-        private System.Windows.Forms.Label labelConsole;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.ComboBox recommendationsNum;
         private System.Windows.Forms.Label label15;
