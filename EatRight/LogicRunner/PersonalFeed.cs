@@ -42,20 +42,22 @@ namespace LogicRunner {
                 var shortlink = new WebClient().DownloadString(string.Format("http://wasitviewed.com/index.php?href=http%3A%2F%2F{0}&email=alex_bihshtein%40hotmail.com&notes=&bitly=bitly&nobots=nobots&submit=Generate+Link", recipeLink));
                 var parts = shortlink.Split(new string[] { "bit.ly" }, StringSplitOptions.None);
                 var link = new String(parts[1].TakeWhile(c => c != '\"').ToArray());
-                var caloriesScore = m.GradeInfo.GradersInfo[GraderType.CaloriesCountMealGrader].Grade * 100 * 2.5;
-                var nutritionScore = (m.GradeInfo.GradersInfo[GraderType.MaxNutValuesMealGrader].Grade + m.GradeInfo.GradersInfo[RestModel.GraderType.MinNutValuesMealGrader].Grade) / 2 * 100 * 2.5;
-                var convennienceScore = m.GradeInfo.GradersInfo[GraderType.PrepTimeMealGrader].Grade * 100 * 2.5;
+                var scores = new List<double>();
+                scores.Add(m.GradeInfo.GradersInfo[GraderType.CaloriesCountMealGrader].Grade * 100 * 2.5);
+                scores.Add((m.GradeInfo.GradersInfo[GraderType.MaxNutValuesMealGrader].Grade + m.GradeInfo.GradersInfo[RestModel.GraderType.MinNutValuesMealGrader].Grade) / 2 * 100 * 2.5);
+                scores.Add(m.GradeInfo.GradersInfo[GraderType.PrepTimeMealGrader].Grade * 100 * 2.5);
+                scores.Sort();
                 body +=
 
                     string.Format(
                         "<p><font style=\"background-color:{0};font-weight: bold;\">{1}</font></p><a href=\"{3}\"><img src=\"{2}\" style=\"width: 250; height: 250;\"></a> <div class=\"chart\"><data ng-init=\"{4}\"/><div style =\"background-color:{7}; width:{4}px;\">Calories</div></div>    <div class=\"chart\"><data ng-init=\"{5}\"/><div style =\"background-color:{8}; width:{5}px;\">Nutrition</div></div>    <div class=\"chart\"><data ng-init=\"{6}\"/><div style =\"background-color:{9}; width:{6}px;\">Convenience</div></div>",
                         "Beige", m.Recipe.Name.Replace("Recipe", " , Score : ") + ((int)m.Grade).ToString(), m.Recipe.ImageUrl, "http://bit.ly" + link,
-                       caloriesScore <100 ? 100 : caloriesScore,
-                       nutritionScore < 100 ? 100 : nutritionScore,
-                       convennienceScore < 100 ? 100 : convennienceScore,
-                       GetColorByScore(caloriesScore),
-                       GetColorByScore(nutritionScore),
-                       GetColorByScore(convennienceScore)
+                       scores[2] < 100 ? 100 : scores[2],
+                       scores[1] < 100 ? 100 : scores[1],
+                       scores[0] < 100 ? 100 : scores[0],
+                       GetColorByScore(scores[2]),
+                       GetColorByScore(scores[1]),
+                       GetColorByScore(scores[0])
                        );
 
                 });
@@ -90,9 +92,9 @@ namespace LogicRunner {
             if (score > 85)
                 return "LightGreen";
             else if (score > 60)
-                return "Khaki";
+                return "PaleGreen";
             else
-                return "LightCoral";
+                return "MistyRose";
 
         }
     }

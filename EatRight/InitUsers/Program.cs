@@ -25,7 +25,7 @@ namespace InitUsers {
             };
             unit.Users.Add(user);
 
-            /*user = new UserProfile() {
+            user = new UserProfile() {
                 ID = 2,
                 Name = "Liran Madgar",
                 Email = "liran.madjar@gmail.com",
@@ -64,7 +64,7 @@ namespace InitUsers {
                 Weight = 67,
                 Priorities = new List<UserPriorities>() { UserPriorities.Nutrition, UserPriorities.Diet, UserPriorities.Convenience }
             };
-            unit.Users.Add(user);*/          
+            unit.Users.Add(user);      
         }
     }
 }
