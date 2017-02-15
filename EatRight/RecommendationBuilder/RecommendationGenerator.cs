@@ -19,6 +19,7 @@ namespace RecommendationBuilder
         RestDBInterface unit;
         private bool useDBRecipes;
         private bool useTestsRecipes;
+        private List<int> RecipesToExclude;
 
         // Only in debug mode, not for user usage
         HashSet<int> recipeIds = null;
@@ -37,11 +38,11 @@ namespace RecommendationBuilder
         private List<Recommendation> recoList = null;
 
         public RecommendationGenerator(RestDBInterface unit, RecommendationDB recommendationDB,
-            Boolean useDBRecipes, Boolean useTestsRecipes=false)
+            Boolean useDBRecipes, Boolean useTestsRecipes=false, List<int> recipesToExclude=null)
         {
             this.useDBRecipes = useDBRecipes;
             this.useTestsRecipes = useTestsRecipes;
-
+            this.RecipesToExclude = recipesToExclude;
             RecommendationObject.recommendationDB = recommendationDB; // For the initialization of graders map
             if (RecommendationObject.recommendationDB.GradersWeight == null)
             {
@@ -431,7 +432,8 @@ namespace RecommendationBuilder
                     recipesList.AddRange(unit.TestsRecipes.GetAllList());
                 }
             }
-
+            if (RecipesToExclude != null)
+                recipesList.RemoveAll(r => RecipesToExclude.Contains(r.ID));
             mealsList = recipesList.Select(x => new Meal() { Recipe = x }).ToList();
             mealsList = FilterList(mealsList, filterSet);
             mealsList.ForEach(x => EvaluateObject(x, graderMap));

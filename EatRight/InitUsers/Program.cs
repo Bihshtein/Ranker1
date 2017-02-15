@@ -21,11 +21,11 @@ namespace InitUsers {
                 ActivityLevel = PhysicalActivityLevel.VeriActive,
                 Height = 170,
                 Weight = 64,
-                Priorities = new Stack<UserPriorities>(new List<UserPriorities>() { UserPriorities.Diet, UserPriorities.Nutrition, UserPriorities.Convenience })
+                Priorities = new List<UserPriorities>() { UserPriorities.Diet, UserPriorities.Nutrition, UserPriorities.Convenience }
             };
             unit.Users.Add(user);
 
-            user = new UserProfile() {
+            /*user = new UserProfile() {
                 ID = 2,
                 Name = "Liran Madgar",
                 Email = "liran.madjar@gmail.com",
@@ -34,7 +34,7 @@ namespace InitUsers {
                 ActivityLevel = PhysicalActivityLevel.LightlyActive,
                 Height = 175,
                 Weight = 70,
-                Priorities = new Stack<UserPriorities>(new List<UserPriorities>() { UserPriorities.Convenience, UserPriorities.Nutrition, UserPriorities.Diet })
+                Priorities = new List<UserPriorities>() { UserPriorities.Convenience, UserPriorities.Nutrition, UserPriorities.Diet }
             };
             unit.Users.Add(user);
 
@@ -48,7 +48,7 @@ namespace InitUsers {
                 ActivityLevel = PhysicalActivityLevel.ModeratelyActive,
                 Height = 167,
                 Weight = 57,
-                Priorities = new Stack<UserPriorities>(new List<UserPriorities>() { UserPriorities.Diet, UserPriorities.Convenience, UserPriorities.Nutrition })
+                Priorities = new List<UserPriorities>() { UserPriorities.Diet, UserPriorities.Convenience, UserPriorities.Nutrition }
             };
             unit.Users.Add(user);
 
@@ -62,11 +62,9 @@ namespace InitUsers {
                 ActivityLevel = PhysicalActivityLevel.VeriActive,
                 Height = 173,
                 Weight = 67,
-                Priorities = new Stack<UserPriorities>(new List<UserPriorities>() { UserPriorities.Nutrition, UserPriorities.Diet, UserPriorities.Convenience })
+                Priorities = new List<UserPriorities>() { UserPriorities.Nutrition, UserPriorities.Diet, UserPriorities.Convenience }
             };
-            unit.Users.Add(user);
-
-          
+            unit.Users.Add(user);*/          
         }
     }
 }

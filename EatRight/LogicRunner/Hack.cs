@@ -25,9 +25,12 @@ namespace LogicRunner {
             unit.Users.GetAllList().ForEach(u => {
                 var rec = RecommendationDBGenerator.FromUserProfile(u, unit);
                 rec.range = new MealSuggestionRange() { Length = 7, MealType = mealType };
-
-                var generator = new RecommendationGenerator(new RestDBInterface(), rec, true);
-                PersonalFeed.SendEmail(rec, generator.GetRecommendation().MealsSet.ToList(), mealType.ToString());
+                
+                var generator = new RecommendationGenerator(new RestDBInterface(), rec, true, false, u.RecommendedRecipes);
+                var meals = generator.GetRecommendation().MealsSet.ToList();
+                PersonalFeed.SendEmail(rec, meals, mealType.ToString());
+                meals.ForEach(m => u.RecommendedRecipes.Add(m.Recipe.ID));
+                unit.Users.Update(s => s.ID, u.ID, u);
             });
         }
     }
