@@ -42,22 +42,25 @@ namespace LogicRunner {
                 var shortlink = new WebClient().DownloadString(string.Format("http://wasitviewed.com/index.php?href=http%3A%2F%2F{0}&email=alex_bihshtein%40hotmail.com&notes=&bitly=bitly&nobots=nobots&submit=Generate+Link", recipeLink));
                 var parts = shortlink.Split(new string[] { "bit.ly" }, StringSplitOptions.None);
                 var link = new String(parts[1].TakeWhile(c => c != '\"').ToArray());
-                var scores = new List<double>();
-                scores.Add(m.GradeInfo.GradersInfo[GraderType.CaloriesCountMealGrader].Grade * 100 * 2.5);
-                scores.Add((m.GradeInfo.GradersInfo[GraderType.MaxNutValuesMealGrader].Grade + m.GradeInfo.GradersInfo[RestModel.GraderType.MinNutValuesMealGrader].Grade) / 2 * 100 * 2.5);
-                scores.Add(m.GradeInfo.GradersInfo[GraderType.PrepTimeMealGrader].Grade * 100 * 2.5);
-                scores.Sort();
+                var scores = new Dictionary<string,double>();
+                scores.Add("Calories",m.GradeInfo.GradersInfo[GraderType.CaloriesCountMealGrader].Grade * 100 * 2.5);
+                scores.Add("Nutrition", (m.GradeInfo.GradersInfo[GraderType.MaxNutValuesMealGrader].Grade + m.GradeInfo.GradersInfo[RestModel.GraderType.MinNutValuesMealGrader].Grade) / 2 * 100 * 2.5);
+                scores.Add("Convenience",m.GradeInfo.GradersInfo[GraderType.PrepTimeMealGrader].Grade * 100 * 2.5);
+                var ordScores = scores.OrderBy(i => i.Value).ToList();
                 body +=
 
                     string.Format(
-                        "<p><font style=\"background-color:{0};font-weight: bold;\">{1}</font></p><a href=\"{3}\"><img src=\"{2}\" style=\"width: 250; height: 250;\"></a> <div class=\"chart\"><data ng-init=\"{4}\"/><div style =\"background-color:{7}; width:{4}px;\">Calories</div></div>    <div class=\"chart\"><data ng-init=\"{5}\"/><div style =\"background-color:{8}; width:{5}px;\">Nutrition</div></div>    <div class=\"chart\"><data ng-init=\"{6}\"/><div style =\"background-color:{9}; width:{6}px;\">Convenience</div></div>",
+                        "<p><font style=\"background-color:{0};font-weight: bold;\">{1}</font></p><a href=\"{3}\"><img src=\"{2}\" style=\"width: 250; height: 250;\"></a> <div class=\"chart\"><data ng-init=\"{4}\"/><div style =\"background-color:{7}; width:{4}px;\">{10}</div></div>    <div class=\"chart\"><data ng-init=\"{5}\"/><div style =\"background-color:{8}; width:{5}px;\">{11}</div></div>    <div class=\"chart\"><data ng-init=\"{6}\"/><div style =\"background-color:{9}; width:{6}px;\">{12}</div></div>",
                         "Beige", m.Recipe.Name.Replace("Recipe", " , Score : ") + ((int)m.Grade).ToString(), m.Recipe.ImageUrl, "http://bit.ly" + link,
-                       scores[2] < 100 ? 100 : scores[2],
-                       scores[1] < 100 ? 100 : scores[1],
-                       scores[0] < 100 ? 100 : scores[0],
-                       GetColorByScore(scores[2]),
-                       GetColorByScore(scores[1]),
-                       GetColorByScore(scores[0])
+                       ordScores[2].Value < 100 ? 100 : ordScores[2].Value,
+                       ordScores[1].Value < 100 ? 100 : ordScores[1].Value,
+                       ordScores[0].Value < 100 ? 100 : ordScores[0].Value,
+                       GetColorByScore(ordScores[2].Value),
+                       GetColorByScore(ordScores[1].Value),
+                       GetColorByScore(ordScores[0].Value),
+                       ordScores[2].Key,
+                       ordScores[1].Key,
+                       ordScores[0].Key
                        );
 
                 });
