@@ -183,7 +183,6 @@ namespace RestModel {
             return newRes;
         }
 
-
         public List<Recipe> GetByIngredient(string ingredient) {
             Expression<Func<Recipe, bool>> query = x => x.ProductsWeight.ContainsKey(ingredient);
             var res = collection.Find(query as Expression<Func<T, bool>>).ToList();

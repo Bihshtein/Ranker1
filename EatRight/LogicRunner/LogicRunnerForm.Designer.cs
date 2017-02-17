@@ -93,6 +93,7 @@
             this.richTextBox5 = new System.Windows.Forms.RichTextBox();
             this.button3 = new System.Windows.Forms.Button();
             this.sendEmail = new System.Windows.Forms.CheckBox();
+            this.total = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
@@ -708,6 +709,18 @@
             this.sendEmail.Text = "Send Email";
             this.sendEmail.UseVisualStyleBackColor = true;
             // 
+            // total
+            // 
+            this.total.AutoSize = true;
+            this.total.BackColor = System.Drawing.Color.Transparent;
+            this.total.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.total.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.total.Location = new System.Drawing.Point(579, 223);
+            this.total.Name = "total";
+            this.total.Size = new System.Drawing.Size(16, 16);
+            this.total.TabIndex = 70;
+            this.total.Text = "0";
+            // 
             // LogicRunnerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -715,6 +728,7 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(1160, 989);
+            this.Controls.Add(this.total);
             this.Controls.Add(this.sendEmail);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.richTextBox5);
@@ -853,5 +867,6 @@
         private System.Windows.Forms.RichTextBox richTextBox5;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.CheckBox sendEmail;
+        private System.Windows.Forms.Label total;
     }
 }

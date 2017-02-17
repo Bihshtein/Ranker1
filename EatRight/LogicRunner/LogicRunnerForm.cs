@@ -139,6 +139,8 @@ namespace LogicRunner
             if (workMode.SelectedItem.ToString() == "Debug")
             {
                 meals = generator.GetMealsList();
+
+                ((List<Meal>)meals).RemoveAll(m => m.Recipe.ProductsWeight == null || m.Recipe.ProductsWeight.Count != m.Recipe.Ingredients.Count || m.Recipe.Ingredients.Count ==0);
             }
             else
             {
@@ -158,12 +160,7 @@ namespace LogicRunner
                     NutValues = parseNutValues(o.NutValues),
                     GradersResult = parseGradersResult(o.GradeInfo.GradersInfo)
                 }).ToList();
-            /*    list.Sort((a, b) => {
-                     if (a.Id > b.Id)
-                         return 1;
-                     else
-                         return -1;
-                 });*///usefull only when creating exel files manually
+           
                 this.bindingSource2.DataSource = list;
 
 
@@ -178,9 +175,11 @@ namespace LogicRunner
                 }
                 alexiknow = true;
             }
-            
-            if (sendEmail.Checked)
-                PersonalFeed.SendEmail(recommendationDB ,meals, mealType.SelectedItem.ToString());
+            if (meals != null) {
+                total.Text = meals.Count().ToString();
+                if (sendEmail.Checked)
+                    PersonalFeed.SendEmail(recommendationDB, meals, mealType.SelectedItem.ToString());
+            }
          
         }
        

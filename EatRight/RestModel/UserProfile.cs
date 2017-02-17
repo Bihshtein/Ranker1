@@ -136,6 +136,7 @@ namespace RestModel
     public class UserProfile : BodyProfile , IQueryable{
         public UserProfile() {
             RecommendedRecipes = new List<int>();
+            Priorities = new List<UserPriorities>();
         }
         [BsonElement("_id")]
         public int ID { get; set; }

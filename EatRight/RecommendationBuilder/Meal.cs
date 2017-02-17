@@ -12,7 +12,6 @@ namespace RecommendationBuilder
    
     public class Meal : RecommendationObject
     {
-       
         public Dictionary<string, double> NutValues { get { return Recipe.TotalNutValues.ToDictionary(x => x.Key, x => x.Value / Recipe.Servings); } }
         public double CaloriesNum { get {return Recipe.TotalCaloriesNum / Recipe.Servings;}}
         public Recipe Recipe { get; set; }
