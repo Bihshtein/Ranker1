@@ -29,9 +29,8 @@ namespace RestModel
 
     public enum UserPriorities {
         Nutrition,
-        Diet,
+        Simplicity,
         Budget,
-        Convenience
     }
 
     /// <summary>

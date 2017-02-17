@@ -145,9 +145,8 @@ namespace RecommendationBuilder
     public class RecommendationDBGenerator
     {
         public static Dictionary<UserPriorities,List<GraderType>> PriorityToGradersMap = new Dictionary<UserPriorities, List<GraderType>>() {
-            { UserPriorities.Diet, new List<GraderType>() {GraderType.CaloriesCountMealGrader } },
-            { UserPriorities.Nutrition, new List<GraderType>() { GraderType.MinNutValuesMealGrader, GraderType.MaxNutValuesMealGrader, } },
-            { UserPriorities.Convenience, new List<GraderType>() { GraderType.PrepTimeMealGrader } }
+            { UserPriorities.Nutrition, new List<GraderType>() { GraderType.MinNutValuesMealGrader, GraderType.MaxNutValuesMealGrader, GraderType.CaloriesCountMealGrader } },
+            { UserPriorities.Simplicity, new List<GraderType>() { GraderType.PrepTimeMealGrader } }
         };
 
         public static Dictionary<GraderType, double> GraderDefaults = new Dictionary<GraderType, double>() {

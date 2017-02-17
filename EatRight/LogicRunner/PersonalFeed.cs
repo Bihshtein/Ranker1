@@ -12,10 +12,10 @@ using RestModel;
 namespace LogicRunner {
     public class PersonalFeed {
         public static Dictionary<GraderType, string> GradersGroupsNames = new Dictionary<GraderType, string>() {
-            {GraderType.CaloriesCountMealGrader, "Calories" },
-            {GraderType.MaxNutValuesMealGrader, "Unhealthy compounds" },
-            {GraderType.MinNutValuesMealGrader, "Nutritious elements" },
-            {GraderType.PrepTimeMealGrader, "Convenience" },
+            {GraderType.CaloriesCountMealGrader, "exact calories" },
+            {GraderType.MaxNutValuesMealGrader, "less unhealthy " },
+            {GraderType.MinNutValuesMealGrader, "more nutritious " },
+            {GraderType.PrepTimeMealGrader, "less preparation time" },
         };
         public static void SendEmail(RecommendationDB recommendationDB, IEnumerable<Meal> meals, string mealType) {
             meals = meals.OrderByDescending(m => m.Grade);
@@ -25,9 +25,9 @@ namespace LogicRunner {
             var graders = recommendationDB.GradersWeight.OrderByDescending(i => i.Value).ToList();
 
 
-            string body = string.Format("<p>Recommendation priorities are :     ");
+            string body = string.Format("<p>Recommendation priorities are :  ");
             for (int i = 0; i < 4; i++) 
-                body += (++i).ToString() + "." + GradersGroupsNames[graders[--i].Key] +" , ";
+                body += GradersGroupsNames[graders[i].Key] +" - ";
             body = body.Remove(body.Length - 3, 2);
             body += "</p>";
             if (recommendationDB.UserProfile.Restrictions != null) {
@@ -42,28 +42,27 @@ namespace LogicRunner {
                 var shortlink = new WebClient().DownloadString(string.Format("http://wasitviewed.com/index.php?href=http%3A%2F%2F{0}&email=alex_bihshtein%40hotmail.com&notes=&bitly=bitly&nobots=nobots&submit=Generate+Link", recipeLink));
                 var parts = shortlink.Split(new string[] { "bit.ly" }, StringSplitOptions.None);
                 var link = new String(parts[1].TakeWhile(c => c != '\"').ToArray());
-                var scores = new Dictionary<string,double>();
-                scores.Add("Calories",m.GradeInfo.GradersInfo[GraderType.CaloriesCountMealGrader].Grade * 100 * 2.5);
-                scores.Add("Nutrition", (m.GradeInfo.GradersInfo[GraderType.MaxNutValuesMealGrader].Grade + m.GradeInfo.GradersInfo[RestModel.GraderType.MinNutValuesMealGrader].Grade) / 2 * 100 * 2.5);
-                scores.Add("Convenience",m.GradeInfo.GradersInfo[GraderType.PrepTimeMealGrader].Grade * 100 * 2.5);
-                var ordScores = scores.OrderBy(i => i.Value).ToList();
-                body +=
+                
+                var nutritionScore =(int)((m.GradeInfo.GradersInfo[GraderType.MaxNutValuesMealGrader].Grade +
+                    m.GradeInfo.GradersInfo[GraderType.MinNutValuesMealGrader].Grade +
+                    m.GradeInfo.GradersInfo[GraderType.CaloriesCountMealGrader].Grade) / 3 * 100);
+                var simplicityScore = (int)(m.GradeInfo.GradersInfo[GraderType.PrepTimeMealGrader].Grade * 100);
 
-                    string.Format(
-                        "<p><font style=\"background-color:{0};font-weight: bold;\">{1}</font></p><a href=\"{3}\"><img src=\"{2}\" style=\"width: 250; height: 250;\"></a> <div class=\"chart\"><data ng-init=\"{4}\"/><div style =\"background-color:{7}; width:{4}px;\">{10}</div></div>    <div class=\"chart\"><data ng-init=\"{5}\"/><div style =\"background-color:{8}; width:{5}px;\">{11}</div></div>    <div class=\"chart\"><data ng-init=\"{6}\"/><div style =\"background-color:{9}; width:{6}px;\">{12}</div></div>",
-                        "Beige", m.Recipe.Name.Replace("Recipe", " , Score : ") + ((int)m.Grade).ToString(), m.Recipe.ImageUrl, "http://bit.ly" + link,
-                       ordScores[2].Value < 100 ? 100 : ordScores[2].Value,
-                       ordScores[1].Value < 100 ? 100 : ordScores[1].Value,
-                       ordScores[0].Value < 100 ? 100 : ordScores[0].Value,
-                       GetColorByScore(ordScores[2].Value),
-                       GetColorByScore(ordScores[1].Value),
-                       GetColorByScore(ordScores[0].Value),
-                       ordScores[2].Key,
-                       ordScores[1].Key,
-                       ordScores[0].Key
-                       );
+                double nutritionBarSize = nutritionScore < 60 ? 60 : nutritionScore;
+                double simplicityBarSize = simplicityScore < 60 ? 60 : simplicityScore;
+                nutritionBarSize *= 2.5;
+                simplicityBarSize *= 2.5;
 
-                });
+                var strRecipe = "<p><font style=\"background-color:{0};font-weight: bold;\">{1}</font></p>";
+                var strImage = "<a href=\"{0}\"><img src=\"{1}\" style=\"width: 250; height: 250;\"></a>";
+                var strScore = "<div class=\"chart\"><data ng-init=\"{0}\"/><div style =\"background-color:{1}; width:{0}px;\">{2} ({3}%)</div></div>";
+
+
+                body += string.Format(strRecipe, "Beige", m.Recipe.Name.Replace("Recipe", " , Score : ") + ((int)m.Grade).ToString());
+                body += string.Format(strImage, "http://bit.ly" + link, m.Recipe.ImageUrl);
+                body += string.Format(strScore, nutritionBarSize, GetColorByScore(nutritionScore), "Nutrition", nutritionScore);
+                body += string.Format(strScore, simplicityBarSize, GetColorByScore(simplicityScore), "Simplicity", simplicityScore);
+            });
             body += "<p>Press the picture to go to the recipe</p>";
             body += "<p>For any requests or concerns please reply to this address</p>";
             body = "<!DOCTYPE html><html><body>" + body + "</html></body>";
@@ -91,7 +90,6 @@ namespace LogicRunner {
         }
 
         private static string GetColorByScore(double score) {
-            score = score / 2.5;
             if (score > 85)
                 return "LightGreen";
             else if (score > 60)
