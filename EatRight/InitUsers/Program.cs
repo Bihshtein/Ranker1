@@ -21,7 +21,7 @@ namespace InitUsers {
                 ActivityLevel = PhysicalActivityLevel.VeriActive,
                 Height = 170,
                 Weight = 64,
-                Priorities = new List<UserPriorities>() { UserPriorities.Simplicity, UserPriorities.Nutrition }
+                Priorities = new List<UserPriorities>() { UserPriorities.Nutrition, UserPriorities.Simplicity }
             };
             unit.Users.Add(user);
 
@@ -34,7 +34,7 @@ namespace InitUsers {
                 ActivityLevel = PhysicalActivityLevel.LightlyActive,
                 Height = 175,
                 Weight = 70,
-                Priorities = new List<UserPriorities>() { UserPriorities.Nutrition, UserPriorities.Simplicity, }
+                Priorities = new List<UserPriorities>() { UserPriorities.Simplicity, UserPriorities.Nutrition, }
             };
             unit.Users.Add(user);
 
@@ -48,7 +48,7 @@ namespace InitUsers {
                 ActivityLevel = PhysicalActivityLevel.ModeratelyActive,
                 Height = 167,
                 Weight = 57,
-                Priorities = new List<UserPriorities>() { UserPriorities.Nutrition, UserPriorities.Simplicity}
+                Priorities = new List<UserPriorities>() { UserPriorities.Simplicity, UserPriorities.Nutrition }
             };
             unit.Users.Add(user);
 
@@ -62,7 +62,7 @@ namespace InitUsers {
                 ActivityLevel = PhysicalActivityLevel.VeriActive,
                 Height = 173,
                 Weight = 67,
-                Priorities = new List<UserPriorities>() { UserPriorities.Simplicity, UserPriorities.Nutrition }
+                Priorities = new List<UserPriorities>() { UserPriorities.Nutrition, UserPriorities.Simplicity }
             };
             unit.Users.Add(user);      
         }
