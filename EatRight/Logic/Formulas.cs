@@ -127,13 +127,17 @@ namespace Logic
 
         public static Dictionary<string, double> MeasuresWeights = new Dictionary<string, double>(){
             {"bunch",60 },
+            {"ml",1 },
             {"cloves",3 },//garlic
             {"clove",3 },//garlic
             {"pinch",0.25 },//green onion or whatever
             {"teaspoon ",5 },
             {"dash ",5/16 },
+            {"tsp",5 },
             {"teaspoons",5 },
             {"tablespoons",14 },
+            {"tbsp",14 },
+            {"tbs",14 },
             {"tablespoon ",14 },
             {"pound ",453.5},
             {"pound)",453.5},

@@ -55,7 +55,7 @@ namespace InitRecipes {
             recipe.USDAProducts.Clear();
 
             foreach (var item in recipe.Ingredients) {
-                ParseItem(recipe, item.ToLower().Trim());
+                ParseItem(recipe, item.Item1.ToLower().Trim(),item.Item3,item.Item2);
             }
 
             unit.Recipes.Update(s => s.ID, recipe.ID, recipe);
@@ -97,31 +97,26 @@ namespace InitRecipes {
 
         public static Dictionary<string, int> MissingCount = new Dictionary<string, int>();
 
-        public static void ParseItem(Recipe recipe, string item) {
-            item = Map.AdjustNames(item);
-            var unifiedInnerpart = "";
-            item = Map.AdjustInnerPart(item, ref unifiedInnerpart);
-            var results = ParseWeightAndName(item);
-            var innerpart = results.Item1.Trim();
-            var weight = results.Item2;
-            var relativeMeasure = results.Item3. Trim();
+        public static void ParseItem(Recipe recipe, string innerpart, string relativeMeasure, double weight) {
+            //var unifiedInnerpart = "";
+            if (innerpart == "")
+                return;
             if (innerpart.Contains("to taste"))
                 innerpart = innerpart.Replace("to taste", "");
-            ++total;
-            if (innerpart != string.Empty) {
+            ++total;         
 
                 var res = Queries<Product>.GetMatchingProductsForIngredient(innerpart);
 
-                var oldInnerpart = innerpart;
+             /*   var oldInnerpart = innerpart;
                 if (unifiedInnerpart.Length > 0 && (res == null || res.Count == 0))
                 {
                     innerpart = unifiedInnerpart;
                     res = Queries<Product>.GetMatchingProductsForIngredient(innerpart);
-                }
+                }*/
 
                 if (res == null || res.Count == 0)
                 {
-                    innerpart = oldInnerpart;
+                   // innerpart = oldInnerpart;
                     var hasAnd = false;
                     var hasOr = false;
                     if (innerpart.Contains(" and "))
@@ -149,7 +144,7 @@ namespace InitRecipes {
                             {
                                 if (hasAnd)
                                 {
-                                    log.Error(itervar + " : " + item);
+                                    log.Error(itervar + " : " + innerpart);
                                     ++totalMissing;
                                 }
                             }
@@ -188,17 +183,8 @@ namespace InitRecipes {
                 else
                 {
                     ParseInnerpart(recipe, res, innerpart, relativeMeasure, weight);
-                }
-            }
-            else {
-                lock (Locker) {
-                    if (MissingCount.ContainsKey(item))
-                        MissingCount[item]++;
-                    else
-                        MissingCount.Add(item, 1);
-                    ++totalMissing;
-                }
-            }
+                }            
+         
         }
 
         public static double TryParseRelativeWeight(string mes, double weight, Product prd, string fullName) {
@@ -259,103 +245,7 @@ namespace InitRecipes {
             return null;
         }
 
-        public static Tuple<string, double, string> ParseByRelativeMeasures(string[] parts, string item)
-        {
-
-            var relativeWeight = 0.0;
-            var innerpart = string.Empty;
-            var unit = item.Replace(parts[0], "").Replace(parts[1], "");
-            if (Formulas.RelativeSizes.Contains(unit))
-            {
-                try
-                {
-                    relativeWeight = ParseHelpers.ParseAmount(parts[0]);                    
-                }
-                catch (Exception ex)
-                {
-                    log.Error("Failed to parse relative weight for item : " + item, ex);
-                }
-                innerpart = parts[1];
-            }
-            else
-                log.Error("Failed to parse relative weight for item : " + item);
-            return new Tuple<string, double,string>(innerpart, relativeWeight,unit);
-        }
-        public static Tuple<string, double> ParseByRelativeNumber(string[] parts, string item)
-        {
-            var relativeWeight = 0.0;
-            var innerpart = string.Empty;
-            if (item != Regex.Replace(item, @"\d", ""))
-            {
-                innerpart = Regex.Replace(item, @"\d", "").Trim();
-                if (innerpart != string.Empty) {
-                    var units = item.Replace(innerpart, "");
-                    try {
-                        relativeWeight = int.Parse(units.Trim());
-                    }
-                    catch (Exception ex) {
-                        innerpart = string.Empty;
-                        log.Error("Failed to parse relative weight for item : " + item, ex);
-                    }
-                }
-            }
-            return new Tuple<string, double>(innerpart, relativeWeight);
-        }
-        public static Tuple<string,double> ParseByAbsoluteMeasures(string[] parts, string item)
-        {
-            var actualWeight = 0.0;
-            var innerpart = string.Empty;
-          
-                var unit = item.Replace(parts[0], "").Replace(parts[1], "");
-                if (Formulas.MeasuresWeights.ContainsKey(unit))
-                {
-                    try
-                    {
-                        actualWeight = ParseHelpers.ParseAmount(parts[0]) * Formulas.MeasuresWeights[unit];
-                    }
-                    catch (Exception ex)
-                    {
-                        log.Error("Failed to parse actual weight for item : " + item, ex);
-                    }
-                    innerpart = parts[1];
-
-                }
-                else
-                    log.Error("Failed to parse actual weight for item : " + item);
-            return new Tuple<string, double>(innerpart, actualWeight);
-        }
-        public static Tuple<string,double, string> ParseWeightAndName(string item)
-        {
-            var weight = 0.0;
-            var innerpart = "";
-            var weightKey = "";
-            var parts = item.Split(Formulas.MeasuresWeights.Keys.ToArray(), StringSplitOptions.RemoveEmptyEntries);
-            if (parts.Length > 1)
-            {
-                var res = ParseByAbsoluteMeasures(parts, item);
-                innerpart = res.Item1;
-                weight = res.Item2;
-            }
-            else
-            {
-                parts = item.Split(Formulas.RelativeSizes.ToArray(), StringSplitOptions.RemoveEmptyEntries);
-                if (parts.Length > 1)
-                {
-                    var res = ParseByRelativeMeasures(parts, item);
-                    innerpart = res.Item1;
-                    weight = res.Item2;
-                    weightKey = res.Item3;
-                }
-                else
-                {
-                    var res = ParseByRelativeNumber(parts, item);
-                    innerpart = res.Item1;
-                    weight = res.Item2;
-                    weightKey = res.Item1; // the product is the actual key
-                }
-            }
-            return new Tuple<string, double, string>(innerpart, weight, weightKey);
-        }   
+   
 
         public static void AddItem(Product product, Recipe recipe,double weight, string innerpart)
         {

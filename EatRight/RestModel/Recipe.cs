@@ -45,7 +45,7 @@ namespace RestModel  {
         [BsonElement("ImageUrl")]
         public string ImageUrl { get; set; }
         public Dictionary<string, double> ProductsWeight;
-        public List<string> Ingredients;
+        public List<Tuple<string, double,string>> Ingredients;
         public TimeSpan PrepTime { get; set; } // In minutes
         public Dictionary<string, double> TotalNutValues { get; set; }
         public double TotalCaloriesNum { get; set; }

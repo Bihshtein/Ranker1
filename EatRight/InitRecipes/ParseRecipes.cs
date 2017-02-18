@@ -1,4 +1,5 @@
 ﻿using log4net;
+using Logic;
 using RestModel;
 using System;
 using System.Collections.Generic;
@@ -7,6 +8,7 @@ using System.Linq;
 using System.Net;
 using System.Reflection;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace InitRecipes {
@@ -16,7 +18,7 @@ namespace InitRecipes {
         public static string FolderPath = Assembly.GetExecutingAssembly().Location + @"\..\..\..\..\LocalDB\";
 
         public static Dictionary<RecipesSource, string> RecipesURLs = new Dictionary<RecipesSource, string>() {
-            {RecipesSource.Cookpad,  "https://cookpad.com/us/" },
+          //  {RecipesSource.Cookpad,  "https://cookpad.com/us/" },
             {RecipesSource.AllRecipes,  "http://allrecipes.com/recipes/" },
         };
 
@@ -27,7 +29,7 @@ namespace InitRecipes {
 
         private static Dictionary<RecipesSource, Dictionary<MealType, string>> MealTypesURNs = new Dictionary<RecipesSource, Dictionary<MealType, string>>() {
             {RecipesSource.AllRecipes, new Dictionary<MealType, string>() {
-                {MealType.Breakfast,  "78/breakfast-and-brunch" },
+             //   {MealType.Breakfast,  "78/breakfast-and-brunch" },
                 {MealType.Dinner,  "17562/dinner" }}
             },
             {RecipesSource.Cookpad, new Dictionary<MealType, string>() {
@@ -67,7 +69,7 @@ namespace InitRecipes {
             }
         }
 
-        private static void AddRecipesByURL(string categoryURN, RestDBInterface unit, int pagesLimit = 1) {
+        private static void AddRecipesByURL(string categoryURN, RestDBInterface unit, int pagesLimit = 10) {
             Indexes.Clear();
             var client = new WebClient();
             log.Debug("Locating recipes in ->" + categoryURN + " - started");
@@ -157,8 +159,8 @@ namespace InitRecipes {
             return name.Split(new string[1] { "Recipe" }, StringSplitOptions.None)[0];
         }
 
-        private static List<string> GetIngredients(string page, RecipesSource source) {
-            var ingredients = new List<string>();
+        private static List<Tuple<string, double, string>> GetIngredients(string page, RecipesSource source) {
+            var ingredients = new List<Tuple<string, double, string>>();
 
             if (source == RecipesSource.AllRecipes) {
                 var ingredientParts = page.Split(new string[1] { "itemprop=\"ingredients\">" }, StringSplitOptions.None);
@@ -167,8 +169,9 @@ namespace InitRecipes {
                         var chars = ingredientParts[i].TakeWhile(a => a != '<');
                         var ingredient = new String(chars.ToArray());
                         var words = ingredient.Split(' ').ToList();
-                        if (!ingredients.Contains(ingredient))
-                            ingredients.Add(ingredient);
+                        ingredient = Map.AdjustNames(ingredient);
+                        ingredient = Map.AdjustInnerPart(ingredient);
+                        ingredients.Add(ParseWeightAndName(ingredient));
                     }
                 }
             }
@@ -176,14 +179,98 @@ namespace InitRecipes {
                 var ingredientParts = page.Split(new string[1] { "<span class=\"ingredient__quantity\">" }, StringSplitOptions.None);
                 for (int i = 1; i < ingredientParts.Length; i++) {
                     var ingredient = ingredientParts[i].Split( '\n' )[0];
-                    ingredient = ingredient.Replace("</span>", "");
-                    if (!ingredients.Contains(ingredient))
-                        ingredients.Add(ingredient);
+                    var nameAndWeight = ingredient.Split(new string[1] { "</span>" }, StringSplitOptions.None);
+                    ingredients.Add(new Tuple<string,double,string>(nameAndWeight[1], 100.0,nameAndWeight[0]));
                 }
             }
 
             return ingredients;
         }
+
+        public static Tuple<string, double, string> ParseWeightAndName(string item) {
+            var weight = 0.0;
+            var innerpart = "";
+            var weightKey = "";
+            var parts = item.Split(Formulas.MeasuresWeights.Keys.ToArray(), StringSplitOptions.RemoveEmptyEntries);
+            if (parts.Length > 1) {
+                var res = ParseByAbsoluteMeasures(parts, item);
+                innerpart = res.Item1;
+                weight = res.Item2;
+            }
+            else {
+                parts = item.Split(Formulas.RelativeSizes.ToArray(), StringSplitOptions.RemoveEmptyEntries);
+                if (parts.Length > 1) {
+                    var res = ParseByRelativeMeasures(parts, item);
+                    innerpart = res.Item1;
+                    weight = res.Item2;
+                    weightKey = res.Item3;
+                }
+                else {
+                    var res = ParseByRelativeNumber(parts, item);
+                    innerpart = res.Item1;
+                    weight = res.Item2;
+                    weightKey = res.Item1; // the product is the actual key
+                }
+            }
+            return new Tuple<string, double, string>(innerpart, weight, weightKey);
+        }
+
+        public static Tuple<string, double, string> ParseByRelativeMeasures(string[] parts, string item) {
+
+            var relativeWeight = 0.0;
+            var innerpart = string.Empty;
+            var unit = item.Replace(parts[0], "").Replace(parts[1], "");
+            if (Formulas.RelativeSizes.Contains(unit)) {
+                try {
+                    relativeWeight = ParseHelpers.ParseAmount(parts[0]);
+                }
+                catch (Exception ex) {
+                    log.Error("Failed to parse relative weight for item : " + item, ex);
+                }
+                innerpart = parts[1];
+            }
+            else
+                log.Error("Failed to parse relative weight for item : " + item);
+            return new Tuple<string, double, string>(innerpart, relativeWeight, unit);
+        }
+        public static Tuple<string, double> ParseByRelativeNumber(string[] parts, string item) {
+            var relativeWeight = 0.0;
+            var innerpart = string.Empty;
+            if (item != Regex.Replace(item, @"\d", "")) {
+                innerpart = Regex.Replace(item, @"\d", "").Trim();
+                if (innerpart != string.Empty) {
+                    var units = item.Replace(innerpart, "");
+                    try {
+                        relativeWeight = int.Parse(units.Trim());
+                    }
+                    catch (Exception ex) {
+                        innerpart = string.Empty;
+                        log.Error("Failed to parse relative weight for item : " + item, ex);
+                    }
+                }
+            }
+            return new Tuple<string, double>(innerpart, relativeWeight);
+        }
+        public static Tuple<string, double> ParseByAbsoluteMeasures(string[] parts, string item) {
+            var actualWeight = 0.0;
+            var innerpart = string.Empty;
+
+            var unit = item.Replace(parts[0], "").Replace(parts[1], "");
+            if (Formulas.MeasuresWeights.ContainsKey(unit)) {
+                try {
+                    actualWeight = ParseHelpers.ParseAmount(parts[0]) * Formulas.MeasuresWeights[unit];
+                }
+                catch (Exception ex) {
+                    log.Error("Failed to parse actual weight for item : " + item, ex);
+                }
+                innerpart = parts[1];
+
+            }
+            else
+                log.Error("Failed to parse actual weight for item : " + item);
+            return new Tuple<string, double>(innerpart, actualWeight);
+        }
+
 
         private static TimeSpan GetPrepTime(string page,RecipesSource source) {
             if (source == RecipesSource.AllRecipes) {

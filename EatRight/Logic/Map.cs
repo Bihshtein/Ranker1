@@ -34,7 +34,7 @@ namespace Logic {
             return ingredient;
         }
 
-        public static string AdjustInnerPart(string innerpart, ref string unifiedInnerpart) {
+        public static string AdjustInnerPart(string innerpart) {
             var split = innerpart.Split(',');
             if (split[0] != string.Empty)
                 innerpart = split[0];
@@ -46,11 +46,11 @@ namespace Logic {
             else
                 innerpart = split[1];
 
-            if (split.Length > 1)
+        /*    if (split.Length > 1)
             {
                 unifiedInnerpart = split[0] + " " + split[1];
                 unifiedInnerpart = unifiedInnerpart.Trim();
-            }
+            }*/
       
             return innerpart;
         }
