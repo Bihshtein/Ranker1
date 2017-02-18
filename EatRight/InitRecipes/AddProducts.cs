@@ -104,7 +104,7 @@ namespace InitRecipes {
             var results = ParseWeightAndName(item);
             var innerpart = results.Item1.Trim();
             var weight = results.Item2;
-            var relativeMeasure = results.Item3.Trim();
+            var relativeMeasure = results.Item3. Trim();
             if (innerpart.Contains("to taste"))
                 innerpart = innerpart.Replace("to taste", "");
             ++total;

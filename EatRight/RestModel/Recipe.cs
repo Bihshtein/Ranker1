@@ -44,8 +44,6 @@ namespace RestModel  {
         public string Name { get; set; }
         [BsonElement("ImageUrl")]
         public string ImageUrl { get; set; }
-        [BsonElement("MealType")]
-        public string MealType { get; set; }
         public Dictionary<string, double> ProductsWeight;
         public List<string> Ingredients;
         public TimeSpan PrepTime { get; set; } // In minutes

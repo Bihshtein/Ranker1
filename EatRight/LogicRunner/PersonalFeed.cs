@@ -58,7 +58,7 @@ namespace LogicRunner {
                 var strScore = "<div class=\"chart\"><data ng-init=\"{0}\"/><div style =\"background-color:{1}; width:{0}px;\">{2} ({3}%)</div></div>";
 
 
-                body += string.Format(strRecipe, "Beige", m.Recipe.Name.Replace("Recipe", " , Score : ") + ((int)m.Grade).ToString());
+                body += string.Format(strRecipe, "Beige", m.Recipe.Name+" Score : " + ((int)m.Grade).ToString());
                 body += string.Format(strImage, "http://bit.ly" + link, m.Recipe.ImageUrl);
                 body += string.Format(strScore, nutritionBarSize, GetColorByScore(nutritionScore), "Nutrition", nutritionScore);
                 body += string.Format(strScore, simplicityBarSize, GetColorByScore(simplicityScore), "Simplicity", simplicityScore);

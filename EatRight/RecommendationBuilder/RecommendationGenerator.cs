@@ -426,7 +426,7 @@ namespace RecommendationBuilder
                 if (useDBRecipes)
                 {
                     var list = unit.Recipes.GetAllList();
-                    list.RemoveAll(r => r.ProductsWeight == null || r.ProductsWeight.Count != r.Ingredients.Count || r.Ingredients.Count == 0);
+                    list.RemoveAll(r => r.ProductsWeight == null || /*r.ProductsWeight.Count != r.Ingredients.Count ||*/r.Ingredients.Count == 0);
                     recipesList.AddRange(list);
                 }
                 if (useTestsRecipes)

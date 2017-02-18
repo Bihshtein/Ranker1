@@ -140,7 +140,7 @@ namespace LogicRunner
             {
                 meals = generator.GetMealsList();
 
-                ((List<Meal>)meals).RemoveAll(m => m.Recipe.ProductsWeight == null || m.Recipe.ProductsWeight.Count != m.Recipe.Ingredients.Count || m.Recipe.Ingredients.Count ==0);
+                ((List<Meal>)meals).RemoveAll(m => m.Recipe.ProductsWeight == null/* || m.Recipe.ProductsWeight.Count != m.Recipe.Ingredients.Count*/ || m.Recipe.Ingredients.Count ==0);
             }
             else
             {
