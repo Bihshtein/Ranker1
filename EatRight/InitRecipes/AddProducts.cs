@@ -57,9 +57,14 @@ namespace InitRecipes {
             foreach (var item in recipe.Ingredients) {
                 ParseItem(recipe, item.Item1.ToLower().Trim(),item.Item3,item.Item2);
             }
+            try {
+                unit.Recipes.Update(s => s.ID, recipe.ID, recipe);
+                unit.TestsRecipes.Update(s => s.ID, recipe.ID, recipe);
 
-            unit.Recipes.Update(s => s.ID, recipe.ID, recipe);
-            unit.TestsRecipes.Update(s => s.ID, recipe.ID, recipe);
+            }
+            catch (Exception ex) {
+                log.Error("failed to update recipe " + recipe.ID, ex);
+            }
         }
 
         private static void ParseInnerpart(Recipe recipe, List<Product> res, string innerpart,
@@ -101,89 +106,12 @@ namespace InitRecipes {
             //var unifiedInnerpart = "";
             if (innerpart == "")
                 return;
-            if (innerpart.Contains("to taste"))
-                innerpart = innerpart.Replace("to taste", "");
             ++total;         
-
-                var res = Queries<Product>.GetMatchingProductsForIngredient(innerpart);
-
-             /*   var oldInnerpart = innerpart;
-                if (unifiedInnerpart.Length > 0 && (res == null || res.Count == 0))
-                {
-                    innerpart = unifiedInnerpart;
-                    res = Queries<Product>.GetMatchingProductsForIngredient(innerpart);
-                }*/
-
-                if (res == null || res.Count == 0)
-                {
-                   // innerpart = oldInnerpart;
-                    var hasAnd = false;
-                    var hasOr = false;
-                    if (innerpart.Contains(" and "))
-                    {
-                        hasAnd = true;
-                    }
-                    if (innerpart.Contains(" or "))
-                    {
-                        hasOr = true;
-                    }
-                    if (hasAnd || hasOr) // Try parsing the two parts seperated
-                    {
-                        var splitStr = new string[] { " and " };
-                        if (hasOr)
-                        {
-                            splitStr = new string[] { " or " };
-                        }
-                        string[] innerparts = innerpart.Split(splitStr, StringSplitOptions.None);
-                        total += (hasAnd ? (innerparts.Length - 1) : 1);
-                        var parsed = false;
-                        foreach (var itervar in innerparts)
-                        {
-                            res = Queries<Product>.GetMatchingProductsForIngredient(itervar);
-                            if (res == null || res.Count == 0)
-                            {
-                                if (hasAnd)
-                                {
-                                    log.Error(itervar + " : " + innerpart);
-                                    ++totalMissing;
-                                }
-                            }
-                            else
-                            {
-                                ParseInnerpart(recipe, res, itervar, relativeMeasure, weight);
-                                if (hasOr)
-                                {
-                                    parsed = true;
-                                    break;
-                                }
-                            }
-                        }
-                        if (hasOr && !parsed)
-                        {
-                            lock (Locker) {
-                                if (MissingCount.ContainsKey(innerpart))
-                                    MissingCount[innerpart]++;
-                                else
-                                    MissingCount.Add(innerpart, 1);
-                                ++totalMissing;
-                            }
-                        }
-                    }
-                    else
-                    {
-                        lock (Locker) {
-                            if (MissingCount.ContainsKey(innerpart))
-                                MissingCount[innerpart]++;
-                            else
-                                MissingCount.Add(innerpart, 1);
-                            ++totalMissing;
-                        }
-                    }
-                }
-                else
-                {
-                    ParseInnerpart(recipe, res, innerpart, relativeMeasure, weight);
-                }            
+            var res = Queries<Product>.GetMatchingProductsForIngredient(innerpart);
+            if (res != null && res.Count > 0)
+                ParseInnerpart(recipe, res, innerpart, relativeMeasure, weight);
+            else
+                ++totalMissing;
          
         }
 
@@ -210,7 +138,7 @@ namespace InitRecipes {
             if (matchingWord == null)
                 matchingWord = "cup";
             if (keys.Any(key => key.Contains(matchingWord))) {
-                return weight * prd.Weights.First(key => key.Key.StartsWith(matchingWord)).Value;
+                return weight * prd.Weights.First(key => key.Key.Contains(matchingWord)).Value;
             }
             else if (Map.RecipeToUSDAMeasure.ContainsKey(mes)) {
                 mes = Map.RecipeToUSDAMeasure[mes];

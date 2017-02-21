@@ -11,7 +11,7 @@ namespace Logic
         public static string GetWithoutLast_ES_letters(string str)
         {
             var length = str.Length;
-            if (str[length - 1] == 's' && str[length - 2] == 'e')
+            if (length > 3 && str[length - 1] == 's' && str[length - 2] == 'e')
                 return str.Remove(length - 2, 2);
             return str;
         }
@@ -19,7 +19,7 @@ namespace Logic
         public static string GetWithoutLast_S_letter(string str)
         {
             var length = str.Length;
-            if (str[length - 1] == 's')
+            if (length > 2 && str[length - 1] == 's')
                 return str.Remove(length - 1);
             return str;
         }
@@ -46,6 +46,15 @@ namespace Logic
         public static double ParseAmount(string fraction)
         {
             fraction = fraction.Trim();
+            if (fraction.Contains("stick")) {
+                fraction = fraction.Replace("stick", "");
+            }
+            if (fraction.Contains("g")) {
+                fraction = fraction.Replace("g", "");
+            }
+            if (fraction.Contains("inch")) {
+                fraction = fraction.Replace("inch", "");
+            }
 
             if (!fraction.Contains('('))
                 return GetFractionedNumber(fraction);
@@ -54,32 +63,45 @@ namespace Logic
                 var parts = fraction.Split('(');
                 var fractioned = GetFractionedNumber(parts[0]);
                 double relative;
+                var relativeStr = parts[1].Split(')')[0];//  inCase the number comes in branches
                 if (parts[1].Contains('.'))
-                    relative = double.Parse("0" + parts[1]);
-                else
+                    relative = double.Parse("0" + relativeStr);
+                else if (relativeStr.Contains(" ") || relativeStr.Contains("/"))
+                    relative  = GetFractionedNumber(relativeStr);
+                else if (relativeStr.Contains("to"))
                 {
                     var size = parts[1].Split(new string[1] { "to" }, StringSplitOptions.RemoveEmptyEntries)[0]; // range of two numbers
+                    
                     relative = double.Parse(size);
+                }
+                else {
+                    relative = double.Parse(relativeStr);
                 }
                 return fractioned * relative;
             }
 
         }
 
-        private static double GetFractionedNumber(string fraction)
-        {
+        private static double GetFractionedNumber(string fraction) {
             fraction = fraction.Replace("whole", string.Empty);
             fraction = fraction.Trim();
 
-            if (!fraction.Contains('/'))
-                return double.Parse(fraction);
-            else
-            {
+            if (!fraction.Contains('/')) {
+                try {
+                    return double.Parse(fraction);
+                }
+                catch(FormatException) {
+                    return 1;
+                }
+                
+            }
+            else {
                 var wholeAndFract = fraction.Split(' ');
+                if (wholeAndFract.Length > 2)
+                    return 1;
                 var num = 0;
                 var fractIndex = 0;
-                if (wholeAndFract.Length > 1)
-                {
+                if (wholeAndFract.Length > 1) {
                     num = int.Parse(wholeAndFract[0]);
                     fractIndex = 1;
                 }
