@@ -239,7 +239,7 @@ namespace InitRecipes {
 
                     else {
                         if (splitBySpace.Length > 1 && (splitBySpace[1] == "g" || splitBySpace[1] == "ml")) {
-                            weightNum = double.Parse(splitBySpace[0]);
+                            weightNum = ParseHelpers.ParseAmount(splitBySpace[0]);
                         }
                         else if (weight == "") {
                             weightNum = 1;

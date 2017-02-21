@@ -51,9 +51,6 @@ namespace InitRecipes {
             }
             else recipe.TotalNutValues = new Dictionary<string, double>();
 
-            if (recipe.USDAProducts == null) recipe.USDAProducts = new Dictionary<string, List<string>>();
-            recipe.USDAProducts.Clear();
-
             foreach (var item in recipe.Ingredients) {
                 ParseItem(recipe, item.Item1.ToLower().Trim(),item.Item3,item.Item2);
             }
@@ -71,24 +68,6 @@ namespace InitRecipes {
             string relativeMeasure, double weight)
         {
             var product = res[0];
-
-            recipe.ProductTypes.UnionWith(product.Types);
-
-            var retProducts = new List<string>();
-
-            var usdaKey = string.Format("{0} => <0/{3}> [{1}] {2}", innerpart, product.ID, product.USDAString, res.Count);
-
-            res.ForEach(x => retProducts.Add(string.Format("[{0}] {1}", x.ID, x.USDAString)));
-
-            if (recipe.USDAProducts.ContainsKey(usdaKey))
-            {
-                Console.WriteLine("Warning: Recipe {0} contains USDA Product duplicate {1}", recipe.ID, innerpart);
-            }
-            else
-            {
-                recipe.USDAProducts.Add(usdaKey,retProducts);
-            }
-
             if (relativeMeasure != string.Empty)
             {
                 if (relativeMeasure.Contains(innerpart))
@@ -96,14 +75,12 @@ namespace InitRecipes {
                 weight = TryParseRelativeWeight(relativeMeasure, weight, product, innerpart);
             }
 
-
             AddItem(product, recipe, weight, innerpart);
         }
 
         public static Dictionary<string, int> MissingCount = new Dictionary<string, int>();
 
         public static void ParseItem(Recipe recipe, string innerpart, string relativeMeasure, double weight) {
-            //var unifiedInnerpart = "";
             if (innerpart == "")
                 return;
             ++total;         
