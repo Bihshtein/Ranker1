@@ -19,8 +19,8 @@ namespace InitRecipes {
         public static string FolderPath = Assembly.GetExecutingAssembly().Location + @"\..\..\..\..\LocalDB\";
 
         public static Dictionary<RecipesSource, string> RecipesURLs = new Dictionary<RecipesSource, string>() {
-           // {RecipesSource.Cookpad,  "https://cookpad.com/us/" },
-            {RecipesSource.AllRecipes,  "http://allrecipes.com/recipes/" },
+            {RecipesSource.Cookpad,  "https://cookpad.com/us/" },
+           // {RecipesSource.AllRecipes,  "http://allrecipes.com/recipes/" },
          
         };
 
@@ -47,7 +47,6 @@ namespace InitRecipes {
         public static void CreateDB() {
             Indexes = new HashSet<int>();
             var unit = new RestDBInterface();
-            unit.Recipes.Empty();
             RecipesURLs.ToList().ForEach(s => AddRecipesBySource(s, unit));
         }
 
@@ -64,18 +63,19 @@ namespace InitRecipes {
             if (source == RecipesSource.AllRecipes) {
                 loadMealsBulkSize = 30;
             }
-                while (Indexes.Count > 0) {               
-                List<Task> tasks = new List<Task>();
-                if (Indexes.Count > loadMealsBulkSize)
-                    Indexes.Take(loadMealsBulkSize).ToList().ForEach(a => tasks.Add(new Task(new Action(() => ParseRecipe(a, RecipesURNs[source], mealType, source)))));
-                else
-                    Indexes.Take(Indexes.Count).ToList().ForEach(a => tasks.Add(new Task(new Action(() => ParseRecipe(a, RecipesURNs[source], mealType, source)))));
-                tasks.ForEach(task => task.Start());
-                tasks.ForEach(task => task.Wait());
+                while (Indexes.Count > 0) {
+                    log.Debug("Loading bulk, tasks left : " + Indexes.Count());
+                    List<Task> tasks = new List<Task>();
+                    if (Indexes.Count > loadMealsBulkSize)
+                        Indexes.Take(loadMealsBulkSize).ToList().ForEach(a => tasks.Add(new Task(new Action(() => ParseRecipe(a, RecipesURNs[source], mealType, source)))));
+                    else
+                        Indexes.Take(Indexes.Count).ToList().ForEach(a => tasks.Add(new Task(new Action(() => ParseRecipe(a, RecipesURNs[source], mealType, source)))));
+                    tasks.ForEach(task => task.Start());
+                    tasks.ForEach(task => task.Wait());
             }
         }
 
-        private static void AddRecipesByURL(string categoryURN, RestDBInterface unit, int pagesLimit = 5) {
+        private static void AddRecipesByURL(string categoryURN, RestDBInterface unit, int pagesLimit = 1000) {
             Indexes.Clear();
             var client = new WebClient();
             log.Debug("Locating recipes in ->" + categoryURN + " - started");
@@ -144,7 +144,6 @@ namespace InitRecipes {
             });
 
             lock (Locker) {
-                //log.Debug("Num " + index);
                 Indexes.Remove(index);
             }
         }
@@ -273,7 +272,7 @@ namespace InitRecipes {
             if (measure != null) {
                 var parts = item.Split(new string[1] { measure }, StringSplitOptions.RemoveEmptyEntries);
                 if (parts.Length > 1) {
-                    var res = ParseByAbsoluteMeasures(parts, item);
+                    var res = ParseByAbsoluteMeasures(parts, item, measure);
                     innerpart = res.Item1;
                     weight = res.Item2;
                 }
@@ -283,7 +282,7 @@ namespace InitRecipes {
                 if (size != null) {
                     var parts = item.Split(new string[1] { size }, StringSplitOptions.RemoveEmptyEntries);
                     if (parts.Length > 1) {
-                        var res = ParseByRelativeMeasures(parts, item);
+                        var res = ParseByRelativeMeasures(parts, item, size);
                         innerpart = res.Item1;
                         weight = res.Item2;
                         weightKey = res.Item3;
@@ -299,11 +298,10 @@ namespace InitRecipes {
             return new Tuple<string, double, string>(innerpart, weight, weightKey);
         }
 
-        public static Tuple<string, double, string> ParseByRelativeMeasures(string[] parts, string item) {
+        public static Tuple<string, double, string> ParseByRelativeMeasures(string[] parts, string item, string unit) {
 
             var relativeWeight = 0.0;
             var innerpart = string.Empty;
-            var unit = item.Replace(parts[0], "").Replace(parts[1], "");
             if (Formulas.RelativeSizes.Contains(unit)) {
                 try {
                     relativeWeight = ParseHelpers.ParseAmount(parts[0]);
@@ -322,10 +320,11 @@ namespace InitRecipes {
             var innerpart = string.Empty;
             if (item != Regex.Replace(item, @"\d", "")) {
                 innerpart = Regex.Replace(item, @"\d", "").Trim();
+                innerpart = innerpart.Replace("/", "").Trim();
                 if (innerpart != string.Empty) {
                     var units = item.Replace(innerpart, "");
                     try {
-                        relativeWeight = int.Parse(units.Trim());
+                        relativeWeight = ParseHelpers.ParseAmount(units.Trim());
                     }
                     catch (Exception ex) {
                         innerpart = string.Empty;
@@ -335,10 +334,9 @@ namespace InitRecipes {
             }
             return new Tuple<string, double>(innerpart, relativeWeight);
         }
-        public static Tuple<string, double> ParseByAbsoluteMeasures(string[] parts, string item) {
+        public static Tuple<string, double> ParseByAbsoluteMeasures(string[] parts, string item, string unit) {
             var actualWeight = 0.0;
             var innerpart = string.Empty;
-            var unit = item.Replace(parts[0], "").Replace(parts[1], "");
 
             if (Formulas.MeasuresWeights.ContainsKey(unit)) {
                 try {
