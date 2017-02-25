@@ -47,6 +47,7 @@ namespace InitRecipes {
         public static void CreateDB() {
             Indexes = new HashSet<int>();
             var unit = new RestDBInterface();
+      //      unit.Recipes.Empty();
             RecipesURLs.ToList().ForEach(s => AddRecipesBySource(s, unit));
         }
 
@@ -75,7 +76,7 @@ namespace InitRecipes {
             }
         }
 
-        private static void AddRecipesByURL(string categoryURN, RestDBInterface unit, int pagesLimit = 1000) {
+        private static void AddRecipesByURL(string categoryURN, RestDBInterface unit, int pagesLimit = 20) {
             Indexes.Clear();
             var client = new WebClient();
             log.Debug("Locating recipes in ->" + categoryURN + " - started");
@@ -162,7 +163,8 @@ namespace InitRecipes {
 
         private static string GetRecipeName(string page) {
             var name  = page.Split(new string[2] { "<title>", "</title>" }, StringSplitOptions.None)[1];
-            return name.Split(new string[1] { "Recipe" }, StringSplitOptions.None)[0];
+            name =  name.Split(new string[1] { "Recipe" }, StringSplitOptions.None)[0];
+            return name;
         }
 
         private static List<Tuple<string, double, string>> GetIngredients(string page, RecipesSource source) {
@@ -185,8 +187,14 @@ namespace InitRecipes {
                 var ingredientParts = page.Split(new string[1] { "<span class=\"ingredient__quantity\">" }, StringSplitOptions.None);
                 for (int i = 1; i < ingredientParts.Length; i++) {
                     var ingredient = ingredientParts[i].Split('\n')[0];
+                   
                     var nameAndWeight = ingredient.Split(new string[1] { "</span>" }, StringSplitOptions.None);
-                    var name = nameAndWeight[1];
+                    var name = nameAndWeight[1].Trim().ToLower();
+                    if (name == string.Empty)
+                        continue;
+                    name = Map.AdjustNames(name);
+                    name = Map.AdjustInnerPart(name).Trim();
+                  
                     var weight = nameAndWeight[0];
                     var weightSplit = weight.Split('-');
                     if (weightSplit.Length==2)
@@ -213,6 +221,7 @@ namespace InitRecipes {
                     if (splitBySpace.Length > 1 && splitBySpace[1] == "T") {
                         weight = weight.Replace("T", "tablespoon");
                     }
+                   
                     if (Formulas.MeasuresWeights.Keys.Any(w => weight.Contains(w))) {
                         var keyword = Formulas.MeasuresWeights.Keys.First(w => weight.Contains(w));
                         try {
@@ -235,7 +244,7 @@ namespace InitRecipes {
                             log.Error("Can't parse weight : " + weight + ", ingredient name:" + name);
                         }
                     }
-                   
+                  
 
                     else {
                         if (splitBySpace.Length > 1 && (splitBySpace[1] == "g" || splitBySpace[1] == "ml")) {
@@ -244,9 +253,20 @@ namespace InitRecipes {
                         else if (weight == "") {
                             weightNum = 1;
                         }
+                        else if(Formulas.RelativeProductSize.Any(s => name.Split(' ')[0] == s)) {
+                            var nameParts = name.Split(' ');
+                            relativeWeight = nameParts[0];
+                            name = name.Replace(relativeWeight,string.Empty).Trim();
+                        }
+
+                        else if (name.Contains("garlic clove")) {                            
+                            relativeWeight = "clove";
+                            name = "garlic";
+                        }
+
                         else {
-                           
-                                relativeWeight = name;
+
+                            relativeWeight = name;
                             try {
                                 weightNum = ParseHelpers.ParseAmount(weight);
                             }
@@ -254,8 +274,9 @@ namespace InitRecipes {
                                 log.Error("Can't parse weight : " + weight + ", ingredient name:" + name);
                             }
                         }
-                        
+
                     }
+                
                     ingredients.Add(new Tuple<string, double, string>(name, weightNum, relativeWeight));
                     
                 }

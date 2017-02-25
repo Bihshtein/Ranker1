@@ -87,8 +87,15 @@ namespace InitRecipes {
             var res = Queries<Product>.GetMatchingProductsForIngredient(innerpart);
             if (res != null && res.Count > 0)
                 ParseInnerpart(recipe, res, innerpart, relativeMeasure, weight);
-            else
+            else {
+                lock (Locker) {
+                    if (MissingCount.ContainsKey(innerpart))
+                        MissingCount[innerpart]++;
+                    else
+                    MissingCount.Add(innerpart, 1);
+                }   
                 ++totalMissing;
+            }
          
         }
 

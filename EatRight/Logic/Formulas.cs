@@ -106,7 +106,11 @@ namespace Logic
                 ((carbsWeight * weightRatio) * ProteinCarbsGramCalories) +
                 ((FatGramCalories * weightRatio) * 9);
         }
-
+        public static List<string> RelativeProductSize = new List<string> {
+            "large",
+            "small",
+            "medium"
+        };
         public static List<string> RelativeSizes = new List<string> {
             // relative to the weight stated by the USDA for the product
             // order matter keep the more inclusicve delimiters first

@@ -45,12 +45,6 @@ namespace Logic {
                 innerpart = split[0];
             else
                 innerpart = split[1];
-
-        /*    if (split.Length > 1)
-            {
-                unifiedInnerpart = split[0] + " " + split[1];
-                unifiedInnerpart = unifiedInnerpart.Trim();
-            }*/
       
             return innerpart;
         }
@@ -91,8 +85,21 @@ namespace Logic {
             { "bread flour","bread wheat flour"},
             { "all-purpose flour","all-purpose wheat flour"},
             { "whole wheat flour","whole-grain wheat flour"},
+            { "all purpose flour","all-purpose wheat flour"},
+            { "flour","all-purpose wheat flour"},
+            { "pinch table salt and black pepper ","table salt" },
             { "kosher salt","table salt"},
+            { "cumin","cumin seed"},
+            { "ground cumin","cumin"},           
+            { "salt and pepper","table salt" },
+            { "salt &amp; pepper","table salt" },
+            { "sea salt and black pepper","table salt" },
+            { "sea salt","table salt" },
+            { "garlic salt","table salt" },
             { "dry milk powder","dry milk"},
+            { "heavy cream","cream heavy whipping"},
+            { "unsalted butter","butter without salt"},
+            { "butter (salted)","butter salted"},
             { "skinless chicken thighs","meat only chicken thighs"},
             { "marsala wine","sweet wine"},
             { "port wine","sweet wine"},

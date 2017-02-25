@@ -127,10 +127,14 @@ namespace LogicRunner
 
             RecommendationGenerator generator = null;
             if (workMode.SelectedItem.ToString() == "Debug") {
-                var recipes = new HashSet<int>();
-                new RestDBInterface().Recipes.GetAllList().ForEach(a => recipes.Add(a.ID));
-                    
-                generator = new RecommendationGenerator(unit, recommendationDB, recipes, int.Parse(txtCalories.Text));
+                var recipes = new List<int>();
+                var recipesCollection = new RestDBInterface().Recipes;
+                recipesCollection.GetAllList().ForEach(a => recipes.Add(a.ID));
+                recipes.RemoveAll(r => 
+                    recipesCollection.Get(r).ProductsWeight == null || recipesCollection.Get(r).ProductsWeight.Count != recipesCollection.Get(r).Ingredients.Count || recipesCollection.Get(r).Ingredients.Count == 0
+                    );
+
+                generator = new RecommendationGenerator(unit, recommendationDB,  new HashSet<int>(recipes), int.Parse(txtCalories.Text));
             }
             else
                 generator = new RecommendationGenerator(unit, recommendationDB, useDBRecipes, useTestsRecipes);
@@ -140,7 +144,6 @@ namespace LogicRunner
             {
                 meals = generator.GetMealsList();
 
-                ((List<Meal>)meals).RemoveAll(m => m.Recipe.ProductsWeight == null || m.Recipe.ProductsWeight.Count != m.Recipe.Ingredients.Count || m.Recipe.Ingredients.Count ==0);
             }
             else
             {

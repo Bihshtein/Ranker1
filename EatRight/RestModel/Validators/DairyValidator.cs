@@ -24,7 +24,8 @@ namespace RestModel.Validators {
                 "grated", "part-skim","queso cotija","queso chihuahua","queso asadero",
                 "queso anejo", "half and half", "soft type","powder",
                 "semisoft type", "hard type","whole", "yolk","white","Greek",
-                "shredded","sliced","creamed","uncreamed","omelet","hard boiled","scrambled"
+                "shredded","sliced","creamed","uncreamed","omelet","hard boiled","scrambled",
+                "heavy whipping",
             };
         }
 
