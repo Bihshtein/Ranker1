@@ -78,9 +78,6 @@ namespace RestModel {
         [BsonElement("Types")]
         public HashSet<ProductType> Types { get; set; }
 
-        [BsonElement("USDAString")]
-        public string USDAString { get; set; }
-
         [BsonElement("Nutrients")]
         public Dictionary<string,Dictionary<string, double>> Nutrients { get; set; }
 

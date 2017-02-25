@@ -58,7 +58,6 @@ namespace InitProducts {
             var validator = USDA.Validators[groupName];
             var p = new Product() { ID = id, Types = new HashSet<ProductType>() };
             p.FoodGroup = groupName.ToLower();
-            p.USDAString = name;
             var parts = name.Split(',').ToList();
             if (groupName == "manual")
                 p.Name1 = name;

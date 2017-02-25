@@ -49,8 +49,6 @@ namespace RestModel  {
         public TimeSpan PrepTime { get; set; } // In minutes
         public Dictionary<string, double> TotalNutValues { get; set; }
         public double TotalCaloriesNum { get; set; }
-        public Dictionary<string, List<string>> USDAProducts { get; set; }
-
         private static RestDBInterface Unit = new RestDBInterface();
         [BsonElement("Servings")]
         public int Servings { get; set; } = 1;
@@ -109,8 +107,6 @@ namespace RestModel  {
 
             this.TotalNutValues = new Dictionary<string, double>();
             this.TotalCaloriesNum = 0;
-            this.USDAProducts = new Dictionary<string, List<string>>();
-
             foreach (var pw in ProductsWeight)
             {
                 var res = GetProductWeight(pw.Key).Key;
@@ -119,12 +115,6 @@ namespace RestModel  {
                 var prodNutValues = product.NutrientsList();
 
                 var retProducts = new List<string>();
-                res.ForEach(x => retProducts.Add(string.Format("[{0}] {1}", x.ID, x.USDAString)));
-
-                USDAProducts.Add(
-                    string.Format("{0} => <0/{3}> [{1}] {2}", pw.Key, product.ID, product.USDAString, res.Count),
-                    retProducts);
-                
                 foreach (var entry in prodNutValues)
                 {
                     if (!TotalNutValues.ContainsKey(entry.Key))

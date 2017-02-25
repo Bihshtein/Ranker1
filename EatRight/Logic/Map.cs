@@ -64,8 +64,24 @@ namespace Logic {
         };
 
         public static Dictionary<string, string> SimpleNames = new Dictionary<string, string>() {
+             { "scallions","green onion" },
+            { "green spring onion", "green onion"},
+            { "spring onions", "green onion"},
+            { "spring onion", "green onion"},
+            { "light brown sugar", "brown sugar"},
+            { "corn and ola oil","corn oil" },
+            { "baby spinach","spinach" },
+            { "chocolate chips", "sweet chocolate candies"},
+            { "cocoa powder","cocoa dry powder" },
+            { "smoked paprika","paprika" },
+            { "hot water","water"},
+            { "vanilla essence", "vanilla extract"},
+            { "cilantro", "coriander" },
+            { "butter or margarine","butter" },
+            { "boiling water","water"},
             { "skinless, boneless chicken","chicken"},
             { "boneless, skinless chicken","chicken"},
+            { "boneless skinless chicken","chicken"},
             { "fresh mozzarella, cut into small cubes", "mozzarella" },
             { "leaves", "leaf" },
             { "greek-style", "greek" },
@@ -87,7 +103,8 @@ namespace Logic {
             { "whole wheat flour","whole-grain wheat flour"},
             { "all purpose flour","all-purpose wheat flour"},
             { "flour","all-purpose wheat flour"},
-            { "pinch table salt and black pepper ","table salt" },
+            { "pinch table salt and black pepper","table salt" },
+               
             { "kosher salt","table salt"},
             { "cumin","cumin seed"},
             { "ground cumin","cumin"},           
@@ -107,6 +124,7 @@ namespace Logic {
             { "ketchup","catsup"},
             { "sirloin steak","top sirloin steak"},
             { "red onion","onions"},
+            { "white onion", "onions" },
             { "white wine vinegar","red wine vinegar"},
             { "seashell pasta", "pasta" },
             { "prime rib", "rib eye" },
@@ -124,8 +142,7 @@ namespace Logic {
             { "flat-leaf parsley", "parsley" },
             { "frozen hash brown potatoes", "hash brown potatoes" },
             { "half-and-half cream", "half and half cream" },
-            { "dry sherry", "dry dessert wine" },
-            { "cilantro", "coriander (cilantro) leaves" },
+            { "dry sherry", "dry dessert wine" },            
             { "rib celery", "celery" },
             { "confectioners' sugar", "granulated sugars" },
             { "french bread", "french or vienna bread" },
@@ -154,7 +171,7 @@ namespace Logic {
             "head", "heads", "thick sliced", "sliced", "stalk", "stalks", "finely diced",
             "diced", "dried minced", "minced", "finely chopped", "chopped", "grated","mashed","crushed",
             "ripe", "steaks", "cold", "warm", "fresh",
-            "canned", "cans","can"
+            "canned", "cans","can","boiled"
         };
 
         public static List<string> OtherPhraseRemove = new List<string> {

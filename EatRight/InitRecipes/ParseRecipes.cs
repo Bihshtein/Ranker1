@@ -35,7 +35,7 @@ namespace InitRecipes {
                 {MealType.Breakfast,  "78/breakfast-and-brunch" } }
             },
             {RecipesSource.Cookpad, new Dictionary<MealType, string>() {
-                {MealType.Breakfast,  "search/breakfast" },
+         //       {MealType.Breakfast,  "search/breakfast" },
                 {MealType.Lunch,  "search/lunch" },
                 {MealType.Dinner,  "search/dinner" }}
             }
@@ -47,7 +47,7 @@ namespace InitRecipes {
         public static void CreateDB() {
             Indexes = new HashSet<int>();
             var unit = new RestDBInterface();
-      //      unit.Recipes.Empty();
+            unit.Recipes.Empty();
             RecipesURLs.ToList().ForEach(s => AddRecipesBySource(s, unit));
         }
 
@@ -76,7 +76,7 @@ namespace InitRecipes {
             }
         }
 
-        private static void AddRecipesByURL(string categoryURN, RestDBInterface unit, int pagesLimit = 200) {
+        private static void AddRecipesByURL(string categoryURN, RestDBInterface unit, int pagesLimit = 100) {
             Indexes.Clear();
             var client = new WebClient();
             log.Debug("Locating recipes in ->" + categoryURN + " - started");
@@ -194,7 +194,8 @@ namespace InitRecipes {
                         continue;
                     name = Map.AdjustNames(name);
                     name = Map.AdjustInnerPart(name).Trim();
-                  
+                    Map.StartPharseRemove.ForEach(item => name = name.Replace(item, ""));
+
                     var weight = nameAndWeight[0];
                     var weightSplit = weight.Split('-');
                     if (weightSplit.Length==2)

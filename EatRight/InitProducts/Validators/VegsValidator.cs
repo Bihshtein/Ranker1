@@ -24,7 +24,7 @@ namespace InitProducts {
                 "potherb","ancho","(poke)", "hot chili","edible-podded", "common (danish, domestic, and pointed types)",
                 "(chinese preserving melon)",  "enoki", "maitake","morel","oyster","straw", "shiitake", "portabella","fruit",
                  "(matai)", "root",  "witloof","baby","garland",  "napa","savoy", "kimchi","chili",
-                "all-types", "chinese (pak-choi)","chinese (pe-tsai)","kidney", "fava","mung","navy","pinto","shellie"
+                "all-types", "chinese (pak-choi)","chinese (pe-tsai)","kidney", "fava","mung","navy","pinto","shellie","puree"
             };
 
             ThirdParts = new List<string>(){
@@ -41,12 +41,15 @@ namespace InitProducts {
         public override string GetPrettyName(string part) {
             if (part.ToLower() !="tomato sauce" && part.ToLower().Contains("tomato"))
                 return "tomato";
+            else if (part.ToLower().Contains("coriander (cilantro) leaves"))
+                return  "coriander";
             return part;
         }
 
         public override Tuple<string, string> GetNameAndDescription(string item) {
             if (item.Contains("spring"))
                 item = "green";
+           
             return base.GetNameAndDescription(item);
         }
 

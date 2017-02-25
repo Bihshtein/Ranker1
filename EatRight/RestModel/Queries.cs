@@ -77,7 +77,7 @@ namespace RestModel {
         public List<Product> TryMatchWholeProduct(string part) {
             Expression<Func<Product, bool>> query = x =>
               (x.Name1.Equals(part) || x.Name1.Equals(part + "s") || x.Name1.Equals(part + "es") || x.Name1.Equals(ParseHelpers.GetWithoutLast_ES_letters(part)) ||
-              (x.FoodGroup.Equals(part) && x.Weights.ContainsKey(part)));//chicken
+              (x.FoodGroup.Equals(part) && x.Weights.ContainsKey(part)) || x.Name2.Equals(part+"s"));//chicken
             var res = collection.Find(query as Expression<Func<T, bool>>).ToList();
 
             if (res.Count == 0) {
@@ -93,6 +93,7 @@ namespace RestModel {
         public List<Product> TryMatchWholeProduct(string part1, string part2, string part3) {
             Expression<Func<Product, bool>> query = x =>
             (x.Name3.Equals(part1 + " " + part2) && x.Name2.Equals(part3)) ||
+            (x.Name3.Equals(part1 + " " + part2) && x.Name1.Equals(part3)) ||
             (x.Name2.Equals(part2 + " or " + part1) && x.Name1.Equals(part3)) ||
             (x.StorageMethod.Equals(part1) && x.Name2.Equals(part2 + " " + part3)) ||
             (x.StorageMethod.Equals(part1) && x.Name1.Equals(part2 + " " + part3)) ||
