@@ -65,24 +65,5 @@ namespace Tests {
             Assert.IsTrue(res.Count == total);
         }
      
-
-        [TestMethod]
-        public void GetProductBySearchQuery()
-        {
-            var testString = new List<string>
-            {
-                "cheese cake",
-                "cookies chocolate chip commercially prepared, regular",
-                "cookie chocolate, chip enriched"
-            };
-
-            foreach (var searchQuery in testString)
-            {
-                var product = ProductQueryBuilder.FromString(searchQuery);
-                var str = product.Product.USDAString;
-                Assert.IsNotNull(product);
-            }
-            
-        }
     }
 }

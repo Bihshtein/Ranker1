@@ -42,13 +42,6 @@ namespace RestModel {
             return collection.Find(query as Expression<Func<T, bool>>).ToList();
         }
 
-        public static List<Product> GetBestMatchingProductForIngredient(string ingredient)
-        {
-            var pqb = ProductQueryBuilder.FromString(ingredient);
-            var res = unit.Products.Queries.QueryByExpression(pqb.Expression);
-            return res.Cast<Product>().ToList();
-        }
-
         public static List<Product> GetMatchingProductsForIngredient(string ingredient) {
             var  res = unit.Products.Queries.TryMatchWholeProduct(ingredient);
             if (res != null && res.Count> 0)

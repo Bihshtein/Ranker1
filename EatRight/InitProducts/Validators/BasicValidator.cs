@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
 
-namespace RestModel.Validators {
+namespace InitProducts {
     public abstract class BasicValidator {
         public List<string> MainParts { get; protected set; }
         public List<string> SecondParts { get; protected set; }

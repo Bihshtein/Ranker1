@@ -1,7 +1,6 @@
-﻿using RestModel.Validators;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
-namespace RestModel {
+namespace InitProducts {
     internal class NutsValidator : BasicValidator {
         public NutsValidator() {
             MainParts = new List<string> { "almonds", "pecans", "walnuts" };

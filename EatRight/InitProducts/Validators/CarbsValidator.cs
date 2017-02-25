@@ -1,9 +1,8 @@
-﻿using RestModel.Validators;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 
 
-namespace RestModel.Validators {
+namespace InitProducts {
     internal class CarbsValidator : BasicValidator {
         public override bool IsMainPart(string part) {
             return part != part.ToLower();

@@ -1,7 +1,6 @@
-﻿using RestModel.Validators;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
-namespace RestModel.Validators {
+namespace InitProducts {
     internal class FishValidator : BasicValidator {
         public FishValidator() {
             MainParts = new List<string> {

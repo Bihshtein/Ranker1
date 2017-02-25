@@ -5,14 +5,14 @@ using System.Text;
 using System.Threading.Tasks;
 using RestModel;
 using MongoDB;
-using InitDB;
+using InitProducts;
 using System.IO;
 using System.Globalization;
 using System.Threading;
 
 namespace InitDailyValuesDB
 {
-    class InitDailyValuesDB : InitDB.InitDB
+    class InitDailyValuesDB : InitDB
     {
 
         public static void InitDailyValuesCollection(bool overrideDB)

@@ -75,9 +75,29 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="InitDB.cs" />
+    <Compile Include="ProductBuilder.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="DataClasses.cs" />
+    <Compile Include="Validators\BakedValidator.cs" />
+    <Compile Include="Validators\BasicValidator.cs" />
+    <Compile Include="Validators\BeefValidator.cs" />
+    <Compile Include="Validators\BeveragesValidator.cs" />
+    <Compile Include="Validators\CarbsValidator.cs" />
+    <Compile Include="Validators\ChickenValidator.cs" />
+    <Compile Include="Validators\CommonValidator.cs" />
+    <Compile Include="Validators\DairyValidator.cs" />
+    <Compile Include="Validators\FishValidator.cs" />
+    <Compile Include="Validators\FruitsValidator.cs" />
+    <Compile Include="Validators\LegumesValidator.cs" />
+    <Compile Include="Validators\NutsValidator.cs" />
+    <Compile Include="Validators\OilsAndFatsValidator.cs" />
+    <Compile Include="Validators\PorkValidator.cs" />
+    <Compile Include="Validators\SausagesValidator.cs" />
+    <Compile Include="Validators\SoupAndSauceValidator.cs" />
+    <Compile Include="Validators\SpicesAndHerbsValidator.cs" />
+    <Compile Include="Validators\SweetsValidator.cs" />
+    <Compile Include="Validators\VegsValidator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

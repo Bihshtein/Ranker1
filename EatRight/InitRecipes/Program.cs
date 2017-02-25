@@ -9,7 +9,6 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Xml;
-using InitDB;
 using System.Text.RegularExpressions;
 using log4net;
 [assembly: log4net.Config.XmlConfigurator(Watch = true)]

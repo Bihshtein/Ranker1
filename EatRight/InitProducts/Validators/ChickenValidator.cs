@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using RestModel.Validators;
 
-namespace RestModel.Validators {
+namespace InitProducts {
     internal class ChickenValidator : BasicValidator {
         public ChickenValidator() {
             MainParts = new List<string>()

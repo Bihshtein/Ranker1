@@ -76,7 +76,7 @@ namespace InitRecipes {
             }
         }
 
-        private static void AddRecipesByURL(string categoryURN, RestDBInterface unit, int pagesLimit = 20) {
+        private static void AddRecipesByURL(string categoryURN, RestDBInterface unit, int pagesLimit = 200) {
             Indexes.Clear();
             var client = new WebClient();
             log.Debug("Locating recipes in ->" + categoryURN + " - started");

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RestModel.Validators {
+namespace InitProducts {
     public class BeefValidator : BasicValidator {
         public BeefValidator() {
             MainParts = new List<string>(){

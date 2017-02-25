@@ -1,8 +1,7 @@
-﻿using RestModel.Validators;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace RestModel.Validators {
+namespace InitProducts {
     public class DairyValidator : BasicValidator {
         public DairyValidator() {
         

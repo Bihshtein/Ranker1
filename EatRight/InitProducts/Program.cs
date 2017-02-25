@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace InitDB {
+namespace InitProducts {
     class Program {
         static void Main(string[] args) {
             var loadGroups = !args.Contains("skip_groups");

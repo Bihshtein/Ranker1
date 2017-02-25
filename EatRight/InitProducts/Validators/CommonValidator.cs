@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RestModel {
+namespace InitProducts {
     public class CommonValidator {
 
         public static List<string> PeelingOptions = new List<string>{"meat only", "skin", "peel" };
