@@ -19,9 +19,10 @@ namespace InitRecipes {
         public static string FolderPath = Assembly.GetExecutingAssembly().Location + @"\..\..\..\..\LocalDB\";
 
         public static Dictionary<RecipesSource, string> RecipesURLs = new Dictionary<RecipesSource, string>() {
-            {RecipesSource.Cookpad,  "https://cookpad.com/us/" },
-           // {RecipesSource.AllRecipes,  "http://allrecipes.com/recipes/" },
-         
+          
+            {RecipesSource.AllRecipes,  "http://allrecipes.com/" },
+             {RecipesSource.Cookpad,  "https://cookpad.com/us/" },
+
         };
 
         public static Dictionary<RecipesSource, string> RecipesURNs = new Dictionary<RecipesSource, string>() {
@@ -31,11 +32,12 @@ namespace InitRecipes {
 
         private static Dictionary<RecipesSource, Dictionary<MealType, string>> MealTypesURNs = new Dictionary<RecipesSource, Dictionary<MealType, string>>() {
             {RecipesSource.AllRecipes, new Dictionary<MealType, string>() {
-                {MealType.Dinner,  "17562/dinner" },
-                {MealType.Breakfast,  "78/breakfast-and-brunch" } }
+                {MealType.Dinner,  "search/results/?wt=dinner&sort=re&" },
+                {MealType.Breakfast,  "search/results/?wt=breakfast&sort=re&" },
+                { MealType.Lunch,  "search/results/?wt=lunch&sort=re&"} }
             },
             {RecipesSource.Cookpad, new Dictionary<MealType, string>() {
-         //       {MealType.Breakfast,  "search/breakfast" },
+                {MealType.Breakfast,  "search/breakfast" },
                 {MealType.Lunch,  "search/lunch" },
                 {MealType.Dinner,  "search/dinner" }}
             }
@@ -76,11 +78,12 @@ namespace InitRecipes {
             }
         }
 
-        private static void AddRecipesByURL(string categoryURN, RestDBInterface unit, int pagesLimit = 100) {
+        private static void AddRecipesByURL(string categoryURN, RestDBInterface unit, int pagesLimit = 1000) {
             Indexes.Clear();
             var client = new WebClient();
             log.Debug("Locating recipes in ->" + categoryURN + " - started");
-            for (int currPage = 0; currPage < pagesLimit; currPage++) {
+            var retries = 0;
+            for (int currPage = 0; currPage < pagesLimit && retries < 3; currPage++) {
 
                 string pageStr = null;
                 var urlSuffix = currPage == 0 ? "" : ("?page=" + currPage);
@@ -88,10 +91,12 @@ namespace InitRecipes {
                 try {
                     pageStr = client.DownloadString(uri);
                     AddRecipesFromPage(pageStr, unit);
+                    retries = 0;
                 }
                 catch (Exception) {
                     log.Error(string.Format("Failed to load page num {0}, might be the last page", currPage));
-                    break;
+                    --currPage;
+                    ++retries;
                 }
                 log.Debug("Page num :" + currPage);
             }
