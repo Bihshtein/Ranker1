@@ -19,18 +19,13 @@ namespace Logic {
 
         public static string AdjustIngredient(string ingredient) {
             ingredient = ingredient.ToLower();
-            Map.StartPharseRemove.ForEach(item => ingredient = ingredient.Replace(item + " ", ""));
-            Map.OtherPhraseRemove.ForEach(item => ingredient = ingredient.Replace(item, ""));
-            ingredient = ingredient.Trim();
-            foreach (var prefix in PrefixRemove)
-            {
-                if (ingredient.StartsWith(prefix))
-                {
-                    ingredient = ingredient.Substring(prefix.Length);
-                    break;
-                }
-            }
-
+            if (ingredient.StartsWith(") "))
+                ingredient = ingredient.Replace(") ", "");
+            Map.PharsesToRemove.ForEach(item => {
+                if (ingredient.StartsWith(item + " ") || ingredient.EndsWith(" " + item))
+                    ingredient = ingredient.Replace(item, "");
+                ingredient = ingredient.Trim();
+            });
             return ingredient;
         }
 
@@ -64,7 +59,14 @@ namespace Logic {
         };
 
         public static Dictionary<string, string> SimpleNames = new Dictionary<string, string>() {
-             { "scallions","green onion" },
+            { "hard eggs","boiled eggs"},
+            { "roma tomatoes","tomatoes"},
+            { "grape tomatoe","tomatoes"},
+            { "dried basil leaves", "dried basil" },
+            { "basil leaf", "dried basil"},
+            { "bay leaves", "bay leaf"},
+            { "salt to taste","table salt" },
+            { "scallions","green onion" },
             { "green spring onion", "green onion"},
             { "spring onions", "green onion"},
             { "spring onion", "green onion"},
@@ -78,17 +80,18 @@ namespace Logic {
             { "vanilla essence", "vanilla extract"},
             { "cilantro", "coriander" },
             { "butter or margarine","butter" },
+            { "margarine or butter","butter" },
             { "boiling water","water"},
             { "skinless, boneless chicken","chicken"},
             { "boneless, skinless chicken","chicken"},
             { "boneless skinless chicken","chicken"},
             { "fresh mozzarella, cut into small cubes", "mozzarella" },
-            { "leaves", "leaf" },
             { "greek-style", "greek" },
             { "cooking oil", "salad or cooking oil" },
             { "package elbow macaroni", "macaroni"},
             { "dijon mustard", "mustard"},
             { "fine bread crumbs", "bread crumbs" },
+            { "breadcrumbs", "bread crumbs" },
             { "can anchovy fillets", "anchovy"},
             { "fresh dill","fresh dill weed"},
             { "skim", "nonfat"},
@@ -104,7 +107,6 @@ namespace Logic {
             { "all purpose flour","all-purpose wheat flour"},
             { "flour","all-purpose wheat flour"},
             { "pinch table salt and black pepper","table salt" },
-               
             { "kosher salt","table salt"},
             { "cumin","cumin seed"},
             { "ground cumin","cumin"},           
@@ -165,24 +167,17 @@ namespace Logic {
             { "extra lean ground beef", "ground beef"}
         };
 
-        public static List<string> StartPharseRemove = new List<string> {
-             "prepared", "package", "packages","blanched","slivered",
+        public static List<string> PharsesToRemove = new List<string> {
+           "fillets", "prepared", "package", "packages","blanched","slivered",
             "melted","sifted", "sprig", "sprigs", "ground", "shredded", "cubed", "rolled",
             "head", "heads", "thick sliced", "sliced", "stalk", "stalks", "finely diced",
             "diced", "dried minced", "minced", "finely chopped", "chopped", "grated","mashed","crushed",
             "ripe", "steaks", "cold", "warm", "fresh",
-            "canned", "cans","can","boiled"
+            "canned", "cans","can","boiled", "(optional)", "asiago",  "panko" , "steaks", "- peeled","halves",
+            "for frying", "herb-seasoned", "steel cut", "peeled","solid pack"
         };
 
-        public static List<string> OtherPhraseRemove = new List<string> {
-           "sprigs", "(optional)", "asiago", "extra virgin", "panko" , "steaks", "- peeled","halves",
-            "for frying", "herb-seasoned", "steel cut", "peeled","loaf"
-        };
 
-        public static List<string> PrefixRemove = new List<string>
-        {
-            "and "
-        };
 
     }
 }

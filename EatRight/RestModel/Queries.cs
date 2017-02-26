@@ -45,8 +45,7 @@ namespace RestModel {
         public static List<Product> GetMatchingProductsForIngredient(string ingredient) {
             var  res = unit.Products.Queries.TryMatchWholeProduct(ingredient);
             if (res != null && res.Count> 0)
-                return res;
-            ingredient = Map.AdjustIngredient(ingredient);
+                return res;           
             if (ingredient == string.Empty)
                 return null;
             var innerSplit = ingredient.Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries);
@@ -77,7 +76,7 @@ namespace RestModel {
         public List<Product> TryMatchWholeProduct(string part) {
             Expression<Func<Product, bool>> query = x =>
               (x.Name1.Equals(part) || x.Name1.Equals(part + "s") || x.Name1.Equals(part + "es") || x.Name1.Equals(ParseHelpers.GetWithoutLast_ES_letters(part)) ||
-              (x.FoodGroup.Equals(part) && x.Weights.ContainsKey(part)) || x.Name2.Equals(part+"s"));//chicken
+              (x.FoodGroup.Equals(part) && x.Weights.ContainsKey(part)) || x.Name2.Equals(ParseHelpers.GetWithoutLast_S_letter(part)));//chicken
             var res = collection.Find(query as Expression<Func<T, bool>>).ToList();
 
             if (res.Count == 0) {

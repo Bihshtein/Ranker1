@@ -19,10 +19,9 @@ namespace InitRecipes {
         public static string FolderPath = Assembly.GetExecutingAssembly().Location + @"\..\..\..\..\LocalDB\";
 
         public static Dictionary<RecipesSource, string> RecipesURLs = new Dictionary<RecipesSource, string>() {
-          
-            {RecipesSource.AllRecipes,  "http://allrecipes.com/" },
-             {RecipesSource.Cookpad,  "https://cookpad.com/us/" },
-
+           // {RecipesSource.Cookpad,  "https://cookpad.com/us/" },
+            {RecipesSource.AllRecipes,  "http://allrecipes.com/recipes/" },
+         
         };
 
         public static Dictionary<RecipesSource, string> RecipesURNs = new Dictionary<RecipesSource, string>() {
@@ -32,9 +31,8 @@ namespace InitRecipes {
 
         private static Dictionary<RecipesSource, Dictionary<MealType, string>> MealTypesURNs = new Dictionary<RecipesSource, Dictionary<MealType, string>>() {
             {RecipesSource.AllRecipes, new Dictionary<MealType, string>() {
-                {MealType.Dinner,  "search/results/?wt=dinner&sort=re&" },
-                {MealType.Breakfast,  "search/results/?wt=breakfast&sort=re&" },
-                { MealType.Lunch,  "search/results/?wt=lunch&sort=re&"} }
+                {MealType.Dinner,  "17562/dinner" },
+                {MealType.Breakfast,  "78/breakfast-and-brunch" } }
             },
             {RecipesSource.Cookpad, new Dictionary<MealType, string>() {
                 {MealType.Breakfast,  "search/breakfast" },
@@ -64,7 +62,7 @@ namespace InitRecipes {
                 
             var loadMealsBulkSize = Indexes.Count > loadBulkSize ? loadBulkSize : Indexes.Count;
             if (source == RecipesSource.AllRecipes) {
-                loadMealsBulkSize = 30;
+                loadMealsBulkSize = 10;
             }
                 while (Indexes.Count > 0) {
                     log.Debug("Loading bulk, tasks left : " + Indexes.Count());
@@ -78,7 +76,7 @@ namespace InitRecipes {
             }
         }
 
-        private static void AddRecipesByURL(string categoryURN, RestDBInterface unit, int pagesLimit = 1000) {
+        private static void AddRecipesByURL(string categoryURN, RestDBInterface unit, int pagesLimit = 5) {
             Indexes.Clear();
             var client = new WebClient();
             log.Debug("Locating recipes in ->" + categoryURN + " - started");
@@ -183,7 +181,7 @@ namespace InitRecipes {
                         var ingredient = new String(chars.ToArray());
                         var words = ingredient.Split(' ').ToList();
                         ingredient = Map.AdjustNames(ingredient);
-                        ingredient = Map.AdjustInnerPart(ingredient);
+                        ingredient = Map.AdjustInnerPart(ingredient);                  
                         ingredients.Add(ParseWeightAndName(ingredient));
                     }
                 }
@@ -192,14 +190,14 @@ namespace InitRecipes {
                 var ingredientParts = page.Split(new string[1] { "<span class=\"ingredient__quantity\">" }, StringSplitOptions.None);
                 for (int i = 1; i < ingredientParts.Length; i++) {
                     var ingredient = ingredientParts[i].Split('\n')[0];
-                   
+
                     var nameAndWeight = ingredient.Split(new string[1] { "</span>" }, StringSplitOptions.None);
                     var name = nameAndWeight[1].Trim().ToLower();
                     if (name == string.Empty)
                         continue;
                     name = Map.AdjustNames(name);
                     name = Map.AdjustInnerPart(name).Trim();
-                    Map.StartPharseRemove.ForEach(item => name = name.Replace(item, ""));
+                    name = Map.AdjustIngredient(name);
 
                     var weight = nameAndWeight[0];
                     var weightSplit = weight.Split('-');
@@ -263,6 +261,11 @@ namespace InitRecipes {
                             var nameParts = name.Split(' ');
                             relativeWeight = nameParts[0];
                             name = name.Replace(relativeWeight,string.Empty).Trim();
+                            if (name != string.Empty) {
+                                name = Map.AdjustNames(name);
+                                name = Map.AdjustInnerPart(name).Trim();
+                                name = Map.AdjustIngredient(name);
+                            }
                         }
 
                         else if (name.Contains("garlic clove")) {                            
@@ -322,6 +325,7 @@ namespace InitRecipes {
                     weightKey = res.Item1; // the product is the actual key
                 }
             }
+            innerpart = Map.AdjustIngredient(innerpart);
             return new Tuple<string, double, string>(innerpart, weight, weightKey);
         }
 

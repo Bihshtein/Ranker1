@@ -43,6 +43,9 @@ namespace InitProducts {
                 return "tomato";
             else if (part.ToLower().Contains("coriander (cilantro) leaves"))
                 return  "coriander";
+            else if (part.ToLower().Contains("cos or romaine"))
+                return "romaine";
+
             return part;
         }
 

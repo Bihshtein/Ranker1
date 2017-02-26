@@ -21,6 +21,14 @@ namespace InitProducts {
             ThirdParts = new List<string> {
                 "original","coriander & annatto","black","red or cayenne","white"
             };
+
+        
+        }
+
+        public override string GetPrettyName(string part) {
+            if (part.ToLower().Contains("dill weed"))
+                return "dill";
+            return part;
         }
 
 
