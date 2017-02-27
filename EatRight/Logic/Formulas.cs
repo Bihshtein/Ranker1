@@ -108,8 +108,10 @@ namespace Logic
         }
         public static List<string> RelativeProductSize = new List<string> {
             "large",
+            "small head of",
             "small",
-            "medium"
+            "medium",
+            
         };
         public static List<string> RelativeSizes = new List<string> {
             // relative to the weight stated by the USDA for the product

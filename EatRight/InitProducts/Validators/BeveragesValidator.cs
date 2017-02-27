@@ -1,14 +1,15 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace InitProducts {
     internal class BeveragesValidator : BasicValidator {
         public BeveragesValidator() {
             MainParts = new List<string>() {
-                "beer","coffee","liqueur", "wine","tea" ,"drink","whiskey","pina colada","cola"
+               "Alcoholic beverage", "beer","coffee","liqueur", "wine","tea" ,"drink","whiskey","pina colada","cola"
             };
 
             SecondParts = new List<string>() {
-           "all", "dry","sweet","orange", "mocha","regular","black", "green","herb","hibiscus","red","white","brewed","instant","generic"
+           "all", "dry","sweet","orange", "mocha","regular","black", "green","herb","hibiscus","red","white","brewed","instant","generic","rice (sake)"
             };
             ThirdParts = new List<string> {
             "chocolate", "breakfast type","dessert","cooking",  "regular",  "cooking","light","dessert", "lemon", "ready to drink","ready-to-drink","table","breakfast blend","espresso","chicory"
@@ -30,8 +31,10 @@ namespace InitProducts {
             base.IsValidPart(part);
         }
 
-        /*   public override bool IsThirdPart(string part) {
-               return ThirdParts.Contains(part) || part.Contains("prepared");
-           }*/
+        public override Tuple<string, string> GetNameAndDescription(string item) {
+            if (item.Contains("rice (sake)"))
+                item = "sake";
+            return base.GetNameAndDescription(item);
+        }
     }
 }

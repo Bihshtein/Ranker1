@@ -19,8 +19,8 @@ namespace InitRecipes {
         public static string FolderPath = Assembly.GetExecutingAssembly().Location + @"\..\..\..\..\LocalDB\";
 
         public static Dictionary<RecipesSource, string> RecipesURLs = new Dictionary<RecipesSource, string>() {
-           // {RecipesSource.Cookpad,  "https://cookpad.com/us/" },
-            {RecipesSource.AllRecipes,  "http://allrecipes.com/recipes/" },
+            {RecipesSource.Cookpad,  "https://cookpad.com/us/" },
+         //   {RecipesSource.AllRecipes,  "http://allrecipes.com/recipes/" },
          
         };
 
@@ -35,9 +35,9 @@ namespace InitRecipes {
                 {MealType.Breakfast,  "78/breakfast-and-brunch" } }
             },
             {RecipesSource.Cookpad, new Dictionary<MealType, string>() {
-                {MealType.Breakfast,  "search/breakfast" },
-                {MealType.Lunch,  "search/lunch" },
-                {MealType.Dinner,  "search/dinner" }}
+              //  {MealType.Breakfast,  "search/breakfast" },
+                {MealType.Lunch,  "search/lunch" }, }
+               // {MealType.Dinner,  "search/dinner" }}
             }
         };
 
@@ -76,7 +76,7 @@ namespace InitRecipes {
             }
         }
 
-        private static void AddRecipesByURL(string categoryURN, RestDBInterface unit, int pagesLimit = 5) {
+        private static void AddRecipesByURL(string categoryURN, RestDBInterface unit, int pagesLimit = 20) {
             Indexes.Clear();
             var client = new WebClient();
             log.Debug("Locating recipes in ->" + categoryURN + " - started");
@@ -257,9 +257,8 @@ namespace InitRecipes {
                         else if (weight == "") {
                             weightNum = 1;
                         }
-                        else if(Formulas.RelativeProductSize.Any(s => name.Split(' ')[0] == s)) {
-                            var nameParts = name.Split(' ');
-                            relativeWeight = nameParts[0];
+                        else if(Formulas.RelativeProductSize.Any(s => name.Contains(s))) {
+                            relativeWeight = Formulas.RelativeProductSize.First(s => name.Contains(s));
                             name = name.Replace(relativeWeight,string.Empty).Trim();
                             if (name != string.Empty) {
                                 name = Map.AdjustNames(name);
@@ -268,10 +267,7 @@ namespace InitRecipes {
                             }
                         }
 
-                        else if (name.Contains("garlic clove")) {                            
-                            relativeWeight = "clove";
-                            name = "garlic";
-                        }
+                        
 
                         else {
 
@@ -285,7 +281,11 @@ namespace InitRecipes {
                         }
 
                     }
-                
+                    if (name.Contains("garlic clove")) {
+                        relativeWeight = "clove";
+                        name = "garlic";
+                    }
+
                     ingredients.Add(new Tuple<string, double, string>(name, weightNum, relativeWeight));
                     
                 }

@@ -8,7 +8,7 @@ namespace InitProducts {
 
         public VegsValidator() {
             SecondParts = new List<string>() {
-                "summer", "winter", "sweet","hash brown","brown", "green", "yellow", "white","orange","red", "tahitian",
+                "sweet","hash brown","brown", "green", "yellow", "white","orange","red", "tahitian",
                 "hungarian","scotch","chinese", "japanese style", "swiss", "italian, or crimini","paste",
                 "italian","fordhook","hawaii","hawaiian style","scallop","crookneck and straightneck",
                 "all varieties", "zucchini","acorn","au gratin","cucumber", "chowchow","hamburger","hot dog",
@@ -28,7 +28,7 @@ namespace InitProducts {
             };
 
             ThirdParts = new List<string>(){
-                "flesh","shredded","crushed","crosscut","chopped or leaf","steak cut",
+                "flesh","shredded","crushed","crosscut","chopped or leaf","steak cut","summer", "winter",
                 "shoestring","all types","whole", "chopped", "spears","mashed",
                 "crinkle or regular cut","cross cut", "extruded", "cottage-cut" ,"steak fries",
                 "wedge cut", "tops only","(bulb and lower-leaf portion)","cut off cob","excluding seeds",
@@ -43,16 +43,16 @@ namespace InitProducts {
                 return "tomato";
             else if (part.ToLower().Contains("coriander (cilantro) leaves"))
                 return  "coriander";
-            else if (part.ToLower().Contains("cos or romaine"))
-                return "romaine";
-
             return part;
         }
 
         public override Tuple<string, string> GetNameAndDescription(string item) {
             if (item.Contains("spring"))
                 item = "green";
-           
+            else if (item.ToLower().Contains("cos or romaine"))
+                item = "romaine";
+            else if (item.ToLower().Contains("iceberg (includes crisphead types)"))
+                item = "iceberg";
             return base.GetNameAndDescription(item);
         }
 

@@ -1,154 +1,1460 @@
-monterey jack cheese : 5
-condensed cream of mushroom soup : 4
-dry italian : 4
-seasoned bread crumbs : 4
-lasagna noodles : 3
-seasoning salt : 3
-mustard powder : 3
-light corn syrup : 3
-seasoned salt : 3
-quick cooking oats : 3
-chicken breast meat : 2
-sweet italian sausage : 2
-condensed cream of chicken soup : 2
-portobello mushrooms : 2
-dry onion soup mix : 2
-italian seasoning : 2
-rump roast : 2
-condensed golden mushroom soup : 2
-condensed french onion soup : 2
-cooking sherry : 2
-diced tomatoes : 2
-jar taco sauce : 2
-dijon mustard : 2
-bacon bits : 2
-stewed tomatoes : 2
-steak sauce : 2
-sliced mushrooms : 2
-milk (110 degrees f/45 degrees c) : 2
-frozen chopped spinach : 2
-very ripe bananas : 2
-loaf french bread : 2
-refrigerated biscuit dough : 2
-biscuit baking mix : 2
-whole wheat pastry all : 2
-(optional) : 2
-boneless beef chuck roast : 1
-penne pasta : 1
-salt and ground black pepper to taste : 1
-dry ziti pasta : 1
-pork butt : 1
-extra : 1
-dry beef gravy mix : 1
-jars spaghetti sauce : 1
-ranch dressing mix : 1
-chopped green chilies : 1
-crushed tomatoes : 1
-medium shrimp : 1
-pot roast : 1
-jar alfredo sauce : 1
-celery salt : 1
-whole peeled carrots : 1
-frozen chicken breast : 1
-chicken bouillon granules : 1
-enchilada sauce : 1
-italian salad dressing : 1
-diced green chiles : 1
-or bottle root beer : 1
-bottle your favorite barbecue sauce : 1
-cooked chicken breast meat : 1
-hamburger buns : 1
-beef stew meat : 1
-finely crushed saltine cracker crumbs : 1
-marsala wine : 1
-or bottle beer : 1
-dried bread crumbs : 1
-tomato pasta sauce : 1
-s celery : 1
+italian seasoning : 13
+taco seasoning : 8
+rice vinegar : 7
+red pepper flakes : 7
+white wine : 7
+mayo : 6
+penne pasta : 5
+granulated garlic powder : 4
+pepper flakes : 4
+button mushrooms : 4
+table salt &amp; black pepper : 4
+enchilada sauce : 3
+cajun seasoning : 3
+garlic paste : 3
+mirin : 3
+sweet corn : 3
+garbanzo beans : 3
+elbow macaroni : 3
+granulated garlic : 3
+colby jack cheese : 3
+jumbo shells : 3
+chicken broth (reduced sodium recommended) : 3
+prawns (peeled) : 2
+an onion : 2
+green celery : 2
+handful of nuts (peanuts/cashews) : 2
+lots of fresh dill weed : 2
+black pepper powder : 2
+curd : 2
+dressing : 2
+curly kale : 2
+garlic -- : 2
+optional: : 2
+lasagna : 2
+japanese mayonnaise : 2
+finely shredded cheddar cheese : 2
+hard boiled egg : 2
+purple cabbage : 2
+dehydrated onions : 2
+spinach leaves : 2
+fine minced garlic : 2
+hamburger meat : 2
+pasley : 2
+spaghetti sauce : 2
+chopped : 2
+streaky bacon : 2
+marinade : 2
+pepper (to taste) : 2
+jalapeֳ±o : 2
+tagliatelle : 2
+rocket : 2
+whole-grain mustard : 2
+mandarin oranges : 2
+pickled carrots : 2
+chicken sausage : 2
+chicken or vegetable stock : 2
+double cream : 2
+alfredo sauce : 2
+mint : 2
+ts salt : 2
+garlic *grated : 2
+aburaage : 2
+for the dressing: : 2
+peanuts : 2
+yellow onion; : 2
+hoagie rolls : 2
+real butter : 2
+celery salt : 2
+shoyu : 2
+stock : 2
+poblano pepper : 2
+provalone cheese : 2
+red enchilada sauce : 2
+basil; chiffonade : 2
+orzo : 2
+green cabbage : 2
+green chilies : 2
+dressing: : 2
+coriander leaves : 2
+chicken boobs : 2
+purple onion : 2
+pasta sauce : 2
+reserved pasta water : 2
+latency : 2
+roasted red pepper : 2
+sweet chili sauce : 2
+coriander; chiffonade : 2
+half &amp; half : 2
+dried chives : 2
+dashi powder (japanese fish bouillon powder) : 2
+origano : 2
+parmigiano reggiano : 2
+center cut bacon : 2
+optional toppings : : 2
+low fat cream cheese : 2
+capsicum : 2
+ֲ·red pepper flakes : 2
+sharp cheddar : 2
+suggested toppings : : 2
+tortellini : 2
+reuben kincaid dressing : 2
+garlic (minced) : 2
+large can of chicken breast or 2 shredded chicken breast : 2
+large flour tortillas (microwave 30 seconds) : 2
+fill tortillas with mixture of above ingredients : 2
+cream of chicken soup : 2
+mild enchilada sauce : 2
+x13 dish-stoneware : 2
+mayonaise : 2
+limes juiced : 2
+chilli flakes : 2
+blackbeauty egg plants sliced 1/2&quot; thick : 1
+spicy chorizo : 1
+frozen shrimps : 1
+macaroni pasta : 1
+some spaghetti : 1
+spaghetti pasta : 1
+beef or chicken soup base or powdered bouillon : 1
+sweet ham (can also be filipino longganisa) : 1
+nonstick cooking spray : 1
+beef hotdogs : 1
+empty can with labe removed : 1
+green chillies : 1
+for seasoning : 1
+size squid (sliced) : 1
+garlic smashed : 1
+cornstarch mixed with 1/4 water : 1
+pita bread : 1
+tomato juice or v8 : 1
+button mushroom (sliced) : 1
+table spoon tikka masala : 1
+consommֳ© : 1
+mozzarella string cheese : 1
+light shredded or chunk tuna in water drained : 1
+scallion : 1
+miracle whip more if needed : 1
+chipotle chili powder : 1
+bunch of broccoli : 1
+tortellini- you can use as much as you want : 1
+hard boiled egg or fried : 1
+mint leaves : 1
+sweet pickle relish or dill relish : 1
+chili seasoning : 1
+size of tomato (chopped) : 1
+burrito add ins : 1
+bad spinach : 1
+parsley leaves : 1
+sumac (or more if you like the taste) : 1
+baking potatoes : 1
+romain lettuce : 1
+porcini mushrooms (chopped) : 1
+worshire sauce : 1
+presley : 1
+red chillies : 1
+lettuce leaves : 1
+pepper (if you want) : 1
+tortilla shell : 1
+thumb size of ginger : 1
+salt (if no bacon) : 1
+tomatoes or 1 cup tomato : 1
+you can add celery diced little *option : 1
+tomato passata : 1
+salt and red pepper powder : 1
+steak any kind u like : 1
+dill chopped *option : 1
+clotted cream : 1
+light soy sauce : 1
+onion*option : 1
+pancetta : 1
+butter (4 tbsp) : 1
+street taco shells : 1
+your choice of seasoning and dressing : 1
+roma tomato : 1
+handful of kurly kale : 1
+can(5oz) tuna in olive oil (drain oil) : 1
+serving of morrisons bulgur wheat : 1
+vinaigrette: : 1
+homemade vegetable stock or store bought : 1
+bread slices : 1
+meat sauce: : 1
+cream of celery : 1
+green chutney : 1
+salt&amp;black pepper : 1
+meat (beef/chicken/pork-your choice) : 1
+feta cheese. i used tomato basil : 1
+low-sodium soy sauce : 1
+mange-tout or sugar snap peas : 1
+tiny potatoes whole unpeeled : 1
+toasted breaded sesame oil : 1
+panner : 1
+beef hotdogs 2 : 1
+agave nectar or honey : 1
+peel and juice of 1 small lemon : 1
+turmeric powder : 1
+soft goats cheese : 1
+reduced salt soy sauce : 1
+zucchini-sliced/grated : 1
+organic cooked prawns (mine were big so i chopped them) : 1
+red chilli powder : 1
+dill pickle chips : 1
+runny honey : 1
+salad: : 1
+cooked chicken breast or 2 cooked and chopped sausages : 1
+garam masala powder : 1
+fusilli : 1
+vidalia onion -- sliced paper thin : 1
+baby bok choy : 1
+prawns (peeled and diced) : 1
+chicken stock / water : 1
+beef stock- *(note be careful some store brands are very high in salt and as you cook it down it may get salty) : 1
+dry dessert wine wine (*optional see note at bottom) : 1
+cockles : 1
+walnut oil : 1
+pickled cucumbers : 1
+toasted breaded french or vienna bread slices or any bread you like:) : 1
+roasted salted cashews : 1
+butter for roasting/ toasted breading : 1
+diced green chili&#39;s : 1
+---- meat-------- : 1
+table salt -- to taste at the end of the cooking process : 1
+g- tomato : 1
+garlic (crushed) : 1
+eye of round steak sliced very thin : 1
+boneless and meat only chicken thighs : 1
+garlic or 2 cloves of fresh garlic : 1
+salt- pepper : 1
+bechamel sauce: : 1
+of anchovies in oil : 1
+dried basil/ tsp of dried mixed herbs also works well : 1
+tomato (diced) : 1
+about 20 stems of parsley : 1
+goats curd (goats cheese and creme fraiche is ok too) : 1
+cherry tomato (cut in half) : 1
+smoked bacon : 1
+----bread and spread ------- : 1
+about a dozen tomato : 1
+olive oil all though any oil works well : 1
+each egg -(*see note at bottom) : 1
+pear נ : 1
+parmesan or permaggio reggiano : 1
+cuban bread : 1
+bacon (250g) : 1
+chicken powder : 1
+(whole grain) pasta : 1
+any pasta- macaroni/ spaghetti ect- enough for : 1
+ground pepper and table salt : 1
+gkale leaves : 1
+red crushed pepper : 1
+apple *i used 2  apples : 1
+malt or red wine vinegar : 1
+nutmeg powder : 1
+yellow prepared mustard : 1
+leftover olive wine : 1
+fillet of wild salmon : 1
+some roasted pine nuts : 1
+pea shoots to garnish : 1
+roasted almonds *very coarsely : 1
+pasta: : 1
+fine cut chili pepper : 1
+-----condiments -------- : 1
+anchovy paste : 1
+salted butter (spread on rye bread slices) : 1
+some cooking cream or squeezed lemon juice : 1
+glaze with olives : 1
+coriander and mustard seeds (ground) : 1
+watercress *140 to 150g : 1
+ג— for the noodles : 1
+lemon juice or red wine vinegar : 1
+leftover pork loins/ three of them : 1
+al dente artisinal garlic linguini noodles : 1
+salt &amp; freshly cracked pepper : 1
+cream- reduced by a 1/4 to12 ounces : 1
+hamburger dill pickle chips : 1
+radish *thinly : 1
+penne pasta -- cook until done : 1
+bread- diced 1 inch : 1
+table salt banana pepper rings : 1
+pork sausage/salami-sliced : 1
+your favorite dressing : 1
+--meat marinade and spices----- : 1
+onion *thinly slices : 1
+onion/shallot : 1
+garlic -powder or granulated : 1
+fine minced basil : 1
+salmon sashimi or smoked salmon : 1
+for the accompaniment : 1
+ג— for the garlic alfredo sauce : 1
+ponzu (*or soy sauce 1/2 tablespoon &amp; rice vinegar 1/2 tablespoon) : 1
+brocoli florets (cut small) : 1
+tomato puree/sauce : 1
+shallot -- fine : 1
+mustard (1 tablespoon) : 1
+each onion --  diced (2 ounces) : 1
+vinegar (i used apple cider...about 2 tablespoons) : 1
+parsley/basil : 1
+caesar dressing- add just enough to coat : 1
+walnut oil (enough for desired consistency : 1
+green pitted olives-sliced half : 1
+wasabi paste : 1
+cheese of choice (shredded : 1
+habanero chile peppers- wear gloves -- dice fine : 1
+mizuna leaves : 1
+ג– 1 tbsp olive oil : 1
+each red pepper -- : 1
 bow tie pasta : 1
-italian seasoned bread crumbs : 1
-boneless pork ribs : 1
-diced green chili peppers : 1
-diced tomatoes with green peppers : 1
-spaghetti sauce : 1
-extra ground beef : 1
-teriyaki basting sauce : 1
-ranch : 1
-ranch dressing : 1
-hot sauce : 1
-angel hair pasta : 1
-beef sirloin : 1
-buttery round crackers : 1
-buttery round cracker crumbs : 1
-hot pepper sauce (such as frank's redhot&#174;) : 1
-cube beef bouillon : 1
-thai chili sauce or hot sauce : 1
-dried onion flakes : 1
-red pepperss : 1
-linguine pasta : 1
-whole peeled tomatoes : 1
-freshly ground black pepper : 1
-dijon : 1
-cajun seasoning : 1
-uncooked rice : 1
-medium raw shrimp : 1
-long skewers : 1
-sun : 1
-condensed tomato soup : 1
-dry lasagna noodles : 1
-dry fettuccini pasta : 1
-bottle buffalo wing sauce : 1
-dry ranch salad dressing mix : 1
-lemon pepper : 1
-arborio rice : 1
-thinly sliced onion : 1
-hoagie rolls : 1
-condensed beef broth : 1
-freshly grated parmesan cheese : 1
-thick pork chops : 1
-coarse : 1
-part : 1
-saltine crackers : 1
-dry potato flakes : 1
-chicken bouillon : 1
-onion salt : 1
-tart apples : 1
-cubed : 1
-dried parsley flakes : 1
-milk  (110 degrees f/45 degrees c) : 1
-loaf white bread : 1
-marinara sauce : 1
-hot pepper sauce (e.g. tabasco&#8482;) : 1
-pasta sauce : 1
-french bread : 1
-finely shredded parmigiano : 1
-bread wheat all : 1
-2% milk : 1
-bread machine yeast : 1
-bread cubes : 1
-day : 1
-sage flavored pork sausage : 1
-container small curd cottage cheese : 1
-unbaked pie crusts : 1
-jumbo eggs : 1
+ג– 1.5 tsp whole grain mustard : 1
+capern (8pcs) : 1
+shrimp -- peeled (we used size 51-60 and you can always go larger or add more if desired) : 1
+lettuce of choice (pictured is romaine) : 1
+ג– 1 tsp lemon juice : 1
+kerrygold garlic herb butter : 1
+salad or cooking oil/olive oil : 1
+pepitas : 1
+ג– table salt : 1
+of each : 1
+starch : 1
 sunflower seeds : 1
-raisins or sweetened dried cranberries : 1
-corn syrup : 1
-( : 1
-cubes ice : 1
-refrigerated crescent roll dough : 1
+your favourite salad mix : 1
+l&amp;p -worcestershire sauce : 1
+wide mouthed quart sized mason jar with lid : 1
+note: i used a bag of ready-to-use salad mix (spinach and rocket) and some onion : 1
+crystal hot sauce -- be careful with substituting other hot sauce : 1
+suitable amount of salt : 1
+artichokes [fully drained : 1
+each) alfredo sauce : 1
+suitable amount of black pepper : 1
+stock cubes : 1
+thinly sliced pork : 1
+olives [halved] : 1
+parsley [+ reserves for garnish] : 1
+salt &amp; water : 1
+wiener sausage : 1
+oil or butter : 1
+sliced mushrooms [or 1/2 cup fresh] : 1
+dried basil ג€“ chiffonade- fine ribbon cut just before service : 1
+&lt;sesame dressing ingredients&gt; : 1
+carrots chopped large (i used bagged baby carrots) : 1
+your favourite cheese : 1
+toasted breaded sesame seeds *ground : 1
+cream style corn : 1
+pitted olives : 1
+ג— sides/options : 1
+whole kernel corn (water drained) : 1
+lemon pepper : 1
+table salt (or use powder or minced) : 1
+grilled chicken : 1
+dry soy mince : 1
+lamb mince : 1
+spaghetti (fresh if you can get it) : 1
+trader joe&#39;s meatless meat : 1
+crab meat : 1
+cooked barley/boiled barley : 1
+clams : 1
+cloves of garlic : 1
+tomatoes (cube) : 1
+trader joe&#39;s 21 salute seasoning : 1
+small onion : 1
+garlic bread : 1
+dry laurel leaves : 1
+pieces of steak : 1
+- 1 cup parmesan cheese (depending on size of squash) : 1
+cucumber (cube) : 1
+and 1/2 tablespoons of butter without salt : 1
+meat/vegetable stock : 1
+celery stalks : 1
+garden salad : 1
+tspn chopped chillies : 1
+salt (to taste) : 1
+of whole peeled tomatoes (ned or fresh) : 1
+carrots (cube) : 1
+lg chicken thighs : 1
+gravy granules : 1
+tiny bit of paprika : 1
+soy : 1
+lime juice (divided) : 1
+loads of basil : 1
+of red enchilada sauce : 1
+apple cut into 1 to 4 squares : 1
+of cabbage (shred) : 1
+mission tortilla burrito shells : 1
+coriander (chopped) : 1
+pork ribs : 1
+seasoned cod roe (mentaiko) : 1
+tomato soup : 1
+mexican beer : 1
+endives : 1
+table spoons mayonnaise : 1
+clam : 1
+grind ginger : 1
+lg can green enchilada sauce : 1
+aubergine per person : 1
+oriental top ramen noodles : 1
+macoroni : 1
+starch (katakuriko or tapioca) : 1
+toasted breaded walnuts : 1
+daikon *500 to 600g : 1
+soya sauce : 1
+all purpose seasoning : 1
+pineapple tidbits : 1
+queso fresco (los altos is נ‘נ¼) : 1
+size flour tortillas : 1
+note: do not worry the amount of salt. the most of it will be discarded with the water come from daikon : 1
+chicken breasts (boiled) : 1
+jicama (diced) : 1
+refrigerated biscuits : 1
+hald bottle of cream : 1
+of thyme : 1
+chiles nuevo mֳ©xico (flat : 1
+bag frozen meatballs : 1
+mango (diced) : 1
+piece onion : 1
+jar alfredo sauce : 1
+salt och peppar : 1
+franks hot sauce : 1
+soft taco size flour tortillas : 1
+jar spaghetti sauce (you can adjust this to taste) : 1
+cumin seed powder : 1
+seasoning : 1
+firm but ripe avocado cut into 1/2&quot; cubes : 1
+green herb (shiso : 1
+guacamole : 1
+roma lettuce : 1
+parmesan (some mozzarella if it&#39;s handy) : 1
+sugar or honey : 1
+oil (i like avocado or olive) : 1
+chicken breasts (cubed) : 1
+pomegranate seeds : 1
+serve with : 1
+appropriate amount of pasta : 1
+montreal steak marinated : 1
+chicken breasts flattened : 1
+farfalle pasta : 1
+juice of 1 lime : 1
+rockets : 1
+tomato cherries (cut in half) : 1
+steamed broccoli : 1
+chicken and ribs bbq sauce : 1
+some bread : 1
+gm.fresh crumble paneer : 1
+duck breast : 1
+yellow onion (chopped) : 1
+salsa verde : 1
+pasta sauce (homemade or store brand) : 1
+japanese mayo : 1
+onion *optional : 1
+roast beef : 1
+chopped green chilies : 1
+miracle whip : 1
+toasted breaded peanuts *coarsely : 1
+sweet relish pickles : 1
+burrito sized tortillas : 1
+(2 to 2 1/2 pounds) cabbage (green : 1
+serving pasta : 1
+roasted jalapeֳ±os : 1
+fresno peppers (divided) : 1
+&lt;peanuts dressing ingredients&gt; : 1
+noodles (as much as you like) : 1
+brick of cheddar cheese : 1
+macaroni..i made it healthier so used oats macaroni : 1
+long beans cut into 3 cm strips : 1
+lime wedges : 1
+whole lobster : 1
+dressing:- : 1
+table salt but keep some less and cheese has also salt : 1
+italian style bread crumbs : 1
+spring mix lettuce : 1
+onion (1/4 for the big one) : 1
+water for pasta : 1
+meat (pork/chicken) : 1
+ra-yu (chilli oil) : 1
+small shrimps : 1
+tomato purֳ©e : 1
+mussels : 1
+season:oregano/italian seasons : 1
+pepper powder : 1
+dried cured ham (salontro : 1
+lettuce (5 leaves) : 1
+tbspbread crumbs : 1
+pasta noodles penne or whatever : 1
+white flour : 1
+salted butter : 1
 brandy : 1
-flax seed meal : 1
-water (110 degrees f/45 degrees c) : 1
-artificial sweetener : 1
-slices bread : 1
-dry mustard : 1
-coarsely ground grits : 1
-half : 1
-mayonnaise or salad dressing : 1
-deep dish frozen pie crust : 1
-torn fresh spinach : 1
+dark soya sauce : 1
+white sauce : 1
+cooked pasta of choice : 1
+bread crumbs for coating : 1
+pasta of your choosing : 1
+sesame seed oil : 1
+red enchilada sauce (10 oz) : 1
+rochefort cheese : 1
+boneless chicken meat : 1
+phetta cheese : 1
+sake or white wine : 1
+medium to  onion : 1
+oregano powder : 1
+fajita style tortillas : 1
+table spoon of crushed red pepper flakes : 1
+uncooked bow tie pasta : 1
+cream of chicken soup (10.5 oz) : 1
+chicken stock powder (for boiling the pasta) : 1
+or 2 tsp fast action yeast : 1
+chicken stock powder (for seasoning) : 1
+permigiano reggiano : 1
+a torch ginger (bunga kantan) *optional : 1
+crystal hot sauce : 1
+butter of choice : 1
+strong white flour : 1
+sambal : 1
+pot : 1
+lettuce of choice : 1
+courgettes : 1
+tomato catsup (i used it without measurement) : 1
+chilli sauce : 1
+seasoning salt : 1
+avocado (or 2 small) : 1
+garlic wedges : 1
+cooked mashed potato : 1
+pecan nuts : 1
+tofu *ג€™momenג€™ or medium firm type recommended : 1
+corn starch mixture : 1
+about 2 tbsp. stoneground wholemeal flour : 1
+table salt to taste when browning meat : 1
+juice of half a lemon : 1
+national brand achar masala : 1
+green onion *finely : 1
+water for boiling (i didn&#39;t measure it) : 1
+tortilla wraps : 1
+white pepper or black is fine : 1
+panko : 1
+olives sliced into rings : 1
+sized eggplant : 1
+chili and tomatoes : 1
+celery bulb : 1
+tinned tuna in spring water : 1
+tomato sauce (for sauce) : 1
+tomatoes 1 16oz : 1
+oil- vegetable oil is fine : 1
+caster sugar : 1
+pealed onion : 1
+baby leaf salad : 1
+unsweetened almond juice : 1
+cumin seed (for sauce) : 1
+crystal hot sauce (see note below.. hot sauce matters) : 1
+chili powder (for sauce) : 1
+avocados (sometimes i replace with red pepper!) : 1
+parsley and sage leaves : 1
+angel hair pasta : 1
+lg. chicken breast : 1
+garlic wedges or powder garlic (for sauce) : 1
+cucumber...quartered and : 1
+cucumber *1  continental cucumber or 2 smaller ones : 1
+ounces- dry bow tie pasta- cooked per the box instructions : 1
+grounded coriander : 1
+chili (for sauce) : 1
+yogurt (greek yogurt) : 1
+uncooked medium shrimp : 1
+chicken breast cooked : 1
+celery 1 inch julienne cut : 1
+dry wakame : 1
+herb salt : 1
+venison (can sub  turkey or beef) : 1
+mizuna : 1
+oregano (dried is fine) : 1
+dry mint : 1
+flour (can be gluten free) : 1
+rotini pasta : 1
+estragon (dried is fine) : 1
+big ass pot : 1
+bushs chili beans (drained) : 1
+dry rose : 1
+whole peeled plum tomatoes (28 oz cans) : 1
+sweet onions (peeled and chopped) : 1
+roasted sesame seeds : 1
+whole kernel corn (drained) : 1
+chicken in water : 1
+bulb garlic (peeled and minced) : 1
+rotel (or diced tomatoes) : 1
+lg cucumbers [thin sliced] : 1
+butter (8 tablespoons each) : 1
+spicy ground italian pork sausage : 1
+dark soy sauce : 1
+onion [thin sliced] : 1
+pickling spice : 1
+tahini sauce : 1
+ozs elbow macaroni cooked till just tender in salted water : 1
+vidalia onions [thin sliced] : 1
+of chili : 1
+vinager [or more to taste] : 1
+family size of mexican cheese : 1
+sugar [or less to taste] : 1
+rosemary; : 1
+box of macaroni elbows (can be gluten free) : 1
+next seasonings... tyme : 1
+oregano; : 1
+small uncooked shrimp : 1
+sugar (to cut the acidity) : 1
+flours tortillas : 1
+ג— for the chicken marinade : 1
+&amp; parmesan cheese (garnish) : 1
+onion diced fine : 1
+and ripe plum tomatoes : 1
+lg thick chicken breasts : 1
+optional seasoning salt : 1
+peel of half a lemon : 1
+yellow onion (diced) : 1
+dill weed weed : 1
+frozen cheese ravioli : 1
+garlic grated or very finely : 1
+garlic (minced or chopped) : 1
+purreed basil : 1
+tomato puree or fresh tomatoes : 1
+brown sugar and siracha sauce (to taste) : 1
+sun dried tomatoes [in oil : 1
+frozen broccoli flourettes : 1
+permagiano regiano or parmesan : 1
+whisky or brandy : 1
+firm tomato [chopped] : 1
+to 1/4 cup grated parmesan cheese : 1
+jars alfredo sauce : 1
+thyme; : 1
+celery [with leaves] : 1
+for the toppings : 1
+merlot : 1
+thin spaghetti cooked in salted water : 1
+balsamic cream : 1
+mashrooms : 1
+bag chopped grilled chicken or cooked shrimp : 1
+spaghetti or other pasta : 1
+pk. mini cucumber : 1
+ground pepper and salt : 1
+water (cold is fine) : 1
+olive oil [to coat breasts] : 1
+spagettini : 1
+veggie broth powder (optional and to add for taste) : 1
+baby carrots(halfed) : 1
+roasted pepper strips : 1
+lg zip lock bag : 1
+chicken breasts; butterflied : 1
+cut hot pepper/ sambal oelek for extra &#39;bite&#39; : 1
+havarti cheese : 1
+mallet [for tenderizing] : 1
+flat breads : 1
+ג— for the baking &amp; toppings : 1
+add the broth : 1
+queso fresco : 1
+pork tenderloin; trimmed and : 1
+celery; medium dice : 1
+italian tomatoes drained : 1
+carrot; thin bias slices : 1
+italian sausage links : 1
+steak meat : 1
+venison mince : 1
+pasta cooked : 1
+yellow onion;  dice : 1
+unsalted stock : 1
+spring lettuce mix : 1
+raw prawns : 1
+yellow pepper;  dice : 1
+garlic; creamed : 1
+coriander; stems roughly sliced off : 1
+ranch seasoning : 1
+kilo gram pasta : 1
+sweet paprika : 1
+and 1/2 cup lentil (red) : 1
+green chiles : 1
+pinch sugar : 1
+garlic; smashed : 1
+roti ingredients --&gt;refer to my paratha egg roll recipe please : 1
+whole chillies (dried or fresh) : 1
+gram rice : 1
+green enchilada sauce : 1
+bag fresh spinach : 1
+pinch table salt &amp; freshly cracked black pepper : 1
+s oil : 1
+caraway green : 1
+sauce tomato 5 t spoon : 1
+jiffy corn muffin mix : 1
+mozzarella cheese [shreadded or sliced] : 1
+pasta water : 1
+parsley; : 1
+black peppers : 1
+hotdogs : 1
+black cumin seed seeds : 1
+basil [or purreed or  dried] : 1
+elbow or shell noodles : 1
+roma tomato [thin sliced] : 1
+thin sliced shallots : 1
+merlot-parmesean cheese : 1
+shallot;  julienne : 1
+table salt &amp; freshly cracked black pepper : 1
+sausage (could also use  beef or  turkey) : 1
+quality red wine : 1
+garlic; : 1
+peppered bacon (from the butcher) : 1
+marinara sauce (jarred or homemade) : 1
+-for number 2 ---------- : 1
+cucmbers : 1
+dried shitake mushrooms : 1
+sweet chilli sauce : 1
+sharp cheddar cheese (white or yellow) : 1
+dona maria mole : 1
+mix vegetables : 1
+sun dried red peppers : 1
+thick bread slices [your choice] : 1
+wrap : 1
+crumbled colby jack cheese : 1
+dill pickle halves [side] : 1
+shimla mirch : 1
+eggplants 4 to 6 inches long. cut into 12 long pieces each eggplant : 1
+your favorite salad dressing : 1
+jars salsa verde : 1
+oil i used peanut oil : 1
+dried chili flakes : 1
+cooked chickpeas : 1
+hamburger (your choice) : 1
+sized boiled potatoes cut in cubes : 1
+any kind of noodle : 1
+kl  potato red or white : 1
+daikon radish : 1
+pkgs super size yellow corn tortillas (@ 6-6 1/2&quot;) 10 per : 1
+pizza blend shredded cheese : 1
+parsely; : 1
+rosemary (or 1 tsp dry) : 1
+shiitake mushroom or 2 medium : 1
+mac and cheese blend shredded cheese : 1
+thyme (or 2 tsp dry) : 1
+potatoes peeled and : 1
+arugula &amp; spinach blend : 1
+shirataki : 1
+for cook aburaage shiitake and shirataki : 1
+deli roast beef : 1
+shiitake soaked water : 1
+parsley 2tbsp : 1
+i tsp crushed red pepper : 1
+tomato soas : 1
+salt as per ur taste. : 1
+bag of spinach : 1
+parmesan bread crumbs : 1
+dashi powder : 1
+mint 1tbsp : 1
+musterd : 1
+onion sliced thin : 1
+pork (or  beef) : 1
+italian seasoning and oregano : 1
+for sweet vinegar : 1
+thai chillies or 2 sarrano peppers : 1
+creole seasoning : 1
+proper amount olive oil : 1
+ts roasted and cushed cumin seed seeds : 1
+beer : 1
+whole milk to fill your pot : 1
+cheese (i used colby jack) : 1
+(8oz.)bag shredded cheddar cheese : 1
+pasta of your choice : 1
+ts pauv bhaji masala (indian vegetable spice mix) : 1
+(8oz)bag of bacon bits : 1
+punch of glass bean noodles : 1
+desi ghee : 1
+eggs (hard boiled) : 1
+shaved parmasan : 1
+prosciutto : 1
+small potato (1  potato) : 1
+cappelini pasta (thin pasta) : 1
+heaping spoonfull of mayonnaise : 1
+the head of a green cabbage : 1
+the head of a red cabbage : 1
+carrot() : 1
+whole wheat rotini : 1
+tortellini. mine was garlic and cheese stuffed : 1
+parmasean cheese : 1
+small black pitted olives : 1
+meat. brisket or beef tips preferably : 1
+yuzu or lemon : 1
+loaf of bread : 1
+lipton&#39;s mushroom onion soup mix : 1
+soysauce (1/2 of citrus juice) : 1
+artichoke hearts : 1
+/ a cup oil : 1
+long cucumber : 1
+tomato sauce (your choice) : 1
+roasted sesami oil : 1
+store bought pre cooked rotisserie chicken pulled : 1
+sweet onion- : 1
+sun-dried tomatoes : 1
+fruit + tablets grapes dried + coconut + honey + chocolate as : 1
+of spaghetti : 1
+garlic- : 1
+ciabatta loaf (or 4 thick slices crusty white bread) : 1
+dry bucatini noodles : 1
+jalapeno pepper- dice  (no seeds)- i evaluate the heat and adjust the amount used : 1
+tablet spoon lemon : 1
+italian season : 1
+jar of meatless spaghetti sauce : 1
+edamame spaghetti : 1
+green pepper-dice : 1
+oil a large spoon : 1
+tp of salt : 1
+cos or romaine lettuce : 1
+p age garlic : 1
+italian diced tomatoes : 1
+tomatoes-diced in juice : 1
+chipotles in adobo -pureed or finley chopped some people like more or less : 1
+pitted  olives : 1
+top dried basil : 1
+bulk sausage : 1
+for the dressing : 1
+/ 2 liters of water : 1
+maseca : 1
+anchovy from a tin : 1
+dole salad classic iceberg : 1
+smoked hog jowls : 1
+yogurt (greece yogurt) : 1
+medium block parmesan or grano padano cheese for grating and shaving (you won&#39;t use it all) : 1
+lattice : 1
+boneless chicken breast : 1
+raw minced garlic : 1
+of chickpea drained : 1
+lemon juce : 1
+shells pasta : 1
+raw organic kale/spinach/chard : 1
+/ a kilo tomato : 1
+stem of celery : 1
+velveeta : 1
+sweet corn/green peas : 1
+eggplant *depend on the variety and size : 1
+grilled sweet corn stripped from the cob (if not available 8 oz. can works) : 1
+tomato paste + 1 teaspoon sugar or 2 tablespoons catsup if you don&#39;t have tomato paste : 1
+pork mince *or other meat or tofu : 1
+sun dried tomatoes : 1
+cooked chicken diced 1/4 inch (leg quarter are very good for this or baked thighs) : 1
+acetic : 1
+parsley (for garish) : 1
+true story organic sweet italian chicken sausage : 1
+brown sugar(to taste after that) : 1
+lime juice (to taste) : 1
+tablespoon pure olive oil : 1
+servings spaghetti : 1
+ham bouillon dissolved in 1 cup of water : 1
+celery sticks : 1
+coriander chopped to finish just before service : 1
+cheddar jack : 1
+onion ( chopped) : 1
+bucatini pasta : 1
+oil or 1 tbsp butter : 1
+green onion *sliced : 1
+hotdogs or 6 pcs vienna sausage : 1
+vegetable bouillon : 1
+frozen prawns (fresh can also work) : 1
+chicken stock (add stock according to your preference) : 1
+&lt;sauce ingredients&gt; : 1
+small curd cottage cheese : 1
+sausage links : 1
+(1 big can) evaporated milk : 1
+lettuce (chopped) : 1
+brown onions : 1
+julienned carrots : 1
++/- picadillo (i have a recipe for this) : 1
+baby portobello mushrooms : 1
+petite diced tomatoes : 1
+piece ginger *grated : 1
+very ripe plantains : 1
+puttanesca sauce : 1
+miso *dark colour type recommended : 1
+oil in large skillet : 1
+a/p flour : 1
+mozzarella or cheese of your choice : 1
+i tbs fresh thyme : 1
+canelini beans : 1
+soy sayce : 1
+dry white wine : 1
+eggs beaten : 1
+lean ground chicken : 1
+leftover roasted green beans and red peppers : 1
+water to cook spinach : 1
+sake *can be replaced by water : 1
+celery with leaves : 1
+toban djan (chili bean sauce) : 1
+@ 12 small red potatoes : 1
+liquid (any mixture of water and unsalted stock you like) : 1
+grinned black sesame : 1
+small pasta : 1
+ranch dressing : 1
+potato starch flour : 1
+apple cider or distilled distilled vinegar : 1
+chicken tenderloin (2 pieces) : 1
+jalapeֳ±os; : 1
+rice wine vinegar : 1
+farfalline pasta : 1
+cabbage (roughly 1&quot;pieces) : 1
+prosciutto ham : 1
+(or one 28 oz. can) unsalted white beans : 1
+maggi mushroom penne pasta : 1
+nagaimo-potato : 1
+onion; : 1
+cooked red lentil penne : 1
+orange segments : 1
+white balsamic vinaigrette : 1
+blood orange segments : 1
+baby bella mushrooms : 1
+@ 3 cups leftover sage augratin potatoes : 1
+sweet frozen peas : 1
+lemon segments : 1
+fat free half &amp; half : 1
+jiffy corn mix : 1
+black/kidney beans (14oz) : 1
+brown bread : 1
+topping like bacon : 1
+worcester sauce : 1
+italian herb blend : 1
+chilies/jalapeֳ±os : 1
+lime segments : 1
+parmeson cheese : 1
+square beans : 1
+packaged spaghetti : 1
+celery (use celery rib and leaf separately) : 1
+blue containers shredded cheese : 1
+sized japanese cucumber : 1
+spicy ventricina salami : 1
+container of ricotta cheese : 1
+garlic (sliced) : 1
+parmesan cheese (as much as you like) : 1
+watercress and spinach : 1
+tuna (oil-packed preferred : 1
+spirali pasta : 1
+air dried prosciutto : 1
+shell macaroni : 1
+rigatoni : 1
++ 1/2 c monterey cheese : 1
+marinara sauce : 1
+freshly grounded black pepper : 1
+doses of salt : 1
+johnsonville mild italian sausage links : 1
+honey mustard : 1
+red chili pepper flake : 1
+tomato halved : 1
+box rigatoni pasta : 1
+dill relish (not sweet) : 1
+table salt (any type of salt is fine) : 1
+bag romaine hearts : 1
+big leaves lettuce : 1
+celery salt (any type of salt is fine) : 1
+use ground black pepper : 1
+kewpie mayonnaise : 1
+tomato; seeded &amp; : 1
+med. eggs : 1
+shrimp devained and clean : 1
+big mango : 1
+cont. blackberries : 1
+finely sliced onion : 1
+french salad dressing : 1
+dragon fruit : 1
+whole fresh lime : 1
+velveta cheese : 1
+butter lettuce : 1
+coleslaw mix : 1
+cucumber finely : 1
+seedless cucumber (2 to 3 small persian or kirby types) : 1
+green grapes : 1
+linguine pasta : 1
+italian sausage (5 links) : 1
+korean kim(seasoned dried laver flakes) : 1
+morton nature seasoning : 1
+- dressing -- : 1
+of a  onion : 1
+sweet melon : 1
+garlic pepper : 1
+(or more) sriracha : 1
+angel hair pasta (you could also use spaghetti or spaghettini) boiled al dente : 1
+season salt : 1
+(or so) can tomatoes : 1
+green apple : 1
+- chicken -- : 1
+beef stock cube : 1
+some strawberries : 1
+light olive or vegetable oil : 1
+italian breadcrumbd : 1
+pork mince : 1
+some flavorless oil : 1
+chopped tomatoes : 1
+bacon drippings : 1
+types of white beans : 1
+mild rotel : 1
+champignons : 1
+kale (as desired) : 1
+(8) ounce container sour cream : 1
+prawns : 1
+dry dried basil -- : 1
+of crushed tomatoes : 1
+twigs of basil : 1
+medium salsa : 1
+(to taste) cayenne pepper : 1
+any herbs : 1
+leveled spoonful of cornstarch dissolved in a little bit of water : 1
+each egg : 1
+hot sauce : 1
+vine tomatoes : 1
+beef (or  turkey) : 1
+chicken bouillon cube : 1
+flat leaf parsley : 1
+cinnamon powder : 1
+-lb fresh tortellini : 1
+dried linguine : 1
+sherry vinegar : 1
+strawberry juice : 1
+fine chopped parsley : 1
+chicken breast (about 12-15 mini fillets!) : 1
+ranch : 1
+yusuf effendi or chinese orange : 1
+semolina flour : 1
+grape molasses : 1
+penne : 1
+rep pepper flake : 1
+spoon for water : 1
+- salad -- : 1
+a  onion : 1
+mixed greens (i use about 1.5 to make 3 servings) : 1
+olive oil (or whatever salad or cooking oil you have on hand) : 1
+montamore cheese; : 1
+salt (for boiling the spaghetti) : 1
+few spinach : 1
+pasta (i used shell pasta) : 1
+flour for dusting : 1
+frozen ravioli : 1
+for pasta: : 1
+handful watercress : 1
+red lentil penne pasta : 1
+large jar of pasta sauce : 1
+farfalle : 1
+water for boiling : 1
+large bag of shredded mozzarella cheese : 1
+chicken broth (low sodium recommended) : 1
+handful walnut : 1
+for sauce: : 1
+salt for boiling : 1
+elbow pasta (or other small pasta shape) : 1
+chestnuts if you have some :) : 1
+sprinkle of nutmeg : 1
+lemon; : 1
+chicken broth powder : 1
+gloves garlic (slices) : 1
+sprinkle of cardamom : 1
+ranch dip mix : 1
+mushroom stems removed : 1
+onion (slices) : 1
+ֲ·additional shredded cheese : 1
+chicken fillet (slices square) : 1
+milk (divided) : 1
+some bread crumbs : 1
+a cup after all purpose white flour : 1
+homemade mayonnaise : 1
+other ingredients : : 1
+ֲ·drizzle of sriracha : 1
+chopped tomatoe : 1
+romaine lettuce; : 1
+ֲ·sprinkle of green onion : 1
+fowl : 1
+cheese for topping : 1
+shallots; : 1
+noodles elbow or shell : 1
+elbow pasta : 1
+brown bread slices (side removed) : 1
+tblsp butter : 1
+green lentil penne (cooked) : 1
+tablespoonfuls wheat flour : 1
+water to boil noodles : 1
+spinach leaves (finely chopped) : 1
+serrano peppers; : 1
+red lentil penne (cooked) : 1
+sweet corn cob (kernels extracted) : 1
+tomato sauce 1 cup shredded cheese : 1
+eachor to ur liking garlic : 1
+small spoon chicken stock : 1
+tblsp corn starch : 1
+made tagliatelle - : 1
+cranberry simple syrup : 1
+tofu : 1
+jumbo lump crab meat : 1
+macaroni boiled early : 1
+limes; peeled and juiced : 1
+melt : 1
+garlic &amp; herb pub cheese : 1
+suitable amount powered cheese : 1
+bacon; : 1
+a tea mug of pasta water (from the tagliatelle) : 1
+onion diced thin : 1
+suitable amount parsley : 1
+crunch: : 1
+suitable amount table salt : 1
+grapeseed oil : 1
+cabbage leaves : 1
+of chicken thighs : 1
+(steamed : 1
+small handful of chopped fresh spinach : 1
+of 16 oz rice (long grain) or rice of choice : 1
+ramen noodles : 1
+the ingredients are really whatever you want its a good idea to have some basics to start with for me these are : 1
+crispy red peppers (salad topping) : 1
+cloved garlic : 1
+handfuls spinach : 1
+original rotel : 1
+for white sauce: : 1
+pasata : 1
+half and half (or cream heavy whipping) : 1
+big sweet potatoes : 1
+corn tortillas (cut into strips) : 1
+sprinkle of dried chives : 1
+some pinches salt : 1
+this recipe uses the left-overs from my almost jerk chicken. you can use whatever you have in the fridge : 1
+sprinkle of red chili flakes : 1
+all-purpose wheat flour(maida) : 1
+onion (dice) : 1
+natural greek yogurt : 1
+homemade salad dressing : 1
+lawrys seasoning salt (for tortilla strips) : 1
+bay leave : 1
+exciting stuff for flavour like gherkins : 1
+for red sauce: : 1
+lemon juice (for tortilla strips) : 1
+multigrain wrap or flatbread : 1
+table salt to your liking : 1
+toppings optional: avocado slices and/or shredded cheese : 1
+salad onion : 1
+gloves garlic : 1
+garam masala : 1
+small tomato sauce : 1
+black olive : 1
+squirt sriracha : 1
+red tomatoes : 1
+any pasta of your choice : 1
+queso dip : 1
+spices: : 1
+precooked red lentil penne : 1
+nameko mushrooms (or other) : 1
+vegetable stock cubes : 1
+half half : 1
+chili powder (start at 2 and add more to taste) : 1
+coarse salt and black pepper : 1
+and deveined jumbo shrimp : 1
+velveeta block cheese : 1
+red chilli flakes : 1
+jalapeֳ±o pepper : 1
+salt and black pepper : 1
+loose italian sausage : 1
+whole wheat pasta cooked as said on the box : 1
+elbow noodles : 1
+italian seasonings : 1
+spinach washed and roughly : 1
+your favorite spaghetti sauce : 1
+monterey jack : 1
+cheese -italian blend works best : 1
+mozarella cheese : 1
+(10 inch burrito size) flour tortilla : 1
+of a brick of pepper jack cheese : 1
+italian blend cheese : 1
+gloves of garlic : 1
+lasagna sheets : 1
+figs (i think dry figs will work as well) : 1
+shredded : 1
+brick of provolone cheese : 1
+sharp cheddar cheese (32 oz bags) : 1
+uncooked spaghetti (angle hair of fettuccini) : 1
+cubes of cheese : 1
+* 12 microwave safe tray : 1
+nuts (almonds : 1
+aluminum foil : 1
+walnuts toasted breaded and roughly : 1
+red chilli : 1
+loosely shredded or chopped roast turkey : 1
+&lt;for dressing&gt; : 1
+elbow macaroni med cut : 1
+full cream milk : 1
+water from cooking the spaghetti : 1
+dried cranberries (raisins : 1
+break of golden curry sauce mix : 1
+italian sausage (i use turkey sausage) : 1
+meatballs (64 total) : 1
+cheddarcheese : 1
+to 1/4 cup chopped fresh herbs (whatever you like and have on hand words) or use 1 to 2 teaspoons dried : 1
+pasta 1/2 cup sweet corn : 1
+pickled peppers (if you only have regular cucumber pickles : 1
+red pepper 1/2 green bell peepper : 1
+ֲ·sour cream : 1
+cayenne powder : 1
+mayonnaise depending on creamy you like it : 1
+bulb of onions (chopped) 2  tomatoes (blended) : 1
+onion (diced) : 1
+i stalk green onion (chopped) : 1
+pickle juice (from whichever pickles you ended up using) : 1
+ֲ·diced avocado : 1
+of pineapple chucks : 1
+seasonings : 1
+garlic (purchased jar) : 1
+packet smoked salmon : 1
+vegetable or chicken stock : 1
+ֲ·sriracha : 1
+cooking water from spaghetti : 1
+table salt (you probably won&#39;t need much between the seasoning on your turkey and the salt in the mayo : 1
+kiwi : 1
+sized carrots (chopped) : 1
+basil (chopped) : 1
+sesame seeds (black and white) : 1
+of tomatoes : 1
+roughly 12 oz. bag of spinach for salad : 1
+ֲ·diced tomatoes : 1
+slider (small) buns : 1
+red or onion cut into very thin slices (later in the year : 1
+left over turkey (roasted or fried) : 1
+of tomato sauce : 1
+garlic gratted : 1
+optional: cubed avocado and toasted breaded almonds : 1
+marshmallows (6 oz.) : 1
+pickled gherkins : 1
+packed spinach : 1
+ֲ·shredded lettuce : 1
+chipotle mayo : 1
+of tomato paste : 1
+onion chopped finely : 1
+generous dashes of italian seasoning : 1
+light soy sauce (start at 3) : 1
+desertspoon pickled capers : 1
+whole berry cranberry sauce (left over) : 1
+hardboiled eggs : 1
+ֲ·pico de gallo : 1
+sub or panini buns : 1
+ֲ·salsa : 1
+mini marshmallows : 1
+pickled chillies : 1
+spicy brown mustard : 1
+pistachios : 1
+shallots (onion is fine in a pinch) : 1
+box macaroni (i used muellers) : 1
+pistachio pudding : 1
+vegetable or light olive oil : 1
+chunky salsa : 1
+sized dill pickle : 1
+cool whip : 1
+pasta shells : 1
+garlic paste (or 2 cloves : 1
+cucumber (keep skin on you prefer) : 1
+container part nonfat ricotta : 1
+picante salsa : 1
+cayenne pepper (or more if you like it hot!) : 1
+of sauerkraut : 1
+sweet relish : 1
+pink canned salmon drained : 1
+plus two tbs of mayonnaise (i used duke mayonnaise) : 1
+chilli powder : 1
+frozen chopped spinach : 1
+hellman&#39;s mayonnaise (heaping) : 1
+half and half : 1
+italian 5 cheese blend (such as kraft) : 1
+heinz catsup : 1
+rotini noodles : 1
+oil (i used canola : 1
+of louisiana brand hot sauce : 1
+mexican blend or cheddar cheese : 1
+cannelini beans : 1
+small pinch of paprika : 1
+small pinch of red pepper : 1
+spaghetti sauce (pick your fave) : 1
+kosher pickle : 1
+topping ideas: green onion : 1
+a butternut : 1
+sandwich ingredients : 1
+for the pasta noodles: : 1
+salt for taste : 1
+cliantro : 1
+light greek salad dressing or vinaigrette : 1
+zucchinni : 1
+yellow spagetthi squash slice /2 : 1
+monterrey jack : 1
+italian sausage (i used 2 cups shredded chicken) : 1
+pepper for taste : 1
+porc : 1
+tbs.parsley : 1
+chiles serranos : 1
+for the pasta sauce: : 1
+the following: : 1
+orange pepper : 1
+orzo pasta : 1
+mixed mushrooms : 1
+-johnsonville brats; (sweet italian) : 1
+med to  onions : 1
+-hoagie\sub rolls; (toasted breaded) : 1
+bunches spinach : 1
+milk (whole milk is best for the creamiest texture) : 1
+ֲ·parmesan cheese : 1
+tuna sashimi : 1
+onions; (cut in half &amp; sliced) : 1
+cracked blackpepper : 1
+japanese radish : 1
+herbs de provence : 1
+white green onion : 1
+ajinomoto : 1
+sesame sauce (kewpie) : 1
+albahaca : 1
+smashed peanut : 1
+80/20 ground beef : 1
+salt (opt.) : 1
+small tub of mushrooms : 1
+big handfuls fresh spinach : 1
+cloves garlic : 1
+beef tomatoes : 1
+dry dill : 1
+oil (vegetable or olive work fine) : 1
+whipping cream : 1
+sprinkled; grated parmesan cheese : 1
+all-purpose cream : 1
+cucumber 1 (grated) : 1
+tightly packed brown sugar : 1
+condensed milk : 1
+carrot 1 (grated) : 1
+ketcup : 1
+pack/box of graham crackers : 1
+for the sponge : 1
+virgin oil : 1
+around 12 pieces of oreo cookies : 1
+pasta (elbow macaroni/angel hair/gnocchi etc.) : 1
+mint leaves handful (blended to a paste) : 1
+free-range eggs : 1
+pre cooked weight. lobster tails : 1
+butter (for spread) : 1
+smoked sausage sliced thin : 1
+pesto sauce (fresh or pre-made works) : 1
+piches of dried parsley : 1
+pasta tri-color : 1
+mini subs : 1
+51-60 count shrimp : 1
+cooked mashed potatoes : 1
+wild rocket : 1
+button or sliced mushrioms : 1
+bacon bits : 1
+oregano (fresh or dried works) : 1
+part nonfat ricotta cheese : 1
+small shell pasta : 1
+g/8oz caster sugar : 1
+x punnet mixed tomato : 1
+size ripe tomatoes : 1
+chili flakes : 1
+dried basil (finely chopped) : 1
+onion sauted : 1
+ash goats cheese : 1
+tuna filling: : 1
+organic milk : 1
+kulit : : 1
+mint leaves (finely chopped) : 1
+for the jam : 1
+onion (the missed ingredient) : 1
+egg beaten : 1
+almond flakes : 1
+siracha sauce (adjust to your heat level) : 1
+chia seeds : 1
+tepung terigu : 1
+rotisserie chicken : 1
++ 1/2 c warm water : 1
+white or brown mushrooms : 1
+sundried tomato paste : 1
+clove garlic : 1
+pickled jalapenos : 1
+honey lime vinaigrette : 1
+sdm margarin (dilelehkan) : 1
+good drizzle olive oil (and extra for frying) : 1
+good bacon : 1
+g/7oz raspberries : 1
+kale/red cabbage/brussel sprout/broccoli salad : 1
+smoked salmon cut in small pieces : 1
+rosemary infused oil : 1
+simmering salted water : 1
+pkg velveeta cheese : 1
+air : 1
+cracked black pepper and rock salt : 1
+g/9oz jam sugar : 1
+jack cheese : 1
+cooked : 1
+cacique beef or pork chorizo : 1
+sdt garam : 1
+diced : 1
+for the cream : 1
+gluten-free dried spaghetti : 1
+beef consomme : 1
+egg roll wrappers : 1
+spray oil : 1
+single cream : 1
+oil to fry with : 1
+belgian wit ale : 1
+provolene : 1
+cherry or baby plum tomatoes : 1
+juice from 1 lemon : 1
+isi : : 1
+pot of homemade chili : 1
+chicken marinade : 1
+brown sugar / honey : 1
+cheddar cheese (sharp or mild) : 1
+tender garlics : 1
+btr telur rebus : 1
+blood orange olive oil : 1
+free-from pesto from my previously posted recipe : 1
+chunky garlic : 1
+couple of thin slices of serrano ham (or proscuitto) : 1
+chile infused olive oil : 1
+btr bawang putih : 1
+basalmic vinegar : 1
+pasta (i used radiatore : 1
+table salt and cracked black pepper : 1
+uncooked penne pasta : 1
+cumin seed (comino) : 1
+peel and juice from 1 lemon : 1
+garnish : 1
+leggos pasta bake sauce creamy tomato &amp; mozarella : 1
+hoagie buns : 1
+g/7oz icing sugar : 1
+bh bratwurst sosis : 1
+boneless chicken : 1
+lg. yellow onion (chopped) : 1
 uncooked shrimp : 1
-country gravy mix : 1
-andouille sausage : 1
-frozen potato rounds : 1
+sm portobello mushrooms (chopped) : 1
+bh cabai : 1
+each yellow &amp; red peppers (chopped) : 1
+whole capsicum : 1
+parmesan style cheese : 1
+spaghetti or noodles : 1
+lawry&#39;s seasoning salt : 1
+italian dressing : 1
+fajita salad : 1
+kikkmon soy sauce : 1
+for chicken : 1
+chicken breast (cut into stripes) : 1
+bh jeruk nipis : 1
+yellow onion (peeled and sliced) : 1
+olive oil (i used orange flavor) : 1
+thin spaghetti : 1
+yellow pepper (seeds removed and sliced) : 1
+salt (i used table salt) : 1
+diced tomatoes : 1
+sdm mayonnaise : 1
+seasoned salt : 1
+thin sliced black forrest ham : 1
+sdm mustard : 1
+avocado (sliced) : 1
+spreadable margarine : 1
+your favorite dressing for salad : 1
+small jar banana peppers : 1
+pasta sheets : 1
+uncooked elbow macaroni : 1
+sdt gula : 1
+lg. tomato (sliced) : 1
+for the sauce: : 1
+for cajun cream sauce : 1
+softened butter : 1
+keju secukupnya : 1
+hellmans mayonnaise : 1
+salsa (i used mild : 1
+any lettuce of choice : 1
+thai sweet chili sauce : 1
+tabespoon mustard sauce : 1
+lemon juicel : 1
+each cayenne and black pepper and table salt : 1
+each olive oil and butter for cooking : 1
+marscapone cheese : 1
+each fresh chopped basil and parsley : 1

@@ -9,9 +9,14 @@ namespace Logic {
 
         
         public static string AdjustNames(string item) {
-            SimpleNames.Keys.ToList().ForEach(key => {
+            ChangePartialPhrases.Keys.ToList().ForEach(key => {
                 if (item.Contains(key))
-                    item = item.Replace(key, Map.SimpleNames[key]);
+                    item = item.Replace(key, Map.ChangePartialPhrases[key]);
+            });
+
+            ChangeWholePhrases.Keys.ToList().ForEach(key => {
+                if (item == key)
+                    item = Map.ChangeWholePhrases[item];
             });
             return item;
         }
@@ -35,7 +40,7 @@ namespace Logic {
                 innerpart = split[0];
             else
                 innerpart = split[1];
-            split = innerpart.Split('-');
+            split = innerpart.Split(new string[1] { " - " }, StringSplitOptions.None);
             if (split[0] != string.Empty)
                 innerpart = split[0];
             else
@@ -57,15 +62,30 @@ namespace Logic {
             { "tablespoon", "tbsp"},
 
         };
+        public static Dictionary<string, string> ChangeWholePhrases = new Dictionary<string, string>() {
+            { "flour","all-purpose wheat flour"},
+            { "cayenne" , "cayenne pepper"}
 
-        public static Dictionary<string, string> SimpleNames = new Dictionary<string, string>() {
+        };
+        public static Dictionary<string, string> ChangePartialPhrases = new Dictionary<string, string>() {
+            { "chihuahua cheese", "queso chihuahua cheese"},
+            { "spaghetti noodles", "noodles"},
+            { "macaroni noodles", "noodles"},
+            { "lasagna noodles", "noodles"},
+            { "pork roast", "pork loin roast"},
+            { "extra virgin olive oil","olive oil"},
+            { "freshly ground black pepperl","black pepper"},
             { "hard eggs","boiled eggs"},
-            { "roma tomatoes","tomatoes"},
-            { "grape tomatoe","tomatoes"},
+            { "hard boiled eggs","boiled eggs"},
+            { "roma tomatoes","tomato"},
+            { "grape tomatoes","tomato"},
             { "dried basil leaves", "dried basil" },
+            { "basil leaves", "dried basil" },
             { "basil leaf", "dried basil"},
             { "bay leaves", "bay leaf"},
             { "salt to taste","table salt" },
+            { "salt pepper","table salt" },
+            { "beef mince", "ground beef"},
             { "scallions","green onion" },
             { "green spring onion", "green onion"},
             { "spring onions", "green onion"},
@@ -105,7 +125,6 @@ namespace Logic {
             { "all-purpose flour","all-purpose wheat flour"},
             { "whole wheat flour","whole-grain wheat flour"},
             { "all purpose flour","all-purpose wheat flour"},
-            { "flour","all-purpose wheat flour"},
             { "pinch table salt and black pepper","table salt" },
             { "kosher salt","table salt"},
             { "cumin","cumin seed"},
@@ -125,23 +144,25 @@ namespace Logic {
             { "white vinegar","distilled vinegar"},
             { "ketchup","catsup"},
             { "sirloin steak","top sirloin steak"},
-            { "red onion","onions"},
-            { "white onion", "onions" },
+            { "red onion","onion"},
+            { "white onion", "onion" },
             { "white wine vinegar","red wine vinegar"},
             { "seashell pasta", "pasta" },
             { "prime rib", "rib eye" },
+            { "yellow squash", "summer squash"},
             { "whole chicken", "chicken" },
             { "links pork sausage links", "frankfurter pork sausage"},
             { "packages refrigerated crescent roll dough (such as pillsbury&#174;", "pillsbury refrigerated dough"},
             { "italian parsley", "parsley"},
+            { "parsley flakes", "parsley"},
             { "salmon fillets", "salmon"},
-            { "red pepper", "red peppers" },
             { "pepper (any color)", "peppers" },
             { "pumpkin puree", "pumpkin" },
             { "breakfast sausage", "pork sausage" },
             { "strips bacon", "bacon" },
             { "chorizo sausage", "pork sausage" },
             { "flat-leaf parsley", "parsley" },
+            { "parsley for garnish", "parsley"},
             { "frozen hash brown potatoes", "hash brown potatoes" },
             { "half-and-half cream", "half and half cream" },
             { "dry sherry", "dry dessert wine" },            
@@ -158,7 +179,9 @@ namespace Logic {
             { "whole wheat pastry flour", "wheat flour" },
             { "barbeque", "barbecue" },
             { "spinach leaf", "chopped or leaf spinach" },
-            { "cherry tomatoes", "tomatoes" },
+            { "cherry tomatoes", "tomato" },
+            { "vine ripened tomatoes", "tomato"},
+            { "cocktail tomatoes", "tomato"},
             { "toast", "toasted bread"},
             { "smoked ham", "cured ham"},
             { "lean ground beef", "ground beef"},
@@ -168,13 +191,13 @@ namespace Logic {
         };
 
         public static List<string> PharsesToRemove = new List<string> {
-           "fillets", "prepared", "package", "packages","blanched","slivered",
+           "fillets", "prepared", "package", "packages","blanched","slivered","florets",
             "melted","sifted", "sprig", "sprigs", "ground", "shredded", "cubed", "rolled",
             "head", "heads", "thick sliced", "sliced", "stalk", "stalks", "finely diced",
             "diced", "dried minced", "minced", "finely chopped", "chopped", "grated","mashed","crushed",
             "ripe", "steaks", "cold", "warm", "fresh",
             "canned", "cans","can","boiled", "(optional)", "asiago",  "panko" , "steaks", "- peeled","halves",
-            "for frying", "herb-seasoned", "steel cut", "peeled","solid pack"
+            "for frying", "herb-seasoned", "steel cut", "peeled","solid pack","small dice",";"
         };
 
 
