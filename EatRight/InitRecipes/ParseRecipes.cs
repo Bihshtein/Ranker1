@@ -20,7 +20,7 @@ namespace InitRecipes {
 
         public static Dictionary<RecipesSource, string> RecipesURLs = new Dictionary<RecipesSource, string>() {
             {RecipesSource.Cookpad,  "https://cookpad.com/us/" },
-         //   {RecipesSource.AllRecipes,  "http://allrecipes.com/recipes/" },
+         //  {RecipesSource.AllRecipes,  "http://allrecipes.com/recipes/" },
          
         };
 
@@ -29,15 +29,15 @@ namespace InitRecipes {
             {RecipesSource.AllRecipes,  "http://allrecipes.com/recipe/" },
         };
 
-        private static Dictionary<RecipesSource, Dictionary<MealType, string>> MealTypesURNs = new Dictionary<RecipesSource, Dictionary<MealType, string>>() {
-            {RecipesSource.AllRecipes, new Dictionary<MealType, string>() {
-                {MealType.Dinner,  "17562/dinner" },
-                {MealType.Breakfast,  "78/breakfast-and-brunch" } }
+        private static Dictionary<RecipesSource, Dictionary<MealType, Tuple<string, int>>> MealTypesURNs = new Dictionary<RecipesSource, Dictionary<MealType, Tuple<string, int>>>() {
+            {RecipesSource.AllRecipes, new Dictionary<MealType, Tuple<string, int>>() {
+                {MealType.Dinner, new Tuple<string,int>( "17562/dinner",200) },
+                {MealType.Breakfast, new Tuple<string,int>( "78/breakfast-and-brunch",100) } }
             },
-            {RecipesSource.Cookpad, new Dictionary<MealType, string>() {
-              //  {MealType.Breakfast,  "search/breakfast" },
-                {MealType.Lunch,  "search/lunch" }, }
-               // {MealType.Dinner,  "search/dinner" }}
+            {RecipesSource.Cookpad, new Dictionary<MealType, Tuple<string, int>>() {
+               {MealType.Breakfast, new Tuple<string,int>( "search/breakfast", 300)},
+                {MealType.Lunch,  new Tuple<string,int>("search/lunch",900) },
+               {MealType.Dinner, new Tuple<string,int>( "search/dinner" ,300)}}
             }
         };
 
@@ -52,7 +52,7 @@ namespace InitRecipes {
         }
 
         public static void AddRecipesBySource(KeyValuePair<RecipesSource, string> source, RestDBInterface unit) {
-            MealTypesURNs[source.Key].ToList().ForEach(m => AddRecipesByMealType(source.Key, m.Key, source.Value + m.Value, unit));
+            MealTypesURNs[source.Key].ToList().ForEach(m => AddRecipesByMealType(source.Key, m.Key, source.Value + m.Value.Item1, unit,m.Value.Item2));
         }
 
         public static void AddRecipesByMealType(RecipesSource source, MealType mealType, string mealTypeURN, RestDBInterface unit, int loadBulkSize = 1000) {
@@ -76,7 +76,7 @@ namespace InitRecipes {
             }
         }
 
-        private static void AddRecipesByURL(string categoryURN, RestDBInterface unit, int pagesLimit = 20) {
+        private static void AddRecipesByURL(string categoryURN, RestDBInterface unit, int pagesLimit = 50) {
             Indexes.Clear();
             var client = new WebClient();
             log.Debug("Locating recipes in ->" + categoryURN + " - started");

@@ -110,8 +110,13 @@ namespace Logic
             "large",
             "small head of",
             "small",
+            "medium size of",
+            "medium size",
+            "medium bunch of",
             "medium",
-            
+            "handfuls",
+            "handful",
+
         };
         public static List<string> RelativeSizes = new List<string> {
             // relative to the weight stated by the USDA for the product
@@ -167,6 +172,7 @@ namespace Logic
             " carton",
             " stalk",
             " envelope",
+           
         };
 
 

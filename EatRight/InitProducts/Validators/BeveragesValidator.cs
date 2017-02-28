@@ -5,7 +5,7 @@ namespace InitProducts {
     internal class BeveragesValidator : BasicValidator {
         public BeveragesValidator() {
             MainParts = new List<string>() {
-               "Alcoholic beverage", "beer","coffee","liqueur", "wine","tea" ,"drink","whiskey","pina colada","cola"
+            "beer","coffee","liqueur", "wine","tea" ,"drink","whiskey","pina colada","cola"
             };
 
             SecondParts = new List<string>() {

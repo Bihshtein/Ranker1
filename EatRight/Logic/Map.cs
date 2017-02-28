@@ -64,11 +64,29 @@ namespace Logic {
         };
         public static Dictionary<string, string> ChangeWholePhrases = new Dictionary<string, string>() {
             { "flour","all-purpose wheat flour"},
-            { "cayenne" , "cayenne pepper"}
+            { "cayenne" , "cayenne pepper"},
+            { "spaghetti" , "pasta"}
 
         };
         public static Dictionary<string, string> ChangePartialPhrases = new Dictionary<string, string>() {
+            { "light soy sauce", "soy sauce"},
+            {"mint leaves" ,"peppermint"},
+            { "mozzarella string cheese", "mozzarella cheese" },
+            { "tomato juice or v8", "tomato juice"},
+            { "button mushroom", "white mushroom"},
+            { "prawn", "shrimp"},
+            { "iceberg lattuce", "iceberg lettuce"},
+            { "lettuce leaves", "lettuce"},
+            { "romain lettuce", "romaine lettuce"},
+            { "beef hotdogs", "frankfurter"},
+            { "spaghetti pasta" , "pasta"},
+            { "spicy chorizo","chorizo"},
+            { "macaroni pasta" , "pasta"},
+            { "penne pasta" , "pasta"},
+            { "an onion", "onion"},
+            { "tamatos","tomatoes"},
             { "chihuahua cheese", "queso chihuahua cheese"},
+            { "pancakes mix", "pancakes dry mix"},
             { "spaghetti noodles", "noodles"},
             { "macaroni noodles", "noodles"},
             { "lasagna noodles", "noodles"},
@@ -86,7 +104,9 @@ namespace Logic {
             { "salt to taste","table salt" },
             { "salt pepper","table salt" },
             { "beef mince", "ground beef"},
+            { "scallion","green onion" },
             { "scallions","green onion" },
+            { "frozen shrimps", "shrimps"},
             { "green spring onion", "green onion"},
             { "spring onions", "green onion"},
             { "spring onion", "green onion"},
@@ -122,6 +142,7 @@ namespace Logic {
             { "zest", "peel" },
             { "white sugar","granulated sugar"},
             { "bread flour","bread wheat flour"},
+            { "white flour","all-purpose wheat flour"},
             { "all-purpose flour","all-purpose wheat flour"},
             { "whole wheat flour","whole-grain wheat flour"},
             { "all purpose flour","all-purpose wheat flour"},
@@ -155,6 +176,7 @@ namespace Logic {
             { "packages refrigerated crescent roll dough (such as pillsbury&#174;", "pillsbury refrigerated dough"},
             { "italian parsley", "parsley"},
             { "parsley flakes", "parsley"},
+            { "parsley leaves", "parsley"},
             { "salmon fillets", "salmon"},
             { "pepper (any color)", "peppers" },
             { "pumpkin puree", "pumpkin" },
@@ -179,6 +201,7 @@ namespace Logic {
             { "whole wheat pastry flour", "wheat flour" },
             { "barbeque", "barbecue" },
             { "spinach leaf", "chopped or leaf spinach" },
+            { "spinach leaves", "spinach" },
             { "cherry tomatoes", "tomato" },
             { "vine ripened tomatoes", "tomato"},
             { "cocktail tomatoes", "tomato"},
@@ -191,13 +214,14 @@ namespace Logic {
         };
 
         public static List<string> PharsesToRemove = new List<string> {
-           "fillets", "prepared", "package", "packages","blanched","slivered","florets",
+         "some","fillets", "prepared", "package", "packages","blanched","slivered","florets",
+         "(peeled)","(sliced)","(chopped)",
             "melted","sifted", "sprig", "sprigs", "ground", "shredded", "cubed", "rolled",
             "head", "heads", "thick sliced", "sliced", "stalk", "stalks", "finely diced",
             "diced", "dried minced", "minced", "finely chopped", "chopped", "grated","mashed","crushed",
-            "ripe", "steaks", "cold", "warm", "fresh",
+            "ripe", "steaks", "cold", "warm", "fresh", "cut into",
             "canned", "cans","can","boiled", "(optional)", "asiago",  "panko" , "steaks", "- peeled","halves",
-            "for frying", "herb-seasoned", "steel cut", "peeled","solid pack","small dice",";"
+           "and cut into circles", "for frying", "herb-seasoned", "steel cut", "peeled","solid pack","small dice",";"
         };
 
 

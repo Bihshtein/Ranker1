@@ -155,6 +155,7 @@ namespace RestModel {
             (x.Name2.Equals(part1) && x.Name1.Equals(part2)) ||
             (x.Name1.Equals(part1) && x.HealthData.Equals(part2)) ||
             (x.Name2.Equals(part1) && x.Name1.Equals(part2 + "s")) ||
+            (x.Name2.Equals(part1) && x.Name1.Equals(ParseHelpers.GetWithoutLast_S_letter(part2))) ||
             (x.Name2.Equals(part1) && x.Name1.Equals(part2 +"es")) ||
             (x.Name3.Equals(part1) && x.Name1.Equals(part2 + "s")) ||
             (x.Name3.Equals(part1) && x.Name1.Equals(part2 + "es")) ||
