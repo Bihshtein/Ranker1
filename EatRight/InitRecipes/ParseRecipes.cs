@@ -55,8 +55,8 @@ namespace InitRecipes {
             MealTypesURNs[source.Key].ToList().ForEach(m => AddRecipesByMealType(source.Key, m.Key, source.Value + m.Value.Item1, unit,m.Value.Item2));
         }
 
-        public static void AddRecipesByMealType(RecipesSource source, MealType mealType, string mealTypeURN, RestDBInterface unit, int loadBulkSize = 1000) {
-            AddRecipesByURL(mealTypeURN, unit);
+        public static void AddRecipesByMealType(RecipesSource source, MealType mealType, string mealTypeURN, RestDBInterface unit,int pagesLimit = 1000, int loadBulkSize = 1000) {
+            AddRecipesByURL(mealTypeURN, unit, pagesLimit);
             ProblematicRecipes.ForEach(x => Indexes.Remove(x));
            
                 
