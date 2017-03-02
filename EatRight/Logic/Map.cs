@@ -65,7 +65,15 @@ namespace Logic {
         public static Dictionary<string, string> ChangeWholePhrases = new Dictionary<string, string>() {
             { "flour","all-purpose wheat flour"},
             { "cayenne" , "cayenne pepper"},
-            { "spaghetti" , "pasta"}
+            { "spaghetti" , "pasta"},
+            { "season salt","table salt"},
+            { "seasoned salt","table salt"},
+            { "seasoning salt","table salt"},
+            { "celery salt","table salt"},
+            { "onion salt","table salt"},
+             { "cumin","cumin seed"},
+            { "ground cumin","cumin"},
+
 
         };
         public static Dictionary<string, string> ChangePartialPhrases = new Dictionary<string, string>() {
@@ -103,6 +111,11 @@ namespace Logic {
             { "bay leaves", "bay leaf"},
             { "salt to taste","table salt" },
             { "salt pepper","table salt" },
+            { "black peppet and table salt","table salt" },
+            { "salt and ground black pepper","table salt" },
+            { "salt/pepper","table salt" },
+            { "salt n pepper","table salt" },
+            { "salt and freshly ground black pepper","table salt" },
             { "beef mince", "ground beef"},
             { "scallion","green onion" },
             { "scallions","green onion" },
@@ -125,6 +138,7 @@ namespace Logic {
             { "skinless, boneless chicken","chicken"},
             { "boneless, skinless chicken","chicken"},
             { "boneless skinless chicken","chicken"},
+            { "boneless chicken","chicken"},
             { "fresh mozzarella, cut into small cubes", "mozzarella" },
             { "greek-style", "greek" },
             { "cooking oil", "salad or cooking oil" },
@@ -148,10 +162,10 @@ namespace Logic {
             { "all purpose flour","all-purpose wheat flour"},
             { "pinch table salt and black pepper","table salt" },
             { "kosher salt","table salt"},
-            { "cumin","cumin seed"},
-            { "ground cumin","cumin"},           
+            
+          
             { "salt and pepper","table salt" },
-            { "salt &amp; pepper","table salt" },
+            { "salt and black pepper","table salt" },
             { "sea salt and black pepper","table salt" },
             { "sea salt","table salt" },
             { "garlic salt","table salt" },

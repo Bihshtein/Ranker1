@@ -56,6 +56,7 @@ namespace InitRecipes {
         }
 
         public static void AddRecipesByMealType(RecipesSource source, MealType mealType, string mealTypeURN, RestDBInterface unit,int pagesLimit = 1000, int loadBulkSize = 1000) {
+            pagesLimit = 20;
             AddRecipesByURL(mealTypeURN, unit, pagesLimit);
             ProblematicRecipes.ForEach(x => Indexes.Remove(x));
            
