@@ -3,6 +3,7 @@ using Logic;
 using RestModel;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Net;
@@ -19,8 +20,8 @@ namespace InitRecipes {
         public static string FolderPath = Assembly.GetExecutingAssembly().Location + @"\..\..\..\..\LocalDB\";
 
         public static Dictionary<RecipesSource, string> RecipesURLs = new Dictionary<RecipesSource, string>() {
-            {RecipesSource.Cookpad,  "https://cookpad.com/us/" },
-         //  {RecipesSource.AllRecipes,  "http://allrecipes.com/recipes/" },
+         //   {RecipesSource.Cookpad,  "https://cookpad.com/us/" },
+           {RecipesSource.AllRecipes,  "http://allrecipes.com/recipes/" },
          
         };
 
@@ -31,8 +32,8 @@ namespace InitRecipes {
 
         private static Dictionary<RecipesSource, Dictionary<MealType, Tuple<string, int>>> MealTypesURNs = new Dictionary<RecipesSource, Dictionary<MealType, Tuple<string, int>>>() {
             {RecipesSource.AllRecipes, new Dictionary<MealType, Tuple<string, int>>() {
-                {MealType.Dinner, new Tuple<string,int>( "17562/dinner",200) },
-                {MealType.Breakfast, new Tuple<string,int>( "78/breakfast-and-brunch",100) } }
+                {MealType.Dinner, new Tuple<string,int>( "17562/dinner",1) },
+                {MealType.Breakfast, new Tuple<string,int>( "78/breakfast-and-brunch",1) } }
             },
             {RecipesSource.Cookpad, new Dictionary<MealType, Tuple<string, int>>() {
                {MealType.Breakfast, new Tuple<string,int>( "search/breakfast", 300)},
@@ -56,7 +57,6 @@ namespace InitRecipes {
         }
 
         public static void AddRecipesByMealType(RecipesSource source, MealType mealType, string mealTypeURN, RestDBInterface unit,int pagesLimit = 1000, int loadBulkSize = 1000) {
-            pagesLimit = 20;
             AddRecipesByURL(mealTypeURN, unit, pagesLimit);
             ProblematicRecipes.ForEach(x => Indexes.Remove(x));
            
@@ -102,7 +102,7 @@ namespace InitRecipes {
             log.Debug("Locating recipes in ->" + categoryURN + " - completed. Indexes count : " + Indexes.Count);
         }
 
-        public static void AddRecipesFromPage(string pageStr, RestDBInterface unit) {
+        public static void AddRecipesFromPage(string pageStr, RestDBInterface unit) {            
             // Split the whole page str by recipe URLs. We assume that each recipe URL on this page is relevant
             string[] parts = pageStr.Split(new string[] { "data-id=\"" }, StringSplitOptions.None);
             for (int i = 1; i < parts.Length; i++) {
@@ -121,7 +121,8 @@ namespace InitRecipes {
         }
 
         public static void ParseRecipe(int index, string urn, MealType mealType, RecipesSource source) {
-
+            var customCulture = (CultureInfo)Thread.CurrentThread.CurrentCulture.Clone(); customCulture.NumberFormat.NumberDecimalSeparator = ".";
+            Thread.CurrentThread.CurrentCulture = customCulture;
             var unit = new RestDBInterface();
             lock (Locker) {
                 if (unit.Recipes.Get(index) != null) {

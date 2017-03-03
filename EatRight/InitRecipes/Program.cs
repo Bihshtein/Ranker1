@@ -11,6 +11,8 @@ using System.Threading.Tasks;
 using System.Xml;
 using System.Text.RegularExpressions;
 using log4net;
+using System.Globalization;
+
 [assembly: log4net.Config.XmlConfigurator(Watch = true)]
 
 namespace InitRecipes {
@@ -19,6 +21,7 @@ namespace InitRecipes {
         
 
         static void Main(string[] args) {
+          
             ParseRecipes.CreateDB(); // index file has 20,000 meals, load the first 200
             AddProducts.Add();
         }

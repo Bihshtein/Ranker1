@@ -64,7 +64,7 @@ namespace Logic
                 var fractioned = GetFractionedNumber(parts[0]);
                 double relative;
                 var relativeStr = parts[1].Split(')')[0];//  inCase the number comes in branches
-                if (parts[1].Contains('.'))
+                if (parts[1].Contains('.') && parts[1].Split('.').Length == 1)
                     relative = double.Parse("0" + relativeStr);
                 else if (relativeStr.Contains(" ") || relativeStr.Contains("/"))
                     relative  = GetFractionedNumber(relativeStr);
