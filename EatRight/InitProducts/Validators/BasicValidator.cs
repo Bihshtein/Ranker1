@@ -69,7 +69,8 @@ namespace InitProducts {
             return ThirdParts != null && ThirdParts.Any(s => s.Equals(part, StringComparison.OrdinalIgnoreCase));
         }
 
-        public virtual string GetPrettyName(string part){ return part; } 
+        public virtual string GetPrettyName(string part){ return part; }
+        public virtual string GetThirdPart(string part) { return part; }
 
         public virtual bool IsValidPart(string part) {
             part = part.Trim();

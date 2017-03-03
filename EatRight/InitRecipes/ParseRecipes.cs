@@ -130,9 +130,16 @@ namespace InitRecipes {
                     return;
                 }
             }
-            string page = string.Empty;
+            var page = string.Empty;
             try {
-                page = new WebClient().DownloadString(urn + index.ToString());
+                var filePath = Path.Combine(FolderPath, source.ToString(), index.ToString() + ".txt");
+                if (File.Exists(filePath))
+                    page = File.ReadAllText(filePath);
+                else {
+                    page = new WebClient().DownloadString(urn + index.ToString());
+                    File.WriteAllText(filePath, page);
+                }
+                
             }
             catch {
                 log.Error("Failed to load recipe number : " + index);
@@ -228,8 +235,8 @@ namespace InitRecipes {
                         weight = weight.Replace("T", "tablespoon");
                     }
                    
-                    if (Formulas.MeasuresWeights.Keys.Any(w => weight.Contains(w))) {
-                        var keyword = Formulas.MeasuresWeights.Keys.First(w => weight.Contains(w));
+                    if (Map.HasWord(Formulas.MeasuresWeights.Keys.ToList(), weight)) {
+                        var keyword = Map.GetWord(Formulas.MeasuresWeights.Keys.ToList(), weight);
                         try {
                             weightNum = ParseHelpers.ParseAmount(weight.Replace(keyword, "")) * Formulas.MeasuresWeights[keyword];
                         }
@@ -237,8 +244,8 @@ namespace InitRecipes {
                             log.Error("Can't parse weight : " + weight + ", ingredient name:" + name);
                         }
                     }
-                    else if (Formulas.RelativeSizes.Any(s => weight.Contains(s))) {
-                        relativeWeight = Formulas.RelativeSizes.First(s => weight.Contains(s));
+                    else if (Map.HasWord(Formulas.RelativeSizes, weight)) {
+                        relativeWeight = Map.GetWord(Formulas.RelativeSizes, weight);
                         try {
                             var amount = weight.Replace(relativeWeight, "");
                             if (amount == "")
@@ -300,8 +307,8 @@ namespace InitRecipes {
             var weight = 0.0;
             var innerpart = "";
             var weightKey = "";
-            var measure = Formulas.MeasuresWeights.Keys.FirstOrDefault(k => item.Contains(k));
-            if (measure != null) {
+            if (Map.HasWord(Formulas.MeasuresWeights.Keys.ToList(), item)) {
+                var measure = Map.GetWord(Formulas.MeasuresWeights.Keys.ToList(), item);
                 var parts = item.Split(new string[1] { measure }, StringSplitOptions.RemoveEmptyEntries);
                 if (parts.Length > 1) {
                     var res = ParseByAbsoluteMeasures(parts, item, measure);
@@ -310,8 +317,8 @@ namespace InitRecipes {
                 }
             }
             else {
-                var size = Formulas.RelativeSizes.FirstOrDefault(k => item.Contains(k));
-                if (size != null) {
+                if (Map.HasWord(Formulas.RelativeSizes, item)) {
+                    var size = Map.GetWord(Formulas.RelativeSizes, item);
                     var parts = item.Split(new string[1] { size }, StringSplitOptions.RemoveEmptyEntries);
                     if (parts.Length > 1) {
                         var res = ParseByRelativeMeasures(parts, item, size);
@@ -371,7 +378,7 @@ namespace InitRecipes {
             var actualWeight = 0.0;
             var innerpart = string.Empty;
 
-            if (Formulas.MeasuresWeights.ContainsKey(unit)) {
+            if (Map.HasWord(Formulas.MeasuresWeights.Keys.ToList(), unit)) {
                 try {
                     actualWeight = ParseHelpers.ParseAmount(parts[0]) * Formulas.MeasuresWeights[unit];
                 }

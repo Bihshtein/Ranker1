@@ -21,16 +21,36 @@ namespace Logic {
             return item;
         }
 
+        public static string RemoveWord(List<string> wordsList, string phrase) {
+            wordsList.ForEach(item => {
+                if (WordCheck(item, phrase))
+                    phrase = phrase.Replace(item, "");
+                phrase = phrase.Trim();
+            });
+            return phrase;
+        }
+
+        public static bool  HasWord(List<string> wordsList, string phrase) {
+            return wordsList.Any(item => WordCheck(item, phrase));
+        }
+
+        public static string GetWord(List<string> wordsList, string phrase) {
+            return wordsList.First(item => WordCheck(item, phrase));
+        }
+
+        public static bool WordCheck(string word, string phrase) {
+            return (phrase.StartsWith(word + " ") || phrase.EndsWith(" " + word) || phrase.Contains(" " + word + " ") ||
+                phrase == word || phrase.Contains("(" + word + ")") || phrase.Contains(" " + word + ")") || phrase.Contains("(" + word + " "));
+        }
 
         public static string AdjustIngredient(string ingredient) {
             ingredient = ingredient.ToLower();
             if (ingredient.StartsWith(") "))
                 ingredient = ingredient.Replace(") ", "");
-            Map.PharsesToRemove.ForEach(item => {
-                if (ingredient.StartsWith(item + " ") || ingredient.EndsWith(" " + item))
-                    ingredient = ingredient.Replace(item, "");
-                ingredient = ingredient.Trim();
-            });
+            
+
+            ingredient = RemoveWord(Map.StateInfo, ingredient).Trim();
+            ingredient = RemoveWord(Map.ActionInfo, ingredient).Trim();
             return ingredient;
         }
 
@@ -83,6 +103,7 @@ namespace Logic {
             { "tomato juice or v8", "tomato juice"},
             { "button mushroom", "white mushroom"},
             { "prawn", "shrimp"},
+            { "lukewarm water", "water"},
             { "iceberg lattuce", "iceberg lettuce"},
             { "lettuce leaves", "lettuce"},
             { "romain lettuce", "romaine lettuce"},
@@ -92,6 +113,7 @@ namespace Logic {
             { "macaroni pasta" , "pasta"},
             { "penne pasta" , "pasta"},
             { "an onion", "onion"},
+            { "pot roast", "arm pot roast"},
             { "tamatos","tomatoes"},
             { "chihuahua cheese", "queso chihuahua cheese"},
             { "pancakes mix", "pancakes dry mix"},
@@ -105,6 +127,7 @@ namespace Logic {
             { "hard boiled eggs","boiled eggs"},
             { "roma tomatoes","tomato"},
             { "grape tomatoes","tomato"},
+            { "pork butt","pork shoulder blade"},
             { "dried basil leaves", "dried basil" },
             { "basil leaves", "dried basil" },
             { "basil leaf", "dried basil"},
@@ -118,8 +141,7 @@ namespace Logic {
             { "salt and freshly ground black pepper","table salt" },
             { "beef mince", "ground beef"},
             { "scallion","green onion" },
-            { "scallions","green onion" },
-            { "frozen shrimps", "shrimps"},
+            { "scallions","green onion" },            
             { "green spring onion", "green onion"},
             { "spring onions", "green onion"},
             { "spring onion", "green onion"},
@@ -146,6 +168,12 @@ namespace Logic {
             { "dijon mustard", "mustard"},
             { "fine bread crumbs", "bread crumbs" },
             { "breadcrumbs", "bread crumbs" },
+            { "bread cubes", "bread crumbs" },
+            { "Italian-seasoned bread crumbs" ,"seasoned bread crumbs"},
+            {"Italian-style seasoned bread crumbs" , "seasoned bread crumbs"},
+
+            { "chicken breast meat", "chicken breast"},
+            { "dried bread crumbs", "bread crumbs" },
             { "can anchovy fillets", "anchovy"},
             { "fresh dill","fresh dill weed"},
             { "skim", "nonfat"},
@@ -198,8 +226,7 @@ namespace Logic {
             { "strips bacon", "bacon" },
             { "chorizo sausage", "pork sausage" },
             { "flat-leaf parsley", "parsley" },
-            { "parsley for garnish", "parsley"},
-            { "frozen hash brown potatoes", "hash brown potatoes" },
+            { "parsley for garnish", "parsley"},            
             { "half-and-half cream", "half and half cream" },
             { "dry sherry", "dry dessert wine" },            
             { "rib celery", "celery" },
@@ -226,19 +253,20 @@ namespace Logic {
             { "extra ground ground beef", "ground beef"},
             { "extra lean ground beef", "ground beef"}
         };
-
-        public static List<string> PharsesToRemove = new List<string> {
-         "some","fillets", "prepared", "package", "packages","blanched","slivered","florets",
-         "(peeled)","(sliced)","(chopped)",
-            "melted","sifted", "sprig", "sprigs", "ground", "shredded", "cubed", "rolled",
-            "head", "heads", "thick sliced", "sliced", "stalk", "stalks", "finely diced",
-            "diced", "dried minced", "minced", "finely chopped", "chopped", "grated","mashed","crushed",
-            "ripe", "steaks", "cold", "warm", "fresh", "cut into",
-            "canned", "cans","can","boiled", "(optional)", "asiago",  "panko" , "steaks", "- peeled","halves",
-           "and cut into circles", "for frying", "herb-seasoned", "steel cut", "peeled","solid pack","small dice",";"
+        public static List<string> ActionInfo = new List<string> {
+            "thick sliced", "sliced","slivered","melted","sifted", "ground", "shredded",
+            "cubed", "rolled","mashed","crushed"  ,"boiled", "cut into","grated",
+            "finely diced","diced", "dried minced", "minced", "finely chopped", "chopped",
+            "finely shredded","cooked","finely crushed","frozen"
         };
-
-
+        public static List<string> StateInfo = new List<string> {
+          "canned", "cans","can","some","fillets", "prepared", "package",
+           "packages","blanched","florets","steel cut", "peeled","small dice",
+           "sprig", "sprigs","loaf", "head", "heads",  "stalk", "stalks",
+            "ripe", "steaks", "cold", "warm", "fresh",
+          "(optional)", "asiago",  "panko" , "steaks", "- peeled","halves",
+           "and cut into circles", "for frying", "herb-seasoned", "solid pack",
+        };
 
     }
 }

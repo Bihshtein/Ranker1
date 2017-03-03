@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace InitProducts {
     internal class BakedValidator : BasicValidator {
@@ -8,11 +9,11 @@ namespace InitProducts {
                 "Muffins","English muffins","Crackers","Cookies","Cookie",
                 "Coffeecake","Cake","Bread","Doughnuts","Croutons",
                 "Croissants","Cream puff","Danish pastry","Tortillas","Breakfast tart",
-                "Leavening agents","Bread crumbs", "Bread stuffing","PILLSBURY"
+                "Leavening agents","Bread crumbs", "Bread stuffing","PILLSBURY","PEPPERIDGE FARM"
             };
 
             SecondParts = new List<string> {
-                "apple","banana cream","blueberry","cherry","cheese","banana",
+                "apple","banana cream","blueberry","cherry","cheese","banana","hamburger bun",
                 "Dutch Apple","yeast","baking soda","baking powder",
                 "egg custard","peach","pecan","pumpkin","mince","pecan",
                 "egg","oat bran", "rye","sweet","wheat","whole-wheat","french",
@@ -31,10 +32,17 @@ namespace InitProducts {
             ThirdParts = new List<string> {
                 "white","plain","whole grain","whole wheat","mixed-grain","mixed grain","dry mix",
                 "whole grain white","wheat bran","oat bran","oatmeal","cracked-wheat","active dry",
-                "compressed","double-acting","grated",
+                "compressed","double-acting","seasoned","grated",
                 "plain or buttermilk","multigrain","wheat germ","buckwheat","buttermilk"
             };
         }
+
+        public override Tuple<string, string> GetNameAndDescription(string item) {
+            if (item.Contains("french or vienna"))
+                item = "french";
+            return base.GetNameAndDescription(item);
+        }
+
 
         public override bool IsValidPart(string part) {
             return part.Trim() == "baker's" ||

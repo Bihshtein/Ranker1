@@ -83,8 +83,8 @@ namespace InitRecipes {
                                 var parts = tokens[idx].Split(':');
                                 var weight = double.Parse(parts[0]);
                                 if (parts.Length > 1) {
-                                    var measureName = parts[1]; ;
-                                    if (Formulas.MeasuresWeights.ContainsKey(measureName)) {
+                                    var measureName = parts[1]; 
+                                    if (Map.HasWord(Formulas.MeasuresWeights.Keys.ToList(),measureName)) {
                                         productsWeight[productsIndex[idx]] = weight * Formulas.MeasuresWeights[measureName];
                                     }
                                     else {
