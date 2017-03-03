@@ -20,7 +20,7 @@ namespace InitRecipes {
         public static string FolderPath = Assembly.GetExecutingAssembly().Location + @"\..\..\..\..\LocalDB\";
 
         public static Dictionary<RecipesSource, string> RecipesURLs = new Dictionary<RecipesSource, string>() {
-         //   {RecipesSource.Cookpad,  "https://cookpad.com/us/" },
+            {RecipesSource.Cookpad,  "https://cookpad.com/us/" },
            {RecipesSource.AllRecipes,  "http://allrecipes.com/recipes/" },
          
         };
@@ -32,13 +32,13 @@ namespace InitRecipes {
 
         private static Dictionary<RecipesSource, Dictionary<MealType, Tuple<string, int>>> MealTypesURNs = new Dictionary<RecipesSource, Dictionary<MealType, Tuple<string, int>>>() {
             {RecipesSource.AllRecipes, new Dictionary<MealType, Tuple<string, int>>() {
-                {MealType.Dinner, new Tuple<string,int>( "17562/dinner",1) },
-                {MealType.Breakfast, new Tuple<string,int>( "78/breakfast-and-brunch",1) } }
+                {MealType.Dinner, new Tuple<string,int>( "17562/dinner",3) },
+                {MealType.Breakfast, new Tuple<string,int>( "78/breakfast-and-brunch",3) } }
             },
             {RecipesSource.Cookpad, new Dictionary<MealType, Tuple<string, int>>() {
-               {MealType.Breakfast, new Tuple<string,int>( "search/breakfast", 300)},
-                {MealType.Lunch,  new Tuple<string,int>("search/lunch",900) },
-               {MealType.Dinner, new Tuple<string,int>( "search/dinner" ,300)}}
+               {MealType.Breakfast, new Tuple<string,int>( "search/breakfast", 20)},
+                {MealType.Lunch,  new Tuple<string,int>("search/lunch",20) },
+               {MealType.Dinner, new Tuple<string,int>( "search/dinner" ,20)}}
             }
         };
 
@@ -76,29 +76,37 @@ namespace InitRecipes {
                     tasks.ForEach(task => task.Wait());
             }
         }
-
-        private static void AddRecipesByURL(string categoryURN, RestDBInterface unit, int pagesLimit = 50) {
-            Indexes.Clear();
+        private static void ReadPage(string categoryURN, RestDBInterface unit, int currPage) {
+            string pageStr = null;
+            var readWorked = false;
             var client = new WebClient();
-            log.Debug("Locating recipes in ->" + categoryURN + " - started");
-            var retries = 0;
-            for (int currPage = 0; currPage < pagesLimit && retries < 3; currPage++) {
-
-                string pageStr = null;
-                var urlSuffix = currPage == 0 ? "" : ("?page=" + currPage);
-                var uri = categoryURN + "/" + urlSuffix;
+            var urlSuffix = currPage == 0 ? "" : ("?page=" + currPage);
+            var uri = categoryURN + "/" + urlSuffix;
+            for (int retries = 0; readWorked==false && retries < 3; retries++) {
                 try {
                     pageStr = client.DownloadString(uri);
+                    readWorked = true;
                     AddRecipesFromPage(pageStr, unit);
-                    retries = 0;
                 }
                 catch (Exception) {
                     log.Error(string.Format("Failed to load page num {0}, might be the last page", currPage));
-                    --currPage;
                     ++retries;
                 }
-                log.Debug("Page num :" + currPage);
             }
+            log.Debug("Page num :" + currPage);
+        }
+        private static void AddRecipesByURL(string categoryURN, RestDBInterface unit, int pagesLimit = 50) {
+            Indexes.Clear();
+           
+            log.Debug("Locating recipes in ->" + categoryURN + " - started");
+
+            var tasks = new List<Task>();
+            for (int i = 0; i < pagesLimit; i++) {
+                int curr = i;
+                tasks.Add(new Task(new Action(()=> ReadPage(categoryURN,unit ,curr))));
+            }
+            tasks.ForEach(task => task.Start());
+            tasks.ForEach(task => task.Wait());
             log.Debug("Locating recipes in ->" + categoryURN + " - completed. Indexes count : " + Indexes.Count);
         }
 
