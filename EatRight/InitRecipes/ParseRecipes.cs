@@ -20,7 +20,7 @@ namespace InitRecipes {
         public static string FolderPath = Assembly.GetExecutingAssembly().Location + @"\..\..\..\..\LocalDB\";
 
         public static Dictionary<RecipesSource, string> RecipesURLs = new Dictionary<RecipesSource, string>() {
-            {RecipesSource.Cookpad,  "https://cookpad.com/us/" },
+          //  {RecipesSource.Cookpad,  "https://cookpad.com/us/" },
            {RecipesSource.AllRecipes,  "http://allrecipes.com/recipes/" },
          
         };
@@ -32,13 +32,13 @@ namespace InitRecipes {
 
         private static Dictionary<RecipesSource, Dictionary<MealType, Tuple<string, int>>> MealTypesURNs = new Dictionary<RecipesSource, Dictionary<MealType, Tuple<string, int>>>() {
             {RecipesSource.AllRecipes, new Dictionary<MealType, Tuple<string, int>>() {
-                {MealType.Dinner, new Tuple<string,int>( "17562/dinner",3) },
-                {MealType.Breakfast, new Tuple<string,int>( "78/breakfast-and-brunch",3) } }
+                {MealType.Dinner, new Tuple<string,int>( "17562/dinner",100) },
+                {MealType.Breakfast, new Tuple<string,int>( "78/breakfast-and-brunch",100) } }
             },
             {RecipesSource.Cookpad, new Dictionary<MealType, Tuple<string, int>>() {
-               {MealType.Breakfast, new Tuple<string,int>( "search/breakfast", 20)},
-                {MealType.Lunch,  new Tuple<string,int>("search/lunch",20) },
-               {MealType.Dinner, new Tuple<string,int>( "search/dinner" ,20)}}
+               {MealType.Breakfast, new Tuple<string,int>( "search/breakfast", 300)},
+                {MealType.Lunch,  new Tuple<string,int>("search/lunch",900) },
+               {MealType.Dinner, new Tuple<string,int>( "search/dinner" ,300)}}
             }
         };
 
@@ -82,7 +82,7 @@ namespace InitRecipes {
             var client = new WebClient();
             var urlSuffix = currPage == 0 ? "" : ("?page=" + currPage);
             var uri = categoryURN + "/" + urlSuffix;
-            for (int retries = 0; readWorked==false && retries < 3; retries++) {
+            for (int retries = 0; readWorked==false && retries < 10; retries++) {
                 try {
                     pageStr = client.DownloadString(uri);
                     readWorked = true;
