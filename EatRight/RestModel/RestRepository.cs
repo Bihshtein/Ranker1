@@ -108,7 +108,7 @@ namespace RestModel {
             return _collection.Find(query as Expression<Func<T, bool>>).ToList();
         }
 
-        public static List<string> FoodGroups = new List<string>() {"Sausages","Legumes","SoupAndSauce","Nuts","Sweets", "SpicesAndHerbs","OilsAndFats","Beverages","Baked","Fish","Carbs", "Chicken", "Beef", "Pork" ,"Vegs","Fruits","Dairy"};
+        public static List<string> FoodGroups = new List<string>() {"Snacks","Sausages","Legumes","SoupAndSauce","Nuts","Sweets", "SpicesAndHerbs","OilsAndFats","Beverages","Baked","Fish","Carbs", "Chicken", "Beef", "Pork" ,"Vegs","Fruits","Dairy"};
         public static Dictionary<string, double> DailyValues = new Dictionary<string, double>() {
             {"Protein",56},
             {"Fiber",25},

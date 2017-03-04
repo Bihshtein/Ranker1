@@ -1,0 +1,2552 @@
+{
+    "report": {
+        "sr": "28",
+        "groups": [
+            {
+                "id": "2500",
+                "description": "Snacks"
+            }
+        ],
+        "subset": "All foods",
+        "end": 169,
+        "start": 0,
+        "total": 169,
+        "foods": [
+            {
+                "ndbno": "43595",
+                "name": "Breakfast bar, corn flake crust with fruit",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.25",
+                        "gm": 4.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "43100",
+                "name": "Breakfast bars, oats, sugar, raisins, coconut (include granola bar)",
+                "weight": 43.0,
+                "measure": "1.0 bar",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.21",
+                        "gm": 9.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "19434",
+                "name": "Cheese puffs and twists, corn based, baked, low fat",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.41",
+                        "gm": 8.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "25045",
+                "name": "Formulated bar, high fiber, chewy, oats and chocolate",
+                "weight": 40.0,
+                "measure": "1.0 bar",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.00",
+                        "gm": 5.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "25021",
+                "name": "Formulated bar, LUNA BAR, NUTZ OVER CHOCOLATE",
+                "weight": 48.0,
+                "measure": "1.0 bar",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.96",
+                        "gm": 20.75
+                    }
+                ]
+            },
+            {
+                "ndbno": "25010",
+                "name": "Formulated bar, MARS SNACKFOOD US, COCOAVIA, Chocolate Almond Snack Bar",
+                "weight": 22.0,
+                "measure": "1.0 bar",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.70",
+                        "gm": 7.72
+                    }
+                ]
+            },
+            {
+                "ndbno": "25018",
+                "name": "Formulated bar, MARS SNACKFOOD US, COCOAVIA, Chocolate Blueberry Snack Bar",
+                "weight": 22.0,
+                "measure": "1.0 bar",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.37",
+                        "gm": 6.21
+                    }
+                ]
+            },
+            {
+                "ndbno": "25004",
+                "name": "Formulated bar, MARS SNACKFOOD US, SNICKERS MARATHON Chewy Chocolate Peanut Bar",
+                "weight": 55.0,
+                "measure": "1.0 bar",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.36",
+                        "gm": 24.29
+                    }
+                ]
+            },
+            {
+                "ndbno": "25006",
+                "name": "Formulated bar, MARS SNACKFOOD US, SNICKERS MARATHON Double Chocolate Nut Bar",
+                "weight": 55.0,
+                "measure": "1.0 bar",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.29",
+                        "gm": 22.35
+                    }
+                ]
+            },
+            {
+                "ndbno": "25016",
+                "name": "Formulated bar, MARS SNACKFOOD US, SNICKERS MARATHON Energy Bar, all flavors",
+                "weight": 55.0,
+                "measure": "1.0 bar",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.05",
+                        "gm": 21.91
+                    }
+                ]
+            },
+            {
+                "ndbno": "25008",
+                "name": "Formulated bar, MARS SNACKFOOD US, SNICKERS MARATHON Honey Nut Oat Bar",
+                "weight": 55.0,
+                "measure": "1.0 bar",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.38",
+                        "gm": 22.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "25005",
+                "name": "Formulated bar, MARS SNACKFOOD US, SNICKERS MARATHON MULTIGRAIN CRUNCH BAR",
+                "weight": 55.0,
+                "measure": "1.0 bar",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.17",
+                        "gm": 18.49
+                    }
+                ]
+            },
+            {
+                "ndbno": "25015",
+                "name": "Formulated bar, MARS SNACKFOOD US, SNICKERS MARATHON Protein Performance Bar, Caramel Nut Rush",
+                "weight": 80.0,
+                "measure": "1.0 bar",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "20.00",
+                        "gm": 25.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "25017",
+                "name": "Formulated bar, POWER BAR, chocolate",
+                "weight": 68.0,
+                "measure": "1.0 bar",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.62",
+                        "gm": 14.15
+                    }
+                ]
+            },
+            {
+                "ndbno": "25020",
+                "name": "Formulated bar, SLIM-FAST OPTIMA meal bar, milk chocolate peanut",
+                "weight": 55.0,
+                "measure": "1.0 bar",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.90",
+                        "gm": 16.19
+                    }
+                ]
+            },
+            {
+                "ndbno": "25031",
+                "name": "Formulated bar, ZONE PERFECT CLASSIC CRUNCH BAR, mixed flavors",
+                "weight": 50.0,
+                "measure": "1.0 bar",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.00",
+                        "gm": 30.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "42139",
+                "name": "Granola bar, soft, milk chocolate coated, peanut butter",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.72",
+                        "gm": 9.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "08510",
+                "name": "Milk and cereal bar",
+                "weight": 25.0,
+                "measure": "1.0 bar",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.62",
+                        "gm": 6.47
+                    }
+                ]
+            },
+            {
+                "ndbno": "43572",
+                "name": "Popcorn, microwave, low fat and sodium",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.57",
+                        "gm": 12.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "25026",
+                "name": "Popcorn, microwave, regular (butter) flavor, made with palm oil",
+                "weight": 7.9,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.66",
+                        "gm": 8.38
+                    }
+                ]
+            },
+            {
+                "ndbno": "19436",
+                "name": "Popcorn, sugar syrup/caramel, fat-free",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.57",
+                        "gm": 2.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19823",
+                "name": "Potato chips, without salt, reduced fat",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.01",
+                        "gm": 7.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "43109",
+                "name": "Pretzels, soft",
+                "weight": 143.0,
+                "measure": "1.0 large",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.73",
+                        "gm": 8.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "25024",
+                "name": "Pretzels, soft, unsalted",
+                "weight": 143.0,
+                "measure": "1.0 large",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.73",
+                        "gm": 8.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "08546",
+                "name": "Rice and Wheat cereal bar",
+                "weight": 22.0,
+                "measure": "1.0 bar",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.00",
+                        "gm": 9.09
+                    }
+                ]
+            },
+            {
+                "ndbno": "42204",
+                "name": "Rice cake, cracker (include hain mini rice cakes)",
+                "weight": 4.2,
+                "measure": "1.0 cubic inch",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.30",
+                        "gm": 7.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "25062",
+                "name": "Snack, Mixed Berry Bar",
+                "weight": 38.0,
+                "measure": "1.0 bar",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.00",
+                        "gm": 13.16
+                    }
+                ]
+            },
+            {
+                "ndbno": "19410",
+                "name": "Snack, potato chips, made from dried potatoes, plain",
+                "weight": 28.0,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.29",
+                        "gm": 4.62
+                    }
+                ]
+            },
+            {
+                "ndbno": "25060",
+                "name": "Snack, Pretzel, hard chocolate coated",
+                "weight": 28.0,
+                "measure": "1.0 serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.97",
+                        "gm": 7.05
+                    }
+                ]
+            },
+            {
+                "ndbno": "25046",
+                "name": "Snacks, bagel chips, plain",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.50",
+                        "gm": 12.34
+                    }
+                ]
+            },
+            {
+                "ndbno": "19400",
+                "name": "Snacks, banana chips",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.65",
+                        "gm": 2.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "19002",
+                "name": "Snacks, beef jerky, chopped and formed",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.41",
+                        "gm": 33.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "19407",
+                "name": "Snacks, beef sticks, smoked",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.10",
+                        "gm": 21.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "25059",
+                "name": "Snacks, brown rice chips",
+                "weight": 9.0,
+                "measure": "1.0 cake",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.74",
+                        "gm": 8.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "25043",
+                "name": "Snacks, candy bits, yogurt covered with vitamin C",
+                "weight": 20.0,
+                "measure": "1.0 package",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.00",
+                        "gm": 0.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "25003",
+                "name": "Snacks, candy rolls, yogurt-covered, fruit flavored with high vitamin C",
+                "weight": 23.0,
+                "measure": "1.0 Roll",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.11",
+                        "gm": 0.46
+                    }
+                ]
+            },
+            {
+                "ndbno": "25051",
+                "name": "Snacks, CLIF BAR, mixed flavors",
+                "weight": 68.0,
+                "measure": "1.0 bar",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.00",
+                        "gm": 14.71
+                    }
+                ]
+            },
+            {
+                "ndbno": "19419",
+                "name": "Snacks, corn cakes",
+                "weight": 9.0,
+                "measure": "1.0 cake",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.73",
+                        "gm": 8.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "19800",
+                "name": "Snacks, corn cakes, very low sodium",
+                "weight": 9.0,
+                "measure": "1.0 cake",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.73",
+                        "gm": 8.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "19004",
+                "name": "Snacks, corn-based, extruded, chips, barbecue-flavor",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.98",
+                        "gm": 7.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19804",
+                "name": "Snacks, corn-based, extruded, chips, barbecue-flavor, made with enriched masa flour",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.98",
+                        "gm": 7.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19003",
+                "name": "Snacks, corn-based, extruded, chips, plain",
+                "weight": 28.0,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.73",
+                        "gm": 6.17
+                    }
+                ]
+            },
+            {
+                "ndbno": "43447",
+                "name": "Snacks, corn-based, extruded, chips, unsalted",
+                "weight": 88.0,
+                "measure": "1.0 cup, crushed",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.81",
+                        "gm": 6.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "19005",
+                "name": "Snacks, corn-based, extruded, cones, plain",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.64",
+                        "gm": 5.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "19007",
+                "name": "Snacks, corn-based, extruded, onion-flavor",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.18",
+                        "gm": 7.7
+                    }
+                ]
+            },
+            {
+                "ndbno": "19008",
+                "name": "Snacks, corn-based, extruded, puffs or twists, cheese-flavor",
+                "weight": 28.35,
+                "measure": "1.0 oz, crunchy (about 21 pieces)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.55",
+                        "gm": 5.46
+                    }
+                ]
+            },
+            {
+                "ndbno": "19802",
+                "name": "Snacks, corn-based, extruded, puffs or twists, cheese-flavor, unenriched",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.63",
+                        "gm": 5.76
+                    }
+                ]
+            },
+            {
+                "ndbno": "19401",
+                "name": "Snacks, cornnuts, barbecue-flavor",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.55",
+                        "gm": 9.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19403",
+                "name": "Snacks, crisped rice bar, almond",
+                "weight": 28.0,
+                "measure": "1.0 bar (1 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.96",
+                        "gm": 7.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19010",
+                "name": "Snacks, crisped rice bar, chocolate chip",
+                "weight": 28.0,
+                "measure": "1.0 bar (1 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.43",
+                        "gm": 5.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "19272",
+                "name": "Snacks, FARLEY CANDY, FARLEY Fruit Snacks, with vitamins A, C, and E",
+                "weight": 26.0,
+                "measure": "1.0 pouch",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.14",
+                        "gm": 4.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "25023",
+                "name": "Snacks, FRITOLAY, SUNCHIPS, Multigrain Snack, Harvest Cheddar flavor",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.29",
+                        "gm": 8.08
+                    }
+                ]
+            },
+            {
+                "ndbno": "25013",
+                "name": "Snacks, FRITOLAY, SUNCHIPS, Multigrain Snack, original flavor",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.25",
+                        "gm": 7.95
+                    }
+                ]
+            },
+            {
+                "ndbno": "25022",
+                "name": "Snacks, FRITOLAY, SUNCHIPS, multigrain, French onion flavor",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.46",
+                        "gm": 8.68
+                    }
+                ]
+            },
+            {
+                "ndbno": "19274",
+                "name": "Snacks, fruit leather, pieces, with vitamin C",
+                "weight": 21.0,
+                "measure": "1.0 serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.02",
+                        "gm": 0.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "19269",
+                "name": "Snacks, GENERAL MILLS, BETTY CROCKER Fruit Roll Ups, berry flavored, with vitamin C",
+                "weight": 28.0,
+                "measure": "2.0 rolls",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.03",
+                        "gm": 0.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "19033",
+                "name": "Snacks, GENERAL MILLS, CHEX MIX, traditional flavor",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.50",
+                        "gm": 8.83
+                    }
+                ]
+            },
+            {
+                "ndbno": "25035",
+                "name": "Snacks, granola bar, chewy, reduced sugar, all flavors",
+                "weight": 24.0,
+                "measure": "1.0 bar",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.33",
+                        "gm": 5.55
+                    }
+                ]
+            },
+            {
+                "ndbno": "25053",
+                "name": "Snacks, granola bar, GENERAL MILLS NATURE VALLEY, SWEET&amp;SALTY NUT, peanut",
+                "weight": 35.0,
+                "measure": "1.0 bar",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.20",
+                        "gm": 9.14
+                    }
+                ]
+            },
+            {
+                "ndbno": "25055",
+                "name": "Snacks, granola bar, GENERAL MILLS, NATURE VALLEY, CHEWY TRAIL MIX",
+                "weight": 35.0,
+                "measure": "1.0 bar",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.00",
+                        "gm": 5.71
+                    }
+                ]
+            },
+            {
+                "ndbno": "25054",
+                "name": "Snacks, granola bar, GENERAL MILLS, NATURE VALLEY, with yogurt coating",
+                "weight": 35.0,
+                "measure": "1.0 bar",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.00",
+                        "gm": 5.71
+                    }
+                ]
+            },
+            {
+                "ndbno": "25032",
+                "name": "Snacks, granola bar, KASHI GOLEAN, chewy, mixed flavors",
+                "weight": 78.0,
+                "measure": "1.0 bar",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.00",
+                        "gm": 16.67
+                    }
+                ]
+            },
+            {
+                "ndbno": "25034",
+                "name": "Snacks, granola bar, KASHI GOLEAN, crunchy, mixed flavors",
+                "weight": 47.0,
+                "measure": "1.0 bar",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.40",
+                        "gm": 17.88
+                    }
+                ]
+            },
+            {
+                "ndbno": "25033",
+                "name": "Snacks, granola bar, KASHI TLC Bar, chewy, mixed flavors",
+                "weight": 35.0,
+                "measure": "1.0 bar",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.50",
+                        "gm": 18.57
+                    }
+                ]
+            },
+            {
+                "ndbno": "25041",
+                "name": "Snacks, granola bar, KASHI TLC Bar, crunchy, mixed flavors",
+                "weight": 40.0,
+                "measure": "2.0 bar",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.00",
+                        "gm": 15.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "25052",
+                "name": "Snacks, granola bar, QUAKER, chewy, 90 Calorie Bar",
+                "weight": 24.0,
+                "measure": "1.0 bar",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.00",
+                        "gm": 4.17
+                    }
+                ]
+            },
+            {
+                "ndbno": "25056",
+                "name": "Snacks, granola bar, QUAKER, DIPPS, all flavors",
+                "weight": 31.0,
+                "measure": "1.0 bar",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.33",
+                        "gm": 7.52
+                    }
+                ]
+            },
+            {
+                "ndbno": "42272",
+                "name": "Snacks, granola bar, with coconut, chocolate coated",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.47",
+                        "gm": 5.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "19016",
+                "name": "Snacks, granola bars, hard, almond",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.18",
+                        "gm": 7.7
+                    }
+                ]
+            },
+            {
+                "ndbno": "19017",
+                "name": "Snacks, granola bars, hard, chocolate chip",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.07",
+                        "gm": 7.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "19420",
+                "name": "Snacks, granola bars, hard, peanut butter",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.78",
+                        "gm": 9.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "19015",
+                "name": "Snacks, granola bars, hard, plain",
+                "weight": 21.0,
+                "measure": "1.0 bar",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.12",
+                        "gm": 10.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "25039",
+                "name": "Snacks, granola bars, QUAKER OATMEAL TO GO, all flavors",
+                "weight": 60.0,
+                "measure": "1.0 bar",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.00",
+                        "gm": 6.67
+                    }
+                ]
+            },
+            {
+                "ndbno": "25038",
+                "name": "Snacks, granola bars, soft, almond, confectioners coating",
+                "weight": 35.0,
+                "measure": "1.0 bar",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.01",
+                        "gm": 8.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "19024",
+                "name": "Snacks, granola bars, soft, coated, milk chocolate coating, chocolate chip",
+                "weight": 35.0,
+                "measure": "1.0 bar (1.25 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.03",
+                        "gm": 5.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "19026",
+                "name": "Snacks, granola bars, soft, coated, milk chocolate coating, peanut butter",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.89",
+                        "gm": 10.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "19404",
+                "name": "Snacks, granola bars, soft, uncoated, chocolate chip",
+                "weight": 43.0,
+                "measure": "1.0 bar (1.5 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.43",
+                        "gm": 5.65
+                    }
+                ]
+            },
+            {
+                "ndbno": "19405",
+                "name": "Snacks, granola bars, soft, uncoated, chocolate chip, graham and marshmallow",
+                "weight": 28.0,
+                "measure": "1.0 bar (1 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.71",
+                        "gm": 6.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "19406",
+                "name": "Snacks, granola bars, soft, uncoated, nut and raisin",
+                "weight": 28.0,
+                "measure": "1.0 bar (1 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.24",
+                        "gm": 8.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19021",
+                "name": "Snacks, granola bars, soft, uncoated, peanut butter",
+                "weight": 28.0,
+                "measure": "1.0 bar (1 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.94",
+                        "gm": 10.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "19027",
+                "name": "Snacks, granola bars, soft, uncoated, peanut butter and chocolate chip",
+                "weight": 28.0,
+                "measure": "1.0 bar (1 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.74",
+                        "gm": 9.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "19020",
+                "name": "Snacks, granola bars, soft, uncoated, plain",
+                "weight": 28.0,
+                "measure": "1.0 bar (1 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.07",
+                        "gm": 7.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "19022",
+                "name": "Snacks, granola bars, soft, uncoated, raisin",
+                "weight": 43.0,
+                "measure": "1.0 bar (1.5 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.27",
+                        "gm": 7.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "25036",
+                "name": "Snacks, granola bites, mixed flavors",
+                "weight": 20.0,
+                "measure": "1.0 package",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.43",
+                        "gm": 7.17
+                    }
+                ]
+            },
+            {
+                "ndbno": "19439",
+                "name": "Snacks, KELLOGG, KELLOGG'S Low Fat Granola Bar, Crunchy Almond/Brown Sugar",
+                "weight": 37.0,
+                "measure": "1.0 bar",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.96",
+                        "gm": 8.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19438",
+                "name": "Snacks, KELLOGG, KELLOGG'S RICE KRISPIES TREATS Squares",
+                "weight": 22.0,
+                "measure": "1.0 serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.75",
+                        "gm": 3.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "19009",
+                "name": "Snacks, KRAFT, CORNNUTS, plain",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.41",
+                        "gm": 8.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "19049",
+                "name": "Snacks, M&amp;M MARS, COMBOS Snacks Cheddar Cheese Pretzel",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.79",
+                        "gm": 9.85
+                    }
+                ]
+            },
+            {
+                "ndbno": "19440",
+                "name": "Snacks, M&amp;M MARS, KUDOS Whole Grain Bar, chocolate chip",
+                "weight": 28.0,
+                "measure": "1.0 bar",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.25",
+                        "gm": 4.47
+                    }
+                ]
+            },
+            {
+                "ndbno": "25009",
+                "name": "Snacks, M&amp;M MARS, KUDOS Whole Grain Bar, M&amp;M's milk chocolate",
+                "weight": 24.0,
+                "measure": "1.0 bar",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.91",
+                        "gm": 3.78
+                    }
+                ]
+            },
+            {
+                "ndbno": "25007",
+                "name": "Snacks, M&amp;M MARS, KUDOS Whole Grain Bars, peanut butter",
+                "weight": 28.0,
+                "measure": "1.0 bar",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.65",
+                        "gm": 5.88
+                    }
+                ]
+            },
+            {
+                "ndbno": "25048",
+                "name": "Snacks, NUTRI-GRAIN FRUIT AND NUT BAR",
+                "weight": 32.0,
+                "measure": "1.0 bar",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.00",
+                        "gm": 9.38
+                    }
+                ]
+            },
+            {
+                "ndbno": "19031",
+                "name": "Snacks, oriental mix, rice-based",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.91",
+                        "gm": 17.31
+                    }
+                ]
+            },
+            {
+                "ndbno": "25037",
+                "name": "Snacks, pita chips, salted",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.34",
+                        "gm": 11.79
+                    }
+                ]
+            },
+            {
+                "ndbno": "25027",
+                "name": "Snacks, plantain chips, salted",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.65",
+                        "gm": 2.28
+                    }
+                ]
+            },
+            {
+                "ndbno": "19034",
+                "name": "Snacks, popcorn, air-popped",
+                "weight": 8.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.04",
+                        "gm": 12.94
+                    }
+                ]
+            },
+            {
+                "ndbno": "19806",
+                "name": "Snacks, popcorn, air-popped (Unsalted)",
+                "weight": 8.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.96",
+                        "gm": 12.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19036",
+                "name": "Snacks, popcorn, cakes",
+                "weight": 10.0,
+                "measure": "1.0 cake",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.97",
+                        "gm": 9.7
+                    }
+                ]
+            },
+            {
+                "ndbno": "19038",
+                "name": "Snacks, popcorn, caramel-coated, with peanuts",
+                "weight": 28.35,
+                "measure": "1.0 oz (approx 2/3 cup)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.81",
+                        "gm": 6.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "19039",
+                "name": "Snacks, popcorn, caramel-coated, without peanuts",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.08",
+                        "gm": 3.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "19040",
+                "name": "Snacks, popcorn, cheese-flavor",
+                "weight": 11.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.02",
+                        "gm": 9.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "42259",
+                "name": "Snacks, popcorn, home-prepared, oil-popped, unsalted",
+                "weight": 8.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.72",
+                        "gm": 9.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "25000",
+                "name": "Snacks, popcorn, microwave, 94% fat free",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.04",
+                        "gm": 10.72
+                    }
+                ]
+            },
+            {
+                "ndbno": "25001",
+                "name": "Snacks, popcorn, microwave, low fat",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.57",
+                        "gm": 12.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "25014",
+                "name": "Snacks, popcorn, microwave, regular (butter) flavor, made with partially hydrogenated oil",
+                "weight": 7.9,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.59",
+                        "gm": 7.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "19035",
+                "name": "Snacks, popcorn, oil-popped, microwave, regular flavor, no trans fat",
+                "weight": 11.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.80",
+                        "gm": 7.29
+                    }
+                ]
+            },
+            {
+                "ndbno": "19807",
+                "name": "Snacks, popcorn, oil-popped, white popcorn, salt added",
+                "weight": 11.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.99",
+                        "gm": 9.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19408",
+                "name": "Snacks, pork skins, barbecue-flavor",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.41",
+                        "gm": 57.9
+                    }
+                ]
+            },
+            {
+                "ndbno": "19041",
+                "name": "Snacks, pork skins, plain",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.38",
+                        "gm": 61.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "19042",
+                "name": "Snacks, potato chips, barbecue-flavor",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.85",
+                        "gm": 6.51
+                    }
+                ]
+            },
+            {
+                "ndbno": "19421",
+                "name": "Snacks, potato chips, cheese-flavor",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.41",
+                        "gm": 8.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "19437",
+                "name": "Snacks, potato chips, fat free, salted",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.73",
+                        "gm": 9.64
+                    }
+                ]
+            },
+            {
+                "ndbno": "19423",
+                "name": "Snacks, potato chips, fat-free, made with olestra",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.19",
+                        "gm": 7.74
+                    }
+                ]
+            },
+            {
+                "ndbno": "25064",
+                "name": "Snacks, potato chips, lightly salted",
+                "weight": 28.0,
+                "measure": "23.0 pieces",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.88",
+                        "gm": 6.72
+                    }
+                ]
+            },
+            {
+                "ndbno": "25063",
+                "name": "Snacks, potato chips, made from dried potatoes (preformed), multigrain",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.50",
+                        "gm": 5.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "19412",
+                "name": "Snacks, potato chips, made from dried potatoes, cheese-flavor",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.98",
+                        "gm": 7.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19445",
+                "name": "Snacks, potato chips, made from dried potatoes, fat-free, made with olestra",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.43",
+                        "gm": 5.06
+                    }
+                ]
+            },
+            {
+                "ndbno": "19045",
+                "name": "Snacks, potato chips, made from dried potatoes, reduced fat",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.29",
+                        "gm": 4.56
+                    }
+                ]
+            },
+            {
+                "ndbno": "19046",
+                "name": "Snacks, potato chips, made from dried potatoes, sour-cream and onion-flavor",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.87",
+                        "gm": 6.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "19809",
+                "name": "Snacks, potato chips, plain, made with partially hydrogenated soybean oil, salted",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.98",
+                        "gm": 7.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19810",
+                "name": "Snacks, potato chips, plain, made with partially hydrogenated soybean oil, unsalted",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.98",
+                        "gm": 7.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19411",
+                "name": "Snacks, potato chips, plain, salted",
+                "weight": 28.0,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.79",
+                        "gm": 6.39
+                    }
+                ]
+            },
+            {
+                "ndbno": "19811",
+                "name": "Snacks, potato chips, plain, unsalted",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.98",
+                        "gm": 7.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19422",
+                "name": "Snacks, potato chips, reduced fat",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.01",
+                        "gm": 7.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "19043",
+                "name": "Snacks, potato chips, sour-cream-and-onion-flavor",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.30",
+                        "gm": 8.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "42283",
+                "name": "Snacks, potato chips, white, restructured, baked",
+                "weight": 34.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.70",
+                        "gm": 5.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19415",
+                "name": "Snacks, potato sticks",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.90",
+                        "gm": 6.7
+                    }
+                ]
+            },
+            {
+                "ndbno": "19048",
+                "name": "Snacks, pretzels, hard, confectioner's coating, chocolate-flavor",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.13",
+                        "gm": 7.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "19814",
+                "name": "Snacks, pretzels, hard, plain, made with enriched flour, unsalted",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.58",
+                        "gm": 9.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "19812",
+                "name": "Snacks, pretzels, hard, plain, made with unenriched flour, salted",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.58",
+                        "gm": 9.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "19813",
+                "name": "Snacks, pretzels, hard, plain, made with unenriched flour, unsalted",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.58",
+                        "gm": 9.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "19047",
+                "name": "Snacks, pretzels, hard, plain, salted",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.85",
+                        "gm": 10.04
+                    }
+                ]
+            },
+            {
+                "ndbno": "19050",
+                "name": "Snacks, pretzels, hard, whole-wheat including both salted and unsalted",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.15",
+                        "gm": 11.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "19052",
+                "name": "Snacks, rice cakes, brown rice, buckwheat",
+                "weight": 9.0,
+                "measure": "1.0 cake",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.81",
+                        "gm": 9.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19817",
+                "name": "Snacks, rice cakes, brown rice, buckwheat, unsalted",
+                "weight": 9.0,
+                "measure": "1.0 cake",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.81",
+                        "gm": 9.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19413",
+                "name": "Snacks, rice cakes, brown rice, corn",
+                "weight": 9.0,
+                "measure": "1.0 cake",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.76",
+                        "gm": 8.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "19414",
+                "name": "Snacks, rice cakes, brown rice, multigrain",
+                "weight": 9.0,
+                "measure": "1.0 cake",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.77",
+                        "gm": 8.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "19818",
+                "name": "Snacks, rice cakes, brown rice, multigrain, unsalted",
+                "weight": 9.0,
+                "measure": "1.0 cake",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.77",
+                        "gm": 8.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "19816",
+                "name": "Snacks, rice cakes, brown rice, plain, unsalted",
+                "weight": 9.0,
+                "measure": "1.0 cake",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.74",
+                        "gm": 8.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "19416",
+                "name": "Snacks, rice cakes, brown rice, rye",
+                "weight": 9.0,
+                "measure": "1.0 cake",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.73",
+                        "gm": 8.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "19053",
+                "name": "Snacks, rice cakes, brown rice, sesame seed",
+                "weight": 9.0,
+                "measure": "1.0 cake",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.68",
+                        "gm": 7.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "19819",
+                "name": "Snacks, rice cakes, brown rice, sesame seed, unsalted",
+                "weight": 9.0,
+                "measure": "1.0 cake",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.68",
+                        "gm": 7.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "19051",
+                "name": "Snacks, rice cracker brown rice, plain",
+                "weight": 9.0,
+                "measure": "1.0 cake",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.74",
+                        "gm": 8.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "19418",
+                "name": "Snacks, sesame sticks, wheat-based, salted",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.09",
+                        "gm": 10.9
+                    }
+                ]
+            },
+            {
+                "ndbno": "19820",
+                "name": "Snacks, sesame sticks, wheat-based, unsalted",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.09",
+                        "gm": 10.9
+                    }
+                ]
+            },
+            {
+                "ndbno": "25025",
+                "name": "Snacks, soy chips or crisps, salted",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.51",
+                        "gm": 26.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "19273",
+                "name": "Snacks, SUNKIST, SUNKIST Fruit Roll, strawberry, with vitamins A, C, and E",
+                "weight": 21.0,
+                "measure": "1.0 roll",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.13",
+                        "gm": 0.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "25012",
+                "name": "Snacks, sweet potato chips, unsalted",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.83",
+                        "gm": 2.94
+                    }
+                ]
+            },
+            {
+                "ndbno": "19524",
+                "name": "Snacks, taro chips",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.65",
+                        "gm": 2.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "43566",
+                "name": "Snacks, tortilla chips, light (baked with less oil)",
+                "weight": 63.0,
+                "measure": "1.0 cup, crushed",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.48",
+                        "gm": 8.7
+                    }
+                ]
+            },
+            {
+                "ndbno": "19444",
+                "name": "Snacks, tortilla chips, low fat, made with olestra, nacho cheese",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.39",
+                        "gm": 8.44
+                    }
+                ]
+            },
+            {
+                "ndbno": "19833",
+                "name": "Snacks, tortilla chips, low fat, unsalted",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.12",
+                        "gm": 11.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "19057",
+                "name": "Snacks, tortilla chips, nacho cheese",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.09",
+                        "gm": 7.36
+                    }
+                ]
+            },
+            {
+                "ndbno": "19857",
+                "name": "Snacks, tortilla chips, nacho-flavor, made with enriched masa flour",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.21",
+                        "gm": 7.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "19424",
+                "name": "Snacks, tortilla chips, nacho-flavor, reduced fat",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.47",
+                        "gm": 8.7
+                    }
+                ]
+            },
+            {
+                "ndbno": "19056",
+                "name": "Snacks, tortilla chips, plain, white corn, salted",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.01",
+                        "gm": 7.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "19058",
+                "name": "Snacks, tortilla chips, ranch-flavor",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.04",
+                        "gm": 7.19
+                    }
+                ]
+            },
+            {
+                "ndbno": "19063",
+                "name": "Snacks, tortilla chips, taco-flavor",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.24",
+                        "gm": 7.9
+                    }
+                ]
+            },
+            {
+                "ndbno": "43364",
+                "name": "Snacks, tortilla chips, unsalted, white corn",
+                "weight": 26.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.03",
+                        "gm": 7.79
+                    }
+                ]
+            },
+            {
+                "ndbno": "19059",
+                "name": "Snacks, trail mix, regular",
+                "weight": 150.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "20.70",
+                        "gm": 13.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "19821",
+                "name": "Snacks, trail mix, regular, unsalted",
+                "weight": 150.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "20.70",
+                        "gm": 13.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "19062",
+                "name": "Snacks, trail mix, regular, with chocolate chips, salted nuts and seeds",
+                "weight": 146.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "20.73",
+                        "gm": 14.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "19822",
+                "name": "Snacks, trail mix, regular, with chocolate chips, unsalted nuts and seeds",
+                "weight": 146.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "20.73",
+                        "gm": 14.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "19061",
+                "name": "Snacks, trail mix, tropical",
+                "weight": 140.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.82",
+                        "gm": 6.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "25030",
+                "name": "Snacks, vegetable chips, HAIN CELESTIAL GROUP, TERRA CHIPS",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.17",
+                        "gm": 4.13
+                    }
+                ]
+            },
+            {
+                "ndbno": "25040",
+                "name": "Snacks, vegetable chips, made from garden vegetables",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.51",
+                        "gm": 5.32
+                    }
+                ]
+            },
+            {
+                "ndbno": "25050",
+                "name": "Snacks, yucca (cassava) chips, salted",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.38",
+                        "gm": 1.34
+                    }
+                ]
+            },
+            {
+                "ndbno": "19433",
+                "name": "Tortilla chips, low fat, baked without fat",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.12",
+                        "gm": 11.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "25028",
+                "name": "Tortilla chips, yellow, plain, salted",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.88",
+                        "gm": 6.62
+                    }
+                ]
+            }
+        ]
+    }
+}

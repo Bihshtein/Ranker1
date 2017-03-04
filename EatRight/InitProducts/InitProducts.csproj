@@ -94,6 +94,7 @@
     <Compile Include="Validators\OilsAndFatsValidator.cs" />
     <Compile Include="Validators\PorkValidator.cs" />
     <Compile Include="Validators\SausagesValidator.cs" />
+    <Compile Include="Validators\SnacksValidator.cs" />
     <Compile Include="Validators\SoupAndSauceValidator.cs" />
     <Compile Include="Validators\SpicesAndHerbsValidator.cs" />
     <Compile Include="Validators\SweetsValidator.cs" />

@@ -20,8 +20,8 @@ namespace InitRecipes {
         public static string FolderPath = Assembly.GetExecutingAssembly().Location + @"\..\..\..\..\LocalDB\";
 
         public static Dictionary<RecipesSource, string> RecipesURLs = new Dictionary<RecipesSource, string>() {
-          //  {RecipesSource.Cookpad,  "https://cookpad.com/us/" },
-           {RecipesSource.AllRecipes,  "http://allrecipes.com/recipes/" },
+            {RecipesSource.Cookpad,  "https://cookpad.com/us/" },
+         // {RecipesSource.AllRecipes,  "http://allrecipes.com/recipes/" },
          
         };
 
@@ -32,13 +32,13 @@ namespace InitRecipes {
 
         private static Dictionary<RecipesSource, Dictionary<MealType, Tuple<string, int>>> MealTypesURNs = new Dictionary<RecipesSource, Dictionary<MealType, Tuple<string, int>>>() {
             {RecipesSource.AllRecipes, new Dictionary<MealType, Tuple<string, int>>() {
-                {MealType.Dinner, new Tuple<string,int>( "17562/dinner",100) },
-                {MealType.Breakfast, new Tuple<string,int>( "78/breakfast-and-brunch",100) } }
+                {MealType.Dinner, new Tuple<string,int>( "17562/dinner",1) },
+                {MealType.Breakfast, new Tuple<string,int>( "78/breakfast-and-brunch",1) } }
             },
             {RecipesSource.Cookpad, new Dictionary<MealType, Tuple<string, int>>() {
-               {MealType.Breakfast, new Tuple<string,int>( "search/breakfast", 300)},
-                {MealType.Lunch,  new Tuple<string,int>("search/lunch",900) },
-               {MealType.Dinner, new Tuple<string,int>( "search/dinner" ,300)}}
+               {MealType.Breakfast, new Tuple<string,int>( "search/breakfast", 500)},
+                {MealType.Lunch,  new Tuple<string,int>("search/lunch",1000) },
+               {MealType.Dinner, new Tuple<string,int>( "search/dinner" ,500)}}
             }
         };
 
@@ -76,10 +76,9 @@ namespace InitRecipes {
                     tasks.ForEach(task => task.Wait());
             }
         }
-        private static void ReadPage(string categoryURN, RestDBInterface unit, int currPage) {
+        private static void ReadPage(string categoryURN, RestDBInterface unit, int currPage, WebClient client) {
             string pageStr = null;
             var readWorked = false;
-            var client = new WebClient();
             var urlSuffix = currPage == 0 ? "" : ("?page=" + currPage);
             var uri = categoryURN + "/" + urlSuffix;
             for (int retries = 0; readWorked==false && retries < 10; retries++) {
@@ -103,7 +102,7 @@ namespace InitRecipes {
             var tasks = new List<Task>();
             for (int i = 0; i < pagesLimit; i++) {
                 int curr = i;
-                tasks.Add(new Task(new Action(()=> ReadPage(categoryURN,unit ,curr))));
+                tasks.Add(new Task(new Action(()=> ReadPage(categoryURN,unit ,curr, new WebClient()))));
             }
             tasks.ForEach(task => task.Start());
             tasks.ForEach(task => task.Wait());
@@ -206,11 +205,11 @@ namespace InitRecipes {
             else {
                 var ingredientParts = page.Split(new string[1] { "<span class=\"ingredient__quantity\">" }, StringSplitOptions.None);
                 for (int i = 1; i < ingredientParts.Length; i++) {
-                    var ingredient = ingredientParts[i].Split('\n')[0];
 
+                    var ingredient = ingredientParts[i].Split('\n')[0];
                     var nameAndWeight = ingredient.Split(new string[1] { "</span>" }, StringSplitOptions.None);
                     var name = nameAndWeight[1].Trim().ToLower();
-                    if (name == string.Empty)
+                    if (name == string.Empty || Map.ShouldSkip(name))
                         continue;
                     name = Map.AdjustNames(name);
                     name = Map.AdjustInnerPart(name).Trim();
@@ -271,9 +270,7 @@ namespace InitRecipes {
                         if (splitBySpace.Length > 1 && (splitBySpace[1] == "g" || splitBySpace[1] == "ml")) {
                             weightNum = ParseHelpers.ParseAmount(splitBySpace[0]);
                         }
-                        else if (weight == "") {
-                            weightNum = 1;
-                        }
+                      
                         else if(Formulas.RelativeProductSize.Any(s => name.Contains(s))) {
                             relativeWeight = Formulas.RelativeProductSize.First(s => name.Contains(s));
                             name = name.Replace(relativeWeight,string.Empty).Trim();
@@ -283,12 +280,12 @@ namespace InitRecipes {
                                 name = Map.AdjustIngredient(name);
                             }
                         }
-
-                        
-
-                        else {
-
+                        else if (weight == "") {
+                            weightNum = 1;
                             relativeWeight = name;
+                        }
+                        
+                        else {
                             try {
                                 weightNum = ParseHelpers.ParseAmount(weight);
                             }

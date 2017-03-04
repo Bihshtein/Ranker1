@@ -29,7 +29,8 @@ namespace InitProducts {
             {"Chicken", "0500"},
             {"Pork", "1000"},
             {"Beef", "1300"},
-            {"Sausages", "0700"}
+            {"Sausages", "0700"},
+            { "Snacks", "2500"}
         };
         public static Dictionary<string, BasicValidator> Validators = new Dictionary<string, BasicValidator>() {
             { "Sweets", new SweetsValidator()},
@@ -47,6 +48,7 @@ namespace InitProducts {
             { "SpicesAndHerbs", new SpicesAndHerbsValidator()},
             { "OilsAndFats", new OilsAndFatsValidator()},
             { "SoupAndSauce", new SoupAndSauceValidator()},
+            { "Snacks", new SnacksValidator()},
             { "Legumes", new LegumesValidator()},
             { "Sausages", new SausagesValidator()},
             };
