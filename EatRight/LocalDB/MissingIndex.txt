@@ -1,2043 +1,1592 @@
-self raising flour : 16
-cooking spray : 15
-ingredients for 6 hot biscuits : 15
-caster sugar : 14
-salt &amp; pepper : 13
-chia seeds : 11
-dry ingredients : 11
-ap flour : 10
-eggs beaten : 10
-cinnamon powder : 9
-salted butter : 9
-nutella : 9
-topping : 9
-wet ingredients : 9
-coconut flour : 8
-stevia : 7
-milk (or cream) : 7
-oatmeal : 7
-xanthan gum if using gluten-free flour : 6
-self-raising flour : 6
-bicarbonate of soda : 6
-egg beaten : 6
-pure vanilla extract : 6
-half and half : 6
-quick oats : 6
-wet : 6
-turbinado sugar : 5
-almond flour : 5
-french toasted bread : 5
-sweet corn : 5
-baking mix : 5
-italian seasoning : 5
-sunflower oil : 5
-almond extract : 5
-vanilla sugar : 5
-ice : 5
-light coconut milk : 4
-jiffy corn muffin mix : 4
-filling : 4
-yellow onion; : 4
-streusel topping : 4
-free range eggs : 4
-unsweetened almond milk : 4
-raw sugar : 4
-dark chocolate : 4
-granulated garlic powder : 4
-white chocolate : 4
-full cream milk : 4
-desiccated coconut : 4
-protein powder : 4
-splenda : 4
+granulated garlic powder : 14
+italian seasoning : 10
+pepper flakes : 8
+salt &amp; pepper : 8
+taco seasoning : 6
+red pepper flakes : 5
+table salt &amp;  cracked black pepper : 5
+table salt &amp; black pepper : 5
+ingredients for 6 hot biscuits : 5
+mayo : 5
+sourdough starter : 4
 organic full fat coconut milk : 4
-coconut flakes : 4
-evoo : 4
-self-rising flour : 4
-pure maple syrup : 4
-coconut sugar : 4
-demerara sugar : 4
-quick cooking oats : 4
-salt (to taste) : 4
-golden syrup : 4
-cumin : 4
-white granulated sugar : 4
-gluten-free  oats : 4
-white sweet chocolate candies : 4
-of salt : 4
-sr flour : 4
-sourdough starter : 3
-peanuts : 3
-whipping cream : 3
-chilli powder : 3
-tumeric : 3
-overripe banana : 3
-flax seed : 3
-eggs (beaten) : 3
-red pepper flakes : 3
-potato starch : 3
-tomatoe : 3
-flax meal : 3
-condensed milk : 3
-pumpkin spice : 3
-old fashioned  oats : 3
-veg oil : 3
-granola : 3
-very  bananas : 3
+cooking spray : 4
+mint : 4
+rice vinegar : 4
+dehydrated onions : 4
+basil; chiffonade : 4
+cream of chicken soup : 4
 organic spelt flour : 3
+coconut flakes : 3
+turbinado sugar : 3
+half and half : 3
+yellow onion; : 3
+jiffy corn muffin mix : 3
+unsweetened almond milk : 3
 colby jack cheese : 3
-tomato catsup : 3
-extra sharp cheddar cheese : 3
-porridge oats : 3
-green chilli : 3
-runny honey : 3
-butter; : 3
-egg whites (about 2 eggs) : 3
-egg yolks (about 2 eggs) : 3
-softened butter : 3
-all-purpose baking mix : 3
-corn flakes : 3
-coco powder : 3
-corned beef : 3
-granny smith apple : 3
-real maple syrup : 3
-garlic; : 3
-orange extract : 3
-cream of chicken soup : 3
-dairy-free coconut yoghurt : 3
-hashbrowns : 3
-texas toasted bread : 3
-slices of bread : 3
-chilli flakes : 2
-seasoning : 2
-green chilies : 2
-workshop sugar : 2
-pan spray : 2
-coriander to garnish : 2
-curd : 2
-good pinch of salt : 2
-old fashioned baking mix : 2
+hamburger meat : 3
+mirin : 3
+red chillies : 3
+green chillies : 3
+fine  garlic : 3
+rosemary; : 3
+cumin powder : 3
+red pepper;  dice : 3
+long grain rice : 3
+vegetable stock : 3
+sriracha : 3
+cumin : 3
+bbq sauce : 3
+egg beaten : 2
+full cream milk : 2
+almond flour : 2
+organic turbinado sugar : 2
 water or milk : 2
-milk or cream : 2
-red capsicum : 2
-spray oil : 2
-corn and canola oil or vegetable oil : 2
-red pepper; : 2
-each eggs : 2
-pepper flakes : 2
-jalapeֳ±os; : 2
-onion; : 2
-garlic; creamed : 2
-flax eggs : 2
-vegan sweet chocolate candies : 2
-semisweet sweet chocolate candies : 2
-table salt &amp; black pepper : 2
-espresso powder : 2
-banana extract : 2
-butter without salt  and cooled : 2
-dark sweet chocolate candies : 2
-instant grits : 2
-oat flour : 2
-liquid egg whites : 2
-cajun seasoning : 2
-graham cracker crumbs : 2
-egg (beaten) : 2
-himalayan salt : 2
-all purpose flower : 2
-flax seed meal : 2
-herbs de provence : 2
-topping: : 2
-sprinkle of cinnamon : 2
 vanilla greek yogurt : 2
-bisquick : 2
-corn grits (or corn meal) : 2
-red chilli powder : 2
-vanilla protein powder : 2
-green apple : 2
-sunflower seeds : 2
-beaten eggs : 2
-caramel cream : 2
-spelt flour : 2
-1% milk : 2
-bisquick mix : 2
-natural yoghurt : 2
-omelette : 2
+old fashioned baking mix : 2
+/ a cup oil : 2
+raw apple cider vinegar : 2
+workshop sugar : 2
+good pinch of salt : 2
+pan spray : 2
+pinch sugar : 2
+cajun seasoning : 2
+parmesean cheese : 2
+banana extract : 2
+poblano pepper : 2
+sweet corn : 2
+overripe banana : 2
+toasted breaded walnuts : 2
+old fashioned oats : 2
+vanila : 2
+sunflower oil : 2
+graham cracker crumbs : 2
+white chocolate : 2
+stevia : 2
+potato starch : 2
+oatmeal : 2
 butter softened : 2
 avocado oil : 2
+tspn salt : 2
 zucchini (about 1 zucchini) 150g : 2
-almond meal : 2
-french or vienna bread : 2
-organic turbinado sugar : 2
-croissant dough : 2
-raw apple cider vinegar : 2
-unsweetened cashew milk : 2
-egg wash : 2
-cayenne powder : 2
-crunchy peanut butter : 2
-quick cooking oatmeal : 2
-old fashioned oats : 2
-green pepper; : 2
-greek yoghurt : 2
-powered sugar : 2
-sweetened flaked coconut : 2
-sweetener equivalent to 1 t sugar : 2
-peel of 1 lemon : 2
-medium shrimp : 2
-- ingredients for 10 muffins : 2
-flax seeds : 2
-med onion : 2
-bran : 2
-full fat milk : 2
-vegan butter : 2
-mascarpone : 2
-rosemary; : 2
-dry oats : 2
-sultanas : 2
-table salt &amp; black pepper; : 2
-plain yoghurt : 2
-yoghurt : 2
-organic sugar : 2
-ghee : 2
-sugar or sugar substitute : 2
-cream of mushroom : 2
-nutritional yeast : 2
-dry mustard : 2
-d potatoes : 2
-lemon extract : 2
-flaxseed : 2
-tapioca flour : 2
-[dry ingredients]: : 2
-almond butter : 2
-pure pumpkin : 2
-[wet ingredients]: : 2
-splash of milk : 2
-knob of butter : 2
-fruit of choice : 2
-butter-melted : 2
-raw honey : 2
-waffles : 2
-pancake batter : 2
-powder sugar : 2
-of milk : 2
-flax : 2
-of cinnamon : 2
-pancake syrup : 2
-fold in: : 2
-self rising flour : 2
-real butter : 2
-cream of tartar : 2
-okara (soy pulp) : 2
-mixed vegetables : 2
-chocolate liqueur : 2
-tea leaves : 2
-courgette : 2
-cinnamon filling : 2
-non stick spray : 2
-tasty cheese : 2
-granulated granulated sugar : 2
-large shrimp : 2
-creole seasoning : 2
-grits : 2
-cream of mushroom soup : 2
-pieces of bread : 2
-hot italian sausage : 1
-flax / linseed : 1
-idli batter : 1
-/ gluten-free flour (2 cups) : 1
-sandwich bread (thicker) : 1
-eggs plus 2 egg whites : 1
-dry red-chilly : 1
-coarse-chopped yellow onion : 1
-butter (or dairy free butter) : 1
-bakers cocoa : 1
-beetroot puree* (1 cup) : 1
-light coconut milk (1 cup) : 1
-coarse-chopped broccoli : 1
-milk (or milk alternative) : 1
-nestle milk chocolate morsels : 1
-yakisoba noodled or  egg noodles : 1
-plant milk (i like almond coconut) : 1
-sabudana/sago : 1
-flax egg 1 tablespoon  flax seed 2 tablespoons water : 1
-turkey breast : 1
-peel of orange : 1
-vegetables oil : 1
-freshly milled kamut flour : 1
-sweet-blend spinach : 1
-yakisoba sauce or tonkatsu sauce : 1
+pasley : 2
+tomato catsup : 2
+enchilada sauce : 2
+lemon pepper : 2
+aburaage : 2
+garlic -- : 2
+ts salt : 2
+dry mint : 2
+juice of 1 lime : 2
+for the dressing: : 2
+jicama : 2
+chicken sausage : 2
+hoagie rolls : 2
+green chilies : 2
+orzo : 2
+chili seasoning : 2
+velveeta : 2
+cream of celery : 2
+peel of half a lemon : 2
+cockles : 2
+toasted breaded sesame oil : 2
+pepper and table salt : 2
+elbow noodles : 2
+red enchilada sauce : 2
+thyme; : 2
+garlic thinly : 2
+big onions : 2
+sweet chilli sauce : 2
+chickpeas : 2
+garlic; : 2
+chicken boobs : 2
+merlot-parmesean cheese : 2
+prosciutto : 2
+clams : 2
+sesame seed oil : 2
+large shrimps : 2
+green lentils : 2
+coconut infused white balsamic vinegar : 2
+coriander; chiffonade : 2
+celery; : 2
+siracha sauce : 2
+brandy : 2
+lemongrass : 2
+shallots; : 2
+assorted pork chops : 2
+---sauce----- : 2
+marinara sauce : 2
+sweet basil : 2
+red spur chillies : 2
+sriracha seasoning : 2
+fine semolina : 2
+bone-in : 2
+granulated garlic : 2
+tamari soy sauce : 2
+hoisen sauce : 2
+people : 1
+dry ingredients: : 1
+buttered white bread : 1
+folded pieces of deli ham : 1
+streusel: : 1
+milled kamut flour : 1
 eggs or substitute 1 egg by mixing 1 tsp of  flaxseed with 3tsp of water : 1
-bowl of  rice : 1
-coarse-chopped baby bella mushrooms : 1
+buttermilk or milk to brush on the top of scones : 1
+evaporated milk or crean : 1
+chocolate powder : 1
+non-stick spray* (see note in step 4) : 1
 for the batter: : 1
 dates (about 5 pitted) : 1
-each egg -- lightly beaten : 1
-coarse-grated parmigiano reggiano : 1
 butternut squash as butter substitute : 1
-cup flour : 1
-homemade almond milk (or any milk available : 1
-icing / powdered sugar : 1
-/ a cup oil : 1
-cooking spray to grease the pan : 1
-thick slices of bread (~ 3/4&quot;). i like brioche : 1
-coconut milk shake the  well before opening to incorporate the fat and cream solids with the liquid : 1
-extra maple syrup or powdered sugar to finish : 1
-red chiles; : 1
-distilled distilled vinegar (to tenderize the flour) : 1
-butter -- : 1
-coconut cream : 1
-honey / maple syrup / nutella : 1
-buttered white bread : 1
-green chile; : 1
-part-nonfat  mozzarella : 1
-butter for cooking : 1
-tunatm : 1
-leafs of spinach : 1
-ginger powder : 1
-custard ingredients: : 1
-coconut flour (35 calories) (discount 10 for fiber) : 1
-folded pieces of deli ham : 1
-catsup(depends on your taste : 1
-whole milk (if you like it richer : 1
-organic freshly milled kamut flour : 1
-crust : 1
-defatted soy flour (~80 calories) : 1
-nonfat greek yogurt (~20 calories) : 1
-grinds (or  pinch) of cinnamon : 1
-for the syrup: : 1
-sweetener (monk fruit : 1
-smidgen of table salt : 1
-about 1 tablespoon of water : 1
-maple syrup or sugar : 1
-oats idli mix (i used wholefoods brand) : 1
-~1/2 cup almond milk (adjust more or less to your desired pancake consistence) : 1
-egg whites (6 tablespoons) (50 calories) : 1
-sugar free maple syrup : 1
-dark brown or muscovado sugar : 1
-pumpkin (10 calories) : 1
-sm-med mushrooms : 1
-(minimum) dark or milk chocolate chunks : 1
-sunflower or rapeseed oil : 1
-shakes worcester sauce : 1
-rumfords baking powder : 1
-trulia sweetener : 1
-curry powder 8-10 : 1
-few shakes of black pepper : 1
-buttermilk add a tsp of lime juice and set aside for a few minutes : 1
-yes : 1
-bread or tortillas : 1
-roasted red pepper : 1
-eggs room temperature : 1
-gluten-free porridge oats : 1
-. 1 1/2 cups cashew nuts : 1
-people : 1
-brioche bread / left over buns : 1
-ingredient a: : 1
-sugar or less (the bananas give the bread a natural sweetness and syrup is also added in the dish) : 1
-. 1/4 cup chickpea flour : 1
-apple or pear sauce : 1
-. 2 tsp baking powder : 1
-cornflakes : 1
-&quot;chia eggs&quot; 2 tbsp  chia + 6 tbsp water : 1
-. 1 tsp cinnamon : 1
-butter without salt  and coolded : 1
-. 1/4 tsp nutmeg : 1
-ingredient b: : 1
-flax egg (see first way) : 1
-. 1/4 tsp table salt : 1
-. 1/2 cup  sweet potato puree : 1
-. 1/4 cup maple syrup : 1
-safflower or coconut oil : 1
-. 1/4 cup coconut oil (measure after melting) : 1
-. 2 flax eggs (real eggs should work too) : 1
-ingredient c: : 1
-. 1/2 cup sweet chocolate candies : 1
-shortening- to grease the pan : 1
-each  swiss and sharp cheddar cheese : 1
-potatoes *peeled and : 1
-rice flour *or 1/4 cup rice flour &amp; 1/4 cup glutinous rice flour : 1
-bulb fennel;  save fronds : 1
-water *depends on the moisture of the potatoes : 1
-extra ingredients: : 1
-i  banana : 1
-milk or half and half- (more fat :) : 1
-spoon semolina : 1
-butter- softened : 1
-each cayenne pepper and black pepper : 1
-fine oats : 1
-spoon corn flour : 1
-tinned sweetcorn : 1
-tbs butter : 1
-spoon coco powder : 1
-mini chocolate pannetone loafs;  horizontally in thirds : 1
-spoon junior protinex/ whey protine vanilla flavored : 1
-flour+1 table spoon baking powder : 1
-nonfatmed milk : 1
-hash browns or  potatoes : 1
-pork tenderloin; trimmed and : 1
-t.spoon turmeric : 1
-your favorite shredded/grated cheese : 1
-parmesean cheese : 1
-texas toasted bread bread- 1 inch thick (i also use french or vienna bread cut on bias 1 inch or we have used day old croissants) : 1
-poblano pepper : 1
-challot plus leaves : 1
-table salt &amp; freshly cracked black pepper : 1
-large  spinach : 1
-thick cut cinnamon-raisin bread; lightly toasted breaded : 1
-flat leaf parsely; chiffonade : 1
-table spoon margarine : 1
-cooking chocolate : 1
-flax egg 1:1 ratio of  flax:water : 1
-red skin potatoes : 1
-\4 cup vegan sweet chocolate candies : 1
-bananas; quatered : 1
-\2 cup  coconut i used organic : 1
-(less than half cup) milk : 1
-corn (yellow : 1
-lemon; juiced : 1
-water as need : 1
-cheese (any style) : 1
-vegestable oil : 1
-pinch sugar : 1
-green chiles : 1
-jiffy corn mix : 1
-extra virgin coconut oil : 1
-butter;  &amp; softened : 1
-sausage links or patties (your preference) : 1
-green enchilada sauce : 1
-baking soda/ fruit salt/ eno packet : 1
-minute rice 2 or 3 bags or reg. rice however you like : 1
-free-range egg : 1
-sprinkle red pepper powder : 1
-buttermilk you  use normal milk : 1
-iodized salt : 1
-jalepenos and the juice (about 4 tblsp jalepeno juice) : 1
-raw  and deveined shrimp : 1
-tbs salt : 1
-milk (required if batter is too thick) : 1
-coconut whipped cream : 1
-of an  apple finely : 1
-firm tofu : 1
-chicken bouillon : 1
-cream of potato soup : 1
-additional herbs if you wish! : 1
-table spoon mayonnaise : 1
-soda bi carb : 1
-2 lbs.  hash brown potatoes : 1
-walnuts -- : 1
-packed  carrots : 1
-milk or water : 1
-workshop thyme : 1
-milk (i think) : 1
-sweet potato / steamed / : 1
-workshop ֲ green cumin : 1
-fat free milk : 1
-tsb salt : 1
-cinnamon extract : 1
-baked sweet potato : 1
-leeks (nira) : 1
-tsb cinnamon : 1
-lump crab meat : 1
-tuna packed in oil : 1
-hennessy : 1
-fine corn meal : 1
-potato powder : 1
-quickles ii see my recipe or just use dill pickle chips : 1
-chia seed : 1
-craisins : 1
-ג„ 4 cups rice par  12 tbs : 1
-wholewheat flour : 1
-workshop coriander : 1
-ג„ 4 cups urad dal (4 tbs) : 1
-spiced glaze : 1
-for sauce : 1
-sprinkle of  cheddar : 1
-ragi : 1
-refined oil (for greasing) : 1
-table spoon black pepper : 1
-appropriate quantities of mayonnaise : 1
-green chilleys : 1
-appropriate quantities of catsup : 1
-appropriate quantities of pizza cheese : 1
-gluten-free flour : 1
-coconut palm sugar : 1
-message what you want to tell : 1
-corriender : 1
-yolks : 1
-my flour blend doesn&#39;t have xanthan gum : 1
-chicken salami  finely : 1
-chocolate chunk (dark / semi sweet chocolate) : 1
-curry : 1
-/2 cup sugar : 1
-soy source : 1
-tblsp  flax : 1
-unsalted softened butter : 1
-butter/ margarine as spread : 1
-jalapeֳ±os save 12 thin jalapeֳ±o slices for garnish : 1
-cup(150g) -grain wheat flour : 1
-tblsp raw sugar (your sweetness preference) : 1
-+ 1/8 cups buttermilk plus a  more for brushing at the end : 1
-toasted breaded walnuts : 1
-serving (14g) of low fat cheddar jack : 1
-gram flour : 1
-yellow softened butter : 1
-crispy red pepper salad topping : 1
-whole wheat pastry flower : 1
-+ 2 tbsp powdered sugars : 1
-cup/2   bananas pureed in mixer : 1
-soda bi carbonate : 1
-additional ingredients : 1
-ג„ 2 teaspoons turmeric powder : 1
-tblsp apple cider vinegar : 1
-------meat muffins------- : 1
-tex mex  cheese : 1
-freah coriander : 1
-beet sugar : 1
-mixed both of them : 1
-spinacg : 1
-toping : 1
-sirloin : 1
-water (as needed) : 1
-wild mushrooms : 1
-chocolate/chocolate sprinkle : 1
-cacao powder : 1
-refined oil : 1
-manchego cheese : 1
-tbls. vanilla extract : 1
-butter without salt or olive oil : 1
-non-stick spray* (see note in step 4) : 1
-black mustard seeds : 1
-pine nuts : 1
-eno fruit salt : 1
-and  granny smith apples : 1
-for muffin variation add: : 1
-instant oatmeal : 1
-caramels : 1
-tender garlics : 1
-confectioners sugar : 1
-tbls. whipping cream : 1
-buttermilk or milk to brush on the top of scones : 1
-corn meal fine or medium : 1
-corn kernels : 1
-lightly salted : 1
-muffin: : 1
-+ 1 tablespoon whole milk or you  use 1/2 cup whole milk in lieu of whipping cream + milk : 1
-----sauce for dipping------ : 1
-wax paper : 1
-food safe twigs or craft : 1
-hot dogs (cut each of them into 3 pieces) : 1
-oreo cookies coarsely : 1
-sugar (i used 1tbs) : 1
-mitmita african spice more or less depending on how hot you want it : 1
-green meyer lemon juice : 1
-japanese rice : 1
-white bread slices : 1
-of a chicken thigh fillet : 1
-maple syrup to taste- a drizzle : 1
-mozarella : 1
-oreo cookies finely : 1
-this recipe also goes well with left over pork or sausage : 1
-mixed vegetables carrot : 1
-pam or any non stick cooking spray : 1
-activeyeast : 1
-honey/ maple syrup : 1
-drizzle: : 1
-self rising cornmeal mix : 1
-tomato sauce (catsup) : 1
-sprinkle of powdered sugars : 1
-chickpea flour (375 ml) : 1
-vegetableoil : 1
-sour cream or plain yogurt : 1
-honey or sweetener of choice : 1
-black salt (or herb salt) : 1
-table spoons sugar : 1
-mixed lettuce : 1
-clotted cream(qeshta) : 1
-pumpkin purֳ©e : 1
-mac and cheese ingredients: : 1
-dry mixture: : 1
-tomato chutney : 1
-hing (garlic /onion alternative) : 1
-thick homemade applesauce : 1
-coarsely  pistachio : 1
-water (375 ml) : 1
-suger syrup : 1
-cup : 1
-granulated of sugar : 1
-packed cauliflower rice : 1
-extra tasty cheddar : 1
-butter (if desired) : 1
-asparagus (about 20 spears) : 1
-purֳ©ed pumpkin : 1
-wet mixture: : 1
-eggs (seperate white eggs and yolks) : 1
-vanila : 1
-freshly  ginger root : 1
-streusel: : 1
-egg layer ingredients: : 1
-ingredients for 12 muffins : 1
-crumble topping : 1
-evaporated milk or crean : 1
-avocado filling: : 1
-ingredients for 7 hot biscuits : 1
-chilli : 1
--medium avocado : 1
-onion soak in water for a few minutes if sharp : 1
-lemon or lime juice about 1 wedge : 1
-plain wholemeal flour : 1
-pitted dates : 1
-rice bubbles : 1
-omelette: : 1
-jersey royals or new small potatoes  4 : 1
-milk or dashi : 1
-soy sauce (or until light brown color) : 1
-wholegrain mustard : 1
-salt or to taste : 1
-olive oil or butter  pan : 1
-salt + black pepper : 1
-coriander or dill to garnish : 1
-cheese i used smoked cheese : 1
-hodgson mill apple cinnamon muffin mix : 1
-chicken salamis : 1
-lemon juice per cup of milk : 1
-self raiaing flour : 1
-lemon peel added to dry mix to elevate your recipe : 1
-garlic flakes and black pepper : 1
-maple syrup or honey : 1
-cinnamon for a french toasted bread-like edginess : 1
-salt and sugar as per taste : 1
-tablesppon baking soda : 1
-i  jalapeno : 1
-bag of broccoli and cheese : 1
-asian chives : 1
-white chocolate (40g) : 1
-freshly  aged parmesan cheese : 1
-cheese anything you like : 1
-bag of   hashbrowns : 1
-cream of mushroom (or chicken : 1
-french onion sour cream dip : 1
--------------sloppy joe------------- : 1
-for strusel topping : 1
-pag of  chedder cheese : 1
-blackberry honey : 1
-sesason : 1
-organic apple cider vinegar : 1
-mug : 1
-organic raw apple cide vinegar : 1
-over  bananas : 1
-stuffed green olive slices : 1
-100% maple syrup : 1
-margarine or softened butter : 1
-turbano sugar : 1
-mulberry-raisin mixed in 1 to1 ratio : 1
-oil for pan : 1
-for white chocolate glaze drizzle : 1
-honey n cherry for garnishing : 1
-of a banana : 1
-sweet peppers : 1
-spanish chorizo or sausage : 1
-rice malt syrup/agave or honey : 1
-cocktail potatoes : 1
-sour cream (or any type of yogurt) : 1
-marinated rhubarb : 1
-salted nuts i used peanut : 1
-self rasing flour : 1
-tropical fruit dried mango and pineapple also add nuts if you like : 1
------------------muffin crust-------------- : 1
-mint : 1
-corn muffin mix self rising : 1
-coconut as you like : 1
-water about a cup full : 1
-soften butter : 1
----------------openface------------------- : 1
-corn muffin mix : 1
-hot biscuit : 1
-egg 1 egg : 1
-tspn salt : 1
-peel of 1 whole  lemon : 1
-g : 1
-leftover chili : 1
-ingredients for 8 hot biscuits : 1
-vanilla greek yogurt (stoneyfield organic preferred) : 1
-eggs depending on how much you make : 1
-for the bread use either: : 1
-quark : 1
-ג— for the french toasted bread soak [4 slices per serving] : 1
-dry ingredients: : 1
-english muffins (or half as many as the number of indents in your muffin pan) : 1
-2&quot; thick cibatta bread slices : 1
-milk x : 1
-heavy pinch of salt : 1
-lg  eggs [whipped] : 1
-raw stevia  leaf : 1
-heaping tablespoon flour : 1
-raspberry preserves : 1
-and  almonds : 1
-vegan protein powder : 1
-lg dashes  milk : 1
-lemon peel of half a lemon : 1
-chocolate powder : 1
-homemade bread dough (recipe in my profile) : 1
-garlic pieces : 1
 sprinkle: mini sweet chocolate candies : 1
--size potatoes (use enough for what you want lol) : 1
-burbon whiskey : 1
-ג— for the syrup [well heated] : 1
-or more (homemade) cottage cheese : 1
-tablespoon sugar : 1
-sugar / 75 gr : 1
-bread toasted bread : 1
+confectioners sugar : 1
+homemade almond milk (or any milk available : 1
+apple or pear sauce : 1
+whipping cream : 1
 wet ingredients: : 1
-powdered sugars: : 1
-quality burbon whiskey : 1
+coconut milk shake the  well before opening to incorporate the fat and cream solids with the liquid : 1
+&quot;chia eggs&quot; 2 tbsp  chia + 6 tbsp water : 1
+raw stevia  leaf : 1
 + 2 tbs caster sugar (130 gr) : 1
-for the muffins : : 1
-milk (regular or buttermilk) at room temperature : 1
-ginger garlic : 1
-ג— for the toppings : 1
+distilled distilled vinegar (to tenderize the flour) : 1
+manchego cheese : 1
 oil (3 tbs) : 1
-lemon juice from half a lemon : 1
-tsps baking powder : 1
-oil / corn and canola oil : 1
-salt as per taste : 1
-tsps cinnamon (up to 1 tbsp : 1
+cinnamon powder : 1
+each  swiss and sharp cheddar cheese : 1
+coconut flour : 1
 cherry yoghurt : 1
-oil (canola : 1
-fully ripen banana : 1
-finely  zucchini : 1
-red chilly powder : 1
-brioche bread : 1
+safflower or coconut oil : 1
+flax seed : 1
+ginger powder : 1
 milk (5 tbs) : 1
-tea leaves 4g (about to 2 tea bags) : 1
+unsweetened cashew milk : 1
+cup flour : 1
+fully ripen banana : 1
+flax egg (see first way) : 1
++ 1 tablespoon whole milk or you  use 1/2 cup whole milk in lieu of whipping cream + milk : 1
+spinacg : 1
+for the syrup: : 1
+each cayenne pepper and black pepper : 1
 organic raisins : 1
-packet of brown / white bread  cubes : 1
-milk (a bit more than the amount of egg) : 1
-bread (white or brown or wholewheat) : 1
-egg mixture : 1
-tblsp custurd powder : 1
-local honey : 1
-ea egg : 1
-salted butter pads : 1
-lg eggs : 1
-veg oil coconut oil that is in liquid form  also be u : 1
-maple syrup (or honey) : 1
+butter without salt or olive oil : 1
+sugar (i used 1tbs) : 1
+thick slices of bread (~ 3/4&quot;) i like brioche : 1
+extra maple syrup or powdered sugar to finish : 1
+each egg -- lightly beaten : 1
+tunatm : 1
+butter for cooking : 1
+butter -- : 1
+mozarella : 1
+honey/ maple syrup : 1
+custard ingredients: : 1
+whole milk (if you like it richer : 1
+leafs of spinach : 1
+sugar / 75 gr : 1
+oil / corn and canola oil : 1
+grinds (or  pinch) of cinnamon : 1
+quark : 1
 strawberry don&#39;t thow /  strawberry : 1
-cider roasted ham; : 1
-granulated sugar to add to top of muffins prior to baking : 1
-each of salt and caster sugar : 1
-cider roasted ham braising liquid : 1
-flour (bread or ap) : 1
-for the streusel topping: : 1
-oat topping: : 1
-omelette ingredients : 1
-granulated sugar (or caster sugar) : 1
-puffed rice : 1
-s/r flour : 1
-for blueberry swirl sauce : 1
-lemon peel (about 1 medium lemon) : 1
+raspberry preserves : 1
+maple syrup or sugar : 1
+firm tofu : 1
+and  almonds : 1
+tsb salt : 1
+raw  and deveined shrimp : 1
 strawberry yoghurt : 1
 mini sweet chocolate candies or as many as you like : 1
-water (prepare a bit more) : 1
-coconut milk powder : 1
+shortening- to grease the pan : 1
+-size potatoes (use enough for what you want lol) : 1
+tsb cinnamon : 1
+chicken bouillon : 1
+bulb fennel;  save fronds : 1
+dark sweet chocolate candies : 1
+chilli powder : 1
+cayenne powder : 1
+cornflakes : 1
+mini chocolate pannetone loafs;  horizontally in thirds : 1
+hash browns or  potatoes : 1
+cream of potato soup : 1
+butter- softened : 1
+flour (bread or ap) : 1
+your favorite shredded/grated cheese : 1
+red pepper; : 1
+french or vienna bread : 1
+2 lbs  hash brown potatoes : 1
+instant grits : 1
+lemon; juiced : 1
+eggs depending on how much you make : 1
+milk or water : 1
 dried mustard : 1
-bot banh xeo (flour) : 1
-catsup chicken rice : 1
-stevia powder : 1
-vidalia onion : 1
-ngo gai replace onion : 1
-russet potato;  &amp; : 1
-salt&amp;pepper : 1
-ore ida  hash brown potatoes : 1
-veg. ham  thin strips : 1
-jicama slice thin strips : 1
-honey or agave syrup : 1
-smart balance oil : 1
-plain nonfat greek yogurt : 1
-rose water : 1
-pepper  thin strips : 1
-soft tofu : 1
-morton seasoning salt : 1
-lemon juice (about half of 1 medium lemon) : 1
+hennessy : 1
+semisweet sweet chocolate candies : 1
+organic  milled kamut flour : 1
+milk x : 1
 dried ginger : 1
-veg. crab meat  strips no pollock = fish : 1
-nonfat milk or almond milk : 1
-sharp cheddar : 1
-mcdonald&#39;s vanilla smoothie : 1
-for pancakes : 1
-asafoetida : 1
-toasted breaded flaked almonds : 1
-for the glaze: : 1
-free-range eggs : 1
-celery  thin : 1
-virginia ham : 1
-ingredients for 18cm pancake : 1
-eggs (room temperature) : 1
-eggs  2 eggs : 1
-sev for garnishing : 1
-cooled  butter : 1
-yogurt1 : 1
-cereals : 1
-half zuchini  thin : 1
-peel of 2 oranges : 1
-tbls milk : 1
-cheddar cheese (or any kind of cheese you prefer) : 1
-for coconut crumb topping : 1
-butter as needed for griddle : 1
-stevia (or sugar) : 1
-thin white bread : 1
-very  bananas over is perfect : 1
-no salt peas : 1
-milk (any kind) : 1
-all pupose flour : 1
-baguette or bread that&#39;s crunchy : 1
-cinnamon &amp; sugar mixture : 1
-milk (soy/almond/cocnut : 1
-jalapeֳ±o peppers : 1
-for serving : 1
-milk (any kind will do : 1
-chocolate almond milk : 1
-anything else you&#39;d want to stuff in an omelette! : 1
-butter + splash of oil  pan : 1
-approx. 1/4 cup vegetable oil : 1
-hash browns thawed : 1
-coconut creme liquer : 1
-butter (1 stick) : 1
-chocolate soy milk : 1
-(if ) eggs : 1
-butter without salt or coconut oil : 1
+walnuts -- : 1
+heaping tablespoon flour : 1
+smidgen of table salt : 1
+tablespoon sugar : 1
+streusel topping : 1
+~1/2 cup almond milk (adjust more or less to your desired pancake consistence) : 1
+flat leaf parsely; chiffonade : 1
+rumfords baking powder : 1
+flax egg 1:1 ratio of  flax:water : 1
+espresso powder : 1
+\4 cup vegan sweet chocolate candies : 1
+\2 cup  coconut i used organic : 1
+bread or tortillas : 1
+self-rising flour : 1
+ג— for the french toasted bread soak [4 slices per serving] : 1
 maple syrup extract : 1
+2&quot; thick cibatta bread slices : 1
+pork tenderloin; trimmed and : 1
 vegetable oil  i used peanut oil : 1
-for muffins : 1
-soy milk (option w/dairy : 1
-mascarpone for spread : 1
-butter as needed for brushing griddle : 1
-idaho potato : 1
+roasted red pepper : 1
+spiced glaze : 1
+tuna packed in oil : 1
+jalapeֳ±os; : 1
+lg  eggs [whipped] : 1
+quickles ii see my recipe or just use dill pickle chips : 1
+onion; : 1
 bamboo skewers : 1
-nutmeg powder : 1
-clarified butter; as needed : 1
-pinch table salt &amp; black pepper : 1
-water + additional water if needed : 1
-sparkling pearl sugar : 1
-pepper or capsicum : 1
-martha white muffin mix 7 oz (whichever flavor you prefer) : 1
-- caramel cream - : 1
-non-stick cooking spray : 1
-dried mixed herbs  be italian mix : 1
-tyson roasted chicken : 1
-juice from half a lemon : 1
-sriracha and soy sauce for dipping : 1
-oats  into a powder : 1
-seedless raspberry jam : 1
-whole or half cream milk : 1
-add water til you reach the consistency you like : 1
-mixed nuts : 1
-- muffin dough : 1
-butter and syrup as much you want! : 1
-refrigerated croissants : 1
-egg mix : 1
-gluten &amp; wheat free flour : 1
-thin slices of green pepper : 1
-coconut dream (alternative to milk) : 1
-eggs white : 1
-heavy whipping cream or coconut milk : 1
-honey/maple syrup : 1
-cinnamon roll filling: : 1
-finely  lemon peel : 1
-sweet chocolate candies/chunks : 1
-marinara sauce : 1
-liquid smoke : 1
-milk (1 : 1
-chard leaves : 1
-cream cheese at room temperature : 1
-mae ploy sweet chili sauce : 1
-supplement: cheese : 1
-sweetener (sugar : 1
-crab meat : 1
-olive oil/coconut oil : 1
-heaping tbsp chocolate spread : 1
-sweetened vanilla almond milk : 1
-stork block margarine : 1
-for lemon glaze : 1
-vanilla whey protein powder : 1
-plus 2 tablespoons confectioner&#39;s sugar : 1
-oil (coconut or canola) : 1
-semi-sweeten mini sweet chocolate candies : 1
-almond milk (unsweetened) : 1
-tablesppon  lemon juice : 1
-finely  nutmeg : 1
-milk (i use whole. 5/8 is between a half and 3/4 cup) : 1
-stevia in the raw : 1
-oil plus extra for the pan : 1
-pancakes: : 1
-- muffins - : 1
-velveeta : 1
-eating apple : 1
-dried garlic chunks : 1
-mandarin orange : 1
-coconut cream* : 1
-condensed cream of chicken soup : 1
-crystallised ginger : 1
-canola or vegetable oil : 1
-loose italian sausage : 1
-dried chives : 1
-matcha powder : 1
-water 110ג€¢ : 1
-quick grits : 1
-roasted garlic olive oil : 1
-refrigerated cinnamon rolls with icing : 1
-active dry yeast (one pk.) : 1
-powdered sugars / powdered sugar : 1
-coconut cream taken from wet mixture above when made up : 1
-ingredients for 10 muffins : 1
-low fat ricotta cheese : 1
-oven temperature / 350f : 1
-baking time            / 26 min : 1
-sugar (i used truvia baking blend) : 1
-french or vienna bread  1 1/4 inch thick : 1
-- coffee icing : 1
-fat free or 1% milk : 1
-for the egg wash... 1 egg &amp; 2 tb. milk : 1
-hot sauce : 1
-baking potatoes : 1
-creamed corn : 1
-cacao nibs : 1
-few hazelnuts (broken) : 1
-* feel free to add any other veggies and or a sprinkle a of cheese on top : 1
-coconut sugar (or regular granulated) : 1
-healthy butter spread : 1
-coconut oil (or corn and canola oil) : 1
-milk (almond or cashew works well too) : 1
-[filling] : 1
-dark banana (very mushy) : 1
-croissant (not freshly baked ֲ ) : 1
-brandy (or water) : 1
-sugar in the raw : 1
-double cream or heavy whipping cream : 1
-smoked gouda : 1
-shrimp cleaned and deveined : 1
-chia seeds (or use total of 1.5 tbs flax seeds) : 1
-plant milk (soy / almond) : 1
-unsweetened apple sauce : 1
-brown or granulated sugar : 1
-very   bananas : 1
-margarine (1 stick) : 1
-bourbon or kahlua coffee liquor : 1
-sugar (if using unsweetened milk : 1
-non stick spray or paper liners : 1
-[wet] : 1
-heaped tablespoons flour : 1
-crunchy crumb topping : 1
-whole-grain wheat flour (you may need another 1-2 tbs) : 1
-olive oil (or any vegetable oil) : 1
-- ingredients for 10 muffins - : 1
-sunflower oil for cooking : 1
-[dry] : 1
-dried parsley (garnish) : 1
-beetroot* : 1
-level teaspoon salt : 1
-tblsp  butter : 1
-level teaspoon dry mustard : 1
-tiramisu pancake : 1
-heaped tablespoons margarine : 1
-vanilla or plain yogurt : 1
-sugar (a) : 1
-heaped tablespoons  cheddar cheese : 1
-teaspon salt : 1
-pwd vanilla or 1 tsp liquid vanilla : 1
-sugar (b) : 1
-teaspon baking powder : 1
-longhorn style cheddar cheese : 1
-d eggs : 1
-table spoons milk : 1
-beef mince meat : 1
-very  bananas 2 medium : 1
-thick slice ham; : 1
-banana (2-3 bananas) : 1
-tps sugar : 1
-whipped mascarpone cream : 1
-beef 85/15 : 1
-heaping t clarified butter : 1
-egg whites () : 1
-butter; half : 1
-nonfat greek honey yogurt (1 &amp; 1/2 cups) : 1
-noodles (whatever you want) : 1
-organic : 1
-kahlua chocolate sauce : 1
-uncle ben&#39;s whole grain medley brown rice and quinoa with garlic : 1
-buttermilk biscuits : 1
-d onion : 1
-dashi (japanese kobu dashi) or milk : 1
-sweet chocolate candies or chocolate chunks : 1
-malted drink (horlicks) : 1
-yellow onion; medium dice : 1
-corn kernels  or : 1
-scoop isopure banana cream whey protein isolate : 1
-muesli : 1
-kahlua liquor : 1
-onion  thin : 1
-cheese mexican or similar : 1
-cleaned and deveined large shrimp : 1
-sugar (more or less depending on taste) : 1
-chocolate sauce : 1
-set honey : 1
-pb2 : 1
-canola or vegetable oil (for sautֳ©ing) : 1
-mini eggo waffle sheets (32 mini waffles) : 1
-dried onion (i used a lot : 1
-butter at room temp : 1
-zucchini 2 units : 1
-floury potatoes : 1
-red pepper;  dice : 1
-non-dairy milk : 1
-decorating : 1
-carot : 1
-gold potatoes  could be russett : 1
-old bey seasoning or old bey with garlic : 1
-bananas;  slice : 1
-butter or ghee : 1
-mature cheddar : 1
-canola or peanut oil : 1
-butter (for greasing pan) : 1
-rye bread; toasted breaded : 1
-- chocolate sauce - : 1
-reeses baking chips : 1
-toasted breaded english muffin : 1
-italian seasoning of choice : 1
-wholegrain oats : 1
-choice hummus : 1
-juice of half a lemon : 1
-coconut oil (any oil or applesauce) : 1
-butter for each pancake : 1
-wheatgerm : 1
-small  broccoli : 1
-d potato : 1
-old fashioned grits : 1
-small  of spinach : 1
-buttermilk powder : 1
-egg (to glaze) or milk : 1
-pasta sauce : 1
-- chocolate pancake- : 1
-coconut thread : 1
-spinkle of garlic : 1
-top with a splash of lemon or my favorite : 1
-additional water : 1
-crumbs : 1
-chocolate chunks : 1
-cinnamon and sugar to sprinkle over pancakes : 1
-vanilla berry flavour: : 1
-cinnamon roll dough : 1
-tiny drizzle of evoo : 1
-vegetable butter/margarine : 1
-flour of your choice : 1
-turkey sausage (i removed from the casing of italian style turkey sausage links) : 1
-xanthum gum (if using gluten free flour) : 1
-soft butter : 1
-milk or cream heavy whipping : 1
-bran flakes : 1
-red potatoes; : 1
-brazil nuts : 1
-milk of your choice : 1
-vanila extract : 1
-primo taglio ham; large dice : 1
-over  banana : 1
-flaked almonds : 1
-coconut oil for greasing pan : 1
-gluten-free / self-raising flour : 1
-green pepper; julienne : 1
-red pepper; julienne : 1
-vanilla extract (me: vanilla powder) : 1
-fried semolina : 1
-hefeweizen (wheat beer) : 1
-backing powder : 1
-plain dairy-free sweet chocolate candies : 1
-jalapeֳ±o; : 1
-tropical bircher muesli: : 1
-any topping you like : 1
-gluten-free oats : 1
-drinking chocolate powder (cadburys) : 1
-granulated sugar / sweetener : 1
-desiccated  coconut : 1
-peel of 2 limes : 1
-coooking oil : 1
-any cheese : 1
-banana chips : 1
-whipping cream or half &amp; half : 1
-veg oil (any) : 1
-black pepper (to taste) : 1
-sweetener as above : 1
-for the filling : 1
-pear and ginger bircher muesli: : 1
-four : 1
-pepper to taste : 1
-hershey special dark cocoa dry powder : 1
-flour (gluten-free or regular) : 1
-of  crisp apple or pear : 1
-sugar not brown : 1
-baking power : 1
-butter  pancakes : 1
-slices of soft goats cheese : 1
-stem ginger : 1
-cloves of  smoked garlic : 1
-bananna : 1
-xanthum gum : 1
-chives   pieces : 1
-marmite or bovril : 1
-apple &amp; honey-nut bircher muesli: : 1
-cream of chicken : 1
-dried mixed fruit : 1
-{pfannekuchen batter}: : 1
-soy milk or milk of your choice : 1
-for the omelette : 1
-garlic butter : 1
-vanilla extract or oil : 1
-tablespoons of butter : 1
-powdered sugar to sprinkle over pancakes : 1
-your favorite seasonings : 1
-regular boring butter : 1
-potatoes (use a fluffy potato like maris piper) : 1
-{homemade apple sauce}: : 1
-blanco velveta block : 1
-tinned corned beef : 1
-for the batter : 1
-hot chorizo : 1
-oil for pan frying : 1
-splashes of milk : 1
-o&#39;brien hashbrown potatoes : 1
-leftover  potatoes : 1
-pumpking : 1
-beef oxo stock cubes : 1
-pistachios : 1
-sea table salt to season : 1
-pureed pumpkin : 1
-white or yellow corn meal : 1
-golden grahams cereal : 1
-bread (your choice). i used wheat. : 1
-oil cooking spray or butter : 1
-quick-cooking oats : 1
-almond milk or heavy whipping cream : 1
-frenchtoasted bread : 1
-pancakes syrup : 1
-almond milk (regular milk ok too) : 1
-sultans : 1
-egg whisked : 1
-eggs (fried or scrambled) : 1
-unsweetened dessicated coconut : 1
-bread (any kind) : 1
-chillies : 1
-hemp seeds : 1
-beef or pork sausage : 1
-butter unsalted slightly softened &amp; : 1
-big potato : 1
-glutinous rice flour : 1
-basil or mint : 1
-granulated suger : 1
-bananas 2 bananas : 1
-lemon extract  (not flavouring or juice) : 1
-each  egg : 1
-milk (whole or buttermilk) : 1
-russet potatos : 1
-medium-diced  bananas 1 banana : 1
-golden flax meal : 1
-oil or butter : 1
-eggs or as much as you like : 1
-milk or any alternative milk substitute : 1
-leftover roasted turkey or chicken meat : 1
-small-diced walnuts : 1
-cinnamon sprinkled over the top or to taste : 1
-culinary coconut milk : 1
-gralic powder : 1
-sugar or honey : 1
-bowlful leftover stuffing/dressing : 1
-butter or coconut oil : 1
-sweetened  coconut : 1
-herbs like parsley : 1
-all natural creamy peanut butter : 1
-olive or veg. oil : 1
-to 3/4 cup  water : 1
-one apple : 1
-aamshotto or aam papad : 1
-lb.  beef : 1
-low fat quark: curd or cottage cheese...doesn&#39;t translate well (12.1g protein over 100g) : 1
-table salt about a half teaspoon added to the batter : 1
-butter or evoo : 1
-beefsteak tomato : 1
-hot  rice : 1
-oatmeal (11g protein over 100g) : 1
-***** : 1
-chicken breast  bite sized pieces : 1
-as needed : 1
-raw oatmeal : 1
-mineral water : 1
-for sugar syrup: : 1
-leek leaves : 1
-carrot tops : 1
-or  almonds : 1
-bread crumbs i actually used stale bread that was kickin around and  it to crumbs : 1
-cardamom seeds : 1
-green dough: : 1
-leftover  sweet potatoes made with butter and milk and cinnamon : 1
-+ 1 cup water : 1
-plus 2 tblsp applesauce : 1
-jiffy banana nut muffins mix : 1
-sour milk (milk plus a little vinegar and let set) : 1
-herb seasoning mix : 1
-bouillon cube : 1
-flax or chia seed : 1
-hazelnuts : 1
-one egg : 1
-instant yeast : 1
-muffintin : 1
-bread (white or wholemeal or whatever) : 1
-each cinnamon : 1
-xanthan gum : 1
-milk (mix with beaten eggs) : 1
-gold foil-wrapped stork margarine block : 1
-clove : 1
-nutella (generous amounts) : 1
-coconut milk (from ֲ½ coconut) : 1
-chili flakes : 1
-sweet chocolate candies ( enjoy life or moo free brand) : 1
-pandan and suji leaf water (juice 3 pandan + 5 sugi leaves + 100 ml water) : 1
-butter/margarine : 1
-vegan mini marshmallows : 1
-or 4 medium potatoes : 1
-uncooked oatmeal powder form : 1
-gluten free flour : 1
-eggs or equivalent amount of egg substitute : 1
-flavoring i used vanilla almond extract : 1
-whole  oats 87g=1cup : 1
-sharp  cheese : 1
-sweet peppers cut up small : 1
-chia seed if desired : 1
-chocolate dough: : 1
-baking powder (18g=3tsp) : 1
-nellies eggs : 1
-pink salt (5g=1tsp) : 1
-tape (fermented cassava) : 1
-scoop vanilla protein powder : 1
-milk (for non-dairy : 1
-carob chips or chocolate chip : 1
-whole mustard grain : 1
-extra lean  sirloin : 1
-softened peanut butter (82g=1/3cup) : 1
-sweeteners of choice : 1
-avocado (hass) : 1
-thick coconut milk : 1
-heinz tomato catsup : 1
-you may need a  oil again as the omelette dries : 1
-stale or day old bread : 1
-spray oil (any type..personaly i use either coconut : 1
-lemon juice (18g=1tbsp) : 1
-grantulated sugar : 1
-a  sprinkle of  or dried parsley on top : 1
-cocunut oil 12g=1tbsp : 1
-butter for browning or cooking spray : 1
-room-temp non-dairy milk (181g=3/4cup) : 1
-rice flour/brown rice flour : 1
-banana ca. 162g  pulp : 1
-coconut oil any oil (but try to opt for healthy one eg. olive oil) : 1
-vanilla extract (4g=1tsp) : 1
-favorite omelet fillings : 1
-raw sugar (108g=1/2cup) : 1
-glaze ingredients : 1
-hain baking powder : 1
-chcolate chips (118g=3/4cup) : 1
-flour (about 1 cup/250 ml) : 1
-cheese i used cheddar but any meltable cheese will do : 1
-potatoes  and  into 1 cm thick slices : 1
-floor : 1
-&amp; 1/2 cup  cheddar cheese : 1
-oats or quick oats : 1
-boca burger : 1
-cajun salt : 1
-egg whites (i use all whites) : 1
-oats-cannot use instant : 1
-[butternut squash yoghurt sauce]: : 1
-butter 2 tbsp : 1
-dark chocolate mini bar (70%) : 1
-your favorite salsa : 1
-chocolate frosting : 1
-mixed spice / pumpkin pie spice : 1
-peas and corn : 1
-pack of mixed peppers(green : 1
-slices of white bread (sandwich style) or 2 thick slices of good quality bread (to make an incision in the middle) : 1
-coffee of your choice : 1
-eggs lightly beaten : 1
-almond milk (or milk of your choice) : 1
-peanut butter or nutella : 1
-non dairy milk : 1
-toppings:  dried or  fruit : 1
-tablespoons pecan nuts or walnuts : 1
-type of meat  ham/  turkey : 1
-sweet potatoes  cubes : 1
-libby&#39;s  pumpkin : 1
-pancake batter (see below) : 1
-banana chunks : 1
-shallot thinly : 1
-amount of my  potatoes recipe with caramelised onions : 1
-mozarella di bufala : 1
-pineapple chuncks : 1
-coarsely  ham : 1
-of corned beef 200gr : 1
-beaten egg : 1
-golden syrup or treacle / molasses : 1
-other: butter for topping : 1
-1% milk  substitute soy or almond milk for dairy free option : 1
-cool salted butter : 1
-cut in 4 tsp. butter : 1
-sides : 1
-homemade toasted breaded quinoa flour : 1
-apple puree / applesauce : 1
-group b : 1
-pancakes any brand or recipe : 1
-100% apple juice : 1
-spinach (i use the bagged popeyes kind) : 1
-yogurt (used peach this time) : 1
-bread slice : 1
-carrot (80-100g) : 1
-sugar or to taste : 1
-nutmeg- i used cinnamon : 1
-spicy sauce: : 1
-butter  eggs : 1
-chinese chili bean paste or other spicy sauce &quot;toubanjan&quot; ט±†ז¿י†₪ : 1
-additional sugar : 1
-bite sized roll mops (pickled herring) : 1
-calamansi juice : 1
-egg- beaten : 1
-flour (i use white whole wheat) : 1
-non fat milk or regular milk : 1
-yogurt (or milk) : 1
-non-food : 1
-vacuum packed unpickled  beetroot : 1
-or 2 green pepper : 1
-paper muffin tin liners : 1
-miso paste : 1
-veg. oil : 1
-apple (or pear) : 1
-one block of chadder cheese : 1
-cornstarch (not necessary) : 1
-sausages or as you wish : 1
-for the topping : 1
-plain greek yogurt (6oz) : 1
-pumpkin (15 oz.) : 1
-pickled dill gherkin : 1
-plain cream : 1
-or a 15 oz  pumpkin : 1
-dark cocoa : 1
-vanilla almond milk : 1
-chipotle dry rub seasoning : 1
-gluten free  oats : 1
-cultured buttermilk : 1
-milk (1/2 cup) : 1
-apple butter : 1
-dice sweet turnip / raddish : 1
-flour (separate from above for mixing yeast and when folding in butter) : 1
-wedge of cheese : 1
-butter without salt (6 tbsp) : 1
-brown rice flakes (or spelt flakes : 1
-slices of tomato : 1
-coriander or parsley : 1
-pancakes and cooking : 1
-milk (i used 1%) : 1
-double/cream heavy whipping : 1
-nuts (walnuts : 1
-pumpkin and sesame seeds (or sunflower : 1
-1/2 fat mayo : 1
-butter/shortening : 1
-fat free greek yogurt : 1
-**egg glaze:** : 1
-avocados  and : 1
-boneless : 1
-milk (of your choice) : 1
-2 bananas  and : 1
-basting sauce : 1
-finely  almonds or almond meal : 1
-baking powder (heaping tsp) : 1
-plus a half of the 1/4 tsp measuring spoon of salt : 1
-splenda (or sugar) : 1
-sugar (i used the light brown cane sugar) : 1
-thinly ready to eat  ham : 1
-each : 1
-walnut pieces : 1
-cheese (i like a sharp cheddar or gouda) : 1
-franks red hot sauce : 1
-potato starch (or use flour if you don&#39;t have) : 1
-dill weed about 9 g or a : 1
-sun dried pesto or any pesto of your choice : 1
-milk (or 1/2 milk 1/2 yogurt) : 1
-spinach pancakes : 1
-carbonated water : 1
-soup stock cube : 1
-spinach or 1   spinach : 1
-butter for brushing scones : 1
-cheese mexican blend : 1
-smooth peanut butter : 1
-onion  lengthways : 1
-olive oil or olive oil sprayqa- : 1
-country gravy mix (each makes 2 cups) : 1
-corn chex : 1
-oyster meat without shell : 1
-water (for gravy mix) : 1
-bean sprouts : 1
-homemade peanut butter : 1
-dry mix: : 1
-honey drizzled : 1
-chedder cheese : 1
-granulated garlic : 1
-chia fruit spread: add to a pot : 1
-slice of deli ham cut up : 1
-marjoram leaves : 1
-slice of deli turkey cut up : 1
-veggie mix : 1
-baking powder and soda : 1
-purple onion cut up : 1
-red pepper cut up : 1
-plain yogurt (could really use flavoured yoghurt) : 1
-cloves garlic : 1
-powdered coffee : 1
+lg dashes  milk : 1
+tsps baking powder : 1
+milk or half and half- (more fat :) : 1
+tsps cinnamon (up to 1 tbsp : 1
+garlic; creamed : 1
+ingredient a: : 1
+each eggs : 1
+garlic pieces : 1
+burbon whiskey : 1
+jiffy corn mix : 1
+green chiles : 1
+ג— for the syrup [well heated] : 1
+texas toasted bread bread- 1 inch thick (i also use french or vienna bread cut on bias 1 inch or we have used day old croissants) : 1
+heavy pinch of salt : 1
+granulated sugar to add to top of muffins prior to baking : 1
+ginger garlic : 1
+green enchilada sauce : 1
+ingredient b: : 1
+salt as per taste : 1
+quality burbon whiskey : 1
+gluten-free flour : 1
+my flour blend doesn&#39;t have xanthan gum : 1
+ג— for the toppings : 1
+vegestable oil : 1
+red chilly powder : 1
+sausage links or patties (your preference) : 1
+ea egg : 1
+packet of brown / white bread  cubes : 1
+minute rice 2 or 3 bags or reg rice however you like : 1
+tblsp  flax : 1
+ingredient c: : 1
+flour+1 table spoon baking powder : 1
+sprinkle red pepper powder : 1
+tblsp raw sugar (your sweetness preference) : 1
+jalepenos and the juice (about 4 tblsp jalepeno juice) : 1
+whole wheat pastry flower : 1
+tspoon turmeric : 1
+unsalted softened butter : 1
+all purpose flower : 1
+table spoon margarine : 1
+of an  apple finely : 1
+extra ingredients: : 1
+packed  carrots : 1
+red chiles; : 1
+tblsp apple cider vinegar : 1
+salted butter pads : 1
+green chile; : 1
+water as need : 1
+red skin potatoes : 1
+milk (regular or buttermilk) at room temperature : 1
+oat flour : 1
+raw sugar : 1
+thick cut cinnamon-raisin bread; lightly toasted breaded : 1
+table spoon mayonnaise : 1
+chia seed : 1
+corn (yellow : 1
+oil (canola : 1
+bananas; quatered : 1
+workshop thyme : 1
+cheese (any style) : 1
+workshop ֲ green cumin : 1
+oat topping: : 1
+workshop coriander : 1
+herbs de provence : 1
+baking mix : 1
+butter;  &amp; softened : 1
+for muffin variation add: : 1
+table spoon black pepper : 1
+butter without salt  and cooled : 1
+extra virgin coconut oil : 1
+------meat muffins------- : 1
+iodized salt : 1
+sirloin : 1
+corn kernels : 1
+flax eggs : 1
+appropriate quantities of mayonnaise : 1
+flax seed meal : 1
+leeks (nira) : 1
+appropriate quantities of catsup : 1
+tbls vanilla extract : 1
+vegan sweet chocolate candies : 1
+appropriate quantities of pizza cheese : 1
+message what you want to tell : 1
+coconut whipped cream : 1
+potato powder : 1
+milk (i think) : 1
+and  granny smith apples : 1
+caramels : 1
+cinnamon extract : 1
+pine nuts : 1
+tbls whipping cream : 1
+for sauce : 1
+hot italian sausage : 1
+hot dogs (cut each of them into 3 pieces) : 1
+lightly salted : 1
+soy source : 1
+coarse-chopped yellow onion : 1
+wax paper : 1
+plant milk (i like almond coconut) : 1
+----sauce for dipping------ : 1
+butter (if desired) : 1
+cooking spray to grease the pan : 1
+food safe twigs or craft : 1
+flax egg 1 tablespoon  flax seed 2 tablespoons water : 1
+muffin: : 1
+coarse-chopped broccoli : 1
+activeyeast : 1
+pecans or walnuts or almonds : 1
+lump crab meat : 1
+sweet-blend spinach : 1
+mitmita african spice more or less depending on how hot you want it : 1
+coarse-chopped baby bella mushrooms : 1
+vegetableoil : 1
+bakers cocoa : 1
+liquid egg whites : 1
+green meyer lemon juice : 1
+maple syrup to taste- a drizzle : 1
+oreo cookies coarsely : 1
+coarse-grated parmigiano reggiano : 1
+chickpea flour (375 ml) : 1
+this recipe also goes well with left over pork or sausage : 1
+topping: : 1
+black salt (or herb salt) : 1
+clotted cream(qeshta) : 1
+nestle milk chocolate morsels : 1
+tumeric : 1
+tomatoe : 1
+sweet potato / steamed / : 1
+hing (garlic /onion alternative) : 1
+coarsely  pistachio : 1
+serving (14g) of low fat cheddar jack : 1
+oreo cookies finely : 1
+crispy red pepper salad topping : 1
+water (375 ml) : 1
+coconut flour (35 calories) (discount 10 for fiber) : 1
+drizzle: : 1
+fat free milk : 1
+suger syrup : 1
+pam or any non stick cooking spray : 1
+sweetener (monk fruit : 1
+packed cauliflower rice : 1
+part-nonfat  mozzarella : 1
+egg whites (6 tablespoons) (50 calories) : 1
+self rising cornmeal mix : 1
+asparagus (about 20 spears) : 1
+brioche bread / left over buns : 1
+sour cream or plain yogurt : 1
+honey or sweetener of choice : 1
+fine corn meal : 1
+crust : 1
+mac and cheese ingredients: : 1
+craisins : 1
+pumpkin purֳ©e : 1
+defatted soy flour (~80 calories) : 1
++ 1/8 cups buttermilk plus a  more for brushing at the end : 1
+sm-med mushrooms : 1
+nonfat greek yogurt (~20 calories) : 1
+hodgson mill apple cinnamon muffin mix : 1
+pumpkin spice : 1
+about 1 tablespoon of water : 1
+wholewheat flour : 1
+thick homemade applesauce : 1
+shakes worcester sauce : 1
+filling : 1
+few shakes of black pepper : 1
+pumpkin (10 calories) : 1
+yolks : 1
+eggs (beaten) : 1
+yes : 1
+sugar free maple syrup : 1
+granola : 1
+for the muffins : : 1
+cup(150g) -grain wheat flour : 1
+purֳ©ed pumpkin : 1
+red capsicum : 1
+soy sauce (or until light brown color) : 1
+mixed lettuce : 1
+butter/ margarine as spread : 1
+i  jalapeno : 1
+self raiaing flour : 1
+trulia sweetener : 1
+tomato chutney : 1
+cheese anything you like : 1
+protein powder : 1
+additional ingredients : 1
+very  bananas : 1
+instant oatmeal : 1
+cup : 1
+spanish chorizo or sausage : 1
+mixed both of them : 1
+toping : 1
+beet sugar : 1
+chocolate/chocolate sprinkle : 1
+finely  zucchini : 1
+/2 cup sugar : 1
+spelt flour : 1
+table spoons sugar : 1
+tablesppon baking soda : 1
+salted nuts i used peanut : 1
+cocktail potatoes : 1
+bisquick mix : 1
+dry mixture: : 1
+cacao powder : 1
+coconut palm sugar : 1
+granulated of sugar : 1
+crumble topping : 1
+asian chives : 1
+blackberry honey : 1
+flax meal : 1
+himalayan salt : 1
+extra tasty cheddar : 1
+bag of broccoli and cheese : 1
+leftover chili : 1
+rice malt syrup/agave or honey : 1
+-------------sloppy joe------------- : 1
+maple syrup or honey : 1
+mug : 1
+wet mixture: : 1
+100% maple syrup : 1
+challot plus leaves : 1
+condensed milk : 1
+white chocolate (40g) : 1
+for strusel topping : 1
+splenda : 1
+organic raw apple cide vinegar : 1
+corn meal fine or medium : 1
+bag of   hashbrowns : 1
+for the bread use either: : 1
+jalapeֳ±os save 12 thin jalapeֳ±o slices for garnish : 1
+for the streusel topping: : 1
+old fashioned  oats : 1
+eggs (seperate white eggs and yolks) : 1
+dark chocolate : 1
+butter without salt  and coolded : 1
+english muffins (or half as many as the number of indents in your muffin pan) : 1
+cream of mushroom (or chicken : 1
+margarine or softened butter : 1
+chia seeds : 1
+1% milk : 1
+tex mex  cheese : 1
+quick cooking oatmeal : 1
+ingredients for 8 hot biscuits : 1
+self rasing flour : 1
+egg layer ingredients: : 1
+pure vanilla extract : 1
+croissant dough : 1
+mulberry-raisin mixed in 1 to1 ratio : 1
+french onion sour cream dip : 1
+tropical fruit dried mango and pineapple also add nuts if you like : 1
+almond meal : 1
+turbano sugar : 1
+sour cream (or any type of yogurt) : 1
+homemade bread dough (recipe in my profile) : 1
+ingredients for 7 hot biscuits : 1
+stuffed green olive slices : 1
+organic apple cider vinegar : 1
+coconut as you like : 1
+pag of  chedder cheese : 1
+hot biscuit : 1
+desiccated coconut : 1
+evoo : 1
+of a banana : 1
+ג– 1 tbsp olive oil : 1
+your favorite dressing : 1
+cream- reduced by a 1/4 to12 ounces : 1
+egg 1 egg : 1
+sesason : 1
+mizuna leaves : 1
+for white chocolate glaze drizzle : 1
+stock cubes : 1
+soften butter : 1
+seasoned cod roe (mentaiko) : 1
+pasta -- cook until done : 1
+ג– 15 tsp  grain mustard : 1
+marinated rhubarb : 1
+vanilla greek yogurt (stoneyfield organic preferred) : 1
+bow tie pasta : 1
 starch : 1
-yellow pepper cut up : 1
-mozzerella to garnish : 1
-mushrooms cut up : 1
-teaspoon of vanilla extract : 1
-almonds  to a flour like consistency : 1
-vanilla bean scrapped then throw the pod in the pot : 1
-cherizio sausage cut up : 1
-water mix with flax to make egg : 1
-tablespoons of sugar : 1
-slices of italian salami cut up : 1
-flavouring ideas : 1
-golden flaxseed meal : 1
-tobasco hot sauce or any other favorite hot sauce more or less to taste : 1
-bourbon : 1
-lemon  and squeezed : 1
-or more to taste chili powder : 1
-favourite oil: butter : 1
-banana smashed or 1/2 c applesauce : 1
-in a blender add: : 1
-agave sweetener syrup : 1
-non dairy milk of choice add more as needed : 1
-chocolate syrup : 1
-lemon juice or apple cider vinegar mixed with milk : 1
-large flake gf oats : 1
-maple syrup or sweetener or choice : 1
-blueberry syrup : 1
-piece of pumpkin : 1
-quinoa flakes : 1
-capsicum red and green : 1
-mangoes : 1
-almond pulp (wet from mylking) or almond flour : 1
-slice of butter : 1
-idli rava (cream of rice) : 1
-sweet chocolate candies: dark : 1
-teaspoons of sugar : 1
-flaxseed meal : 1
-almond meal/flour : 1
-spinach to add colors : 1
-teaspoon of salt : 1
-green chillies : 1
-inch piece of ginger : 1
-tablespoons of oil : 1
-gluten free flour blend : 1
-slices of raisin bread : 1
-carrot pulp : 1
-bread dough  or homemade that has been thawed and left to rise over night : 1
-oil spray (brush)  to panfry and toasted bread : 1
-pumkin pie spice : 1
-coconut milk (or any kind of vegan milk) : 1
-honey or maple syrup : 1
-unrefined : 1
-stevia or more to your preferred sweetness : 1
-agave syrup or honey : 1
-black pepper and cayenne pepper : 1
-chana dal : 1
-flax mixed with 1/4 cup water or 2 eggs : 1
-beer (33cl) : 1
-teaspoon of kardemomme (not sure if that is spelled correct) : 1
-black gram (urad dal) : 1
-enjoy life sweet chocolate candies (i used dark) : 1
-your choice natural nut or seed butter : 1
-nutella spread  (enough for 6 slices of bread) : 1
-asafoetida (heeng) : 1
-butter and olive oil : 1
-milk or coffee creamer (i used sweet cream coffee creamer) : 1
-zucchini 1 medium sized zucchini : 1
-coriander (coriander) leaves : 1
-whole wheat artisan bread : 1
-syrup to taste : 1
-pancetta : 1
-carrot pulp from juicing or  and : 1
-beef chuck-cooked..you could also use chicken : 1
-lemon or orange peel : 1
-zuchinni : 1
-cheeses. i used colby jack : 1
-fruit spread (best if cooled) divided : 1
-etc. : 1
-cheddar and mixed cheeses : 1
-cinnamon sugar topping : 1
-mild rotel : 1
-instant vanilla pudding : 1
-crumble : 1
-hemp hearts : 1
-fruit salt or baking soda : 1
-chocolate protein powder : 1
-ea eggs : 1
-aunt jemima whole wheat mix : 1
-flapjack: : 1
-day old french or vienna bread : 1
-hash browns 4lb bag : 1
-basil fresh.  finely : 1
-lurpak lighter : 1
-vanilla extract devided : 1
-marinated chicken thighs : 1
-choc chips : 1
-maple syrup (for topping) : 1
-french chives : 1
-pancakes(1 serving-3or4) : 1
-light corn syrup : 1
-light muscovado sugar : 1
-cream or milk : 1
-orange  and drained : 1
-potato or sweet potato : 1
-beetroot : 1
-deli : 1
-unsalted macadamia nuts : 1
-brussel sprouts : 1
-bananas-ripe : 1
-bread (any kind : 1
-pizza toppings of your choice : 1
-duck fat : 1
-steal cut oats : 1
-a1 sauce : 1
-granulated sugar or u  do 3/4 cup : 1
-any salad : 1
-himalayan pink salt : 1
-dried coconut : 1
-butter or veg oil : 1
-cheddar cheese-shredded : 1
-tomatos : 1
-toasted bread bread : 1
-jimmy dean hot sausage : 1
-omelette mix : 1
-honey mustard : 1
-graded cheddar or pepper jack cheese : 1
-unsweetened plant based milk : 1
-croissant tube : 1
--grain english muffins : 1
-tin creamed corn : 1
-*60 ml dashi (bonito soup stock or 60ml water + 1 tsp dashi powder) : 1
-*1 tsp potato starch (or corn starch) : 1
-butter (for greasing) : 1
-vegetable oil spray ( important!!) : 1
-of cucumber : 1
-bi- carb soda : 1
-plain white or wholewheat flour : 1
-rotisserie chicken : 1
-baby banana : 1
-capsicum (bell) peppers : 1
-slice of turkey : 1
-(heaped) baking powder : 1
-freshest squid than you  buy! : 1
-mandarin oranges : 1
-finely  raw or  beetroot : 1
-vegan milk (e.g. almond milk) : 1
-mixed spice (or nutmeg+cinnamon) : 1
-low fat yogurt (0 : 1
-earthbalance vegan lactose free butter (or any butter you like) : 1
-0 cal sweetener or agave : 1
-of asparagus : 1
-general : 1
-honey/butter to serve : 1
-butter- : 1
-pure granulated sugar : 1
-marie calendars cheese biscuit mix : 1
-plus 2 tbsp milk : 1
-1/8  cinnamon : 1
-splash of vanilla extract : 1
-butter or vegetable oil : 1
-nesqwik or protein whey : 1
-crumbled gorgonzola cheese : 1
-cup buttermilk : 1
-half-and-half : 1
-favorite peanut butter : 1
-cup creamed corn : 1
-balcan cow cheese or cottage cheese : 1
-chunky peanut butter : 1
-cut potatoes : 1
-cheese divided for topping the muffins : 1
-alfredo sauce(more if desired) : 1
-**dry ingredients** : 1
-teaspoon salt : 1
-spinach uncooked weight : 1
-vinegar white : 1
-d courgettes : 1
-cinnamon and sugar : 1
-premium italian bread  i used oroweat : 1
-bananas mushed : 1
-country gravy mix : 1
-refrigerated biscuits : 1
-kiwi mushed : 1
-your favorite type of sausage : 1
-capsicum : 1
-to 180 ml soy milk : 1
-any cheese (i used cheddar) : 1
-jelly : 1
-to 180 ml soymilk : 1
-to 80 g sugar : 1
-pink colouring : 1
-dried mixed herbs : 1
-chicken 115 g : 1
-coriander leaves : 1
-cups cornmeal : 1
-mesquite honey : 1
-koya tofu powder (freeze dried tofu powder) : 1
-chiken cube : 1
-cup self rising flour : 1
-to 1 cup jam : 1
-raw almonds : 1
-italian cheese blend : 1
-**liquid ingredients** : 1
-peel of 1  lemon : 1
-oil  add  bit for each!!! : 1
-coriander powder : 1
-cabbage leaves : 1
-rice 1 lb : 1
-kabocha pumpkin : 1
-okara : 1
-cadbury dairy milk fruit &amp; nut bar : 1
-bag of potatoes or 1 cup of  hashbrown : 1
-basil oil : 1
-milk or soy milk : 1
-bitter chocolate : 1
-caramel : 1
-kiwi : 1
-quick oats oatmeal : 1
-mirin (sweet sake) : 1
-azuki / red bean paste : 1
-mini pepperoni : 1
-eggs or egg whites : 1
-any kind of nut you like : 1
-strong flour : 1
-old fashion oats : 1
-cookie cutter : 1
-cocoa dry powder (milo or other chocolate drink does fine too) : 1
-hashbrown : 1
-butter for brushing. i use sage butter : 1
-rum-soaked dried fruits : 1
-and  baby potato  rounds : 1
-spam / luncheon meat : 1
-potato (or 2 small) : 1
-hash brownz : 1
-sunflower seeds (unsalted) : 1
-onion  finely : 1
-sesame seed oil : 1
-cup white beans puree : 1
-roasted almonds salted : 1
-green pepper  thin strips : 1
-table cream or half &amp;half : 1
-or 1 tbs of  onions. if you sub onion powder use 1/2tsp. : 1
-milk (i used cashew milk you may use soy or almond as well) : 1
-oat bran finely ground. if using reg oats : 1
-jaggery or powdered sugar : 1
-honey (warmed in microwave for 30 seconds) : 1
-batter : 1
-pumpkin seeds unsalted : 1
-light margarine : 1
-emmental cheese : 1
-apples  i used green apples : 1
-meltable cheese your choice : 1
-handful of  spinach : 1
-or   potatoes : 1
-chickpea flour : 1
-raw or  peach : 1
-extra eggs : 1
-oil for brushing : 1
-or   onions and peppers : 1
-poached egg : 1
-raw cashew nuts (or 1/4 cup cashew butter) : 1
-as needed black pepper : 1
-oatmeal flour (or 6 tbs. oatmeal) : 1
-salt &amp; pepper to your taste : 1
-milk (i used almon) : 1
-bread (or about 20 1/4 inch baguette slices) : 1
-maize  corn : 1
-strawberry jam(any type you choose : 1
-hollandaise sauce : 1
-cornflour (corn starch) : 1
-of thick bread(of your choice) : 1
-spiral  ham : 1
-champagne vinegar : 1
-add-ins : 1
-cream gravy : 1
-organic eggs : 1
-vanilla bean pod(or 1tsp vanilla extract) : 1
-or  bluerries : 1
-raw organic honey : 1
-low fat vanilla yogurt : 1
-silicon mould : 1
-organic spanish onion : 1
-coconut rum caramel sauce : 1
-organic cloves of garlic : 1
-oil for greasing mould : 1
-thinly  mushrooms : 1
-maple syrup for dressing : 1
-try your own combination... : 1
-montreal steak seasoning : 1
-leaves organic tuscan kale : 1
-black pepper &amp; salt : 1
-ghee(a type of refined butter) traditional indian butter. : 1
-homemade jam(makes 2 pints. time: 3-4 hours) : 1
-sweet potato spinach hash : 1
-pieces of ham : 1
-assorted food coloring : 1
-truffles : 1
-cow milk : 1
-sugar or more as needed : 1
-organic parsley : 1
-applesauce (see my applesauce recipe) : 1
-agave syrup : 1
-of spinach : 1
-low sugar pectin  be bought at walmart : 1
-sweet chocolate candies/bananas : 1
-honey syrup : 1
-steak bites : 1
-jar of favorite pizza sauce : 1
-plain lowfat yogurt : 1
-large idaho potatoes : 1
-eggs separated : 1
-avacado oil : 1
-milk 2% : 1
-coconut extract : 1
-flour of choice : 1
-wholegrain  oats : 1
-full fat ricotta cheese : 1
-light muscavado sugar : 1
-butter without salt at room tempeture : 1
-lemon or orange juice : 1
-milk (semi-nonfatmed or whole) : 1
-mini peppers(yellow : 1
-chocolate cubes : 1
-vanilla extract try to use pure : 1
-baby bananas : 1
-peel of  lemon : 1
-no bean chill : 1
-zante currants (natural california ) : 1
-mixed fruit : 1
-waffle fries : 1
-butter without salt softened : 1
-for the shrimp : 1
-mandarin : 1
-almond flakes : 1
-of pillsbury croissant rolls per pizza : 1
-whole eggs : 1
-smoke sausage  or your favorite : 1
-jar of pizza sauce : 1
-deli ham cut in bite sizes : 1
-small  chives : 1
-vegetable mix : 1
-andouille sausage : 1
-table salt season to taste : 1
-cambozola or other brie like cheese : 1
-double or cream heavy whipping : 1
-nuts your choice : 1
-red fruits : 1
-nutmeg  or 1/4 tsp : 1
-evaporated milk sweet : 1
-may use round pizza pan : 1
-slices of texas toasted bread : 1
-clove garlic : 1
-spelled flour : 1
-stick of butter : 1
-vegetables boullion or any boullion : 1
-oat meal : 1
-salami or ham : 1
-rye meal : 1
-for the grits : 1
-rapeseed oil : 1
-top : 1
-parsley to taste : 1
-fat free half and half : 1
-drained 6 oz.  crabmeat : 1
-caramel sauce : 1
-sweet chocolate candies/unsweetened carob chips : 1
-tortilla wrap : 1
-butter or oil : 1
-old bay seasoning : 1
-caramel topping : 1
-wheat bread (or any bread of choice) : 1
-blk pepper : 1
-earthbalance vegan butter : 1
-extra  eggs : 1
-big potatoes : 1
-milk or buttermilk : 1
-quinoa flour : 1
-potatoessouthern style hash browns : 1
-bicarb soda : 1
-agave or honey : 1
-pecan nuts : 1
-syrup your favorite : 1
-nonfat buttermilk : 1
-crawfish tails : 1
-breakfast : 1
-frying pan : 1
-edam cheese or any cheese : 1
-cheesei used casserole blend : 1
-sunflower seed kernels : 1
-slice dried apricots : 1
-scoop (about 2-3 tbsp) vanilla protein powder : 1
-jalapeֳ±o : 1
-passion fruits : 1
-vinilla extract : 1
-over  bannanas : 1
-leftovers potatoes : 1
-cup sugar : 1
-milk (i used almond milk) : 1
-texas toasted bread bread : 1
-day old challah : 1
-tart apples : 1
-pepperoni and other toppings : 1
-bananas about 4  bananas : 1
-plain / gluten-free flour : 1
-desiccated finely  coconut plus extra for topping : 1
-eggo mini waffles : 1
-xanthan gum if using a gf flour blend : 1
-granulated or caster sugar : 1
-rum extract : 1
-butter salted or unsalted at room temperature : 1
-nonstick spray : 1
-7oz  muffin mix : 1
-caramel syrup : 1
-powdered milk you  substitute for  other milk : 1
-powdered sugars / powdered sugar for garnish : 1
-johnnys seasoning salt : 1
-sunbutter or nut butter : 1
-silk cashew milk ****can substitute for other flavors : 1
-lemon pepper : 1
-italian english muffins : 1
-green pepper  in thick chunks : 1
-peach yogart : 1
-good quality chocolate syrup : 1
-glass of milk : 1
-cream of celery or mushroom soup : 1
-sweet chocolate candies (i used semi-sweet) : 1
-butter or margerine : 1
-pieces of  toasted breaded bread bread per muffin : 1
-english muffins [split] : 1
-silk cashew milk : 1
-butter (it may vary) : 1
-sausage patties : 1
-applesauce  or vegetable oil : 1
-bananas cut in fours : 1
-vans waffles : 1
-eggs ( beaten ) : 1
-egg per muffin : 1
-hashbrown potatoes : 1
-tyson chicken tenderloin : 1
-frenchy&#39;s honey mustard dipping sauce : 1
-sugar free vanilla or caramel syrup : 1
-soft  pear : 1
-regular flour : 1
-liquid egg product or 4 large eggs : 1
-as needed bananas : 1
-fake crab sticks : 1
-dl milk : 1
-butter (2 sticks) : 1
-motzerella cheese : 1
-a dash of mustard (whichever kind you want) : 1
-hellman&#39;s balsamic vinegar mayonaise : 1
-flour : 1
-a sprinkle of nutmeg : 1
-strawberry banana  yogurt : 1
-small  baby bella mushrooms : 1
-vanilla instant pudding mix : 1
-chocolate pudding : 1
-mix seafood : 1
-slices of brown bread ..or white if you prefer : 1
-plus 1 teaspoon granulated sugar : 1
-small  orange peppers : 1
-herbs &amp; seasonings : 1
-egg whites (or 3 eggs) : 1
-salt and peppar : 1
-or dried parsley : 1
-roughly 200g of  cheese : 1
-lg. eggs : 1
-butter  pan : 1
-cayenne chilli pepper : 1
-libby&#39;s beans : 1
-french toasted bread crunch cereal : 1
-baby bella mushrooms : 1
-scoop chocolate juice plus complete shake : 1
-marshmallows (16oz) : 1
-as needed salt : 1
-overripe bananas : 1
-korean hot pepper powder : 1
-fry light : 1
-butterscotch chips : 1
-courgette/zucchini : 1
-cashew nut butter : 1
-eggs slightly beaten : 1
-natural yogurt : 1
-oreos : 1
-blueberry jam : 1
-easy mini frittatas : 1
-matcha powder (culinary grade) : 1
-waffle maker : 1
-zucchini or summer squash : 1
-bagels pre : 1
-pillsbury (mini) cinnamon rolls (8 rolls per/can) : 1
-green pesto : 1
-eggs ( or 2 egg whites) : 1
-any spice you prefer : 1
-cloves of garlic : 1
-lemon plus peel   use concentrated lemon juice : 1
-you  always use more lemon if desired. just add to suit your taste : 1
-lemon juiced : 1
-buttermilk sr cornmeal mix : 1
-cinnamon rolls with icingput icing aside : 1
-vanilla muscle gain : 1
-pecans (opt ) : 1
-roughly   parsley : 1
-potatoes (or 3 medium will do) : 1
-popcorn chicken : 1
-apples ( i used fuji for this recipe; use any type. granny smith : 1
-small slice of spam : 1
-pecans  or whole : 1
-golden mushroom : 1
-caramel sauce for drizzle : 1
-mini  waffles : 1
-and 2 tbsp truvia baking blend (3/4 c sugar) : 1
-hamburger or meat of your choice : 1
-maple syrup (any brand you like) : 1
-lemon or lime juiced : 1
-stock : 1
-mandwich : 1
-toothpicks : 1
-bob&#39;s red mill low carb baking mix (6 net carbs) : 1
-egg (lightly beaten) : 1
-organic  oats 23 net carbs : 1
-scrumble eggs : 1
-butter-room tempature( equivalent to a stick of butter) : 1
-scoop of isopure banana or chocolate protein powder (i use this brand because it is so low carb : 1
-any leftover meat or seafood available : 1
-wet mix : 1
-abalone mushroom : 1
-unsweetened apple sauce (5.5 net carbs) : 1
-dried apricot : 1
-non-fat plain : 1
-dried cranberry : 1
-quacker cinnamon apple instant oatmeal : 1
-jumbo eggs : 1
-eggs (2 net carbs) : 1
-egg whitesֲ (the ones reserved from making the bֳ©arnaise sauce) : 1
-cooled coconut oil or butter add 4 tbsp to batter and drizzle remaining 2 tbsp evenly into the 12 cups after you have sprayed the pan with non-stick spray 0 net carbs : 1
-bean sprout : 1
-salt &amp; pepper to taste : 1
-banana flavored emulsion or extract (0 net carbs) : 1
-powdered buttermilk : 1
-garlic powder to taste : 1
-***hershey sugar-free dark sweet chocolate candies (add to the top of each muffin just before cooking)*** (6 net carbs) : 1
-green salsa : 1
-to 3 potatoes thinly : 1
-jalapeֳ±os : 1
-creamy peanut butter : 1
-bread (i used a basic homemade yeast bread) : 1
-mixed vegetables you  use whatever you like : 1
-of parmesan : 1
-whole grain bread : 1
-pumpkin egg nog (or add 2 t pumpkin to 3/4 c cream heavy whipping &amp; mix well) : 1
-of emmental cheese : 1
-ֲ catsup and more for decoration : 1
-nonfat greek yogurt (any flavor) : 1
-sweetened coconut : 1
-italian seasonings : 1
-salt (option) : 1
-for omelette : 1
-other ingredients : 1
-butter  and cooled : 1
-ghee or butter : 1
-of butter : 1
-hash brown thaw : 1
-largeֲ portobello mushrooms : 1
-vegetable oil/olive oil : 1
-meat filling : 1
-as needed maple syrup : 1
-eggs whisked : 1
-red delicious apple : 1
-large  or 2 small  cream of chicken soup : 1
-cream cheese at room temp : 1
-as needed  powdered sugar : 1
-of flour : 1
-bֳ©arnaise sauce : 1
-or 1/8 tsp salt : 1
-waffles maker : 1
-mincedֲ chives : 1
-dehydrated onions : 1
-white sesame seeds : 1
-of garlic cut in half : 1
-concorde grape jam : 1
-of pumpkin : 1
-red chillie flakes : 1
-carrot muffins : 1
-of mustard : 1
-of freshly  nutmeg : 1
-round ham slices : 1
-vanilla powder : 1
-salt &amp;  pepper to season : 1
-eggs seperate whites from yolk : 1
-left over roasted chicken : 1
-spinich : 1
-butter to grease the muffin baking dish : 1
-cured ham slices : 1
-onion-  into  pieces : 1
-splash of cream : 1
-topping and egg wash : 1
-fully  ham : 1
-seitan : 1
-dash of cinnamon or pumpkin pie spice(thats what i used!) : 1
-stevia packet or artificial sweetener of choice : 1
-brown/cooking onion : 1
-glaze : 1
-tator tots : 1
-as needed milk (to form a dripping consistency) : 1
-egg batter for french toasted bread : 1
-texas toasted bread  ( i used bread) : 1
-egg (or two) : 1
-frosted flakes cereal : 1
-pecan $ cinnamon swirl : 1
-(small) cream of chicken : 1
-portion  spinach : 1
-butter  divied : 1
-bag of  hashbrowns : 1
-musshrooms washed and : 1
-liberal dash of cinnamon powder : 1
-poppyseeds : 1
-baby carrot jars or 1 cup  carrots : 1
-sea or himilayan salt and  pepper : 1
-butter or oil to make french toasted bread : 1
-gruyֳ¨re cheese : 1
-over-ripe banana : 1
-spicy onion : 1
-potatoes or use left over baked : 1
-manda chicken green onion sausage : 1
-creamer : 1
-base : 1
-spicy sauce / sambal sauce /sambal oelek : 1
-pepperoni slices : 1
-couple of mushrooms : 1
+lemon peel of half a lemon : 1
+spaghetti sauce : 1
+oil or butter : 1
+wiener sausage : 1
+g : 1
+brocoli  cut small : 1
+table spoons mayonnaise : 1
+for the glaze: : 1
+ג– 1 tsp lemon juice : 1
+milk (or cream) : 1
+natural yoghurt : 1
+sweet peppers : 1
+apple  1 to 4 squares : 1
+powdered sugars: : 1
+or more (homemade) cottage cheese : 1
+lg chicken thighs : 1
+cheese of choice (shredded : 1
+shallot -- fine : 1
+carrots  large i used bagged baby carrots : 1
+your favourite cheese : 1
+suitable amount of salt : 1
+macoroni : 1
+starch (katakuriko or tapioca) : 1
+powered sugar : 1
+ג– table salt : 1
+- 1 cup parmesan cheese (depending on size of squash) : 1
+salt (to taste) : 1
+pot : 1
+of each : 1
+lemon juice from half a lemon : 1
+pork ribs : 1
+each onion --   2 ounces : 1
+pineapple tidbits : 1
+alfredo sauce : 1
+suitable amount of black pepper : 1
+peel of 1 whole  lemon : 1
+uncooked bow tie pasta : 1
+cream style corn : 1
+purple cabbage : 1
+pasta of your choosing : 1
 pepper (to taste) : 1
-eggs  (beaten) : 1
-scant 1/2 teaspoon baking soda : 1
-overripe bananas about 5 bananas : 1
-orange pepper : 1
-evoo cooking spray : 1
-salt and  pepper : 1
-chunks of ham : 1
-&quot;batter&quot; : 1
-ingredients : 1
-you  put anything you like in this or omit anything you don&#39;t like just cut everything the same size : 1
-corn grits : 1
-chili lime salt : 1
-rotel  tomato&#39;s : 1
-vegetable of your choice : 1
-sriracha : 1
-generous sprinkle of cinnamon : 1
-coriander coriander leaves : 1
-fried eggs : 1
+big ass pot : 1
+yogurt (greek yogurt) : 1
+hald bottle of cream : 1
+each) alfredo sauce : 1
+of red enchilada sauce : 1
+soya sauce : 1
+whole kernel corn (water drained) : 1
+mandarin oranges : 1
+lettuce of choice (pictured is romaine) : 1
+red enchilada sauce (10 oz) : 1
+celery bulb : 1
+chicken meat : 1
+lg chicken breast : 1
+medium to  onion : 1
+venison  sub  turkey or beef : 1
+all purpose seasoning : 1
+habanero chile peppers- wear gloves -- dice fine : 1
+wide mouthed quart sized mason jar with lid : 1
+rotini pasta : 1
+table salt or use powder or : 1
+mission tortilla burrito shells : 1
+lime juice (divided) : 1
+mizuna : 1
+mexican beer : 1
+of thyme : 1
+fajita style tortillas : 1
+pomegranate seeds : 1
+pealed onion : 1
+-----------------muffin crust-------------- : 1
+marinade : 1
+bulb garlic  and : 1
+each red pepper -- : 1
+mashrooms : 1
+flour  be gluten free : 1
+national brand achar masala : 1
+beef at least around half a pound : 1
+raw : 1
+cheese ravioli : 1
+cream of chicken soup (105 oz) : 1
+small uncooked shrimp : 1
+lg  green enchilada sauce : 1
+dry rose : 1
+tamatos : 1
+butter (8 tablespoons each) : 1
+pickling spice : 1
+taco or burrito seasoning mix (i used old el paso) : 1
+shrimp --  we used size 51-60 and you  always go larger or add more if desired : 1
+crystal hot sauce : 1
+uncooked medium shrimp : 1
+blood orange infused olive oil : 1
+corn muffin mix self rising : 1
+tahini sauce : 1
+bushs chili beans (drained) : 1
+d eggplant : 1
+franks hot sauce : 1
+broccoli flourettes : 1
+enough pasta any kind(i added shiritaki noodles to cut calories) : 1
+fluffy halwa store bought : 1
+ג— for the chicken marinade : 1
+soft taco size flour tortillas : 1
+cara cara orange : 1
+water about a cup full : 1
+whole kernel corn (drained) : 1
+herb salt : 1
+cheese (i used cheddar and mozzarella) : 1
+spice powder : 1
+sugar or honey : 1
+pk mini cucumber : 1
+jars alfredo sauce : 1
+dark soy sauce : 1
+angel hair pasta : 1
+tortellini mine was garlic and cheese stuffed : 1
+great northern beans : 1
+sweet ham  also be filipino longganisa : 1
+lg thick chicken breasts : 1
+onion or whatever you like putting in beef : 1
+l&amp;p -worcestershire sauce : 1
+corn starch mixture : 1
+sugar (to cut the acidity) : 1
+the  of a green cabbage : 1
+sunflower seeds : 1
+meat brisket or beef tips preferably : 1
+fries : 1
+oregano (dried is fine) : 1
+guacamole : 1
+eggs hard : 1
+---------------openface------------------- : 1
+montreal steak marinated : 1
+baby carrots(halfed) : 1
+crystal hot sauce -- be careful with substituting other hot sauce : 1
+pork or  beef : 1
+for the toppings : 1
+pasta sauce : 1
+ciabatta  or 4 thick slices crusty white bread : 1
+the  of a red cabbage : 1
+purreed basil : 1
+&amp; parmesan cheese garnish : 1
+v8 juice : 1
+burrito sized tortillas : 1
+lipton&#39;s mushroom onion soup mix : 1
+box of macaroni elbows  be gluten free : 1
+estragon (dried is fine) : 1
+heaping spoonfull of mayonnaise : 1
+chicken and ribs bbq sauce : 1
+of spaghetti : 1
+serve with : 1
+garam masala seasoning : 1
+corn muffin mix : 1
+white pepper or black is fine : 1
+falafel mix : 1
+nonstick cooking spray : 1
+blackbeauty egg plants  1/2&quot; thick : 1
+purple onion : 1
+fresno peppers (divided) : 1
+water  is fine : 1
+jar of meatless spaghetti sauce : 1
+empty  with labe removed : 1
+beef or chicken soup base or powdered bouillon : 1
+havarti cheese : 1
+cos or romaine lettuce : 1
+dried basil ג€“ chiffonade- fine ribbon cut just before service : 1
+miracle whip : 1
+italian season : 1
+roasted jalapeֳ±os : 1
+sweet onion- : 1
+oil- vegetable oil is fine : 1
+light  or chunk tuna in water drained : 1
+of bread : 1
+can(5oz) tuna in olive oil (drain oil) : 1
+punch of glass bean noodles : 1
+long cucumber : 1
+tp of salt : 1
+garlic  or : 1
+crystal hot sauce (see note below hot sauce matters) : 1
+provalone cheese : 1
+tomato juice : 1
+for the dressing : 1
+chipotle chili powder : 1
+for seasoning : 1
+garlic- : 1
+miracle whip more if needed : 1
+edamame spaghetti : 1
+lime wedges : 1
+thumb size of ginger : 1
+brick of cheddar cheese : 1
+ditali : 1
+jalapeno pepper- dice  (no seeds)- i evaluate the heat and adjust the amount used : 1
+steak any kind u like : 1
+garlic smashed : 1
+spring lettuce mix : 1
+fruit + tablets grapes dried + coconut + honey + chocolate as : 1
+olive oil [to coat breasts] : 1
+anchovy from a tin : 1
+bulk sausage : 1
+hard  egg or fried : 1
+stem of celery : 1
+baking potatoes : 1
+dole salad classic iceberg : 1
+burrito add ins : 1
+ounces- dry bow tie pasta-  per the box instructions : 1
+cornstarch mixed with 1/4 water : 1
+pitted  olives : 1
+block parmesan or grano padano cheese for grating and shaving (you won&#39;t use it all) : 1
+salt&amp;black pepper : 1
+sweet pickle relish or dill relish : 1
+small curd cottage cheese : 1
+shells pasta : 1
+presley : 1
+lg zip lock bag : 1
+green pepper-dice : 1
+table spoon tikka masala : 1
+smoked hog jowls : 1
+p age garlic : 1
+tablet spoon lemon : 1
+tomato paste + 1 teaspoon sugar or 2 tablespoons catsup if you don&#39;t have tomato paste : 1
+lattice : 1
+consommֳ© : 1
+i tbs  thyme : 1
+oil a  spoon : 1
+celery 1 inch julienne cut : 1
+street taco shells : 1
+chipotles in adobo -pureed or finley   people like more or less : 1
+mallet [for tenderizing] : 1
+lemon juce : 1
+your choice of seasoning and dressing : 1
+pepper (if you want) : 1
+of chickpea drained : 1
+vidalia onion --  paper thin : 1
+tortellini- you  use as much as you want : 1
+ranch dressing : 1
+frankfurter 2 : 1
+raw organic kale/spinach/chard : 1
+vinaigrette: : 1
+garlic or 2 cloves of  garlic : 1
+worshire sauce : 1
+tortilla shell : 1
+garbanzo beans : 1
+fusilli : 1
+ג— for the baking &amp; toppings : 1
+/ 2 liters of water : 1
+leftover olive wine : 1
+liquid (any mixture of water and unsalted stock you like) : 1
+beef stock- *note be careful  store brands are very high in salt and as you cook it down it may get salty : 1
+homemade vegetable stock or store bought : 1
+curly kale : 1
+---- meat-------- : 1
+butter (4 tbsp) : 1
+bad spinach : 1
+chicken in water : 1
+true story organic sweet italian chicken sausage : 1
+of anchovies in oil : 1
+dried basil/ tsp of dried mixed herbs also works well : 1
+latency : 1
+roma tomato : 1
+trader joe&#39;s meatless meat : 1
+eye of round steak  very thin : 1
+cheddar jack : 1
+shrimps  and : 1
+glaze with olives : 1
+toasted breaded french or vienna bread slices or any bread you like:) : 1
+lg cucumbers [thin sliced] : 1
+you  add celery   *option : 1
+about 20 stems of parsley : 1
+green chili&#39;s : 1
+apple cider or distilled distilled vinegar : 1
+worcester sauce : 1
+dill pickle chips : 1
+boneless and meat only chicken thighs : 1
+low-sodium soy sauce : 1
+parmesan or permaggio reggiano : 1
+ג— for the noodles : 1
+mozzarella cheese [shreadded or sliced] : 1
+each egg -(*see note at bottom) : 1
+leftover pork loins/ three of them : 1
+olive oil all though any oil works well : 1
+onion [thin sliced] : 1
+tiny potatoes whole unpeeled : 1
+cabbage roughly 1&quot;pieces : 1
+dill  *option : 1
+ozs elbow macaroni  till just tender in salted water : 1
+al dente artisinal garlic linguini noodles : 1
+permagiano regiano or parmesan : 1
+of chili : 1
+table salt -- to taste at the end of the cooking process : 1
+spicy  italian pork sausage : 1
+(whole grain) pasta : 1
+or one 28 oz  unsalted white beans : 1
+trader joe&#39;s 21 salute seasoning : 1
+chicken breasts; butterflied : 1
+any pasta- macaroni/ spaghetti ect- enough for : 1
+vidalia onions [thin sliced] : 1
+garlic  or very finely : 1
+basil [or purreed or  dried] : 1
+grilled sweet corn stripped from the cob if not available 8 oz  works : 1
+family size of mexican cheese : 1
+feta cheese i used tomato basil : 1
+onion*option : 1
+agave nectar or honey : 1
+----bread and spread ------- : 1
+next seasonings tyme : 1
+dried wakame seaweed [whole or cut] : 1
+vinager [or more to taste] : 1
+measuring cups of pasta : 1
+flat breads : 1
+onion  fine : 1
+chicken  1/4 inch leg quarter are very good for this or baked thighs : 1
+spagettini : 1
+malt or red wine vinegar : 1
+thin spaghetti  in salted water : 1
+tri-color rotini you  use any kind of pasta that you like : 1
+peel and juice of 1  lemon : 1
+roma tomato [thin sliced] : 1
+for the roasted veg: : 1
+fine  basil : 1
+flours tortillas : 1
+balsamic cream : 1
+sugar [or less to taste] : 1
+cuban bread : 1
+big block of velveeta cheese : 1
+celery; medium dice : 1
+measuring cups of water : 1
+bag  grilled chicken or  shrimp : 1
+rice vinager [unseasoned] : 1
+roasted pine nuts : 1
+italian sausage links : 1
+four cheese rosa sauce (i used the one made by bertolli : 1
+real butter : 1
+every choise of your pasta : 1
+ג— for the garlic alfredo sauce : 1
+garlic paste you  also grate garlic : 1
+brushed salty cheese : 1
+cherry tomato (cut in half) : 1
+very  sweet yellow onions  1&quot; pieces : 1
+milk + up to 1/2 cup additional : 1
+spaghetti or other pasta : 1
+thin  shallots : 1
+bag of  velveeta cheese : 1
+anchovy paste : 1
+carrot; thin bias slices : 1
+to 1/4 cup  parmesan cheese : 1
+black  olives : 1
+roasted pepper strips : 1
+lime juice (to taste) : 1
+fine cut chili pepper : 1
+each dried oregano : 1
+ranch seasoning : 1
+bouillon cube : 1
+old bay season : 1
+salad: : 1
+oregano; : 1
+unsalted stock : 1
+dill weed weed : 1
+a  red pepper : 1
+pepper and salt : 1
+coriander  to finish just before service : 1
+cooking cream or squeezed lemon juice : 1
+bag  spinach : 1
+lb of elbow noodles : 1
+yellow onion;  dice : 1
+uncooked noodles : 1
+for the sauce: : 1
+baby bok choy : 1
+shoyu : 1
+coriander; stems roughly  off : 1
+thick bread slices [your choice] : 1
+celery [with leaves] : 1
+japanese curry powder (for a milder taste) : 1
+marinara sauce (store bought or homemade) : 1
+bread-  1 inch : 1
+yellow pepper;  dice : 1
+-----condiments -------- : 1
+cut hot pepper/ sambal oelek for extra &#39;bite&#39; : 1
+extra fine   cucumbers : 1
+corned beef : 1
+leftover buttery london broil see my recipe : 1
+bungkus spaghetti : 1
+(105 oz)cans of cream of chicken soup condensed : 1
+chicken (cut in pieces) : 1
+imitation crab flake style : 1
+uncooked penna pasta : 1
+garlic; smashed : 1
+dill pickle  [side] : 1
+kl  potato red or white : 1
+kerrygold garlic herb butter : 1
+roasted salted cashew nuts : 1
+measuring cup of cooking cream : 1
+sweet paprika : 1
+daging cincang : 1
+hellmans olive oil mayonnaise : 1
+butter or vegetable oil : 1
+garlic -powder or granulated : 1
+jar of spaghetti sauce : 1
+monterey jack  cheese : 1
+merlot : 1
+kilo gram pasta : 1
+steak meat : 1
+measuring cup of milk : 1
+dressing: : 1
+bungkus bumbu spaghetti instan : 1
+hamburger dill pickle chips : 1
+and 1/2 cup lentil (red) : 1
+measuring cup of your fav cheese (i used romano) : 1
+pinch table salt &amp;  cracked black pepper : 1
+fine  ginger : 1
+caraway green : 1
+artichokes [fully drained : 1
+celery thinly : 1
+blok keju cheddar melt : 1
+--meat marinade and spices----- : 1
+juice of 1  orange : 1
+mixed nuts : 1
+parsley thinly : 1
+jalapeno pepper -chopped finely no seeds : 1
+hamburger (your choice) : 1
+biryani spices for a special taste : 1
+wrap : 1
+gram rice : 1
+clove garlic : 1
+jars salsa verde : 1
+caesar dressing- add just enough to coat : 1
+chef paul prudhomme&#39;s blackened redfish magic : 1
+pasta water : 1
+milk or half and half or cream:) : 1
+olives [halved] : 1
+sausage could also use  beef or  turkey : 1
+parsley 2tbsp : 1
+hotdogs : 1
+sdt oregano : 1
+elbow or shell noodles : 1
+the filling: : 1
+cheddar cheese-  about 1 1/2 cups : 1
+any kind of noodle : 1
+serve with ritz crackers and lemon wedges : 1
+parsley [+ reserves for garnish] : 1
+s oil : 1
+marinara sauce (jarred or homemade) : 1
+shallot;  julienne : 1
+daikon radish : 1
+d  potatoes cut in cubes : 1
+sdt bubuk bawang putih : 1
+mint 1tbsp : 1
+pkgs super size yellow corn tortillas (@ 6-6 1/2&quot;) 10 per : 1
+green cabbage : 1
+deli roast beef : 1
+few turns of  black pepper : 1
+mushrooms [or 1/2 cup fresh] : 1
+sauce tomato 5 t spoon : 1
+pizza blend  cheese : 1
+rosemary (or 1 tsp dry) : 1
+parmesan cheese- : 1
+parsely; : 1
+eggplants 4 to 6 inches long  12 long pieces each eggplant : 1
+another 1/4 teaspoon table salt (give or take) : 1
+pasta of your choice : 1
+potatoes  and : 1
+sdm saus sambal : 1
+cucmbers : 1
+mac and cheese blend  cheese : 1
+finely  chicken breast : 1
+parmesan/cheddar : 1
+thyme (or 2 tsp dry) : 1
+sharp cheddar cheese white or yellow : 1
+proper amount olive oil : 1
+black peppers : 1
+shiitake mushroom or 2 medium : 1
+parsley; : 1
+small potato (1  potato) : 1
+dona maria mole : 1
+italian seasoning and oregano : 1
+garam : 1
+refrigerated biscuits : 1
+-for number 2 ---------- : 1
+store bought pre  rotisserie chicken pulled : 1
+s cheddar cheese-  about a 1/2 cup for topping : 1
+ג— sides/options : 1
+ham bouillon dissolved in 1 cup of water : 1
+julienne  peppers : 1
+of cabbage shred : 1
+shirataki : 1
+clam : 1
+onion  thin : 1
+carrot() : 1
+reserved pasta water : 1
+rocket : 1
+lada : 1
+crumbled colby jack cheese : 1
+your favorite salad dressing : 1
+i tsp  red pepper : 1
+bag  meatballs : 1
+tomato sauce (your choice) : 1
+creole seasoning : 1
+for cook aburaage shiitake and shirataki : 1
+grilled chicken : 1
+elbow macaroni : 1
+thai chillies or 2 sarrano peppers : 1
+roast beef : 1
+oil i used peanut oil : 1
+bawang bombai besar : 1
+tomato cherries (cut in half) : 1
+parmesan bread crumbs : 1
+bag of spinach : 1
+jar alfredo sauce : 1
+cheese (i used colby jack) : 1
+garlic paste : 1
+oriental top ramen noodles : 1
+shiitake soaked water : 1
+dry bucatini noodles : 1
+queso fresco (los altos is נ‘נ¼) : 1
+ts roasted and cushed cumin seeds : 1
+sprinkle of oregano : 1
+milk to fill your pot : 1
+crab meat : 1
+endives : 1
+salt och peppar : 1
+jar spaghetti sauce you  adjust this to taste : 1
+arugula &amp; spinach blend : 1
+mentega : 1
+japanese mayo : 1
+chicken breasts flattened : 1
+gmfresh crumble paneer : 1
+dashi powder : 1
+noodles (as much as you like) : 1
+chiles nuevo mֳ©xico (flat : 1
+piece onion : 1
+farfalle pasta : 1
+2 to 2 1/2 pounds cabbage green : 1
+seasoning : 1
+garlic wedges : 1
+pasta sauce (homemade or store brand) : 1
+sweet corn/green peas : 1
+yogurt (greece yogurt) : 1
+long beans  3 cm strips : 1
+ts pauv bhaji masala (indian vegetable spice mix) : 1
+biryani spices : 1
+rockets : 1
+sweet relish pickles : 1
+whole wheat rotini : 1
+parmesan  mozzarella if it&#39;s handy : 1
+oil (i like avocado or olive) : 1
+for sweet vinegar : 1
+serving pasta : 1
+macaronii made it healthier so used oats macaroni : 1
+roma lettuce : 1
+you  substitute for italian or any other kind of spices : 1
+garlic bread : 1
+bone-in pork shoulder : 1
+spring mix lettuce : 1
+chili beans : 1
+shaved parmasan : 1
+table salt to taste when browning meat : 1
+parsley (for garish) : 1
+desi ghee : 1
+pickled carrots : 1
+average size zuchinni : 1
+small black pitted olives : 1
+pasta of choice : 1
+table salt but keep  less and cheese has also salt : 1
+appropriate amount of pasta : 1
+i just like smelling and tasting the aroma : 1
+salsa verde : 1
+1-1/4 lb cornish game hens : 1
+dressing:- : 1
+dry ranch mix : 1
+garden salad : 1
+tamarind jarritos soda : 1
+essence of emeril : 1
+cappelini pasta (thin pasta) : 1
+pork tenderloin; trimmed : 1
+of different countries and cultures in my favorite dishes נ’“ : 1
+meat pork/chicken : 1
+tomato sauce (for sauce) : 1
+artichoke hearts : 1
+tortilla wraps : 1
+steamed broccoli : 1
+each sea table salt : 1
+onion 1/4 for the big one : 1
+tiger shrimp : 1
+lbs  beef : 1
+parmasean cheese : 1
+for the pasta- : 1
+homeny : 1
+lettuce (5 leaves) : 1
+lamb shank : 1
+butter of choice : 1
+corn flakes : 1
+cumin (for sauce) : 1
+olives  into rings : 1
+tbspbread crumbs : 1
+hawaiian rolls : 1
+double crust pie crust : 1
+thyme springs : 1
+italian style bread crumbs : 1
+birds eye chillies : 1
+jasmine rice : 1
+pepper powder : 1
+top dried basil : 1
+kikkoman hoisin sauce : 1
+firm but  avocado  1/2&quot; cubes : 1
+ג€“ dark kidney beans : 1
+8oz jar salsa : 1
+chili powder (for sauce) : 1
+80/20  beef : 1
+swizz cheese : 1
+dark soya sauce : 1
+powdered peanut butter (pbfitetc) : 1
+bread crumbs for coating : 1
+basil heaping : 1
+chicken with bones : 1
+season:oregano/italian seasons : 1
+garlic wedges or powder garlic for sauce : 1
+dry dessert wine : 1
+ג€“ light kidney beans : 1
+lutus root : 1
+chicken breast 1 pics : 1
+bulbs garlic : 1
+oregano powder : 1
+pasta noodles penne or whatever : 1
+doritos : 1
+dried red chiles : 1
+for meatballs : 1
+lemon or lime : 1
+star anise : 1
+chili (for sauce) : 1
+ג€“ garbanzo beans : 1
+for the filling- : 1
+dried lemon peel seasoning : 1
+cheese for pizza : 1
+chicken stock powder (for boiling the pasta) : 1
+yellow onions; thick julienne : 1
+dried soup mix : 1
+grounded coriander : 1
+lean white meat pork : 1
+18% table cream : 1
+re fried beans : 1
+boneless : 1
+sausages;  on bias in 6ths : 1
+chicken stock powder (for seasoning) : 1
+clove : 1
+onions-chopped : 1
+veggie mix : 1
+cardamon : 1
+pancetta : 1
+carrots  into  bits : 1
+1 cup leftover rice : 1
+low-sodium : 1
+idaho potatoes;  &amp; : 1
+large ls  coriander leafs : 1
+breadcrumb : 1
+french onion soup mix : 1
+green onions;  thin on bias : 1
+tomato catsup (i used it without measurement) : 1
+mozzerla : 1
+chinese five spice powder : 1
+green pepper;  dice : 1
+dried wood ear mushroom : 1
+sambal : 1
+thumb-size ginger : 1
+milk half box : 1
+garlic pepper : 1
+thumb  ginger : 1
+s&amp;p tt : 1
+stove top stuffing : 1
+100% whole grain pasta : 1
+good amount of broccoli : 1
+chives; : 1
+mccormick bruschetta sweet basil &amp; oregano seasoning : 1
+thin pepperoni slices : 1
+roll cellophane noodles : 1
+water for boiling (i didn&#39;t measure it) : 1
+chilli sauce : 1
+jalapeֳ±o peppers ג€“finely : 1
+cinnamon stick : 1
+dry  garlic : 1
+worchestshire : 1
+for the dipping sauce- : 1
+butternut squash; : 1
+salt 1/2 tbs : 1
+baked potatoes; halved lengthwise : 1
+summer squash;  dice : 1
+spaghetti  in salted water and chicken broth : 1
+lime;  &amp; juiced : 1
+curry : 1
+onions (shred) : 1
+green pepper; : 1
+chinese five spice : 1
+ilnwhite breadcrums : 1
+garlic ג€“ : 1
+white peppercorns 1/2 tbs : 1
+vidalia onion : 1
+vermicelli : 1
+mayonnaise sauce : 1
+tomato-meat sauce : 1
+onion; medium dice : 1
+slaw mix : 1
+chicken bouillon powder : 1
+butter;  &amp; : 1
+chees nachos or any type you like i used also sweet and hot nachos for my dish size : 1
+pbr beers : 1
+milk (your choice : 1
+sour cream/creme fraiche : 1
+butter or ghee + 2 large tbsp of corn oil : 1
+piece of pepper : 1
+brown gravy mix : 1
+noodles of choice : 1
+shallot; : 1
+apple wood for smoking : 1
+red dried big chillies : 1
+soy (meat replacement) : 1
+pinch table salt &amp; black pepper : 1
+extra amount of chees mozerala or cheddar chees : 1
+fennel powder : 1
+egg york : 1
+pack(big wrap 20/pack) : 1
+sugar (according to preference) : 1
+beef gravy : 1
+pork tenderloin; trimmed &amp;  dice : 1
+ginger the pee done jars are great : 1
+ginger;  &amp; : 1
+chibwabwa : 1
+ginger garlic paste : 1
+kaffir lime skin : 1
+dry white wine (or stock) : 1
+table spoons of vegetable spice : 1
+fat or oil : 1
+american cheese (or other good melting cheese) : 1
+onion halved and thinly : 1
+four cheese italian cheese blend : 1
+roasted red peppers or 1/2 of a  roasted red peppers : 1
+for assembly: : 1
+saffron threads : 1
+onion (i used a yellow : 1
+tabasco sauce : 1
+black pepper powder : 1
+table spoons of roasted sweet pepper a garlic spice : 1
+mccormick&#39;s montreal steak seasoning : 1
+galangal(kha) : 1
+mealie meal : 1
+shrimp paste : 1
+red pepper flakes (or to taste) : 1
+pepperoni slices (4 slices per bundle or more) : 1
+table salt as mentioned on recipe and : 1
++ 2 tablespoons soy sauce : 1
+andouille sausages : 1
+seeded and  jalapeֳ±o pepper : 1
+chicken breast skin on bone in : 1
+table salt or table salt : 1
+in a  saucepan bring cornstarch and water to a boil over : 1
+poblano pepper;  dice : 1
+avocados;  dice : 1
+vegetables oil : 1
+flour (caputo) as much as needed : 1
+rose water : 1
+montreal steak seasoning /or table salt : 1
+lg portabello mushroom : 1
+low sodium soy sauce : 1
+2%plain greek yogurt : 1
+low heat until mixture thicken : 1
+cheese or pizza cheese : 1
+red pepper (or any other colour) : 1
+white wine or pasta water : 1
+of brad&#39;s roasted jalapeֳ±os : 1
+sushi rice : 1
+coriander root : 1
+beef smashed : 1
+pork block : 1
+ג€“ chicken thighs : 1
+english cucumber : 1
+yellow pepper (or any other colour) : 1
+miso : 1
+hot sauce : 1
+lump crabmeat variation:  shrimp or sauteed scallops : 1
+chicken boob : 1
+crab dip : 1
+to 1 tablespoon   rosemary or 2 teaspoons dried : 1
+jhalepeno peppers : 1
+onion quartered : 1
+shrimp paste 1 teaspoon : 1
+chicken stock (cube or made : 1
+blackpepper powder : 1
+beer brats; squeezed out of casings : 1
+sweet sake (mirin) : 1
+imitation crab sticks : 1
+for serving : 1
+portabela mushrooms : 1
+seafood stock : 1
+small firm cooking potatoes (small ones in peel) : 1
+poblano; julienned &amp; cut to look like rice : 1
+soysauce : 1
+dry oregano : 1
+garam masala powder : 1
+------eggplant-------- : 1
+saffron flowers : 1
+other ingredients : 1
+whitepepper powder : 1
+red pepper; julienned &amp; cut to look like rice : 1
+japanese mayonnaise : 1
+high-heat salad or cooking oil : 1
+converted rice (like uncle bens) : 1
+a cup of olive oil : 1
+kilo mincehalf beef : 1
+rotisserie chicken boned and : 1
+pork shoulder but you  use other protein : 1
+laurel leaves : 1
+coconut cream 1 cup : 1
+red chilli powder : 1
+sweet sake(mirin) : 1
+syoyu : 1
+chilli power : 1
+org hidden valley ranch dressing powder or fiesta ranch pow : 1
+onion; julienned &amp; cut to look like rice : 1
+birds eye chili : 1
+apple cider or juice : 1
+or use your favorite : 1
+potate : 1
+herbes de provence (ready made or make yourself) : 1
+coconut milk(1tbs coconut cream+water) 1/2 cup : 1
+chicken taco seasoning&amp; original 1/2 pk of each : 1
+nori furikaki seaweed flakes (find at asian grocery store) : 1
+dried anchovies or shrimp you  sub a teaspoon of fish sauce or omit this component altogether if you don&#39;t have either : 1
+purple carrots : 1
+tumeric powder : 1
+or 2 small peppers : 1
+oysters in their liquor : 1
+peppercorn : 1
+bush white chili beans or 2 w chili beans &amp; 1 black beans : 1
+lg  of broccoli : 1
+kaffir lime leave : 1
+lbs chicken thighs : 1
+seasoned seaweed sheets : 1
+good quality burgundy wine : 1
+if you&#39;re going to eat this with steamed rice : 1
+vegetables ----------- : 1
+ginger (or 2 tbs of ginger powder) : 1
+---chops----- : 1
+garlic powder and black pepper : 1
+coconut cream : 1
+water (130ֲ°f) : 1
+chicken breasts cut across : 1
+(approximately 1/4 cup) mixed nuts (walnuts : 1
+for the herbes du provence (makes about 2 portions) : : 1
+big ole pork loin : 1
+cut green beans drained : 1
+homemade beef stock : 1
+chicken tenders : 1
+dark sauce : 1
+dehydrated onion : 1
+golden potatos : 1
+(about 6 ounces) coconut cream or coconut milk (cream has more fat : 1
+consomme : 1
+tofu : 1
+hollandaise sauce : 1
+opt:kernel corn or mexican fiesta corn : 1
+lobster per person : 1
+vegeta stock : 1
+active yeast : 1
+montreal steak seasoning italian dressing : 1
+lightly packed  coriander : 1
+ciabatta bread : 1
+collard greens drained : 1
+decoration ingredients : 1
+demerara sugar : 1
+opt:serve alone or over rice : 1
+spring oni : 1
+chipotle ranch dressing : 1
+chicken bullion : 1
+shrimp per person : 1
+genovese sauce : 1
+jalapeֳ±os : 1
+dried savory : 1
+cup parsley : 1
+d potato - : 1
+chili flakes or hot sauce : 1
+boneless breast chicken : 1
+sait and pepper : 1
+kaffir lime leaf : 1
+----topping------ : 1
+pepper  into square pieces per person : 1
+dried field peas : 1
+carrots drained : 1
+lg eggs : 1
+teaspoons oregano : 1
+idaho potatoes;  &amp; medium dice : 1
+tart crust : 1
+frog legs : 1
+onion  into  square pieces per person : 1
+chicken strips : 1
+dried salvia : 1
+lime juice-  squezzed is best : 1
+udon : 1
+carrot -1 : 1
+theaspoon sugar : 1
+green anjou pear off the sale rack is great : 1
+chicken bouillon cubes : 1
+choped onion : 1
+gravy master : 1
+salted mustard green : 1
+hot pepper powder : 1
+lemon per lobster : 1
+brussel sprouts : 1
+borgs filo pastry : 1
+hoisin sauce : 1
+heaping tbsp mayo : 1
+mushroom soya sauce : 1
+parsley for color : 1
+theaspoon salt : 1
+cauliflower -1/2 : 1
+seasoning mixture ingredients : 1
+tsbp dried herbs : 1
+vegatable shortening : 1
+orange marmalade : 1
+parchment papers (or enough to fold over the chicken) : 1
++ 1 tablespoon apricot jam : 1
+chicken thighs skin on bone in : 1
+garlic; cloves  &amp; halved lengthwise : 1
+dryed thyme : 1
+fettuccine -cooked or the pasta of your choosing : 1
+celery stems : 1
+thumb-sized ginger : 1
+garlic per lobster : 1
+potato i like the red ones : 1
+salmon steak : 1
+housing sauce : 1
+for rum butter glaze : 1
+---peppers--------- : 1
+theaspoon yeast : 1
+worshchestershire sauce : 1
+kilo  pork : 1
+beef------- : 1
+carrots or about 14 baby carrots : 1
+mackerel 190g or tuna : 1
+dried ranch seasoning : 1
+pearl onions : 1
+onion-1 : 1
+each idaho potatoes125-15 pounds-ish --  &amp;  1&quot; : 1
+few twists of cracked pepper : 1
+lbs-3lbs chicken thighs : 1
+for folding and cooking the msemen : 1
+puff pastry sheet : 1
+yellow onion thinly : 1
+-thickener-------- : 1
+onion leaf : 1
+shallots if you don&#39;t have shallots : 1
+water- 1 inch above the potatoes : 1
+tabasco : 1
+red glutinous rice wine : 1
+dark rum : 1
+chipotle in adobo -pureed i do a 7 ounce  in the food processor : 1
+regular (unflavored : 1
+finely  mild cheddar cheese : 1
+old bay seasoning : 1
+granulated garlic powders : 1
+liquid (any mixture of unsalted stock and water) : 1
+green chilli : 1
+lbs hamburger : 1
+of evaporated milk : 1
+chicken thighs you  use breast however thighs stay juicer: : 1
+desirable cut of ribeye : 1
+very  russet  and  1/2 inch cubes and added in the last 20 minutes of cook time : 1
+garnish : 1
+marinade--------- : 1
+butter ג€“ softened : 1
+thin  chicken : 1
+pork mince : 1
+red bean paste (bean jam) : 1
+gram flour : 1
+finelychopped coriander : 1
+squeezed orange juice : 1
+crowns of broccoli : 1
+gram flour /chickpea flour : 1
+stem celery : 1
+distilled vinegar (to tenderize the lentils more quickly) : 1
+bitter melon : 1
+mirin(sweet sake for season) : 1
+stem of rosemary per steak : 1
+preserved lemon thinly : 1
+parsley and  green onions : 1
+(6) of dinner rolls (or hawaiian rolls) : 1
+spring roll sheets : 1
+lemon juice 1/2 squeezed or to taste : 1
+pork spare ribs : 1
+dashi powder (japanese fish bouillon powder) : 1
+on salted butter : 1
+tblspn of montreal steak seasoning : 1
+chicken thigh meat or breast if you prefer  roughly 1-inch cubes : 1
+---season mix-------- : 1
+nutritional yeast : 1
+bird&#39;s eye chilli : 1
+for the filling: : 1
+hot sauce to taste : 1
+center cut pork chops rinsed : 1
+soy : 1
+raisins if you like : 1
+cream of chicken : 1
+chinese black vinegar : 1
+ginger  and : 1
+-stuffed peppers------ : 1
+ginger garlic paste-1/2 : 1
+pack of misua noodles : 1
+matcha powder : 1
+tspn of olive oil : 1
+mustard powder : 1
+z for the moo : 1
+rub-------- : 1
+garlic about 2 large cloves garlic : 1
+or greater mozzarella cheese : 1
+the peel of 1 lime : 1
+food coloring (red) : 1
+cheddar cheese- : 1
+sayote : 1
+chat masala : 1
+sauce :ן¼ : 1
+summer savory : 1
+jars spaghetti sauce : 1
+topping : 1
+dry mustard powder : 1
+thumb-size of ginger : 1
+beef stew meat : 1
+cabbage leaf : 1
+each egg : 1
+achiote powder : 1
+ן¼2tbs curry powder : 1
+dried mexican oregano (the other kind will do in a pinch : 1
+serrano chilies jalapeֳ±os work as well : 1
+spicy brown mustard : 1
+file : 1
+chilli garlic sauce with 2 spoons of water : 1
+kashmiri chili : 1
+bisquick biscuit mix : 1
+ן¼2tbs catsup : 1
+thumb-size of turmeric : 1
+ן¼2tbs japanese bull-dog worcester sauce (or brown sauce) : 1
+big tomato : 1
+broth : 1
+thumb-size of galangal and bruise : 1
+--vegetable----- : 1
+vegetables------- : 1
+assorted mushrooms including shitake and portabella : 1
+ginisa flavor mix : 1
+--sauce------ : 1
+lime leaves : 1
+collard greens : 1
+asian slaw mix : 1
+for the dough: : 1
+tamarind (or paste or block) : 1
+eggs lightly beaten and seasoned with asian seasoning : 1
+palm sugar (around 60 ml) : 1
+/4 cup pork or chicken broth : 1
+crumbled cheddar cheese i used colby : 1
+sweet soy sauce : 1
+cooking adds-------- : 1
+teaspoonrice sesoned rice vinegar : 1
+wine i used chinese shaoxing wine : 1
+gram flour (bensan) chickpea flour : 1
+hot chili oil : 1
+ice water : 1
+sriracha sauce : 1
+for manderin sauce : 1
+sriracha sauce 1 : 1
+seasoned rice vinegar : 1
+for maderim pancakes : 1
+teaspoon granulated sugar : 1
+asian seasoning : 1

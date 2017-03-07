@@ -51,7 +51,7 @@ namespace Logic {
         }
 
         public static bool WordCheck(string word, string phrase) {
-            return (phrase.StartsWith(word + " ") || phrase.EndsWith(" " + word) || phrase.Contains(" " + word + " ") ||
+            return (phrase.StartsWith(word + " ") || phrase.EndsWith(" " + word) || phrase.Contains(" " + word + " ") || phrase.Contains(" " + word + ".") ||
                 phrase == word || phrase.Contains("(" + word + ")") || phrase.Contains(" " + word + ")") || phrase.Contains("(" + word + " "));
         }
 
@@ -208,7 +208,7 @@ namespace Logic {
             { "white sugar","granulated sugar"},
             { "bread flour","bread wheat flour"},
             { "white flour","all-purpose wheat flour"},
-            
+            { "ap flour","all-purpose wheat flour"},
             { "plain flour","all-purpose wheat flour"},
             { "whole wheat flour","whole-grain wheat flour"},
            
@@ -287,7 +287,7 @@ namespace Logic {
           "canned", "cans","can","some","fillets", "prepared", "package",
            "packages","blanched","florets","steel cut", "peeled","small dice",
            "sprig", "sprigs","loaf", "head", "heads",  "stalk", "stalks",
-            "ripe", "steaks", "cold", "warm", "fresh",
+           "grind", "ripe", "steaks", "cold", "warm", "fresh","freshly",
           "(optional)", "asiago",  "panko" , "steaks", "- peeled","halves",
            "and cut into circles", "for frying", "herb-seasoned", "solid pack",
         };

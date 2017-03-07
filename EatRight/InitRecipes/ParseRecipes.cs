@@ -36,9 +36,9 @@ namespace InitRecipes {
                 {MealType.Breakfast, new Tuple<string,int>( "78/breakfast-and-brunch",1) } }
             },
             {RecipesSource.Cookpad, new Dictionary<MealType, Tuple<string, int>>() {
-               {MealType.Breakfast, new Tuple<string,int>( "search/breakfast", 500)},
-                {MealType.Lunch,  new Tuple<string,int>("search/lunch",1000) },
-               {MealType.Dinner, new Tuple<string,int>( "search/dinner" ,500)}}
+               {MealType.Breakfast, new Tuple<string,int>( "search/breakfast", 10)},
+                {MealType.Lunch,  new Tuple<string,int>("search/lunch",10) },
+               {MealType.Dinner, new Tuple<string,int>( "search/dinner" ,10)}}
             }
         };
 
@@ -65,7 +65,7 @@ namespace InitRecipes {
             if (source == RecipesSource.AllRecipes) {
                 loadMealsBulkSize = 10;
             }
-                while (Indexes.Count > 0) {
+                while (Indexes.Count > 1) {
                     log.Debug("Loading bulk, tasks left : " + Indexes.Count());
                     List<Task> tasks = new List<Task>();
                     if (Indexes.Count > loadMealsBulkSize)
@@ -214,8 +214,12 @@ namespace InitRecipes {
                     name = Map.AdjustNames(name);
                     name = Map.AdjustInnerPart(name).Trim();
                     name = Map.AdjustIngredient(name);
+                    name = name.Replace(".", "");
+                    name = name.Replace(">", "&gt;");
+                    name = name.Replace("<", "&lt;");
 
-                    var weight = nameAndWeight[0];
+                    var weight = nameAndWeight[0].Replace(".", "");
+                  
                     var weightSplit = weight.Split('-');
                     if (weightSplit.Length==2)
                     weight = weightSplit[1]; // take the bigger number from range
@@ -231,10 +235,6 @@ namespace InitRecipes {
                     if (splitBySpace.Length > 1 && splitBySpace[1] == "C") {
                         weight = weight.Replace("C", "cup");
                     }
-                    if (weight.Contains("oz.")) {
-                        weight = weight.Replace("oz.", "oz");
-                    }
-                   
                     if (splitBySpace.Length > 1 && splitBySpace[1] == "t") {
                         weight = weight.Replace("t", "teaspoon");
                     }

@@ -185,7 +185,10 @@ namespace Logic
             "carton",
             "stalk",
             "envelope",
-           
+            "thumb-size of",
+            "thumb-size",
+            "thumb",
+
         };
 
 
@@ -209,18 +212,16 @@ namespace Logic
             {"TBS",14 },
             {"Tbsp",14 },
             {"lbs",453.5},
-            {"pound)",453.5},
-            {"pounds",453.5},
             {"Pounds",453.5},
+            {"pounds",453.5},
+            {"quarts",940},
             {"pound",453.5},
             {"Pound",453.5},
-            {"fluid ounce)",28.3 },
             {"fl oz",28.3 },
             {"fluid ounce",28.3 },
             {"fluid ounces",28.3 },
             {"ounces",28.3 },
             {"ounce",28.3 },
-            {"ounce)",28.3 },
             {"Oz",28.3 },        
             {"oz",28.3 },
             {"kg",1000 },
@@ -235,7 +236,8 @@ namespace Logic
             {"cloves",3 },//garlic
             {"Clove",3 },//garlic
             {"clove",3 },//garlic
-          
+            
+
         };
     }
 }
