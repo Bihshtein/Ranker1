@@ -101,6 +101,11 @@ namespace RestModel {
                 (Name2 != null && Name2.Contains(str)) ||
                 (Name3 != null && Name3.Contains(str));
         }
+
+        public String PrettyPrint()
+        {
+            return (Name1 + "," + Name2 + "," + Name3 + " (" + FoodGroup + ")");
+        }
     }
 
     public enum ProductType

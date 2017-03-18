@@ -42,25 +42,99 @@ namespace RestModel {
             return collection.Find(query as Expression<Func<T, bool>>).ToList();
         }
 
-        public static List<Product> GetMatchingProductsForIngredient(string ingredient) {
+        public static List<Product> GetMatchingProductsForIngredient(string ingredient)
+        {
             var  res = unit.Products.Queries.TryMatchWholeProduct(ingredient);
             if (res != null && res.Count> 0)
                 return res;           
             if (ingredient == string.Empty)
                 return null;
+            res = SplitIngredient(ingredient);
+
+            if (res == null || res.Count == 0) // Handle 'or'
+            {
+                if (ingredient.Contains(" or "))
+                {
+                    res = HandleOr(ingredient);
+                }
+            }
+            if (res == null || res.Count == 0) // Special long ass names (manual recipe init from file)
+            {
+                res = unit.Products.Queries.TryMatchWholeProduct(ingredient);
+            }
+            return res;
+        }
+
+        private static List<Product> HandleOr(string ingredient)
+        {
+            /* We expect the following cases when handling or:
+             * product1 or product2 (for example butter or margarine)
+             * product1-prefix or product2-prefix mutual-suffix (for example green or red apples)
+             */
+            List<Product> res = null;
+
             var innerSplit = ingredient.Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries);
 
-            if (innerSplit.Length == 1)
-                res = unit.Products.Queries.TryMatchWholeProduct(innerSplit[0]);
-            else if (innerSplit.Length == 2)
-                res = unit.Products.Queries.TryMatchWholeProduct(innerSplit[0], innerSplit[1]);
-            else if (innerSplit.Length == 3)
-                res = unit.Products.Queries.TryMatchWholeProduct(innerSplit[0], innerSplit[1], innerSplit[2]);
-            else if (innerSplit.Length == 4)
-                res = unit.Products.Queries.TryMatchWholeProduct(innerSplit[0], innerSplit[1], innerSplit[2], innerSplit[3]);
+            int orIndex = 0;
+            foreach (var part in innerSplit)
+            {
+                if (part.Equals("or"))
+                {
+                    break;
+                }
+                orIndex++;
+            }
+            if (orIndex == innerSplit.Length)
+            {
+                // No or- we should never get here
+                return res;
+            }
 
-            if (res == null || res.Count == 0)// special long ass names (manual recipe init from file)
-                res = unit.Products.Queries.TryMatchWholeProduct(ingredient);
+            // Try match the left part of the or
+            if (orIndex > 0)
+            {
+                var leftParts = innerSplit.Take(orIndex).ToList();
+                res = unit.Products.Queries.TryMatchWholeProduct(leftParts);
+                int origCount = leftParts.Count;
+                int rightIdx = innerSplit.Length - 1;
+                while (leftParts.Count < 4 && rightIdx > orIndex)
+                {
+                    leftParts.Insert(origCount, innerSplit[rightIdx]);
+                    if (res == null)
+                    {
+                        res = unit.Products.Queries.TryMatchWholeProduct(leftParts);
+                    }
+                    else
+                    {
+                        res = res.Union(unit.Products.Queries.TryMatchWholeProduct(leftParts)).ToList();
+                    }
+                    rightIdx--;
+                }
+
+                if (res != null && res.Count > 0)
+                {
+                    return res;
+                }
+            }
+
+            // Try match the right part of the or
+            var rightParts = innerSplit.Skip(orIndex + 1).Take(innerSplit.Length - orIndex - 1).ToList();
+            res = unit.Products.Queries.TryMatchWholeProduct(rightParts);
+
+            return res;
+        }
+
+        private static List<Product> SplitIngredient(string ingredient)
+        {
+            List<Product> res = null;
+
+            var innerSplit = ingredient.Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries);
+
+            if (innerSplit.Length <= 4)
+            {
+                res = unit.Products.Queries.TryMatchWholeProduct(innerSplit);
+            }
+
             return res;
         }
 
@@ -73,7 +147,56 @@ namespace RestModel {
             return newRes;
         }
 
-        public List<Product> TryMatchWholeProduct(string part) {
+        public List<Product> TryMatchWholeProduct(string[] parts)
+        {
+            if (parts == null || parts.Length == 0)
+            {
+                return null;
+            }
+            if (parts.Length == 1)
+            {
+                return TryMatchWholeProduct(parts[0]);
+            }
+            if (parts.Length == 2)
+            {
+                return TryMatchWholeProduct(parts[0], parts[1]);
+            }
+            if (parts.Length == 3)
+            {
+                return TryMatchWholeProduct(parts[0], parts[1], parts[2]);
+            }
+            else // NOTE: when parts is longer than 4, we'll take the first 4
+            {
+                return TryMatchWholeProduct(parts[0], parts[1], parts[2], parts[3]);
+            }
+        }
+
+        public List<Product> TryMatchWholeProduct(List<string> parts)
+        {
+            if (parts == null || parts.Count == 0)
+            {
+                return null;
+            }
+            if (parts.Count == 1)
+            {
+                return TryMatchWholeProduct(parts[0]);
+            }
+            if (parts.Count == 2)
+            {
+                return TryMatchWholeProduct(parts[0], parts[1]);
+            }
+            if (parts.Count == 3)
+            {
+                return TryMatchWholeProduct(parts[0], parts[1], parts[2]);
+            }
+            else // NOTE: when parts is longer than 4, we'll take the first 4
+            {
+                return TryMatchWholeProduct(parts[0], parts[1], parts[2], parts[3]);
+            }
+        }
+
+        public List<Product> TryMatchWholeProduct(string part)
+        {
             Expression<Func<Product, bool>> query = x =>
               (x.Name1.Equals(part) || x.Name1.Equals(part + "s") || x.Name1.Equals(part + "es") || x.Name1.Equals(ParseHelpers.GetWithoutLast_ES_letters(part)) ||
               (x.FoodGroup.Equals(part) && x.Weights.ContainsKey(part)) || x.Name2.Equals(ParseHelpers.GetWithoutLast_S_letter(part))||

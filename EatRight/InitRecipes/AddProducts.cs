@@ -42,24 +42,34 @@ namespace InitRecipes {
             File.WriteAllLines(FolderPath + "MissingIndex.txt", sorted.ConvertAll<string>(i => i.Key + " : " + i.Value));
         }
 
-        private static void AddRecipe(Recipe recipe) {
+        private static void AddRecipe(Recipe recipe)
+        {
+            if (recipe.ID != 341078) return;
             if (recipe.ProductsWeight != null)
+            {
                 recipe.ProductsWeight.Clear();
+            }
             recipe.TotalCaloriesNum = 0;
-            if (recipe.TotalNutValues != null) {
+            if (recipe.TotalNutValues != null)
+            {
                 recipe.TotalNutValues.Clear();
             }
-            else recipe.TotalNutValues = new Dictionary<string, double>();
+            else
+            {
+                recipe.TotalNutValues = new Dictionary<string, double>();
+            }
 
-            foreach (var item in recipe.Ingredients) {
+            foreach (var item in recipe.Ingredients)
+            {
                 ParseItem(recipe, item.Item1.ToLower().Trim(),item.Item3,item.Item2);
             }
-            try {
+            try
+            {
                 unit.Recipes.Update(s => s.ID, recipe.ID, recipe);
                 unit.TestsRecipes.Update(s => s.ID, recipe.ID, recipe);
-
             }
-            catch (Exception ex) {
+            catch (Exception ex)
+            {
                 log.Error("failed to update recipe " + recipe.ID, ex);
             }
         }
@@ -80,20 +90,31 @@ namespace InitRecipes {
 
         public static Dictionary<string, int> MissingCount = new Dictionary<string, int>();
 
-        public static void ParseItem(Recipe recipe, string innerpart, string relativeMeasure, double weight) {
+        public static void ParseItem(Recipe recipe, string innerpart, string relativeMeasure, double weight)
+        {
             if (innerpart == "")
+            {
                 return;
+            }
             ++total;         
             var res = Queries<Product>.GetMatchingProductsForIngredient(innerpart);
             if (res != null && res.Count > 0)
+            {
                 ParseInnerpart(recipe, res, innerpart, relativeMeasure, weight);
-            else {
-                lock (Locker) {
+            }
+            else
+            {
+                lock (Locker)
+                {
                     if (MissingCount.ContainsKey(innerpart))
+                    {
                         MissingCount[innerpart]++;
+                    }
                     else
-                    MissingCount.Add(innerpart, 1);
-                }   
+                    {
+                        MissingCount.Add(innerpart, 1);
+                    }
+                }
                 ++totalMissing;
             }
          
