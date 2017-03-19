@@ -44,7 +44,6 @@ namespace InitRecipes {
 
         private static void AddRecipe(Recipe recipe)
         {
-            if (recipe.ID != 341078) return;
             if (recipe.ProductsWeight != null)
             {
                 recipe.ProductsWeight.Clear();

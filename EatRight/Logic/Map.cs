@@ -36,6 +36,7 @@ namespace Logic {
                     phrase = phrase.Replace(item, "");
                     phrase = phrase.Replace("(", "");
                     phrase = phrase.Replace(")", "");
+                    phrase = phrase.Replace(";", "");
                 }
                 phrase = phrase.Trim();
             });
@@ -51,7 +52,7 @@ namespace Logic {
         }
 
         public static bool WordCheck(string word, string phrase) {
-            return (phrase.StartsWith(word + " ") || phrase.EndsWith(" " + word) || phrase.Contains(" " + word + " ") || phrase.Contains(" " + word + ".") ||
+            return (phrase.StartsWith(word + " ") || phrase.EndsWith(" " + word) || phrase.Contains(" " + word + " ") || phrase.Contains(" " + word + ".") || phrase.Contains(" " + word + ";") ||
                 phrase == word || phrase.Contains("(" + word + ")") || phrase.Contains(" " + word + ")") || phrase.Contains("(" + word + " "));
         }
 
@@ -63,6 +64,7 @@ namespace Logic {
 
             ingredient = RemoveWord(Map.StateInfo, ingredient).Trim();
             ingredient = RemoveWord(Map.ActionInfo, ingredient).Trim();
+            ingredient = ingredient.Replace(";", "");
             return ingredient;
         }
 
@@ -114,11 +116,26 @@ namespace Logic {
         public static Dictionary<List<string>, string> WordsMap = new Dictionary<List<string>, string>() {
                { new List<string> {"pancake","mix" }, "pancakes dry mix"},
                { new List<string> {"bacon"}, "bacon"},
+               { new List<string> {"noodles"}, "noodles"},
                { new List<string> {"berries"}, "blue berries"},
                { new List<string> {"brown sugar"}, "brown sugar"},
                { new List<string> {"tomatoes"}, "tomatoes"},
                { new List<string> { "scallion"}, "green onion"},
                { new List<string> {"all","purpose", "flour"}, "all-purpose wheat flour"},
+               { new List<string> {"chicken", "breast" }, "chicken breast"},
+               { new List<string> {"salt", "pepper" }, "table salt"},
+               { new List<string> { "breakfast", "sausage" } ,"pork sausage" },
+
+               { new List<string> { "spaghetti", "pasta" }, "pasta"},
+                { new List<string> { "macaroni", "pasta" }, "pasta"},
+               { new List<string> { "penne", "pasta" }, "pasta"},
+               { new List<string> { "rotini", "pasta" }, "pasta"},
+               { new List<string> { "bow", "tie", "pasta" }, "pasta"},
+               { new List<string> { "cappelini",  "pasta" }, "pasta"},
+               { new List<string> { "fettuccine",  "pasta" }, "pasta"},
+               { new List<string> { "farfalle",  "pasta" }, "pasta"},
+               { new List<string> { "your",  "pasta" }, "pasta"},
+                { new List<string> { "whole","grain", "pasta" }, "whole-wheat pasta"},
 
         };
         public static Dictionary<string, string> ChangePartialPhrases = new Dictionary<string, string>() {
@@ -135,17 +152,11 @@ namespace Logic {
             { "lettuce leaves", "lettuce"},
             { "romain lettuce", "romaine lettuce"},
             { "beef hotdogs", "frankfurter"},
-            { "spaghetti pasta" , "pasta"},
             { "spicy chorizo","chorizo"},
-            { "macaroni pasta" , "pasta"},
-            { "penne pasta" , "pasta"},
             { "an onion", "onion"},
             { "pot roast", "arm pot roast"},
          
             { "chihuahua cheese", "queso chihuahua cheese"},         
-            { "spaghetti noodles", "noodles"},
-            { "macaroni noodles", "noodles"},
-            { "lasagna noodles", "noodles"},
             { "pork roast", "pork loin roast"},
             { "extra virgin olive oil","olive oil"},
             { "freshly ground black pepperl","black pepper"},
@@ -159,10 +170,6 @@ namespace Logic {
             { "salt to taste","table salt" },
             { "salt pepper","table salt" },
             { "black peppet and table salt","table salt" },
-            { "salt and ground black pepper","table salt" },
-            { "salt/pepper","table salt" },
-            { "salt n pepper","table salt" },
-            { "salt and freshly ground black pepper","table salt" },
             { "beef mince", "ground beef"},
           
             { "scalions","green onion" },
@@ -195,7 +202,7 @@ namespace Logic {
             { "Italian-seasoned bread crumbs" ,"seasoned bread crumbs"},
             {"Italian-style seasoned bread crumbs" , "seasoned bread crumbs"},
 
-            { "chicken breast meat", "chicken breast"},
+         
             { "dried bread crumbs", "bread crumbs" },
             { "can anchovy fillets", "anchovy"},
             { "fresh dill","fresh dill weed"},
@@ -246,7 +253,7 @@ namespace Logic {
             { "salmon fillets", "salmon"},
             { "pepper (any color)", "peppers" },
             { "pumpkin puree", "pumpkin" },
-            { "breakfast sausage", "pork sausage" },
+         
             { "chorizo sausage", "pork sausage" },
             { "flat-leaf parsley", "parsley" },
             { "parsley for garnish", "parsley"},
@@ -278,13 +285,13 @@ namespace Logic {
             { "breakfast muffins", "wheat bran muffins"}
         };
         public static List<string> ActionInfo = new List<string> {
-            "thick sliced", "sliced","slivered","melted","sifted", "ground", "shredded",
-            "cubed", "rolled","mashed","crushed"  ,"boiled", "cut into","grated",
-            "finely diced","diced", "dried minced", "minced", "finely chopped", "chopped",
-            "finely shredded","cooked","finely crushed","frozen","blended"
+            "peeled and diced","thick sliced", "sliced","slivered","melted","sifted", "ground", "shredded",
+            "cubed", "rolled","mashed","crushed"  ,"boiled", "cut into","grated","julienne",
+            "finely chopped","medium dice", "small dice","finely diced","diced", "dried minced", "minced", "finely chopped", "chopped",
+            "finely shredded","cooked","finely crushed","frozen","blended","chiffonade"
         };
         public static List<string> StateInfo = new List<string> {
-          "canned", "cans","can","some","fillets", "prepared", "package",
+          "canned", "cans","can","some","fillets", "prepared", "package","as needed",
            "packages","blanched","florets","steel cut", "peeled","small dice",
            "sprig", "sprigs","loaf", "head", "heads",  "stalk", "stalks",
            "grind", "ripe", "steaks", "cold", "warm", "fresh","freshly",

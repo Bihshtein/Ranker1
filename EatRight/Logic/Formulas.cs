@@ -108,6 +108,7 @@ namespace Logic
         }
         public static List<string> RelativeProductSize = new List<string> {
             "large handful of",
+            "a little",
             "little bit of",
             "lots of",
             "pat of",
@@ -128,7 +129,8 @@ namespace Logic
             "little",
             "gloves",
             "glove",
-
+            "big",
+            "half",
 
         };
         public static List<string> RelativeSizes = new List<string> {

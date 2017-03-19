@@ -217,6 +217,9 @@ namespace InitRecipes {
                     name = name.Replace(".", "");
                     name = name.Replace(">", "&gt;");
                     name = name.Replace("<", "&lt;");
+                    name = name.Replace("\"", "&quot;");
+                    name = name.Replace("'", "&apos;");
+                    name = name.Replace("\b", "");
 
                     var weight = nameAndWeight[0].Replace(".", "");
                   
