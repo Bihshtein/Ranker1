@@ -107,23 +107,22 @@ namespace Logic
                 ((FatGramCalories * weightRatio) * 9);
         }
         public static List<string> RelativeProductSize = new List<string> {
-            "large handful of",
+            "large handful",
             "a little",
-            "little bit of",
-            "lots of",
-            "pat of",
-            "small cup of",
-            "small bunch of",
+            "little bit",
+            "lots",
+            "pat",
+            "small cup",
+            "small bunch",
             "hand full",
             "handfuls",
             "handful",
             "large",
-            "small head of",
+            "small head",
             "small bunch",
             "small",
-            "medium size of",
             "medium size",
-            "medium bunch of",
+            "medium bunch",
             "medium",
             "whole",
             "little",
@@ -131,6 +130,7 @@ namespace Logic
             "glove",
             "big",
             "half",
+            "lg",
 
         };
         public static List<string> RelativeSizes = new List<string> {
@@ -187,7 +187,6 @@ namespace Logic
             "carton",
             "stalk",
             "envelope",
-            "thumb-size of",
             "thumb-size",
             "thumb",
 

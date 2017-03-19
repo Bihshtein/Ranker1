@@ -30,17 +30,33 @@ namespace Logic {
             return SkipIngredients.Contains(ingredient) || ingredient.Contains("optional");
         }
 
-        public static string RemoveWord(List<string> wordsList, string phrase) {
+        public static string RemoveWord(List<string> wordsList, string phrase,bool adjust=true) {
             wordsList.ForEach(item => {
-                if (WordCheck(item, phrase)) {
-                    phrase = phrase.Replace(item, "");
-                    phrase = phrase.Replace("(", "");
-                    phrase = phrase.Replace(")", "");
-                    phrase = phrase.Replace(";", "");
+                if (phrase.Split(' ').Length > 1 && item.Split(' ').Length == 1) {
+                    var newPhrase = "";
+                    phrase.Split(' ').ToList().ForEach(word => {
+                        word = word.Trim();
+                        if (word != item && word != "("+item+")")
+                            newPhrase += word + " ";
+                    });
+                    phrase = newPhrase.Trim();
                 }
-                phrase = phrase.Trim();
+                else if (adjust)
+                    AdjustPhrase(item, ref phrase);
+                else
+                    phrase = phrase.Split(new string[1] { item }, StringSplitOptions.None)[0];
             });
             return phrase;
+        }
+
+        public static void AdjustPhrase (string item, ref string phrase) {
+           if (WordCheck(item, phrase)) {
+                phrase = phrase.Replace(item, "");
+                phrase = phrase.Replace("(", "");
+                phrase = phrase.Replace(")", "");
+                phrase = phrase.Replace(";", "");
+            }
+            phrase = phrase.Trim();
         }
 
         public static bool HasWord(List<string> wordsList, string phrase) {
@@ -61,9 +77,15 @@ namespace Logic {
             if (ingredient.StartsWith(") "))
                 ingredient = ingredient.Replace(") ", "");
 
-
+            if (ingredient[ingredient.Length - 1] == ')') {
+                var index = ingredient.LastIndexOf('(');
+                if (index > 0)
+                    ingredient = ingredient.Remove(index, ingredient.Length - index);
+            }
             ingredient = RemoveWord(Map.StateInfo, ingredient).Trim();
             ingredient = RemoveWord(Map.ActionInfo, ingredient).Trim();
+            ingredient = RemoveWord(Map.ConnectingWords, ingredient).Trim();
+            ingredient = RemoveWord(Map.EndActionInfo, ingredient,false).Trim();
             ingredient = ingredient.Replace(";", "");
             return ingredient;
         }
@@ -124,6 +146,7 @@ namespace Logic {
                { new List<string> {"all","purpose", "flour"}, "all-purpose wheat flour"},
                { new List<string> {"chicken", "breast" }, "chicken breast"},
                { new List<string> {"salt", "pepper" }, "table salt"},
+               { new List<string> { "table", "salt" }, "table salt"},
                { new List<string> { "breakfast", "sausage" } ,"pork sausage" },
 
                { new List<string> { "spaghetti", "pasta" }, "pasta"},
@@ -135,8 +158,9 @@ namespace Logic {
                { new List<string> { "fettuccine",  "pasta" }, "pasta"},
                { new List<string> { "farfalle",  "pasta" }, "pasta"},
                { new List<string> { "your",  "pasta" }, "pasta"},
+               { new List<string> { "elbow",  "macaroni" }, "pasta"},
                 { new List<string> { "whole","grain", "pasta" }, "whole-wheat pasta"},
-
+                { new List<string> { "fresh", "dill" }, "fresh dill weed"},
         };
         public static Dictionary<string, string> ChangePartialPhrases = new Dictionary<string, string>() {
             { "cashews", "cashew nuts"},
@@ -155,7 +179,6 @@ namespace Logic {
             { "spicy chorizo","chorizo"},
             { "an onion", "onion"},
             { "pot roast", "arm pot roast"},
-         
             { "chihuahua cheese", "queso chihuahua cheese"},         
             { "pork roast", "pork loin roast"},
             { "extra virgin olive oil","olive oil"},
@@ -171,7 +194,6 @@ namespace Logic {
             { "salt pepper","table salt" },
             { "black peppet and table salt","table salt" },
             { "beef mince", "ground beef"},
-          
             { "scalions","green onion" },
             { "green spring onion", "green onion"},
             { "spring onions", "green onion"},
@@ -201,11 +223,8 @@ namespace Logic {
             { "bread cubes", "bread crumbs" },
             { "Italian-seasoned bread crumbs" ,"seasoned bread crumbs"},
             {"Italian-style seasoned bread crumbs" , "seasoned bread crumbs"},
-
-         
             { "dried bread crumbs", "bread crumbs" },
             { "can anchovy fillets", "anchovy"},
-            { "fresh dill","fresh dill weed"},
             { "skim", "nonfat"},
             { "bell pepper", "pepper" },
             { "black olives", "ripe olives" },
@@ -218,11 +237,9 @@ namespace Logic {
             { "ap flour","all-purpose wheat flour"},
             { "plain flour","all-purpose wheat flour"},
             { "whole wheat flour","whole-grain wheat flour"},
-           
             { "pinch table salt and black pepper","table salt" },
             { "kosher salt","table salt"},
             { "oil/butter", "butter"},
-
             { "salt and pepper","table salt" },
             { "salt and black pepper","table salt" },
             { "sea salt and black pepper","table salt" },
@@ -253,7 +270,6 @@ namespace Logic {
             { "salmon fillets", "salmon"},
             { "pepper (any color)", "peppers" },
             { "pumpkin puree", "pumpkin" },
-         
             { "chorizo sausage", "pork sausage" },
             { "flat-leaf parsley", "parsley" },
             { "parsley for garnish", "parsley"},
@@ -286,9 +302,17 @@ namespace Logic {
         };
         public static List<string> ActionInfo = new List<string> {
             "peeled and diced","thick sliced", "sliced","slivered","melted","sifted", "ground", "shredded",
-            "cubed", "rolled","mashed","crushed"  ,"boiled", "cut into","grated","julienne",
-            "finely chopped","medium dice", "small dice","finely diced","diced", "dried minced", "minced", "finely chopped", "chopped",
+            "cubed", "rolled","mashed","crushed"  ,"boiled","grated","julienne",
+            "fine minced","finely chopped","medium dice", "small dice","finely diced","diced", "dried minced", "minced", "finely chopped", "chopped",
             "finely shredded","cooked","finely crushed","frozen","blended","chiffonade"
+        };
+
+        public static List<string> EndActionInfo = new List<string> {
+            "cut into"
+        };
+
+        public static List<string> ConnectingWords = new List<string> {
+           "a","of"
         };
         public static List<string> StateInfo = new List<string> {
           "canned", "cans","can","some","fillets", "prepared", "package","as needed",
@@ -296,7 +320,7 @@ namespace Logic {
            "sprig", "sprigs","loaf", "head", "heads",  "stalk", "stalks",
            "grind", "ripe", "steaks", "cold", "warm", "fresh","freshly",
           "(optional)", "asiago",  "panko" , "steaks", "- peeled","halves",
-           "and cut into circles", "for frying", "herb-seasoned", "solid pack",
+            "for frying","for frying pan", "herb-seasoned", "solid pack",
         };
 
         public static List<string> SkipIngredients = new List<string> {

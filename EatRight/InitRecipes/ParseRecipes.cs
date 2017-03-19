@@ -36,9 +36,9 @@ namespace InitRecipes {
                 {MealType.Breakfast, new Tuple<string,int>( "78/breakfast-and-brunch",1) } }
             },
             {RecipesSource.Cookpad, new Dictionary<MealType, Tuple<string, int>>() {
-               {MealType.Breakfast, new Tuple<string,int>( "search/breakfast", 10)},
-                {MealType.Lunch,  new Tuple<string,int>("search/lunch",10) },
-               {MealType.Dinner, new Tuple<string,int>( "search/dinner" ,10)}}
+               {MealType.Breakfast, new Tuple<string,int>( "search/breakfast", 0)},
+                {MealType.Lunch,  new Tuple<string,int>("search/lunch",250) },
+               {MealType.Dinner, new Tuple<string,int>( "search/dinner" ,0)}}
             }
         };
 

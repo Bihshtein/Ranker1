@@ -68,9 +68,9 @@ namespace Logic
                     relative = double.Parse("0" + relativeStr);
                 else if (relativeStr.Contains(" ") || relativeStr.Contains("/"))
                     relative  = GetFractionedNumber(relativeStr);
-                else if (relativeStr.Contains("to"))
+                else if (relativeStr.Contains("to") || relativeStr.Contains("or") )
                 {
-                    var size = parts[1].Split(new string[1] { "to" }, StringSplitOptions.RemoveEmptyEntries)[0]; // range of two numbers
+                    var size = parts[1].Split(new string[2] { "to","or" }, StringSplitOptions.RemoveEmptyEntries)[0]; // range of two numbers
                     
                     relative = double.Parse(size);
                 }
