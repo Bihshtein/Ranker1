@@ -34,7 +34,7 @@ namespace InitProducts {
                 "wedge cut", "tops only","(bulb and lower-leaf portion)","cut off cob","excluding seeds",
                 "young pods with seeds", "kernels","kernels on cob", "bulb","kernels cut off cob",
                 "whole kernel", "in pod","immature seeds","shoots", "mature seeds","leaves",
-                "leafy tips", "pods", "young pods with seed"
+                "leafy tips", "pods", "young pods with seed","green"
             };
         }
 
@@ -43,6 +43,8 @@ namespace InitProducts {
                 return "tomato";
             else if (part.ToLower().Contains("coriander (cilantro) leaves"))
                 return  "coriander";
+            else if (part.ToLower().Contains("lemon grass (citronella)"))
+                return "lemongrass";
             return part;
         }
 

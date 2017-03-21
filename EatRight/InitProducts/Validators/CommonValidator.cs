@@ -35,7 +35,7 @@ namespace InitProducts {
            "drained", "jellied","juice pack","water","cream style" ,"in oil", "solids and liquids" };
 
         public static List<string> PreperationOptionsRaw = new List<string>{
-            "toasted","prepared","baked","flour","raw","glazed","fried","carbonated","roasted",
+            "toasted","prepared","baked","flour","raw","glazed","fried","carbonated","roasted","fresh",
             "cooked","breaded","moist heat","dry heat","smoked","pickled","boiled","steamed",
             "whipped","pasteurized","cultured","poached","heated","stewed","microwave","grilled",
             "sauteed","scalloped","candied","braised","rotisserie","BBQ","batter","simmered",

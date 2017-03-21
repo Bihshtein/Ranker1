@@ -38,7 +38,7 @@ namespace InitRecipes {
             Console.WriteLine("total recipes : " + recipes.Count);
             Console.WriteLine("total ingredients : " + total);
             Console.WriteLine("total ingredients missed : " + totalMissing);
-            var sorted = MissingCount.OrderByDescending(i => i.Value).ToList();
+            var sorted = MissingCount.OrderBy(i => i.Key.Split(' ').Length).ToList();
             File.WriteAllLines(FolderPath + "MissingIndex.txt", sorted.ConvertAll<string>(i => i.Key + " : " + i.Value));
         }
 

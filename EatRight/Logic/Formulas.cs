@@ -119,6 +119,7 @@ namespace Logic
             "handful",
             "large",
             "small head",
+            "small to medium",
             "small bunch",
             "small",
             "medium size",
@@ -131,6 +132,7 @@ namespace Logic
             "big",
             "half",
             "lg",
+            
 
         };
         public static List<string> RelativeSizes = new List<string> {
