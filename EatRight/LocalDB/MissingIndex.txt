@@ -9,8 +9,8 @@ adobo : 2
 grits : 3
 lamb : 3
 glaze : 2
-tabasco : 4
 raw : 2
+tabasco : 4
 splenda : 2
 kiwi : 2
 sirloin : 2
@@ -34,20 +34,20 @@ clams : 2
 syoyu : 2
 brandy : 2
 clove : 2
-soysauce : 2
 galangal : 2
+soysauce : 2
 mochi : 2
 soy : 2
-cucumber and : 2
-sourdough starter : 4
 poblano pepper : 3
-fruits vinegar : 2
+sourdough starter : 4
 cooking spray : 4
-banana extract : 2
-whipping cream : 3
+cucumber and : 2
+fruits vinegar : 2
 pan spray : 2
 each egg : 4
+whipping cream : 3
 pinch sugar : 2
+banana extract : 2
 tater tots : 6
 flax seed : 5
 green chillies : 5
@@ -56,19 +56,19 @@ hot sauce : 11
 protein powder : 3
 sausage links : 3
 ranch dressing : 2
-chinese cabbage : 2
 sausage ties : 3
+chinese cabbage : 2
 spring greens : 2
-cajun seasoning : 5
 dry mustard : 2
-chicken sausage : 3
+cajun seasoning : 5
 uncooked sausage : 2
+chicken sausage : 3
 cheese choice : 2
 maple sausage : 2
 red potatos : 3
 bread slice : 2
-eggs beaten : 4
 italian seasoning : 20
+eggs beaten : 4
 favorite cheese : 2
 crescent rolls : 4
 sunflower seeds : 2
@@ -77,84 +77,84 @@ refrigerated biscuits : 2
 artichoke hearts : 2
 sharp cheddar : 3
 bulk sausage : 2
-cayenne powder : 3
 white cheese : 2
 red beans : 2
+cayenne powder : 3
 oat flakes : 2
-coconut cream : 2
 roma tomato : 2
+coconut cream : 2
 old-fashioned oats : 2
 taco seasoning : 13
 celery ribs : 2
 miracle whip : 2
-provalone cheese : 2
 curly kale : 2
+provalone cheese : 2
 clove garlic : 2
-chilli flakes : 2
 siracha sauce : 3
+chilli flakes : 2
 sweet corn : 3
-x13 dish-stoneware : 2
-jumbo shells : 3
 italian dressing : 2
-orange pepper : 3
+jumbo shells : 3
+x13 dish-stoneware : 2
 alfredo sauce : 3
-chilli powder : 2
-mandarin oranges : 2
+orange pepper : 3
 dried chives : 2
+mandarin oranges : 2
 mizuna leaves : 2
+chilli powder : 2
 parmigiano reggiano : 2
 green chilies : 3
 rice vinegar : 6
-bay leave : 2
 dashi powder : 8
-garlic paste : 4
 pepper flakes : 9
+garlic paste : 4
 granulated garlic : 6
 elbow macaroni : 3
+bay leave : 2
 pickled carrots : 2
 garlic pepper : 2
-marinara sauce : 6
 garbanzo beans : 3
+marinara sauce : 6
 purple cabbage : 4
 green cabbage : 2
 stem celery : 2
 daikon radish : 4
-worcester sauce : 2
 dehydrated onions : 5
+worcester sauce : 2
 chicken boobs : 2
-potatoes and : 2
 hoagie rolls : 2
+potatoes and : 2
 merlot-parmesean cheese : 2
-cherry tomato : 2
 tomato catsup : 2
-soya sauce : 2
+cherry tomato : 2
 hamburger meat : 4
 enchilada sauce : 4
 mexican beer : 2
+soya sauce : 2
 lime wedges : 3
 garlic - : 4
 cream celery : 2
-red chillies : 4
 garlic smashed : 3
 chili seasoning : 3
 corned beef : 2
-bouillon cube : 2
+red chillies : 4
 mixed nuts : 2
 sunflower oil : 2
+bouillon cube : 2
 english cucumber : 2
 tabasco sauce : 2
 jack cheese : 2
-limes juiced : 2
 ranch seasoning : 2
+limes juiced : 2
 vegetable stock : 3
 chipotle salsa : 2
 arborio rice : 2
 sriracha seasoning : 2
 workshop sugar : 2
 stems coriander : 2
-mexican oregano : 2
-avocado oil : 2
 bbq sauce : 4
+avocado oil : 2
+mexican oregano : 2
 rice paper : 2
 hoisin sauce : 2
 tumeric powder : 2
@@ -174,14 +174,14 @@ thumb-size ginger : 2
 green lentils : 2
 sweet sake : 3
 collard greens : 2
-ts bee pollen : 2
 green enchilada sauce : 2
+ts bee pollen : 2
 half and half : 8
 red pepper flakes : 11
 vanilla greek yogurt : 3
-yukon gold potatoes : 2
 free range eggs : 2
 plain greek yogurt : 3
+yukon gold potatoes : 2
 over easy eggs : 2
 large flaky biscuits : 2
 texas toasted bread : 2
@@ -202,15 +202,15 @@ mild enchilada sauce : 2
 red lentil penne : 2
 roasted red pepper : 3
 sweet chili sauce : 3
-oil  spoon : 2
 / cup oil : 2
+oil  spoon : 2
 great northern beans : 2
 red enchilada sauce : 5
 sweet chilli sauce : 2
 peel  lemon : 2
-crystal hot sauce : 2
 seasoned rice vinegar : 3
 chicken stock powder : 3
+crystal hot sauce : 2
 sesame seed oil : 2
 juice 1 lime : 2
 baby bok choy : 2
@@ -220,9 +220,9 @@ spicy brown mustard : 2
 long grain rice : 3
 chicken bouillon cubes : 2
 mushroom soya sauce : 2
-black pepper powder : 2
 garam masala powder : 2
 ginger garlic paste : 3
+black pepper powder : 2
 tamari soy sauce : 3
 red spur chillies : 2
 idaho potatoes &amp : 2

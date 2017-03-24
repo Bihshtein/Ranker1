@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Linq.Expressions;
 using Logic;
+using System.Collections.Concurrent;
 
 namespace RestModel {
     public class Queries<T> {
@@ -16,6 +17,7 @@ namespace RestModel {
             this.collection = collection;
         }
 
+        public static ConcurrentDictionary<string, List<Product>> Cache = new ConcurrentDictionary<string, List<Product>>();
         public List<Product> QueryByNameAndValue(string name, string group,string nutGroup, string value, bool partial = false) {
             name = name.ToLower();
             group = group.ToLower();
@@ -44,7 +46,10 @@ namespace RestModel {
 
         public static List<Product> GetMatchingProductsForIngredient(string ingredient)
         {
-            var  res = unit.Products.Queries.TryMatchWholeProduct(ingredient);
+            if (Cache.ContainsKey(ingredient))
+                return Cache[ingredient];
+
+                var res = unit.Products.Queries.TryMatchWholeProduct(ingredient);
             if (res != null && res.Count> 0)
                 return res;           
             if (ingredient == string.Empty)
@@ -58,6 +63,8 @@ namespace RestModel {
                     res = HandleOr(ingredient);
                 }
             }
+
+            Cache.TryAdd(ingredient, res);
             return res;
         }
 
