@@ -58,10 +58,6 @@ namespace RestModel {
                     res = HandleOr(ingredient);
                 }
             }
-            if (res == null || res.Count == 0) // Special long ass names (manual recipe init from file)
-            {
-                res = unit.Products.Queries.TryMatchWholeProduct(ingredient);
-            }
             return res;
         }
 

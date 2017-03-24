@@ -36,30 +36,34 @@ namespace InitRecipes {
                 {MealType.Breakfast, new Tuple<string,int>( "78/breakfast-and-brunch",1) } }
             },
             {RecipesSource.Cookpad, new Dictionary<MealType, Tuple<string, int>>() {
-               {MealType.Breakfast, new Tuple<string,int>( "search/breakfast", 1000)},
-                {MealType.Lunch,  new Tuple<string,int>("search/lunch",1000) },
-               {MealType.Dinner, new Tuple<string,int>( "search/dinner" ,1000)}}
+               {MealType.Breakfast, new Tuple<string,int>( "search/breakfast", 20)},
+                {MealType.Lunch,  new Tuple<string,int>("search/lunch",20) },
+               {MealType.Dinner, new Tuple<string,int>( "search/dinner" ,20)}}
             }
         };
 
         public static object Locker = new object();
         public static HashSet<int> Indexes;
 
-        public static void CreateDB() {
+        public static void CreateDB(bool offline) {
             Indexes = new HashSet<int>();
             var unit = new RestDBInterface();
             unit.Recipes.Empty();
-            RecipesURLs.ToList().ForEach(s => AddRecipesBySource(s, unit));
+            RecipesURLs.ToList().ForEach(s => AddRecipesBySource(s, unit, offline));
         }
 
-        public static void AddRecipesBySource(KeyValuePair<RecipesSource, string> source, RestDBInterface unit) {
-            MealTypesURNs[source.Key].ToList().ForEach(m => AddRecipesByMealType(source.Key, m.Key, source.Value + m.Value.Item1, unit,m.Value.Item2));
+        public static void AddRecipesBySource(KeyValuePair<RecipesSource, string> source, RestDBInterface unit, bool offline) {
+            MealTypesURNs[source.Key].ToList().ForEach(m => AddRecipesByMealType(source.Key, m.Key, source.Value + m.Value.Item1, unit, offline, m.Value.Item2));
         }
 
-        public static void AddRecipesByMealType(RecipesSource source, MealType mealType, string mealTypeURN, RestDBInterface unit,int pagesLimit = 1000, int loadBulkSize = 1000) {
-            AddRecipesByURL(mealTypeURN, unit, pagesLimit);
-            ProblematicRecipes.ForEach(x => Indexes.Remove(x));
-           
+        public static void AddRecipesByMealType(RecipesSource source, MealType mealType, string mealTypeURN, RestDBInterface unit, bool offline, int pagesLimit = 1000, int loadBulkSize = 1000) {
+            if (offline) {
+                var files = Directory.GetFiles(Path.Combine(FolderPath, source.ToString(), mealType.ToString())).ToList();
+                files.ForEach(f =>Indexes.Add(int.Parse(Path.GetFileNameWithoutExtension(f))));
+            }
+            else
+                AddRecipesByURL(mealTypeURN, unit, pagesLimit);
+            ProblematicRecipes.ForEach(x => Indexes.Remove(x));          
                 
             var loadMealsBulkSize = Indexes.Count > loadBulkSize ? loadBulkSize : Indexes.Count;
             if (source == RecipesSource.AllRecipes) {
@@ -139,7 +143,9 @@ namespace InitRecipes {
             }
             var page = string.Empty;
             try {
-                var filePath = Path.Combine(FolderPath, source.ToString(), index.ToString() + ".txt");
+                Directory.CreateDirectory(Path.Combine(FolderPath, source.ToString()));
+                Directory.CreateDirectory(Path.Combine(FolderPath, source.ToString(), mealType.ToString()));
+                var filePath = Path.Combine(FolderPath, source.ToString(), mealType.ToString(),index.ToString() + ".txt");
                 if (File.Exists(filePath))
                     page = File.ReadAllText(filePath);
                 else {

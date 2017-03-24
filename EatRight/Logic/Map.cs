@@ -136,7 +136,7 @@ namespace Logic {
             { "celery salt","table salt"},
             { "onion salt","table salt"},
             { "tamatos","tomatoes"},
-            { "jalapeֳ±o","jalapeno"},
+            { "jalapeño","jalapeno"},
             { "liquid milk","milk"},
             { "ice","water"},
 
@@ -176,7 +176,7 @@ namespace Logic {
                { new List<string> { "vegetables", "oil",  }, "olive oil"},
                { new List<string> { "olive oil",  }, "olive oil"},
                { new List<string> { "chia",}, "chia seeds"},
-               { new List<string> { "jalapeֳ±os", }, "jalapeno"},
+               { new List<string> { "jalapeֳ±o", }, "jalapeno"},
                { new List<string> { "pomelo", }, "pumello"},
                { new List<string> { "vermicelli", }, "pasta"},
                { new List<string> { "orzo", }, "pasta"},
@@ -310,7 +310,7 @@ namespace Logic {
             "topping","for the","---","~~~"
         };
         public static List<string> SkipHeadlinesFullNames = new List<string> {// 
-            "dressing"
+            "dressing","seasonings","seasoning", "filling","ingredients","dressing:"
         };
     }
 }

@@ -21,9 +21,11 @@ namespace InitRecipes {
         
 
         static void Main(string[] args) {
-          
-            ParseRecipes.CreateDB(); // index file has 20,000 meals, load the first 200
-            AddProducts.Add();
+          if (args.Contains("OFFLINE"))
+            ParseRecipes.CreateDB(true); 
+          else
+            ParseRecipes.CreateDB(false);
+        AddProducts.Add();
         }
        
     }
