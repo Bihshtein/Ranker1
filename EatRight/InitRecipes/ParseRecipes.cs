@@ -36,9 +36,9 @@ namespace InitRecipes {
                 {MealType.Breakfast, new Tuple<string,int>( "78/breakfast-and-brunch",1) } }
             },
             {RecipesSource.Cookpad, new Dictionary<MealType, Tuple<string, int>>() {
-               {MealType.Breakfast, new Tuple<string,int>( "search/breakfast",50)},
-                {MealType.Lunch,  new Tuple<string,int>("search/lunch",800 )},
-               {MealType.Dinner, new Tuple<string,int>( "search/dinner" ,300)}}
+               {MealType.Breakfast, new Tuple<string,int>( "search/breakfast",500)},
+                {MealType.Lunch,  new Tuple<string,int>("search/lunch",5000 )},
+               {MealType.Dinner, new Tuple<string,int>( "search/dinner" ,5000)}}
             }
         };
 
@@ -56,13 +56,13 @@ namespace InitRecipes {
             MealTypesURNs[source.Key].ToList().ForEach(m => AddRecipesByMealType(source.Key, m.Key, source.Value + m.Value.Item1, unit, offline, m.Value.Item2));
         }
 
-        public static void AddRecipesByMealType(RecipesSource source, MealType mealType, string mealTypeURN, RestDBInterface unit, bool offline, int pagesLimit = 1000, int loadBulkSize = 1000) {
+        public static void AddRecipesByMealType(RecipesSource source, MealType mealType, string mealTypeURN, RestDBInterface unit, bool offline, int recipesLimit , int loadBulkSize = 1000) {
             if (offline) {
-                var files = Directory.GetFiles(Path.Combine(FolderPath, source.ToString(), mealType.ToString())).ToList();
+                var files = Directory.GetFiles(Path.Combine(FolderPath, source.ToString(), mealType.ToString())).Take(recipesLimit).ToList();
                 files.ForEach(f =>Indexes.Add(int.Parse(Path.GetFileNameWithoutExtension(f))));
             }
             else
-                AddRecipesByURL(mealTypeURN, unit, pagesLimit);
+                AddRecipesByURL(mealTypeURN, unit, recipesLimit);
             ProblematicRecipes.ForEach(x => Indexes.Remove(x));          
                 
             var loadMealsBulkSize = Indexes.Count > loadBulkSize ? loadBulkSize : Indexes.Count;
@@ -98,18 +98,19 @@ namespace InitRecipes {
             }
             log.Debug("Page num :" + currPage);
         }
-        private static void AddRecipesByURL(string categoryURN, RestDBInterface unit, int pagesLimit = 50) {
+        private static void AddRecipesByURL(string categoryURN, RestDBInterface unit, int recipesLimit) {
             Indexes.Clear();
            
             log.Debug("Locating recipes in ->" + categoryURN + " - started");
 
             var tasks = new List<Task>();
-            for (int i = 0; i < pagesLimit; i++) {
+            for (int i = 0; i < recipesLimit/10; i++) {
                 int curr = i;
                 tasks.Add(new Task(new Action(()=> ReadPage(categoryURN,unit ,curr, new WebClient()))));
             }
             tasks.ForEach(task => task.Start());
             tasks.ForEach(task => task.Wait());
+            Indexes = new HashSet<int>(Indexes.Take(recipesLimit));
             log.Debug("Locating recipes in ->" + categoryURN + " - completed. Indexes count : " + Indexes.Count);
         }
 
