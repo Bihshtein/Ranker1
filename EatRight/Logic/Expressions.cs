@@ -8,6 +8,13 @@ namespace Logic
 {
     public class ParseHelpers
     {
+        public static Dictionary<string, string> WeightsShortcuts = new Dictionary<string, string> {
+            { "c." ,"cup"},
+            { "c" ,"cup"},
+            { "C" ,"cup"},
+            { "t" ,"teaspoon"},
+            { "T" ,"tablespoon"},
+        };
         public static string GetWithoutLast_ES_letters(string str)
         {
             var length = str.Length;
@@ -23,7 +30,22 @@ namespace Logic
                 return str.Remove(length - 1);
             return str;
         }
-
+        public static string GetWeightFullName(string weight) {
+            var splitBySpace = weight.Split(' ');
+            if (splitBySpace.Length > 1 && WeightsShortcuts.Keys.Any(k => k == splitBySpace[1])) {
+                weight = weight.Replace(splitBySpace[1], WeightsShortcuts[splitBySpace[1]]);
+            }
+            return weight;
+        }
+        public static string FixIllegalCharacters(string name) {
+            name = name.Replace(".", "");
+            name = name.Replace(">", "&gt;");
+            name = name.Replace("<", "&lt;");
+            name = name.Replace("\"", "&quot;");
+            name = name.Replace("'", "&apos;");
+            name = name.Replace("\b", "");
+            return name;
+        }
 
         public static TimeSpan ParseTime(string time)
         {
