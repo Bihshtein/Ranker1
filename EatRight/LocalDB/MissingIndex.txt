@@ -1,205 +1,71 @@
-linguine : 5
-gingerroot : 2
-stock : 2
-yoghurt : 2
-half-and-half : 3
-bratwursts : 2
-lamb : 2
-tequila : 3
-eggplants : 2
-oleo : 3
-seasoning : 2
-penne : 3
-kefalotiri : 2
-guacamole : 3
-garlic cloves : 91
-garlic clove : 23
-sliced mushrooms : 13
-elbow macaroni : 11
-ranch dressing : 3
-picante sauce : 3
-hot sauce : 6
-rotel tomatoes : 2
-fresh ginger : 13
-green chilies : 15
-cajun seasoning : 3
-tater tots : 2
-ginger ale : 2
-pizza toppings : 2
-fresh asparagus : 2
-broccoli florets : 3
-fresh broccoli : 2
-steak seasoning : 2
-taco seasoning : 7
-whipping cream : 8
-ground coriander : 7
-cheese ravioli : 4
-yellow rice : 2
-basmati rice : 4
-meatless sauce : 2
-dark beer : 3
-biscuit mix : 3
-chicken tenderloins : 2
-rice wine : 4
-sambal oelek : 2
-italian seasoning : 18
-chili sauce : 5
-jalapeno chile : 2
-cinnamon sticks : 2
-mixed mushrooms : 2
-whole cloves : 2
-garam masala : 5
-chicken pieces : 2
-strawberry jam : 2
-celery ribs : 4
-cooking spray : 10
-tabasco sauce : 11
-kernel corn : 3
-pizza dough : 5
-fresh coriander : 14
-ground round : 2
-peanut oil : 4
-tomato soup : 4
-ground pepper : 5
-pine nuts : 2
-turkey gravy : 2
-fresh sage : 3
-tart apples : 2
-vegetable stock : 3
-thyme leaves : 4
-fresh mushrooms : 13
-dried cherries : 2
-mixed vegetables : 2
-pearl barley : 2
-slivered almonds : 3
-ground turkey : 4
-chicken gravy : 2
-tart apple : 2
-cream-style corn : 3
-cream soup : 2
-fresh oregano : 2
-cinnamon stick : 5
-oreo cookies : 2
-chocolate syrup : 2
-fresh marjoram : 3
-instant rice : 4
-fresh kale : 2
-cinnamon sugar : 2
-mandarin oranges : 2
-ground sirloin : 3
-baby spinach : 2
-dry mustard : 7
-garlic paste : 2
-orange rind : 2
-lemon wedge : 3
-corn chips : 2
-velveeta cheese : 7
-confectioners%27 sugar : 3
-cannellini beans : 2
-orange liqueur : 2
-lemon-pepper seasoning : 2
-chicken tenders : 3
-italian dressing : 2
-hoisin sauce : 3
-turkey pepperoni : 2
-baking potatoes : 3
-liquid smoke : 3
-enchilada sauce : 4
-pie crusts : 2
-ground cardamom : 2
-hot pepper : 2
-fresh chives : 2
-sherry wine : 2
-green cabbage : 2
-light cream : 2
-english cucumber : 2
-flat bread : 2
-chicken bouillon : 2
-fresh carrot : 2
-shell macaroni : 2
-kalamata olive : 2
-soya sauce : 2
-marshmallow creme : 2
-dry lentils : 2
+oatmeal : 6
+bisquick : 2
+sausages : 2
+tabasco : 2
+cockles : 2
+mirin : 2
+shal : 4
+sriracha : 2
+biscuit mix : 2
+rolled oats : 2
+dry mustard : 3
+tater tots : 3
+roma tomato : 2
+pizza dough : 3
+sausage links : 4
+sliced mushrooms : 2
+green chilies : 5
+garlic clove : 7
+fresh coriander : 3
+quick-cooking oats : 2
+taco seasoning : 3
+dried sage : 2
+garlic cloves : 13
+hot sauce : 7
+pork ribs : 2
+picante sauce : 2
+ground coriander : 2
+whipping cream : 2
+chia seeds : 6
+sourdough starter : 2
+spring greens : 2
+cooking spray : 3
+cucumber and : 2
+sunflower seeds : 2
+coconut cream : 2
+red potatos : 2
+green chillies : 2
 rice vinegar : 2
-mushroom pieces : 2
+garlic smashed : 2
+enchilada sauce : 3
+italian seasoning : 6
+english cucumber : 2
+hamburger meat : 2
+chili seasoning : 2
+red chillies : 3
+pepper flakes : 6
+green lentils : 2
+fine semolina : 2
+merlot-parmesean cheese : 2
+sweet sake : 2
 brown gravy mix : 2
-ranch dressing mix : 3
-diced green chilies : 2
-yukon gold potatoes : 2
+rice wine vinegar : 2
+ground red pepper : 2
 dried oregano leaves : 2
-fresh ground pepper : 9
-rice wine vinegar : 4
-ground red pepper : 5
-red pepper flakes : 8
-lemon%2c peel of : 3
-lemon pepper seasoning : 2
-frozen mixed vegetables : 6
-sweet red pepper : 4
-lean stewing beef : 2
-lemon%2c juice of : 7
-chicken bouillon cube : 3
-fast rising yeast : 4
-kaffir lime leaves : 2
-dry dessert wine : 4
-ground cayenne pepper : 4
-nonstick cooking spray : 2
-baby bok choy : 2
-hot pepper flakes : 2
-long grain rice : 3
-red seedless grapes : 3
-italian herb seasoning : 2
-onion soup mix : 9
-mushroom gravy mix : 2
-mild italian sausage : 2
-chicken bouillon cubes : 5
-red chili powder : 2
-prepared pizza crust : 3
-russian salad dressing : 4
-pure vanilla extract : 2
-beef bouillon cubes : 3
-fresh lemon juice : 4
-italian salad dressing : 2
-fresh garlic cloves : 2
-carbonated lemon-lime beverage : 2
-reduced-sodium chicken broth : 2
-fresh lime juice : 4
-great northern beans : 3
-corned beef brisket : 3
-green enchilada sauce : 3
-minced garlic cloves : 3
-frozen tater tots : 2
-dried italian seasoning : 2
-lime%2c juice of : 2
-boneless pork shoulder : 2
-fresh ground black pepper : 14
-crushed red pepper flakes : 7
-cream of chicken soup : 26
-cream of mushroom soup : 21
-sweet italian sausage link : 2
-dried red pepper flakes : 2
-cream of celery soup : 5
-condensed cheddar cheese soup : 2
-stove top stuffing mix : 3
-red chili pepper flakes : 2
-chipotle chiles in adobo : 4
-low sodium soy sauce : 3
-milk sweet chocolate candies : 2
-frozen hash brown potatoes : 2
-refrigerated crescent dinner rolls : 5
-chicken flavor stuffing mix : 2
-frozen peas and carrots : 2
-semi-sweet sweet chocolate candies : 2
-deep dish pie shell : 5
-mushroom stems and pieces : 2
-deep dish pie shells : 3
-dry onion soup mix : 4
-dry ranch dressing mix : 2
-herb seasoned stuffing mix : 2
-fresh coarse ground black pepper : 4
-dried italian salad dressing mix : 2
-condensed cream of chicken soup : 7
-condensed cream of mushroom soup : 6
-9-inch deep dish pie crust : 3
-fat-free cream of mushroom soup : 2
-unbaked 9-inch deep dish pie pastry : 3
+old bay seasoning : 2
+red pepper flakes : 4
+sweet red pepper : 2
+granulated garlic powder : 7
+half and half : 2
+red enchilada sauce : 3
+juice 1 lime : 2
+peel  lemon : 2
+assorted pork chops : 2
+fresh ground black pepper : 3
+crushed red pepper flakes : 2
+cream of mushroom soup : 4
+cream of chicken soup : 4
+lipton onion soup mix : 2
+toasted breaded sesame oil : 2
+condensed cream of chicken soup : 2
+fresh coarse ground black pepper : 2

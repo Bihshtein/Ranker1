@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace InitRecipes {
-    public enum RecipesSource { AllRecipes, Cookpad, Food }
+    public enum RecipesSource { AllRecipes=1, Cookpad=2, Food=3 }
 
     class Sources {
 
@@ -21,14 +21,14 @@ namespace InitRecipes {
                 {MealType.Breakfast, new Tuple<string,string,int>( "page","http://allrecipes.com/recipes/78/breakfast-and-brunch",1) } }
             },*/
                {RecipesSource.Food, new Dictionary<MealType, Tuple<string,string, int>>() {
-                {MealType.Breakfast, new Tuple<string,string,int>( "pn","http://breakfast.food.com",1) } ,
-               {MealType.Dinner, new Tuple<string,string,int>( "pn","http://www.food.com/topic/main-dish",20000) } }
+                {MealType.Breakfast, new Tuple<string,string,int>( "pn","http://breakfast.food.com",100) } ,
+               {MealType.Dinner, new Tuple<string,string,int>( "pn","http://www.food.com/topic/main-dish",100) } }
             },
-            /*{RecipesSource.Cookpad, new Dictionary<MealType, Tuple<string,string, int>>() {
-               {MealType.Breakfast, new Tuple<string,string,int>("page","https://cookpad.com/us/search/breakfast",50)},
-                {MealType.Lunch,  new Tuple<string,string,int>("page","https://cookpad.com/us/search/lunch",50 )},
-               {MealType.Dinner, new Tuple<string,string,int>( "page","https://cookpad.com/us/search/dinner" ,50)}}
-            }*/
+            {RecipesSource.Cookpad, new Dictionary<MealType, Tuple<string,string, int>>() {
+               {MealType.Breakfast, new Tuple<string,string,int>("page","https://cookpad.com/us/search/breakfast",100)},
+                {MealType.Lunch,  new Tuple<string,string,int>("page","https://cookpad.com/us/search/lunch",100 )},
+               {MealType.Dinner, new Tuple<string,string,int>( "page","https://cookpad.com/us/search/dinner" ,100)} }
+            }
         };
 
     }
