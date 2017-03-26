@@ -123,8 +123,10 @@ namespace Logic {
             { "chicken breast halves","piece" },
             { "cornish game hens", "bird"},
             { "teaspoon", "tsp"},
+            { "teaspoons", "tsp"},
             { "tablespoon", "tbsp"},
-            
+            { "tablespoons", "tbsp"},
+
 
         };
         public static Dictionary<string, string> ChangeWholePhrases = new Dictionary<string, string>() {

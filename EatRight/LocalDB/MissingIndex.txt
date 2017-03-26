@@ -1,286 +1,983 @@
-flour : 66
-bisquick : 8
-oatmeal : 10
-cilantro : 9
-cumin : 4
-cayenne : 5
-berries : 4
-scallions : 6
-clove : 4
-sausages : 3
-cereal : 3
-kiwi : 3
-prosciutto : 2
-half-and-half : 9
-jam : 2
-msg : 3
-seasoning : 2
-brandy : 2
-farina : 2
-ice : 3
-ketchup : 4
+bisquick : 58
+sausages : 10
+half-and-half : 128
+quark : 2
+stevia : 15
+amaretto : 10
+farina : 6
+oatmeal : 100
+grits : 11
+challah : 12
+rum : 18
+waffles : 5
+craisins : 15
+nutella : 12
+blackberry : 12
+jam : 22
+jelly : 13
+clove : 37
+cereal : 15
+kiwi : 11
+herbs : 2
+mascarpone : 4
+lard : 10
+pimiento : 4
+stock : 4
+gingerroot : 5
+crisco : 7
+mangoes : 14
+pectin : 2
+waffle : 2
+polenta : 3
+hazelnuts : 12
+baguette : 6
+crepes : 7
+beetroot : 2
+chutney : 4
+sucanat : 3
+brandy : 9
+pistachios : 11
+grapefruits : 5
+suet : 2
+extract : 4
+marshmallows : 4
+marmite : 4
+crabmeat : 6
+panettone : 2
+yoghurt : 3
+vegemite : 3
+pimientos : 3
+bourbon : 5
+vodka : 2
+amaranth : 2
+seasoning : 9
+ciabatta : 5
+crumpets : 3
+lingonberry : 2
+preserves : 6
+harissa : 3
+ghee : 5
+lox : 4
+mirin : 3
+kahlua : 4
+spam : 4
+msg : 4
+linseeds : 2
+sultana : 4
+fat : 3
+toothpick : 2
+chile : 2
+cognac : 2
+marmalade : 2
+whiskey : 7
+kefir : 4
+chilies : 2
+pepitas : 3
+sultanas : 4
+hummus : 2
+liqueur : 2
 wraps : 2
-spam : 2
-scallion : 4
-stevia : 2
-hot sausage : 3
-ground turkey : 6
-chorizo sausage : 6
-sugar substitute : 4
-canola oil : 7
-rolled oats : 21
-pizza dough : 4
-unsweetened applesauce : 9
-cubed ham : 3
-white sugar : 4
-sliced mushrooms : 12
-button mushrooms : 4
-reduced-fat sausage : 2
-sausage links : 3
-plain flour : 2
-bulk sausage : 5
-bell pepper : 16
-breakfast sausage : 15
-bacon bits : 7
-ground sausage : 3
-green chilies : 10
-chunky salsa : 3
-sea salt : 9
-deli ham : 5
-dry mustard : 23
-fresh cilantro : 9
-unsalted butter : 19
-taco sauce : 2
-plain croissants : 2
-garlic clove : 12
-kosher salt : 9
-garlic salt : 3
-roma tomato : 4
-canadian bacon : 9
-all-purpose flour : 37
-cinnamon sugar : 4
-fresh mushrooms : 5
-ice cube : 4
-quick-cooking oats : 9
-white onion : 5
-light cream : 3
-grand marnier : 2
-slivered almonds : 7
-crushed pineapple : 2
-pumpkin puree : 2
-thyme leaves : 5
-walnut pieces : 2
-nutritional yeast : 4
-dried mustard : 2
-rubbed sage : 5
-grape tomatoes : 4
-ice cubes : 5
-dried sage : 4
-ice water : 2
-almond extract : 6
-warm water : 5
-half-and-half cream : 9
-baby spinach : 5
-vanilla flavoring : 2
-refrigerated biscuits : 4
-sliced almonds : 2
-diced onion : 6
-fresh strawberries : 4
-crescent rolls : 7
-corn flakes : 5
-diced tomato : 4
-hot sauce : 14
-sausage patties : 2
-quaker oats : 2
-skim milk : 22
-flaked coconut : 3
-artificial sweetener : 4
-grape jelly : 2
-chocolate syrup : 2
-sourdough bread : 2
-orange zest : 4
-old-fashioned oatmeal : 3
-strawberry syrup : 2
-velveeta cheese : 3
-dried chives : 2
-grape-nuts cereal : 2
-orange rind : 5
-orange marmalade : 6
-flour tortilla : 7
-hot water : 2
-red onions : 2
-granola cereal : 8
-picante sauce : 4
-cracked pepper : 2
-powdered milk : 2
-garlic cloves : 11
-cooking spray : 7
-nonfat yogurt : 2
-mixed fruit : 2
-fresh blueberries : 7
-plum tomatoes : 2
-caster sugar : 4
-silken tofu : 2
-quick oats : 4
-dark raisin : 3
-season salt : 2
-sunflower seeds : 3
-cold water : 2
-red apple : 3
-quick-cooking oatmeal : 2
-seasoning salt : 10
-fresh peaches : 2
-flax seed : 2
-white flour : 2
-fresh tomatoes : 2
-baking mix : 3
-lemon zest : 4
-dried apricot : 4
-fresh cranberries : 2
-tater tots : 3
-ground cumin : 5
-ground cardamom : 5
-cocoa powder : 3
-rose water : 3
-cilantro leaves : 2
-stale bread : 2
-flax seeds : 2
-smoked paprika : 2
-bell peppers : 3
-heavy cream : 4
-smoked ham : 3
-strawberry jam : 2
-porridge oats : 2
-dried cherries : 3
-ground mustard : 6
-smoked bacon : 2
+powdered milk : 23
+light cheese : 2
+bulk sausage : 13
+cracker crumbs : 3
+ground turkey : 8
+flax seed : 31
+sausage links : 12
+coffee creamer : 4
+red capsicum : 9
+slivered almonds : 37
+green chilies : 42
+green capsicum : 5
+mashed banana : 20
+dried fruit : 31
+cooking spray : 98
+rolled oats : 208
+rice krispies : 7
+country bread : 7
+fresh chives : 59
+hot sauce : 45
+crushed pineapple : 28
+pie shells : 4
+confectioners%27 sugar : 114
+maple flavoring : 18
+quick-cooking oats : 74
+tasty cheese : 10
+quick oats : 54
+strawberry jam : 20
+dry yeast : 28
+low-fat yogurt : 5
+dijon mustard : 58
+frozen fruit : 3
+sugar substitute : 21
+granola cereal : 42
+flaked coconut : 21
+natural bran : 23
+pecan halves : 16
+fresh raspberry : 9
+sunflower seeds : 50
+plain croissants : 8
+dried apricot : 28
+banana extract : 6
+flax seeds : 23
+macadamia nuts : 13
+tomato catsup : 3
+maple extract : 10
+thyme leaves : 6
+quick-cooking grits : 14
+jeera powder : 2
+lemon curd : 6
+fresh garlic : 3
+sandwich bread : 11
+turmeric powder : 2
+hard-boiled eggs : 31
+coriander leaves : 8
+dry mustard : 62
+fresh mushrooms : 36
+lemon wedge : 6
+ground cardamom : 44
+orange marmalade : 22
+fresh coriander : 39
+almond extract : 88
+sourdough bread : 13
+pineapple tidbits : 2
+whipping cream : 66
+dried coriander : 2
+sliced mushrooms : 36
+pink grapefruit : 6
+red apple : 4
+home fries : 3
+refrigerated biscuits : 19
+vanilla-flavored soymilk : 12
+instant yeast : 19
+tabasco sauce : 36
+soda crackers : 2
+corn syrup : 25
+brown bread : 3
+emmenthaler cheese : 2
+ground sausage : 13
+double cream : 3
+dried sage : 12
+baking mix : 15
+old-fashioned oatmeal : 24
+light cream : 19
+all-bran cereal : 28
+corn flakes : 22
+mashed bananas : 19
+seasoned pepper : 3
+splenda granular : 36
+idaho potatoes : 3
+roma tomato : 14
+creme fraiche : 7
+tart apples : 14
+broccoli floret : 10
+caster sugar : 33
+pecan pieces : 8
+quick-cooking oatmeal : 19
+andouille sausages : 4
+baking apples : 4
+hollandaise sauce : 10
+saffron thread : 4
+creamed corn : 2
+asparagus spears : 13
+light molasses : 6
+baking potatoes : 16
+candied ginger : 7
+powdered ginger : 5
+dried herbs : 4
+crystallized ginger : 16
+hot coffee : 3
+cinnamon-swirl bread : 11
+grape-nuts cereal : 10
+cinnamon sugar : 36
+garbanzo beans : 4
+pitted dates : 13
+italian seasoning : 28
+sour milk : 9
+fresh herbs : 3
+deli ham : 22
+tomato juice : 5
+corn kernels : 8
+strawberry preserves : 13
+garlic cloves : 123
+sliced almonds : 60
+lemon rind : 10
+jumbo eggs : 8
+hot pepper : 4
+firm tofu : 9
+lemon pepper : 6
+salad oil : 7
+breakfast cereal : 3
+tea bag : 4
+refrigerated biscuit : 2
+ground coriander : 12
+tarragon leaf : 2
+plum tomato : 11
+cubed ham : 9
+peanut oil : 13
+dried dates : 8
 phyllo dough : 3
-biscuit dough : 2
-dry breadcrumbs : 2
-confectioners%27 sugar : 2
-ramen noodles : 2
-firm tofu : 2
-chopped tomato : 4
-boiling water : 5
-dijon mustard : 4
-fresh chives : 6
-tabasco sauce : 3
-cherry tomatoes : 6
-dried fruit : 3
-low-fat milk : 3
-mixed mushrooms : 2
-fresh spinach : 2
-butter flavoring : 2
-red onion : 6
-frozen fruit : 2
-green chili : 4
-new potatoes : 2
-soy yogurt : 2
+biscuit mix : 13
+crisco shortening : 5
+bean sprouts : 2
+garlic clove : 87
+orange rind : 46
+unsweetened cocoa : 9
+silken tofu : 2
+fresh ginger : 22
+mustard powder : 11
+celery ribs : 6
+sunflower oil : 6
+bran flakes : 11
+diced tomato : 9
+dark raisin : 7
+fresh pineapple : 9
+shredded coconut : 26
+xanthan gum : 15
+poblano chile : 2
+raw sugar : 9
 o%27brien potatoes : 3
-ground coriander : 3
-italian seasoning : 3
-chopped tomatoes : 2
-mixed nuts : 2
-hard-boiled eggs : 2
-stevia powder : 2
-baking potatoes : 2
-bacon grease : 2
-fresh fruit : 2
-heinz ketchup : 2
+low-fat milk : 64
+blackstrap molasses : 5
+adzuki beans : 2
+miniature bagels : 2
+peach yogurt : 5
+ginger ale : 2
+frozen blackberrie : 3
+hardboiled egg : 6
+reduced-fat milk : 3
+chocolate syrup : 18
+graham crackers : 3
+pizza dough : 9
+apricot preserves : 6
+parchment paper : 3
+low-fat granola : 4
+natural yoghurt : 4
+turbinado sugar : 9
+clear honey : 10
+rum flavoring : 2
+lemon yogurt : 6
+biscuit dough : 4
+pizza crust : 2
+orange extract : 8
+lemon-pepper seasoning : 2
+sourdough starter : 19
+desiccated coconut : 5
+sugar-free syrup : 3
+farmer cheese : 5
+skirt steak : 2
+chive blossoms : 2
+apple cider : 25
+coconut extract : 9
+ground coffee : 7
+grand marnier : 11
+fresh gingerroot : 4
+raspberry jam : 13
+candy sprinkles : 8
+ice cream : 5
+unsweetened coconut : 10
+poblano chiles : 2
+grape jelly : 3
+baking cocoa : 4
+vanilla flavoring : 6
+dried cherries : 24
+coarse sugar : 4
+apricot jam : 4
+ground mustard : 13
+artificial sweetener : 29
+100%25 bran : 3
+lime peel : 9
+banana chips : 2
+cardamom seeds : 2
+cinnamon applesauce : 2
+mixed fruit : 3
+maraschino cherry : 3
+rolled barley : 2
+pie cherries : 2
+ham steaks : 4
+corned beef : 6
+mixed pepper : 3
+cajun seasoning : 7
+orange slice : 3
+fresh pepper : 2
+garam masala : 2
+vanilla sugar : 5
+cooking apples : 6
+pecan nuts : 2
+pie crusts : 13
+artichoke hearts : 9
+orange sherbet : 2
+fresh peaches : 7
+sweet paprika : 2
+fresh figs : 2
+fruit preserves : 5
+pine nuts : 7
+quick oatmeal : 6
+cool whip : 5
+short-grain rice : 2
+rubbed sage : 9
+pearl barley : 4
+peach slices : 3
+frozen waffles : 6
+jarlsberg cheese : 3
+nonfat yogurt : 15
+mini marshmallows : 6
+pizza toppings : 2
+unflavored gelatin : 3
+orange liqueur : 3
+crescent rolls : 16
+ground oregano : 4
+lemonade mix : 2
+ground pepper : 18
+cremini mushrooms : 5
+full-fat milk : 4
+cube steaks : 2
+baby spinach : 19
+cinnamon stick : 15
+reduced-fat cheese : 2
+vanilla bean : 11
+velveeta cheese : 11
+natural almonds : 2
+quaker oats : 13
+fruit juice : 4
+rum extract : 11
+ground almonds : 5
+marinara sauce : 3
+single cream : 2
+fresh fruit : 23
+instant oats : 7
+ice cube : 24
+picante sauce : 8
+reduced-fat sausage : 2
+soft tofu : 4
+nutritional yeast : 19
+coconut essence : 2
+stale bread : 7
+walnut pieces : 13
+chunky applesauce : 3
+soya sauce : 2
+fat-free half-and-half : 10
+liquid smoke : 6
+dried mustard : 4
+tater tots : 6
+mixed herbs : 5
+mixed spice : 7
+tart apple : 2
+green apples : 2
+pie filling : 5
+wonton wrappers : 4
+red apples : 2
+red grapes : 2
+porridge oats : 7
+unsweetened soymilk : 2
+sriracha sauce : 2
+asiago cheese : 11
+kalamata olives : 4
+baking apple : 3
+demerara sugar : 3
+cardamom powder : 2
+soy yogurt : 6
+stevia powder : 5
+fresh tarragon : 5
+low-fat cheese : 6
+mixed berry : 3
+creamed honey : 2
+mandarin oranges : 8
+cardamom pods : 4
+cheese slices : 2
+dried chives : 4
+french baguette : 2
+dried plum : 2
+enchilada sauce : 2
+fresh asparagus : 9
+coconut flakes : 4
+grain bread : 2
+grapeseed oil : 6
+ranch dressing : 6
+fresh zucchini : 5
+plain soymilk : 4
+bran buds : 2
+fresh rhubarb : 3
+dried beef : 3
+taco sauce : 5
+chocolate soymilk : 2
+whey protein : 3
+raspberry preserves : 12
+processed cheese : 5
+kiwi fruits : 9
+blanched almond : 5
+triple sec : 5
+fresh lemon : 2
+cooked oatmeal : 3
+wild mushrooms : 2
+dried apple : 6
+multigrain bread : 5
+marshmallow cream : 4
+cracked wheat : 3
+potato starch : 13
+food coloring : 3
+almond paste : 5
+almond flavoring : 2
+vegetarian sausages : 2
+cream-style corn : 2
+pie shell : 7
+sweet milk : 2
+free-range eggs : 5
+baking potato : 6
+dried yeast : 7
+honey mustard : 3
+extra-large eggs : 9
+sweetened coconut : 6
+chili pepper : 2
+lemon slice : 2
+fat-free margarine : 3
+dried fig : 5
+almond meal : 6
+ginger powder : 3
+hot sausage : 5
+green chili : 12
+red capsicums : 2
+rye flakes : 3
+mushroom caps : 2
+sweet pepper : 3
+pomegranate seeds : 2
+lean ham : 5
+bittersweet chocolate : 7
+dark molasses : 3
+plain cornmeal : 3
+mascarpone cheese : 7
+caramel sauce : 2
+chopped tomato : 11
+chili peppers : 2
+creole seasoning : 8
+red grapefruits : 3
+cinnamon-sugar mixture : 4
+almond flour : 10
+cooking apple : 2
+broccoli florets : 9
+low-fat ricotta : 3
+ground pecans : 3
+liquid honey : 9
+agave syrup : 3
+pastry shells : 2
+apple jelly : 2
+country sausage : 3
+grain cereal : 2
+strong coffee : 5
+ground thyme : 4
+fruit pectin : 2
+thick bread : 6
+white chocolate : 5
+fresh sage : 6
+miniature marshmallows : 3
+pancake syrup : 10
+cracked pepper : 3
+sausage meat : 5
+sage sausage : 2
+lemon extract : 10
+dark chocolate : 3
+low-calorie bread : 3
+vanilla powder : 4
+butter buds : 3
+sweet apple : 3
+matzo meal : 5
+boiling potatoes : 3
+light rum : 3
+maple sausage : 2
+manchego cheese : 2
+focaccia bread : 2
+halloumi cheese : 2
+baker%27s yeast : 2
+fresh tomato : 4
+chicken bouillon : 2
+pastry dough : 2
+protein powder : 9
+fresh oregano : 4
+rotel tomatoes : 4
+white cheese : 2
+whole almond : 2
+light margarine : 8
+dried mango : 2
+blueberry preserves : 2
+hawaiian bread : 2
+cocktail franks : 2
+coconut syrup : 2
+english mustard : 2
+vanilla-flavored syrup : 2
+dried currant : 3
+sherry wine : 3
+mixed nuts : 5
+dry pectin : 2
+dark rum : 4
+cinnamon sticks : 4
+strawberry syrup : 4
+mandarin orange : 5
+pineapple chunk : 3
+red chile : 2
+caramel topping : 2
+guinness stout : 2
+gelling sugar : 7
+ascorbic acid : 2
+caramel syrup : 2
+soya milk : 5
+golden syrup : 5
+coffee beans : 2
+taco shell : 3
+safflower oil : 5
+cherry jam : 2
+reduced-fat ham : 2
+mild salsa : 2
+light soymilk : 2
+lump crabmeat : 2
+firm banana : 3
+imitation crabmeat : 3
+whole oats : 3
+navel oranges : 2
+boiling potato : 2
+alfalfa sprout : 2
+dried dill : 3
+dijon-style mustard : 2
+pinhead oats : 2
+semisweet chocolate : 2
+fresh nutmeg : 3
+cheese blintzes : 2
+whole cloves : 2
+walnut halves : 2
+sausage patties : 3
+puff pastry : 4
+chocolate sprinkles : 2
+crescent roll : 2
+whole almonds : 2
+hoisin sauce : 5
+raw honey : 3
+chili paste : 3
+salsa verde : 4
+hoagie rolls : 2
+popped popcorn : 2
+carob powder : 2
+fine semolina : 4
+ritz crackers : 2
+prepared custard : 2
+granulated garlic : 2
+guar gum : 8
+chunky salsa : 4
+superfine sugar : 9
+natural applesauce : 3
+rice vinegar : 4
+lime rind : 3
+pineapple-orange-banana juice : 2
+ziploc bags : 2
+blueberry yogurt : 2
+dill sprigs : 2
+heinz catsup : 2
+brioche bread : 4
+decorator sugar : 3
+light bread : 2
+yogurt starter : 2
+walnut oil : 4
+agave nectar : 10
+wheat flakes : 3
+unrefined sugar : 3
+fresh peach : 4
+unsweetened chocolate : 3
+passion fruit : 2
+almond oil : 2
+new potatoes : 3
+dried pineapple : 2
+coconut flour : 6
+instant oatmeal : 2
+blanched almonds : 2
+fresh yeast : 3
+tea bags : 4
+tapioca starch : 3
+basmati rice : 2
+mcintosh apples : 2
+mixed mushrooms : 3
+quick-rising yeast : 2
+country ham : 3
+rolled oatmeal : 3
+chili flakes : 3
+french fries : 2
+chevre cheese : 2
+beef gravy : 2
+cannellini beans : 3
+ground fennel : 2
+small mushrooms : 2
+quick-cooking barley : 2
+fruit sauce : 2
+fresh corn : 2
+amaretto liqueur : 2
+fresh mango : 2
+cinnamon rolls : 2
+hemp seeds : 3
+fruitcake mix : 2
+chia seeds : 7
+orange-flavored liqueur : 2
+pumpkin spice : 2
+link sausage : 2
+cane syrup : 3
+gravy mix : 2
+active starter : 3
+peach preserves : 3
 12-inch pizza crust : 2
-country gravy mix : 3
-dried onion flakes : 3
-quick-cooking rolled oats : 2
-refrigerated buttermilk biscuits : 4
-whole wheat flour : 18
-red bell pepper : 15
-ground flax seeds : 5
-salt and pepper : 58
-green bell pepper : 11
-colby-monterey jack cheese : 4
-old fashioned oats : 12
-splenda sugar substitute : 8
-breakfast sausage links : 5
-orange juice concentrate : 2
-jalapeno jack cheese : 2
-plain nonfat yogurt : 2
-red pepper flakes : 5
-light brown sugar : 8
-monterey jack cheese : 19
-frozen hash browns : 13
-2%25 low-fat milk : 3
-steel cut oats : 2
-pure vanilla extract : 4
-white bread flour : 2
-fine sea salt : 2
-pure maple syrup : 4
-jimmy dean sausage : 4
-1%25 low-fat milk : 3
-salt %26 pepper : 10
-natural-style peanut butter : 2
-low-fat flour tortillas : 2
-light vanilla soymilk : 2
-bisquick baking mix : 2
-fresh spinach leaves : 2
-bulk italian sausage : 2
-frozen tater tots : 4
-flax seed oil : 5
-fresh ground pepper : 4
-vital wheat gluten : 2
-sweet red pepper : 3
-crescent roll dough : 2
-granny smith apple : 2
-french onion dip : 2
-diced green chilies : 5
-mini chocolate chip : 4
-dark brown sugar : 3
-self raising flour : 2
-prepared pizza crust : 3
-instant vanilla pudding : 2
-plain fat-free yogurt : 3
-unsweetened apple juice : 2
-light karo syrup : 2
-extra large eggs : 3
-fresh basil leaf : 2
-hash brown patties : 2
-butter flavor shortening : 2
-day-old white bread : 2
-crunchy peanut butter : 2
-non-fat powdered milk : 2
-semi-sweet chocolate chips : 3
-flat leaf parsley : 3
-low-fat greek yogurt : 2
-o%27brien frozen potatoes : 2
+old fashioned oats : 114
+large refrigerated biscuits : 3
+country gravy mix : 4
+red sweet pepper : 3
+unsweetened baking cocoa : 5
+lemons%2c peel of : 6
+light corn syrup : 31
+steel cut oats : 30
+roasted sunflower seeds : 4
+sweet red pepper : 23
+pimento stuffed olives : 2
+granny smith apple : 19
+coarse grain mustard : 3
+splenda sugar substitute : 80
+lemons%2c rind of : 6
+bread machine yeast : 9
+plain low-fat yogurt : 18
+cream of tartar : 27
+fresh lemon rind : 12
+fine dry breadcrumb : 2
+bisquick baking mix : 39
+fresh thyme leave : 6
+fresh rosemary leaf : 6
+sweetened condensed milk : 16
+extra large eggs : 11
+dried mixed fruit : 5
+fresh orange juice : 18
+orange%2c rind of : 6
+frozen hash browns : 42
+fresh ground pepper : 50
+dried apricot halves : 4
+unsweetened orange juice : 2
+plain nonfat yogurt : 13
+butter flavor crisco : 4
+hot chocolate powder : 3
+fresh lemon juice : 44
+ground red pepper : 13
+fresh lemon peel : 4
+ground lean pork : 4
+non-fat powdered milk : 9
+orange juice concentrate : 9
+2%25 low-fat milk : 43
+sugar-free maple syrup : 9
+raisin bran cereal : 8
+o%27brien frozen potatoes : 5
+1%25 low-fat milk : 48
+post grape-nuts cereal : 3
+apple juice concentrate : 8
+baking powder biscuits : 2
+nonfat milk powder : 7
+frozen tater tots : 6
+mixed italian herbs : 2
+bicarbonate of soda : 14
+frozen dough rolls : 3
+instant vanilla pudding : 8
+flax seed oil : 8
+vanilla ice cream : 10
+lemon%2c juice of : 24
+ground flax seed : 6
+chicken bouillon cube : 3
+red pepper flakes : 12
+toasted breaded almond : 3
+ground flax seeds : 50
+mini chocolate chip : 26
+fast rising yeast : 4
+lemon%2c peel of : 27
+fresh lime juice : 9
+light vanilla soymilk : 5
+dried italian seasoning : 5
+cinnamon roll dough : 3
+unsweetened coconut milk : 3
+fresh sage leaves : 2
+hershey chocolate kisses : 2
+unsweetened apple juice : 8
+golden delicious apple : 4
+plain fat-free yogurt : 22
+dark sweet cherry : 3
+frozen lemonade concentrate : 3
+graham cracker crumbs : 12
+corn flake crumbs : 2
+crisp rice cereal : 4
+flax seed meal : 27
+pure maple syrup : 53
+red chili powder : 2
+green chili pepper : 2
+nonstick cooking spray : 44
+fritos corn chips : 3
+crescent roll dough : 14
+diced green chilies : 20
+green food coloring : 3
+orange%2c peel of : 8
+mixed dried fruit : 10
+cream of wheat : 4
+pure vanilla extract : 80
+sweetened flaked coconut : 16
+real maple syrup : 7
+strong black coffee : 2
+powdered coffee creamer : 5
+brown sugar twin : 2
+frozen puff pastry : 10
+sweetened whipped cream : 5
+quick-cooking rolled oats : 9
+black forest ham : 3
+baileys irish cream : 2
+non-dairy coffee creamer : 3
+frozen chopped broccoli : 8
+day-old white bread : 5
+frozen broccoli florets : 2
+lemon%2c rind of : 11
+ranch dressing mix : 2
+sweet hungarian paprika : 3
+red seedless grapes : 7
+compressed yeast cake : 2
+bulk italian sausage : 4
+fresh thyme leaves : 3
+lean sausage meat : 2
+dried tart cherry : 2
+vanilla pudding mix : 3
+fiber one cereal : 5
+cooked long-grain rice : 4
+orange%2c juice of : 3
+jimmy dean sausage : 7
+sweet italian sausage : 3
+mandarin orange segments : 6
+fat-free evaporated milk : 9
+liquid egg substitute : 9
+rhodes frozen rolls : 3
+frozen mango chunks : 2
+whole cardamom pods : 2
+libby%27s canned pumpkin : 2
+fat free cheese : 2
+unbleached cane sugar : 2
+hash brown patties : 4
+freezer jam pectin : 2
 italian seasoning mix : 2
-fresh cilantro leaves : 2
-fresh rosemary leaf : 2
-fresh parsley leaves : 2
-fresh ground black pepper : 8
-frozen hash brown potatoes : 18
-frozen shredded hash browns : 4
-monterey jack pepper cheese : 6
-crushed red pepper flakes : 6
-low fat cottage cheese : 3
-mushroom stems and pieces : 4
+roasted red pepper : 6
+prepared pizza crust : 5
+marinated artichoke hearts : 2
+textured vegetable protein : 3
+fresh coriander leaves : 8
+fresh jalapeno pepper : 2
+light maple syrup : 3
+long grain rice : 3
+whole wheat couscous : 2
+yukon gold potatoes : 10
+emeril%27s original essence : 2
+dark corn syrup : 3
+miniature chocolate chip : 7
+tart cooking apples : 2
+gluten-free vanilla extract : 2
+dried thyme leaves : 2
+jalapeno jack cheese : 3
+amarula cream liqueur : 2
+fast rise yeast : 6
+yellow sweet pepper : 3
+hot italian sausage : 5
+equal sugar substitute : 3
+fresh chili pepper : 2
+crispy rice cereal : 3
+double-acting baking powder : 7
+whole green chilies : 7
+little smokies sausage : 2
+refrigerated pie crusts : 4
+multi-grain hot cereal : 3
+lean ground turkey : 3
+light coconut milk : 2
+ready-made pie crust : 2
+fresh pineapple chunks : 3
+fat-free lemon yogurt : 2
+fresh broccoli florets : 2
+reduced fat margarine : 3
+canned crushed pineapple : 2
+cool whip lite : 3
+lawry%27s seasoned salt : 3
+unbaked pie shells : 5
+low-fat peach yogurt : 2
+sugar-free raspberry jam : 2
+refrigerated breadstick dough : 3
+whole grain mustard : 2
+dried orange peel : 2
+blueberry muffin mix : 2
+white cake mix : 2
+toasted breaded almonds : 2
+instant plain oatmeal : 3
+whole grain bread : 7
+dry active yeast : 6
+red chili pepper : 2
+lime%2c juice of : 6
+non-fat cooking spray : 2
+fresh garlic cloves : 2
+hot cocoa mix : 2
+tart green apples : 2
+vanilla protein powder : 7
+strawberry all-fruit spread : 4
+ground cayenne pepper : 2
+louisiana hot sauce : 3
+yellow food coloring : 2
+old bay seasoning : 2
+spice cake mix : 3
+sweet green pepper : 3
+spicy brown mustard : 2
+garlic pepper seasoning : 2
+braggs liquid aminos : 4
+minced garlic cloves : 2
+little smokies sausages : 2
+cooked sweet potato : 3
+mixed grain bread : 2
+white sesame seeds : 2
+dry dessert wine : 2
+blood orange juice : 2
+blanched slivered almond : 2
+oranges%2c juice of : 2
+light karo syrup : 2
+herbes de provence : 2
+cinnamon baking chips : 6
+vital wheat gluten : 3
+canned jalapeno slices : 2
+soy coffee creamer : 2
+corn flakes cereal : 2
+italian cheese blend : 4
+wholemeal self-rising flour : 2
+green chili salsa : 2
+lime%2c peel of : 4
+instant potato flakes : 3
+red currant jelly : 2
+low-fat greek yogurt : 3
+vanilla frozen yogurt : 3
+seedless raspberry jam : 3
+laughing cow cheese : 3
+yukon gold potato : 2
+za%27atar spice mix : 2
+fresh corn kernels : 2
+candied orange peel : 2
+solid pack pumpkin : 3
+unbaked pie shell : 2
+hot chili sauce : 2
+oranges%2c peel of : 3
+red food coloring : 2
+fresh sage leaf : 3
+red enchilada sauce : 2
+roasted cashew nuts : 2
+mild green chilies : 2
+corn beef hash : 2
+reynolds wrap foil : 2
+unsweetened flaked coconut : 2
+vanilla greek yogurt : 2
+unsweetened dried shredded coconut : 6
+semi-sweet sweet chocolate candies : 55
+non-dairy powdered coffee creamer : 3
+fresh ground black pepper : 106
+1%25 fat cottage cheese : 4
+instant breakfast drink mix : 2
+crushed red pepper flakes : 20
+fresh herbs of choice : 2
+low fat cottage cheese : 28
+toasted breaded wheat germ : 11
+instant nonfat dry milk : 5
+mushroom stems and pieces : 7
+frozen concentrated orange juice : 2
+refrigerated crescent dinner rolls : 37
+white sweet chocolate candies : 14
+cream of chicken soup : 16
+crushed pineapple with juice : 5
+frozen shredded hash browns : 9
+sliced peaches in juice : 2
+sugar-free non-fat vanilla yogurt : 3
+frozen hash brown potatoes : 34
+frozen whole kernel corn : 2
+lemon low fat yogurt : 5
+powdered soy protein concentrate : 4
+whole wheat english muffin : 5
+vanilla instant pudding mix : 8
+small curd cottage cheese : 10
+fat-free sweetened condensed milk : 3
+quik chocolate milk mix : 2
+bisquick reduced-fat baking mix : 6
+fat free egg substitute : 7
+jiffy corn muffin mix : 7
+egg beaters egg substitute : 32
+condensed cheddar cheese soup : 3
+mrs. dash seasoning mix : 4
+brown and serve sausages : 3
+frozen white bread dough : 3
+fleischmann%27s active dry yeast : 2
+cream of potato soup : 2
+frozen orange juice concentrate : 11
+fat-free liquid egg product : 2
+reduced-fat sharp cheddar cheese : 5
+cream of mushroom soup : 12
+crushed pineapple in juice : 7
+deep dish pie shells : 4
+whole grain english muffins : 2
+dark sweet chocolate candies : 3
+banana nut crunch cereal : 2
+vanilla whey protein powder : 4
 dried red pepper flakes : 2
-refrigerated crescent dinner rolls : 7
-extra virgin olive oil : 7
-whole wheat english muffin : 3
-fat free egg substitute : 3
-soft taco-size flour tortillas : 2
-roll of pork sausage : 2
-salt and black pepper : 2
-nonfat dry milk powder : 2
-cream of chicken soup : 2
-cream of mushroom soup : 4
-whole wheat pita bread : 2
-simply potatoes%26reg%3b shredded hash browns : 8
-fresh coarse ground black pepper : 3
-olive oil flavored cooking spray : 2
-pillsbury refrigerated crescent dinner rolls : 3
-frozen cubed hash brown potatoes : 3
-frozen sliced strawberries in syrup : 2
-simply potatoes diced potatoes with onion : 2
-frozen southern style hash brown potatoes : 3
-egg beaters garden vegetable egg substitute : 2
-salt %26 freshly ground black pepper : 3
+long grain white rice : 2
+roll of pork sausage : 3
+stove top stuffing mix : 3
+whole wheat pita bread : 3
+fresh ground white pepper : 2
+instant malted milk powder : 7
+puffed brown rice cereal : 2
+peaches in light syrup : 6
+hot red pepper flakes : 2
+chipotle chile in adobo : 2
+weight watchers white bread : 2
+2%25 fat cottage cheese : 6
+fat free cream cheese : 6
+bisquick heart smart mix : 4
+whole milk ricotta cheese : 2
+cream of celery soup : 2
+dark amber maple syrup : 3
+malt-o-meal original hot cereal : 2
+garlic and herb seasoning : 3
+cream of onion soup : 2
+unsweetened vanilla almond breeze : 3
+refrigerated reduced-fat crescent rolls : 2
+chocolate whey protein powder : 2
+no-sugar-added apple pie filling : 2
+thick %26 chunky salsa : 2
+mini sweet chocolate candies : 3
+shredded hash brown potatoes : 4
+chinese five spice powder : 3
+long grain brown rice : 2
+frozen apple juice concentrate : 4
+milk sweet chocolate candies : 7
+whole wheat toasted bread : 2
+hot green chili pepper : 2
+toasted breaded sliced almonds : 2
+reduced-fat mexican cheese blend : 3
+fat free greek yogurt : 4
+dried italian herb seasoning : 2
+sweet italian sausage links : 2
+sharp white cheddar cheese : 2
+9 inch pie shell : 2
+condensed cream of potato soup : 5
+pillsbury refrigerated crescent dinner rolls : 8
+frozen cubed hash brown potatoes : 4
+half %26 half light cream : 3
+semisweet mini sweet chocolate candies : 5
+french vanilla flavored coffee creamer : 2
+cheerios toasted breaded oat cereal : 5
+powdered orange breakfast drink mix : 4
+miniature semisweet sweet chocolate candies : 10
+honey bunches of oats cereal : 2
+fresh coarse ground black pepper : 6
+texas toasted bread thick bread : 10
+french vanilla non-dairy coffee creamer : 2
+splenda sugar blend for baking : 4
+sun-dried tomato packed in oil : 4
+condensed cream of mushroom soup : 3
+lemon%2c juice and peel of : 2
+hidden valley%26reg%3b original ranch%26reg%3b dressing : 2
+condensed cream of chicken soup : 2
+simply potatoes%26reg%3b shredded hash browns : 18
+frozen southern style hash brown potatoes : 6
+egg beaters garden vegetable egg substitute : 3
+simply potatoes diced potatoes with onion : 9
+hidden valley original ranch seasoning mix : 3
+i can%27t believe it%27s not butter%c2%ae spread : 2

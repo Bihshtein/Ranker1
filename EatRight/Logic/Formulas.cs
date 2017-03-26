@@ -239,7 +239,9 @@ namespace Logic
             {"cloves",3 },//garlic
             {"Clove",3 },//garlic
             {"clove",3 },//garlic
-            
+            {"g",1 },
+            {"ml",1 },
+
 
         };
     }

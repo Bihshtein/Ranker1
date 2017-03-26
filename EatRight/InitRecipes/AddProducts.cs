@@ -140,9 +140,7 @@ namespace InitRecipes {
             }
         
             var matchingWord = MatchAnyWord(mesPartsList, keys.ToList());
-            if (matchingWord == null)
-                matchingWord = "cup";
-            if (keys.Any(key => key.Contains(matchingWord))) {
+            if (matchingWord != null && keys.Any(key => key.Contains(matchingWord))) {
                 return weight * prd.Weights.First(key => key.Key.Contains(matchingWord)).Value;
             }
             else if (Map.RecipeToUSDAMeasure.ContainsKey(mes)) {

@@ -215,24 +215,35 @@ namespace InitRecipes {
             else if (source == RecipesSource.Food) {
                 var ingredientParts = page.Split(new string[1] { "<li data-ingredient=" }, StringSplitOptions.None);
                 for (int i = 1; i < ingredientParts.Length; i++) {
-                    var parts = ingredientParts[i].Split(new string[4] { "<span>", "</span>" ,"</a>", "</li>"}, StringSplitOptions.None);
-                    var ingredient = parts[0].Split('"')[1].Replace('+',' ');
+                    var parts = ingredientParts[i].Split(new string[3] { "<span>", "</span>", "<a" }, StringSplitOptions.None);
+                    var ingredient = parts[0].Split('"')[1].Replace('+', ' ');
+                    ingredient = Map.AdjustNames(ingredient);
                     var weight = 0.0;
+                    var weightStr = "";
                     try {
-                        weight = double.Parse(parts[1]);
+                        weightStr = parts[1].Split('-')[0];
+                        weight = double.Parse(weightStr);
                     }
-                    catch (FormatException ex) {
-                        log.Error(ex.Message + parts[1]);
-                    }
-                    
+                    catch (FormatException) {
+                        var weightParts = weightStr.Split(new string[4] { "<sup>", "</sup>", "<sub>", "</sub", }, StringSplitOptions.None);
+                        var amount = "";
+                        weightParts.ToList().ForEach(p => amount += WebUtility.HtmlDecode(p));
+                        weight = ParseHelpers.ParseAmount(amount);
 
-                    var rest = parts[parts.Length-2];
-                    var relativeWeight = Formulas.RelativeSizes.FirstOrDefault(s => Map.WordCheck(s, rest));
-                    if (relativeWeight == null)
+                    }
+
+                    var rest = parts[2].Trim();
+                    var relativeWeight = Formulas.MeasuresWeights.Keys.ToList().FirstOrDefault(s => Map.WordCheck(s, rest));
+                    if (relativeWeight == null) {
                         relativeWeight = Formulas.RelativeProductSize.FirstOrDefault(s => Map.WordCheck(s, rest));
-                    else
-                        relativeWeight = ingredient;
-                    ingredients.Add(new Tuple<string, double, string>(ingredient, weight, rest));
+                        if (relativeWeight == null) {
+                            relativeWeight = Formulas.RelativeSizes.FirstOrDefault(s => Map.WordCheck(s, rest));
+                            if (relativeWeight == null) {
+                                relativeWeight = "";
+                            }
+                        }
+                    }
+                    ingredients.Add(new Tuple<string, double, string>(ingredient, weight, relativeWeight ));
                 }
             }
 
@@ -252,19 +263,26 @@ namespace InitRecipes {
                 return new TimeSpan(0, 10, 0);
         }
 
-        private static Dictionary<RecipesSource, string> ServingsSplitters = new Dictionary<RecipesSource, string> {
-            {RecipesSource.Cookpad, "<div class=\"subtle\" data-field data-field-name=\"serving\" data-placeholder=\"How many servings?\" data-maxlength=\"15\">"},
-            {RecipesSource.AllRecipes, "<meta id=\"metaRecipeServings\" itemprop=\"recipeYield\" content=" },
+        private static Dictionary<RecipesSource, string[]> ServingsSplitters = new Dictionary<RecipesSource, string[]> {
+            {RecipesSource.Cookpad, new string[1] { "<div class=\"subtle\" data-field data-field-name=\"serving\" data-placeholder=\"How many servings?\" data-maxlength=\"15\">"} },
+            {RecipesSource.AllRecipes, new string[1] { "<meta id=\"metaRecipeServings\" itemprop=\"recipeYield\" content=" } },
+            {RecipesSource.Food,new string[1] { "Servings Per Recipe:" } }
         };
         private static int GetServings(string page, RecipesSource source)
         {
             if (source == RecipesSource.AllRecipes) {
-                var servingParts = page.Split(new string[1] { ServingsSplitters[source] }, StringSplitOptions.None);
+                var servingParts = page.Split(ServingsSplitters[source], StringSplitOptions.None);
                 var servingStr = new String(servingParts[1].TakeWhile(a => a != '>').ToArray());
                 return int.Parse(servingStr.Replace("\"", ""));
             }
-            else
+            else if (source == RecipesSource.Food) {
+                var servingParts = page.Split(ServingsSplitters[source], StringSplitOptions.None);
+                var servingStr = new String(servingParts[1].TakeWhile(a => a != '<').ToArray());
+                return int.Parse(servingStr);
+            }
+            else {
                 return 1;
+            }
         }
 
         private static TimeSpan ParsePrepTime(string time) {
