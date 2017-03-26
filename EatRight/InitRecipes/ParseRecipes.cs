@@ -73,7 +73,7 @@ namespace InitRecipes {
             string pageStr = null;
             var readWorked = false;
             var urlSuffix = currPage == 0 ? "" : ("?"+ Sources.MealTypesURNs[source][mealType].Item1 + "=" + currPage);
-            var uri = Sources.MealTypesURNs[source][mealType].Item2 + "/" + urlSuffix;
+            var uri = Sources.MealTypesURNs[source][mealType].Item2 +  urlSuffix;
             for (int retries = 0; readWorked == false && retries < 10; retries++) {
                 try {
                     pageStr = client.DownloadString(uri);
