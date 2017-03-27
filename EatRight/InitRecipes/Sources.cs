@@ -16,19 +16,21 @@ namespace InitRecipes {
             {RecipesSource.Food, "http://www.food.com/recipe/-" }
         };
         public static Dictionary<RecipesSource, Dictionary<MealType, Tuple<string, string, int>>> MealTypesURNs = new Dictionary<RecipesSource, Dictionary<MealType, Tuple<string, string, int>>>() {
-        /*    {RecipesSource.AllRecipes, new Dictionary<MealType, Tuple<string,string, int>>() {
-                {MealType.Dinner, new Tuple<string,string,int>( "page","http://allrecipes.com/recipes/17562/dinner",1) },
-                {MealType.Breakfast, new Tuple<string,string,int>( "page","http://allrecipes.com/recipes/78/breakfast-and-brunch",1) } }
-            },*/
+           
                {RecipesSource.Food, new Dictionary<MealType, Tuple<string,string, int>>() {
-                {MealType.Breakfast, new Tuple<string,string,int>( "pn","http://breakfast.food.com",20) } ,
-               {MealType.Dinner, new Tuple<string,string,int>( "pn","http://www.food.com/topic/main-dish",20) } }
+                {MealType.Breakfast, new Tuple<string,string,int>( "pn","http://breakfast.food.com",9999) } ,
+               {MealType.Dinner, new Tuple<string,string,int>( "pn","http://www.food.com/topic/main-dish",9999) } }
             },
             {RecipesSource.Cookpad, new Dictionary<MealType, Tuple<string,string, int>>() {
-               {MealType.Breakfast, new Tuple<string,string,int>("page","https://cookpad.com/us/search/breakfast",20)},
-                {MealType.Lunch,  new Tuple<string,string,int>("page","https://cookpad.com/us/search/lunch",20 )},
-               {MealType.Dinner, new Tuple<string,string,int>( "page","https://cookpad.com/us/search/dinner" ,20)} }
-            }
+               {MealType.Breakfast, new Tuple<string,string,int>("page","https://cookpad.com/us/search/breakfast",9999)},
+                {MealType.Lunch,  new Tuple<string,string,int>("page","https://cookpad.com/us/search/lunch",9999 )},
+               {MealType.Dinner, new Tuple<string,string,int>( "page","https://cookpad.com/us/search/dinner" ,9999)} }
+            },
+
+             {RecipesSource.AllRecipes, new Dictionary<MealType, Tuple<string,string, int>>() {
+                {MealType.Dinner, new Tuple<string,string,int>( "page","http://allrecipes.com/recipes/17562/dinner",9999) },
+                {MealType.Breakfast, new Tuple<string,string,int>( "page","http://allrecipes.com/recipes/78/breakfast-and-brunch",9999) } }
+            },
         };
 
     }

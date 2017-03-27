@@ -78,6 +78,8 @@ namespace Logic {
         }
 
         public static string AdjustIngredient(string ingredient) {
+            if (ingredient == string.Empty)
+                return "";
             ingredient = ingredient.ToLower();
             if (ingredient.StartsWith(") "))
                 ingredient = ingredient.Replace(") ", "");

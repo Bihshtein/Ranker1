@@ -34,6 +34,8 @@ namespace InitRecipes {
         }
 
         public static void AddRecipesByMealType(RecipesSource source, MealType mealType, RestDBInterface unit, bool offline, int loadBulkSize = 1000) {
+            if (source == RecipesSource.AllRecipes)
+                loadBulkSize = 10;
             var recipesLimit = Sources.MealTypesURNs[source][mealType].Item3;
             if (offline) {
                 var files = Directory.GetFiles(Path.Combine(FolderPath, source.ToString(), mealType.ToString())).Take(recipesLimit).ToList();
@@ -55,26 +57,35 @@ namespace InitRecipes {
       
         private static void AddRecipesByURL(RecipesSource source, MealType mealType,  RestDBInterface unit, int recipesLimit) {
             Indexes.Clear();
-           
             log.Debug("Locating recipes in ->" + Sources.MealTypesURNs[source][mealType].Item2 + " - started");
 
-            var tasks = new List<Task>();
-            for (int i = 0; i < recipesLimit/10; i++) {
-                int curr = i;
-                tasks.Add(new Task(new Action(()=> ReadPage(source, mealType, unit ,curr, new WebClient()))));
+          
+            int page = 0;
+            shouldStop = false;
+            while (Indexes.Count < recipesLimit && !shouldStop) {
+                var tasks = new List<Task>();
+                var beforeCount = Indexes.Count;
+                for (int i = 0; i < 8; i++) {
+                    tasks.Add(new Task(new Action(() => ReadPage(source, mealType, unit, page++, new WebClient()))));
+                
+                }
+
+                tasks.ForEach(task => task.Start());
+                tasks.ForEach(task => task.Wait());
+                if (beforeCount == Indexes.Count)
+                    shouldStop = true;
+
             }
-            tasks.ForEach(task => task.Start());
-            tasks.ForEach(task => task.Wait());
-            Indexes = new HashSet<int>(Indexes.Take(recipesLimit));
+            
             log.Debug("Locating recipes in ->" + Sources.MealTypesURNs[source][mealType].Item2 + " - completed. Indexes count : " + Indexes.Count);
         }
-
+        private static bool shouldStop;
         private static void ReadPage(RecipesSource source, MealType mealType,  RestDBInterface unit, int currPage, WebClient client) {
             string pageStr = null;
             var readWorked = false;
             var urlSuffix = currPage == 0 ? "" : ("?"+ Sources.MealTypesURNs[source][mealType].Item1 + "=" + currPage);
             var uri = Sources.MealTypesURNs[source][mealType].Item2 +  urlSuffix;
-            for (int retries = 0; readWorked == false && retries < 10; retries++) {
+            for (int retries = 0; readWorked == false && retries < 2; retries++) {
                 try {
                     pageStr = client.DownloadString(uri);
                     readWorked = true;
@@ -85,7 +96,8 @@ namespace InitRecipes {
                 }
                 catch (Exception) {
                     log.Error(string.Format("Failed to load page num {0}, might be the last page", currPage));
-                    ++retries;
+                    if (retries > 1)
+                        shouldStop = true;
                 }
             }
             log.Debug("Page num :" + currPage);
