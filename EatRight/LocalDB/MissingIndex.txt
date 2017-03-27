@@ -1,71 +1,20 @@
-oatmeal : 6
-bisquick : 2
-sausages : 2
-tabasco : 2
-cockles : 2
-mirin : 2
-shal : 4
-sriracha : 2
-biscuit mix : 2
-rolled oats : 2
-dry mustard : 3
-tater tots : 3
-roma tomato : 2
-pizza dough : 3
-sausage links : 4
-sliced mushrooms : 2
-green chilies : 5
-garlic clove : 7
-fresh coriander : 3
-quick-cooking oats : 2
-taco seasoning : 3
-dried sage : 2
-garlic cloves : 13
-hot sauce : 7
-pork ribs : 2
-picante sauce : 2
-ground coriander : 2
-whipping cream : 2
-chia seeds : 6
+kombucha : 2
+green chilies : 2
+cooking spray : 4
+dried fruit : 2
+cajun seasoning : 3
+garlic cloves : 2
+whole cloves : 2
+turmeric powder : 2
+garam masala : 2
 sourdough starter : 2
-spring greens : 2
-cooking spray : 3
-cucumber and : 2
-sunflower seeds : 2
-coconut cream : 2
-red potatos : 2
-green chillies : 2
-rice vinegar : 2
-garlic smashed : 2
-enchilada sauce : 3
-italian seasoning : 6
-english cucumber : 2
-hamburger meat : 2
-chili seasoning : 2
-red chillies : 3
-pepper flakes : 6
-green lentils : 2
-fine semolina : 2
-merlot-parmesean cheese : 2
-sweet sake : 2
-brown gravy mix : 2
-rice wine vinegar : 2
-ground red pepper : 2
-dried oregano leaves : 2
-old bay seasoning : 2
-red pepper flakes : 4
-sweet red pepper : 2
-granulated garlic powder : 7
-half and half : 2
-red enchilada sauce : 3
-juice 1 lime : 2
-peel  lemon : 2
-assorted pork chops : 2
-fresh ground black pepper : 3
-crushed red pepper flakes : 2
-cream of mushroom soup : 4
-cream of chicken soup : 4
-lipton onion soup mix : 2
-toasted breaded sesame oil : 2
-condensed cream of chicken soup : 2
-fresh coarse ground black pepper : 2
+green chiles : 2
+fruits vinegar : 2
+chia seeds : 3
+taco seasoning : 2
+vegetable stock : 2
+ts bee pollen : 2
+vine ripened tomato : 2
+long grain rice : 2
+refrigerated crescent dinner rolls : 2
+jiffy corn muffin mix : 2

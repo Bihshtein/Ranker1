@@ -123,11 +123,12 @@ namespace Logic {
             { "chicken breast halves","piece" },
             { "cornish game hens", "bird"},
             { "teaspoon", "tsp"},
-            { "teaspoons", "tsp"},
             { "tablespoon", "tbsp"},
-            { "tablespoons", "tbsp"},
+        };
 
 
+        public static Dictionary<string, Tuple<string,double>> MeasureToMeasure = new Dictionary<string, Tuple<string, double>> {
+            { "tsp", new Tuple<string,double>("tbsp",0.5)},
         };
         public static Dictionary<string, string> ChangeWholePhrases = new Dictionary<string, string>() {
             { "flour","all-purpose wheat flour"},

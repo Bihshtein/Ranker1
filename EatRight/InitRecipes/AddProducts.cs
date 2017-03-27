@@ -21,6 +21,7 @@ namespace InitRecipes {
 
 
         public static int totalMissing = 0;
+        public static int totalWeightsNotFound = 0;
         private static object Locker = new object();
         public static int total = 0;
         public static RestDBInterface unit = new RestDBInterface();
@@ -29,18 +30,32 @@ namespace InitRecipes {
             Thread.CurrentThread.CurrentCulture = customCulture;
 
             var recipes = unit.Recipes.GetAllList();
-            var tasks = new List<Task>();
-            recipes.ForEach(r => tasks.Add(new Task(new Action(()=>AddRecipe(r)))));
+            var count = recipes.Count;
             var foundProducts = new List<Product>();
-            tasks.ForEach(task => task.Start());
-            tasks.ForEach(task => task.Wait());
+            while (recipes.Count > 0) {
+                var num = recipes.Count > 8 ? 8 : recipes.Count;
+                var tasks = new List<Task>();
+                recipes.Take(num).ToList().ForEach(r => tasks.Add(new Task(new Action(() => AddRecipe(r)))));
+                tasks.ForEach(task => task.Start());
+                tasks.ForEach(task => task.Wait());
+                var str = "";
+                recipes.Take(num).ToList().ForEach(k => str += k.ID+", ");
+                recipes.RemoveRange(0, num);
+                log.Debug("Added recipes : " + str);
+            }
+            
 
-            Console.WriteLine("total recipes : " + recipes.Count);
+            Console.WriteLine("total recipes : " + count);
             Console.WriteLine("total ingredients : " + total);
             Console.WriteLine("total ingredients missed : " + totalMissing);
+            Console.WriteLine("total weights not found: " + totalWeightsNotFound);
             var sorted = MissingCount.OrderBy(i => i.Key.Split(' ').Length).ToList();
             sorted.RemoveAll(i => i.Value < 2);
             File.WriteAllLines(FolderPath + "MissingIndex.txt", sorted.ConvertAll<string>(i => i.Key + " : " + i.Value));
+
+
+            sorted = MissingWeightsCount.OrderBy(i => i.Key.Split(' ').Length).ToList();
+            File.WriteAllLines(FolderPath + "MissingWeights.txt", sorted.ConvertAll<string>(i => i.Key + " : " + i.Value));
         }
 
         private static void AddRecipe(Recipe recipe)
@@ -89,6 +104,7 @@ namespace InitRecipes {
         }
 
         public static Dictionary<string, int> MissingCount = new Dictionary<string, int>();
+        public static Dictionary<string, int> MissingWeightsCount = new Dictionary<string,int>();
 
         public static void ParseItem(Recipe recipe, string innerpart, string relativeMeasure, double weight)
         {
@@ -120,17 +136,14 @@ namespace InitRecipes {
          
         }
 
-        public static double TryParseRelativeWeight(string mes, double weight, Product prd, string fullName) {
-            var noSMes = ParseHelpers.GetWithoutLast_S_letter(mes);
+        public static double TryParseRelativeWeight(string measure, double weight, Product prd, string fullName) {
+            var mes = ParseHelpers.GetWithoutLast_S_letter(measure);
             var keys = prd.Weights.Keys;
             var mesPartsList = mes.Split(' ').ToList();
             if (prd.Weights.ContainsKey(mes)) {
                 return weight * prd.Weights[mes];
             }
 
-            else if (prd.Weights.ContainsKey(noSMes)) {
-                return weight * prd.Weights[noSMes];
-            }
             else if (prd.Weights.ContainsKey(fullName)) {
                 return weight * prd.Weights[fullName];
             }
@@ -154,10 +167,34 @@ namespace InitRecipes {
                 else if (keys.Any(key => key.Contains("serving"))) {
                     return weight * prd.Weights.First(key => key.Key.Contains("serving")).Value;
                 }
+               
             }
-          
+       
+            if (Map.MeasureToMeasure.ContainsKey(mes)) {
+                var ratio = Map.MeasureToMeasure[mes].Item2;
+                mes = Map.MeasureToMeasure[mes].Item1;
+                if (prd.Weights.ContainsKey(mes)) {
+                    return weight * prd.Weights[mes] * ratio;
+                }
+            }
+            if (Formulas.MeasuresWeights.ContainsKey(mes)) {
+                return weight * Formulas.MeasuresWeights[mes];
+            }
+            if (keys.Any(key => key.Contains("medium"))) {
+                return weight * prd.Weights.First(key => key.Key.Contains("medium")).Value;
+            }
+
             var defaultMeasure = prd.Weights.First().Value;
-            log.Debug("measure not found : " + mes + ", returning default, measure : " + prd.Weights.First().Value);
+            var str = "measures:";
+            keys.ToList().ForEach(k => str += k + ',');
+            str += "recipe_measure:" + mes;
+            if (MissingWeightsCount.ContainsKey(str)) {
+                MissingWeightsCount[str]++;
+            }
+            else {
+                MissingWeightsCount.Add(str,1);
+            }
+            ++totalWeightsNotFound;
             return weight * defaultMeasure;
         }
 

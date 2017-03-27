@@ -7,7 +7,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Linq.Expressions;
 using Logic;
-using System.Collections.Concurrent;
 
 namespace RestModel {
     public class Queries<T> {
@@ -17,7 +16,6 @@ namespace RestModel {
             this.collection = collection;
         }
 
-        public static ConcurrentDictionary<string, List<Product>> Cache = new ConcurrentDictionary<string, List<Product>>();
         public List<Product> QueryByNameAndValue(string name, string group,string nutGroup, string value, bool partial = false) {
             name = name.ToLower();
             group = group.ToLower();
@@ -46,10 +44,7 @@ namespace RestModel {
 
         public static List<Product> GetMatchingProductsForIngredient(string ingredient)
         {
-            if (Cache.ContainsKey(ingredient))
-                return Cache[ingredient];
-
-                var res = unit.Products.Queries.TryMatchWholeProduct(ingredient);
+            var  res = unit.Products.Queries.TryMatchWholeProduct(ingredient);
             if (res != null && res.Count> 0)
                 return res;           
             if (ingredient == string.Empty)
@@ -63,8 +58,10 @@ namespace RestModel {
                     res = HandleOr(ingredient);
                 }
             }
-
-            Cache.TryAdd(ingredient, res);
+            if (res == null || res.Count == 0) // Special long ass names (manual recipe init from file)
+            {
+                res = unit.Products.Queries.TryMatchWholeProduct(ingredient);
+            }
             return res;
         }
 
@@ -202,12 +199,11 @@ namespace RestModel {
         {
             Expression<Func<Product, bool>> query = x =>
               (x.Name1.Equals(part) || x.Name1.Equals(part + "s") || x.Name1.Equals(part + "es") || x.Name1.Equals(ParseHelpers.GetWithoutLast_ES_letters(part)) ||
-              (x.FoodGroup.Equals(part) && x.Weights.ContainsKey(part)) || x.Name2.Equals(ParseHelpers.GetWithoutLast_S_letter(part))||
-              x.Name2.Equals(part));//chicken
+              (x.FoodGroup.Equals(part)));
             var res = collection.Find(query as Expression<Func<T, bool>>).ToList();
 
             if (res.Count == 0) {
-                 query = x => (x.Name2.Equals(part));
+                 query = x => (x.Name2.Equals(ParseHelpers.GetWithoutLast_S_letter(part)) || x.Name2.Equals(part));
                  res = collection.Find(query as Expression<Func<T, bool>>).ToList();
 
             }
