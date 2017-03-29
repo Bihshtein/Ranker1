@@ -45,7 +45,7 @@ namespace InitRecipes {
                 AddRecipesByURL(source, mealType, unit, recipesLimit);
             ProblematicRecipes.ForEach(x => Indexes.Remove(x));          
                 
-            while (Indexes.Count > 1) {
+            while (Indexes.Count > 10) {
                 log.Debug("Loading bulk, tasks left : " + Indexes.Count());
                 var loadMealsBulkSize = Indexes.Count > loadBulkSize ? loadBulkSize : Indexes.Count;
                 var tasks = new List<Task>();
@@ -58,14 +58,13 @@ namespace InitRecipes {
         private static void AddRecipesByURL(RecipesSource source, MealType mealType,  RestDBInterface unit, int recipesLimit) {
             Indexes.Clear();
             log.Debug("Locating recipes in ->" + Sources.MealTypesURNs[source][mealType].Item2 + " - started");
-
-          
+            var tasksCount = 8;
             int page = 0;
             shouldStop = false;
             while (Indexes.Count < recipesLimit && !shouldStop) {
                 var tasks = new List<Task>();
                 var beforeCount = Indexes.Count;
-                for (int i = 0; i < 8; i++) {
+                for (int i = 0; i < tasksCount; i++) {
                     tasks.Add(new Task(new Action(() => ReadPage(source, mealType, unit, page++, new WebClient()))));
                 
                 }
@@ -85,7 +84,7 @@ namespace InitRecipes {
             var readWorked = false;
             var urlSuffix = currPage == 0 ? "" : ("?"+ Sources.MealTypesURNs[source][mealType].Item1 + "=" + currPage);
             var uri = Sources.MealTypesURNs[source][mealType].Item2 +  urlSuffix;
-            for (int retries = 0; readWorked == false && retries < 2; retries++) {
+            for (int retries = 0; readWorked == false && retries < 10; retries++) {
                 try {
                     pageStr = client.DownloadString(uri);
                     readWorked = true;
@@ -96,7 +95,7 @@ namespace InitRecipes {
                 }
                 catch (Exception) {
                     log.Error(string.Format("Failed to load page num {0}, might be the last page", currPage));
-                    if (retries > 1)
+                    if (retries >9)
                         shouldStop = true;
                 }
             }
@@ -184,9 +183,13 @@ namespace InitRecipes {
         private static string GetImageUrl(string page, RecipesSource source) {
             if (source == RecipesSource.AllRecipes) {
                 var part = page.Split(new string[] { "http://images.media-allrecipes.com/userphotos/250x250/" }, StringSplitOptions.None);
-                var num = part[1].TakeWhile(c => c != '.');
-                var strNum = new String(num.ToArray());
-                return "http://images.media-allrecipes.com/userphotos/250x250/" + strNum + ".jpg";
+                if (part.Length > 1) {
+                    var num = part[1].TakeWhile(c => c != '.');
+                    var strNum = new String(num.ToArray());
+                    return "http://images.media-allrecipes.com/userphotos/250x250/" + strNum + ".jpg";
+                }
+                else
+                    return "";
             }
             else
                 return "";
