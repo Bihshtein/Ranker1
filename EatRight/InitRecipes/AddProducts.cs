@@ -32,8 +32,8 @@ namespace InitRecipes {
             var recipes = unit.Recipes.GetAllList();
             var count = recipes.Count;
             var foundProducts = new List<Product>();
-            while (recipes.Count > 0) {
-                var num = recipes.Count > 8 ? 8 : recipes.Count;
+            while (recipes.Count > 32) {
+                var num = recipes.Count > 32 ? 32 : recipes.Count;
                 var tasks = new List<Task>();
                 recipes.Take(num).ToList().ForEach(r => tasks.Add(new Task(new Action(() => AddRecipe(r)))));
                 tasks.ForEach(task => task.Start());
@@ -41,7 +41,7 @@ namespace InitRecipes {
                 var str = "";
                 recipes.Take(num).ToList().ForEach(k => str += k.ID+", ");
                 recipes.RemoveRange(0, num);
-                log.Debug("Added recipes : " + str);
+                log.Debug("Matching ingredients, recipes left: " + recipes.Count);
             }
             
 

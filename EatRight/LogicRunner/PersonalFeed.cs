@@ -38,7 +38,7 @@ namespace LogicRunner {
             }
 
             meals.ToList().ForEach(m => {
-                var recipeLink = "allrecipes.com/recipe/" + m.Recipe.ID.ToString();
+                var recipeLink = "cookpad.com/us/recipes/"/*"allrecipes.com/recipe/"*/ + m.Recipe.ID.ToString();
                 var shortlink = new WebClient().DownloadString(string.Format("http://wasitviewed.com/index.php?href=http%3A%2F%2F{0}&email=alex_bihshtein%40hotmail.com&notes=&bitly=bitly&nobots=nobots&submit=Generate+Link", recipeLink));
                 var parts = shortlink.Split(new string[] { "bit.ly" }, StringSplitOptions.None);
                 var link = new String(parts[1].TakeWhile(c => c != '\"').ToArray());

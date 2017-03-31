@@ -34,7 +34,7 @@ namespace InitRecipes {
         }
 
         public static void AddRecipesByMealType(RecipesSource source, MealType mealType, RestDBInterface unit, bool offline, int loadBulkSize = 1000) {
-            if (source == RecipesSource.AllRecipes)
+            if (source == RecipesSource.AllRecipes && !offline)
                 loadBulkSize = 10;
             var recipesLimit = Sources.MealTypesURNs[source][mealType].Item3;
             if (offline) {
@@ -164,16 +164,20 @@ namespace InitRecipes {
                 log.Error("Failed to load recipe number : " + index);
                 return;
             }
-
-            unit.Recipes.Add(new Recipe() {
-                ID = index,
-                Name = GetRecipeName(page),
-                Ingredients = GetIngredients(page, source),
-                Types = new HashSet<MealType>() { mealType },
-                Servings = GetServings(page, source),
-                PrepTime = GetPrepTime(page, source),
-                ImageUrl = GetImageUrl(page, source)
-            });
+            try {
+                unit.Recipes.Add(new Recipe() {
+                    ID = index,
+                    Name = GetRecipeName(page),
+                    Ingredients = GetIngredients(page, source),
+                    Types = new HashSet<MealType>() { mealType },
+                    Servings = GetServings(page, source),
+                    PrepTime = GetPrepTime(page, source),
+                    ImageUrl = GetImageUrl(page, source)
+                });
+            }
+            catch (Exception ex) {
+             //   log.Error("Couldn'r properly parse recipe : " + ex.Message);
+            }
 
             lock (Locker) {
                 Indexes.Remove(index);
@@ -189,10 +193,23 @@ namespace InitRecipes {
                     return "http://images.media-allrecipes.com/userphotos/250x250/" + strNum + ".jpg";
                 }
                 else
-                    return "";
+                    throw new Exception("Couldn't load image");
+
+            }
+            else if (source == RecipesSource.Cookpad) {
+                var part = page.Split(new string[2] { "https://img-global.cpcdn.com/001_recipes/" ,"/400x400cq70/photo.jpg" }, StringSplitOptions.None);
+                if (part.Length > 1) {
+                    var num = part[2].TakeWhile(c => c != '/');
+                    var strNum = new String(num.ToArray());
+                    return "https://img-global.cpcdn.com/001_recipes/" + strNum + "/400x400cq70/photo.jpg";
+                }
+                else
+                    throw new Exception("Couldn't load image");
             }
             else
                 return "";
+            
+
         }
 
 
@@ -295,9 +312,16 @@ namespace InitRecipes {
                 var servingStr = new String(servingParts[1].TakeWhile(a => a != '<').ToArray());
                 return int.Parse(servingStr);
             }
-            else {
-                return 1;
+            else if (source == RecipesSource.Cookpad) {
+                var servingParts = page.Split(ServingsSplitters[source], StringSplitOptions.None);
+                var servingStr = new String(servingParts[1].TakeWhile(a => a != '<').ToArray());
+                servingStr = servingStr.Replace("\n","");
+                servingStr = servingStr.Replace("servings", "").Trim();
+                servingStr = servingStr.Replace("serving", "").Trim();
+                return int.Parse(servingStr);
             }
+            else
+                throw new Exception("Couldn't load serving");
         }
 
         private static TimeSpan ParsePrepTime(string time) {
