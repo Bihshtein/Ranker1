@@ -21,6 +21,7 @@ namespace InitRecipes {
 
 
         public static int totalMissing = 0;
+        public static int totalAdded = 0;
         public static int totalWeightsNotFound = 0;
         private static object Locker = new object();
         public static int total = 0;
@@ -46,6 +47,7 @@ namespace InitRecipes {
             
 
             Console.WriteLine("total recipes : " + count);
+            Console.WriteLine("total added recipes : " + totalAdded);
             Console.WriteLine("total ingredients : " + total);
             Console.WriteLine("total ingredients missed : " + totalMissing);
             Console.WriteLine("total weights not found: " + totalWeightsNotFound);
@@ -80,8 +82,13 @@ namespace InitRecipes {
             }
             try
             {
-                unit.Recipes.Update(s => s.ID, recipe.ID, recipe);
-                unit.TestsRecipes.Update(s => s.ID, recipe.ID, recipe);
+                if (recipe.ProductsWeight != null && recipe.Ingredients != null && recipe.ProductsWeight.Count == recipe.Ingredients.Count) {
+                    unit.Recipes.Update(s => s.ID, recipe.ID, recipe);
+                    ++totalAdded;
+                }
+                else {
+                    unit.Recipes.Delete(s => s.ID, recipe.ID);
+                }
             }
             catch (Exception ex)
             {
@@ -108,11 +115,12 @@ namespace InitRecipes {
 
         public static void ParseItem(Recipe recipe, string innerpart, string relativeMeasure, double weight)
         {
+            ++total;
             if (innerpart == "")
             {
                 return;
             }
-            ++total;         
+            
             var res = Queries<Product>.GetMatchingProductsForIngredient(innerpart);
             if (res != null && res.Count > 0)
             {

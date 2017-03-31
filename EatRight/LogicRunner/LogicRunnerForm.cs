@@ -246,7 +246,6 @@ namespace LogicRunner
         }
 
         private void minMax_SelectedIndexChanged(object sender, EventArgs e) {
-          //  if (this.alexiknow) {
                 if (minMax.SelectedItem.ToString() == "max") {
                     richTextBox4.Visible = false;
                     richTextBox5.Visible = true;
@@ -255,7 +254,6 @@ namespace LogicRunner
                     richTextBox4.Visible = true;
                     richTextBox5.Visible = false;
                 }
-            //    }
         }
 
        

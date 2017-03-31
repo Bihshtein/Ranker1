@@ -16,6 +16,7 @@ namespace RestModel  {
         Dinner
     }
 
+
     public enum FoodType {
        Meat,
        VegAndFruit,
@@ -34,6 +35,8 @@ namespace RestModel  {
         }
         [BsonElement("_id")]
         public int ID { get; set; }
+        public int OriginalID { get; set; }
+        public string Urn{ get; set; }
         [BsonElement("_types")]
         public HashSet<MealType> Types { get; set;  }
         [BsonElement("_categories")]

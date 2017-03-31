@@ -137,6 +137,7 @@ namespace InitRecipes {
             }
             );
         }
+        static int serial = 0;
         public static void ParseRecipe(int index, string urn, MealType mealType, RecipesSource source) {
             var customCulture = (CultureInfo)Thread.CurrentThread.CurrentCulture.Clone(); customCulture.NumberFormat.NumberDecimalSeparator = ".";
             Thread.CurrentThread.CurrentCulture = customCulture;
@@ -166,7 +167,9 @@ namespace InitRecipes {
             }
             try {
                 unit.Recipes.Add(new Recipe() {
-                    ID = index,
+                    ID = serial++,
+                    OriginalID = index,
+                    Urn = Sources.RecipesURNs[source].Split(new string[1] { "//" }, StringSplitOptions.None)[1],
                     Name = GetRecipeName(page),
                     Ingredients = GetIngredients(page, source),
                     Types = new HashSet<MealType>() { mealType },
@@ -202,6 +205,17 @@ namespace InitRecipes {
                     var num = part[2].TakeWhile(c => c != '/');
                     var strNum = new String(num.ToArray());
                     return "https://img-global.cpcdn.com/001_recipes/" + strNum + "/400x400cq70/photo.jpg";
+                }
+                else
+                    throw new Exception("Couldn't load image");
+            }
+            else if (source == RecipesSource.Food) {
+                var part = page.Split(new string[1] { "<link rel=\"image_src\" href=\""}, StringSplitOptions.None);
+                if (part.Length > 1) {
+                    var uri = part[1].TakeWhile(c => c != '>');
+                    var strUri = new String(uri.ToArray());
+
+                    return strUri.Remove(strUri.Length - 3, 3);
                 }
                 else
                     throw new Exception("Couldn't load image");

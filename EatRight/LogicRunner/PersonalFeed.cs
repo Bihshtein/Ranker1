@@ -38,7 +38,7 @@ namespace LogicRunner {
             }
 
             meals.ToList().ForEach(m => {
-                var recipeLink = "cookpad.com/us/recipes/"/*"allrecipes.com/recipe/"*/ + m.Recipe.ID.ToString();
+                var recipeLink = m.Recipe.Urn+ m.Recipe.OriginalID.ToString();
                 var shortlink = new WebClient().DownloadString(string.Format("http://wasitviewed.com/index.php?href=http%3A%2F%2F{0}&email=alex_bihshtein%40hotmail.com&notes=&bitly=bitly&nobots=nobots&submit=Generate+Link", recipeLink));
                 var parts = shortlink.Split(new string[] { "bit.ly" }, StringSplitOptions.None);
                 var link = new String(parts[1].TakeWhile(c => c != '\"').ToArray());
@@ -48,10 +48,10 @@ namespace LogicRunner {
                     m.GradeInfo.GradersInfo[GraderType.CaloriesCountMealGrader].Grade) / 3 * 100);
                 var simplicityScore = (int)(m.GradeInfo.GradersInfo[GraderType.PrepTimeMealGrader].Grade * 100);
 
-                double nutritionBarSize = nutritionScore < 60 ? 60 : nutritionScore;
-                double simplicityBarSize = simplicityScore < 60 ? 60 : simplicityScore;
-                nutritionBarSize *= 2.5;
-                simplicityBarSize *= 2.5;
+                int nutritionBarSize = nutritionScore < 60 ? 60 : nutritionScore;
+                int simplicityBarSize = simplicityScore < 60 ? 60 : simplicityScore;
+                nutritionBarSize *= 3;
+                simplicityBarSize *= 3;
 
                 var strRecipe = "<p><font style=\"background-color:{0};font-weight: bold;\">{1}</font></p>";
                 var strImage = "<a href=\"{0}\"><img src=\"{1}\" style=\"width: 250; height: 250;\"></a>";
