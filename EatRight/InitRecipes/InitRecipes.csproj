@@ -54,10 +54,13 @@
     <Compile Include="AddProducts.cs" />
     <Compile Include="MealsCSVReader.cs" />
     <Compile Include="ParseRecipes.cs" />
+    <Compile Include="Parsers\AllRecipesParser.cs" />
+    <Compile Include="Parsers\IRecipeParser.cs" />
+    <Compile Include="Parsers\CookpadParser.cs" />
+    <Compile Include="Parsers\FoodParser.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sources.cs" />
-    <Compile Include="WeightAndNameParsers.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

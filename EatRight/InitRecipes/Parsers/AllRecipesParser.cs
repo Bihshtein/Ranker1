@@ -1,98 +1,92 @@
-﻿using log4net;
-using Logic;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Reflection;
+using log4net;
 using System.Text;
-using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using System.Reflection;
+using Logic;
+using System.Net;
+using System.Text.RegularExpressions;
 
 namespace InitRecipes {
-    class WeightAndNameParsers {
+    public class AllRecipesParser : IRecipeParser {
         public static ILog log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
-        public static Tuple<string, double, string> ParseWeightAndNameCookpad(string ingredient) {
 
-            var nameAndWeight = ingredient.Split(new string[1] { "</span>" }, StringSplitOptions.None);
-            var name = nameAndWeight[1].Trim().ToLower();
-            if (name == string.Empty || Map.ShouldSkip(name))
-                return null;
-            name = Map.AdjustNames(name);
-            name = Map.AdjustInnerPart(name).Trim();
-            name = Map.AdjustIngredient(name);
-            name = ParseHelpers.FixIllegalCharacters(name);
+        public string[] ServingSplitter { get; set; }
 
-            var weight = nameAndWeight[0].Replace(".", "");
+        public List<Tuple<string, double, string>> GetIngredients(string page) {
+            var ingredients = new List<Tuple<string, double, string>>();
 
-            var weightSplit = weight.Split('-');
-            if (weightSplit.Length == 2)
-                weight = weightSplit[1]; // take the bigger number from range
-            var weightNum = 0.0;
-            var relativeWeight = "";
-            weight = ParseHelpers.GetWeightFullName(weight);
-            if (Map.HasWord(Formulas.MeasuresWeights.Keys.ToList(), weight)) {
-                var keyword = Map.GetWord(Formulas.MeasuresWeights.Keys.ToList(), weight);
-                try {
-                    weightNum = ParseHelpers.ParseAmount(weight.Replace(keyword, "")) * Formulas.MeasuresWeights[keyword];
-                }
-                catch {
-                    log.Error("Can't parse weight : " + weight + ", ingredient name:" + name);
+            var ingredientParts = page.Split(new string[1] { "itemprop=\"ingredients\">" }, StringSplitOptions.None);
+            for (int i = 1; i < ingredientParts.Length; i++) {
+                if (ingredientParts[i].Contains("<")) {
+                    var chars = ingredientParts[i].TakeWhile(a => a != '<');
+                    var ingredient = new String(chars.ToArray());
+
+                    ingredients.Add(ParseWeightAndNameAllRecipes(ingredient));
                 }
             }
-            else if (Map.HasWord(Formulas.RelativeSizes, weight)) {
-                relativeWeight = Map.GetWord(Formulas.RelativeSizes, weight);
-                try {
-                    var amount = weight.Replace(relativeWeight, "");
-                    if (amount == "")
-                        weightNum = 1;
-                    else
-                        weightNum = ParseHelpers.ParseAmount(weight.Replace(relativeWeight, ""));
-                }
-                catch {
-                    log.Error("Can't parse weight : " + weight + ", ingredient name:" + name);
-                }
-            }
-
-
-            else {
-                var splitBySpace = weight.Split(' ');
-                if (splitBySpace.Length > 1 && (splitBySpace[1] == "g" || splitBySpace[1] == "ml")) {
-                    weightNum = ParseHelpers.ParseAmount(splitBySpace[0]);
-                }
-
-                else if (Formulas.RelativeProductSize.Any(s => name.Contains(s))) {
-                    relativeWeight = Formulas.RelativeProductSize.First(s => name.Contains(s));
-                    name = name.Replace(relativeWeight, string.Empty).Trim();
-                    if (name != string.Empty) {
-                        name = Map.AdjustNames(name);
-                        name = Map.AdjustInnerPart(name).Trim();
-                        name = Map.AdjustIngredient(name);
-                    }
-                }
-                else if (weight == "") {
-                    weightNum = 1;
-                    relativeWeight = name;
-                }
-
-                else {
-                    try {
-                        weightNum = ParseHelpers.ParseAmount(weight);
-                    }
-                    catch {
-                        log.Error("Can't parse weight : " + weight + ", ingredient name:" + name);
-                    }
-                }
-
-            }
-            if (name.Contains("garlic clove")) {
-                relativeWeight = "clove";
-                name = "garlic";
-            }
-
-            return new Tuple<string, double, string>(name, weightNum, relativeWeight);
-
+            return ingredients;
         }
-        public static Tuple<string, double, string> ParseWeightAndNameAllRecipes(string item) {
+
+        public TimeSpan GetPrepTime(string page) {
+            var prepTimeParts = page.Split(new string[1] { "<span class=\"ready-in-time\">" }, StringSplitOptions.None);
+            if (prepTimeParts.Length < 2) {
+                return TimeSpan.MaxValue;
+            }
+            var prepTimeStr = new String(prepTimeParts[1].TakeWhile(a => a != '<').ToArray());
+            return ParsePrepTime(prepTimeStr);
+        }
+
+        private static TimeSpan ParsePrepTime(string time) {
+            var days = GetTimeUnit(ref time, 'd');
+            var hours = GetTimeUnit(ref time, 'h');
+            hours = hours + days * 24;
+            return new TimeSpan(hours, GetTimeUnit(ref time, 'm'), 0);
+        }
+
+
+        public static int GetTimeUnit(ref string time, char timeUnit) {
+            var parts = time.Split(timeUnit);
+            if (parts.Length > 1) {
+                time = parts[1];
+                return int.Parse(parts[0]);
+            }
+            else
+                return 0;
+        }
+
+
+        public AllRecipesParser() {
+            ServingSplitter = new string[1] { "<meta id=\"metaRecipeServings\" itemprop=\"recipeYield\" content=" };
+        }
+
+        public int GetServings(string page) {
+            var servingParts = page.Split(ServingSplitter, StringSplitOptions.None);
+            var servingStr = new String(servingParts[1].TakeWhile(a => a != '>').ToArray());
+            return int.Parse(servingStr.Replace("\"", ""));
+
+    }
+
+        public string GetImageUrl(string page) {
+            var part = page.Split(new string[] { "http://images.media-allrecipes.com/userphotos/250x250/" }, StringSplitOptions.None);
+            if (part.Length > 1) {
+                var num = part[1].TakeWhile(c => c != '.');
+                var strNum = new String(num.ToArray());
+                return "http://images.media-allrecipes.com/userphotos/250x250/" + strNum + ".jpg";
+            }
+            else
+                throw new Exception("Couldn't load image");
+        }
+
+        public string GetRecipeName(string page) {
+            var name = page.Split(new string[2] { "<title>", "</title>" }, StringSplitOptions.None)[1];
+            name = name.Split(new string[1] { "Recipe" }, StringSplitOptions.None)[0];
+            return name;
+        }
+
+        private static Tuple<string, double, string> ParseWeightAndNameAllRecipes(string item) {
 
             item = Map.AdjustNames(item);
             item = Map.AdjustInnerPart(item);
@@ -129,7 +123,6 @@ namespace InitRecipes {
             innerpart = Map.AdjustIngredient(innerpart);
             return new Tuple<string, double, string>(innerpart, weight, weightKey);
         }
-
 
         public static Tuple<string, double, string> ParseByRelativeMeasures(string[] parts, string item, string unit) {
 
@@ -185,5 +178,8 @@ namespace InitRecipes {
                 log.Error("Failed to parse actual weight for item : " + item);
             return new Tuple<string, double>(innerpart, actualWeight);
         }
+
+
     }
 }
+
