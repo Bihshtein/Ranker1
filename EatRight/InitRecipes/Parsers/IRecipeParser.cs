@@ -10,6 +10,7 @@ namespace InitRecipes {
         string GetRecipeName(string page);
         List<Tuple<string, double, string>> GetIngredients(string page);
         int GetServings(string page);
+        int GetStepsNum(string page);
         TimeSpan GetPrepTime(string page);
         string GetImageUrl(string page);
     }

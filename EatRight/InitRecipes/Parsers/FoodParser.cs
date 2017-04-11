@@ -9,6 +9,7 @@ using System.Net;
 namespace InitRecipes {
     public class FoodParser : IRecipeParser {
         public string[] ServingSplitter { get; set; }
+        public string[] StepsNumSplitter { get; set; }
 
         public List<Tuple<string, double, string>> GetIngredients(string page) {
             var ingredients = new List<Tuple<string, double, string>>();
@@ -53,13 +54,35 @@ namespace InitRecipes {
        
         public FoodParser() {
             ServingSplitter = new string[1] { "Servings Per Recipe:" };
+            StepsNumSplitter = new string[1] { "\"recipeInstructions\"" };
         }
 
         public int GetServings(string page) {
             var servingParts = page.Split(ServingSplitter, StringSplitOptions.None);
             var servingStr = new String(servingParts[1].TakeWhile(a => a != '<').ToArray());
             return int.Parse(servingStr);
+        }
 
+        public int GetStepsNum(string page)
+        {
+            var tempParts = page.Split(StepsNumSplitter, StringSplitOptions.None);
+            if (tempParts == null || tempParts.Length < 2)
+            {
+                return 0;
+            }
+
+            var partStr = tempParts[1];
+            tempParts = partStr.Split(new string[1] { "\",\"" }, StringSplitOptions.None);
+            var stepsStr = partStr;
+            if (tempParts != null && tempParts.Length > 1)
+            {
+                stepsStr = tempParts[0];
+            }
+
+            int myInt = System.Text.RegularExpressions.Regex.Matches(stepsStr, "\\. [A-Z]").Count;
+            /* We have the first step, and every new step is represented by a dot, a space and then
+            a capital letter. */
+            return 1 + myInt;
         }
 
         public  string GetImageUrl(string page) {

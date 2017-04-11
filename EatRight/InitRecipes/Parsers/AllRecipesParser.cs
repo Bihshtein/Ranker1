@@ -66,8 +66,12 @@ namespace InitRecipes {
             var servingParts = page.Split(ServingSplitter, StringSplitOptions.None);
             var servingStr = new String(servingParts[1].TakeWhile(a => a != '>').ToArray());
             return int.Parse(servingStr.Replace("\"", ""));
+        }
 
-    }
+        public int GetStepsNum(string page)
+        {
+            return 0;
+        }
 
         public string GetImageUrl(string page) {
             var part = page.Split(new string[] { "http://images.media-allrecipes.com/userphotos/250x250/" }, StringSplitOptions.None);

@@ -173,6 +173,7 @@ namespace InitRecipes {
                     Ingredients = Sources.RecipesURNs[source].Parser.GetIngredients(page),
                     Types = new HashSet<MealType>() { mealType },
                     Servings = Sources.RecipesURNs[source].Parser.GetServings(page),
+                    StepsNum = Sources.RecipesURNs[source].Parser.GetStepsNum(page),
                     PrepTime = Sources.RecipesURNs[source].Parser.GetPrepTime(page),
                     ImageUrl = Sources.RecipesURNs[source].Parser.GetImageUrl(page)
                 });

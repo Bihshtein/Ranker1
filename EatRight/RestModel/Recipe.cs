@@ -55,6 +55,8 @@ namespace RestModel  {
         private static RestDBInterface Unit = new RestDBInterface();
         [BsonElement("Servings")]
         public int Servings { get; set; } = 1;
+        [BsonElement("StepsNum")]
+        public int StepsNum { get; set; } = 0;
 
         public override bool Equals(object obj)
         {

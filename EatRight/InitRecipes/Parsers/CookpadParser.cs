@@ -62,6 +62,11 @@ namespace InitRecipes {
 
         }
 
+        public int GetStepsNum(string page)
+        {
+            return System.Text.RegularExpressions.Regex.Matches(page, "p class=\"step__text\"").Count;
+        }
+
         public string GetImageUrl(string page) {
             var part = page.Split(new string[2] { "https://img-global.cpcdn.com/001_recipes/", "/400x400cq70/photo.jpg" }, StringSplitOptions.None);
             if (part.Length > 1) {
