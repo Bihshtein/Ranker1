@@ -70,7 +70,8 @@ namespace InitRecipes {
 
         public int GetStepsNum(string page)
         {
-            return 0;
+            int myCount = System.Text.RegularExpressions.Regex.Matches(page, "<li class=\"step\" ng-class=\"{").Count;
+            return myCount;
         }
 
         public string GetImageUrl(string page) {
