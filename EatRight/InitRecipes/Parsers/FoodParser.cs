@@ -8,20 +8,18 @@ using System.Net;
 
 namespace InitRecipes {
     public class FoodParser : IRecipeParser {
-        public string[] ServingSplitter { get; set; }
-        public string[] StepsNumSplitter { get; set; }
+        public string[] ServingSplitter =>new string[1] { "Servings Per Recipe:" }; 
+        public string[] StepsNumSplitter =>  new string[1] { "\"recipeInstructions\"" };
+        public string[] IngredientSplitter=> new string[1] { "<li data-ingredient=" };
 
-        public List<Tuple<string, double, string>> GetIngredients(string page) {
-            var ingredients = new List<Tuple<string, double, string>>();
-            var ingredientParts = page.Split(new string[1] { "<li data-ingredient=" }, StringSplitOptions.None);
-            for (int i = 1; i < ingredientParts.Length; i++) {
-                var parts = ingredientParts[i].Split(new string[3] { "<span>", "</span>", "<a" }, StringSplitOptions.None);
-                var ingredient = parts[0].Split('"')[1].Replace('+', ' ');
-                ingredient = Map.AdjustNames(ingredient);
+        public Tuple<string, double, string> ParseWeightAndName(string ingredient) {
+            var parts = ingredient.Split(new string[3] { "<span>", "</span>", "<a" }, StringSplitOptions.None);
+            var name = parts[0].Split('"')[1].Replace('+', ' ');
+            var weightStr = parts[1].Split('-')[0];
+            var rest = parts[2].Trim();
+            name = Map.AdjustNames(name);
                 var weight = 0.0;
-                var weightStr = "";
                 try {
-                    weightStr = parts[1].Split('-')[0];
                     weight = double.Parse(weightStr);
                 }
                 catch (FormatException) {
@@ -31,8 +29,6 @@ namespace InitRecipes {
                     weight = ParseHelpers.ParseAmount(amount);
 
                 }
-
-                var rest = parts[2].Trim();
                 var relativeWeight = Formulas.MeasuresWeights.Keys.ToList().FirstOrDefault(s => Map.WordCheck(s, rest));
                 if (relativeWeight == null) {
                     relativeWeight = Formulas.RelativeProductSize.FirstOrDefault(s => Map.WordCheck(s, rest));
@@ -43,19 +39,13 @@ namespace InitRecipes {
                         }
                     }
                 }
-                ingredients.Add(new Tuple<string, double, string>(ingredient, weight, relativeWeight));
-            }
-            return ingredients;
+                return new Tuple<string, double, string>(name, weight, relativeWeight);
         }
 
         public TimeSpan GetPrepTime(string page) {
             return new TimeSpan(0, 10, 0);
         }
        
-        public FoodParser() {
-            ServingSplitter = new string[1] { "Servings Per Recipe:" };
-            StepsNumSplitter = new string[1] { "\"recipeInstructions\"" };
-        }
 
         public int GetServings(string page) {
             var servingParts = page.Split(ServingSplitter, StringSplitOptions.None);
@@ -103,5 +93,8 @@ namespace InitRecipes {
             return name;
         }
 
+        public string GetIngredient(string phrase) {
+            throw new NotImplementedException();
+        }
     }
 }

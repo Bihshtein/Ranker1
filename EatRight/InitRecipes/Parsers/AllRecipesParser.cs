@@ -13,22 +13,8 @@ namespace InitRecipes {
     public class AllRecipesParser : IRecipeParser {
         public static ILog log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
 
-        public string[] ServingSplitter { get; set; }
-
-        public List<Tuple<string, double, string>> GetIngredients(string page) {
-            var ingredients = new List<Tuple<string, double, string>>();
-
-            var ingredientParts = page.Split(new string[1] { "itemprop=\"ingredients\">" }, StringSplitOptions.None);
-            for (int i = 1; i < ingredientParts.Length; i++) {
-                if (ingredientParts[i].Contains("<")) {
-                    var chars = ingredientParts[i].TakeWhile(a => a != '<');
-                    var ingredient = new String(chars.ToArray());
-
-                    ingredients.Add(ParseWeightAndNameAllRecipes(ingredient));
-                }
-            }
-            return ingredients;
-        }
+        public string[] ServingSplitter => new string[1] { "<meta id=\"metaRecipeServings\" itemprop=\"recipeYield\" content=" };
+        public string[] IngredientSplitter => new string[1] { "itemprop=\"ingredients\">" };
 
         public TimeSpan GetPrepTime(string page) {
             var prepTimeParts = page.Split(new string[1] { "<span class=\"ready-in-time\">" }, StringSplitOptions.None);
@@ -57,10 +43,6 @@ namespace InitRecipes {
                 return 0;
         }
 
-
-        public AllRecipesParser() {
-            ServingSplitter = new string[1] { "<meta id=\"metaRecipeServings\" itemprop=\"recipeYield\" content=" };
-        }
 
         public int GetServings(string page) {
             var servingParts = page.Split(ServingSplitter, StringSplitOptions.None);
@@ -91,8 +73,13 @@ namespace InitRecipes {
             return name;
         }
 
-        private static Tuple<string, double, string> ParseWeightAndNameAllRecipes(string item) {
-
+        private Tuple<string, double, string> ParseWeightAndName(string item) {
+            if (item.Contains("<")) {
+                var chars = item.TakeWhile(a => a != '<');
+                item = new String(chars.ToArray());
+            }
+            else
+                return null;
             item = Map.AdjustNames(item);
             item = Map.AdjustInnerPart(item);
             var weight = 0.0;
@@ -184,7 +171,9 @@ namespace InitRecipes {
             return new Tuple<string, double>(innerpart, actualWeight);
         }
 
-
+        Tuple<string, double, string> IRecipeParser.ParseWeightAndName(string ingredient) {
+            throw new NotImplementedException();
+        }
     }
 }
 

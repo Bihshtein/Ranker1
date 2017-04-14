@@ -17,10 +17,10 @@ namespace InitRecipes {
         public string Url { get; set; }
         public string PageKeyword { get; set; }
         public List<MealData> Meals { get; set; }
-        public IRecipeParser Parser{ get; set; }
+        public GeneralRecipeParser Parser { get; set; }
 }
     class Sources {
-        public static int Limit = 1000;
+        public static int Limit = 100;
         public static Dictionary<RecipesSource, SourceData> RecipesURNs = new Dictionary<RecipesSource, SourceData>() {
             {RecipesSource.Cookpad,  new SourceData {
                 Url = "https://cookpad.com/us/recipes/",
@@ -30,7 +30,7 @@ namespace InitRecipes {
                     new MealData { Meal = MealType.Breakfast, Url = "https://cookpad.com/us/search/breakfast", MealsLimit=Limit},
                     new MealData { Meal = MealType.Lunch, Url = "https://cookpad.com/us/search/lunch", MealsLimit=Limit},
                 },
-                Parser = new CookpadParser()
+                Parser = new GeneralRecipeParser(new CookpadParser())
             } },
 
 
@@ -41,7 +41,7 @@ namespace InitRecipes {
                     new MealData { Meal = MealType.Breakfast, Url = "http://allrecipes.com/recipes/78/breakfast-and-brunch", MealsLimit=Limit},
                     new MealData { Meal = MealType.Lunch, Url = "http://allrecipes.com/recipes/17561/lunch/", MealsLimit=Limit},
                 },
-                Parser = new AllRecipesParser(),
+                Parser = new GeneralRecipeParser(new AllRecipesParser()),
                 Url ="http://allrecipes.com/recipe/" } },
 
             {RecipesSource.Food,  new SourceData() {
@@ -50,7 +50,7 @@ namespace InitRecipes {
                     new MealData { Meal = MealType.Breakfast, Url = "http://breakfast.food.com", MealsLimit=Limit},
                     new MealData { Meal = MealType.Lunch, Url = "http://lunch.food.com", MealsLimit=Limit},
                 },
-                Parser = new FoodParser(),
+                Parser = new GeneralRecipeParser(new FoodParser()),
                 Url ="http://www.food.com/recipe/-" } }
         };
     }
