@@ -8,19 +8,18 @@ using System.Net;
 
 namespace InitRecipes {
     public class FoodParser : IRecipeParser {
-        public string[] ServingSplitter { get; set; }
+        public string[] ServingSplitter =>new string[1] { "Servings Per Recipe:" }; 
+        public string[] StepsNumSplitter =>  new string[1] { "\"recipeInstructions\"" };
+        public string[] IngredientSplitter=> new string[1] { "<li data-ingredient=" };
 
-        public List<Tuple<string, double, string>> GetIngredients(string page) {
-            var ingredients = new List<Tuple<string, double, string>>();
-            var ingredientParts = page.Split(new string[1] { "<li data-ingredient=" }, StringSplitOptions.None);
-            for (int i = 1; i < ingredientParts.Length; i++) {
-                var parts = ingredientParts[i].Split(new string[3] { "<span>", "</span>", "<a" }, StringSplitOptions.None);
-                var ingredient = parts[0].Split('"')[1].Replace('+', ' ');
-                ingredient = Map.AdjustNames(ingredient);
+        public Tuple<string, double, string> ParseWeightAndName(string ingredient) {
+            var parts = ingredient.Split(new string[3] { "<span>", "</span>", "<a" }, StringSplitOptions.None);
+            var name = parts[0].Split('"')[1].Replace('+', ' ');
+            var weightStr = parts[1].Split('-')[0];
+            var rest = parts[2].Trim();
+            name = Map.AdjustNames(name);
                 var weight = 0.0;
-                var weightStr = "";
                 try {
-                    weightStr = parts[1].Split('-')[0];
                     weight = double.Parse(weightStr);
                 }
                 catch (FormatException) {
@@ -30,8 +29,6 @@ namespace InitRecipes {
                     weight = ParseHelpers.ParseAmount(amount);
 
                 }
-
-                var rest = parts[2].Trim();
                 var relativeWeight = Formulas.MeasuresWeights.Keys.ToList().FirstOrDefault(s => Map.WordCheck(s, rest));
                 if (relativeWeight == null) {
                     relativeWeight = Formulas.RelativeProductSize.FirstOrDefault(s => Map.WordCheck(s, rest));
@@ -42,24 +39,40 @@ namespace InitRecipes {
                         }
                     }
                 }
-                ingredients.Add(new Tuple<string, double, string>(ingredient, weight, relativeWeight));
-            }
-            return ingredients;
+                return new Tuple<string, double, string>(name, weight, relativeWeight);
         }
 
         public TimeSpan GetPrepTime(string page) {
             return new TimeSpan(0, 10, 0);
         }
        
-        public FoodParser() {
-            ServingSplitter = new string[1] { "Servings Per Recipe:" };
-        }
 
         public int GetServings(string page) {
             var servingParts = page.Split(ServingSplitter, StringSplitOptions.None);
             var servingStr = new String(servingParts[1].TakeWhile(a => a != '<').ToArray());
             return int.Parse(servingStr);
+        }
 
+        public int GetStepsNum(string page)
+        {
+            var tempParts = page.Split(StepsNumSplitter, StringSplitOptions.None);
+            if (tempParts == null || tempParts.Length < 2)
+            {
+                return 0;
+            }
+
+            var partStr = tempParts[1];
+            tempParts = partStr.Split(new string[1] { "\",\"" }, StringSplitOptions.None);
+            var stepsStr = partStr;
+            if (tempParts != null && tempParts.Length > 1)
+            {
+                stepsStr = tempParts[0];
+            }
+
+            int myInt = System.Text.RegularExpressions.Regex.Matches(stepsStr, "\\. [A-Z]").Count;
+            /* We have the first step, and every new step is represented by a dot, a space and then
+            a capital letter. */
+            return 1 + myInt;
         }
 
         public  string GetImageUrl(string page) {
@@ -80,5 +93,8 @@ namespace InitRecipes {
             return name;
         }
 
+        public string GetIngredient(string phrase) {
+            throw new NotImplementedException();
+        }
     }
 }

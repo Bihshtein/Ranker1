@@ -52,12 +52,12 @@ namespace InitRecipes {
             Console.WriteLine("total ingredients missed : " + totalMissing);
             Console.WriteLine("total weights not found: " + totalWeightsNotFound);
             var sorted = MissingCount.OrderBy(i => i.Key.Split(' ').Length).ToList();
-            sorted.RemoveAll(i => i.Value < 2);
-            File.WriteAllLines(FolderPath + "MissingIndex.txt", sorted.ConvertAll<string>(i => i.Key + " : " + i.Value));
+            sorted.RemoveAll(i => i.Value < 10);
+            File.WriteAllLines(FolderPath + "MissingIndex.csv", sorted.ConvertAll<string>(i => i.Key + " , " + i.Value));
 
 
             sorted = MissingWeightsCount.OrderBy(i => i.Key.Split(' ').Length).ToList();
-            File.WriteAllLines(FolderPath + "MissingWeights.txt", sorted.ConvertAll<string>(i => i.Key + " : " + i.Value));
+            File.WriteAllLines(FolderPath + "MissingWeights.csv", sorted.ConvertAll<string>(i => i.Key + " , " + i.Value));
         }
 
         private static void AddRecipe(Recipe recipe)

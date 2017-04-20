@@ -10,21 +10,10 @@ using System.Net;
 
 namespace InitRecipes {
     public class CookpadParser : IRecipeParser {
-        public string[] ServingSplitter { get; set; }
+        public string[] ServingSplitter => new string[1] { "<div class=\"subtle\" data-field data-field-name=\"serving\" data-placeholder=\"How many servings?\" data-maxlength=\"15\">" }; 
+        public string[] IngredientSplitter => new string[1] { "<span class=\"ingredient__quantity\">" }; 
+
         public static ILog log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
-        public List<Tuple<string, double, string>> GetIngredients(string page) {
-            var ingredients = new List<Tuple<string, double, string>>();
-            var ingredientParts = page.Split(new string[1] { "<span class=\"ingredient__quantity\">" }, StringSplitOptions.None);
-            for (int i = 1; i < ingredientParts.Length; i++) {
-
-                var ingredient = ingredientParts[i].Split('\n')[0];
-                var res = ParseWeightAndNameCookpad(ingredient);
-                if (res != null)
-                    ingredients.Add(res);
-
-            }
-            return ingredients;
-        }
 
         public TimeSpan GetPrepTime(string page) {
             return new TimeSpan(0, 10, 0);
@@ -48,10 +37,6 @@ namespace InitRecipes {
                 return 0;
         }
 
-        public CookpadParser() {
-            ServingSplitter = new string[1] { "<div class=\"subtle\" data-field data-field-name=\"serving\" data-placeholder=\"How many servings?\" data-maxlength=\"15\">" };
-        }
-
         public int GetServings(string page) {
             var servingParts = page.Split(ServingSplitter, StringSplitOptions.None);
             var servingStr = new String(servingParts[1].TakeWhile(a => a != '<').ToArray());
@@ -60,6 +45,11 @@ namespace InitRecipes {
             servingStr = servingStr.Replace("serving", "").Trim();
             return int.Parse(servingStr);
 
+        }
+
+        public int GetStepsNum(string page)
+        {
+            return System.Text.RegularExpressions.Regex.Matches(page, "p class=\"step__text\"").Count;
         }
 
         public string GetImageUrl(string page) {
@@ -79,8 +69,8 @@ namespace InitRecipes {
             return name;
         }
 
-        public static Tuple<string, double, string> ParseWeightAndNameCookpad(string ingredient) {
-
+        public Tuple<string, double, string> ParseWeightAndName(string ingredient) {
+            ingredient = ingredient.Split('\n')[0];
             var nameAndWeight = ingredient.Split(new string[1] { "</span>" }, StringSplitOptions.None);
             var name = nameAndWeight[1].Trim().ToLower();
             if (name == string.Empty || Map.ShouldSkip(name))
