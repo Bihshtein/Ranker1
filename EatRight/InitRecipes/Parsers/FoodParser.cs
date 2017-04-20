@@ -39,7 +39,11 @@ namespace InitRecipes {
                         }
                     }
                 }
-                return new Tuple<string, double, string>(name, weight, relativeWeight);
+            if (name.Contains("garlic clove")) {
+                relativeWeight = "clove";
+                name = "garlic";
+            }
+            return new Tuple<string, double, string>(name, weight, relativeWeight);
         }
 
         public TimeSpan GetPrepTime(string page) {

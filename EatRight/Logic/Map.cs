@@ -192,21 +192,28 @@ namespace Logic {
                { new List<string> { "mayo"}, "mayonnaise"},
                { new List<string> { "mint"}, "peppermint"},
                { new List<string> { "prawn"}, "shrimp"},
+               { new List<string> { "oats"}, "oats"},
                { new List<string> { "shrimp"}, "shrimp"},
                { new List<string> { "chicken", "thighs",  }, "chicken thighs"},
                { new List<string> { "pepperjack", "cheese",  }, "monterey cheese"},
                { new List<string> { "havarti", "cheese",  }, "monterey cheese"},
                { new List<string> { "monterey", "cheese",  }, "monterey cheese"},
                { new List<string> { "velveeta"}, "cheddar cheese"},
+               { new List<string> {"black pepper" },"black pepper"}
 
 
         };
         public static Dictionary<string, string> ChangePartialPhrases = new Dictionary<string, string>() {
+            { "tater tots", "fried potatoes"},
+            { "fresh lemon juice", "raw lemon juice"},
+            { "oatmeal", "oats"},
             { "cashews", "cashew nuts"},
+            { "deli ham", "sliced ham"},
             { "kilishi","beef jerky" },
             { "light soy sauce", "soy sauce"},
             { "mozzarella string cheese", "mozzarella cheese" },
             { "button mushroom", "white mushroom"},
+            { "sliced mushrooms", "white mushroom"},
             { "prawn", "shrimp"},
             { "iceberg lattuce", "iceberg lettuce"},
             { "romain lettuce", "romaine lettuce"},
@@ -215,8 +222,7 @@ namespace Logic {
             { "pot roast", "arm pot roast"},
             { "chihuahua cheese", "queso chihuahua cheese"},         
             { "pork roast", "pork loin roast"},
-            { "extra virgin olive oil","olive oil"},
-            { "freshly ground black pepperl","black pepper"},
+            { "extra virgin olive oil","olive oil"},        
             { "hard eggs","boiled eggs"},
             { "hard boiled eggs","boiled eggs"},
             { "pork butt","pork shoulder blade"},
@@ -229,6 +235,7 @@ namespace Logic {
             { "smoked paprika","paprika" },
             { "vanilla essence", "vanilla extract"},
             { "cilantro", "coriander" },
+            { "fresh coriander", "raw coriander" },
             { "skinless, boneless chicken","chicken"},
             { "boneless, skinless chicken","chicken"},
             { "boneless skinless chicken","chicken"},
@@ -275,7 +282,6 @@ namespace Logic {
             { "sugar powder","powdered sugars"  },
             { "confectioners' sugar", "granulated sugars" },
             { "french bread", "french or vienna bread" },
-            
             { "parmigiano-reggiano cheese", "parmesan cheese" },
             { "low-fat cottage cheese", "cottage 1% milkfat|cheese" },
             { "green chile peppers", "green peppers" },
@@ -290,7 +296,7 @@ namespace Logic {
         };
         public static List<string> ActionInfo = new List<string> {
             "thin sliced","peeled and diced","thick sliced", "sliced","slivered","melted","sifted", "ground", "shredded",
-            "cubed", "rolled","mashed","crushed"  ,"boiled","grated","julienne",
+            "cubed", "rolled","mashed","crushed","boiled","grated","julienne",
             "finely cooked","fine minced","finely chopped","medium dice", "small dice","finely diced","diced", "dried minced", "minced", "finely chopped", "chopped",
             "finely shredded","cooked","finely crushed","frozen","blended","chiffonade","to taste"
         };

@@ -1,74 +1,335 @@
-measures:tbsp,cup,tsp,recipe_measure:oil , 1
+measures:tbsp,cup,tsp,recipe_measure:oil , 15
+measures:tbsp,recipe_measure:glass , 23
+measures:cup,sprigs,recipe_measure:Cup , 1
+measures:tbsp,cup,recipe_measure:parsley , 14
+measures:leaves,tbsp,recipe_measure:peppermint , 2
+measures:cup,tsp,clove,cloves,recipe_measure:piece , 3
+measures:cup,recipe_measure:small , 11
+measures:cup,tsp,clove,cloves,recipe_measure:glove , 2
+measures:cup,tsp,clove,cloves,recipe_measure:garlic , 3
+measures:tbsp,cup,tsp,recipe_measure:vinegar , 1
+measures:cup,recipe_measure:Cup , 4
+measures:cup,recipe_measure:large , 18
+measures:slice,recipe_measure:glass , 1
+measures:oz,recipe_measure:egg , 2
+measures:tsp,tbsp,cup,dash,recipe_measure:pinch , 40
+measures:oz,recipe_measure:glass , 36
+measures:oz,piece,recipe_measure:package , 2
+measures:tbsp,cup,recipe_measure:Cup , 3
+measures:cup,recipe_measure:jar , 1
+measures:cup,sprigs,recipe_measure:coriander , 4
+measures:cup,recipe_measure:lg , 1
+measures:tsp,tbsp,recipe_measure:paprika , 4
+measures:cup,recipe_measure:can , 7
+measures:piece,recipe_measure:block , 1
+measures:cup,recipe_measure:spinach , 5
+measures:pepper,recipe_measure:large , 1
+measures:oz,recipe_measure:large , 108
+measures:cup,tsp,clove,cloves,recipe_measure:large , 1
+measures:leaves,tbsp,recipe_measure:pinch , 1
+measures:cup,recipe_measure:box , 3
+measures:oz,recipe_measure:each , 9
+measures:cup,recipe_measure:medium , 11
+measures:tbsp,cup,recipe_measure:sauce , 5
+measures:tsp,tbsp,recipe_measure:glass , 15
+measures:oz,recipe_measure:shrimp , 1
+measures:tbsp,recipe_measure:vegetable , 2
+measures:tbsp,cup,recipe_measure:package , 1
+measures:cup,recipe_measure:package , 8
+measures:cup,recipe_measure:piece , 1
+measures:tbsp,cup,recipe_measure:hamburger , 1
+measures:tsp,tbsp,recipe_measure:small , 4
+measures:tsp,tbsp,recipe_measure:sage , 1
+measures:tbsp,cup,recipe_measure:mayonnaise , 4
+measures:slice,package,recipe_measure:glass , 11
+measures:tsp,tbsp,recipe_measure:whole , 2
+measures:oz,piece,recipe_measure:slice , 4
+measures:tsp,tbsp,cup,dash,recipe_measure:large , 1
+measures:tsp,tbsp,recipe_measure:spice , 1
+measures:tsp,tbsp,recipe_measure:pinch , 11
+measures:tbsp,cup,recipe_measure:pinch , 1
+measures:cup,tsp,clove,cloves,recipe_measure:pinch , 1
+measures:cup,tbsp,recipe_measure:small , 5
+measures:slice,package,recipe_measure:bacon , 2
+measures:slice,oz,recipe_measure:package , 3
+measures:oz,recipe_measure:package , 1
+measures:serving,recipe_measure:slice , 26
+measures:oz,recipe_measure:small , 2
+measures:tsp,tbsp,recipe_measure:head , 1
+measures:slice,oz,recipe_measure:salami , 1
+measures:piece,recipe_measure:slice , 4
+measures:tsp,tbsp,recipe_measure:ginger , 1
+measures:oz,enchilada,tortilla,recipe_measure:large , 1
+measures:slice,package,recipe_measure:piece , 4
+measures:cup,tbsp,recipe_measure:each , 1
 measures:tsp,tbsp,recipe_measure:piece , 1
-measures:oz,recipe_measure:handful , 1
-measures:tsp,tbsp,recipe_measure:whole , 1
-measures:oz,recipe_measure:medium , 2
-measures:tsp,tbsp,cup,dash,recipe_measure:pinch , 10
-measures:cup,recipe_measure:Cup , 1
-measures:cup,tbsp,recipe_measure:small , 1
-measures:oz,recipe_measure:large , 17
-measures:cup,recipe_measure:small , 1
-measures:tbsp,cup,recipe_measure:parsley , 1
-measures:cup,recipe_measure:spinach , 1
-measures:pepper,recipe_measure:glass , 1
-measures:cup,recipe_measure:broccoli , 1
-measures:tbsp,cup,recipe_measure:sauce , 1
+measures:oz,recipe_measure:slice , 4
+measures:slice,serving,recipe_measure:piece , 1
+measures:oz,recipe_measure:medium , 3
+measures:slice,oz,recipe_measure:glass , 2
+measures:cup,recipe_measure:each , 2
+measures:oz,lb,recipe_measure:large , 1
+measures:cup,tbsp,recipe_measure:large , 3
+measures:fillet,oz,recipe_measure:slice , 1
+measures:cup,recipe_measure:pint , 3
+measures:cup,tbsp,recipe_measure:medium , 13
+measures:egg,recipe_measure:slice , 2
+measures:oz,muffin,recipe_measure:package , 1
+measures:tbsp,cup,recipe_measure:salsa , 1
+measures:tbsp,cup,recipe_measure:each , 1
+measures:pepper,recipe_measure:glass , 2
+measures:cup,recipe_measure:pkg , 1
+measures:oz,recipe_measure:beef , 1
+measures:cup,sprigs,recipe_measure:handful , 1
+measures:oz,recipe_measure:can , 1
+measures:oz,piece,recipe_measure:chicken , 1
 measures:leaves,tbsp,recipe_measure:handful , 1
-measures:cup,recipe_measure:package , 1
-measures:tbsp,recipe_measure:glass , 9
-measures:cup,recipe_measure:pint , 1
-measures:tsp,tbsp,recipe_measure:glass , 2
-measures:slice,package,recipe_measure:glass , 3
-measures:oz,recipe_measure:glass , 5
-measures:slice,oz,recipe_measure:glass , 1
-measures:cup,recipe_measure:whole , 1
-measures:cup,recipe_measure:large , 3
-measures:oz,recipe_measure:whole , 1
-measures:serving,recipe_measure:slice , 1
-measures:tablespoon,cup,recipe_measure:pint , 1
-measures:oz,peanut,recipe_measure:glass , 1
+measures:oz,piece,recipe_measure:glass , 4
+measures:tsp,recipe_measure:thyme , 1
+measures:oz,enchilada,tortilla,recipe_measure:package , 1
+measures:cup,recipe_measure:bag , 1
+measures:oz,piece,recipe_measure:pepperoni , 1
+measures:cup,recipe_measure:Bag , 1
+measures:oz,recipe_measure:piece , 2
+measures:olive,recipe_measure:glass , 2
+measures:cup,recipe_measure:slice , 1
+measures:cup,tbsp,oz,recipe_measure:Cup , 1
+measures:tsp,tbsp,recipe_measure:rosemary , 1
+measures:olive,recipe_measure:piece , 1
+measures:egg,recipe_measure:piece , 1
+measures:oz,fillet,recipe_measure:piece , 1
+measures:tbsp,cup,recipe_measure:bundle , 1
+measures:tablespoon,cup,recipe_measure:Cup , 1
+measures:tablespoon,recipe_measure:inch , 1
+measures:cup,tbsp,recipe_measure:can , 1
+measures:oz,enchilada,tortilla,recipe_measure:small , 1
+measures:tsp,tbsp,recipe_measure:medium , 1
+measures:cup,recipe_measure:inch , 15
+measures:piece,recipe_measure:whole , 10
+measures:oz,cup,recipe_measure:pint , 1
+measures:cup,tbsp,recipe_measure:whole , 1
+measures:tsp,tbsp,cup,dash,recipe_measure:small , 1
+measures:egg,recipe_measure:glass , 1
+measures:oz,lb,recipe_measure:glass , 2
+measures:cup,recipe_measure:whole , 6
+measures:oz,enchilada,tortilla,recipe_measure:inch , 2
+measures:oz,recipe_measure:whole , 2
+measures:slice,package,recipe_measure:small , 1
+measures:piece,package,recipe_measure:slice , 1
+measures:tbsp,cup,recipe_measure:small , 1
+measures:fillet,oz,recipe_measure:glass , 3
+measures:leaves,tbsp,recipe_measure:glass , 1
+measures:tsp,recipe_measure:pinch , 2
+measures:tbsp,cup,recipe_measure:large , 1
+measures:cup,tsp,clove,cloves,recipe_measure:head , 1
+measures:cup,recipe_measure:leave , 1
+measures:oz,chop,recipe_measure:inch , 1
+measures:tsp,recipe_measure:package , 1
 measures:cup,recipe_measure:head , 1
-measures:tsp,tbsp,cup,dash,recipe_measure:table salt , 8
-measures:tsp,tbsp,cup,dash,recipe_measure:to taste , 13
-measures:tablespoon,cup,tsp,recipe_measure:olive oil , 4
-measures:tbsp,tsp,cup,recipe_measure:soy sauce , 1
-measures:tbsp,recipe_measure:oyster sauce , 1
+measures:tsp,tbsp,cup,dash,recipe_measure:medium , 1
+measures:tsp,tbsp,cup,dash,recipe_measure:slice , 1
+measures:cup,recipe_measure:pinch , 1
+measures:can drained,recipe_measure:glass , 4
+measures:tsp,tbsp,cup,dash,recipe_measure:table salt , 94
+measures:tsp,tbsp,cup,dash,recipe_measure:to taste , 36
+measures:tablespoon,cup,tsp,recipe_measure:olive oil , 27
+measures:cup,fl oz,recipe_measure:can , 12
+measures:tsp,tbsp,recipe_measure:red pepper , 1
+measures:fl oz,cup,ml,recipe_measure:water , 6
+measures:cup,fl oz,recipe_measure:Cup , 2
 measures:tablespoon,cup,tsp,recipe_measure:sesame oil , 1
-measures:fl oz,recipe_measure:bag , 1
-measures:cup,fl oz,recipe_measure:tomatoe , 1
+measures:fl oz,cup,ml,recipe_measure:can , 1
+measures:oz,cup,recipe_measure:bread crumb , 5
+measures:tsp,tbsp,recipe_measure:to taste , 6
+measures:fl oz,recipe_measure:small , 1
+measures:cup, shredded,recipe_measure:cabbage , 1
+measures:slice,cubic inch,cup,recipe_measure:cheese , 2
+measures:tablespoon,cup,recipe_measure:sour cream , 3
+measures:tablespoon,cup,recipe_measure:to taste , 1
+measures:cup,fl oz,recipe_measure:small , 4
+measures:cup,fl oz,recipe_measure:tomato , 3
+measures:cup, diced,stalks,recipe_measure:leave , 1
+measures:cup,fl oz,recipe_measure:tomatoe , 5
+measures:cup, chopped,recipe_measure:leave , 2
+measures:tablespoons,recipe_measure:tartar sauce , 2
+measures:cup,sprigs,recipe_measure:raw coriander , 2
+measures:cup,fl oz,recipe_measure:each , 2
+measures:tsp,tbsp,recipe_measure:garlic powder , 3
+measures:cup,fl oz,recipe_measure:large , 11
+measures:slice,cubic inch,cup,recipe_measure:package , 1
+measures:cup,fl oz,recipe_measure:slice , 23
+measures:cup,recipe_measure:chicken soup , 1
+measures:cup, diced,stalks,recipe_measure:each , 1
+measures:tsp,tbsp,recipe_measure:chili powder , 1
+measures:cup,recipe_measure:tomato sauce , 1
+measures:cup, chopped,recipe_measure:handful , 1
+measures:cup, crumbled,oz,recipe_measure:package , 1
+measures:cup slices,recipe_measure:each , 1
+measures:tsp,tbsp,recipe_measure:cayenne pepper , 1
+measures:tbsp,cup,recipe_measure:barbecue sauce , 1
+measures:tsp,tbsp,cup,recipe_measure:vanilla extract , 1
+measures:cup slices,recipe_measure:medium , 6
+measures:fl oz,recipe_measure:green , 1
+measures:cup,fl oz,recipe_measure:medium , 15
+measures:fl oz,can,recipe_measure:all , 1
+measures:cup slices,recipe_measure:apple , 1
 measures:slice,cubic inch,cup,recipe_measure:bag , 1
-measures:tsp,tbsp,recipe_measure:to taste , 1
-measures:fl oz,cup,ml,recipe_measure:water , 2
-measures:cup,fl oz,recipe_measure:large , 3
+measures:cup,tbsp,oz,recipe_measure:to taste , 1
+measures:cup,fl oz,recipe_measure:lg , 1
+measures:oz,recipe_measure:medium size , 1
+measures:cup,fl oz,recipe_measure:piece , 1
+measures:oz,recipe_measure:to taste , 1
+measures:cup,recipe_measure:medium bunch , 1
+measures:cup,cup, undrained,recipe_measure:can , 1
+measures:cup,tbsp,oz,recipe_measure:parmesan cheese , 1
 measures:cup slices,recipe_measure:large , 1
-measures:cup,fl oz,recipe_measure:slice , 1
-measures:cup slices,recipe_measure:medium , 1
-measures:cup,fl oz,recipe_measure:small , 1
-measures:slice 1 serving,recipe_measure:pinch , 1
-measures:oz,package (5 oz),recipe_measure:glass , 1
+measures:link cooked,recipe_measure:glass , 1
+measures:sprigs,cup sprigs,recipe_measure:pinch , 1
+measures:fl oz,recipe_measure:glass , 1
+measures:cup slices,recipe_measure:small , 2
+measures:super colossal,jumbo,recipe_measure:glass , 2
+measures:cup, diced,stalks,recipe_measure:piece , 1
+measures:cup, shredded,recipe_measure:head , 1
+measures:cup sliced,recipe_measure:medium , 1
+measures:super colossal,jumbo,recipe_measure:small , 1
+measures:tsp, crumbled,tbsp, crumbled,recipe_measure:lg , 1
+measures:cup, crumbled,oz,recipe_measure:mexican cheese , 1
+measures:slice 1 serving,recipe_measure:pinch , 6
+measures:cup,recipe_measure:all-purpose wheat flour , 4
+measures:cup,fl oz,recipe_measure:lime juice , 1
+measures:leek,cup, chopped,recipe_measure:medium size , 1
+measures:tsp, leaves,tsp, ground,recipe_measure:oregano , 3
+measures:cup (1" cubes),recipe_measure:large , 2
+measures:container (6 oz),recipe_measure:glass , 4
+measures:slice 1 oz,recipe_measure:glass , 6
+measures:cup,recipe_measure:peas and carrot , 1
+measures:cup, chopped,cup, sliced,pepper,recipe_measure:large , 1
+measures:tsp, crumbled,tbsp, crumbled,recipe_measure:large , 1
+measures:serving 2 slices,recipe_measure:each , 2
+measures:oz,package (5 oz),recipe_measure:glass , 2
+measures:oz,biscuit (2-1/2" dia),recipe_measure:package , 3
+measures:strips,package (9 oz),recipe_measure:glass , 4
+measures:oz,biscuit (2-1/2" dia),recipe_measure:can , 2
+measures:tsp, leaves,tsp, ground,recipe_measure:pinch , 2
+measures:tbsp,serving 1/4 cup,cup,recipe_measure:each , 1
+measures:container (7 oz),recipe_measure:glass , 9
+measures:cup, crumbled,recipe_measure:queso fresco , 1
+measures:serving 2,33 oz,recipe_measure:package , 1
+measures:oz,package (18,50 oz),recipe_measure:small , 1
 measures:tbsp,cup,recipe_measure:ֲ·dollop sour cream , 1
-measures:container (7 oz),recipe_measure:glass , 2
+measures:cup slices,cucumber (8-1/4"),recipe_measure:large , 3
+measures:cup,fl oz,recipe_measure:lemon juice , 3
+measures:cup slices,cup, mashed,recipe_measure:large , 2
+measures:cup,tbsp,oz,recipe_measure:ֲ·shredded parmesan cheese , 1
+measures:cup,tbsp,oz,recipe_measure:sprinkled parmesan cheese , 1
+measures:cup,fl oz,recipe_measure:medium size , 2
+measures:cup,tbsp,oz,recipe_measure:parmesan cheese rind , 1
+measures:cup slices,cup, mashed,recipe_measure:small , 2
+measures:cup,recipe_measure:small to medium , 1
+measures:oz,biscuit (2-1/2" dia),recipe_measure:large , 1
+measures:package (6 oz),recipe_measure:glass , 17
+measures:package (6 oz),recipe_measure:large , 1
+measures:container (5,3 oz),recipe_measure:glass , 5
+measures:oz,bar (1,45 oz),recipe_measure:glass , 4
+measures:tortilla 1 serving,recipe_measure:small , 1
+measures:tortilla 1 serving,recipe_measure:medium , 1
+measures:link, 4/lb,link, 5/lb,recipe_measure:glass , 1
+measures:tsp, whole,tbsp, whole,recipe_measure:pinch , 1
 measures:cup (1" pieces),flowerets,recipe_measure:head , 1
-measures:tbsp,cup,teaspoon,recipe_measure:corn and canola oil , 1
+measures:oz,package (7 oz),recipe_measure:slice , 2
+measures:cup slices,cup, mashed,recipe_measure:medium , 3
+measures:tsp, crumbled,tbsp, crumbled,recipe_measure:small , 1
+measures:strips,package (9 oz),recipe_measure:large , 1
+measures:cup (1" pieces),flowerets,recipe_measure:large , 1
+measures:cup slices,cucumber (8-1/4"),recipe_measure:medium , 1
+measures:super colossal,jumbo,recipe_measure:cup chopped , 1
+measures:tortilla 1 serving,recipe_measure:inch , 1
+measures:tsp, ground,tbsp, ground,recipe_measure:pinch , 1
+measures:container (5,3 oz),recipe_measure:pint , 1
 measures:cup,can (404 x 307),recipe_measure:large , 1
+measures:tbsp,cup,teaspoon,recipe_measure:corn and canola oil , 2
+measures:serving (3 oz),roast rump,recipe_measure:slice , 12
+measures:package (10 oz) yields,recipe_measure:can , 4
+measures:tsp, whole,tbsp, whole,recipe_measure:cumin seed , 2
+measures:tsp, ground,tbsp, ground,tsp, whole,dash,recipe_measure:pinch , 11
+measures:serving (1 hot dog),recipe_measure:meat , 3
+measures:fruit (2" dia),NLEA serving,recipe_measure:medium , 1
+measures:slice 1 serving,recipe_measure:to taste , 1
+measures:cup,oz,cup, poured from box,recipe_measure:package , 1
 measures:tbsp,serving 1/4 cup,cup,recipe_measure:maple syrup , 1
-measures:oz, boneless,cubic inch, boneless,recipe_measure:glass , 3
-measures:serving (1 hot dog),recipe_measure:slice , 1
-measures:pepper,cup, chopped or diced,recipe_measure:large , 1
-measures:pat (1" sq, 1/3" high),tbsp,cup,stick,recipe_measure:butter , 2
-measures:pat (1" sq, 1/3" high),tbsp,cup,stick,recipe_measure:slice , 1
+measures:tbsp (1 NLEA serving),recipe_measure:little , 1
+measures:tsp,tbsp,recipe_measure:tea spoon curry powder , 1
+measures:cup,can (404 x 307),recipe_measure:big , 1
+measures:tsp, leaves,tsp, ground,recipe_measure:to taste , 3
+measures:fruit (2" dia),NLEA serving,recipe_measure:whole , 1
+measures:tbsp,cup,recipe_measure:sour cream and salsa , 1
+measures:oz, boneless,cubic inch, boneless,recipe_measure:glass , 11
+measures:container (5,3 oz),recipe_measure:cup chopped , 2
+measures:cup, halves or slices,recipe_measure:whole , 1
+measures:cup pieces,fruit without refuse,recipe_measure:medium , 1
+measures:pepper,cup, chopped or diced,recipe_measure:large , 2
+measures:package (10 oz) yields,recipe_measure:glass , 1
+measures:tsp, ground,tbsp, ground,tsp, whole,dash,recipe_measure:glass , 1
+measures:cup,can (404 x 307),recipe_measure:medium , 3
+measures:cup, chopped,cup, sliced,pepper,recipe_measure:to taste , 1
+measures:serving (1 hot dog),recipe_measure:slice , 2
+measures:oz, boneless,cubic inch, boneless,recipe_measure:slice , 1
+measures:tsp, ground,tbsp, ground,tsp, whole,dash,recipe_measure:black pepper , 21
+measures:pat (1" sq, 1/3" high),tbsp,cup,stick,recipe_measure:butter , 9
+measures:fl oz,serving (5 fl oz),recipe_measure:small , 2
+measures:tsp, ground,tbsp, ground,tsp, whole,dash,recipe_measure:to taste , 8
+measures:tsp, leaves,tbsp, leaves,tsp, ground,tbsp, ground,recipe_measure:glass , 8
+measures:fl oz,serving (5 fl oz),recipe_measure:Cup , 2
 measures:pat (1" sq, 1/3" high),tbsp,cup,stick,recipe_measure:Cup , 1
-measures:tsp, ground,tbsp, ground,tsp, whole,dash,recipe_measure:to taste , 1
-measures:tsp, leaves,tbsp, leaves,tsp, ground,tbsp, ground,recipe_measure:glass , 1
-measures:oz,slice (5" x 3" x 1/2"),recipe_measure:whole , 1
-measures:fl oz,tbsp,cup,container, individual (,5 fl oz),recipe_measure:pint , 1
-measures:package (5,5 oz) yields,package yield, 5,5 oz,recipe_measure:medium , 3
-measures:package (5,5 oz) yields,package yield, 5,5 oz,recipe_measure:large , 2
-measures:pita, large (6-1/2" dia),pita, small  (4" dia),recipe_measure:slice , 4
+measures:pat (1" sq, 1/3" high),tbsp,cup,stick,recipe_measure:can , 1
+measures:cup unsifted,cup sifted,tbsp unsifted,tsp,recipe_measure:powdered sugar , 1
+measures:pat (1" sq, 1/3" high),tbsp,cup,stick,recipe_measure:jar , 1
+measures:tsp, leaves,tbsp, leaves,tsp, ground,tbsp, ground,recipe_measure:handful , 1
+measures:cup, crushed, sliced, or chunks,recipe_measure:can , 1
+measures:tsp, leaves,tbsp, leaves,tsp, ground,tbsp, ground,recipe_measure:inch , 1
+measures:cup shredded,leaf inner,leaf outer,head,NLEA serving,recipe_measure:leave , 1
+measures:tsp, leaves,tbsp, leaves,tsp, ground,tbsp, ground,recipe_measure:pinch , 1
+measures:tsp, leaves,tbsp, leaves,tsp, ground,tbsp, ground,recipe_measure:to taste , 5
+measures:pepper, large (3-3/4" long, 3" dia),strips,recipe_measure:glass , 2
+measures:tsp, leaves,tbsp, leaves,tsp, ground,tbsp, ground,recipe_measure:dried basil , 3
+measures:tsp unpacked,cup packed,cup unpacked,tsp packed,tsp brownulated,recipe_measure:pinch , 1
+measures:tsp unpacked,cup packed,cup unpacked,tsp packed,tsp brownulated,recipe_measure:box , 1
+measures:cup, diced,cup, shredded,oz,cubic inch,slice (1 oz),recipe_measure:package , 1
+measures:tbsp,cup,tbsp, whipped,oz,cubic inch,package, small (3 oz),recipe_measure:box , 1
+measures:cup, diced,cup, shredded,oz,cubic inch,slice (1 oz),recipe_measure:Cup , 1
+measures:oz,slice (5" x 3" x 1/2"),recipe_measure:can , 1
+measures:oz,individual loaf (include Keebler Elfin Loaves),slice,recipe_measure:small , 2
+measures:oz,individual loaf (include Keebler Elfin Loaves),slice,recipe_measure:glass , 1
+measures:cup, diced,cup, shredded,oz,cubic inch,slice (3/4 oz),recipe_measure:swiss cheese , 1
+measures:tsp unpacked,cup packed,cup unpacked,tsp packed,tsp brownulated,recipe_measure:brown sugar , 1
+measures:oz,steak (yield from 518 g raw meat),recipe_measure:package , 1
+measures:cup, diced,cup, shredded,oz,cubic inch,slice (1 oz),recipe_measure:mozzarella cheese , 1
+measures:cup, diced,oz,cubic inch,slice (1 oz),package (6 oz),recipe_measure:piece , 1
+measures:cup, diced,cup, melted,cup, shredded,oz,cubic inch,slice (1 oz),recipe_measure:package , 1
+measures:cup in shell, edible yield,cup, shelled,oz shelled,nuts,recipe_measure:peanut , 1
+measures:fl oz,can or bottle (12 fl oz),recipe_measure:glass , 1
+measures:pita, large (6-1/2" dia),pita, small  (4" dia),recipe_measure:slice , 23
+measures:cup, diced,cup, melted,cup, shredded,oz,cubic inch,slice (1 oz),recipe_measure:cheddar cheese , 2
+measures:round piece,patty,serving 14 round pieces,serving 29 round pieces,recipe_measure:large , 13
+measures:round piece,patty,serving 14 round pieces,serving 29 round pieces,recipe_measure:small , 2
+measures:round piece,patty,serving 14 round pieces,serving 29 round pieces,recipe_measure:medium , 12
+measures:cup, whipped,cup, fluid (yields 2 cups whipped),tbsp,fl oz,recipe_measure:Cup , 1
+measures:cup, diced,cup, shredded,oz,cubic inch,slice (1 oz),package (6 oz),recipe_measure:bag , 1
+measures:pita, large (6-1/2" dia),pita, small  (4" dia),recipe_measure:loaf , 1
 measures:pita, large (6-1/2" dia),pita, small  (4" dia),recipe_measure:whole , 1
-measures:oz,piece (1/8 of 9" dia),piece (1/6 of 8" pie),recipe_measure:glass , 1
-measures:oz,piece (1/8 of 9" dia),piece (1/6 of 8" pie),recipe_measure:can , 1
-measures:cup, cubes,cup, pureed,cup, sliced,avocado, NS as to Florida or California,recipe_measure:small , 1
-measures:cup spaghetti not packed,cup packed,cup elbows not packed,cup elbows packed,cup penne,cup farfalle,cup rotini,cup shells,cup lasagne,recipe_measure:pasta , 1
-measures:cup spaghetti not packed,cup packed,cup elbows not packed,cup elbows packed,cup penne,cup farfalle,cup rotini,cup shells,cup lasagne,recipe_measure:box , 1
+measures:cup, whipped,cup, fluid (yields 2 cups whipped),tbsp,fl oz,recipe_measure:pint , 1
+measures:pita, large (6-1/2" dia),pita, small  (4" dia),recipe_measure:inch , 2
+measures:cup, diced,cup, shredded,oz,cubic inch,slice (1 oz),package (6 oz),recipe_measure:monterey cheese , 2
+measures:cup, diced,cup, melted,cup, shredded,oz,cubic inch,slice (1 oz),recipe_measure:sharp cheddar cheese , 1
+measures:oz,slice, regular,slice, snack-size,slice, thin,slice (5" x 4" x 3/8"),recipe_measure:large , 1
+measures:round piece,patty,serving 14 round pieces,serving 29 round pieces,recipe_measure:medium size , 1
+measures:cup, cubes,cup, pureed,cup, sliced,avocado, NS as to Florida or California,recipe_measure:medium , 1
+measures:cup, cubes,cup, pureed,cup, sliced,avocado, NS as to Florida or California,recipe_measure:small , 2
+measures:cup, cubes,cup, pureed,cup, sliced,avocado, NS as to Florida or California,recipe_measure:large , 3
+measures:fruit 2-1/4" high x 2-1/2" dia,fruit 3-3/8" high x 3" diameter,recipe_measure:large , 2
+measures:oz,chop, excluding refuse (yield from 1 raw chop, with refuse, weighing 113 g),recipe_measure:slice , 1
+measures:cup, sections,fruit (2-1/8" dia),fruit (2-3/8" dia),wedge or slice (1/8 of one 2-1/8" dia lemon),NLEA serving,recipe_measure:large , 1
+measures:cup spaghetti not packed,cup packed,cup elbows not packed,cup elbows packed,cup penne,cup farfalle,cup rotini,cup shells,cup lasagne,recipe_measure:package , 1
+measures:cup spaghetti not packed,cup packed,cup elbows not packed,cup elbows packed,cup penne,cup farfalle,cup rotini,cup shells,cup lasagne,recipe_measure:box , 2
+measures:cup spaghetti not packed,cup packed,cup elbows not packed,cup elbows packed,cup penne,cup farfalle,cup rotini,cup shells,cup lasagne,recipe_measure:pasta , 3
 measures:cup spaghetti not packed,cup packed,cup elbows not packed,cup elbows packed,cup penne,cup farfalle,cup rotini,cup shells,cup lasagne,recipe_measure:jar , 1

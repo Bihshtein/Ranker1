@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-
+using System;
 namespace InitProducts {
     internal class OilsAndFatsValidator : BasicValidator {
         public OilsAndFatsValidator() {
@@ -18,10 +18,11 @@ namespace InitProducts {
             };
         }
 
-        public override string GetPrettyName(string part) {
-            if (part.ToLower().Contains("PAM cooking spray"))
-                return "cooking spray";
-            return part;
+
+        public override Tuple<string, string> GetNameAndDescription(string item) {
+            if (item.Contains("cooking spray"))
+                item = "cooking spray";
+            return base.GetNameAndDescription(item);
         }
 
         public override bool IsSecondPart(string part) {
