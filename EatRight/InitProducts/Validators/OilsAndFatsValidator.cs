@@ -8,7 +8,7 @@ namespace InitProducts {
             };
             SecondParts = new List<string> {
                 "corn","corn and canola","made with tofu", "vegetable","olive","mayonnaise" ,"regular",
-                "fractionated palm","lard and vegetable oil","sesame","coconut","PAM cooking spray"
+                "fractionated palm","lard and vegetable oil","sesame","coconut","PAM cooking spray","peanut"
             };
             ThirdParts = new List<string> {
                 "composite", "stick","tub", "salad or cooking","Natreon canola",

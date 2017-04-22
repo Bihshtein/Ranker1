@@ -19,7 +19,7 @@ namespace InitProducts {
 
             SecondParts = new List<string> {
                 "Atlantic","Alaska","northern","florida","Pacific","sockeye","pink","squid",
-                "coho","chum","american","rainbow","Atlantic and Pacific",
+                "coho","chum","american","rainbow","Atlantic and Pacific","crab",
                 "freshwater","fresh water","channel","bluefin","skipjack","yellowfin","light",
                 "white","european","chinook","orange","pumpkin seed","granular","commercial",
                 "greenland","Greenland","jack","king","Pacific and jack","spanish","walleye",
@@ -27,7 +27,7 @@ namespace InitProducts {
 
             };
             ThirdParts = new List<string> {
-                "farmed","wild","eastern","mixed species"
+                "farmed","wild","eastern","mixed species","alaska king"
             };
         }
     }

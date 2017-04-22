@@ -28,6 +28,7 @@ namespace InitRecipes {
             var unit = new RestDBInterface();
             unit.Recipes.Empty();
             Sources.RecipesURNs.ToList().ForEach(s => AddRecipesBySource(s.Key, unit, offline));
+            AddProducts.DumpDebug();
         }
 
         public static void AddRecipesBySource(RecipesSource source, RestDBInterface unit, bool offline) {
@@ -165,7 +166,7 @@ namespace InitRecipes {
                 return;
             }
             try {
-                unit.Recipes.Add(new Recipe() {
+                var recipe = new Recipe{ 
                     ID = serial++,
                     OriginalID = index,
                     Urn = Sources.RecipesURNs[source].Url.Split(new string[1] { "//" }, StringSplitOptions.None)[1],
@@ -176,7 +177,9 @@ namespace InitRecipes {
                     StepsNum = Sources.RecipesURNs[source].Parser.Parser.GetStepsNum(page),
                     PrepTime = Sources.RecipesURNs[source].Parser.Parser.GetPrepTime(page),
                     ImageUrl = Sources.RecipesURNs[source].Parser.Parser.GetImageUrl(page)
-                });
+                };
+
+                AddProducts.AddWeightsAndCalories(recipe);
             }
             catch (Exception ex) {
              //   log.Error("Couldn'r properly parse recipe : " + ex.Message);

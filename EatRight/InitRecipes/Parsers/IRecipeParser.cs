@@ -28,7 +28,7 @@ namespace InitRecipes {
             var ingredients = new List<IngredientInfo>();
             var ingredientParts = page.Split(Parser.IngredientSplitter, StringSplitOptions.None);
             for (int i = 1; i < ingredientParts.Length; i++) {
-                var res = Parser.ParseWeightAndName(ingredientParts[i]);
+                var res = Parser.ParseWeightAndName(ingredientParts[i].ToLower());
                 if (res != null )
                     ingredients.Add(res);
             }

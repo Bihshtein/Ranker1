@@ -155,8 +155,9 @@ namespace Logic {
             { new List<string> {"lettuce"},new Tuple<List<string>,string>(new List<string> { "iceberg", "romain",}, "lettuce")},
         };
         public static Dictionary<List<string>, string> WordsMap = new Dictionary<List<string>, string>() {
+             { new List<string> {"pillsbury","refrigerated" ,"dough"},  "pillsbury refrigerated dough"},
                { new List<string> {"pancake","mix" }, "pancakes dry mix"},
-
+               { new List<string> {"dijon","mustard" }, "yellow mustard"},
                { new List<string> {"prosciutto"}, "cured ham"},
                { new List<string> {"bacon"}, "bacon"},
                 { new List<string> {"pancetta"}, "bacon"},
@@ -193,25 +194,29 @@ namespace Logic {
                { new List<string> { "mint"}, "peppermint"},
                { new List<string> { "prawn"}, "shrimp"},
                { new List<string> { "oats"}, "oats"},
+               { new List<string> { "mozzarella"}, "mozzarella cheese"},
                { new List<string> { "shrimp"}, "shrimp"},
                { new List<string> { "chicken", "thighs",  }, "chicken thighs"},
                { new List<string> { "pepperjack", "cheese",  }, "monterey cheese"},
                { new List<string> { "havarti", "cheese",  }, "monterey cheese"},
                { new List<string> { "monterey", "cheese",  }, "monterey cheese"},
                { new List<string> { "velveeta"}, "cheddar cheese"},
-               { new List<string> {"black pepper" },"black pepper"}
+               { new List<string> {"black pepper" },"black pepper"},
+                { new List<string> { "heavy","cream" }, "cream heavy whipping"},
+               { new List<string> { "whipping", "cream" },"cream heavy whipping"}
+
 
 
         };
         public static Dictionary<string, string> ChangePartialPhrases = new Dictionary<string, string>() {
             { "tater tots", "fried potatoes"},
+            { "hard-cooked", "hard-boiled"},
             { "fresh lemon juice", "raw lemon juice"},
             { "oatmeal", "oats"},
             { "cashews", "cashew nuts"},
             { "deli ham", "sliced ham"},
             { "kilishi","beef jerky" },
             { "light soy sauce", "soy sauce"},
-            { "mozzarella string cheese", "mozzarella cheese" },
             { "button mushroom", "white mushroom"},
             { "sliced mushrooms", "white mushroom"},
             { "prawn", "shrimp"},
@@ -220,9 +225,9 @@ namespace Logic {
             { "beef hotdogs", "frankfurter"},
             { "spicy chorizo","chorizo"},
             { "pot roast", "arm pot roast"},
-            { "chihuahua cheese", "queso chihuahua cheese"},         
+            { "chihuahua cheese", "queso chihuahua cheese"},
             { "pork roast", "pork loin roast"},
-            { "extra virgin olive oil","olive oil"},        
+            { "extra virgin olive oil","olive oil"},
             { "hard eggs","boiled eggs"},
             { "hard boiled eggs","boiled eggs"},
             { "pork butt","pork shoulder blade"},
@@ -240,7 +245,6 @@ namespace Logic {
             { "boneless, skinless chicken","chicken"},
             { "boneless skinless chicken","chicken"},
             { "boneless chicken","chicken"},
-            { "fresh mozzarella, cut into small cubes", "mozzarella" },
             { "greek-style", "greek" },
             { "cooking oil", "salad or cooking oil" },
             { "package elbow macaroni", "macaroni"},
@@ -257,8 +261,7 @@ namespace Logic {
             { "white sugar","granulated sugar"},
             { "whole wheat flour","whole-grain wheat flour"},
             { "dry milk powder","dry milk"},
-            { "heavy cream","cream heavy whipping"},
-            
+            { "rice vinegar","cider vinegar"},
             { "marsala wine","sweet wine"},
             { "port wine","sweet wine"},
             { "white vinegar","distilled vinegar"},
@@ -269,7 +272,6 @@ namespace Logic {
             { "yellow squash", "summer squash"},
             { "whole chicken", "chicken" },
             { "links pork sausage links", "frankfurter pork sausage"},
-            { "packages refrigerated crescent roll dough (such as pillsbury&#174;", "pillsbury refrigerated dough"},
             { "salmon fillets", "salmon"},
             { "pepper (any color)", "peppers" },
             { "pumpkin puree", "pumpkin" },
@@ -290,8 +292,11 @@ namespace Logic {
             { "whole wheat pastry flour", "wheat flour" },
             { "barbeque", "barbecue" },
             { "toast", "toasted bread"},
+            { "sandwich bread", "white bread"},
+            { "garbanzo beans", "chickpeas"},
             { "smoked ham", "cured ham"},
-       
+            { "sliced almonds", "almonds"},
+            { "crabmeat","crab"},
             { "breakfast muffins", "wheat bran muffins"}
         };
         public static List<string> ActionInfo = new List<string> {

@@ -26,8 +26,7 @@ namespace InitRecipes {
           if (args.Contains("OFFLINE"))
             ParseRecipes.CreateDB(true); 
           else
-            ParseRecipes.CreateDB(false);
-        AddProducts.Add();
+            ParseRecipes.CreateDB(false);     
             Console.WriteLine(new TimeSpan(DateTime.Now.Ticks - start.Ticks).ToString());
         }
        
