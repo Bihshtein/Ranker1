@@ -14,6 +14,7 @@ namespace InitProducts {
       
         public static Dictionary<string, string> FoodGroups = new Dictionary<string, string>() {
             {"Baked","1800"},
+            {"Fast foods","2100"},
             {"Beverages", "1400"},
             {"Sweets","1900"},
             {"Legumes","1600"},
@@ -33,6 +34,7 @@ namespace InitProducts {
             { "Snacks", "2500"}
         };
         public static Dictionary<string, BasicValidator> Validators = new Dictionary<string, BasicValidator>() {
+            { "Fast foods", new FastFoodsValidator()},
             { "Sweets", new SweetsValidator()},
             { "Nuts", new NutsValidator()},
             { "Pork", new PorkValidator()},

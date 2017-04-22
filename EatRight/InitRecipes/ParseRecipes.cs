@@ -169,12 +169,13 @@ namespace InitRecipes {
                     ID = serial++,
                     OriginalID = index,
                     Urn = Sources.RecipesURNs[source].Url.Split(new string[1] { "//" }, StringSplitOptions.None)[1],
-                    Name = Sources.RecipesURNs[source].Parser.GetRecipeName(page),
+                    Name = Sources.RecipesURNs[source].Parser.Parser.GetRecipeName(page),
                     Ingredients = Sources.RecipesURNs[source].Parser.GetIngredients(page),
                     Types = new HashSet<MealType>() { mealType },
-                    Servings = Sources.RecipesURNs[source].Parser.GetServings(page),
-                    PrepTime = Sources.RecipesURNs[source].Parser.GetPrepTime(page),
-                    ImageUrl = Sources.RecipesURNs[source].Parser.GetImageUrl(page)
+                    Servings = Sources.RecipesURNs[source].Parser.Parser.GetServings(page),
+                    StepsNum = Sources.RecipesURNs[source].Parser.Parser.GetStepsNum(page),
+                    PrepTime = Sources.RecipesURNs[source].Parser.Parser.GetPrepTime(page),
+                    ImageUrl = Sources.RecipesURNs[source].Parser.Parser.GetImageUrl(page)
                 });
             }
             catch (Exception ex) {

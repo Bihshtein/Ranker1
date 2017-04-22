@@ -214,6 +214,8 @@ namespace RestModel {
 
         public List<Product> TryMatchWholeProduct(string part1, string part2, string part3) {
             Expression<Func<Product, bool>> query = x =>
+               (x.StorageMethod.Equals(part1) && x.Name2.Equals(part2 + " " + ParseHelpers.GetWithoutLast_S_letter(part3))) ||
+               (x.PreparationMethod.Equals(part1) && x.Name1.Equals(part2 + " " + part3)) ||
             (x.Name3.Equals(part1 + " " + part2) && x.Name2.Equals(part3)) ||
             (x.Name3.Equals(part1 + " " + part2) && x.Name1.Equals(part3)) ||
             (x.Name2.Equals(part2 + " or " + part1) && x.Name1.Equals(part3)) ||
@@ -245,6 +247,7 @@ namespace RestModel {
 
         public List<Product> TryMatchWholeProduct(string part1, string part2, string part3, string part4) {
             Expression<Func<Product, bool>> query = x =>
+            (x.StorageMethod.Equals(part1) && x.Name2.Equals(part2 + " " +part3) && x.Name1.Equals(part4)) ||
             (x.PeelDetails.Equals(part1 + " " + part2) && x.FoodGroup.Equals(part3) && x.Name2.Equals(part4)) ||
             (x.BoneDetails.Equals(part1) && x.FoodGroup.Equals(part2) && x.Name1.Equals(part3) && x.Name3.Equals(part4)) ||
             (x.Name3.Equals(part1 + " " + part2 + " " + part3) && x.Name1.Equals(part4)) ||
@@ -283,6 +286,7 @@ namespace RestModel {
             (x.Name2.Equals(part1) && x.Name1.Equals(ParseHelpers.GetWithoutLast_S_letter(part2))) ||
             (x.Name2.Equals(part1) && x.Name1.Equals(part2 +"es")) ||
             (x.Name3.Equals(part1) && x.Name1.Equals(part2 + "s")) ||
+            (x.Name3.Equals(part1) && x.Name1.Equals(ParseHelpers.GetWithoutLast_S_letter(part2))) ||
             (x.Name3.Equals(part1) && x.Name1.Equals(part2 + "es")) ||
             (x.Name2.Equals(part2) && x.Name1.Equals(part1)) ||
             (x.PreparationMethod.Equals(part1) && x.Name2.Equals(part2)) ||
