@@ -165,7 +165,7 @@ namespace InitRecipes {
                 log.Error("Failed to load recipe number : " + index);
                 return;
             }
-            try {
+           
                 var recipe = new Recipe{ 
                     ID = serial++,
                     OriginalID = index,
@@ -173,17 +173,14 @@ namespace InitRecipes {
                     Name = Sources.RecipesURNs[source].Parser.Parser.GetRecipeName(page),
                     Ingredients = Sources.RecipesURNs[source].Parser.GetIngredients(page),
                     Types = new HashSet<MealType>() { mealType },
-                    Servings = Sources.RecipesURNs[source].Parser.Parser.GetServings(page),
+                    Servings = Sources.RecipesURNs[source].Parser.GetServings(page),
                     StepsNum = Sources.RecipesURNs[source].Parser.Parser.GetStepsNum(page),
                     PrepTime = Sources.RecipesURNs[source].Parser.Parser.GetPrepTime(page),
-                    ImageUrl = Sources.RecipesURNs[source].Parser.Parser.GetImageUrl(page)
+                    ImageUrl = Sources.RecipesURNs[source].Parser.GetImageUrl(page)
                 };
 
                 AddProducts.AddWeightsAndCalories(recipe);
-            }
-            catch (Exception ex) {
-             //   log.Error("Couldn'r properly parse recipe : " + ex.Message);
-            }
+         
 
             lock (Locker) {
                 Indexes.Remove(index);
