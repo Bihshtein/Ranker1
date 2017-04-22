@@ -22,7 +22,7 @@ namespace InitRecipes {
 
         static void Main(string[] args) {
             var start = DateTime.Now;
-            
+           Sources.Limit = int.Parse(args[0]);
           if (args.Contains("OFFLINE"))
             ParseRecipes.CreateDB(true); 
           else
