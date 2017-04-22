@@ -27,7 +27,14 @@ namespace RestModel  {
         Indian,
         Chinese
     }
-    
+
+    public class IngredientInfo {
+        public string Name { get; set; }
+        public string ReltiveSizeMeasure { get; set; }
+        public double Quantity { get; set; }
+    }
+
+
     public class Recipe : IQueryable
     {
         public override int GetHashCode() {
@@ -48,7 +55,7 @@ namespace RestModel  {
         [BsonElement("ImageUrl")]
         public string ImageUrl { get; set; }
         public Dictionary<string, double> ProductsWeight;
-        public List<Tuple<string, double,string>> Ingredients;
+        public List<IngredientInfo> Ingredients;
         public TimeSpan PrepTime { get; set; } // In minutes
         public Dictionary<string, double> TotalNutValues { get; set; }
         public double TotalCaloriesNum { get; set; }

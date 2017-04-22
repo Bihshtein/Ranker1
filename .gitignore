@@ -349,6 +349,7 @@ DocProject/Help/*.hhp
 DocProject/Help/Html2
 DocProject/Help/html
 EatRight/LocalDB/MissingIndex.csv
+EatRight/LocalDB/MissingWeights.csv
 EatRight/LocalDB/MissingWeights.txt
 # Click-Once directory
 publish/

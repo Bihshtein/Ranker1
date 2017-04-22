@@ -78,7 +78,7 @@ namespace InitRecipes {
 
             foreach (var item in recipe.Ingredients)
             {
-                ParseItem(recipe, item.Item1.ToLower().Trim(),item.Item3,item.Item2);
+                ParseItem(recipe, item.Name,item.ReltiveSizeMeasure,item.Quantity);
             }
             try
             {
