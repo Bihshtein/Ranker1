@@ -18,7 +18,7 @@ namespace WebServer.Controllers
         }
 
         public HttpResponseMessage Get(string id) {
-            List<List<Recipe>> productsList = new List<List<Recipe>>() { new RestDBInterface().Recipes.Queries.GetByIngredient(id) };
+            List<Recipe> productsList = new List<Recipe>() { new RestDBInterface().Recipes.Get(int.Parse(id)) };
 
 
             return Request.CreateResponse(HttpStatusCode.OK, productsList);

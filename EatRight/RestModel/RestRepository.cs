@@ -104,7 +104,7 @@ namespace RestModel {
 
         public List<T> GetRecipeById(int id)
         {
-            Expression<Func<Recipe, bool>> query = x => x.OriginalID == id;
+            Expression<Func<Recipe, bool>> query = x => x.ID == id;
             return _collection.Find(query as Expression<Func<T, bool>>).ToList();
         }
 

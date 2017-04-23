@@ -21,7 +21,7 @@ namespace InitUsers {
                 ActivityLevel = PhysicalActivityLevel.VeriActive,
                 Height = 170,
                 Weight = 64,
-                Priorities = new List<UserPriorities>() {UserPriorities.Simplicity, UserPriorities.Nutrition }
+                Priorities = new List<UserPriorities>() { UserPriorities.Nutrition , UserPriorities.Simplicity }
             };
             unit.Users.Add(user);
 

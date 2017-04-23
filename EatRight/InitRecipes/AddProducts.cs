@@ -51,8 +51,13 @@ namespace InitRecipes {
                 ParseItem(recipe, item.Name, item.ReltiveSizeMeasure, item.Quantity);
             }
             if (recipe.ProductsWeight != null && recipe.Ingredients != null && recipe.ProductsWeight.Count == recipe.Ingredients.Count) {
-                unit.Recipes.Add(recipe);
-                ++totalAdded;
+                try {
+                    unit.Recipes.Add(recipe);
+                    ++totalAdded;
+                }
+                catch (Exception ex) {
+                    log.Error(ex);
+                }
             }
               
         }
@@ -61,12 +66,14 @@ namespace InitRecipes {
             string relativeMeasure, double weight)
         {
             var product = res[0];
-            if (relativeMeasure != string.Empty)
-            {
+            if (relativeMeasure != string.Empty) {
                 if (relativeMeasure.Contains(innerpart))
                     relativeMeasure = innerpart;
-                weight = TryParseRelativeWeight(relativeMeasure, weight, product, innerpart);
             }
+            else if (weight == 1) {
+                relativeMeasure = innerpart;
+            }
+            weight = TryParseRelativeWeight(relativeMeasure, weight, product, innerpart);
 
             AddItem(product, recipe, weight, innerpart);
         }
@@ -101,8 +108,7 @@ namespace InitRecipes {
                     }
                 }
                 ++totalMissing;
-            }
-         
+            }         
         }
 
         public static double TryParseRelativeWeight(string measure, double weight, Product prd, string fullName) {
