@@ -34,7 +34,7 @@ namespace InitRecipes {
             Console.WriteLine("total ingredients missed : " + totalMissing);
             Console.WriteLine("total weights not found: " + totalWeightsNotFound);
             var sorted = MissingCount.OrderBy(i => i.Key.Split(' ').Length).ToList();
-            sorted.RemoveAll(i => i.Value < 10);
+            sorted.RemoveAll(i => i.Value < 3);
             File.WriteAllLines(FolderPath + "MissingIndex.csv", sorted.ConvertAll<string>(i => i.Key + " , " + i.Value));
 
 
@@ -43,6 +43,7 @@ namespace InitRecipes {
         }
 
 
+        public static int CurrId = 0;
 
         public static void AddWeightsAndCalories(Recipe recipe) {
             recipe.TotalNutValues = new Dictionary<string, double>();
@@ -51,12 +52,17 @@ namespace InitRecipes {
                 ParseItem(recipe, item.Name, item.ReltiveSizeMeasure, item.Quantity);
             }
             if (recipe.ProductsWeight != null && recipe.Ingredients != null && recipe.ProductsWeight.Count == recipe.Ingredients.Count) {
-                try {
-                    unit.Recipes.Add(recipe);
-                    ++totalAdded;
-                }
-                catch (Exception ex) {
-                    log.Error(ex);
+                lock (Locker) {
+                    try {
+                        recipe.ID = CurrId++;
+                        unit.Recipes.Add(recipe);
+                        ++totalAdded;
+                    }
+                    catch (Exception ex) {
+                        log.Error(ex);
+                        CurrId--;
+                        totalAdded--;
+                    }
                 }
             }
               

@@ -6,7 +6,6 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace InitRecipes {
-    public enum RecipesSource { AllRecipes=1, Cookpad=2, Food=3 }
     
     class MealData {
         public MealType Meal { get; set; }
@@ -20,7 +19,7 @@ namespace InitRecipes {
         public GeneralRecipeParser Parser { get; set; }
 }
     class Sources {
-        public static int Limit=40000;
+        public static int Limit=100;
         public static Dictionary<RecipesSource, SourceData> RecipesURNs = new Dictionary<RecipesSource, SourceData>() {
             {RecipesSource.Cookpad,  new SourceData {
                 Url = "https://cookpad.com/us/recipes/",

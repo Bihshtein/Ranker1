@@ -156,6 +156,7 @@ namespace LogicRunner
             else {
                 var list = meals.Select(o => new MyViewModel(o) {
                     Id = o.Recipe.ID,
+                    OriginalID = o.Recipe.OriginalID,
                     Name = o.Recipe.Name,
                     NutValues = parseNutValues(o.NutValues),
                     GradersResult = parseGradersResult(o.GradeInfo.GradersInfo)

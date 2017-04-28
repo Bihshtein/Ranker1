@@ -25,6 +25,7 @@ namespace LogicRunner
             
         }
         public int Id { get; set; }
+        public int OriginalID { get; set; }
         public string NutValues { get; set; }
         public string GradersResult { get; set; }
         public string Products {

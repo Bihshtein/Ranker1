@@ -20,28 +20,37 @@ namespace InitRecipes {
         public static ILog log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
         public static string FolderPath = Assembly.GetExecutingAssembly().Location + @"\..\..\..\..\LocalDB\";
         public static object Locker = new object();
-        public static HashSet<int> Indexes;
+        public static List<int> Indexes;
 
 
         public static void CreateDB(bool offline) {
-            Indexes = new HashSet<int>();
+            Indexes = new List<int>();
             var unit = new RestDBInterface();
-            unit.Recipes.Empty();
-            Sources.RecipesURNs.ToList().ForEach(s => AddRecipesBySource(s.Key, unit, offline));
+            var loaded = unit.Recipes.GetAllList();
+            var ids = loaded.Select(r => r.ID).ToList();
+            ids.Sort();
+            if (ids.Count > 0)
+                AddProducts.CurrId = ids[ids.Count - 1];
+            AddProducts.CurrId++;
+            log.Debug("Num of recipes before : " + ids.Count);
+            Sources.RecipesURNs.ToList().ForEach(s => AddRecipesBySource(s.Key, unit, offline, loaded.FindAll(r => r.Source == s.Key)));
             AddProducts.DumpDebug();
         }
 
-        public static void AddRecipesBySource(RecipesSource source, RestDBInterface unit, bool offline) {
-            Sources.RecipesURNs[source].Meals.ToList().ForEach(m => AddRecipesByMealType(source, m, unit, offline));
+        public static void AddRecipesBySource(RecipesSource source, RestDBInterface unit, bool offline, List<Recipe> loadedRecipes) {
+            Sources.RecipesURNs[source].Meals.ToList().ForEach(m => AddRecipesByMealType(source, m, unit, offline,loadedRecipes.FindAll(r => r.Types.Contains(m.Meal))));
         }
 
-        public static void AddRecipesByMealType(RecipesSource source, MealData mealData, RestDBInterface unit, bool offline, int loadBulkSize = 1000) {
+        public static void AddRecipesByMealType(RecipesSource source, MealData mealData, RestDBInterface unit, bool offline, List<Recipe> loadedRecipes, int loadBulkSize = 1000) {
+            var loadedIds = loadedRecipes.Select(r => r.OriginalID).ToList();
             if (source == RecipesSource.AllRecipes && !offline)
                 loadBulkSize = 10;
             var recipesLimit = mealData.MealsLimit;
             if (offline) {
-                var files = Directory.GetFiles(Path.Combine(FolderPath, source.ToString(), mealData.Meal.ToString())).Take(recipesLimit).ToList();
+                var files = Directory.GetFiles(Path.Combine(FolderPath, source.ToString(), mealData.Meal.ToString())).ToList();
                 files.ForEach(f =>Indexes.Add(int.Parse(Path.GetFileNameWithoutExtension(f))));
+                Indexes.RemoveAll(i => loadedIds.Contains(i));
+                Indexes = Indexes.Take(recipesLimit).ToList();
             }
             else
                 AddRecipesByURL(source, mealData, unit, recipesLimit);
@@ -137,7 +146,6 @@ namespace InitRecipes {
             }
             );
         }
-        static int serial = 0;
         public static void ParseRecipe(int index, string urn, MealType mealType, RecipesSource source) {
             var customCulture = (CultureInfo)Thread.CurrentThread.CurrentCulture.Clone(); customCulture.NumberFormat.NumberDecimalSeparator = ".";
             Thread.CurrentThread.CurrentCulture = customCulture;
@@ -167,8 +175,8 @@ namespace InitRecipes {
             }
            
                 var recipe = new Recipe{ 
-                    ID = serial++,
                     OriginalID = index,
+                    Source = source,
                     Urn = Sources.RecipesURNs[source].Url.Split(new string[1] { "//" }, StringSplitOptions.None)[1],
                     Name = Sources.RecipesURNs[source].Parser.Parser.GetRecipeName(page),
                     Ingredients = Sources.RecipesURNs[source].Parser.GetIngredients(page),
