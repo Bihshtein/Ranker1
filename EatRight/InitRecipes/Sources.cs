@@ -19,7 +19,7 @@ namespace InitRecipes {
         public GeneralRecipeParser Parser { get; set; }
 }
     class Sources {
-        public static int Limit=100;
+        public static int Limit=10;
         public static Dictionary<RecipesSource, SourceData> RecipesURNs = new Dictionary<RecipesSource, SourceData>() {
             {RecipesSource.Cookpad,  new SourceData {
                 Url = "https://cookpad.com/us/recipes/",

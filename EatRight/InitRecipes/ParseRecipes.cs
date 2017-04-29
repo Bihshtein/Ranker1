@@ -55,7 +55,7 @@ namespace InitRecipes {
             else
                 AddRecipesByURL(source, mealData, unit, recipesLimit);
                 
-            while (Indexes.Count > 10) {
+            while (Indexes.Count > 9) {
                 log.Debug("Loading bulk, tasks left : " + Indexes.Count());
                 var loadMealsBulkSize = Indexes.Count > loadBulkSize ? loadBulkSize : Indexes.Count;
                 var tasks = new List<Task>();

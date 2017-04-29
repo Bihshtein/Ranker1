@@ -21,7 +21,7 @@ namespace InitProducts {
                 "dishcloth (towelgourd)", "garden", "mustard", "(globe or french)", "snap", "harvard","flower clusters","stalks",
                 "irishmoss",  "common","stalks","(fuki)", "red leaf","iceberg (includes crisphead types)",
                 "green leaf", "cos or romaine","butterhead (includes boston and bibb types)",
-                "potherb","ancho","(poke)", "hot chili","edible-podded", "common (danish, domestic, and pointed types)",
+                "potherb","ancho","(poke)","edible-podded", "common (danish, domestic, and pointed types)",
                 "(chinese preserving melon)",  "enoki", "maitake","morel","oyster","straw", "shiitake", "portabella","fruit",
                  "(matai)", "root",  "witloof","baby","garland",  "napa","savoy", "kimchi","chili",
                 "all-types", "chinese (pak-choi)","chinese (pe-tsai)","kidney", "fava","mung","navy","pinto","shellie","puree"
@@ -34,7 +34,7 @@ namespace InitProducts {
                 "wedge cut", "tops only","(bulb and lower-leaf portion)","cut off cob","excluding seeds",
                 "young pods with seeds", "kernels","kernels on cob", "bulb","kernels cut off cob",
                 "whole kernel", "in pod","immature seeds","shoots", "mature seeds","leaves",
-                "leafy tips", "pods", "young pods with seed","green"
+                "leafy tips", "pods", "young pods with seed","hot chili"
             };
         }
 

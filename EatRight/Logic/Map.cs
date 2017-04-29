@@ -157,9 +157,14 @@ namespace Logic {
         public static Dictionary<List<string>, string> WordsMap = new Dictionary<List<string>, string>() {
              { new List<string> {"pillsbury","refrigerated" ,"dough"},  "pillsbury refrigerated dough"},
                { new List<string> {"pancake","mix" }, "pancakes dry mix"},
-               { new List<string> {"dijon","mustard" }, "yellow mustard"},
+               { new List<string> {"almond","milk" }, "almond milk"},
+               { new List<string> {"green","chiles" }, "hot chili green peppers"},
+               { new List<string> {"green","chile" }, "hot chili green peppers"},
+               { new List<string> {"green","chilli" }, "hot chili green peppers"},
+               { new List<string> {"mustard" }, "prepared mustard"},// can be also dry mustard in the case the ration is 1tsp(dry)=1tbsp(prepared)
                { new List<string> {"prosciutto"}, "cured ham"},
                { new List<string> {"bacon"}, "bacon"},
+               { new List<string> {"sugar","substitute"}, "sugar substitute"},
                 { new List<string> {"pancetta"}, "bacon"},
                { new List<string> {"noodles"}, "noodles"},
                { new List<string> {"berries"}, "blue berries"},
@@ -171,7 +176,6 @@ namespace Logic {
                { new List<string> {"butter" }, "butter"},// very hardcore, should exclude peanut butter
                { new List<string> {"parsley" }, "parsley"},
                { new List<string> { "breakfast", "sausage" } ,"pork sausage" },
-               { new List<string> { "fresh", "dill" }, "fresh dill weed"},
                { new List<string> { "ground", "beef" }, "ground beef"},
                { new List<string> { "water",  }, "water"},
                { new List<string> { "ice", "cubes" }, "water"},
@@ -202,17 +206,24 @@ namespace Logic {
                { new List<string> { "monterey", "cheese",  }, "monterey cheese"},
                { new List<string> { "velveeta"}, "cheddar cheese"},
                { new List<string> {"black pepper" },"black pepper"},
+               { new List<string> {"peppercorns" },"black pepper"},
                 { new List<string> { "heavy","cream" }, "cream heavy whipping"},
-               { new List<string> { "whipping", "cream" },"cream heavy whipping"}
+               { new List<string> { "whipping", "cream" },"cream heavy whipping"},
+            { new List<string> { "cilantro"},"raw coriander"},
+            { new List<string> { "fresh", "coriander" },"raw coriander"},
+            { new List<string> { "coriander", "leaves" },"raw coriander"}
 
 
 
         };
         public static Dictionary<string, string> ChangePartialPhrases = new Dictionary<string, string>() {
             { "tater tots", "fried potatoes"},
+            { "baking potatoes", "baked potatoes"},
             { "hard-cooked", "hard-boiled"},
             { "fresh lemon juice", "raw lemon juice"},
             { "oatmeal", "oats"},
+            { "dark rum", "rum"},
+            { "jeera", "cumin seeds"},
             { "cashews", "cashew nuts"},
             { "deli ham", "sliced ham"},
             { "kilishi","beef jerky" },
@@ -239,8 +250,6 @@ namespace Logic {
             { "cocoa powder","cocoa dry powder" },
             { "smoked paprika","paprika" },
             { "vanilla essence", "vanilla extract"},
-            { "cilantro", "coriander" },
-            { "fresh coriander", "raw coriander" },
             { "skinless, boneless chicken","chicken"},
             { "boneless, skinless chicken","chicken"},
             { "boneless skinless chicken","chicken"},
@@ -284,9 +293,9 @@ namespace Logic {
             { "sugar powder","powdered sugars"  },
             { "confectioners' sugar", "granulated sugars" },
             { "french bread", "french or vienna bread" },
+            { "sourdough bread", "french or vienna bread" },
             { "parmigiano-reggiano cheese", "parmesan cheese" },
-            { "low-fat cottage cheese", "cottage 1% milkfat|cheese" },
-            { "green chile peppers", "green peppers" },
+            { "low-fat cottage cheese", "cottage 1% milkfat|cheese" },          
             { "canola oil", "corn and canola oil" },
             { "unsweetened applesauce", "applesauce" },
             { "whole wheat pastry flour", "wheat flour" },
@@ -301,7 +310,7 @@ namespace Logic {
         };
         public static List<string> ActionInfo = new List<string> {
             "thin sliced","peeled and diced","thick sliced", "sliced","slivered","melted","sifted", "ground", "shredded",
-            "cubed", "rolled","mashed","crushed","boiled","grated","julienne",
+            "cubed", "rolled","mashed","crushed","boiled","grated","julienne","julienne-sliced",
             "finely cooked","fine minced","finely chopped","medium dice", "small dice","finely diced","diced", "dried minced", "minced", "finely chopped", "chopped",
             "finely shredded","cooked","finely crushed","frozen","blended","chiffonade","to taste"
         };

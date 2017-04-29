@@ -5,14 +5,15 @@ namespace InitProducts {
     internal class BeveragesValidator : BasicValidator {
         public BeveragesValidator() {
             MainParts = new List<string>() {
-            "beer","coffee","liqueur", "wine","tea" ,"drink","whiskey","pina colada","cola"
+            "beer","coffee","liqueur", "wine","tea" ,"drink","whiskey","pina colada","cola","rum","vodka"
             };
 
             SecondParts = new List<string>() {
            "all", "dry","sweet","orange", "mocha","regular","black", "green","herb","hibiscus","red","white","brewed","instant","generic","rice (sake)"
             };
             ThirdParts = new List<string> {
-            "chocolate", "breakfast type","dessert","cooking",  "regular",  "cooking","light","dessert", "lemon", "ready to drink","ready-to-drink","table","breakfast blend","espresso","chicory"
+            "chocolate", "breakfast type","dessert","cooking",  "regular",  "cooking","light","dessert", "lemon", "ready to drink","ready-to-drink","table","breakfast blend","espresso","chicory",
+            "80 proof"
             };
         }
 

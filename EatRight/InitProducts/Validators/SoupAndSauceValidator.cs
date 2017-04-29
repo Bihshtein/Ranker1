@@ -22,6 +22,8 @@ namespace InitProducts {
                 item = "cream mushroom";
             else if (item.Contains("cream of chicken"))
                 item = "cream chicken";
+            else if (item.Contains("barbecue"))
+                item = "bbq";
             return base.GetNameAndDescription(item);
         }
     }

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace InitProducts {
     internal class SpicesAndHerbsValidator : BasicValidator {
@@ -21,15 +22,14 @@ namespace InitProducts {
             ThirdParts = new List<string> {
                 "original","coriander & annatto","black","red or cayenne","white"
             };
-
-        
         }
 
-        public override string GetPrettyName(string part) {
-            if (part.ToLower().Contains("dill weed"))
-                return "dill";
-            return part;
+        public override Tuple<string, string> GetNameAndDescription(string item) {
+            if (item.Contains("dill weed"))
+                item = "dill";
+            return base.GetNameAndDescription(item);
         }
+
 
 
     }

@@ -29,15 +29,15 @@ namespace InitRecipes {
 
 
         public static void DumpDebug() {
+            var missingRecipes = File.ReadAllLines(FolderPath + "InnerRecipes.txt");
             Console.WriteLine("total added recipes : " + totalAdded);
             Console.WriteLine("total ingredients : " + total);
             Console.WriteLine("total ingredients missed : " + totalMissing);
             Console.WriteLine("total weights not found: " + totalWeightsNotFound);
             var sorted = MissingCount.OrderBy(i => i.Key.Split(' ').Length).ToList();
-            sorted.RemoveAll(i => i.Value < 3);
+            sorted.RemoveAll(i => i.Value < 2);
+            sorted.RemoveAll(i => missingRecipes.Contains(i.Key));
             File.WriteAllLines(FolderPath + "MissingIndex.csv", sorted.ConvertAll<string>(i => i.Key + " , " + i.Value));
-
-
             sorted = MissingWeightsCount.OrderBy(i => i.Key.Split(' ').Length).ToList();
             File.WriteAllLines(FolderPath + "MissingWeights.csv", sorted.ConvertAll<string>(i => i.Key + " , " + i.Value));
         }

@@ -225,6 +225,7 @@ namespace RestModel {
             (x.Name1.Equals(part1) && x.HealthData.Equals(part2 + " " + part3)) ||
             (x.Name1.Equals(part3) && x.HealthData.Equals(part1 + " " + part2)) ||
             (x.Name2.Equals(part1 + " " + part2) && x.Name3.Equals(part3)) ||
+            (x.Name2.Equals(part1 + " " + part2) && x.Name1.Equals(part3 + "s")) ||
             (x.HealthData.Equals(part1) && x.Name1.Equals(part2) && x.StorageMethod.Equals("dry " +part3)) ||
             (x.HealthData.Equals(part1.Replace('-',' ')) && x.Name2.Equals(part2+ " " + part3))|| // low-sodium chicken broth
             (x.PreparationMethod.Equals(part1) && x.Name2.Equals(part2) && x.Name1.Equals(part3)) ||
@@ -259,6 +260,7 @@ namespace RestModel {
             (x.Name2.Equals(part1 + " " + part2 + " " + part3) && x.Name1.Equals(part4)) ||
             (x.BoneDetails.Equals(part1) && x.FoodGroup.Equals(part2) && x.Name1.Equals(part3) && x.Name3.Equals(part4)) ||
             (x.Name1.Equals(part2 + " " + part3) && x.Name3.Equals(part1 + " "  + part4)) ||
+            (x.Name3.Equals(part1 + " " + part2) && x.Name2.Equals(part3) && x.Name1.Equals(part4)) ||
             (x.PeelDetails.Equals(part1 + " " + part2) && x.FoodGroup.Equals(part3) && x.Name2.Equals(ParseHelpers.GetWithoutLast_S_letter(part4))) ||
             (x.Name2.Equals(part3 + " " + part4)) ||
             (x.Name1.Equals(part2) && x.Name2.Equals(part1)) ||
