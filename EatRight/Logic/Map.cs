@@ -206,6 +206,7 @@ namespace Logic {
                { new List<string> { "mint"}, "peppermint"},
                { new List<string> { "prawn"}, "shrimp"},
                { new List<string> { "oats"}, "oats"},
+               { new List<string> { "aburaage"}, "fried tofu"},
                { new List<string> { "seaweed"}, "seaweed"},
                { new List<string> { "mozzarella"}, "mozzarella cheese"},
                { new List<string> { "mozarella"}, "mozzarella cheese"},
@@ -227,11 +228,17 @@ namespace Logic {
             { new List<string> { "corn", "muffin", "mix" },"corn muffins dry mix"},
             { new List<string> { "savoy", "cabbage"},"savoy cabbage"},
             { new List<string> { "beef", "sirloin"},"top sirloin"},
-                  { new List<string> { "powdered", "milk"},"dry milk"},
-            { new List<string> { "granola", "cereal"},"granola bars"}
-
-
-
+            { new List<string> { "powdered", "milk"},"dry milk"},
+            { new List<string> { "powder", "milk"},"dry milk"},
+            { new List<string> { "granola"},"granola bars"},
+            { new List<string> { "low-fat", "milk"},"lowfat milk"},
+            { new List<string> { "1%", "milk"},"lowfat milk"},
+            { new List<string> { "2%", "milk"},"lowfat milk"},
+            { new List<string> { "confectioners%27", "sugar"},"powdered sugars"},
+            { new List<string> { "caster", "sugar"},"powdered sugars"},
+            { new List<string> { "dried", "sage"},"ground sage"},
+            { new List<string> { "sriracha"},"hot chile sriracha"},
+            { new List<string> { "cooking","spray"},"cooking spray"},
 
         };
         public static Dictionary<string, string> ChangePartialPhrases = new Dictionary<string, string>() {
@@ -301,6 +308,7 @@ namespace Logic {
             { "port wine","sweet wine"},
             { "white vinegar","distilled vinegar"},
             { "ketchup","catsup"},
+            { "tomato catsup","catsup"},
             { "sirloin steak","top sirloin steak"},
             { "white wine vinegar","red wine vinegar"},           
             { "prime rib", "rib eye" },
@@ -351,7 +359,7 @@ namespace Logic {
         public static List<string> StateInfo = new List<string> {
           "canned", "cans","can","some","fillets", "prepared", "package","as needed",
            "packages","blanched","florets","steel cut", "peeled","small dice","drained",
-           "sprig", "sprigs","loaf", "bulk",
+           "sprig", "sprigs","loaf", "bulk","refrigerated",
            "grind", "ripe", "steaks", "cold", "warm", "fresh","freshly",
           "(optional)", "asiago",  "panko" , "steaks", "- peeled","halves",
             "for frying","for frying pan", "herb-seasoned", "solid pack",

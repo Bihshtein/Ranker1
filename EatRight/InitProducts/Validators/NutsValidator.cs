@@ -5,8 +5,13 @@ namespace InitProducts {
     internal class NutsValidator : BasicValidator {
         public NutsValidator() {
             MainParts = new List<string> {"peanuts", "almonds", "pecans", "walnuts","seeds","cashew nuts"};
-            SecondParts = new List<string> {"sunflower seed kernels","chia seeds","coconut meat", "english", "glazed" ,"coconut milk","sesame seeds","flaxseed"};
-            ThirdParts = new List<string> { "whole", "flaked", "shredded" };
+            SecondParts = new List<string> {"tahini","sunflower seed kernels","chia seeds","coconut meat", "english", "glazed" ,"coconut milk","sesame seeds","flaxseed"};
+            ThirdParts = new List<string> {"sesame butter", "whole", "flaked", "shredded" };
+        }
+
+        public override bool IsThirdPart(string part) {
+            return part.ToLower().Contains("kernels") ||
+                base.IsThirdPart(part);
         }
 
 

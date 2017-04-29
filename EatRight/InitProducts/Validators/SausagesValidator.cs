@@ -8,7 +8,7 @@ namespace InitProducts {
                 "chicken liver","goose liver","liver", "beef","pork", "Berliner","Polish","Vienna",
                 "smoked link sausage", 
             };
-            ThirdParts = new List<string> { "sliced" ,"Italian"};
+            ThirdParts = new List<string> {"Italian style", "sliced" ,"Italian"};
         }
     }
 }

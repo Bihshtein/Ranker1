@@ -40,7 +40,7 @@ namespace InitProducts {
 
         public override string SimpleMainPart(string part) {
             part = part.ToLower();
-            if (part !="tomato sauce" && part.ToLower().Contains("tomato"))
+            if (part != "tomato juice" && part !="tomato sauce" && part.ToLower().Contains("tomato"))
                 return "tomato";
             else if (part.Contains("coriander (cilantro) leaves"))
                 return  "coriander";

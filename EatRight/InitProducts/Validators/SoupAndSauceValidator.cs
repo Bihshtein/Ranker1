@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace InitProducts {
     internal class SoupAndSauceValidator : BasicValidator {
          public SoupAndSauceValidator() {
-            MainParts = new List<string> {"Sauce","Soup"};
+            MainParts = new List<string> {"Sauce","Soup","Gravy"};
             SecondParts = new List<string> {
                 "barbecue", "horseradish","fish","duck","hot chile","cheese","cream of mushroom","cream of chicken",
                 "oyster","pesto","pizza","plum","salsa","teriyaki","tomato chili sauce","tartar","tomato",
@@ -13,7 +13,7 @@ namespace InitProducts {
                 "beef and mushroom", "beef and vegetables","beef barley","beef broth","beef","vegetable broth",
                 "beef broth or bouillon","beef mushroom","black bean","chicken","chicken broth","worcestershire",
             };
-            ThirdParts = new List<string> { "ready to serve","stock", "ready-to-serve" ,"cubed","bouillon","consomme"};
+            ThirdParts = new List<string> {"sriracha", "ready to serve","stock", "ready-to-serve" ,"cubed","bouillon","consomme"};
         }
 
 

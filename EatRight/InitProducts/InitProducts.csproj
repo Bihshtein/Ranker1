@@ -84,7 +84,8 @@
     <Compile Include="Validators\BeefValidator.cs" />
     <Compile Include="Validators\BeveragesValidator.cs" />
     <Compile Include="Validators\CarbsValidator.cs" />
-    <Compile Include="Validators\ChickenValidator.cs" />
+    <Compile Include="Validators\CerealValidator.cs" />
+    <Compile Include="Validators\PoultryValidator.cs" />
     <Compile Include="Validators\CommonValidator.cs" />
     <Compile Include="Validators\DairyValidator.cs" />
     <Compile Include="Validators\FastFoodsValidator.cs" />

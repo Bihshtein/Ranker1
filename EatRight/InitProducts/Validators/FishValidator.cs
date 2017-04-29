@@ -23,7 +23,7 @@ namespace InitProducts {
                 "freshwater","fresh water","channel","bluefin","skipjack","yellowfin","light",
                 "white","european","chinook","orange","pumpkin seed","granular","commercial",
                 "greenland","Greenland","jack","king","Pacific and jack","spanish","walleye",
-               "shrimp","oyster"
+               "shrimp","oyster","clam"
 
             };
             ThirdParts = new List<string> {

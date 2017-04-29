@@ -109,7 +109,7 @@ namespace RestModel {
         }
 
     
-        public static List<string> FoodGroups = new List<string>() {"Lamb","FastFoods","Snacks","Sausages","Legumes","SoupAndSauce","Nuts","Sweets", "SpicesAndHerbs","OilsAndFats","Beverages","Baked","Fish","Carbs", "Poultry", "Beef", "Pork" ,"Vegs","Fruits","Dairy"};
+        public static List<string> FoodGroups = new List<string>() {"Cereal","Lamb","FastFoods","Snacks","Sausages","Legumes","SoupAndSauce","Nuts","Sweets", "SpicesAndHerbs","OilsAndFats","Beverages","Baked","Fish","Carbs", "Poultry", "Beef", "Pork" ,"Vegs","Fruits","Dairy"};
         public static Dictionary<string, double> DailyValues = new Dictionary<string, double>() {
             {"Protein",56},
             {"Fiber",25},
