@@ -8,7 +8,7 @@ namespace InitProducts {
 
         public VegsValidator() {
             SecondParts = new List<string>() {
-                "sweet","hash brown","brown", "green", "yellow", "white","orange","red", "tahitian",
+                "hash brown","brown", "green", "yellow", "white","orange","red", "tahitian",
                 "hungarian","scotch","chinese", "japanese style", "swiss", "italian, or crimini","paste",
                 "italian","fordhook","hawaii","hawaiian style","scallop","crookneck and straightneck",
                 "all varieties", "zucchini","acorn","au gratin","cucumber", "chowchow","hamburger","hot dog",
@@ -29,7 +29,7 @@ namespace InitProducts {
 
             ThirdParts = new List<string>(){
                 "flesh","shredded","crushed","crosscut","chopped or leaf","steak cut","summer", "winter",
-                "shoestring","all types","whole", "chopped", "spears","mashed",
+                "shoestring","all types","whole", "chopped", "spears","mashed","sweet",
                 "crinkle or regular cut","cross cut", "extruded", "cottage-cut" ,"steak fries",
                 "wedge cut", "tops only","(bulb and lower-leaf portion)","cut off cob","excluding seeds",
                 "young pods with seeds", "kernels","kernels on cob", "bulb","kernels cut off cob",
@@ -38,24 +38,27 @@ namespace InitProducts {
             };
         }
 
-        public override string GetPrettyName(string part) {
-            if (part.ToLower() !="tomato sauce" && part.ToLower().Contains("tomato"))
+        public override string SimpleMainPart(string part) {
+            part = part.ToLower();
+            if (part !="tomato sauce" && part.ToLower().Contains("tomato"))
                 return "tomato";
-            else if (part.ToLower().Contains("coriander (cilantro) leaves"))
+            else if (part.Contains("coriander (cilantro) leaves"))
                 return  "coriander";
-            else if (part.ToLower().Contains("lemon grass (citronella)"))
+            else if (part.Contains("lemon grass (citronella)"))
                 return "lemongrass";
+            else if (part.Contains("yambean (jicama)"))
+                return "jicama";
             return part;
         }
 
-        public override Tuple<string, string> GetNameAndDescription(string item) {
+        public override Tuple<string, string> SimpleSecondPart(string item) {
             if (item.Contains("spring"))
                 item = "green";
             else if (item.ToLower().Contains("cos or romaine"))
                 item = "romaine";
             else if (item.ToLower().Contains("iceberg (includes crisphead types)"))
                 item = "iceberg";
-            return base.GetNameAndDescription(item);
+            return base.SimpleSecondPart(item);
         }
 
     }

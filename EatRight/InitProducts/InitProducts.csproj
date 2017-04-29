@@ -90,6 +90,7 @@
     <Compile Include="Validators\FastFoodsValidator.cs" />
     <Compile Include="Validators\FishValidator.cs" />
     <Compile Include="Validators\FruitsValidator.cs" />
+    <Compile Include="Validators\LambValidator.cs" />
     <Compile Include="Validators\LegumesValidator.cs" />
     <Compile Include="Validators\NutsValidator.cs" />
     <Compile Include="Validators\OilsAndFatsValidator.cs" />

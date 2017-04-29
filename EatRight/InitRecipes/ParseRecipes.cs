@@ -23,9 +23,11 @@ namespace InitRecipes {
         public static List<int> Indexes;
 
 
-        public static void CreateDB(bool offline) {
+        public static void CreateDB(bool offline, bool dropTable, int limit) {
             Indexes = new List<int>();
             var unit = new RestDBInterface();
+            if (dropTable)
+                unit.Recipes.Empty();
             var loaded = unit.Recipes.GetAllList();
             var ids = loaded.Select(r => r.ID).ToList();
             ids.Sort();
@@ -33,27 +35,26 @@ namespace InitRecipes {
                 AddProducts.CurrId = ids[ids.Count - 1];
             AddProducts.CurrId++;
             log.Debug("Num of recipes before : " + ids.Count);
-            Sources.RecipesURNs.ToList().ForEach(s => AddRecipesBySource(s.Key, unit, offline, loaded.FindAll(r => r.Source == s.Key)));
+            Sources.RecipesURNs.ToList().ForEach(s => AddRecipesBySource(s.Key, unit, offline, loaded.FindAll(r => r.Source == s.Key), limit));
             AddProducts.DumpDebug();
         }
 
-        public static void AddRecipesBySource(RecipesSource source, RestDBInterface unit, bool offline, List<Recipe> loadedRecipes) {
-            Sources.RecipesURNs[source].Meals.ToList().ForEach(m => AddRecipesByMealType(source, m, unit, offline,loadedRecipes.FindAll(r => r.Types.Contains(m.Meal))));
+        public static void AddRecipesBySource(RecipesSource source, RestDBInterface unit, bool offline, List<Recipe> loadedRecipes, int limit) {
+            Sources.RecipesURNs[source].Meals.ToList().ForEach(m => AddRecipesByMealType(source, m, unit, offline,loadedRecipes.FindAll(r => r.Types.Contains(m.Meal)), limit));
         }
 
-        public static void AddRecipesByMealType(RecipesSource source, MealData mealData, RestDBInterface unit, bool offline, List<Recipe> loadedRecipes, int loadBulkSize = 1000) {
+        public static void AddRecipesByMealType(RecipesSource source, MealData mealData, RestDBInterface unit, bool offline, List<Recipe> loadedRecipes, int limit,int loadBulkSize = 1000) {
             var loadedIds = loadedRecipes.Select(r => r.OriginalID).ToList();
             if (source == RecipesSource.AllRecipes && !offline)
                 loadBulkSize = 10;
-            var recipesLimit = mealData.MealsLimit;
             if (offline) {
                 var files = Directory.GetFiles(Path.Combine(FolderPath, source.ToString(), mealData.Meal.ToString())).ToList();
                 files.ForEach(f =>Indexes.Add(int.Parse(Path.GetFileNameWithoutExtension(f))));
                 Indexes.RemoveAll(i => loadedIds.Contains(i));
-                Indexes = Indexes.Take(recipesLimit).ToList();
+                Indexes = Indexes.Take(limit).ToList();
             }
             else
-                AddRecipesByURL(source, mealData, unit, recipesLimit);
+                AddRecipesByURL(source, mealData, unit, limit);
                 
             while (Indexes.Count > 9) {
                 log.Debug("Loading bulk, tasks left : " + Indexes.Count());

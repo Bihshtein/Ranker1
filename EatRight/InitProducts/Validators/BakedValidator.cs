@@ -37,10 +37,10 @@ namespace InitProducts {
             };
         }
 
-        public override Tuple<string, string> GetNameAndDescription(string item) {
+        public override Tuple<string, string> SimpleSecondPart(string item) {
             if (item.Contains("french or vienna"))
                 item = "french";
-            return base.GetNameAndDescription(item);
+            return base.SimpleSecondPart(item);
         }
 
 

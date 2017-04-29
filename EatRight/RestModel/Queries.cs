@@ -198,7 +198,11 @@ namespace RestModel {
         public List<Product> TryMatchWholeProduct(string part)
         {
             Expression<Func<Product, bool>> query = x =>
-              (x.Name1.Equals(part) || x.Name1.Equals(part + "s") || x.Name1.Equals(part + "es") || x.Name1.Equals(ParseHelpers.GetWithoutLast_ES_letters(part)) ||
+              (x.Name1.Equals(part) ||
+               x.Name1.Equals(part + "s") ||
+               x.Name1.Equals(part + "es") || 
+               x.Name1.Equals(ParseHelpers.GetWithoutLast_S_letter(part)) ||
+               x.Name1.Equals(ParseHelpers.GetWithoutLast_ES_letters(part)) ||
               (x.FoodGroup.Equals(part)));
             var res = collection.Find(query as Expression<Func<T, bool>>).ToList();
 
@@ -217,6 +221,8 @@ namespace RestModel {
                (x.StorageMethod.Equals(part1) && x.Name2.Equals(part2 + " " + ParseHelpers.GetWithoutLast_S_letter(part3))) ||
                (x.PreparationMethod.Equals(part1) && x.Name1.Equals(part2 + " " + part3)) ||
             (x.Name3.Equals(part1 + " " + part2) && x.Name2.Equals(part3)) ||
+            (x.PreparationMethod.Equals(part1) && x.Name2.Equals(part2) && x.Name1.Equals(part3 + "s")) ||
+
             (x.Name3.Equals(part1 + " " + part2) && x.Name1.Equals(part3)) ||
             (x.Name2.Equals(part2 + " or " + part1) && x.Name1.Equals(part3)) ||
             (x.StorageMethod.Equals(part1) && x.Name2.Equals(part2 + " " + part3)) ||
@@ -238,6 +244,8 @@ namespace RestModel {
             (x.FoodGroup.Equals(part1) && x.Name1.Equals(part2)) ||
             (x.FoodGroup.Equals(part1) && x.Name2.Equals(part2)) && x.Name3.Equals(part3) ||
             (x.Name2.Equals(part1) && x.Name3.Equals(part2)) && x.Name1.Equals(part3) ||
+            (x.Name3.Equals(part1) && x.Name2.Equals(part2)) && x.Name1.Equals(part3+"s") ||
+
             (x.Name3.Equals(part1) && x.Name1.Equals(part3)) ||
             (x.Name2.Equals(part2) && x.Name1.Equals(part3)) ||
             (x.Name2.Equals(part1) && x.Name1.Equals(part2)) ||

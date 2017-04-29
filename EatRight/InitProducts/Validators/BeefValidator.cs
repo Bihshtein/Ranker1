@@ -33,15 +33,6 @@ namespace InitProducts {
             };
         }
 
-        public override string GetThirdPart(string item) {
-            if (item.Contains("under blade")) {
-                item = item.Replace("under blade pot", "").Trim();
-            }
-            return item;
-        }
-
-
-
         public static List<string> BeefDescription = new List<string>() {
             "grass-fed", "Wagyu", "variety meats and by-products", "America's Beef Roast", "Denver Cut", "imported", "lip off", "lip-on", "lip-off",
         };

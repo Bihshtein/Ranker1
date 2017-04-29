@@ -44,6 +44,7 @@ namespace InitRecipes {
                 relativeWeight = "clove";
                 name = "garlic";
             }
+            name = Map.AdjustIngredient(name);
             return new IngredientInfo { Name = name, Quantity = weight, ReltiveSizeMeasure = relativeWeight }; 
         }
 

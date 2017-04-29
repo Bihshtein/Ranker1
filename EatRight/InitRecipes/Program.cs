@@ -22,11 +22,9 @@ namespace InitRecipes {
 
         static void Main(string[] args) {
             var start = DateTime.Now;
-           Sources.Limit = int.Parse(args[0]);
-          if (args.Contains("OFFLINE"))
-            ParseRecipes.CreateDB(true); 
-          else
-            ParseRecipes.CreateDB(false);     
+            var offline = args.Contains("OFFLINE");
+            var dropTable = args.Contains("CLEAR");
+            ParseRecipes.CreateDB(offline, dropTable, int.Parse(args[0])); 
             Console.WriteLine(new TimeSpan(DateTime.Now.Ticks - start.Ticks).ToString());
         }
        

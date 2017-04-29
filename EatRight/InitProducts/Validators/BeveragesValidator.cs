@@ -32,10 +32,10 @@ namespace InitProducts {
             base.IsValidPart(part);
         }
 
-        public override Tuple<string, string> GetNameAndDescription(string item) {
+        public override Tuple<string, string> SimpleSecondPart(string item) {
             if (item.Contains("rice (sake)"))
                 item = "sake";
-            return base.GetNameAndDescription(item);
+            return base.SimpleSecondPart(item);
         }
     }
 }

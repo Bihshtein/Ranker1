@@ -138,6 +138,9 @@ namespace Logic
         public static List<string> RelativeSizes = new List<string> {
             // relative to the weight stated by the USDA for the product
             // order matter keep the more inclusicve delimiters first
+            "head", "heads",  "stalk", "stalks","fillet",
+            "strip",
+            "rib",
             "cup sliced",
             "cup small",
             "cup packed",

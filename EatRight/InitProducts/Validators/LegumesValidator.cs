@@ -25,11 +25,11 @@ namespace InitProducts {
                 return base.IsSecondPart(part);
         }
 
-        public override string GetPrettyName(string part) {
+        public override string SimpleMainPart(string part) {
             if (part.Contains("Chickpeas"))
                 return "chickpeas";
             else
-                return base.GetPrettyName(part);
+                return base.SimpleMainPart(part);
         }
 
 

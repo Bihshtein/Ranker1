@@ -17,14 +17,14 @@ namespace InitProducts {
         }
 
 
-        public override Tuple<string, string> GetNameAndDescription(string item) {
+        public override Tuple<string, string> SimpleSecondPart(string item) {
             if (item.Contains("cream of mushroom"))
                 item = "cream mushroom";
             else if (item.Contains("cream of chicken"))
                 item = "cream chicken";
             else if (item.Contains("barbecue"))
                 item = "bbq";
-            return base.GetNameAndDescription(item);
+            return base.SimpleSecondPart(item);
         }
     }
 }
