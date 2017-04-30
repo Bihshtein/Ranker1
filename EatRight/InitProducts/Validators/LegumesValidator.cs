@@ -3,11 +3,11 @@
 namespace InitProducts {
     internal class LegumesValidator : BasicValidator {
         public LegumesValidator() {
-            MainParts = new List<string> {"Miso","Tofu","Peanuts", "Soy sauce", "Soymilk", "Beans","Refried beans"};
+            MainParts = new List<string> {"Miso","Tofu","Peanuts", "Soy sauce", "Soymilk", "Beans","Refried beans","Hummus"};
             SecondParts = new List<string> {
                 "all types","white","french","pink","navy","black turtle", "black","original and vanilla",
                 "made from hydrolyzed vegetable protein" ,"traditional style (includes USDA commodity)",
-                "regular"};
+                "regular","commercial"};
             ThirdParts = new List<string> { "mature seeds" };
         }
 

@@ -7,7 +7,7 @@ namespace InitProducts {
             MainParts = new List<string> {
                 "Bagels","Biscuits","Pie","Pie crust","Rolls","Pancakes",
                 "Muffins","English muffins","Crackers","Cookies","Cookie",
-                "Coffeecake","Cake","Bread","Doughnuts","Croutons",
+                "Coffeecake","Cake","Bread","Doughnuts","Croutons","Puff pastry",
                 "Croissants","Cream puff","Danish pastry","Tortillas","Breakfast tart",
                 "Leavening agents","Bread crumbs", "Bread stuffing","PILLSBURY","PEPPERIDGE FARM"
             };
@@ -32,7 +32,7 @@ namespace InitProducts {
             ThirdParts = new List<string> {
                 "white","plain","whole grain","whole wheat","mixed-grain","mixed grain","dry mix",
                 "whole grain white","wheat bran","oat bran","oatmeal","cracked-wheat","active dry",
-                "compressed","double-acting","seasoned","grated",
+                "compressed","double-acting","seasoned","grated","ready-to-bake",
                 "plain or buttermilk","multigrain","wheat germ","buckwheat","buttermilk"
             };
         }

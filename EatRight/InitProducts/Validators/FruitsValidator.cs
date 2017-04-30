@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace InitProducts {
     public class FruitsValidator : BasicValidator {
@@ -14,9 +15,25 @@ namespace InitProducts {
                     "medjool","deglet noor", "(mandarin oranges)","honeydew","casaba","cantaloupe","apple","jambolan)","strawberry",
                     "muscadine","common","bosc","green anjou","red anjou","bartlett","spiced","asian","golden delicious", "granny smith",
                     "red delicious","wild","fuji","gala","pink and red and white","yellow","green","purple", "sweet","sour","white","pink",
-                    "red","pink or red", "pink and red","red and white","California", "Florida"
+                    "red","pink or red", "pink and red","red and white","California", "Florida",
+                "REAL LEMON","CONCORD","includes from concentrate"
             };
-            ThirdParts = new List<string> { "sections", "all areas", "seeded", "seedless", "pitted", "sliced", "whole","canned (jumbo-super colossal)" };
+            ThirdParts = new List<string> {
+                "sections", "all areas", "seeded", "seedless", "pitted", "sliced",
+                "whole","canned (jumbo-super colossal)","chilled"
+            };
+        }
+
+        public override string SimpleMainPart(string part) {
+            if (part.ToLower() == "lemon juice from concentrate")
+                return "concentrate lemon juice";
+            return base.SimpleMainPart(part);
+        }
+
+        public override Tuple<string, string> SimpleSecondPart(string item) {
+            if (item.ToLower() == "includes from concentrate")
+                item = "concentrate";
+            return base.SimpleSecondPart(item);
         }
     }
 }

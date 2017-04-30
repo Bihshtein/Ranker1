@@ -7,14 +7,14 @@ namespace InitProducts {
                 "Shortening", "Oil" ,"Mayonnaise","Salad dressing","Margarine"
             };
             SecondParts = new List<string> {
-                "corn","corn and canola","made with tofu", "vegetable","olive","mayonnaise" ,"regular",
-                "fractionated palm","lard and vegetable oil","sesame","coconut","PAM cooking spray","peanut"
+                "corn","corn and canola","made with tofu", "vegetable","olive","mayonnaise" ,"",
+                "fractionated palm","lard and vegetable oil","sesame","coconut","PAM cooking spray","peanut","ranch dressing"
             };
             ThirdParts = new List<string> {
                 "composite", "stick","tub", "salad or cooking","Natreon canola",
                 "industrial and retail", "all purpose salad or cooking",
                 "high stability", "non trans", "high oleic (70%)" ,"light","with olive oil",
-                "industrial","confectionery","household","original"
+                "industrial","confectionery","household","original","regular"
             };
         }
 
