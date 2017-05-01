@@ -55,7 +55,7 @@ namespace InitProducts {
         }
 
         public bool IsName(string part) {
-            if (Char.IsLower(part[0]))
+            if (Char.IsLower(part[0]) || Char.IsDigit(part[0]))
                 return false;
             for (int i = 1; i < part.Length; i++) {
                 if (Char.IsUpper(part[i])) {

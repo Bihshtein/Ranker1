@@ -6,7 +6,7 @@ namespace InitProducts {
         public FruitsValidator() {
             SecondParts = new List<string> {
                     "tropical" ,"(west indian cherry)","(pineapple and papaya and banana and guava)","ripe",
-                    "(cape-gooseberries or poha)","(jambolan)","single strength",
+                    "(cape-gooseberries or poha)","(jambolan)","single strength","tart",
                     "canned (small-extra large)","all commercial varieties","valencias","navels","(granadilla)",
                     "(sweetsop)","(surinam-cherry)", "(mamey)", "mamey","golden seedless", "all varieties",
                     "extra sweet variety","traditional varieties","chunks","native","grape and pear blend","apple and grape blend",
@@ -31,6 +31,8 @@ namespace InitProducts {
         }
 
         public override Tuple<string, string> SimpleSecondPart(string item) {
+            item = item.Replace("(", "");
+            item = item.Replace(")", "");
             if (item.ToLower() == "includes from concentrate")
                 item = "concentrate";
             return base.SimpleSecondPart(item);

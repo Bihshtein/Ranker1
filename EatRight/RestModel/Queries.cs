@@ -282,6 +282,7 @@ namespace RestModel {
         public List<Product> TryMatchWholeProduct(string part1, string part2) {
             Expression<Func<Product, bool>> query = x =>
             (x.Name1.Equals(part1 + " " + part2)) ||
+            (x.Name2.Equals(part1) && x.FoodGroup.Equals(part2)) ||
             (x.FatDetails.Equals(part1) && x.Name1.Equals(part2)) ||
             (x.PackDetails.Equals(part1)  && x.Name1.Equals(part2)) ||
             (x.Name1.Equals(part1 +part2)) ||

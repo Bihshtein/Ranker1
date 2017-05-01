@@ -5,8 +5,8 @@ namespace InitProducts {
     internal class BakedValidator : BasicValidator {
         public BakedValidator() {
             MainParts = new List<string> {
-                "Bagels","Biscuits","Pie","Pie crust","Rolls","Pancakes",
-                "Muffins","English muffins","Crackers","Cookies","Cookie",
+                "Bagels","Biscuits","Pie","Pie crust","Rolls","Pancakes", "Phyllo dough",
+                "Muffins","English muffins","Crackers","Cookies","Cookie","Sweet rolls",
                 "Coffeecake","Cake","Bread","Doughnuts","Croutons","Puff pastry",
                 "Croissants","Cream puff","Danish pastry","Tortillas","Breakfast tart",
                 "Leavening agents","Bread crumbs", "Bread stuffing","PILLSBURY","PEPPERIDGE FARM"
@@ -32,7 +32,7 @@ namespace InitProducts {
             ThirdParts = new List<string> {
                 "white","plain","whole grain","whole wheat","mixed-grain","mixed grain","dry mix",
                 "whole grain white","wheat bran","oat bran","oatmeal","cracked-wheat","active dry",
-                "compressed","double-acting","seasoned","grated","ready-to-bake",
+                "compressed","double-acting","seasoned","grated","ready-to-bake","refrigerated dough",
                 "plain or buttermilk","multigrain","wheat germ","buckwheat","buttermilk"
             };
         }
@@ -41,6 +41,12 @@ namespace InitProducts {
             if (item.Contains("french or vienna"))
                 item = "french";
             return base.SimpleSecondPart(item);
+        }
+
+        public override string SimpleThirdPart(string part) {
+            if (part == "refrigerated dough")
+                return "dough";
+            return base.SimpleThirdPart(part);
         }
 
 

@@ -24,13 +24,21 @@ namespace InitProducts {
                 "queso anejo", "half and half", "soft type","powder",
                 "semisoft type", "hard type","whole", "yolk","white","Greek",
                 "shredded","sliced","creamed","uncreamed","omelet","hard boiled","scrambled",
-                "heavy whipping",
+                "heavy whipping","light whipping","lowfat",
             };
         }
 
 
         public override bool IsSecondPart(string part) {
             return SecondParts.Any((item) => part.Contains(item));
+        }
+
+        public override string SimpleThirdPart(string part) {
+            if (part == "lowfat")
+                return "low fat";
+            else if (part.Contains("whipping"))
+                return part.Replace("whipping","").Trim();
+            return base.SimpleThirdPart(part);
         }
     }
 }
