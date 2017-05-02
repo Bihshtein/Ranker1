@@ -20,7 +20,7 @@ namespace InitProducts {
 
         public override string SimpleMainPart(string part) {
             if (part.ToLower() == "turkey breast")
-                return "tukey";
+                return "turkey";
             return base.SimpleMainPart(part);
         }
     }

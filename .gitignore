@@ -5,6 +5,7 @@
 EatRight/LocalDB/AllRecipes
 EatRight/LocalDB/Cookpad
 EatRight/LocalDB/Food
+EatRight/LocalDB/BBC
 # User-specific files
 *.suo
 *.user

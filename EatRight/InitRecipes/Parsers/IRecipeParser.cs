@@ -20,37 +20,5 @@ namespace InitRecipes {
    
 
 
-    public class GeneralRecipeParser {
-        public IRecipeParser Parser;
-        public GeneralRecipeParser(IRecipeParser parser) {
-            Parser = parser;
-        }
-        public string GetImageUrl(string page) {
-            try {
-                return Parser.GetImageUrl(page);
-            }
-            catch {
-                return null;
-            }
-        }
-
-        public int GetServings(string page) {
-            try {
-                return Parser.GetServings(page);
-            }
-            catch {
-                return 1;
-            }
-        }
-        public List<IngredientInfo> GetIngredients(string page) {
-            var ingredients = new List<IngredientInfo>();
-            var ingredientParts = page.Split(Parser.IngredientSplitter, StringSplitOptions.None);
-            for (int i = 1; i < ingredientParts.Length; i++) {
-                var res = Parser.ParseWeightAndName(ingredientParts[i].ToLower());
-                if (res != null )
-                    ingredients.Add(res);
-            }
-            return ingredients;
-        }
-    }
+    
 }

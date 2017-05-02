@@ -33,7 +33,7 @@ namespace RestModel  {
         public string ReltiveSizeMeasure { get; set; }
         public double Quantity { get; set; }
     }
-    public enum RecipesSource { AllRecipes = 1, Cookpad = 2, Food = 3 }
+    public enum RecipesSource { AllRecipes = 1, Cookpad = 2, Food = 3, BBC=4 }
 
 
     public class Recipe : IQueryable

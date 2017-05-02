@@ -49,7 +49,15 @@ namespace InitRecipes {
                     new MealData { Meal = MealType.Lunch, Url = "http://lunch.food.com"},
                 },
                 Parser = new GeneralRecipeParser(new FoodParser()),
-                Url ="http://www.food.com/recipe/-" } }
+                Url ="http://www.food.com/recipe/-" } },
+
+            {RecipesSource.BBC,  new SourceData() {
+                PageKeyword = "page",
+                Meals = new List<MealData> {
+                    new MealData { Meal = MealType.Dinner, Url = "https://www.bbcgoodfood.com/search/recipesc/course/dinner", },
+                },
+                Parser = new GeneralRecipeParser(new BBCParser()),
+                Url ="https://www.bbcgoodfood.com/recipes/" } }
         };
     }
 }

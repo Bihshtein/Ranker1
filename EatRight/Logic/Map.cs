@@ -262,6 +262,9 @@ namespace Logic {
             { new List<string> { "low-fat", "milk"},"lowfat milk"},
             { new List<string> { "1%", "milk"},"lowfat milk"},
             { new List<string> { "2%", "milk"},"lowfat milk"},
+            { new List<string> { "thyme", "leave"},"fresh thyme"},
+            { new List<string> { "thyme", "leaves"},"fresh thyme"},
+            { new List<string> { "thyme", "dried"},"dried thyme"},
             { new List<string> { "wine", "vinegar"},"red wine vinegar"},
             { new List<string> { "confectioners%27", "sugar"},"powdered sugars"},
             { new List<string> { "caster", "sugar"},"powdered sugars"},
@@ -284,7 +287,7 @@ namespace Logic {
             { new List<string> { "ranch", "dressing"},"ranch dressing"},
             { new List<string> { "flax", "seed"},"flax seed"},    
             { new List<string> { "thousand","island" },"thousand island"},
-            { new List<string> { "creme", "fraiche" },"creme sour"},
+            { new List<string> { "creme", "fraiche" },"cream sour"},
         };
         public static Dictionary<string, string> ChangePartialPhrases = new Dictionary<string, string>() {
              { "low fat","lowfat"},
@@ -342,6 +345,7 @@ namespace Logic {
             { "can anchovy fillets", "anchovy"},
             { "skim", "nonfat"},
             { "bell pepper", "pepper" },
+            { "orange pepper", "pepper" },
             { "pepperoni sausage", "pepperoni" },
             { "genoa", "italian" },
             { "zest", "peel" },

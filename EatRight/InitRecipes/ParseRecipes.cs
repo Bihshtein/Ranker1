@@ -23,7 +23,7 @@ namespace InitRecipes {
         public static List<int> Indexes;
 
 
-        public static void CreateDB(bool offline, bool dropTable, int limit) {
+        public static void CreateDB(bool offline, bool dropTable, int limit, RecipesSource? source=null, MealType? mealType=null) {
             Indexes = new List<int>();
             var unit = new RestDBInterface();
             if (dropTable)
@@ -35,7 +35,10 @@ namespace InitRecipes {
                 AddProducts.CurrId = ids[ids.Count - 1];
             AddProducts.CurrId++;
             log.Debug("Num of recipes before : " + ids.Count);
-            Sources.RecipesURNs.ToList().ForEach(s => AddRecipesBySource(s.Key, unit, offline, loaded.FindAll(r => r.Source == s.Key), limit));
+            if (source.HasValue && mealType.HasValue)
+                AddRecipesByMealType(source.Value, Sources.RecipesURNs[source.Value].Meals.Find(m => m.Meal == mealType.Value), unit, offline, loaded, limit);
+            else
+                Sources.RecipesURNs.ToList().ForEach(s => AddRecipesBySource(s.Key, unit, offline, loaded.FindAll(r => r.Source == s.Key), limit));
             AddProducts.DumpDebug();
         }
 
@@ -69,15 +72,16 @@ namespace InitRecipes {
         private static void AddRecipesByURL(RecipesSource source, MealData mealType,  RestDBInterface unit, int recipesLimit) {
             Indexes.Clear();
             log.Debug("Locating recipes in ->" +mealType.Url + " - started");
-            var tasksCount = 8;
+            var tasksCount = 1;
             int page = 0;
             shouldStop = false;
             while (Indexes.Count < recipesLimit && !shouldStop) {
                 var tasks = new List<Task>();
                 var beforeCount = Indexes.Count;
                 for (int i = 0; i < tasksCount; i++) {
-                    tasks.Add(new Task(new Action(() => ReadPage(source, mealType, unit, page++, new WebClient()))));
-                
+                    tasks.Add(new Task(new Action(() => ReadPage(source, mealType, unit, page, new WebClient()))));
+                    page += 1;
+
                 }
 
                 tasks.ForEach(task => task.Start());
@@ -93,16 +97,18 @@ namespace InitRecipes {
         private static void ReadPage(RecipesSource source, MealData mealType,  RestDBInterface unit, int currPage, WebClient client) {
             string pageStr = null;
             var readWorked = false;
-            var urlSuffix = currPage == 0 ? "" : ("?"+ Sources.RecipesURNs[source].PageKeyword + "=" + currPage);
-            var uri = mealType.Url +  urlSuffix;
+            var urlSuffix = currPage == 0 ? "" : ("?" + Sources.RecipesURNs[source].PageKeyword + "=" + currPage);
+            var uri = mealType.Url + urlSuffix;
             for (int retries = 0; readWorked == false && retries < 10; retries++) {
                 try {
                     pageStr = client.DownloadString(uri);
                     readWorked = true;
                     if (source == RecipesSource.Food)
                         AddRecipesFromJson( pageStr, unit);
-                    else
+                    else if (source == RecipesSource.BBC)
                         AddRecipesFromPage(pageStr, unit);
+                    else  
+                        AddRecipesFromPage2(pageStr, unit);
                 }
                 catch (Exception) {
                     log.Error(string.Format("Failed to load page num {0}, might be the last page", currPage));
@@ -115,10 +121,29 @@ namespace InitRecipes {
 
         public static void AddRecipesFromPage(string pageStr, RestDBInterface unit) {            
             // Split the whole page str by recipe URLs. We assume that each recipe URL on this page is relevant
-            string[] parts = pageStr.Split(new string[] { "data-id=\"" }, StringSplitOptions.None);
+            string[] parts = pageStr.Split(new string[] { "<a itemprop=\"url\" href=\"/recipes/" }, StringSplitOptions.None);
             for (int i = 1; i < parts.Length; i++) {
 
-                string[] splittedPart = parts[i].Split(new string[] { "\"" }, StringSplitOptions.None);
+                string[] splittedPart = parts[i].Split(new string[] {"/" }, StringSplitOptions.None);
+                if (splittedPart.Length == 0) {
+                    continue;
+                }
+                var idStr = splittedPart[0];
+                int id;
+                if (int.TryParse(idStr, out id)) {
+                    lock (Locker) {
+                        Indexes.Add(id);
+                    }
+                }
+            }
+        }
+
+        public static void AddRecipesFromPage2(string pageStr, RestDBInterface unit) {
+            // Split the whole page str by recipe URLs. We assume that each recipe URL on this page is relevant
+            string[] parts = pageStr.Split(new string[] {  "data-id=\"" }, StringSplitOptions.None);
+            for (int i = 1; i < parts.Length; i++) {
+
+                string[] splittedPart = parts[i].Split(new string[] { "\""  }, StringSplitOptions.None);
                 if (splittedPart.Length == 0) {
                     continue;
                 }
@@ -151,12 +176,6 @@ namespace InitRecipes {
             var customCulture = (CultureInfo)Thread.CurrentThread.CurrentCulture.Clone(); customCulture.NumberFormat.NumberDecimalSeparator = ".";
             Thread.CurrentThread.CurrentCulture = customCulture;
             var unit = new RestDBInterface();
-            lock (Locker) {
-                if (unit.Recipes.Get(index) != null) {
-                    Indexes.Remove(index);
-                    return;
-                }
-            }
             var page = string.Empty;
             try {
                 Directory.CreateDirectory(Path.Combine(FolderPath, source.ToString()));
@@ -168,7 +187,6 @@ namespace InitRecipes {
                     page = new WebClient().DownloadString(urn + index.ToString());
                     File.WriteAllText(filePath, page);
                 }
-                
             }
             catch {
                 log.Error("Failed to load recipe number : " + index);

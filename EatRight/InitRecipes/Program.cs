@@ -24,7 +24,14 @@ namespace InitRecipes {
             var start = DateTime.Now;
             var offline = args.Contains("OFFLINE");
             var dropTable = args.Contains("CLEAR");
-            ParseRecipes.CreateDB(offline, dropTable, int.Parse(args[0])); 
+            RecipesSource? source = null;
+            MealType? mealType = null;
+            if (args.Contains("-SPEC")) {
+                var index = args.ToList().FindIndex(e => e == "-SPEC");
+                source = (RecipesSource)Enum.Parse(typeof(RecipesSource), args[index + 1]);
+                mealType = (MealType)Enum.Parse(typeof(MealType), args[index + 2]);
+            }
+            ParseRecipes.CreateDB(offline, dropTable, int.Parse(args[0]), source,mealType); 
             Console.WriteLine(new TimeSpan(DateTime.Now.Ticks - start.Ticks).ToString());
         }
        
