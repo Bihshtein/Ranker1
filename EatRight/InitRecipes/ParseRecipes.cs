@@ -72,16 +72,14 @@ namespace InitRecipes {
         private static void AddRecipesByURL(RecipesSource source, MealData mealType,  RestDBInterface unit, int recipesLimit) {
             Indexes.Clear();
             log.Debug("Locating recipes in ->" +mealType.Url + " - started");
-            var tasksCount = 1;
+            var tasksCount = 8;
             int page = 0;
             shouldStop = false;
             while (Indexes.Count < recipesLimit && !shouldStop) {
                 var tasks = new List<Task>();
                 var beforeCount = Indexes.Count;
                 for (int i = 0; i < tasksCount; i++) {
-                    tasks.Add(new Task(new Action(() => ReadPage(source, mealType, unit, page, new WebClient()))));
-                    page += 1;
-
+                    tasks.Add(new Task(new Action(() => ReadPage(source, mealType, unit, page++, new WebClient()))));
                 }
 
                 tasks.ForEach(task => task.Start());
