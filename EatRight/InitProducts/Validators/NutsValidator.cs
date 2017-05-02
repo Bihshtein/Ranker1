@@ -9,7 +9,7 @@ namespace InitProducts {
             };
             SecondParts = new List<string> {
                 "tahini","sunflower seed kernels","chia seeds","coconut meat", "english", "glazed" 
-                ,"coconut milk","sesame seeds","flaxseed","macadamia nuts"
+                ,"coconut milk","sesame seeds","flaxseed","macadamia nuts","hazelnuts or filberts"
             };
             ThirdParts = new List<string> {
                 "sesame butter", "whole", "flaked", "shredded"
@@ -29,6 +29,8 @@ namespace InitProducts {
                 item = "coconut";
             if (item.Contains("flaxseed"))
                 item = "flax seed";
+            if (item.Contains("hazelnuts"))
+                item = "hazelnuts";
             return base.SimpleSecondPart(item);
         }
     }

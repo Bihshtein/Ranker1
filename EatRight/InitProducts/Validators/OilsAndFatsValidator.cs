@@ -7,8 +7,10 @@ namespace InitProducts {
                 "Shortening", "Oil" ,"Mayonnaise","Salad dressing","Margarine"
             };
             SecondParts = new List<string> {
-                "sunflower","corn","corn and canola","made with tofu", "vegetable","olive","mayonnaise" ,"regular",
-                "fractionated palm","lard and vegetable oil","sesame","coconut","PAM cooking spray","peanut","ranch dressing"
+                "sunflower","corn","corn and canola","made with tofu", "vegetable",
+                "olive","mayonnaise" ,"regular",
+                "fractionated palm","lard and vegetable oil","sesame","coconut",
+                "PAM cooking spray","peanut","ranch dressing","commercial",
             };
             ThirdParts = new List<string> {
                 "composite", "stick","tub", "salad or cooking","Natreon canola",
@@ -16,7 +18,7 @@ namespace InitProducts {
                 "high stability", "non trans", "high oleic (70%)" ,"light","with olive oil",
                 "industrial","confectionery","household","original",
                 "linoleic", "(approx. 65%)","(partially hydrogenated)","linoleic (less than 60%)",
-                "high oleic (70% and over)","mid-oleic"
+                "high oleic (70% and over)","mid-oleic", "thousand island",
             };
         }
 

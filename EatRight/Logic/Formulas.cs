@@ -117,6 +117,8 @@ namespace Logic
             "hand full",
             "handfuls",
             "handful",
+            "extra large",
+            "extra-large",
             "large",
             "small head",
             "small to medium",

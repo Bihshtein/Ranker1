@@ -19,15 +19,14 @@ namespace InitRecipes {
         public GeneralRecipeParser Parser { get; set; }
 }
     class Sources {
-        public static int Limit=100000;
         public static Dictionary<RecipesSource, SourceData> RecipesURNs = new Dictionary<RecipesSource, SourceData>() {
             {RecipesSource.Cookpad,  new SourceData {
                 Url = "https://cookpad.com/us/recipes/",
                 PageKeyword = "page",
                 Meals = new List<MealData> {
-                    new MealData { Meal = MealType.Dinner, Url = "https://cookpad.com/us/search/dinner", MealsLimit=Limit},
-                    new MealData { Meal = MealType.Breakfast, Url = "https://cookpad.com/us/search/breakfast", MealsLimit=Limit},
-                    new MealData { Meal = MealType.Lunch, Url = "https://cookpad.com/us/search/lunch", MealsLimit=Limit},
+                    new MealData { Meal = MealType.Dinner, Url = "https://cookpad.com/us/search/dinner"},
+                    new MealData { Meal = MealType.Breakfast, Url = "https://cookpad.com/us/search/breakfast"},
+                    new MealData { Meal = MealType.Lunch, Url = "https://cookpad.com/us/search/lunch"},
                 },
                 Parser = new GeneralRecipeParser(new CookpadParser())
             } },
@@ -36,9 +35,9 @@ namespace InitRecipes {
             {RecipesSource.AllRecipes,   new SourceData() {
                 PageKeyword = "page",
                 Meals = new List<MealData> {
-                    new MealData { Meal = MealType.Dinner, Url = "http://allrecipes.com/recipes/17562/dinner", MealsLimit=Limit},
-                    new MealData { Meal = MealType.Breakfast, Url = "http://allrecipes.com/recipes/78/breakfast-and-brunch", MealsLimit=Limit},
-                    new MealData { Meal = MealType.Lunch, Url = "http://allrecipes.com/recipes/17561/lunch/", MealsLimit=Limit},
+                    new MealData { Meal = MealType.Dinner, Url = "http://allrecipes.com/recipes/17562/dinner"},
+                    new MealData { Meal = MealType.Breakfast, Url = "http://allrecipes.com/recipes/78/breakfast-and-brunch"},
+                    new MealData { Meal = MealType.Lunch, Url = "http://allrecipes.com/recipes/17561/lunch/"},
                 },
                 Parser = new GeneralRecipeParser(new AllRecipesParser()),
                 Url ="http://allrecipes.com/recipe/" } },
@@ -46,8 +45,8 @@ namespace InitRecipes {
             {RecipesSource.Food,  new SourceData() {
                 PageKeyword = "pn",
                 Meals = new List<MealData> {
-                    new MealData { Meal = MealType.Breakfast, Url = "http://breakfast.food.com", MealsLimit=Limit},
-                    new MealData { Meal = MealType.Lunch, Url = "http://lunch.food.com", MealsLimit=Limit},
+                    new MealData { Meal = MealType.Breakfast, Url = "http://breakfast.food.com", },
+                    new MealData { Meal = MealType.Lunch, Url = "http://lunch.food.com"},
                 },
                 Parser = new GeneralRecipeParser(new FoodParser()),
                 Url ="http://www.food.com/recipe/-" } }

@@ -30,6 +30,8 @@ namespace InitProducts {
                 item = "corn flakes";
             else if (item.ToLower().Contains("all-bran"))
                 item = "all-bran";
+            else if (item.ToLower().Contains("rice krispies"))
+                item = "rice krispies";
             return base.SimpleSecondPart(item);
         }
     }

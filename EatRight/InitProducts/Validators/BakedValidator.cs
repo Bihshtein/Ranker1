@@ -21,12 +21,12 @@ namespace InitProducts {
                 "pound","snack cakes","sugar","shortbread","peanut butter",
                 "brownies","boston brown","chapati or roti","cornbread",
                 "sponge","pita","yellow","gingerbread","angelfood","boston cream pie",
-                "deep dish","irish","italian",
+                "deep dish","irish","italian","hard (includes kaiser)",
                 "naan","pan dulce","paratha","potato","pound cake type","raisin",
                 "protein","pumpernickel","french or vienna","shortcake","fortune", "fig bars",
                 "fudge","gingersnaps","ladyfingers","Marie biscuit","marshmallow","molasses",
                 "saltines","melba toast","matzo","irish soda","fruitcake","carrot","marble",
-                "Crusty French Loaf"
+                "Crusty French Loaf","cream of tartar"
             };
 
             ThirdParts = new List<string> {
@@ -36,11 +36,16 @@ namespace InitProducts {
                 "plain or buttermilk","multigrain","wheat germ","buckwheat","buttermilk"
             };
         }
-
+        
+        
         public override Tuple<string, string> SimpleSecondPart(string item) {
             if (item.Contains("french or vienna"))
                 item = "french";
-            return base.SimpleSecondPart(item);
+            else if (item == "cream of tartar")
+                item = "cream tartar";
+            else if (item == "hard (includes kaiser)")
+                item = "hard";
+                return base.SimpleSecondPart(item);
         }
 
         public override string SimpleThirdPart(string part) {

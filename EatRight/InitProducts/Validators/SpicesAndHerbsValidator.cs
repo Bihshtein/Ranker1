@@ -30,6 +30,12 @@ namespace InitProducts {
             return base.SimpleSecondPart(item);
         }
 
+        public override string SimpleMainPart(string part) {
+            if (part.ToLower() == "seasoning mix")
+                return "seasoning";
+            return base.SimpleMainPart(part);
+        }
+
 
 
     }
