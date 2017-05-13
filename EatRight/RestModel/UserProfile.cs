@@ -74,6 +74,7 @@ namespace RestModel
         ProductsTasteMealGrader,
         PrepTimeMealGrader,
         ServingsNumMealGrader,
+        ComplexityMealGrader,
 
         MealGraderEnd,
 

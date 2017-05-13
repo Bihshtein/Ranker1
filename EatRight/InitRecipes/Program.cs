@@ -22,12 +22,12 @@ namespace InitRecipes {
 
         static void Main(string[] args) {
             var start = DateTime.Now;
-            
-          if (args.Contains("OFFLINE"))
-            ParseRecipes.CreateDB(true); 
-          else
-            ParseRecipes.CreateDB(false);
-        AddProducts.Add();
+
+            if (args.Contains("OFFLINE"))
+                ParseRecipes.CreateDB(true);
+            else
+                ParseRecipes.CreateDB(false);
+            AddProducts.Add();
             Console.WriteLine(new TimeSpan(DateTime.Now.Ticks - start.Ticks).ToString());
         }
        
