@@ -724,7 +724,7 @@ namespace RecommendationBuilder
                     {GraderType.FoodCategoryMealGrader, 0.04},
                     {GraderType.PrepTimeMealGrader, 0.2},
                     {GraderType.ServingsNumMealGrader, 0.2},
-                    {GraderType.ComplexityMealGrader, 0.2 }
+                    {GraderType.StepsNumMealGrader, 0.2 }
                 };
             }
         }

@@ -7,12 +7,12 @@ using RestModel;
 
 namespace RecommendationBuilder.Graders.MealGraders
 {
-    class ComplexityMealGrader : MealGrader
+    class StepsNumMealGrader : MealGrader
     {
-        public ComplexityMealGrader()
+        public StepsNumMealGrader()
         {
-            Description = "How much complex it is to prepare the food";
-            Type = GraderType.ComplexityMealGrader;
+            Description = "How many preperation steps does the meal take";
+            Type = GraderType.StepsNumMealGrader;
         }
 
         protected override double InternalGrade(Meal meal)
