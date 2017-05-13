@@ -54,12 +54,19 @@
     <Compile Include="AddProducts.cs" />
     <Compile Include="MealsCSVReader.cs" />
     <Compile Include="ParseRecipes.cs" />
-    <Compile Include="Parsers\AllRecipesParser.cs" />
-    <Compile Include="Parsers\BBCParser.cs" />
-    <Compile Include="Parsers\GeneralParser.cs" />
-    <Compile Include="Parsers\IRecipeParser.cs" />
-    <Compile Include="Parsers\CookpadParser.cs" />
-    <Compile Include="Parsers\FoodParser.cs" />
+    <Compile Include="Parsers\RecipeParsers\AllRecipesRecipeParser.cs" />
+    <Compile Include="Parsers\RecipeParsers\EpicuriousRecipeParser.cs" />
+    <Compile Include="Parsers\RecipeParsers\BBCRecipeParser.cs" />
+    <Compile Include="Parsers\RecipeParsers\GeneralRecipeParser.cs" />
+    <Compile Include="Parsers\RecipesPageParsers\BBCRecipesPageParser.cs" />
+    <Compile Include="Parsers\RecipesPageParsers\RecipesPageParserFactory.cs" />
+    <Compile Include="Parsers\RecipesPageParsers\FoodRecipesPageParser.cs" />
+    <Compile Include="Parsers\RecipesPageParsers\EpicuriousRecipesPageParser.cs" />
+    <Compile Include="Parsers\RecipesPageParsers\GeneralRecipesPageParser.cs" />
+    <Compile Include="Parsers\RecipesPageParsers\IRecipesPageParser.cs" />
+    <Compile Include="Parsers\RecipeParsers\IRecipeParser.cs" />
+    <Compile Include="Parsers\RecipeParsers\CookpadRecipeParser.cs" />
+    <Compile Include="Parsers\RecipeParsers\FoodRecipeParser.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sources.cs" />
@@ -82,6 +89,7 @@
       <Name>RestModel</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PreBuildEvent>

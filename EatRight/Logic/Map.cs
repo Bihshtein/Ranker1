@@ -103,19 +103,30 @@ namespace Logic {
         public static string AdjustInnerPart(string innerpart) {
             var split = innerpart.Split(',');
             if (split[0] != string.Empty)
+            {
                 innerpart = split[0];
+            }
             else
+            {
                 innerpart = split[1];
+            }
             split = innerpart.Split(new string[1] { " - " }, StringSplitOptions.None);
             if (split[0] != string.Empty)
+            {
                 innerpart = split[0];
+            }
             else
+            {
                 innerpart = split[1];
+<<<<<<< HEAD
           /*  split = split = innerpart.Split('/');
             if (split[0] != string.Empty)
                 innerpart = split[0];
             else
                 innerpart = split[1];*/
+=======
+            }
+>>>>>>> 9b4c3370db6a3434acc95aa2b6c057b1622bc4d0
 
             return innerpart;
         }

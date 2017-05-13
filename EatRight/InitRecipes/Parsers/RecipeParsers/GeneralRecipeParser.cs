@@ -11,11 +11,29 @@ namespace InitRecipes {
         public GeneralRecipeParser(IRecipeParser parser) {
             Parser = parser;
         }
-        public string GetImageUrl(string page) {
-            try {
-                return Parser.GetImageUrl(page);
+        public string GetImageUrl(string page)
+        {
+            try
+            {
+                if (Parser.ImageUrlSplitter.Length > 0)
+                {
+                    var parts = page.Split(Parser.ImageUrlSplitter, StringSplitOptions.None);
+                    if (parts.Length > 1)
+                    {
+                        var innerParts = parts[1].Split('\"');
+                        var imageUrl = Parser.ImageUrlSplitter[0] + innerParts[0];
+                        return imageUrl;
+                    }
+
+                    throw new Exception("Couldn't load image");
+                }
+                else
+                {
+                    return Parser.GetImageUrl(page);
+                }
             }
-            catch {
+            catch
+            {
                 return null;
             }
         }

@@ -35,7 +35,6 @@ namespace RestModel  {
     }
     public enum RecipesSource {All =0, AllRecipes = 1, Cookpad = 2, Food = 3, BBC=4 }
 
-
     public class Recipe : IQueryable
     {
         public override int GetHashCode() {
@@ -43,7 +42,7 @@ namespace RestModel  {
         }
         [BsonElement("_id")]
         public int ID { get; set; }
-        public int OriginalID { get; set; }
+        public string OriginalID { get; set; }
         public RecipesSource Source { get; set; }
         public string Urn{ get; set; }
         [BsonElement("_types")]

@@ -77,6 +77,7 @@
     <Compile Include="Graders\DailyMenuGraders\PerMealGrader.cs" />
     <Compile Include="Graders\DailyMenuGraders\VarietyDailyGrader.cs" />
     <Compile Include="Graders\Grader.cs" />
+    <Compile Include="Graders\MealGraders\StepsNumMealGrader.cs" />
     <Compile Include="Graders\RecoGraders\RecoGrader.cs" />
     <Compile Include="Graders\RecoGraders\GradeAverageRecoGrader.cs" />
     <Compile Include="Graders\RecoGraders\VarietyRecoGrader.cs" />

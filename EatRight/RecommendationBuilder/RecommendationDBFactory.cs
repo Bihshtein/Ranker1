@@ -146,14 +146,15 @@ namespace RecommendationBuilder
     {
         public static Dictionary<UserPriorities,List<GraderType>> PriorityToGradersMap = new Dictionary<UserPriorities, List<GraderType>>() {
             { UserPriorities.Nutrition, new List<GraderType>() { GraderType.MinNutValuesMealGrader, GraderType.MaxNutValuesMealGrader, GraderType.CaloriesCountMealGrader } },
-            { UserPriorities.Simplicity, new List<GraderType>() { GraderType.PrepTimeMealGrader } }
+            { UserPriorities.Simplicity, new List<GraderType>() { GraderType.PrepTimeMealGrader, GraderType.StepsNumMealGrader } }
         };
 
         public static Dictionary<GraderType, double> GraderDefaults = new Dictionary<GraderType, double>() {
             { GraderType.CaloriesCountMealGrader, 1},
             { GraderType.MinNutValuesMealGrader,  1},
             { GraderType.MaxNutValuesMealGrader,  1},
-            { GraderType.PrepTimeMealGrader, 1}
+            { GraderType.PrepTimeMealGrader, 1},
+            { GraderType.StepsNumMealGrader, 1}
         };
         public static RecommendationDB FromUserProfile(UserProfile userProfile, RestDBInterface unit)
         {

@@ -16,6 +16,7 @@ namespace InitRecipes {
 
         public string[] ServingSplitter => new string[1] { "<span class=\"recipe - details__text\" itemprop=\"recipeYield\">" };
         public string[] IngredientSplitter => new string[1] { "itemprop=\"ingredients\">" };
+        public string[] ImageUrlSplitter => new string[1] { "https://www.bbcgoodfood.com/sites/default/files/recipe_images" };
 
         public TimeSpan GetPrepTime(string page) {
             return new TimeSpan(0);
