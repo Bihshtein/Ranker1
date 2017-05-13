@@ -12,6 +12,7 @@ namespace InitRecipes {
         public string[] ServingSplitter =>new string[1] { "Servings Per Recipe:" }; 
         public string[] StepsNumSplitter =>  new string[1] { "\"recipeInstructions\"" };
         public string[] IngredientSplitter=> new string[1] { "<li data-ingredient=" };
+        public string[] ImageUrlSplitter => new string[0];
 
         public IngredientInfo ParseWeightAndName(string ingredient) {
             var parts = ingredient.Split(new string[3] { "<span>", "</span>", "<a" }, StringSplitOptions.None);

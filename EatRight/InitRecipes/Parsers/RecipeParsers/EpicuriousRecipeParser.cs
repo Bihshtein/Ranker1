@@ -16,6 +16,7 @@ namespace InitRecipes {
 
         public string[] ServingSplitter => new string[1] { "<span class=\"recipe - details__text\" itemprop=\"recipeYield\">" };
         public string[] IngredientSplitter => new string[1] { "itemprop=\"ingredients\">" };
+        public string[] ImageUrlSplitter => new string[1] { "http://assets.epicurious.com/photos/" };
 
         public TimeSpan GetPrepTime(string page) {
             return new TimeSpan(0);
@@ -38,15 +39,7 @@ namespace InitRecipes {
 
         public string GetImageUrl(string page)
         {
-            var parts = page.Split(new string[] { "http://assets.epicurious.com/photos/" }, StringSplitOptions.None);
-            if (parts.Length > 1)
-            {
-                var innerParts = parts[1].Split('\"');
-                var imageUrl = "http://assets.epicurious.com/photos/" + innerParts[0];
-                return imageUrl;
-            }
-
-            throw new Exception("Couldn't load image");
+            return "";
         }
 
         public string GetRecipeName(string page) {

@@ -16,6 +16,7 @@ namespace InitRecipes {
 
         public string[] ServingSplitter => new string[1] { "<meta id=\"metaRecipeServings\" itemprop=\"recipeYield\" content=" };
         public string[] IngredientSplitter => new string[1] { "itemprop=\"ingredients\">" };
+        public string[] ImageUrlSplitter => new string[0];
 
         public TimeSpan GetPrepTime(string page) {
             var prepTimeParts = page.Split(new string[1] { "<span class=\"ready-in-time\">" }, StringSplitOptions.None);

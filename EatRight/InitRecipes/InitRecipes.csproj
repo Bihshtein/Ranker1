@@ -58,6 +58,7 @@
     <Compile Include="Parsers\RecipeParsers\EpicuriousRecipeParser.cs" />
     <Compile Include="Parsers\RecipeParsers\BBCRecipeParser.cs" />
     <Compile Include="Parsers\RecipeParsers\GeneralRecipeParser.cs" />
+    <Compile Include="Parsers\RecipesPageParsers\BBCRecipesPageParser.cs" />
     <Compile Include="Parsers\RecipesPageParsers\RecipesPageParserFactory.cs" />
     <Compile Include="Parsers\RecipesPageParsers\FoodRecipesPageParser.cs" />
     <Compile Include="Parsers\RecipesPageParsers\EpicuriousRecipesPageParser.cs" />

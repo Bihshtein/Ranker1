@@ -12,7 +12,8 @@ using RestModel;
 namespace InitRecipes {
     public class CookpadParser : IRecipeParser {
         public string[] ServingSplitter => new string[1] { "<div class=\"subtle\" data-field data-field-name=\"serving\" data-placeholder=\"How many servings?\" data-maxlength=\"15\">" }; 
-        public string[] IngredientSplitter => new string[1] { "<span class=\"ingredient__quantity\">" }; 
+        public string[] IngredientSplitter => new string[1] { "<span class=\"ingredient__quantity\">" };
+        public string[] ImageUrlSplitter => new string[0];
 
         public static ILog log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
 

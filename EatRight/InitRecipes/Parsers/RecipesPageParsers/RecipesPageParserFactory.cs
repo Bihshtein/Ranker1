@@ -17,6 +17,8 @@ namespace InitRecipes.Parsers.RecipesPageParsers
                     return new FoodRecipesPageParser();
                 case RecipesSource.Epicurious:
                     return new EpicuriousRecipesPageParser();
+                case RecipesSource.BBC:
+                    return new BBCRecipesPageParser();
                 default:
                     return new GeneralRecipesPageParser() { source = source };
             }

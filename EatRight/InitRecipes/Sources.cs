@@ -63,7 +63,7 @@ namespace InitRecipes {
             {RecipesSource.BBC,  new SourceData() {
                 PageKeyword = "page",
                 PageSeperator = "?",
-                PageSplitterStr = "data-id=\"",
+                PageSplitterStr = "<a itemprop=\"url\" href=\"/recipes/",
                 Meals = new List<MealData> {
                     new MealData { Meal = MealType.Dinner, Url = "https://www.bbcgoodfood.com/search/recipesc/course/dinner", },
                 },
