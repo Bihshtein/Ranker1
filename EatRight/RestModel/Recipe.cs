@@ -33,7 +33,7 @@ namespace RestModel  {
         public string ReltiveSizeMeasure { get; set; }
         public double Quantity { get; set; }
     }
-    public enum RecipesSource { AllRecipes = 1, Cookpad = 2, Food = 3, BBC=4 }
+    public enum RecipesSource { AllRecipes = 1, Cookpad = 2, Food = 3, BBC = 4, Epicurious = 5 }
 
 
     public class Recipe : IQueryable
@@ -43,7 +43,7 @@ namespace RestModel  {
         }
         [BsonElement("_id")]
         public int ID { get; set; }
-        public int OriginalID { get; set; }
+        public string OriginalID { get; set; }
         public RecipesSource Source { get; set; }
         public string Urn{ get; set; }
         [BsonElement("_types")]
