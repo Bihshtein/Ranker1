@@ -130,9 +130,6 @@ namespace LogicRunner
                 var recipes = new List<int>();
                 var recipesCollection = new RestDBInterface().Recipes;
                 recipesCollection.GetAllList().ForEach(a => recipes.Add(a.ID));
-                recipes.RemoveAll(r => 
-                    recipesCollection.Get(r).ProductsWeight == null || recipesCollection.Get(r).ProductsWeight.Count != recipesCollection.Get(r).Ingredients.Count || recipesCollection.Get(r).Ingredients.Count == 0
-                    );
 
                 generator = new RecommendationGenerator(unit, recommendationDB,  new HashSet<int>(recipes), int.Parse(txtCalories.Text));
             }
@@ -159,6 +156,7 @@ namespace LogicRunner
             else {
                 var list = meals.Select(o => new MyViewModel(o) {
                     Id = o.Recipe.ID,
+                    OriginalID = o.Recipe.OriginalID,
                     Name = o.Recipe.Name,
                     NutValues = parseNutValues(o.NutValues),
                     GradersResult = parseGradersResult(o.GradeInfo.GradersInfo)

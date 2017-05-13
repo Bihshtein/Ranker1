@@ -20,32 +20,46 @@ namespace InitRecipes {
         public static ILog log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
         public static string FolderPath = Assembly.GetExecutingAssembly().Location + @"\..\..\..\..\LocalDB\";
         public static object Locker = new object();
-        public static HashSet<int> Indexes;
+        public static List<int> Indexes;
 
 
-        public static void CreateDB(bool offline) {
-            Indexes = new HashSet<int>();
+        public static void CreateDB(bool offline, bool dropTable, int limit, RecipesSource? source=null, MealType? mealType=null) {
+            Indexes = new List<int>();
             var unit = new RestDBInterface();
-            unit.Recipes.Empty();
-            Sources.RecipesURNs.ToList().ForEach(s => AddRecipesBySource(s.Key, unit, offline));
+            if (dropTable)
+                unit.Recipes.Empty();
+            var loaded = unit.Recipes.GetAllList();
+            var ids = loaded.Select(r => r.ID).ToList();
+            ids.Sort();
+            if (ids.Count > 0)
+                AddProducts.CurrId = ids[ids.Count - 1];
+            AddProducts.CurrId++;
+            log.Debug("Num of recipes before : " + ids.Count);
+            if (source.HasValue && mealType.HasValue)
+                AddRecipesByMealType(source.Value, Sources.RecipesURNs[source.Value].Meals.Find(m => m.Meal == mealType.Value), unit, offline, loaded, limit);
+            else
+                Sources.RecipesURNs.ToList().ForEach(s => AddRecipesBySource(s.Key, unit, offline, loaded.FindAll(r => r.Source == s.Key), limit));
+            AddProducts.DumpDebug();
         }
 
-        public static void AddRecipesBySource(RecipesSource source, RestDBInterface unit, bool offline) {
-            Sources.RecipesURNs[source].Meals.ToList().ForEach(m => AddRecipesByMealType(source, m, unit, offline));
+        public static void AddRecipesBySource(RecipesSource source, RestDBInterface unit, bool offline, List<Recipe> loadedRecipes, int limit) {
+            Sources.RecipesURNs[source].Meals.ToList().ForEach(m => AddRecipesByMealType(source, m, unit, offline,loadedRecipes.FindAll(r => r.Types.Contains(m.Meal)), limit));
         }
 
-        public static void AddRecipesByMealType(RecipesSource source, MealData mealData, RestDBInterface unit, bool offline, int loadBulkSize = 1000) {
+        public static void AddRecipesByMealType(RecipesSource source, MealData mealData, RestDBInterface unit, bool offline, List<Recipe> loadedRecipes, int limit,int loadBulkSize = 1000) {
+            var loadedIds = loadedRecipes.Select(r => r.OriginalID).ToList();
             if (source == RecipesSource.AllRecipes && !offline)
                 loadBulkSize = 10;
-            var recipesLimit = mealData.MealsLimit;
             if (offline) {
-                var files = Directory.GetFiles(Path.Combine(FolderPath, source.ToString(), mealData.Meal.ToString())).Take(recipesLimit).ToList();
+                var files = Directory.GetFiles(Path.Combine(FolderPath, source.ToString(), mealData.Meal.ToString())).ToList();
                 files.ForEach(f =>Indexes.Add(int.Parse(Path.GetFileNameWithoutExtension(f))));
+                Indexes.RemoveAll(i => loadedIds.Contains(i));
+                Indexes = Indexes.Take(limit).ToList();
             }
             else
-                AddRecipesByURL(source, mealData, unit, recipesLimit);
+                AddRecipesByURL(source, mealData, unit, limit);
                 
-            while (Indexes.Count > 10) {
+            while (Indexes.Count > 9) {
                 log.Debug("Loading bulk, tasks left : " + Indexes.Count());
                 var loadMealsBulkSize = Indexes.Count > loadBulkSize ? loadBulkSize : Indexes.Count;
                 var tasks = new List<Task>();
@@ -66,7 +80,6 @@ namespace InitRecipes {
                 var beforeCount = Indexes.Count;
                 for (int i = 0; i < tasksCount; i++) {
                     tasks.Add(new Task(new Action(() => ReadPage(source, mealType, unit, page++, new WebClient()))));
-                
                 }
 
                 tasks.ForEach(task => task.Start());
@@ -82,16 +95,18 @@ namespace InitRecipes {
         private static void ReadPage(RecipesSource source, MealData mealType,  RestDBInterface unit, int currPage, WebClient client) {
             string pageStr = null;
             var readWorked = false;
-            var urlSuffix = currPage == 0 ? "" : ("?"+ Sources.RecipesURNs[source].PageKeyword + "=" + currPage);
-            var uri = mealType.Url +  urlSuffix;
+            var urlSuffix = currPage == 0 ? "" : ("?" + Sources.RecipesURNs[source].PageKeyword + "=" + currPage);
+            var uri = mealType.Url + urlSuffix;
             for (int retries = 0; readWorked == false && retries < 10; retries++) {
                 try {
                     pageStr = client.DownloadString(uri);
                     readWorked = true;
                     if (source == RecipesSource.Food)
                         AddRecipesFromJson( pageStr, unit);
-                    else
+                    else if (source == RecipesSource.BBC)
                         AddRecipesFromPage(pageStr, unit);
+                    else  
+                        AddRecipesFromPage2(pageStr, unit);
                 }
                 catch (Exception) {
                     log.Error(string.Format("Failed to load page num {0}, might be the last page", currPage));
@@ -104,10 +119,29 @@ namespace InitRecipes {
 
         public static void AddRecipesFromPage(string pageStr, RestDBInterface unit) {            
             // Split the whole page str by recipe URLs. We assume that each recipe URL on this page is relevant
-            string[] parts = pageStr.Split(new string[] { "data-id=\"" }, StringSplitOptions.None);
+            string[] parts = pageStr.Split(new string[] { "<a itemprop=\"url\" href=\"/recipes/" }, StringSplitOptions.None);
             for (int i = 1; i < parts.Length; i++) {
 
-                string[] splittedPart = parts[i].Split(new string[] { "\"" }, StringSplitOptions.None);
+                string[] splittedPart = parts[i].Split(new string[] {"/" }, StringSplitOptions.None);
+                if (splittedPart.Length == 0) {
+                    continue;
+                }
+                var idStr = splittedPart[0];
+                int id;
+                if (int.TryParse(idStr, out id)) {
+                    lock (Locker) {
+                        Indexes.Add(id);
+                    }
+                }
+            }
+        }
+
+        public static void AddRecipesFromPage2(string pageStr, RestDBInterface unit) {
+            // Split the whole page str by recipe URLs. We assume that each recipe URL on this page is relevant
+            string[] parts = pageStr.Split(new string[] {  "data-id=\"" }, StringSplitOptions.None);
+            for (int i = 1; i < parts.Length; i++) {
+
+                string[] splittedPart = parts[i].Split(new string[] { "\""  }, StringSplitOptions.None);
                 if (splittedPart.Length == 0) {
                     continue;
                 }
@@ -136,17 +170,10 @@ namespace InitRecipes {
             }
             );
         }
-        static int serial = 0;
         public static void ParseRecipe(int index, string urn, MealType mealType, RecipesSource source) {
             var customCulture = (CultureInfo)Thread.CurrentThread.CurrentCulture.Clone(); customCulture.NumberFormat.NumberDecimalSeparator = ".";
             Thread.CurrentThread.CurrentCulture = customCulture;
             var unit = new RestDBInterface();
-            lock (Locker) {
-                if (unit.Recipes.Get(index) != null) {
-                    Indexes.Remove(index);
-                    return;
-                }
-            }
             var page = string.Empty;
             try {
                 Directory.CreateDirectory(Path.Combine(FolderPath, source.ToString()));
@@ -158,29 +185,27 @@ namespace InitRecipes {
                     page = new WebClient().DownloadString(urn + index.ToString());
                     File.WriteAllText(filePath, page);
                 }
-                
             }
             catch {
                 log.Error("Failed to load recipe number : " + index);
                 return;
             }
-            try {
-                unit.Recipes.Add(new Recipe() {
-                    ID = serial++,
+           
+                var recipe = new Recipe{ 
                     OriginalID = index,
+                    Source = source,
                     Urn = Sources.RecipesURNs[source].Url.Split(new string[1] { "//" }, StringSplitOptions.None)[1],
                     Name = Sources.RecipesURNs[source].Parser.Parser.GetRecipeName(page),
                     Ingredients = Sources.RecipesURNs[source].Parser.GetIngredients(page),
                     Types = new HashSet<MealType>() { mealType },
-                    Servings = Sources.RecipesURNs[source].Parser.Parser.GetServings(page),
+                    Servings = Sources.RecipesURNs[source].Parser.GetServings(page),
                     StepsNum = Sources.RecipesURNs[source].Parser.Parser.GetStepsNum(page),
                     PrepTime = Sources.RecipesURNs[source].Parser.Parser.GetPrepTime(page),
-                    ImageUrl = Sources.RecipesURNs[source].Parser.Parser.GetImageUrl(page)
-                });
-            }
-            catch (Exception ex) {
-             //   log.Error("Couldn'r properly parse recipe : " + ex.Message);
-            }
+                    ImageUrl = Sources.RecipesURNs[source].Parser.GetImageUrl(page)
+                };
+
+                AddProducts.AddWeightsAndCalories(recipe);
+         
 
             lock (Locker) {
                 Indexes.Remove(index);

@@ -32,21 +32,15 @@ namespace InitProducts {
 
         public static List<string> PackOptions = new List<string>{
            "condensed","pressurized","syrup pack","drained solids","all styles", "regular pack", "brine pack", "vacuum pack",
-           "drained", "jellied","juice pack","water","cream style" ,"in oil", "solids and liquids" };
-
-        public static List<string> PreperationOptionsRaw = new List<string>{
-            "toasted","prepared","baked","flour","raw","glazed","fried","carbonated","roasted","fresh",
-            "cooked","breaded","moist heat","dry heat","smoked","pickled","boiled","steamed",
-            "whipped","pasteurized","cultured","poached","heated","stewed","microwave","grilled",
-            "sauteed","scalloped","candied","braised","rotisserie","BBQ","batter","simmered",
-            "broiled",
+           "drained", "jellied","juice pack","water","cream style" ,"in oil", "solids and liquids"
         };
+
 
        private static List<string> PreparationOptions = new List<string>(){
          "moist heat", "dry heat", "smoked", "carbonated","cultured","poached","whipped","pasteurized","candied","sauteed", "breaded","steamed","fried","heated",
          "toasted","boiled", "grilled", "pan-browned", "crumbles", "pickled", "microwave", "baked", "pickled", "roasted",
              "oven","broiled","scalloped", "raw", "braised","stewed","rotisserie","BBQ","simmered","glazed","cooked",
-            "prepared","batter", "flour",
+            "prepared","batter", "flour","distilled"
         };
 
 

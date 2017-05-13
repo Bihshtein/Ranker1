@@ -1,0 +1,5402 @@
+{
+    "report": {
+        "sr": "28",
+        "groups": [
+            {
+                "id": "2100",
+                "description": "Fast Foods"
+            }
+        ],
+        "subset": "All foods",
+        "end": 359,
+        "start": 0,
+        "total": 359,
+        "foods": [
+            {
+                "ndbno": "21527",
+                "name": "ARBY'S, roast beef sandwich, classic",
+                "weight": 149.0,
+                "measure": "1.0 sandwich",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.60",
+                        "gm": 15.17
+                    }
+                ]
+            },
+            {
+                "ndbno": "21251",
+                "name": "BURGER KING, Cheeseburger",
+                "weight": 133.0,
+                "measure": "1.0 item",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "19.38",
+                        "gm": 14.57
+                    }
+                ]
+            },
+            {
+                "ndbno": "21256",
+                "name": "BURGER KING, Chicken Strips",
+                "weight": 36.0,
+                "measure": "1.0 strip",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.55",
+                        "gm": 18.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "21385",
+                "name": "BURGER KING, CROISSAN'WICH with Egg and Cheese",
+                "weight": 110.0,
+                "measure": "1.0 item",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.38",
+                        "gm": 10.35
+                    }
+                ]
+            },
+            {
+                "ndbno": "21384",
+                "name": "BURGER KING, CROISSAN'WICH with Sausage and Cheese",
+                "weight": 131.0,
+                "measure": "1.0 item",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.99",
+                        "gm": 13.73
+                    }
+                ]
+            },
+            {
+                "ndbno": "21383",
+                "name": "BURGER KING, CROISSAN'WICH with Sausage, Egg and Cheese",
+                "weight": 171.0,
+                "measure": "1.0 sandwich",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "20.67",
+                        "gm": 12.09
+                    }
+                ]
+            },
+            {
+                "ndbno": "21506",
+                "name": "BURGER KING, Double Cheeseburger",
+                "weight": 162.0,
+                "measure": "1.0 sandwich",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "27.26",
+                        "gm": 16.83
+                    }
+                ]
+            },
+            {
+                "ndbno": "21254",
+                "name": "BURGER KING, DOUBLE WHOPPER, no cheese",
+                "weight": 374.0,
+                "measure": "1.0 item",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "52.14",
+                        "gm": 13.94
+                    }
+                ]
+            },
+            {
+                "ndbno": "21255",
+                "name": "BURGER KING, DOUBLE WHOPPER, with cheese",
+                "weight": 399.0,
+                "measure": "1.0 item",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "57.74",
+                        "gm": 14.47
+                    }
+                ]
+            },
+            {
+                "ndbno": "21249",
+                "name": "BURGER KING, french fries",
+                "weight": 74.0,
+                "measure": "1.0 small serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.39",
+                        "gm": 3.23
+                    }
+                ]
+            },
+            {
+                "ndbno": "21386",
+                "name": "BURGER KING, french toast sticks",
+                "weight": 21.0,
+                "measure": "1.0 stick",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.26",
+                        "gm": 6.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "21250",
+                "name": "BURGER KING, Hamburger",
+                "weight": 99.0,
+                "measure": "1.0 sandwich",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.70",
+                        "gm": 14.85
+                    }
+                ]
+            },
+            {
+                "ndbno": "21387",
+                "name": "BURGER KING, Hash Brown Rounds",
+                "weight": 5.6,
+                "measure": "1.0 piece",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.16",
+                        "gm": 2.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "21509",
+                "name": "BURGER KING, Onion Rings",
+                "weight": 91.0,
+                "measure": "1.0 small",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.51",
+                        "gm": 3.86
+                    }
+                ]
+            },
+            {
+                "ndbno": "21259",
+                "name": "BURGER KING, Original Chicken Sandwich",
+                "weight": 199.0,
+                "measure": "1.0 sandwich",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "24.16",
+                        "gm": 12.14
+                    }
+                ]
+            },
+            {
+                "ndbno": "21258",
+                "name": "BURGER KING, Premium Fish Sandwich",
+                "weight": 220.0,
+                "measure": "1.0 sandwich",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.64",
+                        "gm": 10.29
+                    }
+                ]
+            },
+            {
+                "ndbno": "21141",
+                "name": "BURGER KING, Vanilla Shake",
+                "weight": 24.8,
+                "measure": "1.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.79",
+                        "gm": 3.19
+                    }
+                ]
+            },
+            {
+                "ndbno": "21252",
+                "name": "BURGER KING, WHOPPER, no cheese",
+                "weight": 291.0,
+                "measure": "1.0 item",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "31.25",
+                        "gm": 10.74
+                    }
+                ]
+            },
+            {
+                "ndbno": "21253",
+                "name": "BURGER KING, WHOPPER, with cheese",
+                "weight": 316.0,
+                "measure": "1.0 item",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "35.36",
+                        "gm": 11.19
+                    }
+                ]
+            },
+            {
+                "ndbno": "21143",
+                "name": "CHICK-FIL-A, Chick-n-Strips",
+                "weight": 50.0,
+                "measure": "1.0 strip",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.70",
+                        "gm": 21.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "21526",
+                "name": "CHICK-FIL-A, chicken sandwich",
+                "weight": 187.0,
+                "measure": "1.0 sandwich",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "30.44",
+                        "gm": 16.28
+                    }
+                ]
+            },
+            {
+                "ndbno": "21144",
+                "name": "CHICK-FIL-A, hash browns",
+                "weight": 5.5,
+                "measure": "1.0 piece",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.17",
+                        "gm": 3.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "21473",
+                "name": "DIGIORNO Pizza, cheese topping, cheese stuffed crust, frozen, baked",
+                "weight": 164.0,
+                "measure": "1.0 slice 1/4 of pie",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.11",
+                        "gm": 13.48
+                    }
+                ]
+            },
+            {
+                "ndbno": "21474",
+                "name": "DIGIORNO Pizza, cheese topping, rising crust, frozen, baked",
+                "weight": 183.0,
+                "measure": "1.0 slice 1/4 of pie",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "23.42",
+                        "gm": 12.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "21475",
+                "name": "DIGIORNO Pizza, cheese topping, thin crispy crust, frozen, baked",
+                "weight": 161.0,
+                "measure": "1.0 slice 1/4 of pie",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "20.87",
+                        "gm": 12.96
+                    }
+                ]
+            },
+            {
+                "ndbno": "21476",
+                "name": "DIGIORNO Pizza, pepperoni topping, cheese stuffed crust, frozen, baked",
+                "weight": 179.0,
+                "measure": "1.0 slice 1/4 of pie",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "24.92",
+                        "gm": 13.92
+                    }
+                ]
+            },
+            {
+                "ndbno": "21477",
+                "name": "DIGIORNO Pizza, pepperoni topping, rising crust, frozen, baked",
+                "weight": 207.0,
+                "measure": "1.0 slice 1/4 of pie",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "25.79",
+                        "gm": 12.46
+                    }
+                ]
+            },
+            {
+                "ndbno": "21478",
+                "name": "DIGIORNO Pizza, pepperoni topping, thin crispy crust, frozen, baked",
+                "weight": 145.0,
+                "measure": "1.0 slice 1/4 of pie",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "19.17",
+                        "gm": 13.22
+                    }
+                ]
+            },
+            {
+                "ndbno": "21479",
+                "name": "DIGIORNO Pizza, supreme topping, rising crust, frozen, baked",
+                "weight": 227.0,
+                "measure": "1.0 slice 1/4 of pie",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "26.65",
+                        "gm": 11.74
+                    }
+                ]
+            },
+            {
+                "ndbno": "21480",
+                "name": "DIGIORNO Pizza, supreme topping, thin crispy crust, frozen, baked",
+                "weight": 155.0,
+                "measure": "1.0 slice 1/4 of pie",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.69",
+                        "gm": 11.41
+                    }
+                ]
+            },
+            {
+                "ndbno": "21277",
+                "name": "DOMINO'S 14\" Cheese Pizza, Classic Hand-Tossed Crust",
+                "weight": 108.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.66",
+                        "gm": 10.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "21279",
+                "name": "DOMINO'S 14\" Cheese Pizza, Crunchy Thin Crust",
+                "weight": 70.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.63",
+                        "gm": 12.33
+                    }
+                ]
+            },
+            {
+                "ndbno": "21278",
+                "name": "DOMINO'S 14\" Cheese Pizza, Ultimate Deep Dish Crust",
+                "weight": 118.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.70",
+                        "gm": 10.76
+                    }
+                ]
+            },
+            {
+                "ndbno": "21282",
+                "name": "DOMINO'S 14\" EXTRAVAGANZZA FEAST Pizza, Classic Hand-Tossed Crust",
+                "weight": 151.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.60",
+                        "gm": 10.33
+                    }
+                ]
+            },
+            {
+                "ndbno": "21280",
+                "name": "DOMINO'S 14\" Pepperoni Pizza, Classic Hand-Tossed Crust",
+                "weight": 113.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.71",
+                        "gm": 11.25
+                    }
+                ]
+            },
+            {
+                "ndbno": "21492",
+                "name": "DOMINO'S 14\" Pepperoni Pizza, Crunchy Thin Crust",
+                "weight": 79.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.97",
+                        "gm": 13.88
+                    }
+                ]
+            },
+            {
+                "ndbno": "21281",
+                "name": "DOMINO'S 14\" Pepperoni Pizza, Ultimate Deep Dish Crust",
+                "weight": 123.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.17",
+                        "gm": 11.52
+                    }
+                ]
+            },
+            {
+                "ndbno": "21494",
+                "name": "DOMINO'S 14\" Sausage Pizza, Classic Hand-Tossed Crust",
+                "weight": 114.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.63",
+                        "gm": 11.08
+                    }
+                ]
+            },
+            {
+                "ndbno": "21493",
+                "name": "DOMINO'S 14\" Sausage Pizza, Crunchy Thin Crust",
+                "weight": 78.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.96",
+                        "gm": 12.77
+                    }
+                ]
+            },
+            {
+                "ndbno": "21495",
+                "name": "DOMINO'S 14\" Sausage Pizza, Ultimate Deep Dish Crust",
+                "weight": 129.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.23",
+                        "gm": 11.03
+                    }
+                ]
+            },
+            {
+                "ndbno": "21142",
+                "name": "Fast food, biscuit",
+                "weight": 55.0,
+                "measure": "1.0 biscuit",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.89",
+                        "gm": 7.08
+                    }
+                ]
+            },
+            {
+                "ndbno": "21299",
+                "name": "Fast Food, Pizza Chain, 14\" pizza, cheese topping, regular crust",
+                "weight": 107.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.19",
+                        "gm": 11.39
+                    }
+                ]
+            },
+            {
+                "ndbno": "21511",
+                "name": "Fast Food, Pizza Chain, 14\" pizza, cheese topping, stuffed crust",
+                "weight": 117.0,
+                "measure": "1.0 slice 1/8 pizza",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.31",
+                        "gm": 12.23
+                    }
+                ]
+            },
+            {
+                "ndbno": "21300",
+                "name": "Fast Food, Pizza Chain, 14\" pizza, cheese topping, thick crust",
+                "weight": 115.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.43",
+                        "gm": 10.81
+                    }
+                ]
+            },
+            {
+                "ndbno": "21301",
+                "name": "Fast Food, Pizza Chain, 14\" pizza, cheese topping, thin crust",
+                "weight": 76.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.77",
+                        "gm": 12.85
+                    }
+                ]
+            },
+            {
+                "ndbno": "21304",
+                "name": "Fast Food, Pizza Chain, 14\" pizza, meat and vegetable topping, regular crust",
+                "weight": 136.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.99",
+                        "gm": 11.02
+                    }
+                ]
+            },
+            {
+                "ndbno": "21302",
+                "name": "Fast Food, Pizza Chain, 14\" pizza, pepperoni topping, regular crust",
+                "weight": 111.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.03",
+                        "gm": 11.74
+                    }
+                ]
+            },
+            {
+                "ndbno": "21303",
+                "name": "Fast Food, Pizza Chain, 14\" pizza, pepperoni topping, thick crust",
+                "weight": 118.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.56",
+                        "gm": 11.49
+                    }
+                ]
+            },
+            {
+                "ndbno": "21485",
+                "name": "Fast Food, Pizza Chain, 14\" pizza, pepperoni topping, thin crust",
+                "weight": 79.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.07",
+                        "gm": 14.01
+                    }
+                ]
+            },
+            {
+                "ndbno": "21484",
+                "name": "Fast Food, Pizza Chain, 14\" pizza, sausage topping, regular crust",
+                "weight": 116.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.34",
+                        "gm": 11.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "21482",
+                "name": "Fast Food, Pizza Chain, 14\" pizza, sausage topping, thick crust",
+                "weight": 127.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.05",
+                        "gm": 11.06
+                    }
+                ]
+            },
+            {
+                "ndbno": "21483",
+                "name": "Fast Food, Pizza Chain, 14\" pizza, sausage topping, thin crust",
+                "weight": 88.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.76",
+                        "gm": 13.36
+                    }
+                ]
+            },
+            {
+                "ndbno": "21411",
+                "name": "Fast foods, bagel, with breakfast steak, egg, cheese, and condiments",
+                "weight": 254.0,
+                "measure": "1.0 item",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "40.51",
+                        "gm": 15.95
+                    }
+                ]
+            },
+            {
+                "ndbno": "21410",
+                "name": "Fast foods, bagel, with egg, sausage patty, cheese, and condiments",
+                "weight": 219.0,
+                "measure": "1.0 item",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "28.43",
+                        "gm": 12.98
+                    }
+                ]
+            },
+            {
+                "ndbno": "21006",
+                "name": "Fast foods, biscuit with egg and steak",
+                "weight": 148.0,
+                "measure": "1.0 biscuit",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.94",
+                        "gm": 12.12
+                    }
+                ]
+            },
+            {
+                "ndbno": "21010",
+                "name": "Fast foods, biscuit, with crispy chicken fillet",
+                "weight": 132.0,
+                "measure": "1.0 item",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.75",
+                        "gm": 11.93
+                    }
+                ]
+            },
+            {
+                "ndbno": "21002",
+                "name": "Fast foods, biscuit, with egg",
+                "weight": 136.0,
+                "measure": "1.0 biscuit",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.60",
+                        "gm": 8.53
+                    }
+                ]
+            },
+            {
+                "ndbno": "21003",
+                "name": "Fast foods, biscuit, with egg and bacon",
+                "weight": 150.0,
+                "measure": "1.0 biscuit",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.00",
+                        "gm": 11.33
+                    }
+                ]
+            },
+            {
+                "ndbno": "21004",
+                "name": "Fast foods, biscuit, with egg and ham",
+                "weight": 182.0,
+                "measure": "1.0 biscuit",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "19.36",
+                        "gm": 10.64
+                    }
+                ]
+            },
+            {
+                "ndbno": "21005",
+                "name": "Fast Foods, biscuit, with egg and sausage",
+                "weight": 162.0,
+                "measure": "1.0 item",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "18.03",
+                        "gm": 11.13
+                    }
+                ]
+            },
+            {
+                "ndbno": "21007",
+                "name": "Fast foods, biscuit, with egg, cheese, and bacon",
+                "weight": 145.0,
+                "measure": "1.0 item",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.41",
+                        "gm": 12.01
+                    }
+                ]
+            },
+            {
+                "ndbno": "21008",
+                "name": "Fast foods, biscuit, with ham",
+                "weight": 162.0,
+                "measure": "1.0 biscuit",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "19.20",
+                        "gm": 11.85
+                    }
+                ]
+            },
+            {
+                "ndbno": "21009",
+                "name": "Fast foods, biscuit, with sausage",
+                "weight": 111.0,
+                "measure": "1.0 item",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.73",
+                        "gm": 9.67
+                    }
+                ]
+            },
+            {
+                "ndbno": "21520",
+                "name": "Fast foods, breadstick, soft, prepared with garlic and parmesan cheese",
+                "weight": 43.0,
+                "measure": "1.0 breadstick",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.25",
+                        "gm": 12.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "21519",
+                "name": "Fast foods, breakfast burrito, with egg, cheese, and sausage",
+                "weight": 109.0,
+                "measure": "1.0 burrito",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.10",
+                        "gm": 11.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "21060",
+                "name": "Fast foods, burrito, with beans",
+                "weight": 217.0,
+                "measure": "2.0 pieces",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.06",
+                        "gm": 6.48
+                    }
+                ]
+            },
+            {
+                "ndbno": "21063",
+                "name": "Fast foods, burrito, with beans and beef",
+                "weight": 241.0,
+                "measure": "1.0 item",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "27.76",
+                        "gm": 11.52
+                    }
+                ]
+            },
+            {
+                "ndbno": "21061",
+                "name": "Fast foods, burrito, with beans and cheese",
+                "weight": 185.0,
+                "measure": "1.0 each burrito",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.60",
+                        "gm": 7.35
+                    }
+                ]
+            },
+            {
+                "ndbno": "21064",
+                "name": "Fast foods, burrito, with beans, cheese, and beef",
+                "weight": 241.0,
+                "measure": "1.0 burrito",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.94",
+                        "gm": 7.03
+                    }
+                ]
+            },
+            {
+                "ndbno": "21094",
+                "name": "Fast foods, cheeseburger, double, regular patty and bun, with condiments",
+                "weight": 155.0,
+                "measure": "1.0 sandwich",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "25.17",
+                        "gm": 16.24
+                    }
+                ]
+            },
+            {
+                "ndbno": "21100",
+                "name": "Fast foods, cheeseburger; double, large patty, with condiments and vegetables",
+                "weight": 258.0,
+                "measure": "1.0 sandwich",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "37.98",
+                        "gm": 14.72
+                    }
+                ]
+            },
+            {
+                "ndbno": "21396",
+                "name": "Fast foods, cheeseburger; double, large patty; with condiments",
+                "weight": 280.0,
+                "measure": "1.0 item",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "47.49",
+                        "gm": 16.96
+                    }
+                ]
+            },
+            {
+                "ndbno": "21399",
+                "name": "Fast Foods, cheeseburger; double, large patty; with condiments, vegetables and mayonnaise",
+                "weight": 355.0,
+                "measure": "1.0 item",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "55.02",
+                        "gm": 15.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "21093",
+                "name": "Fast foods, cheeseburger; double, regular patty, with condiments and vegetables",
+                "weight": 166.0,
+                "measure": "1.0 sandwich",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "21.25",
+                        "gm": 12.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "21400",
+                "name": "Fast foods, cheeseburger; double, regular patty; double decker bun with condiments and special sauce",
+                "weight": 219.0,
+                "measure": "1.0 item",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "26.15",
+                        "gm": 11.94
+                    }
+                ]
+            },
+            {
+                "ndbno": "21092",
+                "name": "Fast foods, cheeseburger; double, regular patty; plain",
+                "weight": 149.0,
+                "measure": "1.0 item",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "25.57",
+                        "gm": 17.16
+                    }
+                ]
+            },
+            {
+                "ndbno": "21395",
+                "name": "Fast foods, cheeseburger; double, regular patty; with condiments",
+                "weight": 155.0,
+                "measure": "1.0 sandwich",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "25.17",
+                        "gm": 16.24
+                    }
+                ]
+            },
+            {
+                "ndbno": "21095",
+                "name": "Fast foods, cheeseburger; double, regular, patty and bun; with condiments and vegetables",
+                "weight": 228.0,
+                "measure": "1.0 sandwich",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "29.73",
+                        "gm": 13.04
+                    }
+                ]
+            },
+            {
+                "ndbno": "21096",
+                "name": "Fast foods, cheeseburger; single, large patty; plain",
+                "weight": 182.0,
+                "measure": "1.0 sandwich",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "31.47",
+                        "gm": 17.29
+                    }
+                ]
+            },
+            {
+                "ndbno": "21398",
+                "name": "Fast foods, cheeseburger; single, large patty; with condiments",
+                "weight": 199.0,
+                "measure": "1.0 item",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "30.27",
+                        "gm": 15.21
+                    }
+                ]
+            },
+            {
+                "ndbno": "21097",
+                "name": "Fast foods, cheeseburger; single, large patty; with condiments and bacon",
+                "weight": 211.0,
+                "measure": "1.0 item",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "33.30",
+                        "gm": 15.78
+                    }
+                ]
+            },
+            {
+                "ndbno": "21098",
+                "name": "Fast foods, cheeseburger; single, large patty; with condiments and vegetables",
+                "weight": 233.0,
+                "measure": "1.0 sandwich",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "27.00",
+                        "gm": 11.59
+                    }
+                ]
+            },
+            {
+                "ndbno": "21099",
+                "name": "Fast foods, cheeseburger; single, large patty; with condiments, vegetables and ham",
+                "weight": 254.0,
+                "measure": "1.0 sandwich",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "39.50",
+                        "gm": 15.55
+                    }
+                ]
+            },
+            {
+                "ndbno": "21397",
+                "name": "Fast foods, cheeseburger; single, large patty; with condiments, vegetables and mayonnaise",
+                "weight": 215.0,
+                "measure": "1.0 sandwich",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "29.43",
+                        "gm": 13.69
+                    }
+                ]
+            },
+            {
+                "ndbno": "21090",
+                "name": "Fast foods, cheeseburger; single, regular patty, with condiments",
+                "weight": 127.0,
+                "measure": "1.0 item",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.13",
+                        "gm": 13.49
+                    }
+                ]
+            },
+            {
+                "ndbno": "21091",
+                "name": "Fast foods, cheeseburger; single, regular patty, with condiments and vegetables",
+                "weight": 115.0,
+                "measure": "1.0 sandwich",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.02",
+                        "gm": 13.06
+                    }
+                ]
+            },
+            {
+                "ndbno": "21089",
+                "name": "Fast foods, cheeseburger; single, regular patty; plain",
+                "weight": 91.0,
+                "measure": "1.0 sandwich",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.02",
+                        "gm": 16.51
+                    }
+                ]
+            },
+            {
+                "ndbno": "21101",
+                "name": "Fast foods, cheeseburger; triple, regular patty; plain",
+                "weight": 249.0,
+                "measure": "1.0 item",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "45.32",
+                        "gm": 18.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "21102",
+                "name": "Fast foods, chicken fillet sandwich, plain with pickles",
+                "weight": 187.0,
+                "measure": "1.0 sandwich",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "30.44",
+                        "gm": 16.28
+                    }
+                ]
+            },
+            {
+                "ndbno": "21401",
+                "name": "Fast foods, chicken tenders",
+                "weight": 30.0,
+                "measure": "1.0 strip",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.77",
+                        "gm": 19.22
+                    }
+                ]
+            },
+            {
+                "ndbno": "21229",
+                "name": "Fast foods, chicken, breaded and fried, boneless pieces, plain",
+                "weight": 96.0,
+                "measure": "6.0 pieces",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.28",
+                        "gm": 15.92
+                    }
+                ]
+            },
+            {
+                "ndbno": "21127",
+                "name": "Fast foods, coleslaw",
+                "weight": 191.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.81",
+                        "gm": 0.95
+                    }
+                ]
+            },
+            {
+                "ndbno": "21230",
+                "name": "Fast Foods, crispy chicken filet sandwich, with lettuce and mayonnaise",
+                "weight": 152.0,
+                "measure": "1.0 sandwich",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.63",
+                        "gm": 10.94
+                    }
+                ]
+            },
+            {
+                "ndbno": "21517",
+                "name": "Fast foods, crispy chicken in tortilla, with lettuce, cheese, and ranch sauce",
+                "weight": 133.0,
+                "measure": "1.0 item",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.27",
+                        "gm": 11.48
+                    }
+                ]
+            },
+            {
+                "ndbno": "21462",
+                "name": "Fast foods, crispy chicken, bacon, and tomato club sandwich, with cheese, lettuce, and mayonnaise",
+                "weight": 271.0,
+                "measure": "1.0 sandwich",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "41.68",
+                        "gm": 15.38
+                    }
+                ]
+            },
+            {
+                "ndbno": "21011",
+                "name": "Fast foods, croissant, with egg and cheese",
+                "weight": 127.0,
+                "measure": "1.0 croissant",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.79",
+                        "gm": 10.07
+                    }
+                ]
+            },
+            {
+                "ndbno": "21012",
+                "name": "Fast foods, croissant, with egg, cheese, and bacon",
+                "weight": 128.0,
+                "measure": "1.0 item",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.10",
+                        "gm": 12.58
+                    }
+                ]
+            },
+            {
+                "ndbno": "21013",
+                "name": "Fast foods, croissant, with egg, cheese, and ham",
+                "weight": 155.0,
+                "measure": "1.0 item",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "19.30",
+                        "gm": 12.45
+                    }
+                ]
+            },
+            {
+                "ndbno": "21014",
+                "name": "Fast foods, croissant, with egg, cheese, and sausage",
+                "weight": 171.0,
+                "measure": "1.0 sandwich",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "20.67",
+                        "gm": 12.09
+                    }
+                ]
+            },
+            {
+                "ndbno": "21018",
+                "name": "Fast foods, egg, scrambled",
+                "weight": 96.0,
+                "measure": "2.0 eggs",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.29",
+                        "gm": 13.84
+                    }
+                ]
+            },
+            {
+                "ndbno": "21020",
+                "name": "Fast foods, english muffin, with cheese and sausage",
+                "weight": 108.0,
+                "measure": "1.0 item",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.34",
+                        "gm": 13.28
+                    }
+                ]
+            },
+            {
+                "ndbno": "21021",
+                "name": "Fast foods, english muffin, with egg, cheese, and canadian bacon",
+                "weight": 126.0,
+                "measure": "1.0 sandwich",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.19",
+                        "gm": 13.64
+                    }
+                ]
+            },
+            {
+                "ndbno": "21022",
+                "name": "Fast foods, english muffin, with egg, cheese, and sausage",
+                "weight": 165.0,
+                "measure": "1.0 item",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.08",
+                        "gm": 13.38
+                    }
+                ]
+            },
+            {
+                "ndbno": "21105",
+                "name": "Fast foods, fish sandwich, with tartar sauce",
+                "weight": 220.0,
+                "measure": "1.0 sandwich",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.64",
+                        "gm": 10.29
+                    }
+                ]
+            },
+            {
+                "ndbno": "21106",
+                "name": "Fast foods, fish sandwich, with tartar sauce and cheese",
+                "weight": 134.0,
+                "measure": "1.0 sandwich",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.09",
+                        "gm": 11.26
+                    }
+                ]
+            },
+            {
+                "ndbno": "21024",
+                "name": "Fast foods, french toast sticks",
+                "weight": 65.0,
+                "measure": "3.0 pieces",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.90",
+                        "gm": 6.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "21023",
+                "name": "Fast foods, french toast with butter",
+                "weight": 135.0,
+                "measure": "2.0 slices",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.34",
+                        "gm": 7.66
+                    }
+                ]
+            },
+            {
+                "ndbno": "21469",
+                "name": "Fast Foods, Fried Chicken, Breast, meat and skin and breading",
+                "weight": 203.0,
+                "measure": "1.0 breast, with skin",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "47.73",
+                        "gm": 23.51
+                    }
+                ]
+            },
+            {
+                "ndbno": "21464",
+                "name": "Fast Foods, Fried Chicken, Breast, meat only, skin and breading removed",
+                "weight": 142.0,
+                "measure": "1.0 breast without skin",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "39.66",
+                        "gm": 27.93
+                    }
+                ]
+            },
+            {
+                "ndbno": "21470",
+                "name": "Fast Foods, Fried Chicken, Drumstick, meat and skin with breading",
+                "weight": 75.0,
+                "measure": "1.0 drumstick, with skin",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.85",
+                        "gm": 21.13
+                    }
+                ]
+            },
+            {
+                "ndbno": "21465",
+                "name": "Fast Foods, Fried Chicken, Drumstick, meat only, skin and breading removed",
+                "weight": 40.0,
+                "measure": "1.0 drumstick, bone and skin removed",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.50",
+                        "gm": 26.24
+                    }
+                ]
+            },
+            {
+                "ndbno": "21471",
+                "name": "Fast Foods, Fried Chicken, Thigh, meat and skin and breading",
+                "weight": 136.0,
+                "measure": "1.0 thigh with skin",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "26.15",
+                        "gm": 19.23
+                    }
+                ]
+            },
+            {
+                "ndbno": "21466",
+                "name": "Fast Foods, Fried Chicken, Thigh, meat only, skin and breading removed",
+                "weight": 84.0,
+                "measure": "1.0 thigh without skin",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "19.50",
+                        "gm": 23.21
+                    }
+                ]
+            },
+            {
+                "ndbno": "21472",
+                "name": "Fast Foods, Fried Chicken, Wing, meat and skin and breading",
+                "weight": 58.0,
+                "measure": "1.0 wing, with skin",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.26",
+                        "gm": 21.14
+                    }
+                ]
+            },
+            {
+                "ndbno": "21467",
+                "name": "Fast Foods, Fried Chicken, Wing, meat only, skin and breading removed",
+                "weight": 37.0,
+                "measure": "1.0 wing without skin",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.64",
+                        "gm": 28.77
+                    }
+                ]
+            },
+            {
+                "ndbno": "21307",
+                "name": "Fast foods, griddle cake sandwich, egg, cheese, and bacon",
+                "weight": 174.0,
+                "measure": "1.0 item 6.1 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "20.93",
+                        "gm": 12.03
+                    }
+                ]
+            },
+            {
+                "ndbno": "21305",
+                "name": "Fast foods, griddle cake sandwich, egg, cheese, and sausage",
+                "weight": 199.0,
+                "measure": "1.0 item",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "21.43",
+                        "gm": 10.77
+                    }
+                ]
+            },
+            {
+                "ndbno": "21306",
+                "name": "Fast foods, griddle cake sandwich, sausage",
+                "weight": 135.0,
+                "measure": "1.0 item",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.35",
+                        "gm": 8.41
+                    }
+                ]
+            },
+            {
+                "ndbno": "21490",
+                "name": "Fast Foods, grilled chicken filet sandwich, with lettuce, tomato and spread",
+                "weight": 230.0,
+                "measure": "1.0 sandwich",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "39.88",
+                        "gm": 17.34
+                    }
+                ]
+            },
+            {
+                "ndbno": "21518",
+                "name": "Fast foods, grilled chicken in tortilla, with lettuce, cheese, and ranch sauce",
+                "weight": 123.0,
+                "measure": "1.0 item",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.94",
+                        "gm": 13.77
+                    }
+                ]
+            },
+            {
+                "ndbno": "21461",
+                "name": "Fast foods, grilled chicken, bacon and tomato club sandwich, with cheese, lettuce, and mayonnaise",
+                "weight": 268.0,
+                "measure": "1.0 sandwich",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "46.07",
+                        "gm": 17.19
+                    }
+                ]
+            },
+            {
+                "ndbno": "21202",
+                "name": "Fast foods, hamburger, large, single patty, with condiments",
+                "weight": 171.0,
+                "measure": "1.0 item",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "26.81",
+                        "gm": 15.68
+                    }
+                ]
+            },
+            {
+                "ndbno": "21115",
+                "name": "Fast foods, hamburger, large, triple patty, with condiments",
+                "weight": 259.0,
+                "measure": "1.0 sandwich",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "49.99",
+                        "gm": 19.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "21114",
+                "name": "Fast foods, hamburger; double, large patty; with condiments and vegetables",
+                "weight": 226.0,
+                "measure": "1.0 sandwich",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "34.28",
+                        "gm": 15.17
+                    }
+                ]
+            },
+            {
+                "ndbno": "21389",
+                "name": "Fast foods, hamburger; double, large patty; with condiments, vegetables and mayonnaise",
+                "weight": 374.0,
+                "measure": "1.0 item",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "52.14",
+                        "gm": 13.94
+                    }
+                ]
+            },
+            {
+                "ndbno": "21111",
+                "name": "Fast foods, hamburger; double, regular patty; with condiments",
+                "weight": 215.0,
+                "measure": "1.0 item",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "31.82",
+                        "gm": 14.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "21110",
+                "name": "Fast foods, hamburger; double, regular, patty; plain",
+                "weight": 120.0,
+                "measure": "1.0 item",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "20.50",
+                        "gm": 17.08
+                    }
+                ]
+            },
+            {
+                "ndbno": "21112",
+                "name": "Fast foods, hamburger; single, large patty; plain",
+                "weight": 137.0,
+                "measure": "1.0 sandwich",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.62",
+                        "gm": 16.51
+                    }
+                ]
+            },
+            {
+                "ndbno": "21113",
+                "name": "Fast foods, hamburger; single, large patty; with condiments and vegetables",
+                "weight": 218.0,
+                "measure": "1.0 sandwich",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "25.83",
+                        "gm": 11.85
+                    }
+                ]
+            },
+            {
+                "ndbno": "21390",
+                "name": "Fast foods, hamburger; single, large patty; with condiments, vegetables and mayonnaise",
+                "weight": 247.0,
+                "measure": "1.0 item",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "28.01",
+                        "gm": 11.34
+                    }
+                ]
+            },
+            {
+                "ndbno": "21393",
+                "name": "Fast foods, hamburger; single, regular patty; double decker bun with condiments and special sauce",
+                "weight": 205.0,
+                "measure": "1.0 item",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "24.95",
+                        "gm": 12.17
+                    }
+                ]
+            },
+            {
+                "ndbno": "21107",
+                "name": "Fast foods, hamburger; single, regular patty; plain",
+                "weight": 78.0,
+                "measure": "1.0 sandwich",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.89",
+                        "gm": 16.52
+                    }
+                ]
+            },
+            {
+                "ndbno": "21108",
+                "name": "Fast foods, hamburger; single, regular patty; with condiments",
+                "weight": 97.0,
+                "measure": "1.0 sandwich",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.90",
+                        "gm": 13.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "21109",
+                "name": "Fast foods, hamburger; single, regular patty; with condiments and vegetables",
+                "weight": 110.0,
+                "measure": "1.0 item",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.91",
+                        "gm": 11.74
+                    }
+                ]
+            },
+            {
+                "ndbno": "21118",
+                "name": "Fast foods, hotdog, plain",
+                "weight": 98.0,
+                "measure": "1.0 sandwich",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.39",
+                        "gm": 10.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "21119",
+                "name": "Fast foods, hotdog, with chili",
+                "weight": 114.0,
+                "measure": "1.0 sandwich",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.51",
+                        "gm": 11.85
+                    }
+                ]
+            },
+            {
+                "ndbno": "21120",
+                "name": "Fast foods, hotdog, with corn flour coating (corndog)",
+                "weight": 175.0,
+                "measure": "1.0 sandwich",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.80",
+                        "gm": 9.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "21129",
+                "name": "Fast foods, hush puppies",
+                "weight": 22.0,
+                "measure": "1.0 piece",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.36",
+                        "gm": 6.16
+                    }
+                ]
+            },
+            {
+                "ndbno": "21388",
+                "name": "Fast foods, miniature cinnamon rolls",
+                "weight": 25.0,
+                "measure": "1.0 each",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.75",
+                        "gm": 7.02
+                    }
+                ]
+            },
+            {
+                "ndbno": "21078",
+                "name": "Fast foods, nachos, with cheese",
+                "weight": 80.0,
+                "measure": "1.0 serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.46",
+                        "gm": 4.32
+                    }
+                ]
+            },
+            {
+                "ndbno": "21080",
+                "name": "Fast foods, nachos, with cheese, beans, ground beef, and tomatoes",
+                "weight": 222.0,
+                "measure": "1.0 serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.79",
+                        "gm": 6.21
+                    }
+                ]
+            },
+            {
+                "ndbno": "21130",
+                "name": "Fast foods, onion rings, breaded and fried",
+                "weight": 117.0,
+                "measure": "1.0 package (18 onion rings)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.52",
+                        "gm": 3.86
+                    }
+                ]
+            },
+            {
+                "ndbno": "21138",
+                "name": "Fast foods, potato, french fried in vegetable oil",
+                "weight": 71.0,
+                "measure": "1.0 serving small",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.44",
+                        "gm": 3.43
+                    }
+                ]
+            },
+            {
+                "ndbno": "21139",
+                "name": "Fast foods, potato, mashed",
+                "weight": 242.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.99",
+                        "gm": 1.65
+                    }
+                ]
+            },
+            {
+                "ndbno": "21026",
+                "name": "Fast foods, potatoes, hash browns, round pieces or patty",
+                "weight": 5.5,
+                "measure": "1.0 round piece",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.14",
+                        "gm": 2.58
+                    }
+                ]
+            },
+            {
+                "ndbno": "21488",
+                "name": "Fast foods, quesadilla, with chicken",
+                "weight": 180.0,
+                "measure": "1.0 each quesadilla",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "27.09",
+                        "gm": 15.05
+                    }
+                ]
+            },
+            {
+                "ndbno": "21121",
+                "name": "Fast foods, roast beef sandwich, plain",
+                "weight": 149.0,
+                "measure": "1.0 sandwich",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.60",
+                        "gm": 15.17
+                    }
+                ]
+            },
+            {
+                "ndbno": "21059",
+                "name": "Fast foods, shrimp, breaded and fried",
+                "weight": 39.0,
+                "measure": "3.0 pieces shrimp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.06",
+                        "gm": 7.84
+                    }
+                ]
+            },
+            {
+                "ndbno": "21521",
+                "name": "Fast foods, strawberry banana smoothie made with ice and low-fat yogurt",
+                "weight": 347.0,
+                "measure": "12.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.98",
+                        "gm": 0.86
+                    }
+                ]
+            },
+            {
+                "ndbno": "21162",
+                "name": "Fast foods, submarine sandwich, bacon, lettuce, and tomato on white bread",
+                "weight": 148.0,
+                "measure": "6.0 inch sub",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.89",
+                        "gm": 10.06
+                    }
+                ]
+            },
+            {
+                "ndbno": "21124",
+                "name": "Fast foods, submarine sandwich, cold cut on white bread with lettuce and tomato",
+                "weight": 196.0,
+                "measure": "6.0 inch sub",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "20.62",
+                        "gm": 10.52
+                    }
+                ]
+            },
+            {
+                "ndbno": "21156",
+                "name": "Fast foods, submarine sandwich, ham on white bread with lettuce and tomato",
+                "weight": 184.0,
+                "measure": "6.0 inch sub",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.78",
+                        "gm": 9.12
+                    }
+                ]
+            },
+            {
+                "ndbno": "21158",
+                "name": "Fast foods, submarine sandwich, meatball marinara on white bread",
+                "weight": 209.0,
+                "measure": "6.0 inch sub",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "20.42",
+                        "gm": 9.77
+                    }
+                ]
+            },
+            {
+                "ndbno": "21154",
+                "name": "Fast foods, submarine sandwich, oven roasted chicken on white bread with lettuce and tomato",
+                "weight": 198.0,
+                "measure": "6.0 inch sub",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "21.46",
+                        "gm": 10.84
+                    }
+                ]
+            },
+            {
+                "ndbno": "21125",
+                "name": "Fast foods, submarine sandwich, roast beef on white bread with lettuce and tomato",
+                "weight": 190.0,
+                "measure": "6.0 inch sub",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "23.12",
+                        "gm": 12.17
+                    }
+                ]
+            },
+            {
+                "ndbno": "21160",
+                "name": "Fast foods, submarine sandwich, steak and cheese on white bread with cheese, lettuce and tomato",
+                "weight": 201.0,
+                "measure": "6.0 inch sub",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "24.70",
+                        "gm": 12.29
+                    }
+                ]
+            },
+            {
+                "ndbno": "21151",
+                "name": "Fast foods, submarine sandwich, sweet onion chicken teriyaki on white bread with lettuce, tomato and sweet onion sauce",
+                "weight": 228.0,
+                "measure": "6.0 inch sub",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "24.87",
+                        "gm": 10.91
+                    }
+                ]
+            },
+            {
+                "ndbno": "21126",
+                "name": "Fast foods, submarine sandwich, tuna on white bread with lettuce and tomato",
+                "weight": 237.0,
+                "measure": "6.0 inch sub",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "29.22",
+                        "gm": 12.33
+                    }
+                ]
+            },
+            {
+                "ndbno": "21155",
+                "name": "Fast foods, submarine sandwich, turkey breast on white bread with lettuce and tomato",
+                "weight": 184.0,
+                "measure": "6.0 inch sub",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.78",
+                        "gm": 9.12
+                    }
+                ]
+            },
+            {
+                "ndbno": "21153",
+                "name": "Fast foods, submarine sandwich, turkey, roast beef and ham on white bread with lettuce and tomato",
+                "weight": 413.0,
+                "measure": "12.0 inch sub",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "44.03",
+                        "gm": 10.66
+                    }
+                ]
+            },
+            {
+                "ndbno": "21032",
+                "name": "Fast foods, sundae, caramel",
+                "weight": 155.0,
+                "measure": "1.0 sundae",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.30",
+                        "gm": 4.71
+                    }
+                ]
+            },
+            {
+                "ndbno": "21033",
+                "name": "Fast foods, sundae, hot fudge",
+                "weight": 158.0,
+                "measure": "1.0 sundae",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.64",
+                        "gm": 3.57
+                    }
+                ]
+            },
+            {
+                "ndbno": "21034",
+                "name": "Fast foods, sundae, strawberry",
+                "weight": 153.0,
+                "measure": "1.0 sundae",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.26",
+                        "gm": 4.09
+                    }
+                ]
+            },
+            {
+                "ndbno": "21083",
+                "name": "Fast foods, taco salad",
+                "weight": 198.0,
+                "measure": "1.5 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.23",
+                        "gm": 6.68
+                    }
+                ]
+            },
+            {
+                "ndbno": "21082",
+                "name": "Fast foods, taco with beef, cheese and lettuce, hard shell",
+                "weight": 69.0,
+                "measure": "1.0 each taco",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.11",
+                        "gm": 8.86
+                    }
+                ]
+            },
+            {
+                "ndbno": "21486",
+                "name": "Fast foods, taco with beef, cheese and lettuce, soft",
+                "weight": 102.0,
+                "measure": "1.0 each taco",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.44",
+                        "gm": 9.25
+                    }
+                ]
+            },
+            {
+                "ndbno": "21487",
+                "name": "Fast foods, taco with chicken, lettuce and cheese, soft",
+                "weight": 98.0,
+                "measure": "1.0 each taco",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.03",
+                        "gm": 13.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "21028",
+                "name": "Fast foods, vanilla, light, soft-serve ice cream, with cone",
+                "weight": 120.0,
+                "measure": "1.0 item",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.09",
+                        "gm": 4.24
+                    }
+                ]
+            },
+            {
+                "ndbno": "21513",
+                "name": "KASHI Pizza, Greek Tzatziki, single serve, frozen, unprepared",
+                "weight": 149.0,
+                "measure": "1.0 pizza",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.54",
+                        "gm": 11.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "21501",
+                "name": "KASHI Pizza, Margherita, frozen, unprepared",
+                "weight": 113.0,
+                "measure": "0.33 pizza",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.46",
+                        "gm": 12.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "21503",
+                "name": "KASHI Pizza, Mediterranean, frozen, unprepared",
+                "weight": 120.0,
+                "measure": "0.33 pizza",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.24",
+                        "gm": 12.7
+                    }
+                ]
+            },
+            {
+                "ndbno": "21516",
+                "name": "KASHI Pizza, Mushroom and Spinach, single serve, frozen, unprepared",
+                "weight": 152.0,
+                "measure": "1.0 pizza",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.26",
+                        "gm": 10.7
+                    }
+                ]
+            },
+            {
+                "ndbno": "21500",
+                "name": "KASHI Pizza, Mushroom Trio &amp; Spinach, frozen, unprepared",
+                "weight": 113.0,
+                "measure": "0.33 pizza",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.35",
+                        "gm": 12.7
+                    }
+                ]
+            },
+            {
+                "ndbno": "21499",
+                "name": "KASHI Pizza, Roasted Vegetable, frozen, unprepared",
+                "weight": 116.0,
+                "measure": "0.33 pizza",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.50",
+                        "gm": 12.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "21514",
+                "name": "KASHI Pizza, Tikka Masala, single serve, frozen, unprepared",
+                "weight": 159.0,
+                "measure": "1.0 pizza",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.22",
+                        "gm": 10.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "21419",
+                "name": "KFC, biscuit",
+                "weight": 49.0,
+                "measure": "1.0 biscuit",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.67",
+                        "gm": 7.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "21420",
+                "name": "KFC, Coleslaw",
+                "weight": 112.0,
+                "measure": "1.0 package",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.02",
+                        "gm": 0.91
+                    }
+                ]
+            },
+            {
+                "ndbno": "21421",
+                "name": "KFC, Crispy Chicken Strips",
+                "weight": 47.0,
+                "measure": "1.0 strip",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.52",
+                        "gm": 20.25
+                    }
+                ]
+            },
+            {
+                "ndbno": "21438",
+                "name": "KFC, Fried Chicken, EXTRA CRISPY, Breast, meat and skin with breading",
+                "weight": 212.0,
+                "measure": "1.0 breast, with skin",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "45.03",
+                        "gm": 21.24
+                    }
+                ]
+            },
+            {
+                "ndbno": "21430",
+                "name": "KFC, Fried Chicken, EXTRA CRISPY, Breast, meat only, skin and breading removed",
+                "weight": 140.0,
+                "measure": "1.0 breast, without skin",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "38.15",
+                        "gm": 27.25
+                    }
+                ]
+            },
+            {
+                "ndbno": "21439",
+                "name": "KFC, Fried Chicken, EXTRA CRISPY, Drumstick, meat and skin with breading",
+                "weight": 81.0,
+                "measure": "1.0 drumstick, with skin",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.70",
+                        "gm": 20.62
+                    }
+                ]
+            },
+            {
+                "ndbno": "21431",
+                "name": "KFC, Fried Chicken, EXTRA CRISPY, Drumstick, meat only, skin and breading removed",
+                "weight": 41.0,
+                "measure": "1.0 drumstick, bone and skin removed",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.62",
+                        "gm": 25.9
+                    }
+                ]
+            },
+            {
+                "ndbno": "21440",
+                "name": "KFC, Fried Chicken, EXTRA CRISPY, Thigh, meat and skin with breading",
+                "weight": 152.0,
+                "measure": "1.0 thigh, with skin",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "26.10",
+                        "gm": 17.17
+                    }
+                ]
+            },
+            {
+                "ndbno": "21432",
+                "name": "KFC, Fried Chicken, EXTRA CRISPY, Thigh, meat only, skin and breading removed",
+                "weight": 91.0,
+                "measure": "1.0 thigh, without skin",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "20.39",
+                        "gm": 22.41
+                    }
+                ]
+            },
+            {
+                "ndbno": "21441",
+                "name": "KFC, Fried Chicken, EXTRA CRISPY, Wing, meat and skin with breading",
+                "weight": 68.0,
+                "measure": "1.0 wing, with skin",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.14",
+                        "gm": 20.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "21433",
+                "name": "KFC, Fried Chicken, EXTRA CRISPY, Wing, meat only, skin and breading removed",
+                "weight": 44.0,
+                "measure": "1.0 wing, without skin",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.61",
+                        "gm": 28.67
+                    }
+                ]
+            },
+            {
+                "ndbno": "21434",
+                "name": "KFC, Fried Chicken, ORIGINAL RECIPE, Breast, meat and skin with breading",
+                "weight": 212.0,
+                "measure": "1.0 breast, with skin",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "46.51",
+                        "gm": 21.94
+                    }
+                ]
+            },
+            {
+                "ndbno": "21425",
+                "name": "KFC, Fried Chicken, ORIGINAL RECIPE, Breast, meat only, skin and breading removed",
+                "weight": 152.0,
+                "measure": "1.0 breast without skin",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "40.87",
+                        "gm": 26.89
+                    }
+                ]
+            },
+            {
+                "ndbno": "21435",
+                "name": "KFC, Fried Chicken, ORIGINAL RECIPE, Drumstick, meat and skin with breading",
+                "weight": 75.0,
+                "measure": "1.0 drumstick, with skin",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.73",
+                        "gm": 22.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "21426",
+                "name": "KFC, Fried Chicken, ORIGINAL RECIPE, Drumstick, meat only, skin and breading removed",
+                "weight": 40.0,
+                "measure": "1.0 drumstick, bone and skin removed",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.52",
+                        "gm": 26.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "21436",
+                "name": "KFC, Fried Chicken, ORIGINAL RECIPE, Thigh, meat and skin with breading",
+                "weight": 135.0,
+                "measure": "1.0 thigh, with skin",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "25.52",
+                        "gm": 18.9
+                    }
+                ]
+            },
+            {
+                "ndbno": "21427",
+                "name": "KFC, Fried Chicken, ORIGINAL RECIPE, Thigh, meat only, skin and breading removed",
+                "weight": 86.0,
+                "measure": "1.0 thigh without skin",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "19.59",
+                        "gm": 22.78
+                    }
+                ]
+            },
+            {
+                "ndbno": "21437",
+                "name": "KFC, Fried Chicken, ORIGINAL RECIPE, Wing, meat and skin with breading",
+                "weight": 60.0,
+                "measure": "1.0 wing, with skin",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.02",
+                        "gm": 21.7
+                    }
+                ]
+            },
+            {
+                "ndbno": "21428",
+                "name": "KFC, Fried Chicken, ORIGINAL RECIPE, Wing, meat only, skin and breading removed",
+                "weight": 39.0,
+                "measure": "1.0 wing wing without skin",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.17",
+                        "gm": 28.65
+                    }
+                ]
+            },
+            {
+                "ndbno": "21422",
+                "name": "KFC, Popcorn Chicken",
+                "weight": 6.4,
+                "measure": "1.0 piece",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.13",
+                        "gm": 17.67
+                    }
+                ]
+            },
+            {
+                "ndbno": "21413",
+                "name": "Light Ice Cream, soft serve, blended with cookie pieces",
+                "weight": 337.0,
+                "measure": "12.0 fl oz cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.38",
+                        "gm": 3.97
+                    }
+                ]
+            },
+            {
+                "ndbno": "21412",
+                "name": "Light Ice Cream, soft serve, blended with milk chocolate candies",
+                "weight": 348.0,
+                "measure": "12.0 fl oz cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.99",
+                        "gm": 4.02
+                    }
+                ]
+            },
+            {
+                "ndbno": "21290",
+                "name": "LITTLE CAESARS 14\" Cheese Pizza, Large Deep Dish Crust",
+                "weight": 102.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.88",
+                        "gm": 12.63
+                    }
+                ]
+            },
+            {
+                "ndbno": "21292",
+                "name": "LITTLE CAESARS 14\" Cheese Pizza, Thin Crust",
+                "weight": 48.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.79",
+                        "gm": 16.23
+                    }
+                ]
+            },
+            {
+                "ndbno": "21287",
+                "name": "LITTLE CAESARS 14\" Original Round Cheese Pizza, Regular Crust",
+                "weight": 89.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.92",
+                        "gm": 13.39
+                    }
+                ]
+            },
+            {
+                "ndbno": "21289",
+                "name": "LITTLE CAESARS 14\" Original Round Meat and Vegetable Pizza, Regular Crust",
+                "weight": 115.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.94",
+                        "gm": 12.12
+                    }
+                ]
+            },
+            {
+                "ndbno": "21288",
+                "name": "LITTLE CAESARS 14\" Original Round Pepperoni Pizza, Regular Crust",
+                "weight": 90.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.23",
+                        "gm": 13.59
+                    }
+                ]
+            },
+            {
+                "ndbno": "21291",
+                "name": "LITTLE CAESARS 14\" Pepperoni Pizza, Large Deep Dish Crust",
+                "weight": 104.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.45",
+                        "gm": 12.93
+                    }
+                ]
+            },
+            {
+                "ndbno": "21377",
+                "name": "McDONALD'S Bacon Ranch Salad with Crispy Chicken",
+                "weight": 319.0,
+                "measure": "1.0 item 11.3 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "28.14",
+                        "gm": 8.82
+                    }
+                ]
+            },
+            {
+                "ndbno": "21360",
+                "name": "McDONALD'S, Bacon Egg &amp; Cheese Biscuit",
+                "weight": 142.0,
+                "measure": "1.0 item 4.9 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "19.10",
+                        "gm": 13.45
+                    }
+                ]
+            },
+            {
+                "ndbno": "21376",
+                "name": "McDONALD'S, Bacon Ranch Salad with Grilled Chicken",
+                "weight": 305.0,
+                "measure": "1.0 item 10.8 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "31.35",
+                        "gm": 10.28
+                    }
+                ]
+            },
+            {
+                "ndbno": "21378",
+                "name": "McDONALD'S, Bacon Ranch Salad without chicken",
+                "weight": 223.0,
+                "measure": "1.0 item 7.8 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.23",
+                        "gm": 4.14
+                    }
+                ]
+            },
+            {
+                "ndbno": "21327",
+                "name": "McDONALD'S, Bacon, Egg &amp; Cheese McGRIDDLES",
+                "weight": 165.0,
+                "measure": "1.0 item 5.8 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "19.85",
+                        "gm": 12.03
+                    }
+                ]
+            },
+            {
+                "ndbno": "21324",
+                "name": "McDONALD'S, Baked Apple Pie",
+                "weight": 77.0,
+                "measure": "2.7 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.36",
+                        "gm": 3.07
+                    }
+                ]
+            },
+            {
+                "ndbno": "21310",
+                "name": "McDONALD'S, Barbeque Sauce",
+                "weight": 28.0,
+                "measure": "1.0 package",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.43",
+                        "gm": 1.55
+                    }
+                ]
+            },
+            {
+                "ndbno": "21341",
+                "name": "McDONALD'S, BIG BREAKFAST",
+                "weight": 269.0,
+                "measure": "1.0 item 9.5 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "27.33",
+                        "gm": 10.16
+                    }
+                ]
+            },
+            {
+                "ndbno": "21237",
+                "name": "McDONALD'S, BIG MAC",
+                "weight": 219.0,
+                "measure": "1.0 item 7.6 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "25.89",
+                        "gm": 11.82
+                    }
+                ]
+            },
+            {
+                "ndbno": "21350",
+                "name": "McDONALD'S, BIG MAC (without Big Mac Sauce)",
+                "weight": 200.0,
+                "measure": "1.0 item",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "25.58",
+                        "gm": 12.79
+                    }
+                ]
+            },
+            {
+                "ndbno": "21233",
+                "name": "McDONALD'S, Cheeseburger",
+                "weight": 119.0,
+                "measure": "1.0 item 4 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.43",
+                        "gm": 12.97
+                    }
+                ]
+            },
+            {
+                "ndbno": "21309",
+                "name": "McDONALD'S, Chicken McNUGGETS",
+                "weight": 64.0,
+                "measure": "4.0 pieces",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.11",
+                        "gm": 15.79
+                    }
+                ]
+            },
+            {
+                "ndbno": "21311",
+                "name": "McDONALD'S, Creamy Ranch Sauce",
+                "weight": 43.0,
+                "measure": "1.5 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.48",
+                        "gm": 1.11
+                    }
+                ]
+            },
+            {
+                "ndbno": "21363",
+                "name": "McDONALD'S, Deluxe Breakfast, with syrup and margarine",
+                "weight": 420.0,
+                "measure": "1.0 item 14.8 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "31.75",
+                        "gm": 7.56
+                    }
+                ]
+            },
+            {
+                "ndbno": "21344",
+                "name": "McDONALD'S, Double Cheeseburger",
+                "weight": 155.0,
+                "measure": "1.0 sandwich",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "24.02",
+                        "gm": 15.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "21345",
+                "name": "McDONALD'S, DOUBLE QUARTER POUNDER with Cheese",
+                "weight": 280.0,
+                "measure": "1.0 item",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "47.49",
+                        "gm": 16.96
+                    }
+                ]
+            },
+            {
+                "ndbno": "21357",
+                "name": "McDONALD'S, Egg McMUFFIN",
+                "weight": 126.0,
+                "measure": "1.0 sandwich",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.19",
+                        "gm": 13.64
+                    }
+                ]
+            },
+            {
+                "ndbno": "21232",
+                "name": "McDONALD'S, FILET-O-FISH",
+                "weight": 134.0,
+                "measure": "1.0 sandwich",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.09",
+                        "gm": 11.26
+                    }
+                ]
+            },
+            {
+                "ndbno": "21382",
+                "name": "McDONALD'S, FILET-O-FISH (without tartar sauce)",
+                "weight": 124.0,
+                "measure": "1.0 item",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.46",
+                        "gm": 12.47
+                    }
+                ]
+            },
+            {
+                "ndbno": "21238",
+                "name": "McDONALD'S, french fries",
+                "weight": 71.0,
+                "measure": "1.0 small serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.42",
+                        "gm": 3.41
+                    }
+                ]
+            },
+            {
+                "ndbno": "21380",
+                "name": "McDONALD'S, Fruit 'n Yogurt Parfait",
+                "weight": 149.0,
+                "measure": "1.0 item 5.2 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.07",
+                        "gm": 2.73
+                    }
+                ]
+            },
+            {
+                "ndbno": "21381",
+                "name": "McDONALD'S, Fruit 'n Yogurt Parfait (without granola)",
+                "weight": 142.0,
+                "measure": "1.0 item",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.51",
+                        "gm": 2.47
+                    }
+                ]
+            },
+            {
+                "ndbno": "21228",
+                "name": "McDONALD'S, Hamburger",
+                "weight": 95.0,
+                "measure": "1.0 sandwich",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.27",
+                        "gm": 12.92
+                    }
+                ]
+            },
+            {
+                "ndbno": "21319",
+                "name": "McDONALD'S, Hash Brown",
+                "weight": 53.0,
+                "measure": "1.0 serving 1 patty",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.31",
+                        "gm": 2.48
+                    }
+                ]
+            },
+            {
+                "ndbno": "21335",
+                "name": "McDONALD'S, Hot Caramel Sundae",
+                "weight": 182.0,
+                "measure": "1.0 item (6.4 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.52",
+                        "gm": 3.58
+                    }
+                ]
+            },
+            {
+                "ndbno": "21336",
+                "name": "McDONALD'S, Hot Fudge Sundae",
+                "weight": 179.0,
+                "measure": "1.0 item (6.3 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.41",
+                        "gm": 4.14
+                    }
+                ]
+            },
+            {
+                "ndbno": "21313",
+                "name": "McDONALD'S, Hot Mustard Sauce",
+                "weight": 28.0,
+                "measure": "1.0 package",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.73",
+                        "gm": 2.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "21321",
+                "name": "McDONALD'S, Hotcakes (plain)",
+                "weight": 149.0,
+                "measure": "3.0 hotcakes 5.3 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.94",
+                        "gm": 6.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "21365",
+                "name": "McDONALD'S, Hotcakes (with 2 pats margarine &amp; syrup)",
+                "weight": 221.0,
+                "measure": "1.0 item",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.95",
+                        "gm": 4.05
+                    }
+                ]
+            },
+            {
+                "ndbno": "21364",
+                "name": "McDONALD'S, Hotcakes and Sausage",
+                "weight": 192.0,
+                "measure": "1.0 item",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.00",
+                        "gm": 7.81
+                    }
+                ]
+            },
+            {
+                "ndbno": "21343",
+                "name": "McDONALD'S, Low Fat Caramel Sauce",
+                "weight": 21.0,
+                "measure": "0.8 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.40",
+                        "gm": 1.89
+                    }
+                ]
+            },
+            {
+                "ndbno": "21355",
+                "name": "McDONALD'S, McCHICKEN Sandwich",
+                "weight": 131.0,
+                "measure": "1.0 sandwich",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.66",
+                        "gm": 10.43
+                    }
+                ]
+            },
+            {
+                "ndbno": "21356",
+                "name": "McDONALD'S, McCHICKEN Sandwich (without mayonnaise)",
+                "weight": 138.0,
+                "measure": "1.0 item",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.29",
+                        "gm": 11.08
+                    }
+                ]
+            },
+            {
+                "ndbno": "21338",
+                "name": "McDONALD'S, McFLURRY with M&amp;M'S CANDIES",
+                "weight": 348.0,
+                "measure": "1.0 regular (12 fl oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.99",
+                        "gm": 4.02
+                    }
+                ]
+            },
+            {
+                "ndbno": "21339",
+                "name": "McDONALD'S, McFLURRY with OREO cookies",
+                "weight": 337.0,
+                "measure": "1.0 regular (12 fl oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.38",
+                        "gm": 3.97
+                    }
+                ]
+            },
+            {
+                "ndbno": "21346",
+                "name": "McDONALD'S, NEWMAN'S OWN Cobb Dressing",
+                "weight": 62.0,
+                "measure": "2.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.05",
+                        "gm": 1.69
+                    }
+                ]
+            },
+            {
+                "ndbno": "21347",
+                "name": "McDONALD'S, NEWMAN'S OWN Creamy Caesar Dressing",
+                "weight": 59.0,
+                "measure": "2.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.10",
+                        "gm": 3.56
+                    }
+                ]
+            },
+            {
+                "ndbno": "21348",
+                "name": "McDONALD'S, NEWMAN'S OWN Low Fat Balsamic Vinaigrette",
+                "weight": 47.0,
+                "measure": "2.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.09",
+                        "gm": 0.19
+                    }
+                ]
+            },
+            {
+                "ndbno": "21349",
+                "name": "McDONALD'S, NEWMAN'S OWN Ranch Dressing",
+                "weight": 56.0,
+                "measure": "2.0 fl oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.47",
+                        "gm": 2.62
+                    }
+                ]
+            },
+            {
+                "ndbno": "21337",
+                "name": "McDONALD'S, Peanuts (for Sundaes)",
+                "weight": 7.0,
+                "measure": "0.3 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.96",
+                        "gm": 28.04
+                    }
+                ]
+            },
+            {
+                "ndbno": "21403",
+                "name": "McDONALD'S, Premium Crispy Chicken Classic Sandwich",
+                "weight": 230.0,
+                "measure": "1.0 item",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "27.78",
+                        "gm": 12.08
+                    }
+                ]
+            },
+            {
+                "ndbno": "21405",
+                "name": "McDONALD'S, Premium Crispy Chicken Club Sandwich",
+                "weight": 254.0,
+                "measure": "1.0 item 9 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "39.07",
+                        "gm": 15.38
+                    }
+                ]
+            },
+            {
+                "ndbno": "21407",
+                "name": "McDONALD'S, Premium Crispy Chicken Ranch BLT Sandwich",
+                "weight": 240.0,
+                "measure": "1.0 item 8.5 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "35.28",
+                        "gm": 14.7
+                    }
+                ]
+            },
+            {
+                "ndbno": "21402",
+                "name": "McDONALD'S, Premium Grilled Chicken Classic Sandwich",
+                "weight": 200.0,
+                "measure": "1.0 item 7 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "28.32",
+                        "gm": 14.16
+                    }
+                ]
+            },
+            {
+                "ndbno": "21404",
+                "name": "McDONALD'S, Premium Grilled Chicken Club Sandwich",
+                "weight": 223.0,
+                "measure": "1.0 item 7.9 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "38.33",
+                        "gm": 17.19
+                    }
+                ]
+            },
+            {
+                "ndbno": "21406",
+                "name": "McDONALD'S, Premium Grilled Chicken Ranch BLT Sandwich",
+                "weight": 202.0,
+                "measure": "1.0 item 7.1 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "33.73",
+                        "gm": 16.7
+                    }
+                ]
+            },
+            {
+                "ndbno": "21234",
+                "name": "McDONALD'S, QUARTER POUNDER",
+                "weight": 171.0,
+                "measure": "1.0 item",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "24.11",
+                        "gm": 14.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "21235",
+                "name": "McDONALD'S, QUARTER POUNDER with Cheese",
+                "weight": 199.0,
+                "measure": "1.0 item 7.1 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "29.03",
+                        "gm": 14.59
+                    }
+                ]
+            },
+            {
+                "ndbno": "21523",
+                "name": "McDONALD'S, RANCH SNACK WRAP, Crispy",
+                "weight": 133.0,
+                "measure": "1.0 wrap",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.27",
+                        "gm": 11.48
+                    }
+                ]
+            },
+            {
+                "ndbno": "21524",
+                "name": "McDONALD'S, RANCH SNACK WRAP, Grilled",
+                "weight": 123.0,
+                "measure": "1.0 wrap",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.94",
+                        "gm": 13.77
+                    }
+                ]
+            },
+            {
+                "ndbno": "21361",
+                "name": "McDONALD'S, Sausage Biscuit",
+                "weight": 117.0,
+                "measure": "1.0 item 4.1 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.26",
+                        "gm": 9.62
+                    }
+                ]
+            },
+            {
+                "ndbno": "21362",
+                "name": "McDONALD'S, Sausage Biscuit with Egg",
+                "weight": 163.0,
+                "measure": "1.0 item 5.7 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "18.37",
+                        "gm": 11.27
+                    }
+                ]
+            },
+            {
+                "ndbno": "21340",
+                "name": "McDONALD'S, Sausage Burrito",
+                "weight": 109.0,
+                "measure": "1.0 burrito",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.10",
+                        "gm": 11.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "21328",
+                "name": "McDONALD'S, Sausage McGRIDDLES",
+                "weight": 135.0,
+                "measure": "1.0 item",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.35",
+                        "gm": 8.41
+                    }
+                ]
+            },
+            {
+                "ndbno": "21358",
+                "name": "McDONALD'S, Sausage McMUFFIN",
+                "weight": 115.0,
+                "measure": "1.0 item 4 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.56",
+                        "gm": 12.66
+                    }
+                ]
+            },
+            {
+                "ndbno": "21359",
+                "name": "McDONALD'S, Sausage McMUFFIN with Egg",
+                "weight": 165.0,
+                "measure": "1.0 item 5.8 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "20.77",
+                        "gm": 12.59
+                    }
+                ]
+            },
+            {
+                "ndbno": "21329",
+                "name": "McDONALD'S, Sausage, Egg &amp; Cheese McGRIDDLES",
+                "weight": 199.0,
+                "measure": "1.0 item 7 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "21.43",
+                        "gm": 10.77
+                    }
+                ]
+            },
+            {
+                "ndbno": "21379",
+                "name": "McDONALD'S, Side Salad",
+                "weight": 87.0,
+                "measure": "1.0 item 3.1 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.90",
+                        "gm": 1.03
+                    }
+                ]
+            },
+            {
+                "ndbno": "21522",
+                "name": "McDONALD'S, Southern Style Chicken Biscuit",
+                "weight": 132.0,
+                "measure": "1.0 biscuit regular size biscuit",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.75",
+                        "gm": 11.93
+                    }
+                ]
+            },
+            {
+                "ndbno": "21314",
+                "name": "McDONALD'S, Spicy Buffalo Sauce",
+                "weight": 43.0,
+                "measure": "1.5 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.23",
+                        "gm": 0.54
+                    }
+                ]
+            },
+            {
+                "ndbno": "21334",
+                "name": "McDONALD'S, Strawberry Sundae",
+                "weight": 178.0,
+                "measure": "1.0 item (6.3 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.68",
+                        "gm": 3.19
+                    }
+                ]
+            },
+            {
+                "ndbno": "21315",
+                "name": "McDONALD'S, Sweet 'N Sour Sauce",
+                "weight": 28.0,
+                "measure": "1.0 package",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.18",
+                        "gm": 0.66
+                    }
+                ]
+            },
+            {
+                "ndbno": "21316",
+                "name": "McDONALD'S, Tangy Honey Mustard Sauce",
+                "weight": 43.0,
+                "measure": "1.5 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.57",
+                        "gm": 1.32
+                    }
+                ]
+            },
+            {
+                "ndbno": "21333",
+                "name": "McDONALD'S, Vanilla Reduced Fat Ice Cream Cone",
+                "weight": 90.0,
+                "measure": "1.0 item (3.2 oz)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.82",
+                        "gm": 4.24
+                    }
+                ]
+            },
+            {
+                "ndbno": "21515",
+                "name": "MORNINGSTAR FARMS Pizza, Baja Black Bean, single serve, frozen, unprepared",
+                "weight": 160.0,
+                "measure": "1.0 pizza",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.96",
+                        "gm": 10.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "21283",
+                "name": "PAPA JOHN'S 14\" Cheese Pizza, Original Crust",
+                "weight": 117.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.49",
+                        "gm": 11.53
+                    }
+                ]
+            },
+            {
+                "ndbno": "21286",
+                "name": "PAPA JOHN'S 14\" Cheese Pizza, Thin Crust",
+                "weight": 87.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.69",
+                        "gm": 12.29
+                    }
+                ]
+            },
+            {
+                "ndbno": "21284",
+                "name": "PAPA JOHN'S 14\" Pepperoni Pizza, Original Crust",
+                "weight": 123.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.72",
+                        "gm": 11.97
+                    }
+                ]
+            },
+            {
+                "ndbno": "21285",
+                "name": "PAPA JOHN'S 14\" The Works Pizza, Original Crust",
+                "weight": 153.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.71",
+                        "gm": 10.27
+                    }
+                ]
+            },
+            {
+                "ndbno": "21271",
+                "name": "PIZZA HUT 12\" Cheese Pizza, Hand-Tossed Crust",
+                "weight": 96.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.45",
+                        "gm": 11.93
+                    }
+                ]
+            },
+            {
+                "ndbno": "21272",
+                "name": "PIZZA HUT 12\" Cheese Pizza, Pan Crust",
+                "weight": 100.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.73",
+                        "gm": 11.73
+                    }
+                ]
+            },
+            {
+                "ndbno": "21273",
+                "name": "PIZZA HUT 12\" Cheese Pizza, THIN 'N CRISPY Crust",
+                "weight": 69.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.55",
+                        "gm": 15.29
+                    }
+                ]
+            },
+            {
+                "ndbno": "21274",
+                "name": "PIZZA HUT 12\" Pepperoni Pizza, Hand-Tossed Crust",
+                "weight": 96.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.35",
+                        "gm": 12.86
+                    }
+                ]
+            },
+            {
+                "ndbno": "21275",
+                "name": "PIZZA HUT 12\" Pepperoni Pizza, Pan Crust",
+                "weight": 96.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.49",
+                        "gm": 11.97
+                    }
+                ]
+            },
+            {
+                "ndbno": "21276",
+                "name": "PIZZA HUT 12\" Super Supreme Pizza, Hand-Tossed Crust",
+                "weight": 127.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.84",
+                        "gm": 10.9
+                    }
+                ]
+            },
+            {
+                "ndbno": "21293",
+                "name": "PIZZA HUT 14\" Cheese Pizza, Hand-Tossed Crust",
+                "weight": 105.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.58",
+                        "gm": 11.98
+                    }
+                ]
+            },
+            {
+                "ndbno": "21294",
+                "name": "PIZZA HUT 14\" Cheese Pizza, Pan Crust",
+                "weight": 112.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.15",
+                        "gm": 10.85
+                    }
+                ]
+            },
+            {
+                "ndbno": "21512",
+                "name": "PIZZA HUT 14\" Cheese Pizza, Stuffed Crust",
+                "weight": 117.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.31",
+                        "gm": 12.23
+                    }
+                ]
+            },
+            {
+                "ndbno": "21295",
+                "name": "PIZZA HUT 14\" Cheese Pizza, THIN 'N CRISPY Crust",
+                "weight": 79.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.56",
+                        "gm": 13.37
+                    }
+                ]
+            },
+            {
+                "ndbno": "21296",
+                "name": "PIZZA HUT 14\" Pepperoni Pizza, Hand-Tossed Crust",
+                "weight": 110.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.45",
+                        "gm": 12.23
+                    }
+                ]
+            },
+            {
+                "ndbno": "21297",
+                "name": "PIZZA HUT 14\" Pepperoni Pizza, Pan Crust",
+                "weight": 113.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.96",
+                        "gm": 11.47
+                    }
+                ]
+            },
+            {
+                "ndbno": "21491",
+                "name": "PIZZA HUT 14\" Pepperoni Pizza, THIN 'N CRISPY Crust",
+                "weight": 80.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.30",
+                        "gm": 14.13
+                    }
+                ]
+            },
+            {
+                "ndbno": "21497",
+                "name": "PIZZA HUT 14\" Sausage Pizza, Hand-Tossed Crust",
+                "weight": 119.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.18",
+                        "gm": 11.92
+                    }
+                ]
+            },
+            {
+                "ndbno": "21498",
+                "name": "PIZZA HUT 14\" Sausage Pizza, Pan Crust",
+                "weight": 125.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.85",
+                        "gm": 11.08
+                    }
+                ]
+            },
+            {
+                "ndbno": "21496",
+                "name": "PIZZA HUT 14\" Sausage Pizza, THIN 'N CRISPY Crust",
+                "weight": 92.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.83",
+                        "gm": 13.95
+                    }
+                ]
+            },
+            {
+                "ndbno": "21298",
+                "name": "PIZZA HUT 14\" Super Supreme Pizza, Hand-Tossed Crust",
+                "weight": 123.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.95",
+                        "gm": 11.34
+                    }
+                ]
+            },
+            {
+                "ndbno": "21525",
+                "name": "PIZZA HUT, breadstick, parmesan garlic",
+                "weight": 43.0,
+                "measure": "1.0 breadstick",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.25",
+                        "gm": 12.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "21224",
+                "name": "Pizza, cheese topping, regular crust, frozen, cooked",
+                "weight": 81.0,
+                "measure": "1.0 serving 9 servings per 24 oz package",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.39",
+                        "gm": 10.36
+                    }
+                ]
+            },
+            {
+                "ndbno": "21225",
+                "name": "Pizza, cheese topping, rising crust, frozen, cooked",
+                "weight": 139.0,
+                "measure": "1.0 serving 6 servings per 29.25 oz package",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.19",
+                        "gm": 12.37
+                    }
+                ]
+            },
+            {
+                "ndbno": "21505",
+                "name": "Pizza, cheese topping, thin crust, frozen, cooked",
+                "weight": 69.0,
+                "measure": "1.0 slice",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.22",
+                        "gm": 11.91
+                    }
+                ]
+            },
+            {
+                "ndbno": "21226",
+                "name": "Pizza, meat and vegetable topping, regular crust, frozen, cooked",
+                "weight": 143.0,
+                "measure": "1.0 serving 5 servings per 24.2 oz package",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.13",
+                        "gm": 11.28
+                    }
+                ]
+            },
+            {
+                "ndbno": "21227",
+                "name": "Pizza, meat and vegetable topping, rising crust, frozen, cooked",
+                "weight": 170.0,
+                "measure": "1.0 serving 6 servings per 34.98 oz package",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "21.47",
+                        "gm": 12.63
+                    }
+                ]
+            },
+            {
+                "ndbno": "22902",
+                "name": "Pizza, meat topping, thick crust, frozen, cooked",
+                "weight": 103.0,
+                "measure": "1.0 slice 1/8 of 12\" pizza",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.11",
+                        "gm": 11.76
+                    }
+                ]
+            },
+            {
+                "ndbno": "22903",
+                "name": "Pizza, pepperoni topping, regular crust, frozen, cooked",
+                "weight": 127.0,
+                "measure": "0.25 pizza 12\" diameter",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "18.26",
+                        "gm": 14.38
+                    }
+                ]
+            },
+            {
+                "ndbno": "21415",
+                "name": "POPEYES, biscuit",
+                "weight": 60.0,
+                "measure": "1.0 biscuit",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.60",
+                        "gm": 6.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "21416",
+                "name": "POPEYES, Coleslaw",
+                "weight": 120.0,
+                "measure": "1.0 package",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.18",
+                        "gm": 0.98
+                    }
+                ]
+            },
+            {
+                "ndbno": "21456",
+                "name": "POPEYES, Fried Chicken, Mild, Breast, meat and skin with breading",
+                "weight": 194.0,
+                "measure": "1.0 breast, with skin",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "42.04",
+                        "gm": 21.67
+                    }
+                ]
+            },
+            {
+                "ndbno": "21442",
+                "name": "POPEYES, Fried Chicken, Mild, Breast, meat only, skin and breading removed",
+                "weight": 132.0,
+                "measure": "1.0 breast without skin",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "38.25",
+                        "gm": 28.98
+                    }
+                ]
+            },
+            {
+                "ndbno": "21457",
+                "name": "POPEYES, Fried Chicken, Mild, Drumstick, meat and skin with breading",
+                "weight": 76.0,
+                "measure": "1.0 drumstick, with skin",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.53",
+                        "gm": 20.44
+                    }
+                ]
+            },
+            {
+                "ndbno": "21443",
+                "name": "POPEYES, Fried Chicken, Mild, Drumstick, meat only, skin and breading removed",
+                "weight": 44.0,
+                "measure": "1.0 drumstick, bone and skin removed",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.66",
+                        "gm": 26.51
+                    }
+                ]
+            },
+            {
+                "ndbno": "21458",
+                "name": "POPEYES, Fried Chicken, Mild, Thigh, meat and skin with breading",
+                "weight": 138.0,
+                "measure": "1.0 thigh with skin",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "26.41",
+                        "gm": 19.14
+                    }
+                ]
+            },
+            {
+                "ndbno": "21445",
+                "name": "POPEYES, Fried Chicken, Mild, Thigh, meat only, skin and breading removed",
+                "weight": 83.0,
+                "measure": "1.0 thigh thigh without skin",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "20.18",
+                        "gm": 24.31
+                    }
+                ]
+            },
+            {
+                "ndbno": "21459",
+                "name": "POPEYES, Fried Chicken, Mild, Wing, meat and skin with breading",
+                "weight": 57.0,
+                "measure": "1.0 wing, with skin",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.63",
+                        "gm": 20.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "21446",
+                "name": "POPEYES, Fried Chicken, Mild, Wing, meat only, skin and breading removed",
+                "weight": 16.0,
+                "measure": "1.0 wing without skin, bone and breading",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.63",
+                        "gm": 28.94
+                    }
+                ]
+            },
+            {
+                "ndbno": "21417",
+                "name": "POPEYES, Mild Chicken Strips, analyzed 2006",
+                "weight": 54.0,
+                "measure": "1.0 strip",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.37",
+                        "gm": 19.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "21418",
+                "name": "POPEYES, Spicy Chicken Strips, analyzed 2006",
+                "weight": 53.0,
+                "measure": "1.0 strip",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.39",
+                        "gm": 19.61
+                    }
+                ]
+            },
+            {
+                "ndbno": "21611",
+                "name": "School Lunch, chicken nuggets, whole grain breaded",
+                "weight": 88.0,
+                "measure": "5.0 pieces",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.79",
+                        "gm": 15.67
+                    }
+                ]
+            },
+            {
+                "ndbno": "21610",
+                "name": "School Lunch, chicken patty, whole grain breaded",
+                "weight": 86.0,
+                "measure": "1.0 patty",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.17",
+                        "gm": 17.64
+                    }
+                ]
+            },
+            {
+                "ndbno": "21145",
+                "name": "School Lunch, pizza, BIG DADDY'S LS 16\" 51% Whole Grain Rolled Edge Cheese Pizza, frozen",
+                "weight": 155.0,
+                "measure": "1.0 slice 1/8 per pizza",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "21.53",
+                        "gm": 13.89
+                    }
+                ]
+            },
+            {
+                "ndbno": "21146",
+                "name": "School Lunch, pizza, BIG DADDY'S LS 16\" 51% Whole Grain Rolled Edge Turkey Pepperoni Pizza, frozen",
+                "weight": 156.0,
+                "measure": "1.0 slice 1/8 per pizza",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "21.26",
+                        "gm": 13.63
+                    }
+                ]
+            },
+            {
+                "ndbno": "21601",
+                "name": "School Lunch, pizza, cheese topping, thick crust, whole grain, frozen, cooked",
+                "weight": 124.0,
+                "measure": "1.0 slice per 1/10 pizza",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "18.13",
+                        "gm": 14.62
+                    }
+                ]
+            },
+            {
+                "ndbno": "21600",
+                "name": "School Lunch, pizza, cheese topping, thin crust, whole grain, frozen, cooked",
+                "weight": 130.0,
+                "measure": "1.0 piece 4\"x6\"",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.54",
+                        "gm": 12.72
+                    }
+                ]
+            },
+            {
+                "ndbno": "21603",
+                "name": "School Lunch, pizza, pepperoni topping, thick crust, whole grain, frozen, cooked",
+                "weight": 124.0,
+                "measure": "1.0 slice per 1/10 pizza",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.79",
+                        "gm": 14.35
+                    }
+                ]
+            },
+            {
+                "ndbno": "21602",
+                "name": "School Lunch, pizza, pepperoni topping, thin crust, whole grain, frozen, cooked",
+                "weight": 127.0,
+                "measure": "1.0 piece 4\"x6\"",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.23",
+                        "gm": 12.78
+                    }
+                ]
+            },
+            {
+                "ndbno": "21605",
+                "name": "School Lunch, pizza, sausage topping, thick crust, whole grain, frozen, cooked",
+                "weight": 129.0,
+                "measure": "1.0 slice per 1/10 pizza",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "17.11",
+                        "gm": 13.26
+                    }
+                ]
+            },
+            {
+                "ndbno": "21604",
+                "name": "School Lunch, pizza, sausage topping, thin crust, whole grain, frozen, cooked",
+                "weight": 133.0,
+                "measure": "1.0 piece 4\" x 6\"",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.80",
+                        "gm": 12.63
+                    }
+                ]
+            },
+            {
+                "ndbno": "21149",
+                "name": "School Lunch, pizza, TONY'S Breakfast Pizza Sausage, frozen",
+                "weight": 91.0,
+                "measure": "1.0 piece 3.2 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.45",
+                        "gm": 10.39
+                    }
+                ]
+            },
+            {
+                "ndbno": "21147",
+                "name": "School Lunch, pizza, TONY'S SMARTPIZZA Whole Grain 4x6 Cheese Pizza 50/50 Cheese, frozen",
+                "weight": 130.0,
+                "measure": "1.0 piece 4\" x 6\"",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.70",
+                        "gm": 12.08
+                    }
+                ]
+            },
+            {
+                "ndbno": "21148",
+                "name": "School Lunch, pizza, TONY'S SMARTPIZZA Whole Grain 4x6 Pepperoni Pizza 50/50 Cheese, frozen",
+                "weight": 127.0,
+                "measure": "1.0 piece 4\"x6\"",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.42",
+                        "gm": 12.14
+                    }
+                ]
+            },
+            {
+                "ndbno": "21140",
+                "name": "Side dishes, potato salad",
+                "weight": 95.0,
+                "measure": "0.333 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.45",
+                        "gm": 1.53
+                    }
+                ]
+            },
+            {
+                "ndbno": "21161",
+                "name": "SUBWAY, B.L.T. sub on white bread with bacon, lettuce and tomato",
+                "weight": 148.0,
+                "measure": "6.0 inch sub",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.89",
+                        "gm": 10.06
+                    }
+                ]
+            },
+            {
+                "ndbno": "21209",
+                "name": "SUBWAY, black forest ham sub on white bread with lettuce and tomato",
+                "weight": 184.0,
+                "measure": "6.0 inch sub",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.78",
+                        "gm": 9.12
+                    }
+                ]
+            },
+            {
+                "ndbno": "21213",
+                "name": "SUBWAY, cold cut sub on white bread with lettuce and tomato",
+                "weight": 196.0,
+                "measure": "6.0 inch sub",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "20.62",
+                        "gm": 10.52
+                    }
+                ]
+            },
+            {
+                "ndbno": "21157",
+                "name": "SUBWAY, meatball marinara sub on white bread (no toppings)",
+                "weight": 209.0,
+                "measure": "6.0 inch sub",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "20.42",
+                        "gm": 9.77
+                    }
+                ]
+            },
+            {
+                "ndbno": "21211",
+                "name": "SUBWAY, oven roasted chicken sub on white bread with lettuce and tomato",
+                "weight": 198.0,
+                "measure": "6.0 inch sub",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "21.46",
+                        "gm": 10.84
+                    }
+                ]
+            },
+            {
+                "ndbno": "21210",
+                "name": "SUBWAY, roast beef sub on white bread with lettuce and tomato",
+                "weight": 190.0,
+                "measure": "6.0 inch sub",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "23.12",
+                        "gm": 12.17
+                    }
+                ]
+            },
+            {
+                "ndbno": "21159",
+                "name": "SUBWAY, steak &amp; cheese sub on white bread with American cheese, lettuce and tomato",
+                "weight": 201.0,
+                "measure": "6.0 inch sub",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "24.70",
+                        "gm": 12.29
+                    }
+                ]
+            },
+            {
+                "ndbno": "21152",
+                "name": "SUBWAY, SUBWAY CLUB sub on white bread with lettuce and tomato",
+                "weight": 207.0,
+                "measure": "6.0 inch sub",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.07",
+                        "gm": 10.66
+                    }
+                ]
+            },
+            {
+                "ndbno": "21150",
+                "name": "SUBWAY, sweet onion chicken teriyaki sub on white bread with lettuce, tomato and sweet onion sauce",
+                "weight": 228.0,
+                "measure": "6.0 inch sub",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "24.87",
+                        "gm": 10.91
+                    }
+                ]
+            },
+            {
+                "ndbno": "21214",
+                "name": "SUBWAY, tuna sub on white bread with lettuce and tomato",
+                "weight": 237.0,
+                "measure": "6.0 inch sub",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "29.22",
+                        "gm": 12.33
+                    }
+                ]
+            },
+            {
+                "ndbno": "21207",
+                "name": "SUBWAY, turkey breast sub on white bread with lettuce and tomato",
+                "weight": 184.0,
+                "measure": "6.0 inch sub",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.78",
+                        "gm": 9.12
+                    }
+                ]
+            },
+            {
+                "ndbno": "21264",
+                "name": "TACO BELL, Bean Burrito",
+                "weight": 185.0,
+                "measure": "1.0 each burrito",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.60",
+                        "gm": 7.35
+                    }
+                ]
+            },
+            {
+                "ndbno": "21265",
+                "name": "TACO BELL, BURRITO SUPREME with beef",
+                "weight": 241.0,
+                "measure": "1.0 burrito",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.94",
+                        "gm": 7.03
+                    }
+                ]
+            },
+            {
+                "ndbno": "21266",
+                "name": "TACO BELL, BURRITO SUPREME with chicken",
+                "weight": 248.0,
+                "measure": "1.0 item",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "24.40",
+                        "gm": 9.84
+                    }
+                ]
+            },
+            {
+                "ndbno": "21267",
+                "name": "TACO BELL, BURRITO SUPREME with steak",
+                "weight": 248.0,
+                "measure": "1.0 item",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "22.64",
+                        "gm": 9.13
+                    }
+                ]
+            },
+            {
+                "ndbno": "21268",
+                "name": "TACO BELL, Nachos",
+                "weight": 80.0,
+                "measure": "1.0 serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.46",
+                        "gm": 4.32
+                    }
+                ]
+            },
+            {
+                "ndbno": "21269",
+                "name": "TACO BELL, Nachos Supreme",
+                "weight": 222.0,
+                "measure": "1.0 serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.79",
+                        "gm": 6.21
+                    }
+                ]
+            },
+            {
+                "ndbno": "21260",
+                "name": "TACO BELL, Original Taco with beef, cheese and lettuce",
+                "weight": 69.0,
+                "measure": "1.0 each taco",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.11",
+                        "gm": 8.86
+                    }
+                ]
+            },
+            {
+                "ndbno": "21261",
+                "name": "TACO BELL, Soft Taco with beef, cheese and lettuce",
+                "weight": 102.0,
+                "measure": "1.0 each taco",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.44",
+                        "gm": 9.25
+                    }
+                ]
+            },
+            {
+                "ndbno": "21262",
+                "name": "TACO BELL, Soft Taco with chicken, cheese and lettuce",
+                "weight": 98.0,
+                "measure": "1.0 each taco",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "13.03",
+                        "gm": 13.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "21263",
+                "name": "TACO BELL, Soft Taco with steak",
+                "weight": 127.0,
+                "measure": "1.0 item",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "15.00",
+                        "gm": 11.81
+                    }
+                ]
+            },
+            {
+                "ndbno": "21270",
+                "name": "TACO BELL, Taco Salad",
+                "weight": 533.0,
+                "measure": "1.0 item",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "35.66",
+                        "gm": 6.69
+                    }
+                ]
+            },
+            {
+                "ndbno": "21508",
+                "name": "WEND'YS, Crispy Chicken Sandwich",
+                "weight": 126.0,
+                "measure": "1.0 sandwich",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.77",
+                        "gm": 11.72
+                    }
+                ]
+            },
+            {
+                "ndbno": "21246",
+                "name": "WENDY'S, Chicken Nuggets",
+                "weight": 68.0,
+                "measure": "5.0 pieces",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.19",
+                        "gm": 16.46
+                    }
+                ]
+            },
+            {
+                "ndbno": "21243",
+                "name": "WENDY'S, CLASSIC DOUBLE, with cheese",
+                "weight": 310.0,
+                "measure": "1.0 item",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "51.21",
+                        "gm": 16.52
+                    }
+                ]
+            },
+            {
+                "ndbno": "21239",
+                "name": "WENDY'S, CLASSIC SINGLE Hamburger, no cheese",
+                "weight": 218.0,
+                "measure": "1.0 item",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "27.53",
+                        "gm": 12.63
+                    }
+                ]
+            },
+            {
+                "ndbno": "21240",
+                "name": "WENDY'S, CLASSIC SINGLE Hamburger, with cheese",
+                "weight": 236.0,
+                "measure": "1.0 item",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "35.09",
+                        "gm": 14.87
+                    }
+                ]
+            },
+            {
+                "ndbno": "21510",
+                "name": "WENDY'S, DAVE'S Hot 'N Juicy 1/4 LB, single",
+                "weight": 215.0,
+                "measure": "1.0 sandwich",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "29.43",
+                        "gm": 13.69
+                    }
+                ]
+            },
+            {
+                "ndbno": "21507",
+                "name": "WENDY'S, Double Stack, with cheese",
+                "weight": 146.0,
+                "measure": "1.0 sandwich",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "27.05",
+                        "gm": 18.53
+                    }
+                ]
+            },
+            {
+                "ndbno": "21247",
+                "name": "WENDY'S, french fries",
+                "weight": 71.0,
+                "measure": "1.0 kid's meal Serving",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.65",
+                        "gm": 3.73
+                    }
+                ]
+            },
+            {
+                "ndbno": "21248",
+                "name": "WENDY'S, Frosty Dairy Dessert",
+                "weight": 113.0,
+                "measure": "1.0 junior 6 oz. cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.94",
+                        "gm": 3.49
+                    }
+                ]
+            },
+            {
+                "ndbno": "21244",
+                "name": "WENDY'S, Homestyle Chicken Fillet Sandwich",
+                "weight": 230.0,
+                "measure": "1.0 item",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "31.69",
+                        "gm": 13.78
+                    }
+                ]
+            },
+            {
+                "ndbno": "21242",
+                "name": "WENDY'S, Jr. Hamburger, with cheese",
+                "weight": 129.0,
+                "measure": "1.0 item",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.85",
+                        "gm": 13.06
+                    }
+                ]
+            },
+            {
+                "ndbno": "21241",
+                "name": "WENDY'S, Jr. Hamburger, without cheese",
+                "weight": 117.0,
+                "measure": "1.0 item",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "14.77",
+                        "gm": 12.62
+                    }
+                ]
+            },
+            {
+                "ndbno": "21245",
+                "name": "WENDY'S, Ultimate Chicken Grill Sandwich",
+                "weight": 225.0,
+                "measure": "1.0 item",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "33.14",
+                        "gm": 14.73
+                    }
+                ]
+            },
+            {
+                "ndbno": "21463",
+                "name": "Yogurt parfait, lowfat, with fruit and granola",
+                "weight": 149.0,
+                "measure": "1.0 item",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.01",
+                        "gm": 3.36
+                    }
+                ]
+            }
+        ]
+    }
+}

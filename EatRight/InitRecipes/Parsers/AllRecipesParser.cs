@@ -8,6 +8,7 @@ using System.Reflection;
 using Logic;
 using System.Net;
 using System.Text.RegularExpressions;
+using RestModel;
 
 namespace InitRecipes {
     public class AllRecipesParser : IRecipeParser {
@@ -73,7 +74,7 @@ namespace InitRecipes {
             return name;
         }
 
-        private Tuple<string, double, string> ParseWeightAndName(string item) {
+        public IngredientInfo ParseWeightAndName(string item) {
             if (item.Contains("<")) {
                 var chars = item.TakeWhile(a => a != '<');
                 item = new String(chars.ToArray());
@@ -82,7 +83,7 @@ namespace InitRecipes {
                 return null;
             item = Map.AdjustNames(item);
             item = Map.AdjustInnerPart(item);
-            var weight = 0.0;
+            var weight = 1.0;
             var innerpart = "";
             var weightKey = "";
             if (Map.HasWord(Formulas.MeasuresWeights.Keys.ToList(), item)) {
@@ -113,7 +114,7 @@ namespace InitRecipes {
                 }
             }
             innerpart = Map.AdjustIngredient(innerpart);
-            return new Tuple<string, double, string>(innerpart, weight, weightKey);
+            return new IngredientInfo { Name = innerpart, Quantity = weight, ReltiveSizeMeasure = weightKey };
         }
 
         public static Tuple<string, double, string> ParseByRelativeMeasures(string[] parts, string item, string unit) {
@@ -171,9 +172,7 @@ namespace InitRecipes {
             return new Tuple<string, double>(innerpart, actualWeight);
         }
 
-        Tuple<string, double, string> IRecipeParser.ParseWeightAndName(string ingredient) {
-            throw new NotImplementedException();
-        }
+    
     }
 }
 

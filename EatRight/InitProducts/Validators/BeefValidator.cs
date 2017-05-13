@@ -25,22 +25,13 @@ namespace InitProducts {
 
             ThirdParts = new List<string>()
             {  "steak", "roast","under blade steak", "under blade pot roast", "under blade pot roast or steak",
-                "under blade center steak", "outside skirt steak",
+                "under blade center steak", "outside skirt steak","corned beef",
                 "inside skirt steak", "cap-off steak/roast", "navel end", "point end", "pot roast or steak",
                 "pot roast", "center steak", "filet", "cap steak", "roast/fillet", "roast/filet", "roast or steak",
                 "steak/roast", "steak/fillet", "fillet", "cap", "roast", "full cut",
 
             };
         }
-
-        public override string GetThirdPart(string item) {
-            if (item.Contains("under blade")) {
-                item = item.Replace("under blade pot", "").Trim();
-            }
-            return item;
-        }
-
-
 
         public static List<string> BeefDescription = new List<string>() {
             "grass-fed", "Wagyu", "variety meats and by-products", "America's Beef Roast", "Denver Cut", "imported", "lip off", "lip-on", "lip-off",

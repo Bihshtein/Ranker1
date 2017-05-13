@@ -55,6 +55,8 @@
     <Compile Include="MealsCSVReader.cs" />
     <Compile Include="ParseRecipes.cs" />
     <Compile Include="Parsers\AllRecipesParser.cs" />
+    <Compile Include="Parsers\BBCParser.cs" />
+    <Compile Include="Parsers\GeneralParser.cs" />
     <Compile Include="Parsers\IRecipeParser.cs" />
     <Compile Include="Parsers\CookpadParser.cs" />
     <Compile Include="Parsers\FoodParser.cs" />

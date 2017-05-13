@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Logic;
 using System.Net;
+using RestModel;
 
 namespace InitRecipes {
     public class FoodParser : IRecipeParser {
@@ -12,13 +13,13 @@ namespace InitRecipes {
         public string[] StepsNumSplitter =>  new string[1] { "\"recipeInstructions\"" };
         public string[] IngredientSplitter=> new string[1] { "<li data-ingredient=" };
 
-        public Tuple<string, double, string> ParseWeightAndName(string ingredient) {
+        public IngredientInfo ParseWeightAndName(string ingredient) {
             var parts = ingredient.Split(new string[3] { "<span>", "</span>", "<a" }, StringSplitOptions.None);
             var name = parts[0].Split('"')[1].Replace('+', ' ');
             var weightStr = parts[1].Split('-')[0];
             var rest = parts[2].Trim();
             name = Map.AdjustNames(name);
-                var weight = 0.0;
+                var weight = 1.0;
                 try {
                     weight = double.Parse(weightStr);
                 }
@@ -39,7 +40,12 @@ namespace InitRecipes {
                         }
                     }
                 }
-                return new Tuple<string, double, string>(name, weight, relativeWeight);
+            if (name.Contains("garlic clove")) {
+                relativeWeight = "clove";
+                name = "garlic";
+            }
+            name = Map.AdjustIngredient(name);
+            return new IngredientInfo { Name = name, Quantity = weight, ReltiveSizeMeasure = relativeWeight }; 
         }
 
         public TimeSpan GetPrepTime(string page) {

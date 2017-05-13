@@ -14,6 +14,7 @@ namespace InitProducts {
       
         public static Dictionary<string, string> FoodGroups = new Dictionary<string, string>() {
             {"Baked","1800"},
+            {"Fast foods","2100"},
             {"Beverages", "1400"},
             {"Sweets","1900"},
             {"Legumes","1600"},
@@ -26,25 +27,30 @@ namespace InitProducts {
             {"Dairy", "0100"},
             {"Fruits", "0900"},
             {"Vegs", "1100"},
-            {"Chicken", "0500"},
+            {"Poultry", "0500"},
             {"Pork", "1000"},
             {"Beef", "1300"},
             {"Sausages", "0700"},
-            { "Snacks", "2500"}
+            { "Snacks", "2500"},
+            { "Lamb", "1700"},
+            { "Cereal", "0800"}
         };
         public static Dictionary<string, BasicValidator> Validators = new Dictionary<string, BasicValidator>() {
+            { "Fast foods", new FastFoodsValidator()},
             { "Sweets", new SweetsValidator()},
             { "Nuts", new NutsValidator()},
             { "Pork", new PorkValidator()},
             { "Beef", new BeefValidator()},
             { "Vegs", new VegsValidator()},
             { "Fruits", new FruitsValidator()},
-            { "Chicken", new ChickenValidator()},
+            { "Poultry", new PoultryValidator()},
+            { "Cereal", new CerealValidator()},
             { "Dairy", new DairyValidator()},
             { "Carbs", new CarbsValidator()},
             { "Beverages", new BeveragesValidator()},
             { "Fish", new FishValidator()},
             { "Baked", new BakedValidator()},
+            { "Lamb", new LambValidator()},
             { "SpicesAndHerbs", new SpicesAndHerbsValidator()},
             { "OilsAndFats", new OilsAndFatsValidator()},
             { "SoupAndSauce", new SoupAndSauceValidator()},
@@ -158,7 +164,7 @@ namespace InitProducts {
 
             if (validator.IsMainPart(item)) {
                 if (p.Name1 == null)
-                    p.Name1 = validator.GetPrettyName(item);
+                    p.Name1 = validator.SimpleMainPart(item);
                 else
                     p.Name1 = item + '|' + p.Name1;
                 p.Name1 = p.Name1.ToLower();
@@ -166,7 +172,7 @@ namespace InitProducts {
             }
 
             if (validator.IsSecondPart(item)) {
-                var nameAndCut = validator.GetNameAndDescription(item);
+                var nameAndCut = validator.SimpleSecondPart(item);
                 p.Name2 = nameAndCut.Item1;
                 if (nameAndCut.Item2 != null && nameAndCut.Item2 != string.Empty)
                     p.Name3 = nameAndCut.Item2;
@@ -174,7 +180,7 @@ namespace InitProducts {
 
             }
             if (validator.IsThirdPart(item)) { 
-                p.Name3 = validator.GetThirdPart(item);
+                p.Name3 = validator.SimpleThirdPart(item);
                 p.Name3 = p.Name3.ToLower();
             }
         }

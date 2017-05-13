@@ -55,7 +55,7 @@ namespace InitProducts {
         }
 
         public bool IsName(string part) {
-            if (Char.IsLower(part[0]))
+            if (Char.IsLower(part[0]) || Char.IsDigit(part[0]))
                 return false;
             for (int i = 1; i < part.Length; i++) {
                 if (Char.IsUpper(part[i])) {
@@ -69,8 +69,7 @@ namespace InitProducts {
             return ThirdParts != null && ThirdParts.Any(s => s.Equals(part, StringComparison.OrdinalIgnoreCase));
         }
 
-        public virtual string GetPrettyName(string part){ return part; }
-        public virtual string GetThirdPart(string part) { return part; }
+   
 
         public virtual bool IsValidPart(string part) {
             part = part.Trim();
@@ -78,7 +77,9 @@ namespace InitProducts {
                     IsMainPart(part) || IsSecondPart(part)|| IsThirdPart(part));
         }
 
-        public virtual Tuple<string, string> GetNameAndDescription(string item) {
+        public virtual string SimpleMainPart(string part) { return part; }
+        public virtual string SimpleThirdPart(string part) { return part; }
+        public virtual Tuple<string, string> SimpleSecondPart(string item) {
             string hiddenCut = string.Empty;
             if (ThirdParts != null) 
                 hiddenCut = ThirdParts.FirstOrDefault((cut) => item.Contains(cut));

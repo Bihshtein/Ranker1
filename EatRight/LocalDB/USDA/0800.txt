@@ -1,0 +1,5297 @@
+{
+    "report": {
+        "sr": "28",
+        "groups": [
+            {
+                "id": "0800",
+                "description": "Breakfast Cereals"
+            }
+        ],
+        "subset": "All foods",
+        "end": 352,
+        "start": 0,
+        "total": 352,
+        "foods": [
+            {
+                "ndbno": "43218",
+                "name": "Cereals ready-to-eat, ALPEN",
+                "weight": 55.0,
+                "measure": "0.67 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.16",
+                        "gm": 11.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "08657",
+                "name": "Cereals ready-to-eat, BARBARA'S PUFFINS, original",
+                "weight": 27.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.00",
+                        "gm": 7.41
+                    }
+                ]
+            },
+            {
+                "ndbno": "08681",
+                "name": "Cereals ready-to-eat, CASCADIAN FARM, Cinnamon Crunch",
+                "weight": 27.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.54",
+                        "gm": 5.69
+                    }
+                ]
+            },
+            {
+                "ndbno": "08684",
+                "name": "Cereals ready-to-eat, CASCADIAN FARM, Honey Nut O's",
+                "weight": 30.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.49",
+                        "gm": 8.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "08683",
+                "name": "Cereals ready-to-eat, CASCADIAN FARM, Multi-Grain Squares",
+                "weight": 53.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.98",
+                        "gm": 9.39
+                    }
+                ]
+            },
+            {
+                "ndbno": "08204",
+                "name": "Cereals ready-to-eat, chocolate-flavored frosted puffed corn",
+                "weight": 30.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.00",
+                        "gm": 3.34
+                    }
+                ]
+            },
+            {
+                "ndbno": "43241",
+                "name": "Cereals ready-to-eat, FAMILIA",
+                "weight": 122.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.59",
+                        "gm": 9.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "42236",
+                "name": "Cereals ready-to-eat, frosted oat cereal with marshmallows",
+                "weight": 30.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.13",
+                        "gm": 7.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "08579",
+                "name": "Cereals ready-to-eat, GENERAL MILLS, 25% Less Sugar CINNAMON TOAST CRUNCH",
+                "weight": 28.0,
+                "measure": "1.0 bowl (3/4 cup) (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.43",
+                        "gm": 5.09
+                    }
+                ]
+            },
+            {
+                "ndbno": "08586",
+                "name": "Cereals ready-to-eat, GENERAL MILLS, 25% Less Sugar TRIX",
+                "weight": 28.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.51",
+                        "gm": 5.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "08263",
+                "name": "Cereals ready-to-eat, GENERAL MILLS, APPLE CINNAMON CHEERIOS",
+                "weight": 30.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.49",
+                        "gm": 8.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "08678",
+                "name": "Cereals ready-to-eat, GENERAL MILLS, Apple Cinnamon CHEX",
+                "weight": 31.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.45",
+                        "gm": 4.69
+                    }
+                ]
+            },
+            {
+                "ndbno": "08262",
+                "name": "Cereals ready-to-eat, GENERAL MILLS, BASIC 4",
+                "weight": 55.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.68",
+                        "gm": 6.69
+                    }
+                ]
+            },
+            {
+                "ndbno": "08274",
+                "name": "Cereals ready-to-eat, GENERAL MILLS, BERRY BERRY KIX",
+                "weight": 33.0,
+                "measure": "1.25 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.04",
+                        "gm": 6.19
+                    }
+                ]
+            },
+            {
+                "ndbno": "08239",
+                "name": "Cereals ready-to-eat, GENERAL MILLS, Berry Burst CHEERIOS, Triple Berry",
+                "weight": 27.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.38",
+                        "gm": 8.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "08273",
+                "name": "Cereals ready-to-eat, GENERAL MILLS, BOO BERRY",
+                "weight": 33.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.81",
+                        "gm": 5.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "08013",
+                "name": "Cereals ready-to-eat, GENERAL MILLS, CHEERIOS",
+                "weight": 28.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.39",
+                        "gm": 12.09
+                    }
+                ]
+            },
+            {
+                "ndbno": "08592",
+                "name": "Cereals ready-to-eat, GENERAL MILLS, CHEERIOS, Banana Nut",
+                "weight": 28.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.54",
+                        "gm": 5.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "08593",
+                "name": "Cereals ready-to-eat, GENERAL MILLS, CHEERIOS, Chocolate",
+                "weight": 27.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.57",
+                        "gm": 5.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "08553",
+                "name": "Cereals ready-to-eat, GENERAL MILLS, CHEERIOS, Yogurt Burst, strawberry",
+                "weight": 30.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.00",
+                        "gm": 6.67
+                    }
+                ]
+            },
+            {
+                "ndbno": "08594",
+                "name": "Cereals ready-to-eat, GENERAL MILLS, Chocolate CHEX",
+                "weight": 32.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.54",
+                        "gm": 4.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "08513",
+                "name": "Cereals ready-to-eat, GENERAL MILLS, CHOCOLATE LUCKY CHARMS",
+                "weight": 28.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.57",
+                        "gm": 5.59
+                    }
+                ]
+            },
+            {
+                "ndbno": "08666",
+                "name": "Cereals ready-to-eat, GENERAL MILLS, Cinnamon Burst CHEERIOS",
+                "weight": 32.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.02",
+                        "gm": 6.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "08595",
+                "name": "Cereals ready-to-eat, GENERAL MILLS, Cinnamon CHEX",
+                "weight": 30.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.50",
+                        "gm": 5.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "08272",
+                "name": "Cereals ready-to-eat, GENERAL MILLS, CINNAMON TOAST CRUNCH",
+                "weight": 31.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.69",
+                        "gm": 5.45
+                    }
+                ]
+            },
+            {
+                "ndbno": "08271",
+                "name": "Cereals ready-to-eat, GENERAL MILLS, COCOA PUFFS",
+                "weight": 27.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.51",
+                        "gm": 5.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "08635",
+                "name": "Cereals ready-to-eat, GENERAL MILLS, COCOA PUFFS, 25% Reduced Sugar",
+                "weight": 30.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.95",
+                        "gm": 6.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "08017",
+                "name": "Cereals ready-to-eat, GENERAL MILLS, COOKIE CRISP",
+                "weight": 26.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.35",
+                        "gm": 5.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "08019",
+                "name": "Cereals ready-to-eat, GENERAL MILLS, Corn CHEX",
+                "weight": 31.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.98",
+                        "gm": 6.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "08270",
+                "name": "Cereals ready-to-eat, GENERAL MILLS, COUNT CHOCULA",
+                "weight": 27.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.46",
+                        "gm": 5.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "08582",
+                "name": "Cereals ready-to-eat, GENERAL MILLS, DORA THE EXPLORER",
+                "weight": 27.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.51",
+                        "gm": 5.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "08671",
+                "name": "Cereals ready-to-eat, GENERAL MILLS, Dulce De Leche CHEERIOS",
+                "weight": 27.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.75",
+                        "gm": 6.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "08669",
+                "name": "Cereals ready-to-eat, GENERAL MILLS, FIBER ONE 80 Calories, Chocolate Squares",
+                "weight": 30.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.99",
+                        "gm": 3.29
+                    }
+                ]
+            },
+            {
+                "ndbno": "08651",
+                "name": "Cereals ready-to-eat, GENERAL MILLS, FIBER ONE 80 Calories, Honey Squares",
+                "weight": 30.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.44",
+                        "gm": 4.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "08244",
+                "name": "Cereals ready-to-eat, GENERAL MILLS, FIBER ONE Bran Cereal",
+                "weight": 30.0,
+                "measure": "0.5 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.98",
+                        "gm": 6.59
+                    }
+                ]
+            },
+            {
+                "ndbno": "08596",
+                "name": "Cereals ready-to-eat, GENERAL MILLS, FIBER ONE, Caramel Delight",
+                "weight": 50.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.90",
+                        "gm": 5.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "08598",
+                "name": "Cereals ready-to-eat, GENERAL MILLS, FIBER ONE, HONEY CLUSTERS",
+                "weight": 52.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.00",
+                        "gm": 7.69
+                    }
+                ]
+            },
+            {
+                "ndbno": "08668",
+                "name": "Cereals ready-to-eat, GENERAL MILLS, FIBER ONE, Nutty Clusters &amp; Almonds",
+                "weight": 55.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.34",
+                        "gm": 7.9
+                    }
+                ]
+            },
+            {
+                "ndbno": "08599",
+                "name": "Cereals ready-to-eat, GENERAL MILLS, FIBER ONE, RAISIN BRAN CLUSTERS",
+                "weight": 55.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.46",
+                        "gm": 6.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "08268",
+                "name": "Cereals ready-to-eat, GENERAL MILLS, FRANKENBERRY",
+                "weight": 33.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.81",
+                        "gm": 5.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "08267",
+                "name": "Cereals ready-to-eat, GENERAL MILLS, FROSTED CHEERIOS",
+                "weight": 27.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.43",
+                        "gm": 9.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "08679",
+                "name": "Cereals ready-to-eat, GENERAL MILLS, FROSTED TOAST CRUNCH",
+                "weight": 30.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.56",
+                        "gm": 5.19
+                    }
+                ]
+            },
+            {
+                "ndbno": "08583",
+                "name": "Cereals ready-to-eat, GENERAL MILLS, Fruity CHEERIOS",
+                "weight": 27.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.57",
+                        "gm": 5.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "08035",
+                "name": "Cereals ready-to-eat, GENERAL MILLS, GOLDEN GRAHAMS",
+                "weight": 31.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.64",
+                        "gm": 5.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "08643",
+                "name": "Cereals ready-to-eat, GENERAL MILLS, Honey KIX",
+                "weight": 33.0,
+                "measure": "1.25 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.11",
+                        "gm": 6.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "08045",
+                "name": "Cereals ready-to-eat, GENERAL MILLS, HONEY NUT CHEERIOS",
+                "weight": 28.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.48",
+                        "gm": 8.85
+                    }
+                ]
+            },
+            {
+                "ndbno": "08670",
+                "name": "Cereals ready-to-eat, GENERAL MILLS, HONEY NUT CHEERIOS, MEDLEY CRUNCH",
+                "weight": 30.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.73",
+                        "gm": 9.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "08057",
+                "name": "Cereals ready-to-eat, GENERAL MILLS, Honey Nut CHEX",
+                "weight": 32.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.02",
+                        "gm": 6.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "08243",
+                "name": "Cereals ready-to-eat, GENERAL MILLS, HONEY NUT CLUSTERS",
+                "weight": 57.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.39",
+                        "gm": 7.7
+                    }
+                ]
+            },
+            {
+                "ndbno": "08048",
+                "name": "Cereals ready-to-eat, GENERAL MILLS, KIX",
+                "weight": 30.0,
+                "measure": "1.25 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.31",
+                        "gm": 7.69
+                    }
+                ]
+            },
+            {
+                "ndbno": "08050",
+                "name": "Cereals ready-to-eat, GENERAL MILLS, LUCKY CHARMS",
+                "weight": 27.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.07",
+                        "gm": 7.67
+                    }
+                ]
+            },
+            {
+                "ndbno": "08682",
+                "name": "Cereals ready-to-eat, GENERAL MILLS, Multi Grain CHEERIOS, Peanut Butter",
+                "weight": 28.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.90",
+                        "gm": 6.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "08087",
+                "name": "Cereals ready-to-eat, GENERAL MILLS, Multi-Grain CHEERIOS",
+                "weight": 29.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.41",
+                        "gm": 8.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "08277",
+                "name": "Cereals ready-to-eat, GENERAL MILLS, NATURE VALLEY LOW FAT FRUIT GRANOLA",
+                "weight": 55.0,
+                "measure": "0.667 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.34",
+                        "gm": 7.9
+                    }
+                ]
+            },
+            {
+                "ndbno": "08637",
+                "name": "Cereals ready-to-eat, GENERAL MILLS, Oat Cluster CHEERIOS Crunch",
+                "weight": 27.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.29",
+                        "gm": 8.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "08202",
+                "name": "Cereals ready-to-eat, GENERAL MILLS, OATMEAL CRISP, Crunchy Almond",
+                "weight": 60.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.93",
+                        "gm": 9.89
+                    }
+                ]
+            },
+            {
+                "ndbno": "08245",
+                "name": "Cereals ready-to-eat, GENERAL MILLS, OATMEAL CRISP, Hearty Raisin",
+                "weight": 62.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.27",
+                        "gm": 8.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "08634",
+                "name": "Cereals ready-to-eat, GENERAL MILLS, PEANUT BUTTER TOAST CRUNCH",
+                "weight": 31.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.54",
+                        "gm": 8.19
+                    }
+                ]
+            },
+            {
+                "ndbno": "08261",
+                "name": "Cereals ready-to-eat, GENERAL MILLS, RAISIN NUT BRAN",
+                "weight": 49.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.01",
+                        "gm": 8.19
+                    }
+                ]
+            },
+            {
+                "ndbno": "08194",
+                "name": "Cereals ready-to-eat, GENERAL MILLS, REESE'S PUFFS",
+                "weight": 29.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.97",
+                        "gm": 6.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "08064",
+                "name": "Cereals ready-to-eat, GENERAL MILLS, Rice CHEX",
+                "weight": 27.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.73",
+                        "gm": 6.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "08370",
+                "name": "Cereals ready-to-eat, GENERAL MILLS, RICE CRUNCHINS",
+                "weight": 21.0,
+                "measure": "1.0 bowl (3/4 cup) (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.00",
+                        "gm": 4.76
+                    }
+                ]
+            },
+            {
+                "ndbno": "08247",
+                "name": "Cereals ready-to-eat, GENERAL MILLS, TOTAL Raisin Bran",
+                "weight": 53.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.97",
+                        "gm": 5.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "08078",
+                "name": "Cereals ready-to-eat, GENERAL MILLS, TRIX",
+                "weight": 32.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.57",
+                        "gm": 4.9
+                    }
+                ]
+            },
+            {
+                "ndbno": "08082",
+                "name": "Cereals ready-to-eat, GENERAL MILLS, Wheat CHEX",
+                "weight": 47.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.61",
+                        "gm": 9.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "08089",
+                "name": "Cereals ready-to-eat, GENERAL MILLS, WHEATIES",
+                "weight": 27.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.24",
+                        "gm": 8.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "08077",
+                "name": "Cereals ready-to-eat, GENERAL MILLS, Whole Grain TOTAL",
+                "weight": 30.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.52",
+                        "gm": 8.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "08037",
+                "name": "Cereals ready-to-eat, granola, homemade",
+                "weight": 122.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "16.68",
+                        "gm": 13.67
+                    }
+                ]
+            },
+            {
+                "ndbno": "08290",
+                "name": "Cereals ready-to-eat, HEALTH VALLEY, FIBER 7 Flakes",
+                "weight": 31.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.48",
+                        "gm": 14.44
+                    }
+                ]
+            },
+            {
+                "ndbno": "08537",
+                "name": "Cereals ready-to-eat, KASHI 7 Whole Grain Flakes",
+                "weight": 50.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.50",
+                        "gm": 11.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "08389",
+                "name": "Cereals ready-to-eat, KASHI 7 Whole Grain Honey Puffs",
+                "weight": 30.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.00",
+                        "gm": 10.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "08567",
+                "name": "Cereals ready-to-eat, KASHI 7 Whole Grain Nuggets",
+                "weight": 58.0,
+                "measure": "0.5 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.84",
+                        "gm": 11.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "08388",
+                "name": "Cereals ready-to-eat, KASHI 7 Whole Grain Puffs",
+                "weight": 19.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.47",
+                        "gm": 13.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "08608",
+                "name": "Cereals ready-to-eat, KASHI Berry Blossom",
+                "weight": 30.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.25",
+                        "gm": 7.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "08560",
+                "name": "Cereals ready-to-eat, KASHI GO LEAN CRUNCH!, Honey Almond Flax",
+                "weight": 53.0,
+                "measure": "0.67 Cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.90",
+                        "gm": 16.79
+                    }
+                ]
+            },
+            {
+                "ndbno": "08393",
+                "name": "Cereals ready-to-eat, KASHI GOLEAN",
+                "weight": 52.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "12.94",
+                        "gm": 24.89
+                    }
+                ]
+            },
+            {
+                "ndbno": "08649",
+                "name": "Cereals ready-to-eat, KASHI GOLEAN CRISP Cinnamon Crumble",
+                "weight": 51.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.27",
+                        "gm": 22.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "08589",
+                "name": "Cereals ready-to-eat, KASHI GOLEAN CRISP Toasted Berry Crumble",
+                "weight": 51.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.18",
+                        "gm": 18.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "08386",
+                "name": "Cereals ready-to-eat, KASHI GOLEAN CRUNCH!",
+                "weight": 53.0,
+                "measure": "0.75 Cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.85",
+                        "gm": 16.7
+                    }
+                ]
+            },
+            {
+                "ndbno": "08705",
+                "name": "Cereals ready-to-eat, KASHI GOLEAN Vanilla Graham Clusters",
+                "weight": 51.0,
+                "measure": "1.0 Cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.96",
+                        "gm": 21.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "08390",
+                "name": "Cereals ready-to-eat, KASHI GOOD FRIENDS",
+                "weight": 53.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.98",
+                        "gm": 9.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "08387",
+                "name": "Cereals ready-to-eat, KASHI HEART TO HEART, Honey Toasted Oat",
+                "weight": 33.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.76",
+                        "gm": 11.39
+                    }
+                ]
+            },
+            {
+                "ndbno": "08590",
+                "name": "Cereals ready-to-eat, KASHI HEART TO HEART, Warm Cinnamon",
+                "weight": 33.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.83",
+                        "gm": 11.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "08610",
+                "name": "Cereals ready-to-eat, KASHI Honey Sunshine",
+                "weight": 30.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.34",
+                        "gm": 7.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "08647",
+                "name": "Cereals ready-to-eat, KASHI INDIGO MORNING",
+                "weight": 27.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.08",
+                        "gm": 7.7
+                    }
+                ]
+            },
+            {
+                "ndbno": "08663",
+                "name": "Cereals ready-to-eat, KASHI ORGANIC PROMISE, Berry Fruitful",
+                "weight": 55.0,
+                "measure": "29.0 biscuits (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.88",
+                        "gm": 10.7
+                    }
+                ]
+            },
+            {
+                "ndbno": "08539",
+                "name": "Cereals ready-to-eat, KASHI ORGANIC PROMISE, CINNAMON HARVEST",
+                "weight": 55.0,
+                "measure": "28.0 biscuits (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.05",
+                        "gm": 11.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "08591",
+                "name": "Cereals ready-to-eat, KASHI ORGANIC PROMISE, ISLAND VANILLA",
+                "weight": 55.0,
+                "measure": "27.0 biscuits (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.88",
+                        "gm": 10.7
+                    }
+                ]
+            },
+            {
+                "ndbno": "08697",
+                "name": "Cereals ready-to-eat, KASHI ORGANIC PROMISE, RAISIN VINEYARD",
+                "weight": 50.0,
+                "measure": "0.75 Cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.34",
+                        "gm": 8.69
+                    }
+                ]
+            },
+            {
+                "ndbno": "08463",
+                "name": "Cereals ready-to-eat, KASHI ORGANIC PROMISE, STRAWBERRY FIELDS",
+                "weight": 55.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.17",
+                        "gm": 9.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "08648",
+                "name": "Cereals ready-to-eat, KASHI Simply Maize",
+                "weight": 27.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.11",
+                        "gm": 7.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "08538",
+                "name": "Cereals ready-to-eat, KASHI, HEART TO HEART, Oat Flakes &amp; Blueberry Clusters",
+                "weight": 55.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.71",
+                        "gm": 10.39
+                    }
+                ]
+            },
+            {
+                "ndbno": "08462",
+                "name": "Cereals ready-to-eat, KASHI, ORGANIC PROMISE Autumn Wheat",
+                "weight": 54.0,
+                "measure": "29.0 biscuits (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.48",
+                        "gm": 12.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "08700",
+                "name": "Cereals ready-to-eat, KELLOGG RAISIN BRAN with Omega-3 from flaxseed",
+                "weight": 53.0,
+                "measure": "1.0 Cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.87",
+                        "gm": 7.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "08706",
+                "name": "Cereals ready-to-eat, KELLOGG SCOOBY-DOO! cereal",
+                "weight": 32.0,
+                "measure": "1.0 Cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.75",
+                        "gm": 8.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "08660",
+                "name": "Cereals ready-to-eat, KELLOGG'S APPLE JACKS with marshmallows",
+                "weight": 28.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.20",
+                        "gm": 4.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "08661",
+                "name": "Cereals ready-to-eat, KELLOGG'S CINNAMON JACKS",
+                "weight": 28.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.65",
+                        "gm": 5.9
+                    }
+                ]
+            },
+            {
+                "ndbno": "08615",
+                "name": "Cereals ready-to-eat, KELLOGG'S CRUNCHY NUT Golden Honey Nut flakes",
+                "weight": 31.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.08",
+                        "gm": 6.7
+                    }
+                ]
+            },
+            {
+                "ndbno": "08659",
+                "name": "Cereals ready-to-eat, KELLOGG'S FROSTED FLAKES, CHOCO ZUCARITAS",
+                "weight": 30.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.53",
+                        "gm": 5.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "08617",
+                "name": "Cereals ready-to-eat, KELLOGG's FROSTED MINI-WHEATS Bite Size Blueberry Muffin",
+                "weight": 55.0,
+                "measure": "25.0 biscuits (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.73",
+                        "gm": 8.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "08631",
+                "name": "Cereals ready-to-eat, KELLOGG'S FROSTED MINI-WHEATS LITTLE BITES, chocolate",
+                "weight": 56.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.76",
+                        "gm": 8.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "08708",
+                "name": "Cereals ready-to-eat, KELLOGG's FROSTED MINI-WHEATS Touch of Fruit in the Middle, raisin",
+                "weight": 55.0,
+                "measure": "24.0 Biscuits (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.00",
+                        "gm": 9.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "08677",
+                "name": "Cereals ready-to-eat, KELLOGG'S FROSTED MINI-WHEATS Touch of Fruit in the Middle, Raspberry",
+                "weight": 55.0,
+                "measure": "24.0 biscuits (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.84",
+                        "gm": 8.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "08031",
+                "name": "Cereals ready-to-eat, KELLOGG'S FROSTED MINI-WHEATS, Big Bite",
+                "weight": 58.0,
+                "measure": "7.0 biscuit (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.34",
+                        "gm": 9.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "08652",
+                "name": "Cereals ready-to-eat, KELLOGG'S KRAVE chocolate cereal",
+                "weight": 31.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.17",
+                        "gm": 7.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "08658",
+                "name": "Cereals ready-to-eat, KELLOGG'S KRAVE double chocolate cereal",
+                "weight": 30.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.13",
+                        "gm": 7.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "08699",
+                "name": "Cereals ready-to-eat, KELLOGG'S KRAVE Smores",
+                "weight": 31.0,
+                "measure": "0.75 Cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.26",
+                        "gm": 7.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "08653",
+                "name": "Cereals ready-to-eat, KELLOGG'S RICE KRISPIES, Gluten Free",
+                "weight": 30.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.34",
+                        "gm": 7.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "08707",
+                "name": "Cereals ready-to-eat, KELLOGG'S SPECIAL K Chocolate Almond",
+                "weight": 28.0,
+                "measure": "0.67 Cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.13",
+                        "gm": 7.59
+                    }
+                ]
+            },
+            {
+                "ndbno": "08584",
+                "name": "Cereals ready-to-eat, KELLOGG'S SPECIAL K Chocolatey Delight",
+                "weight": 31.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.02",
+                        "gm": 6.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "08613",
+                "name": "Cereals ready-to-eat, KELLOGG'S SPECIAL K Multigrain Oats and Honey",
+                "weight": 29.0,
+                "measure": "0.666 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.26",
+                        "gm": 7.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "08542",
+                "name": "Cereals ready-to-eat, KELLOGG'S, FROSTED MINI-WHEATS Bite Size Strawberry Delight",
+                "weight": 55.0,
+                "measure": "25.0 biscuits (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.78",
+                        "gm": 8.7
+                    }
+                ]
+            },
+            {
+                "ndbno": "08459",
+                "name": "Cereals ready-to-eat, KELLOGG'S, FROSTED MINI-WHEATS, Maple &amp; Brown Sugar, Bite Size",
+                "weight": 55.0,
+                "measure": "25.0 biscuits (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.78",
+                        "gm": 8.7
+                    }
+                ]
+            },
+            {
+                "ndbno": "08469",
+                "name": "Cereals ready-to-eat, KELLOGG'S, Reduced Sugar Frosted Flakes Cereal",
+                "weight": 30.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.68",
+                        "gm": 5.59
+                    }
+                ]
+            },
+            {
+                "ndbno": "08710",
+                "name": "Cereals ready-to-eat, KELLOGG'S, SPECIAL K gluten free, touch of brown sugar",
+                "weight": 49.0,
+                "measure": "1.0 Cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.98",
+                        "gm": 6.09
+                    }
+                ]
+            },
+            {
+                "ndbno": "08471",
+                "name": "Cereals ready-to-eat, KELLOGG'S, SPECIAL K Protein Plus",
+                "weight": 32.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "9.98",
+                        "gm": 31.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "08711",
+                "name": "Cereals ready-to-eat, KELLOGG'S, SPECIAL K protein, cinnamon brown sugar crunch",
+                "weight": 31.0,
+                "measure": "0.75 Cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.91",
+                        "gm": 22.29
+                    }
+                ]
+            },
+            {
+                "ndbno": "08543",
+                "name": "Cereals ready-to-eat, KELLOGG'S, SPECIAL K Vanilla Almond",
+                "weight": 30.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.34",
+                        "gm": 7.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "08005",
+                "name": "Cereals ready-to-eat, KELLOGG, KELLOGG'S ALL-BRAN BRAN BUDS",
+                "weight": 30.0,
+                "measure": "0.333 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.67",
+                        "gm": 8.9
+                    }
+                ]
+            },
+            {
+                "ndbno": "08028",
+                "name": "Cereals ready-to-eat, KELLOGG, KELLOGG'S ALL-BRAN COMPLETE Wheat Flakes",
+                "weight": 29.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.96",
+                        "gm": 10.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "08001",
+                "name": "Cereals ready-to-eat, KELLOGG, KELLOGG'S ALL-BRAN Original",
+                "weight": 31.0,
+                "measure": "0.5 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.07",
+                        "gm": 13.14
+                    }
+                ]
+            },
+            {
+                "ndbno": "08003",
+                "name": "Cereals ready-to-eat, KELLOGG, KELLOGG'S APPLE JACKS",
+                "weight": 28.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.43",
+                        "gm": 5.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "08588",
+                "name": "Cereals ready-to-eat, KELLOGG, KELLOGG'S CINNABON cereal",
+                "weight": 30.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.71",
+                        "gm": 5.69
+                    }
+                ]
+            },
+            {
+                "ndbno": "08014",
+                "name": "Cereals ready-to-eat, KELLOGG, KELLOGG'S COCOA KRISPIES",
+                "weight": 31.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.43",
+                        "gm": 4.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "08020",
+                "name": "Cereals ready-to-eat, KELLOGG, KELLOGG'S Corn Flakes",
+                "weight": 28.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.10",
+                        "gm": 7.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "08068",
+                "name": "Cereals ready-to-eat, KELLOGG, KELLOGG'S CORN POPS",
+                "weight": 30.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.44",
+                        "gm": 4.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "08023",
+                "name": "Cereals ready-to-eat, KELLOGG, KELLOGG'S CRACKLIN' OAT BRAN",
+                "weight": 49.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.51",
+                        "gm": 9.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "08259",
+                "name": "Cereals ready-to-eat, KELLOGG, KELLOGG'S CRISPIX",
+                "weight": 29.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.91",
+                        "gm": 6.59
+                    }
+                ]
+            },
+            {
+                "ndbno": "08030",
+                "name": "Cereals ready-to-eat, KELLOGG, KELLOGG'S FROOT LOOPS",
+                "weight": 29.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.54",
+                        "gm": 5.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "08069",
+                "name": "Cereals ready-to-eat, KELLOGG, KELLOGG'S FROSTED FLAKES",
+                "weight": 30.0,
+                "measure": "0.75 cup ( 1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.19",
+                        "gm": 3.96
+                    }
+                ]
+            },
+            {
+                "ndbno": "08319",
+                "name": "Cereals ready-to-eat, KELLOGG, KELLOGG'S FROSTED MINI-WHEATS, bite size",
+                "weight": 54.0,
+                "measure": "21.0 biscuits (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.96",
+                        "gm": 9.19
+                    }
+                ]
+            },
+            {
+                "ndbno": "08695",
+                "name": "Cereals ready-to-eat, KELLOGG, KELLOGG'S FROSTED MINI-WHEATS, little bites",
+                "weight": 56.0,
+                "measure": "1.0 Cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.15",
+                        "gm": 9.19
+                    }
+                ]
+            },
+            {
+                "ndbno": "08032",
+                "name": "Cereals ready-to-eat, KELLOGG, KELLOGG'S FROSTED RICE KRISPIES",
+                "weight": 30.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.29",
+                        "gm": 4.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "08309",
+                "name": "Cereals ready-to-eat, KELLOGG, KELLOGG'S HONEY CRUNCH CORN FLAKES",
+                "weight": 30.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.04",
+                        "gm": 6.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "08071",
+                "name": "Cereals ready-to-eat, KELLOGG, KELLOGG'S HONEY SMACKS",
+                "weight": 27.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.54",
+                        "gm": 5.7
+                    }
+                ]
+            },
+            {
+                "ndbno": "08284",
+                "name": "Cereals ready-to-eat, KELLOGG, KELLOGG'S Low Fat Granola with Raisins",
+                "weight": 60.0,
+                "measure": "0.667 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.40",
+                        "gm": 9.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "08189",
+                "name": "Cereals ready-to-eat, KELLOGG, KELLOGG'S Low Fat Granola without Raisins",
+                "weight": 49.0,
+                "measure": "0.5 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.26",
+                        "gm": 8.7
+                    }
+                ]
+            },
+            {
+                "ndbno": "08376",
+                "name": "Cereals ready-to-eat, KELLOGG, KELLOGG'S MARSHMALLOW FROOT LOOPS",
+                "weight": 29.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.33",
+                        "gm": 4.59
+                    }
+                ]
+            },
+            {
+                "ndbno": "08384",
+                "name": "Cereals ready-to-eat, KELLOGG, KELLOGG'S MINI-WHEATS, unfrosted bite size",
+                "weight": 55.0,
+                "measure": "30.0 biscuits (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.38",
+                        "gm": 11.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "08286",
+                "name": "Cereals ready-to-eat, KELLOGG, KELLOGG'S MUESLIX",
+                "weight": 55.0,
+                "measure": "0.67 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.73",
+                        "gm": 8.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "08058",
+                "name": "Cereals ready-to-eat, KELLOGG, KELLOGG'S PRODUCT 19",
+                "weight": 30.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.55",
+                        "gm": 8.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "08060",
+                "name": "Cereals ready-to-eat, KELLOGG, KELLOGG'S RAISIN BRAN",
+                "weight": 59.0,
+                "measure": "1.0 cup ( 1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.55",
+                        "gm": 7.72
+                    }
+                ]
+            },
+            {
+                "ndbno": "08712",
+                "name": "Cereals ready-to-eat, KELLOGG, KELLOGG'S RAISIN BRAN with cranberries",
+                "weight": 59.0,
+                "measure": "1.25 Cups (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.07",
+                        "gm": 6.9
+                    }
+                ]
+            },
+            {
+                "ndbno": "08696",
+                "name": "Cereals ready-to-eat, KELLOGG, KELLOGG'S RAISIN BRAN, Cinnamon Almond",
+                "weight": 58.0,
+                "measure": "1.25 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.29",
+                        "gm": 7.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "08065",
+                "name": "Cereals ready-to-eat, KELLOGG, KELLOGG'S RICE KRISPIES",
+                "weight": 33.0,
+                "measure": "1.25 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.23",
+                        "gm": 6.75
+                    }
+                ]
+            },
+            {
+                "ndbno": "08288",
+                "name": "Cereals ready-to-eat, KELLOGG, KELLOGG'S RICE KRISPIES TREATS Cereal",
+                "weight": 30.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.29",
+                        "gm": 4.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "08318",
+                "name": "Cereals ready-to-eat, KELLOGG, KELLOGG'S SMART START Strong Heart Antioxidants Cereal",
+                "weight": 50.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.75",
+                        "gm": 7.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "08067",
+                "name": "Cereals ready-to-eat, KELLOGG, KELLOGG'S SPECIAL K",
+                "weight": 31.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.51",
+                        "gm": 17.79
+                    }
+                ]
+            },
+            {
+                "ndbno": "08603",
+                "name": "Cereals ready-to-eat, KELLOGG, KELLOGG'S SPECIAL K Blueberry",
+                "weight": 30.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.07",
+                        "gm": 6.9
+                    }
+                ]
+            },
+            {
+                "ndbno": "08453",
+                "name": "Cereals ready-to-eat, KELLOGG, KELLOGG'S SPECIAL K Chocolatey Strawberry",
+                "weight": 29.0,
+                "measure": "0.75 Cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.00",
+                        "gm": 6.9
+                    }
+                ]
+            },
+            {
+                "ndbno": "08587",
+                "name": "Cereals ready-to-eat, KELLOGG, KELLOGG'S SPECIAL K Low Fat Granola",
+                "weight": 52.0,
+                "measure": "0.5 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.81",
+                        "gm": 13.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "08701",
+                "name": "Cereals ready-to-eat, KELLOGG, KELLOGG'S SPECIAL K Multi-grain",
+                "weight": 31.0,
+                "measure": "1.0 Cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.35",
+                        "gm": 7.59
+                    }
+                ]
+            },
+            {
+                "ndbno": "08383",
+                "name": "Cereals ready-to-eat, KELLOGG, KELLOGG'S SPECIAL K Red Berries",
+                "weight": 31.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.95",
+                        "gm": 6.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "08602",
+                "name": "Cereals ready-to-eat, KELLOGG, KELLOGG'S SPECIAL K, Cinnamon Pecan",
+                "weight": 30.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.25",
+                        "gm": 7.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "08380",
+                "name": "Cereals ready-to-eat, KELLOGG, KELLOGG'S, RAISIN BRAN CRUNCH",
+                "weight": 53.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.49",
+                        "gm": 6.59
+                    }
+                ]
+            },
+            {
+                "ndbno": "08531",
+                "name": "Cereals ready-to-eat, KELLOGG, SPECIAL K, Fruit &amp; Yogurt",
+                "weight": 32.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.27",
+                        "gm": 7.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "08493",
+                "name": "Cereals ready-to-eat, MALT-O-MEAL, Apple ZINGS",
+                "weight": 33.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.49",
+                        "gm": 4.51
+                    }
+                ]
+            },
+            {
+                "ndbno": "08347",
+                "name": "Cereals ready-to-eat, MALT-O-MEAL, BERRY COLOSSAL CRUNCH",
+                "weight": 30.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.26",
+                        "gm": 4.19
+                    }
+                ]
+            },
+            {
+                "ndbno": "08487",
+                "name": "Cereals ready-to-eat, MALT-O-MEAL, Blueberry MUFFIN TOPS Cereal",
+                "weight": 30.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.47",
+                        "gm": 4.9
+                    }
+                ]
+            },
+            {
+                "ndbno": "08672",
+                "name": "Cereals ready-to-eat, MALT-O-MEAL, CHOCOLATE MARSHMALLOW MATEYS",
+                "weight": 30.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.05",
+                        "gm": 3.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "08494",
+                "name": "Cereals ready-to-eat, MALT-O-MEAL, CINNAMON TOASTERS",
+                "weight": 30.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.00",
+                        "gm": 3.32
+                    }
+                ]
+            },
+            {
+                "ndbno": "08206",
+                "name": "Cereals ready-to-eat, MALT-O-MEAL, COCO-ROOS",
+                "weight": 30.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.02",
+                        "gm": 3.41
+                    }
+                ]
+            },
+            {
+                "ndbno": "08495",
+                "name": "Cereals ready-to-eat, MALT-O-MEAL, Cocoa DYNO-BITES",
+                "weight": 29.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.20",
+                        "gm": 4.15
+                    }
+                ]
+            },
+            {
+                "ndbno": "08346",
+                "name": "Cereals ready-to-eat, MALT-O-MEAL, COLOSSAL CRUNCH",
+                "weight": 30.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.09",
+                        "gm": 3.64
+                    }
+                ]
+            },
+            {
+                "ndbno": "08083",
+                "name": "Cereals ready-to-eat, MALT-O-MEAL, CORN BURSTS",
+                "weight": 31.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.03",
+                        "gm": 3.32
+                    }
+                ]
+            },
+            {
+                "ndbno": "08348",
+                "name": "Cereals ready-to-eat, MALT-O-MEAL, Crispy Rice",
+                "weight": 33.0,
+                "measure": "1.25 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.00",
+                        "gm": 6.07
+                    }
+                ]
+            },
+            {
+                "ndbno": "08409",
+                "name": "Cereals ready-to-eat, MALT-O-MEAL, Frosted Flakes",
+                "weight": 31.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.32",
+                        "gm": 4.25
+                    }
+                ]
+            },
+            {
+                "ndbno": "08500",
+                "name": "Cereals ready-to-eat, MALT-O-MEAL, Frosted Mini SPOONERS",
+                "weight": 55.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.00",
+                        "gm": 9.09
+                    }
+                ]
+            },
+            {
+                "ndbno": "08501",
+                "name": "Cereals ready-to-eat, MALT-O-MEAL, Fruity DYNO-BITES",
+                "weight": 27.0,
+                "measure": "0.75 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.05",
+                        "gm": 3.9
+                    }
+                ]
+            },
+            {
+                "ndbno": "08478",
+                "name": "Cereals ready-to-eat, MALT-O-MEAL, GOLDEN PUFFS",
+                "weight": 27.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.56",
+                        "gm": 5.77
+                    }
+                ]
+            },
+            {
+                "ndbno": "08476",
+                "name": "Cereals ready-to-eat, MALT-O-MEAL, Honey BUZZERS",
+                "weight": 29.0,
+                "measure": "1.333 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.00",
+                        "gm": 3.45
+                    }
+                ]
+            },
+            {
+                "ndbno": "08481",
+                "name": "Cereals ready-to-eat, MALT-O-MEAL, HONEY GRAHAM SQUARES",
+                "weight": 30.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.34",
+                        "gm": 4.46
+                    }
+                ]
+            },
+            {
+                "ndbno": "08676",
+                "name": "Cereals ready-to-eat, MALT-O-MEAL, Honey Nut SCOOTERS",
+                "weight": 30.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.58",
+                        "gm": 8.59
+                    }
+                ]
+            },
+            {
+                "ndbno": "08138",
+                "name": "Cereals ready-to-eat, MALT-O-MEAL, MARSHMALLOW MATEYS",
+                "weight": 30.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.08",
+                        "gm": 6.94
+                    }
+                ]
+            },
+            {
+                "ndbno": "08674",
+                "name": "Cereals ready-to-eat, MALT-O-MEAL, OAT BLENDERS with honey",
+                "weight": 30.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.03",
+                        "gm": 6.78
+                    }
+                ]
+            },
+            {
+                "ndbno": "08675",
+                "name": "Cereals ready-to-eat, MALT-O-MEAL, OAT BLENDERS with honey &amp; almonds",
+                "weight": 30.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.34",
+                        "gm": 7.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "08484",
+                "name": "Cereals ready-to-eat, MALT-O-MEAL, Raisin Bran Cereal",
+                "weight": 59.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.50",
+                        "gm": 7.63
+                    }
+                ]
+            },
+            {
+                "ndbno": "08349",
+                "name": "Cereals ready-to-eat, MALT-O-MEAL, TOOTIE FRUITIES",
+                "weight": 32.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.50",
+                        "gm": 4.69
+                    }
+                ]
+            },
+            {
+                "ndbno": "08491",
+                "name": "Cereals ready-to-eat, MOM'S BEST, Honey Nut TOASTY O'S",
+                "weight": 30.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.58",
+                        "gm": 8.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "08709",
+                "name": "Cereals ready-to-eat, MOM'S BEST, Sweetened WHEAT-FULS",
+                "weight": 55.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.50",
+                        "gm": 8.18
+                    }
+                ]
+            },
+            {
+                "ndbno": "08656",
+                "name": "Cereals ready-to-eat, NATURE'S PATH, Organic FLAX PLUS flakes",
+                "weight": 30.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.57",
+                        "gm": 11.91
+                    }
+                ]
+            },
+            {
+                "ndbno": "08571",
+                "name": "Cereals ready-to-eat, NATURE'S PATH, Organic FLAX PLUS, Pumpkin Granola",
+                "weight": 55.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.18",
+                        "gm": 11.23
+                    }
+                ]
+            },
+            {
+                "ndbno": "43495",
+                "name": "Cereals ready-to-eat, OAT BRAN FLAKES, HEALTH VALLEY",
+                "weight": 50.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.00",
+                        "gm": 10.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "08029",
+                "name": "Cereals ready-to-eat, POST Bran Flakes",
+                "weight": 30.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.97",
+                        "gm": 9.9
+                    }
+                ]
+            },
+            {
+                "ndbno": "42297",
+                "name": "Cereals ready-to-eat, POST GREAT GRAINS Banana Nut Crunch",
+                "weight": 59.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.78",
+                        "gm": 9.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "08544",
+                "name": "Cereals ready-to-eat, POST GREAT GRAINS Cranberry Almond Crunch",
+                "weight": 48.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.27",
+                        "gm": 8.9
+                    }
+                ]
+            },
+            {
+                "ndbno": "08665",
+                "name": "Cereals ready-to-eat, POST HONEY BUNCHES OF OATS with cinnamon bunches",
+                "weight": 30.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.13",
+                        "gm": 7.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "08061",
+                "name": "Cereals ready-to-eat, POST Raisin Bran Cereal",
+                "weight": 59.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.48",
+                        "gm": 7.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "08192",
+                "name": "Cereals ready-to-eat, POST SELECTS Blueberry Morning",
+                "weight": 55.0,
+                "measure": "1.25 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.58",
+                        "gm": 6.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "08554",
+                "name": "Cereals ready-to-eat, POST SELECTS Maple Pecan Crunch",
+                "weight": 52.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.42",
+                        "gm": 8.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "08002",
+                "name": "Cereals ready-to-eat, POST, ALPHA-BITS",
+                "weight": 30.0,
+                "measure": "1.0 cup (1 NLEA serving for adults)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.00",
+                        "gm": 10.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "08015",
+                "name": "Cereals ready-to-eat, POST, COCOA PEBBLES",
+                "weight": 29.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.39",
+                        "gm": 4.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "08034",
+                "name": "Cereals ready-to-eat, POST, FRUITY PEBBLES",
+                "weight": 27.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.25",
+                        "gm": 4.62
+                    }
+                ]
+            },
+            {
+                "ndbno": "08073",
+                "name": "Cereals ready-to-eat, POST, GOLDEN CRISP",
+                "weight": 27.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.49",
+                        "gm": 5.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "08038",
+                "name": "Cereals ready-to-eat, POST, GRAPE-NUTS Cereal",
+                "weight": 58.0,
+                "measure": "0.5 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.51",
+                        "gm": 11.22
+                    }
+                ]
+            },
+            {
+                "ndbno": "08039",
+                "name": "Cereals ready-to-eat, POST, GRAPE-NUTS Flakes",
+                "weight": 29.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.73",
+                        "gm": 9.4
+                    }
+                ]
+            },
+            {
+                "ndbno": "42261",
+                "name": "Cereals ready-to-eat, POST, GREAT GRAINS Crunchy Pecan Cereal",
+                "weight": 52.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.68",
+                        "gm": 9.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "42265",
+                "name": "Cereals ready-to-eat, POST, GREAT GRAINS, Raisin, Date &amp; Pecan",
+                "weight": 55.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.34",
+                        "gm": 7.9
+                    }
+                ]
+            },
+            {
+                "ndbno": "08633",
+                "name": "Cereals ready-to-eat, POST, HONEY BUNCHES OF OATS with vanilla bunches",
+                "weight": 56.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.42",
+                        "gm": 7.9
+                    }
+                ]
+            },
+            {
+                "ndbno": "43570",
+                "name": "Cereals ready-to-eat, POST, HONEY BUNCHES OF OATS, honey roasted",
+                "weight": 30.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.14",
+                        "gm": 7.12
+                    }
+                ]
+            },
+            {
+                "ndbno": "08655",
+                "name": "Cereals ready-to-eat, POST, HONEY BUNCHES OF OATS, pecan bunches",
+                "weight": 29.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.03",
+                        "gm": 7.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "42240",
+                "name": "Cereals ready-to-eat, POST, HONEY BUNCHES OF OATS, with almonds",
+                "weight": 32.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.46",
+                        "gm": 7.7
+                    }
+                ]
+            },
+            {
+                "ndbno": "08662",
+                "name": "Cereals ready-to-eat, POST, HONEY BUNCHES OF OATS, with real strawberries",
+                "weight": 31.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.08",
+                        "gm": 6.7
+                    }
+                ]
+            },
+            {
+                "ndbno": "08081",
+                "name": "Cereals ready-to-eat, POST, Honey Nut Shredded Wheat",
+                "weight": 59.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.01",
+                        "gm": 8.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "08046",
+                "name": "Cereals ready-to-eat, POST, Honeycomb Cereal",
+                "weight": 32.0,
+                "measure": "1.5 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.92",
+                        "gm": 6.01
+                    }
+                ]
+            },
+            {
+                "ndbno": "43393",
+                "name": "Cereals ready-to-eat, POST, Shredded Wheat n' Bran, spoon-size",
+                "weight": 59.0,
+                "measure": "1.25 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.45",
+                        "gm": 10.93
+                    }
+                ]
+            },
+            {
+                "ndbno": "08191",
+                "name": "Cereals ready-to-eat, POST, Shredded Wheat, lightly frosted, spoon-size",
+                "weight": 52.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.06",
+                        "gm": 7.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "08147",
+                "name": "Cereals ready-to-eat, POST, Shredded Wheat, original big biscuit",
+                "weight": 47.0,
+                "measure": "2.0 biscuits (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.34",
+                        "gm": 11.37
+                    }
+                ]
+            },
+            {
+                "ndbno": "08148",
+                "name": "Cereals ready-to-eat, POST, Shredded Wheat, original spoon-size",
+                "weight": 49.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.78",
+                        "gm": 11.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "08305",
+                "name": "Cereals ready-to-eat, Post, Waffle Crisp",
+                "weight": 30.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.98",
+                        "gm": 6.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "08632",
+                "name": "Cereals ready-to-eat, QUAKER Oatmeal Squares, Golden Maple",
+                "weight": 56.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.33",
+                        "gm": 11.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "08685",
+                "name": "Cereals ready-to-eat, QUAKER WHOLE HEARTS oat cereal",
+                "weight": 28.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.14",
+                        "gm": 7.63
+                    }
+                ]
+            },
+            {
+                "ndbno": "08054",
+                "name": "Cereals ready-to-eat, QUAKER, 100% Natural Granola, Oats, Wheat and Honey",
+                "weight": 48.0,
+                "measure": "0.5 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.06",
+                        "gm": 10.55
+                    }
+                ]
+            },
+            {
+                "ndbno": "08010",
+                "name": "Cereals ready-to-eat, QUAKER, CAP'N CRUNCH",
+                "weight": 27.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.19",
+                        "gm": 4.39
+                    }
+                ]
+            },
+            {
+                "ndbno": "08011",
+                "name": "Cereals ready-to-eat, QUAKER, CAP'N CRUNCH with CRUNCHBERRIES",
+                "weight": 26.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.16",
+                        "gm": 4.45
+                    }
+                ]
+            },
+            {
+                "ndbno": "08625",
+                "name": "Cereals ready-to-eat, QUAKER, CAP'N CRUNCH'S Halloween Crunch",
+                "weight": 26.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.15",
+                        "gm": 4.41
+                    }
+                ]
+            },
+            {
+                "ndbno": "08629",
+                "name": "Cereals ready-to-eat, QUAKER, Cap'n Crunch's OOPS! All Berries Cereal",
+                "weight": 32.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.47",
+                        "gm": 4.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "08012",
+                "name": "Cereals ready-to-eat, QUAKER, CAP'N CRUNCH'S PEANUT BUTTER CRUNCH",
+                "weight": 27.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.92",
+                        "gm": 7.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "08550",
+                "name": "Cereals ready-to-eat, QUAKER, Christmas Crunch",
+                "weight": 26.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.15",
+                        "gm": 4.44
+                    }
+                ]
+            },
+            {
+                "ndbno": "08211",
+                "name": "Cereals ready-to-eat, QUAKER, HONEY GRAHAM OH!S",
+                "weight": 27.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.06",
+                        "gm": 3.92
+                    }
+                ]
+            },
+            {
+                "ndbno": "08047",
+                "name": "Cereals ready-to-eat, QUAKER, KING VITAMAN",
+                "weight": 31.0,
+                "measure": "1.5 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.99",
+                        "gm": 6.41
+                    }
+                ]
+            },
+            {
+                "ndbno": "08220",
+                "name": "Cereals ready-to-eat, QUAKER, Low Fat 100% Natural Granola with Raisins",
+                "weight": 55.0,
+                "measure": "0.666 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.63",
+                        "gm": 8.42
+                    }
+                ]
+            },
+            {
+                "ndbno": "08628",
+                "name": "Cereals ready-to-eat, QUAKER, Maple Brown Sugar LIFE Cereal",
+                "weight": 32.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.93",
+                        "gm": 9.17
+                    }
+                ]
+            },
+            {
+                "ndbno": "08353",
+                "name": "Cereals ready-to-eat, QUAKER, MOTHER'S Cinnamon Oat Crunch",
+                "weight": 60.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.36",
+                        "gm": 10.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "08355",
+                "name": "Cereals ready-to-eat, QUAKER, MOTHER'S COCOA BUMPERS",
+                "weight": 33.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.39",
+                        "gm": 4.21
+                    }
+                ]
+            },
+            {
+                "ndbno": "08354",
+                "name": "Cereals ready-to-eat, QUAKER, MOTHER'S GRAHAM BUMPERS",
+                "weight": 28.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.27",
+                        "gm": 4.55
+                    }
+                ]
+            },
+            {
+                "ndbno": "08351",
+                "name": "Cereals ready-to-eat, QUAKER, MOTHER'S PEANUT BUTTER BUMPERS Cereal",
+                "weight": 33.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.51",
+                        "gm": 7.62
+                    }
+                ]
+            },
+            {
+                "ndbno": "08352",
+                "name": "Cereals ready-to-eat, QUAKER, MOTHER'S Toasted Oat Bran cereal",
+                "weight": 32.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.66",
+                        "gm": 11.45
+                    }
+                ]
+            },
+            {
+                "ndbno": "08627",
+                "name": "Cereals ready-to-eat, QUAKER, Natural Granola Apple Cranberry Almond",
+                "weight": 49.0,
+                "measure": "0.5 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.51",
+                        "gm": 9.21
+                    }
+                ]
+            },
+            {
+                "ndbno": "08214",
+                "name": "Cereals ready-to-eat, QUAKER, Oatmeal Squares",
+                "weight": 56.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.37",
+                        "gm": 11.38
+                    }
+                ]
+            },
+            {
+                "ndbno": "08215",
+                "name": "Cereals ready-to-eat, QUAKER, Oatmeal Squares, cinnamon",
+                "weight": 56.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.29",
+                        "gm": 11.23
+                    }
+                ]
+            },
+            {
+                "ndbno": "08218",
+                "name": "Cereals ready-to-eat, QUAKER, QUAKER 100% Natural Granola with Oats, Wheat, Honey, and Raisins",
+                "weight": 51.0,
+                "measure": "0.5 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.93",
+                        "gm": 9.66
+                    }
+                ]
+            },
+            {
+                "ndbno": "08018",
+                "name": "Cereals ready-to-eat, QUAKER, QUAKER CRUNCHY BRAN",
+                "weight": 27.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.72",
+                        "gm": 6.37
+                    }
+                ]
+            },
+            {
+                "ndbno": "08549",
+                "name": "Cereals ready-to-eat, QUAKER, QUAKER Honey Graham LIFE Cereal",
+                "weight": 32.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.99",
+                        "gm": 9.33
+                    }
+                ]
+            },
+            {
+                "ndbno": "08210",
+                "name": "Cereals ready-to-eat, QUAKER, QUAKER OAT CINNAMON LIFE",
+                "weight": 32.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.92",
+                        "gm": 9.14
+                    }
+                ]
+            },
+            {
+                "ndbno": "08049",
+                "name": "Cereals ready-to-eat, QUAKER, QUAKER OAT LIFE, plain",
+                "weight": 32.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.19",
+                        "gm": 9.98
+                    }
+                ]
+            },
+            {
+                "ndbno": "08066",
+                "name": "Cereals ready-to-eat, QUAKER, QUAKER Puffed Rice",
+                "weight": 14.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.98",
+                        "gm": 7.01
+                    }
+                ]
+            },
+            {
+                "ndbno": "08146",
+                "name": "Cereals ready-to-eat, QUAKER, QUAKER Puffed Wheat",
+                "weight": 15.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.44",
+                        "gm": 16.26
+                    }
+                ]
+            },
+            {
+                "ndbno": "08365",
+                "name": "Cereals ready-to-eat, QUAKER, Shredded Wheat, bagged cereal",
+                "weight": 63.0,
+                "measure": "3.0 biscuits (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.08",
+                        "gm": 11.24
+                    }
+                ]
+            },
+            {
+                "ndbno": "08059",
+                "name": "Cereals ready-to-eat, QUAKER, SWEET CRUNCH/QUISP",
+                "weight": 27.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.22",
+                        "gm": 4.51
+                    }
+                ]
+            },
+            {
+                "ndbno": "08216",
+                "name": "Cereals ready-to-eat, QUAKER, Toasted Multigrain Crisps",
+                "weight": 57.0,
+                "measure": "1.25 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.06",
+                        "gm": 12.38
+                    }
+                ]
+            },
+            {
+                "ndbno": "08505",
+                "name": "Cereals ready-to-eat, RALSTON Corn Biscuits",
+                "weight": 30.0,
+                "measure": "1.0 cup (NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.75",
+                        "gm": 5.83
+                    }
+                ]
+            },
+            {
+                "ndbno": "08506",
+                "name": "Cereals ready-to-eat, RALSTON Corn Flakes",
+                "weight": 28.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.65",
+                        "gm": 5.9
+                    }
+                ]
+            },
+            {
+                "ndbno": "08025",
+                "name": "Cereals ready-to-eat, RALSTON CRISP RICE",
+                "weight": 33.0,
+                "measure": "1.25 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.21",
+                        "gm": 6.69
+                    }
+                ]
+            },
+            {
+                "ndbno": "08507",
+                "name": "Cereals ready-to-eat, RALSTON Crispy Hexagons",
+                "weight": 29.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.72",
+                        "gm": 5.94
+                    }
+                ]
+            },
+            {
+                "ndbno": "08504",
+                "name": "Cereals ready-to-eat, RALSTON Enriched Wheat Bran flakes",
+                "weight": 29.0,
+                "measure": "1.0 serving (NLEA serving size = 0.75 cup)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.96",
+                        "gm": 10.21
+                    }
+                ]
+            },
+            {
+                "ndbno": "08074",
+                "name": "Cereals ready-to-eat, RALSTON TASTEEOS",
+                "weight": 28.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.00",
+                        "gm": 10.71
+                    }
+                ]
+            },
+            {
+                "ndbno": "08156",
+                "name": "Cereals ready-to-eat, rice, puffed, fortified",
+                "weight": 14.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.88",
+                        "gm": 6.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "08085",
+                "name": "Cereals ready-to-eat, SUN COUNTRY, KRETSCHMER Honey Crunch Wheat Germ",
+                "weight": 14.0,
+                "measure": "2.0 tbsp (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.72",
+                        "gm": 26.55
+                    }
+                ]
+            },
+            {
+                "ndbno": "08363",
+                "name": "Cereals ready-to-eat, SUN COUNTRY, KRETSCHMER Toasted Wheat Bran",
+                "weight": 16.0,
+                "measure": "0.25 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.81",
+                        "gm": 17.56
+                    }
+                ]
+            },
+            {
+                "ndbno": "08366",
+                "name": "Cereals ready-to-eat, SUN COUNTRY, KRETSCHMER Wheat Germ, Regular",
+                "weight": 14.0,
+                "measure": "2.0 tbsp (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.40",
+                        "gm": 31.43
+                    }
+                ]
+            },
+            {
+                "ndbno": "08435",
+                "name": "Cereals ready-to-eat, UNCLE SAM CEREAL",
+                "weight": 55.0,
+                "measure": "0.75 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.79",
+                        "gm": 15.98
+                    }
+                ]
+            },
+            {
+                "ndbno": "08508",
+                "name": "Cereals ready-to-eat, USDA Commodity Corn and Rice (includes all commodity brands)",
+                "weight": 29.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.76",
+                        "gm": 6.06
+                    }
+                ]
+            },
+            {
+                "ndbno": "08509",
+                "name": "Cereals ready-to-eat, USDA Commodity Rice Crisps (includes all commodity brands)",
+                "weight": 28.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.81",
+                        "gm": 6.45
+                    }
+                ]
+            },
+            {
+                "ndbno": "42237",
+                "name": "Cereals ready-to-eat, WEETABIX whole grain cereal",
+                "weight": 35.0,
+                "measure": "2.0 biscuits (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.00",
+                        "gm": 11.43
+                    }
+                ]
+            },
+            {
+                "ndbno": "43245",
+                "name": "Cereals ready-to-eat, wheat and bran, presweetened with nuts and fruits",
+                "weight": 55.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.90",
+                        "gm": 7.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "08084",
+                "name": "Cereals ready-to-eat, wheat germ, toasted, plain",
+                "weight": 28.35,
+                "measure": "1.0 oz",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.25",
+                        "gm": 29.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "08157",
+                "name": "Cereals ready-to-eat, wheat, puffed, fortified",
+                "weight": 12.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.76",
+                        "gm": 14.7
+                    }
+                ]
+            },
+            {
+                "ndbno": "08161",
+                "name": "Cereals, corn grits, white, regular and quick, enriched, cooked with water, with salt",
+                "weight": 257.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.39",
+                        "gm": 1.71
+                    }
+                ]
+            },
+            {
+                "ndbno": "08091",
+                "name": "Cereals, corn grits, white, regular and quick, enriched, cooked with water, without salt",
+                "weight": 257.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.39",
+                        "gm": 1.71
+                    }
+                ]
+            },
+            {
+                "ndbno": "08090",
+                "name": "Cereals, corn grits, white, regular and quick, enriched, dry",
+                "weight": 9.7,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.74",
+                        "gm": 7.65
+                    }
+                ]
+            },
+            {
+                "ndbno": "08164",
+                "name": "Cereals, corn grits, yellow, regular and quick, enriched, cooked with water, without salt",
+                "weight": 233.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.87",
+                        "gm": 1.23
+                    }
+                ]
+            },
+            {
+                "ndbno": "08159",
+                "name": "Cereals, corn grits, yellow, regular and quick, enriched, dry",
+                "weight": 170.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "11.42",
+                        "gm": 6.72
+                    }
+                ]
+            },
+            {
+                "ndbno": "08160",
+                "name": "Cereals, corn grits, yellow, regular and quick, unenriched, dry",
+                "weight": 9.7,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "0.85",
+                        "gm": 8.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "08165",
+                "name": "Cereals, corn grits, yellow, regular, quick, enriched, cooked with water, with salt",
+                "weight": 233.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.87",
+                        "gm": 1.23
+                    }
+                ]
+            },
+            {
+                "ndbno": "08168",
+                "name": "Cereals, CREAM OF RICE, cooked with water, with salt",
+                "weight": 244.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.20",
+                        "gm": 0.9
+                    }
+                ]
+            },
+            {
+                "ndbno": "08101",
+                "name": "Cereals, CREAM OF RICE, cooked with water, without salt",
+                "weight": 244.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.20",
+                        "gm": 0.9
+                    }
+                ]
+            },
+            {
+                "ndbno": "08100",
+                "name": "Cereals, CREAM OF RICE, dry",
+                "weight": 45.0,
+                "measure": "0.25 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.83",
+                        "gm": 6.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "08578",
+                "name": "Cereals, CREAM OF WHEAT, 1 minute cook time, cooked with water, microwaved, without salt",
+                "weight": 237.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.62",
+                        "gm": 1.95
+                    }
+                ]
+            },
+            {
+                "ndbno": "08577",
+                "name": "Cereals, CREAM OF WHEAT, 1 minute cook time, cooked with water, stove-top, without salt",
+                "weight": 245.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.04",
+                        "gm": 1.65
+                    }
+                ]
+            },
+            {
+                "ndbno": "08576",
+                "name": "Cereals, CREAM OF WHEAT, 1 minute cook time, dry",
+                "weight": 33.0,
+                "measure": "3.0 tablespoon (1 serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.88",
+                        "gm": 11.77
+                    }
+                ]
+            },
+            {
+                "ndbno": "08575",
+                "name": "Cereals, CREAM OF WHEAT, 2 1/2 minute cook time, cooked with water, microwaved, without salt",
+                "weight": 231.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.34",
+                        "gm": 1.88
+                    }
+                ]
+            },
+            {
+                "ndbno": "08574",
+                "name": "Cereals, CREAM OF WHEAT, 2 1/2 minute cook time, cooked with water, stove-top, without salt",
+                "weight": 244.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.51",
+                        "gm": 1.44
+                    }
+                ]
+            },
+            {
+                "ndbno": "08573",
+                "name": "Cereals, CREAM OF WHEAT, 2 1/2 minute cook time, dry",
+                "weight": 33.0,
+                "measure": "3.0 tablespoon (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.83",
+                        "gm": 11.61
+                    }
+                ]
+            },
+            {
+                "ndbno": "08106",
+                "name": "Cereals, CREAM OF WHEAT, instant, dry",
+                "weight": 11.5,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.22",
+                        "gm": 10.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "08107",
+                "name": "Cereals, CREAM OF WHEAT, instant, prepared with water, without salt",
+                "weight": 241.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.43",
+                        "gm": 1.84
+                    }
+                ]
+            },
+            {
+                "ndbno": "08169",
+                "name": "Cereals, CREAM OF WHEAT, regular (10 minute), cooked with water, with salt",
+                "weight": 251.0,
+                "measure": "1.0 cup (1 serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.66",
+                        "gm": 1.46
+                    }
+                ]
+            },
+            {
+                "ndbno": "08103",
+                "name": "Cereals, CREAM OF WHEAT, regular (10 minute), cooked with water, without salt",
+                "weight": 251.0,
+                "measure": "1.0 cup (1 serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.61",
+                        "gm": 1.44
+                    }
+                ]
+            },
+            {
+                "ndbno": "08102",
+                "name": "Cereals, CREAM OF WHEAT, regular, 10 minute cooking, dry",
+                "weight": 10.6,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.11",
+                        "gm": 10.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "08105",
+                "name": "Cereals, farina, enriched, assorted brands including CREAM OF WHEAT, quick (1-3 minutes), cooked with water, without salt",
+                "weight": 240.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.37",
+                        "gm": 1.82
+                    }
+                ]
+            },
+            {
+                "ndbno": "08104",
+                "name": "Cereals, farina, enriched, assorted brands including CREAM OF WHEAT, quick (1-3 minutes), dry",
+                "weight": 11.0,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.28",
+                        "gm": 11.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "08173",
+                "name": "Cereals, farina, enriched, cooked with water, with salt",
+                "weight": 233.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.24",
+                        "gm": 1.82
+                    }
+                ]
+            },
+            {
+                "ndbno": "08113",
+                "name": "Cereals, farina, enriched, cooked with water, without salt",
+                "weight": 240.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.37",
+                        "gm": 1.82
+                    }
+                ]
+            },
+            {
+                "ndbno": "08172",
+                "name": "Cereals, farina, unenriched, dry",
+                "weight": 10.9,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.16",
+                        "gm": 10.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "08562",
+                "name": "Cereals, KASHI GO LEAN Hot Cereal, Creamy TRULY VANILLA, dry",
+                "weight": 40.0,
+                "measure": "1.0 packet (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.92",
+                        "gm": 22.29
+                    }
+                ]
+            },
+            {
+                "ndbno": "08561",
+                "name": "Cereals, KASHI GO LEAN Hot Cereal, Hearty Honey &amp; Cinnamon, dry",
+                "weight": 40.0,
+                "measure": "1.0 packet (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.36",
+                        "gm": 18.39
+                    }
+                ]
+            },
+            {
+                "ndbno": "08568",
+                "name": "Cereals, KASHI HEART TO HEART, Instant Oatmeal, Apple Cinnamon, dry",
+                "weight": 43.0,
+                "measure": "1.0 packet (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.77",
+                        "gm": 11.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "08569",
+                "name": "Cereals, KASHI HEART TO HEART, Instant Oatmeal, golden brown maple, dry",
+                "weight": 43.0,
+                "measure": "1.0 packet (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.90",
+                        "gm": 11.39
+                    }
+                ]
+            },
+            {
+                "ndbno": "08702",
+                "name": "Cereals, KELLOGG'S SPECIAL K NOURISH, Cinnamon Raisin Pecan, dry",
+                "weight": 52.0,
+                "measure": "1.0 Container (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.33",
+                        "gm": 14.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "08703",
+                "name": "Cereals, KELLOGG'S SPECIAL K NOURISH, Cranberry Almond, dry",
+                "weight": 52.0,
+                "measure": "1.0 Container (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.80",
+                        "gm": 15.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "08704",
+                "name": "Cereals, KELLOGG'S SPECIAL K NOURISH, Maple Brown Sugar Crunch, dry",
+                "weight": 52.0,
+                "measure": "1.0 Container (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.00",
+                        "gm": 15.39
+                    }
+                ]
+            },
+            {
+                "ndbno": "08177",
+                "name": "Cereals, MALT-O-MEAL, chocolate, dry",
+                "weight": 35.0,
+                "measure": "3.0 tbsp (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.71",
+                        "gm": 10.6
+                    }
+                ]
+            },
+            {
+                "ndbno": "08512",
+                "name": "Cereals, MALT-O-MEAL, chocolate, prepared with water, without salt",
+                "weight": 268.0,
+                "measure": "1.0 serving (3 T dry cereal plus 1 cup water)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.67",
+                        "gm": 1.37
+                    }
+                ]
+            },
+            {
+                "ndbno": "08488",
+                "name": "Cereals, MALT-O-MEAL, Farina Hot Wheat Cereal, dry",
+                "weight": 35.0,
+                "measure": "3.0 tbsp (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.67",
+                        "gm": 10.48
+                    }
+                ]
+            },
+            {
+                "ndbno": "08489",
+                "name": "Cereals, MALT-O-MEAL, Maple &amp; Brown Sugar Hot Wheat Cereal, dry",
+                "weight": 45.0,
+                "measure": "0.25 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.97",
+                        "gm": 8.82
+                    }
+                ]
+            },
+            {
+                "ndbno": "08116",
+                "name": "Cereals, MALT-O-MEAL, original, plain, dry",
+                "weight": 35.0,
+                "measure": "3.0 tbsp (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.13",
+                        "gm": 11.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "08511",
+                "name": "Cereals, MALT-O-MEAL, original, plain, prepared with water, without salt",
+                "weight": 268.0,
+                "measure": "1.0 serving (3 T dry cereal plus 1 cup water)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.48",
+                        "gm": 1.67
+                    }
+                ]
+            },
+            {
+                "ndbno": "08680",
+                "name": "Cereals, oats, instant, fortified, maple and brown sugar, dry",
+                "weight": 43.0,
+                "measure": "1.0 packet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.98",
+                        "gm": 9.25
+                    }
+                ]
+            },
+            {
+                "ndbno": "08122",
+                "name": "Cereals, oats, instant, fortified, plain, dry",
+                "weight": 28.0,
+                "measure": "1.0 packet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.34",
+                        "gm": 11.92
+                    }
+                ]
+            },
+            {
+                "ndbno": "08123",
+                "name": "Cereals, oats, instant, fortified, plain, prepared with water (boiling water added or microwaved)",
+                "weight": 234.0,
+                "measure": "1.0 cup, cooked",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.55",
+                        "gm": 2.37
+                    }
+                ]
+            },
+            {
+                "ndbno": "08128",
+                "name": "Cereals, oats, instant, fortified, with cinnamon and spice, dry",
+                "weight": 45.0,
+                "measure": "1.0 packet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.29",
+                        "gm": 9.53
+                    }
+                ]
+            },
+            {
+                "ndbno": "08129",
+                "name": "Cereals, oats, instant, fortified, with cinnamon and spice, prepared with water",
+                "weight": 240.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.69",
+                        "gm": 2.37
+                    }
+                ]
+            },
+            {
+                "ndbno": "08132",
+                "name": "Cereals, oats, instant, fortified, with raisins and spice, dry",
+                "weight": 44.0,
+                "measure": "1.0 packet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.72",
+                        "gm": 8.45
+                    }
+                ]
+            },
+            {
+                "ndbno": "08133",
+                "name": "Cereals, oats, instant, fortified, with raisins and spice, prepared with water",
+                "weight": 240.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.75",
+                        "gm": 1.98
+                    }
+                ]
+            },
+            {
+                "ndbno": "08180",
+                "name": "Cereals, oats, regular and quick and instant, unenriched, cooked with water (includes boiling and microwaving), with salt",
+                "weight": 234.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.94",
+                        "gm": 2.54
+                    }
+                ]
+            },
+            {
+                "ndbno": "08120",
+                "name": "Cereals, oats, regular and quick, not fortified, dry",
+                "weight": 81.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.65",
+                        "gm": 13.15
+                    }
+                ]
+            },
+            {
+                "ndbno": "08121",
+                "name": "Cereals, oats, regular and quick, unenriched, cooked with water (includes boiling and microwaving), without salt",
+                "weight": 234.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.94",
+                        "gm": 2.54
+                    }
+                ]
+            },
+            {
+                "ndbno": "08094",
+                "name": "Cereals, QUAKER, corn grits, instant, cheddar cheese flavor, dry",
+                "weight": 28.0,
+                "measure": "1.0 packet (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.51",
+                        "gm": 8.98
+                    }
+                ]
+            },
+            {
+                "ndbno": "08092",
+                "name": "Cereals, QUAKER, corn grits, instant, plain, dry",
+                "weight": 29.0,
+                "measure": "1.0 packet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.12",
+                        "gm": 7.31
+                    }
+                ]
+            },
+            {
+                "ndbno": "08093",
+                "name": "Cereals, QUAKER, corn grits, instant, plain, prepared (microwaved or boiling water added), without salt",
+                "weight": 219.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.46",
+                        "gm": 1.58
+                    }
+                ]
+            },
+            {
+                "ndbno": "08314",
+                "name": "Cereals, QUAKER, hominy grits, white, quick, dry",
+                "weight": 37.0,
+                "measure": "0.25 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.26",
+                        "gm": 8.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "08316",
+                "name": "Cereals, QUAKER, hominy grits, white, regular, dry",
+                "weight": 41.0,
+                "measure": "0.25 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.61",
+                        "gm": 8.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "08449",
+                "name": "Cereals, QUAKER, Instant Grits Product with American Cheese Flavor, dry",
+                "weight": 28.0,
+                "measure": "1.0 packet (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.46",
+                        "gm": 8.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "08221",
+                "name": "Cereals, QUAKER, Instant Grits, Butter flavor, dry",
+                "weight": 28.0,
+                "measure": "1.0 packet (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.27",
+                        "gm": 8.12
+                    }
+                ]
+            },
+            {
+                "ndbno": "08096",
+                "name": "Cereals, QUAKER, Instant Grits, Country Bacon flavor, dry",
+                "weight": 28.0,
+                "measure": "1.0 packet (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.78",
+                        "gm": 9.93
+                    }
+                ]
+            },
+            {
+                "ndbno": "08450",
+                "name": "Cereals, QUAKER, Instant Grits, Ham 'n' Cheese flavor, dry",
+                "weight": 28.0,
+                "measure": "1.0 packet (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.00",
+                        "gm": 10.73
+                    }
+                ]
+            },
+            {
+                "ndbno": "08444",
+                "name": "Cereals, QUAKER, Instant Grits, Redeye Gravy &amp; Country Ham flavor, dry",
+                "weight": 28.0,
+                "measure": "1.0 packet (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.75",
+                        "gm": 9.83
+                    }
+                ]
+            },
+            {
+                "ndbno": "08640",
+                "name": "Cereals, QUAKER, Instant Oatmeal Organic, Regular",
+                "weight": 41.0,
+                "measure": "1.0 packet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.56",
+                        "gm": 16.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "08642",
+                "name": "Cereals, QUAKER, Instant Oatmeal, Apple and Cinnamon, reduced sugar",
+                "weight": 31.0,
+                "measure": "1.0 packet (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.19",
+                        "gm": 10.29
+                    }
+                ]
+            },
+            {
+                "ndbno": "08124",
+                "name": "Cereals, QUAKER, Instant Oatmeal, apples and cinnamon, dry",
+                "weight": 43.0,
+                "measure": "1.0 packet (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.71",
+                        "gm": 8.62
+                    }
+                ]
+            },
+            {
+                "ndbno": "08417",
+                "name": "Cereals, QUAKER, Instant Oatmeal, Banana Bread, dry",
+                "weight": 41.0,
+                "measure": "1.0 packet (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.68",
+                        "gm": 8.97
+                    }
+                ]
+            },
+            {
+                "ndbno": "08639",
+                "name": "Cereals, QUAKER, Instant Oatmeal, Cinnamon Spice, reduced sugar",
+                "weight": 34.0,
+                "measure": "1.0 packet (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.83",
+                        "gm": 11.26
+                    }
+                ]
+            },
+            {
+                "ndbno": "08688",
+                "name": "Cereals, QUAKER, Instant Oatmeal, Cinnamon Swirl, high fiber",
+                "weight": 45.0,
+                "measure": "1.0 packet (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.96",
+                        "gm": 8.79
+                    }
+                ]
+            },
+            {
+                "ndbno": "08410",
+                "name": "Cereals, QUAKER, Instant Oatmeal, Cinnamon-Spice, dry",
+                "weight": 43.0,
+                "measure": "1.0 packet (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.47",
+                        "gm": 10.39
+                    }
+                ]
+            },
+            {
+                "ndbno": "08411",
+                "name": "Cereals, QUAKER, Instant Oatmeal, DINOSAUR EGGS, Brown Sugar, dry",
+                "weight": 50.0,
+                "measure": "1.0 packet (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.34",
+                        "gm": 8.69
+                    }
+                ]
+            },
+            {
+                "ndbno": "08225",
+                "name": "Cereals, QUAKER, Instant Oatmeal, fruit and cream variety, dry",
+                "weight": 35.0,
+                "measure": "1.0 packet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.90",
+                        "gm": 8.3
+                    }
+                ]
+            },
+            {
+                "ndbno": "08641",
+                "name": "Cereals, QUAKER, Instant Oatmeal, fruit and cream, variety of flavors, reduced sugar",
+                "weight": 33.0,
+                "measure": "1.0 packet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.35",
+                        "gm": 10.16
+                    }
+                ]
+            },
+            {
+                "ndbno": "08130",
+                "name": "Cereals, QUAKER, Instant Oatmeal, maple and brown sugar, dry",
+                "weight": 43.0,
+                "measure": "1.0 packet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.96",
+                        "gm": 9.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "08436",
+                "name": "Cereals, QUAKER, Instant Oatmeal, Raisin and Spice, dry",
+                "weight": 43.0,
+                "measure": "1.0 packet (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.92",
+                        "gm": 9.11
+                    }
+                ]
+            },
+            {
+                "ndbno": "08228",
+                "name": "Cereals, QUAKER, Instant Oatmeal, raisins, dates and walnuts, dry",
+                "weight": 37.0,
+                "measure": "1.0 packet",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "3.26",
+                        "gm": 8.82
+                    }
+                ]
+            },
+            {
+                "ndbno": "08694",
+                "name": "Cereals, QUAKER, Instant Oatmeal, weight control, cinnamon",
+                "weight": 45.0,
+                "measure": "1.0 packet (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.42",
+                        "gm": 16.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "08231",
+                "name": "Cereals, QUAKER, Oat Bran, QUAKER/MOTHER'S Oat Bran, dry",
+                "weight": 40.0,
+                "measure": "0.5 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.81",
+                        "gm": 17.03
+                    }
+                ]
+            },
+            {
+                "ndbno": "08690",
+                "name": "Cereals, QUAKER, oatmeal, REAL MEDLEYS, apple walnut, dry",
+                "weight": 75.0,
+                "measure": "1.0 package (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.13",
+                        "gm": 8.18
+                    }
+                ]
+            },
+            {
+                "ndbno": "08689",
+                "name": "Cereals, QUAKER, oatmeal, REAL MEDLEYS, blueberry hazelnut, dry",
+                "weight": 70.0,
+                "measure": "1.0 package (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "6.87",
+                        "gm": 9.81
+                    }
+                ]
+            },
+            {
+                "ndbno": "08693",
+                "name": "Cereals, QUAKER, oatmeal, REAL MEDLEYS, cherry pistachio, dry",
+                "weight": 73.0,
+                "measure": "1.0 package (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "8.77",
+                        "gm": 12.02
+                    }
+                ]
+            },
+            {
+                "ndbno": "08692",
+                "name": "Cereals, QUAKER, oatmeal, REAL MEDLEYS, peach almond, dry",
+                "weight": 75.0,
+                "measure": "1.0 package (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.58",
+                        "gm": 10.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "08691",
+                "name": "Cereals, QUAKER, oatmeal, REAL MEDLEYS, summer berry, dry",
+                "weight": 70.0,
+                "measure": "1.0 package (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.92",
+                        "gm": 11.31
+                    }
+                ]
+            },
+            {
+                "ndbno": "08200",
+                "name": "Cereals, QUAKER, QUAKER MultiGrain Oatmeal, dry",
+                "weight": 40.0,
+                "measure": "0.5 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.06",
+                        "gm": 12.64
+                    }
+                ]
+            },
+            {
+                "ndbno": "08451",
+                "name": "Cereals, QUAKER, Quick Oats with Iron, Dry",
+                "weight": 40.0,
+                "measure": "0.5 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.48",
+                        "gm": 13.7
+                    }
+                ]
+            },
+            {
+                "ndbno": "08402",
+                "name": "Cereals, QUAKER, Quick Oats, Dry",
+                "weight": 40.0,
+                "measure": "0.5 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.48",
+                        "gm": 13.7
+                    }
+                ]
+            },
+            {
+                "ndbno": "08687",
+                "name": "Cereals, QUAKER, Weight Control Instant Oatmeal, banana bread",
+                "weight": 45.0,
+                "measure": "1.0 packet (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.42",
+                        "gm": 16.5
+                    }
+                ]
+            },
+            {
+                "ndbno": "08686",
+                "name": "Cereals, QUAKER, Weight Control Instant Oatmeal, maple and brown sugar",
+                "weight": 45.0,
+                "measure": "1.0 packet (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "7.37",
+                        "gm": 16.37
+                    }
+                ]
+            },
+            {
+                "ndbno": "08452",
+                "name": "Cereals, QUAKER, Whole Wheat Natural Cereal, dry",
+                "weight": 40.0,
+                "measure": "0.5 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.72",
+                        "gm": 11.8
+                    }
+                ]
+            },
+            {
+                "ndbno": "08673",
+                "name": "Cereals, ready-to-eat, MALT-O-MEAL, Blueberry Mini SPOONERS",
+                "weight": 55.0,
+                "measure": "1.0 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.85",
+                        "gm": 8.81
+                    }
+                ]
+            },
+            {
+                "ndbno": "08143",
+                "name": "Cereals, WHEATENA, cooked with water",
+                "weight": 243.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.86",
+                        "gm": 2.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "08182",
+                "name": "Cereals, WHEATENA, cooked with water, with salt",
+                "weight": 243.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.93",
+                        "gm": 2.03
+                    }
+                ]
+            },
+            {
+                "ndbno": "08142",
+                "name": "Cereals, WHEATENA, dry",
+                "weight": 40.0,
+                "measure": "0.33 cup (1 NLEA serving)",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "5.24",
+                        "gm": 13.1
+                    }
+                ]
+            },
+            {
+                "ndbno": "08183",
+                "name": "Cereals, whole wheat hot natural cereal, cooked with water, with salt",
+                "weight": 242.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.84",
+                        "gm": 2.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "08145",
+                "name": "Cereals, whole wheat hot natural cereal, cooked with water, without salt",
+                "weight": 242.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "4.84",
+                        "gm": 2.0
+                    }
+                ]
+            },
+            {
+                "ndbno": "08144",
+                "name": "Cereals, whole wheat hot natural cereal, dry",
+                "weight": 94.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "10.53",
+                        "gm": 11.2
+                    }
+                ]
+            },
+            {
+                "ndbno": "08580",
+                "name": "Incaparina, dry mix (corn and soy flours), unprepared",
+                "weight": 8.9,
+                "measure": "1.0 tbsp",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "1.94",
+                        "gm": 21.75
+                    }
+                ]
+            },
+            {
+                "ndbno": "43483",
+                "name": "Millet, puffed",
+                "weight": 21.0,
+                "measure": "1.0 cup",
+                "nutrients": [
+                    {
+                        "nutrient_id": "203",
+                        "nutrient": "Protein",
+                        "unit": "g",
+                        "value": "2.73",
+                        "gm": 13.0
+                    }
+                ]
+            }
+        ]
+    }
+}

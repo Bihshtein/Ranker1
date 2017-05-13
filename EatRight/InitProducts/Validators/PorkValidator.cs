@@ -23,7 +23,7 @@ namespace InitProducts {
             ThirdParts = new List<string>() { "slice", "whole", "spiral slice", "center slice" };
         }
 
-        public override Tuple<string, string> GetNameAndDescription(string item) {
+        public override Tuple<string, string> SimpleSecondPart(string item) {
             var split = item.Split('(', ')');
             var name = split[0];
             var cut = string.Empty;
@@ -32,7 +32,7 @@ namespace InitProducts {
             return new Tuple<string, string>(name, cut);
         }
 
-        public override string GetPrettyName(string name) {
+        public override string SimpleMainPart(string name) {
             if (name.Contains("ham"))
                 name = "ham";
             return name;

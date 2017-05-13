@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace InitProducts {
     internal class SpicesAndHerbsValidator : BasicValidator {
@@ -16,20 +17,26 @@ namespace InitProducts {
                 "coriander seed","curry powder","dill seed","dill weed","fennel seed","fenugreek seed",
                 "garlic powder","ginger","mace","marjoram","mustard seed","nutmeg","onio powder",
                 "oregano", "paprika","parsley","pepper","poppy seed","poultry seasoning",
-                "pumpkin pie spice","rosemary","cumin seed", "onion powder"
+                "pumpkin pie spice","rosemary","cumin seed", "onion powder",
             };
             ThirdParts = new List<string> {
                 "original","coriander & annatto","black","red or cayenne","white"
             };
-
-        
         }
 
-        public override string GetPrettyName(string part) {
-            if (part.ToLower().Contains("dill weed"))
-                return "dill";
-            return part;
+        public override Tuple<string, string> SimpleSecondPart(string item) {
+            if (item.Contains("dill weed"))
+                item = "dill";
+            return base.SimpleSecondPart(item);
         }
+
+        public override string SimpleMainPart(string part) {
+            if (part.ToLower() == "seasoning mix")
+                return "seasoning";
+         
+            return base.SimpleMainPart(part);
+        }
+
 
 
     }

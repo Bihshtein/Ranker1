@@ -7,6 +7,7 @@ using Logic;
 using log4net;
 using System.Reflection;
 using System.Net;
+using RestModel;
 
 namespace InitRecipes {
     public class CookpadParser : IRecipeParser {
@@ -69,7 +70,7 @@ namespace InitRecipes {
             return name;
         }
 
-        public Tuple<string, double, string> ParseWeightAndName(string ingredient) {
+        public IngredientInfo ParseWeightAndName(string ingredient) {
             ingredient = ingredient.Split('\n')[0];
             var nameAndWeight = ingredient.Split(new string[1] { "</span>" }, StringSplitOptions.None);
             var name = nameAndWeight[1].Trim().ToLower();
@@ -85,7 +86,7 @@ namespace InitRecipes {
             var weightSplit = weight.Split('-');
             if (weightSplit.Length == 2)
                 weight = weightSplit[1]; // take the bigger number from range
-            var weightNum = 0.0;
+            var weightNum = 1.0;
             var relativeWeight = "";
             weight = ParseHelpers.GetWeightFullName(weight);
             if (Map.HasWord(Formulas.MeasuresWeights.Keys.ToList(), weight)) {
@@ -101,9 +102,7 @@ namespace InitRecipes {
                 relativeWeight = Map.GetWord(Formulas.RelativeSizes, weight);
                 try {
                     var amount = weight.Replace(relativeWeight, "");
-                    if (amount == "")
-                        weightNum = 1;
-                    else
+                    if (amount != "")
                         weightNum = ParseHelpers.ParseAmount(weight.Replace(relativeWeight, ""));
                 }
                 catch {
@@ -128,7 +127,6 @@ namespace InitRecipes {
                     }
                 }
                 else if (weight == "") {
-                    weightNum = 1;
                     relativeWeight = name;
                 }
 
@@ -147,7 +145,7 @@ namespace InitRecipes {
                 name = "garlic";
             }
 
-            return new Tuple<string, double, string>(name, weightNum, relativeWeight);
+            return new IngredientInfo { Name = name, Quantity = weightNum, ReltiveSizeMeasure = relativeWeight }; 
 
         }
 

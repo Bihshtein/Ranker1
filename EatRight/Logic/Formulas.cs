@@ -117,6 +117,8 @@ namespace Logic
             "hand full",
             "handfuls",
             "handful",
+            "extra large",
+            "extra-large",
             "large",
             "small head",
             "small to medium",
@@ -138,6 +140,10 @@ namespace Logic
         public static List<string> RelativeSizes = new List<string> {
             // relative to the weight stated by the USDA for the product
             // order matter keep the more inclusicve delimiters first
+            "head", "heads",  "stalk", "stalks","fillet",
+            "strip",
+            "rib",
+            "ribs",
             "cup sliced",
             "cup small",
             "cup packed",
@@ -185,6 +191,7 @@ namespace Logic
             "pkg",
             "bundle",
             "sheet",
+            "sheets",
             "container",
             "carton",
             "stalk",
