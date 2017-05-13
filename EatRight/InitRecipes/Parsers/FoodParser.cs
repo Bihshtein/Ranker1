@@ -18,7 +18,7 @@ namespace InitRecipes {
             var name = parts[0].Split('"')[1].Replace('+', ' ');
             var weightStr = parts[1].Split('-')[0];
             var rest = parts[2].Trim();
-            name = Map.AdjustNames(name);
+          
                 var weight = 1.0;
                 try {
                     weight = double.Parse(weightStr);
@@ -44,6 +44,8 @@ namespace InitRecipes {
                 relativeWeight = "clove";
                 name = "garlic";
             }
+            name = Map.AdjustNames(name);
+            name = Map.AdjustInnerPart(name);
             name = Map.AdjustIngredient(name);
             return new IngredientInfo { Name = name, Quantity = weight, ReltiveSizeMeasure = relativeWeight }; 
         }

@@ -141,6 +141,7 @@ namespace Logic
             // relative to the weight stated by the USDA for the product
             // order matter keep the more inclusicve delimiters first
             "head", "heads",  "stalk", "stalks","fillet",
+            "knob of",
             "strip",
             "rib",
             "ribs",
@@ -160,7 +161,6 @@ namespace Logic
             "small",
             "medium",
             "pinch",
-            "leaves",
             "bags",
             "bag",
             "Bag",
@@ -198,7 +198,7 @@ namespace Logic
             "envelope",
             "thumb-size",
             "thumb",
-
+              "leaves",
         };
 
 

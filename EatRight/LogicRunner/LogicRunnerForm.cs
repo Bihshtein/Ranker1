@@ -41,8 +41,8 @@ namespace LogicRunner
             ageGender.DataSource = bindingSource1.DataSource;
             dataGridView1.AutoGenerateColumns = true;
             mealType.DataSource = Enum.GetNames(typeof(MealType));
-            minMax.DataSource = new string[] { "min", "max" };
-            comboBox4.DataSource = new string[] { "Fixed", "Internet", "Both" };
+            minMax.DataSource = new string[] { "min", "max" }; 
+            comboBox4.DataSource = Enum.GetNames(typeof(RecipesSource));
             workMode.DataSource = new string[] { "Recommend", "Debug" };
             var range = new List<int> { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21 };
 
@@ -61,7 +61,6 @@ namespace LogicRunner
             calories.SelectedIndex = 1;
             servings.SelectedIndex = 0;
             cookTime.SelectedIndex = 2;
-            comboBox4.SelectedIndex = 1;
             recommendationsNum.SelectedIndex = 7;
         }
 
@@ -129,7 +128,12 @@ namespace LogicRunner
             if (workMode.SelectedItem.ToString() == "Debug") {
                 var recipes = new List<int>();
                 var recipesCollection = new RestDBInterface().Recipes;
-                recipesCollection.GetAllList().ForEach(a => recipes.Add(a.ID));
+                var source = (RecipesSource)Enum.Parse(typeof(RecipesSource), comboBox4.SelectedItem.ToString());
+                var meal = (MealType)Enum.Parse(typeof(MealType), mealType.SelectedItem.ToString());
+                if (source == RecipesSource.All)
+                    recipesCollection.GetAllList().ForEach(a => recipes.Add(a.ID));
+                else 
+                    recipesCollection.Queries.GetBySource(source, meal).ForEach(a => recipes.Add(a.ID));
 
                 generator = new RecommendationGenerator(unit, recommendationDB,  new HashSet<int>(recipes), int.Parse(txtCalories.Text));
             }
@@ -212,24 +216,6 @@ namespace LogicRunner
             Hack.RecommendToUsers((MealType)Enum.Parse(typeof(MealType),mealType.SelectedItem.ToString()));
         }
 
-        private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            switch (comboBox4.Text)
-            {
-                case "Fixed":
-                    useDBRecipes = false;
-                    useTestsRecipes = true;
-                    break;
-                case "Internet":
-                    useDBRecipes = true;
-                    useTestsRecipes = false;
-                    break;
-                case "Both":
-                    useDBRecipes = true;
-                    useTestsRecipes = true;
-                    break;
-            }
-        }
 
         private void LogicRunnerForm_Load(object sender, EventArgs e) {
 

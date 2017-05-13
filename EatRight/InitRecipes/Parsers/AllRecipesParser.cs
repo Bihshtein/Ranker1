@@ -81,8 +81,6 @@ namespace InitRecipes {
             }
             else
                 return null;
-            item = Map.AdjustNames(item);
-            item = Map.AdjustInnerPart(item);
             var weight = 1.0;
             var innerpart = "";
             var weightKey = "";
@@ -113,7 +111,12 @@ namespace InitRecipes {
                     weightKey = res.Item1; // the product is the actual key
                 }
             }
+            if (innerpart == "")
+                innerpart = item;
+            innerpart = Map.AdjustNames(innerpart);
+            innerpart = Map.AdjustInnerPart(innerpart);
             innerpart = Map.AdjustIngredient(innerpart);
+
             return new IngredientInfo { Name = innerpart, Quantity = weight, ReltiveSizeMeasure = weightKey };
         }
 
