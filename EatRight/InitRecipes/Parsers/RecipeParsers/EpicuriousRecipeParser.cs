@@ -36,8 +36,17 @@ namespace InitRecipes {
             return 1;
         }
 
-        public string GetImageUrl(string page) {
-            return "";
+        public string GetImageUrl(string page)
+        {
+            var parts = page.Split(new string[] { "http://assets.epicurious.com/photos/" }, StringSplitOptions.None);
+            if (parts.Length > 1)
+            {
+                var innerParts = parts[1].Split('\"');
+                var imageUrl = "http://assets.epicurious.com/photos/" + innerParts[0];
+                return imageUrl;
+            }
+
+            throw new Exception("Couldn't load image");
         }
 
         public string GetRecipeName(string page) {
@@ -49,7 +58,10 @@ namespace InitRecipes {
         public IngredientInfo ParseWeightAndName(string item) {
             var itemsParts = item.Split('<');
             item = itemsParts[0];
-            item = Map.AdjustNames(item);
+            if (item == string.Empty)
+            {
+                return null;
+            }
             item = Map.AdjustInnerPart(item);
             var weight = 1.0;
             var innerpart = "";
@@ -81,6 +93,7 @@ namespace InitRecipes {
                     weightKey = res.Item1; // the product is the actual key
                 }
             }
+            innerpart = Map.AdjustNames(innerpart);
             innerpart = Map.AdjustIngredient(innerpart);
             return new IngredientInfo { Name = innerpart, Quantity = weight, ReltiveSizeMeasure = weightKey };
         }

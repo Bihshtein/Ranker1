@@ -103,14 +103,22 @@ namespace Logic {
         public static string AdjustInnerPart(string innerpart) {
             var split = innerpart.Split(',');
             if (split[0] != string.Empty)
+            {
                 innerpart = split[0];
+            }
             else
+            {
                 innerpart = split[1];
+            }
             split = innerpart.Split(new string[1] { " - " }, StringSplitOptions.None);
             if (split[0] != string.Empty)
+            {
                 innerpart = split[0];
+            }
             else
+            {
                 innerpart = split[1];
+            }
 
             return innerpart;
         }
