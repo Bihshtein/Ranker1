@@ -8,14 +8,14 @@ namespace InitProducts {
             SecondParts = new List<string> {
                 "barbecue", "horseradish","fish","duck","hot chile","cheese","cream of mushroom","cream of chicken",
                 "oyster","pesto","pizza","plum","salsa","teriyaki","tomato chili sauce","tartar","tomato",
-                "sweet and sour","sofrito","pepper or hot","pasta","hoisin",
+                "sweet and sour","sofrito","pepper or hot","pasta","hoisin","onion",
                 "bean with bacon", "bean with frankfurters", "bean with pork",
                 "beef and mushroom", "beef and vegetables","beef barley","beef broth","beef","vegetable broth",
                 "beef broth or bouillon","beef mushroom","black bean","chicken","chicken broth","worcestershire",
             };
             ThirdParts = new List<string> {
                 "spaghetti/marinara","sriracha", "ready to serve","stock", "ready-to-serve" ,
-                "cubed","bouillon","consomme", 
+                "cubed","bouillon","consomme", "mix"
             };
         }
 

@@ -239,6 +239,7 @@ namespace RestModel {
             (x.PreparationMethod.Equals(part1) && x.Name2.Equals(part2) && x.Name1.Equals(part3)) ||
             (x.Name2.Equals(part1) && x.PackDetails.Equals(part2) && x.Name1.Equals(part3)) ||
             (x.PackDetails.Equals(part1) && x.Name2.Equals(part2) && x.Name1.Equals(part3)) ||
+            (x.BoneDetails.Equals(part1) && x.FoodGroup.Equals(part2) && x.Name3.Equals(part3)) ||
             (x.Name3.Equals(part1) && x.Name1.Equals(part2 + " " + part3)) ||
             (x.Name2.Equals(part1) && x.Name1.Equals(part2 + " " + part3)) ||
             (x.Name2.Equals(part3) && x.Name1.Equals(part1 + " " + part2)) ||

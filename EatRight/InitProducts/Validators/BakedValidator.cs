@@ -9,7 +9,7 @@ namespace InitProducts {
                 "Muffins","English muffins","Crackers","Cookies","Cookie","Sweet rolls",
                 "Coffeecake","Cake","Bread","Doughnuts","Croutons","Puff pastry",
                 "Croissants","Cream puff","Danish pastry","Tortillas","Breakfast tart",
-                "Leavening agents","Bread crumbs", "Bread stuffing","PILLSBURY","PEPPERIDGE FARM"
+                "Leavening agents","Bread crumbs", "Bread stuffing","PILLSBURY","PEPPERIDGE FARM","NABISCO"
             };
 
             SecondParts = new List<string> {
@@ -26,7 +26,7 @@ namespace InitProducts {
                 "protein","pumpernickel","french or vienna","shortcake","fortune", "fig bars",
                 "fudge","gingersnaps","ladyfingers","Marie biscuit","marshmallow","molasses",
                 "saltines","melba toast","matzo","irish soda","fruitcake","carrot","marble",
-                "Crusty French Loaf","cream of tartar"
+                "Crusty French Loaf","cream of tartar", "NABISCO RITZ Crackers"
             };
 
             ThirdParts = new List<string> {
@@ -45,7 +45,9 @@ namespace InitProducts {
                 item = "cream tartar";
             else if (item == "hard (includes kaiser)")
                 item = "hard";
-                return base.SimpleSecondPart(item);
+            else if (item.ToLower().Contains("ritz crackers"))
+                item = "ritz crackers";
+            return base.SimpleSecondPart(item);
         }
 
         public override string SimpleThirdPart(string part) {

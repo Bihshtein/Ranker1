@@ -107,8 +107,6 @@ namespace InitRecipes {
                     log.Error("Can't parse weight : " + weight + ", ingredient name:" + name);
                 }
             }
-
-
             else {
                 var splitBySpace = weight.Split(' ');
                 if (splitBySpace.Length > 1 && (splitBySpace[1] == "g" || splitBySpace[1] == "ml")) {
@@ -136,7 +134,7 @@ namespace InitRecipes {
                 }
 
             }
-            if (name.Contains("garlic clove")) {
+            if (name.Contains("garlic") && name.Contains("clove")) {
                 relativeWeight = "clove";
                 name = "garlic";
             }
