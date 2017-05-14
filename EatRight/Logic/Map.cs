@@ -84,7 +84,7 @@ namespace Logic {
             if (ingredient.StartsWith(") "))
                 ingredient = ingredient.Replace(") ", "");
 
-            if (ingredient[ingredient.Length - 1] == ')') {
+            if (ingredient.Length > 0 && ingredient[ingredient.Length - 1] == ')') {
                 var index = ingredient.LastIndexOf('(');
                 if (index > 0)
                     ingredient = ingredient.Remove(index, ingredient.Length - index);
