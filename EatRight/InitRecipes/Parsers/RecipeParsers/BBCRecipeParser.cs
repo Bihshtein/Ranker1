@@ -17,6 +17,7 @@ namespace InitRecipes {
         public string[] ServingSplitter => new string[1] { "<span class=\"recipe - details__text\" itemprop=\"recipeYield\">" };
         public string[] IngredientSplitter => new string[1] { "itemprop=\"ingredients\">" };
         public string[] ImageUrlSplitter => new string[1] { "https://www.bbcgoodfood.com/sites/default/files/recipe_images" };
+        public string[] StepsSplitter => new string[1] { "itemprop=\"recipeInstructions\"" };
 
         public TimeSpan GetPrepTime(string page) {
             return new TimeSpan(0);
@@ -33,11 +34,15 @@ namespace InitRecipes {
             return int.Parse(num);
         }
 
-        public int GetStepsNum(string page) {
+        public int GetStepsNum(string page)
+        {
+            // Implemented in GeneralRecipeParser
             return 1;
         }
 
-        public string GetImageUrl(string page) {
+        public string GetImageUrl(string page)
+        {
+            // Implemented in GeneralRecipeParser
             return "";
         }
 

@@ -10,6 +10,7 @@ namespace InitRecipes {
         string[] IngredientSplitter { get; }
         string[] ServingSplitter { get;  }
         string[] ImageUrlSplitter { get; }
+        string[] StepsSplitter { get; }
         string GetRecipeName(string page);
         IngredientInfo ParseWeightAndName(string ingredient);
         int GetServings(string page);
