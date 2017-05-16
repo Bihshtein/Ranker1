@@ -58,17 +58,17 @@ namespace InitRecipes {
             item = itemsParts[0] + itemsParts[1].Split('>')[1];
             
             var weight = 1.0;
-            var innerpart = "";
+            var name = item;
             var weightKey = "";
             var words = item.Split(' ');
             words = words[0].Split('/');
             if (Regex.Replace(words[0], @"\d", "") == "ml") {
                 weight = Double.Parse(words[0].Replace("ml", ""));
-                innerpart = item.Replace(words[0], "").Trim();
+                name = item.Replace(words[0], "").Trim();
             }
             else if (Regex.Replace(words[0], @"\d", "") == "g") {
                 weight = Double.Parse(words[0].Replace("g", ""));
-                innerpart = item.Replace(words[0], "").Trim();
+                name = item.Replace(words[0], "").Trim();
             }
             else if (Map.HasWord(Formulas.MeasuresWeights.Keys.ToList(), item)) {
                 var measure = Map.GetWord(Formulas.MeasuresWeights.Keys.ToList(), item);
@@ -78,7 +78,7 @@ namespace InitRecipes {
                     parts = new string[2] { measure, parts[0] };
                 if (parts.Length > 1) {
                     var res = ParseByAbsoluteMeasures(parts, item, measure);
-                    innerpart = res.Item1;
+                    name = res.Item1;
                     weight = res.Item2;
                 }
               
@@ -91,31 +91,30 @@ namespace InitRecipes {
                         parts = new string[2] { size, parts[0] };
                     if (parts.Length > 1) {
                         var res = ParseByRelativeMeasures(parts, item, size);
-                        innerpart = res.Item1;
+                        name = res.Item1;
                         weight = res.Item2;
                         weightKey = res.Item3;
                     }
                 }
                 else {
                     var res = ParseByRelativeNumber(item);
-                    innerpart = res.Item1;
+                    name = res.Item1;
                     weight = res.Item2;
                     weightKey = res.Item1; // the product is the actual key
                 }
             }
             if (item.Contains("garlic clove")) {
                 weightKey = "clove";
-                innerpart = "garlic";
+                name = "garlic";
             }
-            if (innerpart == "")
-                innerpart = item;
-            innerpart = Map.AdjustNames(innerpart);
-            innerpart = Map.AdjustInnerPart(innerpart);
-            innerpart = Map.AdjustIngredient(innerpart);
+            
+            name = Map.AdjustNames(name);
+            name = Map.AdjustInnerPart(name);
+            name = Map.AdjustIngredient(name);
           
       
 
-            return new IngredientInfo { Name = innerpart, Quantity = weight, ReltiveSizeMeasure = weightKey };
+            return new IngredientInfo { Name = name, Quantity = weight, ReltiveSizeMeasure = weightKey };
         }
 
         public static Tuple<string, double, string> ParseByRelativeMeasures(string[] parts, string item, string unit) {

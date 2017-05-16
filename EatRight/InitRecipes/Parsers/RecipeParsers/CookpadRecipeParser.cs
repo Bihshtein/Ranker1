@@ -115,13 +115,7 @@ namespace InitRecipes {
                     weightNum = ParseHelpers.ParseAmount(splitBySpace[0]);
                 }
 
-                else if (Formulas.RelativeProductSize.Any(s => name.Contains(s))) {
-                    relativeWeight = Formulas.RelativeProductSize.First(s => name.Contains(s));
-                    var res = name.Replace(relativeWeight, string.Empty).Trim();
-                    if (res != string.Empty) {
-                        name = res;
-                    }
-                }
+           
                 else if (weight == "") {
                     relativeWeight = name;
                 }

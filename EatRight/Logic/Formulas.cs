@@ -106,41 +106,27 @@ namespace Logic
                 ((carbsWeight * weightRatio) * ProteinCarbsGramCalories) +
                 ((FatGramCalories * weightRatio) * 9);
         }
-        public static List<string> RelativeProductSize = new List<string> {
-            "large handful",
-            "a little",
-            "little bit",
-            "lots",
-            "pat",
-            "small cup",
-            "small bunch",
-            "hand full",
-            "handfuls",
-            "handful",
-            "extra large",
-            "extra-large",
-            "large",
-            "small head",
-            "small to medium",
-            "small bunch",
-            "small",
-            "medium size",
-            "medium bunch",
-            "medium",
-            "whole",
-            "little",
-            "gloves",
-            "glove",
-            "big",
-            "half",
-            "lg",
-            
-
-        };
+    
         public static List<string> RelativeSizes = new List<string> {
             // relative to the weight stated by the USDA for the product
             // order matter keep the more inclusicve delimiters first
-            "head", "heads",  "stalk", "stalks","fillet",
+                  "small cup",
+            "small bunch",
+            "hand full",
+            "extra large",
+            "extra-large",
+            "small head",
+            "small to medium",
+            "small bunch",
+            "medium size",
+            "medium bunch",
+           "a little",
+            "little bit",
+            "little",
+            "large handful",
+            "handfuls",
+            "small head",
+            "stalk", "stalks","fillet",
             "knob of",
             "strip",
             "rib",
@@ -183,6 +169,7 @@ namespace Logic
             "piece",
             "pcs",
             "head",
+             "heads",
             "handful",
             "each",
             "Bar",
@@ -198,7 +185,16 @@ namespace Logic
             "envelope",
             "thumb-size",
             "thumb",
-              "leaves",
+            "leaves",
+            "lots",
+            "pat",
+            "whole",
+            "gloves",
+            "glove",
+              "big",
+            "half",
+            "lg",
+
         };
 
 

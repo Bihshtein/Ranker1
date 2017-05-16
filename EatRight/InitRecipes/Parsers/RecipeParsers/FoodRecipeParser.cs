@@ -34,13 +34,11 @@ namespace InitRecipes {
 
                 }
                 var relativeWeight = Formulas.MeasuresWeights.Keys.ToList().FirstOrDefault(s => Map.WordCheck(s, rest));
+                
                 if (relativeWeight == null) {
-                    relativeWeight = Formulas.RelativeProductSize.FirstOrDefault(s => Map.WordCheck(s, rest));
+                    relativeWeight = Formulas.RelativeSizes.FirstOrDefault(s => Map.WordCheck(s, rest));
                     if (relativeWeight == null) {
-                        relativeWeight = Formulas.RelativeSizes.FirstOrDefault(s => Map.WordCheck(s, rest));
-                        if (relativeWeight == null) {
-                            relativeWeight = "";
-                        }
+                        relativeWeight = "";
                     }
                 }
             if (name.Contains("garlic clove")) {
