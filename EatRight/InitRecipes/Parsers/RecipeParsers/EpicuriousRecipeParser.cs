@@ -52,12 +52,18 @@ namespace InitRecipes {
             return name;
         }
 
-        public IngredientInfo ParseWeightAndName(string item) {
-            var itemsParts = item.Split('<');
-            item = itemsParts[0];
+        public IngredientInfo ParseWeightAndName(string phrase) {
+            var itemsParts = phrase.Split('<');
+            var origitem = itemsParts[0];
+            var item = origitem;
             if (item == string.Empty) {
                 return null;
             }
+            var branchParts = item.Split('(', ')');
+            if (branchParts.Length == 3)
+                item = branchParts[0] + branchParts[2];
+            if (branchParts.Length == 5)
+                item = branchParts[0] + branchParts[2]+ branchParts[4];
             var iParts = item.Split('/');
             if (Map.HasWord(Formulas.MeasuresWeights.Keys.ToList(), iParts[0]) ||
                 Map.HasWord(Formulas.RelativeSizes, iParts[0]))
@@ -91,15 +97,18 @@ namespace InitRecipes {
                     
                     var res = ParseByRelativeNumber(item);
                     if (res.Item1 != "") {
-                        name = res.Item1;
-                     
+                        name = res.Item1;                     
                         weightKey = res.Item1; // the product is the actual key
                     }
                     if (res.Item2 != 0) 
                         weight = res.Item2;
                 }
             }
-       
+            if (name.Contains("garlic") && name.Contains("clove")) {
+                weightKey = "clove";
+                name = "garlic";
+            }
+
             name = Map.AdjustNames(name);
             name = Map.AdjustInnerPart(name);
             name = Map.AdjustIngredient(name);
@@ -109,12 +118,11 @@ namespace InitRecipes {
       
 
         public static Tuple<string, double, string> ParseByRelativeMeasures(string[] parts, string item, string unit) {
-            var amount = GetBranchedAmount(parts[0]);
             var relativeWeight = 0.0;
             var innerpart = string.Empty;
             if (Formulas.RelativeSizes.Contains(unit)) {
                 try {
-                    relativeWeight = ParseHelpers.ParseAmount(amount);
+                    relativeWeight = ParseHelpers.ParseAmount(parts[0]);
                 }
                 catch (Exception ex) {
                     log.Error("Failed to parse relative weight for item : " + item, ex);
@@ -127,20 +135,12 @@ namespace InitRecipes {
         }
        
         public static Tuple<string, double> ParseByAbsoluteMeasures(string[] parts, string item, string unit) {
-            var amount = GetBranchedAmount(parts[0]);
-            if (amount.Contains("(") && amount.Contains(")")) {
-                var noBranches = parts[0].Split(new string[2] { "(", ")" }, StringSplitOptions.None);
-                amount = noBranches[0] + noBranches[2];
-            }
-            else if (amount.Contains("(")) {
-                amount = parts[0].Split('(')[1];
-            }
             var actualWeight = 0.0;
             var innerpart = string.Empty;
 
             if (Map.HasWord(Formulas.MeasuresWeights.Keys.ToList(), unit)) {
                 try {
-                    actualWeight = ParseHelpers.ParseAmount(amount) * Formulas.MeasuresWeights[unit];
+                    actualWeight = ParseHelpers.ParseAmount(parts[0]) * Formulas.MeasuresWeights[unit];
                 }
                 catch (Exception ex) {
                     log.Error("Failed to parse actual weight for item : " + item, ex);
@@ -155,7 +155,6 @@ namespace InitRecipes {
 
 
         public static Tuple<string, double> ParseByRelativeNumber(string item) {
-            item = GetBranchedAmount(item);
             var relativeWeight = 0.0;
             var innerpart = string.Empty;
             if (item != Regex.Replace(item, @"\d", "")) {
@@ -175,18 +174,7 @@ namespace InitRecipes {
             return new Tuple<string, double>(innerpart, relativeWeight);
         }
 
-        public static string GetBranchedAmount(string part) {
-            var amount = part;
-            if (amount.Contains("(") && amount.Contains(")")) {
-                var noBranches = part.Split(new string[2] { "(", ")" }, StringSplitOptions.None);
-                amount = noBranches[0] + noBranches[2];
-            }
-            else if (amount.Contains("(")) {
-                amount = part.Split('(')[1];
-            }
-            amount = amount.Replace("about", "").Trim();
-            return amount;
-        }
+      
 
 
     }
