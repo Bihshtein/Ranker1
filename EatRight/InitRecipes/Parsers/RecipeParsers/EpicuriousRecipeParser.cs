@@ -109,9 +109,14 @@ namespace InitRecipes {
                 name = "garlic";
             }
 
-            name = Map.AdjustNames(name);
-            name = Map.AdjustInnerPart(name);
-            name = Map.AdjustIngredient(name);
+            try {
+                name = Map.AdjustNames(name);
+                name = Map.AdjustInnerPart(name);
+                name = Map.AdjustIngredient(name);
+            }
+            catch(Exception ex) {
+                log.Error(ex);
+            }
             return new IngredientInfo { Name = name, Quantity = weight, ReltiveSizeMeasure = weightKey };
         }
 
