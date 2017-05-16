@@ -17,6 +17,7 @@ namespace InitRecipes {
         public string[] ServingSplitter => new string[1] { "<meta id=\"metaRecipeServings\" itemprop=\"recipeYield\" content=" };
         public string[] IngredientSplitter => new string[1] { "itemprop=\"ingredients\">" };
         public string[] ImageUrlSplitter => new string[0];
+        public string[] StepsSplitter => new string[1] { "<li class=\"step\" ng-class=\"{" };
 
         public TimeSpan GetPrepTime(string page) {
             var prepTimeParts = page.Split(new string[1] { "<span class=\"ready-in-time\">" }, StringSplitOptions.None);
@@ -54,8 +55,8 @@ namespace InitRecipes {
 
         public int GetStepsNum(string page)
         {
-            int myCount = System.Text.RegularExpressions.Regex.Matches(page, "<li class=\"step\" ng-class=\"{").Count;
-            return myCount;
+            // Implemented in GeneralRecipeParser
+            return 1;
         }
 
         public string GetImageUrl(string page) {

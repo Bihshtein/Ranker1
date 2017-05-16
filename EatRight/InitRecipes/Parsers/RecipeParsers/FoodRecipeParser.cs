@@ -10,9 +10,11 @@ using RestModel;
 namespace InitRecipes {
     public class FoodParser : IRecipeParser {
         public string[] ServingSplitter =>new string[1] { "Servings Per Recipe:" }; 
-        public string[] StepsNumSplitter =>  new string[1] { "\"recipeInstructions\"" };
+        public string[] StepsSplitter => new string[0];
         public string[] IngredientSplitter=> new string[1] { "<li data-ingredient=" };
         public string[] ImageUrlSplitter => new string[0];
+
+        public string[] FoodStepsSplitter => new string[1] { "\"recipeInstructions\"" }; // Not to be confused with StepsSplitter which is for the general implementation
 
         public IngredientInfo ParseWeightAndName(string ingredient) {
             var parts = ingredient.Split(new string[3] { "<span>", "</span>", "<a" }, StringSplitOptions.None);
@@ -64,7 +66,7 @@ namespace InitRecipes {
 
         public int GetStepsNum(string page)
         {
-            var tempParts = page.Split(StepsNumSplitter, StringSplitOptions.None);
+            var tempParts = page.Split(FoodStepsSplitter, StringSplitOptions.None);
             if (tempParts == null || tempParts.Length < 2)
             {
                 return 0;

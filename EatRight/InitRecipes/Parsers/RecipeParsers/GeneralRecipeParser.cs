@@ -11,6 +11,7 @@ namespace InitRecipes {
         public GeneralRecipeParser(IRecipeParser parser) {
             Parser = parser;
         }
+
         public string GetImageUrl(string page)
         {
             try
@@ -35,6 +36,19 @@ namespace InitRecipes {
             catch
             {
                 return null;
+            }
+        }
+
+        public int GetStepsNum(string page)
+        {
+            if (Parser.StepsSplitter.Length > 0)
+            {
+                int myCount = System.Text.RegularExpressions.Regex.Matches(page, Parser.StepsSplitter[0]).Count;
+                return myCount;
+            }
+            else
+            {
+                return Parser.GetStepsNum(page);
             }
         }
 

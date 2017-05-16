@@ -14,6 +14,7 @@ namespace InitRecipes {
         public string[] ServingSplitter => new string[1] { "<div class=\"subtle\" data-field data-field-name=\"serving\" data-placeholder=\"How many servings?\" data-maxlength=\"15\">" }; 
         public string[] IngredientSplitter => new string[1] { "<span class=\"ingredient__quantity\">" };
         public string[] ImageUrlSplitter => new string[0];
+        public string[] StepsSplitter => new string[1] { "p class=\"step__text\"" };
 
         public static ILog log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -51,7 +52,8 @@ namespace InitRecipes {
 
         public int GetStepsNum(string page)
         {
-            return System.Text.RegularExpressions.Regex.Matches(page, "p class=\"step__text\"").Count;
+            // Implemented in GeneralRecipeParser
+            return 1;
         }
 
         public string GetImageUrl(string page) {
