@@ -134,12 +134,16 @@ namespace InitRecipes {
                 relativeWeight = "clove";
                 name = "garlic";
             }
+            try { 
             name = Map.AdjustNames(name);
             name = Map.AdjustInnerPart(name).Trim();
             name = Map.AdjustIngredient(name);
             name = ParseHelpers.FixIllegalCharacters(name);
-               if (name == "")
-                   log.Error(nameAndWeight);
+        }
+            catch(Exception ex) {
+                log.Error(ex);
+            }
+              
             return new IngredientInfo { Name = name, Quantity = weightNum, ReltiveSizeMeasure = relativeWeight }; 
 
         }

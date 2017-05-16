@@ -113,9 +113,14 @@ namespace InitRecipes {
                     weightKey = res.Item1; // the product is the actual key
                 }
             }
+            try { 
             name = Map.AdjustNames(name);
             name = Map.AdjustInnerPart(name);
             name = Map.AdjustIngredient(name);
+        }
+            catch(Exception ex) {
+                log.Error(ex);
+            }
 
             return new IngredientInfo { Name = name, Quantity = weight, ReltiveSizeMeasure = weightKey };
         }
