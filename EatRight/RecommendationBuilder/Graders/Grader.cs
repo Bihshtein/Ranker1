@@ -79,6 +79,8 @@ namespace RecommendationBuilder.Graders
                     return new PrepTimeMealGrader();
                 case GraderType.ServingsNumMealGrader:
                     return new ServingsNumMealGrader();
+                case GraderType.StepsNumMealGrader:
+                    return new StepsNumMealGrader();
 
                 // Recommendation graders
                 case GraderType.VarietyRecoGrader:

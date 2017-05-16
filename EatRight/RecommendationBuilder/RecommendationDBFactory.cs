@@ -166,7 +166,7 @@ namespace RecommendationBuilder
             var priorities = new Stack<UserPriorities>(userProfile.Priorities);
             while (priorities.Count > 0) {
                 var graders = PriorityToGradersMap[priorities.Pop()];
-                graders.ForEach(g => recommendationDB.GradersWeight.Add(g, GraderDefaults[g] * priorities.Count));
+                graders.ForEach(g => recommendationDB.GradersWeight.Add(g, GraderDefaults[g] * priorities.Count+1));
             }
             recommendationDB.range = SuggestionRangeGenerator.FromUserProfile(userProfile);
             recommendationDB.preferences = UserRestrictionsGenerator.FromUserProfile(userProfile);
