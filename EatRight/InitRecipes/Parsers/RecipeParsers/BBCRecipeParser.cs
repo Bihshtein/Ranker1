@@ -98,9 +98,12 @@ namespace InitRecipes {
                 }
                 else {
                     var res = ParseByRelativeNumber(item);
-                    name = res.Item1;
-                    weight = res.Item2;
-                    weightKey = res.Item1; // the product is the actual key
+                    if (res.Item1 != "") {
+                        name = res.Item1;
+                        weightKey = res.Item1; // the product is the actual key
+                    }
+                    if (res.Item2 != 0)
+                        weight = res.Item2;
                 }
             }
             if (item.Contains("garlic clove")) {

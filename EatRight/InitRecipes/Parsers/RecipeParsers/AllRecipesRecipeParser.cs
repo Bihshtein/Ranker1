@@ -84,6 +84,7 @@ namespace InitRecipes {
             else
                 return null;
             var weight = 1.0;
+            var origItem = item;
             var name = item;
             var weightKey = "";
             if (Map.HasWord(Formulas.MeasuresWeights.Keys.ToList(), item)) {
@@ -108,9 +109,12 @@ namespace InitRecipes {
                 }
                 else {
                     var res = ParseByRelativeNumber(item);
-                    name = res.Item1;
-                    weight = res.Item2;
-                    weightKey = res.Item1; // the product is the actual key
+                    if (res.Item1 != "") {
+                        name = res.Item1;
+                        weightKey = res.Item1; // the product is the actual key
+                    }
+                    if (res.Item2 != 0)
+                        weight = res.Item2;
                 }
             }
             try { 
