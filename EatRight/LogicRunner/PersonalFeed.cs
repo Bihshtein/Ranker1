@@ -16,6 +16,7 @@ namespace LogicRunner {
             {GraderType.MaxNutValuesMealGrader, "less unhealthy " },
             {GraderType.MinNutValuesMealGrader, "more nutritious " },
             {GraderType.PrepTimeMealGrader, "less preparation time" },
+            {GraderType.StepsNumMealGrader, "less complicated" },
         };
         public static void SendEmail(RecommendationDB recommendationDB, IEnumerable<Meal> meals, string mealType) {
             meals = meals.OrderByDescending(m => m.Grade);

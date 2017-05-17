@@ -24,8 +24,7 @@ namespace LogicRunner {
             var unit = new RestDBInterface();
             unit.Users.GetAllList().ForEach(u => {
                 var rec = RecommendationDBGenerator.FromUserProfile(u, unit);
-                rec.range = new MealSuggestionRange() { Length = 7, MealType = mealType };
-                
+                rec.range = new MealSuggestionRange() { Length = 7, MealType = mealType };                
                 var generator = new RecommendationGenerator(new RestDBInterface(), rec, true, false, u.RecommendedRecipes);
                 var meals = generator.GetRecommendation().MealsSet.ToList();
                 PersonalFeed.SendEmail(rec, meals, mealType.ToString());
