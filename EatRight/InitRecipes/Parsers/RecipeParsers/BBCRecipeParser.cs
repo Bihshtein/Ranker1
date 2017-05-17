@@ -19,8 +19,72 @@ namespace InitRecipes {
         public string[] ImageUrlSplitter => new string[1] { "https://www.bbcgoodfood.com/sites/default/files/recipe_images" };
         public string[] StepsSplitter => new string[1] { "itemprop=\"recipeInstructions\"" };
 
-        public TimeSpan GetPrepTime(string page) {
-            return new TimeSpan(0);
+        private string GetTimeStrFromPagePart(string pagePart)
+        {
+            var prepParts = pagePart.Split('>');
+            if (prepParts.Length < 2)
+            {
+                return "";
+            }
+
+            var innerPrepParts = prepParts[1].Split('<');
+            if (innerPrepParts.Length < 2)
+            {
+                return "";
+            }
+
+            return innerPrepParts[0];
+        }
+
+        private static TimeSpan ParsePrepTime(string prepTimeStr, string cooktTimeStr)
+        {
+            return GeneralRecipeParser.ParsePrepTime(prepTimeStr) + GeneralRecipeParser.ParsePrepTime(cooktTimeStr);
+        }
+
+        public TimeSpan GetPrepTime(string page)
+        {
+            var prepTimeStr = "";
+            var cookTimeStr = "";
+            while (true)
+            {
+                var pageParts = page.Split(new string[1] { "cooking-time-prep\"> <strong>Prep:</strong> <span class=\"" }, StringSplitOptions.None);
+                if (pageParts.Length < 2)
+                {
+                    break;
+                }
+
+                var pagePart = pageParts[1];
+
+                // Preperation time
+                prepTimeStr = GetTimeStrFromPagePart(pagePart);
+
+                // Cook time
+                var innerPageParts = pagePart.Split(new string[1] { "cooking-time-cook\"> <strong>Cook:</strong> <span class=\"" }, StringSplitOptions.None);
+                if (innerPageParts.Length < 2)
+                {
+                    break;
+                }
+
+                cookTimeStr = GetTimeStrFromPagePart(innerPageParts[1]);
+
+                break;
+            }
+            
+            if (prepTimeStr == string.Empty && cookTimeStr == string.Empty)
+            {
+                return new TimeSpan(0);
+            }
+            if (prepTimeStr == string.Empty)
+            {
+                return GeneralRecipeParser.ParsePrepTime(cookTimeStr);
+            }
+            if (cookTimeStr == string.Empty)
+            {
+                return GeneralRecipeParser.ParsePrepTime(prepTimeStr);
+            }
+
+            // If we got here, both prep time and cook time are defined
+            return ParsePrepTime(prepTimeStr, cookTimeStr);
         }
 
         public int GetServings(string page) {
