@@ -71,24 +71,33 @@ namespace InitRecipes {
             return ingredients;
         }
 
-        public static TimeSpan ParsePrepTime(string time)
-        {
-            var days = GetTimeUnit(ref time, 'd');
-            var hours = GetTimeUnit(ref time, 'h');
+        public static TimeSpan ParsePrepTime(string time) {
+            var days = GetTimeUnit(ref time, "days");
+            if (days == 0)
+                days = GetTimeUnit(ref time, "day");
+            if (days == 0)
+                days = GetTimeUnit(ref time, "d");
+            var hours = GetTimeUnit(ref time, "hrs");
+            if (hours==0)
+                hours = GetTimeUnit(ref time, "hr");
+            if (hours == 0)
+                hours = GetTimeUnit(ref time, "h");
             hours = hours + days * 24;
-            return new TimeSpan(hours, GetTimeUnit(ref time, 'm'), 0);
+            var minutes = GetTimeUnit(ref time, "mins");
+            if (minutes == 0)
+                minutes= GetTimeUnit(ref time, "min");
+            if (minutes == 0)
+                minutes= GetTimeUnit(ref time, "m");
+            return new TimeSpan(hours,minutes, 0);
         }
 
-        public static int GetTimeUnit(ref string time, char timeUnit)
-        {
-            var parts = time.Split(timeUnit);
-            if (parts.Length > 1)
-            {
+        public static int GetTimeUnit(ref string time, string timeUnit) {
+            var parts = time.Split(new string[] { timeUnit }, StringSplitOptions.None);
+            if (parts.Length > 1) {
                 time = parts[1];
                 return int.Parse(parts[0]);
             }
-            else
-            {
+            else {
                 return 0;
             }
         }
