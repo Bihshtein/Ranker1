@@ -1,4 +1,5 @@
 ﻿using RecommendationBuilder;
+using RestModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,8 +25,8 @@ namespace LogicRunner
             }
             
         }
-        public int Id { get; set; }
         public string OriginalID { get; set; }
+        public RecipesSource Source { get; set; }
         public string NutValues { get; set; }
         public string GradersResult { get; set; }
         public string Products {
