@@ -136,15 +136,19 @@ namespace RestModel
     public class UserProfile : BodyProfile , IQueryable{
         public UserProfile() {
             RecommendedRecipes = new List<int>();
-            Priorities = new List<UserPriorities>();
+            Priorities = new HashSet<UserPriorities>();
+            Meals = new HashSet<MealType>();
+            Restrictions = new HashSet<UserRestrictions>();
         }
         [BsonElement("_id")]
         public int ID { get; set; }
         [BsonElement("Email")]
         public string Email { get; set; }
         public HashSet<UserRestrictions> Restrictions { get; set; }
-        public List<UserPriorities> Priorities{ get; set; }
+        public HashSet<UserPriorities> Priorities{ get; set; }
         public string Name { get; set; }
+        public int Frequency{ get; set; }
+        public HashSet<MealType> Meals { get; set; }
         public List<int> RecommendedRecipes{ get; set; }
     }
 
