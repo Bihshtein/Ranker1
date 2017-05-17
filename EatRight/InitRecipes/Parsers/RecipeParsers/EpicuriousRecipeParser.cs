@@ -14,7 +14,7 @@ namespace InitRecipes {
     public class EpicuriousParser : IRecipeParser {
         public static ILog log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
 
-        public string[] ServingSplitter => new string[1] { "<span class=\"recipe - details__text\" itemprop=\"recipeYield\">" };
+        public string[] ServingSplitter => new string[1] { "Yield</dt><dd class=\"yield\" itemprop=\"recipeYield\">" };
         public string[] IngredientSplitter => new string[1] { "itemprop=\"ingredients\">" };
         public string[] ImageUrlSplitter => new string[1] { "http://assets.epicurious.com/photos/" };
         public string[] StepsSplitter => new string[1] { "li class=\"preparation-step\"" };
@@ -61,15 +61,28 @@ namespace InitRecipes {
             return res;
         }
 
-        public int GetServings(string page) {
+        public int GetServings(string page)
+        {
             var servingParts = page.Split(ServingSplitter, StringSplitOptions.None);
+            if (servingParts.Length < 2)
+            {
+                return 1;
+            }
             var servingStr = new String(servingParts[1].TakeWhile(a => a != '<').ToArray());
             var parts = servingStr.Split(' ').ToList();
-            var num = "";
-            if (parts.Contains("Serves"))
-                num = parts[parts.IndexOf("Serves") + 1];
-            else num = "1";
-            return int.Parse(num);
+
+            // Search for a number in the parts
+            foreach (var curStr in parts)
+            {
+                int tempNum;
+                bool isNumeric = int.TryParse(curStr, out tempNum);
+                if (isNumeric)
+                {
+                    return tempNum;
+                }
+            }
+
+            return 1;
         }
 
         public int GetStepsNum(string page)
