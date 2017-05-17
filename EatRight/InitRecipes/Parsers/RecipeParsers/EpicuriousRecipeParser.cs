@@ -42,6 +42,16 @@ namespace InitRecipes {
 
             while (remainingParts > 1)
             {
+                // Validate that the first token is numeric
+                int tempNum;
+                bool isNumeric = int.TryParse(timeStrParts[start], out tempNum);
+                if (!isNumeric)
+                {
+                    start++;
+                    remainingParts--;
+                    continue;
+                }
+
                 var curTimeStr = timeStrParts[start] + " " + timeStrParts[start + 1];
                 res += GeneralRecipeParser.ParsePrepTime(curTimeStr);
                 start += 2;

@@ -8,6 +8,7 @@ using log4net;
 using System.Reflection;
 using System.Net;
 using RestModel;
+using System.Text.RegularExpressions;
 
 namespace InitRecipes {
     public class CookpadParser : IRecipeParser {
@@ -18,8 +19,64 @@ namespace InitRecipes {
 
         public static ILog log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
 
-        public TimeSpan GetPrepTime(string page) {
-            return new TimeSpan(0, 10, 0);
+        public TimeSpan GetPrepTime(string page)
+        {
+            var res = new TimeSpan(0);
+
+            var pageParts = page.Split(new string[1] { "data-field-name=\"cooking_time\"" }, StringSplitOptions.None);
+            if (pageParts.Length < 2)
+            {
+                return res;
+            }
+
+            var innerParts = pageParts[1].Split('>');
+            if (innerParts.Length < 2)
+            {
+                return res;
+            }
+
+            var timeParts = innerParts[1].Split('<');
+            if (innerParts.Length < 2)
+            {
+                return res;
+            }
+
+            var timeStr = timeParts[0];
+
+            // Adjust string
+            // 1. Remove new line chars
+            timeStr = Regex.Replace(timeStr, @"\t|\n|\r", "");
+            // 2. Convert to lowercase
+            timeStr = timeStr.ToLower();
+            // 4. Check if we have the '-' char (as in 20-40 minutes)
+            timeStr = "20-40min";
+            if (timeStr.Contains('-'))
+            {
+                // Take the long option
+                timeStr = timeStr.Split('-')[1];
+            }
+
+            var timeStrParts = timeStr.Split();
+
+            var start = 0;
+
+            while (start < (timeStrParts.Length - 1))
+            {
+                // Validate that the first token is numeric
+                int tempNum;
+                bool isNumeric = int.TryParse(timeStrParts[start], out tempNum);
+                if (!isNumeric)
+                {
+                    start++;
+                    continue;
+                }
+
+                var curTimeStr = timeStrParts[start] + " " + timeStrParts[start + 1];
+                res += GeneralRecipeParser.ParsePrepTime(curTimeStr);
+                break;
+            }
+
+            return res;
         }
 
         private static TimeSpan ParsePrepTime(string time) {
