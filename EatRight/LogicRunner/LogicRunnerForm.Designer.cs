@@ -94,6 +94,8 @@
             this.button3 = new System.Windows.Forms.Button();
             this.sendEmail = new System.Windows.Forms.CheckBox();
             this.total = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.steps = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
@@ -178,7 +180,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.label5.Location = new System.Drawing.Point(788, 95);
+            this.label5.Location = new System.Drawing.Point(788, 73);
             this.label5.Name = "label5";
             this.label5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label5.Size = new System.Drawing.Size(94, 16);
@@ -190,7 +192,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.label4.Location = new System.Drawing.Point(788, 63);
+            this.label4.Location = new System.Drawing.Point(788, 41);
             this.label4.Name = "label4";
             this.label4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label4.Size = new System.Drawing.Size(59, 16);
@@ -202,7 +204,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.label3.Location = new System.Drawing.Point(788, 29);
+            this.label3.Location = new System.Drawing.Point(788, 9);
             this.label3.Name = "label3";
             this.label3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label3.Size = new System.Drawing.Size(91, 16);
@@ -223,7 +225,7 @@
             // calories
             // 
             this.calories.FormattingEnabled = true;
-            this.calories.Location = new System.Drawing.Point(899, 60);
+            this.calories.Location = new System.Drawing.Point(899, 38);
             this.calories.Name = "calories";
             this.calories.Size = new System.Drawing.Size(89, 21);
             this.calories.TabIndex = 17;
@@ -231,7 +233,7 @@
             // cookTime
             // 
             this.cookTime.FormattingEnabled = true;
-            this.cookTime.Location = new System.Drawing.Point(899, 27);
+            this.cookTime.Location = new System.Drawing.Point(899, 7);
             this.cookTime.Name = "cookTime";
             this.cookTime.Size = new System.Drawing.Size(89, 21);
             this.cookTime.TabIndex = 16;
@@ -239,7 +241,7 @@
             // minValues
             // 
             this.minValues.FormattingEnabled = true;
-            this.minValues.Location = new System.Drawing.Point(899, 92);
+            this.minValues.Location = new System.Drawing.Point(899, 70);
             this.minValues.Name = "minValues";
             this.minValues.Size = new System.Drawing.Size(89, 21);
             this.minValues.TabIndex = 18;
@@ -310,7 +312,7 @@
             // maxValues
             // 
             this.maxValues.FormattingEnabled = true;
-            this.maxValues.Location = new System.Drawing.Point(899, 125);
+            this.maxValues.Location = new System.Drawing.Point(899, 103);
             this.maxValues.Name = "maxValues";
             this.maxValues.Size = new System.Drawing.Size(89, 21);
             this.maxValues.TabIndex = 27;
@@ -320,7 +322,7 @@
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.label10.Location = new System.Drawing.Point(788, 129);
+            this.label10.Location = new System.Drawing.Point(788, 107);
             this.label10.Name = "label10";
             this.label10.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label10.Size = new System.Drawing.Size(98, 16);
@@ -332,7 +334,7 @@
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.label11.Location = new System.Drawing.Point(790, 158);
+            this.label11.Location = new System.Drawing.Point(790, 136);
             this.label11.Name = "label11";
             this.label11.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label11.Size = new System.Drawing.Size(64, 16);
@@ -342,7 +344,7 @@
             // servings
             // 
             this.servings.FormattingEnabled = true;
-            this.servings.Location = new System.Drawing.Point(899, 157);
+            this.servings.Location = new System.Drawing.Point(899, 135);
             this.servings.Name = "servings";
             this.servings.Size = new System.Drawing.Size(89, 21);
             this.servings.TabIndex = 29;
@@ -720,6 +722,26 @@
             this.total.TabIndex = 70;
             this.total.Text = "0";
             // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.BackColor = System.Drawing.Color.Transparent;
+            this.label23.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label23.Location = new System.Drawing.Point(790, 165);
+            this.label23.Name = "label23";
+            this.label23.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label23.Size = new System.Drawing.Size(45, 16);
+            this.label23.TabIndex = 72;
+            this.label23.Text = "Steps";
+            // 
+            // steps
+            // 
+            this.steps.FormattingEnabled = true;
+            this.steps.Location = new System.Drawing.Point(899, 164);
+            this.steps.Name = "steps";
+            this.steps.Size = new System.Drawing.Size(89, 21);
+            this.steps.TabIndex = 71;
+            // 
             // LogicRunnerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -727,6 +749,8 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(1160, 989);
+            this.Controls.Add(this.label23);
+            this.Controls.Add(this.steps);
             this.Controls.Add(this.total);
             this.Controls.Add(this.sendEmail);
             this.Controls.Add(this.button3);
@@ -867,5 +891,7 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.CheckBox sendEmail;
         private System.Windows.Forms.Label total;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.ComboBox steps;
     }
 }

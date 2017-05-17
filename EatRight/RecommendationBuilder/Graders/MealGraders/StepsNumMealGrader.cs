@@ -18,7 +18,7 @@ namespace RecommendationBuilder.Graders.MealGraders
         protected override double InternalGrade(Meal meal)
         {
             // For 1 step, the grade will be 100. Each step will cost 25 points
-            if (meal.Recipe.StepsNum > 5)
+            if (meal.Recipe.StepsNum > 10)
             {
                 return 0;
             }
@@ -26,7 +26,7 @@ namespace RecommendationBuilder.Graders.MealGraders
             {
                 return 100;
             }
-            return 100 - (meal.Recipe.StepsNum - 1) * 25;
+            return (10 - (meal.Recipe.StepsNum - 1)) / 10;
         }
     }
 }

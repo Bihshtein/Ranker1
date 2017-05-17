@@ -51,6 +51,7 @@ namespace LogicRunner
             minValues.DataSource = new List<int>(range);
             maxValues.DataSource = new List<int>(range);
             servings.DataSource = new List<int>(range);
+            steps.DataSource = new List<int>(range);
             idealServings.DataSource = new List<int>(range);
             recommendationsNum.DataSource = new List<int>(range);
             activityLevel.DataSource = Enum.GetNames(typeof(PhysicalActivityLevel));
@@ -121,7 +122,8 @@ namespace LogicRunner
                     {GraderType.MinNutValuesMealGrader,  int.Parse(minValues.SelectedItem.ToString())},
                     {GraderType.MaxNutValuesMealGrader,  int.Parse(maxValues.SelectedItem.ToString())},
                     {GraderType.ServingsNumMealGrader,  int.Parse(servings.SelectedItem.ToString())},
-                    {GraderType.PrepTimeMealGrader, int.Parse(cookTime.SelectedItem.ToString()) }
+                    {GraderType.PrepTimeMealGrader, int.Parse(cookTime.SelectedItem.ToString()) },
+                    {GraderType.StepsNumMealGrader, int.Parse(steps.SelectedItem.ToString()) }
                 };
 
             RecommendationGenerator generator = null;
