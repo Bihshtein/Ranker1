@@ -71,7 +71,12 @@ namespace InitRecipes {
                 }
 
                 var curTimeStr = timeStrParts[start] + " " + timeStrParts[start + 1];
-                res += GeneralRecipeParser.ParsePrepTime(curTimeStr);
+                try {
+                    res += GeneralRecipeParser.ParsePrepTime(curTimeStr);
+                }
+                catch {
+                    log.Error("cant parse prep time :" + curTimeStr);
+                }
                 break;
             }
 
