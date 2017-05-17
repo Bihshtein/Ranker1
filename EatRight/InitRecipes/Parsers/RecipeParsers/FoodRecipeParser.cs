@@ -8,6 +8,7 @@ using System.Net;
 using RestModel;
 using log4net;
 using System.Reflection;
+using System.Text.RegularExpressions;
 
 namespace InitRecipes {
     public class FoodParser : IRecipeParser {
@@ -59,8 +60,40 @@ namespace InitRecipes {
             return new IngredientInfo { Name = name, Quantity = weight, ReltiveSizeMeasure = relativeWeight }; 
         }
 
-        public TimeSpan GetPrepTime(string page) {
-            return new TimeSpan(0, 10, 0);
+        public TimeSpan GetPrepTime(string page)
+        {
+            var res = new TimeSpan(0);
+
+            var pageParts = page.Split(new string[1] { "<span class=\"ready-in-text\"><strong>READY IN:</strong></span>" }, StringSplitOptions.None);
+            if (pageParts.Length < 2)
+            {
+                return res;
+            }
+
+            var innerParts = pageParts[1].Split('<');
+            if (innerParts.Length < 2)
+            {
+                return res;
+            }
+
+            var timeStr = innerParts[0];
+
+            // Adjust string
+            // 1. Remove new line chars
+            timeStr = Regex.Replace(timeStr, @"\t|\n|\r", "");
+            // 2. Convert to lowercase
+            timeStr = timeStr.ToLower();
+            // 4. Check if we have the '-' char (as in 20-40 minutes)
+            if (timeStr.Contains('-'))
+            {
+                // Take the long option
+                timeStr = timeStr.Split('-')[1];
+            }
+
+            var timeStrParts = timeStr.Split();
+            res += GeneralRecipeParser.ParsePrepTime(timeStr);
+
+            return res;
         }
        
 
