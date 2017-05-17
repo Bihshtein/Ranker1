@@ -21,10 +21,10 @@ namespace InitRecipes {
         public static ILog log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
         public static string FolderPath = Assembly.GetExecutingAssembly().Location + @"\..\..\..\..\LocalDB\";
         public static object Locker = new object();
-        public static List<string> RecipeIds;
+        public static HashSet<string> RecipeIds;
 
         public static void CreateDB(bool offline, bool dropTable, int limit, RecipesSource? source=null, MealType? mealType=null) {
-            RecipeIds = new List<string>();
+            RecipeIds = new HashSet<string>();
             var unit = new RestDBInterface();
             if (dropTable)
                 unit.Recipes.Empty();
@@ -53,8 +53,10 @@ namespace InitRecipes {
             if (offline) {
                 var files = Directory.GetFiles(Path.Combine(FolderPath, source.ToString(), mealData.Meal.ToString())).ToList();
                 files.ForEach(f =>RecipeIds.Add(Path.GetFileNameWithoutExtension(f)));
-                RecipeIds.RemoveAll(i => loadedIds.Contains(i));
-                RecipeIds = RecipeIds.Take(limit).ToList();
+                var list = RecipeIds.ToList();
+                list.RemoveAll(i => loadedIds.Contains(i));
+                RecipeIds = new HashSet<string>(list);
+                RecipeIds = new HashSet<string>(RecipeIds.ToList().Take(limit).ToList());
             }
             else
                 AddRecipesByURL(source, mealData, unit, limit);

@@ -35,7 +35,7 @@ namespace InitRecipes {
             Console.WriteLine("total ingredients missed : " + totalMissing);
             Console.WriteLine("total weights not found: " + totalWeightsNotFound);
             var sorted = MissingCount.OrderBy(i => i.Key.Split(' ').Length).ToList();
-            sorted.RemoveAll(i => i.Value < 10);
+            sorted.RemoveAll(i => i.Value < 5);
             sorted.RemoveAll(i => missingRecipes.Contains(i.Key));
             File.WriteAllLines(FolderPath + "MissingIndex.csv", sorted.ConvertAll<string>(i => i.Key + " , " + i.Value));
             sorted = MissingWeightsCount.OrderBy(i => i.Key.Split(' ').Length).ToList();
@@ -118,6 +118,12 @@ namespace InitRecipes {
         }
 
         public static double TryParseRelativeWeight(string measure, double weight, Product prd, string fullName) {
+            if (measure == "") {
+                if (weight == 0)
+                    return prd.Weights.First().Value;
+                else 
+                    return weight;
+            }
             var mes = ParseHelpers.GetWithoutLast_S_letter(measure);
             var keys = prd.Weights.Keys;
             var mesPartsList = mes.Split(' ').ToList();

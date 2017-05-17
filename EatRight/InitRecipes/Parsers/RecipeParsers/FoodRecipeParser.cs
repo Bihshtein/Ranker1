@@ -6,9 +6,12 @@ using System.Threading.Tasks;
 using Logic;
 using System.Net;
 using RestModel;
+using log4net;
+using System.Reflection;
 
 namespace InitRecipes {
     public class FoodParser : IRecipeParser {
+        public static ILog log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
         public string[] ServingSplitter =>new string[1] { "Servings Per Recipe:" }; 
         public string[] StepsSplitter => new string[0];
         public string[] IngredientSplitter=> new string[1] { "<li data-ingredient=" };
@@ -34,22 +37,25 @@ namespace InitRecipes {
 
                 }
                 var relativeWeight = Formulas.MeasuresWeights.Keys.ToList().FirstOrDefault(s => Map.WordCheck(s, rest));
+                
                 if (relativeWeight == null) {
-                    relativeWeight = Formulas.RelativeProductSize.FirstOrDefault(s => Map.WordCheck(s, rest));
+                    relativeWeight = Formulas.RelativeSizes.FirstOrDefault(s => Map.WordCheck(s, rest));
                     if (relativeWeight == null) {
-                        relativeWeight = Formulas.RelativeSizes.FirstOrDefault(s => Map.WordCheck(s, rest));
-                        if (relativeWeight == null) {
-                            relativeWeight = "";
-                        }
+                        relativeWeight = "";
                     }
                 }
             if (name.Contains("garlic clove")) {
                 relativeWeight = "clove";
                 name = "garlic";
             }
+            try { 
             name = Map.AdjustNames(name);
             name = Map.AdjustInnerPart(name);
             name = Map.AdjustIngredient(name);
+            }
+            catch (Exception ex) {
+                log.Error(ex);
+            }
             return new IngredientInfo { Name = name, Quantity = weight, ReltiveSizeMeasure = relativeWeight }; 
         }
 

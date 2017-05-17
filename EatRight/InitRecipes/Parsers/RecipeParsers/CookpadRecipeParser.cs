@@ -115,13 +115,7 @@ namespace InitRecipes {
                     weightNum = ParseHelpers.ParseAmount(splitBySpace[0]);
                 }
 
-                else if (Formulas.RelativeProductSize.Any(s => name.Contains(s))) {
-                    relativeWeight = Formulas.RelativeProductSize.First(s => name.Contains(s));
-                    var res = name.Replace(relativeWeight, string.Empty).Trim();
-                    if (res != string.Empty) {
-                        name = res;
-                    }
-                }
+           
                 else if (weight == "") {
                     relativeWeight = name;
                 }
@@ -140,12 +134,16 @@ namespace InitRecipes {
                 relativeWeight = "clove";
                 name = "garlic";
             }
+            try { 
             name = Map.AdjustNames(name);
             name = Map.AdjustInnerPart(name).Trim();
             name = Map.AdjustIngredient(name);
             name = ParseHelpers.FixIllegalCharacters(name);
-               if (name == "")
-                   log.Error(nameAndWeight);
+        }
+            catch(Exception ex) {
+                log.Error(ex);
+            }
+              
             return new IngredientInfo { Name = name, Quantity = weightNum, ReltiveSizeMeasure = relativeWeight }; 
 
         }
