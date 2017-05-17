@@ -19,8 +19,36 @@ namespace InitRecipes {
         public string[] ImageUrlSplitter => new string[1] { "http://assets.epicurious.com/photos/" };
         public string[] StepsSplitter => new string[1] { "li class=\"preparation-step\"" };
 
-        public TimeSpan GetPrepTime(string page) {
-            return new TimeSpan(0);
+        public TimeSpan GetPrepTime(string page)
+        {
+            var res = new TimeSpan(0);
+
+            var pageParts = page.Split(new string[1] { "<dt class=\"total-time\">Total Time</dt><dd class=\"total-time\">" }, StringSplitOptions.None);
+            if (pageParts.Length < 2)
+            {
+                return res;
+            }
+
+            var innerParts = pageParts[1].Split('<');
+            if (innerParts.Length < 2)
+            {
+                return res;
+            }
+
+            var timeStr = innerParts[0];
+            var timeStrParts = timeStr.Split();
+            var remainingParts = timeStrParts.Length;
+            var start = 0;
+
+            while (remainingParts > 1)
+            {
+                var curTimeStr = timeStrParts[start] + " " + timeStrParts[start + 1];
+                res += GeneralRecipeParser.ParsePrepTime(curTimeStr);
+                start += 2;
+                remainingParts -= 2;
+            }
+
+            return res;
         }
 
         public int GetServings(string page) {
