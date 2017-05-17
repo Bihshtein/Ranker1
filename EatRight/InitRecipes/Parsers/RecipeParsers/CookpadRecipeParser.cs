@@ -49,7 +49,6 @@ namespace InitRecipes {
             // 2. Convert to lowercase
             timeStr = timeStr.ToLower();
             // 4. Check if we have the '-' char (as in 20-40 minutes)
-            timeStr = "20-40min";
             if (timeStr.Contains('-'))
             {
                 // Take the long option
