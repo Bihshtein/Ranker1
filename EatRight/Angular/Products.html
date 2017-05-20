@@ -47,7 +47,7 @@
                             <div ng-repeat="P in dictMeals[val].data[0]">
                                 <div style="width:300px">
                                     <h2>{{P.Recipe.Name}} </h2>                                    
-                                    <img src={{P.Recipe.ImageUrl}} alt="Description" />                                  
+                                    <img src={{P.Recipe.ImageUrl}} alt="Description"  height="250" width="250" />                                  
                                     <div class="chart">
                                         <data ng-init="g2=P.GradeInfo.GradersInfo['CaloriesCountMealGrader'].Grade*100*2.5"/>
                                         <div style="background-color:{{colours[(g2 | number:0)]}}; width:{{g2 | number:0}}px;">Diet</div>

@@ -47,7 +47,8 @@ namespace LogicRunner {
                 var nutritionScore =(int)((m.GradeInfo.GradersInfo[GraderType.MaxNutValuesMealGrader].Grade +
                     m.GradeInfo.GradersInfo[GraderType.MinNutValuesMealGrader].Grade +
                     m.GradeInfo.GradersInfo[GraderType.CaloriesCountMealGrader].Grade) / 3 * 100);
-                var simplicityScore = (int)(m.GradeInfo.GradersInfo[GraderType.PrepTimeMealGrader].Grade * 100);
+                var simplicityScore = (int)((m.GradeInfo.GradersInfo[GraderType.PrepTimeMealGrader].Grade+
+                 (int)(m.GradeInfo.GradersInfo[GraderType.StepsNumMealGrader].Grade ))/2* 100);
 
                 int nutritionBarSize = nutritionScore < 60 ? 60 : nutritionScore;
                 int simplicityBarSize = simplicityScore < 60 ? 60 : simplicityScore;
@@ -55,7 +56,7 @@ namespace LogicRunner {
                 simplicityBarSize *= 3;
 
                 var strRecipe = "<p><font style=\"background-color:{0};font-weight: bold;\">{1}</font></p>";
-                var strImage = "<a href=\"{0}\"><img src=\"{1}\" style=\"width: 250; height: 250;\"></a>";
+                var strImage = "<a href=\"{0}\"><img src=\"{1}\"  height=\"300\" width=\"300\"></a>";
                 var strScore = "<div class=\"chart\"><data ng-init=\"{0}\"/><div style =\"background-color:{1}; width:{0}px;\">{2} ({3}%)</div></div>";
 
 
