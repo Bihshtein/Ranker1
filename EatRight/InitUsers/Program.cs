@@ -31,25 +31,25 @@ namespace InitUsers {
                 Gender = (GenderType)Enum.Parse(typeof(GenderType), props[3]),
                 ActivityLevel = (PhysicalActivityLevel)Enum.Parse(typeof(PhysicalActivityLevel), props[4]),
                 Height = int.Parse(props[5]),
-                Weight = int.Parse(props[6]),
-                Priorities = new HashSet<UserPriorities>() {
-                    (UserPriorities)Enum.Parse(typeof(UserPriorities), props[7]),
-                    (UserPriorities)Enum.Parse(typeof(UserPriorities), props[8]),
-                },
-                Frequency = int.Parse(props[9])
+                Weight = 70,
+                Priority = (UserPriorities)Enum.Parse(typeof(UserPriorities), props[7]),
+                Frequency = int.Parse(props[8]),
+                MealsNum = int.Parse(props[9])
             };
-            if (props[10] != "None")
-                profile.Restrictions.Add((UserRestrictions)Enum.Parse(typeof(UserRestrictions), props[10]));
-            if (props[11] != "None")
-                profile.Restrictions.Add((UserRestrictions)Enum.Parse(typeof(UserRestrictions), props[11]));
-            if (props[12] != "None")
-                profile.Meals.Add((MealType)Enum.Parse(typeof(MealType), props[12]));
-            if (props[13] != "None")
-                profile.Meals.Add((MealType)Enum.Parse(typeof(MealType), props[13]));
-            if (props[14] != "None")
-                profile.Meals.Add((MealType)Enum.Parse(typeof(MealType), props[14]));
+            if (props[6] != string.Empty)
+                profile.Weight = int.Parse(props[6]);
+            if (props[10] != string.Empty) 
+                profile.Restrictions = GetChoices<UserRestrictions>(props[10]);
+            if (props[11] != string.Empty)
+                profile.Meals = GetChoices<MealType>(props[11]);
             return profile;
+        }
 
+        public static HashSet<T> GetChoices<T>(string choices) {
+            var res = new HashSet<T>();
+            var parts = choices.Split('|').ToList();
+            parts.ForEach(p => res.Add((T)Enum.Parse(typeof(T), p)));
+            return res;
         }
     }
 }

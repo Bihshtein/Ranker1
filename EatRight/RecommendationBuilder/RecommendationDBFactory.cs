@@ -144,17 +144,25 @@ namespace RecommendationBuilder
     /// </summary>
     public class RecommendationDBGenerator
     {
-        public static Dictionary<UserPriorities,List<GraderType>> PriorityToGradersMap = new Dictionary<UserPriorities, List<GraderType>>() {
-            { UserPriorities.Nutrition, new List<GraderType>() { GraderType.MinNutValuesMealGrader, GraderType.MaxNutValuesMealGrader, GraderType.CaloriesCountMealGrader } },
-            { UserPriorities.Simplicity, new List<GraderType>() { GraderType.PrepTimeMealGrader, GraderType.StepsNumMealGrader } }
+        public static Dictionary<GraderType, double> SimplicityPriorityDefaults = new Dictionary<GraderType, double>() {
+            { GraderType.CaloriesCountMealGrader, 1},
+            { GraderType.MinNutValuesMealGrader,  3},
+            { GraderType.MaxNutValuesMealGrader,  2},
+            { GraderType.PrepTimeMealGrader, 5},
+            { GraderType.StepsNumMealGrader, 5}
         };
 
-        public static Dictionary<GraderType, double> GraderDefaults = new Dictionary<GraderType, double>() {
-            { GraderType.CaloriesCountMealGrader, 1},
-            { GraderType.MinNutValuesMealGrader,  1},
-            { GraderType.MaxNutValuesMealGrader,  1},
+        public static Dictionary<GraderType, double> NutritionPriorityDefaults = new Dictionary<GraderType, double>() {
+            { GraderType.CaloriesCountMealGrader, 3},
+            { GraderType.MinNutValuesMealGrader,  5},
+            { GraderType.MaxNutValuesMealGrader,  4},
             { GraderType.PrepTimeMealGrader, 1},
             { GraderType.StepsNumMealGrader, 1}
+        };
+
+        public static Dictionary<UserPriorities, Dictionary<GraderType, double>> PriorityPresets = new Dictionary<UserPriorities, Dictionary<GraderType, double>> {
+            {UserPriorities.Nutrition, NutritionPriorityDefaults },
+            {UserPriorities.Simplicity, SimplicityPriorityDefaults},
         };
         public static RecommendationDB FromUserProfile(UserProfile userProfile, RestDBInterface unit)
         {
@@ -163,11 +171,7 @@ namespace RecommendationBuilder
            
             var recommendationDB = FromBodyProfile(userProfile, unit);
             recommendationDB.GradersWeight = new Dictionary<GraderType, double>();
-            var priorities = new Stack<UserPriorities>(userProfile.Priorities);
-            while (priorities.Count > 0) {
-                var graders = PriorityToGradersMap[priorities.Pop()];
-                graders.ForEach(g => recommendationDB.GradersWeight.Add(g, GraderDefaults[g] * priorities.Count+1));
-            }
+            recommendationDB.GradersWeight = PriorityPresets[userProfile.Priority];
             recommendationDB.range = SuggestionRangeGenerator.FromUserProfile(userProfile);
             recommendationDB.preferences = UserRestrictionsGenerator.FromUserProfile(userProfile);
             recommendationDB.UserProfile = userProfile;

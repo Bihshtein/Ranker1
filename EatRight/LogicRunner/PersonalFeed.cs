@@ -18,7 +18,7 @@ namespace LogicRunner {
             {GraderType.PrepTimeMealGrader, "less preparation time" },
             {GraderType.StepsNumMealGrader, "less complicated" },
         };
-        public static void SendEmail(RecommendationDB recommendationDB, IEnumerable<Meal> meals, string mealType) {
+        public static void SendEmail(RecommendationDB recommendationDB, IEnumerable<Meal> meals, string mealType, bool debug =false) {
             meals = meals.OrderByDescending(m => m.Grade);
             var fromAddress = new MailAddress("alex_bihshtein@hotmail.com");
             string fromPassword = "99sozio#";
@@ -67,6 +67,9 @@ namespace LogicRunner {
             body += "<p>Press the picture to go to the recipe</p>";
             body += "<p>For any requests or concerns please reply to this address</p>";
             body = "<!DOCTYPE html><html><body>" + body + "</html></body>";
+            var address = recommendationDB.UserProfile.Email;
+            if (debug)
+                address = "bihshtein@gmail.com";
             var smtp = new SmtpClient {
                 Host = "smtp.live.com",
                 Port = 587,
@@ -83,7 +86,7 @@ namespace LogicRunner {
                 Body = body,
                 IsBodyHtml = true
             };
-            message.To.Add(new MailAddress(recommendationDB.UserProfile.Email));  
+            message.To.Add(new MailAddress(address));  
 
             {
                 smtp.Send(message);

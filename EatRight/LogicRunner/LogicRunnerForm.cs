@@ -216,7 +216,7 @@ namespace LogicRunner
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Hack.RecommendToUsers((MealType)Enum.Parse(typeof(MealType),mealType.SelectedItem.ToString()));
+            Hack.RecommendToUsers((MealType)Enum.Parse(typeof(MealType),mealType.SelectedItem.ToString()),true);
         }
 
 
