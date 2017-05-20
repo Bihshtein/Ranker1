@@ -26,18 +26,18 @@ namespace LogicRunner {
             var graders = recommendationDB.GradersWeight.OrderByDescending(i => i.Value).ToList();
 
 
-            string body = string.Format("<p>Recommendation priorities are :  ");
+            string body = string.Format("<div><b>Recommendation priorities are :  ");
             for (int i = 0; i < 4; i++) 
                 body += GradersGroupsNames[graders[i].Key] +" - ";
             body = body.Remove(body.Length - 3, 2);
-            body += "</p>";
-            if (recommendationDB.UserProfile.Restrictions != null) {
-                body += string.Format("<p>Your priorities (and restictions)  are :     ");
+            body += "</b></div>";
+            if (recommendationDB.UserProfile.Restrictions.Count > 0) {
+                body += string.Format("<div><b>Your restictions are :     ");
                 recommendationDB.UserProfile.Restrictions.ToList().ForEach(r => body += r.ToString() + " - ");
                 body = body.Remove(body.Length - 3, 2);
-                body += "</p>";
+                body += "<b></div>";
             }
-
+            body += "<p><i>Press the picture to go to the recipe</i></p>";
             meals.ToList().ForEach(m => {
                 var recipeLink = m.Recipe.Urn+ m.Recipe.OriginalID.ToString();
                 var shortlink = new WebClient().DownloadString(string.Format("http://wasitviewed.com/index.php?href=http%3A%2F%2F{0}&email=alex_bihshtein%40hotmail.com&notes=&bitly=bitly&nobots=nobots&submit=Generate+Link", recipeLink));
@@ -55,7 +55,7 @@ namespace LogicRunner {
                 nutritionBarSize *= 3;
                 simplicityBarSize *= 3;
 
-                var strRecipe = "<p><font style=\"background-color:{0};font-weight: bold;\">{1}</font></p>";
+                var strRecipe = "<div><font style=\"background-color:{0};font-weight: bold;\">{1}</font></div>";
                 var strImage = "<a href=\"{0}\"><img src=\"{1}\"  height=\"300\" width=\"300\"></a>";
                 var strScore = "<div class=\"chart\"><data ng-init=\"{0}\"/><div style =\"background-color:{1}; width:{0}px;\">{2} ({3}%)</div></div>";
 
@@ -65,8 +65,8 @@ namespace LogicRunner {
                 body += string.Format(strScore, nutritionBarSize, GetColorByScore(nutritionScore), "Nutrition", nutritionScore);
                 body += string.Format(strScore, simplicityBarSize, GetColorByScore(simplicityScore), "Simplicity", simplicityScore);
             });
-            body += "<p>Press the picture to go to the recipe</p>";
-            body += "<p>For any requests or concerns please reply to this address</p>";
+           
+            body += "<idv>For any requests or concerns please reply to this address</div>";
             body = "<!DOCTYPE html><html><body>" + body + "</html></body>";
             var address = recommendationDB.UserProfile.Email;
             if (debug)
