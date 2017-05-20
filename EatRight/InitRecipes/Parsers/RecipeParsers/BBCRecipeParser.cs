@@ -112,7 +112,7 @@ namespace InitRecipes {
 
         public string GetRecipeName(string page) {
             var name = page.Split(new string[2] { "<title>", "</title>" }, StringSplitOptions.None)[1];
-            name = name.Split(new string[1] { "Recipe" }, StringSplitOptions.None)[0];
+            name = name.Split(new string[1] { "| BBC Good Food" }, StringSplitOptions.None)[0];
             return name;
         }
 
