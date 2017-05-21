@@ -243,7 +243,12 @@ namespace LogicRunner
                 }
         }
 
-       
+        private void button4_Click(object sender, EventArgs e) {
+            Hack.RecommendToUsers(MealType.Breakfast, false);
+            Hack.RecommendToUsers(MealType.Lunch, false);
+            Hack.RecommendToUsers(MealType.Dinner, false);
+
+        }
     }
 }
 

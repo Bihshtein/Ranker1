@@ -96,6 +96,7 @@
             this.total = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.steps = new System.Windows.Forms.ComboBox();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
@@ -105,7 +106,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.LimeGreen;
             this.button1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.button1.Location = new System.Drawing.Point(1010, 137);
+            this.button1.Location = new System.Drawing.Point(1005, 130);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(128, 30);
             this.button1.TabIndex = 0;
@@ -407,11 +408,11 @@
             // 
             this.button2.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.button2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.button2.Location = new System.Drawing.Point(997, 178);
+            this.button2.Location = new System.Drawing.Point(997, 162);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(141, 30);
             this.button2.TabIndex = 26;
-            this.button2.Text = "RecommendToUsers";
+            this.button2.Text = "Recommend Debug";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -703,7 +704,7 @@
             // 
             this.sendEmail.AutoSize = true;
             this.sendEmail.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.sendEmail.Location = new System.Drawing.Point(1020, 113);
+            this.sendEmail.Location = new System.Drawing.Point(1020, 107);
             this.sendEmail.Name = "sendEmail";
             this.sendEmail.Size = new System.Drawing.Size(91, 20);
             this.sendEmail.TabIndex = 69;
@@ -742,6 +743,18 @@
             this.steps.Size = new System.Drawing.Size(89, 21);
             this.steps.TabIndex = 71;
             // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.Red;
+            this.button4.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.button4.Location = new System.Drawing.Point(997, 194);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(141, 30);
+            this.button4.TabIndex = 73;
+            this.button4.Text = "Real Recommend";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // LogicRunnerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -749,6 +762,7 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(1160, 989);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.steps);
             this.Controls.Add(this.total);
@@ -893,5 +907,6 @@
         private System.Windows.Forms.Label total;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.ComboBox steps;
+        private System.Windows.Forms.Button button4;
     }
 }
