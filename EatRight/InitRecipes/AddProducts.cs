@@ -45,8 +45,7 @@ namespace InitRecipes {
 
         public static int CurrId = 0;
 
-        public static void AddWeightsAndCalories(Recipe recipe) {
-            recipe.TotalNutValues = new Dictionary<string, double>();
+        public static void AddWeights(Recipe recipe) {
             recipe.ProductsWeight = new Dictionary<string, double>();
             foreach (var item in recipe.Ingredients) {
                 ParseItem(recipe, item.Name, item.ReltiveSizeMeasure, item.Quantity);
@@ -212,24 +211,6 @@ namespace InitRecipes {
                 recipe.ProductsWeight[innerpart] += weight;
             else
                 recipe.ProductsWeight.Add(innerpart, weight);
-
-            var prodNutValues = product.NutrientsList().ToList();
-
-            foreach (var entry in prodNutValues)
-            {
-                if (!recipe.TotalNutValues.ContainsKey(entry.Key))
-                {
-                    recipe.TotalNutValues[entry.Key] = 0;
-                }
-
-                double curValue = recipe.TotalNutValues[entry.Key];
-                recipe.TotalNutValues[entry.Key] = curValue + (entry.Value * (weight / Formulas.DefaultGrams));
-            }
-
-            recipe.TotalCaloriesNum += Formulas.GetTotalCalories(weight,
-                    product.Nutrients["Proximates"]["Protein"],
-                    product.Nutrients["Proximates"]["Total lipid (fat)"],
-                    product.Nutrients["Proximates"]["Carbohydrate, by difference"]);
         }
 
        

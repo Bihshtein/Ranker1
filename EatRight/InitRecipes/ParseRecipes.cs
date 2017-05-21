@@ -149,7 +149,8 @@ namespace InitRecipes {
                 ImageUrl = Sources.RecipesURNs[source].Parser.GetImageUrl(page)
             };
 
-            AddProducts.AddWeightsAndCalories(recipe);
+            AddProducts.AddWeights(recipe);
+            recipe.CalculateProperties();
 
             lock (Locker) {
                 RecipeIds.Remove(recipeId);
