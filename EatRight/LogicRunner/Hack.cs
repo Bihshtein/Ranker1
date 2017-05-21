@@ -22,7 +22,7 @@ namespace LogicRunner {
 
         public static void RecommendToUsers(MealType mealType, bool debug) {
             var unit = new RestDBInterface();
-            unit.Users.GetAllList().ForEach(u => {
+            unit.Users.GetAllList().Take(2).ToList().ForEach(u => {
                 var rec = RecommendationDBGenerator.FromUserProfile(u, unit);
                 rec.range = new MealSuggestionRange() { Length = 7, MealType = mealType };                
                 var generator = new RecommendationGenerator(new RestDBInterface(), rec, true, false, u.RecommendedRecipes);

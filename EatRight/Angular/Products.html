@@ -43,7 +43,7 @@
             <div ng-controller="Query">
                 <div layout="column" class="Container2">
                     <div7 ng-repeat="val in meals.text" class="Container3" style="float:left">
-                        <div layout="row" flex="20" flex-order="-1" ng-init="initMeals(val)" ng-class="$even ? 'odd' : 'even'">
+                        <div layout="column" flex="20" flex-order="-1" ng-init="initMeals(val)" ng-class="$even ? 'odd' : 'even'">
                             <div ng-repeat="P in dictMeals[val].data[0]">
                                 <div style="width:300px">
                                     <h2>{{P.Recipe.Name}} </h2>                                    
