@@ -50,7 +50,11 @@ namespace InitRecipes {
             foreach (var item in recipe.Ingredients) {
                 ParseItem(recipe, item.Name, item.ReltiveSizeMeasure, item.Quantity);
             }
-            if (recipe.ProductsWeight != null && recipe.Ingredients != null && recipe.ProductsWeight.Count == recipe.Ingredients.Count) {
+            recipe.CalculateProperties();
+
+            if (recipe.ProductsWeight != null && recipe.Ingredients != null &&
+                recipe.ProductsWeight.Count == recipe.Ingredients.Count &&
+                recipe.ImageUrl != "http://img.food.com/fdc/img/FDC_share-logo.png") {// empty photo food.com is most common now
                 lock (Locker) {
                     try {
                         recipe.ID = CurrId++;

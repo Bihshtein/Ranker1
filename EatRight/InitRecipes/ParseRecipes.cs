@@ -150,7 +150,6 @@ namespace InitRecipes {
             };
 
             AddProducts.AddWeights(recipe);
-            recipe.CalculateProperties();
 
             lock (Locker) {
                 RecipeIds.Remove(recipeId);

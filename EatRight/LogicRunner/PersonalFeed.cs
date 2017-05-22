@@ -38,39 +38,51 @@ namespace LogicRunner {
                 body += "<b></div>";
             }
             body += "<p><i>Press the picture to go to the recipe</i></p>";
+            body += "<table style=\"width:100%\">";
+            body += "<tr>";
             meals.ToList().ForEach(m => {
+                body += "<td>";
                 var recipeLink = m.Recipe.Urn+ m.Recipe.OriginalID.ToString();
                 var shortlink = new WebClient().DownloadString(string.Format("http://wasitviewed.com/index.php?href=http%3A%2F%2F{0}&email=alex_bihshtein%40hotmail.com&notes=&bitly=bitly&nobots=nobots&submit=Generate+Link", recipeLink));
                 var parts = shortlink.Split(new string[] { "bit.ly" }, StringSplitOptions.None);
                 var link = new String(parts[1].TakeWhile(c => c != '\"').ToArray());
                 
-                var nutritionScore =(int)((m.GradeInfo.GradersInfo[GraderType.MaxNutValuesMealGrader].Grade +
-                    m.GradeInfo.GradersInfo[GraderType.MinNutValuesMealGrader].Grade +
-                    m.GradeInfo.GradersInfo[GraderType.CaloriesCountMealGrader].Grade) / 3 * 100);
-                var simplicityScore = (int)((m.GradeInfo.GradersInfo[GraderType.PrepTimeMealGrader].Grade+
-                 (int)(m.GradeInfo.GradersInfo[GraderType.StepsNumMealGrader].Grade ))/2* 100);
+                var nutritionScore =(int)(
+                    ((m.GradeInfo.GradersInfo[GraderType.MaxNutValuesMealGrader].Grade *2)+
+                    (m.GradeInfo.GradersInfo[GraderType.MinNutValuesMealGrader].Grade *3) +
+                    m.GradeInfo.GradersInfo[GraderType.CaloriesCountMealGrader].Grade) / 6 * 100);
 
-                int nutritionBarSize = nutritionScore < 60 ? 60 : nutritionScore;
-                int simplicityBarSize = simplicityScore < 60 ? 60 : simplicityScore;
-                nutritionBarSize *= 3;
-                simplicityBarSize *= 3;
-
-                var strRecipe = "<div><font style=\"background-color:{0};font-weight: bold;\">{1}</font></div>";
                 var strImage = "<a href=\"{0}\"><img src=\"{1}\"  height=\"300\" width=\"300\"></a>";
-                var strScore = "<div class=\"chart\"><data ng-init=\"{0}\"/><div style =\"background-color:{1}; width:{0}px;\">{2} ({3}%)</div></div>";
-
-
-                body += string.Format(strRecipe, "Beige", m.Recipe.Name+" Score : " + ((int)m.Grade).ToString());
+                var format = "<div><font style=\"font-weight: bold;\">{0}</font></div>";
+                var resMax = m.GradeInfo.MaxNutrientGrades.OrderBy(e => e.Value).ToList();
+                var resMin = m.GradeInfo.MinNutrientGrades.OrderByDescending(e => e.Key).ToList();
+                resMin.RemoveAll(i => i.Key.Contains("Carbohydrate") || i.Key.Contains("(fat)") || i.Key.Contains("Fiber"));
+                resMin.RemoveAll(i => i.Value < 1);
+                var rnd = new Random();
+                var rndList = new List<int>();
+                while (rndList.Count <= 2) {
+                    var num = rnd.Next(0, resMin.Count);
+                    if (!rndList.Contains(num))
+                        rndList.Add(num);
+                }
+                body += string.Format(format,m.Recipe.Name);                
                 body += string.Format(strImage, "http://bit.ly" + link, m.Recipe.ImageUrl);
-                body += string.Format(strScore, nutritionBarSize, GetColorByScore(nutritionScore), "Nutrition", nutritionScore);
-                body += string.Format(strScore, simplicityBarSize, GetColorByScore(simplicityScore), "Simplicity", simplicityScore);
+                body += string.Format(format, "Score : " + nutritionScore.ToString());
+                if (resMax[0].Value < 1) {
+                    body += string.Format(format, "Too much : " + resMax[0].Key.Split(',')[0]);
+                }
+                body += string.Format(format,  "Rich with : "+ resMin[rndList[0]].Key.Split(',')[0] + ", "+ resMin[rndList[1]].Key.Split(',')[0]);
+               
+                body += "</td>";
             });
-           
-            body += "<idv>For any requests or concerns please reply to this address</div>";
+            body += "</tr>";
+            body += "</table>";
+
+            body += "<div><p>For any requests or concerns please reply to this address</p></div>";
             body = "<!DOCTYPE html><html><body>" + body + "</html></body>";
             var address = recommendationDB.UserProfile.Email;
             if (debug)
-                address = "bihshtein@gmail.com";
+                address = "alexbihsh@gmail.com";
             var smtp = new SmtpClient {
                 Host = "smtp.live.com",
                 Port = 587,
@@ -92,16 +104,6 @@ namespace LogicRunner {
             {
                 smtp.Send(message);
             }
-        }
-
-        private static string GetColorByScore(double score) {
-            if (score > 85)
-                return "LightGreen";
-            else if (score > 60)
-                return "PaleGreen";
-            else
-                return "MistyRose";
-
         }
     }
 }
