@@ -55,14 +55,24 @@ namespace LogicRunner {
                 var strImage = "<a href=\"{0}\"><img src=\"{1}\"  height=\"300\" width=\"300\"></a>";
                 var format = "<div><font style=\"font-weight: bold;\">{0}</font></div>";
                 var resMax = m.GradeInfo.MaxNutrientGrades.OrderBy(e => e.Value).ToList();
-                var resMin = m.GradeInfo.MinNutrientGrades.OrderByDescending(e => e.Value).ToList().Take(3).ToList();
+                var resMin = m.GradeInfo.MinNutrientGrades.OrderByDescending(e => e.Key).ToList();
+                resMin.RemoveAll(i => i.Key.Contains("Carbohydrate") || i.Key.Contains("(fat)") || i.Key.Contains("Fiber"));
+                resMin.RemoveAll(i => i.Value < 1);
+                var rnd = new Random();
+                var rndList = new List<int>();
+                while (rndList.Count <= 2) {
+                    var num = rnd.Next(0, resMin.Count);
+                    if (!rndList.Contains(num))
+                        rndList.Add(num);
+                }
                 body += string.Format(format,m.Recipe.Name);                
                 body += string.Format(strImage, "http://bit.ly" + link, m.Recipe.ImageUrl);
                 body += string.Format(format, "Score : " + nutritionScore.ToString());
-                body += string.Format(format,  "Rich with : "+ resMin[0].Key.Split(',')[0] + ", "+ resMin[1].Key.Split(',')[0]);
                 if (resMax[0].Value < 1) {
                     body += string.Format(format, "Too much : " + resMax[0].Key.Split(',')[0]);
                 }
+                body += string.Format(format,  "Rich with : "+ resMin[rndList[0]].Key.Split(',')[0] + ", "+ resMin[rndList[1]].Key.Split(',')[0]);
+               
                 body += "</td>";
             });
             body += "</tr>";
