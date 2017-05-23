@@ -62,7 +62,6 @@
             this.label13 = new System.Windows.Forms.Label();
             this.recommendationsNum = new System.Windows.Forms.ComboBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
             this.Meat = new System.Windows.Forms.CheckBox();
             this.NoFish = new System.Windows.Forms.CheckBox();
             this.NoMeat = new System.Windows.Forms.CheckBox();
@@ -92,7 +91,6 @@
             this.label19 = new System.Windows.Forms.Label();
             this.richTextBox5 = new System.Windows.Forms.RichTextBox();
             this.button3 = new System.Windows.Forms.Button();
-            this.sendEmail = new System.Windows.Forms.CheckBox();
             this.total = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.steps = new System.Windows.Forms.ComboBox();
@@ -106,11 +104,11 @@
             // 
             this.button1.BackColor = System.Drawing.Color.LimeGreen;
             this.button1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.button1.Location = new System.Drawing.Point(1005, 130);
+            this.button1.Location = new System.Drawing.Point(1005, 86);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(128, 30);
+            this.button1.Size = new System.Drawing.Size(128, 54);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Recommend";
+            this.button1.Text = "Recommend on screen";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -149,7 +147,7 @@
             // comboBox4
             // 
             this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(1020, 41);
+            this.comboBox4.Location = new System.Drawing.Point(1020, 22);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(89, 21);
             this.comboBox4.TabIndex = 5;
@@ -397,24 +395,12 @@
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.label15.Location = new System.Drawing.Point(1019, 23);
+            this.label15.Location = new System.Drawing.Point(1019, 4);
             this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(92, 16);
             this.label15.TabIndex = 36;
             this.label15.Text = "Recipes from";
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.button2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.button2.Location = new System.Drawing.Point(997, 162);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(141, 30);
-            this.button2.TabIndex = 26;
-            this.button2.Text = "Recommend Debug";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Meat
             // 
@@ -541,7 +527,7 @@
             this.label18.AutoSize = true;
             this.label18.BackColor = System.Drawing.Color.Transparent;
             this.label18.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.label18.Location = new System.Drawing.Point(1027, 65);
+            this.label18.Location = new System.Drawing.Point(1027, 45);
             this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(77, 16);
@@ -551,7 +537,7 @@
             // workMode
             // 
             this.workMode.FormattingEnabled = true;
-            this.workMode.Location = new System.Drawing.Point(1020, 84);
+            this.workMode.Location = new System.Drawing.Point(1020, 62);
             this.workMode.Name = "workMode";
             this.workMode.Size = new System.Drawing.Size(89, 21);
             this.workMode.TabIndex = 49;
@@ -700,17 +686,6 @@
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 0;
             // 
-            // sendEmail
-            // 
-            this.sendEmail.AutoSize = true;
-            this.sendEmail.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.sendEmail.Location = new System.Drawing.Point(1020, 107);
-            this.sendEmail.Name = "sendEmail";
-            this.sendEmail.Size = new System.Drawing.Size(91, 20);
-            this.sendEmail.TabIndex = 69;
-            this.sendEmail.Text = "Send Email";
-            this.sendEmail.UseVisualStyleBackColor = true;
-            // 
             // total
             // 
             this.total.AutoSize = true;
@@ -746,12 +721,12 @@
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.Red;
-            this.button4.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.button4.Location = new System.Drawing.Point(997, 194);
+            this.button4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.button4.Location = new System.Drawing.Point(1005, 143);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(141, 30);
+            this.button4.Size = new System.Drawing.Size(128, 63);
             this.button4.TabIndex = 73;
-            this.button4.Text = "Real Recommend";
+            this.button4.Text = "Recommend to users";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -766,7 +741,6 @@
             this.Controls.Add(this.label23);
             this.Controls.Add(this.steps);
             this.Controls.Add(this.total);
-            this.Controls.Add(this.sendEmail);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.richTextBox5);
             this.Controls.Add(this.label19);
@@ -805,7 +779,6 @@
             this.Controls.Add(this.servings);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.maxValues);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -873,7 +846,6 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.ComboBox recommendationsNum;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.CheckBox Meat;
         private System.Windows.Forms.CheckBox NoFish;
         private System.Windows.Forms.CheckBox NoMeat;
@@ -903,7 +875,6 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.RichTextBox richTextBox5;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.CheckBox sendEmail;
         private System.Windows.Forms.Label total;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.ComboBox steps;

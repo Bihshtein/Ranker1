@@ -41,7 +41,8 @@ namespace LogicRunner {
                     var generator = new RecommendationGenerator(new RestDBInterface(), rec, true, false, u.RecommendedRecipes);
                     var meals = generator.GetRecommendation().MealsSet.ToList();
                     PersonalFeed.SendEmail(rec, meals, mealType.ToString(), debug);
-                    meals.ForEach(m => u.RecommendedRecipes.Add(m.Recipe.ID));
+                    if (!debug)
+                        meals.ForEach(m => u.RecommendedRecipes.Add(m.Recipe.ID));
                     unit.Users.Update(s => s.ID, u.ID, u);
                 }
             });

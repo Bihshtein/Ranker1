@@ -43,7 +43,7 @@ namespace LogicRunner
             mealType.DataSource = Enum.GetNames(typeof(MealType));
             minMax.DataSource = new string[] { "min", "max" }; 
             comboBox4.DataSource = Enum.GetNames(typeof(RecipesSource));
-            workMode.DataSource = new string[] { "Recommend", "Debug" };
+            workMode.DataSource = new string[] { "Debug", "Recommend" };
             var range = new List<int> { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21 };
 
             calories.DataSource = new List<int>(range);
@@ -185,8 +185,7 @@ namespace LogicRunner
             }
             if (meals != null) {
                 total.Text = meals.Count().ToString();
-                if (sendEmail.Checked)
-                    PersonalFeed.SendEmail(recommendationDB, meals, mealType.SelectedItem.ToString());
+              
             }
          
         }
@@ -214,10 +213,7 @@ namespace LogicRunner
             return str;
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Hack.RecommendToUsers((MealType)Enum.Parse(typeof(MealType),mealType.SelectedItem.ToString()),true);
-        }
+    
 
 
         private void LogicRunnerForm_Load(object sender, EventArgs e) {
@@ -244,9 +240,8 @@ namespace LogicRunner
         }
 
         private void button4_Click(object sender, EventArgs e) {
-            Hack.RecommendToUsers(MealType.Breakfast, false);
-            Hack.RecommendToUsers(MealType.Lunch, false);
-            Hack.RecommendToUsers(MealType.Dinner, false);
+            foreach(MealType item in  Enum.GetValues(typeof(MealType)))
+               Hack.RecommendToUsers(item, workMode.SelectedItem.ToString() == "Debug");
 
         }
     }
