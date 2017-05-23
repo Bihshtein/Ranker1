@@ -16,7 +16,7 @@ namespace InitRecipes.Parsers.RecipesPageParsers
             for (int i = 1; i < parts.Length; i++)
             {
 
-                string[] splittedPart = parts[i].Split(new string[] { "/" }, StringSplitOptions.None);
+                string[] splittedPart = parts[i].Split('\"');
                 if (splittedPart.Length == 0)
                 {
                     continue;
