@@ -95,6 +95,8 @@
             this.label23 = new System.Windows.Forms.Label();
             this.steps = new System.Windows.Forms.ComboBox();
             this.button4 = new System.Windows.Forms.Button();
+            this.label24 = new System.Windows.Forms.Label();
+            this.weekday = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
@@ -147,7 +149,7 @@
             // comboBox4
             // 
             this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(1020, 22);
+            this.comboBox4.Location = new System.Drawing.Point(596, 161);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(89, 21);
             this.comboBox4.TabIndex = 5;
@@ -395,7 +397,7 @@
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.label15.Location = new System.Drawing.Point(1019, 4);
+            this.label15.Location = new System.Drawing.Point(595, 143);
             this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(92, 16);
@@ -730,6 +732,26 @@
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.BackColor = System.Drawing.Color.Transparent;
+            this.label24.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label24.Location = new System.Drawing.Point(1030, 3);
+            this.label24.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(68, 16);
+            this.label24.TabIndex = 75;
+            this.label24.Text = "Weekday";
+            // 
+            // comboBox1
+            // 
+            this.weekday.FormattingEnabled = true;
+            this.weekday.Location = new System.Drawing.Point(1021, 20);
+            this.weekday.Name = "comboBox1";
+            this.weekday.Size = new System.Drawing.Size(89, 21);
+            this.weekday.TabIndex = 74;
+            // 
             // LogicRunnerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -737,6 +759,8 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(1160, 989);
+            this.Controls.Add(this.label24);
+            this.Controls.Add(this.weekday);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.steps);
@@ -879,5 +903,7 @@
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.ComboBox steps;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.ComboBox weekday;
     }
 }

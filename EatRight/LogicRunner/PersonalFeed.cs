@@ -18,26 +18,16 @@ namespace LogicRunner {
             {GraderType.PrepTimeMealGrader, "less preparation time" },
             {GraderType.StepsNumMealGrader, "less complicated" },
         };
-        public static void SendEmail(RecommendationDB recommendationDB, IEnumerable<Meal> meals, string mealType, bool debug =false) {
+        public static void SendEmail(RecommendationDB recommendationDB, IEnumerable<Meal> meals, string mealType, DayOfWeek dayOfWeek, bool debug =false) {
             meals = meals.OrderByDescending(m => m.Grade);
             var fromAddress = new MailAddress("alex_bihshtein@hotmail.com");
             string fromPassword = "99sozio#";
-            string subject = DateTime.Now.DayOfWeek.ToString() + " " + mealType + " recommendation for "+ recommendationDB.UserProfile.Name;
+            string subject = dayOfWeek.ToString() + " " + mealType + " recommendation for "+ recommendationDB.UserProfile.Name;
             var graders = recommendationDB.GradersWeight.OrderByDescending(i => i.Value).ToList();
 
 
-            string body = string.Format("<div><b>Recommendation priorities are :  ");
-            for (int i = 0; i < 4; i++) 
-                body += GradersGroupsNames[graders[i].Key] +" - ";
-            body = body.Remove(body.Length - 3, 2);
-            body += "</b></div>";
-            if (recommendationDB.UserProfile.Restrictions.Count > 0) {
-                body += string.Format("<div><b>Your restictions are :     ");
-                recommendationDB.UserProfile.Restrictions.ToList().ForEach(r => body += r.ToString() + " - ");
-                body = body.Remove(body.Length - 3, 2);
-                body += "<b></div>";
-            }
-            body += "<p><i>Press the picture to go to the recipe</i></p>";
+            string body = "";            
+            body += "<p><b>Press the picture to enter the recipe</b></p>";
             body += "<table style=\"width:100%\">";
             body += "<tr>";
             meals.ToList().ForEach(m => {
@@ -51,34 +41,49 @@ namespace LogicRunner {
                     ((m.GradeInfo.GradersInfo[GraderType.MaxNutValuesMealGrader].Grade *2)+
                     (m.GradeInfo.GradersInfo[GraderType.MinNutValuesMealGrader].Grade *3) +
                     m.GradeInfo.GradersInfo[GraderType.CaloriesCountMealGrader].Grade) / 6 * 100);
-
                 var strImage = "<a href=\"{0}\"><img src=\"{1}\"  height=\"300\" width=\"300\"></a>";
-                var format = "<div><font style=\"font-weight: bold;\">{0}</font></div>";
+            
+                var format = "<div>{0}</div>";
+                var boldFormat = "<div><font style=\"font-weight:bold;\">{0}</font></div>";
+                var scoreFormat = "<div><font style=\"font-weight: bold;font-size:16px;\" color=\"#3090C7\">{0}</font></div>";
                 var resMax = m.GradeInfo.MaxNutrientGrades.OrderBy(e => e.Value).ToList();
                 var resMin = m.GradeInfo.MinNutrientGrades.OrderByDescending(e => e.Key).ToList();
                 resMin.RemoveAll(i => i.Key.Contains("Carbohydrate") || i.Key.Contains("(fat)") || i.Key.Contains("Fiber"));
                 resMin.RemoveAll(i => i.Value < 1);
                 var rnd = new Random();
-                var rndList = new List<int>();
-                while (rndList.Count <= 2) {
+                var richWith = new HashSet<string>();
+                while (richWith.Count < 2 && richWith.Count < resMin.Count) {
                     var num = rnd.Next(0, resMin.Count);
-                    if (!rndList.Contains(num))
-                        rndList.Add(num);
+                    richWith.Add(GetNutrientPrettyName(resMin[num].Key));
                 }
-                body += string.Format(format,m.Recipe.Name);                
+                body += string.Format(format,String.Join(" ",m.Recipe.Name.Split(' ').ToList().Take(6).ToList()));                
                 body += string.Format(strImage, "http://bit.ly" + link, m.Recipe.ImageUrl);
-                body += string.Format(format, "Score : " + nutritionScore.ToString());
-                if (resMax[0].Value < 1) {
-                    body += string.Format(format, "Too much : " + resMax[0].Key.Split(',')[0]);
-                }
-                body += string.Format(format,  "Rich with : "+ resMin[rndList[0]].Key.Split(',')[0] + ", "+ resMin[rndList[1]].Key.Split(',')[0]);
+                body += string.Format(scoreFormat, "Score : " + nutritionScore.ToString());
+                if (resMax[0].Value < 1) 
+                    body += string.Format(boldFormat, "Too much : " + resMax[0].Key.Split(',')[0]);
+                
+                else
+                    body += string.Format(boldFormat, "All nutrients are in range!");
+                body += string.Format(boldFormat,  "Rich with : "+ String.Join(",", richWith.ToList()));
                
                 body += "</td>";
             });
             body += "</tr>";
             body += "</table>";
-
-            body += "<div><p>For any requests or concerns please reply to this address</p></div>";
+            body += "<br></br>";
+              if (recommendationDB.UserProfile.Restrictions.Count > 0) {
+                body += string.Format("<div>Your restictions are :     ");
+                recommendationDB.UserProfile.Restrictions.ToList().ForEach(r => body += r.ToString() + " - ");
+                body = body.Remove(body.Length - 3, 2);
+                body += "</div>";
+            }
+            body +=string.Format("<div>Your priorities are :  ");
+            for (int i = 0; i < GradersGroupsNames.Count; i++)
+                body += GradersGroupsNames[graders[i].Key] + " - ";
+            body = body.Remove(body.Length - 3, 2);
+            body += "</div>";
+          
+            body += "<div>For any requests or concerns please reply to this address</div>";
             body = "<!DOCTYPE html><html><body>" + body + "</html></body>";
             var address = recommendationDB.UserProfile.Email;
             if (debug)
@@ -100,10 +105,13 @@ namespace LogicRunner {
                 IsBodyHtml = true
             };
             message.To.Add(new MailAddress(address));  
-
             {
                 smtp.Send(message);
             }
+        }
+
+        public static string GetNutrientPrettyName(string nutrient) {
+            return nutrient.Split(',')[0].Split('(')[0];
         }
     }
 }

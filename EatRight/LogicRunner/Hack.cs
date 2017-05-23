@@ -27,20 +27,20 @@ namespace LogicRunner {
             {6, new List<DayOfWeek> {DayOfWeek.Monday, DayOfWeek.Wednesday, DayOfWeek.Friday, DayOfWeek.Saturday, DayOfWeek.Sunday, DayOfWeek.Thursday } },
         };
 
-        public static bool ShouldRecommend(UserProfile user, MealType mealType) {
-            return (user.Frequency == 7 || DaysToRecommend[user.Frequency].Contains(DateTime.Now.DayOfWeek))&&
+        public static bool ShouldRecommend(UserProfile user, MealType mealType, DayOfWeek dayOfWeek) {
+            return (user.Frequency == 7 || DaysToRecommend[user.Frequency].Contains(dayOfWeek))&&
                 user.Meals.Contains(mealType);
         }
 
-        public static void RecommendToUsers(MealType mealType, bool debug) {
+        public static void RecommendToUsers(MealType mealType, bool debug, DayOfWeek dayOfWeek) {
             var unit = new RestDBInterface();
             unit.Users.GetAllList().ForEach(u => {
-                if (ShouldRecommend(u, mealType)) {
+                if (ShouldRecommend(u, mealType, dayOfWeek)) {
                     var rec = RecommendationDBGenerator.FromUserProfile(u, unit);
                     rec.range = new MealSuggestionRange() { Length = u.MealsNum, MealType = mealType };
                     var generator = new RecommendationGenerator(new RestDBInterface(), rec, true, false, u.RecommendedRecipes);
                     var meals = generator.GetRecommendation().MealsSet.ToList();
-                    PersonalFeed.SendEmail(rec, meals, mealType.ToString(), debug);
+                    PersonalFeed.SendEmail(rec, meals, mealType.ToString(), dayOfWeek, debug );
                     if (!debug)
                         meals.ForEach(m => u.RecommendedRecipes.Add(m.Recipe.ID));
                     unit.Users.Update(s => s.ID, u.ID, u);

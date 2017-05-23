@@ -41,6 +41,7 @@ namespace LogicRunner
             ageGender.DataSource = bindingSource1.DataSource;
             dataGridView1.AutoGenerateColumns = true;
             mealType.DataSource = Enum.GetNames(typeof(MealType));
+            weekday.DataSource = Enum.GetNames(typeof(DayOfWeek));
             minMax.DataSource = new string[] { "min", "max" }; 
             comboBox4.DataSource = Enum.GetNames(typeof(RecipesSource));
             workMode.DataSource = new string[] { "Debug", "Recommend" };
@@ -62,6 +63,7 @@ namespace LogicRunner
             calories.SelectedIndex = 1;
             servings.SelectedIndex = 0;
             cookTime.SelectedIndex = 2;
+            weekday.SelectedIndex = (int)DateTime.Now.DayOfWeek;
             recommendationsNum.SelectedIndex = 7;
         }
 
@@ -240,8 +242,10 @@ namespace LogicRunner
         }
 
         private void button4_Click(object sender, EventArgs e) {
-            foreach(MealType item in  Enum.GetValues(typeof(MealType)))
-               Hack.RecommendToUsers(item, workMode.SelectedItem.ToString() == "Debug");
+            var dayOfWeek = (DayOfWeek)Enum.Parse(typeof(DayOfWeek), weekday.SelectedItem.ToString());
+            var debug = workMode.SelectedItem.ToString() == "Debug";
+            foreach (MealType item in Enum.GetValues(typeof(MealType))) 
+               Hack.RecommendToUsers(item, debug, dayOfWeek);
 
         }
     }
