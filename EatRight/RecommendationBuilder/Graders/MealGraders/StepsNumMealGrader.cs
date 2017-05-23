@@ -24,7 +24,7 @@ namespace RecommendationBuilder.Graders.MealGraders
             }
             if (meal.Recipe.StepsNum < 1)
             {
-                return 100;
+                return 0.1;
             }
             return (10 - (meal.Recipe.StepsNum - 1)) / 10;
         }
