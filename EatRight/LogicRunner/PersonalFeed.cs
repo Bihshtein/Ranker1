@@ -29,46 +29,20 @@ namespace LogicRunner {
             string body = "";            
             body += "<p><b>Press the picture to enter the recipe</b></p>";
             body += "<table style=\"width:100%\">";
-            body += "<tr>";
-            meals.ToList().ForEach(m => {
-                body += "<td>";
-                var recipeLink = m.Recipe.Urn+ m.Recipe.OriginalID.ToString();
-                var shortlink = new WebClient().DownloadString(string.Format("http://wasitviewed.com/index.php?href=http%3A%2F%2F{0}&email=alex_bihshtein%40hotmail.com&notes=&bitly=bitly&nobots=nobots&submit=Generate+Link", recipeLink));
-                var parts = shortlink.Split(new string[] { "bit.ly" }, StringSplitOptions.None);
-                var link = new String(parts[1].TakeWhile(c => c != '\"').ToArray());
-                
-                var nutritionScore =(int)(
-                    ((m.GradeInfo.GradersInfo[GraderType.MaxNutValuesMealGrader].Grade *2)+
-                    (m.GradeInfo.GradersInfo[GraderType.MinNutValuesMealGrader].Grade *3) +
-                    m.GradeInfo.GradersInfo[GraderType.CaloriesCountMealGrader].Grade) / 6 * 100);
-                var strImage = "<a href=\"{0}\"><img src=\"{1}\"  height=\"300\" width=\"300\"></a>";
-            
-                var format = "<div>{0}</div>";
-                var boldFormat = "<div><font style=\"font-weight:bold;\">{0}</font></div>";
-                var scoreFormat = "<div><font style=\"font-weight: bold;font-size:16px;\" color=\"#3090C7\">{0}</font></div>";
-                var resMax = m.GradeInfo.MaxNutrientGrades.OrderBy(e => e.Value).ToList();
-                var resMin = m.GradeInfo.MinNutrientGrades.OrderByDescending(e => e.Key).ToList();
-                resMin.RemoveAll(i => i.Key.Contains("Carbohydrate") || i.Key.Contains("(fat)") || i.Key.Contains("Fiber"));
-                resMin.RemoveAll(i => i.Value < 1);
-                var rnd = new Random();
-                var richWith = new HashSet<string>();
-                while (richWith.Count < 2 && richWith.Count < resMin.Count) {
-                    var num = rnd.Next(0, resMin.Count);
-                    richWith.Add(GetNutrientPrettyName(resMin[num].Key));
-                }
-                body += string.Format(format,String.Join(" ",m.Recipe.Name.Split(' ').ToList().Take(6).ToList()));                
-                body += string.Format(strImage, "http://bit.ly" + link, m.Recipe.ImageUrl);
-                body += string.Format(scoreFormat, "Score : " + nutritionScore.ToString());
-                if (resMax[0].Value < 1) 
-                    body += string.Format(boldFormat, "Too much : " + resMax[0].Key.Split(',')[0]);
-                
-                else
-                    body += string.Format(boldFormat, "All nutrients are in range!");
-                body += string.Format(boldFormat,  "Rich with : "+ String.Join(",", richWith.ToList()));
-               
-                body += "</td>";
-            });
-            body += "</tr>";
+         
+            var list = meals.ToList();
+            while (list.Count > 0) {
+                body += "<tr>";
+                var count = 3;
+                if (list.Count < count)
+                    count = list.Count;
+                var row = list.Take(count);
+                row.ToList().ForEach(m => {
+                    AddMeal(ref body, m);
+                });
+                body += "</tr>";
+                list.RemoveRange(0,count);
+            }
             body += "</table>";
             body += "<br></br>";
               if (recommendationDB.UserProfile.Restrictions.Count > 0) {
@@ -108,6 +82,45 @@ namespace LogicRunner {
             {
                 smtp.Send(message);
             }
+        }
+
+        public static void AddMeal(ref string body,Meal m) {
+            body += "<td>";
+            var recipeLink = m.Recipe.Urn + m.Recipe.OriginalID.ToString();
+            var shortlink = new WebClient().DownloadString(string.Format("http://wasitviewed.com/index.php?href=http%3A%2F%2F{0}&email=alex_bihshtein%40hotmail.com&notes=&bitly=bitly&nobots=nobots&submit=Generate+Link", recipeLink));
+            var parts = shortlink.Split(new string[] { "bit.ly" }, StringSplitOptions.None);
+            var link = new String(parts[1].TakeWhile(c => c != '\"').ToArray());
+
+            var nutritionScore = (int)(
+                ((m.GradeInfo.GradersInfo[GraderType.MaxNutValuesMealGrader].Grade * 2) +
+                (m.GradeInfo.GradersInfo[GraderType.MinNutValuesMealGrader].Grade * 3) +
+                m.GradeInfo.GradersInfo[GraderType.CaloriesCountMealGrader].Grade) / 6 * 100);
+            var strImage = "<a href=\"{0}\"><img src=\"{1}\"  height=\"300\" width=\"300\"></a>";
+
+            var format = "<div>{0}</div>";
+            var boldFormat = "<div><font style=\"font-weight:bold;\">{0}</font></div>";
+            var scoreFormat = "<div><font style=\"font-weight: bold;font-size:16px;\" color=\"#3090C7\">{0}</font></div>";
+            var resMax = m.GradeInfo.MaxNutrientGrades.OrderBy(e => e.Value).ToList();
+            var resMin = m.GradeInfo.MinNutrientGrades.OrderByDescending(e => e.Key).ToList();
+            resMin.RemoveAll(i => i.Key.Contains("Carbohydrate") || i.Key.Contains("(fat)") || i.Key.Contains("Fiber"));
+            resMin.RemoveAll(i => i.Value < 1);
+            var rnd = new Random();
+            var richWith = new HashSet<string>();
+            while (richWith.Count < 2 && richWith.Count < resMin.Count) {
+                var num = rnd.Next(0, resMin.Count);
+                richWith.Add(GetNutrientPrettyName(resMin[num].Key));
+            }
+            body += string.Format(format, String.Join(" ", m.Recipe.Name.Split(' ').ToList().Take(6).ToList()));
+            body += string.Format(strImage, "http://bit.ly" + link, m.Recipe.ImageUrl);
+            body += string.Format(scoreFormat, "Score : " + nutritionScore.ToString());
+            if (resMax[0].Value < 1)
+                body += string.Format(boldFormat, "Too much : " + resMax[0].Key.Split(',')[0]);
+
+            else
+                body += string.Format(boldFormat, "All nutrients are in range!");
+            body += string.Format(boldFormat, "Rich with : " + String.Join(",", richWith.ToList()));
+
+            body += "</td>";
         }
 
         public static string GetNutrientPrettyName(string nutrient) {
