@@ -54,7 +54,8 @@ namespace InitRecipes {
 
             if (recipe.ProductsWeight != null && recipe.Ingredients != null &&
                 recipe.ProductsWeight.Count == recipe.Ingredients.Count &&
-                recipe.ImageUrl != "http://img.food.com/fdc/img/FDC_share-logo.png") {// empty photo food.com is most common now
+                recipe.ImageUrl != "http://img.food.com/fdc/img/FDC_share-logo.png" &&// empty photo food.com 
+                recipe.ImageUrl != null) {
                 lock (Locker) {
                     try {
                         recipe.ID = CurrId++;
