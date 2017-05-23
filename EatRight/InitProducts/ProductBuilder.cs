@@ -264,6 +264,7 @@ namespace InitProducts {
                 product.FoodGroup == "chicken" ||
                 product.FoodGroup == "pork" ||
                 product.FoodGroup == "sausages" ||
+                product.FoodGroup == "lamb" ||
                 IsProductOutsideFoodgroup(product, meatWords, exceptionWords);
         }
 
