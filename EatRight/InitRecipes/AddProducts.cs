@@ -72,10 +72,28 @@ namespace InitRecipes {
               
         }
 
+        private static List<Product> ReduceProductList(List<Product> productList)
+        {
+            // TODO: remove products that don't match the current ingredient
+            return productList;
+        }
+
+        private static Product SummarizeProductList(List<Product> productList)
+        {
+            // TODO: somehow summarize all products into one product
+            return productList[0];
+        }
+
+        private static Product GetmatchingProductFromList(List<Product> productList)
+        {
+            productList = ReduceProductList(productList);
+            return SummarizeProductList(productList);
+        }
+
         private static void ParseInnerpart(Recipe recipe, List<Product> res, string innerpart,
             string relativeMeasure, double weight)
         {
-            var product = res[0];
+            var product = GetmatchingProductFromList(res);
             if (relativeMeasure != string.Empty) {
                 if (relativeMeasure.Contains(innerpart))
                     relativeMeasure = innerpart;
