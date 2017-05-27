@@ -1,4 +1,5 @@
-﻿using RestModel;
+﻿using Logic;
+using RestModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -100,6 +101,31 @@ namespace InitRecipes {
             else {
                 return 0;
             }
+        }
+
+        public static string GetAdditionalInfo(string ingredient)
+        {
+            var additionalInfo = "";
+            foreach (var word in Map.ActionInfo)
+            {
+                var wordIdx = ingredient.IndexOf(word);
+                if (wordIdx > 0)
+                {
+                    // Make sure that the word is a complete match
+                    if (wordIdx > 1 && Char.IsLetter(ingredient[wordIdx - 1]))
+                    {
+                        continue;
+                    }
+                    if ((wordIdx + word.Length) < ingredient.Length && Char.IsLetter(ingredient[wordIdx + word.Length]))
+                    {
+                        continue;
+                    }
+                    additionalInfo = word;
+                    break;
+                }
+            }
+
+            return additionalInfo;
         }
     }
 }

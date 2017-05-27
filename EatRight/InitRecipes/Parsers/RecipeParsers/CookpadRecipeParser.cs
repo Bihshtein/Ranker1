@@ -208,15 +208,7 @@ namespace InitRecipes {
 
             }
 
-            var additionalInfo = "";
-            foreach (var word in Map.ActionInfo)
-            {
-                if (name.Contains(word))
-                {
-                    additionalInfo = word;
-                    break;
-                }
-            }
+            var additionalInfo = GeneralRecipeParser.GetAdditionalInfo(name);
 
             if (name.Contains("garlic") && name.Contains("clove"))
             {

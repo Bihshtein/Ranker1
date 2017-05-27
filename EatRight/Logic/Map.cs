@@ -454,7 +454,8 @@ namespace Logic {
             "thin sliced","peeled and diced","thick sliced", "sliced","slivered","melted","sifted", "ground", "shredded",
             "cubed", "rolled","mashed","crushed","boiled","grated","julienne","julienne-sliced",
             "finely cooked","fine minced","finely chopped","medium dice", "small dice","finely diced","diced", "dried minced", "minced", "finely chopped", "chopped",
-            "finely shredded","cooked","finely crushed","frozen","blended","chiffonade","to taste"
+            "finely shredded","cooked","finely crushed","frozen","blended","chiffonade","to taste",
+            "drained", "softened"
         };
 
         public static List<string> EndActionInfo = new List<string> {

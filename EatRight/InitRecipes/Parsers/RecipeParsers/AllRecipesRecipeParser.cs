@@ -98,16 +98,19 @@ namespace InitRecipes {
                         weight = res.Item2;
                 }
             }
+
+            var additionalInfo = GeneralRecipeParser.GetAdditionalInfo(name);
+
             try { 
-            name = Map.AdjustNames(name);
-            name = Map.AdjustInnerPart(name);
-            name = Map.AdjustIngredient(name);
-        }
+                name = Map.AdjustNames(name);
+                name = Map.AdjustInnerPart(name);
+                name = Map.AdjustIngredient(name);
+            }
             catch(Exception ex) {
                 log.Error(ex);
             }
 
-            return new IngredientInfo { Name = name, Quantity = weight, ReltiveSizeMeasure = weightKey };
+            return new IngredientInfo { Name = name, Quantity = weight, ReltiveSizeMeasure = weightKey, AdditionalInfo = additionalInfo };
         }
 
         public static Tuple<string, double, string> ParseByRelativeMeasures(string[] parts, string item, string unit) {
