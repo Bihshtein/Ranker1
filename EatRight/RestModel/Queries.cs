@@ -94,7 +94,14 @@ namespace RestModel {
             if (orIndex > 0)
             {
                 var leftParts = innerSplit.Take(orIndex).ToList();
-                res = unit.Products.Queries.TryMatchWholeProduct(leftParts);
+
+                // If the left part is an adjective, it's meaningless without the suffix, and we don't want to search for it
+                var isAdjective = (leftParts.Count == 1) && (Map.Adjectives.Contains(leftParts[0]));
+                if (!isAdjective)
+                {
+                    res = unit.Products.Queries.TryMatchWholeProduct(leftParts);
+                }
+                
                 int origCount = leftParts.Count;
                 int rightIdx = innerSplit.Length - 1;
                 while (leftParts.Count < 4 && rightIdx > orIndex)

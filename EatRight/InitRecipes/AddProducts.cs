@@ -48,7 +48,7 @@ namespace InitRecipes {
         public static void AddWeights(Recipe recipe) {
             recipe.ProductsWeight = new Dictionary<string, double>();
             foreach (var item in recipe.Ingredients) {
-                ParseItem(recipe, item.Name, item.ReltiveSizeMeasure, item.Quantity);
+                ParseItem(recipe, item);
             }
             recipe.CalculateProperties();
 
@@ -72,10 +72,21 @@ namespace InitRecipes {
               
         }
 
-        private static List<Product> ReduceProductList(List<Product> productList)
+        private static List<Product> ReduceProductList(List<Product> productList, string additionalInfo)
         {
-            // TODO: remove products that don't match the current ingredient
-            return productList;
+            var resList = new List<Product>();
+            if (additionalInfo.Length > 0)
+            {
+                foreach (var product in productList)
+                {
+                    if (product.NameContains(additionalInfo))
+                    {
+                        resList.Add(product);
+                    }
+                }
+            }
+
+            return (resList.Count != 0) ? resList : productList;
         }
 
         private static Product SummarizeProductList(List<Product> productList)
@@ -144,16 +155,16 @@ namespace InitRecipes {
             return closestProduct;
         }
 
-        private static Product GetmatchingProductFromList(List<Product> productList)
+        private static Product GetmatchingProductFromList(List<Product> productList, IngredientInfo info)
         {
-            productList = ReduceProductList(productList);
+            productList = ReduceProductList(productList, info.AdditionalInfo);
             return SummarizeProductList(productList);
         }
 
         private static void ParseInnerpart(Recipe recipe, List<Product> res, string innerpart,
-            string relativeMeasure, double weight)
+            string relativeMeasure, double weight, IngredientInfo info)
         {
-            var product = GetmatchingProductFromList(res);
+            var product = GetmatchingProductFromList(res, info);
             if (relativeMeasure != string.Empty) {
                 if (relativeMeasure.Contains(innerpart))
                     relativeMeasure = innerpart;
@@ -169,8 +180,12 @@ namespace InitRecipes {
         public static Dictionary<string, int> MissingCount = new Dictionary<string, int>();
         public static Dictionary<string, int> MissingWeightsCount = new Dictionary<string,int>();
 
-        public static void ParseItem(Recipe recipe, string innerpart, string relativeMeasure, double weight)
+        public static void ParseItem(Recipe recipe, IngredientInfo info)
         {
+            string innerpart = info.Name;
+            string relativeMeasure = info.ReltiveSizeMeasure;
+            double weight = info.Quantity;
+
             ++total;
             if (innerpart == "")
             {
@@ -180,7 +195,7 @@ namespace InitRecipes {
             var res = Queries<Product>.GetMatchingProductsForIngredient(innerpart);
             if (res != null && res.Count > 0)
             {
-                ParseInnerpart(recipe, res, innerpart, relativeMeasure, weight);
+                ParseInnerpart(recipe, res, innerpart, relativeMeasure, weight, info);
             }
             else
             {

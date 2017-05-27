@@ -134,78 +134,108 @@ namespace InitRecipes {
             return name;
         }
 
-        public IngredientInfo ParseWeightAndName(string ingredient) {
+        public IngredientInfo ParseWeightAndName(string ingredient)
+        {
             ingredient = ingredient.Split('\n')[0];
             var nameAndWeight = ingredient.Split(new string[1] { "</span>" }, StringSplitOptions.None);
             var name = nameAndWeight[1].Trim().ToLower();
             if (name == string.Empty || Map.ShouldSkip(name))
+            {
                 return null;
+            }
           
-
             var weight = nameAndWeight[0].Replace(".", "");
 
             var weightSplit = weight.Split('-');
             if (weightSplit.Length == 2)
+            {
                 weight = weightSplit[1]; // take the bigger number from range
+            }
             var weightNum = 1.0;
             var relativeWeight = "";
             weight = ParseHelpers.GetWeightFullName(weight);
-            if (Map.HasWord(Formulas.MeasuresWeights.Keys.ToList(), weight)) {
+            if (Map.HasWord(Formulas.MeasuresWeights.Keys.ToList(), weight))
+            {
                 var keyword = Map.GetWord(Formulas.MeasuresWeights.Keys.ToList(), weight);
-                try {
+                try
+                {
                     weightNum = ParseHelpers.ParseAmount(weight.Replace(keyword, "")) * Formulas.MeasuresWeights[keyword];
                 }
-                catch {
+                catch
+                {
                     log.Error("Can't parse weight : " + weight + ", ingredient name:" + name);
                 }
             }
-            else if (Map.HasWord(Formulas.RelativeSizes, weight)) {
+            else if (Map.HasWord(Formulas.RelativeSizes, weight))
+            {
                 relativeWeight = Map.GetWord(Formulas.RelativeSizes, weight);
-                try {
+                try
+                {
                     var amount = weight.Replace(relativeWeight, "");
                     if (amount != "")
                         weightNum = ParseHelpers.ParseAmount(weight.Replace(relativeWeight, ""));
                 }
-                catch {
+                catch
+                {
                     log.Error("Can't parse weight : " + weight + ", ingredient name:" + name);
                 }
             }
-            else {
+            else
+            {
                 var splitBySpace = weight.Split(' ');
-                if (splitBySpace.Length > 1 && (splitBySpace[1] == "g" || splitBySpace[1] == "ml")) {
+                if (splitBySpace.Length > 1 && (splitBySpace[1] == "g" || splitBySpace[1] == "ml"))
+                {
                     weightNum = ParseHelpers.ParseAmount(splitBySpace[0]);
                 }
 
            
-                else if (weight == "") {
+                else if (weight == "")
+                {
                     relativeWeight = name;
                 }
 
-                else {
-                    try {
+                else
+                {
+                    try
+                    {
                         weightNum = ParseHelpers.ParseAmount(weight);
                     }
-                    catch {
+                    catch
+                    {
                         log.Error("Can't parse weight : " + weight + ", ingredient name:" + name);
                     }
                 }
 
             }
-            if (name.Contains("garlic") && name.Contains("clove")) {
+
+            var additionalInfo = "";
+            foreach (var word in Map.ActionInfo)
+            {
+                if (name.Contains(word))
+                {
+                    additionalInfo = word;
+                    break;
+                }
+            }
+
+            if (name.Contains("garlic") && name.Contains("clove"))
+            {
                 relativeWeight = "clove";
                 name = "garlic";
             }
-            try { 
-            name = Map.AdjustNames(name);
-            name = Map.AdjustInnerPart(name).Trim();
-            name = Map.AdjustIngredient(name);
-            name = ParseHelpers.FixIllegalCharacters(name);
-        }
-            catch(Exception ex) {
+            try
+            { 
+                name = Map.AdjustNames(name);
+                name = Map.AdjustInnerPart(name).Trim();
+                name = Map.AdjustIngredient(name);
+                name = ParseHelpers.FixIllegalCharacters(name);
+            }
+            catch(Exception ex)
+            {
                 log.Error(ex);
             }
               
-            return new IngredientInfo { Name = name, Quantity = weightNum, ReltiveSizeMeasure = relativeWeight }; 
+            return new IngredientInfo { Name = name, Quantity = weightNum, ReltiveSizeMeasure = relativeWeight, AdditionalInfo = additionalInfo }; 
 
         }
 
