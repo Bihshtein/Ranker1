@@ -80,8 +80,68 @@ namespace InitRecipes {
 
         private static Product SummarizeProductList(List<Product> productList)
         {
-            // TODO: somehow summarize all products into one product
-            return productList[0];
+            // Special case: if the product list is of size one, save time and return that product
+            if (productList.Count == 1)
+            {
+                return productList[0];
+            }
+
+            Dictionary<string, KeyValuePair<double, int>> nutrientsSumAndCount = new Dictionary<string, KeyValuePair<double, int>>();
+            KeyValuePair<double, int> sumCountPair = new KeyValuePair<double, int>(0,0);
+
+            // First get the nutrients sum and count
+            foreach (var product in productList)
+            {
+                foreach (var nutPair in product.NutrientsList())
+                {
+                    if (nutrientsSumAndCount.TryGetValue(nutPair.Key, out sumCountPair))
+                    {
+                        nutrientsSumAndCount[nutPair.Key] = new KeyValuePair<double, int>(sumCountPair.Key + nutPair.Value, sumCountPair.Value + 1);
+                    }
+                    else
+                    {
+                        nutrientsSumAndCount[nutPair.Key] = new KeyValuePair<double, int>(nutPair.Value, 1);
+                    }
+                }
+            }
+
+            // Now, get the nutrients average
+            Dictionary<string, double> nutrientsAverage = new Dictionary<string, double>();
+            foreach (var entry in nutrientsSumAndCount)
+            {
+                nutrientsAverage[entry.Key] = entry.Value.Key / (double)entry.Value.Value;
+            }
+
+            // And finally, estimate how much each product is far from the averages
+            double minDistance = Double.PositiveInfinity;
+            Product closestProduct = null;
+            foreach (var product in productList)
+            {
+                double distance = 0;
+                Dictionary<string, double> nutrientsAverageCopy = new Dictionary<string, double>(nutrientsAverage);
+
+                // Go over all the product's nutrients
+                foreach (var nutPair in product.NutrientsList())
+                {
+                    distance += Math.Abs(nutPair.Value - nutrientsAverageCopy[nutPair.Key]);
+                    nutrientsAverageCopy.Remove(nutPair.Key);
+                }
+
+                // Check if there are some missing nutrients
+                foreach (var entry in nutrientsAverageCopy)
+                {
+                    distance += entry.Value;
+                }
+
+                // Check if this is the minimal distance product so far
+                if (distance < minDistance)
+                {
+                    minDistance = distance;
+                    closestProduct = product;
+                }
+            }
+
+            return closestProduct;
         }
 
         private static Product GetmatchingProductFromList(List<Product> productList)
