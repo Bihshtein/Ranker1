@@ -97,6 +97,10 @@ namespace Logic {
             ingredient = ingredient.Replace(";", "");
             if (ingredient.Length > 0 && ingredient[ingredient.Length - 1] == '-')
                 ingredient = ingredient.Remove(ingredient.Length - 1, 1);
+            if (ingredient.StartsWith("or "))
+            {
+                ingredient = ingredient.Substring(3);
+            }
             return ingredient;
         }
 
@@ -455,7 +459,7 @@ namespace Logic {
             "cubed", "rolled","mashed","crushed","boiled","grated","julienne","julienne-sliced",
             "finely cooked","fine minced","finely chopped","medium dice", "small dice","finely diced","diced", "dried minced", "minced", "finely chopped", "chopped",
             "finely shredded","cooked","finely crushed","frozen","blended","chiffonade","to taste",
-            "drained", "softened"
+            "drained", "softened", "shelled"
         };
 
         public static List<string> EndActionInfo = new List<string> {
@@ -483,7 +487,7 @@ namespace Logic {
 
         public static List<string> Adjectives = new List<string>
         {
-            "dark", "light"
+            "dark", "light", "green", "red"
         };
     }
 }
