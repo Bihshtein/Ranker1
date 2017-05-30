@@ -487,7 +487,7 @@ namespace Logic {
 
         public static List<string> Adjectives = new List<string>
         {
-            "dark", "light", "green", "red"
+            "dark", "light", "green", "red", "french"
         };
     }
 }

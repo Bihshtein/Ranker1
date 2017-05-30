@@ -49,6 +49,9 @@ namespace InitRecipes {
                 relativeWeight = "clove";
                 name = "garlic";
             }
+
+            var additionalInfo = GeneralRecipeParser.GetAdditionalInfo(name);
+
             try { 
             name = Map.AdjustNames(name);
             name = Map.AdjustInnerPart(name);
@@ -57,7 +60,7 @@ namespace InitRecipes {
             catch (Exception ex) {
                 log.Error(ex);
             }
-            return new IngredientInfo { Name = name, Quantity = weight, ReltiveSizeMeasure = relativeWeight }; 
+            return new IngredientInfo { Name = name, Quantity = weight, ReltiveSizeMeasure = relativeWeight, AdditionalInfo = additionalInfo }; 
         }
 
         public TimeSpan GetPrepTime(string page)
