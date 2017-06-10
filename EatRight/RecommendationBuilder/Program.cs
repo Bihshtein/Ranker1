@@ -40,7 +40,7 @@ namespace RecommendationBuilder
 
         public static void GenerateTestMenu1()
         {
-            var list = unit.Products.GetTopFoods(150,1);
+            var list = unit.Products.Queries.GetTopFoods(150,1);
             //list.RemoveAll((p) => p.Animal != string.Empty);
             foreach (Product prod in list)
             {

@@ -50,10 +50,14 @@ namespace Students.Services
         public List<List<Product>> GetProducts(string searchKeyword)
         {
             var productLists = new List<List<Product>>();
-            if (RestRepository<Product>.FoodGroups.Contains(searchKeyword)) 
+            if (RestRepository<Product>.FoodGroups.Contains(searchKeyword))
                 return new List<List<Product>>() { productsService.GetFoodGroup(searchKeyword) };
-            else
-                return new List<List<Product>>() { productsService.GetIngredient(searchKeyword) };
+            else {
+                var res = productsService.GetNutrient(searchKeyword, 0);
+                if (res.Count == 0)
+                    res = productsService.GetIngredient(searchKeyword);
+                return new List<List<Product>>() { res };
+            }
 
         }
         public HttpResponseMessage Get(string id)

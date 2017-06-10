@@ -138,46 +138,16 @@ namespace RestModel {
 
         
 
-        public List<T> GetByMeasure(string name, int min,bool isVegetarian=false)
-        {
-            var builder = Builders<Product>.Filter;
-            FilterDefinition<Product> filter;
-
-            if (isVegetarian)
-                filter = builder.And(builder.Gt(name, DailyValues[name] * (min / 100.0)), builder.Eq("Animal", string.Empty));
-            else
-                filter = builder.Gt(name, DailyValues[name] * (min / 100.0));
-            return _collection.Find(filter as FilterDefinition<T>).ToList();
-        }
+      
         public T GetKey(KeyValuePair<T, int> pair)
         {
             return pair.Key;
         }
-        public List<T> GetTopFoods(int minOfDailyValue) {
-            return GetTopFoods(minOfDailyValue, 3);
+        public List<Product> GetTopFoods(int minOfDailyValue) {
+            return Queries.GetTopFoods(minOfDailyValue, 3);
         }
 
-       
-        public List<T> GetTopFoods(int minOfDailyValue, int minMeasures) 
-        {
-            Dictionary<T, int> productsCount = new Dictionary<T, int>();
-            foreach (var item in DailyValues.Keys)
-            {
-                var results = GetByMeasure(item, minOfDailyValue);
-                foreach (var product in results)
-                {   
-                    if (!productsCount.ContainsKey(product))
-                        productsCount.Add(product, 1);
-                    else
-                        productsCount[product]++;
-                }
-            }
-            var superFoods = productsCount.Where((pair) => pair.Value > minMeasures);
-
-
-            var res = superFoods.ToDictionary(GetKey).Keys.ToList();
-            return res;
-        }
+      
 
         public IQueryable<T> GetAll() {
             return _collection.Find(_ => true).ToEnumerable().AsQueryable();

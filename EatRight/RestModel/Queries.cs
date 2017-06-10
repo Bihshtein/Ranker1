@@ -37,6 +37,43 @@ namespace RestModel {
             return newRes;
         }
 
+        public List<Product> GetByMeasure(string name, double min) {
+            Expression<Func<Product, bool>> query;
+            var list = new List<string> { "Minerals", "Vitamins", "Proximates", "Lipids" };
+            var res = new List<T>();
+            var newRes = new List<Product>();
+            foreach (var item in list) {
+                query = x => x.Nutrients[item][name] > min;
+                res = collection.Find<T>(query as Expression<Func<T, bool>>).ToList();
+                if (res.Count > 0) {
+                    newRes = res.Cast<Product>().ToList();
+                    newRes.Sort((a, b) => a.Nutrients[item][name] < b.Nutrients[item][name] ? 1 : -1);
+                    newRes = newRes.Take(10).ToList();
+                    break;
+                }
+            }
+
+            
+            return newRes;
+        }
+        public List<Product> GetTopFoods(int minOfDailyValue, int minMeasures) {
+          /*  Dictionary<T, int> productsCount = new Dictionary<T, int>();
+            foreach (var item in DailyValues.Keys) {
+                var results = GetByMeasure(item, minOfDailyValue);
+                foreach (var product in results) {
+                    if (!productsCount.ContainsKey(product))
+                        productsCount.Add(product, 1);
+                    else
+                        productsCount[product]++;
+                }
+            }
+            var superFoods = productsCount.Where((pair) => pair.Value > minMeasures);
+
+
+            var res = superFoods.ToDictionary(GetKey).Keys.ToList();*/
+            return null;
+        }
+
         public List<T> QueryByExpression(Expression<Func<Product, bool>> query)
         {
             return collection.Find(query as Expression<Func<T, bool>>).ToList();

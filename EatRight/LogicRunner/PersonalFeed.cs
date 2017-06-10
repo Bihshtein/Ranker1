@@ -21,7 +21,7 @@ namespace LogicRunner {
         public static void SendEmail(RecommendationDB recommendationDB, IEnumerable<Meal> meals, string mealType, DayOfWeek dayOfWeek, bool debug =false) {
             meals = meals.OrderByDescending(m => m.Grade);
             var fromAddress = new MailAddress("alex_bihshtein@hotmail.com");
-            string fromPassword = "99sozio#";
+            string fromPassword = "99sozio$";
             string subject = dayOfWeek.ToString() + " " + mealType + " recommendation for "+ recommendationDB.UserProfile.Name;
             var graders = recommendationDB.GradersWeight.OrderByDescending(i => i.Value).ToList();
 

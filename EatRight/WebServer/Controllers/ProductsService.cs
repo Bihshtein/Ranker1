@@ -13,9 +13,9 @@ namespace Students.Services {
         }
 
     
-        public List<Product> GetNutrient(string name, int min, bool vegetarian)
+        public List<Product> GetNutrient(string name, double min)
         {
-            return dbLayer.Products.GetByMeasure(name, min, vegetarian);
+            return dbLayer.Products.Queries.GetByMeasure(name, min);
         }
 
         public List<Product> GetIngredient(string ingredient)

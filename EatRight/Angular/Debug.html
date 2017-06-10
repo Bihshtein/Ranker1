@@ -34,7 +34,7 @@
 <body>
     <div class="Container">
         <label>
-            Products  <input type="text" name="input" size="150" ng-model="products.text" ng-pattern="input.word" ng-list> eg : salmon
+            Products  <input type="text" name="input" size="150" ng-model="products.text" ng-pattern="input.word" ng-list="|"> eg : salmon
         </label>
         <br /><br /><br /><br />
         <label>
@@ -51,12 +51,12 @@
                                 <h2>. {{P.Name1}} </h2>
                                 <h2>. {{P.Name2}} </h2>
                                 <h2>. {{P.Name3}} </h2>
-                                <h2>. {{P.PreparationMethod}} </h2>
-                                <h2>. {{P.StorageMethod}} </h2>
-                                <h2>. {{P.FoodGroup}} </h2>
-                                <h2>. {{P.FatDetails}} </h2>
-                                <h2>. {{P.BoneDetails}} </h2>
-                                <h2>. {{P.ID}} </h2>
+                                <h2>. {{P.PreparationMethod}} </h2>                                                                
+                                <h2>. {{P.Nutrients['Vitamins'][val]}} </h2>
+                                <h2>. {{P.Nutrients['Proximates'][val]}} </h2>
+                                <h2>. {{P.Nutrients['Lipids'][val]}} </h2>
+                                <h2>. {{P.Nutrients['Minerals'][val]}} </h2>
+                                
                             </div>
                         </div>
                     </div>
