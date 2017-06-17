@@ -34,6 +34,10 @@ namespace InitRecipes {
                 var weightParts = weightStr.Split(new string[4] { "<sup>", "</sup>", "<sub>", "</sub", }, StringSplitOptions.None);
                 var amount = "";
                 weightParts.ToList().ForEach(p => amount += WebUtility.HtmlDecode(p));
+                if (amount.EndsWith(">")) // Common in Food.com
+                {
+                    amount = amount.Substring(0, amount.Length - 1);
+                }
                 weight = ParseHelpers.ParseAmount(amount);
 
             }
