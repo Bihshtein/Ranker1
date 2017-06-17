@@ -7,6 +7,18 @@ using System.Threading.Tasks;
 namespace Logic {
     public class Map {
 
+        public static string AdjustRelativeWeight(string origWeight)
+        {
+            foreach (var entry in WeightAdjustment)
+            {
+                if (entry.Key.Equals(origWeight))
+                {
+                    return entry.Value;
+                }
+            }
+
+            return origWeight;
+        }
 
         public static string AdjustNames(string item) {
             ChangePartialPhrases.Keys.ToList().ForEach(key => {
@@ -97,10 +109,20 @@ namespace Logic {
             ingredient = ingredient.Replace(";", "");
             if (ingredient.Length > 0 && ingredient[ingredient.Length - 1] == '-')
                 ingredient = ingredient.Remove(ingredient.Length - 1, 1);
+            
+            // Remove "or" that are left after removing words
             if (ingredient.StartsWith("or "))
             {
                 ingredient = ingredient.Substring(3);
             }
+
+            // If we have an example in the ingredient name ("some fruit such as apple") we want this example
+            var exampleParts = ingredient.Split(new string[] { "such as" }, StringSplitOptions.None);
+            if (exampleParts.Length > 1 && exampleParts[1].Length > 0)
+            {
+                ingredient = exampleParts[1];
+            }
+
             return ingredient;
         }
 
@@ -488,6 +510,11 @@ namespace Logic {
         public static List<string> Adjectives = new List<string>
         {
             "dark", "light", "green", "red", "french"
+        };
+
+        public static Dictionary<string, string> WeightAdjustment = new Dictionary<string, string>
+        {
+            { "g", "gram" }
         };
     }
 }
