@@ -26,25 +26,33 @@ namespace InitRecipes {
             var weightStr = parts[1].Split('-')[0];
             var rest = parts[2].Trim();
           
-                var weight = 1.0;
-                try {
-                    weight = double.Parse(weightStr);
+            var weight = 1.0;
+            try {
+                weight = double.Parse(weightStr);
+            }
+            catch (FormatException) {
+                var weightParts = weightStr.Split(new string[4] { "<sup>", "</sup>", "<sub>", "</sub", }, StringSplitOptions.None);
+                var amount = "";
+                weightParts.ToList().ForEach(p => amount += WebUtility.HtmlDecode(p));
+                if (amount.EndsWith(">")) // Common in Food.com
+                {
+                    amount = amount.Substring(0, amount.Length - 1);
                 }
-                catch (FormatException) {
-                    var weightParts = weightStr.Split(new string[4] { "<sup>", "</sup>", "<sub>", "</sub", }, StringSplitOptions.None);
-                    var amount = "";
-                    weightParts.ToList().ForEach(p => amount += WebUtility.HtmlDecode(p));
-                    weight = ParseHelpers.ParseAmount(amount);
+                weight = ParseHelpers.ParseAmount(amount);
 
-                }
-                var relativeWeight = Formulas.MeasuresWeights.Keys.ToList().FirstOrDefault(s => Map.WordCheck(s, rest));
-                
+            }
+            var relativeWeight = Formulas.MeasuresWeights.Keys.ToList().FirstOrDefault(s => Map.WordCheck(s, rest));
+            
+            if (relativeWeight == null) {
+                relativeWeight = Formulas.RelativeSizes.FirstOrDefault(s => Map.WordCheck(s, rest));
                 if (relativeWeight == null) {
-                    relativeWeight = Formulas.RelativeSizes.FirstOrDefault(s => Map.WordCheck(s, rest));
-                    if (relativeWeight == null) {
-                        relativeWeight = "";
-                    }
+                    relativeWeight = "";
                 }
+            }
+
+            // Add a translation from common weight phrases to more comfrotable phrases
+            relativeWeight = Map.AdjustRelativeWeight(relativeWeight);
+
             if (name.Contains("garlic clove")) {
                 relativeWeight = "clove";
                 name = "garlic";

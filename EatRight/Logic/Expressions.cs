@@ -78,6 +78,9 @@ namespace Logic
                 fraction = fraction.Replace("inch", "");
             }
 
+            // Replace some weird slashes
+            fraction = fraction.Replace('⁄', '/');
+
             if (!fraction.Contains('('))
                 return GetFractionedNumber(fraction);
             else
