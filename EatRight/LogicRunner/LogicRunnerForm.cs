@@ -44,8 +44,11 @@ namespace LogicRunner
             weekday.DataSource = Enum.GetNames(typeof(DayOfWeek));
             minMax.DataSource = new string[] { "min", "max" }; 
             comboBox4.DataSource = Enum.GetNames(typeof(RecipesSource));
-            workMode.DataSource = new string[] { "Debug", "Recommend" };
-            var range = new List<int> { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21 };
+            workMode.DataSource = new string[] {  "Recommend", "Debug" };
+            var range = new List<int>();
+            for (int i = 0; i < 100; i++) {
+                range.Add(i);
+            }
 
             calories.DataSource = new List<int>(range);
             cookTime.DataSource = new List<int>(range);
@@ -56,15 +59,13 @@ namespace LogicRunner
             idealServings.DataSource = new List<int>(range);
             recommendationsNum.DataSource = new List<int>(range);
             activityLevel.DataSource = Enum.GetNames(typeof(PhysicalActivityLevel));
-            idealServings.SelectedIndex = 4;
+            mealType.SelectedIndex = 2;
             ageGender.SelectedIndex = 8;
             maxValues.SelectedIndex = 3;
-            minValues.SelectedIndex =4;
+            minValues.SelectedIndex =5;
             calories.SelectedIndex = 1;
-            servings.SelectedIndex = 0;
-            cookTime.SelectedIndex = 2;
             weekday.SelectedIndex = (int)DateTime.Now.DayOfWeek;
-            recommendationsNum.SelectedIndex = 7;
+            recommendationsNum.SelectedIndex =40;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -163,12 +164,10 @@ namespace LogicRunner
             }
             else {
                 var list = meals.Select(o => new MyViewModel(o) {
-//                    Id = o.Recipe.ID,
-                    OriginalID = o.Recipe.OriginalID,
                     Source = o.Recipe.Source,
                     Name = o.Recipe.Name,
-  //                  NutValues = parseNutValues(o.NutValues),
-                    GradersResult = parseGradersResult(o.GradeInfo.GradersInfo)
+                    URL = o.Recipe.Urn + o.Recipe.OriginalID.ToString(),
+                GradersResult = parseGradersResult(o.GradeInfo.GradersInfo)
                 }).ToList();
            
                 this.bindingSource2.DataSource = list;
