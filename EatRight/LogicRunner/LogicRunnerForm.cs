@@ -247,6 +247,15 @@ namespace LogicRunner
                Hack.RecommendToUsers(item, debug, dayOfWeek);
 
         }
+
+        private void button2_Click(object sender, EventArgs e) {
+            
+            var recipe = unit.Recipes.Get(int.Parse(dataGridView1.SelectedCells[0].Value.ToString().Trim()));
+            recipe.TotalNutValues = null;
+            recipe.CalculateNutValuesAndCalories(textBox1.Text);
+            var newInfo = MyViewModel.GetNutInfo(recipe);
+            richTextBox6.Text = newInfo;
+        }
     }
 }
 

@@ -10,6 +10,11 @@ namespace LogicRunner
 {
     class MyViewModel
     {
+        public int ID {
+            get {
+                return _obj.Recipe.ID;
+            }
+        }
         public string Calories {
            
             get {
@@ -25,23 +30,26 @@ namespace LogicRunner
             }
             
         }
+
+        public static string GetNutInfo(Recipe recipe) {
+            var unit = new RestDBInterface();
+            var dv = unit.DailyValues.GetAllList();
+            string res = string.Empty;
+            var scores = new Dictionary<string, double>();
+            recipe.TotalNutValues.ToList().ForEach(i => {
+                if (dv[10].DailyValues.ContainsKey(i.Key))
+                    scores.Add(i.Key, i.Value / dv[10].DailyValues[i.Key].MinValue);
+            });
+            var ordered = scores.OrderByDescending(i => i.Value).Take(10).ToList();
+            ordered.ForEach(i => {
+                res += i.Key + " : " + string.Format("{0:0.##}", i.Value) + "\n";
+            });
+            return res;
+        }
         public string URL { get; set; }
         public RecipesSource Source { get; set; }
         public string NutValues { get {
-                
-                var unit = new RestDBInterface();
-                var dv = unit.DailyValues.GetAllList();
-                string res = string.Empty;
-                var scores = new Dictionary<string, double>();
-                _obj.Recipe.TotalNutValues.ToList().ForEach(i => {
-                    if (dv[10].DailyValues.ContainsKey(i.Key))
-                        scores.Add(i.Key , i.Value/dv[10].DailyValues[i.Key].MinValue);
-                    });
-                var ordered = scores.OrderByDescending(i => i.Value).Take(10).ToList();
-                ordered.ForEach(i => {
-                        res += i.Key + " : " + i.Value + "\n";
-                });
-                return res;
+                return GetNutInfo(_obj.Recipe);
             }
             
         }
@@ -54,6 +62,7 @@ namespace LogicRunner
                 return res;
             }
             }
+      
 
         public string MinScores {
             get {
