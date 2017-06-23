@@ -250,9 +250,9 @@ namespace LogicRunner
 
         private void button2_Click(object sender, EventArgs e) {
             
-            var recipe = unit.Recipes.Get(int.Parse(dataGridView1.SelectedCells[0].Value.ToString().Trim()));
+            var recipe = unit.Recipes.Get(int.Parse(dataGridView1.SelectedCells[0].Value.ToString()));
             recipe.TotalNutValues = null;
-            recipe.CalculateNutValuesAndCalories(textBox1.Text);
+            recipe.CalculateNutValuesAndCalories(textBox1.Text.Trim());
             var newInfo = MyViewModel.GetNutInfo(recipe);
             richTextBox6.Text = newInfo;
         }
