@@ -179,7 +179,7 @@ namespace Logic {
 
         };
         public static Dictionary<List<string>,Tuple<List<string>,string>> WordsWithExclusionMap = new Dictionary<List<string>, Tuple<List<string>, string>>() {
-            { new List<string> {"flour"},new Tuple<List<string>,string>(new List<string> {"whole","coconut","almond"}, "all-purpose wheat flour")},
+            { new List<string> {"flour"},new Tuple<List<string>,string>(new List<string> {"whole","coconut","almond", "tortilla"}, "all-purpose wheat flour")},
             { new List<string> {"pasta"},new Tuple<List<string>,string>(new List<string> {"whole","grain"}, "pasta")},
             { new List<string> {"onion"},new Tuple<List<string>,string>(new List<string> {"soup", "dehydrated", "scallion","spring","green","scalions","yellow"}, "onion")},
             { new List<string> {"onions"},new Tuple<List<string>,string>(new List<string> {"soup", "dehydrated", "scallion","spring","green","scalions","yellow"}, "onion")},
