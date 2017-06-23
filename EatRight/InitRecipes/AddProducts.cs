@@ -172,7 +172,7 @@ namespace InitRecipes {
             else if (weight == 1) {
                 relativeMeasure = innerpart;
             }
-            weight = TryParseRelativeWeight(relativeMeasure, weight, product, innerpart);
+            weight = TryParseRelativeWeight(relativeMeasure, weight, ref product, innerpart, res);
 
             AddItem(product, recipe, weight, innerpart);
         }
@@ -214,59 +214,95 @@ namespace InitRecipes {
             }         
         }
 
-        public static double TryParseRelativeWeight(string measure, double weight, Product prd, string fullName) {
-            if (measure == "") {
-                if (weight == 0)
-                    return prd.Weights.First().Value;
-                else 
-                    return weight;
-            }
+        public static double TryParseRelativeWeight(string measure, double weight, ref Product prd, string fullName, List<Product> prodList)
+        {
+            Product origPrd = prd;
+            int resInd = 0;
             var mes = ParseHelpers.GetWithoutLast_S_letter(measure);
             var keys = prd.Weights.Keys;
-            var mesPartsList = mes.Split(' ').ToList();
-            if (prd.Weights.ContainsKey(mes)) {
-                return weight * prd.Weights[mes];
-            }
 
-            else if (prd.Weights.ContainsKey(fullName)) {
-                return weight * prd.Weights[fullName];
-            }
-
-            else if (keys.Any(key => key.Contains(mes))) {
-                return weight * prd.Weights[keys.First(key => key.Contains(mes))];
-            }
-        
-            var matchingWord = MatchAnyWord(mesPartsList, keys.ToList());
-            if (matchingWord != null && keys.Any(key => key.Contains(matchingWord))) {
-                return weight * prd.Weights.First(key => key.Key.Contains(matchingWord)).Value;
-            }
-            else if (Map.RecipeToUSDAMeasure.ContainsKey(mes)) {
-                mes = Map.RecipeToUSDAMeasure[mes];
-                if (prd.Weights.ContainsKey(mes)) {
+            while (true)
+            {
+                if (measure == "")
+                {
+                    if (weight == 0)
+                        return prd.Weights.First().Value;
+                    else
+                        return weight;
+                }
+                mes = ParseHelpers.GetWithoutLast_S_letter(measure);
+                keys = prd.Weights.Keys;
+                var mesPartsList = mes.Split(' ').ToList();
+                if (prd.Weights.ContainsKey(mes))
+                {
                     return weight * prd.Weights[mes];
                 }
-                else if (keys.Any(key => key.Contains(mes))) {
+
+                else if (prd.Weights.ContainsKey(fullName))
+                {
+                    return weight * prd.Weights[fullName];
+                }
+
+                else if (keys.Any(key => key.Contains(mes)))
+                {
                     return weight * prd.Weights[keys.First(key => key.Contains(mes))];
                 }
-                else if (keys.Any(key => key.Contains("serving"))) {
-                    return weight * prd.Weights.First(key => key.Key.Contains("serving")).Value;
+
+                var matchingWord = MatchAnyWord(mesPartsList, keys.ToList());
+                if (matchingWord != null && keys.Any(key => key.Contains(matchingWord)))
+                {
+                    return weight * prd.Weights.First(key => key.Key.Contains(matchingWord)).Value;
                 }
-               
-            }
-       
-            if (Map.MeasureToMeasure.ContainsKey(mes)) {
-                var ratio = Map.MeasureToMeasure[mes].Item2;
-                mes = Map.MeasureToMeasure[mes].Item1;
-                if (prd.Weights.ContainsKey(mes)) {
-                    return weight * prd.Weights[mes] * ratio;
+                else if (Map.RecipeToUSDAMeasure.ContainsKey(mes))
+                {
+                    mes = Map.RecipeToUSDAMeasure[mes];
+                    if (prd.Weights.ContainsKey(mes))
+                    {
+                        return weight * prd.Weights[mes];
+                    }
+                    else if (keys.Any(key => key.Contains(mes)))
+                    {
+                        return weight * prd.Weights[keys.First(key => key.Contains(mes))];
+                    }
+                    else if (keys.Any(key => key.Contains("serving")))
+                    {
+                        return weight * prd.Weights.First(key => key.Key.Contains("serving")).Value;
+                    }
+
+                }
+
+                if (Map.MeasureToMeasure.ContainsKey(mes))
+                {
+                    var ratio = Map.MeasureToMeasure[mes].Item2;
+                    mes = Map.MeasureToMeasure[mes].Item1;
+                    if (prd.Weights.ContainsKey(mes))
+                    {
+                        return weight * prd.Weights[mes] * ratio;
+                    }
+                }
+                if (Formulas.MeasuresWeights.ContainsKey(mes))
+                {
+                    return weight * Formulas.MeasuresWeights[mes];
+                }
+                if (keys.Any(key => key.Contains("medium")))
+                {
+                    return weight * prd.Weights.First(key => key.Key.Contains("medium")).Value;
+                }
+
+                if (prodList.Count > 1 && prodList.Count > resInd)
+                {
+                    prd = prodList[resInd];
+                    resInd++;
+                }
+                else
+                {
+                    break;
                 }
             }
-            if (Formulas.MeasuresWeights.ContainsKey(mes)) {
-                return weight * Formulas.MeasuresWeights[mes];
-            }
-            if (keys.Any(key => key.Contains("medium"))) {
-                return weight * prd.Weights.First(key => key.Key.Contains("medium")).Value;
-            }
+
+            prd = origPrd;
+            mes = ParseHelpers.GetWithoutLast_S_letter(measure);
+            keys = prd.Weights.Keys;
 
             var defaultMeasure = prd.Weights.First().Value;
             var str = "measures:";

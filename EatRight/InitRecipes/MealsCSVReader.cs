@@ -90,7 +90,8 @@ namespace InitRecipes {
                                     else {
                                         var fullName = productsWeight.Keys.ToList().First(item => item == productsIndex[idx]);
                                         var product = Queries<Product>.GetMatchingProductsForIngredient(fullName)[0];
-                                        productsWeight[productsIndex[idx]] = AddProducts.TryParseRelativeWeight(measureName, weight, product, fullName);
+                                        var prodList = new List<Product>() { product };
+                                        productsWeight[productsIndex[idx]] = AddProducts.TryParseRelativeWeight(measureName, weight, ref product, fullName, prodList);
 
                                     }
                                 }

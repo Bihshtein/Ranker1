@@ -31,7 +31,7 @@ namespace Logic {
                     item = Map.ChangeWholePhrases[item];
             });
             WordsMap.Keys.ToList().ForEach(list => {
-                if (list.All(word => item.Contains(word)))
+                if (list.All(word => WordCheck(word, item)))
                     item = Map.WordsMap[list];
             });
 
