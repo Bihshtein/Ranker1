@@ -115,7 +115,7 @@ namespace RestModel  {
             }
         }
 
-        public bool CalculateNutValuesAndCalories()
+        public bool CalculateNutValuesAndCalories(string productToExclude=null)
         {
             if (this.TotalNutValues != null) return false;
 
@@ -123,6 +123,8 @@ namespace RestModel  {
             this.TotalCaloriesNum = 0;
             foreach (var pw in ProductsWeight)
             {
+                if (productToExclude != null && pw.Key == productToExclude)
+                    continue;
                 var res = GetProductWeight(pw.Key).Key;
                 var product = res[0];
                 var weight = pw.Value;

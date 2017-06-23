@@ -97,6 +97,11 @@
             this.button4 = new System.Windows.Forms.Button();
             this.label24 = new System.Windows.Forms.Label();
             this.weekday = new System.Windows.Forms.ComboBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.richTextBox6 = new System.Windows.Forms.RichTextBox();
+            this.label26 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
@@ -268,9 +273,9 @@
             // 
             // richTextBox3
             // 
-            this.richTextBox3.Location = new System.Drawing.Point(885, 242);
+            this.richTextBox3.Location = new System.Drawing.Point(878, 242);
             this.richTextBox3.Name = "richTextBox3";
-            this.richTextBox3.Size = new System.Drawing.Size(253, 754);
+            this.richTextBox3.Size = new System.Drawing.Size(253, 206);
             this.richTextBox3.TabIndex = 22;
             this.richTextBox3.Text = "";
             // 
@@ -304,11 +309,11 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label9.Location = new System.Drawing.Point(975, 223);
+            this.label9.Location = new System.Drawing.Point(951, 223);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(99, 16);
+            this.label9.Size = new System.Drawing.Size(121, 16);
             this.label9.TabIndex = 25;
-            this.label9.Text = "Nutrients Sum";
+            this.label9.Text = "Highest Nutrients";
             // 
             // maxValues
             // 
@@ -744,13 +749,64 @@
             this.label24.TabIndex = 75;
             this.label24.Text = "Weekday";
             // 
-            // comboBox1
+            // weekday
             // 
             this.weekday.FormattingEnabled = true;
             this.weekday.Location = new System.Drawing.Point(1021, 20);
-            this.weekday.Name = "comboBox1";
+            this.weekday.Name = "weekday";
             this.weekday.Size = new System.Drawing.Size(89, 21);
             this.weekday.TabIndex = 74;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.BackColor = System.Drawing.Color.Transparent;
+            this.label25.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label25.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label25.Location = new System.Drawing.Point(928, 691);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(170, 16);
+            this.label25.TabIndex = 76;
+            this.label25.Text = "Simulate Exclude Product";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(883, 710);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(250, 20);
+            this.textBox1.TabIndex = 77;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.PapayaWhip;
+            this.button2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.button2.Location = new System.Drawing.Point(942, 736);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(130, 86);
+            this.button2.TabIndex = 78;
+            this.button2.Text = "Re-calcualte highest nutrients";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // richTextBox6
+            // 
+            this.richTextBox6.Location = new System.Drawing.Point(880, 470);
+            this.richTextBox6.Name = "richTextBox6";
+            this.richTextBox6.Size = new System.Drawing.Size(253, 206);
+            this.richTextBox6.TabIndex = 79;
+            this.richTextBox6.Text = "";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.BackColor = System.Drawing.Color.Transparent;
+            this.label26.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label26.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label26.Location = new System.Drawing.Point(928, 451);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(157, 16);
+            this.label26.TabIndex = 80;
+            this.label26.Text = "Highest after exclusion";
             // 
             // LogicRunnerForm
             // 
@@ -758,7 +814,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.AliceBlue;
-            this.ClientSize = new System.Drawing.Size(1160, 989);
+            this.ClientSize = new System.Drawing.Size(1160, 1019);
+            this.Controls.Add(this.label26);
+            this.Controls.Add(this.richTextBox6);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label25);
             this.Controls.Add(this.label24);
             this.Controls.Add(this.weekday);
             this.Controls.Add(this.button4);
@@ -905,5 +966,10 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.ComboBox weekday;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.RichTextBox richTextBox6;
+        private System.Windows.Forms.Label label26;
     }
 }

@@ -10,6 +10,11 @@ namespace LogicRunner
 {
     class MyViewModel
     {
+        public int ID {
+            get {
+                return _obj.Recipe.ID;
+            }
+        }
         public string Calories {
            
             get {
@@ -25,18 +30,39 @@ namespace LogicRunner
             }
             
         }
-        public string OriginalID { get; set; }
+
+        public static string GetNutInfo(Recipe recipe) {
+            var unit = new RestDBInterface();
+            var dv = unit.DailyValues.GetAllList();
+            string res = string.Empty;
+            var scores = new Dictionary<string, double>();
+            recipe.TotalNutValues.ToList().ForEach(i => {
+                if (dv[10].DailyValues.ContainsKey(i.Key))
+                    scores.Add(i.Key, i.Value / dv[10].DailyValues[i.Key].MinValue);
+            });
+            var ordered = scores.OrderByDescending(i => i.Value).Take(10).ToList();
+            ordered.ForEach(i => {
+                res += i.Key + " : " + string.Format("{0:0.##}", i.Value) + "\n";
+            });
+            return res;
+        }
+        public string URL { get; set; }
         public RecipesSource Source { get; set; }
-        public string NutValues { get; set; }
+        public string NutValues { get {
+                return GetNutInfo(_obj.Recipe);
+            }
+            
+        }
         public string GradersResult { get; set; }
         public string Products {
             get {
                 string res = string.Empty;
                 if (_obj.Recipe.ProductsWeight != null)
-                    _obj.Recipe.ProductsWeight.Keys.ToList().ForEach(value => res += value +" : " + _obj.Recipe.ProductsWeight[value] + " gm\n");
+                    _obj.Recipe.ProductsWeight.Keys.ToList().ForEach(value => res += value + " : " + _obj.Recipe.ProductsWeight[value] + " gm\n");
                 return res;
             }
             }
+      
 
         public string MinScores {
             get {
