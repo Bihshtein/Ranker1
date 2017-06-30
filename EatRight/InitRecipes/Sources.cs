@@ -66,8 +66,6 @@ namespace InitRecipes {
                 PageSplitterStr = "<div class=\"node-image\"> <a href=\"/recipes/",
                 Meals = new List<MealData> {
                     new MealData { Meal = MealType.Dinner, Url = "https://www.bbcgoodfood.com/course/dinner", },
-                      new MealData { Meal = MealType.Lunch, Url = "https://www.bbcgoodfood.com/course/lunch", },
-                      new MealData { Meal = MealType.Breakfast, Url = "https://www.bbcgoodfood.com/course/breakfast", },
                 },
                 Parser = new GeneralRecipeParser(new BBCParser()),
                 Url ="https://www.bbcgoodfood.com/recipes/" } },
@@ -78,8 +76,6 @@ namespace InitRecipes {
                 PageSplitterStr = "href=\"/recipes/food/views/",
                 Meals = new List<MealData> {
                     new MealData { Meal = MealType.Dinner, Url = "http://www.epicurious.com/search/?meal=dinner", },
-                    new MealData { Meal = MealType.Lunch, Url = "http://www.epicurious.com/search/?meal=lunch", },
-                    new MealData { Meal = MealType.Breakfast, Url = "http://www.epicurious.com/search/?meal=breakfast", },
                 },
                 Parser = new GeneralRecipeParser(new EpicuriousParser()),
                 Url ="http://www.epicurious.com/recipes/food/views/" } }
