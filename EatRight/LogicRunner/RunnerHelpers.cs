@@ -37,8 +37,8 @@ namespace LogicRunner
             string res = string.Empty;
             var scores = new Dictionary<string, double>();
             recipe.TotalNutValues.ToList().ForEach(i => {
-                if (dv[10].DailyValues.ContainsKey(i.Key))
-                    scores.Add(i.Key, i.Value / dv[10].DailyValues[i.Key].MinValue);
+                if (dv[8].DailyValues.ContainsKey(i.Key))
+                    scores.Add(i.Key, i.Value/ recipe.Servings / dv[8].DailyValues[i.Key].MinValue/0.333);
             });
             var ordered = scores.OrderByDescending(i => i.Value).Take(10).ToList();
             ordered.ForEach(i => {

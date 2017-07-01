@@ -174,7 +174,8 @@ namespace Logic {
             { "onion salt","table salt"},
             { "tamatos","tomatoes"},
             { "jalapeño","jalapeno"},
-            { "liquid milk","milk"},
+            { "liquid milk","fluid milk"},
+            { "milk","fluid milk"},
             { "ice","water"},
 
         };

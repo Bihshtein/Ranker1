@@ -15,9 +15,9 @@ namespace RecommendationBuilder.Graders.MealGraders
 
         static Dictionary<MealType, double> MealPrecentage = new Dictionary<MealType, double>()
         {
-            {MealType.Breakfast, 0.3},
-            {MealType.Lunch, 0.4},
-            {MealType.Dinner, 0.3}
+            {MealType.Breakfast, 0.333},
+            {MealType.Lunch, 0.333},
+            {MealType.Dinner, 0.333}
         };
 
         public NutValuesMealGrader() {
