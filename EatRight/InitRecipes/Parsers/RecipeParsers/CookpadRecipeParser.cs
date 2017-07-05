@@ -144,7 +144,7 @@ namespace InitRecipes {
                 return null;
             }
           
-            var weight = nameAndWeight[0].Replace(".", "");
+            var weight = nameAndWeight[0];
 
             var weightSplit = weight.Split('-');
             if (weightSplit.Length == 2)
@@ -207,6 +207,8 @@ namespace InitRecipes {
                 }
 
             }
+
+            relativeWeight = relativeWeight.Replace(".", "");
 
             var additionalInfo = GeneralRecipeParser.GetAdditionalInfo(name);
 
