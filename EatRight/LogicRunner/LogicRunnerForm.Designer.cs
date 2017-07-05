@@ -101,6 +101,9 @@
             this.richTextBox6 = new System.Windows.Forms.RichTextBox();
             this.label26 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.button5 = new System.Windows.Forms.Button();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
@@ -759,7 +762,7 @@
             // 
             this.button2.BackColor = System.Drawing.Color.PapayaWhip;
             this.button2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.button2.Location = new System.Drawing.Point(1286, 736);
+            this.button2.Location = new System.Drawing.Point(1286, 761);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(130, 86);
             this.button2.TabIndex = 78;
@@ -789,10 +792,41 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(1225, 844);
+            this.textBox2.Location = new System.Drawing.Point(1305, 736);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(250, 20);
+            this.textBox2.Size = new System.Drawing.Size(175, 20);
             this.textBox2.TabIndex = 81;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.PapayaWhip;
+            this.button5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.button5.Location = new System.Drawing.Point(1286, 932);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(130, 86);
+            this.button5.TabIndex = 82;
+            this.button5.Text = "Update weight";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(1227, 906);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(250, 20);
+            this.textBox3.TabIndex = 83;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label9.Location = new System.Drawing.Point(1240, 737);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(59, 16);
+            this.label9.TabIndex = 84;
+            this.label9.Text = "Calories";
             // 
             // LogicRunnerForm
             // 
@@ -801,6 +835,9 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(1488, 1019);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label26);
             this.Controls.Add(this.richTextBox6);
@@ -955,5 +992,8 @@
         private System.Windows.Forms.RichTextBox richTextBox6;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label9;
     }
 }

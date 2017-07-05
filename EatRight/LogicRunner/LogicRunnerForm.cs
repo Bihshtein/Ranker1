@@ -257,6 +257,17 @@ namespace LogicRunner
             richTextBox6.Text = newInfo;
             textBox2.Text = (recipe.TotalCaloriesNum / recipe.Servings).ToString();
         }
+
+        private void button5_Click(object sender, EventArgs e) {
+            var recipe = unit.Recipes.Get(int.Parse(dataGridView1.SelectedCells[0].Value.ToString()));
+            recipe.TotalNutValues = null;
+            recipe.ProductsWeight[textBox3.Text.Split(',')[0]] =  double.Parse(textBox3.Text.Split(',')[1]);
+            recipe.TotalNutValues = null;
+            recipe.CalculateNutValuesAndCalories(textBox1.Text.Trim());
+
+            unit.Recipes.Update(s => s.ID, recipe.ID, recipe);
+            button1_Click(sender, e);
+        }
     }
 }
 
