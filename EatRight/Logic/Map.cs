@@ -176,6 +176,8 @@ namespace Logic {
             { "jalapeño","jalapeno"},
             { "liquid milk","fluid milk"},
             { "milk","fluid milk"},
+            { "lowfat milk","lowfat fluid milk"},
+            { "nofat milk","nofat fluid milk"},
             { "ice","water"},
 
         };
@@ -364,7 +366,7 @@ namespace Logic {
             { new List<string> { "beetroot"},"beets"},
             { new List<string> { "groundnut", "oil"},"peanut oil"},
             { new List<string> { "vanilla", "pod"},"vanilla extract"},
-            { new List<string> { "full-fat", "milk"},"milk"},
+            { new List<string> { "full-fat", "milk"},"fluid milk"},
             { new List<string> { "rotisserie", "chicken"},"roasted chicken"}, 
         };
         public static Dictionary<string, string> ChangePartialPhrases = new Dictionary<string, string>() {

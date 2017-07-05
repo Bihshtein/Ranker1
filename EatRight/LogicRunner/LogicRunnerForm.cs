@@ -59,10 +59,10 @@ namespace LogicRunner
             idealServings.DataSource = new List<int>(range);
             recommendationsNum.DataSource = new List<int>(range);
             activityLevel.DataSource = Enum.GetNames(typeof(PhysicalActivityLevel));
-            mealType.SelectedIndex = 2;
+            mealType.SelectedIndex = 0;
             ageGender.SelectedIndex = 8;
-            maxValues.SelectedIndex = 3;
-            minValues.SelectedIndex =5;
+            maxValues.SelectedIndex = 6;
+            minValues.SelectedIndex =12;
             calories.SelectedIndex = 1;
             weekday.SelectedIndex = (int)DateTime.Now.DayOfWeek;
             recommendationsNum.SelectedIndex =40;
@@ -178,9 +178,8 @@ namespace LogicRunner
                 {
                     richTextBox1.DataBindings.Add("Text", bindingSource2, "GradersResult");
                     richTextBox2.DataBindings.Add("Text", bindingSource2, "Products");
-                    richTextBox3.DataBindings.Add("Text", bindingSource2, "NutValues");
-                    richTextBox4.DataBindings.Add("Text", bindingSource2, "MinScores");
                     richTextBox5.DataBindings.Add("Text", bindingSource2, "MaxScores");
+                    richTextBox3.DataBindings.Add("Text", bindingSource2, "NutValues");
                 }
                 alexiknow = true;
             }
@@ -231,11 +230,11 @@ namespace LogicRunner
 
         private void minMax_SelectedIndexChanged(object sender, EventArgs e) {
                 if (minMax.SelectedItem.ToString() == "max") {
-                    richTextBox4.Visible = false;
+                    richTextBox3.Visible = false;
                     richTextBox5.Visible = true;
                 }
                 else {
-                    richTextBox4.Visible = true;
+                    richTextBox3.Visible = true;
                     richTextBox5.Visible = false;
                 }
         }
@@ -251,10 +250,12 @@ namespace LogicRunner
         private void button2_Click(object sender, EventArgs e) {
             
             var recipe = unit.Recipes.Get(int.Parse(dataGridView1.SelectedCells[0].Value.ToString()));
+            var origRecipe = unit.Recipes.Get(int.Parse(dataGridView1.SelectedCells[0].Value.ToString()));
             recipe.TotalNutValues = null;
             recipe.CalculateNutValuesAndCalories(textBox1.Text.Trim());
-            var newInfo = MyViewModel.GetNutInfo(recipe);
+            var newInfo = MyViewModel.GetNutInfo2(origRecipe, recipe);
             richTextBox6.Text = newInfo;
+            textBox2.Text = (recipe.TotalCaloriesNum / recipe.Servings).ToString();
         }
     }
 }

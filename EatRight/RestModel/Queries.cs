@@ -177,10 +177,12 @@ namespace RestModel {
             if (innerSplit.Length <= 4)
             {
                 res = unit.Products.Queries.TryMatchWholeProduct(innerSplit);
+             
             }
 
             return res;
         }
+
 
         public List<DailyValue> GetByGender(GenderType gender) {
 
@@ -193,6 +195,7 @@ namespace RestModel {
 
         public List<Product> TryMatchWholeProduct(string[] parts)
         {
+            List<Product> res;
             if (parts == null || parts.Length == 0)
             {
                 return null;
@@ -207,12 +210,13 @@ namespace RestModel {
             }
             if (parts.Length == 3)
             {
-                return TryMatchWholeProduct(parts[0], parts[1], parts[2]);
+                res = TryMatchWholeProduct(parts[0], parts[1], parts[2]);
             }
             else // NOTE: when parts is longer than 4, we'll take the first 4
             {
                 return TryMatchWholeProduct(parts[0], parts[1], parts[2], parts[3]);
             }
+            return res;
         }
 
         public List<Product> TryMatchWholeProduct(List<string> parts)
@@ -255,8 +259,7 @@ namespace RestModel {
                  res = collection.Find(query as Expression<Func<T, bool>>).ToList();
 
             }
-            var newRes = res.Cast<Product>().ToList();
-            return newRes;
+            return res.Cast<Product>().ToList();
         }
              
 

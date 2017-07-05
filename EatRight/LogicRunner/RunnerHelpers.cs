@@ -40,7 +40,23 @@ namespace LogicRunner
                 if (dv[8].DailyValues.ContainsKey(i.Key))
                     scores.Add(i.Key, i.Value/ recipe.Servings / dv[8].DailyValues[i.Key].MinValue/0.333);
             });
-            var ordered = scores.OrderByDescending(i => i.Value).Take(10).ToList();
+            var ordered = scores.OrderByDescending(i => i.Value).ToList();
+            ordered.ForEach(i => {
+                res += i.Key + " : " + string.Format("{0:0.##}", i.Value) + "\n";
+            });
+            return res;
+        }
+
+        public static string GetNutInfo2(Recipe recipe, Recipe recipe2) {
+            var unit = new RestDBInterface();
+            var dv = unit.DailyValues.GetAllList();
+            string res = string.Empty;
+            var scores = new Dictionary<string, double>();
+            recipe.TotalNutValues.ToList().ForEach(i => {
+                if (dv[8].DailyValues.ContainsKey(i.Key))
+                    scores.Add(i.Key, (i.Value / recipe2.TotalNutValues[i.Key]));
+            });
+            var ordered = scores.OrderByDescending(i => i.Value).ToList();
             ordered.ForEach(i => {
                 res += i.Key + " : " + string.Format("{0:0.##}", i.Value) + "\n";
             });

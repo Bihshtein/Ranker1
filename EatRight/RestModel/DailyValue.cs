@@ -146,11 +146,7 @@ namespace RestModel
                 {"Carbohydrate (g)" , "Carbohydrate, by difference" },
                 { "Total fiber (g)" , "Fiber, total dietary"},
                 { "Total fat (% of calories)" , "Total lipid (fat)" },
-               {"Saturated fat (% of calories)" , "Fatty acids, total saturated" },
                 {"Sugars, total","Sugars, total" },
-              /*  { "Linoleic acid (g)" , new Tuple<string, int>("Protein", 0) },
-                { "alpha-Linolenic acid (g)" , new Tuple<string, int>("Protein", 0) },*/
-                { "Cholesterol (mg)" , "Cholesterol"},
                 //Minerals
                 { "Calcium (mg)" , "Calcium, Ca"},
                 { "Iron (mg)" , "Iron, Fe"},
@@ -159,7 +155,6 @@ namespace RestModel
                 { "Potassium (mg)" , "Potassium, K"},
                 { "Sodium (mg)" , "Sodium, Na"},
                 { "Zinc (mg)" , "Zinc, Zn"},
-                { "Copper (mcg)" , "Copper, Cu"},
                 { "Selenium (mcg)" ,"Selenium, Se"},
                 // vitamins
                 { "Vitamin A (mcg RAE)" , "Vitamin A, IU"},

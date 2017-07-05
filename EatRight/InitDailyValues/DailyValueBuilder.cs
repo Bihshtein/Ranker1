@@ -72,14 +72,7 @@ namespace InitDailyValuesDB
                         tempStr = tempStr.Replace("\"", "");// stupid end of line
                         var nutrient = nameToProductDVMap[result[0]].Item1;
                         tempStr = tempStr.Replace("%", "");
-                        if (nutrient == "Fatty acids, total saturated") {
-                            // this is just a silly hack for no
-                            //this values should be stored as percentage and later graded for specific user
-                            var parts = tempStr.Split('<');
-                            var calories = Formulas.GetCalories(new BodyProfile() { Age = 15 });
-                            max = calories/ 9 / double.Parse(parts[1]);
-                        }
-                        else if (tempStr.Contains('?')) {
+                       if (tempStr.Contains('?')) {
                             var parts = tempStr.Split('?');
                             min = double.Parse(parts[0]);
                             max = double.Parse(parts[1]);
