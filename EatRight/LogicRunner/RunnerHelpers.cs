@@ -10,6 +10,11 @@ namespace LogicRunner
 {
     class MyViewModel
     {
+        public int Serv {
+            get {
+                return _obj.Recipe.Servings;
+            }
+        }
         public int ID {
             get {
                 return _obj.Recipe.ID;

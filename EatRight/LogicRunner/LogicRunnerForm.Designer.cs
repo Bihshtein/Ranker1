@@ -113,7 +113,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.LimeGreen;
             this.button1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.button1.Location = new System.Drawing.Point(1005, 86);
+            this.button1.Location = new System.Drawing.Point(1134, 29);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(128, 54);
             this.button1.TabIndex = 0;
@@ -139,9 +139,9 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(956, 884);
+            this.richTextBox1.Location = new System.Drawing.Point(956, 893);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(263, 123);
+            this.richTextBox1.Size = new System.Drawing.Size(311, 102);
             this.richTextBox1.TabIndex = 4;
             this.richTextBox1.Text = "";
             // 
@@ -156,7 +156,7 @@
             // comboBox4
             // 
             this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(596, 161);
+            this.comboBox4.Location = new System.Drawing.Point(1020, 131);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(89, 21);
             this.comboBox4.TabIndex = 5;
@@ -224,7 +224,7 @@
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.label14.Location = new System.Drawing.Point(598, 12);
+            this.label14.Location = new System.Drawing.Point(598, 16);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(81, 16);
             this.label14.TabIndex = 7;
@@ -267,17 +267,17 @@
             // 
             // richTextBox2
             // 
-            this.richTextBox2.Location = new System.Drawing.Point(956, 649);
+            this.richTextBox2.Location = new System.Drawing.Point(956, 665);
             this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(263, 207);
+            this.richTextBox2.Size = new System.Drawing.Size(148, 207);
             this.richTextBox2.TabIndex = 21;
             this.richTextBox2.Text = "";
             // 
             // richTextBox3
             // 
-            this.richTextBox3.Location = new System.Drawing.Point(956, 246);
+            this.richTextBox3.Location = new System.Drawing.Point(957, 237);
             this.richTextBox3.Name = "richTextBox3";
-            this.richTextBox3.Size = new System.Drawing.Size(262, 387);
+            this.richTextBox3.Size = new System.Drawing.Size(150, 406);
             this.richTextBox3.TabIndex = 22;
             this.richTextBox3.Text = "";
             // 
@@ -287,7 +287,7 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label7.Location = new System.Drawing.Point(1059, 867);
+            this.label7.Location = new System.Drawing.Point(1074, 874);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(59, 16);
             this.label7.TabIndex = 23;
@@ -299,7 +299,7 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label8.Location = new System.Drawing.Point(1048, 630);
+            this.label8.Location = new System.Drawing.Point(1002, 646);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(66, 16);
             this.label8.TabIndex = 24;
@@ -392,7 +392,7 @@
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.label15.Location = new System.Drawing.Point(595, 143);
+            this.label15.Location = new System.Drawing.Point(1019, 113);
             this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(92, 16);
@@ -402,7 +402,7 @@
             // Meat
             // 
             this.Meat.AutoSize = true;
-            this.Meat.Location = new System.Drawing.Point(541, 40);
+            this.Meat.Location = new System.Drawing.Point(541, 54);
             this.Meat.Name = "Meat";
             this.Meat.Size = new System.Drawing.Size(50, 17);
             this.Meat.TabIndex = 37;
@@ -412,7 +412,7 @@
             // NoFish
             // 
             this.NoFish.AutoSize = true;
-            this.NoFish.Location = new System.Drawing.Point(604, 66);
+            this.NoFish.Location = new System.Drawing.Point(604, 80);
             this.NoFish.Name = "NoFish";
             this.NoFish.Size = new System.Drawing.Size(62, 17);
             this.NoFish.TabIndex = 38;
@@ -422,7 +422,7 @@
             // NoMeat
             // 
             this.NoMeat.AutoSize = true;
-            this.NoMeat.Location = new System.Drawing.Point(604, 40);
+            this.NoMeat.Location = new System.Drawing.Point(604, 54);
             this.NoMeat.Name = "NoMeat";
             this.NoMeat.Size = new System.Drawing.Size(67, 17);
             this.NoMeat.TabIndex = 39;
@@ -432,7 +432,7 @@
             // Dairy
             // 
             this.Dairy.AutoSize = true;
-            this.Dairy.Location = new System.Drawing.Point(541, 95);
+            this.Dairy.Location = new System.Drawing.Point(541, 109);
             this.Dairy.Name = "Dairy";
             this.Dairy.Size = new System.Drawing.Size(50, 17);
             this.Dairy.TabIndex = 40;
@@ -442,7 +442,7 @@
             // Fish
             // 
             this.Fish.AutoSize = true;
-            this.Fish.Location = new System.Drawing.Point(541, 66);
+            this.Fish.Location = new System.Drawing.Point(541, 80);
             this.Fish.Name = "Fish";
             this.Fish.Size = new System.Drawing.Size(45, 17);
             this.Fish.TabIndex = 41;
@@ -452,7 +452,7 @@
             // NoDairy
             // 
             this.NoDairy.AutoSize = true;
-            this.NoDairy.Location = new System.Drawing.Point(604, 95);
+            this.NoDairy.Location = new System.Drawing.Point(604, 109);
             this.NoDairy.Name = "NoDairy";
             this.NoDairy.Size = new System.Drawing.Size(67, 17);
             this.NoDairy.TabIndex = 42;
@@ -462,7 +462,7 @@
             // Seafood
             // 
             this.Seafood.AutoSize = true;
-            this.Seafood.Location = new System.Drawing.Point(541, 121);
+            this.Seafood.Location = new System.Drawing.Point(541, 135);
             this.Seafood.Name = "Seafood";
             this.Seafood.Size = new System.Drawing.Size(66, 17);
             this.Seafood.TabIndex = 43;
@@ -472,7 +472,7 @@
             // NoSeafood
             // 
             this.NoSeafood.AutoSize = true;
-            this.NoSeafood.Location = new System.Drawing.Point(604, 120);
+            this.NoSeafood.Location = new System.Drawing.Point(604, 134);
             this.NoSeafood.Name = "NoSeafood";
             this.NoSeafood.Size = new System.Drawing.Size(83, 17);
             this.NoSeafood.TabIndex = 44;
@@ -505,18 +505,18 @@
             this.label17.BackColor = System.Drawing.Color.Transparent;
             this.label17.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.label17.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label17.Location = new System.Drawing.Point(984, 222);
+            this.label17.Location = new System.Drawing.Point(968, 215);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(116, 16);
+            this.label17.Size = new System.Drawing.Size(52, 16);
             this.label17.TabIndex = 48;
-            this.label17.Text = "Nutrients Scores";
+            this.label17.Text = "Scores";
             // 
             // label18
             // 
             this.label18.AutoSize = true;
             this.label18.BackColor = System.Drawing.Color.Transparent;
             this.label18.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.label18.Location = new System.Drawing.Point(1027, 45);
+            this.label18.Location = new System.Drawing.Point(1027, 56);
             this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(77, 16);
@@ -526,7 +526,7 @@
             // workMode
             // 
             this.workMode.FormattingEnabled = true;
-            this.workMode.Location = new System.Drawing.Point(1020, 62);
+            this.workMode.Location = new System.Drawing.Point(1020, 73);
             this.workMode.Name = "workMode";
             this.workMode.Size = new System.Drawing.Size(89, 21);
             this.workMode.TabIndex = 49;
@@ -534,7 +534,7 @@
             // Kosher
             // 
             this.Kosher.AutoSize = true;
-            this.Kosher.Location = new System.Drawing.Point(684, 120);
+            this.Kosher.Location = new System.Drawing.Point(684, 134);
             this.Kosher.Name = "Kosher";
             this.Kosher.Size = new System.Drawing.Size(59, 17);
             this.Kosher.TabIndex = 56;
@@ -544,7 +544,7 @@
             // Vegan
             // 
             this.Vegan.AutoSize = true;
-            this.Vegan.Location = new System.Drawing.Point(684, 95);
+            this.Vegan.Location = new System.Drawing.Point(684, 109);
             this.Vegan.Name = "Vegan";
             this.Vegan.Size = new System.Drawing.Size(57, 17);
             this.Vegan.TabIndex = 55;
@@ -554,7 +554,7 @@
             // Vegetarian
             // 
             this.Vegetarian.AutoSize = true;
-            this.Vegetarian.Location = new System.Drawing.Point(684, 40);
+            this.Vegetarian.Location = new System.Drawing.Point(684, 54);
             this.Vegetarian.Name = "Vegetarian";
             this.Vegetarian.Size = new System.Drawing.Size(77, 17);
             this.Vegetarian.TabIndex = 54;
@@ -564,7 +564,7 @@
             // Pescetarian
             // 
             this.Pescetarian.AutoSize = true;
-            this.Pescetarian.Location = new System.Drawing.Point(684, 66);
+            this.Pescetarian.Location = new System.Drawing.Point(684, 80);
             this.Pescetarian.Name = "Pescetarian";
             this.Pescetarian.Size = new System.Drawing.Size(82, 17);
             this.Pescetarian.TabIndex = 53;
@@ -642,9 +642,9 @@
             // minMax
             // 
             this.minMax.FormattingEnabled = true;
-            this.minMax.Location = new System.Drawing.Point(1101, 220);
+            this.minMax.Location = new System.Drawing.Point(1020, 212);
             this.minMax.Name = "minMax";
-            this.minMax.Size = new System.Drawing.Size(89, 21);
+            this.minMax.Size = new System.Drawing.Size(62, 21);
             this.minMax.TabIndex = 66;
             this.minMax.SelectedIndexChanged += new System.EventHandler(this.minMax_SelectedIndexChanged);
             // 
@@ -662,9 +662,9 @@
             // 
             // richTextBox5
             // 
-            this.richTextBox5.Location = new System.Drawing.Point(955, 247);
+            this.richTextBox5.Location = new System.Drawing.Point(958, 237);
             this.richTextBox5.Name = "richTextBox5";
-            this.richTextBox5.Size = new System.Drawing.Size(263, 386);
+            this.richTextBox5.Size = new System.Drawing.Size(150, 406);
             this.richTextBox5.TabIndex = 68;
             this.richTextBox5.Text = "";
             // 
@@ -711,7 +711,7 @@
             // 
             this.button4.BackColor = System.Drawing.Color.Red;
             this.button4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.button4.Location = new System.Drawing.Point(1005, 143);
+            this.button4.Location = new System.Drawing.Point(1134, 91);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(128, 63);
             this.button4.TabIndex = 73;
@@ -745,7 +745,7 @@
             this.label25.BackColor = System.Drawing.Color.Transparent;
             this.label25.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.label25.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label25.Location = new System.Drawing.Point(1272, 691);
+            this.label25.Location = new System.Drawing.Point(1110, 649);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(170, 16);
             this.label25.TabIndex = 76;
@@ -753,18 +753,18 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(1227, 710);
+            this.textBox1.Location = new System.Drawing.Point(1112, 669);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(250, 20);
+            this.textBox1.Size = new System.Drawing.Size(150, 20);
             this.textBox1.TabIndex = 77;
             // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.PapayaWhip;
-            this.button2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.button2.Location = new System.Drawing.Point(1286, 761);
+            this.button2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.button2.Location = new System.Drawing.Point(1122, 737);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(130, 86);
+            this.button2.Size = new System.Drawing.Size(130, 47);
             this.button2.TabIndex = 78;
             this.button2.Text = "Re-calcualte highest nutrients";
             this.button2.UseVisualStyleBackColor = false;
@@ -772,9 +772,9 @@
             // 
             // richTextBox6
             // 
-            this.richTextBox6.Location = new System.Drawing.Point(1227, 247);
+            this.richTextBox6.Location = new System.Drawing.Point(1117, 237);
             this.richTextBox6.Name = "richTextBox6";
-            this.richTextBox6.Size = new System.Drawing.Size(253, 386);
+            this.richTextBox6.Size = new System.Drawing.Size(150, 406);
             this.richTextBox6.TabIndex = 79;
             this.richTextBox6.Text = "";
             // 
@@ -784,7 +784,7 @@
             this.label26.BackColor = System.Drawing.Color.Transparent;
             this.label26.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.label26.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label26.Location = new System.Drawing.Point(1272, 220);
+            this.label26.Location = new System.Drawing.Point(1112, 214);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(157, 16);
             this.label26.TabIndex = 80;
@@ -792,18 +792,18 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(1305, 736);
+            this.textBox2.Location = new System.Drawing.Point(1113, 711);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(175, 20);
+            this.textBox2.Size = new System.Drawing.Size(149, 20);
             this.textBox2.TabIndex = 81;
             // 
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.PapayaWhip;
-            this.button5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.button5.Location = new System.Drawing.Point(1286, 932);
+            this.button5.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.button5.Location = new System.Drawing.Point(1122, 816);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(130, 86);
+            this.button5.Size = new System.Drawing.Size(130, 29);
             this.button5.TabIndex = 82;
             this.button5.Text = "Update weight";
             this.button5.UseVisualStyleBackColor = false;
@@ -811,9 +811,9 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(1227, 906);
+            this.textBox3.Location = new System.Drawing.Point(1113, 790);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(250, 20);
+            this.textBox3.Size = new System.Drawing.Size(149, 20);
             this.textBox3.TabIndex = 83;
             // 
             // label9
@@ -822,7 +822,7 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label9.Location = new System.Drawing.Point(1240, 737);
+            this.label9.Location = new System.Drawing.Point(1160, 692);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(59, 16);
             this.label9.TabIndex = 84;
@@ -834,7 +834,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.AliceBlue;
-            this.ClientSize = new System.Drawing.Size(1488, 1019);
+            this.ClientSize = new System.Drawing.Size(1287, 1019);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.button5);

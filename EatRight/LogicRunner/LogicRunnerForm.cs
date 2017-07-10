@@ -61,9 +61,9 @@ namespace LogicRunner
             activityLevel.DataSource = Enum.GetNames(typeof(PhysicalActivityLevel));
             mealType.SelectedIndex = 0;
             ageGender.SelectedIndex = 8;
-            maxValues.SelectedIndex = 6;
-            minValues.SelectedIndex =12;
-            calories.SelectedIndex = 1;
+            maxValues.SelectedIndex = 4;
+            minValues.SelectedIndex =16;
+            calories.SelectedIndex = 4;
             weekday.SelectedIndex = (int)DateTime.Now.DayOfWeek;
             recommendationsNum.SelectedIndex =40;
         }
@@ -128,12 +128,12 @@ namespace LogicRunner
                     {GraderType.PrepTimeMealGrader, int.Parse(cookTime.SelectedItem.ToString()) },
                     {GraderType.StepsNumMealGrader, int.Parse(steps.SelectedItem.ToString()) }
                 };
-
+            var source = (RecipesSource)Enum.Parse(typeof(RecipesSource), comboBox4.SelectedItem.ToString());
             RecommendationGenerator generator = null;
             if (workMode.SelectedItem.ToString() == "Debug") {
                 var recipes = new List<int>();
                 var recipesCollection = new RestDBInterface().Recipes;
-                var source = (RecipesSource)Enum.Parse(typeof(RecipesSource), comboBox4.SelectedItem.ToString());
+                
                 var meal = (MealType)Enum.Parse(typeof(MealType), mealType.SelectedItem.ToString());
                 if (source == RecipesSource.All)
                     recipesCollection.GetAllList().ForEach(a => recipes.Add(a.ID));
@@ -157,6 +157,8 @@ namespace LogicRunner
                 if (generator.GetRecommendation() != null)
                 {
                     meals = generator.GetRecommendation().MealsSet;
+                    if (source != RecipesSource.All)
+                        meals = meals.Where(m => m.Recipe.Source == source).ToList();
                 }
             }
             if (meals == null) {
